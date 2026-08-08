@@ -12,6 +12,26 @@ import './styles/app.css'
 applyTextSize(savedTextSize())
 
 /**
+ * Put the house in the browser tab.
+ *
+ * index.html declares both the committed SVG mark and the ship-generated house
+ * PNG, but Chrome ranks an SVG icon above any PNG no matter the order — so on
+ * a build with fetched assets the tab showed the fallback tesserae instead of
+ * the house. Removing the SVG link once the PNG is known to exist makes every
+ * browser pick the house; on a clone with no assets the probe 404s and the SVG
+ * mark keeps the tab. `force-cache` lets the service worker satisfy this
+ * offline.
+ */
+void fetch(`${import.meta.env.BASE_URL}assets/game/brand/app-icon-64.png`, {
+  cache: 'force-cache',
+})
+  .then((response) => {
+    if (!response.ok) return
+    document.querySelector('link[rel="icon"][type="image/svg+xml"]')?.remove()
+  })
+  .catch(() => undefined)
+
+/**
  * Ask the browser to keep our storage.
  *
  * iOS evicts Cache Storage after about a week for a PWA that is not installed,

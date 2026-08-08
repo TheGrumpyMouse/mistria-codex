@@ -3,6 +3,7 @@ import {
   createRootRoute,
   createRoute,
   createRouter,
+  redirect,
 } from '@tanstack/react-router'
 import { AppShell } from '~/app/AppShell'
 import { InstantSearch } from '~/lib/instant'
@@ -10,7 +11,6 @@ import { AboutRoute } from '~/routes/about'
 import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
 import { BrowseRoute } from '~/routes/browse'
-import { CalendarRoute } from '~/routes/calendar'
 import { DesignRoute } from '~/routes/design'
 import { ItemRoute } from '~/routes/item'
 import { MapRoute } from '~/routes/map'
@@ -118,10 +118,17 @@ const searchRoute = createRoute({
   },
 })
 
+/**
+ * The year screen is gone — the calendar's Day Dial already names every
+ * birthday and festival, with the real icons. The path survives as a redirect
+ * because a URL that once worked should never start answering "not found".
+ */
 const calendarRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/calendar',
-  component: CalendarRoute,
+  beforeLoad: () => {
+    throw redirect({ to: '/' })
+  },
 })
 
 const minesRoute = createRoute({

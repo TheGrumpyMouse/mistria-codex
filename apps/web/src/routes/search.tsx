@@ -108,6 +108,23 @@ export function SearchRoute() {
           })}
         </ul>
       )}
+
+      {/*
+        The way into Browse for a thumb. On a desktop the sidebar lists Browse;
+        on a phone the bottom nav is full at five and Browse lost the seat — so
+        without this, the only browsing entry on mobile is knowing the URL.
+        Search is where you go when you can name the thing; this is the door
+        for when you cannot. Hidden on desktop, where the sidebar already
+        answers it.
+      */}
+      <p className="mt-6 lg:hidden">
+        <Link
+          to="/browse"
+          className="tap-target inline-flex w-full items-center justify-center rounded-tile border border-rule px-3 py-2.5 text-ink-mute text-sm transition-colors hover:text-ink"
+        >
+          Browse all items →
+        </Link>
+      </p>
     </Column>
   )
 }

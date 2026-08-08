@@ -1,6 +1,5 @@
 import { Link, Outlet, useRouterState } from '@tanstack/react-router'
 import {
-  CalendarDays,
   ChevronsDown,
   ClipboardList,
   Compass,
@@ -51,7 +50,6 @@ const NAV: NavItem[] = [
 const SECONDARY: NavItem[] = [
   { to: '/browse', label: 'Browse', icon: Compass },
   { to: '/map', label: 'Map', icon: MapIcon },
-  { to: '/calendar', label: 'The year', icon: CalendarDays },
   { to: '/settings', label: 'Settings', icon: Settings },
 ]
 
