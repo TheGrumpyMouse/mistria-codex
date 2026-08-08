@@ -14,15 +14,36 @@ import type { DisplayIndex } from './data'
  *
  * Within a tier, shorter names win — "Coal" beats "Coal Cart" for "coal" —
  * then alphabetical, so the order is stable rather than incidental.
+ *
+ * A record's other names are searched in the same four tiers, one whole band
+ * below — any match on a real name beats any match on an alias. Typing
+ * "seridia" finds the Priestess, because the game has called her that all along
+ * and someone who has met her will not think to search for her job title.
  */
 
 export interface SearchHit {
   id: string
   entry: DisplayIndex[string]
   rank: number
+  /**
+   * The alias that matched, when the display name did not.
+   *
+   * The UI shows it, and it is not decoration: a result whose visible name does
+   * not contain what you typed looks like a bug unless it says why it is there.
+   */
+  via: string | null
 }
 
 const MAX_RESULTS = 60
+
+/**
+ * How far an alias match sorts behind a name match.
+ *
+ * Four, the number of tiers, so the bands cannot interleave: an exact alias hit
+ * still ranks below a name that merely contains the query. That is the
+ * conservative direction — the name on screen is what someone is looking at.
+ */
+const ALIAS_PENALTY = 4
 
 /** Fold case and strip punctuation, so "haydens" finds "Hayden's". */
 const fold = (text: string): string =>
@@ -39,6 +60,22 @@ export function rankOf(name: string, needle: string): number | null {
   return /[\s-]/.test(haystack.charAt(at - 1)) ? 2 : 3
 }
 
+/**
+ * Which detail screen a result belongs on.
+ *
+ * The display index mixes four kinds of thing into one namespace, and only the
+ * category says which. Anything unrecognised goes to the item route, which is
+ * where the other 1,150 entries live.
+ */
+export function routeFor(
+  category: string,
+): '/item/$id' | '/villager/$id' | '/place/$id' | '/monster/$id' {
+  if (category === 'character') return '/villager/$id'
+  if (category === 'location') return '/place/$id'
+  if (category === 'monster') return '/monster/$id'
+  return '/item/$id'
+}
+
 export function search(index: DisplayIndex, query: string): SearchHit[] {
   const needle = fold(query.trim())
   if (needle === '') return []
@@ -46,7 +83,21 @@ export function search(index: DisplayIndex, query: string): SearchHit[] {
   const hits: SearchHit[] = []
   for (const [id, entry] of Object.entries(index)) {
     const rank = rankOf(entry.n, needle)
-    if (rank !== null) hits.push({ id, entry, rank })
+    if (rank !== null) {
+      hits.push({ id, entry, rank, via: null })
+      continue
+    }
+
+    // Best alias, not first: a record with several other names should be ranked
+    // by the one that matches you best, the same as its display name would be.
+    let best: { rank: number; via: string } | null = null
+    for (const alias of entry.a ?? []) {
+      const aliasRank = rankOf(alias, needle)
+      if (aliasRank !== null && (best === null || aliasRank < best.rank)) {
+        best = { rank: aliasRank, via: alias }
+      }
+    }
+    if (best !== null) hits.push({ id, entry, rank: best.rank + ALIAS_PENALTY, via: best.via })
   }
 
   hits.sort(

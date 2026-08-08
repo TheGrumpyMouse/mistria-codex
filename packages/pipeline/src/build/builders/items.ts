@@ -9,12 +9,14 @@ import {
   type Season,
   type SpawnMethod,
   splitAtMidnight,
+  type TimeRange,
   toSnakeId,
   WEATHER_BIT,
   type Weather,
 } from '@mistria/schema'
 import { toBoolean, toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, type CargoRow, text } from '../context.js'
+import { idStatusFor } from '../item-ids.js'
 import { expandHabitats, splitByFishableFloors } from '../waters.js'
 
 /**
@@ -101,6 +103,40 @@ function narrowToSeason(weather: Weather[] | null, seasons: Season[]): Weather[]
 }
 
 /**
+ * What the game's own files say about when and where something appears.
+ *
+ * Present only for the categories whose rules the game states plainly. Where it
+ * is present it replaces the wiki's answer outright rather than merging with it:
+ * the two agreed on every bug season checked, and where they differ the game is
+ * the game.
+ */
+export interface GameWindowFacts {
+  seasons: Season[]
+  /** Already expanded from the game's four weather classes. Null means any. */
+  weather: Weather[] | null
+  /** Null means the rule states no hour restriction, which is not the same as unknown. */
+  time: TimeRange | null
+  /** Our location ids. Empty means the game does not narrow where it spawns. */
+  locations: string[]
+}
+
+/**
+ * The game's hours as a resolved time window.
+ *
+ * A game rule with no hour restriction is `not_applicable`, not `unknown`: the
+ * files say there is no restriction, which is an answer. That distinction is
+ * what takes the "time unknown" badge off a bug that genuinely has no window.
+ */
+function gameTime(
+  input: ItemBuildInput,
+): { ranges: TimeRange[] | null; precision: 'exact' | 'not_applicable' } | null {
+  if (input.game === undefined) return null
+  return input.game.time === null
+    ? { ranges: null, precision: 'not_applicable' }
+    : { ranges: [input.game.time], precision: 'exact' }
+}
+
+/**
  * Build the availability windows for one item.
  *
  * Everything that is genuinely unknown stays null and is named in `data_gaps`.
@@ -127,16 +163,26 @@ function buildAvailability(
       ? input.seasonTokens.join(' ')
       : text(row.season)
 
-  const { seasons, dates } = ctx.resolver.resolveSeasons(seasonSource, id)
+  const wiki = ctx.resolver.resolveSeasons(seasonSource, id)
   const place = ctx.resolver.resolveLocations(toTokens(row.location), id)
-  const resolvedWeather = narrowToSeason(
-    ctx.resolver.resolveWeather(input.weatherTokens ?? [], id),
-    seasons,
-  )
 
-  // Bugs are the only category with a real time column, so this is the only
-  // place a genuine time window comes from before the game files land.
-  const time = input.timeToken === undefined ? null : ctx.resolver.resolveTime(input.timeToken, id)
+  // The game's own files beat the wiki wherever they say anything. `dates` has
+  // no game equivalent — a spawn rule is seasonal, not calendar-dated — so it
+  // keeps coming from the wiki either way.
+  const seasons = input.game?.seasons ?? wiki.seasons
+  const dates = wiki.dates
+
+  const resolvedWeather =
+    input.game !== undefined
+      ? input.game.weather
+      : narrowToSeason(ctx.resolver.resolveWeather(input.weatherTokens ?? [], id), seasons)
+
+  // Time comes from the game as numbers when we have it. Before G1 the only
+  // source was `Bugs.time`, which is loose prose, and 65 of 93 bugs had nothing
+  // usable in it at all.
+  const time =
+    gameTime(input) ??
+    (input.timeToken === undefined ? null : ctx.resolver.resolveTime(input.timeToken, id))
 
   if (place.hasGap) gaps.push('locations')
 
@@ -178,7 +224,15 @@ function buildAvailability(
     // Only applied where nothing better is known, and only for the methods
     // curated/vocab/method_rules.json has a source for.
     const byMethod = ctx.methodRules.locationByMethod[method] ?? []
-    const locations = where.locations.length > 0 ? where.locations : byMethod
+    const fromWiki = where.locations.length > 0 ? where.locations : byMethod
+
+    // A bug's spawn tag and a room's `bug_tag` are the same vocabulary, which is
+    // the only source in the project for where an insect can be caught. It beats
+    // the habitat expansion outright: that one turns "Pond" into three ponds and
+    // marks the result inferred, whereas this names the rooms the game spawns it
+    // in. Only 38 of 103 bug windows had a location before it.
+    const fromGame = input.game?.locations ?? []
+    const locations = fromGame.length > 0 ? fromGame : fromWiki
 
     const window: AvailabilityWindow = {
       method,
@@ -204,8 +258,12 @@ function buildAvailability(
       chance: null,
       quantity: null,
       requires: place.requires,
-      confidence: where.inferred ? 'inferred' : 'wiki',
-      prov: 'wiki_cargo',
+      // A window whose places came from the game is not an inference and is not
+      // the wiki's word for it. `verified` and `game_files` mean the app draws
+      // its pins solid, and the distinction is why the hollow pin still means
+      // something everywhere else.
+      confidence: fromGame.length > 0 ? 'verified' : where.inferred ? 'inferred' : 'wiki',
+      prov: fromGame.length > 0 ? 'game_files' : 'wiki_cargo',
     }
 
     // A mine biome is fishable only where it holds water: floors 2-19 of the
@@ -238,6 +296,11 @@ export interface ItemBuildInput {
   seasonTokens?: string[]
   /** Bugs are the only category with a real time column. */
   timeToken?: string
+  /**
+   * What the game's own files say. Where this is set it wins — see
+   * build/game-facts.ts for how the raw extract becomes these fields.
+   */
+  game?: GameWindowFacts
   categoryOverride?: ItemCategory
   museum?: { setId: string; wing: MuseumWing } | undefined
 }
@@ -272,14 +335,18 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
 
     const donatable = toBoolean(row.museum)
 
-    // Where a v0.15.0 datamining snapshot names this item, `id` is the game's
-    // own internal name rather than a slug — and if the two differ, the slug
-    // was what the id used to be. Keeping it in `former_ids` is what turns the
-    // eventual game-file pass into a migration instead of a data loss, and it
-    // is not retrofittable once someone's progress is keyed by an old id.
-    const internal = ctx.itemIds.internalByDisplay.get(input.displayName)
+    // Where a source names this item, `id` is the game's own internal name
+    // rather than a slug — and if the two differ, the slug was what the id used
+    // to be. Keeping it in `former_ids` is what turns a name change into a
+    // migration instead of a data loss, and it is not retrofittable once
+    // someone's progress is keyed by an old id.
+    //
+    // Written off `id` rather than off the index, so it stays right no matter
+    // which layer settled the name.
     const slug = toSnakeId(input.displayName)
-    const formerIds = internal !== undefined && internal !== slug ? [slug] : []
+    const formerIds = id !== slug ? [slug] : []
+    const idStatus = idStatusFor(ctx.itemIds, input.displayName, id)
+    const numericId = ctx.itemIds.numericByDisplay.get(input.displayName) ?? null
 
     items.push({
       id,
@@ -287,15 +354,19 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
       category: input.categoryOverride ?? categoryFor(tags),
 
       // Provenance only. Numeric ids change between patches and hard rule 3
-      // forbids anything referencing one.
-      numeric_id: ctx.itemIds.numericByDisplay.get(input.displayName) ?? null,
-      numeric_id_game_version: internal === undefined ? null : ctx.itemIds.gameVersion,
-      // `confirmed_stale`, never `confirmed`: v0.15.0 predates 1.0, so the name
-      // is the game's rather than ours but may still have moved since.
-      id_status: internal === undefined ? 'provisional' : 'confirmed_stale',
+      // forbids anything referencing one — which is also why this stays stamped
+      // at v0.15.0 even for a name the current build confirms: the game files
+      // do not publish ordinals, and re-deriving them would be a guess.
+      numeric_id: numericId,
+      numeric_id_game_version: numericId === null ? null : ctx.itemIds.gameVersion,
+      // `confirmed` only for a name read from the installed build. v0.15.0
+      // predates 1.0, so a name it settles is the game's rather than ours but
+      // may still have moved since — that is `confirmed_stale`.
+      id_status: idStatus,
       former_ids: formerIds,
+      also_known_as: [],
 
-      game_version: null,
+      game_version: idStatus === 'confirmed' ? ctx.itemIds.confirmedAt : null,
       version_added: null,
       confidence: 'wiki',
       prov: { '*': 'wiki_cargo' },

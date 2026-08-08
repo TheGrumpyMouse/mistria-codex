@@ -9,7 +9,7 @@
       "!data",
       "!sources",
       "!assets",
-      "!docs/schema",
+      "!build",
       "!**/*.svg"
     ]
   },

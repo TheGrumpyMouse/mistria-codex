@@ -20,5 +20,34 @@
     "snow": ["Snow", "Snowy"],
     "blizzard": ["Blizzard"]
   },
-  "allWeather": ["Any", "Any Weather", "All", "Any weather"]
+  "allWeather": ["Any", "Any Weather", "All", "Any weather"],
+  "_gameComment": [
+    "The game does not name six weathers. `fiddle/weather.toml` declares four",
+    "classes — calm, inclement, heavy_inclement, special — and the season decides",
+    "what each one looks like. A fish whose weather is ['heavy_inclement'] bites in",
+    "a thunderstorm in fall and a blizzard in winter, and that is one rule, not two.",
+    "",
+    "Three of the four map without argument. `special` is the one that is reasoned",
+    "rather than read: the game's own seasonal_counts give spring and fall 4-6",
+    "special days each and summer and winter none, and Wind is the only one of the",
+    "wiki's six that is left. That is a deduction from two sources agreeing, not a",
+    "fact either of them states, which is why it is written down here with the",
+    "reasoning attached instead of buried in a lookup table in the build.",
+    "",
+    "Consequence worth knowing: this says wind cannot occur in summer or winter,",
+    "and SEASON_LEGAL_WEATHER currently allows it in all four. The narrower claim",
+    "is the game's; it is applied to game-sourced windows only, and the wiki-sourced",
+    "ones keep the broader mask until something settles it for them too."
+  ],
+  "gameClasses": {
+    "calm": { "spring": "clear", "summer": "clear", "fall": "clear", "winter": "clear" },
+    "inclement": { "spring": "rain", "summer": "rain", "fall": "rain", "winter": "snow" },
+    "heavy_inclement": {
+      "spring": "storm",
+      "summer": "storm",
+      "fall": "storm",
+      "winter": "blizzard"
+    },
+    "special": { "spring": "wind", "summer": null, "fall": "wind", "winter": null }
+  }
 }

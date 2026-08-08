@@ -58,13 +58,25 @@ Scaling is integer-only (`integerScale`). Pixel art at 1.5x renders visibly
 lopsided, and `image-rendering: pixelated` does not rescue it. The `.sprite`
 class carries that declaration once — do not repeat it per component.
 
-### 5. Locked is shown, not hidden
+### 5. Never invent a date for something weather-gated
+
+Weather is rolled per season, not scheduled: the game gives Fall four to six wet
+days and does not say which. "The next Storm is Fall 17" is a fabrication, and
+it is the tempting kind — a date renders so much better than a frequency.
+
+`OpportunityCard` is the one place this decision lives. A rule that needs weather
+gets a frequency from `meta.weatherOdds` and `daysAway: null`; a rule that does
+not gets a real count of days. And the odds **group by `pool` before adding**:
+rain and storm are the same four-to-six wet days seen twice, so summing them
+claims a twelve-day rainy season.
+
+### 6. Locked is shown, not hidden
 
 A result the player cannot reach yet is tagged `locked`, with the reason. People
 want to know the Legendary fish exists and why they can't catch it. Filtering it
 out silently makes the app look like it has less data than it does.
 
-### 6. No hardcoded hex, ever
+### 7. No hardcoded hex, ever
 
 Every colour comes from `styles/tokens.css`. The season accent is `var(--accent)`
 and is set by `data-season` on the root element — a literal `#D4834A` is a fall
@@ -82,6 +94,20 @@ src/
   routes/     one file per screen
   styles/     tokens.css, app.css, fonts.css
 ```
+
+**The display index holds four kinds of thing, and only `c` says which.** Items,
+characters, monsters and locations share one id namespace, so search has always
+returned all four — and every result used to link to `/item/$id`, which loads
+`items.json` and answers "not found" for three of them. `routeFor(category)` in
+`lib/search.ts` is the single place that mapping lives; a new category needs a
+route there and not a filter on search. A dead-ended result reads as missing
+data, which is the one impression this project cannot afford to give.
+
+**`VITE_SYNC_URL` is build-time and must stay that way.** A sync endpoint
+someone can type into a settings box is an endpoint an attacker can talk them
+into typing, and the app's whole claim is that nothing leaves the device unless
+you ask. Unset, `syncConfigured()` is false and the panel says so — it never
+renders a button that cannot work. See [workers/sync/README.md](../../workers/sync/README.md).
 
 **The instant lives in the URL**, validated by Zod in `lib/instant.ts` — not in a
 store. `?season=fall&day=12&year=2&weather=rain&time=960` is the entire state of

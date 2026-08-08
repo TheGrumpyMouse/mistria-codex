@@ -3,6 +3,7 @@ import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
+import { Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 
 const route = getRouteApi('/item/$id')
@@ -216,6 +217,23 @@ export function ItemRoute() {
             ))}
           </ul>
         )}
+
+        {/*
+          The reverse lookup runs off the availability index the app has already
+          downloaded, so offering it costs nothing — and it answers the question
+          the list above raises: yes, but *when*.
+        */}
+        {item.availability.length > 0 && (
+          <p className="mt-2">
+            <Link
+              to="/item/$id/when"
+              params={{ id: item.id }}
+              className="text-ink-mute text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+            >
+              When can I get this? →
+            </Link>
+          </p>
+        )}
       </Section>
 
       {opinions.size > 0 && (
@@ -245,16 +263,3 @@ export function ItemRoute() {
     </Column>
   )
 }
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="mt-5">
-      <h2 className="font-display font-semibold text-ink text-sm">{title}</h2>
-      <div className="mt-1.5">{children}</div>
-    </section>
-  )
-}
-
-const Unknown = ({ children }: { children: React.ReactNode }) => (
-  <p className="unverified inline-block rounded-tile px-2 py-1 text-xs">{children}</p>
-)

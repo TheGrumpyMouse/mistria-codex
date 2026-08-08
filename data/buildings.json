@@ -1,5 +1,6 @@
 [
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -91,6 +92,7 @@
     "wiki_page": "Coop"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -182,6 +184,7 @@
     "wiki_page": "Barn"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -237,6 +240,7 @@
     "wiki_page": "Greenhouse"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -351,6 +355,7 @@
     "wiki_page": "Farmhouse"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -375,6 +380,7 @@
     "wiki_page": "Cooking"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -399,6 +405,7 @@
     "wiki_page": "Crafting"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -423,6 +430,7 @@
     "wiki_page": "The Mill"
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [

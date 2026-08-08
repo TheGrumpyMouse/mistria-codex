@@ -1,0 +1,34 @@
+{
+  "_comment": [
+    "Which of our locations each of the game's rooms is.",
+    "",
+    "`fiddle/locations.toml` declares 86 rooms — every interior, every cave mouth,",
+    "every cutscene stage. This dataset has 29 locations, which are the places a",
+    "player names. The two vocabularies overlap but do not match, and only a human",
+    "can say that the game's `town` is the place the wiki calls Mistria.",
+    "",
+    "Mapped here are the rooms that carry a `bug_tag`, because a bug's `tag` and a",
+    "room's `bug_tag` are the same vocabulary and that join is the only source in",
+    "the project for where an insect can be caught. Rooms are added as a consumer",
+    "needs them; an unlisted room is not an oversight, it is unmapped.",
+    "",
+    "A null target is a room we deliberately do not place. Read it as 'no location",
+    "of ours is this room', never as 'not yet looked at'."
+  ],
+  "rooms": {
+    "beach": { "location": "the_beach", "source": "wiki:The_Beach" },
+    "deep_woods": { "location": "the_deep_woods", "source": "wiki:The_Deep_Woods" },
+    "dragonsworn_glade": {
+      "location": null,
+      "reason": "A landmark inside the Deep Woods, not a location of ours. Its bug_tag is deep_woods, which the deep_woods room already contributes, so nothing is lost by leaving it unplaced."
+    },
+    "dungeon": { "location": "the_mines", "source": "wiki:The_Mines" },
+    "eastern_road": { "location": "the_eastern_road", "source": "wiki:Eastern_Road" },
+    "farm": { "location": "the_farm", "source": "wiki:Farm" },
+    "haydens_farm": { "location": "sweetwater_farm", "source": "wiki:Sweetwater_Farm" },
+    "narrows": { "location": "the_narrows", "source": "wiki:The_Narrows" },
+    "summit": { "location": "the_summit", "source": "wiki:The_Summit" },
+    "town": { "location": "mistria", "source": "wiki:Mistria" },
+    "western_ruins": { "location": "the_western_ruins", "source": "wiki:Western_Ruins" }
+  }
+}

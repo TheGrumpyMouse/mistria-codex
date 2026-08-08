@@ -38,10 +38,17 @@ jobs:
       # GitHub Pages serves a project site from /<repo>/, and every URL in the
       # app is built from import.meta.env.BASE_URL. Passing the path in rather
       # than hardcoding it means a fork or a rename does not need a code change.
+      #
+      # VITE_SYNC_URL is the deployed sync Worker's origin, set as a repository
+      # *variable* rather than a secret: it is baked into a public bundle, so
+      # calling it a secret would be theatre. Leave it unset and the app builds
+      # fine with sync switched off, which is the correct state for a fork that
+      # has not deployed a Worker.
       - name: Build
         run: pnpm build:web
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_SYNC_URL: ${{ vars.VITE_SYNC_URL }}
 
       # Pages sends fixed response headers and has no rewrite rules, so a
       # request for a path that is not a real file 404s. The app uses hash

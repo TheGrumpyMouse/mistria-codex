@@ -43,6 +43,20 @@ export const Envelope = z.object({
   id_status: IdStatus.default('provisional'),
   former_ids: z.array(IdString).default([]),
 
+  /**
+   * Other names this thing goes by. Searchable, never rendered as the name.
+   *
+   * `former_ids` covers a rename of the *key*; this covers the case where two
+   * sources are both right and disagree. The wiki calls the dragon priestess
+   * "Priestess" because that is what the game calls her until she introduces
+   * herself, and the game files call her Seridia. Someone who has met her will
+   * search for Seridia and must not get nothing back.
+   *
+   * Not a synonym list and not a place for guesses: an entry here means a source
+   * uses that name for this record.
+   */
+  also_known_as: z.array(z.string()).default([]),
+
   /** The game version this record's data reflects. */
   game_version: z.string().nullable().default(null),
   /** The game version that introduced the thing itself, where known. */

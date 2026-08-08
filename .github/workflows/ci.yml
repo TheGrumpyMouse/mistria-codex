@@ -37,8 +37,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
 
-      # The emitted JSON Schema is a build artifact of the Zod schemas. If it is
-      # stale, the Ajv pass below is validating against yesterday's contract.
+      # The emitted JSON Schema is a build artifact of the Zod schemas, written
+      # to build/schema/. If it is stale, the Ajv pass below is validating
+      # against yesterday's contract — so it is regenerated in this same run
+      # rather than read from a checkout.
       - name: Emit JSON Schema
         run: pnpm schema:emit
 
@@ -52,20 +54,28 @@ jobs:
       # data/ is a pure function of its inputs. If regenerating changes anything,
       # either someone hand-edited data/ or the build is non-deterministic.
       # Both are bugs and both are silent without this check.
+      #
+      # data/ is the only generated directory in the diff, and that is the whole
+      # list: everything else the pipeline writes goes to build/, which is
+      # gitignored. Nothing else in this workflow reads or asserts a path that
+      # is not committed.
       - name: Assert data/ is reproducible
         run: |
-          if ! git diff --exit-code -- data/ docs/schema/; then
-            echo "::error::data/ or docs/schema/ is out of date or was hand-edited."
-            echo "Run 'pnpm schema:emit && pnpm build:data' and commit the result."
+          if ! git diff --exit-code -- data/; then
+            echo "::error::data/ is out of date or was hand-edited."
+            echo "Run 'pnpm build:data' and commit the result."
             exit 1
           fi
 
       - name: Validate
         run: pnpm validate
 
+      # Read from build/, written by the validate step above. `if: always()` so a
+      # failing validate still shows what the data looked like when it failed —
+      # which is usually the fastest way to see why.
       - name: Coverage report
         if: always()
-        run: cat docs/coverage.md >> "$GITHUB_STEP_SUMMARY"
+        run: cat build/reports/coverage.md >> "$GITHUB_STEP_SUMMARY" || true
 
   bundle:
     name: Ship bundle

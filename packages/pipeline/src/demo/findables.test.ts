@@ -135,13 +135,29 @@ describe('honesty about gaps', () => {
     expect(walleye?.window.confidence).toBe('inferred')
   })
 
-  it('still reports a bug found "in the overworld" as having no location', async () => {
-    // The one habitat that stays unexpanded: it means "outdoors, nowhere in
-    // particular", and nine pins would dress an absence up as nine facts.
+  it('names the rooms the game spawns a bug in, and calls them verified', async () => {
+    // Before G1 this window said "overworld" and nothing more: the habitat means
+    // "outdoors, nowhere in particular" and is never expanded, because nine pins
+    // would dress an absence up as nine facts. The game states the rooms — a
+    // bug's `tag` against a room's `bug_tag` — so these are facts, and the pins
+    // are solid rather than hollow.
     const results = await at('spring', 'rain')
-    const overworld = results.find((m) => m.window.habitats.includes('overworld'))
-    expect(overworld?.window.locations).toEqual([])
-    expect(overworld?.unknowns).toContain('location')
+    const caterpillar = results.find((m) => m.item.name === 'Caterpillar')
+    expect(caterpillar?.window.habitats).toEqual(['overworld'])
+    expect(caterpillar?.window.locations).toContain('mistria')
+    expect(caterpillar?.window.confidence).toBe('verified')
+    expect(caterpillar?.window.prov).toBe('game_files')
+    expect(caterpillar?.unknowns).not.toContain('location')
+  })
+
+  it('still reports a window with nowhere to put a pin as having no location', async () => {
+    // Forageables are neither a bug nor a fish, so nothing in the game files
+    // places them and the wiki's `location` column is empty. The honesty rule
+    // has to keep holding for everything G1 did not reach.
+    const results = await at('spring', 'rain')
+    const acorn = results.find((m) => m.item.name === 'Acorn')
+    expect(acorn?.window.locations).toEqual([])
+    expect(acorn?.unknowns).toContain('location')
   })
 
   it('resolves a concrete location where the wiki gave one', async () => {

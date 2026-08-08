@@ -267,7 +267,7 @@ describe('mine biomes', () => {
   it('gives every biome its own ore, under the game own id', () => {
     // `ore_copper`, not `copper_ore`. The id is the game's internal name, and
     // the slug had it backwards for 192 of 999 items — see
-    // docs/id-divergence.md.
+    // build/reports/id-divergence.md.
     const upper = mines.find((m) => m.id === 'upper_mines')
     expect(upper?.ore_item_ids).toContain('ore_copper')
     expect(upper?.ore_item_ids).toContain('perfect_ruby')

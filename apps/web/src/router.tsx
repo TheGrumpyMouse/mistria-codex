@@ -7,14 +7,20 @@ import {
 import { AppShell } from '~/app/AppShell'
 import { InstantSearch } from '~/lib/instant'
 import { AboutRoute } from '~/routes/about'
+import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
 import { BrowseRoute } from '~/routes/browse'
+import { CalendarRoute } from '~/routes/calendar'
 import { DesignRoute } from '~/routes/design'
 import { ItemRoute } from '~/routes/item'
 import { MapRoute } from '~/routes/map'
 import { MuseumRoute } from '~/routes/museum'
+import { PlaceRoute } from '~/routes/place'
 import { SearchRoute } from '~/routes/search'
+import { SettingsRoute } from '~/routes/settings'
 import { TodayRoute } from '~/routes/today'
+import { VillagerRoute } from '~/routes/villager'
+import { WhenRoute } from '~/routes/when'
 
 const rootRoute = createRootRoute({ component: AppShell })
 
@@ -45,10 +51,63 @@ const itemRoute = createRoute({
   component: ItemRoute,
 })
 
+/**
+ * Reverse lookup, under the item it is about.
+ *
+ * It takes the same validated instant as Today, because "in 43 days" has to be
+ * counted from somewhere and the somewhere is whatever date the user was
+ * looking at. A link to this page therefore carries that date with it.
+ */
+const whenRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/item/$id/when',
+  component: WhenRoute,
+  validateSearch: InstantSearch,
+})
+
+/**
+ * A page per kind of thing, because they are not the same kind of thing.
+ *
+ * Search has always returned villagers, monsters and places alongside items —
+ * they are all in the display index — and every result linked to `/item/$id`,
+ * which loads items.json and says "not found" for any of them. A result that
+ * dead-ends reads as missing data rather than as a missing screen, so the fix
+ * is a route each rather than a filter on search.
+ */
+const villagerRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/villager/$id',
+  component: VillagerRoute,
+})
+
+const placeRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/place/$id',
+  component: PlaceRoute,
+})
+
+const monsterRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/monster/$id',
+  component: BestiaryRoute,
+})
+
 const searchRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/search',
   component: SearchRoute,
+})
+
+const calendarRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/calendar',
+  component: CalendarRoute,
+})
+
+const settingsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/settings',
+  component: SettingsRoute,
 })
 
 const museumRoute = createRoute({
@@ -89,6 +148,12 @@ const routeTree = rootRoute.addChildren([
   mapRoute,
   boardRoute,
   itemRoute,
+  whenRoute,
+  villagerRoute,
+  placeRoute,
+  monsterRoute,
+  calendarRoute,
+  settingsRoute,
   aboutRoute,
   designRoute,
 ])

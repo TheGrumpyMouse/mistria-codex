@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { type DisplayIndex, loadDisplayIndex } from '~/lib/data'
-import { search } from '~/lib/search'
+import { routeFor, search } from '~/lib/search'
 
 /**
  * Search, over the index the app already has.
@@ -62,15 +62,20 @@ export function SearchRoute() {
         <p className="mt-4 text-ink-mute text-sm">Nothing matches “{query.trim()}”.</p>
       ) : (
         <ul className="mt-3 flex flex-col divide-y divide-rule border-rule border-y">
-          {results.map(({ id, entry }) => (
+          {results.map(({ id, entry, via }) => (
             <li key={id}>
               <Link
-                to="/item/$id"
+                to={routeFor(entry.c)}
                 params={{ id }}
                 className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
               >
                 <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
-                <span className="min-w-0 flex-1 truncate text-ink text-sm">{entry.n}</span>
+                <span className="min-w-0 flex-1 truncate text-ink text-sm">
+                  {entry.n}
+                  {/* Why this row is here at all. Without it a result whose name
+                      does not contain what you typed reads as a broken search. */}
+                  {via !== null && <span className="ml-2 text-ink-faint text-xs">also {via}</span>}
+                </span>
                 <span className="shrink-0 text-ink-faint text-xs">
                   {entry.c.replace(/_/g, ' ')}
                 </span>

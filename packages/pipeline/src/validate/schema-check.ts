@@ -61,7 +61,7 @@ export async function checkAjv(loaded: Loaded): Promise<Finding[]> {
         error(
           'schema:ajv',
           `could not compile emitted schema (${(err as Error).message}). Run \`pnpm schema:emit\`.`,
-          `docs/schema/${name}.json`,
+          `build/schema/${name}.json`,
         ),
       )
       continue

@@ -72,6 +72,7 @@ export function buildMines(
       numeric_id_game_version: null,
       id_status: 'provisional' as const,
       former_ids: [],
+      also_known_as: [],
       game_version: null,
       version_added: null,
       confidence: 'wiki' as const,

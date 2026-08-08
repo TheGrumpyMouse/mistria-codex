@@ -1,5 +1,5 @@
 /**
- * Emit JSON Schema for every dataset into `docs/schema/`.
+ * Emit JSON Schema for every dataset into `build/schema/`.
  *
  * The Zod schemas are the single source of truth; these files are generated from
  * them. Hand-writing JSON Schema alongside Zod would create two contracts that
@@ -18,7 +18,7 @@ import { DATASETS, type DatasetName } from './registry.js'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = join(HERE, '..', '..', '..')
-const OUT_DIR = join(REPO_ROOT, 'docs', 'schema')
+const OUT_DIR = join(REPO_ROOT, 'build', 'schema')
 
 async function main(): Promise<void> {
   await mkdir(OUT_DIR, { recursive: true })
@@ -42,7 +42,7 @@ async function main(): Promise<void> {
     written.push(`${name}.json`)
   }
 
-  console.log(`Emitted ${written.length} schemas to docs/schema/`)
+  console.log(`Emitted ${written.length} schemas to build/schema/`)
 }
 
 main().catch((err: unknown) => {

@@ -1,0 +1,5523 @@
+{
+  "animalCosmetics": [
+    {
+      "animal": "alpaca",
+      "key": "beaded_necklace",
+      "name": "Alpaca Beaded Necklace"
+    },
+    {
+      "animal": "alpaca",
+      "key": "beret",
+      "name": "Alpaca Beret"
+    },
+    {
+      "animal": "alpaca",
+      "key": "ribbon_blue",
+      "name": "Alpaca Blue Ribbon"
+    },
+    {
+      "animal": "alpaca",
+      "key": "bowtie",
+      "name": "Alpaca Bowtie"
+    },
+    {
+      "animal": "alpaca",
+      "key": "flower_crown",
+      "name": "Alpaca Flower Crown"
+    },
+    {
+      "animal": "alpaca",
+      "key": "gold_pendant",
+      "name": "Alpaca Gold Pendant"
+    },
+    {
+      "animal": "alpaca",
+      "key": "horns",
+      "name": "Alpaca Horns"
+    },
+    {
+      "animal": "alpaca",
+      "key": "lacy_collar",
+      "name": "Alpaca Lacy Collar"
+    },
+    {
+      "animal": "alpaca",
+      "key": "ribbon_red",
+      "name": "Alpaca Red Ribbon"
+    },
+    {
+      "animal": "alpaca",
+      "key": "scarf",
+      "name": "Alpaca Scarf"
+    },
+    {
+      "animal": "alpaca",
+      "key": "spiked_collar",
+      "name": "Alpaca Spiked Collar"
+    },
+    {
+      "animal": "alpaca",
+      "key": "sunglasses",
+      "name": "Alpaca Sunglasses"
+    },
+    {
+      "animal": "alpaca",
+      "key": "ribbon_white",
+      "name": "Alpaca White Ribbon"
+    },
+    {
+      "animal": "alpaca",
+      "key": "winter_hat",
+      "name": "Alpaca Winter Hat"
+    },
+    {
+      "animal": "duck",
+      "key": "black_bowtie",
+      "name": "Black Duck Bowtie"
+    },
+    {
+      "animal": "capybara",
+      "key": "angel_wings",
+      "name": "Capybara Angel Wings"
+    },
+    {
+      "animal": "capybara",
+      "key": "baseball_cap",
+      "name": "Capybara Baseball Cap"
+    },
+    {
+      "animal": "capybara",
+      "key": "bat_wings",
+      "name": "Capybara Bat Wings"
+    },
+    {
+      "animal": "capybara",
+      "key": "ribbon_blue",
+      "name": "Capybara Blue Ribbon"
+    },
+    {
+      "animal": "capybara",
+      "key": "bow",
+      "name": "Capybara Bow"
+    },
+    {
+      "animal": "capybara",
+      "key": "bowler_hat",
+      "name": "Capybara Bowler Hat"
+    },
+    {
+      "animal": "capybara",
+      "key": "flower_crown",
+      "name": "Capybara Flower Crown"
+    },
+    {
+      "animal": "capybara",
+      "key": "horns",
+      "name": "Capybara Horns"
+    },
+    {
+      "animal": "capybara",
+      "key": "leaf",
+      "name": "Capybara Leaf Hat"
+    },
+    {
+      "animal": "capybara",
+      "key": "ribbon_red",
+      "name": "Capybara Red Ribbon"
+    },
+    {
+      "animal": "capybara",
+      "key": "umbrella_hat",
+      "name": "Capybara Umbrella Hat"
+    },
+    {
+      "animal": "capybara",
+      "key": "ribbon_white",
+      "name": "Capybara White Ribbon"
+    },
+    {
+      "animal": "capybara",
+      "key": "winter_hat",
+      "name": "Capybara Winter Hat"
+    },
+    {
+      "animal": "capybara",
+      "key": "yuzu",
+      "name": "Capybara Yuzu Hat"
+    },
+    {
+      "animal": "chicken",
+      "key": "apple",
+      "name": "Chicken Apple Hat"
+    },
+    {
+      "animal": "chicken",
+      "key": "baseball_cap",
+      "name": "Chicken Baseball Cap"
+    },
+    {
+      "animal": "chicken",
+      "key": "ribbon_blue",
+      "name": "Chicken Blue Ribbon"
+    },
+    {
+      "animal": "chicken",
+      "key": "business_tie",
+      "name": "Chicken Business Tie"
+    },
+    {
+      "animal": "chicken",
+      "key": "ear_muffs",
+      "name": "Chicken Ear Muffs"
+    },
+    {
+      "animal": "chicken",
+      "key": "egg_hat",
+      "name": "Chicken Egg Hat"
+    },
+    {
+      "animal": "chicken",
+      "key": "flower_crown",
+      "name": "Chicken Flower Crown"
+    },
+    {
+      "animal": "chicken",
+      "key": "pearl_necklace",
+      "name": "Chicken Pearl Necklace"
+    },
+    {
+      "animal": "chicken",
+      "key": "red_eyes",
+      "name": "Chicken Red Eyes"
+    },
+    {
+      "animal": "chicken",
+      "key": "ribbon_red",
+      "name": "Chicken Red Ribbon"
+    },
+    {
+      "animal": "chicken",
+      "key": "sunglasses",
+      "name": "Chicken Sunglasses"
+    },
+    {
+      "animal": "chicken",
+      "key": "top_hat",
+      "name": "Chicken Top Hat"
+    },
+    {
+      "animal": "chicken",
+      "key": "ribbon_white",
+      "name": "Chicken White Ribbon"
+    },
+    {
+      "animal": "chicken",
+      "key": "winter_hat",
+      "name": "Chicken Winter Hat"
+    },
+    {
+      "animal": "cow",
+      "key": "antlers",
+      "name": "Cow Antlers"
+    },
+    {
+      "animal": "cow",
+      "key": "bell_collar",
+      "name": "Cow Bell Collar"
+    },
+    {
+      "animal": "cow",
+      "key": "beret",
+      "name": "Cow Beret"
+    },
+    {
+      "animal": "cow",
+      "key": "ribbon_blue",
+      "name": "Cow Blue Ribbon"
+    },
+    {
+      "animal": "cow",
+      "key": "cheese_hat",
+      "name": "Cow Cheese Hat"
+    },
+    {
+      "animal": "cow",
+      "key": "cowboy_hat",
+      "name": "Cow Cowboy Hat"
+    },
+    {
+      "animal": "cow",
+      "key": "crown",
+      "name": "Cow Crown"
+    },
+    {
+      "animal": "cow",
+      "key": "flower_crown",
+      "name": "Cow Flower Crown"
+    },
+    {
+      "animal": "cow",
+      "key": "halo",
+      "name": "Cow Halo"
+    },
+    {
+      "animal": "cow",
+      "key": "horns",
+      "name": "Cow Horns"
+    },
+    {
+      "animal": "cow",
+      "key": "laurels",
+      "name": "Cow Laurels"
+    },
+    {
+      "animal": "cow",
+      "key": "ribbon_red",
+      "name": "Cow Red Ribbon"
+    },
+    {
+      "animal": "cow",
+      "key": "sun_hat",
+      "name": "Cow Sun Hat"
+    },
+    {
+      "animal": "cow",
+      "key": "ribbon_white",
+      "name": "Cow White Ribbon"
+    },
+    {
+      "animal": "duck",
+      "key": "backwards_cap",
+      "name": "Duck Backwards Cap"
+    },
+    {
+      "animal": "duck",
+      "key": "ribbon_blue",
+      "name": "Duck Blue Ribbon"
+    },
+    {
+      "animal": "duck",
+      "key": "bonnet",
+      "name": "Duck Bonnet"
+    },
+    {
+      "animal": "duck",
+      "key": "flower_crown",
+      "name": "Duck Flower Crown"
+    },
+    {
+      "animal": "duck",
+      "key": "red_eyes",
+      "name": "Duck Red Eyes"
+    },
+    {
+      "animal": "duck",
+      "key": "ribbon_red",
+      "name": "Duck Red Ribbon"
+    },
+    {
+      "animal": "duck",
+      "key": "ruffled_collar",
+      "name": "Duck Ruffled Collar"
+    },
+    {
+      "animal": "duck",
+      "key": "strawberry_hat",
+      "name": "Duck Strawberry Hat"
+    },
+    {
+      "animal": "duck",
+      "key": "sun_hat",
+      "name": "Duck Sun Hat"
+    },
+    {
+      "animal": "duck",
+      "key": "sunglasses",
+      "name": "Duck Sunglasses"
+    },
+    {
+      "animal": "duck",
+      "key": "ribbon_white",
+      "name": "Duck White Ribbon"
+    },
+    {
+      "animal": "duck",
+      "key": "winter_hat",
+      "name": "Duck Winter Hat"
+    },
+    {
+      "animal": "horse",
+      "key": "antlers",
+      "name": "Horse Antlers"
+    },
+    {
+      "animal": "horse",
+      "key": "bandana",
+      "name": "Horse Bandana"
+    },
+    {
+      "animal": "horse",
+      "key": "ribbon_blue",
+      "name": "Horse Blue Ribbon"
+    },
+    {
+      "animal": "horse",
+      "key": "cowboy_hat",
+      "name": "Horse Cowboy Hat"
+    },
+    {
+      "animal": "horse",
+      "key": "crown",
+      "name": "Horse Crown"
+    },
+    {
+      "animal": "horse",
+      "key": "dark_unicorn_horn",
+      "name": "Horse Dark Unicorn Horn"
+    },
+    {
+      "animal": "horse",
+      "key": "derby_hat",
+      "name": "Horse Derby Hat"
+    },
+    {
+      "animal": "horse",
+      "key": "flower_crown",
+      "name": "Horse Flower Crown"
+    },
+    {
+      "animal": "horse",
+      "key": "monocle",
+      "name": "Horse Monocle"
+    },
+    {
+      "animal": "horse",
+      "key": "ribbon_red",
+      "name": "Horse Red Ribbon"
+    },
+    {
+      "animal": "horse",
+      "key": "seashell_clips",
+      "name": "Horse Seashell Clips"
+    },
+    {
+      "animal": "horse",
+      "key": "unicorn_horn",
+      "name": "Horse Unicorn Horn"
+    },
+    {
+      "animal": "horse",
+      "key": "ribbon_white",
+      "name": "Horse White Ribbon"
+    },
+    {
+      "animal": "cow",
+      "key": "pink_bow",
+      "name": "Pink Cow Bow"
+    },
+    {
+      "animal": "cow",
+      "key": "pink_sunglasses",
+      "name": "Pink Cow Sunglasses"
+    },
+    {
+      "animal": "duck",
+      "key": "pink_bow",
+      "name": "Pink Duck Bow"
+    },
+    {
+      "animal": "horse",
+      "key": "pink_bow",
+      "name": "Pink Horse Bow"
+    },
+    {
+      "animal": "rabbit",
+      "key": "pink_bow",
+      "name": "Pink Rabbit Bow"
+    },
+    {
+      "animal": "sheep",
+      "key": "pink_bow",
+      "name": "Pink Sheep Bow"
+    },
+    {
+      "animal": "rabbit",
+      "key": "ribbon_blue",
+      "name": "Rabbit Blue Ribbon"
+    },
+    {
+      "animal": "rabbit",
+      "key": "chef_hat",
+      "name": "Rabbit Chef Hat"
+    },
+    {
+      "animal": "rabbit",
+      "key": "cowboy_hat",
+      "name": "Rabbit Cowboy Hat"
+    },
+    {
+      "animal": "rabbit",
+      "key": "daisy_clips",
+      "name": "Rabbit Daisy Clips"
+    },
+    {
+      "animal": "rabbit",
+      "key": "flower_crown",
+      "name": "Rabbit Flower Crown"
+    },
+    {
+      "animal": "rabbit",
+      "key": "halo",
+      "name": "Rabbit Halo"
+    },
+    {
+      "animal": "rabbit",
+      "key": "heart_clips",
+      "name": "Rabbit Heart Clips"
+    },
+    {
+      "animal": "rabbit",
+      "key": "horn",
+      "name": "Rabbit Horn"
+    },
+    {
+      "animal": "rabbit",
+      "key": "ribbon_red",
+      "name": "Rabbit Red Ribbon"
+    },
+    {
+      "animal": "rabbit",
+      "key": "sunglasses",
+      "name": "Rabbit Sunglasses"
+    },
+    {
+      "animal": "rabbit",
+      "key": "top_hat",
+      "name": "Rabbit Top Hat"
+    },
+    {
+      "animal": "rabbit",
+      "key": "ribbon_white",
+      "name": "Rabbit White Ribbon"
+    },
+    {
+      "animal": "rabbit",
+      "key": "winter_hat",
+      "name": "Rabbit Winter Hat"
+    },
+    {
+      "animal": "sheep",
+      "key": "ribbon_blue",
+      "name": "Sheep Blue Ribbon"
+    },
+    {
+      "animal": "sheep",
+      "key": "flower_crown",
+      "name": "Sheep Flower Crown"
+    },
+    {
+      "animal": "sheep",
+      "key": "green_visor",
+      "name": "Sheep Green Visor"
+    },
+    {
+      "animal": "sheep",
+      "key": "horns",
+      "name": "Sheep Horns"
+    },
+    {
+      "animal": "sheep",
+      "key": "hot_water_bottle",
+      "name": "Sheep Hot Water Bottle"
+    },
+    {
+      "animal": "sheep",
+      "key": "mushroom_hat",
+      "name": "Sheep Mushroom Hat"
+    },
+    {
+      "animal": "sheep",
+      "key": "palm_tree",
+      "name": "Sheep Palm Tree Hat"
+    },
+    {
+      "animal": "sheep",
+      "key": "party_hat",
+      "name": "Sheep Party Hat"
+    },
+    {
+      "animal": "sheep",
+      "key": "ribbon_red",
+      "name": "Sheep Red Ribbon"
+    },
+    {
+      "animal": "sheep",
+      "key": "tartan_beret",
+      "name": "Sheep Tartan Beret"
+    },
+    {
+      "animal": "sheep",
+      "key": "unicorn_horn",
+      "name": "Sheep Unicorn Horn"
+    },
+    {
+      "animal": "sheep",
+      "key": "ribbon_white",
+      "name": "Sheep White Ribbon"
+    },
+    {
+      "animal": "sheep",
+      "key": "winter_hat",
+      "name": "Sheep Winter Hat"
+    },
+    {
+      "animal": "chicken",
+      "key": "yellow_bow",
+      "name": "Yellow Chicken Bow"
+    }
+  ],
+  "gameVersion": "1.0.0",
+  "locations": [
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "abandoned_mines",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "abandoned_pit",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "adelines_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "adelines_office",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "aldaria",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "balors_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bathhouse",
+      "ignore_seasons": false,
+      "name": "Bathhouse",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bathhouse_bath",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bathhouse_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bathhouse_change_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "beach"
+      ],
+      "bugs": 3,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 3,
+      "id": "beach",
+      "ignore_seasons": false,
+      "name": "The Beach",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 1
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "beach_secret",
+      "ignore_seasons": false,
+      "name": "Beach Cave",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bell_tower_f1",
+      "ignore_seasons": false,
+      "name": "Bell Tower",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "bell_tower_f2",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "blacksmith_room_left",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "blacksmith_room_right",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "blacksmith_store",
+      "ignore_seasons": false,
+      "name": "Blacksmith's Shop",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "caldarus_house",
+      "ignore_seasons": false,
+      "name": "Caldarus' House",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "celines_room",
+      "ignore_seasons": false,
+      "name": "Celine's Cottage",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "clinic_b1",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "clinic_f1",
+      "ignore_seasons": false,
+      "name": "Clinic",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "clinic_f2",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "deep_woods"
+      ],
+      "bugs": 3,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 2,
+      "id": "deep_woods",
+      "ignore_seasons": false,
+      "name": "The Deep Woods",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "dells_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "deep_woods"
+      ],
+      "bugs": 1,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 0,
+      "id": "dragonsworn_glade",
+      "ignore_seasons": false,
+      "name": "The Dragonsworn Glade",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "mines"
+      ],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "dungeon",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "earth_seal",
+      "ignore_seasons": false,
+      "name": "The Earth Seal",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard",
+        "water_bug"
+      ],
+      "bugs": 4,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 2,
+      "id": "eastern_road",
+      "ignore_seasons": false,
+      "name": "The Eastern Road",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "eilands_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "eilands_office",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "elsies_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "errols_bedroom",
+      "ignore_seasons": false,
+      "name": "Errol's Cabin",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard",
+        "water_bug"
+      ],
+      "bugs": 3,
+      "dig_sites": 0,
+      "farm": true,
+      "forageables": 0,
+      "id": "farm",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "fire_seal",
+      "ignore_seasons": false,
+      "name": "The Fire Seal",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "general_store_home",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "general_store_store",
+      "ignore_seasons": false,
+      "name": "General Store",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "haydens_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard"
+      ],
+      "bugs": 2,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 1,
+      "id": "haydens_farm",
+      "ignore_seasons": false,
+      "name": "Sweetwater Farm",
+      "npc_farm": true,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "haydens_house",
+      "ignore_seasons": false,
+      "name": "Hayden's Shop",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "holt_and_noras_bedroom",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "inn",
+      "ignore_seasons": false,
+      "name": "The Inn",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "inn_east_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "jo_and_hemlocks_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "landens_house_f1",
+      "ignore_seasons": false,
+      "name": "Carpenter's Shop",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "landens_house_f2",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "large_barn",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "large_coop",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": true,
+      "forageables": 2,
+      "id": "large_greenhouse",
+      "ignore_seasons": true,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "lucs_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "manor_house_dining_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "manor_house_entry",
+      "ignore_seasons": false,
+      "name": "Manor House",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "maples_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "medium_barn",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "medium_coop",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "mill",
+      "ignore_seasons": false,
+      "name": "The Mill",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "mines_entry",
+      "ignore_seasons": false,
+      "name": "Mines Entrance",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "mini_museum",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "museum_entry",
+      "ignore_seasons": false,
+      "name": "Museum",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "museum_wing_archaeology",
+      "ignore_seasons": false,
+      "name": "Archaeology Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "museum_wing_fish",
+      "ignore_seasons": false,
+      "name": "Fish Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "museum_wing_flora",
+      "ignore_seasons": false,
+      "name": "Flora Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "museum_wing_insect",
+      "ignore_seasons": false,
+      "name": "Insect Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard",
+        "water_bug"
+      ],
+      "bugs": 2,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 2,
+      "id": "narrows",
+      "ignore_seasons": false,
+      "name": "The Narrows",
+      "npc_farm": true,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "narrows_secret",
+      "ignore_seasons": false,
+      "name": "Narrows Cave",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home",
+      "ignore_seasons": false,
+      "name": "Home",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_east",
+      "ignore_seasons": false,
+      "name": "Eastern Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_north",
+      "ignore_seasons": false,
+      "name": "Northern Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_upper_central",
+      "ignore_seasons": false,
+      "name": "Home, Upper Floor",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_upper_east",
+      "ignore_seasons": false,
+      "name": "Eastern Wing, Upper Floor",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_upper_west",
+      "ignore_seasons": false,
+      "name": "Western Wing, Upper Floor",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "player_home_west",
+      "ignore_seasons": false,
+      "name": "Western Wing",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": true,
+      "forageables": 2,
+      "id": "priestess_quarters",
+      "ignore_seasons": false,
+      "name": "The Priestess' Quarters",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "reinas_room",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "ruins_seal",
+      "ignore_seasons": false,
+      "name": "The Ruins Seal",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "seridias_chamber",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "seridias_house",
+      "ignore_seasons": false,
+      "name": "Seridia's House",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "seridias_house_back",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "small_barn",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "small_coop",
+      "ignore_seasons": false,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": true,
+      "forageables": 2,
+      "id": "small_greenhouse",
+      "ignore_seasons": true,
+      "name": null,
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard"
+      ],
+      "bugs": 2,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 2,
+      "id": "summit",
+      "ignore_seasons": false,
+      "name": "The Summit",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "terithias_house",
+      "ignore_seasons": false,
+      "name": "Tackle Shop",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard",
+        "water_bug"
+      ],
+      "bugs": 5,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 1,
+      "id": "town",
+      "ignore_seasons": false,
+      "name": "Mistria",
+      "npc_farm": true,
+      "outdoor": true,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "void_seal",
+      "ignore_seasons": false,
+      "name": "The Void Seal",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [],
+      "bugs": 2,
+      "dig_sites": 0,
+      "farm": false,
+      "forageables": 2,
+      "id": "water_seal",
+      "ignore_seasons": false,
+      "name": "The Water Seal",
+      "npc_farm": false,
+      "outdoor": false,
+      "special_dig_sites": 0
+    },
+    {
+      "bug_tags": [
+        "standard"
+      ],
+      "bugs": 2,
+      "dig_sites": 1,
+      "farm": false,
+      "forageables": 1,
+      "id": "western_ruins",
+      "ignore_seasons": false,
+      "name": "The Western Ruins",
+      "npc_farm": false,
+      "outdoor": true,
+      "special_dig_sites": 2
+    }
+  ],
+  "museum": [
+    {
+      "id": "archaeology",
+      "name": "Archaeology",
+      "rewards": [
+        {
+          "cosmetics": [
+            "head_explorer_hat"
+          ],
+          "crafting_scrolls": [],
+          "index": 0,
+          "items": [
+            "treasure_box_wood"
+          ]
+        },
+        {
+          "cosmetics": [
+            "top_explorer"
+          ],
+          "crafting_scrolls": [],
+          "index": 1,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "pants_explorer"
+          ],
+          "crafting_scrolls": [],
+          "index": 2,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "shoes_boots_explorer"
+          ],
+          "crafting_scrolls": [],
+          "index": 3,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_bed_beige",
+            "explorer_double_bed_beige"
+          ],
+          "index": 4,
+          "items": [
+            "treasure_box_silver",
+            "explorer_bed_beige",
+            "explorer_double_bed_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_trunk_table_beige"
+          ],
+          "index": 5,
+          "items": [
+            "treasure_box_silver",
+            "explorer_trunk_table_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_rug_beige"
+          ],
+          "index": 6,
+          "items": [
+            "treasure_box_silver",
+            "explorer_rug_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_chair_beige"
+          ],
+          "index": 7,
+          "items": [
+            "treasure_box_silver",
+            "explorer_chair_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_lamp_beige"
+          ],
+          "index": 8,
+          "items": [
+            "treasure_box_silver",
+            "explorer_lamp_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_wallpaper_beige"
+          ],
+          "index": 9,
+          "items": [
+            "treasure_box_silver",
+            "explorer_wallpaper_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_flooring_beige"
+          ],
+          "index": 10,
+          "items": [
+            "treasure_box_silver",
+            "explorer_flooring_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "explorer_globe_beige"
+          ],
+          "index": 11,
+          "items": [
+            "treasure_box_gold",
+            "explorer_globe_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "alda_pot_replica_blue"
+          ],
+          "index": 12,
+          "items": [
+            "treasure_box_gold",
+            "alda_pot_replica_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "dragon_altar_water"
+          ],
+          "index": 13,
+          "items": [
+            "treasure_box_gold",
+            "dragon_altar_water"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "color_paving_stone_v20"
+          ],
+          "index": 14,
+          "items": [
+            "treasure_box_gold",
+            "color_paving_stone_v20"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "gryphon_statue_replica_v1"
+          ],
+          "index": 15,
+          "items": [
+            "treasure_box_gold",
+            "gryphon_statue_replica_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "crystal_string_lights_purple"
+          ],
+          "index": 16,
+          "items": [
+            "treasure_box_gold",
+            "crystal_string_lights_purple"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "obelisk_beige"
+          ],
+          "index": 17,
+          "items": [
+            "treasure_box_gold",
+            "obelisk_beige"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "forge_mistril"
+          ],
+          "index": 18,
+          "items": [
+            "treasure_box_gold",
+            "forge_mistril"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "broken_pillar_v1_white"
+          ],
+          "index": 19,
+          "items": [
+            "treasure_box_gold",
+            "broken_pillar_v1_white"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "dragon_statue_replica_v1"
+          ],
+          "index": 20,
+          "items": [
+            "treasure_box_gold",
+            "dragon_statue_replica_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "gemstone_bridge_v1"
+          ],
+          "index": 21,
+          "items": [
+            "treasure_box_gold",
+            "gemstone_bridge_v1"
+          ]
+        }
+      ],
+      "sets": [
+        {
+          "id": "alda",
+          "items": [
+            "alda_bronze_sword",
+            "alda_clay_pot",
+            "alda_feather_pendant",
+            "alda_gem_bracelet",
+            "alda_mural_tablet"
+          ],
+          "name": "Alda Artifact Set"
+        },
+        {
+          "id": "aldarian",
+          "items": [
+            "aldarian_sword",
+            "family_crest_pendant",
+            "aldarian_war_banner",
+            "aldarian_gauntlet",
+            "lost_crown_of_aldaria"
+          ],
+          "name": "Aldarian Artifact Set"
+        },
+        {
+          "id": "ancient",
+          "items": [
+            "ancient_stone_lantern",
+            "ancient_gold_coin",
+            "ancient_crystal_goblet",
+            "ancient_horn_circlet",
+            "ancient_royal_scepter"
+          ],
+          "name": "Ancient Artifact Set"
+        },
+        {
+          "id": "aquatic",
+          "items": [
+            "rubber_fish",
+            "giant_fish_scale",
+            "coin_lump",
+            "water_sphere",
+            "rusted_treasure_chest"
+          ],
+          "name": "Aquatic Artifact Set"
+        },
+        {
+          "id": "caldosian",
+          "items": [
+            "caldosian_sword",
+            "caldosian_emperor_bust",
+            "caldosian_breastplate",
+            "caldosian_drinking_horn",
+            "statuette_of_caldarus"
+          ],
+          "name": "Caldosian Artifact Set"
+        },
+        {
+          "id": "common_finds",
+          "items": [
+            "sod",
+            "peat",
+            "shards",
+            "clay",
+            "shard_mass"
+          ],
+          "name": "Dig Site Material Set"
+        },
+        {
+          "id": "deep_earth",
+          "items": [
+            "really_round_rock",
+            "seriously_square_stone",
+            "earth_infused_stone",
+            "faceted_rock_gem",
+            "rock_statue"
+          ],
+          "name": "Deep Earth Artifact Set"
+        },
+        {
+          "id": "deep_woods",
+          "items": [
+            "petrified_wood",
+            "gathering_basket",
+            "crystal_apple",
+            "metal_leaf",
+            "fossilized_mandrake_root"
+          ],
+          "name": "Deep Woods Artifact Set"
+        },
+        {
+          "id": "dragon",
+          "items": [
+            "dragon_scale",
+            "dragon_claw",
+            "hardened_essence",
+            "dragon_forged_bracelet",
+            "dragon_pact_tablet"
+          ],
+          "name": "Dragon Artifact Set"
+        },
+        {
+          "id": "fish_trap",
+          "items": [
+            "clay_amphora",
+            "sea_glass",
+            "porcelain_figurine",
+            "worn_pendant",
+            "message_in_a_bottle"
+          ],
+          "name": "Fish Trap Artifact Set"
+        },
+        {
+          "id": "gems_of_mistria",
+          "items": [
+            "perfect_ruby",
+            "perfect_sapphire",
+            "perfect_emerald",
+            "perfect_diamond",
+            "perfect_pink_diamond"
+          ],
+          "name": "Gems of Mistria Set"
+        },
+        {
+          "id": "lava_caves",
+          "items": [
+            "fire_crystal",
+            "warm_rock",
+            "red_obsidian",
+            "rainbow_geode",
+            "tiny_volcano"
+          ],
+          "name": "Lava Caves Artifact Set"
+        },
+        {
+          "id": "metals_of_mistria",
+          "items": [
+            "perfect_copper_ore",
+            "perfect_iron_ore",
+            "perfect_silver_ore",
+            "perfect_gold_ore",
+            "perfect_mistril_ore"
+          ],
+          "name": "Metals of Mistria Set"
+        },
+        {
+          "id": "mine",
+          "items": [
+            "stone_horse",
+            "flint_arrowhead",
+            "obsidian_blade",
+            "diamond_backed_mirror",
+            "shortcut_scroll"
+          ],
+          "name": "Buried Artifact Set"
+        },
+        {
+          "id": "mist",
+          "items": [
+            "misty_black_mirror",
+            "misty_feather_quill",
+            "mist_crystal",
+            "mist_scroll",
+            "mist_flute"
+          ],
+          "name": "Mist Artifact Set"
+        },
+        {
+          "id": "oopart",
+          "items": [
+            "muttering_cube",
+            "weightless_stone",
+            "completely_wrong_map",
+            "black_tablet",
+            "unknown_dragon_statuette"
+          ],
+          "name": "Oopart Artifact Set"
+        },
+        {
+          "id": "prehistoric",
+          "items": [
+            "amber_trapped_insect",
+            "trilobite_fossil",
+            "tiny_dinosaur_skeleton",
+            "fossilized_egg",
+            "meteorite"
+          ],
+          "name": "Prehistoric Artifact Set"
+        },
+        {
+          "id": "ritual",
+          "items": [
+            "ritual_incense_burner",
+            "ritual_beads",
+            "ritual_chalice",
+            "ritual_scepter",
+            "ritual_tablet"
+          ],
+          "name": "Ritual Artifact Set"
+        },
+        {
+          "id": "sunken",
+          "items": [
+            "rusted_shield",
+            "rock_with_a_hole",
+            "rainbow_seaweed",
+            "criminal_confession",
+            "mermaids_comb"
+          ],
+          "name": "Sunken Artifact Set"
+        },
+        {
+          "id": "tide_caverns",
+          "items": [
+            "stone_shell",
+            "tidestone",
+            "starlight_coral",
+            "dense_water",
+            "crab_statue"
+          ],
+          "name": "Tide Cavern Artifact Set"
+        },
+        {
+          "id": "upper_mines_artifacts",
+          "items": [
+            "miners_pickaxe",
+            "tin_lunchbox",
+            "miners_slab",
+            "miners_rucksack",
+            "miners_helmet"
+          ],
+          "name": "Upper Mines Artifact Set"
+        },
+        {
+          "id": "vintage_farm_tools",
+          "items": [
+            "vintage_watering_can",
+            "vintage_hammer",
+            "vintage_sickle",
+            "vintage_brush",
+            "vintage_cow_bell"
+          ],
+          "name": "Vintage Farm Tools Set"
+        }
+      ]
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "rewards": [
+        {
+          "cosmetics": [
+            "head_fishing_hat"
+          ],
+          "crafting_scrolls": [],
+          "index": 0,
+          "items": [
+            "treasure_box_wood"
+          ]
+        },
+        {
+          "cosmetics": [
+            "top_fishing_vest"
+          ],
+          "crafting_scrolls": [],
+          "index": 1,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "shorts_fishing"
+          ],
+          "crafting_scrolls": [],
+          "index": 2,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "shoes_boots_fishing"
+          ],
+          "crafting_scrolls": [],
+          "index": 3,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_bed_blue",
+            "fishing_double_bed_blue"
+          ],
+          "index": 4,
+          "items": [
+            "treasure_box_silver",
+            "fishing_bed_blue",
+            "fishing_double_bed_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_table_blue"
+          ],
+          "index": 5,
+          "items": [
+            "treasure_box_silver",
+            "fishing_table_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_rug_blue"
+          ],
+          "index": 6,
+          "items": [
+            "treasure_box_silver",
+            "fishing_rug_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_chair_blue"
+          ],
+          "index": 7,
+          "items": [
+            "treasure_box_silver",
+            "fishing_chair_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_lamp_blue"
+          ],
+          "index": 8,
+          "items": [
+            "treasure_box_silver",
+            "fishing_lamp_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_wallpaper_blue"
+          ],
+          "index": 9,
+          "items": [
+            "treasure_box_silver",
+            "fishing_wallpaper_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_flooring_blue"
+          ],
+          "index": 10,
+          "items": [
+            "treasure_box_silver",
+            "fishing_flooring_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_oar_wall_decor_blue"
+          ],
+          "index": 11,
+          "items": [
+            "treasure_box_gold",
+            "fishing_oar_wall_decor_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_window_silver"
+          ],
+          "index": 12,
+          "items": [
+            "treasure_box_gold",
+            "fishing_window_silver"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_plaque_blue"
+          ],
+          "index": 13,
+          "items": [
+            "treasure_box_gold",
+            "fishing_plaque_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_trophy_shelf_blue"
+          ],
+          "index": 14,
+          "items": [
+            "treasure_box_gold",
+            "fishing_trophy_shelf_blue"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fishing_tank_silver"
+          ],
+          "index": 15,
+          "items": [
+            "treasure_box_gold",
+            "fishing_tank_silver"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fish_plush_toy"
+          ],
+          "index": 16,
+          "items": [
+            "treasure_box_gold",
+            "fish_plush_toy"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "octopus_plushie"
+          ],
+          "index": 17,
+          "items": [
+            "treasure_box_gold",
+            "octopus_plushie"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "mermaid_bed_v3"
+          ],
+          "index": 18,
+          "items": [
+            "treasure_box_gold",
+            "mermaid_bed_v3"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "animated_waterfall_v1"
+          ],
+          "index": 19,
+          "items": [
+            "treasure_box_gold",
+            "animated_waterfall_v1"
+          ]
+        },
+        {
+          "cosmetics": [
+            "head_clips_fin"
+          ],
+          "crafting_scrolls": [],
+          "index": 20,
+          "items": [
+            "treasure_box_gold"
+          ]
+        },
+        {
+          "cosmetics": [
+            "back_gear_fish_scale_cape"
+          ],
+          "crafting_scrolls": [],
+          "index": 21,
+          "items": [
+            "treasure_box_gold"
+          ]
+        }
+      ],
+      "sets": [
+        {
+          "id": "deep_earth",
+          "items": [
+            "pebble_minnow",
+            "shardfin",
+            "earth_eel",
+            "rockbiter",
+            "emerald_horned_charger"
+          ],
+          "name": "Deep Earth Fish Set"
+        },
+        {
+          "id": "deep_woods",
+          "items": [
+            "sunny",
+            "forest_perch",
+            "silver_redhorse",
+            "lake_trout",
+            "muskie"
+          ],
+          "name": "Deep Woods Fish Set"
+        },
+        {
+          "id": "fall_ocean",
+          "items": [
+            "saury",
+            "butterfish",
+            "mullet",
+            "halibut",
+            "shark"
+          ],
+          "name": "Fall Ocean Fish Set"
+        },
+        {
+          "id": "fall_pond",
+          "items": [
+            "killifish",
+            "striped_bass",
+            "rainbow_trout",
+            "bluefish",
+            "white_perch"
+          ],
+          "name": "Fall Pond Fish Set"
+        },
+        {
+          "id": "fall_river",
+          "items": [
+            "grayling",
+            "lamprey",
+            "shad",
+            "perch",
+            "razorback"
+          ],
+          "name": "Fall River Fish Set"
+        },
+        {
+          "id": "fish_bait",
+          "items": [
+            "massive_minnow",
+            "copper_rockfish",
+            "iron_fish",
+            "silver_squid",
+            "golden_eel"
+          ],
+          "name": "Fish Bait Set"
+        },
+        {
+          "id": "fish_trap",
+          "items": [
+            "blue_crab",
+            "sea_urchin",
+            "bait_thief",
+            "hake",
+            "amberjack"
+          ],
+          "name": "Fish Trap Set"
+        },
+        {
+          "id": "lava_caves",
+          "items": [
+            "lava_piranha",
+            "candelabra_seadragon",
+            "armored_bass",
+            "sulfur_crab",
+            "firesail_fish"
+          ],
+          "name": "Lava Caves Fish Set"
+        },
+        {
+          "id": "legendary",
+          "items": [
+            "cherry_fish",
+            "lightning_fish",
+            "leaf_fish",
+            "snow_fish"
+          ],
+          "name": "Legendary Fish Set"
+        },
+        {
+          "id": "multi_season_fish",
+          "items": [
+            "pollock",
+            "koi",
+            "pike",
+            "smallmouth_bass",
+            "trout"
+          ],
+          "name": "Multi-Season Fish Set"
+        },
+        {
+          "id": "ruins",
+          "items": [
+            "winged_shrimp",
+            "gazer",
+            "luminescent_crab",
+            "giant_jellyfish",
+            "coelacanth"
+          ],
+          "name": "Ruins Fish Set"
+        },
+        {
+          "id": "spring_ocean",
+          "items": [
+            "anchovy",
+            "shrimp",
+            "lobster",
+            "mackerel",
+            "ocean_sunfish"
+          ],
+          "name": "Spring Ocean Fish Set"
+        },
+        {
+          "id": "spring_pond",
+          "items": [
+            "barb",
+            "angel_fish",
+            "crucian_carp",
+            "brown_trout",
+            "goldfish"
+          ],
+          "name": "Spring Pond Fish Set"
+        },
+        {
+          "id": "spring_river",
+          "items": [
+            "bluegill",
+            "chub",
+            "carp",
+            "walleye",
+            "paddlefish"
+          ],
+          "name": "Spring River Fish Set"
+        },
+        {
+          "id": "summer_ocean",
+          "items": [
+            "dart",
+            "crab",
+            "stingray",
+            "char",
+            "grouper"
+          ],
+          "name": "Summer Ocean Fish Set"
+        },
+        {
+          "id": "summer_pond",
+          "items": [
+            "lake_chub",
+            "golden_shiner",
+            "brown_bullhead",
+            "sauger",
+            "giant_koi"
+          ],
+          "name": "Summer Pond Fish Set"
+        },
+        {
+          "id": "summer_river",
+          "items": [
+            "minnow",
+            "loach",
+            "sweetfish",
+            "bream",
+            "tarpon"
+          ],
+          "name": "Summer River Fish Set"
+        },
+        {
+          "id": "tide_caverns",
+          "items": [
+            "sapphire_betta",
+            "archerfish",
+            "transparent_jellyfish",
+            "water_balloon_fish",
+            "mini_whale_shark"
+          ],
+          "name": "Tide Caverns Fish Set"
+        },
+        {
+          "id": "upper_mines",
+          "items": [
+            "cave_shrimp",
+            "rock_guppy",
+            "stone_loach",
+            "cave_eel",
+            "cave_shark"
+          ],
+          "name": "Upper Mines Fish Set"
+        },
+        {
+          "id": "winter_ocean",
+          "items": [
+            "sand_lance",
+            "horse_mackerel",
+            "sea_bass",
+            "king_crab",
+            "oarfish"
+          ],
+          "name": "Winter Ocean Fish Set"
+        },
+        {
+          "id": "winter_pond",
+          "items": [
+            "tilapia",
+            "flathead_catfish",
+            "burbot",
+            "giant_tilapia",
+            "alligator_gar"
+          ],
+          "name": "Winter Pond Fish Set"
+        },
+        {
+          "id": "winter_river",
+          "items": [
+            "dace",
+            "herring",
+            "freshwater_eel",
+            "bowfish",
+            "shadow_bass"
+          ],
+          "name": "Winter River Fish Set"
+        }
+      ]
+    },
+    {
+      "id": "flora",
+      "name": "Flora",
+      "rewards": [
+        {
+          "cosmetics": [
+            "head_farmer_cap"
+          ],
+          "crafting_scrolls": [],
+          "index": 0,
+          "items": [
+            "treasure_box_wood"
+          ]
+        },
+        {
+          "cosmetics": [
+            "overalls_farmer"
+          ],
+          "crafting_scrolls": [],
+          "index": 1,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "shoes_boots_farmer"
+          ],
+          "crafting_scrolls": [],
+          "index": 2,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_bed_orange",
+            "spring_double_bed_orange"
+          ],
+          "index": 3,
+          "items": [
+            "treasure_box_silver",
+            "spring_bed_orange",
+            "spring_double_bed_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_lamp_orange"
+          ],
+          "index": 4,
+          "items": [
+            "treasure_box_silver",
+            "spring_lamp_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_rug_orange"
+          ],
+          "index": 5,
+          "items": [
+            "treasure_box_silver",
+            "spring_rug_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_sofa_orange"
+          ],
+          "index": 6,
+          "items": [
+            "treasure_box_silver",
+            "spring_sofa_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_potted_tree_orange"
+          ],
+          "index": 7,
+          "items": [
+            "treasure_box_silver",
+            "spring_potted_tree_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_flooring_orange"
+          ],
+          "index": 8,
+          "items": [
+            "treasure_box_silver",
+            "spring_flooring_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "spring_wallpaper_orange"
+          ],
+          "index": 9,
+          "items": [
+            "treasure_box_silver",
+            "spring_wallpaper_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "summer_bed_red",
+            "summer_double_bed_red"
+          ],
+          "index": 10,
+          "items": [
+            "treasure_box_gold",
+            "summer_bed_red",
+            "summer_double_bed_red"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "summer_table_red"
+          ],
+          "index": 11,
+          "items": [
+            "treasure_box_gold",
+            "summer_table_red"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "summer_rug_red"
+          ],
+          "index": 12,
+          "items": [
+            "treasure_box_gold",
+            "summer_rug_red"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "summer_chair_red",
+            "summer_jar_lamp_red"
+          ],
+          "index": 13,
+          "items": [
+            "summer_chair_red",
+            "summer_jar_lamp_red"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "summer_flooring_red",
+            "summer_wallpaper_red"
+          ],
+          "index": 14,
+          "items": [
+            "summer_flooring_red",
+            "summer_wallpaper_red"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fall_bed_orange",
+            "fall_double_bed_orange"
+          ],
+          "index": 15,
+          "items": [
+            "treasure_box_gold",
+            "fall_bed_orange",
+            "fall_double_bed_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "fall_table_orange"
+          ],
+          "index": 16,
+          "items": [
+            "treasure_box_gold",
+            "fall_table_orange"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [],
+          "index": 17,
+          "items": [
+            "treasure_box_gold",
+            "tesserae_tree"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "void_bonsai_v1"
+          ],
+          "index": 18,
+          "items": [
+            "treasure_box_gold",
+            "void_bonsai_v1"
+          ]
+        }
+      ],
+      "sets": [
+        {
+          "id": "deep_earth",
+          "items": [
+            "crystal_berries",
+            "shale_grass",
+            "earthshroom",
+            "rockroot",
+            "crystal_rose"
+          ],
+          "name": "Deep Earth Forage Set"
+        },
+        {
+          "id": "deep_woods",
+          "items": [
+            "thorn_vine",
+            "spirit_mushroom",
+            "temple_flower",
+            "walnut",
+            "bell_berry"
+          ],
+          "name": "Deep Woods Forage Set"
+        },
+        {
+          "id": "fall_crops",
+          "items": [
+            "broccoli",
+            "cranberry",
+            "pumpkin",
+            "sweet_potato",
+            "apple"
+          ],
+          "name": "Fall Crop Set"
+        },
+        {
+          "id": "fall_flowers",
+          "items": [
+            "celosia",
+            "chrysanthemum",
+            "fog_orchid",
+            "heather",
+            "viola"
+          ],
+          "name": "Fall Flower Set"
+        },
+        {
+          "id": "fall_forage",
+          "items": [
+            "rosemary",
+            "garlic",
+            "horseradish",
+            "moon_fruit",
+            "chestnut"
+          ],
+          "name": "Fall Forage Set"
+        },
+        {
+          "id": "lava_caves",
+          "items": [
+            "flame_pepper",
+            "ash_mushroom",
+            "lava_chestnuts",
+            "hot_potato",
+            "breath_of_fire"
+          ],
+          "name": "Lava Caves Forage Set"
+        },
+        {
+          "id": "ruins",
+          "items": [
+            "spell_fruit",
+            "written_root",
+            "essence_blossom",
+            "ethereal_grass",
+            "chirping_fern"
+          ],
+          "name": "Ruins Forage Set"
+        },
+        {
+          "id": "spring_crops",
+          "items": [
+            "cabbage",
+            "potato",
+            "strawberry",
+            "turnip",
+            "cherry"
+          ],
+          "name": "Spring Crop Set"
+        },
+        {
+          "id": "spring_flowers",
+          "items": [
+            "daffodil",
+            "tulip",
+            "dandelion",
+            "lilac",
+            "snowdrop_anemone"
+          ],
+          "name": "Spring Flower Set"
+        },
+        {
+          "id": "spring_forage",
+          "items": [
+            "fennel",
+            "fiddlehead",
+            "morel_mushroom",
+            "nettle",
+            "wild_leek"
+          ],
+          "name": "Spring Forage Set"
+        },
+        {
+          "id": "summer_crops",
+          "items": [
+            "cucumber",
+            "chili_pepper",
+            "watermelon",
+            "tomato",
+            "corn"
+          ],
+          "name": "Summer Crop Set"
+        },
+        {
+          "id": "summer_flowers",
+          "items": [
+            "daisy",
+            "iris",
+            "marigold",
+            "catmint",
+            "cosmos"
+          ],
+          "name": "Summer Flower Set"
+        },
+        {
+          "id": "summer_forage",
+          "items": [
+            "sage",
+            "basil",
+            "thyme",
+            "oregano",
+            "dill"
+          ],
+          "name": "Summer Forage Set"
+        },
+        {
+          "id": "tide_caverns",
+          "items": [
+            "underseaweed",
+            "sea_grapes",
+            "cave_kelp",
+            "mines_mussels",
+            "tide_lettuce"
+          ],
+          "name": "Tide Caverns Forage Set"
+        },
+        {
+          "id": "upper_mines",
+          "items": [
+            "upper_mines_mushroom",
+            "red_toadstool",
+            "sweetroot",
+            "shadow_flower",
+            "narrows_moss"
+          ],
+          "name": "Upper Mines Forage Set"
+        },
+        {
+          "id": "void",
+          "items": [
+            "void_herb",
+            "void_stone",
+            "void_powder",
+            "void_pearl",
+            "voidite"
+          ],
+          "name": "Void Forage Set"
+        },
+        {
+          "id": "winter_crops",
+          "items": [
+            "beet",
+            "cauliflower",
+            "snow_peas",
+            "daikon_radish",
+            "pomegranate"
+          ],
+          "name": "Winter Crop Set"
+        },
+        {
+          "id": "winter_flowers",
+          "items": [
+            "frost_lily",
+            "poinsettia",
+            "jasmine",
+            "crocus",
+            "snapdragon"
+          ],
+          "name": "Winter Flower Set"
+        },
+        {
+          "id": "winter_forage",
+          "items": [
+            "burdock_root",
+            "holly",
+            "pineshroom",
+            "oyster_mushroom",
+            "rose_hip"
+          ],
+          "name": "Winter Forage Set"
+        }
+      ]
+    },
+    {
+      "id": "insect",
+      "name": "Insects",
+      "rewards": [
+        {
+          "cosmetics": [
+            "head_beekeeper_hat"
+          ],
+          "crafting_scrolls": [],
+          "index": 0,
+          "items": [
+            "treasure_box_wood"
+          ]
+        },
+        {
+          "cosmetics": [
+            "top_long_sleeve_beekeeper"
+          ],
+          "crafting_scrolls": [],
+          "index": 1,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "pants_beekeeper"
+          ],
+          "crafting_scrolls": [],
+          "index": 2,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [
+            "shoes_boots_beekeeper"
+          ],
+          "crafting_scrolls": [],
+          "index": 3,
+          "items": [
+            "treasure_box_copper"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "butterfly_bed_v1",
+            "butterfly_double_bed_v1"
+          ],
+          "index": 4,
+          "items": [
+            "treasure_box_silver",
+            "butterfly_bed_v1",
+            "butterfly_double_bed_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "ladybug_table_v1"
+          ],
+          "index": 5,
+          "items": [
+            "treasure_box_silver",
+            "ladybug_table_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "insect_rug_v1"
+          ],
+          "index": 6,
+          "items": [
+            "treasure_box_gold",
+            "insect_rug_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "caterpillar_chair_v1"
+          ],
+          "index": 7,
+          "items": [
+            "treasure_box_gold",
+            "caterpillar_chair_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "moth_lamp_v1"
+          ],
+          "index": 8,
+          "items": [
+            "treasure_box_gold",
+            "moth_lamp_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "insect_wallpaper_v1"
+          ],
+          "index": 9,
+          "items": [
+            "treasure_box_gold",
+            "insect_wallpaper_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "insect_flooring_v1"
+          ],
+          "index": 10,
+          "items": [
+            "treasure_box_gold",
+            "insect_flooring_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "firefly_wall_string_lights_yellow"
+          ],
+          "index": 11,
+          "items": [
+            "treasure_box_gold",
+            "firefly_wall_string_lights_yellow"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "butterfly_wall_lamp_gold"
+          ],
+          "index": 12,
+          "items": [
+            "treasure_box_gold",
+            "butterfly_wall_lamp_gold"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "bumblebee_plushie"
+          ],
+          "index": 13,
+          "items": [
+            "treasure_box_gold",
+            "bumblebee_plushie"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "butterfly_painting_v1"
+          ],
+          "index": 14,
+          "items": [
+            "treasure_box_gold",
+            "butterfly_painting_v1"
+          ]
+        },
+        {
+          "cosmetics": [],
+          "crafting_scrolls": [
+            "honeycomb_shelf"
+          ],
+          "index": 15,
+          "items": [
+            "treasure_box_gold",
+            "honeycomb_shelf"
+          ]
+        },
+        {
+          "cosmetics": [
+            "back_gear_butterfly_wings"
+          ],
+          "crafting_scrolls": [],
+          "index": 16,
+          "items": [
+            "treasure_box_gold"
+          ]
+        },
+        {
+          "cosmetics": [
+            "back_gear_dragonfly_wings"
+          ],
+          "crafting_scrolls": [],
+          "index": 17,
+          "items": [
+            "treasure_box_gold"
+          ]
+        },
+        {
+          "cosmetics": [
+            "head_beetle_mandible_horns"
+          ],
+          "crafting_scrolls": [],
+          "index": 18,
+          "items": [
+            "treasure_box_gold"
+          ]
+        }
+      ],
+      "sets": [
+        {
+          "id": "beach",
+          "items": [
+            "hermit_crab",
+            "relic_crab",
+            "waterbug",
+            "surf_beetle",
+            "beach_hopper"
+          ],
+          "name": "Beach Insect Set"
+        },
+        {
+          "id": "bee",
+          "items": [
+            "fur_bee",
+            "sweet_bee",
+            "big_bee",
+            "flower_bee",
+            "moonlight_bee"
+          ],
+          "name": "Bee Insect Set"
+        },
+        {
+          "id": "bug_pheromone",
+          "items": [
+            "ant_queen",
+            "sunset_moth",
+            "saint_mantis",
+            "queens_birdwing",
+            "biggest_beetle"
+          ],
+          "name": "Bug Pheromone Set"
+        },
+        {
+          "id": "deep_earth",
+          "items": [
+            "rock_roach",
+            "deep_earthworm",
+            "crystalline_cricket",
+            "gem_shard_caterpillar",
+            "crystal_wing_moth"
+          ],
+          "name": "Deep Earth Insect Set"
+        },
+        {
+          "id": "deep_woods",
+          "items": [
+            "windleaf_butterfly",
+            "mote_firefly",
+            "loam_caterpillar",
+            "dragon_horn_beetle",
+            "singing_katydid"
+          ],
+          "name": "Deep Woods Insect Set"
+        },
+        {
+          "id": "fall",
+          "items": [
+            "walking_leaf",
+            "cicada_nymph",
+            "monarch_butterfly",
+            "inchworm",
+            "tiger_swallowtail_butterfly"
+          ],
+          "name": "Fall Insect Set"
+        },
+        {
+          "id": "grass",
+          "items": [
+            "grasshopper",
+            "petalhopper",
+            "strawhopper",
+            "leafhopper",
+            "icehopper"
+          ],
+          "name": "Grass Insect Set"
+        },
+        {
+          "id": "honey",
+          "items": [
+            "honey",
+            "honey_premium",
+            "honey_deluxe",
+            "honey_legendary",
+            "honeycomb"
+          ],
+          "name": "Honey Set"
+        },
+        {
+          "id": "lava_caves",
+          "items": [
+            "fire_wasp",
+            "cooktop_beetle",
+            "lava_snail",
+            "smoke_moth",
+            "diamond_beetle"
+          ],
+          "name": "Lava Caves Insect Set"
+        },
+        {
+          "id": "legendary",
+          "items": [
+            "fairy_bee",
+            "flower_crown_beetle",
+            "snowball_beetle",
+            "speedy_snail",
+            "strobe_firefly"
+          ],
+          "name": "Legendary Insect Set"
+        },
+        {
+          "id": "multi_season",
+          "items": [
+            "ant",
+            "bumblebee",
+            "fuzzy_moth",
+            "praying_mantis",
+            "hummingbird_hawk_moth"
+          ],
+          "name": "Multi-Season Insect Set"
+        },
+        {
+          "id": "rare",
+          "items": [
+            "jewel_beetle",
+            "lightning_dragonfly",
+            "magma_beetle",
+            "mistmoth",
+            "orchid_mantis"
+          ],
+          "name": "Rare Insect Set"
+        },
+        {
+          "id": "ruins",
+          "items": [
+            "ancient_firefly",
+            "void_snail",
+            "giant_worm",
+            "parchment_moth",
+            "hidden_beetle"
+          ],
+          "name": "Ruins Insect Set"
+        },
+        {
+          "id": "spring",
+          "items": [
+            "luna_moth",
+            "butterfly",
+            "ladybug",
+            "caterpillar",
+            "roly_poly"
+          ],
+          "name": "Spring Insect Set"
+        },
+        {
+          "id": "summer",
+          "items": [
+            "cicada",
+            "cricket",
+            "dragonfly",
+            "firefly",
+            "sand_bug"
+          ],
+          "name": "Summer Insect Set"
+        },
+        {
+          "id": "terrarium",
+          "items": [
+            "bug_pheromone_uncommon",
+            "bug_pheromone_rare",
+            "bug_pheromone_legendary",
+            "fish_bait_uncommon",
+            "fish_bait_rare"
+          ],
+          "name": "Terrarium Treasures"
+        },
+        {
+          "id": "tide_caverns",
+          "items": [
+            "sea_scarab",
+            "waterfly",
+            "hermit_snail",
+            "puddle_spider",
+            "coral_mantis"
+          ],
+          "name": "Tide Caverns Insect Set"
+        },
+        {
+          "id": "upper_mines",
+          "items": [
+            "lantern_moth",
+            "copper_beetle",
+            "worm",
+            "mine_cricket",
+            "tunnel_millipede"
+          ],
+          "name": "Upper Mines Insect Set"
+        },
+        {
+          "id": "winter",
+          "items": [
+            "crystal_caterpillar",
+            "walking_stick",
+            "brightbulb_moth",
+            "frost_flutter_butterfly",
+            "winterpillar"
+          ],
+          "name": "Winter Insect Set"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 18,
+        "season": "winter"
+      },
+      "children": [
+        "ellie"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "mushroomy",
+        "weird_gift"
+      ],
+      "hated_gift": "morel_mushroom",
+      "id": "adeline",
+      "liked_gifts": [
+        "candied_lemon_peel",
+        "ore_diamond",
+        "heather",
+        "lemon",
+        "sour_lemon_cake",
+        "lemonade",
+        "ore_mistril",
+        "paper",
+        "peach",
+        "pineshroom_toast",
+        "ore_pink_diamond",
+        "pumpkin_stew",
+        "red_wine",
+        "snapdragon",
+        "spicy_cheddar_biscuit",
+        "tulip",
+        "vegetable_soup",
+        "white_wine",
+        "wildberry_pie",
+        "wildberry_scone"
+      ],
+      "loved_gifts": [
+        "coffee",
+        "gazpacho",
+        "lemon_pie",
+        "middlemist",
+        "mistril_ingot",
+        "peaches_and_cream",
+        "perfect_pink_diamond",
+        "plum_blossom",
+        "pumpkin_pie",
+        "cup_of_tea"
+      ],
+      "name": "Adeline",
+      "tags": [
+        "townsfolk",
+        "noble",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 10,
+        "season": "summer"
+      },
+      "children": [
+        "sterling"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "ant",
+      "id": "balor",
+      "liked_gifts": [
+        "cauliflower_curry",
+        "chickpea_curry",
+        "crystal_rose",
+        "ore_diamond",
+        "ore_emerald",
+        "fog_orchid",
+        "frost_lily",
+        "gold_ingot",
+        "ore_gold",
+        "golden_cookies",
+        "golden_cheesecake",
+        "jasmine",
+        "perfect_gold_ore",
+        "ore_pink_diamond",
+        "rose",
+        "ore_ruby",
+        "rusted_treasure_chest",
+        "ore_sapphire",
+        "sapphire_betta",
+        "snowdrop_anemone"
+      ],
+      "loved_gifts": [
+        "alda_gem_bracelet",
+        "apple_honey_curry",
+        "chili_coconut_curry",
+        "deluxe_curry",
+        "family_crest_pendant",
+        "perfect_diamond",
+        "perfect_emerald",
+        "perfect_pink_diamond",
+        "perfect_ruby",
+        "perfect_sapphire"
+      ],
+      "name": "Balor",
+      "tags": [
+        "townsfolk",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 25,
+        "season": "spring"
+      },
+      "children": [
+        "tephra"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "dragon_part",
+        "weird_gift"
+      ],
+      "hated_gift": "unknown_dragon_statuette",
+      "id": "caldarus",
+      "liked_gifts": [
+        "beet_soup",
+        "breath_of_fire",
+        "chili_coconut_curry",
+        "caldosian_chocolate_cake",
+        "crab_cakes",
+        "fish_tacos",
+        "golden_cheesecake",
+        "golden_cookies",
+        "ice_cream_sundae",
+        "incredibly_hot_pot",
+        "lobster_roll",
+        "marigold",
+        "mushroom_steak_dinner",
+        "perch_risotto",
+        "spirit_mushroom_tea",
+        "pumpkin_pie",
+        "sea_bream_rice",
+        "spell_fruit_parfait",
+        "vegetable_pot_pie",
+        "vegetable_quiche"
+      ],
+      "loved_gifts": [
+        "apple_honey_curry",
+        "fried_rice",
+        "harvest_plate",
+        "mont_blanc",
+        "seafood_boil",
+        "seafood_snow_pea_noodles",
+        "spring_galette",
+        "statuette_of_caldarus",
+        "sushi_platter",
+        "veggie_sub_sandwich"
+      ],
+      "name": "Caldarus",
+      "tags": [
+        "draconic",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 14,
+        "season": "summer"
+      },
+      "children": [
+        "rowan"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "caterpillar",
+      "id": "celine",
+      "liked_gifts": [
+        "catmint",
+        "celosia",
+        "chrysanthemum",
+        "cosmos",
+        "crocus",
+        "daffodil",
+        "daisy",
+        "dandelion",
+        "heather",
+        "iris",
+        "jasmine",
+        "lilac",
+        "marigold",
+        "poinsettia",
+        "rose_tea",
+        "snapdragon",
+        "spring_salad",
+        "sunflower",
+        "tulip",
+        "viola"
+      ],
+      "loved_gifts": [
+        "breath_of_fire",
+        "crystal_rose",
+        "essence_blossom",
+        "frost_lily",
+        "hydrangea",
+        "middlemist",
+        "plum_blossom",
+        "rose",
+        "snowdrop_anemone",
+        "temple_flower"
+      ],
+      "name": "Celine",
+      "tags": [
+        "townsfolk",
+        "general_store_family",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 13,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "ant",
+      "id": "darcy",
+      "liked_gifts": [
+        "apple",
+        "blackberry",
+        "blueberry",
+        "cherry",
+        "coconut",
+        "cranberry",
+        "moon_fruit",
+        "egg",
+        "flour",
+        "glowberry",
+        "lemon",
+        "orange",
+        "peach",
+        "pear",
+        "pomegranate",
+        "strawberry",
+        "tea",
+        "wild_berries",
+        "wild_grapes",
+        "wintergreen_berry"
+      ],
+      "loved_gifts": [
+        "chocolate",
+        "coconut_milk",
+        "crystal_berries",
+        "golden_cheesecake",
+        "golden_cookies",
+        "golden_egg",
+        "golden_cow_milk",
+        "cow_milk",
+        "spell_fruit",
+        "sugar"
+      ],
+      "name": "Darcy",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [
+        "alcohol",
+        "caffeine",
+        "bomb"
+      ],
+      "birthday": {
+        "day": 3,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "weird_gift",
+        "caffeine",
+        "alcohol"
+      ],
+      "hated_gift": "broccoli",
+      "id": "dell",
+      "liked_gifts": [
+        "apple",
+        "basic_wood",
+        "blackberry",
+        "caramel_candy",
+        "cattail",
+        "clay",
+        "frog",
+        "glowberry_cookies",
+        "grape_juice",
+        "grilled_cheese",
+        "hot_cocoa",
+        "sour_lemon_cake",
+        "lemonade",
+        "lightning_dragonfly",
+        "monster_cookie",
+        "pudding",
+        "snail",
+        "ore_stone",
+        "trail_mix",
+        "turtle"
+      ],
+      "loved_gifts": [
+        "alda_bronze_sword",
+        "aldarian_sword",
+        "apple_juice",
+        "bullfrog",
+        "caldosian_sword",
+        "chocolate",
+        "golden_cookies",
+        "hermit_crab",
+        "ice_cream_sundae",
+        "jam_sandwich"
+      ],
+      "name": "Dell",
+      "tags": [
+        "townsfolk",
+        "general_store_family",
+        "child"
+      ]
+    },
+    {
+      "banned_gift_tags": [
+        "alcohol",
+        "caffeine",
+        "choco",
+        "bomb"
+      ],
+      "birthday": {
+        "day": 16,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "citrus",
+        "choco",
+        "caffeine",
+        "alcohol",
+        "weird_gift"
+      ],
+      "hated_gift": "chili_pepper",
+      "id": "dozy",
+      "liked_gifts": [
+        "butterfly",
+        "carrot",
+        "cicada",
+        "cod",
+        "cricket",
+        "duck_egg",
+        "egg",
+        "firefly",
+        "fuzzy_moth",
+        "grasshopper",
+        "mackerel",
+        "monster_shell",
+        "monster_whisker",
+        "pumpkin",
+        "red_snapper",
+        "rockroot",
+        "salmon",
+        "sardine",
+        "sod",
+        "tuna"
+      ],
+      "loved_gifts": [
+        "basic_wood",
+        "hard_boiled_egg",
+        "catfish",
+        "crystalline_cricket",
+        "golden_duck_egg",
+        "golden_egg",
+        "hard_wood",
+        "dog_treat",
+        "petrified_wood",
+        "tiny_dinosaur_skeleton"
+      ],
+      "name": "Dozy",
+      "tags": [
+        "townsfolk",
+        "animal"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 20,
+        "season": "summer"
+      },
+      "children": [
+        "astrid"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "frog",
+      "id": "eiland",
+      "liked_gifts": [
+        "apple_pie",
+        "berries_and_cream",
+        "candied_lemon_peel",
+        "candied_strawberries",
+        "caramelized_moon_fruit",
+        "caramel_candy",
+        "cherry_cobbler",
+        "cherry_tart",
+        "chocolate",
+        "crystal_berry_pie",
+        "sour_lemon_cake",
+        "lemon_pie",
+        "peaches_and_cream",
+        "pomegranate_sorbet",
+        "pudding",
+        "roasted_rice_tea",
+        "strawberries_and_cream",
+        "sweet_sesame_balls",
+        "wildberry_pie",
+        "wintergreen_ice_cream"
+      ],
+      "loved_gifts": [
+        "caldosian_chocolate_cake",
+        "coconut_cream_pie",
+        "glowberry_cookies",
+        "golden_cheesecake",
+        "golden_cookies",
+        "ice_cream_sundae",
+        "mont_blanc",
+        "pumpkin_pie",
+        "spell_fruit_parfait",
+        "strawberry_shortcake"
+      ],
+      "name": "Eiland",
+      "tags": [
+        "townsfolk",
+        "noble",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 2,
+        "season": "summer"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "praying_mantis",
+      "id": "elsie",
+      "liked_gifts": [
+        "blackberry_jam",
+        "blueberry_jam",
+        "cherry_tart",
+        "chrysanthemum",
+        "cosmos",
+        "crystal_berry_pie",
+        "ore_diamond",
+        "iris",
+        "jasmine",
+        "lilac",
+        "marmalade",
+        "moon_fruit_cake",
+        "pomegranate_sorbet",
+        "quiche",
+        "red_wine",
+        "rosehip_jam",
+        "rose_hip",
+        "tulip",
+        "white_wine",
+        "wild_berry_jam"
+      ],
+      "loved_gifts": [
+        "alda_feather_pendant",
+        "cranberry_orange_scone",
+        "crystal_rose",
+        "jasmine_tea",
+        "mont_blanc",
+        "paper",
+        "perfect_diamond",
+        "poached_pear",
+        "rose",
+        "wildberry_scone"
+      ],
+      "name": "Elsie",
+      "tags": [
+        "townsfolk",
+        "noble"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 11,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "hard_boiled_egg",
+      "id": "errol",
+      "liked_gifts": [
+        "apple",
+        "beer",
+        "breaded_catfish",
+        "canned_sardines",
+        "ore_copper",
+        "fish_stew",
+        "ore_gold",
+        "hot_toddy",
+        "ore_iron",
+        "ore_mistril",
+        "latte",
+        "mocha",
+        "pear",
+        "peat",
+        "pomegranate",
+        "red_wine",
+        "ore_silver",
+        "sweetroot",
+        "upper_mines_mushroom",
+        "wintergreen_ice_cream"
+      ],
+      "loved_gifts": [
+        "baked_sweetroot",
+        "braised_burdock",
+        "clam_chowder",
+        "fish_skewer",
+        "miners_helmet",
+        "miners_mushroom_stew",
+        "pan_fried_bream",
+        "perch_risotto",
+        "shard_mass",
+        "white_wine"
+      ],
+      "name": "Errol",
+      "tags": [
+        "townsfolk"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 8,
+        "season": "winter"
+      },
+      "children": [
+        "wilder"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "fishy",
+        "weird_gift"
+      ],
+      "hated_gift": "sushi_platter",
+      "id": "hayden",
+      "liked_gifts": [
+        "apple_pie",
+        "butter",
+        "cheese",
+        "coconut_cream_pie",
+        "coffee",
+        "crystal_berry_pie",
+        "duck_egg",
+        "duck_mayonnaise",
+        "egg",
+        "lemon_pie",
+        "loaded_baked_potato",
+        "mayonnaise",
+        "cow_milk",
+        "mushroom_steak_dinner",
+        "pumpkin_stew",
+        "quiche",
+        "sweet_potato_pie",
+        "cup_of_tea",
+        "vegetable_pot_pie",
+        "wildberry_pie"
+      ],
+      "loved_gifts": [
+        "golden_butter",
+        "golden_cheese",
+        "golden_duck_egg",
+        "golden_duck_mayonnaise",
+        "golden_egg",
+        "golden_mayonnaise",
+        "golden_cow_milk",
+        "pumpkin_pie",
+        "stone_horse",
+        "vegetable_quiche"
+      ],
+      "name": "Hayden",
+      "tags": [
+        "townsfolk",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 23,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "newt",
+      "id": "hemlock",
+      "liked_gifts": [
+        "basil",
+        "chili_pepper",
+        "coffee",
+        "crunchy_chickpeas",
+        "dried_squid",
+        "honey",
+        "lemon",
+        "roasted_chestnuts",
+        "rock_salt",
+        "sesame_broccoli",
+        "spicy_cheddar_biscuit",
+        "grape_juice",
+        "spicy_crab_sushi",
+        "spicy_water_chestnuts",
+        "summer_salad",
+        "tea",
+        "thyme",
+        "toasted_sunflower_seeds",
+        "trail_mix",
+        "water_chestnut_fritters"
+      ],
+      "loved_gifts": [
+        "beer",
+        "chili_coconut_curry",
+        "crayfish_etouffee",
+        "crispy_fried_earthshroom",
+        "caldosian_drinking_horn",
+        "hot_toddy",
+        "incredibly_hot_pot",
+        "white_wine",
+        "wild_grapes",
+        "spicy_corn"
+      ],
+      "name": "Hemlock",
+      "tags": [
+        "townsfolk",
+        "inn_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [
+        "alcohol",
+        "caffeine",
+        "choco",
+        "bomb"
+      ],
+      "birthday": {
+        "day": 7,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "citrus",
+        "choco",
+        "caffeine",
+        "alcohol",
+        "weird_gift"
+      ],
+      "hated_gift": "garlic",
+      "id": "henrietta",
+      "liked_gifts": [
+        "apple",
+        "blackberry",
+        "blueberry",
+        "broccoli",
+        "cherry",
+        "chestnut",
+        "coconut",
+        "cranberry",
+        "cucumber",
+        "grass_seed",
+        "moon_fruit",
+        "orange",
+        "peach",
+        "pear",
+        "peas",
+        "pomegranate",
+        "pumpkin",
+        "wild_berries",
+        "wild_grapes",
+        "wintergreen_berry"
+      ],
+      "loved_gifts": [
+        "berry_bowl",
+        "animal_currency",
+        "corn",
+        "glowberry",
+        "grilled_corn",
+        "strawberry",
+        "watermelon",
+        "quality_small_animal_feed",
+        "deluxe_small_animal_feed",
+        "ultimate_small_animal_feed"
+      ],
+      "name": "Henrietta",
+      "tags": [
+        "townsfolk",
+        "animal"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 14,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "puddle_spider",
+      "id": "holt",
+      "liked_gifts": [
+        "potato",
+        "beet",
+        "broccoli",
+        "cabbage",
+        "carrot",
+        "cauliflower",
+        "chili_pepper",
+        "corn",
+        "cranberry",
+        "cucumber",
+        "daikon_radish",
+        "onion",
+        "peas",
+        "pumpkin",
+        "rice_stalk",
+        "snow_peas",
+        "strawberry",
+        "sugar_cane",
+        "sweet_potato",
+        "turnip"
+      ],
+      "loved_gifts": [
+        "flour",
+        "gazpacho",
+        "hard_wood",
+        "loaded_baked_potato",
+        "baked_potato",
+        "stone_horse",
+        "narrows_moss",
+        "coffee",
+        "watermelon",
+        "wheat"
+      ],
+      "name": "Holt",
+      "tags": [
+        "townsfolk",
+        "general_store_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 16,
+        "season": "summer"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "worm",
+      "id": "josephine",
+      "liked_gifts": [
+        "breath_of_fire",
+        "chili_pepper",
+        "curry_powder",
+        "essence_blossom",
+        "flour",
+        "honey",
+        "jam_sandwich",
+        "jasmine",
+        "oil",
+        "rice",
+        "rose",
+        "soy_sauce",
+        "spicy_cheddar_biscuit",
+        "spicy_corn",
+        "spicy_crab_sushi",
+        "spicy_water_chestnuts",
+        "sugar",
+        "sunflower",
+        "tea",
+        "wild_berry_jam"
+      ],
+      "loved_gifts": [
+        "jasmine_tea",
+        "green_tea",
+        "lavender_tea",
+        "quiche",
+        "roasted_rice_tea",
+        "rose_tea",
+        "cup_of_tea",
+        "incredibly_hot_pot",
+        "chili_coconut_curry",
+        "crayfish_etouffee"
+      ],
+      "name": "Josephine",
+      "tags": [
+        "townsfolk",
+        "inn_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 26,
+        "season": "fall"
+      },
+      "children": [
+        "rune"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "sod",
+      "id": "juniper",
+      "liked_gifts": [
+        "crunchy_chickpeas",
+        "crystal",
+        "fog_orchid",
+        "frog",
+        "latte",
+        "middlemist",
+        "morel_mushroom",
+        "nettle",
+        "newt",
+        "night_queen",
+        "essence_blossom",
+        "poinsettia",
+        "red_toadstool",
+        "red_wine",
+        "monster_powder",
+        "shadow_flower",
+        "spell_fruit",
+        "toasted_sunflower_seeds",
+        "water_chestnut_fritters",
+        "white_wine"
+      ],
+      "loved_gifts": [
+        "ancient_royal_scepter",
+        "black_tablet",
+        "crystal_rose",
+        "fish_tacos",
+        "golden_cookies",
+        "hardened_essence",
+        "moon_fruit_cake",
+        "mushroom_brew",
+        "pizza",
+        "spell_fruit_parfait"
+      ],
+      "name": "Juniper",
+      "tags": [
+        "townsfolk",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 4,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "roly_poly",
+      "id": "landen",
+      "liked_gifts": [
+        "basic_wood",
+        "bristle",
+        "bull_horn",
+        "canned_sardines",
+        "clay",
+        "coconut",
+        "coconut_milk",
+        "crystal",
+        "deep_sea_soup",
+        "duck_feather",
+        "glass",
+        "horse_hair",
+        "obsidian",
+        "paper",
+        "feather",
+        "ore_stone",
+        "shards",
+        "tomato_soup",
+        "vegetable_pot_pie",
+        "vegetable_soup"
+      ],
+      "loved_gifts": [
+        "coconut_cream_pie",
+        "golden_bristle",
+        "golden_bull_horn",
+        "golden_cheesecake",
+        "golden_cookies",
+        "golden_duck_feather",
+        "golden_horse_hair",
+        "golden_feather",
+        "hard_wood",
+        "shard_mass"
+      ],
+      "name": "Landen",
+      "tags": [
+        "townsfolk",
+        "carpenter_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 20,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "fuzzy_moth",
+      "id": "louis",
+      "liked_gifts": [
+        "alpaca_wool",
+        "breath_of_fire",
+        "bristle",
+        "cattail",
+        "celosia",
+        "crystal",
+        "crystal_rose",
+        "duck_feather",
+        "essence_blossom",
+        "feather",
+        "cup_of_tea",
+        "frost_lily",
+        "horse_hair",
+        "lilac",
+        "marigold",
+        "rabbit_wool",
+        "shadow_flower",
+        "snapdragon",
+        "viola",
+        "sheep_wool"
+      ],
+      "loved_gifts": [
+        "golden_alpaca_wool",
+        "golden_bristle",
+        "golden_duck_feather",
+        "golden_feather",
+        "golden_horse_hair",
+        "golden_rabbit_wool",
+        "golden_sheep_wool",
+        "middlemist",
+        "red_wine",
+        "white_wine"
+      ],
+      "name": "Louis",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [
+        "alcohol",
+        "caffeine",
+        "bomb"
+      ],
+      "birthday": {
+        "day": 21,
+        "season": "spring"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "weird_gift",
+        "caffeine",
+        "alcohol"
+      ],
+      "hated_gift": "frog",
+      "id": "luc",
+      "liked_gifts": [
+        "ant",
+        "butterfly",
+        "cave_shrimp",
+        "cheese",
+        "chocolate",
+        "cricket",
+        "fuzzy_moth",
+        "hot_cocoa",
+        "hummingbird_hawk_moth",
+        "inchworm",
+        "jam_sandwich",
+        "mistmoth",
+        "monarch_butterfly",
+        "orchid_mantis",
+        "pond_skater",
+        "praying_mantis",
+        "puddle_spider",
+        "river_snail",
+        "snowball_beetle",
+        "worm"
+      ],
+      "loved_gifts": [
+        "amber_trapped_insect",
+        "bumblebee",
+        "copper_beetle",
+        "fairy_bee",
+        "grilled_cheese",
+        "jewel_beetle",
+        "rhinoceros_beetle",
+        "roly_poly",
+        "sea_scarab",
+        "strobe_firefly"
+      ],
+      "name": "Luc",
+      "tags": [
+        "townsfolk",
+        "inn_family",
+        "child"
+      ]
+    },
+    {
+      "banned_gift_tags": [
+        "alcohol",
+        "caffeine",
+        "bomb"
+      ],
+      "birthday": {
+        "day": 26,
+        "season": "summer"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift",
+        "caffeine",
+        "alcohol"
+      ],
+      "hated_gift": "peat",
+      "id": "maple",
+      "liked_gifts": [
+        "blackberry",
+        "blue_conch_shell",
+        "cheese",
+        "daisy",
+        "glowberry_cookies",
+        "golden_cookies",
+        "grilled_cheese",
+        "ice_cream_sundae",
+        "jam_sandwich",
+        "pink_scallop_shell",
+        "pomegranate_sorbet",
+        "pudding",
+        "sand_dollar",
+        "spirula_shell",
+        "strawberry_shortcake",
+        "sunflower",
+        "trail_mix",
+        "tulip",
+        "wildberry_pie",
+        "wintergreen_ice_cream"
+      ],
+      "loved_gifts": [
+        "ancient_horn_circlet",
+        "berries_and_cream",
+        "chocolate",
+        "hot_cocoa",
+        "lemon_pie",
+        "lost_crown_of_aldaria",
+        "middlemist",
+        "monarch_butterfly",
+        "mont_blanc",
+        "stone_shell"
+      ],
+      "name": "Maple",
+      "tags": [
+        "townsfolk",
+        "inn_family",
+        "child"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 16,
+        "season": "spring"
+      },
+      "children": [
+        "fray"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "archaeology",
+        "flower",
+        "forageable",
+        "weird_gift"
+      ],
+      "hated_gift": "redhead_worm",
+      "id": "march",
+      "liked_gifts": [
+        "beer",
+        "chocolate",
+        "caldosian_chocolate_cake",
+        "coffee",
+        "copper_ingot",
+        "ore_copper",
+        "ore_gold",
+        "grilled_eel_rice_bowl",
+        "hot_cocoa",
+        "iron_ingot",
+        "ore_iron",
+        "ore_mistril",
+        "mocha",
+        "perch_risotto",
+        "red_snapper_sushi",
+        "sea_bream_rice",
+        "sesame_tuna_bowl",
+        "silver_ingot",
+        "ore_silver",
+        "spicy_crab_sushi"
+      ],
+      "loved_gifts": [
+        "dragon_forged_bracelet",
+        "gold_ingot",
+        "meteorite",
+        "mistril_ingot",
+        "perfect_copper_ore",
+        "perfect_gold_ore",
+        "perfect_iron_ore",
+        "perfect_mistril_ore",
+        "perfect_silver_ore",
+        "sushi_platter"
+      ],
+      "name": "March",
+      "tags": [
+        "townsfolk",
+        "dateable",
+        "forge_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 6,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "snail",
+      "id": "merri",
+      "liked_gifts": [
+        "alpaca_wool",
+        "basic_wood",
+        "bristle",
+        "bull_horn",
+        "clay",
+        "coral",
+        "crystal",
+        "ore_diamond",
+        "duck_feather",
+        "glass",
+        "hard_wood",
+        "horse_hair",
+        "latte",
+        "obsidian",
+        "paper",
+        "ore_pink_diamond",
+        "rabbit_wool",
+        "feather",
+        "sheep_wool",
+        "ore_stone"
+      ],
+      "loved_gifts": [
+        "golden_alpaca_wool",
+        "golden_bristle",
+        "golden_bull_horn",
+        "golden_duck_feather",
+        "golden_horse_hair",
+        "golden_rabbit_wool",
+        "golden_feather",
+        "golden_sheep_wool",
+        "perfect_diamond",
+        "perfect_pink_diamond"
+      ],
+      "name": "Merri",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 24,
+        "season": "summer"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "narrows_moss",
+      "id": "nora",
+      "liked_gifts": [
+        "baked_potato",
+        "beet_salad",
+        "braised_burdock",
+        "braised_carrots",
+        "butter",
+        "cabbage_slaw",
+        "candied_lemon_peel",
+        "coconut_milk",
+        "coffee",
+        "cucumber_salad",
+        "grilled_corn",
+        "latte",
+        "poached_pear",
+        "salted_watermelon",
+        "sesame_broccoli",
+        "simmered_daikon",
+        "sliced_turnip",
+        "spicy_water_chestnuts",
+        "strawberries_and_cream",
+        "tomato_soup"
+      ],
+      "loved_gifts": [
+        "ancient_gold_coin",
+        "cherry_cobbler",
+        "fried_rice",
+        "onion_soup",
+        "peaches_and_cream",
+        "pumpkin_stew",
+        "roasted_cauliflower",
+        "roasted_sweet_potato",
+        "sauteed_snow_peas",
+        "toasted_sunflower_seeds"
+      ],
+      "name": "Nora",
+      "tags": [
+        "townsfolk",
+        "general_store_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 10,
+        "season": "spring"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "rockbiter",
+      "id": "olric",
+      "liked_gifts": [
+        "ore_copper",
+        "crystal",
+        "ore_diamond",
+        "ore_emerald",
+        "ore_gold",
+        "hard_boiled_egg",
+        "ore_iron",
+        "miners_mushroom_stew",
+        "ore_mistril",
+        "obsidian",
+        "ore_pink_diamond",
+        "rock_with_a_hole",
+        "rockroot",
+        "ore_ruby",
+        "ore_sapphire",
+        "ore_silver",
+        "ore_stone",
+        "stone_horse",
+        "rock_statue",
+        "weightless_stone"
+      ],
+      "loved_gifts": [
+        "perfect_copper_ore",
+        "perfect_diamond",
+        "perfect_emerald",
+        "perfect_gold_ore",
+        "perfect_iron_ore",
+        "perfect_mistril_ore",
+        "perfect_pink_diamond",
+        "perfect_ruby",
+        "perfect_sapphire",
+        "perfect_silver_ore"
+      ],
+      "name": "Olric",
+      "tags": [
+        "townsfolk",
+        "forge_family"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 12,
+        "season": "fall"
+      },
+      "children": [
+        "cedar"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "tunnel_millipede",
+      "id": "reina",
+      "liked_gifts": [
+        "cauliflower_curry",
+        "cheese",
+        "cod_with_thyme",
+        "coffee",
+        "crystal_berry_pie",
+        "daffodil",
+        "deep_sea_soup",
+        "flour",
+        "garlic",
+        "garlic_bread",
+        "grilled_cheese",
+        "iced_coffee",
+        "miners_mushroom_stew",
+        "pizza",
+        "rice",
+        "spicy_cheddar_biscuit",
+        "sugar",
+        "turnip_and_potato_gratin",
+        "upper_mines_mushroom",
+        "wildberry_pie"
+      ],
+      "loved_gifts": [
+        "apple_honey_curry",
+        "breaded_catfish",
+        "cabbage_slaw",
+        "ice_cream_sundae",
+        "incredibly_hot_pot",
+        "rosemary_garlic_noodles",
+        "seafood_boil",
+        "seafood_snow_pea_noodles",
+        "spell_fruit_parfait",
+        "sushi_platter"
+      ],
+      "name": "Reina",
+      "tags": [
+        "townsfolk",
+        "inn_family",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 4,
+        "season": "spring"
+      },
+      "children": [
+        "kam"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "pond_skater",
+      "id": "ryis",
+      "liked_gifts": [
+        "basic_wood",
+        "beer",
+        "bread",
+        "bristle",
+        "bull_horn",
+        "clay",
+        "cranberry_orange_scone",
+        "crystal",
+        "duck_feather",
+        "feather",
+        "garlic_bread",
+        "glass",
+        "glowberry_cookies",
+        "horse_hair",
+        "iced_coffee",
+        "lilac",
+        "obsidian",
+        "paper",
+        "ore_stone",
+        "strawberry_shortcake"
+      ],
+      "loved_gifts": [
+        "golden_bristle",
+        "golden_bull_horn",
+        "golden_cheesecake",
+        "golden_cookies",
+        "golden_duck_feather",
+        "golden_feather",
+        "golden_horse_hair",
+        "hard_wood",
+        "lobster_roll",
+        "veggie_sub_sandwich"
+      ],
+      "name": "Ryis",
+      "tags": [
+        "townsfolk",
+        "carpenter_family",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 2,
+        "season": "winter"
+      },
+      "children": [
+        "brid"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "dragon_part",
+        "weird_gift"
+      ],
+      "hated_gift": "statuette_of_caldarus",
+      "id": "seridia",
+      "liked_gifts": [
+        "void_powder",
+        "void_pearl",
+        "void_stone",
+        "void_herb",
+        "essence_blossom",
+        "monster_cookie",
+        "monster_horn",
+        "monster_powder",
+        "monster_shell",
+        "monster_fang",
+        "monster_whisker",
+        "monster_block",
+        "monster_wing",
+        "night_queen",
+        "ore_pink_diamond",
+        "plum_blossom",
+        "ancient_royal_scepter",
+        "dragon_forged_bracelet",
+        "purple_mushroom",
+        "red_toadstool"
+      ],
+      "loved_gifts": [
+        "dragon_forged_fang",
+        "dragon_forged_core",
+        "dragon_forged_horn",
+        "dragon_forged_powder",
+        "dragon_pact_tablet",
+        "monster_mash",
+        "perfect_mistril_ore",
+        "spell_fruit_parfait",
+        "hardened_essence",
+        "unknown_dragon_statuette"
+      ],
+      "name": "Seridia",
+      "tags": [
+        "draconic",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 27,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "sunflower",
+      "id": "stillwell",
+      "liked_gifts": [
+        "caramelized_moon_fruit",
+        "coffee",
+        "crystal",
+        "crystal_berries",
+        "crystal_rose",
+        "crystal_wing_moth",
+        "crystal_caterpillar",
+        "crystalline_cricket",
+        "monster_cookie",
+        "obsidian",
+        "voidite",
+        "monster_mash",
+        "moon_fruit",
+        "moon_fruit_cake",
+        "muttering_cube",
+        "night_queen",
+        "poached_pear",
+        "rose",
+        "shadow_flower",
+        "spell_fruit"
+      ],
+      "loved_gifts": [
+        "ancient_crystal_goblet",
+        "black_tablet",
+        "crystal_apple",
+        "crystal_berry_pie",
+        "fog_orchid",
+        "red_wine",
+        "spell_fruit_parfait",
+        "weightless_stone",
+        "fire_crystal",
+        "completely_wrong_map"
+      ],
+      "name": "Stillwell",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 13,
+        "season": "spring"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "monster_mash",
+      "id": "taliferro",
+      "liked_gifts": [
+        "chili_coconut_curry",
+        "coconut_cream_pie",
+        "crab_cakes",
+        "fish_tacos",
+        "glowberry_cookies",
+        "golden_cheesecake",
+        "golden_cookies",
+        "herb_salad",
+        "ice_cream_sundae",
+        "incredibly_hot_pot",
+        "lobster_roll",
+        "mushroom_steak_dinner",
+        "perch_risotto",
+        "pumpkin_pie",
+        "red_wine",
+        "sea_bream_rice",
+        "vegetable_pot_pie",
+        "vegetable_quiche",
+        "veggie_sub_sandwich",
+        "white_wine"
+      ],
+      "loved_gifts": [
+        "apple_honey_curry",
+        "beet_soup",
+        "fried_rice",
+        "harvest_plate",
+        "mont_blanc",
+        "seafood_boil",
+        "seafood_snow_pea_noodles",
+        "spell_fruit_parfait",
+        "spring_galette",
+        "sushi_platter"
+      ],
+      "name": "Taliferro",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 22,
+        "season": "fall"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "fiber",
+      "id": "terithia",
+      "liked_gifts": [
+        "breaded_catfish",
+        "canned_sardines",
+        "clam_chowder",
+        "crayfish_etouffee",
+        "deep_sea_soup",
+        "dried_squid",
+        "fish_skewer",
+        "fish_tacos",
+        "grilled_eel_rice_bowl",
+        "horseradish_salmon",
+        "mackerel_sashimi",
+        "pan_fried_bream",
+        "pan_fried_salmon",
+        "pan_fried_snapper",
+        "red_snapper_sushi",
+        "salmon_sashimi",
+        "sesame_tuna_bowl",
+        "smoked_trout_soup",
+        "spicy_crab_sushi",
+        "tuna_sashimi"
+      ],
+      "loved_gifts": [
+        "cod_with_thyme",
+        "fish_stew",
+        "giant_fish_scale",
+        "lobster_roll",
+        "perch_risotto",
+        "rubber_fish",
+        "sea_bream_rice",
+        "seafood_boil",
+        "seafood_snow_pea_noodles",
+        "sushi_platter"
+      ],
+      "name": "Terithia",
+      "tags": [
+        "townsfolk"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 1,
+        "season": "fall"
+      },
+      "children": [
+        "torin"
+      ],
+      "dateable": true,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "red_toadstool",
+      "id": "valen",
+      "liked_gifts": [
+        "coffee",
+        "cucumber",
+        "cucumber_salad",
+        "dandelion",
+        "garlic",
+        "green_tea",
+        "herb_salad",
+        "honey",
+        "nettle",
+        "pan_fried_salmon",
+        "red_wine",
+        "rose_hip",
+        "rosehip_jam",
+        "rosemary",
+        "seaweed",
+        "seaweed_salad",
+        "spring_salad",
+        "sweetroot",
+        "underseaweed",
+        "white_wine"
+      ],
+      "loved_gifts": [
+        "beet",
+        "beet_salad",
+        "beet_soup",
+        "deep_sea_soup",
+        "dragon_scale",
+        "harvest_plate",
+        "rosemary_garlic_noodles",
+        "summer_salad",
+        "sushi_platter",
+        "vegetable_soup"
+      ],
+      "name": "Valen",
+      "tags": [
+        "townsfolk",
+        "dateable"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 6,
+        "season": "summer"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "fishable",
+        "animal_product",
+        "weird_gift"
+      ],
+      "hated_gift": "clam",
+      "id": "vera",
+      "liked_gifts": [
+        "beet_salad",
+        "braised_burdock",
+        "cauliflower_curry",
+        "chickpea_curry",
+        "coconut_milk",
+        "cranberry_juice",
+        "crispy_fried_earthshroom",
+        "cucumber_salad",
+        "orange_juice",
+        "pomegranate",
+        "pomegranate_juice",
+        "roasted_cauliflower",
+        "salted_watermelon",
+        "sauteed_snow_peas",
+        "seaweed_salad",
+        "sesame_broccoli",
+        "simmered_daikon",
+        "steamed_broccoli",
+        "tide_salad",
+        "turnip_and_cabbage_salad"
+      ],
+      "loved_gifts": [
+        "beet_soup",
+        "chili_coconut_curry",
+        "gazpacho",
+        "harvest_plate",
+        "mushroom_steak_dinner",
+        "pomegranate_sorbet",
+        "summer_salad",
+        "sweet_potato_pie",
+        "vegetable_pot_pie",
+        "winter_stew"
+      ],
+      "name": "Vera",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 6,
+        "season": "winter"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "criminal_confession",
+      "id": "wheedle",
+      "liked_gifts": [
+        "ore_diamond",
+        "ore_emerald",
+        "gold_ingot",
+        "ore_gold",
+        "golden_alpaca_wool",
+        "golden_bristle",
+        "golden_bull_horn",
+        "golden_cheesecake",
+        "golden_cookies",
+        "golden_duck_egg",
+        "golden_duck_feather",
+        "golden_egg",
+        "golden_feather",
+        "golden_horse_hair",
+        "golden_rabbit_wool",
+        "golden_sheep_wool",
+        "dragon_forged_bracelet",
+        "ore_ruby",
+        "rusted_treasure_chest",
+        "ore_sapphire"
+      ],
+      "loved_gifts": [
+        "ancient_gold_coin",
+        "coin_lump",
+        "fiber",
+        "perfect_diamond",
+        "perfect_emerald",
+        "perfect_gold_ore",
+        "perfect_pink_diamond",
+        "perfect_ruby",
+        "perfect_sapphire",
+        "ore_pink_diamond"
+      ],
+      "name": "Wheedle",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "banned_gift_tags": [],
+      "birthday": {
+        "day": 6,
+        "season": "spring"
+      },
+      "children": [],
+      "dateable": false,
+      "disliked_gift_tags": [
+        "junk",
+        "bugs",
+        "weird_gift"
+      ],
+      "hated_gift": "cicada",
+      "id": "zorel",
+      "liked_gifts": [
+        "mushroom_rice",
+        "red_toadstool",
+        "upper_mines_mushroom",
+        "glowing_mushroom",
+        "miners_mushroom_stew",
+        "wild_mushroom",
+        "dandelion",
+        "fiddlehead",
+        "nettle",
+        "wild_leek",
+        "fennel",
+        "sage"
+      ],
+      "loved_gifts": [
+        "middlemist",
+        "sunflower",
+        "heather",
+        "morel_mushroom"
+      ],
+      "name": "Zorel",
+      "tags": [
+        "vendor"
+      ]
+    }
+  ],
+  "weather": [
+    {
+      "inclement": [
+        4,
+        6
+      ],
+      "season": "fall",
+      "special": [
+        4,
+        6
+      ]
+    },
+    {
+      "inclement": [
+        4,
+        6
+      ],
+      "season": "spring",
+      "special": [
+        4,
+        6
+      ]
+    },
+    {
+      "inclement": [
+        4,
+        6
+      ],
+      "season": "summer",
+      "special": [
+        0,
+        0
+      ]
+    },
+    {
+      "inclement": [
+        4,
+        6
+      ],
+      "season": "winter",
+      "special": [
+        0,
+        0
+      ]
+    }
+  ]
+}

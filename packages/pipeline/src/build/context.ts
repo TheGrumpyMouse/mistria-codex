@@ -24,6 +24,7 @@ import { readJsonFile } from '../lib/read-json.js'
 import { Resolver } from '../normalise/resolve.js'
 import { decodeEntities, stripWikitext } from '../normalise/wikitext.js'
 import type { MarkerAlias } from './builders/maps.js'
+import { type GameFacts, loadGameFacts, loadWeatherClasses } from './game-facts.js'
 import { buildItemIdIndex, type ItemIdIndex } from './item-ids.js'
 import { buildWaterIndex, type WaterIndex } from './waters.js'
 
@@ -36,6 +37,13 @@ export type CargoRow = Record<string, unknown>
 export interface CharacterRules {
   /** The pinned villager roster. See curated/vocab/characters.json. */
   roster: string[]
+  /**
+   * Display name -> the game's npc file stem, where the two differ.
+   *
+   * Only one entry today: the wiki has no page for Seridia and calls her the
+   * Priestess. See the file for why the id has not moved with the name.
+   */
+  gameNpcIds?: Record<string, string>
 }
 
 /**
@@ -231,6 +239,17 @@ export interface BuildContext {
    * together — see build/item-ids.ts.
    */
   itemIds: ItemIdIndex
+  /**
+   * The game's own files, where this clone has them.
+   *
+   * Optional for the same reason `maps` is: `sources/game/` is committed, so CI
+   * has it, but a clone whose sources predate G1 still builds and simply gets
+   * the wiki's answers — thinner time data, `confirmed_stale` ids, and the
+   * coverage report saying so.
+   */
+  game: GameFacts | null
+  /** Game weather class -> our weather, per season. See curated/vocab/weather.json. */
+  weatherClasses: Record<string, Partial<Record<Season, string | null>>>
   schedules: ScheduleExtract
   scheduleVocab: ScheduleVocab
   /** display name -> Items row */
@@ -297,7 +316,8 @@ export async function loadContext(): Promise<BuildContext> {
   const itemNames = await readJsonFile<ItemNamesExtract>(
     join(SOURCES_DIR, 'community', 'item_names.json'),
   )
-  const itemIds = buildItemIdIndex(itemNames)
+  const [game, weatherClasses] = await Promise.all([loadGameFacts(), loadWeatherClasses()])
+  const itemIds = buildItemIdIndex(itemNames, game)
 
   // Optional on purpose: `sources/` from before the map enricher existed still
   // builds, and every location simply keeps the anchor gap it had.
@@ -463,6 +483,8 @@ export async function loadContext(): Promise<BuildContext> {
     mapShapes,
     mapAliases,
     itemIds,
+    game,
+    weatherClasses,
     schedules,
     scheduleVocab,
     itemByName,

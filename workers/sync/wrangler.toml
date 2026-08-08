@@ -10,6 +10,13 @@ compatibility_date = "2026-01-01"
 binding = "PROGRESS"
 id = "replace-me-after-wrangler-kv-namespace-create"
 
+# An allowlist, never `*`. This endpoint accepts writes, so a wildcard would let
+# any page anyone visits alter their progress in the background. Scheme + host,
+# no path: the Pages project path is not part of an origin, and including it
+# means nothing ever matches. See README.md.
+[vars]
+ALLOWED_ORIGINS = "http://localhost:5173"
+
 # Costs no KV operations, unlike counting requests in KV itself.
 [[unsafe.bindings]]
 name = "RATE_LIMIT"

@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { DATASETS, type DatasetName } from '@mistria/schema'
-import { DOCS_DIR } from '../lib/paths.js'
+import { REPORTS_DIR } from '../lib/paths.js'
 import type { Loaded } from './load.js'
 import { type Finding, warn } from './report.js'
 
@@ -16,7 +16,11 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   items: 1154, // Cargo: Items
   fish: 143, // Cargo: Fish
   bugs: 103, // Cargo: Bugs
-  crops: 58, // Cargo: Crops
+  // 61, not 58. Cargo's Crops table has 58 rows and omits three of the seven
+  // plantable fruit trees — the wiki files Apple and Cherry under Crops and
+  // Lemon, Peach and Pear only under their own pages. The three come from
+  // `tree.toml`; see `fruitTreeCrops` in build/builders/fish-crops.ts.
+  crops: 61,
   // NOT 56. The Characters Cargo table has 56 rows, but 22 are wiki editors'
   // user pages using the same infobox template. 34 is the real villager roster:
   // 12 romanceable + 14 townfolk + 8 vendors, per docs/research/01-game-data.md.
@@ -158,8 +162,11 @@ export function computeCoverage(loaded: Loaded): CoverageRow[] {
  * ingested yet is the normal state for most of this project's life, and failing
  * the build on it would just train everyone to ignore the build.
  *
- * CI enforces the one thing that does matter: coverage must not *regress*.
- * That check compares against the committed docs/coverage.md.
+ * The report is written to `build/reports/coverage.md` and printed into the CI
+ * job summary, so a regression is visible on the pull request that caused it.
+ * It is not diffed against a committed copy: `docs/` stopped being committed,
+ * and a checked-in coverage table would need regenerating on every data change
+ * for no gain over reading it in the summary.
  */
 export function coverageFindings(rows: CoverageRow[]): Finding[] {
   const findings: Finding[] = []
@@ -177,7 +184,56 @@ export function coverageFindings(rows: CoverageRow[]): Finding[] {
   return findings
 }
 
-export async function writeCoverageReport(rows: CoverageRow[]): Promise<void> {
+/**
+ * What the availability windows actually answer, and who told us.
+ *
+ * The per-dataset table above counts records; this counts *answers*. It is the
+ * number the game-file milestone is measured by — before G1 the wiki left 116
+ * of 487 windows with no time at all and 117 with nowhere to put a pin, and
+ * neither shortfall was visible in a row that said `items 1154/1154`.
+ */
+export interface AvailabilityCoverage {
+  windows: number
+  timeKnown: number
+  timeNotApplicable: number
+  timeUnknown: number
+  located: number
+  fromGame: number
+  idStatus: Record<string, number>
+}
+
+interface WindowRecord {
+  time_precision: string
+  locations: string[]
+  prov: string
+}
+
+export function availabilityCoverage(loaded: Loaded): AvailabilityCoverage {
+  const items = loaded.items.records as unknown as {
+    id_status: string
+    availability: WindowRecord[]
+  }[]
+  const windows = items.flatMap((i) => i.availability ?? [])
+
+  const idStatus: Record<string, number> = {}
+  for (const item of items) idStatus[item.id_status] = (idStatus[item.id_status] ?? 0) + 1
+
+  return {
+    windows: windows.length,
+    timeKnown: windows.filter((w) => w.time_precision === 'exact' || w.time_precision === 'block')
+      .length,
+    timeNotApplicable: windows.filter((w) => w.time_precision === 'not_applicable').length,
+    timeUnknown: windows.filter((w) => w.time_precision === 'unknown').length,
+    located: windows.filter((w) => w.locations.length > 0).length,
+    fromGame: windows.filter((w) => w.prov === 'game_files').length,
+    idStatus,
+  }
+}
+
+export async function writeCoverageReport(
+  rows: CoverageRow[],
+  availability?: AvailabilityCoverage,
+): Promise<void> {
   const lines: string[] = [
     '# Coverage',
     '',
@@ -204,7 +260,39 @@ export async function writeCoverageReport(rows: CoverageRow[]): Promise<void> {
     lines.push(`| ${row.name} | ${row.have} | ${row.expected ?? '—'} | ${pct} | ${fields} |`)
   }
 
+  if (availability !== undefined) {
+    const { windows, idStatus } = availability
+    const pct = (n: number): string => (windows === 0 ? '—' : `${Math.round((n / windows) * 100)}%`)
+
+    lines.push(
+      '',
+      '## Availability windows',
+      '',
+      'What the flagship query can actually answer. `not applicable` is an answer — time',
+      'of day does not affect fishing — and only `unknown` is a hole.',
+      '',
+      '| | count | % |',
+      '| --- | ---: | ---: |',
+      `| windows | ${windows} | |`,
+      `| time stated | ${availability.timeKnown} | ${pct(availability.timeKnown)} |`,
+      `| time not applicable | ${availability.timeNotApplicable} | ${pct(availability.timeNotApplicable)} |`,
+      `| **time unknown** | **${availability.timeUnknown}** | ${pct(availability.timeUnknown)} |`,
+      `| has at least one location | ${availability.located} | ${pct(availability.located)} |`,
+      `| sourced from the game files | ${availability.fromGame} | ${pct(availability.fromGame)} |`,
+      '',
+      '## Item id confidence',
+      '',
+      'See `build/reports/id-divergence.md` for which ids and why.',
+      '',
+      '| status | items |',
+      '| --- | ---: |',
+      ...Object.entries(idStatus)
+        .sort(([a], [b]) => (a < b ? -1 : 1))
+        .map(([status, n]) => `| \`${status}\` | ${n} |`),
+    )
+  }
+
   lines.push('')
-  await mkdir(DOCS_DIR, { recursive: true })
-  await writeFile(join(DOCS_DIR, 'coverage.md'), `${lines.join('\n')}\n`, 'utf8')
+  await mkdir(REPORTS_DIR, { recursive: true })
+  await writeFile(join(REPORTS_DIR, 'coverage.md'), `${lines.join('\n')}\n`, 'utf8')
 }

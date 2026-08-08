@@ -6,7 +6,7 @@ import { Festival, MuseumSet, Quest, Shop, Skill } from './entities/progression.
 import { Location, MapRegion, MineBiome, Monster, Spot } from './entities/world.js'
 
 export interface DatasetSpec {
-  /** Path relative to `data/`, and the basename used for `docs/schema/`. */
+  /** Path relative to `data/`, and the basename used for `build/schema/`. */
   readonly file: string
   /** Schema for a single record. Every dataset file is a JSON array of these. */
   readonly schema: z.ZodType

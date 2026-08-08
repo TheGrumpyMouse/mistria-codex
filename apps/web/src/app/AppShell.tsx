@@ -1,5 +1,14 @@
 import { Link, Outlet, useRouterState } from '@tanstack/react-router'
-import { ClipboardList, Compass, Landmark, Map as MapIcon, Search, Sun } from 'lucide-react'
+import {
+  CalendarDays,
+  ClipboardList,
+  Compass,
+  Landmark,
+  Map as MapIcon,
+  Search,
+  Settings,
+  Sun,
+} from 'lucide-react'
 import type { ComponentType } from 'react'
 import { Footer } from '~/components/Footer'
 
@@ -34,11 +43,28 @@ const NAV: NavItem[] = [
 ]
 
 /** Reachable from the sidebar, where there is room, and from links. */
-const SECONDARY: NavItem[] = [{ to: '/browse', label: 'Browse', icon: Compass }]
+const SECONDARY: NavItem[] = [
+  { to: '/browse', label: 'Browse', icon: Compass },
+  { to: '/calendar', label: 'The year', icon: CalendarDays },
+  { to: '/settings', label: 'Settings', icon: Settings },
+]
 
 export function AppShell() {
   return (
     <div className="min-h-dvh bg-paper">
+      {/*
+        First thing in the tab order and invisible until focused. Without it a
+        keyboard user tabs through six nav links on every single route before
+        reaching the content — and on a reference app you navigate constantly,
+        so it is six taps per lookup rather than six once.
+      */}
+      <a
+        href="#main"
+        className="-translate-y-full fixed top-0 left-0 z-20 rounded-br-card bg-surface px-4 py-2 text-ink text-sm transition-transform focus:translate-y-0"
+      >
+        Skip to content
+      </a>
+
       <Sidebar />
 
       {/*
@@ -47,7 +73,7 @@ export function AppShell() {
         but a map is not read, it is looked at, and 512px of a 5442-unit valley
         makes every label illegible. Each route says how wide it wants to be.
       */}
-      <main className="px-4 pt-4 pb-24 sm:px-6 lg:ml-64 lg:pb-10">
+      <main id="main" className="px-4 pt-4 pb-24 sm:px-6 lg:ml-64 lg:pb-10">
         <Outlet />
         <Column>
           <Footer />

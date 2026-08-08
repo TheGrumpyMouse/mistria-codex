@@ -29,6 +29,9 @@ importers:
       '@mistria/schema':
         specifier: workspace:*
         version: link:../../packages/schema
+      '@mistria/sync-client':
+        specifier: workspace:*
+        version: link:../../packages/sync-client
       '@tanstack/react-router':
         specifier: ^1.132.0
         version: 1.170.22(react-dom@19.2.8(react@19.2.8))(react@19.2.8)

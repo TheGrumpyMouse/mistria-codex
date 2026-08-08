@@ -5,6 +5,7 @@
       "Farm",
       "Your Farm"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3457,
       "y": 2412
@@ -186,6 +187,7 @@
       "The Town",
       "Town"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3429,
       "y": 1851
@@ -326,6 +328,7 @@
       "The Beach",
       "Beach"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 2114,
       "y": 3142.7
@@ -452,6 +455,7 @@
       "Eastern Road",
       "East Road"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 4480,
       "y": 1738
@@ -608,6 +612,7 @@
       "The Narrows",
       "Narrows"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 2174.65,
       "y": 1803.98
@@ -759,6 +764,7 @@
       "The Deepwoods",
       "Deepwoods"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 4712,
       "y": 1289
@@ -936,6 +942,7 @@
       "The Western Ruins",
       "Western Ruins"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 906,
       "y": 1892.7
@@ -1070,6 +1077,7 @@
       "The Summit",
       "Summit"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 2052,
       "y": 1177.24
@@ -1180,6 +1188,7 @@
       "Sweetwater Farm",
       "Hayden's Farm"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 2261,
       "y": 2575
@@ -1346,6 +1355,7 @@
       "Manor Gardens",
       "The Manor Gardens"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3566,
       "y": 1518
@@ -1383,6 +1393,7 @@
       "The Mines",
       "Mines"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 1989,
       "y": 1651
@@ -1420,6 +1431,7 @@
       "The Upper Mines",
       "Upper Mines"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1454,6 +1466,7 @@
       "The Tide Caverns",
       "Tide Caverns"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1489,6 +1502,7 @@
       "The Deep Earth",
       "Deep Earth"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1523,6 +1537,7 @@
       "The Lava Caves",
       "Lava Caves"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1557,6 +1572,7 @@
       "The Ancient Ruins",
       "Ancient Ruins"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1594,6 +1610,7 @@
       "Manor House Dining Room",
       "The Manor's"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3421,
       "y": 1580
@@ -1633,6 +1650,7 @@
       "Sleeping Dragon Inn",
       "The Sleeping Dragon Inn"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3332,
       "y": 1966
@@ -1671,6 +1689,7 @@
       "The General Store",
       "Store"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3496,
       "y": 1969
@@ -1710,6 +1729,7 @@
       "Blacksmith Shop",
       "Forge"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3295,
       "y": 1705
@@ -1748,6 +1768,7 @@
       "The Carpenter",
       "Carpenter Shop"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 4492,
       "y": 1601
@@ -1789,6 +1810,7 @@
       "Bathhouse Change Room",
       "Bath House: Changing Room"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3546,
       "y": 1694
@@ -1826,6 +1848,7 @@
       "Clinic",
       "The Clinic"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3534,
       "y": 1830
@@ -1863,6 +1886,7 @@
       "Museum",
       "The Museum"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 2282,
       "y": 1728
@@ -1907,6 +1931,7 @@
       "Mill",
       "The Mill"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 3613,
       "y": 1980
@@ -1952,6 +1977,7 @@
       "The Bell Tower",
       "Church"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -1994,6 +2020,7 @@
       "Tackle Shop",
       "The Tackle Shop"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 1997,
       "y": 3071
@@ -2032,6 +2059,7 @@
       "Wagon",
       "The Wagon"
     ],
+    "also_known_as": [],
     "anchor": null,
     "blurb": null,
     "confidence": "wiki",
@@ -2067,6 +2095,7 @@
       "Wishing Well",
       "The Wishing Well"
     ],
+    "also_known_as": [],
     "anchor": {
       "x": 5078,
       "y": 2005

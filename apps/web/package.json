@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@mistria/schema": "workspace:*",
+    "@mistria/sync-client": "workspace:*",
     "@tanstack/react-router": "^1.132.0",
     "dexie": "^4.4.4",
     "lucide-react": "^0.545.0",

@@ -7,7 +7,13 @@
  */
 import { parseArgs } from 'node:util'
 import { consola } from 'consola'
-import { computeCoverage, coverageFindings, writeCoverageReport } from './coverage.js'
+import {
+  availabilityCoverage,
+  computeCoverage,
+  coverageFindings,
+  writeCoverageReport,
+} from './coverage.js'
+import { checkGameAgreement } from './game-agreement.js'
 import { checkGates } from './gates.js'
 import { writeIdDivergenceReport } from './id-divergence.js'
 import { checkLicensing } from './licensing.js'
@@ -37,11 +43,12 @@ async function main(): Promise<void> {
   findings.push(...checkOrphans(loaded))
   findings.push(...checkMuseum(loaded))
   findings.push(...checkGates(loaded))
+  findings.push(...(await checkGameAgreement(loaded)))
   findings.push(...(await checkLicensing()))
 
   const coverage = computeCoverage(loaded)
   findings.push(...coverageFindings(coverage))
-  await writeCoverageReport(coverage)
+  await writeCoverageReport(coverage, availabilityCoverage(loaded))
   await writeIdDivergenceReport(loaded)
 
   const errors = findings.filter((f) => f.severity === 'error')
@@ -62,7 +69,7 @@ async function main(): Promise<void> {
   const ingested = coverage.filter((r) => r.have > 0).length
   consola.success(
     `Validation passed — ${ingested}/${coverage.length} datasets ingested, ` +
-      `${warnings.length} warnings. See docs/coverage.md.`,
+      `${warnings.length} warnings. See build/reports/coverage.md.`,
   )
 
   // `--strict` is for CI on the data branch: it refuses to let unresolved

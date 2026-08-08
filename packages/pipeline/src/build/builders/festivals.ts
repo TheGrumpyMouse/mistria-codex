@@ -50,6 +50,7 @@ export function buildFestivals(ctx: BuildContext): Festival[] {
       numeric_id_game_version: null,
       id_status: 'provisional' as const,
       former_ids: [],
+      also_known_as: [],
       game_version: festivals.wikiVersionStamp,
       version_added: null,
       confidence: 'wiki' as const,

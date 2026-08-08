@@ -23,10 +23,19 @@ export const DATA_DIR = join(REPO_ROOT, 'data')
 export const ASSETS_DIR = join(REPO_ROOT, 'assets', 'game')
 export const ASSETS_MANIFEST = join(ASSETS_DIR, 'manifest.json')
 
-/** Intermediates and reports. Gitignored. */
+/**
+ * Intermediates, emitted schema and generated reports. Gitignored.
+ *
+ * The reports and the emitted JSON Schema used to land in `docs/`, which is no
+ * longer committed. A generated file inside an untracked notes folder is
+ * indistinguishable from a hand-written one, and it left CI reading a path that
+ * is not part of the repo. They are build output, so they live with the build
+ * output — `docs/` is hand-written notes and nothing in the pipeline writes
+ * there.
+ */
 export const BUILD_DIR = join(REPO_ROOT, 'build')
-export const DOCS_DIR = join(REPO_ROOT, 'docs')
-export const SCHEMA_DIR = join(DOCS_DIR, 'schema')
+export const REPORTS_DIR = join(BUILD_DIR, 'reports')
+export const SCHEMA_DIR = join(BUILD_DIR, 'schema')
 /** Shipped bundle the PWA fetches. Gitignored. */
 export const SHIP_DIR = join(REPO_ROOT, 'apps', 'web', 'public', 'data')
 /** Packed atlases and portraits the PWA fetches. Gitignored build output. */

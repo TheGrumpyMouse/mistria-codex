@@ -1,6 +1,16 @@
-import type { Character, GiftInterest, GiftPrefs, Season } from '@mistria/schema'
+import {
+  type Character,
+  type GiftInterest,
+  type GiftPrefs,
+  SEASONS,
+  type Season,
+  toSnakeId,
+} from '@mistria/schema'
+import type { GameNpc } from '../../extract/world.js'
 import { toBoolean, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
+
+const isSeason = (value: string): value is Season => (SEASONS as readonly string[]).includes(value)
 
 /** The wiki writes a birthday as "Winter 18". */
 const BIRTHDAY = /^(Spring|Summer|Fall|Autumn|Winter)\s+(\d{1,2})$/i
@@ -44,6 +54,27 @@ export function rosterDrift(ctx: BuildContext): { missing: string[]; absent: str
   }
 }
 
+/**
+ * The game's record for a villager, matched to a wiki display name.
+ *
+ * Matched by id first — the game's file stems and our ids agree for 33 of 34 —
+ * then by the game's own display name, then by the one curated alias. Never
+ * fuzzily: a villager matched to the wrong file would take someone else's
+ * birthday, and nothing downstream could tell.
+ */
+function gameNpcFor(ctx: BuildContext, displayName: string): GameNpc | undefined {
+  const game = ctx.game
+  if (game === null) return undefined
+
+  const alias = ctx.characterRules.gameNpcIds?.[displayName]
+  if (alias !== undefined) return game.npcById.get(alias)
+
+  const byId = game.npcById.get(toSnakeId(displayName))
+  if (byId !== undefined) return byId
+
+  return [...game.npcById.values()].find((npc) => npc.name === displayName)
+}
+
 export function buildCharacters(ctx: BuildContext): Character[] {
   const real = realCharacterNames(ctx)
   return ctx.characters
@@ -51,13 +82,23 @@ export function buildCharacters(ctx: BuildContext): Character[] {
     .map((row) => {
       const name = itemName(row.charName)
       const id = ctx.idFor(name)
+      const npc = gameNpcFor(ctx, name)
 
       const match = BIRTHDAY.exec(text(row.birth))
       const seasonWord = (match?.[1] ?? '').toLowerCase()
-      const birthday =
+      const fromWiki =
         match && SEASON_WORD[seasonWord]
           ? { season: SEASON_WORD[seasonWord] as Season, day: Number(match[2]) }
           : null
+
+      // The game states all 34 birthdays; the wiki has 33. Caldarus is the one
+      // it never printed, and the wiki cannot be blamed for it — he is a
+      // late-game hidden character.
+      const fromGame =
+        npc?.birthday !== undefined && npc.birthday !== null && isSeason(npc.birthday.season)
+          ? { season: npc.birthday.season, day: npc.birthday.day }
+          : null
+      const birthday = fromGame ?? fromWiki
 
       const gaps: string[] = []
       if (birthday === null) gaps.push('birthday')
@@ -67,17 +108,33 @@ export function buildCharacters(ctx: BuildContext): Character[] {
       gaps.push('schedule')
       gaps.push('heart_events')
 
+      // Confirmed only when our id *is* the game's file stem. Matching her
+      // through the Priestess alias proves who she is, not that `priestess` is
+      // what the game calls her — it is not, and the gap says so until the
+      // rename is done properly. See curated/vocab/characters.json.
+      const confirmed = npc !== undefined && npc.id === id
+      if (npc !== undefined && !confirmed) gaps.push('id_pending_rename')
+
       return {
         id,
         name,
         numeric_id: null,
         numeric_id_game_version: null,
-        id_status: 'provisional',
+        id_status: confirmed ? ('confirmed' as const) : ('provisional' as const),
         former_ids: [],
-        game_version: null,
+        // The game's name for her, when it is not the wiki's. This is the
+        // Priestess: the wiki uses the title because that is what the game
+        // calls her until she gives you her name, and the files have said
+        // Seridia all along. Both are right, and someone who has met her will
+        // search for Seridia — so it goes in the index rather than waiting for
+        // the id rename, which is a separate and much larger change.
+        also_known_as:
+          npc?.name !== undefined && npc.name !== null && npc.name !== name ? [npc.name] : [],
+        game_version: confirmed ? (ctx.game?.version ?? null) : null,
         version_added: null,
         confidence: 'wiki',
-        prov: { '*': 'wiki_cargo' },
+        prov:
+          fromGame === null ? { '*': 'wiki_cargo' } : { '*': 'wiki_cargo', birthday: 'game_files' },
         data_gaps: gaps,
         icon_key: `character/${id}`,
         wiki_page: name.replace(/ /g, '_'),

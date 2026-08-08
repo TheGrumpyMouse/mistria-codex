@@ -86,7 +86,17 @@ export async function loadRequestBoard(): Promise<RequestBoard> {
 /** `id -> { n: name, i: icon_key, c: category }`, for painting a result row. */
 export type DisplayIndex = Record<
   string,
-  { n: string; i: string | null; c: string; v: number | null }
+  {
+    n: string
+    i: string | null
+    c: string
+    v: number | null
+    /**
+     * Other names this thing goes by, searchable but never shown as the name.
+     * Absent on almost every entry, so read it as optional rather than empty.
+     */
+    a?: string[]
+  }
 >
 
 /**

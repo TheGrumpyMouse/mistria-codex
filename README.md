@@ -15,18 +15,19 @@ code you can type into a second device to bring it along.
 
 ## Status
 
-Early. The data layer is being built first, because the data *is* the product —
-getting it wrong poisons everything downstream. See [docs/PLAN.md](docs/PLAN.md)
-for the milestones and [docs/coverage.md](docs/coverage.md) for what has actually
-been ingested so far.
+Early. The data layer was built first, because the data *is* the product —
+getting it wrong poisons everything downstream. `pnpm validate` writes
+`build/reports/coverage.md`, which is the honest account of what has actually
+been ingested and what is still missing.
 
 ## Repository layout
 
 ```
 packages/schema/     Zod contracts. The availability model lives here.
 packages/pipeline/   extract / enrich / normalise / build / validate
-apps/web/            the PWA (not started)
-workers/sync/        progress sync (not started)
+packages/sync-client/ the CRDT merge, shared by the app and the Worker
+apps/web/            the PWA
+workers/sync/        progress sync
 
 sources/             raw snapshots      — generated, committed, never hand-edited
 curated/             human knowledge    — hand-authored, never generated
@@ -57,10 +58,11 @@ you type in a sync code.
 
 Game sprites live in `assets/game/`, under attribution. They are the sole
 property of NPC Studio and we claim no ownership of them; see
-[ATTRIBUTION.md](ATTRIBUTION.md) for every file and where it came from, and
-`docs/DATA-POLICY.md` for the policy and the removal procedure.
+[ATTRIBUTION.md](ATTRIBUTION.md) for every file and where it came from.
 
-See [DATA-LICENSE.md](DATA-LICENSE.md) and [docs/DATA-POLICY.md](docs/DATA-POLICY.md).
+See [DATA-LICENSE.md](DATA-LICENSE.md) for what the compilation is licensed
+under. The asset policy and the one-command removal procedure live in
+`docs/DATA-POLICY.md`, which is a maintainer document and is not published.
 
 Facts verified against the [Fields of Mistria Wiki](https://fieldsofmistria.wiki.gg),
 with thanks.

@@ -10,6 +10,7 @@ const index: DisplayIndex = {
   coal: { n: 'Coal', i: null, c: 'material', v: 15 },
   haydens_shop: { n: "Hayden's Shop", i: null, c: 'location', v: null },
   celine: { n: 'Céline', i: null, c: 'character', v: null },
+  priestess: { n: 'Priestess', i: null, c: 'character', v: null, a: ['Seridia'] },
 }
 
 describe('rankOf', () => {
@@ -58,5 +59,31 @@ describe('search', () => {
   it('searches villagers and places, not just items', () => {
     expect(search(index, 'hayden')[0]?.id).toBe('haydens_shop')
     expect(search(index, 'celine')[0]?.id).toBe('celine')
+  })
+})
+
+describe('other names', () => {
+  it('finds the Priestess by the name the game calls her', () => {
+    const [hit] = search(index, 'seridia')
+    expect(hit?.id).toBe('priestess')
+  })
+
+  it('says which name matched, so the row does not look like a bug', () => {
+    expect(search(index, 'seridia')[0]?.via).toBe('Seridia')
+    expect(search(index, 'priestess')[0]?.via).toBeNull()
+  })
+
+  it('puts a name match above an alias match, even a worse one', () => {
+    // "Seridia" is an exact alias and only a prefix of the other name, and the
+    // name still wins: what is on screen is what someone is reading.
+    const both: DisplayIndex = {
+      seridia_shrine: { n: 'Seridia Shrine', i: null, c: 'furniture', v: null },
+      priestess: { n: 'Priestess', i: null, c: 'character', v: null, a: ['Seridia'] },
+    }
+    expect(search(both, 'seridia').map((h) => h.id)).toEqual(['seridia_shrine', 'priestess'])
+  })
+
+  it('ignores an alias when the name already matches', () => {
+    expect(search(index, 'priest')[0]?.via).toBeNull()
   })
 })

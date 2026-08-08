@@ -110,6 +110,7 @@ export function buildMuseum(ctx: BuildContext): MuseumIndex {
       numeric_id_game_version: null,
       id_status: 'confirmed',
       former_ids: [],
+      also_known_as: [],
       // The wiki's own version banner on the wing page. Three of the four are
       // pre-1.0 (fish v0.14.0, flora and archaeology v0.15), so the app can say
       // "this set list predates 1.0" instead of implying currency.

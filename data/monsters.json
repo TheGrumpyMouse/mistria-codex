@@ -1,5 +1,6 @@
 [
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -40,6 +41,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -80,6 +82,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -120,6 +123,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -160,6 +164,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -200,6 +205,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -245,6 +251,7 @@
     "wiki_page": "Sapling"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -285,6 +292,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -325,6 +333,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -365,6 +374,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -405,6 +415,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -449,6 +460,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -494,6 +506,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -539,6 +552,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -584,6 +598,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -629,6 +644,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -673,6 +689,7 @@
     "wiki_page": "Clod"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -713,6 +730,7 @@
     "wiki_page": "Mushroom_(Monster)"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -753,6 +771,7 @@
     "wiki_page": "Mushroom_(Monster)"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -793,6 +812,7 @@
     "wiki_page": "Mushroom_(Monster)"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -833,6 +853,7 @@
     "wiki_page": "Mushroom_(Monster)"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines"
     ],
@@ -872,6 +893,7 @@
     "wiki_page": "Enchantern"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -911,6 +933,7 @@
     "wiki_page": "Enchantern"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -950,6 +973,7 @@
     "wiki_page": "Stalagmite"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -989,6 +1013,7 @@
     "wiki_page": "Stalagmite"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -1028,6 +1053,7 @@
     "wiki_page": "Stalagmite"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "tide_caverns"
     ],
@@ -1067,6 +1093,7 @@
     "wiki_page": "Essence_Bat"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "deep_earth"
     ],
@@ -1106,6 +1133,7 @@
     "wiki_page": "Essence_Bat"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "upper_mines",
       "tide_caverns",
@@ -1139,6 +1167,7 @@
     "wiki_page": "Mimic"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -1183,6 +1212,7 @@
     "wiki_page": "Flame_Spirit"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -1227,6 +1257,7 @@
     "wiki_page": "Flame_Spirit"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "lava_caves"
     ],
@@ -1276,6 +1307,7 @@
     "wiki_page": "Lava_Cat"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -1310,6 +1342,7 @@
     "wiki_page": "Void_Cat"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -1349,6 +1382,7 @@
     "wiki_page": "Flying_Tome"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],
@@ -1388,6 +1422,7 @@
     "wiki_page": "Rock_Stack"
   },
   {
+    "also_known_as": [],
     "biome_ids": [
       "ancient_ruins"
     ],

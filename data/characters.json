@@ -1,6 +1,7 @@
 [
   {
     "affiliation": "Royal Family",
+    "also_known_as": [],
     "birthday": {
       "day": 18,
       "season": "winter"
@@ -26,20 +27,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/adeline",
     "id": "adeline",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Adeline",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Acting Leader of Mistria",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -50,6 +52,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 10,
       "season": "summer"
@@ -62,20 +65,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/balor",
     "id": "balor",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Balor",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Traveling Merchant",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -86,30 +90,34 @@
   },
   {
     "affiliation": null,
-    "birthday": null,
+    "also_known_as": [],
+    "birthday": {
+      "day": 25,
+      "season": "spring"
+    },
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "birthday",
       "schedule",
       "heart_events"
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/caldarus",
     "id": "caldarus",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Caldarus",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Dragon",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -120,6 +128,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 14,
       "season": "summer"
@@ -145,20 +154,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/celine",
     "id": "celine",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Celine",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Gardener, Part-Timer",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -169,6 +179,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 13,
       "season": "winter"
@@ -181,20 +192,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/darcy",
     "id": "darcy",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Darcy",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Cafe Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -205,6 +217,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 3,
       "season": "winter"
@@ -230,20 +243,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/dell",
     "id": "dell",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Dell",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Leader of the Dragonguard",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -254,6 +268,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 16,
       "season": "fall"
@@ -271,20 +286,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/dozy",
     "id": "dozy",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Dozy",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Bathhouse Co-owner",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -295,6 +311,7 @@
   },
   {
     "affiliation": "Royal Family",
+    "also_known_as": [],
     "birthday": {
       "day": 20,
       "season": "summer"
@@ -320,20 +337,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/eiland",
     "id": "eiland",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Eiland",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Archaeologist, Noble",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -344,6 +362,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 2,
       "season": "summer"
@@ -365,20 +384,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/elsie",
     "id": "elsie",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Elsie",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Retired Socialite",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -389,6 +409,7 @@
   },
   {
     "affiliation": "Historical Society",
+    "also_known_as": [],
     "birthday": {
       "day": 11,
       "season": "winter"
@@ -401,20 +422,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/errol",
     "id": "errol",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Errol",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Museum Curator",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -425,6 +447,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 8,
       "season": "winter"
@@ -446,20 +469,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/hayden",
     "id": "hayden",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Hayden",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Runs Sweetwater Farm",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -470,6 +494,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 23,
       "season": "winter"
@@ -499,20 +524,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/hemlock",
     "id": "hemlock",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Hemlock",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Inn Co-owner, Bartender",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -523,6 +549,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 7,
       "season": "winter"
@@ -540,20 +567,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/henrietta",
     "id": "henrietta",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Henrietta",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Prize-winning Chicken",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -564,6 +592,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 14,
       "season": "fall"
@@ -589,20 +618,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/holt",
     "id": "holt",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Holt",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "General Store Co-owner",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -613,6 +643,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 16,
       "season": "summer"
@@ -642,20 +673,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/josephine",
     "id": "josephine",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Josephine",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Inn Co-Owner",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -666,6 +698,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 26,
       "season": "fall"
@@ -683,20 +716,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/juniper",
     "id": "juniper",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Juniper",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Sorceress/Bathhouse Owner",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -707,6 +741,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 4,
       "season": "fall"
@@ -736,20 +771,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/landen",
     "id": "landen",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Landen",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Semi-retired carpenter",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -760,6 +796,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 20,
       "season": "fall"
@@ -772,20 +809,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/louis",
     "id": "louis",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Louis",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Clothing Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -796,6 +834,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 21,
       "season": "spring"
@@ -825,20 +864,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/luc",
     "id": "luc",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Luc",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Future Entomologist",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -849,6 +889,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 26,
       "season": "summer"
@@ -878,20 +919,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/maple",
     "id": "maple",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Maple",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Royalty Expert",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -902,6 +944,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 16,
       "season": "spring"
@@ -927,20 +970,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/march",
     "id": "march",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "March",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Blacksmith",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -951,6 +995,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 6,
       "season": "fall"
@@ -963,20 +1008,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/merri",
     "id": "merri",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Merri",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Furniture Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -987,6 +1033,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 24,
       "season": "summer"
@@ -1012,20 +1059,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/nora",
     "id": "nora",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Nora",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "General Store Co-owner Head of Mistria's Chamber of Commerce Head of the Saturday Market",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1036,6 +1084,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 10,
       "season": "spring"
@@ -1061,20 +1110,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/olric",
     "id": "olric",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Olric",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Part-Timer",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1085,6 +1135,9 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [
+      "Seridia"
+    ],
     "birthday": {
       "day": 2,
       "season": "winter"
@@ -1093,7 +1146,8 @@
     "confidence": "wiki",
     "data_gaps": [
       "schedule",
-      "heart_events"
+      "heart_events",
+      "id_pending_rename"
     ],
     "family": [],
     "former_ids": [],
@@ -1110,7 +1164,8 @@
     "numeric_id_game_version": null,
     "occupation": "Dragon Priestess",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1121,6 +1176,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 12,
       "season": "fall"
@@ -1150,20 +1206,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/reina",
     "id": "reina",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Reina",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Head Cook at the Inn",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1174,6 +1231,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 4,
       "season": "spring"
@@ -1207,20 +1265,21 @@
       }
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/ryis",
     "id": "ryis",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Ryis",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Carpenter",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1231,6 +1290,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 27,
       "season": "winter"
@@ -1243,20 +1303,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/stillwell",
     "id": "stillwell",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Stillwell",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Fortune Telling Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1267,6 +1328,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 13,
       "season": "spring"
@@ -1279,20 +1341,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/taliferro",
     "id": "taliferro",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Taliferro",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Chef",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1303,6 +1366,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 22,
       "season": "fall"
@@ -1315,20 +1379,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/terithia",
     "id": "terithia",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Terithia",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Fisherwoman",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1339,6 +1404,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 1,
       "season": "fall"
@@ -1351,20 +1417,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/valen",
     "id": "valen",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Valen",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Town Doctor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1375,6 +1442,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 6,
       "season": "summer"
@@ -1387,20 +1455,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/vera",
     "id": "vera",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Vera",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Hairstyle & Accessory Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1411,6 +1480,7 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
       "day": 6,
       "season": "winter"
@@ -1423,20 +1493,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Male",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/wheedle",
     "id": "wheedle",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Wheedle",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Salesman",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1447,9 +1518,10 @@
   },
   {
     "affiliation": null,
+    "also_known_as": [],
     "birthday": {
-      "day": 23,
-      "season": "summer"
+      "day": 6,
+      "season": "spring"
     },
     "blurb": null,
     "confidence": "wiki",
@@ -1459,20 +1531,21 @@
     ],
     "family": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "gender": "Female",
     "heart_events": [],
     "home_location_id": null,
     "icon_key": "character/zorel",
     "id": "zorel",
-    "id_status": "provisional",
+    "id_status": "confirmed",
     "is_vendor": false,
     "name": "Zorel",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "occupation": "Music Vendor",
     "prov": {
-      "*": "wiki_cargo"
+      "*": "wiki_cargo",
+      "birthday": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,

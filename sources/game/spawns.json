@@ -1,0 +1,9227 @@
+{
+  "bugs": [
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "ancient_firefly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "ant",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "ant_queen",
+      "pheromones_only": true,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach",
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "beach_hopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "big_bee",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "biggest_beetle",
+      "pheromones_only": true,
+      "rarity": "very_rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach",
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "brightbulb_moth",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "bumblebee",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "butterfly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "caterpillar",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "canopy",
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "chillipede",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "cicada",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "canopy",
+        "grass"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "cicada_nymph",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "cooktop_beetle",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "copper_beetle",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "coral_mantis",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "cricket",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "crystal_caterpillar",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "canopy",
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "crystal_wing_moth",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "crystalline_cricket",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "deep_earthworm",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "diamond_beetle",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "dragon_horn_beetle",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "dragonfly",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "fairy_bee",
+      "pheromones_only": false,
+      "rarity": "very_rare",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "fire_wasp",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "firefly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "flower_bee",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "flower_crown_beetle",
+      "pheromones_only": false,
+      "rarity": "very_rare",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "frost_flutter_butterfly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "fur_bee",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "fuzzy_moth",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "gem_shard_caterpillar",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "giant_worm",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "grasshopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default",
+        "grass"
+      ],
+      "tags": [
+        "standard",
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "hermit_crab",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "hermit_snail",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "hidden_beetle",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "hummingbird_hawk_moth",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "icehopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default",
+        "grass"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "inchworm",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "jewel_beetle",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "ladybug",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "lantern_moth",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "lava_snail",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "leafhopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default",
+        "grass"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "lightning_dragonfly",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "loam_caterpillar",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "canopy",
+        "default"
+      ],
+      "tags": [
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "luna_moth",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "magma_beetle",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "mine_cricket",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "mistmoth",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "monarch_butterfly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "moonlight_bee",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "mote_firefly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "orchid_mantis",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "parchment_moth",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "petalhopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default",
+        "grass"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "polar_fly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": true,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "pond_skater",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "water_bug"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "praying_mantis",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "puddle_spider",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "queens_birdwing",
+      "pheromones_only": true,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach",
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "question_mark_butterfly",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "redhead_worm",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "relic_crab",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        20,
+        26
+      ],
+      "id": "rhinoceros_beetle",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "rock_roach",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "roly_poly",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "saint_mantis",
+      "pheromones_only": true,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach",
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "sand_bug",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "sea_scarab",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "singing_katydid",
+      "pheromones_only": false,
+      "rarity": "rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "smoke_moth",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "snail",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "snowball_beetle",
+      "pheromones_only": false,
+      "rarity": "very_rare",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "snug_bug",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "speedy_snail",
+      "pheromones_only": false,
+      "rarity": "very_rare",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "inclement",
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "strawhopper",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default",
+        "grass"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "strobe_firefly",
+      "pheromones_only": false,
+      "rarity": "very_rare",
+      "seasons": [
+        "summer"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "sunset_moth",
+      "pheromones_only": true,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard",
+        "beach",
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "surf_beetle",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "sweet_bee",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "tiger_swallowtail_butterfly",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "tunnel_millipede",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "void_snail",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        20
+      ],
+      "id": "walking_leaf",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "fall"
+      ],
+      "spawn": [
+        "canopy",
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "walking_stick",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "waterbug",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "beach"
+      ],
+      "weather": [
+        "calm",
+        "special",
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "waterfly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "windleaf_butterfly",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "default"
+      ],
+      "tags": [
+        "deep_woods"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": -1,
+      "hours": [
+        6,
+        26
+      ],
+      "id": "winterpillar",
+      "pheromones_only": false,
+      "rarity": "common",
+      "seasons": [
+        "winter"
+      ],
+      "spawn": [
+        "default",
+        "canopy"
+      ],
+      "tags": [
+        "standard"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    },
+    {
+      "can_spawn_on_water": false,
+      "dungeon_biome": null,
+      "hours": [
+        6,
+        17
+      ],
+      "id": "worm",
+      "pheromones_only": false,
+      "rarity": "uncommon",
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "spawn": [
+        "rock"
+      ],
+      "tags": [
+        "mines"
+      ],
+      "weather": [
+        "calm",
+        "special"
+      ]
+    }
+  ],
+  "crops": [
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "ash_mushroom",
+      "id": "ash_mushroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "basil",
+      "id": "basil",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "beet",
+      "id": "beet",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "blue_conch_shell",
+      "id": "blue_conch_shell",
+      "is_plant": false,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "breath_of_fire",
+      "id": "breath_of_fire",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "broccoli",
+      "id": "broccoli",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "burdock_root",
+      "id": "burdock_root",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "cabbage",
+      "id": "cabbage",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "carrot",
+      "id": "carrot",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "catmint",
+      "id": "catmint",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "cauliflower",
+      "id": "cauliflower",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "cave_kelp",
+      "id": "cave_kelp",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "celosia",
+      "id": "celosia",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "chestnut",
+      "id": "chestnut",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "chickpea",
+      "id": "chickpea",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "chili_pepper",
+      "id": "chili_pepper",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "chirping_fern",
+      "id": "chirping_fern",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "chrysanthemum",
+      "id": "chrysanthemum",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "corn",
+      "id": "corn",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "cosmos",
+      "id": "cosmos",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "cranberry",
+      "id": "cranberry",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "crocus",
+      "id": "crocus",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "crystal_berries",
+      "id": "crystal_berries",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "crystal_rose",
+      "id": "crystal_rose",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "cucumber",
+      "id": "cucumber",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "daffodil",
+      "id": "daffodil",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "daikon_radish",
+      "id": "daikon_radish",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "daisy",
+      "id": "daisy",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "dandelion",
+      "id": "dandelion",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "dill",
+      "id": "dill",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "earthshroom",
+      "id": "earthshroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "essence_blossom",
+      "id": "essence_blossom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "ethereal_grass",
+      "id": "ethereal_grass",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "fennel",
+      "id": "fennel",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "fiddlehead",
+      "id": "fiddlehead",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "flame_pepper",
+      "id": "flame_pepper",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "fog_orchid",
+      "id": "fog_orchid",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "frost_lily",
+      "id": "frost_lily",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "garlic",
+      "id": "garlic",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "heather",
+      "id": "heather",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "holly",
+      "id": "holly",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "horseradish",
+      "id": "horseradish",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "hot_potato",
+      "id": "hot_potato",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "ice_block",
+      "id": "ice_block",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "iris",
+      "id": "iris",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "jasmine",
+      "id": "jasmine",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "lava_chestnuts",
+      "id": "lava_chestnuts",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "lilac",
+      "id": "lilac",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "harvest": "magic_key",
+      "id": "magic_key",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "marigold",
+      "id": "marigold",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "middlemist",
+      "id": "middlemist",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "mines_mussels",
+      "id": "mines_mussels",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "moon_fruit",
+      "id": "moon_fruit",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "morel_mushroom",
+      "id": "morel_mushroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "apple",
+      "id": "mystery_bag",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "narrows_moss",
+      "id": "narrows_moss",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "nettle",
+      "id": "nettle",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "night_queen",
+      "id": "night_queen",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "onion",
+      "id": "onion",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "oregano",
+      "id": "oregano",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "oyster_mushroom",
+      "id": "oyster_mushroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "peas",
+      "id": "peas",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "pineshroom",
+      "id": "pineshroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "pink_scallop_shell",
+      "id": "pink_scallop_shell",
+      "is_plant": false,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "poinsettia",
+      "id": "poinsettia",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "potato",
+      "id": "potato",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "pumpkin",
+      "id": "pumpkin",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "rice_stalk",
+      "id": "rice",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "rockroot",
+      "id": "rockroot",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "rosemary",
+      "id": "rosemary",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "sage",
+      "id": "sage",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "sand_dollar",
+      "id": "sand_dollar",
+      "is_plant": false,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "sea_grapes",
+      "id": "sea_grapes",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "sesame",
+      "id": "sesame",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "shadow_flower",
+      "id": "shadow_flower",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "shale_grass",
+      "id": "shale_grass",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "snapdragon",
+      "id": "snapdragon",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "snow_peas",
+      "id": "snow_peas",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "snowdrop_anemone",
+      "id": "snowdrop_anemone",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "spell_fruit",
+      "id": "spell_fruit",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "spirit_mushroom",
+      "id": "spirit_mushroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "spirula_shell",
+      "id": "spirula_shell",
+      "is_plant": false,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "strawberry",
+      "id": "strawberry",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "sugar_cane",
+      "id": "sugar_cane",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "sunflower",
+      "id": "sunflower",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "sweet_potato",
+      "id": "sweet_potato",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "sweetroot",
+      "id": "sweetroot",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "tea",
+      "id": "tea",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "temple_flower",
+      "id": "temple_flower",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "marigold",
+      "id": "temple_marigold",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "thorn_vine",
+      "id": "thorn_vine",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "thyme",
+      "id": "thyme",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "tide_lettuce",
+      "id": "tide_lettuce",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "tomato",
+      "id": "tomato",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "tulip",
+      "id": "tulip",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "harvest": "turnip",
+      "id": "turnip",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "upper_mines_mushroom",
+      "id": "upper_mines_mushroom",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "harvest": "viola",
+      "id": "viola",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "void_herb",
+      "id": "void_herb",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "walnut",
+      "id": "walnut",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "watermelon",
+      "id": "watermelon",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "harvest": "wheat",
+      "id": "wheat",
+      "is_plant": true,
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "wild_leek",
+      "id": "wild_leek",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "count": 1,
+      "day_to_stage": [
+        0
+      ],
+      "harvest": "written_root",
+      "id": "written_root",
+      "is_plant": true,
+      "regrow_days": 0,
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "alligator_gar",
+      "is_chest": false,
+      "item": "alligator_gar",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "giant",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "amberjack",
+      "is_chest": false,
+      "item": "amberjack",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fish_trap"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "anchovy",
+      "is_chest": false,
+      "item": "anchovy",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "angel_fish",
+      "is_chest": false,
+      "item": "angel_fish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "archerfish",
+      "is_chest": false,
+      "item": "archerfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "armored_bass",
+      "is_chest": false,
+      "item": "armored_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bait_thief",
+      "is_chest": false,
+      "item": "bait_thief",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fish_trap"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "barb",
+      "is_chest": false,
+      "item": "barb",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "blue_crab",
+      "is_chest": false,
+      "item": "blue_crab",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fish_trap"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bluefish",
+      "is_chest": false,
+      "item": "bluefish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bluegill",
+      "is_chest": false,
+      "item": "bluegill",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bonito",
+      "is_chest": false,
+      "item": "bonito",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bowfish",
+      "is_chest": false,
+      "item": "bowfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bream",
+      "is_chest": false,
+      "item": "bream",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "brown_bullhead",
+      "is_chest": false,
+      "item": "brown_bullhead",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "brown_trout",
+      "is_chest": false,
+      "item": "brown_trout",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "bullfrog",
+      "is_chest": false,
+      "item": "bullfrog",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "burbot",
+      "is_chest": false,
+      "item": "burbot",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "butterfish",
+      "is_chest": false,
+      "item": "butterfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "candelabra_seadragon",
+      "is_chest": false,
+      "item": "candelabra_seadragon",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "carp",
+      "is_chest": false,
+      "item": "carp",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "catfish",
+      "is_chest": false,
+      "item": "catfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "cave_eel",
+      "is_chest": false,
+      "item": "cave_eel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "cave_shark",
+      "is_chest": false,
+      "item": "cave_shark",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "cave_shrimp",
+      "is_chest": false,
+      "item": "cave_shrimp",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "char",
+      "is_chest": false,
+      "item": "char",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": "legendary",
+      "hours": null,
+      "id": "cherry_fish",
+      "is_chest": false,
+      "item": "cherry_fish",
+      "legendary": true,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "special"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "chub",
+      "is_chest": false,
+      "item": "chub",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "chum",
+      "is_chest": false,
+      "item": "chum",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "clam",
+      "is_chest": false,
+      "item": "clam",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "clay_large",
+      "is_chest": false,
+      "item": "clay",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "clay_medium",
+      "is_chest": false,
+      "item": "clay",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "clay_small",
+      "is_chest": false,
+      "item": "clay",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "cod",
+      "is_chest": false,
+      "item": "cod",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "coelacanth",
+      "is_chest": false,
+      "item": "coelacanth",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "coin_lump",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_fishing",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": true,
+      "has_perk": null,
+      "hours": null,
+      "id": "copper_rockfish",
+      "is_chest": false,
+      "item": "copper_rockfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "fishing",
+        "mines"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond",
+        "river",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "crab",
+      "is_chest": false,
+      "item": "crab",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "crayfish",
+      "is_chest": false,
+      "item": "crayfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "criminal_confession",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_divespots",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "crucian_carp",
+      "is_chest": false,
+      "item": "crucian_carp",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "dace",
+      "is_chest": false,
+      "item": "dace",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "dart",
+      "is_chest": false,
+      "item": "dart",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "earth_eel",
+      "is_chest": false,
+      "item": "earth_eel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "emerald_horned_charger",
+      "is_chest": false,
+      "item": "emerald_horned_charger",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "fibre_medium",
+      "is_chest": false,
+      "item": "fiber",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "fibre_small",
+      "is_chest": false,
+      "item": "fiber",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "firesail_fish",
+      "is_chest": false,
+      "item": "firesail_fish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "flathead_catfish",
+      "is_chest": false,
+      "item": "flathead_catfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "forest_perch",
+      "is_chest": false,
+      "item": "forest_perch",
+      "legendary": false,
+      "locations": [
+        "deep_woods"
+      ],
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "freshwater_eel",
+      "is_chest": false,
+      "item": "freshwater_eel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "freshwater_oyster",
+      "is_chest": false,
+      "item": "freshwater_oyster",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "frog",
+      "is_chest": false,
+      "item": "frog",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "gar",
+      "is_chest": false,
+      "item": "gar",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "gazer",
+      "is_chest": false,
+      "item": "gazer",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "giant_fish_scale",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_fishing",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "giant_jellyfish",
+      "is_chest": false,
+      "item": "giant_jellyfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "giant_koi",
+      "is_chest": false,
+      "item": "giant_koi",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "giant",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "giant_tilapia",
+      "is_chest": false,
+      "item": "giant_tilapia",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "giant",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "glass_large",
+      "is_chest": false,
+      "item": "glass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "glass_medium",
+      "is_chest": false,
+      "item": "glass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "glass_small",
+      "is_chest": false,
+      "item": "glass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "goby",
+      "is_chest": false,
+      "item": "goby",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": true,
+      "has_perk": null,
+      "hours": null,
+      "id": "golden_eel",
+      "is_chest": false,
+      "item": "golden_eel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing",
+        "mines"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "giant",
+      "water_type": [
+        "pond",
+        "river",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "golden_shiner",
+      "is_chest": false,
+      "item": "golden_shiner",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "goldfish",
+      "is_chest": false,
+      "item": "goldfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "grayling",
+      "is_chest": false,
+      "item": "grayling",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "grouper",
+      "is_chest": false,
+      "item": "grouper",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "giant",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "hake",
+      "is_chest": false,
+      "item": "hake",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fish_trap"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "halibut",
+      "is_chest": false,
+      "item": "halibut",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "herring",
+      "is_chest": false,
+      "item": "herring",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "horse_mackerel",
+      "is_chest": false,
+      "item": "horse_mackerel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": true,
+      "has_perk": null,
+      "hours": null,
+      "id": "iron_fish",
+      "is_chest": false,
+      "item": "iron_fish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing",
+        "mines"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond",
+        "river",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "jellyfish",
+      "is_chest": false,
+      "item": "jellyfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "killifish",
+      "is_chest": false,
+      "item": "killifish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "king_crab",
+      "is_chest": false,
+      "item": "king_crab",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "koi",
+      "is_chest": false,
+      "item": "koi",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "lake_chub",
+      "is_chest": false,
+      "item": "lake_chub",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "lake_trout",
+      "is_chest": false,
+      "item": "lake_trout",
+      "legendary": false,
+      "locations": [
+        "deep_woods"
+      ],
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "lamprey",
+      "is_chest": false,
+      "item": "lamprey",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "lava_piranha",
+      "is_chest": false,
+      "item": "lava_piranha",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": "legendary",
+      "hours": null,
+      "id": "leaf_fish",
+      "is_chest": false,
+      "item": "leaf_fish",
+      "legendary": true,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "special"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": "legendary",
+      "hours": null,
+      "id": "lightning_fish",
+      "is_chest": false,
+      "item": "lightning_fish",
+      "legendary": true,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "loach",
+      "is_chest": false,
+      "item": "loach",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "lobster",
+      "is_chest": false,
+      "item": "lobster",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "luminescent_crab",
+      "is_chest": false,
+      "item": "luminescent_crab",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "mackerel",
+      "is_chest": false,
+      "item": "mackerel",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": true,
+      "has_perk": null,
+      "hours": null,
+      "id": "massive_minnow",
+      "is_chest": false,
+      "item": "massive_minnow",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "fishing",
+        "mines"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond",
+        "river",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "mermaids_comb",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_divespots",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "mini_whale_shark",
+      "is_chest": false,
+      "item": "mini_whale_shark",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "minnow",
+      "is_chest": false,
+      "item": "minnow",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "mullet",
+      "is_chest": false,
+      "item": "mullet",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "muskie",
+      "is_chest": false,
+      "item": "muskie",
+      "legendary": false,
+      "locations": [
+        "deep_woods"
+      ],
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "newt",
+      "is_chest": false,
+      "item": "newt",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "oarfish",
+      "is_chest": false,
+      "item": "oarfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "giant",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "ocean_sunfish",
+      "is_chest": false,
+      "item": "ocean_sunfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "giant",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "octopus",
+      "is_chest": false,
+      "item": "octopus",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "paddlefish",
+      "is_chest": false,
+      "item": "paddlefish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "giant",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "paper_pondshell",
+      "is_chest": false,
+      "item": "paper_pondshell",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "pearl_clam",
+      "is_chest": false,
+      "item": "pearl_clam",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "pebble_minnow",
+      "is_chest": false,
+      "item": "pebble_minnow",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "perch",
+      "is_chest": false,
+      "item": "perch",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "pike",
+      "is_chest": false,
+      "item": "pike",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "pollock",
+      "is_chest": false,
+      "item": "pollock",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "pond_snail",
+      "is_chest": false,
+      "item": "pond_snail",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "puffer_fish",
+      "is_chest": false,
+      "item": "puffer_fish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rainbow_seaweed",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_divespots",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rainbow_trout",
+      "is_chest": false,
+      "item": "rainbow_trout",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "razorback",
+      "is_chest": false,
+      "item": "razorback",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "red_snapper",
+      "is_chest": false,
+      "item": "red_snapper",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "river_snail",
+      "is_chest": false,
+      "item": "river_snail",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "roach",
+      "is_chest": false,
+      "item": "roach",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rock_bass",
+      "is_chest": false,
+      "item": "rock_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rock_guppy",
+      "is_chest": false,
+      "item": "rock_guppy",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rock_with_a_hole",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_divespots",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rockbiter",
+      "is_chest": false,
+      "item": "rockbiter",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rubber_fish",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_fishing",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rusted_shield",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_divespots",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "rusted_treasure_chest",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_fishing",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "salmon",
+      "is_chest": false,
+      "item": "salmon",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sand_lance",
+      "is_chest": false,
+      "item": "sand_lance",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sapphire_betta",
+      "is_chest": false,
+      "item": "sapphire_betta",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sardine",
+      "is_chest": false,
+      "item": "sardine",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sauger",
+      "is_chest": false,
+      "item": "sauger",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "saury",
+      "is_chest": false,
+      "item": "saury",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sea_bass",
+      "is_chest": false,
+      "item": "sea_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sea_bream",
+      "is_chest": false,
+      "item": "sea_bream",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sea_urchin",
+      "is_chest": false,
+      "item": "sea_urchin",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fish_trap"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "seaweed",
+      "is_chest": false,
+      "item": "seaweed",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_very_common",
+      "retrieval": [
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "shad",
+      "is_chest": false,
+      "item": "shad",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "shadow_bass",
+      "is_chest": false,
+      "item": "shadow_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "shardfin",
+      "is_chest": false,
+      "item": "shardfin",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "shark",
+      "is_chest": false,
+      "item": "shark",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "giant",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "shrimp",
+      "is_chest": false,
+      "item": "shrimp",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "silver_redhorse",
+      "is_chest": false,
+      "item": "silver_redhorse",
+      "legendary": false,
+      "locations": [
+        "deep_woods"
+      ],
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": true,
+      "has_perk": null,
+      "hours": null,
+      "id": "silver_squid",
+      "is_chest": false,
+      "item": "silver_squid",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing",
+        "mines"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond",
+        "river",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "smallmouth_bass",
+      "is_chest": false,
+      "item": "smallmouth_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "snakehead",
+      "is_chest": false,
+      "item": "snakehead",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "snapping_turtle",
+      "is_chest": false,
+      "item": "snapping_turtle",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": "legendary",
+      "hours": null,
+      "id": "snow_fish",
+      "is_chest": false,
+      "item": "snow_fish",
+      "legendary": true,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": [
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "squid",
+      "is_chest": false,
+      "item": "squid",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "stingray",
+      "is_chest": false,
+      "item": "stingray",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "medium",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "stone_loach",
+      "is_chest": false,
+      "item": "stone_loach",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "striped_bass",
+      "is_chest": false,
+      "item": "striped_bass",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sturgeon",
+      "is_chest": false,
+      "item": "sturgeon",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sulfur_crab",
+      "is_chest": false,
+      "item": "sulfur_crab",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sunny",
+      "is_chest": false,
+      "item": "sunny",
+      "legendary": false,
+      "locations": [
+        "deep_woods"
+      ],
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "sweetfish",
+      "is_chest": false,
+      "item": "sweetfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "swordfish",
+      "is_chest": false,
+      "item": "swordfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "tarpon",
+      "is_chest": false,
+      "item": "tarpon",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "size": "giant",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "tetra",
+      "is_chest": false,
+      "item": "tetra",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "tilapia",
+      "is_chest": false,
+      "item": "tilapia",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "transparent_jellyfish",
+      "is_chest": false,
+      "item": "transparent_jellyfish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_copper",
+      "is_chest": true,
+      "item": "treasure_box_copper",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "copper_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_copper_large",
+      "is_chest": true,
+      "item": "treasure_box_copper",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "copper_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_gold",
+      "is_chest": true,
+      "item": "treasure_box_gold",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "gold_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_gold_large",
+      "is_chest": true,
+      "item": "treasure_box_gold",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "gold_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_silver",
+      "is_chest": true,
+      "item": "treasure_box_silver",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "silver_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_silver_large",
+      "is_chest": true,
+      "item": "treasure_box_silver",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "silver_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_wood",
+      "is_chest": true,
+      "item": "treasure_box_wood",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "wood_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "treasure_box_wood_large",
+      "is_chest": true,
+      "item": "treasure_box_wood",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "wood_chest",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "large",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "trout",
+      "is_chest": false,
+      "item": "trout",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "tuna",
+      "is_chest": false,
+      "item": "tuna",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "turtle",
+      "is_chest": false,
+      "item": "turtle",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "very_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": null,
+      "size": "large",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "void_pearl",
+      "is_chest": false,
+      "item": "void_pearl",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "walleye",
+      "is_chest": false,
+      "item": "walleye",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "ultra_common",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "size": "large",
+      "water_type": [
+        "river"
+      ],
+      "weather": [
+        "inclement",
+        "heavy_inclement"
+      ]
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "water_balloon_fish",
+      "is_chest": false,
+      "item": "water_balloon_fish",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "uncommon",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "medium",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": true,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "water_sphere",
+      "is_chest": false,
+      "item": "unidentified_artifact",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": null,
+      "rarity": "artifact_fishing",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "ocean",
+        "river",
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "white_perch",
+      "is_chest": false,
+      "item": "white_perch",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "rare",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "size": "medium",
+      "water_type": [
+        "pond"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "winged_shrimp",
+      "is_chest": false,
+      "item": "winged_shrimp",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "common",
+      "retrieval": [
+        "mines"
+      ],
+      "seasons": null,
+      "size": "small",
+      "water_type": [
+        "river"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "wood_medium",
+      "is_chest": false,
+      "item": "basic_wood",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "fishing",
+        "divespot"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "medium",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    },
+    {
+      "any_size": false,
+      "bait_only": false,
+      "has_perk": null,
+      "hours": null,
+      "id": "wood_small",
+      "is_chest": false,
+      "item": "basic_wood",
+      "legendary": false,
+      "locations": null,
+      "perk_artifact": false,
+      "rarity": "junk",
+      "retrieval": [
+        "fishing"
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "size": "small",
+      "water_type": [
+        "river",
+        "pond",
+        "ocean"
+      ],
+      "weather": null
+    }
+  ],
+  "forageables": [
+    {
+      "item": "basil",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "burdock_root",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "catmint",
+      "rarity": "common",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "chestnut",
+      "rarity": "common",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "chickpea",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "cosmos",
+      "rarity": "common",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "crocus",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "daffodil",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "daisy",
+      "rarity": "common",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "dandelion",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "dill",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "fennel",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "fiddlehead",
+      "rarity": "rare",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "fog_orchid",
+      "rarity": "rare",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "frost_lily",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "garlic",
+      "rarity": "rare",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "heather",
+      "rarity": "common",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "holly",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "horseradish",
+      "rarity": "common",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "ice_block",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "iris",
+      "rarity": "common",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "jasmine",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "lilac",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "marigold",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "middlemist",
+      "rarity": "legendary",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "moon_fruit",
+      "rarity": "rare",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "morel_mushroom",
+      "rarity": "rare",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "nettle",
+      "rarity": "rare",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "night_queen",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "oregano",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "oyster_mushroom",
+      "rarity": "rare",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "pineshroom",
+      "rarity": "rare",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "poinsettia",
+      "rarity": "common",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "rosemary",
+      "rarity": "rare",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "sage",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "sesame",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "snapdragon",
+      "rarity": "rare",
+      "sand": false,
+      "season": "winter"
+    },
+    {
+      "item": "snowdrop_anemone",
+      "rarity": "rare",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "thyme",
+      "rarity": "rare",
+      "sand": false,
+      "season": "summer"
+    },
+    {
+      "item": "tulip",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    },
+    {
+      "item": "viola",
+      "rarity": "rare",
+      "sand": false,
+      "season": "fall"
+    },
+    {
+      "item": "wild_leek",
+      "rarity": "common",
+      "sand": false,
+      "season": "spring"
+    }
+  ],
+  "gameVersion": "1.0.0",
+  "trees": [
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "apple",
+      "id": "tree_apple",
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "cherry",
+      "id": "tree_cherry",
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "coconut",
+      "id": "tree_coconut",
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": null,
+      "id": "tree_deep_woods",
+      "regrow_days": null,
+      "seasons": null,
+      "yield": null
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "lemon",
+      "id": "tree_lemon",
+      "regrow_days": 3,
+      "seasons": [
+        "spring"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": null,
+      "id": "tree_oak",
+      "regrow_days": null,
+      "seasons": null,
+      "yield": null
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "orange",
+      "id": "tree_orange",
+      "regrow_days": 3,
+      "seasons": [
+        "fall"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "peach",
+      "id": "tree_peach",
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "pear",
+      "id": "tree_pear",
+      "regrow_days": 3,
+      "seasons": [
+        "summer"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": null,
+      "id": "tree_pine",
+      "regrow_days": null,
+      "seasons": null,
+      "yield": null
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": null,
+      "id": "tree_pine_special",
+      "regrow_days": null,
+      "seasons": null,
+      "yield": null
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "plum_blossom",
+      "id": "tree_plum_blossom",
+      "regrow_days": 3,
+      "seasons": [
+        "winter"
+      ],
+      "yield": 3
+    },
+    {
+      "day_to_stage": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "harvest": "pomegranate",
+      "id": "tree_pomegranate",
+      "regrow_days": 3,
+      "seasons": [
+        "winter"
+      ],
+      "yield": 3
+    }
+  ]
+}

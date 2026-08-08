@@ -1,5 +1,6 @@
 [
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -27,9 +28,13 @@
     "seed_sources": [],
     "version_added": null,
     "wiki_page": "Apple",
-    "yield": null
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -60,6 +65,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -90,6 +96,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -120,6 +127,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -152,6 +160,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -182,6 +191,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -212,6 +222,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -242,6 +253,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -272,6 +284,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -302,6 +315,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -329,9 +343,13 @@
     "seed_sources": [],
     "version_added": null,
     "wiki_page": "Cherry",
-    "yield": null
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -362,6 +380,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -392,6 +411,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -422,6 +442,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -452,6 +473,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -482,6 +504,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -512,6 +535,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -542,6 +566,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -572,6 +597,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -602,6 +628,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -632,6 +659,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -662,6 +690,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -692,6 +721,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -722,6 +752,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -752,6 +783,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -782,6 +814,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -812,6 +845,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -842,6 +876,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -872,6 +907,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -902,6 +938,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -932,6 +969,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -962,6 +1000,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -989,9 +1028,13 @@
     "seed_sources": [],
     "version_added": null,
     "wiki_page": "Orange",
-    "yield": null
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1022,6 +1065,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1052,6 +1096,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1082,6 +1127,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1109,9 +1155,13 @@
     "seed_sources": [],
     "version_added": null,
     "wiki_page": "Pomegranate",
-    "yield": null
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1142,6 +1192,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1172,6 +1223,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1202,6 +1254,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1232,6 +1285,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1262,6 +1316,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1292,6 +1347,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1322,6 +1378,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1352,6 +1409,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1382,6 +1440,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1412,6 +1471,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1442,6 +1502,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1472,6 +1533,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1502,6 +1564,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1535,6 +1598,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1565,6 +1629,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1595,6 +1660,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1625,6 +1691,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1655,6 +1722,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1685,6 +1753,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1715,6 +1784,7 @@
     "yield": null
   },
   {
+    "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -1743,5 +1813,107 @@
     "version_added": null,
     "wiki_page": "Wheat",
     "yield": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/lemon",
+    "id": "lemon",
+    "id_status": "confirmed",
+    "is_trellis": null,
+    "name": "Lemon",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "lemon",
+    "prov": {
+      "*": "game_files"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "sapling_lemon",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Lemon",
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/peach",
+    "id": "peach",
+    "id_status": "confirmed",
+    "is_trellis": null,
+    "name": "Peach",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "peach",
+    "prov": {
+      "*": "game_files"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "sapling_peach",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Peach",
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/pear",
+    "id": "pear",
+    "id_status": "confirmed",
+    "is_trellis": null,
+    "name": "Pear",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "pear",
+    "prov": {
+      "*": "game_files"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "sapling_pear",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Pear",
+    "yield": {
+      "max": 3,
+      "min": 3
+    }
   }
 ]

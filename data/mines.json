@@ -1,5 +1,6 @@
 [
   {
+    "also_known_as": [],
     "artifact_set_ids": [
       "archaeology_upper_mines"
     ],
@@ -61,6 +62,7 @@
     "wiki_page": "Mines/Upper Mines"
   },
   {
+    "also_known_as": [],
     "artifact_set_ids": [
       "archaeology_tide_cavern"
     ],
@@ -123,6 +125,7 @@
     "wiki_page": "Mines/Tide Caverns"
   },
   {
+    "also_known_as": [],
     "artifact_set_ids": [
       "archaeology_deep_earth"
     ],
@@ -184,6 +187,7 @@
     "wiki_page": "Mines/Deep Earth"
   },
   {
+    "also_known_as": [],
     "artifact_set_ids": [
       "archaeology_lava_caves"
     ],
@@ -248,6 +252,7 @@
     "wiki_page": "Mines/Lava Caves"
   },
   {
+    "also_known_as": [],
     "artifact_set_ids": [
       "archaeology_dragon"
     ],

@@ -132,4 +132,4 @@ compliance, and no automated check will ever catch it.
 pnpm build:data && pnpm validate
 ```
 
-`validate` writes `docs/coverage.md`, which is your burn-down list.
+`validate` writes `build/reports/coverage.md`, which is your burn-down list.

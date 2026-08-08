@@ -6,6 +6,7 @@
   "description": "Build-time code: extract from game files, enrich from the wiki, normalise, build, validate.",
   "license": "MIT",
   "scripts": {
+    "extract": "tsx src/extract/game.ts",
     "enrich:cargo": "tsx src/enrich/cargo.ts",
     "enrich:pages": "tsx src/enrich/pages.ts",
     "build:data": "tsx src/build/data.ts",

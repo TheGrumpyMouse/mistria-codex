@@ -22,6 +22,7 @@ import { argv, env } from 'node:process'
 import { pathToFileURL } from 'node:url'
 import {
   DATASETS,
+  DAYS_PER_SEASON,
   type DatasetName,
   type Item,
   type Location,
@@ -36,6 +37,7 @@ import { atlasVersion, packAssets } from '../assets/pack.js'
 import { ASSETS_MANIFEST, DATA_DIR, SHIP_DIR } from '../lib/paths.js'
 import { writeJson } from '../lib/write-json.js'
 import { buildAvailabilityBundle } from './availability.js'
+import { loadGameFacts, loadWeatherClasses, weatherOdds } from './game-facts.js'
 import { buildRequestBoard } from './request-board.js'
 
 const sha256 = (text: string): string => createHash('sha256').update(text, 'utf8').digest('hex')
@@ -124,18 +126,28 @@ export async function buildShip(): Promise<Meta> {
   // that case — so a missing atlas is a state to record, not a build failure.
   const assets = await packIfPresent()
 
+  // Optional, like the atlases: a clone whose `sources/` predates G1 ships with
+  // no odds and no game version, and the app words the reverse-lookup card
+  // without a frequency rather than inventing one.
+  const game = await loadGameFacts().catch(() => null)
+  const classes = await loadWeatherClasses().catch(() => ({}))
+
   const meta: Meta = {
     dataVersion,
     schemaVersion: SCHEMA_VERSION,
     builtAt: env.SOURCE_DATE_EPOCH
       ? new Date(Number(env.SOURCE_DATE_EPOCH) * 1000).toISOString()
       : new Date().toISOString(),
-    gameVersion: env.MISTRIA_GAME_VERSION ?? null,
+    // From the committed extract, not from the environment. The env var is only
+    // set on a machine that owns the game, so reading it here reported `null`
+    // on CI and on every clone — which is to say, on every build that ships.
+    gameVersion: game?.version ?? env.MISTRIA_GAME_VERSION ?? null,
     commit: env.GITHUB_SHA ?? null,
     basePath,
     files: manifest,
     precache: [...PRECACHE],
     assets,
+    weatherOdds: game === null ? {} : weatherOdds(game.weather, classes, DAYS_PER_SEASON),
     counts: Object.fromEntries(files.map((f) => [f.name.replace(/\.json$/, ''), f.records ?? 0])),
     coverage: {},
     sources: [
@@ -153,7 +165,10 @@ export async function buildShip(): Promise<Meta> {
         license: null,
         url: null,
         fetchedAt: null,
-        note: 'Not yet ingested — see docs/PLAN.md milestone G1.',
+        note:
+          game === null
+            ? 'Not ingested in this build — see docs/game-file-extraction.md.'
+            : `Ids, spawn rules and museum sets read from v${game.version}. No text, no art.`,
       },
       {
         id: 'manual',
@@ -178,6 +193,10 @@ export async function buildShip(): Promise<Meta> {
  *
  * Named in `PRECACHE` because no screen can render a result without it, and it
  * is the reason none of them need `items.json`. Around 80KB against a megabyte.
+ *
+ * `a` — other names the thing goes by — is written only where a record has any,
+ * which today is one character. An empty array on 1,251 entries would cost more
+ * than the feature.
  */
 async function buildIndexFile(): Promise<ShippedFile | null> {
   const read = async <T>(file: string): Promise<T[]> => {
@@ -188,7 +207,16 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     }
   }
 
-  const entries: Record<string, { n: string; i: string | null; c: string; v: number | null }> = {}
+  type IndexEntry = {
+    n: string
+    i: string | null
+    c: string
+    v: number | null
+    a?: string[]
+  }
+  const entries: Record<string, IndexEntry> = {}
+  const alsoKnownAs = (names: string[] | undefined): { a?: string[] } =>
+    names !== undefined && names.length > 0 ? { a: names } : {}
 
   // Items carry their own category — fish, bug, cooked — which is what Browse
   // groups by. Everything else takes the name of its table.
@@ -198,8 +226,15 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     icon_key: string | null
     category: string
     sell_value: number | null
+    also_known_as?: string[]
   }>('items.json')) {
-    entries[item.id] ??= { n: item.name, i: item.icon_key, c: item.category, v: item.sell_value }
+    entries[item.id] ??= {
+      n: item.name,
+      i: item.icon_key,
+      c: item.category,
+      v: item.sell_value,
+      ...alsoKnownAs(item.also_known_as),
+    }
   }
 
   for (const [file, category] of [
@@ -207,8 +242,29 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     ['monsters.json', 'monster'],
     ['locations.json', 'location'],
   ] as const) {
-    for (const record of await read<{ id: string; name: string; icon_key: string | null }>(file)) {
-      entries[record.id] ??= { n: record.name, i: record.icon_key, c: category, v: null }
+    for (const record of await read<{
+      id: string
+      name: string
+      icon_key: string | null
+      also_known_as?: string[]
+      /** Locations only, and hand-curated: "The Farm" is also "Farm". */
+      aliases?: string[]
+    }>(file)) {
+      entries[record.id] ??= {
+        n: record.name,
+        i: record.icon_key,
+        c: category,
+        v: null,
+        // A location's curated `aliases` are the same idea as `also_known_as`
+        // under an older name, and search should not care which field a name
+        // arrived in. Its own display name is dropped — it is already `n`, and
+        // matching it twice would only make the row look like an alias hit.
+        ...alsoKnownAs(
+          [...(record.also_known_as ?? []), ...(record.aliases ?? [])].filter(
+            (name) => name !== record.name,
+          ),
+        ),
+      }
     }
   }
 

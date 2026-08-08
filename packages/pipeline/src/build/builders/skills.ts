@@ -49,6 +49,7 @@ export function buildSkills(ctx: BuildContext): Skill[] {
       numeric_id_game_version: null,
       id_status: 'provisional' as const,
       former_ids: [],
+      also_known_as: [],
       game_version: skills.wikiVersionStamp,
       version_added: null,
       confidence: 'wiki' as const,

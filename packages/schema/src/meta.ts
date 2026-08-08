@@ -88,6 +88,43 @@ export const Meta = z.object({
     .nullable()
     .default(null),
 
+  /**
+   * How often each weather actually happens, per season, in days out of 28.
+   *
+   * Reverse lookup needs this and cannot be honest without it. Weather is rolled
+   * per season, so "when can I next catch this" has no answer for anything
+   * weather-gated — there is no date, only a frequency. The card says
+   * "needs Rain — 4 to 6 days of every Fall" and never invents a Fall 17.
+   *
+   * The counts are **the pool's**, not the weather's, and `pool` says which.
+   * The game rolls four weather classes and we name six states, so rain and
+   * storm are the same four-to-six wet days seen twice. Anything adding them
+   * would report twelve wet days in a twenty-eight day season. A consumer must
+   * group by `pool`, take each pool's range once, and only then add across
+   * pools — `exact` then means "this weather is the whole pool", so a rule
+   * needing rain *or* storm gets a real figure and one needing only a storm
+   * gets an upper bound.
+   *
+   * Empty until the game files are extracted.
+   */
+  weatherOdds: z
+    .record(
+      z.string(),
+      z.record(
+        z.string(),
+        z.object({
+          /** The game weather class this is drawn from. */
+          pool: z.string(),
+          /** The pool's days per season, not this weather's share of them. */
+          minDays: z.number().int().min(0),
+          maxDays: z.number().int().min(0),
+          /** True when this weather is the pool's only member in this season. */
+          exact: z.boolean(),
+        }),
+      ),
+    )
+    .default({}),
+
   counts: z.record(z.string(), z.number().int()).default({}),
 
   /** Per-category fill rates, so gaps are visible in the app, not just in CI. */
