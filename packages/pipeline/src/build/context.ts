@@ -266,6 +266,8 @@ export interface BuildContext {
   resolver: Resolver
   methodRules: MethodRules
   characterRules: CharacterRules
+  /** Perk id -> what it does, in our own words. See curated/vocab/perk_effects.json. */
+  perkEffects: Record<string, string>
 }
 
 const isSeason = (value: string): value is Season => (SEASONS as readonly string[]).includes(value)
@@ -438,6 +440,11 @@ export async function loadContext(): Promise<BuildContext> {
   const methodRules = await readJsonFile<MethodRules>(
     join(CURATED_DIR, 'vocab', 'method_rules.json'),
   )
+  // Optional like every curated vocab that arrived late: absent means every
+  // perk keeps a null effect, which was the only state before it existed.
+  const { effects: perkEffects } = await readJsonFile<{ effects: Record<string, string> }>(
+    join(CURATED_DIR, 'vocab', 'perk_effects.json'),
+  ).catch(() => ({ effects: {} as Record<string, string> }))
   const characterRules = await readJsonFile<CharacterRules>(
     join(CURATED_DIR, 'vocab', 'characters.json'),
   )
@@ -495,6 +502,7 @@ export async function loadContext(): Promise<BuildContext> {
     resolver,
     methodRules,
     characterRules,
+    perkEffects,
   }
 }
 

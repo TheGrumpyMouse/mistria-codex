@@ -1,6 +1,8 @@
 import { SEASONS } from '@mistria/schema'
+import { Link } from '@tanstack/react-router'
 import { KIND_LABELS } from '~/lib/findable'
 import { formatClock, titleCase } from '~/lib/instant'
+import { ruleRequirementsPhrase } from '~/lib/labels'
 import type { Opportunity, WeatherOddsTable } from '~/lib/opportunity'
 import { oddsPhrase } from '~/lib/opportunity'
 
@@ -40,7 +42,16 @@ export function OpportunityCard({ opportunity, locationNames, odds }: Opportunit
               place unknown
             </span>
           ) : (
-            <span className="text-ink-mute"> · {place}</span>
+            <span className="text-ink-mute">
+              {' · '}
+              <Link
+                to="/place/$id"
+                params={{ id: opportunity.locationId ?? '' }}
+                className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
+              >
+                {place}
+              </Link>
+            </span>
           )}
         </p>
 
@@ -84,7 +95,7 @@ export function OpportunityCard({ opportunity, locationNames, odds }: Opportunit
             className="rounded-pill px-1.5 py-0.5 text-[10px]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
           >
-            needs {requires.join(', ').replace(/_/g, ' ')}
+            needs {ruleRequirementsPhrase(requires)}
           </span>
         )}
       </div>

@@ -20,7 +20,7 @@ import { join } from 'node:path'
 import { loadGameFacts, wordKey } from '../build/game-facts.js'
 import { SOURCES_DIR } from '../lib/paths.js'
 import type { Loaded } from './load.js'
-import { type Finding, warn } from './report.js'
+import { error, type Finding, warn } from './report.js'
 
 interface SetRecord {
   id: string
@@ -32,6 +32,8 @@ interface ItemRecord {
   id: string
   name: string
   id_status: string
+  category?: string
+  availability?: { prov: string; requires: { type: string; key: string }[] }[]
 }
 
 /**
@@ -159,7 +161,60 @@ export async function checkGameAgreement(loaded: Loaded): Promise<Finding[]> {
     )
   }
 
-  // 5. A room the extract spawns bugs in that curated/aliases/game_rooms.json
+  // 5. Every artifact the game puts in a pool must have somewhere to be found.
+  //
+  //    An **error**, unlike everything else in this file, because it is not a
+  //    disagreement between sources — it is this build regressing on data it
+  //    already had. A patch that adds a ninth pool room, or a curation change
+  //    that breaks the room alias, would otherwise quietly return 20 artifacts
+  //    to "no source recorded".
+  if (game.artifactFacts !== null) {
+    const byId = new Map(items.map((i) => [i.id, i]))
+    const holes = [...game.artifactFacts.poolByItem.keys()]
+      .filter((id) => {
+        const item = byId.get(id)
+        return item?.category === 'artifact' && (item.availability ?? []).length === 0
+      })
+      .sort()
+    if (holes.length > 0) {
+      findings.push(
+        error(
+          'game:artifact-pool-coverage',
+          `${holes.length} artifacts are in a game pool and have no availability: ` +
+            holes.slice(0, 8).join(', '),
+          'data/items.json',
+        ),
+      )
+    }
+
+    // And every perk a window requires must be a perk the skills dataset can
+    // explain — a typo here renders as a requirement nobody can look up.
+    const perkIds = new Set(
+      (loaded.skills.records as unknown as { perks?: { id: string }[] }[]).flatMap((s) =>
+        (s.perks ?? []).map((p) => p.id),
+      ),
+    )
+    const badPerks = [
+      ...new Set(
+        items.flatMap((i) =>
+          (i.availability ?? []).flatMap((w) =>
+            w.requires.filter((r) => r.type === 'perk' && !perkIds.has(r.key)).map((r) => r.key),
+          ),
+        ),
+      ),
+    ].sort()
+    if (perkIds.size > 0 && badPerks.length > 0) {
+      findings.push(
+        error(
+          'game:unknown-perk',
+          `${badPerks.length} required perks are not in skills.json: ${badPerks.join(', ')}`,
+          'data/items.json',
+        ),
+      )
+    }
+  }
+
+  // 6. A room the extract spawns bugs in that curated/aliases/game_rooms.json
   //    does not place. Each one is a location the bug map is silently missing.
   if (game.unmappedRooms.length > 0) {
     findings.push(

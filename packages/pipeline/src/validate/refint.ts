@@ -41,6 +41,10 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   set_id: 'museum_sets',
   artifact_set_ids: 'museum_sets',
 
+  quest_id: 'quests',
+  unlocks_mine_id: 'mines',
+  unlocks_location_id: 'locations',
+
   biome_id: 'mines',
   biome_ids: 'mines',
   monster_ids: 'monsters',

@@ -100,8 +100,22 @@ export const ForageableFacet = facet({
 export type ForageableFacet = z.infer<typeof ForageableFacet>
 
 export const ArtifactFacet = facet({
+  /**
+   * How the game hands this artifact out. `fishing`, `fish_trap` and
+   * `mist_spot` were added when the game's own pool tables landed — the wiki
+   * never distinguished them.
+   */
   dig_source: z
-    .enum(['dig_spot', 'rock', 'floor_range', 'diving', 'panning'])
+    .enum([
+      'dig_spot',
+      'rock',
+      'floor_range',
+      'diving',
+      'panning',
+      'fishing',
+      'fish_trap',
+      'mist_spot',
+    ])
     .nullable()
     .default(null),
   biome_id: IdRef.nullable().default(null),

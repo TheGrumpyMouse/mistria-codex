@@ -1,6 +1,8 @@
+import { Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
+import { LoadError } from '~/components/Section'
 import { loadRequestBoard } from '~/lib/data'
 import type { BoardRequest } from '~/lib/request-board'
 import { itemsWanted } from '~/lib/request-board'
@@ -29,6 +31,7 @@ export function BoardRoute() {
   const [error, setError] = useState<string | null>(null)
   const [view, setView] = useState<View>('items')
   const [season, setSeason] = useState<SeasonFilter>('all')
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     let live = true
@@ -51,14 +54,35 @@ export function BoardRoute() {
     [requests, season],
   )
 
-  const wanted = useMemo(() => itemsWanted(filtered), [filtered])
+  const needle = query.trim().toLowerCase()
+  const searched = useMemo(
+    () =>
+      needle === ''
+        ? filtered
+        : filtered.filter(
+            (request) =>
+              (request.giver_name ?? '').toLowerCase().includes(needle) ||
+              request.name.toLowerCase().includes(needle) ||
+              request.items.some((item) => item.name.toLowerCase().includes(needle)),
+          ),
+    [filtered, needle],
+  )
+
+  const wanted = useMemo(
+    () =>
+      itemsWanted(searched).filter(
+        (entry) =>
+          needle === '' ||
+          entry.name.toLowerCase().includes(needle) ||
+          entry.askers.some((asker) => asker.toLowerCase().includes(needle)),
+      ),
+    [searched, needle],
+  )
 
   if (error !== null) {
     return (
       <Screen>
-        <p className="text-gap text-sm">
-          The request board could not be loaded. Run <code>pnpm build:ship</code> and reload.
-        </p>
+        <LoadError />
         <p className="mt-2 text-ink-faint text-xs">{error}</p>
       </Screen>
     )
@@ -98,7 +122,16 @@ export function BoardRoute() {
         </div>
       </div>
 
-      {view === 'items' ? <ItemList wanted={wanted} /> : <VillagerList requests={filtered} />}
+      <input
+        type="search"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder="Filter by item or villager"
+        aria-label="Filter requests"
+        className="mt-3 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
+      />
+
+      {view === 'items' ? <ItemList wanted={wanted} /> : <VillagerList requests={searched} />}
 
       <p className="mt-6 text-ink-faint text-xs leading-relaxed">
         “Keep” is the largest quantity anyone asks for in one request, so holding that many covers
@@ -118,7 +151,15 @@ function ItemList({ wanted }: { wanted: ReturnType<typeof itemsWanted> }) {
           <ItemIcon iconKey={entry.icon_key ?? `item/${entry.id}`} name={entry.name} size="sm" />
 
           <div className="min-w-0 flex-1">
-            <p className="truncate text-ink text-sm">{entry.name}</p>
+            <p className="truncate text-sm">
+              <Link
+                to="/item/$id"
+                params={{ id: entry.id }}
+                className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+              >
+                {entry.name}
+              </Link>
+            </p>
             <p className="truncate text-ink-faint text-xs">
               {entry.askers.length === 1
                 ? entry.askers[0]
@@ -178,7 +219,17 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
       {byVillager.map(([id, group]) => (
         <section key={id}>
           <h2 className="font-display font-semibold text-ink text-sm">
-            {group.name}{' '}
+            {id === 'unknown' ? (
+              group.name
+            ) : (
+              <Link
+                to="/villager/$id"
+                params={{ id }}
+                className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+              >
+                {group.name}
+              </Link>
+            )}{' '}
             <span className="font-normal text-ink-faint">· {group.requests.length}</span>
           </h2>
           <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
@@ -196,9 +247,21 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-ink text-sm">
-                    {request.items
-                      .map((i) => `${i.name}${i.quantity > 1 ? ` ×${i.quantity}` : ''}`)
-                      .join(', ') || request.name}
+                    {request.items.length === 0
+                      ? request.name
+                      : request.items.map((i, idx) => (
+                          <span key={i.id}>
+                            {idx > 0 && ', '}
+                            <Link
+                              to="/item/$id"
+                              params={{ id: i.id }}
+                              className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                            >
+                              {i.name}
+                            </Link>
+                            {i.quantity > 1 && ` ×${i.quantity}`}
+                          </span>
+                        ))}
                   </p>
                   {request.gates.length > 0 && (
                     <p className="truncate text-ink-faint text-xs">

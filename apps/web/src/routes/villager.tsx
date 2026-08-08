@@ -2,9 +2,12 @@ import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
+import { BackLink } from '~/components/BackLink'
+import { DisplayToggle } from '~/components/DisplayToggle'
 import { ItemIcon } from '~/components/ItemIcon'
-import { Section, Unknown } from '~/components/Section'
+import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDisplayMode } from '~/lib/display-mode'
 
 const route = getRouteApi('/villager/$id')
 
@@ -96,6 +99,7 @@ export function VillagerRoute() {
 
   const { person, prefs, index, loading } = state
   const portrait = useAtlas().portrait(person?.icon_key ?? null)
+  const [mode] = useDisplayMode()
 
   // Sorted by the name they will be read under, not by id — `ore_copper` next
   // to `apple` is alphabetical by nothing anyone can see.
@@ -124,7 +128,7 @@ export function VillagerRoute() {
       <Column>
         <h1 className="text-2xl">Not found</h1>
         <p className="mt-1 text-ink-mute text-sm">
-          Nobody here is called <code>{id}</code>.{' '}
+          Nobody here goes by “{id.replace(/_/g, ' ')}”.{' '}
           <Link to="/search" className="underline decoration-rule underline-offset-4">
             Search instead
           </Link>
@@ -136,6 +140,7 @@ export function VillagerRoute() {
 
   return (
     <Column>
+      <BackLink />
       <header className="flex items-center gap-3">
         {/*
           The portrait, where there is one, and the sprite otherwise.
@@ -212,55 +217,83 @@ export function VillagerRoute() {
         {gifts.length === 0 ? (
           <Unknown>No gift preferences recorded.</Unknown>
         ) : (
-          <ul className="flex flex-col gap-3">
-            {gifts.map(({ level, items }) => {
-              const list = (
-                <p className="mt-0.5 text-ink-mute text-sm leading-relaxed">
-                  {items.map((item, i) => (
-                    <span key={item.id}>
-                      {i > 0 && ', '}
-                      <Link
-                        to="/item/$id"
-                        params={{ id: item.id }}
-                        className="underline decoration-rule underline-offset-4 hover:text-ink"
-                      >
-                        {item.name}
-                      </Link>
-                    </span>
-                  ))}
-                </p>
-              )
-
-              // Collapsed past a threshold, and only the long ones collapse.
-              // The Priestess dislikes 116 things and loves 10, and printed
-              // flat the answer you came for is a screen and a half above the
-              // one you did not. `<details>` rather than a state hook: it is
-              // keyboard-operable, announced, and findable by the browser's own
-              // find-in-page when open.
-              const label = (
-                <>
-                  {PREF_LABELS[level] ?? level}
-                  <span className="text-ink-faint"> · {items.length}</span>
-                </>
-              )
-
-              return (
-                <li key={level}>
-                  {items.length <= COLLAPSE_OVER ? (
-                    <>
-                      <p className="text-ink text-sm">{label}</p>
-                      {list}
-                    </>
+          <>
+            <div className="mb-2 flex justify-end">
+              <DisplayToggle />
+            </div>
+            <ul className="flex flex-col gap-3">
+              {gifts.map(({ level, items }) => {
+                // Two renderings of the same list, chosen by a preference the
+                // whole app shares: sprite chips you scan, or the text you
+                // read. Both link every item.
+                const list =
+                  mode === 'icons' ? (
+                    <ul className="mt-1 flex flex-wrap gap-1.5">
+                      {items.map((item) => (
+                        <li key={item.id}>
+                          <Link
+                            to="/item/$id"
+                            params={{ id: item.id }}
+                            className="flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink text-xs transition-colors hover:bg-sunk"
+                          >
+                            <ItemIcon
+                              iconKey={index[item.id]?.i ?? `item/${item.id}`}
+                              name={item.name}
+                              size="sm"
+                            />
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   ) : (
-                    <details>
-                      <summary className="cursor-pointer text-ink text-sm">{label}</summary>
-                      {list}
-                    </details>
-                  )}
-                </li>
-              )
-            })}
-          </ul>
+                    <p className="mt-0.5 text-ink-mute text-sm leading-relaxed">
+                      {items.map((item, i) => (
+                        <span key={item.id}>
+                          {i > 0 && ', '}
+                          <Link
+                            to="/item/$id"
+                            params={{ id: item.id }}
+                            className="underline decoration-rule underline-offset-4 hover:text-ink"
+                          >
+                            {item.name}
+                          </Link>
+                        </span>
+                      ))}
+                    </p>
+                  )
+
+                // Collapsed past a threshold, and only the long ones collapse.
+                // The Priestess dislikes 116 things and loves 10, and printed
+                // flat the answer you came for is a screen and a half above the
+                // one you did not. `<details>` rather than a state hook: it is
+                // keyboard-operable, announced, and findable by the browser's
+                // own find-in-page when open.
+                const label = (
+                  <>
+                    {PREF_LABELS[level] ?? level}
+                    <span className="text-ink-faint"> · {items.length}</span>
+                  </>
+                )
+
+                return (
+                  <li key={level}>
+                    {items.length <= COLLAPSE_OVER ? (
+                      <>
+                        <p className="text-ink text-sm">{label}</p>
+                        {list}
+                      </>
+                    ) : (
+                      <details>
+                        <summary className="cursor-pointer text-ink text-sm">{label}</summary>
+                        {list}
+                      </details>
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          </>
         )}
       </Section>
 
@@ -270,16 +303,27 @@ export function VillagerRoute() {
               are not resolved to character ids yet, so they are shown as written
               rather than linked to a page that might be the wrong person. */}
           <p className="text-ink-mute text-sm">
-            {person.family.map((entry) => entry.relation).join(' · ')}
+            {person.family.map((entry, i) => (
+              <span key={entry.relation}>
+                {i > 0 && ' · '}
+                {entry.character_id === null ? (
+                  entry.relation
+                ) : (
+                  <Link
+                    to="/villager/$id"
+                    params={{ id: entry.character_id }}
+                    className="underline decoration-rule underline-offset-4 hover:text-ink"
+                  >
+                    {entry.relation}
+                  </Link>
+                )}
+              </span>
+            ))}
           </p>
         </Section>
       )}
 
-      {person.data_gaps.length > 0 && (
-        <p className="mt-6 text-ink-faint text-xs">
-          Not recorded: {person.data_gaps.join(', ').replace(/_/g, ' ')}.
-        </p>
-      )}
+      <NotRecorded gaps={person.data_gaps} wikiPage={person.name} />
     </Column>
   )
 }

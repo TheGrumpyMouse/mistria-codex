@@ -139,6 +139,8 @@ export interface FlattenInput {
 export function flattenAvailability(
   entities: FlattenInput[],
   locationIds: string[],
+  requirementLabel: (r: FlattenInput['availability'][number]['requires'][number]) => string = (r) =>
+    `${r.type}:${r.key}`,
 ): AvailabilityRule[] {
   const indexOf = new Map(locationIds.map((id, i) => [id, i]))
   const rules: AvailabilityRule[] = []
@@ -170,7 +172,11 @@ export function flattenAvailability(
         dow: window.days === null ? null : dowMask(window.days),
         y: window.min_year,
         rar: window.rarity === null ? null : (RARITY_ORDINAL[window.rarity] ?? null),
-        req: window.requires.map((r) => `${r.type}:${r.key}${r.op}${r.value ?? ''}`),
+        // Display-ready. The app only ever shows these — gates are shown, never
+        // used to hide — so the token carries the human name where the caller
+        // can supply one. The old form concatenated key and op into
+        // `perk:well_placedhas`, which rendered exactly like the bug it was.
+        req: window.requires.map(requirementLabel),
         p: null,
         conf: window.confidence,
       }
@@ -199,12 +205,31 @@ export interface AvailabilityBundle {
   rules: AvailabilityRule[]
 }
 
-export function buildAvailabilityBundle(items: Item[], locationIds: string[]): AvailabilityBundle {
+export function buildAvailabilityBundle(
+  items: Item[],
+  locationIds: string[],
+  names?: { perks: Map<string, string>; quests: Map<string, string> },
+): AvailabilityBundle {
+  // `perk:Well Placed`, `quest:Repair the Beach Bridge`. The type prefix stays
+  // so the app can phrase each kind ("the X perk" / "finish 'X'"); the name is
+  // resolved here because the app has no reason to download skills.json just
+  // to label a pill.
+  const label = (r: { type: string; key: string }): string => {
+    const name =
+      r.type === 'perk'
+        ? names?.perks.get(r.key)
+        : r.type === 'quest'
+          ? names?.quests.get(r.key)
+          : undefined
+    return `${r.type}:${name ?? r.key}`
+  }
+
   return {
     locations: locationIds,
     rules: flattenAvailability(
       items.map((item) => ({ id: item.id, availability: item.availability })),
       locationIds,
+      label,
     ),
   }
 }

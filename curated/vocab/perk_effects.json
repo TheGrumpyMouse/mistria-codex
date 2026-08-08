@@ -1,0 +1,31 @@
+{
+  "_comment": [
+    "What a perk does, in OUR OWN WORDS. Hand-authored, never generated.",
+    "",
+    "The game states each perk's effect as a written sentence, and that sentence",
+    "is in-game prose — hard rule 1 applies absolutely, so it is never copied and",
+    "never lightly reworded. Each entry here is a mechanical restatement of the",
+    "effect as a fact, written from scratch after reading the mechanism in the",
+    "game files (perks.toml gates cross-checked against artifacts.toml pools,",
+    "fish.toml perk_artifact fields, and locations.toml dig site counts).",
+    "",
+    "Only perks that gate WHERE OR WHETHER something can be found belong here —",
+    "the ones a 'needs the X perk' pill can leave a player asking 'and what does",
+    "that do?'. Stat boosts and quality-of-life perks stay out; describing all",
+    "137 would be a wiki, and this project is not one.",
+    "",
+    "Verified against game files v1.0.0, 2026-08-08."
+  ],
+  "effects": {
+    "well_placed": "makes overworld dig sites occasionally yield out-of-place artifacts",
+    "mist_sight": "makes a mist spot appear around Mistria each day, dug for essence",
+    "former_farmers": "adds a daily dig site on your own farm with its own artifact set",
+    "stoneturner": "makes rocks in the mines sometimes drop artifacts when broken",
+    "sunken_secrets": "lets dive spots contain sunken artifacts",
+    "aquatic_antiquities": "lets aquatic artifacts turn up while fishing",
+    "western_ruins_scholar": "adds a second daily dig site at the Western Ruins",
+    "eastern_road_scholar": "adds a second daily dig site on the Eastern Road",
+    "legendary": "lets legendary fish appear when season and weather are right",
+    "abyssal_ascendence": "lets an abyssal chest be fished up"
+  }
+}

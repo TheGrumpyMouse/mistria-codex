@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { type DisplayIndex, loadDisplayIndex } from '~/lib/data'
+import { categoryLabelOne } from '~/lib/labels'
 import { routeFor, search } from '~/lib/search'
 
 /**
@@ -47,7 +48,7 @@ export function SearchRoute() {
         type="search"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
-        placeholder="An item, a villager, a place"
+        placeholder="Anything — items, villagers, quests, recipes, places"
         aria-label="Search"
         className="mt-3 w-full rounded-tile border border-rule bg-surface px-3 py-2.5 text-base text-ink placeholder:text-ink-faint"
       />
@@ -56,7 +57,7 @@ export function SearchRoute() {
         <p className="mt-4 text-ink-mute text-sm">
           {index === null
             ? 'Loading…'
-            : `${Object.keys(index).length} things to look through — items, villagers, monsters and places.`}
+            : `${Object.keys(index).length} things to look through — every item, villager, quest, recipe, monster and place in the game.`}
         </p>
       ) : results.length === 0 ? (
         <p className="mt-4 text-ink-mute text-sm">Nothing matches “{query.trim()}”.</p>
@@ -76,9 +77,7 @@ export function SearchRoute() {
                       does not contain what you typed reads as a broken search. */}
                   {via !== null && <span className="ml-2 text-ink-faint text-xs">also {via}</span>}
                 </span>
-                <span className="shrink-0 text-ink-faint text-xs">
-                  {entry.c.replace(/_/g, ' ')}
-                </span>
+                <span className="shrink-0 text-ink-faint text-xs">{categoryLabelOne(entry.c)}</span>
               </Link>
             </li>
           ))}

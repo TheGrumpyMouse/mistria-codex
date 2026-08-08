@@ -218,6 +218,38 @@ export async function collectUiWants(): Promise<Want[]> {
 }
 
 /**
+ * The world map and the game's logo — hand-named, exactly like the UI glyphs.
+ *
+ * The map name comes from the committed `Map:` page in `sources/` (the same
+ * image the DataMaps extension declares as its background, in the same
+ * 5442x3599 space every anchor and shape already uses). The logo is the main
+ * page's infobox art. Neither can be harvested from a record, so both are a
+ * written-down list; a wiki rename fails the fetch loudly.
+ */
+export async function collectMapWants(): Promise<Want[]> {
+  interface UiAssets {
+    maps?: { key: string; file: string }[]
+    brand?: { key: string; file: string }[]
+  }
+
+  let ui: UiAssets
+  try {
+    ui = await readJson<UiAssets>(join(CURATED_DIR, 'vocab', 'ui_assets.json'))
+  } catch {
+    return []
+  }
+
+  const wants = (entries: { key: string; file: string }[], family: 'map' | 'brand'): Want[] =>
+    entries.flatMap((entry) => {
+      const sourceFile = canonicalWikiName(entry.file)
+      if (sourceFile === '') return []
+      return [{ family, iconKey: `${family}/${entry.key}`, sourceFile }]
+    })
+
+  return [...wants(ui.maps ?? [], 'map'), ...wants(ui.brand ?? [], 'brand')]
+}
+
+/**
  * Collapse wants into one entry per file.
  *
  * Two things here are the whole point of the function. **Files are deduped on
@@ -293,6 +325,7 @@ export async function collectInventory(): Promise<InventoryEntry[]> {
     ...(await collectFestivalWants()),
     ...linked.wants,
     ...(await collectUiWants()),
+    ...(await collectMapWants()),
   ]
   return buildInventory(wants)
 }

@@ -57,7 +57,13 @@ export interface GameFish {
   is_chest: boolean | null
   /** A perk the player needs before this can spawn at all. */
   has_perk: string | null
-  perk_artifact: boolean | null
+  /**
+   * The perk that lets this artifact rule fire — `sunken_secrets` on dive
+   * spots, `aquatic_antiquities` on fishing. A perk name, not a flag: the
+   * `[default]` is `false` ("no perk"), which `str` correctly reads as null.
+   * An earlier reading used `bool()` here and silently nulled all ten rules.
+   */
+  perk_artifact: string | null
   /** Spawns only from bait, and is absent from the normal distribution. */
   bait_only: boolean | null
 }
@@ -176,7 +182,7 @@ export async function extractFish(root: string): Promise<GameFish[]> {
       retrieval: strList(get('retrieval')),
       is_chest: bool(get('is_chest')),
       has_perk: str(get('has_perk')),
-      perk_artifact: bool(get('perk_artifact')),
+      perk_artifact: str(get('perk_artifact')),
       bait_only: bool(get('bait_only')),
     }
   })

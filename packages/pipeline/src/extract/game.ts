@@ -16,6 +16,7 @@ import { pathToFileURL } from 'node:url'
 import { consola } from 'consola'
 import { REPO_ROOT, SOURCES_DIR } from '../lib/paths.js'
 import { writeJson } from '../lib/write-json.js'
+import { extractArtifacts, type GameArtifactsExtract } from './artifacts.js'
 import { extractItems, type GameItemsExtract } from './items.js'
 import { extractSpawns, type GameSpawnsExtract } from './spawns.js'
 import { gameRoot, gameVersion } from './toml.js'
@@ -27,19 +28,21 @@ export interface GameExtract {
   items: GameItemsExtract
   spawns: GameSpawnsExtract
   world: GameWorldExtract
+  artifacts: GameArtifactsExtract
 }
 
 export async function extractGame(): Promise<GameExtract> {
   const root = await gameRoot()
   const version = gameVersion()
 
-  const [items, spawns, world] = await Promise.all([
+  const [items, spawns, world, artifacts] = await Promise.all([
     extractItems(root, version),
     extractSpawns(root, version),
     extractWorld(root, version),
+    extractArtifacts(root, version),
   ])
 
-  return { items, spawns, world }
+  return { items, spawns, world, artifacts }
 }
 
 export async function writeGameExtract(extract: GameExtract): Promise<void> {
@@ -47,6 +50,7 @@ export async function writeGameExtract(extract: GameExtract): Promise<void> {
     writeJson(join(GAME_DIR, 'items.json'), extract.items),
     writeJson(join(GAME_DIR, 'spawns.json'), extract.spawns),
     writeJson(join(GAME_DIR, 'world.json'), extract.world),
+    writeJson(join(GAME_DIR, 'artifacts.json'), extract.artifacts),
   ])
 }
 
@@ -76,6 +80,12 @@ async function main(): Promise<void> {
   consola.info(
     `museum ${sets} sets / ${donatable} items · npcs ${extract.world.npcs.length} ` +
       `(${birthdays} with a birthday) · rooms ${extract.world.locations.length}`,
+  )
+  consola.info(
+    `artifact pools ${Object.keys(extract.artifacts.poolByRoom).length} rooms · ` +
+      `loot ${Object.keys(extract.artifacts.lootRarity).length} · ` +
+      `perks ${extract.artifacts.perks.length} · seals ${extract.artifacts.seals.length} ` +
+      `(${extract.artifacts.sealOfferings.length} offerings)`,
   )
   if (argv.includes('--dry-run')) consola.warn('--dry-run: nothing written')
 }

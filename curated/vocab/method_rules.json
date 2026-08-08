@@ -25,6 +25,19 @@
     "  NOTE: this is about the TIME axis only. Day-of-week restrictions are real",
     "  and separate — the Saturday Market is Saturdays, and Balor's Wagon rotates.",
     "  Those belong in a window's `days`, not here.",
+    "- dig_spot: dig spots are rolled per DAY and sit there until dug — neither",
+    "  the hour nor the weather gates them. Reported by the project owner from",
+    "  play, 2026-08-08. Corroborated three ways the same day: the game's own",
+    "  locations.toml allocates `dig_sites` per room with no hour/weather/season",
+    "  field (unlike bugs and fish, which carry all three); the perk descriptions",
+    "  speak of 'a dig site will appear daily'; and the wiki's Archaeology page",
+    "  describes daily spawns with no time or weather condition anywhere.",
+    "  Season is not listed here because seasons are modelled on the window",
+    "  itself — every artifact pool ships all four, fully expanded.",
+    "- mine_drop: weather only. Mines are underground and have no weather —",
+    "  the same established fact that makes every mine fishing window",
+    "  not-applicable. Time stays 'unknown': nothing sourced says ore and gem",
+    "  drops ignore the clock, even though they almost certainly do.",
     "",
     "NOT listed, deliberately: bug_net and foraging. Bugs demonstrably have time",
     "windows (the wiki has a `time` column for them), and forageable timing has not",
@@ -42,7 +55,15 @@
     "`dig_spot` in most of them; filling those from a rule would be exactly the",
     "invented data this project refuses to carry. They stay gaps."
   ],
-  "timeNotApplicable": ["fishing", "diving", "fish_trap", "fish_bait", "crop_harvest", "shop"],
-  "weatherNotApplicable": ["crop_harvest"],
+  "timeNotApplicable": [
+    "fishing",
+    "diving",
+    "fish_trap",
+    "fish_bait",
+    "crop_harvest",
+    "shop",
+    "dig_spot"
+  ],
+  "weatherNotApplicable": ["crop_harvest", "dig_spot", "mine_drop"],
   "locationByMethod": { "crop_harvest": ["the_farm"] }
 }

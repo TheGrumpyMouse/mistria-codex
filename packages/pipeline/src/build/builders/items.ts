@@ -153,6 +153,16 @@ function buildAvailability(
   input: ItemBuildInput,
   rarity: Rarity | null,
 ): { windows: AvailabilityWindow[]; gaps: string[] } {
+  // A ready-made answer from the game's own tables — currently the artifact
+  // pools. It replaces the wiki path outright rather than merging with it,
+  // the same rule every other game override follows.
+  if (input.availabilityOverride !== undefined) {
+    return {
+      windows: input.availabilityOverride.windows,
+      gaps: [...input.availabilityOverride.gaps],
+    }
+  }
+
   const gaps: string[] = []
   const methods = input.methods
 
@@ -301,6 +311,13 @@ export interface ItemBuildInput {
    * build/game-facts.ts for how the raw extract becomes these fields.
    */
   game?: GameWindowFacts
+  /**
+   * Complete windows the game states outright, gaps included. Stronger than
+   * `game`, which only overrides fields inside the wiki's window shape — this
+   * replaces the whole availability answer. Artifacts use it, because their
+   * windows come from pool tables the wiki never had.
+   */
+  availabilityOverride?: { windows: AvailabilityWindow[]; gaps: string[] }
   categoryOverride?: ItemCategory
   museum?: { setId: string; wing: MuseumWing } | undefined
 }

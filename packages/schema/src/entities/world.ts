@@ -134,6 +134,26 @@ export const MineBiome = withEnvelope({
 })
 export type MineBiome = z.infer<typeof MineBiome>
 
+/**
+ * A story seal: the barrier, the quest that breaks it, and what breaking it
+ * costs.
+ *
+ * The game models a seal as a quest whose stage demands a delivery of items
+ * (`supplied_items` in the quest files), so the item list here is stated, not
+ * curated. `unlocks_mine_id` / `unlocks_location_id` are derived by joining the
+ * quest against mine gates and location `unlock_requires` — a seal can open
+ * either, and the final seal opens neither (it ends the story).
+ */
+export const Seal = withEnvelope({
+  quest_id: IdRef,
+  required_items: z
+    .array(z.object({ item_id: IdRef, quantity: z.number().int().min(1) }))
+    .default([]),
+  unlocks_mine_id: IdRef.nullable().default(null),
+  unlocks_location_id: IdRef.nullable().default(null),
+})
+export type Seal = z.infer<typeof Seal>
+
 export const Monster = withEnvelope({
   biome_ids: z.array(IdRef).default([]),
   hp: z.number().int().nullable().default(null),

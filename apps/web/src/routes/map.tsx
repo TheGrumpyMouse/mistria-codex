@@ -1,7 +1,11 @@
+import { Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { useAtlas } from '~/app/AtlasProvider'
+import { LoadError } from '~/components/Section'
 import { type MapRegionShape, ValleyMap } from '~/components/ValleyMap'
 import { loadDataset } from '~/lib/data'
+import { titleCase } from '~/lib/labels'
 
 /**
  * The map screen.
@@ -38,6 +42,7 @@ interface SpotRecord {
 }
 
 export function MapRoute() {
+  const artUrl = useAtlas().mapUrl('map/valley')
   const [state, setState] = useState<{
     map: MapRecord | null
     locations: LocationRecord[]
@@ -71,9 +76,7 @@ export function MapRoute() {
   if (error !== null) {
     return (
       <Screen>
-        <p className="text-gap text-sm">
-          The map data could not be loaded. Run <code>pnpm build:ship</code> and reload.
-        </p>
+        <LoadError />
         <p className="mt-2 text-ink-faint text-xs">{error}</p>
       </Screen>
     )
@@ -107,7 +110,7 @@ export function MapRoute() {
             .map((l) => ({ id: l.id, x: l.anchor?.x ?? 0, y: l.anchor?.y ?? 0, label: l.name })),
           ...spots
             .filter((s) => s.location_id === selected)
-            .map((s) => ({ id: s.id, x: s.x, y: s.y, label: s.id.replace(/_/g, ' ') })),
+            .map((s) => ({ id: s.id, x: s.x, y: s.y, label: titleCase(s.id) })),
         ]
 
   return (
@@ -115,9 +118,27 @@ export function MapRoute() {
       <header className="mb-3">
         <h1 className="text-2xl">Map</h1>
         <p className="mt-1 text-ink-mute text-sm">
-          {selectedRegion === null
-            ? `${regions.length} regions, ${inside.length} places inside them.`
-            : `${selectedRegion.name} — ${pins.length} places.`}
+          {selectedRegion === null ? (
+            `${regions.length} regions, ${inside.length} places inside them.`
+          ) : (
+            <>
+              <Link
+                to="/place/$id"
+                params={{ id: selectedRegion.id }}
+                className="underline decoration-rule underline-offset-4 hover:text-ink"
+              >
+                {selectedRegion.name}
+              </Link>
+              {` — ${pins.length} places. `}
+              <Link
+                to="/place/$id"
+                params={{ id: selectedRegion.id }}
+                className="underline decoration-rule underline-offset-4 hover:text-ink"
+              >
+                What can I find here? →
+              </Link>
+            </>
+          )}
         </p>
       </header>
 
@@ -128,6 +149,7 @@ export function MapRoute() {
           selectedId={selected}
           onSelect={(id) => setSelected((current) => (current === id ? null : id))}
           pins={pins}
+          artUrl={artUrl}
         />
       </div>
 
@@ -156,9 +178,11 @@ export function MapRoute() {
       */}
       <p className="mt-4 text-ink-faint text-xs leading-relaxed">
         Positions come from the Fields of Mistria Wiki's map of v{map.game_version ?? '0.13'}; the
-        game is now 1.0, so something may have moved. Region shapes are measured from that map and
-        drawn as tiles — they show roughly how far a place extends, not its exact border. The pins
-        are the wiki's own coordinates.
+        game is now 1.0, so something may have moved.{' '}
+        {artUrl === null
+          ? 'Region shapes are measured from that map and drawn as tiles — they show roughly how far a place extends, not its exact border.'
+          : 'The highlighted region shapes are approximate — they mark roughly how far a place extends, not its exact border.'}{' '}
+        The pins are the wiki's own coordinates.
       </p>
     </Screen>
   )

@@ -14,8 +14,10 @@ import { CalendarRoute } from '~/routes/calendar'
 import { DesignRoute } from '~/routes/design'
 import { ItemRoute } from '~/routes/item'
 import { MapRoute } from '~/routes/map'
+import { MinesRoute } from '~/routes/mines'
 import { MuseumRoute } from '~/routes/museum'
 import { PlaceRoute } from '~/routes/place'
+import { QuestRoute } from '~/routes/quest'
 import { SearchRoute } from '~/routes/search'
 import { SettingsRoute } from '~/routes/settings'
 import { TodayRoute } from '~/routes/today'
@@ -104,6 +106,18 @@ const calendarRoute = createRoute({
   component: CalendarRoute,
 })
 
+const minesRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/mines',
+  component: MinesRoute,
+})
+
+const questRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/quest/$id',
+  component: QuestRoute,
+})
+
 const settingsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/settings',
@@ -137,7 +151,10 @@ const aboutRoute = createRoute({
 const designRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/design',
-  component: DesignRoute,
+  // A workbench, not a screen. It renders design tokens by their internal
+  // names, which is exactly the vocabulary the rest of the app now keeps off
+  // the screen — so production gets nothing at this address.
+  component: import.meta.env.DEV ? DesignRoute : () => null,
 })
 
 const routeTree = rootRoute.addChildren([
@@ -153,6 +170,8 @@ const routeTree = rootRoute.addChildren([
   placeRoute,
   monsterRoute,
   calendarRoute,
+  minesRoute,
+  questRoute,
   settingsRoute,
   aboutRoute,
   designRoute,

@@ -4285,7 +4285,7 @@
       "item": "alligator_gar",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -4309,7 +4309,7 @@
       "item": "amberjack",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fish_trap"
@@ -4336,7 +4336,7 @@
       "item": "anchovy",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -4360,7 +4360,7 @@
       "item": "angel_fish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4384,7 +4384,7 @@
       "item": "archerfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -4406,7 +4406,7 @@
       "item": "armored_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -4428,7 +4428,7 @@
       "item": "bait_thief",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fish_trap"
@@ -4455,7 +4455,7 @@
       "item": "barb",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4479,7 +4479,7 @@
       "item": "blue_crab",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fish_trap"
@@ -4506,7 +4506,7 @@
       "item": "bluefish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -4533,7 +4533,7 @@
       "item": "bluegill",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -4557,7 +4557,7 @@
       "item": "bonito",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4582,7 +4582,7 @@
       "item": "bowfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4606,7 +4606,7 @@
       "item": "bream",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4630,7 +4630,7 @@
       "item": "brown_bullhead",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -4655,7 +4655,7 @@
       "item": "brown_trout",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4679,7 +4679,7 @@
       "item": "bullfrog",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing",
@@ -4708,7 +4708,7 @@
       "item": "burbot",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -4735,7 +4735,7 @@
       "item": "butterfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -4759,7 +4759,7 @@
       "item": "candelabra_seadragon",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -4781,7 +4781,7 @@
       "item": "carp",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4805,7 +4805,7 @@
       "item": "catfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -4827,7 +4827,7 @@
       "item": "cave_eel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -4849,7 +4849,7 @@
       "item": "cave_shark",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "mines"
@@ -4871,7 +4871,7 @@
       "item": "cave_shrimp",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -4893,7 +4893,7 @@
       "item": "char",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -4917,7 +4917,7 @@
       "item": "cherry_fish",
       "legendary": true,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -4943,7 +4943,7 @@
       "item": "chub",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -4967,7 +4967,7 @@
       "item": "chum",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -4992,7 +4992,7 @@
       "item": "clam",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -5019,7 +5019,7 @@
       "item": "clay",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5047,7 +5047,7 @@
       "item": "clay",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5075,7 +5075,7 @@
       "item": "clay",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5103,7 +5103,7 @@
       "item": "cod",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -5129,7 +5129,7 @@
       "item": "coelacanth",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "mines"
@@ -5151,7 +5151,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "aquatic_antiquities",
       "rarity": "artifact_fishing",
       "retrieval": [
         "fishing"
@@ -5180,7 +5180,7 @@
       "item": "copper_rockfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "fishing",
@@ -5210,7 +5210,7 @@
       "item": "crab",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -5234,7 +5234,7 @@
       "item": "crayfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "divespot"
@@ -5261,7 +5261,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "sunken_secrets",
       "rarity": "artifact_divespots",
       "retrieval": [
         "divespot"
@@ -5290,7 +5290,7 @@
       "item": "crucian_carp",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -5314,7 +5314,7 @@
       "item": "dace",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -5341,7 +5341,7 @@
       "item": "dart",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -5365,7 +5365,7 @@
       "item": "earth_eel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -5387,7 +5387,7 @@
       "item": "emerald_horned_charger",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "mines"
@@ -5409,7 +5409,7 @@
       "item": "fiber",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "fishing",
@@ -5439,7 +5439,7 @@
       "item": "fiber",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "fishing"
@@ -5468,7 +5468,7 @@
       "item": "firesail_fish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "mines"
@@ -5490,7 +5490,7 @@
       "item": "flathead_catfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -5516,7 +5516,7 @@
       "locations": [
         "deep_woods"
       ],
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -5546,7 +5546,7 @@
       "item": "freshwater_eel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -5570,7 +5570,7 @@
       "item": "freshwater_oyster",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -5597,7 +5597,7 @@
       "item": "frog",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing",
@@ -5623,7 +5623,7 @@
       "item": "gar",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -5649,7 +5649,7 @@
       "item": "gazer",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -5671,7 +5671,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "aquatic_antiquities",
       "rarity": "artifact_fishing",
       "retrieval": [
         "fishing"
@@ -5700,7 +5700,7 @@
       "item": "giant_jellyfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -5722,7 +5722,7 @@
       "item": "giant_koi",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -5746,7 +5746,7 @@
       "item": "giant_tilapia",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -5770,7 +5770,7 @@
       "item": "glass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5797,7 +5797,7 @@
       "item": "glass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5824,7 +5824,7 @@
       "item": "glass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "divespot"
@@ -5851,7 +5851,7 @@
       "item": "goby",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -5873,7 +5873,7 @@
       "item": "golden_eel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing",
@@ -5903,7 +5903,7 @@
       "item": "golden_shiner",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -5927,7 +5927,7 @@
       "item": "goldfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -5951,7 +5951,7 @@
       "item": "grayling",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -5978,7 +5978,7 @@
       "item": "grouper",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -6002,7 +6002,7 @@
       "item": "hake",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fish_trap"
@@ -6029,7 +6029,7 @@
       "item": "halibut",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -6056,7 +6056,7 @@
       "item": "herring",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -6080,7 +6080,7 @@
       "item": "horse_mackerel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6104,7 +6104,7 @@
       "item": "iron_fish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing",
@@ -6134,7 +6134,7 @@
       "item": "jellyfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6159,7 +6159,7 @@
       "item": "killifish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -6183,7 +6183,7 @@
       "item": "king_crab",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -6210,7 +6210,7 @@
       "item": "koi",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6232,7 +6232,7 @@
       "item": "lake_chub",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6258,7 +6258,7 @@
       "locations": [
         "deep_woods"
       ],
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6285,7 +6285,7 @@
       "item": "lamprey",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -6309,7 +6309,7 @@
       "item": "lava_piranha",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -6331,7 +6331,7 @@
       "item": "leaf_fish",
       "legendary": true,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6357,7 +6357,7 @@
       "item": "lightning_fish",
       "legendary": true,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6383,7 +6383,7 @@
       "item": "loach",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6407,7 +6407,7 @@
       "item": "lobster",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6431,7 +6431,7 @@
       "item": "luminescent_crab",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -6453,7 +6453,7 @@
       "item": "mackerel",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -6480,7 +6480,7 @@
       "item": "massive_minnow",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "fishing",
@@ -6510,7 +6510,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "sunken_secrets",
       "rarity": "artifact_divespots",
       "retrieval": [
         "divespot"
@@ -6539,7 +6539,7 @@
       "item": "mini_whale_shark",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "mines"
@@ -6561,7 +6561,7 @@
       "item": "minnow",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -6585,7 +6585,7 @@
       "item": "mullet",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -6611,7 +6611,7 @@
       "locations": [
         "deep_woods"
       ],
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6638,7 +6638,7 @@
       "item": "newt",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -6665,7 +6665,7 @@
       "item": "oarfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -6689,7 +6689,7 @@
       "item": "ocean_sunfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -6713,7 +6713,7 @@
       "item": "octopus",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6738,7 +6738,7 @@
       "item": "paddlefish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -6762,7 +6762,7 @@
       "item": "paper_pondshell",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -6789,7 +6789,7 @@
       "item": "pearl_clam",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -6816,7 +6816,7 @@
       "item": "pebble_minnow",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -6838,7 +6838,7 @@
       "item": "perch",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -6865,7 +6865,7 @@
       "item": "pike",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -6888,7 +6888,7 @@
       "item": "pollock",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -6911,7 +6911,7 @@
       "item": "pond_snail",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -6938,7 +6938,7 @@
       "item": "puffer_fish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -6963,7 +6963,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "sunken_secrets",
       "rarity": "artifact_divespots",
       "retrieval": [
         "divespot"
@@ -6992,7 +6992,7 @@
       "item": "rainbow_trout",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -7016,7 +7016,7 @@
       "item": "razorback",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -7040,7 +7040,7 @@
       "item": "red_snapper",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7065,7 +7065,7 @@
       "item": "river_snail",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "divespot"
@@ -7092,7 +7092,7 @@
       "item": "roach",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -7114,7 +7114,7 @@
       "item": "rock_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -7140,7 +7140,7 @@
       "item": "rock_guppy",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -7162,7 +7162,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "sunken_secrets",
       "rarity": "artifact_divespots",
       "retrieval": [
         "divespot"
@@ -7191,7 +7191,7 @@
       "item": "rockbiter",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -7213,7 +7213,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "aquatic_antiquities",
       "rarity": "artifact_fishing",
       "retrieval": [
         "fishing"
@@ -7242,7 +7242,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "sunken_secrets",
       "rarity": "artifact_divespots",
       "retrieval": [
         "divespot"
@@ -7271,7 +7271,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "aquatic_antiquities",
       "rarity": "artifact_fishing",
       "retrieval": [
         "fishing"
@@ -7300,7 +7300,7 @@
       "item": "salmon",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7325,7 +7325,7 @@
       "item": "sand_lance",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -7349,7 +7349,7 @@
       "item": "sapphire_betta",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -7371,7 +7371,7 @@
       "item": "sardine",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -7394,7 +7394,7 @@
       "item": "sauger",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7418,7 +7418,7 @@
       "item": "saury",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7442,7 +7442,7 @@
       "item": "sea_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -7466,7 +7466,7 @@
       "item": "sea_bream",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7491,7 +7491,7 @@
       "item": "sea_urchin",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fish_trap"
@@ -7518,7 +7518,7 @@
       "item": "seaweed",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_very_common",
       "retrieval": [
         "divespot"
@@ -7545,7 +7545,7 @@
       "item": "shad",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7569,7 +7569,7 @@
       "item": "shadow_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -7593,7 +7593,7 @@
       "item": "shardfin",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -7615,7 +7615,7 @@
       "item": "shark",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -7639,7 +7639,7 @@
       "item": "shrimp",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7665,7 +7665,7 @@
       "locations": [
         "deep_woods"
       ],
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -7692,7 +7692,7 @@
       "item": "silver_squid",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing",
@@ -7722,7 +7722,7 @@
       "item": "smallmouth_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing",
@@ -7745,7 +7745,7 @@
       "item": "snakehead",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -7770,7 +7770,7 @@
       "item": "snapping_turtle",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing",
@@ -7796,7 +7796,7 @@
       "item": "snow_fish",
       "legendary": true,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -7822,7 +7822,7 @@
       "item": "squid",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7844,7 +7844,7 @@
       "item": "stingray",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7868,7 +7868,7 @@
       "item": "stone_loach",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -7890,7 +7890,7 @@
       "item": "striped_bass",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7914,7 +7914,7 @@
       "item": "sturgeon",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -7939,7 +7939,7 @@
       "item": "sulfur_crab",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -7963,7 +7963,7 @@
       "locations": [
         "deep_woods"
       ],
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -7993,7 +7993,7 @@
       "item": "sweetfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -8017,7 +8017,7 @@
       "item": "swordfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "fishing"
@@ -8042,7 +8042,7 @@
       "item": "tarpon",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -8066,7 +8066,7 @@
       "item": "tetra",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -8088,7 +8088,7 @@
       "item": "tilapia",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -8112,7 +8112,7 @@
       "item": "transparent_jellyfish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -8134,7 +8134,7 @@
       "item": "treasure_box_copper",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "copper_chest",
       "retrieval": [
         "fishing",
@@ -8164,7 +8164,7 @@
       "item": "treasure_box_copper",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "copper_chest",
       "retrieval": [
         "fishing",
@@ -8194,7 +8194,7 @@
       "item": "treasure_box_gold",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "gold_chest",
       "retrieval": [
         "fishing",
@@ -8224,7 +8224,7 @@
       "item": "treasure_box_gold",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "gold_chest",
       "retrieval": [
         "fishing",
@@ -8254,7 +8254,7 @@
       "item": "treasure_box_silver",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "silver_chest",
       "retrieval": [
         "fishing",
@@ -8284,7 +8284,7 @@
       "item": "treasure_box_silver",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "silver_chest",
       "retrieval": [
         "fishing",
@@ -8314,7 +8314,7 @@
       "item": "treasure_box_wood",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "wood_chest",
       "retrieval": [
         "fishing",
@@ -8344,7 +8344,7 @@
       "item": "treasure_box_wood",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "wood_chest",
       "retrieval": [
         "fishing",
@@ -8374,7 +8374,7 @@
       "item": "trout",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing",
@@ -8397,7 +8397,7 @@
       "item": "tuna",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "fishing"
@@ -8419,7 +8419,7 @@
       "item": "turtle",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "very_common",
       "retrieval": [
         "fishing"
@@ -8441,7 +8441,7 @@
       "item": "void_pearl",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -8463,7 +8463,7 @@
       "item": "walleye",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "ultra_common",
       "retrieval": [
         "fishing"
@@ -8490,7 +8490,7 @@
       "item": "water_balloon_fish",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "uncommon",
       "retrieval": [
         "mines"
@@ -8512,7 +8512,7 @@
       "item": "unidentified_artifact",
       "legendary": false,
       "locations": null,
-      "perk_artifact": null,
+      "perk_artifact": "aquatic_antiquities",
       "rarity": "artifact_fishing",
       "retrieval": [
         "fishing"
@@ -8541,7 +8541,7 @@
       "item": "white_perch",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "rare",
       "retrieval": [
         "fishing"
@@ -8565,7 +8565,7 @@
       "item": "winged_shrimp",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "common",
       "retrieval": [
         "mines"
@@ -8587,7 +8587,7 @@
       "item": "basic_wood",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "fishing",
@@ -8617,7 +8617,7 @@
       "item": "basic_wood",
       "legendary": false,
       "locations": null,
-      "perk_artifact": false,
+      "perk_artifact": null,
       "rarity": "junk",
       "retrieval": [
         "fishing"

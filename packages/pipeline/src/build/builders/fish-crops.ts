@@ -3,6 +3,7 @@ import { toSnakeId } from '@mistria/schema'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
 import { hoursToRange, rarityFor, seasonsFor, statedWeather } from '../game-facts.js'
+import { artifactAvailability } from './artifacts.js'
 import type { GameWindowFacts, ItemBuildInput } from './items.js'
 
 const RARITIES: Record<string, Rarity> = {
@@ -144,11 +145,23 @@ export function itemInputs(
   for (const row of ctx.artifacts) {
     const name = itemName(row.name)
     if (name === '') continue
+
+    // The game's pool tables answer "where do I dig this up" for most
+    // artifacts; the wiki's location column answers it for almost none. Where
+    // the game says nothing (`null`), the wiki path runs exactly as before —
+    // including its honest silence.
+    const id = ctx.idFor(name)
+    const game = artifactAvailability(ctx, id)
+
     inputs.set(name, {
       displayName: name,
       methods: [],
-      rarity: RARITIES[text(row.rarity).toLowerCase()] ?? null,
+      rarity:
+        ctx.game?.artifactFacts?.rarityByItem.get(id) ??
+        RARITIES[text(row.rarity).toLowerCase()] ??
+        null,
       categoryOverride: 'artifact',
+      ...(game === null ? {} : { availabilityOverride: game }),
     })
   }
 

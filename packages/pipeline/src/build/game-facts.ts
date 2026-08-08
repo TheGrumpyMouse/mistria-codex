@@ -29,6 +29,7 @@ import {
   WEATHERS,
   type Weather,
 } from '@mistria/schema'
+import type { GameArtifactsExtract, GameSealOffering } from '../extract/artifacts.js'
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type {
   GameBug,
@@ -38,7 +39,12 @@ import type {
   GameSpawnsExtract,
   GameTree,
 } from '../extract/spawns.js'
-import type { GameNpc, GameSeasonWeather, GameWorldExtract } from '../extract/world.js'
+import type {
+  GameLocation,
+  GameNpc,
+  GameSeasonWeather,
+  GameWorldExtract,
+} from '../extract/world.js'
 import { CURATED_DIR, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 
@@ -142,6 +148,40 @@ export interface GameFacts {
    * "Alpaca Blue Ribbon".
    */
   nonItemNames: Set<string>
+  /** Null when the extract predates the artifact work — the wiki answers stand. */
+  artifactFacts: ArtifactFacts | null
+}
+
+/** The artifact and seal extract, indexed. See `buildArtifactFacts`. */
+export interface ArtifactFacts {
+  /** Artifact item id -> its archaeology pool (a museum set key). */
+  poolByItem: Map<string, string>
+  /** Pool -> our location ids, for the pools a room states. */
+  locationsByPool: Map<string, string[]>
+  /** Artifact item id -> the game's own rarity. */
+  rarityByItem: Map<string, Rarity | null>
+  /** Mine pool -> 1-based biome position in floor order. */
+  minePoolOrder: Map<string, number>
+  /** Ritual chamber floor bands, ascending. */
+  ritualFloors: { min: number; max: number }[]
+  /** Artifact item id -> the fish rule that yields it (dived or fished). */
+  fishRuleByArtifact: Map<string, GameFish>
+  /** Perk id -> its title, for rendering requirements as words. */
+  perkNameById: Map<string, string>
+  seals: {
+    id: string
+    questId: string
+    questName: string | null
+    items: GameSealOffering['items']
+  }[]
+  /** Every stated delivery — seals, bridge repairs, upgrades. */
+  offerings: GameSealOffering[]
+  /**
+   * Our location ids for every room that spawns a dig site, from
+   * `locations.toml`. This is where the dig-material set can be dug up —
+   * everywhere a dig site exists.
+   */
+  digSiteLocations: string[]
 }
 
 /**
@@ -395,6 +435,12 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
 
   const fruitTreeByHarvest = plantableTrees(spawns.trees ?? [], items.items)
 
+  // Optional, like everything else here: a clone whose extract predates the
+  // artifact work still builds, and its artifacts keep the wiki's answers.
+  const artifactExtract = await readJsonFile<GameArtifactsExtract>(
+    join(game, 'artifacts.json'),
+  ).catch(() => null)
+
   const locationsByBugTag = new Map<string, string[]>()
   const unmappedRooms: string[] = []
   for (const room of world.locations) {
@@ -433,6 +479,117 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     nonItemNames: new Set(
       (world.animalCosmetics ?? []).flatMap((c) => (c.name === null ? [] : [wordKey(c.name)])),
     ),
+    artifactFacts:
+      artifactExtract === null
+        ? null
+        : buildArtifactFacts(
+            artifactExtract,
+            world.museum,
+            spawns.fish,
+            world.locations,
+            rooms,
+            unmappedRooms,
+          ),
+  }
+}
+
+/**
+ * The artifact extract, joined into something the builders can consume.
+ *
+ * The chain the whole feature rests on: `artifacts.toml [locations]` names a
+ * *pool* per game room, the archaeology wing's set keys **are** those pool
+ * names, and set membership names every item in a pool. Room -> our location
+ * goes through `curated/aliases/game_rooms.json`, the same file the bug-room
+ * join already trusts — an unmapped room lands in `unmappedRooms` and warns,
+ * rather than silently dropping a pool.
+ */
+export function buildArtifactFacts(
+  extract: GameArtifactsExtract,
+  museum: GameWorldExtract['museum'],
+  fish: GameFish[],
+  gameLocations: GameLocation[],
+  rooms: Record<string, RoomAlias>,
+  unmappedRooms: string[],
+): ArtifactFacts {
+  const archaeology = museum.find((wing) => wing.id === 'archaeology')
+
+  const poolByItem = new Map<string, string>()
+  for (const set of archaeology?.sets ?? []) {
+    for (const item of set.items) poolByItem.set(item, set.id)
+  }
+
+  const locationsByPool = new Map<string, string[]>()
+  for (const [room, pool] of Object.entries(extract.poolByRoom)) {
+    const alias = rooms[room]
+    if (alias === undefined) {
+      unmappedRooms.push(room)
+      continue
+    }
+    if (alias.location === null) continue
+    const list = locationsByPool.get(pool) ?? []
+    if (!list.includes(alias.location)) list.push(alias.location)
+    locationsByPool.set(pool, list.sort())
+  }
+
+  const rarityByItem = new Map<string, Rarity | null>()
+  for (const [item, word] of Object.entries(extract.lootRarity)) {
+    rarityByItem.set(item, rarityFor(word))
+  }
+
+  // File order is floor order, so the biome at index N is the Nth biome
+  // counting down — which is how the builder joins it to the curated mines
+  // file without ever trusting the game's own floor starts (they disagree
+  // off-by-one with the ranges the wiki and curated file state).
+  const minePoolOrder = new Map<string, number>()
+  for (const biome of extract.mineBiomes) {
+    if (biome.artifact_set !== null) minePoolOrder.set(biome.artifact_set, biome.index)
+  }
+
+  const ritualFloors = extract.ritualChambers
+    .map((chamber) => ({ min: chamber.floors[0], max: chamber.floors[1] }))
+    .sort((a, b) => a.min - b.min)
+
+  // (D1) The fished and dived artifact rules yield `unidentified_artifact` —
+  // the rule's own id is the artifact. `fishByItem` can never find them, so
+  // they get their own index.
+  const fishRuleByArtifact = new Map<string, GameFish>()
+  for (const rule of fish) {
+    if (rule.item === 'unidentified_artifact') fishRuleByArtifact.set(rule.id, rule)
+  }
+
+  const offeringsByQuest = new Map(extract.sealOfferings.map((o) => [o.quest_id, o] as const))
+  const seals = extract.seals.map((seal) => {
+    const offering = offeringsByQuest.get(seal.quest_id)
+    return {
+      id: seal.id,
+      questId: seal.quest_id,
+      questName: offering?.quest_name ?? null,
+      items: offering?.items ?? [],
+    }
+  })
+
+  return {
+    poolByItem,
+    locationsByPool,
+    rarityByItem,
+    minePoolOrder,
+    ritualFloors,
+    fishRuleByArtifact,
+    perkNameById: new Map(
+      extract.perks.flatMap((perk) => (perk.name === null ? [] : [[perk.id, perk.name] as const])),
+    ),
+    seals,
+    offerings: extract.sealOfferings,
+    digSiteLocations: [
+      ...new Set(
+        gameLocations
+          .filter((room) => (room.dig_sites ?? 0) > 0 || (room.special_dig_sites ?? 0) > 0)
+          .flatMap((room) => {
+            const alias = rooms[room.id]
+            return alias?.location == null ? [] : [alias.location]
+          }),
+      ),
+    ].sort(),
   }
 }
 

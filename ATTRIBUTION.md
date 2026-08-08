@@ -21,7 +21,7 @@ All files were fetched from the community wiki at <https://fieldsofmistria.wiki.
 and does not own them. The wiki’s **text** is CC BY-SA; the game’s **art** is not,
 and nothing in this repository treats it as though it were.
 
-**1269 files.**
+**1271 files.**
 
 ## Items (1123)
 
@@ -1326,3 +1326,15 @@ and nothing in this repository treats it as though it were.
 | `ui/season-icon-winter.png` | Season icon winter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20winter.png) |
 | `ui/sheep-category-icon.png` | Sheep category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20category%20icon.png) |
 | `ui/tackleshop-icon.png` | Tackleshop icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png) |
+
+## Maps (1)
+
+| In this repo | Original filename | Source |
+| --- | --- | --- |
+| `map/v0-13-map-unlocked.png` | V0.13 map unlocked.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:V0.13%20map%20unlocked.png) |
+
+## Logo (1)
+
+| In this repo | Original filename | Source |
+| --- | --- | --- |
+| `brand/fields-of-mistria.png` | Fields of Mistria.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fields%20of%20Mistria.png) |

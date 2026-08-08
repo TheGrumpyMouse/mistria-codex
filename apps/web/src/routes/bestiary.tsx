@@ -1,6 +1,7 @@
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
@@ -30,7 +31,7 @@ export function BestiaryRoute() {
   const { id } = route.useParams()
   const [state, setState] = useState<{
     monster: MonsterRecord | null
-    biomes: Map<string, string>
+    biomes: Map<string, { name: string; locationId: string | null }>
     index: DisplayIndex
     loading: boolean
   }>({ monster: null, biomes: new Map(), index: {}, loading: true })
@@ -39,14 +40,14 @@ export function BestiaryRoute() {
     let live = true
     Promise.all([
       loadDataset<MonsterRecord>('monsters'),
-      loadDataset<{ id: string; name: string }>('mines'),
+      loadDataset<{ id: string; name: string; location_id: string | null }>('mines'),
       loadDisplayIndex(),
     ])
       .then(([monsters, mines, index]) => {
         if (!live) return
         setState({
           monster: monsters.find((m) => m.id === id) ?? null,
-          biomes: new Map(mines.map((m) => [m.id, m.name])),
+          biomes: new Map(mines.map((m) => [m.id, { name: m.name, locationId: m.location_id }])),
           index,
           loading: false,
         })
@@ -72,7 +73,7 @@ export function BestiaryRoute() {
       <Column>
         <h1 className="text-2xl">Not found</h1>
         <p className="mt-1 text-ink-mute text-sm">
-          Nothing here is called <code>{id}</code>.{' '}
+          Nothing here goes by “{id.replace(/_/g, ' ')}”.{' '}
           <Link to="/search" className="underline decoration-rule underline-offset-4">
             Search instead
           </Link>
@@ -84,6 +85,7 @@ export function BestiaryRoute() {
 
   return (
     <Column>
+      <BackLink />
       <header className="flex items-center gap-3">
         <ItemIcon
           iconKey={monster.icon_key ?? `monster/${monster.id}`}
@@ -95,7 +97,26 @@ export function BestiaryRoute() {
           <p className="mt-0.5 text-ink-mute text-sm">
             {monster.biome_ids.length === 0
               ? 'home unknown'
-              : monster.biome_ids.map((b) => biomes.get(b) ?? b.replace(/_/g, ' ')).join(' · ')}
+              : monster.biome_ids.map((b, i) => {
+                  const biome = biomes.get(b)
+                  const label = biome?.name ?? b.replace(/_/g, ' ')
+                  return (
+                    <span key={b}>
+                      {i > 0 && ' · '}
+                      {biome?.locationId == null ? (
+                        label
+                      ) : (
+                        <Link
+                          to="/place/$id"
+                          params={{ id: biome.locationId }}
+                          className="underline decoration-rule underline-offset-4 hover:text-ink"
+                        >
+                          {label}
+                        </Link>
+                      )}
+                    </span>
+                  )
+                })}
           </p>
         </div>
       </header>

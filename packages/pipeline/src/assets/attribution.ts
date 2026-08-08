@@ -12,6 +12,9 @@ import { join } from 'node:path'
 import { REPO_ROOT } from '../lib/paths.js'
 import { type AssetEntry, ATTRIBUTION_TEXT, readManifestOrEmpty } from './manifest.js'
 
+// The renderer iterates THESE keys, not the families present in the manifest —
+// a family missing here silently vanishes from ATTRIBUTION.md, which for an
+// in-copyright image is the worst possible file to leave uncredited.
 const FAMILY_TITLES: Record<string, string> = {
   item: 'Items',
   villager: 'Villager icons',
@@ -20,6 +23,8 @@ const FAMILY_TITLES: Record<string, string> = {
   skill: 'Skills',
   festival: 'Festivals',
   ui: 'Interface',
+  map: 'Maps',
+  brand: 'Logo',
 }
 
 /** Escape the pipes and brackets that would otherwise break a Markdown table. */

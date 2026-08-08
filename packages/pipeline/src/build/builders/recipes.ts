@@ -1,6 +1,7 @@
 import type { ArtifactFacet, BugFacet, ForageableFacet, Rarity, Recipe } from '@mistria/schema'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
+import { artifactSource } from './artifacts.js'
 
 const RARITIES: Record<string, Rarity> = {
   common: 'common',
@@ -105,12 +106,22 @@ export function buildBugFacets(ctx: BuildContext): BugFacet[] {
 }
 
 export function buildArtifactFacets(ctx: BuildContext): ArtifactFacet[] {
-  return ctx.artifacts.map((row) => ({
-    item_id: ctx.idFor(itemName(row.name)),
-    dig_source: null,
-    biome_id: null,
-    rarity: RARITIES[text(row.rarity).toLowerCase()] ?? null,
-  }))
+  return ctx.artifacts.map((row) => {
+    const id = ctx.idFor(itemName(row.name))
+    // From the game's pool tables where the extract has them; two nulls where
+    // it does not, which is the state every clone was in before the artifact
+    // extraction landed.
+    const source = artifactSource(ctx, id)
+    return {
+      item_id: id,
+      dig_source: source.dig_source,
+      biome_id: source.biome_id,
+      rarity:
+        ctx.game?.artifactFacts?.rarityByItem.get(id) ??
+        RARITIES[text(row.rarity).toLowerCase()] ??
+        null,
+    }
+  })
 }
 
 /**

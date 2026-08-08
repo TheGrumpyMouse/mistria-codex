@@ -32,6 +32,7 @@ import {
   type Skill,
 } from '@mistria/schema'
 import { consola } from 'consola'
+import { writeAppIcons } from '../assets/app-icon.js'
 import { writeAttribution } from '../assets/attribution.js'
 import { atlasVersion, packAssets } from '../assets/pack.js'
 import { ASSETS_MANIFEST, DATA_DIR, SHIP_DIR } from '../lib/paths.js'
@@ -241,6 +242,9 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     ['characters.json', 'character'],
     ['monsters.json', 'monster'],
     ['locations.json', 'location'],
+    // Quests are searchable — "what was that quest called" is a real query —
+    // and their route renders giver, rewards and, for the seals, the price.
+    ['quests.json', 'quest'],
   ] as const) {
     for (const record of await read<{
       id: string
@@ -287,9 +291,16 @@ async function buildAvailabilityFile(): Promise<ShippedFile | null> {
   if (items.length === 0) return null
 
   const locations = await read<Location>('locations.json')
+
+  const skills = await read<{ perks: { id: string; name: string }[] }>('skills.json')
+  const quests = await read<{ id: string; name: string }>('quests.json')
   const bundle = buildAvailabilityBundle(
     items,
     locations.map((l) => l.id),
+    {
+      perks: new Map(skills.flatMap((s) => s.perks.map((p) => [p.id, p.name] as const))),
+      quests: new Map(quests.map((q) => [q.id, q.name] as const)),
+    },
   )
 
   return {
@@ -348,6 +359,11 @@ async function packIfPresent(): Promise<Meta['assets']> {
   // of the same determinism check as everything else and cannot drift from what
   // the repository actually holds.
   await writeAttribution()
+
+  // The installable icon — the framed logo — lands in the same gitignored
+  // output as the atlases, so a takedown removes it with everything else and
+  // the app falls back to the committed favicon.svg.
+  await writeAppIcons()
 
   return {
     version: atlasVersion(packed),

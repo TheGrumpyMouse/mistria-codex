@@ -2,7 +2,9 @@ import { Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
+import { LoadError } from '~/components/Section'
 import { type DisplayIndex, loadDisplayIndex } from '~/lib/data'
+import { routeFor } from '~/lib/search'
 
 /**
  * Everything, by category.
@@ -36,6 +38,7 @@ const CATEGORIES: { id: string; label: string }[] = [
   { id: 'misc', label: 'Other' },
   { id: 'character', label: 'Villagers' },
   { id: 'monster', label: 'Monsters' },
+  { id: 'location', label: 'Places' },
 ]
 
 export function BrowseRoute() {
@@ -74,9 +77,7 @@ export function BrowseRoute() {
   if (error !== null) {
     return (
       <Column>
-        <p className="text-gap text-sm">
-          The index could not be loaded. Run <code>pnpm build:ship</code> and reload.
-        </p>
+        <LoadError />
       </Column>
     )
   }
@@ -121,7 +122,7 @@ export function BrowseRoute() {
         {rows.map(([id, entry]) => (
           <li key={id}>
             <Link
-              to="/item/$id"
+              to={routeFor(entry.c)}
               params={{ id }}
               className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
             >

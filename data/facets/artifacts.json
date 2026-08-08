@@ -1,661 +1,661 @@
 [
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "alda_bronze_sword",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "alda_clay_pot",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "alda_feather_pendant",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "alda_gem_bracelet",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "alda_mural_tablet",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "aldarian_gauntlet",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "aldarian_sword",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "aldarian_war_banner",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "amber_trapped_insect",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "ancient_crystal_goblet",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "ancient_gold_coin",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "ancient_horn_circlet",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "ancient_royal_scepter",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "ancient_stone_lantern",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "black_tablet",
-    "rarity": "uncommon"
+    "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "caldosian_breastplate",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "caldosian_drinking_horn",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "caldosian_emperor_bust",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "caldosian_sword",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "clay",
-    "rarity": null
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fish_trap",
     "item_id": "clay_amphora",
     "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fishing",
     "item_id": "coin_lump",
-    "rarity": "rare"
-  },
-  {
-    "biome_id": null,
-    "dig_source": null,
-    "item_id": "completely_wrong_map",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
+    "item_id": "completely_wrong_map",
+    "rarity": "legendary"
+  },
+  {
+    "biome_id": "tide_caverns",
+    "dig_source": "floor_range",
     "item_id": "crab_statue",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "diving",
     "item_id": "criminal_confession",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "crystal_apple",
-    "rarity": "rare"
+    "rarity": "legendary"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "tide_caverns",
+    "dig_source": "floor_range",
     "item_id": "dense_water",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "diamond_backed_mirror",
     "rarity": "rare"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "ancient_ruins",
+    "dig_source": "floor_range",
     "item_id": "dragon_claw",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "ancient_ruins",
+    "dig_source": "floor_range",
     "item_id": "dragon_pact_tablet",
     "rarity": "legendary"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "ancient_ruins",
+    "dig_source": "floor_range",
     "item_id": "dragon_scale",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "ancient_ruins",
+    "dig_source": "floor_range",
     "item_id": "dragon_forged_bracelet",
     "rarity": "rare"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "deep_earth",
+    "dig_source": "floor_range",
     "item_id": "earth_infused_stone",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "deep_earth",
+    "dig_source": "floor_range",
     "item_id": "faceted_rock_gem",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "family_crest_pendant",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "lava_caves",
+    "dig_source": "floor_range",
     "item_id": "fire_crystal",
     "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "flint_arrowhead",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "fossilized_egg",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "fossilized_mandrake_root",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "gathering_basket",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fishing",
     "item_id": "giant_fish_scale",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "ancient_ruins",
+    "dig_source": "floor_range",
     "item_id": "hardened_essence",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "lost_crown_of_aldaria",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "diving",
     "item_id": "mermaids_comb",
-    "rarity": "uncommon"
+    "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fish_trap",
     "item_id": "message_in_a_bottle",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "metal_leaf",
-    "rarity": "rare"
-  },
-  {
-    "biome_id": null,
-    "dig_source": null,
-    "item_id": "meteorite",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
+    "item_id": "meteorite",
+    "rarity": "legendary"
+  },
+  {
+    "biome_id": "upper_mines",
+    "dig_source": "floor_range",
     "item_id": "miners_helmet",
     "rarity": "rare"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "upper_mines",
+    "dig_source": "floor_range",
     "item_id": "miners_pickaxe",
     "rarity": "common"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "upper_mines",
+    "dig_source": "floor_range",
     "item_id": "miners_rucksack",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "upper_mines",
+    "dig_source": "floor_range",
     "item_id": "miners_slab",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "mist_spot",
     "item_id": "mist_crystal",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "mist_spot",
     "item_id": "mist_flute",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "mist_spot",
     "item_id": "mist_scroll",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "mist_spot",
     "item_id": "misty_black_mirror",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "mist_spot",
     "item_id": "misty_feather_quill",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "muttering_cube",
-    "rarity": "uncommon"
+    "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "obsidian_blade",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "peat",
-    "rarity": null
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_copper_ore",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_diamond",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_emerald",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_gold_ore",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_iron_ore",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_mistril_ore",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_pink_diamond",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_ruby",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_sapphire",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "rock",
     "item_id": "perfect_silver_ore",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "petrified_wood",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fish_trap",
     "item_id": "porcelain_figurine",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "lava_caves",
+    "dig_source": "floor_range",
     "item_id": "rainbow_geode",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "diving",
     "item_id": "rainbow_seaweed",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "deep_earth",
+    "dig_source": "floor_range",
     "item_id": "really_round_rock",
     "rarity": "common"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "lava_caves",
+    "dig_source": "floor_range",
     "item_id": "red_obsidian",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "floor_range",
     "item_id": "ritual_beads",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "floor_range",
     "item_id": "ritual_chalice",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "floor_range",
     "item_id": "ritual_incense_burner",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "floor_range",
     "item_id": "ritual_scepter",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "floor_range",
     "item_id": "ritual_tablet",
     "rarity": "rare"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "deep_earth",
+    "dig_source": "floor_range",
     "item_id": "rock_statue",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "diving",
     "item_id": "rock_with_a_hole",
-    "rarity": "uncommon"
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fishing",
     "item_id": "rubber_fish",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "diving",
     "item_id": "rusted_shield",
-    "rarity": "uncommon"
-  },
-  {
-    "biome_id": null,
-    "dig_source": null,
-    "item_id": "rusted_treasure_chest",
-    "rarity": "uncommon"
-  },
-  {
-    "biome_id": null,
-    "dig_source": null,
-    "item_id": "sea_glass",
     "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fishing",
+    "item_id": "rusted_treasure_chest",
+    "rarity": "rare"
+  },
+  {
+    "biome_id": null,
+    "dig_source": "fish_trap",
+    "item_id": "sea_glass",
+    "rarity": "common"
+  },
+  {
+    "biome_id": "deep_earth",
+    "dig_source": "floor_range",
     "item_id": "seriously_square_stone",
-    "rarity": "uncommon"
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "shard_mass",
-    "rarity": null
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "shards",
-    "rarity": null
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "shortcut_scroll",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "sod",
-    "rarity": null
+    "rarity": "common"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "tide_caverns",
+    "dig_source": "floor_range",
     "item_id": "starlight_coral",
     "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "statuette_of_caldarus",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "stone_horse",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "tide_caverns",
+    "dig_source": "floor_range",
     "item_id": "stone_shell",
     "rarity": "common"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "tide_caverns",
+    "dig_source": "floor_range",
     "item_id": "tidestone",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "upper_mines",
+    "dig_source": "floor_range",
     "item_id": "tin_lunchbox",
-    "rarity": "uncommon"
+    "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "tiny_dinosaur_skeleton",
     "rarity": "rare"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "lava_caves",
+    "dig_source": "floor_range",
     "item_id": "tiny_volcano",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "trilobite_fossil",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "unknown_dragon_statuette",
-    "rarity": "uncommon"
+    "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "vintage_brush",
     "rarity": "rare"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "vintage_cow_bell",
     "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "vintage_hammer",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "vintage_sickle",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "vintage_watering_can",
     "rarity": "uncommon"
   },
   {
-    "biome_id": null,
-    "dig_source": null,
+    "biome_id": "lava_caves",
+    "dig_source": "floor_range",
     "item_id": "warm_rock",
     "rarity": "common"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fishing",
     "item_id": "water_sphere",
     "rarity": "uncommon"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "dig_spot",
     "item_id": "weightless_stone",
-    "rarity": "uncommon"
+    "rarity": "legendary"
   },
   {
     "biome_id": null,
-    "dig_source": null,
+    "dig_source": "fish_trap",
     "item_id": "worn_pendant",
     "rarity": "rare"
   }

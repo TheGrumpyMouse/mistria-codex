@@ -12,6 +12,21 @@
   ],
   "assets": [
     {
+      "bytes": 101219,
+      "family": "brand",
+      "fetched_at": "2026-08-08",
+      "file": "brand/fields-of-mistria.png",
+      "height": 1080,
+      "icon_keys": [
+        "brand/logo"
+      ],
+      "key": "brand/fields-of-mistria",
+      "sha256": "b40e7582c606e3c737c215e139ebffe8c0476fd88edd98418631fbc5b2bc43e1",
+      "source_file": "Fields of Mistria.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Fields%20of%20Mistria.png",
+      "width": 1920
+    },
+    {
       "bytes": 704,
       "family": "festival",
       "fetched_at": "2026-08-07",
@@ -7344,16 +7359,16 @@
       "width": 72
     },
     {
-      "bytes": 1067,
+      "bytes": 556,
       "family": "item",
-      "fetched_at": "2026-08-07",
+      "fetched_at": "2026-08-08",
       "file": "item/healing-syrup.png",
       "height": 72,
       "icon_keys": [
         "misc/heal_syrup"
       ],
       "key": "item/healing-syrup",
-      "sha256": "796bfa12e66d6bbcd99ea69fd693b3e26f92b6e4f944f167c26f97b69e2e9f08",
+      "sha256": "8db28f3287c72a221b549db06fee5bc6872154d96f6306c250752548d3bf2ee3",
       "source_file": "Healing Syrup.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Healing%20Syrup.png",
       "width": 72
@@ -8793,6 +8808,7 @@
       "file": "item/lemon.png",
       "height": 72,
       "icon_keys": [
+        "crop/lemon",
         "fruit/lemon"
       ],
       "key": "item/lemon",
@@ -8838,7 +8854,7 @@
       "file": "item/lemon-sapling.png",
       "height": 72,
       "icon_keys": [
-        "misc/sapling_lemon"
+        "seed/sapling_lemon"
       ],
       "key": "item/lemon-sapling",
       "sha256": "2ab09ff69c0696d805fe13b8cbf47f5e5a1030253eb9d9fa4389efa15cfb26d0",
@@ -10598,6 +10614,7 @@
       "file": "item/peach.png",
       "height": 72,
       "icon_keys": [
+        "crop/peach",
         "fruit/peach"
       ],
       "key": "item/peach",
@@ -10613,7 +10630,7 @@
       "file": "item/peach-sapling.png",
       "height": 72,
       "icon_keys": [
-        "misc/sapling_peach"
+        "seed/sapling_peach"
       ],
       "key": "item/peach-sapling",
       "sha256": "2b51800e533c4a42695e1f453f0529d6f34b2bebabbe2dc9f406df2c1da932f1",
@@ -10643,6 +10660,7 @@
       "file": "item/pear.png",
       "height": 72,
       "icon_keys": [
+        "crop/pear",
         "fruit/pear"
       ],
       "key": "item/pear",
@@ -10658,7 +10676,7 @@
       "file": "item/pear-sapling.png",
       "height": 72,
       "icon_keys": [
-        "misc/sapling_pear"
+        "seed/sapling_pear"
       ],
       "key": "item/pear-sapling",
       "sha256": "4a380ccaaba82c1a3eed9176ca854ca9f2c88d95e3e72fd3fb0828ba2f88ee5b",
@@ -16468,16 +16486,16 @@
       "width": 72
     },
     {
-      "bytes": 631,
+      "bytes": 248,
       "family": "item",
-      "fetched_at": "2026-08-07",
+      "fetched_at": "2026-08-08",
       "file": "item/water-tablet-rubbing.png",
       "height": 72,
       "icon_keys": [
         "misc/water_tablet_rubbing"
       ],
       "key": "item/water-tablet-rubbing",
-      "sha256": "8f7ba476e7aa6d0ab421c09b6b5475c134b58cdded81af9250c620bb491bbd60",
+      "sha256": "6738b055bb3cde454e9f9f08e0ff327d05f5417abf42cc2b25093c8186977b96",
       "source_file": "Water tablet rubbing.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Water%20tablet%20rubbing.png",
       "width": 72
@@ -17036,6 +17054,21 @@
       "source_file": "Yellow chicken bow.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Yellow%20chicken%20bow.png",
       "width": 72
+    },
+    {
+      "bytes": 78557,
+      "family": "map",
+      "fetched_at": "2026-08-08",
+      "file": "map/v0-13-map-unlocked.png",
+      "height": 3599,
+      "icon_keys": [
+        "map/valley"
+      ],
+      "key": "map/v0-13-map-unlocked",
+      "sha256": "9fed4f30c66c63c07b02a31482cb4fa12f849d2583b689e3f8aee928314c109b",
+      "source_file": "V0.13 map unlocked.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:V0.13%20map%20unlocked.png",
+      "width": 5442
     },
     {
       "bytes": 308,

@@ -78,6 +78,14 @@ out silently makes the app look like it has less data than it does.
 
 ### 7. No hardcoded hex, ever
 
+### 8. No internal token ever renders raw
+
+`lib/labels.ts` is the single translator: categories, methods, `data_gaps`,
+requirement objects and shipped rule tokens all go through it. Unknown gap
+tokens are **dropped, not de-underscored** — `id_pending_rename` told a player
+nothing and looked broken. If a new screen prints a field name, the fix is a
+label entry, not a `replace(/_/g, ' ')`.
+
 Every colour comes from `styles/tokens.css`. The season accent is `var(--accent)`
 and is set by `data-season` on the root element — a literal `#D4834A` is a fall
 colour that stays fall in winter.

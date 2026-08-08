@@ -1,0 +1,1508 @@
+{
+  "gameVersion": "1.0.0",
+  "lootRarity": {
+    "alda_bronze_sword": "rare",
+    "alda_clay_pot": "uncommon",
+    "alda_feather_pendant": "uncommon",
+    "alda_gem_bracelet": "legendary",
+    "alda_mural_tablet": "rare",
+    "aldarian_gauntlet": "rare",
+    "aldarian_sword": "uncommon",
+    "aldarian_war_banner": "rare",
+    "amber_trapped_insect": "uncommon",
+    "ancient_crystal_goblet": "rare",
+    "ancient_gold_coin": "uncommon",
+    "ancient_horn_circlet": "rare",
+    "ancient_royal_scepter": "legendary",
+    "ancient_stone_lantern": "uncommon",
+    "black_tablet": "legendary",
+    "caldosian_breastplate": "rare",
+    "caldosian_drinking_horn": "rare",
+    "caldosian_emperor_bust": "uncommon",
+    "caldosian_sword": "uncommon",
+    "clay": "common",
+    "clay_amphora": "common",
+    "coin_lump": "uncommon",
+    "completely_wrong_map": "legendary",
+    "crab_statue": "rare",
+    "criminal_confession": "uncommon",
+    "crystal_apple": "legendary",
+    "dense_water": "uncommon",
+    "diamond_backed_mirror": "rare",
+    "dragon_claw": "uncommon",
+    "dragon_forged_bracelet": "rare",
+    "dragon_pact_tablet": "legendary",
+    "dragon_scale": "uncommon",
+    "earth_infused_stone": "uncommon",
+    "faceted_rock_gem": "uncommon",
+    "family_crest_pendant": "uncommon",
+    "fire_crystal": "common",
+    "flint_arrowhead": "uncommon",
+    "fossilized_egg": "rare",
+    "fossilized_mandrake_root": "legendary",
+    "gathering_basket": "uncommon",
+    "giant_fish_scale": "uncommon",
+    "hardened_essence": "rare",
+    "lost_crown_of_aldaria": "legendary",
+    "mermaids_comb": "rare",
+    "message_in_a_bottle": "legendary",
+    "metal_leaf": "legendary",
+    "meteorite": "legendary",
+    "miners_helmet": "rare",
+    "miners_pickaxe": "common",
+    "miners_rucksack": "uncommon",
+    "miners_slab": "uncommon",
+    "mist_crystal": "uncommon",
+    "mist_flute": "rare",
+    "mist_scroll": "rare",
+    "misty_black_mirror": "uncommon",
+    "misty_feather_quill": "uncommon",
+    "muttering_cube": "legendary",
+    "obsidian_blade": "rare",
+    "peat": "common",
+    "petrified_wood": "uncommon",
+    "porcelain_figurine": "uncommon",
+    "rainbow_geode": "uncommon",
+    "rainbow_seaweed": "uncommon",
+    "really_round_rock": "common",
+    "red_obsidian": "uncommon",
+    "ritual_beads": "uncommon",
+    "ritual_chalice": "uncommon",
+    "ritual_incense_burner": "uncommon",
+    "ritual_scepter": "rare",
+    "ritual_tablet": "rare",
+    "rock_statue": "rare",
+    "rock_with_a_hole": "common",
+    "rubber_fish": "uncommon",
+    "rusted_shield": "common",
+    "rusted_treasure_chest": "rare",
+    "sea_glass": "common",
+    "seriously_square_stone": "common",
+    "shard_mass": "common",
+    "shards": "common",
+    "shortcut_scroll": "legendary",
+    "sod": "common",
+    "starlight_coral": "common",
+    "statuette_of_caldarus": "legendary",
+    "stone_horse": "uncommon",
+    "stone_shell": "common",
+    "tidestone": "uncommon",
+    "tin_lunchbox": "common",
+    "tiny_dinosaur_skeleton": "rare",
+    "tiny_volcano": "rare",
+    "trilobite_fossil": "uncommon",
+    "unknown_dragon_statuette": "legendary",
+    "vintage_brush": "rare",
+    "vintage_cow_bell": "legendary",
+    "vintage_hammer": "uncommon",
+    "vintage_sickle": "uncommon",
+    "vintage_watering_can": "uncommon",
+    "warm_rock": "common",
+    "water_sphere": "uncommon",
+    "weightless_stone": "legendary",
+    "worn_pendant": "rare"
+  },
+  "mineBiomes": [
+    {
+      "artifact_set": "upper_mines_artifacts",
+      "floor": 1,
+      "index": 1,
+      "name": "Upper Mines"
+    },
+    {
+      "artifact_set": "tide_caverns",
+      "floor": 20,
+      "index": 2,
+      "name": "The Tide Caverns"
+    },
+    {
+      "artifact_set": "deep_earth",
+      "floor": 40,
+      "index": 3,
+      "name": "Deep Earth"
+    },
+    {
+      "artifact_set": "lava_caves",
+      "floor": 60,
+      "index": 4,
+      "name": "The Lava Caves"
+    },
+    {
+      "artifact_set": "dragon",
+      "floor": 80,
+      "index": 5,
+      "name": "Ancient Ruins"
+    }
+  ],
+  "perks": [
+    {
+      "id": "a_day_well_spent",
+      "name": "A Day Well Spent",
+      "value": 10
+    },
+    {
+      "id": "a_way_to_the_heart",
+      "name": "A Way to the Heart",
+      "value": 0.1
+    },
+    {
+      "id": "abyssal_ascendence",
+      "name": "Abyssal Ascendence",
+      "value": 5
+    },
+    {
+      "id": "ancient_inspiration",
+      "name": "Ancient Inspiration",
+      "value": null
+    },
+    {
+      "id": "appealing_reeling",
+      "name": "Appealing Reeling",
+      "value": null
+    },
+    {
+      "id": "appealing_reeling_two",
+      "name": "Appealing Reeling II",
+      "value": null
+    },
+    {
+      "id": "aquatic_antiquities",
+      "name": "Aquatic Antiquities",
+      "value": null
+    },
+    {
+      "id": "award_winning",
+      "name": "Award Winning",
+      "value": 0.1
+    },
+    {
+      "id": "back_in_vogue",
+      "name": "Back in Vogue",
+      "value": 0.25
+    },
+    {
+      "id": "back_in_vogue_two",
+      "name": "Back In Vogue II",
+      "value": 0.25
+    },
+    {
+      "id": "barnyard_bounty",
+      "name": "Barnyard Bounty",
+      "value": 0.2
+    },
+    {
+      "id": "barnyard_bounty_three",
+      "name": "Barnyard Bounty III",
+      "value": 0.2
+    },
+    {
+      "id": "barnyard_bounty_two",
+      "name": "Barnyard Bounty II",
+      "value": 0.2
+    },
+    {
+      "id": "big_water_sprites",
+      "name": "Big Water Sprites",
+      "value": null
+    },
+    {
+      "id": "bountiful",
+      "name": "Bountiful",
+      "value": 3
+    },
+    {
+      "id": "break_one_get_two",
+      "name": "Break One, Get Two",
+      "value": 5
+    },
+    {
+      "id": "caffeine_crimes",
+      "name": "Caffeine Crimes",
+      "value": null
+    },
+    {
+      "id": "catch_of_the_day",
+      "name": "Catch of the Day",
+      "value": 5
+    },
+    {
+      "id": "close_bond",
+      "name": "Close Bond",
+      "value": 2
+    },
+    {
+      "id": "close_bond_two",
+      "name": "Close Bond II",
+      "value": 1
+    },
+    {
+      "id": "copper_expert",
+      "name": "Copper Expert",
+      "value": null
+    },
+    {
+      "id": "currency_of_care",
+      "name": "Currency Of Care",
+      "value": null
+    },
+    {
+      "id": "currency_of_care_three",
+      "name": "Currency of Care III",
+      "value": null
+    },
+    {
+      "id": "currency_of_care_two",
+      "name": "Currency of Care II",
+      "value": 15
+    },
+    {
+      "id": "deliberate_debris",
+      "name": "Deliberate Debris",
+      "value": null
+    },
+    {
+      "id": "deliberate_debris_two",
+      "name": "Deliberate Debris II",
+      "value": null
+    },
+    {
+      "id": "dinner_for_two",
+      "name": "Dinner for Two",
+      "value": 5
+    },
+    {
+      "id": "discount_treats",
+      "name": "Discount Treats",
+      "value": 0.1
+    },
+    {
+      "id": "dungeon_delicacies",
+      "name": "Dungeon Delicacies",
+      "value": 100
+    },
+    {
+      "id": "earth_breaker",
+      "name": "Earth Breaker",
+      "value": 10
+    },
+    {
+      "id": "earth_breaker_two",
+      "name": "Earth Breaker II",
+      "value": 15
+    },
+    {
+      "id": "earthly_essence",
+      "name": "Earthly Essence",
+      "value": 1
+    },
+    {
+      "id": "eastern_road_scholar",
+      "name": "Eastern Road Scholar",
+      "value": 1
+    },
+    {
+      "id": "eggstra",
+      "name": "Eggstra",
+      "value": 50
+    },
+    {
+      "id": "empowered",
+      "name": "Empowered",
+      "value": null
+    },
+    {
+      "id": "empowered_two",
+      "name": "Empowered II",
+      "value": null
+    },
+    {
+      "id": "espresso_yourself",
+      "name": "Espresso Yourself",
+      "value": null
+    },
+    {
+      "id": "fairy_cooking",
+      "name": "Fairy Cooking",
+      "value": null
+    },
+    {
+      "id": "fantastic_finds",
+      "name": "Fantastic Finds",
+      "value": null
+    },
+    {
+      "id": "feed_prepper",
+      "name": "Feed Prepper",
+      "value": null
+    },
+    {
+      "id": "feeding_frenzy",
+      "name": "Feeding Frenzy",
+      "value": 1
+    },
+    {
+      "id": "forager",
+      "name": "Forager",
+      "value": 10
+    },
+    {
+      "id": "former_farmers",
+      "name": "Former Farmers",
+      "value": 1
+    },
+    {
+      "id": "fortified_blacksmithing",
+      "name": "Fortified Blacksmithing",
+      "value": null
+    },
+    {
+      "id": "frenzy",
+      "name": "Frenzy",
+      "value": 3
+    },
+    {
+      "id": "friend_shaped",
+      "name": "Friend-Shaped",
+      "value": 5
+    },
+    {
+      "id": "full_class",
+      "name": "Full Class I",
+      "value": null
+    },
+    {
+      "id": "gemini_season",
+      "name": "Gemini Season",
+      "value": 10
+    },
+    {
+      "id": "generous_in_defeat",
+      "name": "Generous In Defeat",
+      "value": 10
+    },
+    {
+      "id": "generous_in_defeat_two",
+      "name": "Generous in Defeat II",
+      "value": 90
+    },
+    {
+      "id": "gift_exchange",
+      "name": "Gift Exchange",
+      "value": null
+    },
+    {
+      "id": "gold_expert",
+      "name": "Gold Expert",
+      "value": null
+    },
+    {
+      "id": "good_as_gold",
+      "name": "Good as Gold",
+      "value": 10
+    },
+    {
+      "id": "green_thumb",
+      "name": "Green Thumb",
+      "value": 20
+    },
+    {
+      "id": "guardians_shield",
+      "name": "Guardian's Shield",
+      "value": 1
+    },
+    {
+      "id": "guardians_shield_two",
+      "name": "Guardian Shield II",
+      "value": 5
+    },
+    {
+      "id": "hammer_timing",
+      "name": "Hammer Timing",
+      "value": null
+    },
+    {
+      "id": "hammer_timing_four",
+      "name": "Hammer Timing IV",
+      "value": null
+    },
+    {
+      "id": "hammer_timing_three",
+      "name": "Hammer Timing III",
+      "value": null
+    },
+    {
+      "id": "hammer_timing_two",
+      "name": "Hammer Timing II",
+      "value": null
+    },
+    {
+      "id": "harvest_horse",
+      "name": "Harvest Horse",
+      "value": null
+    },
+    {
+      "id": "harvest_time",
+      "name": "Harvest Time",
+      "value": null
+    },
+    {
+      "id": "hasty_blacksmithing",
+      "name": "Hasty Blacksmithing",
+      "value": null
+    },
+    {
+      "id": "heavy_duty",
+      "name": "Heavy Duty",
+      "value": 5
+    },
+    {
+      "id": "horsepower",
+      "name": "Horsepower",
+      "value": null
+    },
+    {
+      "id": "in_motion",
+      "name": "In Motion",
+      "value": 10
+    },
+    {
+      "id": "iron_expert",
+      "name": "Iron Expert",
+      "value": null
+    },
+    {
+      "id": "iron_hound",
+      "name": "Iron Hound",
+      "value": 10
+    },
+    {
+      "id": "jump_attack",
+      "name": "Jump Attack",
+      "value": null
+    },
+    {
+      "id": "leech_blacksmithing",
+      "name": "Leech Blacksmithing",
+      "value": 45
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "value": null
+    },
+    {
+      "id": "lightweight_blacksmithing",
+      "name": "Lightweight Blacksmithing",
+      "value": 10
+    },
+    {
+      "id": "likable_cooking",
+      "name": "Likable Cooking",
+      "value": null
+    },
+    {
+      "id": "living_off_the_land",
+      "name": "Living off the Land",
+      "value": 3
+    },
+    {
+      "id": "lost_to_history",
+      "name": "Lost to History",
+      "value": null
+    },
+    {
+      "id": "lost_to_history_two",
+      "name": "Lost to History II",
+      "value": 0.5
+    },
+    {
+      "id": "loveable_cooking",
+      "name": "Lovable Cooking",
+      "value": 5
+    },
+    {
+      "id": "lucky_haul",
+      "name": "Lucky Haul",
+      "value": 7
+    },
+    {
+      "id": "lucky_haul_two",
+      "name": "Lucky Haul II",
+      "value": 7
+    },
+    {
+      "id": "lumberjack",
+      "name": "Lumberjack",
+      "value": 10
+    },
+    {
+      "id": "lumberjack_two",
+      "name": "Lumberjack II",
+      "value": null
+    },
+    {
+      "id": "magic_design",
+      "name": "Magic Design",
+      "value": null
+    },
+    {
+      "id": "magical_meals",
+      "name": "Magical Meals",
+      "value": null
+    },
+    {
+      "id": "masonry",
+      "name": "Masonry",
+      "value": 10
+    },
+    {
+      "id": "material_world",
+      "name": "Material World",
+      "value": null
+    },
+    {
+      "id": "maximum_milling",
+      "name": "Maximum Milling",
+      "value": 10
+    },
+    {
+      "id": "mine_time",
+      "name": "Mine Time",
+      "value": 1.3
+    },
+    {
+      "id": "mist_sight",
+      "name": "Mist Sight",
+      "value": null
+    },
+    {
+      "id": "mistril_expert",
+      "name": "Mistril Expert",
+      "value": null
+    },
+    {
+      "id": "mistril_mastery",
+      "name": "Mistril Mastery",
+      "value": 10
+    },
+    {
+      "id": "museum_quality_one",
+      "name": "Museum Quality I",
+      "value": null
+    },
+    {
+      "id": "museum_quality_three",
+      "name": "Museum Quality III",
+      "value": null
+    },
+    {
+      "id": "museum_quality_two",
+      "name": "Museum Quality II",
+      "value": null
+    },
+    {
+      "id": "natural",
+      "name": "Natural",
+      "value": 10
+    },
+    {
+      "id": "natural_beauty",
+      "name": "Natural Beauty",
+      "value": 10
+    },
+    {
+      "id": "natural_beauty_two",
+      "name": "Natural Beauty II",
+      "value": 5
+    },
+    {
+      "id": "nice_ride",
+      "name": "Nice Ride",
+      "value": null
+    },
+    {
+      "id": "nice_swing",
+      "name": "Nice Swing",
+      "value": 15
+    },
+    {
+      "id": "ore_riginal",
+      "name": "Ore-riginal",
+      "value": 5
+    },
+    {
+      "id": "ornamental",
+      "name": "Ornamental",
+      "value": 5
+    },
+    {
+      "id": "out_of_juice",
+      "name": "Out of Juice",
+      "value": null
+    },
+    {
+      "id": "perfect_catch",
+      "name": "Perfect Catch",
+      "value": null
+    },
+    {
+      "id": "perfect_pick",
+      "name": "Perfect Pick",
+      "value": 1
+    },
+    {
+      "id": "perfect_pollinators",
+      "name": "Perfect Pollinators",
+      "value": null
+    },
+    {
+      "id": "perfect_prefix",
+      "name": "Perfect Prefix",
+      "value": null
+    },
+    {
+      "id": "playtime",
+      "name": "Playtime",
+      "value": null
+    },
+    {
+      "id": "prepared_picker",
+      "name": "Prepared Picker",
+      "value": 5
+    },
+    {
+      "id": "prize_winning",
+      "name": "Prize Winning",
+      "value": 5
+    },
+    {
+      "id": "pursuit",
+      "name": "Pursuit",
+      "value": null
+    },
+    {
+      "id": "quality_crafting",
+      "name": "Quality Crafting",
+      "value": null
+    },
+    {
+      "id": "quick_footed",
+      "name": "Quick Footed",
+      "value": 1.3
+    },
+    {
+      "id": "reclaimer",
+      "name": "Reclaimer",
+      "value": null
+    },
+    {
+      "id": "refined_rockery",
+      "name": "Refined Rockery",
+      "value": null
+    },
+    {
+      "id": "refreshing",
+      "name": "Refreshing",
+      "value": 15
+    },
+    {
+      "id": "resonance",
+      "name": "Resonance",
+      "value": 25
+    },
+    {
+      "id": "restorative_cooking",
+      "name": "Restorative Cooking",
+      "value": null
+    },
+    {
+      "id": "rocking",
+      "name": "Rocking",
+      "value": 25
+    },
+    {
+      "id": "school_crasher",
+      "name": "School Crasher",
+      "value": null
+    },
+    {
+      "id": "seasoned",
+      "name": "Seasoned",
+      "value": 0.25
+    },
+    {
+      "id": "set_pieces",
+      "name": "Set Pieces",
+      "value": 10
+    },
+    {
+      "id": "sharp_blacksmithing",
+      "name": "Sharp Blacksmithing",
+      "value": null
+    },
+    {
+      "id": "shrine_savant",
+      "name": "What an Offer",
+      "value": null
+    },
+    {
+      "id": "sickle_sword",
+      "name": "Sickle Sword",
+      "value": null
+    },
+    {
+      "id": "silver_expert",
+      "name": "Silver Expert",
+      "value": null
+    },
+    {
+      "id": "silver_seeker",
+      "name": "Silver Seeker",
+      "value": 10
+    },
+    {
+      "id": "snacktime",
+      "name": "Snacktime",
+      "value": null
+    },
+    {
+      "id": "sonic_boom",
+      "name": "Sonic Boom",
+      "value": null
+    },
+    {
+      "id": "speedy_cooking",
+      "name": "Speedy Cooking",
+      "value": null
+    },
+    {
+      "id": "steady_supplies",
+      "name": "Steady Supplies",
+      "value": null
+    },
+    {
+      "id": "stoneturner",
+      "name": "Stoneturner",
+      "value": 1
+    },
+    {
+      "id": "sunken_secrets",
+      "name": "Sunken Secrets",
+      "value": null
+    },
+    {
+      "id": "sunken_treasure",
+      "name": "Sunken Treasure",
+      "value": 75
+    },
+    {
+      "id": "superb_sower",
+      "name": "Superb Sower",
+      "value": null
+    },
+    {
+      "id": "sure_strike",
+      "name": "Sure Strike",
+      "value": null
+    },
+    {
+      "id": "taste_maker",
+      "name": "Taste Maker",
+      "value": null
+    },
+    {
+      "id": "the_bell_tolls",
+      "name": "The Bell Tolls",
+      "value": null
+    },
+    {
+      "id": "time_sensitive",
+      "name": "Time Sensitive",
+      "value": null
+    },
+    {
+      "id": "time_sensitive_four",
+      "name": "Time Sensitive IV",
+      "value": null
+    },
+    {
+      "id": "time_sensitive_three",
+      "name": "Time Sensitive III",
+      "value": null
+    },
+    {
+      "id": "time_sensitive_two",
+      "name": "Time Sensitive II",
+      "value": null
+    },
+    {
+      "id": "time_to_eat",
+      "name": "Time To Eat",
+      "value": null
+    },
+    {
+      "id": "time_to_eat_three",
+      "name": "Time to Eat III",
+      "value": null
+    },
+    {
+      "id": "time_to_eat_two",
+      "name": "Time To Eat II",
+      "value": null
+    },
+    {
+      "id": "tireless_blacksmithing",
+      "name": "Tireless Blacksmithing",
+      "value": null
+    },
+    {
+      "id": "treasure_hunter",
+      "name": "Treasure Hunter",
+      "value": null
+    },
+    {
+      "id": "treasure_trove",
+      "name": "Treasure Trove",
+      "value": null
+    },
+    {
+      "id": "treasured",
+      "name": "Treasured",
+      "value": 10
+    },
+    {
+      "id": "true_blue",
+      "name": "True Blue",
+      "value": 10
+    },
+    {
+      "id": "true_strike",
+      "name": "True Strike",
+      "value": 5
+    },
+    {
+      "id": "true_strike_two",
+      "name": "True Strike II",
+      "value": 2
+    },
+    {
+      "id": "true_trust",
+      "name": "True Trust",
+      "value": null
+    },
+    {
+      "id": "underground_inspiration",
+      "name": "Underground Inspiration",
+      "value": null
+    },
+    {
+      "id": "unexpected_haul",
+      "name": "Unexpected Haul",
+      "value": null
+    },
+    {
+      "id": "unpeatable",
+      "name": "Unpeatable",
+      "value": 20
+    },
+    {
+      "id": "void_crafting",
+      "name": "Void Crafting",
+      "value": null
+    },
+    {
+      "id": "void_value",
+      "name": "Void Value",
+      "value": 20
+    },
+    {
+      "id": "waste_not_want_not",
+      "name": "Waste Not Want Not",
+      "value": 10
+    },
+    {
+      "id": "weedline_watcher",
+      "name": "Weedline Watcher",
+      "value": -15
+    },
+    {
+      "id": "weedline_watcher_two",
+      "name": "Weedline Watcher II",
+      "value": -10
+    },
+    {
+      "id": "welcome_home",
+      "name": "Welcome Home",
+      "value": 1
+    },
+    {
+      "id": "welcome_home_two",
+      "name": "Welcome Home II",
+      "value": 2
+    },
+    {
+      "id": "well_armed",
+      "name": "Well-Armed",
+      "value": null
+    },
+    {
+      "id": "well_placed",
+      "name": "Well Placed",
+      "value": null
+    },
+    {
+      "id": "well_watered",
+      "name": "Well Watered",
+      "value": 5
+    },
+    {
+      "id": "western_ruins_scholar",
+      "name": "Western Ruins Scholar",
+      "value": 1
+    },
+    {
+      "id": "what_a_catch",
+      "name": "What a Catch",
+      "value": 5
+    },
+    {
+      "id": "wind_down",
+      "name": "Wind Down",
+      "value": null
+    },
+    {
+      "id": "working_with_the_grain",
+      "name": "Working with the Grain",
+      "value": 10
+    },
+    {
+      "id": "working_with_the_grain_two",
+      "name": "Working with the Grain II",
+      "value": 5
+    }
+  ],
+  "poolByRoom": {
+    "beach": "prehistoric",
+    "deep_woods": "deep_woods",
+    "dungeon": "mine",
+    "eastern_road": "caldosian",
+    "farm": "vintage_farm_tools",
+    "haydens_farm": "alda",
+    "narrows": "aldarian",
+    "western_ruins": "ancient"
+  },
+  "ritualChambers": [
+    {
+      "floors": [
+        41,
+        59
+      ],
+      "room": "rm_mines_deep_ritual_chamber"
+    },
+    {
+      "floors": [
+        61,
+        79
+      ],
+      "room": "rm_mines_lava_ritual_chamber"
+    },
+    {
+      "floors": [
+        81,
+        99
+      ],
+      "room": "rm_mines_ruins_ritual_chamber"
+    },
+    {
+      "floors": [
+        22,
+        39
+      ],
+      "room": "rm_mines_tide_ritual_chamber"
+    }
+  ],
+  "sealOfferings": [
+    {
+      "items": [
+        {
+          "item_id": "dragon_forged_core",
+          "quantity": 1
+        },
+        {
+          "item_id": "dragon_forged_fang",
+          "quantity": 1
+        },
+        {
+          "item_id": "dragon_forged_horn",
+          "quantity": 1
+        },
+        {
+          "item_id": "dragon_forged_powder",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "breaking_the_final_seal",
+      "quest_name": "Breaking The Final Seal",
+      "seal": "final"
+    },
+    {
+      "items": [
+        {
+          "item_id": "faceted_rock_gem",
+          "quantity": 1
+        },
+        {
+          "item_id": "ore_emerald",
+          "quantity": 1
+        },
+        {
+          "item_id": "rockroot",
+          "quantity": 1
+        },
+        {
+          "item_id": "sealing_scroll",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "breaking_the_fire_seal",
+      "quest_name": "Breaking The Fire Seal",
+      "seal": "fire"
+    },
+    {
+      "items": [
+        {
+          "item_id": "breath_of_fire",
+          "quantity": 1
+        },
+        {
+          "item_id": "firesail_fish",
+          "quantity": 1
+        },
+        {
+          "item_id": "obsidian",
+          "quantity": 1
+        },
+        {
+          "item_id": "smoke_moth",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "breaking_the_ruins_seal",
+      "quest_name": "Breaking the Ruins Seal",
+      "seal": "ruins"
+    },
+    {
+      "items": [
+        {
+          "item_id": "void_herb",
+          "quantity": 5
+        },
+        {
+          "item_id": "void_pearl",
+          "quantity": 5
+        },
+        {
+          "item_id": "void_powder",
+          "quantity": 5
+        },
+        {
+          "item_id": "void_stone",
+          "quantity": 5
+        }
+      ],
+      "point": null,
+      "quest_id": "creating_the_void_mass",
+      "quest_name": "Creating the Void Mass",
+      "seal": "void"
+    },
+    {
+      "items": [
+        {
+          "item_id": "marigold",
+          "quantity": 1
+        },
+        {
+          "item_id": "temple_flower",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "find_the_magic_key",
+      "quest_name": "Find the Magic Key",
+      "seal": "priestess"
+    },
+    {
+      "items": [
+        {
+          "item_id": "ore_emerald",
+          "quantity": 10
+        },
+        {
+          "item_id": "ore_ruby",
+          "quantity": 10
+        },
+        {
+          "item_id": "ore_sapphire",
+          "quantity": 10
+        },
+        {
+          "item_id": "silver_ingot",
+          "quantity": 10
+        }
+      ],
+      "point": "town/sealing_scroll_chest",
+      "quest_id": "procuring_the_sealing_scroll",
+      "quest_name": "Procuring the Sealing Scroll",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 400
+        },
+        {
+          "item_id": "iron_ingot",
+          "quantity": 8
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 500
+        }
+      ],
+      "point": "haydens_farm/repair_haydens_barn",
+      "quest_id": "repair_haydens_barn",
+      "quest_name": "Upgrade Hayden's Barn",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 300
+        },
+        {
+          "item_id": "fiber",
+          "quantity": 50
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 150
+        }
+      ],
+      "point": "beach/repair_the_beach_bridge",
+      "quest_id": "repair_the_beach_bridge",
+      "quest_name": "Repair the Beach Bridge",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "dragon_forged_core",
+          "quantity": 1
+        },
+        {
+          "item_id": "dragon_forged_fang",
+          "quantity": 1
+        },
+        {
+          "item_id": "hard_wood",
+          "quantity": 30
+        },
+        {
+          "item_id": "refined_stone",
+          "quantity": 20
+        }
+      ],
+      "point": "town/repair_the_bell_tower",
+      "quest_id": "repair_the_bell_tower",
+      "quest_name": "Repair the Bell Tower",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 60
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 60
+        }
+      ],
+      "point": "eastern_road/repair_the_bridge",
+      "quest_id": "repair_the_bridge",
+      "quest_name": "Repair the Bridge",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 300
+        },
+        {
+          "item_id": "copper_ingot",
+          "quantity": 5
+        },
+        {
+          "item_id": "iron_ingot",
+          "quantity": 5
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 500
+        }
+      ],
+      "point": "town/repair_the_general_store",
+      "quest_id": "repair_the_general_store",
+      "quest_name": "Repair the General Store",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 600
+        },
+        {
+          "item_id": "glass",
+          "quantity": 25
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 500
+        },
+        {
+          "item_id": "peat",
+          "quantity": 10
+        },
+        {
+          "item_id": "silver_ingot",
+          "quantity": 10
+        }
+      ],
+      "point": "town/gucci_chest_location",
+      "quest_id": "repair_the_inn",
+      "quest_name": "Upgrade the Inn",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 150
+        },
+        {
+          "item_id": "copper_ingot",
+          "quantity": 2
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 200
+        }
+      ],
+      "point": "town/repair_the_mill",
+      "quest_id": "repair_the_mill",
+      "quest_name": "The Mill Restoration Project",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "cheese",
+          "quantity": 10
+        },
+        {
+          "item_id": "egg",
+          "quantity": 12
+        }
+      ],
+      "point": "town/gucci_chest_location",
+      "quest_id": "replenishing_mistrias_food_reserves_2",
+      "quest_name": "Restocking Mistria's Food Reserves 2",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "basic_wood",
+          "quantity": 200
+        },
+        {
+          "item_id": "ore_stone",
+          "quantity": 400
+        },
+        {
+          "item_id": "sap",
+          "quantity": 20
+        }
+      ],
+      "point": "narrows/stone_refinery",
+      "quest_id": "stone_refinery",
+      "quest_name": "Stone Refinery",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "archerfish",
+          "quantity": 1
+        },
+        {
+          "item_id": "cave_kelp",
+          "quantity": 1
+        },
+        {
+          "item_id": "coral_mantis",
+          "quantity": 1
+        },
+        {
+          "item_id": "ore_sapphire",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "the_earth_tablet",
+      "quest_name": "The Earth Tablet",
+      "seal": "earth"
+    },
+    {
+      "items": [
+        {
+          "item_id": "lantern_moth",
+          "quantity": 1
+        },
+        {
+          "item_id": "ore_ruby",
+          "quantity": 1
+        },
+        {
+          "item_id": "stone_loach",
+          "quantity": 1
+        },
+        {
+          "item_id": "upper_mines_mushroom",
+          "quantity": 1
+        }
+      ],
+      "point": null,
+      "quest_id": "the_water_tablet",
+      "quest_name": "The Water Tablet",
+      "seal": "water"
+    },
+    {
+      "items": [
+        {
+          "item_id": "crystal",
+          "quantity": 30
+        },
+        {
+          "item_id": "glass",
+          "quantity": 100
+        },
+        {
+          "item_id": "obsidian",
+          "quantity": 30
+        },
+        {
+          "item_id": "refined_stone",
+          "quantity": 100
+        }
+      ],
+      "point": "eastern_road/upgrade_the_carpenters_shop",
+      "quest_id": "upgrade_the_carpenters_shop",
+      "quest_name": "Upgrade the Carpenter's Shop",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "crystal",
+          "quantity": 20
+        },
+        {
+          "item_id": "gold_ingot",
+          "quantity": 8
+        },
+        {
+          "item_id": "hard_wood",
+          "quantity": 100
+        },
+        {
+          "item_id": "obsidian",
+          "quantity": 20
+        },
+        {
+          "item_id": "refined_stone",
+          "quantity": 50
+        }
+      ],
+      "point": "town/upgrade_the_saturday_market",
+      "quest_id": "upgrade_the_saturday_market",
+      "quest_name": "Upgrade the Saturday Market",
+      "seal": null
+    },
+    {
+      "items": [
+        {
+          "item_id": "mistril_ingot",
+          "quantity": 5
+        },
+        {
+          "item_id": "monster_block",
+          "quantity": 5
+        },
+        {
+          "item_id": "monster_core",
+          "quantity": 10
+        },
+        {
+          "item_id": "refined_stone",
+          "quantity": 20
+        },
+        {
+          "item_id": "voidite",
+          "quantity": 50
+        }
+      ],
+      "point": "town/upgrade_the_saturday_market_plaza",
+      "quest_id": "upgrade_the_saturday_market_plaza",
+      "quest_name": "Expanding the Saturday Market",
+      "seal": null
+    }
+  ],
+  "seals": [
+    {
+      "id": "earth",
+      "quest_id": "the_earth_tablet"
+    },
+    {
+      "id": "final",
+      "quest_id": "breaking_the_final_seal"
+    },
+    {
+      "id": "fire",
+      "quest_id": "breaking_the_fire_seal"
+    },
+    {
+      "id": "priestess",
+      "quest_id": "find_the_magic_key"
+    },
+    {
+      "id": "ruins",
+      "quest_id": "breaking_the_ruins_seal"
+    },
+    {
+      "id": "void",
+      "quest_id": "creating_the_void_mass"
+    },
+    {
+      "id": "water",
+      "quest_id": "the_water_tablet"
+    }
+  ]
+}

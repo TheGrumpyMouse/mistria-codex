@@ -125,15 +125,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "sweetwater_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -171,15 +200,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "sweetwater_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -217,15 +275,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "sweetwater_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -263,15 +350,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "sweetwater_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -309,15 +425,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "sweetwater_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -355,15 +500,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_narrows"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -401,15 +575,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_narrows"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -447,15 +650,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_narrows"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1146,15 +1378,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1391,15 +1652,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1526,15 +1816,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1572,15 +1891,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1618,15 +1966,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -1664,15 +2041,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -4045,7 +4451,7 @@
         "min_year": null,
         "prov": "wiki_cargo",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "legendary",
         "requires": [
           {
             "key": "well_placed",
@@ -4063,9 +4469,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -4073,10 +4479,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -7204,15 +7607,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_eastern_road"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -7250,15 +7682,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_eastern_road"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -7296,15 +7757,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_eastern_road"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -7342,15 +7832,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_eastern_road"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -12286,15 +12805,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_narrows",
+          "the_summit",
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -12337,14 +12892,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "fish_trap",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [
+          "fish_trap"
+        ],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "unknown"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "weather"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -13240,17 +13828,30 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows",
+          "the_western_ruins"
+        ],
         "method": "fishing",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
-        "rarity": "rare",
+        "rarity": "uncommon",
         "requires": [
           {
             "key": "aquatic_antiquities",
@@ -13269,8 +13870,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -13278,9 +13886,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -13428,7 +14034,7 @@
         "min_year": null,
         "prov": "wiki_cargo",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "legendary",
         "requires": [
           {
             "key": "well_placed",
@@ -13446,9 +14052,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -13456,10 +14062,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -16032,16 +16635,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -16560,15 +17194,26 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows"
+        ],
         "method": "diving",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
         "rarity": "uncommon",
         "requires": [
@@ -16589,8 +17234,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -16598,9 +17250,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -16944,15 +17594,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_deep_woods"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -19172,16 +19851,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -19406,15 +20116,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -19783,16 +20522,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -20003,16 +20773,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -20050,16 +20851,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -20098,16 +20930,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -21480,16 +22343,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -22054,16 +22948,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -22288,15 +23213,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_narrows"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -22588,16 +23542,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -23309,15 +24294,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -23799,15 +24813,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -23845,15 +24888,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_deep_woods"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -25008,15 +26080,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_deep_woods"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -25373,15 +26474,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows",
+          "the_western_ruins"
+        ],
         "method": "fishing",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
         "rarity": "uncommon",
         "requires": [
@@ -25402,8 +26516,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -25411,9 +26532,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -28844,16 +29963,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -36129,15 +37279,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_narrows"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37262,17 +38441,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows"
+        ],
         "method": "diving",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "rare",
         "requires": [
           {
             "key": "sunken_secrets",
@@ -37291,8 +38481,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -37300,9 +38497,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37340,14 +38535,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "fish_trap",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [
+          "fish_trap"
+        ],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "unknown"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "weather"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -37386,15 +38614,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_deep_woods"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37432,15 +38689,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37696,16 +38982,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37791,16 +39108,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37838,16 +39186,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -37885,16 +39264,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -38261,9 +39671,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -38271,10 +39681,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -38344,9 +39751,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -38354,10 +39761,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -38427,9 +39831,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -38437,10 +39841,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -39336,9 +40737,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -39346,10 +40747,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -39419,9 +40817,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -39429,10 +40827,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -41048,7 +42443,7 @@
         "min_year": null,
         "prov": "wiki_cargo",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "legendary",
         "requires": [
           {
             "key": "well_placed",
@@ -41066,9 +42461,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -41076,10 +42471,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -41768,15 +43160,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -43874,15 +45295,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_narrows",
+          "the_summit",
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -44137,14 +45594,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44183,14 +45674,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44229,14 +45754,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44275,14 +45834,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44321,14 +45914,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44367,14 +45994,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44413,14 +46074,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44459,14 +46154,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44505,14 +46234,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -44551,14 +46314,48 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "wiki",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "mine_drop",
+        "min_year": null,
+        "prov": "manual",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "unknown",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "time"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -45396,15 +47193,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_deep_woods"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -47339,14 +49165,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "fish_trap",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [
+          "fish_trap"
+        ],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "unknown"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "weather"
     ],
     "former_ids": [
       "porcelain_figure"
@@ -49273,16 +51132,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -49324,15 +51214,26 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows"
+        ],
         "method": "diving",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
         "rarity": "uncommon",
         "requires": [
@@ -49353,8 +51254,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -49362,9 +51270,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -49799,16 +51705,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -50222,16 +52159,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -51243,15 +53211,146 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 22
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -51289,15 +53388,146 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 22
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -51335,15 +53565,146 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 22
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -51381,15 +53742,146 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 22
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -51427,15 +53919,146 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 22
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      },
+      {
+        "biome_id": "ancient_ruins",
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 99,
+          "min": 81
+        },
+        "habitats": [],
+        "locations": [
+          "the_ancient_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -52185,16 +54808,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -52236,17 +54890,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows"
+        ],
         "method": "diving",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "common",
         "requires": [
           {
             "key": "sunken_secrets",
@@ -52265,8 +54930,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -52274,9 +54946,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -53150,15 +55820,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows",
+          "the_western_ruins"
+        ],
         "method": "fishing",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
         "rarity": "uncommon",
         "requires": [
@@ -53179,8 +55862,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -53188,9 +55878,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -53283,17 +55971,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows"
+        ],
         "method": "diving",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "common",
         "requires": [
           {
             "key": "sunken_secrets",
@@ -53312,8 +56011,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -53321,9 +56027,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -53365,17 +56069,30 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows",
+          "the_western_ruins"
+        ],
         "method": "fishing",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "rare",
         "requires": [
           {
             "key": "aquatic_antiquities",
@@ -53394,8 +56111,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -53403,9 +56127,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -55249,14 +57971,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "fish_trap",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [
+          "fish_trap"
+        ],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "unknown"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "weather"
     ],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -55880,16 +58635,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "deep_earth",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 59,
+          "min": 41
+        },
+        "habitats": [],
+        "locations": [
+          "the_deep_earth"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -56429,16 +59215,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_narrows",
+          "the_summit",
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -56565,15 +59386,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_narrows",
+          "the_summit",
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -57315,15 +60172,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -60044,15 +62930,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_narrows",
+          "the_summit",
+          "the_western_ruins"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -61198,16 +64120,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -61245,15 +64198,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_eastern_road"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -61470,15 +64452,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -61601,16 +64612,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -64955,16 +67997,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "tide_caverns",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 39,
+          "min": 21
+        },
+        "habitats": [],
+        "locations": [
+          "the_tide_caverns"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -65177,16 +68250,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "upper_mines",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 19,
+          "min": 1
+        },
+        "habitats": [],
+        "locations": [
+          "the_upper_mines"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -65224,15 +68328,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -65319,16 +68452,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -65748,15 +68912,44 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67114,7 +70307,7 @@
         "min_year": null,
         "prov": "wiki_cargo",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "legendary",
         "requires": [
           {
             "key": "well_placed",
@@ -67132,9 +70325,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -67142,10 +70335,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67743,15 +70933,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [
+          {
+            "key": "former_farmers",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67789,15 +71015,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "legendary",
+        "requires": [
+          {
+            "key": "former_farmers",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67835,15 +71097,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [
+          {
+            "key": "former_farmers",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67881,15 +71179,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [
+          {
+            "key": "former_farmers",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -67927,15 +71261,51 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_farm"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "uncommon",
+        "requires": [
+          {
+            "key": "former_farmers",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -69036,16 +72406,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": "lava_caves",
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": {
+          "max": 79,
+          "min": 61
+        },
+        "habitats": [],
+        "locations": [
+          "the_lava_caves"
+        ],
+        "method": "dig_spot",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "common",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "locations",
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -69299,15 +72700,28 @@
       {
         "biome_id": null,
         "chance": null,
-        "confidence": "wiki",
+        "confidence": "inferred",
         "dates": null,
         "days": null,
         "depth": null,
-        "habitats": [],
-        "locations": [],
+        "habitats": [
+          "ocean",
+          "river",
+          "pond"
+        ],
+        "locations": [
+          "mistria",
+          "sweetwater_farm",
+          "the_beach",
+          "the_deep_woods",
+          "the_eastern_road",
+          "the_farm",
+          "the_narrows",
+          "the_western_ruins"
+        ],
         "method": "fishing",
         "min_year": null,
-        "prov": "wiki_cargo",
+        "prov": "game_files",
         "quantity": null,
         "rarity": "uncommon",
         "requires": [
@@ -69328,8 +72742,15 @@
         "time": null,
         "time_blocks": null,
         "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "unknown"
+        "weather": [
+          "blizzard",
+          "clear",
+          "rain",
+          "snow",
+          "storm",
+          "wind"
+        ],
+        "weather_precision": "exact"
       }
     ],
     "base_item_id": null,
@@ -69337,9 +72758,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -69760,7 +73179,7 @@
         "min_year": null,
         "prov": "wiki_cargo",
         "quantity": null,
-        "rarity": "uncommon",
+        "rarity": "legendary",
         "requires": [
           {
             "key": "well_placed",
@@ -69778,9 +73197,9 @@
         "spot_ids": [],
         "time": null,
         "time_blocks": null,
-        "time_precision": "unknown",
+        "time_precision": "not_applicable",
         "weather": null,
-        "weather_precision": "unknown"
+        "weather_precision": "not_applicable"
       }
     ],
     "base_item_id": null,
@@ -69788,10 +73207,7 @@
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
-    "data_gaps": [
-      "time",
-      "weather"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -71826,14 +75242,47 @@
   },
   {
     "also_known_as": [],
-    "availability": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "inferred",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [
+          "the_beach"
+        ],
+        "method": "fish_trap",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": "rare",
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [
+          "fish_trap"
+        ],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "unknown"
+      }
+    ],
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
     "category": "artifact",
     "confidence": "wiki",
     "data_gaps": [
-      "obtain_method"
+      "weather"
     ],
     "former_ids": [],
     "game_version": "1.0.0",

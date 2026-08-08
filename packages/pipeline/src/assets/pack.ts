@@ -197,6 +197,8 @@ export interface PackResult {
   sheets: Sheet[]
   /** Portraits, shipped whole. `icon_key` -> filename. */
   portraits: Record<string, string>
+  /** Maps and brand art, shipped whole and content-addressed. `icon_key` -> path. */
+  maps: Record<string, string>
   bytes: number
 }
 
@@ -213,7 +215,7 @@ export async function packAssets(): Promise<PackResult> {
 
   // Portraits are shipped as they are. They are large, looked at one at a time,
   // and packing them would mean downloading thirty faces to show one.
-  const { copyFile, mkdir } = await import('node:fs/promises')
+  const { copyFile, mkdir, readFile: read } = await import('node:fs/promises')
   const portraits: Record<string, string> = {}
   for (const entry of manifest.assets.filter((a) => a.family === 'portrait')) {
     const file = entry.file.replace(/^portrait\//, '')
@@ -222,13 +224,35 @@ export async function packAssets(): Promise<PackResult> {
     for (const iconKey of entry.icon_keys) portraits[iconKey] = `portrait/${file}`
   }
 
-  await writeJson(join(ASSETS_SHIP_DIR, 'atlas.json'), { sheets, portraits }, { pretty: false })
+  // Maps and brand art ship whole too, but **content-addressed**: Pages sends
+  // fixed cache headers, so the filename carrying the hash is what lets the
+  // service worker cache a 200KB map forever without ever serving a stale one.
+  const maps: Record<string, string> = {}
+  for (const entry of manifest.assets.filter((a) => a.family === 'map' || a.family === 'brand')) {
+    const bytes = await read(join(ASSETS_DIR, entry.file))
+    const digest = createHash('sha256').update(bytes).digest('hex').slice(0, 10)
+    const stem =
+      entry.file
+        .split('/')
+        .pop()
+        ?.replace(/\.png$/, '') ?? entry.key
+    const file = `${entry.family}/${stem}.${digest}.png`
+    await mkdir(join(ASSETS_SHIP_DIR, entry.family), { recursive: true })
+    await copyFile(join(ASSETS_DIR, entry.file), join(ASSETS_SHIP_DIR, file))
+    for (const iconKey of entry.icon_keys) maps[iconKey] = file
+  }
+
+  await writeJson(
+    join(ASSETS_SHIP_DIR, 'atlas.json'),
+    { sheets, portraits, maps },
+    { pretty: false },
+  )
 
   const { stat } = await import('node:fs/promises')
   let bytes = 0
   for (const sheet of sheets) bytes += (await stat(join(ASSETS_SHIP_DIR, sheet.file))).size
 
-  return { sheets, portraits, bytes }
+  return { sheets, portraits, maps, bytes }
 }
 
 /**
@@ -245,6 +269,11 @@ export function atlasVersion(result: PackResult): string {
   }
   for (const key of Object.keys(result.portraits).sort()) {
     hash.update(`${key}:${result.portraits[key]}`)
+  }
+  // Without this, swapping the map art would not bump the asset version and
+  // the service worker would happily keep the old picture forever.
+  for (const key of Object.keys(result.maps).sort()) {
+    hash.update(`${key}:${result.maps[key]}`)
   }
   return hash.digest('hex').slice(0, 10)
 }

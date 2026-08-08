@@ -38,6 +38,19 @@ export interface ValleyMapProps {
   onSelect?: (id: string) => void
   /** Extra pins — landmarks, or whatever the current query turned up. */
   pins?: { id: string; x: number; y: number; label: string }[]
+  /**
+   * The real map image, when the bundle has it. Drawn at the map record's own
+   * declared space — the DataMaps page states the image and the coordinate
+   * space are the same 5442x3599, which is the whole reason the pins land.
+   * Null forever on a clone with no fetched assets; the mosaic is the
+   * permanent fallback, not a loading state.
+   */
+  artUrl?: string | null
+  /**
+   * Crop to one region's bounds. The pins and shapes keep their published
+   * coordinates — only the view moves, exactly like `contentViewBox`.
+   */
+  focusId?: string | null
 }
 
 /** One tessera, inset so neighbours never touch. */
@@ -93,15 +106,37 @@ export function contentViewBox(regions: MapRegionShape[], fallback: string, pad 
   return `${minX - pad} ${minY - pad * 2.6} ${maxX - minX + pad * 2} ${maxY - minY + pad * 3.6}`
 }
 
+/** The viewBox for one region, padded, or null when it has no shape. */
+export function focusViewBox(regions: MapRegionShape[], focusId: string, pad = 180): string | null {
+  const region = regions.find((r) => r.id === focusId)
+  const bounds = region?.shape == null ? null : shapeBounds(region.shape)
+  if (bounds === null || bounds === undefined) return null
+  return `${bounds.x - pad} ${bounds.y - pad} ${bounds.width + pad * 2} ${bounds.height + pad * 2}`
+}
+
 export function ValleyMap({
   viewBox,
   regions,
   selectedId = null,
   onSelect,
   pins = [],
+  artUrl = null,
+  focusId = null,
 }: ValleyMapProps) {
-  const box = contentViewBox(regions, viewBox)
-  const [, , width, height] = box.split(' ').map(Number)
+  const full = contentViewBox(regions, viewBox)
+  const box = (focusId === null ? null : focusViewBox(regions, focusId)) ?? full
+  const [, , width = 1, height = 1] = box.split(' ').map(Number)
+  const [, , fullWidth = width] = full.split(' ').map(Number)
+
+  // How much closer the focused view is than the whole valley. Pins are
+  // counter-scaled by it so they stay pin-sized instead of becoming boulders —
+  // the apps/web rule about `scale(1/k)` exists for exactly this moment.
+  const zoom = focusId === null || width === 0 ? 1 : fullWidth / width
+  const focused = focusId !== null
+
+  // The declared art space. Never measured from the image: data must not
+  // depend on the asset, so the record's own viewBox places it.
+  const [artX = 0, artY = 0, artWidth = 0, artHeight = 0] = viewBox.split(' ').map(Number)
 
   return (
     <svg
@@ -115,34 +150,51 @@ export function ValleyMap({
     >
       <title>Mistria and the valley</title>
 
+      {artUrl !== null && (
+        <image
+          href={artUrl}
+          x={artX}
+          y={artY}
+          width={artWidth}
+          height={artHeight}
+          preserveAspectRatio="xMidYMid meet"
+        />
+      )}
+
       {regions.map((region) => (
         <RegionCells
           key={region.id}
           region={region}
           selected={region.id === selectedId}
           onSelect={onSelect}
+          // Over the real art the tesserae become a whisper — hit areas and a
+          // selection glow, not the picture. Without art they ARE the picture.
+          ghost={artUrl !== null}
         />
       ))}
 
-      {regions.map((region) => {
-        // Labelled from the shape, not the anchor. The anchor is the region's
-        // centre, so a name placed there sits on top of the tiles it is naming;
-        // the top edge is empty by definition.
-        const bounds = region.shape === null ? null : shapeBounds(region.shape)
-        if (bounds === null) return null
-        return (
-          <RegionLabel
-            key={`label-${region.id}`}
-            name={region.name}
-            x={bounds.x + bounds.width / 2}
-            y={bounds.y}
-            selected={region.id === selectedId}
-          />
-        )
-      })}
+      {!focused &&
+        regions.map((region) => {
+          // Labelled from the shape, not the anchor. The anchor is the region's
+          // centre, so a name placed there sits on top of the tiles it is
+          // naming; the top edge is empty by definition. A focused view skips
+          // labels entirely — the page's own heading already names the place.
+          const bounds = region.shape === null ? null : shapeBounds(region.shape)
+          if (bounds === null) return null
+          return (
+            <RegionLabel
+              key={`label-${region.id}`}
+              name={region.name}
+              x={bounds.x + bounds.width / 2}
+              y={bounds.y}
+              selected={region.id === selectedId}
+              haloed={artUrl !== null}
+            />
+          )
+        })}
 
       {pins.map((pin) => (
-        <Pin key={pin.id} x={pin.x} y={pin.y} label={pin.label} />
+        <Pin key={pin.id} x={pin.x} y={pin.y} label={pin.label} zoom={zoom} />
       ))}
     </svg>
   )
@@ -152,19 +204,24 @@ function RegionCells({
   region,
   selected,
   onSelect,
+  ghost = false,
 }: {
   region: MapRegionShape
   selected: boolean
   onSelect: ((id: string) => void) | undefined
+  ghost?: boolean
 }) {
   if (region.shape === null) return null
   const { cell, runs } = region.shape
 
   // `--rule` rather than `--sunk`: on a white card the sunk tone is nearly
-  // invisible, and a mosaic you cannot see is just an empty page.
+  // invisible, and a mosaic you cannot see is just an empty page. Over the
+  // real art the mosaic steps back to a translucent overlay — still the hit
+  // area and the selection glow, no longer the picture.
   const style: CSSProperties = {
     fill: selected ? 'var(--accent)' : 'var(--rule)',
-    transition: 'fill 140ms ease-out',
+    fillOpacity: ghost ? (selected ? 0.32 : 0.06) : 1,
+    transition: 'fill 140ms ease-out, fill-opacity 140ms ease-out',
   }
 
   // A run is drawn cell by cell rather than as one wide rectangle: the grid
@@ -229,11 +286,13 @@ function RegionLabel({
   x,
   y,
   selected,
+  haloed = false,
 }: {
   name: string
   x: number
   y: number
   selected: boolean
+  haloed?: boolean
 }) {
   return (
     <text
@@ -250,9 +309,11 @@ function RegionLabel({
         fontSize: 108,
         fontWeight: 600,
         letterSpacing: 2,
-        fill: selected ? 'var(--accent)' : 'var(--ink-mute)',
+        // Over art, ink rather than muted — the painted ground is busier than
+        // the mosaic and a muted label sinks into it.
+        fill: selected ? 'var(--accent)' : haloed ? 'var(--ink)' : 'var(--ink-mute)',
         stroke: 'var(--surface)',
-        strokeWidth: 22,
+        strokeWidth: haloed ? 30 : 22,
         paintOrder: 'stroke',
         pointerEvents: 'none',
       }}
@@ -270,9 +331,12 @@ function RegionLabel({
  * spatial vocabulary. Rotating it 45 degrees is what separates "a place" from
  * "the ground".
  */
-function Pin({ x, y, label }: { x: number; y: number; label: string }) {
+function Pin({ x, y, label, zoom = 1 }: { x: number; y: number; label: string; zoom?: number }) {
   return (
-    <g transform={`translate(${x} ${y}) rotate(45)`}>
+    // `scale(1/zoom)` is the counter-scale from the apps/web rules: in a
+    // focused view the map is drawn several times closer, and a pin left in
+    // map units would grow into a boulder that covers what it marks.
+    <g transform={`translate(${x} ${y}) scale(${1 / zoom}) rotate(45)`}>
       <title>{label}</title>
       {/*
         Ink, not accent. A selected region is filled with the accent, and an

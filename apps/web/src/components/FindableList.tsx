@@ -1,8 +1,10 @@
+import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { ItemIcon } from '~/components/ItemIcon'
 import type { DisplayIndex } from '~/lib/data'
 import type { FindableEntity } from '~/lib/findable'
 import { groupByKind, KIND_LABELS } from '~/lib/findable'
+import { ruleRequirementsPhrase } from '~/lib/labels'
 
 /**
  * What the query found, as sections.
@@ -86,7 +88,12 @@ function Section({
     <>
       <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
         {shown.map((entity) => (
-          <Row key={entity.id} entity={entity} index={index} locationNames={locationNames} />
+          <FindableRow
+            key={entity.id}
+            entity={entity}
+            index={index}
+            locationNames={locationNames}
+          />
         ))}
       </ul>
 
@@ -114,7 +121,8 @@ function Section({
 
 const name = (index: DisplayIndex, id: string): string => index[id]?.n ?? id.replace(/_/g, ' ')
 
-function Row({
+/** One findable thing. Exported for the calendar's collapsed groups. */
+export function FindableRow({
   entity,
   index,
   locationNames,
@@ -124,7 +132,6 @@ function Row({
   locationNames: Map<string, string>
 }) {
   const entry = index[entity.id]
-  const places = entity.locationIds.map((id) => locationNames.get(id) ?? id.replace(/_/g, ' '))
 
   return (
     <li className="flex items-center gap-3 py-2">
@@ -135,9 +142,30 @@ function Row({
       />
 
       <div className="min-w-0 flex-1">
-        <p className="truncate text-ink text-sm">{name(index, entity.id)}</p>
+        <p className="truncate text-sm">
+          <Link
+            to="/item/$id"
+            params={{ id: entity.id }}
+            className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+          >
+            {name(index, entity.id)}
+          </Link>
+        </p>
         <p className="truncate text-ink-faint text-xs">
-          {entity.placeUnknown ? 'place unknown' : places.join(' · ')}
+          {entity.placeUnknown
+            ? 'place unknown'
+            : entity.locationIds.map((locId, i) => (
+                <span key={locId}>
+                  {i > 0 && ' · '}
+                  <Link
+                    to="/place/$id"
+                    params={{ id: locId }}
+                    className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
+                  >
+                    {locationNames.get(locId) ?? locId.replace(/_/g, ' ')}
+                  </Link>
+                </span>
+              ))}
         </p>
       </div>
 
@@ -154,7 +182,7 @@ function Row({
           <span
             className="rounded-pill px-1.5 py-0.5 text-[10px]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
-            title={entity.requires.join(', ')}
+            title={'Needs ' + ruleRequirementsPhrase(entity.requires)}
           >
             locked
           </span>

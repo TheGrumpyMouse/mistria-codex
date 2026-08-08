@@ -69,10 +69,11 @@ export function rankOf(name: string, needle: string): number | null {
  */
 export function routeFor(
   category: string,
-): '/item/$id' | '/villager/$id' | '/place/$id' | '/monster/$id' {
+): '/item/$id' | '/villager/$id' | '/place/$id' | '/monster/$id' | '/quest/$id' {
   if (category === 'character') return '/villager/$id'
   if (category === 'location') return '/place/$id'
   if (category === 'monster') return '/monster/$id'
+  if (category === 'quest') return '/quest/$id'
   return '/item/$id'
 }
 

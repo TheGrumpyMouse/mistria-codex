@@ -2,10 +2,14 @@ import { SEASONS, type Season } from '@mistria/schema'
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { useAtlas } from '~/app/AtlasProvider'
+import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
-import { Section, Unknown } from '~/components/Section'
+import { NotRecorded, Section, Unknown } from '~/components/Section'
+import { ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, KIND_LABELS } from '~/lib/findable'
+import { requirementPhrase } from '~/lib/labels'
 import { seasonsOf } from '~/lib/opportunity'
 
 const route = getRouteApi('/place/$id')
@@ -30,8 +34,17 @@ interface LocationRecord {
   aliases: string[]
   habitats: string[]
   parent_id: string | null
-  unlock_requires: string[]
+  shape: { type: 'cells'; cell: number; runs: [number, number, number][] } | null
+  anchor: { x: number; y: number } | null
+  unlock_requires: { type: string; key: string }[]
   data_gaps: string[]
+}
+
+interface SealRecord {
+  id: string
+  name: string
+  quest_id: string
+  required_items: { item_id: string; quantity: number }[]
 }
 
 interface Found {
@@ -44,22 +57,39 @@ export function PlaceRoute() {
   const { id } = route.useParams()
   const [state, setState] = useState<{
     place: LocationRecord | null
+    all: LocationRecord[]
     places: Map<string, string>
     availability: AvailabilityIndex | null
     index: DisplayIndex
+    seals: SealRecord[]
     loading: boolean
-  }>({ place: null, places: new Map(), availability: null, index: {}, loading: true })
+  }>({
+    place: null,
+    all: [],
+    places: new Map(),
+    availability: null,
+    index: {},
+    seals: [],
+    loading: true,
+  })
 
   useEffect(() => {
     let live = true
-    Promise.all([loadDataset<LocationRecord>('locations'), loadAvailability(), loadDisplayIndex()])
-      .then(([locations, availability, index]) => {
+    Promise.all([
+      loadDataset<LocationRecord>('locations'),
+      loadAvailability(),
+      loadDisplayIndex(),
+      loadDataset<SealRecord>('seals'),
+    ])
+      .then(([locations, availability, index, seals]) => {
         if (!live) return
         setState({
           place: locations.find((l) => l.id === id) ?? null,
+          all: locations,
           places: new Map(locations.map((l) => [l.id, l.name])),
           availability,
           index,
+          seals,
           loading: false,
         })
       })
@@ -69,7 +99,23 @@ export function PlaceRoute() {
     }
   }, [id])
 
-  const { place, places, availability, index, loading } = state
+  const { place, all, places, availability, index, seals, loading } = state
+  // The region this place sits in — itself when it is one, its parent when it
+  // is a building. The map panel crops to that region.
+  const regionId =
+    place === null ? null : place.shape !== null ? place.id : (place.parent_id ?? null)
+  const regions = all
+    .filter((l) => l.shape !== null)
+    .map((l) => ({ id: l.id, name: l.name, shape: l.shape, anchor: l.anchor }))
+  const artUrl = useAtlas().mapUrl('map/valley')
+  // The seal behind this door, if the door is a seal. Its item list is the
+  // useful half of the lock message.
+  const gateSeal =
+    place === null
+      ? undefined
+      : seals.find((s) =>
+          place.unlock_requires.some((r) => r.type === 'quest' && r.key === s.quest_id),
+        )
 
   const found = useMemo(() => {
     if (availability === null) return []
@@ -115,7 +161,7 @@ export function PlaceRoute() {
       <Column>
         <h1 className="text-2xl">Not found</h1>
         <p className="mt-1 text-ink-mute text-sm">
-          No place here is called <code>{id}</code>.{' '}
+          No place here goes by “{id.replace(/_/g, ' ')}”.{' '}
           <Link to="/map" className="underline decoration-rule underline-offset-4">
             Open the map
           </Link>
@@ -127,20 +173,55 @@ export function PlaceRoute() {
 
   return (
     <Column>
+      <BackLink />
       <header>
         <h1 className="text-2xl">{place.name}</h1>
         <p className="mt-0.5 text-ink-mute text-sm">
           {place.kind?.replace(/_/g, ' ') ?? 'place'}
-          {place.parent_id !== null && ` · in ${places.get(place.parent_id) ?? place.parent_id}`}
+          {place.parent_id !== null && (
+            <>
+              {' · in '}
+              <Link
+                to="/place/$id"
+                params={{ id: place.parent_id }}
+                className="underline decoration-rule underline-offset-4 hover:text-ink"
+              >
+                {places.get(place.parent_id) ?? place.parent_id.replace(/_/g, ' ')}
+              </Link>
+            </>
+          )}
         </p>
       </header>
 
       {place.unlock_requires.length > 0 && (
         // Shown, never used to hide. Knowing a place exists and is locked is
         // information; a place that silently is not there is not.
-        <p className="unverified mt-3 rounded-tile px-2 py-1 text-xs">
-          Locked until: {place.unlock_requires.join(', ').replace(/_/g, ' ')}
-        </p>
+        <div className="unverified mt-3 rounded-tile px-3 py-2 text-xs">
+          Locked — to open it,{' '}
+          {place.unlock_requires.map((r) => requirementPhrase(r)).join(' and ')}.
+          {/* When the door is a seal, the lock message carries the price —
+              which is the half a player actually came to look up. */}
+          {gateSeal !== undefined && gateSeal.required_items.length > 0 && (
+            <span>
+              {' '}
+              That seal asks for:{' '}
+              {gateSeal.required_items.map((entry, i) => (
+                <span key={entry.item_id}>
+                  {i > 0 && ', '}
+                  <Link
+                    to="/item/$id"
+                    params={{ id: entry.item_id }}
+                    className="underline decoration-rule underline-offset-2 hover:text-ink"
+                  >
+                    {index[entry.item_id]?.n ?? entry.item_id.replace(/_/g, ' ')}
+                  </Link>
+                  {entry.quantity > 1 && ` ×${entry.quantity}`}
+                </span>
+              ))}
+              .
+            </span>
+          )}
+        </div>
       )}
 
       <Section title="What you can get here">
@@ -198,23 +279,44 @@ export function PlaceRoute() {
         )}
       </Section>
 
+      {/* The area itself, cropped from the same map the Map screen draws —
+          pins and shapes keep their published coordinates, only the view
+          narrows. On a clone with no fetched art this is the mosaic crop,
+          which still answers "roughly where is this". */}
+      {regionId !== null && (
+        <Section title="Where it is">
+          <div className="rounded-card border border-rule bg-surface p-2">
+            <ValleyMap
+              viewBox="0 0 5442 3599"
+              regions={regions}
+              selectedId={place.shape === null ? null : place.id}
+              focusId={regionId}
+              artUrl={artUrl}
+              pins={
+                place.anchor === null
+                  ? []
+                  : [{ id: place.id, x: place.anchor.x, y: place.anchor.y, label: place.name }]
+              }
+            />
+          </div>
+          <p className="mt-1.5 text-xs">
+            <Link
+              to="/map"
+              className="text-ink-mute underline decoration-rule underline-offset-4 hover:text-ink"
+            >
+              Open the full map →
+            </Link>
+          </p>
+        </Section>
+      )}
+
       {place.habitats.length > 0 && (
         <Section title="Terrain">
           <p className="text-ink-mute text-sm">{place.habitats.join(' · ').replace(/_/g, ' ')}</p>
         </Section>
       )}
 
-      <p className="mt-6 text-xs">
-        <Link to="/map" className="text-ink-mute underline decoration-rule underline-offset-4">
-          See it on the map →
-        </Link>
-      </p>
-
-      {place.data_gaps.length > 0 && (
-        <p className="mt-2 text-ink-faint text-xs">
-          Not recorded: {place.data_gaps.join(', ').replace(/_/g, ' ')}.
-        </p>
-      )}
+      <NotRecorded gaps={place.data_gaps} />
     </Column>
   )
 }

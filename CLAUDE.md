@@ -125,6 +125,12 @@ From `sources/game/`, which is committed. Don't re-derive these either.
 
 **`mystery_bag` declares `harvest = "apple"` and the game file's own comment says `# this is just a lie, for fun!`** It is the Magic Seed, which grows something random. A field can be deliberately false; a comment three characters away can be the only thing that says so.
 
+**`artifacts.toml [locations]` is a room→pool map, and the pool names are the archaeology wing's set keys.** Room → pool → set members → `curated/aliases/game_rooms.json` is the complete "where do I dig this up" chain, stated end to end — it took 90 artifacts from no availability to full windows. The pools with no room (`oopart`, `mist`, `fish_trap`, the material sets) are placed by other stated facts or stay gaps; `ritual` is a name-match join and every window it produces is `inferred`.
+
+**A seal is a quest, and the quest states its price.** `seals.toml` maps seal→quest; the quest stage's `requirements.supplied_items.items` is exact item ids and counts. The same structure prices the bridge and mill repairs. Extracted structurally (any stage with `supplied_items`), never by name list. Quest `description`s are prose — never read.
+
+**`fish.toml`'s `perk_artifact` is a perk-name *string*, not a flag.** Its `[default]` is `false`, so `bool()` silently nulled all ten artifact rules; only `str()` reads it right. The fished/dived artifact rules yield `unidentified_artifact` and the *rule id* is the artifact — `fishByItem` can never find them.
+
 ## Modelling rules
 
 **Availability is an array of windows. Each window is an AND of constraints; the array is an OR.** A bug can be spring-in-town-at-night *and* all-season-in-the-mines-any-time. Never flatten two windows into one — it produces wrong answers on the flagship screen.

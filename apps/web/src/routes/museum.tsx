@@ -39,6 +39,7 @@ export function MuseumRoute() {
   const [donated, setDonated] = useState<Set<string>>(new Set())
   const [wing, setWing] = useState<string>('archaeology')
   const [gapsOnly, setGapsOnly] = useState(false)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     let live = true
@@ -71,13 +72,30 @@ export function MuseumRoute() {
     return { have: all.filter((id) => donated.has(id)).length, total: all.length }
   }, [sets, donated])
 
+  const needle = query.trim().toLowerCase()
+  const matches = useMemo(() => {
+    if (needle === '') return null
+    // Searching cuts across every wing at once — a player looking for the
+    // Ancient Sword should not need to know which wing owns it first.
+    const hit = new Set<string>()
+    for (const set of sets ?? []) {
+      for (const id of set.item_ids) {
+        const name = index[id]?.n ?? id.replace(/_/g, ' ')
+        if (name.toLowerCase().includes(needle)) hit.add(id)
+      }
+    }
+    return hit
+  }, [sets, index, needle])
+
   const shown = useMemo(
     () =>
       (sets ?? [])
-        .filter((s) => s.wing === wing)
+        .filter((s) =>
+          matches === null ? s.wing === wing : s.item_ids.some((id) => matches.has(id)),
+        )
         .filter((s) => !gapsOnly || s.item_ids.some((id) => !donated.has(id)))
         .sort((a, b) => a.display_order - b.display_order || a.name.localeCompare(b.name)),
-    [sets, wing, gapsOnly, donated],
+    [sets, wing, gapsOnly, donated, matches],
   )
 
   if (sets === null) {
@@ -134,6 +152,15 @@ export function MuseumRoute() {
         </label>
       </div>
 
+      <input
+        type="search"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder="Find an item across every wing"
+        aria-label="Filter museum items"
+        className="mt-3 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
+      />
+
       <div className="mt-4 flex flex-col gap-5">
         {shown.map((set) => {
           const have = set.item_ids.filter((id) => donated.has(id)).length
@@ -153,6 +180,7 @@ export function MuseumRoute() {
 
               <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
                 {set.item_ids
+                  .filter((id) => matches === null || matches.has(id))
                   .filter((id) => !gapsOnly || !donated.has(id))
                   .map((id) => {
                     const entry = index[id]
@@ -213,8 +241,12 @@ export function MuseumRoute() {
       )}
 
       <p className="mt-6 text-ink-faint text-xs leading-relaxed">
-        Progress is stored on this device only. Nothing is sent anywhere — syncing to a second
-        device arrives at S1, and will be something you opt into with a code.
+        Progress is saved on this device and never sent anywhere on its own. To carry it to a second
+        device, create a sync code in{' '}
+        <Link to="/settings" className="underline decoration-rule underline-offset-4">
+          Settings
+        </Link>
+        .
       </p>
     </Column>
   )

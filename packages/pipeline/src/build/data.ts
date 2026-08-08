@@ -26,6 +26,7 @@ import {
 import { consola } from 'consola'
 import { BUILD_DIR, DATA_DIR } from '../lib/paths.js'
 import { writeJson } from '../lib/write-json.js'
+import { buildSeals } from './builders/artifacts.js'
 import { buildCharacters, buildGiftPrefs } from './builders/characters.js'
 import { buildAnimals, buildBuildings } from './builders/farm.js'
 import { buildFestivals } from './builders/festivals.js'
@@ -177,6 +178,7 @@ const BUILDERS: Record<DatasetName, Builder> = {
   animals: buildAnimals,
   buildings: buildBuildings,
   mines: (ctx, derived) => buildMines(ctx, derived.items, monstersByBiome(derived.monsters)),
+  seals: buildSeals,
   monsters: (_ctx, derived) => derived.monsters,
 }
 

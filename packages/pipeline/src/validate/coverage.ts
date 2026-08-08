@@ -41,6 +41,9 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   // separate, differently-structured page and are not counted here yet.
   shops: 8,
   animals: 8, // four coop, four barn
+  // seals.toml declares exactly seven: water, earth, fire, ruins, void,
+  // priestess and final. A patch adding an eighth shows up here.
+  seals: 7,
   locations: null,
   maps: null,
   spots: null,

@@ -23,15 +23,23 @@ export function buildSkills(ctx: BuildContext): Skill[] {
   return skills.skills.map((skill) => {
     const perks = skills.perks
       .filter((perk) => perk.skill === skill.id)
-      .map((perk) => ({
-        id: toSnakeId(perk.name),
-        name: perk.name,
-        tier: perk.tier,
-        level: perk.level,
-        essence_cost: perk.cost,
-        effect_key: null,
-        statue: skill.statue,
-      }))
+      .map((perk) => {
+        const id = toSnakeId(perk.name)
+        return {
+          id,
+          name: perk.name,
+          tier: perk.tier,
+          level: perk.level,
+          essence_cost: perk.cost,
+          effect_key: null,
+          // Hand-written in curated/vocab/perk_effects.json, and only for the
+          // perks that gate finding something. Null is the normal state — an
+          // effect sentence for all 137 would be a wiki, and the game's own
+          // wording is prose this project never copies.
+          effect: ctx.perkEffects[id] ?? null,
+          statue: skill.statue,
+        }
+      })
 
     const gaps = ['xp_curve', 'effect_key']
     if (predates1_0(skills.lastEdited)) gaps.push('predates_1_0')

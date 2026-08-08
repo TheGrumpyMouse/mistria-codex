@@ -34,6 +34,10 @@ export const AssetFamily = z.enum([
   'skill',
   'festival',
   'ui',
+  // Loose files, like portraits: the world map is 5442x3599 and the logo is a
+  // banner — neither belongs in a sheet of 32-pixel sprites.
+  'map',
+  'brand',
 ])
 export type AssetFamily = z.infer<typeof AssetFamily>
 
@@ -46,6 +50,9 @@ export const ATLAS_FAMILIES: readonly AssetFamily[] = [
   'festival',
   'ui',
 ]
+
+/** Families shipped as individual lazily-fetched files. */
+export const LOOSE_FAMILIES: readonly AssetFamily[] = ['portrait', 'map', 'brand']
 
 export const AssetEntry = z.object({
   /** Ours: `item/copper-ore`. Stable across a re-fetch. */

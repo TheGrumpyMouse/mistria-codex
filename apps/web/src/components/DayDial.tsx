@@ -1,6 +1,7 @@
 import { DAYS_PER_SEASON, SEASONS, type Weather } from '@mistria/schema'
 import { CloudRain, CloudSnow, Snowflake, Sun, Wind, Zap } from 'lucide-react'
 import type { ComponentType, CSSProperties, ReactNode } from 'react'
+import { ItemIcon } from '~/components/ItemIcon'
 import {
   DAY_NAMES,
   formatClock,
@@ -79,11 +80,19 @@ function TileRadio({
   )
 }
 
+/** Something that happens on a day: a birthday or a festival, with its face. */
+export interface DayMark {
+  kind: 'festival' | 'birthday'
+  /** The sprite to draw on the tile — a villager's icon, a festival's. */
+  iconKey: string | null
+  label: string
+}
+
 export interface DayDialProps {
   value: Instant
   onChange: (next: Partial<Instant>) => void
-  /** Day-of-season -> a mark on that tile. Festivals and birthdays, at A4. */
-  marks?: Record<number, 'festival' | 'birthday'>
+  /** Day-of-season -> what happens that day, drawn onto the tile itself. */
+  marks?: Record<number, DayMark[]>
 }
 
 export function DayDial({ value, onChange, marks = {} }: DayDialProps) {
@@ -165,14 +174,16 @@ function DayGrid({ value, onChange, marks = {} }: DayDialProps) {
         <legend className="sr-only">Day of season</legend>
         {days.map((day) => {
           const active = day === value.day
-          const mark = marks[day]
+          const dayMarks = marks[day] ?? []
+          const spoken =
+            dayMarks.length === 0 ? '' : ` — ${dayMarks.map((m) => m.label).join(', ')}`
           return (
             <TileRadio
               key={day}
               name="day"
               checked={active}
               onSelect={() => onChange({ day })}
-              label={`${titleCase(value.season)} ${day}, ${weekdayOf(day)}`}
+              label={`${titleCase(value.season)} ${day}, ${weekdayOf(day)}${spoken}`}
               className="relative grid aspect-square cursor-pointer place-items-center rounded-tile border text-[13px] transition-colors"
               style={{
                 background: active ? 'var(--accent)' : 'var(--sunk)',
@@ -181,17 +192,28 @@ function DayGrid({ value, onChange, marks = {} }: DayDialProps) {
                 fontWeight: active ? 600 : 400,
               }}
             >
-              <span data-numeral>{day}</span>
-              {/* A festival is notched into the tile itself. A legend that has
-                  to be read is a legend nobody reads. */}
-              {mark !== undefined && (
-                <span
-                  aria-hidden
-                  className="absolute top-1 right-1 size-1.5 rounded-full"
-                  style={{
-                    background: mark === 'festival' ? 'var(--museum)' : 'var(--gap)',
-                  }}
-                />
+              {/* The number cedes the centre of the tile to whatever happens
+                  that day — a face says "Reina's birthday" faster than any dot,
+                  and the day is still legible in the corner. */}
+              {dayMarks.length > 0 ? (
+                <>
+                  <span data-numeral className="absolute top-0.5 left-1 text-[9px] opacity-80">
+                    {day}
+                  </span>
+                  <span aria-hidden className="flex items-center">
+                    {dayMarks.slice(0, 2).map((mark, i) => (
+                      <span
+                        key={mark.label}
+                        className={i > 0 ? '-ml-2' : undefined}
+                        title={mark.label}
+                      >
+                        <ItemIcon iconKey={mark.iconKey ?? ''} name={mark.label} size="sm" />
+                      </span>
+                    ))}
+                  </span>
+                </>
+              ) : (
+                <span data-numeral>{day}</span>
               )}
             </TileRadio>
           )

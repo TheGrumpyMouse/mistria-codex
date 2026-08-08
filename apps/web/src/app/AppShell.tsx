@@ -1,6 +1,7 @@
 import { Link, Outlet, useRouterState } from '@tanstack/react-router'
 import {
   CalendarDays,
+  ChevronsDown,
   ClipboardList,
   Compass,
   Landmark,
@@ -10,6 +11,7 @@ import {
   Sun,
 } from 'lucide-react'
 import type { ComponentType } from 'react'
+import { useAtlas } from '~/app/AtlasProvider'
 import { Footer } from '~/components/Footer'
 
 /**
@@ -35,16 +37,20 @@ interface NavItem {
  * job as Today.
  */
 const NAV: NavItem[] = [
-  { to: '/', label: 'Today', icon: Sun },
+  { to: '/', label: 'Calendar', icon: Sun },
   { to: '/board', label: 'Board', icon: ClipboardList },
   { to: '/search', label: 'Search', icon: Search },
   { to: '/museum', label: 'Museum', icon: Landmark },
-  { to: '/map', label: 'Map', icon: MapIcon },
+  // The Mines earned the Map's slot: seal costs and biome contents are a
+  // mid-game lookup, while the map is mostly reached from a place page — and
+  // every place page links to it. On a phone the map keeps a corner button.
+  { to: '/mines', label: 'Mines', icon: ChevronsDown },
 ]
 
 /** Reachable from the sidebar, where there is room, and from links. */
 const SECONDARY: NavItem[] = [
   { to: '/browse', label: 'Browse', icon: Compass },
+  { to: '/map', label: 'Map', icon: MapIcon },
   { to: '/calendar', label: 'The year', icon: CalendarDays },
   { to: '/settings', label: 'Settings', icon: Settings },
 ]
@@ -66,6 +72,29 @@ export function AppShell() {
       </a>
 
       <Sidebar />
+
+      {/*
+        The corner pair, on a phone. The bottom nav is full at five, and these
+        two do not earn a slot you hit mid-game — but until these buttons
+        existed Settings was unreachable on mobile without typing the URL. A
+        fixed corner costs one thumb-stretch for screens visited occasionally.
+      */}
+      <div className="fixed top-3 right-3 z-10 flex gap-2 lg:hidden">
+        <Link
+          to="/map"
+          aria-label="Map"
+          className="grid size-9 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
+        >
+          <MapIcon size={17} strokeWidth={2} />
+        </Link>
+        <Link
+          to="/settings"
+          aria-label="Settings"
+          className="grid size-9 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
+        >
+          <Settings size={17} strokeWidth={2} />
+        </Link>
+      </div>
 
       {/*
         The shell no longer sets the measure. Most screens are a narrow reading
@@ -187,18 +216,28 @@ function BottomNav() {
  * — the mark and the signature element are the same idea at two sizes.
  */
 export function Wordmark() {
+  const logo = useAtlas().mapUrl('brand/logo')
+
   return (
-    <div className="flex items-center gap-2.5 px-3">
-      <span aria-hidden className="grid grid-cols-2 gap-0.5">
-        {(['spring', 'summer', 'fall', 'winter'] as const).map((season) => (
-          <span
-            key={season}
-            className="size-2 rounded-[1px]"
-            style={{ background: `var(--${season})` }}
-          />
-        ))}
-      </span>
-      <span className="font-display font-semibold text-[15px] text-ink">Mistria Codex</span>
+    <div className="px-3">
+      {/* The game's own banner above our name — recognisable at a glance, and
+          never *as* our name: the app stays "Mistria Codex", unaffiliated.
+          Absent on a clone with no fetched art, and nothing else changes. */}
+      {logo !== null && (
+        <img src={logo} alt="" className="mb-2 h-auto w-full max-w-44 rounded-tile" />
+      )}
+      <div className="flex items-center gap-2.5">
+        <span aria-hidden className="grid grid-cols-2 gap-0.5">
+          {(['spring', 'summer', 'fall', 'winter'] as const).map((season) => (
+            <span
+              key={season}
+              className="size-2 rounded-[1px]"
+              style={{ background: `var(--${season})` }}
+            />
+          ))}
+        </span>
+        <span className="font-display font-semibold text-[15px] text-ink">Mistria Codex</span>
+      </div>
     </div>
   )
 }

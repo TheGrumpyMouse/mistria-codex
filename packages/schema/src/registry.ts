@@ -3,7 +3,7 @@ import { Character, GiftPrefs, Schedule } from './entities/character.js'
 import { ArtifactFacet, BugFacet, FishFacet, ForageableFacet, Item } from './entities/item.js'
 import { Animal, Building, Crop, Recipe } from './entities/production.js'
 import { Festival, MuseumSet, Quest, Shop, Skill } from './entities/progression.js'
-import { Location, MapRegion, MineBiome, Monster, Spot } from './entities/world.js'
+import { Location, MapRegion, MineBiome, Monster, Seal, Spot } from './entities/world.js'
 
 export interface DatasetSpec {
   /** Path relative to `data/`, and the basename used for `build/schema/`. */
@@ -137,6 +137,12 @@ export const DATASETS = {
     schema: MineBiome,
     key: 'id',
     description: 'Mine biomes and their floor ranges.',
+  },
+  seals: {
+    file: 'seals.json',
+    schema: Seal,
+    key: 'id',
+    description: 'Story seals: the quest that breaks each one and the items it costs.',
   },
   monsters: {
     file: 'monsters.json',

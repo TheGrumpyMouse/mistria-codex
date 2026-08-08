@@ -20,37 +20,121 @@
     "",
     "Deliberately absent: mine biome icons. All five biomes link the same",
     "Fp_wiki_mining.png, so adopting it would render five distinct places",
-    "identically — strictly worse than five distinct generated glyphs."
+    "identically — strictly worse than five distinct generated glyphs.",
+    "",
+    "MAPS AND BRAND. `maps` is the DataMaps background image the committed Map: page",
+    "declares — the 5442x3599 space every anchor already lives in. `brand` is the",
+    "game logo from the main page infobox, used (framed in our own mark) as the app",
+    "icon. Both ship as loose files, never atlased."
   ],
   "glyphs": [
-    { "key": "tesserae", "file": "Tesserae Icon.png" },
-    { "key": "essence", "file": "Essence.png" },
-    { "key": "renown_gold", "file": "Renown_gold_icon.png" },
-    { "key": "renown_emerald", "file": "Renown_emerald_icon.png" },
-
-    { "key": "season_spring", "file": "Season icon spring.png" },
-    { "key": "season_summer", "file": "Season icon summer.png" },
-    { "key": "season_fall", "file": "Season icon autumn.png" },
-    { "key": "season_winter", "file": "Season icon winter.png" },
-
-    { "key": "method_fishing", "file": "Fishing_icon.png" },
-    { "key": "method_mining", "file": "Fp_wiki_mining.png" },
-    { "key": "method_monster", "file": "Fp_wiki_monster.png" },
-    { "key": "method_museum", "file": "Fp_wiki_museum.png" },
-    { "key": "method_pet", "file": "Fp wiki pet.png" },
-    { "key": "method_wishing_well", "file": "Fp_wiki_wishing_well.png" },
-    { "key": "method_mill", "file": "Fp_wiki_mill_craft.png" },
-
-    { "key": "almanac_crops", "file": "Almanac icon crops.png" },
-    { "key": "almanac_forageables", "file": "Almanac icon forageables.png" },
-    { "key": "almanac_cooked", "file": "Almanac_icon_cooked_dishes.png" },
-
-    { "key": "quest_story", "file": "Quests_story_icon.png" },
-    { "key": "quest_heart", "file": "Quests_heart_icon.png" },
-    { "key": "quest_fetch", "file": "Fp wiki quests fetch.png" },
-    { "key": "quest_renown", "file": "Quests_renown_subicon.png" },
-
-    { "key": "event_saturday_market", "file": "Fp_wiki_event_saturday_market.png" },
-    { "key": "event_friday_inn", "file": "Calendar_icon_friday_night_at_the_inn.png" }
+    {
+      "key": "tesserae",
+      "file": "Tesserae Icon.png"
+    },
+    {
+      "key": "essence",
+      "file": "Essence.png"
+    },
+    {
+      "key": "renown_gold",
+      "file": "Renown_gold_icon.png"
+    },
+    {
+      "key": "renown_emerald",
+      "file": "Renown_emerald_icon.png"
+    },
+    {
+      "key": "season_spring",
+      "file": "Season icon spring.png"
+    },
+    {
+      "key": "season_summer",
+      "file": "Season icon summer.png"
+    },
+    {
+      "key": "season_fall",
+      "file": "Season icon autumn.png"
+    },
+    {
+      "key": "season_winter",
+      "file": "Season icon winter.png"
+    },
+    {
+      "key": "method_fishing",
+      "file": "Fishing_icon.png"
+    },
+    {
+      "key": "method_mining",
+      "file": "Fp_wiki_mining.png"
+    },
+    {
+      "key": "method_monster",
+      "file": "Fp_wiki_monster.png"
+    },
+    {
+      "key": "method_museum",
+      "file": "Fp_wiki_museum.png"
+    },
+    {
+      "key": "method_pet",
+      "file": "Fp wiki pet.png"
+    },
+    {
+      "key": "method_wishing_well",
+      "file": "Fp_wiki_wishing_well.png"
+    },
+    {
+      "key": "method_mill",
+      "file": "Fp_wiki_mill_craft.png"
+    },
+    {
+      "key": "almanac_crops",
+      "file": "Almanac icon crops.png"
+    },
+    {
+      "key": "almanac_forageables",
+      "file": "Almanac icon forageables.png"
+    },
+    {
+      "key": "almanac_cooked",
+      "file": "Almanac_icon_cooked_dishes.png"
+    },
+    {
+      "key": "quest_story",
+      "file": "Quests_story_icon.png"
+    },
+    {
+      "key": "quest_heart",
+      "file": "Quests_heart_icon.png"
+    },
+    {
+      "key": "quest_fetch",
+      "file": "Fp wiki quests fetch.png"
+    },
+    {
+      "key": "quest_renown",
+      "file": "Quests_renown_subicon.png"
+    },
+    {
+      "key": "event_saturday_market",
+      "file": "Fp_wiki_event_saturday_market.png"
+    },
+    {
+      "key": "event_friday_inn",
+      "file": "Calendar_icon_friday_night_at_the_inn.png"
+    }
+  ],
+  "maps": [
+    {
+      "key": "valley",
+      "file": "V0.13 map unlocked.png"
+    }
+  ],
+  "brand": [
+    {
+      "key": "logo",
+      "file": "Fields of Mistria.png"
+    }
   ]
 }

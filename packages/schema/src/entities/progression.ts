@@ -154,6 +154,12 @@ export const Skill = withEnvelope({
         level: z.number().int().nullable().default(null),
         essence_cost: z.number().int().nullable().default(null),
         effect_key: z.string().nullable().default(null),
+        /**
+         * What the perk does, in our own words — never the game's sentence.
+         * Hand-authored in `curated/vocab/perk_effects.json`, and only for
+         * perks that gate finding something; null is the normal state.
+         */
+        effect: z.string().max(120).nullable().default(null),
         /** Which statue grants it — Caldarus' for most, the Mines dragon for mining/combat. */
         statue: z.enum(['caldarus', 'mines']).nullable().default(null),
       }),

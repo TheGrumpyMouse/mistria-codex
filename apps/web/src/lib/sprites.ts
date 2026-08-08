@@ -25,6 +25,12 @@ export interface AtlasIndex {
   sheets: Sheet[]
   /** `icon_key` -> a whole file, for portraits. */
   portraits: Record<string, string>
+  /**
+   * `icon_key` -> a whole file, for map and brand art. Optional because a
+   * bundle packed before these families existed simply has none — and none is
+   * a normal answer, exactly like a missing sprite.
+   */
+  maps?: Record<string, string>
 }
 
 export interface Sprite {
@@ -48,6 +54,7 @@ export interface Sprite {
 export class Atlas {
   private readonly frames = new Map<string, Sprite>()
   private readonly portraits = new Map<string, string>()
+  private readonly maps = new Map<string, string>()
 
   constructor(index: AtlasIndex, baseUrl: string) {
     for (const sheet of index.sheets) {
@@ -67,6 +74,9 @@ export class Atlas {
     for (const [key, file] of Object.entries(index.portraits)) {
       this.portraits.set(key, `${baseUrl}assets/game/${file}`)
     }
+    for (const [key, file] of Object.entries(index.maps ?? {})) {
+      this.maps.set(key, `${baseUrl}assets/game/${file}`)
+    }
   }
 
   get(iconKey: string | null | undefined): Sprite | null {
@@ -77,6 +87,17 @@ export class Atlas {
   portrait(iconKey: string | null | undefined): string | null {
     if (iconKey == null) return null
     return this.portraits.get(iconKey.replace(/^character\//, 'portrait/')) ?? null
+  }
+
+  /**
+   * `map/valley` or `brand/logo` -> a whole-file URL, or null.
+   *
+   * Null is the permanent no-art answer — a clone that never ran
+   * `pnpm assets:fetch` draws the tessera mosaic instead, and must keep doing
+   * so forever. Never branch on "atlas not loaded"; ask, and handle null.
+   */
+  mapUrl(key: string | null | undefined): string | null {
+    return key == null ? null : (this.maps.get(key) ?? null)
   }
 
   get size(): number {

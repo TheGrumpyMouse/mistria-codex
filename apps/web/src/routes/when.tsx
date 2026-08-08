@@ -2,8 +2,10 @@ import type { Meta } from '@mistria/schema'
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { useAtlas } from '~/app/AtlasProvider'
 import { ItemIcon } from '~/components/ItemIcon'
 import { OpportunityCard } from '~/components/OpportunityCard'
+import { ValleyMap } from '~/components/ValleyMap'
 import {
   type DisplayIndex,
   loadAvailability,
@@ -16,6 +18,14 @@ import { formatDate } from '~/lib/instant'
 import { opportunitiesFor } from '~/lib/opportunity'
 
 const route = getRouteApi('/item/$id/when')
+
+interface LocationLite {
+  id: string
+  name: string
+  parent_id: string | null
+  shape: { type: 'cells'; cell: number; runs: [number, number, number][] } | null
+  anchor: { x: number; y: number } | null
+}
 
 /**
  * "When can I get this?" — the reverse of the Today screen.
@@ -36,9 +46,10 @@ export function WhenRoute() {
     availability: AvailabilityIndex | null
     index: DisplayIndex
     names: Map<string, string>
+    locations: LocationLite[]
     meta: Meta | null
     loading: boolean
-  }>({ availability: null, index: {}, names: new Map(), meta: null, loading: true })
+  }>({ availability: null, index: {}, names: new Map(), locations: [], meta: null, loading: true })
 
   useEffect(() => {
     let live = true
@@ -46,7 +57,7 @@ export function WhenRoute() {
       loadAvailability(),
       loadDisplayIndex(),
       loadMeta(),
-      loadDataset<{ id: string; name: string }>('locations'),
+      loadDataset<LocationLite>('locations'),
     ])
       .then(([availability, index, meta, locations]) => {
         if (!live) return
@@ -54,6 +65,7 @@ export function WhenRoute() {
           availability,
           index,
           names: new Map(locations.map((l) => [l.id, l.name])),
+          locations,
           meta,
           loading: false,
         })
@@ -64,7 +76,8 @@ export function WhenRoute() {
     }
   }, [])
 
-  const { availability, index, names, meta, loading } = state
+  const { availability, index, names, locations, meta, loading } = state
+  const artUrl = useAtlas().mapUrl('map/valley')
   const entry = index[id]
 
   const opportunities = useMemo(
@@ -117,16 +130,20 @@ export function WhenRoute() {
           that it cannot be got — see the item page for what is recorded.
         </p>
       ) : (
-        <ul className="mt-5 flex flex-col divide-y divide-rule border-rule border-y">
-          {opportunities.map((opportunity) => (
-            <OpportunityCard
-              key={ruleKey(opportunity.rule, opportunity.locationId)}
-              opportunity={opportunity}
-              locationNames={names}
-              odds={meta?.weatherOdds}
-            />
-          ))}
-        </ul>
+        <>
+          <ul className="mt-5 flex flex-col divide-y divide-rule border-rule border-y">
+            {opportunities.map((opportunity) => (
+              <OpportunityCard
+                key={ruleKey(opportunity.rule, opportunity.locationId)}
+                opportunity={opportunity}
+                locationNames={names}
+                odds={meta?.weatherOdds}
+              />
+            ))}
+          </ul>
+
+          <WhereMap opportunities={opportunities} locations={locations} artUrl={artUrl} />
+        </>
       )}
 
       <p className="mt-4 text-ink-faint text-xs">
@@ -147,3 +164,54 @@ const ruleKey = (
   rule: { k: string; sea: number; wx: number; t: [number, number][] },
   locationId: string | null,
 ): string => `${rule.k}:${locationId ?? '?'}:${rule.sea}:${rule.wx}:${rule.t.join()}`
+
+/**
+ * The places above, on the map.
+ *
+ * Pins land on each opportunity's location; a single region focuses, several
+ * show the whole valley. Rendered under the list because "when" is this
+ * page's question and "where" its follow-up — and skipped entirely when no
+ * opportunity names a place, because an empty map answers nothing.
+ */
+function WhereMap({
+  opportunities,
+  locations,
+  artUrl,
+}: {
+  opportunities: { locationId: string | null }[]
+  locations: LocationLite[]
+  artUrl: string | null
+}) {
+  const byId = new Map(locations.map((l) => [l.id, l]))
+  const targets = [
+    ...new Set(opportunities.flatMap((o) => (o.locationId === null ? [] : [o.locationId]))),
+  ]
+    .map((locId) => byId.get(locId))
+    .filter((l): l is LocationLite => l !== undefined)
+  if (targets.length === 0) return null
+
+  const regionOf = (l: LocationLite): string | null =>
+    l.shape !== null ? l.id : (l.parent_id ?? null)
+  const regionIds = [
+    ...new Set(targets.flatMap((l) => (regionOf(l) === null ? [] : [regionOf(l)]))),
+  ]
+  const regions = locations
+    .filter((l) => l.shape !== null)
+    .map((l) => ({ id: l.id, name: l.name, shape: l.shape, anchor: l.anchor }))
+
+  return (
+    <div className="mt-4">
+      <div className="rounded-card border border-rule bg-surface p-2">
+        <ValleyMap
+          viewBox="0 0 5442 3599"
+          regions={regions}
+          focusId={regionIds.length === 1 ? (regionIds[0] ?? null) : null}
+          artUrl={artUrl}
+          pins={targets.flatMap((l) =>
+            l.anchor === null ? [] : [{ id: l.id, x: l.anchor.x, y: l.anchor.y, label: l.name }],
+          )}
+        />
+      </div>
+    </div>
+  )
+}

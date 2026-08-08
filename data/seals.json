@@ -1,0 +1,288 @@
+[
+  {
+    "also_known_as": [
+      "The Earth Tablet"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "earth",
+    "id_status": "confirmed",
+    "name": "The Earth Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "the_earth_tablet",
+    "required_items": [
+      {
+        "item_id": "archerfish",
+        "quantity": 1
+      },
+      {
+        "item_id": "cave_kelp",
+        "quantity": 1
+      },
+      {
+        "item_id": "coral_mantis",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_sapphire",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": "deep_earth",
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "Breaking The Final Seal"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "final",
+    "id_status": "confirmed",
+    "name": "The Final Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "breaking_the_final_seal",
+    "required_items": [
+      {
+        "item_id": "dragon_forged_core",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_fang",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_horn",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_powder",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "Breaking The Fire Seal"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "fire",
+    "id_status": "confirmed",
+    "name": "The Fire Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "breaking_the_fire_seal",
+    "required_items": [
+      {
+        "item_id": "faceted_rock_gem",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_emerald",
+        "quantity": 1
+      },
+      {
+        "item_id": "rockroot",
+        "quantity": 1
+      },
+      {
+        "item_id": "sealing_scroll",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": "the_deep_woods",
+    "unlocks_mine_id": "lava_caves",
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "Find the Magic Key"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "priestess",
+    "id_status": "confirmed",
+    "name": "The Priestess Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "find_the_magic_key",
+    "required_items": [
+      {
+        "item_id": "marigold",
+        "quantity": 1
+      },
+      {
+        "item_id": "temple_flower",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "Breaking the Ruins Seal"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "ruins",
+    "id_status": "confirmed",
+    "name": "The Ruins Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "breaking_the_ruins_seal",
+    "required_items": [
+      {
+        "item_id": "breath_of_fire",
+        "quantity": 1
+      },
+      {
+        "item_id": "firesail_fish",
+        "quantity": 1
+      },
+      {
+        "item_id": "obsidian",
+        "quantity": 1
+      },
+      {
+        "item_id": "smoke_moth",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": "ancient_ruins",
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "Creating the Void Mass"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "void",
+    "id_status": "confirmed",
+    "name": "The Void Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "creating_the_void_mass",
+    "required_items": [
+      {
+        "item_id": "void_herb",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_pearl",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_powder",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_stone",
+        "quantity": 5
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [
+      "The Water Tablet"
+    ],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": null,
+    "id": "water",
+    "id_status": "confirmed",
+    "name": "The Water Seal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quest_id": "the_water_tablet",
+    "required_items": [
+      {
+        "item_id": "lantern_moth",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_ruby",
+        "quantity": 1
+      },
+      {
+        "item_id": "stone_loach",
+        "quantity": 1
+      },
+      {
+        "item_id": "upper_mines_mushroom",
+        "quantity": 1
+      }
+    ],
+    "unlocks_location_id": null,
+    "unlocks_mine_id": "tide_caverns",
+    "version_added": null,
+    "wiki_page": null
+  }
+]
