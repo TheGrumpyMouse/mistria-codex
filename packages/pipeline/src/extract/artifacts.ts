@@ -45,6 +45,19 @@ export interface GamePerk {
   value: number | null
 }
 
+export interface GameSkillTreePerk {
+  id: string
+  tier: number
+  /** Essence cost to buy the perk, as the skill menu states it. */
+  essence: number | null
+}
+
+export interface GameSkillTree {
+  /** The skill's file stem — `cooking`, `ranching`, … — which is its id. */
+  skill: string
+  perks: GameSkillTreePerk[]
+}
+
 export interface GameSealOffering {
   quest_id: string
   /** The quest's title. */
@@ -66,6 +79,12 @@ export interface GameArtifactsExtract {
   /** Ritual chambers, one per biome that has one, with their floor bands. */
   ritualChambers: { room: string; floors: [number, number] }[]
   perks: GamePerk[]
+  /**
+   * `ui/skill_menu/*.toml`: the complete perk tree per skill — which perk
+   * sits in which tier at what essence cost. This is where a perk's owning
+   * skill is stated; `perks.toml` itself is a flat list.
+   */
+  skillTrees: GameSkillTree[]
   /** `seals.toml`: seal id -> the quest that breaks it. */
   seals: { id: string; quest_id: string }[]
   /** Every quest stage that demands a delivery of items. */
@@ -160,6 +179,47 @@ export async function extractPerks(root: string): Promise<GamePerk[]> {
   return sortByKey(perks, 'id')
 }
 
+/**
+ * The perk trees, one file per skill.
+ *
+ * `[[tier_N]]` arrays carry `perk`, `essence` and an `icon` sprite key; the
+ * sprite is never read (this dataset resolves art through its own manifest,
+ * and a game sprite id is useless to it anyway). `defaults.toml` is menu
+ * chrome and `mount.toml` is the riding pseudo-skill with no perks of its
+ * own shape — both are skipped by the same structural filter: a file with no
+ * `tier_*` arrays contributes nothing.
+ */
+export async function extractSkillTrees(root: string): Promise<GameSkillTree[]> {
+  const { readdir } = await import('node:fs/promises')
+  const dir = resolveIn(root, 'fiddle', 'ui', 'skill_menu')
+  const files = (await readdir(dir)).filter((f) => f.endsWith('.toml')).sort()
+
+  const trees: GameSkillTree[] = []
+  for (const file of files) {
+    const doc = await readToml(resolveIn(root, 'fiddle', 'ui', 'skill_menu', file))
+    const perks: GameSkillTreePerk[] = []
+
+    for (const [key, value] of Object.entries(doc)) {
+      const match = /^tier_(\d+)$/.exec(key)
+      if (match === null || !Array.isArray(value)) continue
+      const tier = Number(match[1])
+      for (const raw of value) {
+        const entry = table(raw)
+        const id = str(entry?.perk)
+        if (entry === null || id === null) continue
+        perks.push({ id, tier, essence: num(entry.essence) })
+      }
+    }
+
+    if (perks.length === 0) continue
+    perks.sort((a, b) => a.tier - b.tier || (a.id < b.id ? -1 : 1))
+    trees.push({ skill: file.replace(/\.toml$/, ''), perks })
+  }
+
+  if (trees.length === 0) throw new Error('ui/skill_menu has no tiered perk files.')
+  return sortByKey(trees, 'skill')
+}
+
 export async function extractSeals(root: string): Promise<{ id: string; quest_id: string }[]> {
   const doc = await readToml(resolveIn(root, 'fiddle', 'seals.toml'))
 
@@ -220,13 +280,24 @@ export async function extractArtifacts(
   root: string,
   gameVersion: string,
 ): Promise<GameArtifactsExtract> {
-  const [pools, mineBiomes, ritualChambers, perks, seals, sealOfferings] = await Promise.all([
-    extractArtifactPools(root),
-    extractMineBiomes(root),
-    extractRitualChambers(root),
-    extractPerks(root),
-    extractSeals(root),
-    extractSealOfferings(root),
-  ])
-  return { gameVersion, ...pools, mineBiomes, ritualChambers, perks, seals, sealOfferings }
+  const [pools, mineBiomes, ritualChambers, perks, skillTrees, seals, sealOfferings] =
+    await Promise.all([
+      extractArtifactPools(root),
+      extractMineBiomes(root),
+      extractRitualChambers(root),
+      extractPerks(root),
+      extractSkillTrees(root),
+      extractSeals(root),
+      extractSealOfferings(root),
+    ])
+  return {
+    gameVersion,
+    ...pools,
+    mineBiomes,
+    ritualChambers,
+    perks,
+    skillTrees,
+    seals,
+    sealOfferings,
+  }
 }

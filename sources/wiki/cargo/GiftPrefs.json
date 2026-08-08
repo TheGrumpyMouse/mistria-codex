@@ -20231,11 +20231,6 @@
   },
   {
     "charName": "Priestess",
-    "interest": "like",
-    "itemName": "Ore Pink Diamond"
-  },
-  {
-    "charName": "Priestess",
     "interest": "dislike",
     "itemName": "Parchment Moth"
   },
@@ -20253,6 +20248,11 @@
     "charName": "Priestess",
     "interest": "dislike",
     "itemName": "Pinecone"
+  },
+  {
+    "charName": "Priestess",
+    "interest": "like",
+    "itemName": "Pink Diamond"
   },
   {
     "charName": "Priestess",

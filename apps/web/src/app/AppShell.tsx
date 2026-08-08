@@ -216,26 +216,28 @@ function BottomNav() {
  * — the mark and the signature element are the same idea at two sizes.
  */
 export function Wordmark() {
-  const logo = useAtlas().mapUrl('brand/logo')
+  const house = useAtlas().mapUrl('brand/icon')
 
   return (
     <div className="px-3">
-      {/* The game's own banner above our name — recognisable at a glance, and
-          never *as* our name: the app stays "Mistria Codex", unaffiliated.
-          Absent on a clone with no fetched art, and nothing else changes. */}
-      {logo !== null && (
-        <img src={logo} alt="" className="mb-2 h-auto w-full max-w-44 rounded-tile" />
-      )}
       <div className="flex items-center gap-2.5">
-        <span aria-hidden className="grid grid-cols-2 gap-0.5">
-          {(['spring', 'summer', 'fall', 'winter'] as const).map((season) => (
-            <span
-              key={season}
-              className="size-2 rounded-[1px]"
-              style={{ background: `var(--${season})` }}
-            />
-          ))}
-        </span>
+        {/* The game's little farmhouse beside our name — recognisable at a
+            glance, and never *as* our name: the app stays "Mistria Codex",
+            unaffiliated. On a clone with no fetched art the tesserae take its
+            place, exactly as the app icon falls back to favicon.svg. */}
+        {house !== null ? (
+          <img src={house} alt="" className="sprite size-8" />
+        ) : (
+          <span aria-hidden className="grid grid-cols-2 gap-0.5">
+            {(['spring', 'summer', 'fall', 'winter'] as const).map((season) => (
+              <span
+                key={season}
+                className="size-2 rounded-[1px]"
+                style={{ background: `var(--${season})` }}
+              />
+            ))}
+          </span>
+        )}
         <span className="font-display font-semibold text-[15px] text-ink">Mistria Codex</span>
       </div>
     </div>

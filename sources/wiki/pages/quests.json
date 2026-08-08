@@ -1,5 +1,5 @@
 {
-  "lastEdited": "2026-08-07T06:32:16Z",
+  "lastEdited": "2026-08-08T14:54:07Z",
   "quests": [
     {
       "conditions": [],
@@ -528,23 +528,6 @@
       "rewardCurrency": [
         {
           "amount": 50,
-          "token": "Renown"
-        }
-      ],
-      "rewardItems": [],
-      "seasons": [],
-      "section": "Story Quests > Town Improvement Quests"
-    },
-    {
-      "conditions": [],
-      "giver": "Errol",
-      "kind": "story",
-      "name": "Complete the Museum",
-      "objectives": [],
-      "repeatable": false,
-      "rewardCurrency": [
-        {
-          "amount": 20,
           "token": "Renown"
         }
       ],

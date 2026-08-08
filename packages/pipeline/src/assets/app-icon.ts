@@ -1,14 +1,20 @@
 /**
- * The installable app's face: the official logo art, set on our own card.
+ * The installable app's face: the game's little farmhouse, set on our own card.
  *
- * The composition is deliberate. NPC Studio's logo as-is would make an
- * installed icon indistinguishable from an official app, and this project's
- * policy is to never imply affiliation — so the logo sits framed on the app's
- * paper ground with the four-tessera mark in the corner, which is this app's
- * own signature. Recognisably the game; visibly a companion.
+ * The composition is deliberate. The bare house mark is what Steam and the wiki
+ * use, so shipping it as-is would make an installed icon indistinguishable from
+ * an official app — and this project's policy is to never imply affiliation.
+ * The house sits framed on the app's paper ground with the four-tessera mark in
+ * the corner, which is this app's own signature. Recognisably the game; visibly
+ * a companion.
+ *
+ * The source is 16x16 pixel art (shipped by the wiki at 256px). It is averaged
+ * back down to its true grid and re-upscaled by a whole number, because pixel
+ * art at a fractional scale renders visibly lopsided — the same integer-scale
+ * rule the app's `.sprite` class enforces.
  *
  * Generated at ship time into the gitignored assets output, exactly like the
- * atlases: `git rm -r assets/game && pnpm build:ship` removes the logo and the
+ * atlases: `git rm -r assets/game && pnpm build:ship` removes the house and the
  * icons with it, and the app falls back to the committed `favicon.svg` (our
  * mark, no game art). Nothing here is committed.
  *
@@ -31,31 +37,47 @@ const SEASONS = [
   { r: 0x8b, g: 0x93, b: 0xc9 }, // winter
 ]
 
-const ICON_SIZES = [192, 512] as const
+/** The true pixel grid of the house art. */
+const GRID = 16
 
 /**
- * Box-sample a source image into a destination rectangle.
- *
- * Averaging every covered source pixel, not nearest-neighbour: the logo is
- * painted art coming *down* from 1920 wide, and nearest would alias its
- * lettering into speckle. Alpha-weighted so transparent edges stay clean.
+ * 192/512 are what the PWA manifest wants; 64 is the browser-tab favicon,
+ * small enough that it drops the tessera mark (unreadable at tab size) and
+ * keeps only the paper frame to stay visibly ours.
  */
-function drawScaled(src: PNG, dst: PNG, dx: number, dy: number, dw: number, dh: number): void {
-  for (let y = 0; y < dh; y++) {
-    const sy0 = (y / dh) * src.height
-    const sy1 = ((y + 1) / dh) * src.height
-    for (let x = 0; x < dw; x++) {
-      const sx0 = (x / dw) * src.width
-      const sx1 = ((x + 1) / dw) * src.width
+const ICON_SIZES = [64, 192, 512] as const
+
+interface Cell {
+  r: number
+  g: number
+  b: number
+  a: number
+}
+
+/**
+ * Average the source down to its true GRIDxGRID pixel grid.
+ *
+ * For the 256px wiki render this is exact — every 16x16 block is one uniform
+ * art pixel — and for anything else it is an honest box filter. Alpha-weighted
+ * so transparent surroundings stay transparent.
+ */
+function toGrid(src: PNG): Cell[] {
+  const cells: Cell[] = []
+  for (let gy = 0; gy < GRID; gy++) {
+    for (let gx = 0; gx < GRID; gx++) {
+      const x0 = Math.floor((gx / GRID) * src.width)
+      const x1 = Math.max(x0 + 1, Math.floor(((gx + 1) / GRID) * src.width))
+      const y0 = Math.floor((gy / GRID) * src.height)
+      const y1 = Math.max(y0 + 1, Math.floor(((gy + 1) / GRID) * src.height))
 
       let r = 0
       let g = 0
       let b = 0
       let a = 0
       let n = 0
-      for (let sy = Math.floor(sy0); sy < Math.ceil(sy1); sy++) {
-        for (let sx = Math.floor(sx0); sx < Math.ceil(sx1); sx++) {
-          const i = (sy * src.width + sx) * 4
+      for (let y = y0; y < y1; y++) {
+        for (let x = x0; x < x1; x++) {
+          const i = (y * src.width + x) * 4
           const alpha = src.data[i + 3] ?? 0
           r += (src.data[i] ?? 0) * alpha
           g += (src.data[i + 1] ?? 0) * alpha
@@ -64,21 +86,28 @@ function drawScaled(src: PNG, dst: PNG, dx: number, dy: number, dw: number, dh: 
           n += 1
         }
       }
-      if (n === 0) continue
+      cells.push(a === 0 ? { r: 0, g: 0, b: 0, a: 0 } : { r: r / a, g: g / a, b: b / a, a: a / n })
+    }
+  }
+  return cells
+}
 
-      const outA = a / n
-      const j = ((dy + y) * dst.width + (dx + x)) * 4
-      if (outA === 0) continue
-      // Composite over whatever is already on the canvas.
-      const baseA = dst.data[j + 3] ?? 255
-      const srcR = r / a
-      const srcG = g / a
-      const srcB = b / a
-      const t = outA / 255
-      dst.data[j] = Math.round(srcR * t + (dst.data[j] ?? 0) * (1 - t))
-      dst.data[j + 1] = Math.round(srcG * t + (dst.data[j + 1] ?? 0) * (1 - t))
-      dst.data[j + 2] = Math.round(srcB * t + (dst.data[j + 2] ?? 0) * (1 - t))
-      dst.data[j + 3] = Math.max(baseA, Math.round(outA))
+/** Nearest-neighbour: each art pixel becomes a k-by-k block, alpha-composited. */
+function drawGrid(cells: Cell[], dst: PNG, dx: number, dy: number, k: number): void {
+  for (let gy = 0; gy < GRID; gy++) {
+    for (let gx = 0; gx < GRID; gx++) {
+      const cell = cells[gy * GRID + gx]
+      if (cell === undefined || cell.a === 0) continue
+      const t = cell.a / 255
+      for (let y = 0; y < k; y++) {
+        for (let x = 0; x < k; x++) {
+          const j = ((dy + gy * k + y) * dst.width + (dx + gx * k + x)) * 4
+          dst.data[j] = Math.round(cell.r * t + (dst.data[j] ?? 0) * (1 - t))
+          dst.data[j + 1] = Math.round(cell.g * t + (dst.data[j + 1] ?? 0) * (1 - t))
+          dst.data[j + 2] = Math.round(cell.b * t + (dst.data[j + 2] ?? 0) * (1 - t))
+          dst.data[j + 3] = Math.max(dst.data[j + 3] ?? 0, Math.round(cell.a))
+        }
+      }
     }
   }
 }
@@ -103,7 +132,7 @@ function fillRect(
 }
 
 /**
- * Write the PWA icons, or quietly do nothing when the logo was never fetched.
+ * Write the app icons, or quietly do nothing when the house was never fetched.
  *
  * Quiet is correct: a clone without `assets/game/` builds a fully working app
  * whose manifest icons 404 and whose favicon falls back to the committed SVG.
@@ -111,10 +140,10 @@ function fillRect(
  */
 export async function writeAppIcons(): Promise<number> {
   const manifest = await readManifestOrEmpty()
-  const logoEntry = manifest.assets.find((a) => a.family === 'brand')
-  if (logoEntry === undefined) return 0
+  const brandEntry = manifest.assets.find((a) => a.icon_keys.includes('brand/icon'))
+  if (brandEntry === undefined) return 0
 
-  const logo = PNG.sync.read(await readFile(join(ASSETS_DIR, logoEntry.file)))
+  const cells = toGrid(PNG.sync.read(await readFile(join(ASSETS_DIR, brandEntry.file))))
 
   const { mkdir } = await import('node:fs/promises')
   await mkdir(join(ASSETS_SHIP_DIR, 'brand'), { recursive: true })
@@ -127,29 +156,28 @@ export async function writeAppIcons(): Promise<number> {
     const border = Math.max(2, Math.round(size * 0.02))
     fillRect(canvas, border, border, size - border * 2, size - border * 2, PAPER)
 
-    // The logo, centred, on 76% of the width — inside the ~80% safe zone a
-    // maskable launcher may crop to a circle, with margin for the wide banner.
-    const artWidth = Math.round(size * 0.76)
-    const artHeight = Math.round((artWidth / logo.width) * logo.height)
-    drawScaled(
-      logo,
-      canvas,
-      Math.round((size - artWidth) / 2),
-      Math.round((size - artHeight) / 2),
-      artWidth,
-      artHeight,
-    )
+    // The house at the largest whole-number scale that stays inside ~70% of
+    // the canvas: within the ~80% circle a maskable launcher may crop to, and
+    // clear of the tessera mark in the corner. The favicon size has no mark to
+    // dodge, so it gets the full safe zone.
+    const zone = size === 64 ? 0.8 : 0.7
+    const k = Math.max(1, Math.floor((size * zone) / GRID))
+    const art = GRID * k
+    drawGrid(cells, canvas, Math.round((size - art) / 2), Math.round((size - art) / 2), k)
 
     // The four-tessera mark, bottom corner — the same 2x2 the wordmark wears.
-    const tile = Math.max(4, Math.round(size * 0.045))
-    const gap = Math.max(1, Math.round(tile * 0.2))
-    const baseX = size - border * 2 - tile * 2 - gap * 2
-    const baseY = size - border * 2 - tile * 2 - gap * 2
-    SEASONS.forEach((season, i) => {
-      const col = i % 2
-      const row = Math.floor(i / 2)
-      fillRect(canvas, baseX + col * (tile + gap), baseY + row * (tile + gap), tile, tile, season)
-    })
+    // Not at favicon size: four 3px squares in a 16px tab render as noise.
+    if (size !== 64) {
+      const tile = Math.max(4, Math.round(size * 0.045))
+      const gap = Math.max(1, Math.round(tile * 0.2))
+      const baseX = size - border * 2 - tile * 2 - gap * 2
+      const baseY = size - border * 2 - tile * 2 - gap * 2
+      SEASONS.forEach((season, i) => {
+        const col = i % 2
+        const row = Math.floor(i / 2)
+        fillRect(canvas, baseX + col * (tile + gap), baseY + row * (tile + gap), tile, tile, season)
+      })
+    }
 
     await writeFile(
       join(ASSETS_SHIP_DIR, 'brand', `app-icon-${size}.png`),

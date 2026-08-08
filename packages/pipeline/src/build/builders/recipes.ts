@@ -1,4 +1,5 @@
 import type { ArtifactFacet, BugFacet, ForageableFacet, Rarity, Recipe } from '@mistria/schema'
+import { consola } from 'consola'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
 import { artifactSource } from './artifacts.js'
@@ -10,29 +11,155 @@ const RARITIES: Record<string, Rarity> = {
   legendary: 'legendary',
 }
 
+/**
+ * craftType -> kind, and the skill each craftType trains.
+ *
+ * Food and Blacksmith name a skill both sources agree on; Milling and Refinery
+ * are stations, not skills, so their recipes carry a level-less `skill: null`
+ * rather than a guessed owner.
+ */
 const CRAFT_KINDS: Record<string, Recipe['kind']> = {
   food: 'cooking',
   cooking: 'cooking',
   crafting: 'crafting',
+  blacksmith: 'blacksmithing',
   blacksmithing: 'blacksmithing',
+  milling: 'crafting',
+  refinery: 'crafting',
   woodcrafting: 'woodcrafting',
   furniture: 'woodcrafting',
 }
 
+const SKILL_BY_KIND: Partial<Record<Recipe['kind'], string>> = {
+  cooking: 'cooking',
+  blacksmithing: 'blacksmithing',
+}
+
+/** Which game source file makes which kind of recipe. Furniture is skipped
+ *  until furniture items are ingested — the count is reported, not silent. */
+function kindForGameFile(file: string): Recipe['kind'] | null {
+  if (file.startsWith('furniture/')) return null
+  if (file.includes('cooked_dishes')) return 'cooking'
+  if (file.includes('blacksmithing') || file.includes('armor')) return 'blacksmithing'
+  return 'crafting'
+}
+
+function stationForGameFile(file: string): string | null {
+  if (file.includes('cooked_dishes')) return 'Food'
+  if (file.includes('blacksmithing') || file.includes('armor')) return 'Blacksmith'
+  if (file.includes('mill')) return 'Milling'
+  if (file.includes('materials')) return 'Refinery'
+  return null
+}
+
 /**
- * Recipes, with ingredients resolved from the separate `Ingredients` table.
+ * Recipes — from the game files where this clone has them, from the wiki's
+ * `Ingredients` table otherwise.
  *
- * `Recipes.ingredients` is rendered wikitext ("Apple (1)"); `Ingredients` is the
- * same data normalised as one row per ingredient with a real amount. Using the
- * latter avoids parsing quantities out of display text.
+ * The game path is preferred because it needs no resolution at all: every
+ * item's `recipe` array is internal ids and counts, verified 265/265 against
+ * the dataset. The wiki path joins two Cargo tables on display names, which
+ * works but is one rename away from a silent miss.
+ *
+ * `itemIds` is the set of item records actually being shipped this build.
+ * Both outputs and ingredients are gated on it, so a recipe can never point
+ * at a record that does not exist (refint would fail the build) — which is
+ * also what keeps the 1,085 furniture recipes out until furniture items are
+ * ingested, at which point they appear with no code change here.
  */
-export function buildRecipes(ctx: BuildContext): Recipe[] {
+export function buildRecipes(ctx: BuildContext, itemIds: Set<string>): Recipe[] {
+  const wiki = wikiRecipes(ctx)
+  const game = ctx.game
+  if (game === null) return wiki.sort((a, b) => a.id.localeCompare(b.id))
+
+  const wikiById = new Map(wiki.map((r) => [r.id, r]))
+  const out: Recipe[] = []
+  let furniture = 0
+  let unknownOutput = 0
+
+  for (const item of game.itemById.values()) {
+    if (item.recipe.length === 0) continue
+    const kind = kindForGameFile(item.file)
+    if (kind === null) {
+      furniture += 1
+      continue
+    }
+    if (!itemIds.has(item.id)) {
+      unknownOutput += 1
+      continue
+    }
+
+    const ingredients = item.recipe
+      .filter((c) => itemIds.has(c.item))
+      .map((c) => ({ item_id: c.item, tag: null, quantity: Math.max(c.count, 1) }))
+    const gaps: string[] = []
+    if (ingredients.length !== item.recipe.length) gaps.push('unresolved_ingredients')
+
+    const fromWiki = wikiById.get(item.id)
+    const skillId = SKILL_BY_KIND[kind]
+    const level = item.crafting_level ?? fromWiki?.skill?.level ?? null
+
+    out.push({
+      id: item.id,
+      name: item.name ?? fromWiki?.name ?? item.id,
+      numeric_id: null,
+      numeric_id_game_version: null,
+      id_status: 'confirmed',
+      former_ids: [],
+      also_known_as: [],
+      game_version: game.version,
+      version_added: null,
+      confidence: 'verified',
+      prov: { '*': 'game_files' },
+      data_gaps: gaps,
+      icon_key: `recipe/${item.id}`,
+      wiki_page: fromWiki?.wiki_page ?? null,
+      blurb: null,
+
+      kind,
+      output: { item_id: item.id, quantity: 1 },
+      ingredients,
+      station: stationForGameFile(item.file) ?? fromWiki?.station ?? null,
+      station_level:
+        kind === 'cooking'
+          ? (item.kitchen_tier ?? fromWiki?.station_level ?? null)
+          : (fromWiki?.station_level ?? null),
+      skill: skillId !== undefined && level !== null ? { id: skillId, level } : null,
+      craft_minutes: item.craft_minutes ?? fromWiki?.craft_minutes ?? null,
+      unlock: fromWiki?.unlock ?? null,
+      effects: null,
+    })
+  }
+
+  if (furniture > 0 || unknownOutput > 0) {
+    consola.info(
+      `recipes: ${furniture} furniture recipes and ${unknownOutput} with un-ingested outputs ` +
+        'held back — they ship the build their items do',
+    )
+  }
+
+  // Wiki-only outputs the game files somehow lack (today: none — the game is
+  // a strict superset). Kept rather than dropped, so a clone whose extract
+  // predates a wiki addition still ships the wiki's answer.
+  const gameIds = new Set(out.map((r) => r.id))
+  for (const row of wiki) {
+    if (!gameIds.has(row.id) && itemIds.has(row.output.item_id)) out.push(row)
+  }
+
+  return out.sort((a, b) => a.id.localeCompare(b.id))
+}
+
+/**
+ * The wiki path: `Recipes` joined to `Ingredients` on the result's display
+ * name. The `ingredient` cell is wikitext (`[[File:apple.png|…]] [[Apple]]`),
+ * so it goes through the stripper — reading it as a bare name was the bug
+ * that left all 282 recipes ingredient-less for five milestones.
+ */
+function wikiRecipes(ctx: BuildContext): Recipe[] {
   const byResult = new Map<string, { item: string; amount: number }[]>()
   for (const row of ctx.ingredients) {
-    // Both are display names joined against itemByName, so they must be read the
-    // same way that map was keyed — decoded, not wikitext-stripped.
     const result = itemName(row.resultItem)
-    const ingredient = itemName(row.ingredient)
+    const ingredient = text(row.ingredient)
     if (result === '' || ingredient === '') continue
     const list = byResult.get(result) ?? []
     list.push({ item: ingredient, amount: toInteger(row.amount) ?? 1 })
@@ -54,6 +181,7 @@ export function buildRecipes(ctx: BuildContext): Recipe[] {
     if (!ctx.itemByName.has(outputName)) gaps.push('output_item')
 
     const kind = CRAFT_KINDS[text(row.craftType).toLowerCase()] ?? 'crafting'
+    const skillId = SKILL_BY_KIND[kind]
     const skillLevel = toInteger(row.skillLevel)
 
     return {
@@ -61,13 +189,13 @@ export function buildRecipes(ctx: BuildContext): Recipe[] {
       name: outputName,
       numeric_id: null,
       numeric_id_game_version: null,
-      id_status: 'provisional',
+      id_status: 'provisional' as const,
       former_ids: [],
       also_known_as: [],
       game_version: null,
       version_added: null,
-      confidence: 'wiki',
-      prov: { '*': 'wiki_cargo' },
+      confidence: 'wiki' as const,
+      prov: { '*': 'wiki_cargo' as const },
       data_gaps: gaps,
       icon_key: `recipe/${id}`,
       wiki_page: outputName.replace(/ /g, '_'),
@@ -78,14 +206,11 @@ export function buildRecipes(ctx: BuildContext): Recipe[] {
       ingredients,
       station: text(row.craftType) || null,
       station_level: toInteger(row.workbenchLevel),
-      // The skill is implied by craftType rather than named, so the id is left
-      // for D3 when the skills table lands. Recording the level alone would
-      // mean a requirement that points at nothing.
-      skill: null,
+      skill:
+        skillId !== undefined && skillLevel !== null ? { id: skillId, level: skillLevel } : null,
       craft_minutes: toInteger(row.time),
       unlock: toTokens(row.recipeSource).length > 0 ? { method: 'shop', source_id: null } : null,
       effects: null,
-      ...(skillLevel === null ? {} : {}),
     }
   })
 }

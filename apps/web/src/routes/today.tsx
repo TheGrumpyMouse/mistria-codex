@@ -5,13 +5,16 @@ import { DayDial, type DayMark } from '~/components/DayDial'
 import { FindableRow } from '~/components/FindableList'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
+import { SpoilerChip } from '~/components/Spoiler'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, findAvailable, groupByKind, KIND_LABELS } from '~/lib/findable'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
+import { useSpoilers } from '~/lib/spoilers'
 
 interface CharacterRecord {
   id: string
   name: string
+  spoiler?: boolean
   icon_key: string | null
   birthday: { season: string; day: number } | null
 }
@@ -19,8 +22,10 @@ interface CharacterRecord {
 interface FestivalRecord {
   id: string
   name: string
+  unreleased?: boolean
   icon_key: string | null
   date: { season: string; day: number } | null
+  location_id: string | null
   implemented: boolean
 }
 
@@ -92,6 +97,8 @@ export function TodayRoute() {
     }
   }, [])
 
+  const spoilers = useSpoilers()
+
   // The tiles' faces: every birthday and festival in the visible season.
   const marks = useMemo(() => {
     const byDay: Record<number, DayMark[]> = {}
@@ -100,22 +107,28 @@ export function TodayRoute() {
     }
     for (const person of data?.characters ?? []) {
       if (person.birthday?.season !== instant.season) continue
+      // A veiled character's tile mark carries neither face nor name — the
+      // tooltip and the screen-reader label are exactly as informed as the eye.
+      const veiled = person.spoiler === true && !spoilers.shown(person.id)
       add(person.birthday.day, {
         kind: 'birthday',
-        iconKey: person.icon_key ?? `character/${person.id}`,
-        label: `${person.name}'s birthday`,
+        iconKey: veiled ? 'spoiler/hidden' : (person.icon_key ?? `character/${person.id}`),
+        label: veiled ? 'A birthday — story spoiler' : `${person.name}'s birthday`,
       })
     }
     for (const festival of data?.festivals ?? []) {
       if (festival.date?.season !== instant.season) continue
+      // A festival the game does not run yet keeps its tile mark but not its
+      // name or banner — same rule as the veiled birthday above.
+      const veiled = festival.unreleased === true && !spoilers.shown(festival.id)
       add(festival.date.day, {
         kind: 'festival',
-        iconKey: festival.icon_key ?? `festival/${festival.id}`,
-        label: festival.name,
+        iconKey: veiled ? 'spoiler/hidden' : (festival.icon_key ?? `festival/${festival.id}`),
+        label: veiled ? 'A festival — coming later' : festival.name,
       })
     }
     return byDay
-  }, [data, instant.season])
+  }, [data, instant.season, spoilers])
 
   const birthdays = useMemo(
     () =>
@@ -174,46 +187,87 @@ export function TodayRoute() {
 
         {data !== null && (birthdays.length > 0 || festivals.length > 0) && (
           <section aria-label="On this day" className="-mt-1 flex flex-col gap-2">
-            {birthdays.map((person) => (
-              <Link
-                key={person.id}
-                to="/villager/$id"
-                params={{ id: person.id }}
-                className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2 transition-colors hover:bg-sunk"
-              >
-                <ItemIcon
-                  iconKey={person.icon_key ?? `character/${person.id}`}
-                  name={person.name}
-                  size="sm"
-                />
-                <span className="text-ink text-sm">
-                  {person.name}
-                  <span className="text-ink-mute">’s birthday — bring a loved gift</span>
-                </span>
-              </Link>
-            ))}
-            {festivals.map((festival) => (
-              <div
-                key={festival.id}
-                className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2"
-              >
-                <ItemIcon
-                  iconKey={festival.icon_key ?? `festival/${festival.id}`}
-                  name={festival.name}
-                  size="sm"
-                />
-                <span className="text-ink text-sm">
-                  {festival.name}
-                  {/* The files describe it and the game does not run it — worth
-                      knowing before planning a day around it. */}
-                  {!festival.implemented && (
-                    <span className="unverified ml-2 rounded-tile px-1.5 py-0.5 text-[10px]">
-                      not yet in the game
-                    </span>
-                  )}
-                </span>
-              </div>
-            ))}
+            {birthdays.map((person) =>
+              person.spoiler === true && !spoilers.shown(person.id) ? (
+                // The card exists and still navigates; the villager page asks.
+                <Link
+                  key={person.id}
+                  to="/villager/$id"
+                  params={{ id: person.id }}
+                  className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2 transition-colors hover:bg-sunk"
+                >
+                  <SpoilerChip />
+                  <span className="text-ink-mute text-sm">a birthday</span>
+                </Link>
+              ) : (
+                <Link
+                  key={person.id}
+                  to="/villager/$id"
+                  params={{ id: person.id }}
+                  className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2 transition-colors hover:bg-sunk"
+                >
+                  <ItemIcon
+                    iconKey={person.icon_key ?? `character/${person.id}`}
+                    name={person.name}
+                    size="sm"
+                  />
+                  <span className="text-ink text-sm">
+                    {person.name}
+                    <span className="text-ink-mute">’s birthday — bring a loved gift</span>
+                  </span>
+                </Link>
+              ),
+            )}
+            {festivals.map((festival) =>
+              festival.unreleased === true && !spoilers.shown(festival.id) ? (
+                // Described by the wiki, not run by the game. Hidden until
+                // asked for — the tap is the ask, since a festival has no
+                // detail page to do the asking.
+                <button
+                  key={festival.id}
+                  type="button"
+                  onClick={() => spoilers.reveal(festival.id)}
+                  className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2 text-left"
+                >
+                  <SpoilerChip reason="unreleased" />
+                  <span className="text-ink-faint text-xs">tap to show</span>
+                </button>
+              ) : (
+                <div
+                  key={festival.id}
+                  className="flex items-center gap-3 rounded-card border border-rule bg-surface px-3 py-2"
+                >
+                  <ItemIcon
+                    iconKey={festival.icon_key ?? `festival/${festival.id}`}
+                    name={festival.name}
+                    size="sm"
+                  />
+                  <span className="text-ink text-sm">
+                    {festival.name}
+                    {festival.location_id !== null && (
+                      <>
+                        <span className="text-ink-mute"> — at </span>
+                        <Link
+                          to="/place/$id"
+                          params={{ id: festival.location_id }}
+                          className="text-ink-mute underline decoration-rule underline-offset-4 hover:text-ink"
+                        >
+                          {data.locationNames.get(festival.location_id) ??
+                            festival.location_id.replace(/_/g, ' ')}
+                        </Link>
+                      </>
+                    )}
+                    {/* Revealed but still not runnable — the badge keeps saying
+                      so before someone plans a day around it. */}
+                    {!festival.implemented && (
+                      <span className="unverified ml-2 rounded-tile px-1.5 py-0.5 text-[10px]">
+                        not yet in the game
+                      </span>
+                    )}
+                  </span>
+                </div>
+              ),
+            )}
           </section>
         )}
 

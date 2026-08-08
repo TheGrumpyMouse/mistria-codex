@@ -178,6 +178,42 @@ export function findAvailable(index: AvailabilityIndex, instant: Instant): Finda
   }))
 }
 
+export interface FoundEntity {
+  id: string
+  kind: string
+  /** Which of the four seasons any rule here covers, as season names. */
+  seasonMask: number
+}
+
+/**
+ * Everything obtainable at a set of places, regardless of when.
+ *
+ * The planning-view complement to `findAvailable`: no instant, just "what
+ * comes from here". Takes a *set* of location ids because a region and the
+ * buildings inside it are different location records — the map's region panel
+ * passes the region plus its children, so a fish caught at the Tackle Shop's
+ * pier still counts as "at the Beach". Seasons are unioned across rules the
+ * same way `findAvailable` unions locations.
+ */
+export function foundAt(index: AvailabilityIndex, placeIds: Set<string>): FoundEntity[] {
+  const byEntity = new Map<string, FoundEntity>()
+
+  for (const rule of index.rules) {
+    if (rule.loc === null) continue
+    const locationId = index.locations[rule.loc]
+    if (locationId === undefined || !placeIds.has(locationId)) continue
+
+    const existing = byEntity.get(rule.e)
+    if (existing === undefined) {
+      byEntity.set(rule.e, { id: rule.e, kind: rule.k, seasonMask: rule.sea })
+    } else {
+      existing.seasonMask |= rule.sea
+    }
+  }
+
+  return [...byEntity.values()]
+}
+
 /** Group findables by kind, in the order the Today view shows them. */
 export const KIND_ORDER = [
   'forage',

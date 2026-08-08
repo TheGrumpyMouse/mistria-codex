@@ -77,6 +77,37 @@ export function routeFor(
   return '/item/$id'
 }
 
+/**
+ * Quest display name -> id, unique names only.
+ *
+ * Shipped rule tokens carry display names, and six request names are
+ * duplicated within the quest category — a last-write-wins map would link
+ * those to the wrong record, so a colliding name is dropped instead. None of
+ * the names that actually appear in rule tokens collide today; if one ever
+ * does, its pill degrades to text rather than lying.
+ */
+/**
+ * The typed-it exemption: a veiled search result shows its real name when the
+ * query already is that name (or the start of it, three letters or more).
+ * Someone typing "caldarus" is not being spoiled by the answer "Caldarus" —
+ * redacting it would just look broken. Spoiler aliases count; the plain
+ * category or a stray substring does not.
+ */
+export function typedTheName(entry: { n: string; sa?: string[] }, query: string): boolean {
+  const needle = fold(query.trim())
+  if (needle.length < 3) return false
+  return [entry.n, ...(entry.sa ?? [])].some((name) => fold(name).startsWith(needle))
+}
+
+export function questIdByName(index: DisplayIndex): Map<string, string> {
+  const byName = new Map<string, string | null>()
+  for (const [id, entry] of Object.entries(index)) {
+    if (entry.c !== 'quest') continue
+    byName.set(entry.n, byName.has(entry.n) ? null : id)
+  }
+  return new Map([...byName].flatMap(([name, id]) => (id === null ? [] : [[name, id]])))
+}
+
 export function search(index: DisplayIndex, query: string): SearchHit[] {
   const needle = fold(query.trim())
   if (needle === '') return []
@@ -91,8 +122,10 @@ export function search(index: DisplayIndex, query: string): SearchHit[] {
 
     // Best alias, not first: a record with several other names should be ranked
     // by the one that matches you best, the same as its display name would be.
+    // Spoiler aliases are searched too — someone who has met Seridia must find
+    // her — and the typed-it exemption is what lets the row say why it matched.
     let best: { rank: number; via: string } | null = null
-    for (const alias of entry.a ?? []) {
+    for (const alias of [...(entry.a ?? []), ...(entry.sa ?? [])]) {
       const aliasRank = rankOf(alias, needle)
       if (aliasRank !== null && (best === null || aliasRank < best.rank)) {
         best = { rank: aliasRank, via: alias }

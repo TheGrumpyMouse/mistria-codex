@@ -1,9 +1,12 @@
-import { Link } from '@tanstack/react-router'
+import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
-import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { loadDataset, loadDisplayIndex } from '~/lib/data'
 import { doneIn, setDone } from '~/lib/progress'
+import { useData } from '~/lib/use-data'
+
+const route = getRouteApi('/museum')
 
 /**
  * The museum, and what it is still missing.
@@ -34,23 +37,41 @@ const WINGS = [
 ] as const
 
 export function MuseumRoute() {
-  const [sets, setSets] = useState<MuseumSet[] | null>(null)
-  const [index, setIndex] = useState<DisplayIndex>({})
+  // Wing and filter live in the URL, so back from an item page restores the
+  // same tab, the same rows, and (with the data cache) the same scroll.
+  const searchParams = route.useSearch()
+  const navigate = route.useNavigate()
+  const wing = searchParams.wing ?? 'archaeology'
+  const query = searchParams.q ?? ''
+  const setWing = (w: string): void =>
+    void navigate({
+      search: ({ wing: _, ...rest }) => (w === 'archaeology' ? rest : { ...rest, wing: w }),
+      replace: true,
+    })
+  const setQuery = (q: string): void =>
+    void navigate({
+      search: ({ q: _, ...rest }) => (q === '' ? rest : { ...rest, q }),
+      replace: true,
+    })
+
+  // The almanac halves are cached for the back button; the ticks are read
+  // fresh every mount — they change while the app runs (including on the
+  // item pages, which write the same museum:<id> keys).
+  const { data } = useData('museum', async () => {
+    const [sets, index] = await Promise.all([
+      loadDataset<MuseumSet>('museum_sets'),
+      loadDisplayIndex(),
+    ])
+    return { sets, index }
+  })
+  const sets = data?.sets ?? null
+  const index = data?.index ?? {}
   const [donated, setDonated] = useState<Set<string>>(new Set())
-  const [wing, setWing] = useState<string>('archaeology')
   const [gapsOnly, setGapsOnly] = useState(false)
-  const [query, setQuery] = useState('')
 
   useEffect(() => {
     let live = true
-    Promise.all([loadDataset<MuseumSet>('museum_sets'), loadDisplayIndex(), doneIn('museum')])
-      .then(([loadedSets, loadedIndex, done]) => {
-        if (!live) return
-        setSets(loadedSets)
-        setIndex(loadedIndex)
-        setDonated(done)
-      })
-      .catch(() => live && setSets([]))
+    doneIn('museum').then((done) => live && setDonated(done))
     return () => {
       live = false
     }

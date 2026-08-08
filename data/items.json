@@ -119,7 +119,13 @@
       "Forageable",
       "Junk Item"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deluxe_hay",
+      "deluxe_small_animal_feed",
+      "sapling_oak",
+      "ultimate_hay",
+      "ultimate_small_animal_feed"
+    ],
     "version_added": null,
     "wiki_page": "Acorn"
   },
@@ -1810,7 +1816,9 @@
     "tags": [
       "Bug"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_core"
+    ],
     "version_added": null,
     "wiki_page": "Ancient_Firefly"
   },
@@ -2445,7 +2453,11 @@
       "Crop",
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "apple_juice",
+      "apple_pie"
+    ],
     "version_added": null,
     "wiki_page": "Apple"
   },
@@ -2920,7 +2932,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "incredibly_hot_pot"
+    ],
     "version_added": null,
     "wiki_page": "Ash_Mushroom"
   },
@@ -3426,7 +3440,12 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "gazpacho",
+      "herb_salad",
+      "tomato_soup",
+      "vegetable_soup"
+    ],
     "version_added": null,
     "wiki_page": "Basil"
   },
@@ -3751,7 +3770,11 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "beet_salad",
+      "beet_soup",
+      "mushroom_steak_dinner"
+    ],
     "version_added": null,
     "wiki_page": "Beet"
   },
@@ -4006,7 +4029,9 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "bell_berry_bakewell_tart"
+    ],
     "version_added": null,
     "wiki_page": "Bell_Berry"
   },
@@ -4594,7 +4619,9 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "blackberry_jam"
+    ],
     "version_added": null,
     "wiki_page": "Blackberry"
   },
@@ -5257,7 +5284,10 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "berry_bowl",
+      "blueberry_jam"
+    ],
     "version_added": null,
     "wiki_page": "Blueberry"
   },
@@ -5554,7 +5584,9 @@
       "Seasonal:Summer",
       "Seasonal:Winter"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "seafood_snow_pea_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Bonito"
   },
@@ -5777,7 +5809,15 @@
       "Food",
       "Food:Misc. Pantry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cucumber_sandwich",
+      "garlic_bread",
+      "grilled_cheese",
+      "jam_sandwich",
+      "lobster_roll",
+      "pineshroom_toast",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Bread"
   },
@@ -5909,7 +5949,9 @@
       "Fish",
       "Seasonal:Summer"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "pan_fried_bream"
+    ],
     "version_added": null,
     "wiki_page": "Bream"
   },
@@ -6296,7 +6338,12 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "broccoli_salad",
+      "harvest_plate",
+      "sesame_broccoli",
+      "steamed_broccoli"
+    ],
     "version_added": null,
     "wiki_page": "Broccoli"
   },
@@ -7086,7 +7133,10 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "braised_burdock",
+      "winter_stew"
+    ],
     "version_added": null,
     "wiki_page": "Burdock_Root"
   },
@@ -7177,7 +7227,30 @@
       "Milling",
       "Ingredients"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "bell_berry_bakewell_tart",
+      "buttered_peas",
+      "caramel_candy",
+      "cauliflower_curry",
+      "clam_chowder",
+      "coconut_cream_pie",
+      "cod_with_thyme",
+      "garlic_bread",
+      "glowberry_cookies",
+      "grilled_cheese",
+      "herb_butter_pasta",
+      "ice_cream_sundae",
+      "loaded_baked_potato",
+      "mont_blanc",
+      "mushroom_steak_dinner",
+      "omelet",
+      "perch_risotto",
+      "rosemary_garlic_noodles",
+      "seafood_boil",
+      "spicy_cheddar_biscuit",
+      "spring_galette",
+      "turnip_and_potato_gratin"
+    ],
     "version_added": null,
     "wiki_page": "Butter"
   },
@@ -7475,7 +7548,11 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "beet_soup",
+      "cabbage_slaw",
+      "turnip_and_cabbage_salad"
+    ],
     "version_added": null,
     "wiki_page": "Cabbage"
   },
@@ -9004,7 +9081,12 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "beet_soup",
+      "braised_carrots",
+      "fried_rice",
+      "vegetable_pot_pie"
+    ],
     "version_added": null,
     "wiki_page": "Carrot"
   },
@@ -9303,7 +9385,9 @@
     "tags": [
       "Fish"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "breaded_catfish"
+    ],
     "version_added": null,
     "wiki_page": "Catfish"
   },
@@ -9643,7 +9727,11 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cauliflower_curry",
+      "mushroom_steak_dinner",
+      "roasted_cauliflower"
+    ],
     "version_added": null,
     "wiki_page": "Cauliflower"
   },
@@ -9939,7 +10027,11 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "chili_coconut_curry",
+      "miners_mushroom_stew",
+      "sea_bream_rice"
+    ],
     "version_added": null,
     "wiki_page": "Cave_Mushroom"
   },
@@ -10389,7 +10481,18 @@
       "milling",
       "ingredients"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cucumber_sandwich",
+      "grilled_cheese",
+      "loaded_baked_potato",
+      "omelet",
+      "onion_soup",
+      "pizza",
+      "spicy_cheddar_biscuit",
+      "spring_galette",
+      "turnip_and_potato_gratin",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Cheese"
   },
@@ -10464,7 +10567,11 @@
       "Crop",
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cherry_cobbler",
+      "cherry_smoothie",
+      "cherry_tart"
+    ],
     "version_added": null,
     "wiki_page": "Cherry"
   },
@@ -10895,7 +11002,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "mont_blanc",
+      "roasted_chestnuts"
+    ],
     "version_added": null,
     "wiki_page": "Chestnut"
   },
@@ -11136,7 +11246,24 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "caldosian_chocolate_cake",
+      "crab_cakes",
+      "crystal_berry_pie",
+      "deviled_eggs",
+      "fried_rice",
+      "glowberry_cookies",
+      "hard_boiled_egg",
+      "lemon_pie",
+      "mayonnaise",
+      "mont_blanc",
+      "moon_fruit_cake",
+      "omelet",
+      "pudding",
+      "pumpkin_pie",
+      "quiche",
+      "vegetable_quiche"
+    ],
     "version_added": null,
     "wiki_page": "Chicken_Egg"
   },
@@ -11529,7 +11656,10 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "chickpea_curry",
+      "crunchy_chickpeas"
+    ],
     "version_added": null,
     "wiki_page": "Chickpea"
   },
@@ -11822,7 +11952,15 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "chili_coconut_curry",
+      "fish_tacos",
+      "spicy_cheddar_biscuit",
+      "spicy_corn",
+      "spicy_crab_sushi",
+      "spicy_water_chestnuts",
+      "summer_salad"
+    ],
     "version_added": null,
     "wiki_page": "Chili_Pepper"
   },
@@ -12116,7 +12254,13 @@
       "Food",
       "Food:Choco"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "caldosian_chocolate_cake",
+      "golden_cookies",
+      "hot_cocoa",
+      "ice_cream_sundae",
+      "mocha"
+    ],
     "version_added": null,
     "wiki_page": "Chocolate"
   },
@@ -12751,7 +12895,9 @@
       "Fish:Diveable",
       "Fish:Diving Only"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "clam_chowder"
+    ],
     "version_added": null,
     "wiki_page": "Clam"
   },
@@ -13371,7 +13517,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "coconut_cream_pie",
+      "coconut_milk"
+    ],
     "version_added": null,
     "wiki_page": "Coconut"
   },
@@ -13471,7 +13620,10 @@
       "Food",
       "Food:Cold Drinks"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "chili_coconut_curry",
+      "coconut_cream_pie"
+    ],
     "version_added": null,
     "wiki_page": "Coconut_Milk"
   },
@@ -13593,7 +13745,10 @@
       "Seasonal:Summer",
       "Seasonal:Winter"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cod_with_thyme",
+      "fish_tacos"
+    ],
     "version_added": null,
     "wiki_page": "Cod"
   },
@@ -13818,7 +13973,11 @@
       "Food:Caffeine",
       "Food:Food Without Recipes"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "iced_coffee",
+      "latte",
+      "mocha"
+    ],
     "version_added": null,
     "wiki_page": "Coffee"
   },
@@ -14584,7 +14743,21 @@
       "Blacksmith",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "axe_copper",
+      "copper_armor",
+      "copper_greaves",
+      "copper_helmet",
+      "copper_legplates",
+      "copper_ring",
+      "fishing_rod_copper",
+      "hoe_copper",
+      "net_copper",
+      "pick_axe_copper",
+      "shovel_copper",
+      "sword_copper",
+      "watering_can_copper"
+    ],
     "version_added": null,
     "wiki_page": "Copper_Ingot"
   },
@@ -14825,7 +14998,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "copper_ingot"
+    ],
     "version_added": null,
     "wiki_page": "Copper_Ore"
   },
@@ -15382,7 +15557,13 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "fish_tacos",
+      "grilled_corn",
+      "seafood_boil",
+      "spicy_corn",
+      "summer_salad"
+    ],
     "version_added": null,
     "wiki_page": "Corn"
   },
@@ -16579,7 +16760,11 @@
       "Fish",
       "Seasonal:Summer"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crab_cakes",
+      "seafood_boil",
+      "spicy_crab_sushi"
+    ],
     "version_added": null,
     "wiki_page": "Crab"
   },
@@ -16782,7 +16967,12 @@
       "Crop",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "broccoli_salad",
+      "cranberry_juice",
+      "cranberry_orange_scone",
+      "harvest_plate"
+    ],
     "version_added": null,
     "wiki_page": "Cranberry"
   },
@@ -17042,7 +17232,10 @@
       "Fish:Diveable",
       "Fish:Diving Only"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crayfish_etouffee",
+      "seafood_boil"
+    ],
     "version_added": null,
     "wiki_page": "Crayfish"
   },
@@ -17745,7 +17938,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crystal_berry_pie",
+      "spell_fruit_parfait"
+    ],
     "version_added": null,
     "wiki_page": "Crystal_Berries"
   },
@@ -18491,7 +18687,14 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cucumber_salad",
+      "cucumber_sandwich",
+      "gazpacho",
+      "sesame_tuna_bowl",
+      "summer_salad",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Cucumber"
   },
@@ -18713,7 +18916,13 @@
     "tags": [
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "cauliflower_curry",
+      "chickpea_curry",
+      "chili_coconut_curry",
+      "deluxe_curry"
+    ],
     "version_added": null,
     "wiki_page": "Curry_Powder"
   },
@@ -19055,7 +19264,10 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "simmered_daikon",
+      "winter_stew"
+    ],
     "version_added": null,
     "wiki_page": "Daikon_Radish"
   },
@@ -20021,7 +20233,9 @@
       "Material",
       "Refinery"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "engagement_ring"
+    ],
     "version_added": null,
     "wiki_page": "Diamond"
   },
@@ -20294,7 +20508,11 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crab_cakes",
+      "cucumber_salad",
+      "herb_salad"
+    ],
     "version_added": null,
     "wiki_page": "Dill"
   },
@@ -21052,7 +21270,9 @@
       "Missing Data",
       "Dragon-forged"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "engagement_ring"
+    ],
     "version_added": null,
     "wiki_page": "Dragon-Forged_Core"
   },
@@ -21828,7 +22048,9 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "duck_mayonnaise"
+    ],
     "version_added": null,
     "wiki_page": "Duck_Egg"
   },
@@ -22497,7 +22719,11 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crispy_fried_earthshroom",
+      "incredibly_hot_pot",
+      "sea_bream_rice"
+    ],
     "version_added": null,
     "wiki_page": "Earthshroom"
   },
@@ -23407,7 +23633,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cabbage_slaw",
+      "spring_salad"
+    ],
     "version_added": null,
     "wiki_page": "Fennel"
   },
@@ -23458,7 +23687,9 @@
       "Junk Item",
       "Diveable Item"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "paper"
+    ],
     "version_added": null,
     "wiki_page": "Fiber"
   },
@@ -23536,7 +23767,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "spring_galette",
+      "spring_salad"
+    ],
     "version_added": null,
     "wiki_page": "Fiddlehead"
   },
@@ -24207,7 +24441,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "incredibly_hot_pot"
+    ],
     "version_added": null,
     "wiki_page": "Flame_Pepper"
   },
@@ -24461,7 +24697,42 @@
       "Ingredient",
       "Milling"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_pie",
+      "bell_berry_bakewell_tart",
+      "bread",
+      "breaded_catfish",
+      "caldosian_chocolate_cake",
+      "cherry_tart",
+      "coconut_cream_pie",
+      "crab_cakes",
+      "cranberry_orange_scone",
+      "crispy_fried_earthshroom",
+      "crystal_berry_pie",
+      "glowberry_cookies",
+      "golden_cheesecake",
+      "golden_cookies",
+      "horseradish_salmon",
+      "ice_cream_sundae",
+      "lemon_pie",
+      "mont_blanc",
+      "moon_fruit_cake",
+      "noodles",
+      "pizza",
+      "pumpkin_pie",
+      "quiche",
+      "sour_lemon_cake",
+      "spicy_cheddar_biscuit",
+      "spring_galette",
+      "strawberry_shortcake",
+      "sweet_potato_pie",
+      "sweet_sesame_balls",
+      "vegetable_pot_pie",
+      "vegetable_quiche",
+      "water_chestnut_fritters",
+      "wildberry_pie",
+      "wildberry_scone"
+    ],
     "version_added": null,
     "wiki_page": "Flour"
   },
@@ -25039,7 +25310,9 @@
       "Fish",
       "Seasonal:Winter"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "grilled_eel_rice_bowl"
+    ],
     "version_added": null,
     "wiki_page": "Freshwater_Eel"
   },
@@ -25955,7 +26228,11 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "garlic_bread",
+      "perch_risotto",
+      "rosemary_garlic_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Garlic"
   },
@@ -27073,7 +27350,9 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "glowberry_cookies"
+    ],
     "version_added": null,
     "wiki_page": "Glowberry"
   },
@@ -27639,7 +27918,22 @@
     "tags": [
       "Blacksmith"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "axe_gold",
+      "engagement_ring",
+      "fishing_rod_gold",
+      "gold_armor",
+      "gold_greaves",
+      "gold_helmet",
+      "gold_legplates",
+      "gold_ring",
+      "hoe_gold",
+      "net_gold",
+      "pick_axe_gold",
+      "shovel_gold",
+      "sword_gold",
+      "watering_can_gold"
+    ],
     "version_added": null,
     "wiki_page": "Gold_Ingot"
   },
@@ -27789,7 +28083,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "gold_ingot"
+    ],
     "version_added": null,
     "wiki_page": "Gold_Ore"
   },
@@ -28229,7 +28525,10 @@
       "Milling",
       "Ingredients"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "golden_cheesecake",
+      "golden_cookies"
+    ],
     "version_added": null,
     "wiki_page": "Golden_Butter"
   },
@@ -28276,7 +28575,9 @@
       "milling",
       "ingredients"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "golden_cheesecake"
+    ],
     "version_added": null,
     "wiki_page": "Golden_Cheese"
   },
@@ -28418,7 +28719,9 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "golden_duck_mayonnaise"
+    ],
     "version_added": null,
     "wiki_page": "Golden_Duck_Egg"
   },
@@ -28606,7 +28909,11 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "golden_cheesecake",
+      "golden_cookies",
+      "golden_mayonnaise"
+    ],
     "version_added": null,
     "wiki_page": "Golden_Egg"
   },
@@ -28748,7 +29055,13 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "golden_butter",
+      "golden_cheese",
+      "golden_cheesecake",
+      "golden_cookies",
+      "spell_fruit_parfait"
+    ],
     "version_added": null,
     "wiki_page": "Golden_Milk"
   },
@@ -29197,7 +29510,12 @@
     "tags": [
       "Refinery"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deluxe_small_animal_feed",
+      "quality_small_animal_feed",
+      "small_grass_starter",
+      "ultimate_small_animal_feed"
+    ],
     "version_added": null,
     "wiki_page": "Grass_Seed"
   },
@@ -29472,7 +29790,9 @@
       "Food:Hot Drinks",
       "Food:Caffeine"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "roasted_rice_tea"
+    ],
     "version_added": null,
     "wiki_page": "Green_Tea"
   },
@@ -30133,7 +30453,11 @@
       "Refinery",
       "Junk Item"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deluxe_hay",
+      "quality_hay",
+      "ultimate_hay"
+    ],
     "version_added": null,
     "wiki_page": "Hay"
   },
@@ -31307,7 +31631,9 @@
       "Fish",
       "Seasonal:Winter"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "seafood_snow_pea_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Herring"
   },
@@ -31553,7 +31879,13 @@
       "Ingredient",
       "Honey"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "berry_bowl",
+      "cherry_smoothie",
+      "moon_fruit_cake",
+      "poached_pear"
+    ],
     "version_added": null,
     "wiki_page": "Honey"
   },
@@ -32329,7 +32661,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deviled_eggs",
+      "horseradish_salmon"
+    ],
     "version_added": null,
     "wiki_page": "Horseradish"
   },
@@ -32509,7 +32844,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "incredibly_hot_pot",
+      "seafood_boil"
+    ],
     "version_added": null,
     "wiki_page": "Hot_Potato"
   },
@@ -32859,7 +33197,12 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "ice_cream_sundae",
+      "iced_coffee",
+      "pomegranate_sorbet",
+      "wintergreen_ice_cream"
+    ],
     "version_added": null,
     "wiki_page": "Ice_Block"
   },
@@ -33845,7 +34188,21 @@
       "Blacksmith",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "axe_iron",
+      "fishing_rod_iron",
+      "hoe_iron",
+      "iron_armor",
+      "iron_greaves",
+      "iron_helmet",
+      "iron_legplates",
+      "iron_ring",
+      "net_iron",
+      "pick_axe_iron",
+      "shovel_iron",
+      "sword_iron",
+      "watering_can_iron"
+    ],
     "version_added": null,
     "wiki_page": "Iron_Ingot"
   },
@@ -33995,7 +34352,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "iron_ingot"
+    ],
     "version_added": null,
     "wiki_page": "Iron_Ore"
   },
@@ -34331,7 +34690,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deep_sea_soup",
+      "tide_salad"
+    ],
     "version_added": null,
     "wiki_page": "Jade_Dulse"
   },
@@ -34488,7 +34850,9 @@
       "Crop",
       "Flower"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "jasmine_tea"
+    ],
     "version_added": null,
     "wiki_page": "Jasmine"
   },
@@ -34938,7 +35302,9 @@
       "Fish",
       "Seasonal:Winter"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "seafood_snow_pea_noodles"
+    ],
     "version_added": null,
     "wiki_page": "King_Crab"
   },
@@ -35730,7 +36096,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "incredibly_hot_pot",
+      "spell_fruit_parfait"
+    ],
     "version_added": null,
     "wiki_page": "Lava_Chestnuts"
   },
@@ -36350,7 +36719,14 @@
     "tags": [
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "candied_lemon_peel",
+      "cup_of_tea",
+      "lemon_pie",
+      "lemonade",
+      "lobster_roll",
+      "sour_lemon_cake"
+    ],
     "version_added": null,
     "wiki_page": "Lemon"
   },
@@ -37223,7 +37599,9 @@
       "Fish",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "lobster_roll"
+    ],
     "version_added": null,
     "wiki_page": "Lobster"
   },
@@ -37567,7 +37945,9 @@
     "tags": [
       "Fish"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_powder"
+    ],
     "version_added": null,
     "wiki_page": "Luminescent_Crab"
   },
@@ -37737,7 +38117,10 @@
       "Fish",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "mackerel_sashimi",
+      "sushi_platter"
+    ],
     "version_added": null,
     "wiki_page": "Mackerel"
   },
@@ -38017,6 +38400,7 @@
       "Missing Data",
       "Unreleased"
     ],
+    "unreleased": true,
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Magnetic_Lure"
@@ -38382,7 +38766,16 @@
     "tags": [
       "milling"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "broccoli_salad",
+      "crab_cakes",
+      "cucumber_sandwich",
+      "deviled_eggs",
+      "fish_tacos",
+      "lobster_roll",
+      "spicy_corn",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Mayonnaise"
   },
@@ -38431,7 +38824,12 @@
       "Essence Stone",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_core",
+      "dragon_forged_fang",
+      "dragon_forged_horn",
+      "dragon_forged_powder"
+    ],
     "version_added": null,
     "wiki_page": "Medium_Essence_Stone"
   },
@@ -38887,7 +39285,36 @@
       "Animal Product",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "beet_soup",
+      "berries_and_cream",
+      "butter",
+      "cheese",
+      "cherry_smoothie",
+      "clam_chowder",
+      "cranberry_orange_scone",
+      "hot_cocoa",
+      "ice_cream_sundae",
+      "iced_coffee",
+      "latte",
+      "mocha",
+      "mont_blanc",
+      "omelet",
+      "onion_soup",
+      "peaches_and_cream",
+      "potato_soup",
+      "pudding",
+      "pumpkin_pie",
+      "pumpkin_stew",
+      "quiche",
+      "smoked_trout_soup",
+      "strawberries_and_cream",
+      "strawberry_shortcake",
+      "tomato_soup",
+      "vegetable_quiche",
+      "wildberry_scone",
+      "wintergreen_ice_cream"
+    ],
     "version_added": null,
     "wiki_page": "Milk"
   },
@@ -39418,7 +39845,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deep_sea_soup",
+      "seafood_boil"
+    ],
     "version_added": null,
     "wiki_page": "Mines_Mussels"
   },
@@ -40304,7 +40734,24 @@
     "tags": [
       "Blacksmith"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "axe_mistril",
+      "dragon_forged_core",
+      "dragon_forged_powder",
+      "engagement_ring",
+      "fishing_rod_mistril",
+      "hoe_mistril",
+      "mistril_armor",
+      "mistril_boots",
+      "mistril_helmet",
+      "mistril_legplates",
+      "mistril_ring",
+      "net_mistril",
+      "pick_axe_mistril",
+      "shovel_mistril",
+      "sword_mistril",
+      "watering_can_mistril"
+    ],
     "version_added": null,
     "wiki_page": "Mistril_Ingot"
   },
@@ -40451,7 +40898,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "mistril_ingot"
+    ],
     "version_added": null,
     "wiki_page": "Mistril_Ore"
   },
@@ -41190,7 +41639,10 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_core",
+      "monster_cookie"
+    ],
     "version_added": null,
     "wiki_page": "Monster_Core"
   },
@@ -41238,7 +41690,10 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_fang",
+      "monster_mash"
+    ],
     "version_added": null,
     "wiki_page": "Monster_Fang"
   },
@@ -41335,7 +41790,10 @@
       "Monster Drop",
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_horn",
+      "monster_mash"
+    ],
     "version_added": null,
     "wiki_page": "Monster_Horn"
   },
@@ -41430,7 +41888,11 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_powder",
+      "monster_cookie",
+      "monster_mash"
+    ],
     "version_added": null,
     "wiki_page": "Monster_Powder"
   },
@@ -41478,7 +41940,9 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "monster_mash"
+    ],
     "version_added": null,
     "wiki_page": "Monster_Shell"
   },
@@ -41733,7 +42197,10 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "caramelized_moon_fruit",
+      "moon_fruit_cake"
+    ],
     "version_added": null,
     "wiki_page": "Moon_Fruit"
   },
@@ -42022,7 +42489,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "mushroom_rice",
+      "spring_galette"
+    ],
     "version_added": null,
     "wiki_page": "Morel_Mushroom"
   },
@@ -42662,7 +43132,9 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "spring_salad"
+    ],
     "version_added": null,
     "wiki_page": "Nettle"
   },
@@ -42977,7 +43449,11 @@
       "Food",
       "Food:Misc. Pantry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "herb_butter_pasta",
+      "rosemary_garlic_noodles",
+      "seafood_snow_pea_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Noodles"
   },
@@ -43445,7 +43921,19 @@
     "tags": [
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "breaded_catfish",
+      "crispy_fried_earthshroom",
+      "horseradish_salmon",
+      "pan_fried_bream",
+      "pan_fried_salmon",
+      "pan_fried_snapper",
+      "seaweed_salad",
+      "sweet_sesame_balls",
+      "toasted_sunflower_seeds",
+      "turnip_and_cabbage_salad",
+      "water_chestnut_fritters"
+    ],
     "version_added": null,
     "wiki_page": "Oil"
   },
@@ -43566,7 +44054,13 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "beet_soup",
+      "harvest_plate",
+      "onion_soup",
+      "pumpkin_stew"
+    ],
     "version_added": null,
     "wiki_page": "Onion"
   },
@@ -43765,7 +44259,11 @@
       "Crop",
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cranberry_orange_scone",
+      "marmalade",
+      "orange_juice"
+    ],
     "version_added": null,
     "wiki_page": "Orange"
   },
@@ -44091,7 +44589,10 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "herb_butter_pasta",
+      "herb_salad"
+    ],
     "version_added": null,
     "wiki_page": "Oregano"
   },
@@ -44242,7 +44743,10 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "mushroom_steak_dinner",
+      "winter_stew"
+    ],
     "version_added": null,
     "wiki_page": "Oyster_Mushroom"
   },
@@ -44852,7 +45356,9 @@
     "tags": [
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "peaches_and_cream"
+    ],
     "version_added": null,
     "wiki_page": "Peach"
   },
@@ -45051,7 +45557,9 @@
     "tags": [
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "poached_pear"
+    ],
     "version_added": null,
     "wiki_page": "Pear"
   },
@@ -45289,7 +45797,11 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "buttered_peas",
+      "fried_rice",
+      "vegetable_pot_pie"
+    ],
     "version_added": null,
     "wiki_page": "Peas"
   },
@@ -45540,7 +46052,9 @@
       "Fish",
       "Seasonal:Fall"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "perch_risotto"
+    ],
     "version_added": null,
     "wiki_page": "Perch"
   },
@@ -47439,7 +47953,9 @@
       "Fish",
       "Fish:Diveable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "fish_skewer"
+    ],
     "version_added": null,
     "wiki_page": "Pike"
   },
@@ -47567,7 +48083,9 @@
       "Forageable",
       "Junk Item"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sapling_pine"
+    ],
     "version_added": null,
     "wiki_page": "Pinecone"
   },
@@ -47644,7 +48162,9 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "pineshroom_toast"
+    ],
     "version_added": null,
     "wiki_page": "Pineshroom"
   },
@@ -47838,7 +48358,10 @@
     "stamina": null,
     "subcategory": null,
     "tags": [],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_core",
+      "dragon_forged_powder"
+    ],
     "version_added": null,
     "wiki_page": "Pink_Diamond"
   },
@@ -48816,7 +49339,10 @@
       "Crop",
       "Fruit"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "pomegranate_juice",
+      "pomegranate_sorbet"
+    ],
     "version_added": null,
     "wiki_page": "Pomegranate"
   },
@@ -49314,7 +49840,17 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "baked_potato",
+      "beet_soup",
+      "deluxe_curry",
+      "loaded_baked_potato",
+      "potato_soup",
+      "turnip_and_potato_gratin",
+      "vegetable_pot_pie",
+      "vegetable_quiche",
+      "vegetable_soup"
+    ],
     "version_added": null,
     "wiki_page": "Potato"
   },
@@ -49909,7 +50445,11 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "harvest_plate",
+      "pumpkin_pie",
+      "pumpkin_stew"
+    ],
     "version_added": null,
     "wiki_page": "Pumpkin"
   },
@@ -51460,6 +52000,7 @@
       "Unreleased",
       "Missing Data"
     ],
+    "unreleased": true,
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Raindrop_Beetle"
@@ -52409,7 +52950,11 @@
       "Seasonal:Fall",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "fish_stew",
+      "pan_fried_snapper",
+      "red_snapper_sushi"
+    ],
     "version_added": null,
     "wiki_page": "Red_Snapper"
   },
@@ -52594,7 +53139,9 @@
       "Food:Alcohol",
       "Food:Food Without Recipes"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "poached_pear"
+    ],
     "version_added": null,
     "wiki_page": "Red_Wine"
   },
@@ -53002,7 +53549,25 @@
       "Ingredient",
       "Milling"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "cauliflower_curry",
+      "chickpea_curry",
+      "chili_coconut_curry",
+      "crayfish_etouffee",
+      "deluxe_curry",
+      "fried_rice",
+      "grilled_eel_rice_bowl",
+      "mushroom_rice",
+      "perch_risotto",
+      "red_snapper_sushi",
+      "riceball",
+      "roasted_rice_tea",
+      "sea_bream_rice",
+      "sesame_tuna_bowl",
+      "spicy_crab_sushi",
+      "sushi_platter"
+    ],
     "version_added": null,
     "wiki_page": "Rice"
   },
@@ -53205,7 +53770,9 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "rice"
+    ],
     "version_added": null,
     "wiki_page": "Rice_Stalk"
   },
@@ -54802,7 +55369,15 @@
     "tags": [
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "canned_sardines",
+      "crunchy_chickpeas",
+      "dried_squid",
+      "grilled_cheese",
+      "riceball",
+      "salted_watermelon",
+      "toasted_sunflower_seeds"
+    ],
     "version_added": null,
     "wiki_page": "Rock_Salt"
   },
@@ -55361,7 +55936,9 @@
       "Bush Forageable",
       "Flower"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "rose_tea"
+    ],
     "version_added": null,
     "wiki_page": "Rose"
   },
@@ -55440,7 +56017,9 @@
       "Forageable",
       "Bush Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "rosehip_jam"
+    ],
     "version_added": null,
     "wiki_page": "Rose_Hip"
   },
@@ -55642,7 +56221,12 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "harvest_plate",
+      "perch_risotto",
+      "pumpkin_stew",
+      "rosemary_garlic_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Rosemary"
   },
@@ -56313,7 +56897,9 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "herb_salad"
+    ],
     "version_added": null,
     "wiki_page": "Sage"
   },
@@ -56562,7 +57148,12 @@
       "Seasonal:Fall",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "horseradish_salmon",
+      "pan_fried_salmon",
+      "salmon_sashimi",
+      "sushi_platter"
+    ],
     "version_added": null,
     "wiki_page": "Salmon"
   },
@@ -57214,7 +57805,9 @@
       "Fish",
       "Fish:Diveable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "canned_sardines"
+    ],
     "version_added": null,
     "wiki_page": "Sardine"
   },
@@ -57916,7 +58509,9 @@
       "Seasonal:Fall",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sea_bream_rice"
+    ],
     "version_added": null,
     "wiki_page": "Sea_Bream"
   },
@@ -58126,7 +58721,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "tide_salad"
+    ],
     "version_added": null,
     "wiki_page": "Sea_Grapes"
   },
@@ -58532,7 +59129,14 @@
       "Fish:Diveable",
       "Fish:Diving Only"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "riceball",
+      "seaweed_salad",
+      "spicy_crab_sushi",
+      "sushi_platter",
+      "ultimate_hay",
+      "ultimate_small_animal_feed"
+    ],
     "version_added": null,
     "wiki_page": "Seaweed"
   },
@@ -58784,7 +59388,13 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cucumber_salad",
+      "oil",
+      "sesame_broccoli",
+      "sesame_tuna_bowl",
+      "sweet_sesame_balls"
+    ],
     "version_added": null,
     "wiki_page": "Sesame"
   },
@@ -60323,7 +60933,9 @@
       "Fish",
       "Seasonal:Spring"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deluxe_curry"
+    ],
     "version_added": null,
     "wiki_page": "Shrimp"
   },
@@ -60672,7 +61284,21 @@
       "Blacksmith",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "axe_silver",
+      "fishing_rod_silver",
+      "hoe_silver",
+      "net_silver",
+      "pick_axe_silver",
+      "shovel_silver",
+      "silver_armor",
+      "silver_greaves",
+      "silver_helmet",
+      "silver_legplates",
+      "silver_ring",
+      "sword_silver",
+      "watering_can_silver"
+    ],
     "version_added": null,
     "wiki_page": "Silver_Ingot"
   },
@@ -60822,7 +61448,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "silver_ingot"
+    ],
     "version_added": null,
     "wiki_page": "Silver_Ore"
   },
@@ -61755,7 +62383,11 @@
       "Fish",
       "Fish:Diveable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cat_treat",
+      "fish_skewer",
+      "fish_stew"
+    ],
     "version_added": null,
     "wiki_page": "Smallmouth_Bass"
   },
@@ -62554,7 +63186,10 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sauteed_snow_peas",
+      "seafood_snow_pea_noodles"
+    ],
     "version_added": null,
     "wiki_page": "Snow_Peas"
   },
@@ -63010,7 +63645,9 @@
       "Refinery",
       "Junk Item"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "small_grass_starter"
+    ],
     "version_added": null,
     "wiki_page": "Sod"
   },
@@ -63059,7 +63696,18 @@
     "tags": [
       "Ingredient"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "braised_burdock",
+      "fried_rice",
+      "grilled_eel_rice_bowl",
+      "mushroom_rice",
+      "sea_bream_rice",
+      "seafood_snow_pea_noodles",
+      "seaweed_salad",
+      "simmered_daikon",
+      "sushi_platter",
+      "winter_stew"
+    ],
     "version_added": null,
     "wiki_page": "Soy_Sauce"
   },
@@ -63283,7 +63931,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "spell_fruit_parfait"
+    ],
     "version_added": null,
     "wiki_page": "Spell_Fruit"
   },
@@ -63612,7 +64262,9 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "spirit_mushroom_tea"
+    ],
     "version_added": null,
     "wiki_page": "Spirit_Mushroom"
   },
@@ -63974,7 +64626,9 @@
     "tags": [
       "Fish"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dried_squid"
+    ],
     "version_added": null,
     "wiki_page": "Squid"
   },
@@ -64446,7 +65100,33 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "basic_wood",
+      "clay",
+      "coral",
+      "crystal",
+      "essence_stone_giant",
+      "essence_stone_large",
+      "essence_stone_medium",
+      "essence_stone_small",
+      "essence_stone_tiny",
+      "glass",
+      "grass_seed",
+      "hard_wood",
+      "hay",
+      "obsidian",
+      "ore_copper",
+      "ore_diamond",
+      "ore_emerald",
+      "ore_ruby",
+      "ore_sapphire",
+      "peat",
+      "refined_stone",
+      "shard_mass",
+      "shards",
+      "sod",
+      "voidite"
+    ],
     "version_added": null,
     "wiki_page": "Stone"
   },
@@ -64808,7 +65488,12 @@
       "Crop",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "berry_bowl",
+      "candied_strawberries",
+      "strawberries_and_cream",
+      "strawberry_shortcake"
+    ],
     "version_added": null,
     "wiki_page": "Strawberry"
   },
@@ -65325,7 +66010,49 @@
       "Ingredient",
       "Milling"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_pie",
+      "bell_berry_bakewell_tart",
+      "blackberry_jam",
+      "blueberry_jam",
+      "braised_burdock",
+      "caldosian_chocolate_cake",
+      "candied_lemon_peel",
+      "candied_strawberries",
+      "candied_walnuts",
+      "caramel_candy",
+      "caramelized_moon_fruit",
+      "cherry_cobbler",
+      "cherry_tart",
+      "coconut_cream_pie",
+      "crystal_berry_pie",
+      "cup_of_tea",
+      "glowberry_cookies",
+      "golden_cheesecake",
+      "golden_cookies",
+      "grilled_eel_rice_bowl",
+      "hot_cocoa",
+      "ice_cream_sundae",
+      "lemon_pie",
+      "lemonade",
+      "marmalade",
+      "monster_cookie",
+      "mont_blanc",
+      "peaches_and_cream",
+      "pineshroom_toast",
+      "pomegranate_sorbet",
+      "pudding",
+      "pumpkin_pie",
+      "rosehip_jam",
+      "sour_lemon_cake",
+      "spell_fruit_parfait",
+      "strawberry_shortcake",
+      "sweet_potato_pie",
+      "sweet_sesame_balls",
+      "wild_berry_jam",
+      "wildberry_pie",
+      "wintergreen_ice_cream"
+    ],
     "version_added": null,
     "wiki_page": "Sugar"
   },
@@ -65399,7 +66126,9 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sugar"
+    ],
     "version_added": null,
     "wiki_page": "Sugar_Cane"
   },
@@ -65732,7 +66461,9 @@
       "Crop",
       "Flower"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "toasted_sunflower_seeds"
+    ],
     "version_added": null,
     "wiki_page": "Sunflower"
   },
@@ -66291,7 +67022,12 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "apple_honey_curry",
+      "harvest_plate",
+      "roasted_sweet_potato",
+      "sweet_potato_pie"
+    ],
     "version_added": null,
     "wiki_page": "Sweet_Potato"
   },
@@ -66630,7 +67366,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "baked_sweetroot",
+      "spell_fruit_parfait"
+    ],
     "version_added": null,
     "wiki_page": "Sweetroot"
   },
@@ -67153,7 +67892,13 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cup_of_tea",
+      "green_tea",
+      "jasmine_tea",
+      "rose_tea",
+      "spirit_mushroom_tea"
+    ],
     "version_added": null,
     "wiki_page": "Tea"
   },
@@ -67790,7 +68535,11 @@
       "Forageable",
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "cod_with_thyme",
+      "herb_butter_pasta",
+      "herb_salad"
+    ],
     "version_added": null,
     "wiki_page": "Thyme"
   },
@@ -67944,7 +68693,12 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "fish_tacos",
+      "mushroom_steak_dinner",
+      "tide_salad",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Tide_Lettuce"
   },
@@ -68647,7 +69401,14 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "gazpacho",
+      "pizza",
+      "summer_salad",
+      "tomato_soup",
+      "vegetable_soup",
+      "veggie_sub_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Tomato"
   },
@@ -69111,7 +69872,10 @@
       "Fish",
       "Fish:Diveable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dog_treat",
+      "smoked_trout_soup"
+    ],
     "version_added": null,
     "wiki_page": "Trout"
   },
@@ -69432,7 +70196,11 @@
     "tags": [
       "Fish"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sesame_tuna_bowl",
+      "sushi_platter",
+      "tuna_sashimi"
+    ],
     "version_added": null,
     "wiki_page": "Tuna"
   },
@@ -69643,7 +70411,12 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sliced_turnip",
+      "turnip_and_cabbage_salad",
+      "turnip_and_potato_gratin",
+      "vegetable_pot_pie"
+    ],
     "version_added": null,
     "wiki_page": "Turnip"
   },
@@ -70287,7 +71060,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deep_sea_soup",
+      "tide_salad"
+    ],
     "version_added": null,
     "wiki_page": "Underseaweed"
   },
@@ -70449,7 +71225,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "miners_mushroom_stew"
+    ],
     "version_added": null,
     "wiki_page": "Upper_Mines_Mushroom"
   },
@@ -71643,7 +72421,10 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_fang",
+      "sword_dragon_forged"
+    ],
     "version_added": null,
     "wiki_page": "Void_Herb"
   },
@@ -71784,7 +72565,10 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_horn",
+      "sword_dragon_forged"
+    ],
     "version_added": null,
     "wiki_page": "Void_Pearl"
   },
@@ -71833,7 +72617,10 @@
       "Ingredient",
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_horn",
+      "sword_dragon_forged"
+    ],
     "version_added": null,
     "wiki_page": "Void_Powder"
   },
@@ -71969,7 +72756,9 @@
     "tags": [
       "Bug"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_horn"
+    ],
     "version_added": null,
     "wiki_page": "Void_Snail"
   },
@@ -72016,7 +72805,10 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_fang",
+      "sword_dragon_forged"
+    ],
     "version_added": null,
     "wiki_page": "Void_Stone"
   },
@@ -72062,7 +72854,9 @@
     "tags": [
       "Material"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "sword_dragon_forged"
+    ],
     "version_added": null,
     "wiki_page": "Voidite"
   },
@@ -72400,7 +73194,9 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "candied_walnuts"
+    ],
     "version_added": null,
     "wiki_page": "Walnut"
   },
@@ -72643,7 +73439,19 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "deluxe_hay",
+      "deluxe_small_animal_feed",
+      "fried_rice",
+      "quality_hay",
+      "quality_small_animal_feed",
+      "sauteed_snow_peas",
+      "spicy_water_chestnuts",
+      "trail_mix",
+      "ultimate_hay",
+      "ultimate_small_animal_feed",
+      "water_chestnut_fritters"
+    ],
     "version_added": null,
     "wiki_page": "Water_Chestnut"
   },
@@ -73082,7 +73890,10 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "gazpacho",
+      "salted_watermelon"
+    ],
     "version_added": null,
     "wiki_page": "Watermelon"
   },
@@ -73313,7 +74124,9 @@
     "tags": [
       "Crop"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "flour"
+    ],
     "version_added": null,
     "wiki_page": "Wheat"
   },
@@ -73982,7 +74795,14 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "berries_and_cream",
+      "berry_bowl",
+      "trail_mix",
+      "wild_berry_jam",
+      "wildberry_pie",
+      "wildberry_scone"
+    ],
     "version_added": null,
     "wiki_page": "Wild_Berries"
   },
@@ -74032,7 +74852,9 @@
       "Ingredient",
       "Food:Jam"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "jam_sandwich"
+    ],
     "version_added": null,
     "wiki_page": "Wild_Berry_Jam"
   },
@@ -74213,7 +75035,9 @@
       "Forageable",
       "Bush Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "grape_juice"
+    ],
     "version_added": null,
     "wiki_page": "Wild_Grapes"
   },
@@ -74292,7 +75116,15 @@
     "tags": [
       "Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "crayfish_etouffee",
+      "fish_stew",
+      "loaded_baked_potato",
+      "lobster_roll",
+      "potato_soup",
+      "spring_galette",
+      "vegetable_quiche"
+    ],
     "version_added": null,
     "wiki_page": "Wild_Leek"
   },
@@ -74671,7 +75503,10 @@
       "Bush Forageable",
       "Berry"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "hot_cocoa",
+      "wintergreen_ice_cream"
+    ],
     "version_added": null,
     "wiki_page": "Wintergreen_Berry"
   },
@@ -74852,6 +75687,7 @@
       "Missing Data",
       "Unreleased"
     ],
+    "unreleased": true,
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Wish_Fruit"
@@ -75596,7 +76432,9 @@
       "Forageable",
       "Mines Forageable"
     ],
-    "used_in_recipe_ids": [],
+    "used_in_recipe_ids": [
+      "dragon_forged_fang"
+    ],
     "version_added": null,
     "wiki_page": "Written_Root"
   },
@@ -75648,5 +76486,1365 @@
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Yellow_Chicken_Bow"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/engagement_ring",
+    "id": "engagement_ring",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": true,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Engagement Ring",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/mystical_feather",
+    "id": "mystical_feather",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Mystical Feather",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_enchantern",
+    "id": "pet_skin_enchantern",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Enchantern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_essence_bat",
+    "id": "pet_skin_essence_bat",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Essence Bat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_flame_spirit",
+    "id": "pet_skin_flame_spirit",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Flame Spirit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_flying_tome",
+    "id": "pet_skin_flying_tome",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Flying Tome",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_gryphon_statue",
+    "id": "pet_skin_gryphon_statue",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Gryphon Statue",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_lava_cat",
+    "id": "pet_skin_lava_cat",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Lava Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_mimic",
+    "id": "pet_skin_mimic",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Mimic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_rock_stack",
+    "id": "pet_skin_rock_stack",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Rock Stack",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_stalagmite",
+    "id": "pet_skin_stalagmite",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_void_cat",
+    "id": "pet_skin_void_cat",
+    "id_status": "confirmed",
+    "is_buyable": null,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Pet Skin: Void Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_adelines_theme",
+    "id": "song_crystal_adelines_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Adeline's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_another_tower",
+    "id": "song_crystal_another_tower",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Another Tower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_balors_theme",
+    "id": "song_crystal_balors_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Balor's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_caldarus_theme",
+    "id": "song_crystal_caldarus_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Caldarus' Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_celines_theme",
+    "id": "song_crystal_celines_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Celine's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_crystal_caves",
+    "id": "song_crystal_crystal_caves",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Crystal Caves",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_dream_lobby",
+    "id": "song_crystal_dream_lobby",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Dream Lobby",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_eilands_theme",
+    "id": "song_crystal_eilands_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Eiland's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_farm_boy",
+    "id": "song_crystal_farm_boy",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Farm Boy",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_five_more_minutes",
+    "id": "song_crystal_five_more_minutes",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Five More Minutes",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_haydens_theme",
+    "id": "song_crystal_haydens_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Hayden's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_heros_journey",
+    "id": "song_crystal_heros_journey",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Hero's Journey",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_junipers_theme",
+    "id": "song_crystal_junipers_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Juniper's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_marchs_theme",
+    "id": "song_crystal_marchs_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - March's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_misty_pasture",
+    "id": "song_crystal_misty_pasture",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Misty Pasture",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_pink_twintails",
+    "id": "song_crystal_pink_twintails",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Pink Twintails",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_purple_potions",
+    "id": "song_crystal_purple_potions",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Purple Potions",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_rainy_window",
+    "id": "song_crystal_rainy_window",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Rainy Window",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_reinas_theme",
+    "id": "song_crystal_reinas_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Reina's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_ryis_theme",
+    "id": "song_crystal_ryis_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Ryis' Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_seridias_theme",
+    "id": "song_crystal_seridias_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Seridia's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "verified",
+    "data_gaps": [
+      "obtain_method",
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_valens_theme",
+    "id": "song_crystal_valens_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": null,
+    "is_craftable": null,
+    "is_giftable": null,
+    "mana": null,
+    "museum": null,
+    "name": "Song Crystal - Valen's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": null
   }
 ]

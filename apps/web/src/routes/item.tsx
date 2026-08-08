@@ -5,8 +5,12 @@ import { Column } from '~/app/AppShell'
 import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
-import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
-import { categoryLabelOne, METHOD_LABELS, requirementPhrase } from '~/lib/labels'
+import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
+import { type DisplayIndex, loadDataset, loadDisplayIndex, loadRequestBoard } from '~/lib/data'
+import { categoryLabelOne, METHOD_LABELS, requirementDisplay } from '~/lib/labels'
+import { doneIn, setDone } from '~/lib/progress'
+import type { BoardRequest } from '~/lib/request-board'
+import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/item/$id')
 
@@ -22,13 +26,15 @@ const route = getRouteApi('/item/$id')
 interface ItemRecord {
   id: string
   name: string
+  spoiler?: boolean
+  unreleased?: boolean
   icon_key: string | null
   category: string
   sell_value: number | null
   buy_value: number | null
   is_giftable: boolean | null
   data_gaps: string[]
-  museum: { donatable: boolean; set_id: string | null; wing: string | null }
+  museum: { donatable: boolean; set_id: string | null; wing: string | null } | null
   sold_by: string[]
   wiki_page: string | null
   availability: {
@@ -60,6 +66,41 @@ interface GiftPrefs {
   prefs: Record<string, string[]>
 }
 
+interface ShopRecord {
+  id: string
+  name: string
+  location_id: string | null
+  owner_character_id: string | null
+}
+
+interface SealRecord {
+  id: string
+  name: string
+  quest_id: string
+  required_items: { item_id: string; quantity: number }[]
+}
+
+interface QuestLite {
+  id: string
+  name: string
+  kind: string
+  objectives: { type: string; target_id: string | null; quantity: number | null }[]
+}
+
+/** One thing that wants this item handed over, and its tick. */
+interface Need {
+  /** Progress domain — decides the stored key and never collides. */
+  domain: 'museum' | 'seal' | 'quest' | 'request'
+  /** The id half of the progress key. */
+  progressId: string
+  label: string
+  /** Where tapping the name goes; null for the museum (its link is the banner). */
+  linkTo: { to: '/quest/$id' | '/museum'; id?: string } | null
+  quantity: number
+  /** The needing record's index id, for veil checks. Null for the museum. */
+  aboutId: string | null
+}
+
 /** The four levels the wiki records, best first. */
 const PREF_ORDER = ['loved', 'liked', 'neutral', 'disliked', 'hated'] as const
 
@@ -70,18 +111,27 @@ export function ItemRoute() {
     index: DisplayIndex
     prefs: GiftPrefs[]
     names: Map<string, string>
-    shopNames: Map<string, string>
+    shops: Map<string, ShopRecord>
     recipes: RecipeRecord[]
+    seals: SealRecord[]
+    quests: QuestLite[]
+    board: BoardRequest[]
     loading: boolean
   }>({
     item: null,
     index: {},
     prefs: [],
     names: new Map(),
-    shopNames: new Map(),
+    shops: new Map(),
     recipes: [],
+    seals: [],
+    quests: [],
+    board: [],
     loading: true,
   })
+  // What has already been handed in, one Set per progress domain. Loaded with
+  // the data and written optimistically, exactly like the museum screen.
+  const [ticked, setTicked] = useState<Record<string, Set<string>>>({})
 
   useEffect(() => {
     let live = true
@@ -90,20 +140,32 @@ export function ItemRoute() {
       loadDisplayIndex(),
       loadDataset<GiftPrefs>('gift_prefs'),
       loadDataset<{ id: string; name: string }>('locations'),
-      loadDataset<{ id: string; name: string }>('shops'),
+      loadDataset<ShopRecord>('shops'),
       loadDataset<RecipeRecord>('recipes'),
+      loadDataset<SealRecord>('seals'),
+      loadDataset<QuestLite>('quests'),
+      loadRequestBoard(),
+      Promise.all(
+        (['museum', 'seal', 'quest', 'request'] as const).map(
+          async (domain) => [domain, await doneIn(domain)] as const,
+        ),
+      ),
     ])
-      .then(([items, index, prefs, locations, shops, recipes]) => {
+      .then(([items, index, prefs, locations, shops, recipes, seals, quests, board, done]) => {
         if (!live) return
         setState({
           item: items.find((i) => i.id === id) ?? null,
           index,
           prefs,
           names: new Map(locations.map((l) => [l.id, l.name])),
-          shopNames: new Map(shops.map((s) => [s.id, s.name])),
+          shops: new Map(shops.map((s) => [s.id, s])),
           recipes,
+          seals,
+          quests,
+          board: board.requests,
           loading: false,
         })
+        setTicked(Object.fromEntries(done))
       })
       .catch(() => live && setState((s) => ({ ...s, loading: false })))
     return () => {
@@ -111,8 +173,94 @@ export function ItemRoute() {
     }
   }, [id])
 
-  const { item, index, prefs, names, shopNames, recipes, loading } = state
+  const spoilers = useSpoilers()
+  const { item, index, prefs, names, shops, recipes, seals, quests, board, loading } = state
+
+  // Everything that wants this item handed over. Boolean ticks — the store is
+  // a CRDT of {key, signed-timestamp} and cannot count to three — with the
+  // required quantity displayed beside each.
+  const needs = useMemo((): Need[] => {
+    const out: Need[] = []
+    for (const seal of seals) {
+      const wanted = seal.required_items.find((r) => r.item_id === id)
+      if (wanted === undefined) continue
+      out.push({
+        domain: 'seal',
+        progressId: `${seal.id}/${id}`,
+        label: seal.name,
+        linkTo: { to: '/quest/$id', id: seal.quest_id },
+        quantity: wanted.quantity,
+        aboutId: seal.quest_id,
+      })
+    }
+    const sealQuests = new Set(seals.map((s) => s.quest_id))
+    for (const quest of quests) {
+      // Requests are listed from the board (giver attached); seal quests are
+      // listed above with their seal's name. What is left is every other
+      // quest that takes a delivery of this item.
+      if (quest.kind === 'request' || sealQuests.has(quest.id)) continue
+      const objective = quest.objectives.find((o) => o.target_id === id)
+      if (objective === undefined) continue
+      out.push({
+        domain: 'quest',
+        progressId: `${quest.id}/${id}`,
+        label: quest.name,
+        linkTo: { to: '/quest/$id', id: quest.id },
+        quantity: objective.quantity ?? 1,
+        aboutId: quest.id,
+      })
+    }
+    for (const request of board) {
+      const wanted = request.items.find((i) => i.id === id)
+      if (wanted === undefined) continue
+      out.push({
+        domain: 'request',
+        progressId: `${request.id}/${id}`,
+        label:
+          request.giver_name === null ? request.name : `${request.giver_name} — ${request.name}`,
+        linkTo: { to: '/quest/$id', id: request.id },
+        quantity: wanted.quantity,
+        aboutId: request.id,
+      })
+    }
+    return out
+  }, [seals, quests, board, id])
+
+  const isTicked = (need: Need): boolean => ticked[need.domain]?.has(need.progressId) ?? false
+  const toggleNeed = (need: Need): void => {
+    const now = !isTicked(need)
+    setTicked((current) => {
+      const next = new Set(current[need.domain] ?? [])
+      if (now) next.add(need.progressId)
+      else next.delete(need.progressId)
+      return { ...current, [need.domain]: next }
+    })
+    void setDone(need.domain, need.progressId, now)
+  }
+  const museumDone = ticked.museum?.has(id) ?? false
+  const toggleMuseum = (): void => {
+    const now = !museumDone
+    setTicked((current) => {
+      const next = new Set(current.museum ?? [])
+      if (now) next.add(id)
+      else next.delete(id)
+      return { ...current, museum: next }
+    })
+    void setDone('museum', id, now)
+  }
   const recipe = item === null ? undefined : recipes.find((r) => r.output.item_id === item.id)
+  // The other direction: everything this item goes into. Matched on the item
+  // id alone — a recipe wanting "any fish" is a category, not this item, and
+  // claiming it would overstate what we know.
+  const usedIn =
+    item === null
+      ? []
+      : recipes.filter(
+          (r) =>
+            r.output.item_id !== null &&
+            r.output.item_id !== item.id &&
+            r.ingredients.some((ing) => ing.item_id === item.id),
+        )
 
   // Who feels how about this item, from the reverse of the gift table.
   const opinions = useMemo(() => {
@@ -149,6 +297,21 @@ export function ItemRoute() {
     )
   }
 
+  // The veil covers the whole page, name included — the name is the spoiler.
+  // Same treatment for content the game does not ship yet, in its own words.
+  if ((item.spoiler === true || item.unreleased === true) && !spoilers.shown(item.id)) {
+    return (
+      <Column>
+        <BackLink />
+        <SpoilerAsk
+          id={item.id}
+          kind="item"
+          reason={item.spoiler === true ? 'spoiler' : 'unreleased'}
+        />
+      </Column>
+    )
+  }
+
   return (
     <Column>
       <BackLink />
@@ -168,16 +331,22 @@ export function ItemRoute() {
         </div>
       </header>
 
-      {item.museum.donatable && (
-        <p
-          className="mt-3 rounded-card px-3 py-2 text-sm"
+      {item.museum?.donatable === true && (
+        <label
+          className="mt-3 flex cursor-pointer items-center gap-2.5 rounded-card px-3 py-2 text-sm"
           style={{ background: 'var(--museum-tint)', color: 'var(--ink)' }}
         >
-          <Link to="/museum" className="underline decoration-rule underline-offset-4">
-            The museum wants this
-          </Link>{' '}
-          — {item.museum.wing?.replace(/_/g, ' ') ?? 'wing unknown'} wing.
-        </p>
+          {/* The same museum:<item_id> key the museum screen writes, so the
+              two checkboxes can never disagree. */}
+          <input type="checkbox" checked={museumDone} onChange={toggleMuseum} />
+          <span className={museumDone ? 'line-through opacity-70' : undefined}>
+            <Link to="/museum" className="underline decoration-rule underline-offset-4">
+              The museum wants this
+            </Link>{' '}
+            — {item.museum.wing?.replace(/_/g, ' ') ?? 'wing unknown'} wing.
+            {museumDone && ' Donated.'}
+          </span>
+        </label>
       )}
 
       <Section title="Where to find it">
@@ -217,7 +386,27 @@ export function ItemRoute() {
                   {window.requires.length > 0 && (
                     <span className="text-ink-faint">
                       {' — needs '}
-                      {window.requires.map((r) => requirementPhrase(r)).join(' and ')}
+                      {window.requires.map((r, i) => {
+                        const parts = requirementDisplay(r, index[r.key]?.n)
+                        return (
+                          <span key={`${r.type}:${r.key}`}>
+                            {i > 0 && ' and '}
+                            {parts.prefix}
+                            {parts.linkTo === null ? (
+                              parts.label
+                            ) : (
+                              <Link
+                                to={parts.linkTo.to}
+                                params={{ id: parts.linkTo.id }}
+                                className="underline decoration-rule underline-offset-2 hover:text-ink"
+                              >
+                                {parts.label}
+                              </Link>
+                            )}
+                            {parts.suffix}
+                          </span>
+                        )
+                      })}
                     </span>
                   )}
                 </p>
@@ -349,13 +538,165 @@ export function ItemRoute() {
         </Section>
       )}
 
-      {/* Declared on the record since D3 and never rendered until now. There is
-          no shop route yet, so the names stand alone — but "the General Store
-          sells this" answers the question even without a page behind it. */}
+      {/* There is no shop route, but a shop is a building at a place with an
+          owner — and both of those have pages, which is what someone reading
+          "the General Store sells this" wants to tap next. */}
       {item.sold_by.length > 0 && (
         <Section title="Sold by">
-          <p className="text-ink-mute text-sm">
-            {item.sold_by.map((shop) => shopNames.get(shop) ?? shop.replace(/_/g, ' ')).join(' · ')}
+          <ul className="flex flex-col gap-1 text-ink-mute text-sm">
+            {item.sold_by.map((shopId) => {
+              const shop = shops.get(shopId)
+              if (shop === undefined) {
+                return <li key={shopId}>{shopId.replace(/_/g, ' ')}</li>
+              }
+              return (
+                <li key={shopId}>
+                  <span className="text-ink">{shop.name}</span>
+                  {shop.location_id !== null && (
+                    <>
+                      {' — in '}
+                      <Link
+                        to="/place/$id"
+                        params={{ id: shop.location_id }}
+                        className="underline decoration-rule underline-offset-4 hover:text-ink"
+                      >
+                        {names.get(shop.location_id) ?? shop.location_id.replace(/_/g, ' ')}
+                      </Link>
+                    </>
+                  )}
+                  {shop.owner_character_id !== null && (
+                    <>
+                      {', run by '}
+                      <Link
+                        to="/villager/$id"
+                        params={{ id: shop.owner_character_id }}
+                        className="underline decoration-rule underline-offset-4 hover:text-ink"
+                      >
+                        {index[shop.owner_character_id]?.n ??
+                          shop.owner_character_id.replace(/_/g, ' ')}
+                      </Link>
+                    </>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
+        </Section>
+      )}
+
+      {/* The reverse of "How it's made": what this goes into. The forward
+          direction was already loaded, so this list is free. */}
+      {usedIn.length > 0 && (
+        <Section title="Used in">
+          <ul className="flex flex-wrap gap-1.5">
+            {usedIn.map((r) =>
+              r.output.item_id === null ? null : (
+                <li key={r.id}>
+                  <Link
+                    to="/item/$id"
+                    params={{ id: r.output.item_id }}
+                    className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+                  >
+                    <ItemIcon
+                      iconKey={index[r.output.item_id]?.i ?? `item/${r.output.item_id}`}
+                      name={index[r.output.item_id]?.n ?? r.output.item_id}
+                      size="sm"
+                    />
+                    {index[r.output.item_id]?.n ?? r.output.item_id.replace(/_/g, ' ')}
+                  </Link>
+                </li>
+              ),
+            )}
+          </ul>
+        </Section>
+      )}
+
+      {/* Who wants this handed over — seals, story quests, board requests —
+          with a tick per need. Boolean on purpose: the progress store is a
+          CRDT of signed timestamps and cannot count "3 of 5"; the ×count says
+          how many to bring, the tick says you brought them. */}
+      {needs.length > 0 && (
+        <Section title="Needed for">
+          <ul className="flex flex-col divide-y divide-rule border-rule border-y">
+            {needs.map((need) => {
+              const entry = need.aboutId === null ? undefined : index[need.aboutId]
+              const reason = veilReasonOf(entry)
+              const veiled =
+                reason !== null && need.aboutId !== null && !spoilers.shown(need.aboutId)
+              const done = isTicked(need)
+              return (
+                <li
+                  key={`${need.domain}:${need.progressId}`}
+                  className="flex items-center gap-3 py-2"
+                >
+                  <input
+                    type="checkbox"
+                    checked={done}
+                    onChange={() => toggleNeed(need)}
+                    aria-label={`${veiled ? 'Hidden need' : need.label} — handed in`}
+                  />
+                  <span className="min-w-0 flex-1 truncate text-sm">
+                    {veiled && reason !== null ? (
+                      // The need exists and can even be ticked — only the name
+                      // of the late-story thing asking stays veiled.
+                      need.linkTo?.id !== undefined ? (
+                        <Link
+                          to="/quest/$id"
+                          params={{ id: need.linkTo.id }}
+                          className="inline-flex items-center gap-1.5"
+                        >
+                          <SpoilerChip reason={reason} />
+                        </Link>
+                      ) : (
+                        <SpoilerChip reason={reason} />
+                      )
+                    ) : need.linkTo === null ? (
+                      <span
+                        className="text-ink"
+                        style={
+                          done
+                            ? { color: 'var(--ink-faint)', textDecoration: 'line-through' }
+                            : undefined
+                        }
+                      >
+                        {need.label}
+                      </span>
+                    ) : need.linkTo.to === '/museum' ? (
+                      <Link
+                        to="/museum"
+                        className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                        style={
+                          done
+                            ? { color: 'var(--ink-faint)', textDecoration: 'line-through' }
+                            : undefined
+                        }
+                      >
+                        {need.label}
+                      </Link>
+                    ) : (
+                      <Link
+                        to="/quest/$id"
+                        params={{ id: need.linkTo.id ?? '' }}
+                        className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                        style={
+                          done
+                            ? { color: 'var(--ink-faint)', textDecoration: 'line-through' }
+                            : undefined
+                        }
+                      >
+                        {need.label}
+                      </Link>
+                    )}
+                  </span>
+                  <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
+                    ×{need.quantity}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+          <p className="mt-1.5 text-ink-faint text-xs">
+            Ticks live on this device (and sync with your code, if you set one up in Settings).
           </p>
         </Section>
       )}

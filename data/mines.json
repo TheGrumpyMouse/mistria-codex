@@ -312,6 +312,7 @@
     "prov": {
       "*": "manual"
     },
+    "spoiler": true,
     "version_added": null,
     "wiki_page": "Mines/Ancient Ruins"
   }

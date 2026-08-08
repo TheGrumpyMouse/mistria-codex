@@ -57,6 +57,41 @@ export const Envelope = z.object({
    */
   also_known_as: z.array(z.string()).default([]),
 
+  /**
+   * Names that are themselves a story reveal, split out of `also_known_as` so
+   * the UI can keep them searchable without printing them next to the record.
+   * "Seridia" is the canonical case: someone who has met her will search for
+   * it and must find the Priestess, but the page saying "also known as
+   * Seridia" spoils the reveal for everyone who hasn't. Which names qualify is
+   * a human judgement, held in curated/vocab/spoilers.json.
+   *
+   * Optional, not defaulted: it is stamped centrally after the builders run,
+   * and absent means the same thing as empty. A default here would make the
+   * field required in every builder's output type for no gain.
+   */
+  spoiler_aliases: z.array(z.string()).optional(),
+
+  /**
+   * A record whose existence or identity is late-game story knowledge. The UI
+   * veils these behind an explicit "show me" acknowledgement; nothing is ever
+   * filtered out. Stamped centrally at build time from
+   * curated/vocab/spoilers.json — a judgement call, so a curated file, not a
+   * derivation. Optional for the same reason as `spoiler_aliases`: only
+   * flagged records carry it at all.
+   */
+  spoiler: z.literal(true).optional(),
+
+  /**
+   * The wiki describes it; the 1.0 game does not ship it. The UI veils these
+   * like spoilers, with "coming later" wording instead of a story warning.
+   * Derived, not curated: an item is flagged when the wiki tags it Unreleased
+   * AND the game's ItemId enum lacks it (game absence corroborates — a stale
+   * wiki tag on something 1.0 shipped is ignored); a festival when the game's
+   * own calendar marks it unimplemented. Optional like `spoiler`: only
+   * flagged records carry the key.
+   */
+  unreleased: z.literal(true).optional(),
+
   /** The game version this record's data reflects. */
   game_version: z.string().nullable().default(null),
   /** The game version that introduced the thing itself, where known. */

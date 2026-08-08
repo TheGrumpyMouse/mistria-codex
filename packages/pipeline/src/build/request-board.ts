@@ -34,8 +34,12 @@ export interface BoardRequest {
   items: BoardItem[]
   /** Null means all year, which is different from an unknown season. */
   seasons: string[] | null
-  /** What has to be true before this can appear. Empty means "from day one". */
-  gates: { type: Requirement['type']; label: string }[]
+  /**
+   * What has to be true before this can appear. Empty means "from day one".
+   * `key` rides along so quest and location gates can link to their pages;
+   * the label alone was a sentence nothing could navigate from.
+   */
+  gates: { type: Requirement['type']; key: string; label: string }[]
   rewards: { tesserae: number | null; renown: number | null } | null
 }
 
@@ -130,6 +134,7 @@ export function buildRequestBoard(
         seasons: quest.season_restriction,
         gates: quest.prerequisites.map((requirement) => ({
           type: requirement.type,
+          key: requirement.key,
           label: gateLabel(requirement, names),
         })),
         rewards:

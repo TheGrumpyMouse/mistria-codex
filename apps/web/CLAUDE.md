@@ -76,6 +76,15 @@ A result the player cannot reach yet is tagged `locked`, with the reason. People
 want to know the Legendary fish exists and why they can't catch it. Filtering it
 out silently makes the app look like it has less data than it does.
 
+The spoiler curtain follows the same principle: a record flagged `spoiler`
+(index `s: 1`) keeps its row and its navigation — only the **name** is
+withheld, behind `<SpoilerChip>`, and the detail page asks via `<SpoilerAsk>`.
+Never filter a spoiler record out, and never redact with CSS blur — a blurred
+real name is still in the DOM and a screen reader speaks it. The placeholder
+text IS the redaction. Search shows the real name to someone whose query
+already is that name (`typedTheName`) — redacting what the user typed reads as
+a broken search, not as discretion.
+
 ### 7. No hardcoded hex, ever
 
 ### 8. No internal token ever renders raw

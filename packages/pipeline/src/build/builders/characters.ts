@@ -7,10 +7,54 @@ import {
   toSnakeId,
 } from '@mistria/schema'
 import type { GameNpc } from '../../extract/world.js'
-import { toBoolean, toTokens } from '../../normalise/wikitext.js'
+import { decodeEntities, stripWikitext, toBoolean } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
 
 const isSeason = (value: string): value is Season => (SEASONS as readonly string[]).includes(value)
+
+/**
+ * One family entry: the display text the wiki wrote, and the character it
+ * points at when the wiki itself linked one.
+ *
+ * Resolution follows the `[[wikilink]]` and nothing else. The link target is
+ * the one anchor a wiki editor placed deliberately, so matching it against the
+ * pinned roster is as strict as every other join here — no name sniffing, no
+ * fuzzy matching. 44 of the 60 entries carry a link and all of them resolve
+ * (including the pets: Henrietta and Dozy are roster characters). The other 16
+ * are unnamed or lore-only relatives — "Unnamed Aunt", "Baroness Linnet of
+ * Mistria", the deceased marked with a dagger — and honestly stay unlinked.
+ *
+ * The display text goes through the same strip pipeline `toTokens` uses, so
+ * what renders is unchanged; only the id next to it is new.
+ */
+function familyEntries(
+  ctx: BuildContext,
+  relatives: unknown,
+): { relation: string; character_id: string | null }[] {
+  const roster = realCharacterNames(ctx)
+  const raws =
+    relatives === null || relatives === undefined
+      ? []
+      : Array.isArray(relatives)
+        ? relatives.map(String)
+        : [String(relatives)]
+
+  const entries: { relation: string; character_id: string | null }[] = []
+  for (const raw of raws) {
+    for (const piece of decodeEntities(raw).split(/<br\s*\/?>/i)) {
+      const relation = stripWikitext(piece)
+      if (relation === '' || relation === '-' || relation === 'N/A' || relation === 'Unknown') {
+        continue
+      }
+      const target = /\[\[(?!File:|Image:)([^\]|#]+)/i.exec(piece)?.[1]?.replace(/_/g, ' ').trim()
+      entries.push({
+        relation,
+        character_id: target !== undefined && roster.has(target) ? ctx.idFor(target) : null,
+      })
+    }
+  }
+  return entries
+}
 
 /** The wiki writes a birthday as "Winter 18". */
 const BIRTHDAY = /^(Spring|Summer|Fall|Autumn|Winter)\s+(\d{1,2})$/i
@@ -148,13 +192,7 @@ export function buildCharacters(ctx: BuildContext): Character[] {
         affiliation: text(row.affiliation) || null,
 
         home_location_id: null,
-        // Relatives are free text like "Eiland (Brother)". Parsing them into
-        // character refs is D3 work; keeping the relation label without a
-        // resolved id is honest and still useful.
-        family: toTokens(row.relatives).map((entry) => ({
-          relation: entry,
-          character_id: null,
-        })),
+        family: familyEntries(ctx, row.relatives),
         heart_events: [],
         is_vendor: false,
         shop_id: null,

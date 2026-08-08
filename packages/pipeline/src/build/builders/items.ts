@@ -347,6 +347,12 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
     if (folded.includes(MISSING_DATA_TAG)) gaps.push('wiki_flagged_missing_data')
     if (folded.includes(UNRELEASED_TAG)) gaps.push('unreleased')
 
+    // The UI veil: wiki says Unreleased AND the 1.0 game genuinely lacks the
+    // id. When the extract is absent the wiki's word alone decides — hiding
+    // is the safe direction for something the wiki itself calls unreleased.
+    const unreleased =
+      folded.includes(UNRELEASED_TAG) && (ctx.game === null || !ctx.game.itemIds.has(id))
+
     const sellValue = toInteger(row.sellValue)
     if (sellValue === null) gaps.push('sell_value')
 
@@ -368,6 +374,7 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
     items.push({
       id,
       name: input.displayName,
+      ...(unreleased ? { unreleased: true as const } : {}),
       category: input.categoryOverride ?? categoryFor(tags),
 
       // Provenance only. Numeric ids change between patches and hard rule 3
@@ -422,6 +429,87 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
             },
 
       availability: windows,
+      used_in_recipe_ids: [],
+      sold_by: [],
+    })
+  }
+
+  return items
+}
+
+/**
+ * Records for game items the wiki has not documented yet — the 1.0 additions,
+ * from the curated allowlist.
+ *
+ * Everything here is the game's own statement: name, values, edibility. What
+ * only the wiki would know — availability prose, museum status, gift
+ * preferences — stays a gap until the weekly refresh brings it, at which
+ * point the item resolves through the normal wiki path and this constructor
+ * stops matching it (the wiki row wins; see the caller in build/data.ts).
+ *
+ * A listed id the game files do not have is a hard error: the allowlist is
+ * hand-typed, and a typo that silently ships nothing is the failure mode this
+ * project refuses everywhere else.
+ */
+export function buildGameOnlyItems(ctx: BuildContext, alreadyBuilt: Set<string>): Item[] {
+  const game = ctx.game
+  if (game === null || ctx.gameOnlyItems.length === 0) return []
+
+  const items: Item[] = []
+  for (const id of [...ctx.gameOnlyItems].sort()) {
+    if (alreadyBuilt.has(id)) continue
+
+    const row = game.itemById.get(id)
+    if (row === undefined) {
+      throw new Error(
+        `curated/vocab/items_1_0.json lists "${id}", which is not in the game files. ` +
+          'Fix the id — a typo here silently ships nothing.',
+      )
+    }
+
+    const gaps = ['obtain_method']
+    if (row.sell_value === null) gaps.push('sell_value')
+
+    items.push({
+      id,
+      name: row.name ?? id,
+      category: 'misc',
+      numeric_id: null,
+      numeric_id_game_version: null,
+      id_status: 'confirmed',
+      former_ids: [],
+      also_known_as: [],
+      game_version: game.version,
+      version_added: null,
+      confidence: 'verified',
+      prov: { '*': 'game_files' },
+      data_gaps: gaps,
+      icon_key: `misc/${id}`,
+      wiki_page: null,
+      blurb: null,
+
+      subcategory: null,
+      base_item_id: null,
+      quality: null,
+
+      sell_value: row.sell_value,
+      buy_value: row.buy_value,
+      stamina: null,
+      health: null,
+      mana: null,
+
+      is_consumable: row.edible,
+      is_craftable: row.recipe.length > 0 ? true : null,
+      is_buyable: row.buy_value !== null ? true : null,
+      is_giftable: null,
+
+      // The game's tag tokens are internal vocabulary (`blacklist_popup`),
+      // not the wiki's reader-facing tags — carrying them would put jargon in
+      // a field the rest of the dataset keeps clean.
+      tags: [],
+      museum: null,
+
+      availability: [],
       used_in_recipe_ids: [],
       sold_by: [],
     })

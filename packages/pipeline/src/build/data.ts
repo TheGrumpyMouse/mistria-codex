@@ -19,19 +19,21 @@ import {
   type Item,
   type Location,
   type Monster,
+  type Recipe,
   type Shop,
   type Spot,
   toSnakeId,
 } from '@mistria/schema'
 import { consola } from 'consola'
 import { BUILD_DIR, DATA_DIR } from '../lib/paths.js'
+import { readSpoilerRules, stampSpoilers } from '../lib/spoilers.js'
 import { writeJson } from '../lib/write-json.js'
 import { buildSeals } from './builders/artifacts.js'
 import { buildCharacters, buildGiftPrefs } from './builders/characters.js'
 import { buildAnimals, buildBuildings } from './builders/farm.js'
 import { buildFestivals } from './builders/festivals.js'
 import { buildCrops, buildFishFacets, buildLocations, itemInputs } from './builders/fish-crops.js'
-import { buildItems } from './builders/items.js'
+import { buildGameOnlyItems, buildItems } from './builders/items.js'
 import {
   anchoredMarkerNames,
   buildMapRegion,
@@ -71,6 +73,7 @@ interface Derived {
   shops: Shop[]
   items: Item[]
   monsters: Monster[]
+  recipes: Recipe[]
 }
 
 /** A builder turns sources + curated inputs into records for one dataset. */
@@ -162,7 +165,7 @@ const BUILDERS: Record<DatasetName, Builder> = {
   forageables: buildForageableFacets,
   artifacts: buildArtifactFacets,
   crops: buildCrops,
-  recipes: buildRecipes,
+  recipes: (_ctx, derived) => derived.recipes,
   characters: buildCharacters,
   gift_prefs: buildGiftPrefs,
   schedules: buildSchedules,
@@ -188,7 +191,12 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
   const shops = buildShops(ctx)
   const soldBy = soldByIndex(shops)
   const shopLocation = new Map(shops.map((shop) => [shop.id, shop.location_id] as const))
-  const items = buildItems(ctx, itemInputs(ctx, museum.byItem)).map((item) => {
+  const wikiItems = buildItems(ctx, itemInputs(ctx, museum.byItem))
+  // 1.0 outran the wiki: allowlisted game items get records of their own
+  // until the wiki documents them, at which point the wiki row wins and the
+  // game-only constructor skips the id.
+  const allItems = [...wikiItems, ...buildGameOnlyItems(ctx, new Set(wikiItems.map((i) => i.id)))]
+  const items = allItems.map((item) => {
     const sellers = soldBy.get(item.id) ?? []
     return {
       ...item,
@@ -222,11 +230,43 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
       is_buyable: sellers.length > 0 ? true : item.is_buyable,
     }
   })
-  const derived: Derived = { museum, shops, items, monsters: buildMonsters(ctx) }
+
+  // Recipes come after items because both their outputs and their ingredients
+  // are gated on the item records actually shipping — a recipe may never point
+  // at a record that does not exist. The reverse link is then stamped the same
+  // way `sold_by` was above: derived once, written onto the item.
+  const recipes = buildRecipes(ctx, new Set(items.map((i) => i.id)))
+  const usedIn = new Map<string, string[]>()
+  for (const recipe of recipes) {
+    for (const ingredient of recipe.ingredients) {
+      if (ingredient.item_id === null) continue
+      const list = usedIn.get(ingredient.item_id) ?? []
+      if (!list.includes(recipe.id)) list.push(recipe.id)
+      usedIn.set(ingredient.item_id, list)
+    }
+  }
+  const itemsWithRecipes = items.map((item) => {
+    const recipeIds = usedIn.get(item.id)
+    return recipeIds === undefined ? item : { ...item, used_in_recipe_ids: recipeIds.sort() }
+  })
+
+  const derived: Derived = {
+    museum,
+    shops,
+    items: itemsWithRecipes,
+    monsters: buildMonsters(ctx),
+    recipes,
+  }
   const counts = {} as Record<DatasetName, number>
+
+  // The spoiler stamp is the one thing applied after a builder runs: "is this
+  // a story spoiler" is a curated judgement about presentation, not a fact any
+  // builder derives, so it lives in one pass here rather than in 23 builders.
+  const spoilers = await readSpoilerRules()
 
   for (const name of Object.keys(BUILDERS) as DatasetName[]) {
     const records = BUILDERS[name](ctx, derived)
+    stampSpoilers(name, records, spoilers)
     await writeJson(join(DATA_DIR, DATASETS[name].file), records, { pretty: true })
     counts[name] = records.length
   }

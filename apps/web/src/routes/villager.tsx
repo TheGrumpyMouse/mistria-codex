@@ -6,8 +6,10 @@ import { BackLink } from '~/components/BackLink'
 import { DisplayToggle } from '~/components/DisplayToggle'
 import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
+import { SpoilerAsk } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { useDisplayMode } from '~/lib/display-mode'
+import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/villager/$id')
 
@@ -30,6 +32,8 @@ interface CharacterRecord {
   id: string
   name: string
   also_known_as: string[]
+  spoiler_aliases?: string[]
+  spoiler?: boolean
   icon_key: string | null
   birthday: { season: string; day: number } | null
   romanceable: boolean | null
@@ -100,6 +104,11 @@ export function VillagerRoute() {
   const { person, prefs, index, loading } = state
   const portrait = useAtlas().portrait(person?.icon_key ?? null)
   const [mode] = useDisplayMode()
+  const spoilers = useSpoilers()
+  // Revealing the "also known as" name is its own smaller decision — a
+  // session-only peek, keyed by record id so navigating between villagers
+  // never carries one person's reveal to another.
+  const [aliasShownFor, setAliasShownFor] = useState<string | null>(null)
 
   // Sorted by the name they will be read under, not by id — `ore_copper` next
   // to `apple` is alphabetical by nothing anyone can see.
@@ -134,6 +143,16 @@ export function VillagerRoute() {
           </Link>
           .
         </p>
+      </Column>
+    )
+  }
+
+  // The veil covers the whole page, name included — the name is the spoiler.
+  if (person.spoiler === true && !spoilers.shown(person.id)) {
+    return (
+      <Column>
+        <BackLink />
+        <SpoilerAsk id={person.id} kind="villager" />
       </Column>
     )
   }
@@ -177,6 +196,24 @@ export function VillagerRoute() {
           {person.also_known_as.length > 0 && (
             <p className="mt-0.5 text-ink-mute text-sm">
               also known as {person.also_known_as.join(', ')}
+            </p>
+          )}
+          {/* A name that is itself the reveal sits behind a tap. Someone who
+              already knows will have searched for it anyway — search matches
+              these — and everyone else keeps the surprise. */}
+          {(person.spoiler_aliases?.length ?? 0) > 0 && (
+            <p className="mt-0.5 text-ink-mute text-sm">
+              {aliasShownFor === person.id ? (
+                <>also known as {(person.spoiler_aliases ?? []).join(', ')}</>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setAliasShownFor(person.id)}
+                  className="unverified rounded-tile px-1.5 py-0.5 text-xs"
+                >
+                  also known as… (story spoiler — tap to show)
+                </button>
+              )}
             </p>
           )}
           {person.occupation !== null && (
@@ -299,9 +336,10 @@ export function VillagerRoute() {
 
       {person.family.length > 0 && (
         <Section title="Family">
-          {/* The wiki writes these as free text — "Eiland (Brother)" — and they
-              are not resolved to character ids yet, so they are shown as written
-              rather than linked to a page that might be the wrong person. */}
+          {/* Linked where the wiki itself linked a character page — 44 of the
+              60 entries, pets included. The rest are unnamed or lore-only
+              relatives ("Unnamed Aunt", the deceased marked †) and honestly
+              stay text. */}
           <p className="text-ink-mute text-sm">
             {person.family.map((entry, i) => (
               <span key={entry.relation}>

@@ -28,7 +28,7 @@ import {
   readManifestOrEmpty,
 } from './manifest.js'
 import { filePageUrl } from './names.js'
-import { type PngSize, pngSize } from './png.js'
+import { type PngSize, pngFromIco, pngSize } from './png.js'
 
 const sha256 = (buffer: Buffer): string => createHash('sha256').update(buffer).digest('hex')
 
@@ -317,7 +317,23 @@ async function readCheckpoint(path: string): Promise<Record<string, string | nul
  * sprite and only be noticed when a player saw a broken image.
  */
 async function download(entry: InventoryEntry, url: string, wiki: WikiConfig): Promise<AssetEntry> {
-  const body = await fetchBinary(url, { throttleMs: wiki.throttleMs })
+  let body = await fetchBinary(url, { throttleMs: wiki.throttleMs })
+
+  // The one non-PNG source we accept: the wiki's own `.ico` branding, which is
+  // a container holding a literal PNG stream. The PNG is sliced out untouched
+  // and stored under a `.png` local name (see `localName`); everything below —
+  // hash, size, manifest — describes the extracted bytes, which are the bytes
+  // on disk.
+  if (entry.sourceFile.toLowerCase().endsWith('.ico')) {
+    const embedded = pngFromIco(body)
+    if (embedded === null) {
+      throw new Error(
+        `"${entry.sourceFile}" is an ICO with no embedded PNG. ` +
+          'Only PNG-container ICOs are supported; a BMP-format icon needs a real decoder.',
+      )
+    }
+    body = embedded
+  }
 
   const size = pngSize(body)
   if (size === null) {

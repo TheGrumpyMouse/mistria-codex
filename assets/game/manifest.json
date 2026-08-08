@@ -12,19 +12,19 @@
   ],
   "assets": [
     {
-      "bytes": 101219,
+      "bytes": 2815,
       "family": "brand",
       "fetched_at": "2026-08-08",
-      "file": "brand/fields-of-mistria.png",
-      "height": 1080,
+      "file": "brand/site-favicon.png",
+      "height": 256,
       "icon_keys": [
-        "brand/logo"
+        "brand/icon"
       ],
-      "key": "brand/fields-of-mistria",
-      "sha256": "b40e7582c606e3c737c215e139ebffe8c0476fd88edd98418631fbc5b2bc43e1",
-      "source_file": "Fields of Mistria.png",
-      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Fields%20of%20Mistria.png",
-      "width": 1920
+      "key": "brand/site-favicon",
+      "sha256": "2ba396906b7037183ab923af86d6a2e3b602e74c39f61c07c8954bdeed666d4c",
+      "source_file": "Site-favicon.ico",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Site-favicon.ico",
+      "width": 256
     },
     {
       "bytes": 704,
@@ -18053,6 +18053,7 @@
       "file": "skill/fishing-icon.png",
       "height": 60,
       "icon_keys": [
+        "museum/fish",
         "skill/fishing",
         "ui/method_fishing"
       ],
@@ -18138,6 +18139,23 @@
       "width": 32
     },
     {
+      "bytes": 510,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/archaeology-icon.png",
+      "height": 80,
+      "icon_keys": [
+        "museum/archaeology",
+        "skill/archaeology",
+        "ui/skill_archaeology"
+      ],
+      "key": "ui/archaeology-icon",
+      "sha256": "9e25c1f451b4fa3e1af4e3a24fd265eeea6b522ef23f0d79779821cb8fb1a5fc",
+      "source_file": "Archaeology icon.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Archaeology%20icon.png",
+      "width": 100
+    },
+    {
       "bytes": 284,
       "family": "ui",
       "fetched_at": "2026-08-07",
@@ -18151,6 +18169,22 @@
       "source_file": "Blacksmith icon.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Blacksmith%20icon.png",
       "width": 104
+    },
+    {
+      "bytes": 242,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/caldarushuman-icon.png",
+      "height": 44,
+      "icon_keys": [
+        "character/caldarus",
+        "ui/caldarus_human"
+      ],
+      "key": "ui/caldarushuman-icon",
+      "sha256": "8cecb86af7ba60adf05db86a12b8ed94393fb2876a486ca06ace02f67670862b",
+      "source_file": "CaldarusHuman icon.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:CaldarusHuman%20icon.png",
+      "width": 44
     },
     {
       "bytes": 403,
@@ -18213,6 +18247,22 @@
       "width": 88
     },
     {
+      "bytes": 510,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/combat-icon.png",
+      "height": 90,
+      "icon_keys": [
+        "skill/combat",
+        "ui/skill_combat"
+      ],
+      "key": "ui/combat-icon",
+      "sha256": "91a5bc8de5734f55fefac736e07a26042e55d3bd65984ea17ba01b6e91e9fe12",
+      "source_file": "Combat icon.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Combat%20icon.png",
+      "width": 90
+    },
+    {
       "bytes": 638,
       "family": "ui",
       "fetched_at": "2026-08-07",
@@ -18241,6 +18291,22 @@
       "source_file": "Ducks category icon.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Ducks%20category%20icon.png",
       "width": 32
+    },
+    {
+      "bytes": 241,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/farming-icon.png",
+      "height": 70,
+      "icon_keys": [
+        "skill/farming",
+        "ui/skill_farming"
+      ],
+      "key": "ui/farming-icon",
+      "sha256": "934f6e2a95f2ea4fdfa78b123027bb688fb13081acd3798b128d24c20a4bf9fd",
+      "source_file": "Farming icon.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Farming%20icon.png",
+      "width": 80
     },
     {
       "bytes": 200,
@@ -18324,6 +18390,8 @@
       "file": "ui/fp-wiki-museum.png",
       "height": 44,
       "icon_keys": [
+        "museum/flora",
+        "museum/insects",
         "ui/method_museum"
       ],
       "key": "ui/fp-wiki-museum",
@@ -18354,6 +18422,8 @@
       "file": "ui/fp-wiki-quests-fetch.png",
       "height": 44,
       "icon_keys": [
+        "quest/mission",
+        "quest/request",
         "ui/quest_fetch"
       ],
       "key": "ui/fp-wiki-quests-fetch",
@@ -18459,6 +18529,7 @@
       "file": "ui/quests-heart-icon.png",
       "height": 56,
       "icon_keys": [
+        "quest/heart",
         "ui/quest_heart"
       ],
       "key": "ui/quests-heart-icon",
@@ -18474,6 +18545,7 @@
       "file": "ui/quests-renown-subicon.png",
       "height": 44,
       "icon_keys": [
+        "quest/crown",
         "ui/quest_renown"
       ],
       "key": "ui/quests-renown-subicon",
@@ -18489,6 +18561,8 @@
       "file": "ui/quests-story-icon.png",
       "height": 56,
       "icon_keys": [
+        "quest/important",
+        "quest/story",
         "ui/quest_story"
       ],
       "key": "ui/quests-story-icon",
@@ -18631,6 +18705,22 @@
       "source_file": "Tackleshop icon.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png",
       "width": 104
+    },
+    {
+      "bytes": 272,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/woodcrafting-icon.png",
+      "height": 80,
+      "icon_keys": [
+        "skill/woodcrafting",
+        "ui/skill_woodcrafting"
+      ],
+      "key": "ui/woodcrafting-icon",
+      "sha256": "91db25168413497f0bb324004e49cbe5ad2a8e222a66324dd784ed57523a68cf",
+      "source_file": "Woodcrafting icon.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Woodcrafting%20icon.png",
+      "width": 100
     },
     {
       "bytes": 211,

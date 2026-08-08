@@ -1,11 +1,14 @@
-import { Link } from '@tanstack/react-router'
-import { useEffect, useMemo, useState } from 'react'
+import { getRouteApi, Link } from '@tanstack/react-router'
+import { useMemo } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { loadRequestBoard } from '~/lib/data'
 import type { BoardRequest } from '~/lib/request-board'
 import { itemsWanted } from '~/lib/request-board'
+import { useData } from '~/lib/use-data'
+
+const route = getRouteApi('/board')
 
 /**
  * The request board.
@@ -27,21 +30,31 @@ const SEASONS = ['spring', 'summer', 'fall', 'winter'] as const
 type SeasonFilter = (typeof SEASONS)[number] | 'all'
 
 export function BoardRoute() {
-  const [requests, setRequests] = useState<BoardRequest[] | null>(null)
-  const [error, setError] = useState<string | null>(null)
-  const [view, setView] = useState<View>('items')
-  const [season, setSeason] = useState<SeasonFilter>('all')
-  const [query, setQuery] = useState('')
+  // View, season and filter live in the URL so back restores this screen
+  // as it was — same grouping, same rows, same scroll.
+  const searchParams = route.useSearch()
+  const navigate = route.useNavigate()
+  const view: View = searchParams.view === 'villagers' ? 'villagers' : 'items'
+  const season = (searchParams.season ?? 'all') as SeasonFilter
+  const query = searchParams.q ?? ''
+  const setView = (v: View): void =>
+    void navigate({
+      search: ({ view: _, ...rest }) => (v === 'items' ? rest : { ...rest, view: v }),
+      replace: true,
+    })
+  const setSeason = (next: SeasonFilter): void =>
+    void navigate({
+      search: ({ season: _, ...rest }) => (next === 'all' ? rest : { ...rest, season: next }),
+      replace: true,
+    })
+  const setQuery = (q: string): void =>
+    void navigate({
+      search: ({ q: _, ...rest }) => (q === '' ? rest : { ...rest, q }),
+      replace: true,
+    })
 
-  useEffect(() => {
-    let live = true
-    loadRequestBoard()
-      .then((board) => live && setRequests(board.requests))
-      .catch((err: unknown) => live && setError(err instanceof Error ? err.message : String(err)))
-    return () => {
-      live = false
-    }
-  }, [])
+  const { data, error } = useData('request-board', loadRequestBoard)
+  const requests = data?.requests ?? null
 
   // A request with no season restriction is available all year, so it belongs in
   // every season's list — `null` here means "no restriction", never "unknown".
@@ -74,7 +87,7 @@ export function BoardRoute() {
         (entry) =>
           needle === '' ||
           entry.name.toLowerCase().includes(needle) ||
-          entry.askers.some((asker) => asker.toLowerCase().includes(needle)),
+          entry.askers.some((asker) => asker.name.toLowerCase().includes(needle)),
       ),
     [searched, needle],
   )
@@ -161,9 +174,23 @@ function ItemList({ wanted }: { wanted: ReturnType<typeof itemsWanted> }) {
               </Link>
             </p>
             <p className="truncate text-ink-faint text-xs">
-              {entry.askers.length === 1
-                ? entry.askers[0]
-                : `${entry.askers.length} villagers · ${entry.askers.slice(0, 3).join(', ')}`}
+              {entry.askers.length > 1 && `${entry.askers.length} villagers · `}
+              {entry.askers.slice(0, 3).map((asker, i) => (
+                <span key={asker.name}>
+                  {i > 0 && ', '}
+                  {asker.id === null ? (
+                    asker.name
+                  ) : (
+                    <Link
+                      to="/villager/$id"
+                      params={{ id: asker.id }}
+                      className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
+                    >
+                      {asker.name}
+                    </Link>
+                  )}
+                </span>
+              ))}
               {entry.gated ? ' · not from the start' : ''}
             </p>
           </div>
@@ -247,25 +274,50 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-ink text-sm">
-                    {request.items.length === 0
-                      ? request.name
-                      : request.items.map((i, idx) => (
-                          <span key={i.id}>
-                            {idx > 0 && ', '}
-                            <Link
-                              to="/item/$id"
-                              params={{ id: i.id }}
-                              className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                            >
-                              {i.name}
-                            </Link>
-                            {i.quantity > 1 && ` ×${i.quantity}`}
-                          </span>
-                        ))}
+                    {request.items.length === 0 ? (
+                      // A request whose items the wiki never listed still has a
+                      // quest page — the name is the way in, not a dead label.
+                      <Link
+                        to="/quest/$id"
+                        params={{ id: request.id }}
+                        className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                      >
+                        {request.name}
+                      </Link>
+                    ) : (
+                      request.items.map((i, idx) => (
+                        <span key={i.id}>
+                          {idx > 0 && ', '}
+                          <Link
+                            to="/item/$id"
+                            params={{ id: i.id }}
+                            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                          >
+                            {i.name}
+                          </Link>
+                          {i.quantity > 1 && ` ×${i.quantity}`}
+                        </span>
+                      ))
+                    )}
                   </p>
                   {request.gates.length > 0 && (
                     <p className="truncate text-ink-faint text-xs">
-                      {request.gates.map((g) => g.label).join(' · ')}
+                      {request.gates.map((g, idx) => (
+                        <span key={`${g.type}:${g.key ?? g.label}`}>
+                          {idx > 0 && ' · '}
+                          {g.key !== undefined && (g.type === 'quest' || g.type === 'location') ? (
+                            <Link
+                              to={g.type === 'quest' ? '/quest/$id' : '/place/$id'}
+                              params={{ id: g.key }}
+                              className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
+                            >
+                              {g.label}
+                            </Link>
+                          ) : (
+                            g.label
+                          )}
+                        </span>
+                      ))}
                     </p>
                   )}
                 </div>

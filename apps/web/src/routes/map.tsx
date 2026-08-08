@@ -1,21 +1,29 @@
-import { Link } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
+import { getRouteApi, Link } from '@tanstack/react-router'
+import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
+import { FoundHereList } from '~/components/FoundHereList'
 import { LoadError } from '~/components/Section'
 import { type MapRegionShape, ValleyMap } from '~/components/ValleyMap'
-import { loadDataset } from '~/lib/data'
+import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { type AvailabilityIndex, foundAt } from '~/lib/findable'
 import { titleCase } from '~/lib/labels'
 
+const route = getRouteApi('/map')
+
 /**
- * The map screen.
+ * The map screen: the whole valley, or one region up close.
+ *
+ * Selecting a region crops the view to it (the same `focusId` machinery the
+ * place page uses — pins and labels counter-scale, coordinates never move)
+ * and answers "what can I find here" right underneath, because that is why
+ * anyone zooms into a region. "Back to the valley" steps out again, and the
+ * selection lives in the URL, so the browser's own back button does too.
  *
  * The pins are the wiki's published coordinates and the region shapes are
- * measured from its v0.13 map, which the game has moved on from. **That is said
- * once, here, and not repeated on every pin** — a caveat attached to all
- * forty-six markers stops being read by the second screen, and the hollow
- * treatment stays reserved for genuine inference like habitat expansion. These
- * are sourced numbers, just older ones.
+ * measured from its v0.13 map, which the game has moved on from. **That is
+ * said once, here, and not repeated on every pin** — a caveat attached to all
+ * forty-six markers stops being read by the second screen.
  */
 
 interface LocationRecord {
@@ -43,13 +51,16 @@ interface SpotRecord {
 
 export function MapRoute() {
   const artUrl = useAtlas().mapUrl('map/valley')
+  const navigate = route.useNavigate()
+  const { region } = route.useSearch()
   const [state, setState] = useState<{
     map: MapRecord | null
     locations: LocationRecord[]
     spots: SpotRecord[]
+    availability: AvailabilityIndex | null
+    index: DisplayIndex
     error: string | null
-  }>({ map: null, locations: [], spots: [], error: null })
-  const [selected, setSelected] = useState<string | null>(null)
+  }>({ map: null, locations: [], spots: [], availability: null, index: {}, error: null })
 
   useEffect(() => {
     let live = true
@@ -57,10 +68,12 @@ export function MapRoute() {
       loadDataset<MapRecord>('maps'),
       loadDataset<LocationRecord>('locations'),
       loadDataset<SpotRecord>('spots'),
+      loadAvailability(),
+      loadDisplayIndex(),
     ])
-      .then(([maps, locations, spots]) => {
+      .then(([maps, locations, spots, availability, index]) => {
         if (!live) return
-        setState({ map: maps[0] ?? null, locations, spots, error: null })
+        setState({ map: maps[0] ?? null, locations, spots, availability, index, error: null })
       })
       .catch((err: unknown) => {
         if (!live) return
@@ -71,7 +84,28 @@ export function MapRoute() {
     }
   }, [])
 
-  const { map, locations, spots, error } = state
+  const { map, locations, spots, availability, index, error } = state
+
+  // The URL's word is validated against real regions — a stale or mistyped
+  // id falls back to the overview rather than a broken crop.
+  const selected =
+    region !== undefined && locations.some((l) => l.id === region && l.shape !== null)
+      ? region
+      : null
+
+  const select = (id: string | null): void =>
+    void navigate({ search: id === null ? {} : { region: id } })
+
+  // What the focused region yields — the region itself plus everything
+  // inside it, because a building's stock counts as the region's.
+  const found = useMemo(() => {
+    if (availability === null || selected === null) return []
+    const ids = new Set([
+      selected,
+      ...locations.filter((l) => l.parent_id === selected).map((l) => l.id),
+    ])
+    return foundAt(availability, ids)
+  }, [availability, locations, selected])
 
   if (error !== null) {
     return (
@@ -108,68 +142,89 @@ export function MapRoute() {
           ...inside
             .filter((l) => l.parent_id === selected)
             .map((l) => ({ id: l.id, x: l.anchor?.x ?? 0, y: l.anchor?.y ?? 0, label: l.name })),
+          // Spot pins are landmarks, not places — nothing to open.
           ...spots
             .filter((s) => s.location_id === selected)
-            .map((s) => ({ id: s.id, x: s.x, y: s.y, label: titleCase(s.id) })),
+            .map((s) => ({ id: s.id, x: s.x, y: s.y, label: titleCase(s.id), open: false })),
         ]
 
   return (
     <Screen>
       <header className="mb-3">
-        <h1 className="text-2xl">Map</h1>
+        <h1 className="text-2xl">{selectedRegion === null ? 'Map' : selectedRegion.name}</h1>
         <p className="mt-1 text-ink-mute text-sm">
           {selectedRegion === null ? (
             `${regions.length} regions, ${inside.length} places inside them.`
           ) : (
             <>
+              {`${pins.length} places here. `}
               <Link
                 to="/place/$id"
                 params={{ id: selectedRegion.id }}
                 className="underline decoration-rule underline-offset-4 hover:text-ink"
               >
-                {selectedRegion.name}
-              </Link>
-              {` — ${pins.length} places. `}
-              <Link
-                to="/place/$id"
-                params={{ id: selectedRegion.id }}
-                className="underline decoration-rule underline-offset-4 hover:text-ink"
-              >
-                What can I find here? →
+                About {selectedRegion.name} →
               </Link>
             </>
           )}
         </p>
       </header>
 
+      {selected !== null && (
+        <p className="mb-2">
+          <button
+            type="button"
+            onClick={() => select(null)}
+            className="rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
+          >
+            ← Back to the valley
+          </button>
+        </p>
+      )}
+
       <div className="rounded-card border border-rule bg-surface p-3 shadow-card">
         <ValleyMap
           viewBox={map.view_box}
           regions={regions}
           selectedId={selected}
-          onSelect={(id) => setSelected((current) => (current === id ? null : id))}
+          focusId={selected}
+          onSelect={(id) => select(selected === id ? null : id)}
           pins={pins}
           artUrl={artUrl}
+          // A building pin opens its page — "where is the blacksmith" ends at
+          // the blacksmith, not at a rectangle with a tooltip.
+          onPinClick={(id) => void navigate({ to: '/place/$id', params: { id } })}
         />
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
-        {regions.map((region) => (
+        {regions.map((r) => (
           <button
-            key={region.id}
+            key={r.id}
             type="button"
-            onClick={() => setSelected((current) => (current === region.id ? null : region.id))}
+            onClick={() => select(selected === r.id ? null : r.id)}
             className="rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
             style={
-              region.id === selected
+              r.id === selected
                 ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
                 : { color: 'var(--ink-mute)' }
             }
           >
-            {region.name}
+            {r.name}
           </button>
         ))}
       </div>
+
+      {/* The reason anyone zooms in: what is findable here, without leaving
+          the map. Same shared list the place page renders. */}
+      {selected !== null && (
+        <section className="mt-5">
+          <h2 className="mb-2 font-display font-semibold text-ink text-sm">
+            What you can get here
+          </h2>
+          <FoundHereList entities={found} index={index} />
+        </section>
+      )}
 
       {/*
         Said once. The shapes and pins come from the wiki's map for v0.13 and

@@ -24,7 +24,7 @@ const FAMILY_TITLES: Record<string, string> = {
   festival: 'Festivals',
   ui: 'Interface',
   map: 'Maps',
-  brand: 'Logo',
+  brand: 'Branding',
 }
 
 /** Escape the pipes and brackets that would otherwise break a Markdown table. */

@@ -2,7 +2,7 @@ import { SEASONS } from '@mistria/schema'
 import { Link } from '@tanstack/react-router'
 import { KIND_LABELS } from '~/lib/findable'
 import { formatClock, titleCase } from '~/lib/instant'
-import { ruleRequirementsPhrase } from '~/lib/labels'
+import { ruleRequirementPhrase, ruleToken } from '~/lib/labels'
 import type { Opportunity, WeatherOddsTable } from '~/lib/opportunity'
 import { oddsPhrase } from '~/lib/opportunity'
 
@@ -25,9 +25,21 @@ export interface OpportunityCardProps {
   /** Location id -> display name. */
   locationNames: Map<string, string>
   odds: WeatherOddsTable | undefined
+  /**
+   * Quest display name -> quest id, unique names only. Shipped rule tokens
+   * carry display names (`quest:Repair the Beach Bridge`), so linking one
+   * means resolving the name back — and only an unambiguous match may link,
+   * or a duplicate name would quietly point at the wrong record.
+   */
+  questIdByName?: Map<string, string>
 }
 
-export function OpportunityCard({ opportunity, locationNames, odds }: OpportunityCardProps) {
+export function OpportunityCard({
+  opportunity,
+  locationNames,
+  odds,
+  questIdByName,
+}: OpportunityCardProps) {
   const { rule, seasons, weather, time, locationId, requires, daysAway, availableNow } = opportunity
   const place =
     locationId === null ? null : (locationNames.get(locationId) ?? locationId.replace(/_/g, ' '))
@@ -95,7 +107,30 @@ export function OpportunityCard({ opportunity, locationNames, odds }: Opportunit
             className="rounded-pill px-1.5 py-0.5 text-[10px]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
           >
-            needs {ruleRequirementsPhrase(requires)}
+            needs{' '}
+            {requires.map((token, i) => {
+              const { type, name } = ruleToken(token)
+              const questId = type === 'quest' ? questIdByName?.get(name) : undefined
+              return (
+                <span key={token}>
+                  {i > 0 && ' · '}
+                  {questId === undefined ? (
+                    ruleRequirementPhrase(token)
+                  ) : (
+                    <>
+                      finish{' '}
+                      <Link
+                        to="/quest/$id"
+                        params={{ id: questId }}
+                        className="underline decoration-current underline-offset-2"
+                      >
+                        “{name}”
+                      </Link>
+                    </>
+                  )}
+                </span>
+              )
+            })}
           </span>
         )}
       </div>

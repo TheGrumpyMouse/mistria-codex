@@ -91,6 +91,13 @@ export type DisplayIndex = Record<
     i: string | null
     c: string
     v: number | null
+    /** 1 when the record is a story spoiler — list rows veil the name. */
+    s?: 1
+    /**
+     * Spoiler aliases — names that are themselves the reveal ("Seridia").
+     * Searchable like `a`, but shown only to someone who typed them.
+     */
+    sa?: string[]
     /**
      * Other names this thing goes by, searchable but never shown as the name.
      * Absent on almost every entry, so read it as optional rather than empty.

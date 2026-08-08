@@ -1,16 +1,16 @@
-import { SEASONS, type Season } from '@mistria/schema'
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
 import { BackLink } from '~/components/BackLink'
-import { ItemIcon } from '~/components/ItemIcon'
-import { NotRecorded, Section, Unknown } from '~/components/Section'
+import { FoundHereList } from '~/components/FoundHereList'
+import { NotRecorded, Section } from '~/components/Section'
+import { SpoilerAsk } from '~/components/Spoiler'
 import { ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
-import { type AvailabilityIndex, KIND_LABELS } from '~/lib/findable'
-import { requirementPhrase } from '~/lib/labels'
-import { seasonsOf } from '~/lib/opportunity'
+import { type AvailabilityIndex, foundAt } from '~/lib/findable'
+import { requirementDisplay } from '~/lib/labels'
+import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/place/$id')
 
@@ -30,6 +30,7 @@ const route = getRouteApi('/place/$id')
 interface LocationRecord {
   id: string
   name: string
+  spoiler?: boolean
   kind: string | null
   aliases: string[]
   habitats: string[]
@@ -45,12 +46,6 @@ interface SealRecord {
   name: string
   quest_id: string
   required_items: { item_id: string; quantity: number }[]
-}
-
-interface Found {
-  id: string
-  kind: string
-  seasons: Season[]
 }
 
 export function PlaceRoute() {
@@ -99,6 +94,7 @@ export function PlaceRoute() {
     }
   }, [id])
 
+  const spoilers = useSpoilers()
   const { place, all, places, availability, index, seals, loading } = state
   // The region this place sits in — itself when it is one, its parent when it
   // is a building. The map panel crops to that region.
@@ -117,36 +113,14 @@ export function PlaceRoute() {
           place.unlock_requires.some((r) => r.type === 'quest' && r.key === s.quest_id),
         )
 
+  // The walk itself is shared with the map's region panel (lib/findable.ts
+  // foundAt), and it takes this place PLUS the places inside it — a region
+  // page should count what its buildings sell and spawn.
   const found = useMemo(() => {
     if (availability === null) return []
-
-    // Union across rules, not one row per rule: three ways to catch the same
-    // fish here is still one fish, and its seasons are all of theirs.
-    const byEntity = new Map<string, Found>()
-    for (const rule of availability.rules) {
-      if (rule.loc === null || availability.locations[rule.loc] !== id) continue
-      const existing = byEntity.get(rule.e)
-      const seasons = new Set([...(existing?.seasons ?? []), ...seasonsOf(rule.sea)])
-      byEntity.set(rule.e, {
-        id: rule.e,
-        kind: existing?.kind ?? rule.k,
-        seasons: SEASONS.filter((s) => seasons.has(s)),
-      })
-    }
-
-    const groups = new Map<string, Found[]>()
-    for (const entity of byEntity.values()) {
-      groups.set(entity.kind, [...(groups.get(entity.kind) ?? []), entity])
-    }
-    return [...groups.entries()]
-      .map(([kind, entities]) => ({
-        kind,
-        entities: entities.sort((a, b) =>
-          (index[a.id]?.n ?? a.id).localeCompare(index[b.id]?.n ?? b.id),
-        ),
-      }))
-      .sort((a, b) => a.kind.localeCompare(b.kind))
-  }, [availability, index, id])
+    const ids = new Set([id, ...all.filter((l) => l.parent_id === id).map((l) => l.id)])
+    return foundAt(availability, ids)
+  }, [availability, all, id])
 
   if (loading) {
     return (
@@ -167,6 +141,16 @@ export function PlaceRoute() {
           </Link>
           .
         </p>
+      </Column>
+    )
+  }
+
+  // The veil covers the whole page, name included — the name is the spoiler.
+  if (place.spoiler === true && !spoilers.shown(place.id)) {
+    return (
+      <Column>
+        <BackLink />
+        <SpoilerAsk id={place.id} kind="place" />
       </Column>
     )
   }
@@ -198,7 +182,30 @@ export function PlaceRoute() {
         // information; a place that silently is not there is not.
         <div className="unverified mt-3 rounded-tile px-3 py-2 text-xs">
           Locked — to open it,{' '}
-          {place.unlock_requires.map((r) => requirementPhrase(r)).join(' and ')}.
+          {place.unlock_requires.map((r, i) => {
+            // The index is already here, so the gate gets its real name
+            // ("Repair the Bell Tower", not a title-cased slug) and a link.
+            const parts = requirementDisplay(r, index[r.key]?.n)
+            return (
+              <span key={`${r.type}:${r.key}`}>
+                {i > 0 && ' and '}
+                {parts.prefix}
+                {parts.linkTo === null ? (
+                  parts.label
+                ) : (
+                  <Link
+                    to={parts.linkTo.to}
+                    params={{ id: parts.linkTo.id }}
+                    className="underline decoration-rule underline-offset-2 hover:text-ink"
+                  >
+                    {parts.label}
+                  </Link>
+                )}
+                {parts.suffix}
+              </span>
+            )
+          })}
+          .
           {/* When the door is a seal, the lock message carries the price —
               which is the half a player actually came to look up. */}
           {gateSeal !== undefined && gateSeal.required_items.length > 0 && (
@@ -225,58 +232,7 @@ export function PlaceRoute() {
       )}
 
       <Section title="What you can get here">
-        {found.length === 0 ? (
-          <Unknown>Nothing is recorded as coming from here yet.</Unknown>
-        ) : (
-          <ul className="flex flex-col gap-4">
-            {found.map(({ kind, entities }) => (
-              <li key={kind}>
-                <p className="text-ink text-sm">
-                  {KIND_LABELS[kind] ?? kind.replace(/_/g, ' ')}
-                  <span className="text-ink-faint"> · {entities.length}</span>
-                </p>
-                <ul className="mt-1 flex flex-col divide-y divide-rule border-rule border-y">
-                  {entities.map((entity) => (
-                    <li key={entity.id}>
-                      <Link
-                        to="/item/$id"
-                        params={{ id: entity.id }}
-                        className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
-                      >
-                        <ItemIcon
-                          iconKey={index[entity.id]?.i ?? `item/${entity.id}`}
-                          name={index[entity.id]?.n ?? entity.id}
-                          size="sm"
-                        />
-                        <span className="min-w-0 flex-1 truncate text-ink text-sm">
-                          {index[entity.id]?.n ?? entity.id.replace(/_/g, ' ')}
-                        </span>
-                        <span className="flex shrink-0 gap-1">
-                          {entity.seasons.length === SEASONS.length ? (
-                            <span className="text-ink-faint text-[10px]">all year</span>
-                          ) : (
-                            entity.seasons.map((season) => (
-                              <span
-                                key={season}
-                                className="rounded-pill px-1.5 py-0.5 text-[10px]"
-                                style={{
-                                  background: `var(--${season}-tint)`,
-                                  color: `var(--${season})`,
-                                }}
-                              >
-                                {season}
-                              </span>
-                            ))
-                          )}
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        )}
+        <FoundHereList entities={found} index={index} />
       </Section>
 
       {/* The area itself, cropped from the same map the Map screen draws —

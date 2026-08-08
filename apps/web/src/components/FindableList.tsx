@@ -1,10 +1,13 @@
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { ItemIcon } from '~/components/ItemIcon'
+import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
 import type { FindableEntity } from '~/lib/findable'
 import { groupByKind, KIND_LABELS } from '~/lib/findable'
 import { ruleRequirementsPhrase } from '~/lib/labels'
+import { routeFor } from '~/lib/search'
+import { useSpoilers } from '~/lib/spoilers'
 
 /**
  * What the query found, as sections.
@@ -132,6 +135,24 @@ export function FindableRow({
   locationNames: Map<string, string>
 }) {
   const entry = index[entity.id]
+  const spoilers = useSpoilers()
+
+  // No availability entity is veil-flagged today, but the check costs
+  // nothing and means flagging one later needs no code change here.
+  const veilReason = veilReasonOf(entry)
+  if (entry !== undefined && veilReason !== null && !spoilers.shown(entity.id)) {
+    return (
+      <li className="flex items-center gap-3 py-2">
+        <Link
+          to={routeFor(entry.c)}
+          params={{ id: entity.id }}
+          className="inline-flex items-center gap-3"
+        >
+          <SpoilerChip reason={veilReason} />
+        </Link>
+      </li>
+    )
+  }
 
   return (
     <li className="flex items-center gap-3 py-2">
@@ -144,7 +165,9 @@ export function FindableRow({
       <div className="min-w-0 flex-1">
         <p className="truncate text-sm">
           <Link
-            to="/item/$id"
+            // Every availability entity is an item category today; routeFor is
+            // insurance for the day one is not.
+            to={routeFor(entry?.c ?? 'misc')}
             params={{ id: entity.id }}
             className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
           >

@@ -1504,5 +1504,892 @@
       "id": "water",
       "quest_id": "the_water_tablet"
     }
+  ],
+  "skillTrees": [
+    {
+      "perks": [
+        {
+          "essence": 20,
+          "id": "museum_quality_one",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "sunken_secrets",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "unpeatable",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "western_ruins_scholar",
+          "tier": 1
+        },
+        {
+          "essence": 50,
+          "id": "eastern_road_scholar",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "pursuit",
+          "tier": 2
+        },
+        {
+          "essence": 40,
+          "id": "stoneturner",
+          "tier": 2
+        },
+        {
+          "essence": 35,
+          "id": "sunken_treasure",
+          "tier": 2
+        },
+        {
+          "essence": 80,
+          "id": "back_in_vogue",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "museum_quality_two",
+          "tier": 3
+        },
+        {
+          "essence": 85,
+          "id": "natural_beauty",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "well_placed",
+          "tier": 3
+        },
+        {
+          "essence": 145,
+          "id": "back_in_vogue_two",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "former_farmers",
+          "tier": 4
+        },
+        {
+          "essence": 140,
+          "id": "museum_quality_three",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "natural_beauty_two",
+          "tier": 4
+        },
+        {
+          "essence": 200,
+          "id": "mist_sight",
+          "tier": 5
+        }
+      ],
+      "skill": "archaeology"
+    },
+    {
+      "perks": [
+        {
+          "essence": 15,
+          "id": "copper_expert",
+          "tier": 1
+        },
+        {
+          "essence": 20,
+          "id": "fortified_blacksmithing",
+          "tier": 1
+        },
+        {
+          "essence": 20,
+          "id": "sharp_blacksmithing",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "time_sensitive",
+          "tier": 1
+        },
+        {
+          "essence": 50,
+          "id": "iron_expert",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "leech_blacksmithing",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "lightweight_blacksmithing",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "time_sensitive_two",
+          "tier": 2
+        },
+        {
+          "essence": 65,
+          "id": "empowered",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "hasty_blacksmithing",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "silver_expert",
+          "tier": 3
+        },
+        {
+          "essence": 50,
+          "id": "time_sensitive_three",
+          "tier": 3
+        },
+        {
+          "essence": 155,
+          "id": "empowered_two",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "gold_expert",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "time_sensitive_four",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "tireless_blacksmithing",
+          "tier": 4
+        },
+        {
+          "essence": 205,
+          "id": "mistril_expert",
+          "tier": 5
+        }
+      ],
+      "skill": "blacksmithing"
+    },
+    {
+      "perks": [
+        {
+          "essence": 10,
+          "id": "guardians_shield",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "jump_attack",
+          "tier": 1
+        },
+        {
+          "essence": 20,
+          "id": "true_strike",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "well_armed",
+          "tier": 1
+        },
+        {
+          "essence": 45,
+          "id": "dungeon_delicacies",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "generous_in_defeat",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "quick_footed",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "shrine_savant",
+          "tier": 2
+        },
+        {
+          "essence": 75,
+          "id": "in_motion",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "out_of_juice",
+          "tier": 3
+        },
+        {
+          "essence": 80,
+          "id": "perfect_prefix",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "rocking",
+          "tier": 3
+        },
+        {
+          "essence": 155,
+          "id": "gift_exchange",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "guardians_shield_two",
+          "tier": 4
+        },
+        {
+          "essence": 160,
+          "id": "sonic_boom",
+          "tier": 4
+        },
+        {
+          "essence": 160,
+          "id": "true_strike_two",
+          "tier": 4
+        },
+        {
+          "essence": 200,
+          "id": "friend_shaped",
+          "tier": 5
+        },
+        {
+          "essence": 200,
+          "id": "generous_in_defeat_two",
+          "tier": 5
+        },
+        {
+          "essence": 205,
+          "id": "sure_strike",
+          "tier": 5
+        }
+      ],
+      "skill": "combat"
+    },
+    {
+      "perks": [
+        {
+          "essence": 20,
+          "id": "restorative_cooking",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "taste_maker",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "time_to_eat",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "waste_not_want_not",
+          "tier": 1
+        },
+        {
+          "essence": 45,
+          "id": "award_winning",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "likable_cooking",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "seasoned",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "time_to_eat_two",
+          "tier": 2
+        },
+        {
+          "essence": 75,
+          "id": "a_way_to_the_heart",
+          "tier": 3
+        },
+        {
+          "essence": 80,
+          "id": "dinner_for_two",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "speedy_cooking",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "time_to_eat_three",
+          "tier": 3
+        },
+        {
+          "essence": 155,
+          "id": "caffeine_crimes",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "loveable_cooking",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "magical_meals",
+          "tier": 4
+        },
+        {
+          "essence": 145,
+          "id": "snacktime",
+          "tier": 4
+        },
+        {
+          "essence": 205,
+          "id": "espresso_yourself",
+          "tier": 5
+        },
+        {
+          "essence": 205,
+          "id": "fairy_cooking",
+          "tier": 5
+        }
+      ],
+      "skill": "cooking"
+    },
+    {
+      "perks": [
+        {
+          "essence": 20,
+          "id": "a_day_well_spent",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "green_thumb",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "prepared_picker",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "refreshing",
+          "tier": 1
+        },
+        {
+          "essence": 60,
+          "id": "bountiful",
+          "tier": 2
+        },
+        {
+          "essence": 30,
+          "id": "heavy_duty",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "nice_swing",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "well_watered",
+          "tier": 2
+        },
+        {
+          "essence": 90,
+          "id": "harvest_time",
+          "tier": 3
+        },
+        {
+          "essence": 95,
+          "id": "living_off_the_land",
+          "tier": 3
+        },
+        {
+          "essence": 90,
+          "id": "prize_winning",
+          "tier": 3
+        },
+        {
+          "essence": 100,
+          "id": "superb_sower",
+          "tier": 3
+        },
+        {
+          "essence": 160,
+          "id": "magic_design",
+          "tier": 4
+        },
+        {
+          "essence": 145,
+          "id": "ornamental",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "perfect_pollinators",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "sickle_sword",
+          "tier": 4
+        },
+        {
+          "essence": 210,
+          "id": "earthly_essence",
+          "tier": 5
+        }
+      ],
+      "skill": "farming"
+    },
+    {
+      "perks": [
+        {
+          "essence": 10,
+          "id": "appealing_reeling",
+          "tier": 1
+        },
+        {
+          "essence": 20,
+          "id": "aquatic_antiquities",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "catch_of_the_day",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "weedline_watcher",
+          "tier": 1
+        },
+        {
+          "essence": 40,
+          "id": "lucky_haul",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "perfect_catch",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "school_crasher",
+          "tier": 2
+        },
+        {
+          "essence": 40,
+          "id": "unexpected_haul",
+          "tier": 2
+        },
+        {
+          "essence": 75,
+          "id": "full_class",
+          "tier": 3
+        },
+        {
+          "essence": 80,
+          "id": "legendary",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "treasure_trove",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "weedline_watcher_two",
+          "tier": 3
+        },
+        {
+          "essence": 155,
+          "id": "appealing_reeling_two",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "frenzy",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "lucky_haul_two",
+          "tier": 4
+        },
+        {
+          "essence": 145,
+          "id": "what_a_catch",
+          "tier": 4
+        },
+        {
+          "essence": 205,
+          "id": "abyssal_ascendence",
+          "tier": 5
+        }
+      ],
+      "skill": "fishing"
+    },
+    {
+      "perks": [
+        {
+          "essence": 20,
+          "id": "earth_breaker",
+          "tier": 1
+        },
+        {
+          "essence": 25,
+          "id": "ore_riginal",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "reclaimer",
+          "tier": 1
+        },
+        {
+          "essence": 20,
+          "id": "treasure_hunter",
+          "tier": 1
+        },
+        {
+          "essence": 50,
+          "id": "iron_hound",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "mine_time",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "treasured",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "true_blue",
+          "tier": 2
+        },
+        {
+          "essence": 80,
+          "id": "earth_breaker_two",
+          "tier": 3
+        },
+        {
+          "essence": 80,
+          "id": "fantastic_finds",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "resonance",
+          "tier": 3
+        },
+        {
+          "essence": 85,
+          "id": "silver_seeker",
+          "tier": 3
+        },
+        {
+          "essence": 155,
+          "id": "break_one_get_two",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "good_as_gold",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "lost_to_history",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "refined_rockery",
+          "tier": 4
+        },
+        {
+          "essence": 200,
+          "id": "lost_to_history_two",
+          "tier": 5
+        },
+        {
+          "essence": 200,
+          "id": "mistril_mastery",
+          "tier": 5
+        },
+        {
+          "essence": 210,
+          "id": "perfect_pick",
+          "tier": 5
+        },
+        {
+          "essence": 205,
+          "id": "void_value",
+          "tier": 5
+        }
+      ],
+      "skill": "mining"
+    },
+    {
+      "perks": [
+        {
+          "essence": 190,
+          "id": "harvest_horse",
+          "tier": 1
+        },
+        {
+          "essence": 200,
+          "id": "horsepower",
+          "tier": 1
+        },
+        {
+          "essence": 205,
+          "id": "nice_ride",
+          "tier": 1
+        }
+      ],
+      "skill": "mount"
+    },
+    {
+      "perks": [
+        {
+          "essence": 30,
+          "id": "barnyard_bounty",
+          "tier": 1
+        },
+        {
+          "essence": 25,
+          "id": "close_bond",
+          "tier": 1
+        },
+        {
+          "essence": 25,
+          "id": "currency_of_care",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "feeding_frenzy",
+          "tier": 1
+        },
+        {
+          "essence": 50,
+          "id": "currency_of_care_two",
+          "tier": 2
+        },
+        {
+          "essence": 40,
+          "id": "discount_treats",
+          "tier": 2
+        },
+        {
+          "essence": 40,
+          "id": "feed_prepper",
+          "tier": 2
+        },
+        {
+          "essence": 45,
+          "id": "welcome_home",
+          "tier": 2
+        },
+        {
+          "essence": 80,
+          "id": "barnyard_bounty_two",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "currency_of_care_three",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "welcome_home_two",
+          "tier": 3
+        },
+        {
+          "essence": 145,
+          "id": "wind_down",
+          "tier": 3
+        },
+        {
+          "essence": 145,
+          "id": "barnyard_bounty_three",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "maximum_milling",
+          "tier": 4
+        },
+        {
+          "essence": 150,
+          "id": "playtime",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "the_bell_tolls",
+          "tier": 4
+        },
+        {
+          "essence": 210,
+          "id": "close_bond_two",
+          "tier": 5
+        },
+        {
+          "essence": 205,
+          "id": "eggstra",
+          "tier": 5
+        },
+        {
+          "essence": 215,
+          "id": "true_trust",
+          "tier": 5
+        }
+      ],
+      "skill": "ranching"
+    },
+    {
+      "perks": [
+        {
+          "essence": 20,
+          "id": "forager",
+          "tier": 1
+        },
+        {
+          "essence": 10,
+          "id": "hammer_timing",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "lumberjack",
+          "tier": 1
+        },
+        {
+          "essence": 15,
+          "id": "masonry",
+          "tier": 1
+        },
+        {
+          "essence": 50,
+          "id": "hammer_timing_two",
+          "tier": 2
+        },
+        {
+          "essence": 20,
+          "id": "natural",
+          "tier": 2
+        },
+        {
+          "essence": 95,
+          "id": "quality_crafting",
+          "tier": 2
+        },
+        {
+          "essence": 60,
+          "id": "working_with_the_grain",
+          "tier": 2
+        },
+        {
+          "essence": 50,
+          "id": "hammer_timing_three",
+          "tier": 3
+        },
+        {
+          "essence": 75,
+          "id": "material_world",
+          "tier": 3
+        },
+        {
+          "essence": 80,
+          "id": "set_pieces",
+          "tier": 3
+        },
+        {
+          "essence": 70,
+          "id": "steady_supplies",
+          "tier": 3
+        },
+        {
+          "essence": 150,
+          "id": "deliberate_debris",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "lumberjack_two",
+          "tier": 4
+        },
+        {
+          "essence": 145,
+          "id": "underground_inspiration",
+          "tier": 4
+        },
+        {
+          "essence": 155,
+          "id": "working_with_the_grain_two",
+          "tier": 4
+        },
+        {
+          "essence": 205,
+          "id": "big_water_sprites",
+          "tier": 5
+        },
+        {
+          "essence": 200,
+          "id": "deliberate_debris_two",
+          "tier": 5
+        },
+        {
+          "essence": 210,
+          "id": "hammer_timing_four",
+          "tier": 5
+        },
+        {
+          "essence": 205,
+          "id": "void_crafting",
+          "tier": 5
+        }
+      ],
+      "skill": "woodcrafting"
+    }
   ]
 }

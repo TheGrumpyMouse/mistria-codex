@@ -1,10 +1,15 @@
-import { Link } from '@tanstack/react-router'
-import { useEffect, useMemo, useState } from 'react'
+import { getRouteApi, Link } from '@tanstack/react-router'
+import { useMemo } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
-import { type DisplayIndex, loadDisplayIndex } from '~/lib/data'
-import { routeFor } from '~/lib/search'
+import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
+import { loadDisplayIndex } from '~/lib/data'
+import { routeFor, typedTheName } from '~/lib/search'
+import { useSpoilers } from '~/lib/spoilers'
+import { useData } from '~/lib/use-data'
+
+const route = getRouteApi('/browse')
 
 /**
  * Everything, by category.
@@ -39,23 +44,35 @@ const CATEGORIES: { id: string; label: string }[] = [
   { id: 'character', label: 'Villagers' },
   { id: 'monster', label: 'Monsters' },
   { id: 'location', label: 'Places' },
+  // 352 records — a fifth of the index. Absent from this list, they were
+  // findable only through search, which read as missing data.
+  { id: 'quest', label: 'Quests' },
 ]
 
 export function BrowseRoute() {
-  const [index, setIndex] = useState<DisplayIndex | null>(null)
-  const [error, setError] = useState<string | null>(null)
-  const [category, setCategory] = useState('fish')
-  const [filter, setFilter] = useState('')
+  // Category and filter live in the URL, so the back button restores this
+  // screen exactly — same rows, same scroll. Typing replaces the history
+  // entry rather than stacking one per keystroke.
+  const search = route.useSearch()
+  const navigate = route.useNavigate()
+  const category = search.c ?? 'fish'
+  const filter = search.q ?? ''
+  // Defaults are omitted from the URL rather than written as `undefined` —
+  // exactOptionalPropertyTypes treats those differently, and a bare /browse
+  // should stay a bare /browse.
+  const setCategory = (c: string): void =>
+    void navigate({
+      search: ({ c: _, ...rest }) => (c === 'fish' ? rest : { ...rest, c }),
+      replace: true,
+    })
+  const setFilter = (q: string): void =>
+    void navigate({
+      search: ({ q: _, ...rest }) => (q === '' ? rest : { ...rest, q }),
+      replace: true,
+    })
 
-  useEffect(() => {
-    let live = true
-    loadDisplayIndex()
-      .then((loaded) => live && setIndex(loaded))
-      .catch((err: unknown) => live && setError(err instanceof Error ? err.message : String(err)))
-    return () => {
-      live = false
-    }
-  }, [])
+  const { data: index, error } = useData('display-index', loadDisplayIndex)
+  const spoilers = useSpoilers()
 
   const rows = useMemo(() => {
     if (index === null) return []
@@ -119,23 +136,35 @@ export function BrowseRoute() {
       />
 
       <ul className="mt-3 flex flex-col divide-y divide-rule border-rule border-y">
-        {rows.map(([id, entry]) => (
-          <li key={id}>
-            <Link
-              to={routeFor(entry.c)}
-              params={{ id }}
-              className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
-            >
-              <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
-              <span className="min-w-0 flex-1 truncate text-ink text-sm">{entry.n}</span>
-              {entry.v !== null && (
-                <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
-                  {entry.v}t
-                </span>
-              )}
-            </Link>
-          </li>
-        ))}
+        {rows.map(([id, entry]) => {
+          // Veiled, not dropped: the count above stays honest and the row
+          // still opens its (veiled) page. Typing the name lifts it.
+          const reason = veilReasonOf(entry)
+          const veiled = reason !== null && !spoilers.shown(id) && !typedTheName(entry, filter)
+          return (
+            <li key={id}>
+              <Link
+                to={routeFor(entry.c)}
+                params={{ id }}
+                className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
+              >
+                {veiled && reason !== null ? (
+                  <SpoilerChip reason={reason} />
+                ) : (
+                  <>
+                    <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
+                    <span className="min-w-0 flex-1 truncate text-ink text-sm">{entry.n}</span>
+                    {entry.v !== null && (
+                      <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
+                        {entry.v}t
+                      </span>
+                    )}
+                  </>
+                )}
+              </Link>
+            </li>
+          )
+        })}
       </ul>
 
       {rows.length === 0 && index !== null && (

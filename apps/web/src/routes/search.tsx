@@ -1,10 +1,15 @@
-import { Link } from '@tanstack/react-router'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { getRouteApi, Link } from '@tanstack/react-router'
+import { useEffect, useMemo, useRef } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
-import { type DisplayIndex, loadDisplayIndex } from '~/lib/data'
+import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
+import { loadDisplayIndex } from '~/lib/data'
 import { categoryLabelOne } from '~/lib/labels'
-import { routeFor, search } from '~/lib/search'
+import { routeFor, search, typedTheName } from '~/lib/search'
+import { useSpoilers } from '~/lib/spoilers'
+import { useData } from '~/lib/use-data'
+
+const route = getRouteApi('/search')
 
 /**
  * Search, over the index the app already has.
@@ -21,21 +26,24 @@ import { routeFor, search } from '~/lib/search'
  */
 
 export function SearchRoute() {
-  const [index, setIndex] = useState<DisplayIndex | null>(null)
-  const [query, setQuery] = useState('')
+  // The query lives in the URL: back from a result returns to the same
+  // results at the same scroll, and a search is shareable.
+  const { q } = route.useSearch()
+  const navigate = route.useNavigate()
+  const query = q ?? ''
+  const setQuery = (next: string): void =>
+    void navigate({ search: next === '' ? {} : { q: next }, replace: true })
+
+  const { data: index } = useData('display-index', loadDisplayIndex)
   const input = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    let live = true
-    loadDisplayIndex().then((loaded) => live && setIndex(loaded))
     // Focus on arrival: you came here to type.
     input.current?.focus()
-    return () => {
-      live = false
-    }
   }, [])
 
   const results = useMemo(() => search(index ?? {}, query), [index, query])
+  const spoilers = useSpoilers()
 
   return (
     <Column>
@@ -63,24 +71,41 @@ export function SearchRoute() {
         <p className="mt-4 text-ink-mute text-sm">Nothing matches “{query.trim()}”.</p>
       ) : (
         <ul className="mt-3 flex flex-col divide-y divide-rule border-rule border-y">
-          {results.map(({ id, entry, via }) => (
-            <li key={id}>
-              <Link
-                to={routeFor(entry.c)}
-                params={{ id }}
-                className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
-              >
-                <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
-                <span className="min-w-0 flex-1 truncate text-ink text-sm">
-                  {entry.n}
-                  {/* Why this row is here at all. Without it a result whose name
-                      does not contain what you typed reads as a broken search. */}
-                  {via !== null && <span className="ml-2 text-ink-faint text-xs">also {via}</span>}
-                </span>
-                <span className="shrink-0 text-ink-faint text-xs">{categoryLabelOne(entry.c)}</span>
-              </Link>
-            </li>
-          ))}
+          {results.map(({ id, entry, via }) => {
+            // The typed-it exemption: a veiled record shows its real name to
+            // someone whose query already is that name — redacting "Caldarus"
+            // from the person who typed "caldarus" would only look broken.
+            const reason = veilReasonOf(entry)
+            const veiled = reason !== null && !spoilers.shown(id) && !typedTheName(entry, query)
+            return (
+              <li key={id}>
+                <Link
+                  to={routeFor(entry.c)}
+                  params={{ id }}
+                  className="flex items-center gap-3 py-2.5 transition-colors hover:bg-sunk"
+                >
+                  {veiled && reason !== null ? (
+                    <SpoilerChip reason={reason} />
+                  ) : (
+                    <>
+                      <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
+                      <span className="min-w-0 flex-1 truncate text-ink text-sm">
+                        {entry.n}
+                        {/* Why this row is here at all. Without it a result whose name
+                            does not contain what you typed reads as a broken search. */}
+                        {via !== null && (
+                          <span className="ml-2 text-ink-faint text-xs">also {via}</span>
+                        )}
+                      </span>
+                    </>
+                  )}
+                  <span className="ml-auto shrink-0 text-ink-faint text-xs">
+                    {categoryLabelOne(entry.c)}
+                  </span>
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       )}
     </Column>

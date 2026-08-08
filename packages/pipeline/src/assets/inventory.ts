@@ -200,7 +200,7 @@ export async function collectFestivalWants(): Promise<Want[]> {
  */
 export async function collectUiWants(): Promise<Want[]> {
   interface UiAssets {
-    glyphs: { key: string; file: string }[]
+    glyphs: { key: string; file: string; also?: string[] }[]
   }
 
   let ui: UiAssets
@@ -213,7 +213,14 @@ export async function collectUiWants(): Promise<Want[]> {
   return ui.glyphs.flatMap((glyph) => {
     const sourceFile = canonicalWikiName(glyph.file)
     if (sourceFile === '') return []
-    return [{ family: 'ui' as const, iconKey: `ui/${glyph.key}`, sourceFile }]
+    // `also` aliases the same sprite under other icon_keys — how the quest
+    // kinds' `quest/story`-style keys and a villager with no infobox icon get
+    // real art without any record changing. The dedup in buildInventory
+    // merges every alias onto one fetched asset.
+    return [
+      { family: 'ui' as const, iconKey: `ui/${glyph.key}`, sourceFile },
+      ...(glyph.also ?? []).map((iconKey) => ({ family: 'ui' as const, iconKey, sourceFile })),
+    ]
   })
 }
 

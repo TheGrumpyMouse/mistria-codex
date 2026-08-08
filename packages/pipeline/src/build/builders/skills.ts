@@ -21,7 +21,7 @@ export function buildSkills(ctx: BuildContext): Skill[] {
   const { skills } = ctx
 
   return skills.skills.map((skill) => {
-    const perks = skills.perks
+    const perks: Skill['perks'] = skills.perks
       .filter((perk) => perk.skill === skill.id)
       .map((perk) => {
         const id = toSnakeId(perk.name)
@@ -43,6 +43,38 @@ export function buildSkills(ctx: BuildContext): Skill[] {
 
     const gaps = ['xp_curve', 'effect_key']
     if (predates1_0(skills.lastEdited)) gaps.push('predates_1_0')
+
+    // The game-union pass: perks the skill menu states and the wiki page does
+    // not list yet — the seven 1.0 additions, until the wiki catches up.
+    // Matched by NAME, not id: wiki perk ids are slugs of the display name
+    // ("Welcome Home II" -> welcome_home_ii) while the game spells its own
+    // ("welcome_home_two"), so an id match would duplicate half the tree.
+    // Names are folded to letters and digits before comparing — the wiki
+    // writes "Well Armed" where the game writes "Well-Armed", and a hyphen
+    // must not conjure a second perk. Appended perks carry the game's id —
+    // the real internal name — with the tier and essence cost the menu
+    // states; only the unlock level is the wiki's alone and stays a gap.
+    const fold = (name: string): string => name.toLowerCase().replace(/[^a-z0-9]/g, '')
+    const tree = ctx.game?.artifactFacts?.skillTreeBySkill.get(skill.id) ?? []
+    const perkName = ctx.game?.artifactFacts?.perkNameById
+    const wikiNames = new Set(perks.map((p) => fold(p.name)))
+    let appended = 0
+    for (const gamePerk of tree) {
+      const name = perkName?.get(gamePerk.id)
+      if (name === undefined || wikiNames.has(fold(name))) continue
+      perks.push({
+        id: gamePerk.id,
+        name,
+        tier: gamePerk.tier,
+        level: null,
+        essence_cost: gamePerk.essence,
+        effect_key: null,
+        effect: ctx.perkEffects[gamePerk.id] ?? null,
+        statue: skill.statue,
+      })
+      appended += 1
+    }
+    if (appended > 0) gaps.push('perk_levels')
 
     // Eight skills have five tiers; Ranching has four. That is a hole in the
     // wiki rather than a design decision, so it is recorded as one — otherwise

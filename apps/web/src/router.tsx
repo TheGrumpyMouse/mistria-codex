@@ -41,10 +41,24 @@ const todayRoute = createRoute({
   validateSearch: InstantSearch,
 })
 
+/**
+ * List screens keep their filters in the URL, for the same reason the map
+ * keeps its region there: the back button must restore what you were looking
+ * at — the scroll restoration lands on the right rows only if the same rows
+ * render. A junk value falls back rather than throwing.
+ */
+const optionalString = (value: unknown): string | undefined =>
+  typeof value === 'string' && value !== '' ? value : undefined
+
 const browseRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/browse',
   component: BrowseRoute,
+  validateSearch: (search: Record<string, unknown>) => {
+    const c = optionalString(search.c)
+    const q = optionalString(search.q)
+    return { ...(c === undefined ? {} : { c }), ...(q === undefined ? {} : { q }) }
+  },
 })
 
 const itemRoute = createRoute({
@@ -98,6 +112,10 @@ const searchRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/search',
   component: SearchRoute,
+  validateSearch: (search: Record<string, unknown>) => {
+    const q = optionalString(search.q)
+    return q === undefined ? {} : { q }
+  },
 })
 
 const calendarRoute = createRoute({
@@ -128,18 +146,43 @@ const museumRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/museum',
   component: MuseumRoute,
+  validateSearch: (search: Record<string, unknown>) => {
+    const wing = optionalString(search.wing)
+    const q = optionalString(search.q)
+    return { ...(wing === undefined ? {} : { wing }), ...(q === undefined ? {} : { q }) }
+  },
 })
 
 const mapRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/map',
   component: MapRoute,
+  // The focused region lives in the URL so a share, a reload and the back
+  // button all mean the same thing. Anything unreadable falls back to the
+  // overview rather than throwing — a shared link that errors is worse than
+  // no link. The id is validated against real regions in the component.
+  validateSearch: (search: Record<string, unknown>) => {
+    const region = search.region
+    return typeof region === 'string' && region !== '' ? { region } : {}
+  },
 })
 
 const boardRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/board',
   component: BoardRoute,
+  validateSearch: (search: Record<string, unknown>) => {
+    const view = search.view === 'villagers' ? 'villagers' : undefined
+    const season = ['spring', 'summer', 'fall', 'winter'].includes(search.season as string)
+      ? (search.season as string)
+      : undefined
+    const q = optionalString(search.q)
+    return {
+      ...(view === undefined ? {} : { view }),
+      ...(season === undefined ? {} : { season }),
+      ...(q === undefined ? {} : { q }),
+    }
+  },
 })
 
 const aboutRoute = createRoute({

@@ -1,5 +1,5 @@
 import type { Meta } from '@mistria/schema'
-import { getRouteApi, Link } from '@tanstack/react-router'
+import { getRouteApi, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
@@ -16,6 +16,7 @@ import {
 import { type AvailabilityIndex, ruleMatches } from '~/lib/findable'
 import { formatDate } from '~/lib/instant'
 import { opportunitiesFor } from '~/lib/opportunity'
+import { questIdByName } from '~/lib/search'
 
 const route = getRouteApi('/item/$id/when')
 
@@ -41,6 +42,7 @@ interface LocationLite {
 export function WhenRoute() {
   const { id } = route.useParams()
   const instant = route.useSearch()
+  const navigate = useNavigate()
 
   const [state, setState] = useState<{
     availability: AvailabilityIndex | null
@@ -79,6 +81,7 @@ export function WhenRoute() {
   const { availability, index, names, locations, meta, loading } = state
   const artUrl = useAtlas().mapUrl('map/valley')
   const entry = index[id]
+  const questIds = useMemo(() => questIdByName(index), [index])
 
   const opportunities = useMemo(
     () =>
@@ -138,11 +141,17 @@ export function WhenRoute() {
                 opportunity={opportunity}
                 locationNames={names}
                 odds={meta?.weatherOdds}
+                questIdByName={questIds}
               />
             ))}
           </ul>
 
-          <WhereMap opportunities={opportunities} locations={locations} artUrl={artUrl} />
+          <WhereMap
+            opportunities={opportunities}
+            locations={locations}
+            artUrl={artUrl}
+            onOpen={(placeId) => void navigate({ to: '/place/$id', params: { id: placeId } })}
+          />
         </>
       )}
 
@@ -177,10 +186,12 @@ function WhereMap({
   opportunities,
   locations,
   artUrl,
+  onOpen,
 }: {
   opportunities: { locationId: string | null }[]
   locations: LocationLite[]
   artUrl: string | null
+  onOpen: (placeId: string) => void
 }) {
   const byId = new Map(locations.map((l) => [l.id, l]))
   const targets = [
@@ -210,6 +221,7 @@ function WhereMap({
           pins={targets.flatMap((l) =>
             l.anchor === null ? [] : [{ id: l.id, x: l.anchor.x, y: l.anchor.y, label: l.name }],
           )}
+          onPinClick={onOpen}
         />
       </div>
     </div>

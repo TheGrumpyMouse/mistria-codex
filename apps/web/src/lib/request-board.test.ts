@@ -34,13 +34,16 @@ describe('itemsWanted', () => {
     expect(wanted[0]?.keep).toBe(1)
   })
 
-  it('collects every villager who can ask, deduplicated', () => {
+  it('collects every villager who can ask, deduplicated, ids attached', () => {
     const wanted = itemsWanted([
       request({ id: 'a', giver_name: 'Adeline' }),
-      request({ id: 'b', giver_name: 'Balor' }),
+      request({ id: 'b', giver_id: 'balor', giver_name: 'Balor' }),
       request({ id: 'c', giver_name: 'Adeline' }),
     ])
-    expect(wanted[0]?.askers).toEqual(['Adeline', 'Balor'])
+    expect(wanted[0]?.askers).toEqual([
+      { id: 'adeline', name: 'Adeline' },
+      { id: 'balor', name: 'Balor' },
+    ])
   })
 
   it('is ungated when any one route is open', () => {

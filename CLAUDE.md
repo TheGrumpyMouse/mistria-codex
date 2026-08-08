@@ -129,6 +129,19 @@ From `sources/game/`, which is committed. Don't re-derive these either.
 
 **A seal is a quest, and the quest states its price.** `seals.toml` maps seal→quest; the quest stage's `requirements.supplied_items.items` is exact item ids and counts. The same structure prices the bridge and mill repairs. Extracted structurally (any stage with `supplied_items`), never by name list. Quest `description`s are prose — never read.
 
+**Every game item carries its own `recipe` as internal ids** — 1,388 of them
+(cooking, blacksmithing, milling, refinery, and 1,085 furniture waiting on
+furniture ingestion), resolving 265/265 with no name matching. The wiki's
+`Ingredients.ingredient` cell is **wikitext** (`[[File:…]] [[Apple]]`), and
+reading it as a bare name is the bug that shipped 282 ingredient-less recipes
+for five milestones. The wiki path survives as the no-extract fallback only.
+
+**A perk's owning skill, tier and essence cost live in `ui/skill_menu/*.toml`**,
+not in `perks.toml` (which is flat). The skills builder unions game perks the
+wiki lacks — matched by *folded* name, because the wiki writes "Well Armed"
+where the game writes "Well-Armed", and a hyphen must not conjure a second
+perk.
+
 **`fish.toml`'s `perk_artifact` is a perk-name *string*, not a flag.** Its `[default]` is `false`, so `bool()` silently nulled all ten artifact rules; only `str()` reads it right. The fished/dived artifact rules yield `unidentified_artifact` and the *rule id* is the artifact — `fishByItem` can never find them.
 
 ## Modelling rules

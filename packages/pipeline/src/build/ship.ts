@@ -214,10 +214,31 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     c: string
     v: number | null
     a?: string[]
+    /** 1 when the record is a story spoiler — list rows veil the name. */
+    s?: 1
+    /** 1 when the wiki describes it and the game does not ship it yet. */
+    u?: 1
+    /**
+     * Spoiler aliases: names that are themselves the reveal ("Seridia").
+     * Searchable exactly like `a`, but a match is shown only because the user
+     * typed it — the passive alias hint never prints these.
+     */
+    sa?: string[]
   }
   const entries: Record<string, IndexEntry> = {}
   const alsoKnownAs = (names: string[] | undefined): { a?: string[] } =>
     names !== undefined && names.length > 0 ? { a: names } : {}
+  const spoilerMarks = (record: {
+    spoiler?: true
+    unreleased?: true
+    spoiler_aliases?: string[]
+  }): { s?: 1; u?: 1; sa?: string[] } => ({
+    ...(record.spoiler === true ? { s: 1 as const } : {}),
+    ...(record.unreleased === true ? { u: 1 as const } : {}),
+    ...(record.spoiler_aliases !== undefined && record.spoiler_aliases.length > 0
+      ? { sa: record.spoiler_aliases }
+      : {}),
+  })
 
   // Items carry their own category — fish, bug, cooked — which is what Browse
   // groups by. Everything else takes the name of its table.
@@ -228,6 +249,9 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     category: string
     sell_value: number | null
     also_known_as?: string[]
+    spoiler?: true
+    unreleased?: true
+    spoiler_aliases?: string[]
   }>('items.json')) {
     entries[item.id] ??= {
       n: item.name,
@@ -235,6 +259,7 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       c: item.category,
       v: item.sell_value,
       ...alsoKnownAs(item.also_known_as),
+      ...spoilerMarks(item),
     }
   }
 
@@ -253,6 +278,9 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       also_known_as?: string[]
       /** Locations only, and hand-curated: "The Farm" is also "Farm". */
       aliases?: string[]
+      spoiler?: true
+      unreleased?: true
+      spoiler_aliases?: string[]
     }>(file)) {
       entries[record.id] ??= {
         n: record.name,
@@ -268,6 +296,7 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
             (name) => name !== record.name,
           ),
         ),
+        ...spoilerMarks(record),
       }
     }
   }
@@ -360,9 +389,9 @@ async function packIfPresent(): Promise<Meta['assets']> {
   // the repository actually holds.
   await writeAttribution()
 
-  // The installable icon — the framed logo — lands in the same gitignored
-  // output as the atlases, so a takedown removes it with everything else and
-  // the app falls back to the committed favicon.svg.
+  // The installable icon — the framed house mark — lands in the same
+  // gitignored output as the atlases, so a takedown removes it with everything
+  // else and the app falls back to the committed favicon.svg.
   await writeAppIcons()
 
   return {

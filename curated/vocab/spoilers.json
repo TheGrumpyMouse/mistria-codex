@@ -1,0 +1,40 @@
+{
+  "_comment": [
+    "What the app veils as a story spoiler, by dataset and id.",
+    "",
+    "This is a judgement file, not a derivation — 'late-game' is not a fact any",
+    "source states, so a human decides. The build stamps `spoiler: true` on the",
+    "listed records (centrally, in build/data.ts; no builder knows about this",
+    "file), the display index carries the flag, and the app veils names and",
+    "pages behind an explicit 'show me' acknowledgement. Nothing is ever",
+    "filtered out: the veil withholds a name, never a row.",
+    "",
+    "SCOPE. Endgame reveals only — the project owner's decision, 2026-08-08.",
+    "The true-identity reveals (Caldarus, Seridia) and the final story arc are",
+    "veiled; early and mid content that every player meets in normal play (the",
+    "Deep Woods, the water and earth tablets, the first seals) is not. Widen or",
+    "narrow freely: an id added here is veiled on the next build, and the",
+    "validate step fails on any id that does not exist in its dataset, so a",
+    "typo cannot silently veil nothing.",
+    "",
+    "ALIASES. A name that is itself the reveal. It moves from the record's",
+    "`also_known_as` (rendered on the page) to `spoiler_aliases` (searchable,",
+    "shown only to someone who typed it — they already know). The alias must",
+    "exist on the record or validate fails."
+  ],
+  "records": {
+    "characters": ["caldarus"],
+    "quests": [
+      "creating_the_void_mass",
+      "breaking_the_ruins_seal",
+      "find_the_magic_key",
+      "the_dragonsworn_tablet",
+      "breaking_the_final_seal"
+    ],
+    "seals": ["ruins", "void", "priestess", "final"],
+    "mines": ["ancient_ruins"]
+  },
+  "aliases": {
+    "priestess": ["Seridia"]
+  }
+}

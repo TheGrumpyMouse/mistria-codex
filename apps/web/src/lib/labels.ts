@@ -136,10 +136,34 @@ export const titleCase = (key: string): string =>
     .join(' ')
 
 export function requirementPhrase(req: Requirement, name?: string): string {
+  const parts = requirementDisplay(req, name)
+  return `${parts.prefix}${parts.label}${parts.suffix}`
+}
+
+/**
+ * The same phrase, split so a screen can wrap the named thing in a Link.
+ *
+ * This module stays plain TypeScript — no JSX — so it hands back parts and a
+ * route target rather than a node. `linkTo` is set only when the requirement
+ * names something that has a page; callers render `label` as text otherwise.
+ */
+export interface RequirementDisplay {
+  prefix: string
+  label: string
+  suffix: string
+  linkTo: { to: '/quest/$id' | '/place/$id'; id: string } | null
+}
+
+export function requirementDisplay(req: Requirement, name?: string): RequirementDisplay {
   const label = name ?? titleCase(req.key)
-  if (req.type === 'quest') return `finish “${label}”`
-  if (req.type === 'perk') return `the ${label} perk`
-  return label
+  if (req.type === 'quest') {
+    return { prefix: 'finish “', label, suffix: '”', linkTo: { to: '/quest/$id', id: req.key } }
+  }
+  if (req.type === 'perk') return { prefix: 'the ', label, suffix: ' perk', linkTo: null }
+  if (req.type === 'location') {
+    return { prefix: '', label, suffix: ' unlocked', linkTo: { to: '/place/$id', id: req.key } }
+  }
+  return { prefix: '', label, suffix: '', linkTo: null }
 }
 
 /**
@@ -160,3 +184,11 @@ export function ruleRequirementPhrase(token: string): string {
 /** "needs the Well Placed perk · finish “X”" for a list of rule tokens. */
 export const ruleRequirementsPhrase = (tokens: string[]): string =>
   tokens.map(ruleRequirementPhrase).join(' · ')
+
+/** A shipped rule token split open, for screens that can link the named thing. */
+export const ruleToken = (token: string): { type: string | null; name: string } => {
+  const at = token.indexOf(':')
+  return at === -1
+    ? { type: null, name: token }
+    : { type: token.slice(0, at), name: token.slice(at + 1) }
+}

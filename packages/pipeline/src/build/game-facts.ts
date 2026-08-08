@@ -168,6 +168,13 @@ export interface ArtifactFacts {
   fishRuleByArtifact: Map<string, GameFish>
   /** Perk id -> its title, for rendering requirements as words. */
   perkNameById: Map<string, string>
+  /**
+   * Skill id -> its full perk tree from the skill menu: perk id, tier,
+   * essence cost. This is where a perk's owning skill is stated — perks.toml
+   * itself is flat — and it is what lets the skills builder append perks the
+   * wiki has not written up yet.
+   */
+  skillTreeBySkill: Map<string, { id: string; tier: number; essence: number | null }[]>
   seals: {
     id: string
     questId: string
@@ -577,6 +584,9 @@ export function buildArtifactFacts(
     fishRuleByArtifact,
     perkNameById: new Map(
       extract.perks.flatMap((perk) => (perk.name === null ? [] : [[perk.id, perk.name] as const])),
+    ),
+    skillTreeBySkill: new Map(
+      (extract.skillTrees ?? []).map((tree) => [tree.skill, tree.perks] as const),
     ),
     seals,
     offerings: extract.sealOfferings,

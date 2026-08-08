@@ -1,3 +1,4 @@
+import { CookingPot, Home, Landmark, Lock, MapPin, ScrollText } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { useAtlas } from '~/app/AtlasProvider'
 import { integerScale, spriteStyle } from '~/lib/sprites'
@@ -59,6 +60,23 @@ export function hueFor(key: string): number {
  */
 const SIZES = { sm: 24, md: 36, lg: 72 } as const
 
+/**
+ * A generic mark for a whole family of thing, drawn inside the hued tile
+ * where no sprite exists. Lucide is the app's own chrome vocabulary (nav,
+ * weather, back arrows), so a quest with no art gets "a scroll" rather than
+ * two arbitrary letters — recognisable at a glance without pretending to be
+ * game art. Families absent here keep the initials, which remain the last
+ * resort for the thousand item categories a single pictogram can't cover.
+ */
+const PREFIX_GLYPHS: Record<string, typeof ScrollText> = {
+  quest: ScrollText,
+  location: MapPin,
+  recipe: CookingPot,
+  building: Home,
+  museum: Landmark,
+  seal: Lock,
+}
+
 export interface ItemIconProps {
   /** The record's `icon_key`, e.g. `fish/rainbow_trout`. */
   iconKey: string
@@ -115,6 +133,8 @@ export function ItemIcon({ iconKey, name, size = 'md', unverified = false }: Ite
         borderColor: `hsl(${hue} 38% 82%)`,
       }
 
+  const Glyph = PREFIX_GLYPHS[iconKey.split('/')[0] ?? '']
+
   return (
     <span
       className={`inline-grid shrink-0 place-items-center rounded-tile border font-display font-semibold ${
@@ -125,9 +145,13 @@ export function ItemIcon({ iconKey, name, size = 'md', unverified = false }: Ite
       role="img"
       aria-label={name}
     >
-      <span aria-hidden style={{ fontSize: px * 0.46, lineHeight: 1 }}>
-        {initialsOf(name)}
-      </span>
+      {Glyph !== undefined ? (
+        <Glyph aria-hidden size={Math.round(px * 0.55)} strokeWidth={2} />
+      ) : (
+        <span aria-hidden style={{ fontSize: px * 0.46, lineHeight: 1 }}>
+          {initialsOf(name)}
+        </span>
+      )}
     </span>
   )
 }

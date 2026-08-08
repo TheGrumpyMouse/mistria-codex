@@ -18,14 +18,24 @@
     "`key` is ours and becomes `ui/<key>`; the app asks for that and never for a",
     "filename. `file` is the wiki's, verbatim.",
     "",
+    "`also` aliases the same sprite under additional icon_keys, verbatim (no",
+    "`ui/` prefix added). It exists for keys that records already carry —",
+    "`quest/story` on every story quest, `character/caldarus` on a villager",
+    "whose page has no infobox icon — so real art reaches them without any",
+    "record changing. An alias is a claim that the sprite genuinely depicts",
+    "the thing; do not alias something vaguely related just to avoid a glyph.",
+    "",
     "Deliberately absent: mine biome icons. All five biomes link the same",
     "Fp_wiki_mining.png, so adopting it would render five distinct places",
     "identically — strictly worse than five distinct generated glyphs.",
     "",
     "MAPS AND BRAND. `maps` is the DataMaps background image the committed Map: page",
     "declares — the 5442x3599 space every anchor already lives in. `brand` is the",
-    "game logo from the main page infobox, used (framed in our own mark) as the app",
-    "icon. Both ship as loose files, never atlased."
+    "game's little farmhouse mark, the same one Steam uses: the wiki hosts it as",
+    "its own favicon (`Site-favicon.ico`, a 256px PNG in an ICO wrapper — the",
+    "fetcher extracts the PNG). It becomes the app icon (framed on our paper",
+    "ground) and the sidebar mark. Both families ship as loose files, never",
+    "atlased."
   ],
   "glyphs": [
     {
@@ -62,7 +72,8 @@
     },
     {
       "key": "method_fishing",
-      "file": "Fishing_icon.png"
+      "file": "Fishing_icon.png",
+      "also": ["museum/fish"]
     },
     {
       "key": "method_mining",
@@ -74,7 +85,8 @@
     },
     {
       "key": "method_museum",
-      "file": "Fp_wiki_museum.png"
+      "file": "Fp_wiki_museum.png",
+      "also": ["museum/insects", "museum/flora"]
     },
     {
       "key": "method_pet",
@@ -102,19 +114,48 @@
     },
     {
       "key": "quest_story",
-      "file": "Quests_story_icon.png"
+      "file": "Quests_story_icon.png",
+      "also": ["quest/story", "quest/important"]
     },
     {
       "key": "quest_heart",
-      "file": "Quests_heart_icon.png"
+      "file": "Quests_heart_icon.png",
+      "also": ["quest/heart"]
     },
     {
       "key": "quest_fetch",
-      "file": "Fp wiki quests fetch.png"
+      "file": "Fp wiki quests fetch.png",
+      "also": ["quest/request", "quest/mission"]
     },
     {
       "key": "quest_renown",
-      "file": "Quests_renown_subicon.png"
+      "file": "Quests_renown_subicon.png",
+      "also": ["quest/crown"]
+    },
+    {
+      "key": "skill_farming",
+      "file": "Farming icon.png",
+      "also": ["skill/farming"]
+    },
+    {
+      "key": "skill_archaeology",
+      "file": "Archaeology icon.png",
+      "also": ["skill/archaeology", "museum/archaeology"]
+    },
+    {
+      "key": "skill_woodcrafting",
+      "file": "Woodcrafting icon.png",
+      "also": ["skill/woodcrafting"]
+    },
+    {
+      "key": "skill_combat",
+      "file": "Combat icon.png",
+      "also": ["skill/combat"]
+    },
+    {
+      "key": "caldarus_human",
+      "file": "CaldarusHuman icon.png",
+      "also": ["character/caldarus"]
     },
     {
       "key": "event_saturday_market",
@@ -133,8 +174,8 @@
   ],
   "brand": [
     {
-      "key": "logo",
-      "file": "Fields of Mistria.png"
+      "key": "icon",
+      "file": "Site-favicon.ico"
     }
   ]
 }

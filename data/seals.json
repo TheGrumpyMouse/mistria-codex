@@ -78,6 +78,7 @@
         "quantity": 1
       }
     ],
+    "spoiler": true,
     "unlocks_location_id": null,
     "unlocks_mine_id": null,
     "version_added": null,
@@ -154,6 +155,7 @@
         "quantity": 1
       }
     ],
+    "spoiler": true,
     "unlocks_location_id": null,
     "unlocks_mine_id": null,
     "version_added": null,
@@ -196,6 +198,7 @@
         "quantity": 1
       }
     ],
+    "spoiler": true,
     "unlocks_location_id": null,
     "unlocks_mine_id": "ancient_ruins",
     "version_added": null,
@@ -238,6 +241,7 @@
         "quantity": 5
       }
     ],
+    "spoiler": true,
     "unlocks_location_id": null,
     "unlocks_mine_id": null,
     "version_added": null,

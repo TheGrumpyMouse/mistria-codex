@@ -22,7 +22,8 @@ export interface BoardRequest {
   items: BoardItem[]
   /** Null means all year — never "unknown". */
   seasons: string[] | null
-  gates: { type: string; label: string }[]
+  /** `key` links quest/location gates to their pages; older bundles lack it. */
+  gates: { type: string; key?: string; label: string }[]
   rewards: { tesserae: number | null; renown: number | null } | null
 }
 
@@ -38,8 +39,9 @@ export interface WantedItem {
   keep: number
   /** How many separate requests want it. */
   requests: number
-  /** Villager names, sorted, deduplicated. */
-  askers: string[]
+  /** The villagers who might ask, sorted by name, deduplicated. A null id is
+   *  a giver the board names but the roster does not — text, not a link. */
+  askers: { id: string | null; name: string }[]
   /** Seasons it can be asked in. Empty means any. */
   seasons: string[]
   /** True when *every* request for it is gated — you cannot be asked yet. */
@@ -63,7 +65,7 @@ const SEASON_ORDER = ['spring', 'summer', 'fall', 'winter']
 export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
   const byItem = new Map<
     string,
-    WantedItem & { askerSet: Set<string>; seasonSet: Set<string>; ungated: boolean }
+    WantedItem & { askerSet: Map<string, string | null>; seasonSet: Set<string>; ungated: boolean }
   >()
 
   for (const request of requests) {
@@ -77,14 +79,14 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
         askers: [],
         seasons: [],
         gated: true,
-        askerSet: new Set<string>(),
+        askerSet: new Map<string, string | null>(),
         seasonSet: new Set<string>(),
         ungated: false,
       }
 
       existing.keep = Math.max(existing.keep, item.quantity)
       existing.requests += 1
-      if (request.giver_name !== null) existing.askerSet.add(request.giver_name)
+      if (request.giver_name !== null) existing.askerSet.set(request.giver_name, request.giver_id)
 
       // A request with no season restriction can come at any time, so it adds
       // nothing to the set — an empty set means "any season" and the row shows
@@ -108,7 +110,9 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
       icon_key: entry.icon_key,
       keep: entry.keep,
       requests: entry.requests,
-      askers: [...entry.askerSet].sort(),
+      askers: [...entry.askerSet]
+        .map(([name, id]) => ({ id, name }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
       seasons: [...entry.seasonSet].sort(
         (a, b) => SEASON_ORDER.indexOf(a) - SEASON_ORDER.indexOf(b),
       ),

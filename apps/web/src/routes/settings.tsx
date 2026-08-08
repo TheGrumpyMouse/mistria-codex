@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { Section } from '~/components/Section'
 import { allProgress, db } from '~/lib/progress'
+import { useSpoilers } from '~/lib/spoilers'
 import {
   lastSyncedAt,
   newCode,
@@ -40,6 +41,7 @@ export function SettingsRoute() {
   const [busy, setBusy] = useState(false)
   const [result, setResult] = useState<SyncResult | null>(null)
   const [syncedAt, setSyncedAt] = useState<Date | null>(null)
+  const spoilers = useSpoilers()
 
   useEffect(() => {
     setCode(savedCode())
@@ -133,6 +135,41 @@ export function SettingsRoute() {
         >
           {armed ? 'Tap again to erase everything' : 'Erase progress on this device'}
         </button>
+      </Section>
+
+      <Section title="Hidden things">
+        <p className="text-ink-mute text-sm">
+          Two kinds of thing start hidden: late-story spoilers — a certain villager, the last seals,
+          the final quests — and content the wiki describes that isn’t in the game yet. Revealing
+          one thing remembers just that one.
+        </p>
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => spoilers.setShowAll(!spoilers.showAll)}
+            aria-pressed={spoilers.showAll}
+            className="rounded-tile border px-3 py-1.5 text-xs transition-colors"
+            style={
+              spoilers.showAll
+                ? {
+                    borderColor: 'var(--rule)',
+                    background: 'var(--accent-tint)',
+                    color: 'var(--accent)',
+                    fontWeight: 600,
+                  }
+                : { borderColor: 'var(--rule)', color: 'var(--ink-mute)' }
+            }
+          >
+            {spoilers.showAll ? 'Showing everything' : 'Show everything'}
+          </button>
+          <button
+            type="button"
+            onClick={spoilers.rehideAll}
+            className="rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs hover:text-ink"
+          >
+            Hide them all again
+          </button>
+        </div>
       </Section>
 
       <Section title="Sync to another device">

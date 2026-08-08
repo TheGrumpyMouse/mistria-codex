@@ -268,6 +268,11 @@ export interface BuildContext {
   characterRules: CharacterRules
   /** Perk id -> what it does, in our own words. See curated/vocab/perk_effects.json. */
   perkEffects: Record<string, string>
+  /**
+   * Game item ids to surface before the wiki documents them — the 1.0
+   * additions. An allowlist, never a sync; see curated/vocab/items_1_0.json.
+   */
+  gameOnlyItems: string[]
 }
 
 const isSeason = (value: string): value is Season => (SEASONS as readonly string[]).includes(value)
@@ -448,6 +453,11 @@ export async function loadContext(): Promise<BuildContext> {
   const characterRules = await readJsonFile<CharacterRules>(
     join(CURATED_DIR, 'vocab', 'characters.json'),
   )
+  // Optional like perk_effects: absent means no game-only items are surfaced,
+  // which was the only state before 1.0 outran the wiki.
+  const { items: gameOnlyItems } = await readJsonFile<{ items: string[] }>(
+    join(CURATED_DIR, 'vocab', 'items_1_0.json'),
+  ).catch(() => ({ items: [] as string[] }))
 
   const itemByName = new Map<string, CargoRow>()
   for (const row of items) {
@@ -503,6 +513,7 @@ export async function loadContext(): Promise<BuildContext> {
     methodRules,
     characterRules,
     perkEffects,
+    gameOnlyItems,
   }
 }
 

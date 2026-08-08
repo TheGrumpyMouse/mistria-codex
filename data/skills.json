@@ -597,7 +597,8 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0"
+      "predates_1_0",
+      "perk_levels"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -778,6 +779,26 @@
         "name": "Fairy Cooking",
         "statue": "caldarus",
         "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "time_to_eat",
+        "level": null,
+        "name": "Time To Eat",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "espresso_yourself",
+        "level": null,
+        "name": "Espresso Yourself",
+        "statue": "caldarus",
+        "tier": 5
       }
     ],
     "prov": {
@@ -795,7 +816,7 @@
       "xp_curve",
       "effect_key",
       "predates_1_0",
-      "tier_5"
+      "perk_levels"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -956,6 +977,66 @@
         "name": "Barnyard Bounty III",
         "statue": "caldarus",
         "tier": 4
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 30,
+        "id": "barnyard_bounty",
+        "level": null,
+        "name": "Barnyard Bounty",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "welcome_home",
+        "level": null,
+        "name": "Welcome Home",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "playtime",
+        "level": null,
+        "name": "Playtime",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 210,
+        "id": "close_bond_two",
+        "level": null,
+        "name": "Close Bond II",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "eggstra",
+        "level": null,
+        "name": "Eggstra",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 215,
+        "id": "true_trust",
+        "level": null,
+        "name": "True Trust",
+        "statue": "caldarus",
+        "tier": 5
       }
     ],
     "prov": {
@@ -972,7 +1053,8 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0"
+      "predates_1_0",
+      "perk_levels"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1163,6 +1245,46 @@
         "name": "Big Water Sprites",
         "statue": "caldarus",
         "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "hammer_timing",
+        "level": null,
+        "name": "Hammer Timing",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "lumberjack",
+        "level": null,
+        "name": "Lumberjack",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "deliberate_debris_two",
+        "level": null,
+        "name": "Deliberate Debris II",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 210,
+        "id": "hammer_timing_four",
+        "level": null,
+        "name": "Hammer Timing IV",
+        "statue": "caldarus",
+        "tier": 5
       }
     ],
     "prov": {
@@ -1179,7 +1301,8 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0"
+      "predates_1_0",
+      "perk_levels"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1360,6 +1483,26 @@
         "name": "Mistril Expert",
         "statue": "caldarus",
         "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "time_sensitive",
+        "level": null,
+        "name": "Time Sensitive",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 65,
+        "id": "empowered",
+        "level": null,
+        "name": "Empowered",
+        "statue": "caldarus",
+        "tier": 3
       }
     ],
     "prov": {
@@ -1603,7 +1746,8 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0"
+      "predates_1_0",
+      "perk_levels"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1804,6 +1948,16 @@
         "name": "Friend-Shaped",
         "statue": "mines",
         "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "guardians_shield_two",
+        "level": null,
+        "name": "Guardian Shield II",
+        "statue": "mines",
+        "tier": 4
       }
     ],
     "prov": {

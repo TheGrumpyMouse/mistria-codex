@@ -65,6 +65,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   },
@@ -100,6 +101,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   },
@@ -135,6 +137,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   },
@@ -238,6 +241,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   },
@@ -307,6 +311,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   },
@@ -342,6 +347,7 @@
     },
     "rewards": [],
     "time": null,
+    "unreleased": true,
     "version_added": null,
     "wiki_page": null
   }

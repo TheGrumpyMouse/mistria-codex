@@ -36,8 +36,17 @@ export interface ValleyMapProps {
   regions: MapRegionShape[]
   selectedId?: string | null
   onSelect?: (id: string) => void
-  /** Extra pins — landmarks, or whatever the current query turned up. */
-  pins?: { id: string; x: number; y: number; label: string }[]
+  /**
+   * Extra pins — landmarks, or whatever the current query turned up.
+   * `open: false` keeps one pin inert when the rest are tappable — a dig-spot
+   * pin has nowhere to go while the building beside it does.
+   */
+  pins?: { id: string; x: number; y: number; label: string; open?: boolean }[]
+  /**
+   * Makes pins tappable. The id handed back is the pin's own — callers decide
+   * what opening it means (usually navigating to the place page).
+   */
+  onPinClick?: (id: string) => void
   /**
    * The real map image, when the bundle has it. Drawn at the map record's own
    * declared space — the DataMaps page states the image and the coordinate
@@ -122,6 +131,7 @@ export function ValleyMap({
   pins = [],
   artUrl = null,
   focusId = null,
+  onPinClick,
 }: ValleyMapProps) {
   const full = contentViewBox(regions, viewBox)
   const box = (focusId === null ? null : focusViewBox(regions, focusId)) ?? full
@@ -173,28 +183,52 @@ export function ValleyMap({
         />
       ))}
 
-      {!focused &&
-        regions.map((region) => {
-          // Labelled from the shape, not the anchor. The anchor is the region's
-          // centre, so a name placed there sits on top of the tiles it is
-          // naming; the top edge is empty by definition. A focused view skips
-          // labels entirely — the page's own heading already names the place.
-          const bounds = region.shape === null ? null : shapeBounds(region.shape)
-          if (bounds === null) return null
-          return (
-            <RegionLabel
-              key={`label-${region.id}`}
-              name={region.name}
-              x={bounds.x + bounds.width / 2}
-              y={bounds.y}
-              selected={region.id === selectedId}
-              haloed={artUrl !== null}
-            />
-          )
-        })}
+      {regions.map((region) => {
+        // Labelled from the shape, not the anchor. The anchor is the region's
+        // centre, so a name placed there sits on top of the tiles it is
+        // naming; the top edge is empty by definition.
+        //
+        // A focused view names the *neighbours* that bleed into the crop —
+        // they stay clickable, and an unnamed clickable shape reads as a bug —
+        // but not the focused region itself: the screen's heading already
+        // says where you are. Labels counter-scale like pins, or a name in
+        // map units would fill half the cropped view.
+        const bounds = region.shape === null ? null : shapeBounds(region.shape)
+        if (bounds === null) return null
+        if (focused) {
+          if (region.id === focusId) return null
+          const [bx = 0, by = 0, bw = 0, bh = 0] = box.split(' ').map(Number)
+          const outside =
+            bounds.x >= bx + bw ||
+            bounds.x + bounds.width <= bx ||
+            bounds.y >= by + bh ||
+            bounds.y + bounds.height <= by
+          if (outside) return null
+        }
+        return (
+          <RegionLabel
+            key={`label-${region.id}`}
+            name={region.name}
+            x={bounds.x + bounds.width / 2}
+            y={bounds.y}
+            selected={region.id === selectedId}
+            haloed={artUrl !== null}
+            zoom={zoom}
+          />
+        )
+      })}
 
       {pins.map((pin) => (
-        <Pin key={pin.id} x={pin.x} y={pin.y} label={pin.label} zoom={zoom} />
+        <Pin
+          key={pin.id}
+          x={pin.x}
+          y={pin.y}
+          label={pin.label}
+          zoom={zoom}
+          onOpen={
+            onPinClick === undefined || pin.open === false ? undefined : () => onPinClick(pin.id)
+          }
+        />
       ))}
     </svg>
   )
@@ -287,17 +321,20 @@ function RegionLabel({
   y,
   selected,
   haloed = false,
+  zoom = 1,
 }: {
   name: string
   x: number
   y: number
   selected: boolean
   haloed?: boolean
+  zoom?: number
 }) {
   return (
     <text
-      x={x}
-      y={y - 34}
+      // Counter-scaled exactly like a pin: anchored by transform so the
+      // glyphs stay label-sized however close the crop is.
+      transform={`translate(${x} ${y - 34}) scale(${1 / zoom})`}
       textAnchor="middle"
       className="font-display"
       style={{
@@ -331,12 +368,44 @@ function RegionLabel({
  * spatial vocabulary. Rotating it 45 degrees is what separates "a place" from
  * "the ground".
  */
-function Pin({ x, y, label, zoom = 1 }: { x: number; y: number; label: string; zoom?: number }) {
+function Pin({
+  x,
+  y,
+  label,
+  zoom = 1,
+  onOpen,
+}: {
+  x: number
+  y: number
+  label: string
+  zoom?: number
+  onOpen?: (() => void) | undefined
+}) {
+  const interactive = onOpen !== undefined
   return (
     // `scale(1/zoom)` is the counter-scale from the apps/web rules: in a
     // focused view the map is drawn several times closer, and a pin left in
     // map units would grow into a boulder that covers what it marks.
-    <g transform={`translate(${x} ${y}) scale(${1 / zoom}) rotate(45)`}>
+    //
+    // Same ARIA shape as RegionCells: a pin you can open is a control.
+    // biome-ignore lint/a11y/noStaticElementInteractions: role="button" with a tabIndex and a key handler is correct ARIA on an SVG group.
+    <g
+      transform={`translate(${x} ${y}) scale(${1 / zoom}) rotate(45)`}
+      className={interactive ? 'cursor-pointer' : undefined}
+      role={interactive ? 'button' : undefined}
+      tabIndex={interactive ? 0 : undefined}
+      aria-label={interactive ? `Open ${label}` : undefined}
+      onClick={onOpen}
+      onKeyDown={
+        interactive
+          ? (event) => {
+              if (event.key !== 'Enter' && event.key !== ' ') return
+              event.preventDefault()
+              onOpen()
+            }
+          : undefined
+      }
+    >
       <title>{label}</title>
       {/*
         Ink, not accent. A selected region is filled with the accent, and an

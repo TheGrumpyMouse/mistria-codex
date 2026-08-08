@@ -46,6 +46,9 @@ export function buildFestivals(ctx: BuildContext): Festival[] {
     return {
       id,
       name: festival.name,
+      // The wiki's calendar marks these with an asterisk: described for a
+      // future update, not run by the game. The UI veils them accordingly.
+      ...(festival.implemented ? {} : { unreleased: true as const }),
       numeric_id: null,
       numeric_id_game_version: null,
       id_status: 'provisional' as const,

@@ -149,6 +149,10 @@ describe('skills', () => {
     const byTier = new Map<number, Set<number>>()
     for (const skill of skills) {
       for (const perk of skill.perks) {
+        // Game-appended perks (the 1.0 additions the wiki has not written up)
+        // carry a null level with a `perk_levels` gap; the invariant is about
+        // the levels the wiki actually states.
+        if (perk.level === null) continue
         byTier.set(perk.tier, (byTier.get(perk.tier) ?? new Set()).add(perk.level))
       }
     }
@@ -162,13 +166,13 @@ describe('skills', () => {
     ])
   })
 
-  it('records the missing Ranching tier rather than hiding it', () => {
-    // Eight skills have five tiers and Ranching has four. That is a hole in the
-    // wiki, and a tree that silently stops at 45 would read as complete.
-    const ranching = skills.find((s) => s.id === 'ranching')
-    expect(ranching?.data_gaps).toContain('tier_5')
-    for (const skill of skills.filter((s) => s.id !== 'ranching')) {
+  it('no tree stops short of tier five any more', () => {
+    // Ranching's fifth tier was a hole in the wiki until 1.0's skill-menu
+    // union filled it from the game files. If this regresses, the tier_5 gap
+    // machinery in the builder is what flags it.
+    for (const skill of skills) {
       expect(skill.data_gaps).not.toContain('tier_5')
+      expect(new Set(skill.perks.map((p) => p.tier)).size).toBe(5)
     }
   })
 

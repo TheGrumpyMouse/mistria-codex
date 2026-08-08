@@ -22,7 +22,7 @@
         "relation": "Baron Wiscar of Mistria (Father)"
       },
       {
-        "character_id": null,
+        "character_id": "eiland",
         "relation": "Eiland (Brother)"
       }
     ],
@@ -123,6 +123,7 @@
     "schedule_id": null,
     "shop_id": null,
     "species": "Dragon",
+    "spoiler": true,
     "version_added": null,
     "wiki_page": "Caldarus"
   },
@@ -141,15 +142,15 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "nora",
         "relation": "Mother: Nora"
       },
       {
-        "character_id": null,
+        "character_id": "holt",
         "relation": "Father: Holt"
       },
       {
-        "character_id": null,
+        "character_id": "dell",
         "relation": "Younger sister: Dell"
       }
     ],
@@ -230,15 +231,15 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "nora",
         "relation": "Mother: Nora"
       },
       {
-        "character_id": null,
+        "character_id": "holt",
         "relation": "Father: Holt"
       },
       {
-        "character_id": null,
+        "character_id": "celine",
         "relation": "Older sister: Celine"
       }
     ],
@@ -281,7 +282,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "juniper",
         "relation": "Owner: Juniper"
       }
     ],
@@ -332,7 +333,7 @@
         "relation": "Baron Wiscar of Mistria (Father)"
       },
       {
-        "character_id": null,
+        "character_id": "adeline",
         "relation": "Adeline (Sister)"
       }
     ],
@@ -375,11 +376,11 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "adeline",
         "relation": "Great Niece: Adeline"
       },
       {
-        "character_id": null,
+        "character_id": "eiland",
         "relation": "Great Nephew: Eiland"
       }
     ],
@@ -460,7 +461,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "henrietta",
         "relation": "Pet: Henrietta"
       },
       {
@@ -507,19 +508,19 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "josephine",
         "relation": "Josephine (Wife)"
       },
       {
-        "character_id": null,
+        "character_id": "reina",
         "relation": "Reina (Daughter)"
       },
       {
-        "character_id": null,
+        "character_id": "maple",
         "relation": "Maple (Daughter)"
       },
       {
-        "character_id": null,
+        "character_id": "luc",
         "relation": "Luc (Son)"
       }
     ],
@@ -562,7 +563,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "hayden",
         "relation": "Owner: Hayden"
       }
     ],
@@ -605,15 +606,15 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "nora",
         "relation": "Wife: Nora"
       },
       {
-        "character_id": null,
+        "character_id": "celine",
         "relation": "Daughter: Celine"
       },
       {
-        "character_id": null,
+        "character_id": "dell",
         "relation": "Daughter: Dell"
       }
     ],
@@ -656,19 +657,19 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "hemlock",
         "relation": "Hemlock (Husband)"
       },
       {
-        "character_id": null,
+        "character_id": "reina",
         "relation": "Reina (Daughter)"
       },
       {
-        "character_id": null,
+        "character_id": "maple",
         "relation": "Maple (Daughter)"
       },
       {
-        "character_id": null,
+        "character_id": "luc",
         "relation": "Luc (Son)"
       }
     ],
@@ -711,7 +712,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "dozy",
         "relation": "Familiar: Dozy"
       }
     ],
@@ -754,7 +755,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "ryis",
         "relation": "Nephew: Ryis"
       },
       {
@@ -847,19 +848,19 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "josephine",
         "relation": "Josephine (Mother)"
       },
       {
-        "character_id": null,
+        "character_id": "hemlock",
         "relation": "Hemlock (Father)"
       },
       {
-        "character_id": null,
+        "character_id": "reina",
         "relation": "Reina (Sister)"
       },
       {
-        "character_id": null,
+        "character_id": "maple",
         "relation": "Maple (Sister)"
       }
     ],
@@ -902,19 +903,19 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "josephine",
         "relation": "Josephine (Mother)"
       },
       {
-        "character_id": null,
+        "character_id": "hemlock",
         "relation": "Hemlock (Father)"
       },
       {
-        "character_id": null,
+        "character_id": "reina",
         "relation": "Reina (Sister)"
       },
       {
-        "character_id": null,
+        "character_id": "luc",
         "relation": "Luc (Brother)"
       }
     ],
@@ -965,7 +966,7 @@
         "relation": "Olin (Father) †"
       },
       {
-        "character_id": null,
+        "character_id": "olric",
         "relation": "Olric (Brother)"
       }
     ],
@@ -1046,15 +1047,15 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "holt",
         "relation": "Husband: Holt"
       },
       {
-        "character_id": null,
+        "character_id": "dell",
         "relation": "Daughter: Dell"
       },
       {
-        "character_id": null,
+        "character_id": "celine",
         "relation": "Daughter: Celine"
       }
     ],
@@ -1105,7 +1106,7 @@
         "relation": "Olin (Father) †"
       },
       {
-        "character_id": null,
+        "character_id": "march",
         "relation": "March (Brother)"
       }
     ],
@@ -1135,9 +1136,7 @@
   },
   {
     "affiliation": null,
-    "also_known_as": [
-      "Seridia"
-    ],
+    "also_known_as": [],
     "birthday": {
       "day": 2,
       "season": "winter"
@@ -1171,6 +1170,9 @@
     "schedule_id": null,
     "shop_id": null,
     "species": "Human",
+    "spoiler_aliases": [
+      "Seridia"
+    ],
     "version_added": null,
     "wiki_page": "Priestess"
   },
@@ -1189,19 +1191,19 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "josephine",
         "relation": "Josephine (Mother)"
       },
       {
-        "character_id": null,
+        "character_id": "hemlock",
         "relation": "Hemlock (Father)"
       },
       {
-        "character_id": null,
+        "character_id": "maple",
         "relation": "Maple (Sister)"
       },
       {
-        "character_id": null,
+        "character_id": "luc",
         "relation": "Luc (Brother)"
       }
     ],
@@ -1244,7 +1246,7 @@
     ],
     "family": [
       {
-        "character_id": null,
+        "character_id": "landen",
         "relation": "Maternal Uncle: Landen"
       },
       {

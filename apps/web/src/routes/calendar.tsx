@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { Section } from '~/components/Section'
 import { loadDataset } from '~/lib/data'
+import { useSpoilers } from '~/lib/spoilers'
 
 /**
  * The year on one page: whose birthday, and which festival.
@@ -21,12 +22,14 @@ import { loadDataset } from '~/lib/data'
 interface CharacterRecord {
   id: string
   name: string
+  spoiler?: boolean
   birthday: { season: string; day: number } | null
 }
 
 interface FestivalRecord {
   id: string
   name: string
+  unreleased?: boolean
   date: { season: string; day: number } | null
   implemented: boolean
   location_id: string | null
@@ -38,6 +41,8 @@ interface DayEntry {
   name: string
   /** Festivals the files describe and the game does not run. */
   unimplemented: boolean
+  /** A late-game character's day: the tile says a birthday exists, not whose. */
+  spoiler: boolean
 }
 
 export function CalendarRoute() {
@@ -67,6 +72,7 @@ export function CalendarRoute() {
             id: person.id,
             name: person.name,
             unimplemented: false,
+            spoiler: person.spoiler === true,
           })
         }
         for (const festival of festivals) {
@@ -76,6 +82,7 @@ export function CalendarRoute() {
             id: festival.id,
             name: festival.name,
             unimplemented: !festival.implemented,
+            spoiler: festival.unreleased === true,
           })
         }
 
@@ -110,6 +117,7 @@ export function CalendarRoute() {
 
 function SeasonGrid({ season, byDay }: { season: Season; byDay: Map<string, DayEntry[]> }) {
   const days = Array.from({ length: DAYS_PER_SEASON }, (_, i) => i + 1)
+  const spoilers = useSpoilers()
 
   return (
     <Section title={season[0]?.toUpperCase() + season.slice(1)}>
@@ -134,17 +142,38 @@ function SeasonGrid({ season, byDay }: { season: Season; byDay: Map<string, DayE
                 {entries.map((entry) => (
                   <li key={`${entry.kind}:${entry.id}`} className="text-[10px] leading-tight">
                     {entry.kind === 'birthday' ? (
-                      <Link
-                        to="/villager/$id"
-                        params={{ id: entry.id }}
-                        className="text-ink underline decoration-rule underline-offset-2"
+                      spoilers.shown(entry.id) || !entry.spoiler ? (
+                        <Link
+                          to="/villager/$id"
+                          params={{ id: entry.id }}
+                          className="text-ink underline decoration-rule underline-offset-2"
+                        >
+                          {entry.name}
+                        </Link>
+                      ) : (
+                        // Whose it is stays veiled; that a birthday exists is
+                        // what the tinted tile already says. Still navigates —
+                        // the villager page is the one that asks.
+                        <Link
+                          to="/villager/$id"
+                          params={{ id: entry.id }}
+                          className="unverified px-1"
+                        >
+                          a birthday
+                        </Link>
+                      )
+                    ) : entry.spoiler && !spoilers.shown(entry.id) ? (
+                      // Described by the wiki, not run by the game — hidden
+                      // until asked for. The tile still shows something is
+                      // planned for the day; the tap is the ask.
+                      <button
+                        type="button"
+                        onClick={() => spoilers.reveal(entry.id)}
+                        className="unverified px-1"
                       >
-                        {entry.name}
-                      </Link>
+                        coming later
+                      </button>
                     ) : (
-                      // A festival the files describe and the game does not run
-                      // is still worth showing — it is the difference between
-                      // "not in the game" and "we never heard of it".
                       <span className={entry.unimplemented ? 'unverified px-1' : 'text-ink'}>
                         {entry.name}
                       </span>

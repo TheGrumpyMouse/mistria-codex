@@ -55,8 +55,12 @@ export function extensionOf(canonical: string): string {
  * nothing else, so it gets its own function and its own shape.
  */
 export function localName(canonical: string): string {
-  const extension = extensionOf(canonical)
-  const stem = extension === '' ? canonical : canonical.slice(0, -extension.length)
+  const sourceExtension = extensionOf(canonical)
+  // We only ever store PNGs. An `.ico` source (the wiki's own branding files)
+  // is stored as the PNG the fetcher extracts from it, so the local name says
+  // what is actually on disk.
+  const extension = sourceExtension === '.ico' ? '.png' : sourceExtension
+  const stem = sourceExtension === '' ? canonical : canonical.slice(0, -sourceExtension.length)
 
   const kebab = stem
     .normalize('NFKD')

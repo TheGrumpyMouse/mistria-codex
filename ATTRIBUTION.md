@@ -21,7 +21,7 @@ All files were fetched from the community wiki at <https://fieldsofmistria.wiki.
 and does not own them. The wiki’s **text** is CC BY-SA; the game’s **art** is not,
 and nothing in this repository treats it as though it were.
 
-**1271 files.**
+**1276 files.**
 
 ## Items (1123)
 
@@ -1286,20 +1286,24 @@ and nothing in this repository treats it as though it were.
 | `festival/calendar-icon-shooting-star-festival.png` | Calendar icon shooting star festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20shooting%20star%20festival.png) |
 | `festival/calendar-icon-spring-festival.png` | Calendar icon spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20spring%20festival.png) |
 
-## Interface (36)
+## Interface (41)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
 | `ui/almanac-icon-crops.png` | Almanac icon crops.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Almanac%20icon%20crops.png) |
 | `ui/almanac-icon-forageables.png` | Almanac icon forageables.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Almanac%20icon%20forageables.png) |
 | `ui/alpaca-category-icon.png` | Alpaca category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Alpaca%20category%20icon.png) |
+| `ui/archaeology-icon.png` | Archaeology icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Archaeology%20icon.png) |
 | `ui/blacksmith-icon.png` | Blacksmith icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Blacksmith%20icon.png) |
+| `ui/caldarushuman-icon.png` | CaldarusHuman icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:CaldarusHuman%20icon.png) |
 | `ui/calendar-icon-friday-night-at-the-inn.png` | Calendar icon friday night at the inn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20friday%20night%20at%20the%20inn.png) |
 | `ui/capybara-category-icon.png` | Capybara category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Capybara%20category%20icon.png) |
 | `ui/chickens-category-icon.png` | Chickens category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chickens%20category%20icon.png) |
 | `ui/clinic-icon.png` | Clinic icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clinic%20icon.png) |
+| `ui/combat-icon.png` | Combat icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Combat%20icon.png) |
 | `ui/cows-category-icon.png` | Cows category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cows%20category%20icon.png) |
 | `ui/ducks-category-icon.png` | Ducks category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ducks%20category%20icon.png) |
+| `ui/farming-icon.png` | Farming icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Farming%20icon.png) |
 | `ui/fp-wiki-balor.png` | Fp wiki balor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fp%20wiki%20balor.png) |
 | `ui/fp-wiki-event-saturday-market.png` | Fp wiki event saturday market.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fp%20wiki%20event%20saturday%20market.png) |
 | `ui/fp-wiki-mill-craft.png` | Fp wiki mill craft.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fp%20wiki%20mill%20craft.png) |
@@ -1326,6 +1330,7 @@ and nothing in this repository treats it as though it were.
 | `ui/season-icon-winter.png` | Season icon winter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20winter.png) |
 | `ui/sheep-category-icon.png` | Sheep category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20category%20icon.png) |
 | `ui/tackleshop-icon.png` | Tackleshop icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png) |
+| `ui/woodcrafting-icon.png` | Woodcrafting icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Woodcrafting%20icon.png) |
 
 ## Maps (1)
 
@@ -1333,8 +1338,8 @@ and nothing in this repository treats it as though it were.
 | --- | --- | --- |
 | `map/v0-13-map-unlocked.png` | V0.13 map unlocked.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:V0.13%20map%20unlocked.png) |
 
-## Logo (1)
+## Branding (1)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
-| `brand/fields-of-mistria.png` | Fields of Mistria.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fields%20of%20Mistria.png) |
+| `brand/site-favicon.png` | Site-favicon.ico | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Site-favicon.ico) |
