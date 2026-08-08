@@ -135,12 +135,12 @@ function SeasonGrid({ season, byDay }: { season: Season; byDay: Map<string, DayE
               className="min-h-[3.5rem] rounded-tile border border-rule p-1"
               style={entries.length > 0 ? { background: `var(--${season}-tint)` } : undefined}
             >
-              <span data-numeral className="text-[10px] text-ink-faint">
+              <span data-numeral className="text-[0.625rem] text-ink-faint">
                 {day}
               </span>
               <ul className="mt-0.5 flex flex-col gap-0.5">
                 {entries.map((entry) => (
-                  <li key={`${entry.kind}:${entry.id}`} className="text-[10px] leading-tight">
+                  <li key={`${entry.kind}:${entry.id}`} className="text-[0.625rem] leading-tight">
                     {entry.kind === 'birthday' ? (
                       spoilers.shown(entry.id) || !entry.spoiler ? (
                         <Link

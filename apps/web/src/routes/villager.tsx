@@ -271,7 +271,7 @@ export function VillagerRoute() {
                           <Link
                             to="/item/$id"
                             params={{ id: item.id }}
-                            className="flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink text-xs transition-colors hover:bg-sunk"
+                            className="tap-target flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink text-xs transition-colors hover:bg-sunk"
                           >
                             <ItemIcon
                               iconKey={index[item.id]?.i ?? `item/${item.id}`}

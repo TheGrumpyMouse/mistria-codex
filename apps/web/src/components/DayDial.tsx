@@ -122,7 +122,7 @@ function SeasonRow({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>
               name="season"
               checked={active}
               onSelect={() => onChange({ season, weather: legalWeather(season, value.weather) })}
-              className="flex-1 cursor-pointer px-2 py-1.5 text-center font-display font-semibold text-[13px] transition-colors sm:px-3 sm:text-sm"
+              className="flex-1 cursor-pointer px-2 py-1.5 text-center font-display font-semibold text-[0.8125rem] transition-colors sm:px-3 sm:text-sm"
               style={{
                 background: active ? `var(--${season}-tint)` : 'transparent',
                 color: active ? `var(--${season})` : 'var(--ink-mute)',
@@ -163,7 +163,7 @@ function DayGrid({ value, onChange, marks = {} }: DayDialProps) {
         {DAY_NAMES.map((name) => (
           <div
             key={name}
-            className="text-center text-[10px] text-ink-faint uppercase tracking-wide"
+            className="text-center text-[0.625rem] text-ink-faint uppercase tracking-wide"
           >
             {name}
           </div>
@@ -184,7 +184,7 @@ function DayGrid({ value, onChange, marks = {} }: DayDialProps) {
               checked={active}
               onSelect={() => onChange({ day })}
               label={`${titleCase(value.season)} ${day}, ${weekdayOf(day)}${spoken}`}
-              className="relative grid aspect-square cursor-pointer place-items-center rounded-tile border text-[13px] transition-colors"
+              className="relative grid aspect-square cursor-pointer place-items-center rounded-tile border text-[0.8125rem] transition-colors"
               style={{
                 background: active ? 'var(--accent)' : 'var(--sunk)',
                 color: active ? 'var(--surface)' : 'var(--ink-mute)',
@@ -197,7 +197,10 @@ function DayGrid({ value, onChange, marks = {} }: DayDialProps) {
                   and the day is still legible in the corner. */}
               {dayMarks.length > 0 ? (
                 <>
-                  <span data-numeral className="absolute top-0.5 left-1 text-[9px] opacity-80">
+                  <span
+                    data-numeral
+                    className="absolute top-0.5 left-1 text-[0.5625rem] opacity-80"
+                  >
                     {day}
                   </span>
                   <span aria-hidden className="flex items-center">
@@ -284,7 +287,7 @@ function TimeBand({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>)
           <button
             type="button"
             onClick={() => onChange({ time: minutes === null ? 12 * 60 : null })}
-            className="rounded-pill border border-rule px-2.5 py-1 text-ink-mute text-xs transition-colors hover:text-ink"
+            className="tap-target rounded-pill border border-rule px-2.5 py-1 text-ink-mute text-xs transition-colors hover:text-ink"
             style={
               minutes === null ? { background: 'var(--accent-tint)', color: 'var(--accent)' } : {}
             }
@@ -310,7 +313,7 @@ function TimeBand({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>)
         className="time-band w-full disabled:opacity-40"
       />
 
-      <div className="flex justify-between text-[11px] text-ink-faint" data-numeral>
+      <div className="flex justify-between text-[0.6875rem] text-ink-faint" data-numeral>
         <span>6 AM</span>
         <span>Noon</span>
         <span>6 PM</span>

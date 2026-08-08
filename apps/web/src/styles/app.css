@@ -15,10 +15,23 @@
   body {
     margin: 0;
     min-height: 100dvh;
-    font-size: 15px;
+    /* 15px at the default root size — but stated in rem so the Settings text
+       size choice (which scales the root font-size) reaches every screen. A
+       px here would pin the base text still while everything else grew. */
+    font-size: 0.9375rem;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+  }
+
+  /* Checkboxes are progress controls here — museum donations, hand-ins — and
+     the browser default is a 13px square. Sized in rem so they grow with the
+     text size choice, and tinted the season accent like every other control. */
+  input[type="checkbox"] {
+    width: 1.05rem;
+    height: 1.05rem;
+    flex-shrink: 0;
+    accent-color: var(--accent);
   }
 
   h1,
@@ -112,6 +125,39 @@
     border: 1px dashed var(--ink-faint);
     background: transparent;
     color: var(--ink-mute);
+  }
+
+  /*
+   * The invisible fat-finger zone, for small standalone controls — the tiny
+   * "where?" link on a museum row, filter chips, quiet back buttons.
+   *
+   * A pseudo-element inflates the hit area to 44x44px (Apple's guideline;
+   * comfortably past WCAG 2.5.8's 24px) without moving a pixel of layout.
+   * Touch screens only: a mouse is precise, and an invisible 44px halo around
+   * a 14px link on desktop steals clicks from whatever sits beside it.
+   *
+   * For inline links inside running prose, don't — WCAG exempts them, and an
+   * inflated zone mid-sentence would swallow the words around it.
+   */
+  @media (pointer: coarse) {
+    .tap-target {
+      position: relative;
+    }
+    .tap-target::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: max(100%, 44px);
+      height: max(100%, 44px);
+      transform: translate(-50%, -50%);
+    }
+    /* Checkboxes cannot grow a pseudo-element, so they grow themselves —
+       1.5rem is 24px, WCAG 2.5.8's minimum target size. */
+    input[type="checkbox"] {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 

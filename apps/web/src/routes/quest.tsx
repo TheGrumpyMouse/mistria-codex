@@ -152,7 +152,7 @@ export function QuestRoute() {
           {quest.season_restriction.map((season) => (
             <span
               key={season}
-              className="rounded-pill px-1.5 py-0.5 text-[10px]"
+              className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
               style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
             >
               {season} only

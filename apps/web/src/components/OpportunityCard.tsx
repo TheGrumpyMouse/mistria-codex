@@ -9,7 +9,7 @@ import { oddsPhrase } from '~/lib/opportunity'
 /**
  * One way to get one thing, and when.
  *
- * The same card appears on the item page, on `/item/$id/when`, and against a
+ * The same card appears on the item page, on `/item/$id/where`, and against a
  * missing museum row, because they are three placements of one question. Any
  * difference between them would be a difference the data does not have.
  *
@@ -50,7 +50,7 @@ export function OpportunityCard({
         <p className="text-ink text-sm">
           {KIND_LABELS[rule.k] ?? rule.k.replace(/_/g, ' ')}
           {place === null ? (
-            <span className="unverified ml-1.5 rounded-tile px-1.5 py-0.5 text-[10px]">
+            <span className="unverified ml-1.5 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
               place unknown
             </span>
           ) : (
@@ -85,7 +85,7 @@ export function OpportunityCard({
         {SEASONS.filter((season) => seasons.includes(season)).map((season) => (
           <span
             key={season}
-            className="rounded-pill px-1.5 py-0.5 text-[10px]"
+            className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
             style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
           >
             {season}
@@ -93,10 +93,22 @@ export function OpportunityCard({
         ))}
 
         {time.length === 0 ? (
-          <span className="unverified rounded-tile px-1.5 py-0.5 text-[10px]">any time</span>
+          // Two different empties. `ta` says the method has no clock — fish
+          // bite around the clock, dig spots sit there all day — which is a
+          // fact and renders plainly. Without it, nobody has sourced a time,
+          // and the dashed hedge stays.
+          rule.ta === 1 ? (
+            <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
+              any time
+            </span>
+          ) : (
+            <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
+              time unknown
+            </span>
+          )
         ) : (
           time.map(([from, to]) => (
-            <span key={`${from}-${to}`} data-numeral className="text-ink-faint text-[10px]">
+            <span key={`${from}-${to}`} data-numeral className="text-ink-faint text-[0.625rem]">
               {formatClock(from)}–{formatClock(to)}
             </span>
           ))
@@ -104,7 +116,7 @@ export function OpportunityCard({
 
         {requires.length > 0 && (
           <span
-            className="rounded-pill px-1.5 py-0.5 text-[10px]"
+            className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
           >
             needs{' '}

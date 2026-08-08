@@ -114,12 +114,12 @@ function Group({
                     </span>
                     <span className="flex shrink-0 gap-1">
                       {seasons.length === SEASONS.length ? (
-                        <span className="text-ink-faint text-[10px]">all year</span>
+                        <span className="text-ink-faint text-[0.625rem]">all year</span>
                       ) : (
                         seasons.map((season) => (
                           <span
                             key={season}
-                            className="rounded-pill px-1.5 py-0.5 text-[10px]"
+                            className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
                             style={{
                               background: `var(--${season}-tint)`,
                               color: `var(--${season})`,

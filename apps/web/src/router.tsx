@@ -22,7 +22,7 @@ import { SearchRoute } from '~/routes/search'
 import { SettingsRoute } from '~/routes/settings'
 import { TodayRoute } from '~/routes/today'
 import { VillagerRoute } from '~/routes/villager'
-import { WhenRoute } from '~/routes/when'
+import { WhereRoute } from '~/routes/where'
 
 const rootRoute = createRootRoute({ component: AppShell })
 
@@ -68,16 +68,16 @@ const itemRoute = createRoute({
 })
 
 /**
- * Reverse lookup, under the item it is about.
+ * Reverse lookup, under the item it is about: where, and if it matters, when.
  *
  * It takes the same validated instant as Today, because "in 43 days" has to be
  * counted from somewhere and the somewhere is whatever date the user was
  * looking at. A link to this page therefore carries that date with it.
  */
-const whenRoute = createRoute({
+const whereRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/item/$id/when',
-  component: WhenRoute,
+  path: '/item/$id/where',
+  component: WhereRoute,
   validateSearch: InstantSearch,
 })
 
@@ -208,7 +208,7 @@ const routeTree = rootRoute.addChildren([
   mapRoute,
   boardRoute,
   itemRoute,
-  whenRoute,
+  whereRoute,
   villagerRoute,
   placeRoute,
   monsterRoute,

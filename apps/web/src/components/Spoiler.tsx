@@ -56,7 +56,9 @@ export function SpoilerChip({
       >
         ?
       </span>
-      <span className="unverified rounded-tile px-1.5 py-0.5 text-[11px]">{CHIP_TEXT[reason]}</span>
+      <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.6875rem]">
+        {CHIP_TEXT[reason]}
+      </span>
     </>
   )
 }
@@ -92,7 +94,7 @@ export function SpoilerAsk({
         <button
           type="button"
           onClick={() => spoilers.reveal(id)}
-          className="rounded-tile border border-rule px-3 py-1.5 text-sm transition-colors"
+          className="tap-target rounded-tile border border-rule px-3 py-1.5 text-sm transition-colors"
           style={{ background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }}
         >
           Show it anyway

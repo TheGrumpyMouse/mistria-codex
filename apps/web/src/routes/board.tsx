@@ -348,7 +348,7 @@ function Toggle({ value, onChange }: { value: View; onChange: (v: View) => void 
           key={key}
           type="button"
           onClick={() => onChange(key)}
-          className="px-3 py-1 text-xs transition-colors"
+          className="tap-target px-3 py-1 text-xs transition-colors"
           style={
             value === key
               ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
@@ -375,7 +375,7 @@ function Chip({
     <button
       type="button"
       onClick={onClick}
-      className="rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+      className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
       style={
         active
           ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }

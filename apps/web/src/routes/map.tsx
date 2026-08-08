@@ -175,7 +175,7 @@ export function MapRoute() {
           <button
             type="button"
             onClick={() => select(null)}
-            className="rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
+            className="tap-target rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
           >
             ← Back to the valley
           </button>
@@ -203,7 +203,7 @@ export function MapRoute() {
             key={r.id}
             type="button"
             onClick={() => select(selected === r.id ? null : r.id)}
-            className="rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+            className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
             style={
               r.id === selected
                 ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }

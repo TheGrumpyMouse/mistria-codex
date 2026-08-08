@@ -99,6 +99,19 @@ Every colour comes from `styles/tokens.css`. The season accent is `var(--accent)
 and is set by `data-season` on the root element — a literal `#D4834A` is a fall
 colour that stays fall in winter.
 
+### 9. Font sizes in rem, touch targets 44px
+
+Settings has a text-size choice that scales the root font-size. Every font size
+must therefore be rem — Tailwind's scale already is; arbitrary values are
+`text-[0.625rem]`, never `text-[10px]`, or that text silently ignores the
+setting. Sprites stay px deliberately: pixel art only survives integer scaling,
+so icons hold still while the words grow.
+
+Small standalone controls — tiny links, filter chips, quiet buttons — carry the
+`.tap-target` class, which inflates the hit area to 44px on touch screens
+without moving layout. Inline links in running prose are exempt (WCAG agrees).
+Checkboxes grow themselves; that rule is global in `app.css`.
+
 ---
 
 ## Shape

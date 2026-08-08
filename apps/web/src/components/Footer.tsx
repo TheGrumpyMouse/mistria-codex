@@ -22,7 +22,7 @@ export const STEAM_PAGE = 'https://store.steampowered.com/app/2142790'
 
 export function Footer() {
   return (
-    <footer className="mt-10 border-rule border-t pt-4 pb-2 text-[11px] text-ink-faint leading-relaxed">
+    <footer className="mt-10 border-rule border-t pt-4 pb-2 text-[0.6875rem] text-ink-faint leading-relaxed">
       <p className="max-w-prose">{ATTRIBUTION_TEXT}</p>
       <p className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
         <FooterLink href={OFFICIAL_SITE}>Official site</FooterLink>

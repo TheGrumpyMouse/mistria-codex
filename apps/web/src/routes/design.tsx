@@ -104,7 +104,7 @@ export function DesignRoute() {
                   className="rounded-tile bg-accent-tint"
                   style={{ width: `var(--step-${step})`, height: `var(--step-${step})` }}
                 />
-                <span className="text-[10px] text-ink-faint" data-numeral>
+                <span className="text-[0.625rem] text-ink-faint" data-numeral>
                   {step}
                 </span>
               </div>
@@ -141,7 +141,7 @@ function Swatch({ token }: { token: string }) {
         className="size-12 rounded-tile border border-rule"
         style={{ background: `var(--${token})` }}
       />
-      <span className="font-mono text-[10px] text-ink-faint">{token}</span>
+      <span className="font-mono text-[0.625rem] text-ink-faint">{token}</span>
     </div>
   )
 }

@@ -260,7 +260,7 @@ export function TodayRoute() {
                     {/* Revealed but still not runnable — the badge keeps saying
                       so before someone plans a day around it. */}
                     {!festival.implemented && (
-                      <span className="unverified ml-2 rounded-tile px-1.5 py-0.5 text-[10px]">
+                      <span className="unverified ml-2 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
                         not yet in the game
                       </span>
                     )}
@@ -312,7 +312,7 @@ export function TodayRoute() {
                   open={needle !== ''}
                   className="rounded-card border border-rule bg-surface px-3 py-1"
                 >
-                  <summary className="cursor-pointer py-1.5 text-ink text-sm">
+                  <summary className="tap-target cursor-pointer py-1.5 text-ink text-sm">
                     {KIND_LABELS[group.kind] ?? group.kind.replace(/_/g, ' ')}
                     <span className="text-ink-faint"> · {group.entities.length}</span>
                   </summary>

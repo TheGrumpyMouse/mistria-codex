@@ -3,8 +3,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { AtlasProvider } from '~/app/AtlasProvider'
 import { UpdateToast } from '~/app/UpdateToast'
+import { applyTextSize, savedTextSize } from '~/lib/text-size'
 import { router } from '~/router'
 import './styles/app.css'
+
+// Before the first render, so a person who chose large text never sees a
+// small-text flash on the way in.
+applyTextSize(savedTextSize())
 
 /**
  * Ask the browser to keep our storage.

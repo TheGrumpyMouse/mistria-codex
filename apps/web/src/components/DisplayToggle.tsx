@@ -16,7 +16,7 @@ export function DisplayToggle() {
       type="button"
       onClick={() => setMode(value)}
       aria-pressed={mode === value}
-      className="flex items-center gap-1 rounded-pill px-2 py-1 text-[11px] transition-colors"
+      className="tap-target flex items-center gap-1 rounded-pill px-2 py-1 text-[0.6875rem] transition-colors"
       style={
         mode === value
           ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }

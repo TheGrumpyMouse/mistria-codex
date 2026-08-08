@@ -9,7 +9,14 @@ import { ArrowLeft } from 'lucide-react'
  * when there is none, because a shared deep link opens with an empty history
  * and a back control that does nothing reads as broken.
  */
-export function BackLink({ fallback = '/search' }: { fallback?: string }) {
+export function BackLink({
+  fallback = '/search',
+  params,
+}: {
+  fallback?: string
+  /** Route params for a parameterised fallback, e.g. `/item/$id`. */
+  params?: Record<string, string>
+}) {
   const router = useRouter()
 
   if (router.history.canGoBack()) {
@@ -17,7 +24,7 @@ export function BackLink({ fallback = '/search' }: { fallback?: string }) {
       <button
         type="button"
         onClick={() => router.history.back()}
-        className="mb-2 flex items-center gap-1 text-ink-mute text-xs transition-colors hover:text-ink"
+        className="tap-target mb-2 inline-flex items-center gap-1 rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
       >
         <ArrowLeft size={14} strokeWidth={2} />
         Back
@@ -28,7 +35,8 @@ export function BackLink({ fallback = '/search' }: { fallback?: string }) {
   return (
     <Link
       to={fallback}
-      className="mb-2 flex items-center gap-1 text-ink-mute text-xs transition-colors hover:text-ink"
+      {...(params === undefined ? {} : { params })}
+      className="tap-target mb-2 inline-flex items-center gap-1 rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
     >
       <ArrowLeft size={14} strokeWidth={2} />
       Back

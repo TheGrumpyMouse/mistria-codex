@@ -104,7 +104,7 @@ function Section({
         <button
           type="button"
           onClick={() => setExpanded(true)}
-          className="mt-1.5 text-ink-mute text-xs hover:text-ink"
+          className="tap-target mt-1.5 text-ink-mute text-xs hover:text-ink"
         >
           Show {rest} more
         </button>
@@ -113,7 +113,7 @@ function Section({
         <button
           type="button"
           onClick={() => setExpanded(false)}
-          className="mt-1.5 text-ink-mute text-xs hover:text-ink"
+          className="tap-target mt-1.5 text-ink-mute text-xs hover:text-ink"
         >
           Show fewer
         </button>
@@ -199,11 +199,13 @@ export function FindableRow({
           answer beats a missing one.
         */}
         {entity.timeUnknown && (
-          <span className="unverified rounded-tile px-1.5 py-0.5 text-[10px]">any time</span>
+          <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
+            time unknown
+          </span>
         )}
         {entity.requires.length > 0 && (
           <span
-            className="rounded-pill px-1.5 py-0.5 text-[10px]"
+            className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
             title={'Needs ' + ruleRequirementsPhrase(entity.requires)}
           >

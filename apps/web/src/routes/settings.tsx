@@ -12,6 +12,13 @@ import {
   syncConfigured,
   syncNow,
 } from '~/lib/sync'
+import {
+  savedTextSize,
+  setTextSize,
+  TEXT_SIZE_LABELS,
+  TEXT_SIZES,
+  type TextSize,
+} from '~/lib/text-size'
 
 /**
  * Settings: the sync code, and getting your progress off this device.
@@ -42,6 +49,9 @@ export function SettingsRoute() {
   const [result, setResult] = useState<SyncResult | null>(null)
   const [syncedAt, setSyncedAt] = useState<Date | null>(null)
   const spoilers = useSpoilers()
+  // Read once, synchronously: the choice was already applied to the document
+  // by main.tsx, so this state only exists to light the right button.
+  const [textChoice, setTextChoice] = useState<TextSize>(() => savedTextSize())
 
   useEffect(() => {
     setCode(savedCode())
@@ -126,7 +136,7 @@ export function SettingsRoute() {
           type="button"
           onClick={clearProgress}
           aria-live="polite"
-          className="mt-2 rounded-tile border px-3 py-1.5 text-xs"
+          className="tap-target mt-2 rounded-tile border px-3 py-1.5 text-xs"
           style={
             armed
               ? { borderColor: 'var(--gap)', color: 'var(--gap)' }
@@ -135,6 +145,39 @@ export function SettingsRoute() {
         >
           {armed ? 'Tap again to erase everything' : 'Erase progress on this device'}
         </button>
+      </Section>
+
+      <Section title="Text size">
+        <p className="text-ink-mute text-sm">
+          Makes everything in the app bigger. Applies to this device and takes effect immediately.
+        </p>
+        <fieldset className="mt-2 flex flex-wrap items-center gap-2">
+          <legend className="sr-only">Text size</legend>
+          {TEXT_SIZES.map((size) => (
+            <button
+              key={size}
+              type="button"
+              onClick={() => {
+                setTextSize(size)
+                setTextChoice(size)
+              }}
+              aria-pressed={textChoice === size}
+              className="tap-target rounded-tile border px-3 py-1.5 text-xs transition-colors"
+              style={
+                textChoice === size
+                  ? {
+                      borderColor: 'var(--rule)',
+                      background: 'var(--accent-tint)',
+                      color: 'var(--accent)',
+                      fontWeight: 600,
+                    }
+                  : { borderColor: 'var(--rule)', color: 'var(--ink-mute)' }
+              }
+            >
+              {TEXT_SIZE_LABELS[size]}
+            </button>
+          ))}
+        </fieldset>
       </Section>
 
       <Section title="Hidden things">
@@ -148,7 +191,7 @@ export function SettingsRoute() {
             type="button"
             onClick={() => spoilers.setShowAll(!spoilers.showAll)}
             aria-pressed={spoilers.showAll}
-            className="rounded-tile border px-3 py-1.5 text-xs transition-colors"
+            className="tap-target rounded-tile border px-3 py-1.5 text-xs transition-colors"
             style={
               spoilers.showAll
                 ? {
@@ -165,7 +208,7 @@ export function SettingsRoute() {
           <button
             type="button"
             onClick={spoilers.rehideAll}
-            className="rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs hover:text-ink"
+            className="tap-target rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs hover:text-ink"
           >
             Hide them all again
           </button>

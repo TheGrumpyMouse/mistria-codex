@@ -147,7 +147,7 @@ export function MuseumRoute() {
                 key={w.id}
                 type="button"
                 onClick={() => setWing(w.id)}
-                className="rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+                className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
                 style={
                   wing === w.id
                     ? { background: 'var(--museum-tint)', color: 'var(--ink)', fontWeight: 600 }
@@ -233,17 +233,17 @@ export function MuseumRoute() {
 
                         {/*
                           The most valuable placement of the reverse lookup:
-                          this row is a thing you still need, and "when can I
+                          this row is a thing you still need, and "where do I
                           get it" is the only question left about it. Not shown
                           on a donated row — that question is answered.
                         */}
                         {!isDone && (
                           <Link
-                            to="/item/$id/when"
+                            to="/item/$id/where"
                             params={{ id }}
-                            className="shrink-0 text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+                            className="tap-target shrink-0 text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
                           >
-                            when?
+                            where?
                           </Link>
                         )}
                       </li>

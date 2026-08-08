@@ -179,6 +179,10 @@ export function flattenAvailability(
         req: window.requires.map(requirementLabel),
         p: null,
         conf: window.confidence,
+        // An empty `t` alone cannot say whether the method has no clock or
+        // nobody has checked — that distinction lives in `time_precision` on
+        // the nested window, and this is it surviving the flattening.
+        ...(t.length === 0 && window.time_precision === 'not_applicable' ? { ta: 1 as const } : {}),
       }
 
       // No location is one rule with `loc: null`, never zero rules. Dropping it

@@ -114,7 +114,7 @@ export function BrowseRoute() {
             key={c.id}
             type="button"
             onClick={() => setCategory(c.id)}
-            className="rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+            className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
             style={
               category === c.id
                 ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }

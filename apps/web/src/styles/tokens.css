@@ -79,6 +79,19 @@
   --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
 }
 
+/*
+ * Text size, chosen in Settings. Small is the design's native size and needs
+ * no rule — the attribute is simply absent. The two overrides scale the root
+ * font-size, which every rem-derived size in the app follows; sprites stay in
+ * pixels on purpose, because pixel art only survives integer scaling.
+ */
+:root[data-text="medium"] {
+  font-size: 112.5%;
+}
+:root[data-text="large"] {
+  font-size: 125%;
+}
+
 :root[data-season="spring"] {
   --accent: var(--spring);
   --accent-tint: var(--spring-tint);

@@ -44,7 +44,7 @@ export function UpdateToast() {
             setBusy(true)
             void updateServiceWorker(true)
           }}
-          className="rounded-pill px-3 py-1 text-xs"
+          className="tap-target rounded-pill px-3 py-1 text-xs"
           style={{ background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }}
         >
           {busy ? 'Reloading…' : 'Reload'}
@@ -52,7 +52,7 @@ export function UpdateToast() {
         <button
           type="button"
           onClick={() => setNeedRefresh(false)}
-          className="rounded-pill border border-rule px-3 py-1 text-ink-mute text-xs"
+          className="tap-target rounded-pill border border-rule px-3 py-1 text-ink-mute text-xs"
         >
           Later
         </button>

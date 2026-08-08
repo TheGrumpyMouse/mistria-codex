@@ -414,7 +414,7 @@ export function ItemRoute() {
                   {SEASONS.filter((s) => window.seasons.includes(s)).map((season) => (
                     <span
                       key={season}
-                      className="rounded-pill px-1.5 py-0.5 text-[10px]"
+                      className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
                       style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
                     >
                       {season}
@@ -425,11 +425,11 @@ export function ItemRoute() {
                     // spots sit there all day — and renders plainly; 'unknown'
                     // keeps the dashed hedge, because nobody has checked.
                     window.time_precision === 'not_applicable' ? (
-                      <span className="rounded-tile px-1.5 py-0.5 text-[10px] text-ink-faint">
+                      <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
                         any time
                       </span>
                     ) : (
-                      <span className="unverified rounded-tile px-1.5 py-0.5 text-[10px]">
+                      <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
                         time unknown
                       </span>
                     )
@@ -438,7 +438,7 @@ export function ItemRoute() {
                       <span
                         key={`${range.from}-${range.to}`}
                         data-numeral
-                        className="text-ink-faint text-[10px]"
+                        className="text-ink-faint text-[0.625rem]"
                       >
                         {range.from}–{range.to}
                       </span>
@@ -446,7 +446,7 @@ export function ItemRoute() {
                   )}
                   {/* An inference must never render identically to a fact. */}
                   {window.confidence === 'inferred' && (
-                    <span className="unverified rounded-tile px-1.5 py-0.5 text-[10px]">
+                    <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
                       place inferred
                     </span>
                   )}
@@ -459,16 +459,17 @@ export function ItemRoute() {
         {/*
           The reverse lookup runs off the availability index the app has already
           downloaded, so offering it costs nothing — and it answers the question
-          the list above raises: yes, but *when*.
+          the list above raises: yes, but *where*, with the clock only where
+          the method has one.
         */}
         {item.availability.length > 0 && (
           <p className="mt-2">
             <Link
-              to="/item/$id/when"
+              to="/item/$id/where"
               params={{ id: item.id }}
-              className="text-ink-mute text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+              className="tap-target text-ink-mute text-xs underline decoration-rule underline-offset-4 hover:text-ink"
             >
-              When can I get this? →
+              Where can I get this? →
             </Link>
           </p>
         )}

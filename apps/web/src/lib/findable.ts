@@ -34,6 +34,8 @@ export interface Rule {
   sea: number
   wx: number
   t: [number, number][]
+  /** 1 when the empty `t` is a fact — the method has no clock — not a gap. */
+  ta?: 1
   d: [number, number] | null
   dow: number | null
   y: number | null
@@ -111,7 +113,9 @@ export function findMatches(index: AvailabilityIndex, instant: Instant): Match[]
     matches.push({
       rule,
       locationId: rule.loc === null ? null : (index.locations[rule.loc] ?? null),
-      timeUnknown: rule.t.length === 0,
+      // Not merely "no intervals": a dig spot has no clock at all, and that is
+      // a fact (`ta`), not a gap. Only the genuinely unsourced get the hedge.
+      timeUnknown: rule.t.length === 0 && rule.ta !== 1,
       placeUnknown: rule.loc === null,
       requires: rule.req,
     })

@@ -3,6 +3,7 @@ import { getRouteApi, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
+import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { OpportunityCard } from '~/components/OpportunityCard'
 import { ValleyMap } from '~/components/ValleyMap'
@@ -14,11 +15,11 @@ import {
   loadMeta,
 } from '~/lib/data'
 import { type AvailabilityIndex, ruleMatches } from '~/lib/findable'
-import { formatDate } from '~/lib/instant'
+import { titleCase } from '~/lib/instant'
 import { opportunitiesFor } from '~/lib/opportunity'
 import { questIdByName } from '~/lib/search'
 
-const route = getRouteApi('/item/$id/when')
+const route = getRouteApi('/item/$id/where')
 
 interface LocationLite {
   id: string
@@ -29,7 +30,11 @@ interface LocationLite {
 }
 
 /**
- * "When can I get this?" — the reverse of the Today screen.
+ * "Where can I get this?" — the reverse of the Today screen.
+ *
+ * Where leads and when follows: each way of getting the thing names its place,
+ * and carries its clock only when the method has one — "any time" is stated
+ * plainly when time genuinely does not apply.
  *
  * It runs on the same `availability.json` the Today query scans, filtered to one
  * entity, which is why it costs nothing: 119KB already downloaded, no new
@@ -39,7 +44,7 @@ interface LocationLite {
  * counted from whatever date the user was looking at — and a link to this page
  * carries that date with it.
  */
-export function WhenRoute() {
+export function WhereRoute() {
   const { id } = route.useParams()
   const instant = route.useSearch()
   const navigate = useNavigate()
@@ -110,18 +115,24 @@ export function WhenRoute() {
 
   return (
     <Column>
+      {/* Real history: reached from the museum this goes back to the museum,
+          from the item page back to the item page. The link to the item page
+          is offered separately below, because "back" and "about this item"
+          are different promises and conflating them is how a museum visitor
+          gets stranded. A deep link with no history falls back to the item. */}
+      <BackLink fallback="/item/$id" params={{ id }} />
+
       <header className="flex items-center gap-3">
         <ItemIcon iconKey={entry?.i ?? `item/${id}`} name={name} size="lg" />
         <div className="min-w-0">
-          <h1 className="truncate text-2xl">When to get {name}</h1>
+          <h1 className="truncate text-2xl">Where to get {name}</h1>
           <p className="mt-0.5 text-ink-mute text-sm">
-            Counted from {formatDate(instant)}.{' '}
             <Link
               to="/item/$id"
               params={{ id }}
-              className="underline decoration-rule underline-offset-4"
+              className="tap-target underline decoration-rule underline-offset-4 hover:text-ink"
             >
-              Back to the item
+              About {name} →
             </Link>
           </p>
         </div>
@@ -156,8 +167,10 @@ export function WhenRoute() {
       )}
 
       <p className="mt-4 text-ink-faint text-xs">
-        Weather is rolled per season, not scheduled, so anything that needs weather has a frequency
-        rather than a date. The frequencies come from the game's own seasonal counts.
+        Days are counted from {titleCase(instant.season)} <span data-numeral>{instant.day}</span>,
+        year <span data-numeral>{instant.year}</span>. Weather is rolled per season, not scheduled,
+        so anything that needs weather has a frequency rather than a date. The frequencies come from
+        the game's own seasonal counts.
       </p>
     </Column>
   )

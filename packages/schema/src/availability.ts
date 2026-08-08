@@ -203,6 +203,16 @@ export const AvailabilityRule = z.object({
   /** Minute intervals, already split at midnight. Empty means "any time". */
   t: z.array(z.tuple([z.number().int(), z.number().int()])).default([]),
 
+  /**
+   * 1 when an empty `t` is a fact, not a gap: the method has no time axis at
+   * all — dig spots sit there all day, fish bite around the clock. Absent, an
+   * empty `t` means nobody has sourced a time yet, and the UI keeps its dashed
+   * "time unknown" hedge. This is `time_precision: "not_applicable"` surviving
+   * the flattening; without it the two nulls collapse back together in the
+   * shipped form, which is exactly the conflation the nested form forbids.
+   */
+  ta: z.literal(1).optional(),
+
   /** inclusive day-of-season range */
   d: z.tuple([z.number().int(), z.number().int()]).nullable().default(null),
   /** day-of-week bitmask — see DOW_BIT */

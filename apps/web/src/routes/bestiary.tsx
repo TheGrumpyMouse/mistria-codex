@@ -146,7 +146,7 @@ export function BestiaryRoute() {
                     {/* A null chance is unknown, and unknown never renders as a
                         number — 0% would read as "never drops". */}
                     {drop.chance === null ? (
-                      <span className="unverified shrink-0 rounded-tile px-1.5 py-0.5 text-[10px]">
+                      <span className="unverified shrink-0 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
                         chance unknown
                       </span>
                     ) : (

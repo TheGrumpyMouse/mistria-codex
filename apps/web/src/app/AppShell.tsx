@@ -80,19 +80,21 @@ export function AppShell() {
         fixed corner costs one thumb-stretch for screens visited occasionally.
       */}
       <div className="fixed top-3 right-3 z-10 flex gap-2 lg:hidden">
+        {/* size-11 is 44px — the minimum comfortable touch target, and these
+            two are thumb-only controls by definition. */}
         <Link
           to="/map"
           aria-label="Map"
-          className="grid size-9 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
+          className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
         >
-          <MapIcon size={17} strokeWidth={2} />
+          <MapIcon size={19} strokeWidth={2} />
         </Link>
         <Link
           to="/settings"
           aria-label="Settings"
-          className="grid size-9 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
+          className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
         >
-          <Settings size={17} strokeWidth={2} />
+          <Settings size={19} strokeWidth={2} />
         </Link>
       </div>
 
@@ -192,7 +194,7 @@ function BottomNav() {
             <Link
               to={to}
               aria-current={isActive(to) ? 'page' : undefined}
-              className="flex flex-col items-center gap-0.5 py-2.5 text-[11px] transition-colors"
+              className="flex flex-col items-center gap-0.5 py-2.5 text-[0.6875rem] transition-colors"
               style={
                 isActive(to)
                   ? { color: 'var(--accent)', fontWeight: 600 }
@@ -238,7 +240,7 @@ export function Wordmark() {
             ))}
           </span>
         )}
-        <span className="font-display font-semibold text-[15px] text-ink">Mistria Codex</span>
+        <span className="font-display font-semibold text-[0.9375rem] text-ink">Mistria Codex</span>
       </div>
     </div>
   )
