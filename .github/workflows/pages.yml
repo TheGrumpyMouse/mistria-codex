@@ -59,22 +59,26 @@ jobs:
           cp apps/web/dist/index.html apps/web/dist/404.html
           touch apps/web/dist/.nojekyll
 
-      # The repo's Pages source must be "GitHub Actions". It was left on
-      # "Deploy from a branch", which serves a Jekyll render of the README and
-      # RACES this workflow's deploy on every push — both ran green, and the
-      # legacy build kept winning. configure-pages' `enablement` only creates a
-      # missing site; it never corrects an existing legacy one, so this step
-      # does, explicitly. Idempotent: a no-op once the source is right.
-      - name: Force Pages source to GitHub Actions
+      # The repo's Pages source must be "GitHub Actions" (Settings -> Pages).
+      # Left on "Deploy from a branch" it serves a Jekyll render of the README
+      # and RACES this workflow's deploy on every push — both run green and
+      # the legacy build wins. The workflow CANNOT fix that itself: changing
+      # build_type needs repository *administration* permission, which
+      # GITHUB_TOKEN can never hold (pages:write is not enough — the attempt
+      # 403s). So this step only detects the misconfiguration and says so,
+      # loudly, instead of deploying an artifact nobody will ever see.
+      - name: Verify Pages source is GitHub Actions
         run: |
-          curl -sf -X PUT \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          TYPE=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/pages" \
-            -d '{"build_type":"workflow"}'
+            | jq -r '.build_type // "none"')
+          echo "Pages build_type: $TYPE"
+          if [ "$TYPE" != "workflow" ]; then
+            echo "::error::Pages source is '$TYPE', not 'workflow'. The site is serving the Jekyll README render. Fix: Settings -> Pages -> Build and deployment -> Source -> 'GitHub Actions', then re-run this workflow."
+            exit 1
+          fi
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: apps/web/dist
