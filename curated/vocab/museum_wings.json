@@ -1,0 +1,20 @@
+{
+  "_comment": [
+    "The four museum wings and the pages that hold their set rosters.",
+    "",
+    "Note the page titles: 'Museum/Fish_Wing' is a redirect to 'Fish Wing'. The",
+    "fetcher throws on a redirect rather than following it, so a page move shows up",
+    "as a build failure instead of an empty museum.",
+    "",
+    "Cargo carries a `museumSet` NAME on bugs, crops and artifacts, but never the",
+    "roster — and the Fish table has no museumSet column at all. crossCheck names",
+    "the table to reconcile each wing against, so a wing page that drifts from the",
+    "item-level data gets caught."
+  ],
+  "wings": [
+    { "id": "archaeology", "page": "Archaeology Wing", "crossCheck": "Artifacts" },
+    { "id": "fish", "page": "Fish Wing", "crossCheck": null },
+    { "id": "flora", "page": "Flora Wing", "crossCheck": "Crops" },
+    { "id": "insects", "page": "Insects Wing", "crossCheck": "Bugs" }
+  ]
+}

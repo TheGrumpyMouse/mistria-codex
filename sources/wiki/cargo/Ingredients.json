@@ -1,0 +1,3317 @@
+[
+  {
+    "amount": 1,
+    "ingredient": "[[File:apple.png|30px|link=Apple]] [[Apple]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:honey.png|30px|link=Honey]] [[Honey]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:onion.png|30px|link=Onion]] [[Onion]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]]",
+    "resultItem": "Apple Honey Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:apple.png|30px|link=Apple]] [[Apple]]",
+    "resultItem": "Apple Juice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:apple.png|30px|link=Apple]] [[Apple]]",
+    "resultItem": "Apple Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Apple Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Apple Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Baked Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweetroot.png|30px|link=Sweetroot]] [[Sweetroot]]",
+    "resultItem": "Baked Sweetroot"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:beet.png|30px|link=Beet]] [[Beet]]",
+    "resultItem": "Beet Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:beet.png|30px|link=Beet]] [[Beet]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:carrot.png|30px|link=Carrot]] [[Carrot]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:onion.png|30px|link=Onion]] [[Onion]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Beet Soup"
+  },
+  {
+    "amount": 3,
+    "ingredient": "[[File:bell berry.png|30px|link=Bell Berry]] [[Bell Berry]]",
+    "resultItem": "Bell Berry Bakewell Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Bell Berry Bakewell Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Bell Berry Bakewell Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Bell Berry Bakewell Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Berries and Cream"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Berries and Cream"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:blueberry.png|30px|link=Blueberry]] [[Blueberry]]",
+    "resultItem": "Berry Bowl"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:honey.png|30px|link=Honey]] [[Honey]]",
+    "resultItem": "Berry Bowl"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]]",
+    "resultItem": "Berry Bowl"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Berry Bowl"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:blackberry.png|30px|link=Blackberry]] [[Blackberry]]",
+    "resultItem": "Blackberry Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Blackberry Jam"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:blueberry.png|30px|link=Blueberry]] [[Blueberry]]",
+    "resultItem": "Blueberry Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Blueberry Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:burdock root.png|30px|link=Burdock Root]] [[Burdock Root]]",
+    "resultItem": "Braised Burdock"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Braised Burdock"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Braised Burdock"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:carrot.png|30px|link=Carrot]] [[Carrot]]",
+    "resultItem": "Braised Carrots"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Bread"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:catfish.png|30px|link=Catfish]] [[Catfish]]",
+    "resultItem": "Breaded Catfish"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Breaded Catfish"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Breaded Catfish"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]]",
+    "resultItem": "Broccoli Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]]",
+    "resultItem": "Broccoli Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Broccoli Salad"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Butter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Buttered Peas"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:peas.png|30px|link=Peas]] [[Peas]]",
+    "resultItem": "Buttered Peas"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]]",
+    "resultItem": "Cabbage Slaw"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:fennel.png|30px|link=Fennel]] [[Fennel]]",
+    "resultItem": "Cabbage Slaw"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Candied Lemon Peel"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Candied Lemon Peel"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]]",
+    "resultItem": "Candied Strawberries"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Candied Strawberries"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Candied Walnuts"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:walnut.png|30px|link=Walnut]] [[Walnut]]",
+    "resultItem": "Candied Walnuts"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Canned Sardines"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sardine.png|30px|link=Sardine]] [[Sardine]]",
+    "resultItem": "Canned Sardines"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Caramel Candy"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Caramel Candy"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:moon fruit.png|30px|link=Moon Fruit]] [[Moon Fruit]]",
+    "resultItem": "Caramelized Moon Fruit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Caramelized Moon Fruit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]]",
+    "resultItem": "Cat Treat"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Cauliflower Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]]",
+    "resultItem": "Cauliflower Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]]",
+    "resultItem": "Cauliflower Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Cauliflower Curry"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Cheese"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cherry.png|30px|link=Cherry]] [[Cherry]]",
+    "resultItem": "Cherry Cobbler"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Cherry Cobbler"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cherry.png|30px|link=Cherry]] [[Cherry]]",
+    "resultItem": "Cherry Smoothie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:honey.png|30px|link=Honey]] [[Honey]]",
+    "resultItem": "Cherry Smoothie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Cherry Smoothie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cherry.png|30px|link=Cherry]] [[Cherry]]",
+    "resultItem": "Cherry Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Cherry Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Cherry Tart"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chickpea.png|30px|link=Chickpea]] [[Chickpea]]",
+    "resultItem": "Chickpea Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]]",
+    "resultItem": "Chickpea Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Chickpea Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]]",
+    "resultItem": "Chili Coconut Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Chili Coconut Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coconut milk.png|30px|link=Coconut Milk]] [[Coconut Milk]]",
+    "resultItem": "Chili Coconut Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]]",
+    "resultItem": "Chili Coconut Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Chili Coconut Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Chocolate Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]]",
+    "resultItem": "Chocolate Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Chocolate Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Chocolate Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Clam Chowder"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:clam.png|30px|link=Clam]] [[Clam]]",
+    "resultItem": "Clam Chowder"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Clam Chowder"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Clay"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Coconut Cream Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coconut milk.png|30px|link=Coconut Milk]] [[Coconut Milk]]",
+    "resultItem": "Coconut Cream Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coconut.png|30px|link=Coconut]] [[Coconut]]",
+    "resultItem": "Coconut Cream Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Coconut Cream Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Coconut Cream Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coconut.png|30px|link=Coconut]] [[Coconut]]",
+    "resultItem": "Coconut Milk"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Cod with Thyme"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cod.png|30px|link=Cod]] [[Cod]]",
+    "resultItem": "Cod with Thyme"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:thyme.png|30px|link=Thyme]] [[Thyme]]",
+    "resultItem": "Cod with Thyme"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Armor"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Axe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Fishing Rod"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Greaves"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Helmet"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Hoe"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:copper ore.png|30px|link=Copper Ore]] [[Copper Ore]]",
+    "resultItem": "Copper Ingot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Legplates"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Net"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Pickaxe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Shovel"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Sword"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]]",
+    "resultItem": "Copper Watering Can"
+  },
+  {
+    "amount": 8,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Coral"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Crab Cakes"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:crab.png|30px|link=Crab]] [[Crab]]",
+    "resultItem": "Crab Cakes"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:dill.png|30px|link=Dill]] [[Dill]]",
+    "resultItem": "Crab Cakes"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Crab Cakes"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Crab Cakes"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]]",
+    "resultItem": "Cranberry Juice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]]",
+    "resultItem": "Cranberry Orange Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Cranberry Orange Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Cranberry Orange Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:orange.png|30px|link=Orange]] [[Orange]]",
+    "resultItem": "Cranberry Orange Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:crayfish.png|30px|link=Crayfish]] [[Crayfish]]",
+    "resultItem": "Crayfish Etouffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Crayfish Etouffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Crayfish Etouffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]]",
+    "resultItem": "Crispy Fried Earthshroom"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Crispy Fried Earthshroom"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Crispy Fried Earthshroom"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chickpea.png|30px|link=Chickpea]] [[Chickpea]]",
+    "resultItem": "Crunchy Chickpeas"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Crunchy Chickpeas"
+  },
+  {
+    "amount": 8,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Crystal"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Crystal Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:crystal berries.png|30px|link=Crystal Berries]] [[Crystal Berries]]",
+    "resultItem": "Crystal Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Crystal Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Crystal Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Cucumber Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:dill.png|30px|link=Dill]] [[Dill]]",
+    "resultItem": "Cucumber Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sesame.png|30px|link=Sesame]] [[Sesame]]",
+    "resultItem": "Cucumber Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Cucumber Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Cucumber Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Cucumber Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Cucumber Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:jade dulse.png|30px|link=Jade Dulse]] [[Jade Dulse]]",
+    "resultItem": "Deep Sea Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mines mussels.png|30px|link=Mines Mussels]] [[Mines Mussels]]",
+    "resultItem": "Deep Sea Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:underseaweed.png|30px|link=Underseaweed]] [[Underseaweed]]",
+    "resultItem": "Deep Sea Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]]",
+    "resultItem": "Deluxe Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Deluxe Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Deluxe Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:shrimp.png|30px|link=Shrimp]] [[Shrimp]]",
+    "resultItem": "Deluxe Curry"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:acorn.png|30px|link=Acorn]] [[Acorn]]",
+    "resultItem": "Deluxe Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:hay.png|30px|link=Hay]] [[Hay]]",
+    "resultItem": "Deluxe Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Deluxe Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:acorn.png|30px|link=Acorn]] [[Acorn]]",
+    "resultItem": "Deluxe Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]]",
+    "resultItem": "Deluxe Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Deluxe Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Deviled Eggs"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:horseradish.png|30px|link=Horseradish]] [[Horseradish]]",
+    "resultItem": "Deviled Eggs"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Deviled Eggs"
+  },
+  {
+    "amount": 35,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Diamond"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:trout.png|30px|link=Trout]] [[Trout]]",
+    "resultItem": "Dog Treat"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ancient firefly.png|30px|link=Ancient Firefly]] [[Ancient Firefly]]",
+    "resultItem": "Dragon-Forged Core"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]]",
+    "resultItem": "Dragon-Forged Core"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Dragon-Forged Core"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:monster core.png|30px|link=Monster Core]] [[Monster Core]]",
+    "resultItem": "Dragon-Forged Core"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pink diamond.png|30px|link=Pink Diamond]] [[Pink Diamond]]",
+    "resultItem": "Dragon-Forged Core"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]]",
+    "resultItem": "Dragon-Forged Fang"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:monster fang.png|30px|link=Monster Fang]] [[Monster Fang]]",
+    "resultItem": "Dragon-Forged Fang"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void herb.png|30px|link=Void Herb]] [[Void Herb]]",
+    "resultItem": "Dragon-Forged Fang"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void stone.png|30px|link=Void Stone]] [[Void Stone]]",
+    "resultItem": "Dragon-Forged Fang"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:written root.png|30px|link=Written Root]] [[Written Root]]",
+    "resultItem": "Dragon-Forged Fang"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]]",
+    "resultItem": "Dragon-Forged Horn"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:monster horn.png|30px|link=Monster Horn]] [[Monster Horn]]",
+    "resultItem": "Dragon-Forged Horn"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void pearl.png|30px|link=Void Pearl]] [[Void Pearl]]",
+    "resultItem": "Dragon-Forged Horn"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void powder.png|30px|link=Void Powder]] [[Void Powder]]",
+    "resultItem": "Dragon-Forged Horn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:void snail.png|30px|link=Void Snail]] [[Void Snail]]",
+    "resultItem": "Dragon-Forged Horn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]]",
+    "resultItem": "Dragon-Forged Powder"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:luminescent crab.png|30px|link=Luminescent Crab]] [[Luminescent Crab]]",
+    "resultItem": "Dragon-Forged Powder"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Dragon-Forged Powder"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]]",
+    "resultItem": "Dragon-Forged Powder"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pink diamond.png|30px|link=Pink Diamond]] [[Pink Diamond]]",
+    "resultItem": "Dragon-Forged Powder"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void herb.png|30px|link=Void Herb]] [[Void Herb]]",
+    "resultItem": "Dragon-Forged Sword"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void pearl.png|30px|link=Void Pearl]] [[Void Pearl]]",
+    "resultItem": "Dragon-Forged Sword"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void powder.png|30px|link=Void Powder]] [[Void Powder]]",
+    "resultItem": "Dragon-Forged Sword"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:void stone.png|30px|link=Void Stone]] [[Void Stone]]",
+    "resultItem": "Dragon-Forged Sword"
+  },
+  {
+    "amount": 50,
+    "ingredient": "[[File:voidite.png|30px|link=Voidite]] [[Voidite]]",
+    "resultItem": "Dragon-Forged Sword"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Dried Squid"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:squid.png|30px|link=Squid]] [[Squid]]",
+    "resultItem": "Dried Squid"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:duck egg.png|30px|link=Duck Egg]] [[Duck Egg]]",
+    "resultItem": "Duck Mayonnaise"
+  },
+  {
+    "amount": 30,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Emerald"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pike.png|30px|link=Pike]] [[Pike]]",
+    "resultItem": "Fish Skewers"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]]",
+    "resultItem": "Fish Skewers"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]]",
+    "resultItem": "Fish Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]]",
+    "resultItem": "Fish Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Fish Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Fish Tacos"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cod.png|30px|link=Cod]] [[Cod]]",
+    "resultItem": "Fish Tacos"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:corn.png|30px|link=Corn]] [[Corn]]",
+    "resultItem": "Fish Tacos"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Fish Tacos"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]]",
+    "resultItem": "Fish Tacos"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wheat.png|30px|link=Wheat]] [[Wheat]]",
+    "resultItem": "Flour"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:carrot.png|30px|link=Carrot]] [[Carrot]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:peas.png|30px|link=Peas]] [[Peas]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Fried Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Garlic Bread"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Garlic Bread"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:garlic.png|30px|link=Garlic]] [[Garlic]]",
+    "resultItem": "Garlic Bread"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:basil.png|30px|link=Basil]] [[Basil]]",
+    "resultItem": "Gazpacho"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Gazpacho"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Gazpacho"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:watermelon.png|30px|link=Watermelon]] [[Watermelon]]",
+    "resultItem": "Gazpacho"
+  },
+  {
+    "amount": 200,
+    "ingredient": "[[File:essence.png|30px|link=Essence]] [[Essence]]",
+    "resultItem": "Giant Essence Stone"
+  },
+  {
+    "amount": 80,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Giant Essence Stone"
+  },
+  {
+    "amount": 8,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Glass"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Glowberry Cookies"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Glowberry Cookies"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Glowberry Cookies"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:glowberry.png|30px|link=Glowberry]] [[Glowberry]]",
+    "resultItem": "Glowberry Cookies"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Glowberry Cookies"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Armor"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Axe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Fishing Rod"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Greaves"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Helmet"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Hoe"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:gold ore.png|30px|link=Gold Ore]] [[Gold Ore]]",
+    "resultItem": "Gold Ingot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Legplates"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Net"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Pickaxe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Shovel"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Sword"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Gold Watering Can"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]]",
+    "resultItem": "Golden Butter"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]]",
+    "resultItem": "Golden Cheese"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden butter.png|30px|link=Golden Butter]] [[Golden Butter]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden cheese.png|30px|link=Golden Cheese]] [[Golden Cheese]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Golden Cheesecake"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden butter.png|30px|link=Golden Butter]] [[Golden Butter]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Golden Cookies"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden duck egg.png|30px|link=Golden Duck Egg]] [[Golden Duck Egg]]",
+    "resultItem": "Golden Duck Mayonnaise"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]]",
+    "resultItem": "Golden Mayonnaise"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild grapes.png|30px|link=Wild Grapes]] [[Wild Grapes]]",
+    "resultItem": "Grape Juice"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Grass Seed"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]]",
+    "resultItem": "Grass Starter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sod.png|30px|link=Sod]] [[Sod]]",
+    "resultItem": "Grass Starter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tea.png|30px|link=Tea]] [[Tea]]",
+    "resultItem": "Green Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Grilled Cheese"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Grilled Cheese"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Grilled Cheese"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Grilled Cheese"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:corn.png|30px|link=Corn]] [[Corn]]",
+    "resultItem": "Grilled Corn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:freshwater eel.png|30px|link=Freshwater Eel]] [[Freshwater Eel]]",
+    "resultItem": "Grilled Eel Rice Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Grilled Eel Rice Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Grilled Eel Rice Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Grilled Eel Rice Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Hard Boiled Egg"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Hard Wood"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:onion.png|30px|link=Onion]] [[Onion]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]]",
+    "resultItem": "Harvest Plate"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Hay"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Herb Butter Pasta"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:noodles.png|30px|link=Noodles]] [[Noodles]]",
+    "resultItem": "Herb Butter Pasta"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oregano.png|30px|link=Oregano]] [[Oregano]]",
+    "resultItem": "Herb Butter Pasta"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:thyme.png|30px|link=Thyme]] [[Thyme]]",
+    "resultItem": "Herb Butter Pasta"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:basil.png|30px|link=Basil]] [[Basil]]",
+    "resultItem": "Herb Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:dill.png|30px|link=Dill]] [[Dill]]",
+    "resultItem": "Herb Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oregano.png|30px|link=Oregano]] [[Oregano]]",
+    "resultItem": "Herb Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sage.png|30px|link=Sage]] [[Sage]]",
+    "resultItem": "Herb Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:thyme.png|30px|link=Thyme]] [[Thyme]]",
+    "resultItem": "Herb Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Horseradish Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:horseradish.png|30px|link=Horseradish]] [[Horseradish]]",
+    "resultItem": "Horseradish Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Horseradish Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:salmon.png|30px|link=Salmon]] [[Salmon]]",
+    "resultItem": "Horseradish Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]]",
+    "resultItem": "Hot Chocolate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Hot Chocolate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Hot Chocolate"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:wintergreen berry.png|30px|link=Wintergreen Berry]] [[Wintergreen Berry]]",
+    "resultItem": "Hot Chocolate"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Ice Cream Sundae"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coffee.png|30px|link=Coffee]] [[Coffee]]",
+    "resultItem": "Iced Coffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]]",
+    "resultItem": "Iced Coffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Iced Coffee"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ash mushroom.png|30px|link=Ash Mushroom]] [[Ash Mushroom]]",
+    "resultItem": "Incredibly Hot Pot"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]]",
+    "resultItem": "Incredibly Hot Pot"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flame pepper.png|30px|link=Flame Pepper]] [[Flame Pepper]]",
+    "resultItem": "Incredibly Hot Pot"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:hot potato.png|30px|link=Hot Potato]] [[Hot Potato]]",
+    "resultItem": "Incredibly Hot Pot"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lava chestnuts.png|30px|link=Lava Chestnuts]] [[Lava Chestnuts]]",
+    "resultItem": "Incredibly Hot Pot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Armor"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Axe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Fishing Rod"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Greaves"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Helmet"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Hoe"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:iron ore.png|30px|link=Iron Ore]] [[Iron Ore]]",
+    "resultItem": "Iron Ingot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Legplates"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Net"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Pickaxe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Shovel"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Sword"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]]",
+    "resultItem": "Iron Watering Can"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Jam Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild berry jam.png|30px|link=Wild Berry Jam]] [[Wild Berry Jam]]",
+    "resultItem": "Jam Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:jasmine.png|30px|link=Jasmine]] [[Jasmine]]",
+    "resultItem": "Jasmine Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tea.png|30px|link=Tea]] [[Tea]]",
+    "resultItem": "Jasmine Tea"
+  },
+  {
+    "amount": 100,
+    "ingredient": "[[File:essence.png|30px|link=Essence]] [[Essence]]",
+    "resultItem": "Large Essence Stone"
+  },
+  {
+    "amount": 40,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Large Essence Stone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coffee.png|30px|link=Coffee]] [[Coffee]]",
+    "resultItem": "Latte"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Latte"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Lemon Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Lemon Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Lemon Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Lemon Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Lemon Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Lemon Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Lemon Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Lemonade"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Lemonade"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Loaded Baked Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Loaded Baked Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Loaded Baked Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Loaded Baked Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Lobster Roll"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Lobster Roll"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lobster.png|30px|link=Lobster]] [[Lobster]]",
+    "resultItem": "Lobster Roll"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Lobster Roll"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Lobster Roll"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mackerel.png|30px|link=Mackerel]] [[Mackerel]]",
+    "resultItem": "Mackerel Sashimi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:orange.png|30px|link=Orange]] [[Orange]]",
+    "resultItem": "Marmalade"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Marmalade"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Mayonnaise"
+  },
+  {
+    "amount": 50,
+    "ingredient": "[[File:essence.png|30px|link=Essence]] [[Essence]]",
+    "resultItem": "Medium Essence Stone"
+  },
+  {
+    "amount": 20,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Medium Essence Stone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]]",
+    "resultItem": "Miner&#039;s Mushroom Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:upper mines mushroom.png|30px|link=Upper Mines Mushroom]] [[Upper Mines Mushroom]]",
+    "resultItem": "Miner&#039;s Mushroom Stew"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Armor"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Axe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Greaves"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Helmet"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Hoe"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:mistril ore.png|30px|link=Mistril Ore]] [[Mistril Ore]]",
+    "resultItem": "Mistril Ingot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Legplates"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Net"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Pickaxe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Shovel"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Watering Can"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]]",
+    "resultItem": "Mocha"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:coffee.png|30px|link=Coffee]] [[Coffee]]",
+    "resultItem": "Mocha"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Mocha"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster core.png|30px|link=Monster Core]] [[Monster Core]]",
+    "resultItem": "Monster Cookie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]]",
+    "resultItem": "Monster Cookie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Monster Cookie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster fang.png|30px|link=Monster Fang]] [[Monster Fang]]",
+    "resultItem": "Monster Mash"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster horn.png|30px|link=Monster Horn]] [[Monster Horn]]",
+    "resultItem": "Monster Mash"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]]",
+    "resultItem": "Monster Mash"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:monster shell.png|30px|link=Monster Shell]] [[Monster Shell]]",
+    "resultItem": "Monster Mash"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:chestnut.png|30px|link=Chestnut]] [[Chestnut]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Mont Blanc"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Moon Fruit Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Moon Fruit Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:honey.png|30px|link=Honey]] [[Honey]]",
+    "resultItem": "Moon Fruit Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:moon fruit.png|30px|link=Moon Fruit]] [[Moon Fruit]]",
+    "resultItem": "Moon Fruit Cake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:morel mushroom.png|30px|link=Morel Mushroom]] [[Morel Mushroom]]",
+    "resultItem": "Mushroom Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Mushroom Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Mushroom Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:beet.png|30px|link=Beet]] [[Beet]]",
+    "resultItem": "Mushroom Steak Dinner"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Mushroom Steak Dinner"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]]",
+    "resultItem": "Mushroom Steak Dinner"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oyster mushroom.png|30px|link=Oyster Mushroom]] [[Oyster Mushroom]]",
+    "resultItem": "Mushroom Steak Dinner"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]]",
+    "resultItem": "Mushroom Steak Dinner"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:acorn.png|30px|link=Acorn]] [[Acorn]]",
+    "resultItem": "Oak Sapling"
+  },
+  {
+    "amount": 8,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Obsidian"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Omelet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Omelet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Omelet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Omelet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Onion Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Onion Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:onion.png|30px|link=Onion]] [[Onion]]",
+    "resultItem": "Onion Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:orange.png|30px|link=Orange]] [[Orange]]",
+    "resultItem": "Orange Juice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bream.png|30px|link=Bream]] [[Bream]]",
+    "resultItem": "Pan-fried Bream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Pan-fried Bream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Pan-fried Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:salmon.png|30px|link=Salmon]] [[Salmon]]",
+    "resultItem": "Pan-fried Salmon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Pan-fried Snapper"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]]",
+    "resultItem": "Pan-fried Snapper"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:fiber.png|30px|link=Fiber]] [[Fiber]]",
+    "resultItem": "Paper"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Peaches and Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:peach.png|30px|link=Peach]] [[Peach]]",
+    "resultItem": "Peaches and Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Peaches and Cream"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Peat"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Perch Risotto"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:garlic.png|30px|link=Garlic]] [[Garlic]]",
+    "resultItem": "Perch Risotto"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:perch.png|30px|link=Perch]] [[Perch]]",
+    "resultItem": "Perch Risotto"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Perch Risotto"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]]",
+    "resultItem": "Perch Risotto"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pinecone.png|30px|link=Pinecone]] [[Pinecone]]",
+    "resultItem": "Pine Sapling"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Pineshroom Toast"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pineshroom.png|30px|link=Pineshroom]] [[Pineshroom]]",
+    "resultItem": "Pineshroom Toast"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Pineshroom Toast"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Pizza"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Pizza"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Pizza"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:honey.png|30px|link=Honey]] [[Honey]]",
+    "resultItem": "Poached Pear"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pear.png|30px|link=Pear]] [[Pear]]",
+    "resultItem": "Poached Pear"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:red wine.png|30px|link=Red Wine]] [[Red Wine]]",
+    "resultItem": "Poached Pear"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pomegranate.png|30px|link=Pomegranate]] [[Pomegranate]]",
+    "resultItem": "Pomegranate Juice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]]",
+    "resultItem": "Pomegranate Sorbet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pomegranate.png|30px|link=Pomegranate]] [[Pomegranate]]",
+    "resultItem": "Pomegranate Sorbet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Pomegranate Sorbet"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Potato Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Potato Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Potato Soup"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Pudding"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Pudding"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Pudding"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Pumpkin Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Pumpkin Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Pumpkin Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]]",
+    "resultItem": "Pumpkin Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Pumpkin Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Pumpkin Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:onion.png|30px|link=Onion]] [[Onion]]",
+    "resultItem": "Pumpkin Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]]",
+    "resultItem": "Pumpkin Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]]",
+    "resultItem": "Pumpkin Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:hay.png|30px|link=Hay]] [[Hay]]",
+    "resultItem": "Quality Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Quality Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]]",
+    "resultItem": "Quality Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Quality Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]]",
+    "resultItem": "Red Snapper Sushi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Red Snapper Sushi"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Refined Stone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice stalk.png|30px|link=Rice Stalk]] [[Rice Stalk]]",
+    "resultItem": "Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Rice Ball"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Rice Ball"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Rice Ball"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]]",
+    "resultItem": "Roasted Cauliflower"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:chestnut.png|30px|link=Chestnut]] [[Chestnut]]",
+    "resultItem": "Roasted Chestnuts"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:green tea.png|30px|link=Green Tea]] [[Green Tea]]",
+    "resultItem": "Roasted Rice Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Roasted Rice Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]]",
+    "resultItem": "Roasted Sweet Potato"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rose.png|30px|link=Rose]] [[Rose]]",
+    "resultItem": "Rose Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tea.png|30px|link=Tea]] [[Tea]]",
+    "resultItem": "Rose Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rose hip.png|30px|link=Rose Hip]] [[Rose Hip]]",
+    "resultItem": "Rosehip Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Rosehip Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Rosemary Garlic Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:garlic.png|30px|link=Garlic]] [[Garlic]]",
+    "resultItem": "Rosemary Garlic Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:noodles.png|30px|link=Noodles]] [[Noodles]]",
+    "resultItem": "Rosemary Garlic Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]]",
+    "resultItem": "Rosemary Garlic Noodles"
+  },
+  {
+    "amount": 22,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Ruby"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:salmon.png|30px|link=Salmon]] [[Salmon]]",
+    "resultItem": "Salmon Sashimi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Salted Watermelon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:watermelon.png|30px|link=Watermelon]] [[Watermelon]]",
+    "resultItem": "Salted Watermelon"
+  },
+  {
+    "amount": 25,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Sapphire"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:snow peas.png|30px|link=Snow Peas]] [[Snow Peas]]",
+    "resultItem": "Sauteed Snow Peas"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Sauteed Snow Peas"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]]",
+    "resultItem": "Sea Bream Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]]",
+    "resultItem": "Sea Bream Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Sea Bream Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sea bream.png|30px|link=Sea Bream]] [[Sea Bream]]",
+    "resultItem": "Sea Bream Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Sea Bream Rice"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:corn.png|30px|link=Corn]] [[Corn]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:crab.png|30px|link=Crab]] [[Crab]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:crayfish.png|30px|link=Crayfish]] [[Crayfish]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:hot potato.png|30px|link=Hot Potato]] [[Hot Potato]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:mines mussels.png|30px|link=Mines Mussels]] [[Mines Mussels]]",
+    "resultItem": "Seafood Boil"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bonito.png|30px|link=Bonito]] [[Bonito]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:herring.png|30px|link=Herring]] [[Herring]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:king crab.png|30px|link=King Crab]] [[King Crab]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:noodles.png|30px|link=Noodles]] [[Noodles]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:snow peas.png|30px|link=Snow Peas]] [[Snow Peas]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Seafood Snow Pea Noodles"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Seaweed Salad"
+  },
+  {
+    "amount": 3,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Seaweed Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Seaweed Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]]",
+    "resultItem": "Sesame Broccoli"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sesame.png|30px|link=Sesame]] [[Sesame]]",
+    "resultItem": "Sesame Broccoli"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Sesame Tuna Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Sesame Tuna Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sesame.png|30px|link=Sesame]] [[Sesame]]",
+    "resultItem": "Sesame Tuna Bowl"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tuna.png|30px|link=Tuna]] [[Tuna]]",
+    "resultItem": "Sesame Tuna Bowl"
+  },
+  {
+    "amount": 15,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Shard Mass"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Shards"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Armor"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Axe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Fishing Rod"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Greaves"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Helmet"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Hoe"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:silver ore.png|30px|link=Silver Ore]] [[Silver Ore]]",
+    "resultItem": "Silver Ingot"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Legplates"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Net"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Pickaxe"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Shovel"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Sword"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]]",
+    "resultItem": "Silver Watering Can"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:daikon radish.png|30px|link=Daikon Radish]] [[Daikon Radish]]",
+    "resultItem": "Simmered Daikon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Simmered Daikon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:turnip.png|30px|link=Turnip]] [[Turnip]]",
+    "resultItem": "Sliced Turnip"
+  },
+  {
+    "amount": 25,
+    "ingredient": "[[File:essence.png|30px|link=Essence]] [[Essence]]",
+    "resultItem": "Small Essence Stone"
+  },
+  {
+    "amount": 10,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Small Essence Stone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Smoked Trout Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:trout.png|30px|link=Trout]] [[Trout]]",
+    "resultItem": "Smoked Trout Soup"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Sod"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:crystal berries.png|30px|link=Crystal Berries]] [[Crystal Berries]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lava chestnuts.png|30px|link=Lava Chestnuts]] [[Lava Chestnuts]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:spell fruit.png|30px|link=Spell Fruit]] [[Spell Fruit]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweetroot.png|30px|link=Sweetroot]] [[Sweetroot]]",
+    "resultItem": "Spell Fruit Parfait"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Spicy Cheddar Biscuit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Spicy Cheddar Biscuit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Spicy Cheddar Biscuit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Spicy Cheddar Biscuit"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Spicy Corn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:corn.png|30px|link=Corn]] [[Corn]]",
+    "resultItem": "Spicy Corn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Spicy Corn"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Spicy Crab Sushi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:crab.png|30px|link=Crab]] [[Crab]]",
+    "resultItem": "Spicy Crab Sushi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Spicy Crab Sushi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Spicy Crab Sushi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Spicy Water Chestnuts"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Spicy Water Chestnuts"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:spirit mushroom.png|30px|link=Spirit Mushroom]] [[Spirit Mushroom]]",
+    "resultItem": "Spirit Mushroom Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tea.png|30px|link=Tea]] [[Tea]]",
+    "resultItem": "Spirit Mushroom Tea"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:fiddlehead.png|30px|link=Fiddlehead]] [[Fiddlehead]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:morel mushroom.png|30px|link=Morel Mushroom]] [[Morel Mushroom]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Spring Galette"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:fennel.png|30px|link=Fennel]] [[Fennel]]",
+    "resultItem": "Spring Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:fiddlehead.png|30px|link=Fiddlehead]] [[Fiddlehead]]",
+    "resultItem": "Spring Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:nettle.png|30px|link=Nettle]] [[Nettle]]",
+    "resultItem": "Spring Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]]",
+    "resultItem": "Steamed Broccoli"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Strawberries and Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]]",
+    "resultItem": "Strawberries and Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Strawberry Shortcake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Strawberry Shortcake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]]",
+    "resultItem": "Strawberry Shortcake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Strawberry Shortcake"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar cane.png|30px|link=Sugar Cane]] [[Sugar Cane]]",
+    "resultItem": "Sugar"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]]",
+    "resultItem": "Summer Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:corn.png|30px|link=Corn]] [[Corn]]",
+    "resultItem": "Summer Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Summer Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Summer Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mackerel.png|30px|link=Mackerel]] [[Mackerel]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rice.png|30px|link=Rice]] [[Rice]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:salmon.png|30px|link=Salmon]] [[Salmon]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tuna.png|30px|link=Tuna]] [[Tuna]]",
+    "resultItem": "Sushi Platter"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Sweet Potato Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Sweet Potato Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]]",
+    "resultItem": "Sweet Potato Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Sweet Sesame Balls"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Sweet Sesame Balls"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sesame.png|30px|link=Sesame]] [[Sesame]]",
+    "resultItem": "Sweet Sesame Balls"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Sweet Sesame Balls"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:lemon.png|30px|link=Lemon]] [[Lemon]]",
+    "resultItem": "Tea with Lemon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Tea with Lemon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tea.png|30px|link=Tea]] [[Tea]]",
+    "resultItem": "Tea with Lemon"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:jade dulse.png|30px|link=Jade Dulse]] [[Jade Dulse]]",
+    "resultItem": "Tide Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sea grapes.png|30px|link=Sea Grapes]] [[Sea Grapes]]",
+    "resultItem": "Tide Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]]",
+    "resultItem": "Tide Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:underseaweed.png|30px|link=Underseaweed]] [[Underseaweed]]",
+    "resultItem": "Tide Salad"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:essence.png|30px|link=Essence]] [[Essence]]",
+    "resultItem": "Tiny Essence Stone"
+  },
+  {
+    "amount": 5,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Tiny Essence Stone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Toasted Sunflower Seeds"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]]",
+    "resultItem": "Toasted Sunflower Seeds"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sunflower.png|30px|link=Sunflower]] [[Sunflower]]",
+    "resultItem": "Toasted Sunflower Seeds"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:basil.png|30px|link=Basil]] [[Basil]]",
+    "resultItem": "Tomato Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Tomato Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Tomato Soup"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Trail Mix"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Trail Mix"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tuna.png|30px|link=Tuna]] [[Tuna]]",
+    "resultItem": "Tuna Sashimi"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]]",
+    "resultItem": "Turnip and Cabbage Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Turnip and Cabbage Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:turnip.png|30px|link=Turnip]] [[Turnip]]",
+    "resultItem": "Turnip and Cabbage Salad"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:butter.png|30px|link=Butter]] [[Butter]]",
+    "resultItem": "Turnip and Potato Gratin"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Turnip and Potato Gratin"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Turnip and Potato Gratin"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:turnip.png|30px|link=Turnip]] [[Turnip]]",
+    "resultItem": "Turnip and Potato Gratin"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:acorn.png|30px|link=Acorn]] [[Acorn]]",
+    "resultItem": "Ultimate Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:hay.png|30px|link=Hay]] [[Hay]]",
+    "resultItem": "Ultimate Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Ultimate Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Ultimate Large Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:acorn.png|30px|link=Acorn]] [[Acorn]]",
+    "resultItem": "Ultimate Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]]",
+    "resultItem": "Ultimate Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]]",
+    "resultItem": "Ultimate Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Ultimate Small Animal Feed"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:carrot.png|30px|link=Carrot]] [[Carrot]]",
+    "resultItem": "Vegetable Pot Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Vegetable Pot Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:peas.png|30px|link=Peas]] [[Peas]]",
+    "resultItem": "Vegetable Pot Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Vegetable Pot Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:turnip.png|30px|link=Turnip]] [[Turnip]]",
+    "resultItem": "Vegetable Pot Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]]",
+    "resultItem": "Vegetable Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Vegetable Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Vegetable Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Vegetable Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]]",
+    "resultItem": "Vegetable Quiche"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:basil.png|30px|link=Basil]] [[Basil]]",
+    "resultItem": "Vegetable Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:potato.png|30px|link=Potato]] [[Potato]]",
+    "resultItem": "Vegetable Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Vegetable Soup"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:bread.png|30px|link=Bread]] [[Bread]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cheese.png|30px|link=Cheese]] [[Cheese]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:tomato.png|30px|link=Tomato]] [[Tomato]]",
+    "resultItem": "Veggie Sub Sandwich"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Water Chestnut Fritters"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oil.png|30px|link=Oil]] [[Oil]]",
+    "resultItem": "Water Chestnut Fritters"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]]",
+    "resultItem": "Water Chestnut Fritters"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Wild Berry Jam"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Wild Berry Jam"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Wild Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Wild Berry Pie"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Wild Berry Pie"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:flour.png|30px|link=Flour]] [[Flour]]",
+    "resultItem": "Wild Berry Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Wild Berry Scone"
+  },
+  {
+    "amount": 6,
+    "ingredient": "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]]",
+    "resultItem": "Wild Berry Scone"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:burdock root.png|30px|link=Burdock Root]] [[Burdock Root]]",
+    "resultItem": "Winter Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:daikon radish.png|30px|link=Daikon Radish]] [[Daikon Radish]]",
+    "resultItem": "Winter Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:oyster mushroom.png|30px|link=Oyster Mushroom]] [[Oyster Mushroom]]",
+    "resultItem": "Winter Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]]",
+    "resultItem": "Winter Stew"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]]",
+    "resultItem": "Wintergreen Ice Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:milk.png|30px|link=Milk]] [[Milk]]",
+    "resultItem": "Wintergreen Ice Cream"
+  },
+  {
+    "amount": 1,
+    "ingredient": "[[File:sugar.png|30px|link=Sugar]] [[Sugar]]",
+    "resultItem": "Wintergreen Ice Cream"
+  },
+  {
+    "amount": 8,
+    "ingredient": "[[File:wintergreen berry.png|30px|link=Wintergreen Berry]] [[Wintergreen Berry]]",
+    "resultItem": "Wintergreen Ice Cream"
+  },
+  {
+    "amount": 2,
+    "ingredient": "[[File:stone.png|30px|link=Stone]] [[Stone]]",
+    "resultItem": "Wood"
+  }
+]

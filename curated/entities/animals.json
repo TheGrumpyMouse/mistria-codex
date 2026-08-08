@@ -1,0 +1,142 @@
+{
+  "_comment": [
+    "The eight farm animals.",
+    "",
+    "WHY HAND-AUTHORED. The Animals page keeps its colour tiers in image grids and",
+    "its actual facts in sentences: 'Female cows produce Milk every day, and male",
+    "cows produce Bull Horns every 3 days. With at least 8 Animalhearts, there is",
+    "a chance for the products to be Golden Milk...'. The item and heart tokens",
+    "inside those sentences are structured, but which product belongs to which sex",
+    "at which heart level is carried by the grammar. A parser would have to read",
+    "English to get it right, and getting it wrong would put Golden Milk on a bull.",
+    "Eight records, read once, each field sourced.",
+    "",
+    "HEARTS. The wiki gives two thresholds: at 8 hearts a golden product becomes",
+    "possible, at 10 it is guaranteed. `hearts_required` records 8 — the point",
+    "from which it can happen at all — because that is the number a player plans",
+    "around. The certainty at 10 has nowhere to live in the schema yet and is not",
+    "invented into one.",
+    "",
+    "SEX. Cows, chickens and ducks produce different things by sex (Milk vs Bull",
+    "Horns). The schema has no sex field, so both products are listed against the",
+    "animal. That is true — a cow herd produces both — and inventing a field for",
+    "it can wait until something needs to query on it.",
+    "",
+    "MATURATION AND BREEDING (Animals page, 'Obtaining Animals'): coop animals",
+    "take 3 days to mature, barn animals 5. All babies arrive 4 days after their",
+    "parents were bred, and breeding needs both parents at 2+ hearts.",
+    "",
+    "TREATS ARE PER SPECIES. The prose says 'Heart Shaped Treats', but the item",
+    "list has ten of them — Heart Shaped Cow Treat, Heart Shaped Duck Treat, and",
+    "so on. The specific one is recorded, since that is what a player has to buy.",
+    "",
+    "PRICES are the Tier 1 (cheapest colour) adoption price from Hayden's Shop.",
+    "Tiers 2-6 cost proportionally more and depend on which colours the player has",
+    "unlocked through breeding, which is player state rather than game data.",
+    "",
+    "FEED (Animals page + Ranching): coop animals eat Grass Seed, barn animals eat",
+    "Hay, and both accept the milled feeds of their size. There is no plain 'Small",
+    "Animal Feed' item — the milled ones start at Quality."
+  ],
+
+  "feed": {
+    "coop": [
+      "Grass Seed",
+      "Quality Small Animal Feed",
+      "Deluxe Small Animal Feed",
+      "Ultimate Small Animal Feed"
+    ],
+    "barn": [
+      "Hay",
+      "Quality Large Animal Feed",
+      "Deluxe Large Animal Feed",
+      "Ultimate Large Animal Feed"
+    ]
+  },
+  "maturesDays": { "coop": 3, "barn": 5 },
+  "gestationDays": 4,
+  "shopId": "haydens_shop",
+
+  "animals": [
+    {
+      "id": "cow",
+      "name": "Cow",
+      "building": "barn",
+      "price": 2000,
+      "treat": "Heart Shaped Cow Treat",
+      "products": ["Milk", "Bull Horn"],
+      "goldenProducts": ["Golden Milk", "Golden Bull Horn"],
+      "wiki_page": "Cow"
+    },
+    {
+      "id": "horse",
+      "name": "Horse",
+      "building": "barn",
+      "price": 2300,
+      "treat": "Heart Shaped Horse Treat",
+      "products": ["Horse Hair"],
+      "goldenProducts": ["Golden Horse Hair"],
+      "wiki_page": "Horse"
+    },
+    {
+      "id": "sheep",
+      "name": "Sheep",
+      "building": "barn",
+      "price": 2000,
+      "treat": "Heart Shaped Sheep Treat",
+      "products": ["Sheep Wool"],
+      "goldenProducts": ["Golden Sheep Wool"],
+      "wiki_page": "Sheep"
+    },
+    {
+      "id": "alpaca",
+      "name": "Alpaca",
+      "building": "barn",
+      "price": 2300,
+      "treat": "Heart Shaped Alpaca Treat",
+      "products": ["Alpaca Wool"],
+      "goldenProducts": ["Golden Alpaca Wool"],
+      "wiki_page": "Alpaca"
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken",
+      "building": "coop",
+      "price": 1000,
+      "treat": "Heart Shaped Chicken Treat",
+      "products": ["Chicken Egg", "Rooster Feather"],
+      "goldenProducts": ["Golden Egg", "Golden Rooster Feather"],
+      "wiki_page": "Chicken"
+    },
+    {
+      "id": "duck",
+      "name": "Duck",
+      "building": "coop",
+      "price": 1500,
+      "treat": "Heart Shaped Duck Treat",
+      "products": ["Duck Egg", "Duck Feather"],
+      "goldenProducts": ["Golden Duck Egg", "Golden Duck Feather"],
+      "wiki_page": "Duck"
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "building": "coop",
+      "price": 1500,
+      "treat": "Heart Shaped Rabbit Treat",
+      "products": ["Rabbit Wool"],
+      "goldenProducts": ["Golden Rabbit Wool"],
+      "wiki_page": "Rabbit"
+    },
+    {
+      "id": "capybara",
+      "name": "Capybara",
+      "building": "coop",
+      "price": 2000,
+      "treat": "Heart Shaped Capybara Treat",
+      "products": ["Bristle"],
+      "goldenProducts": ["Golden Bristle"],
+      "wiki_page": "Capybara"
+    }
+  ]
+}

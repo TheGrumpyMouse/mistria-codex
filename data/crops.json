@@ -1,0 +1,1747 @@
+[
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/apple",
+    "id": "apple",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Apple",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "apple",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "sapling_apple",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Apple",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/basil",
+    "id": "basil",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Basil",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "basil",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_basil",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Basil",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/beet",
+    "id": "beet",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Beet",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "beet",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_beet",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Beet",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/broccoli",
+    "id": "broccoli",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Broccoli",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "broccoli",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_broccoli",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Broccoli",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "seed_item_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/burdock_root",
+    "id": "burdock_root",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Burdock Root",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "burdock_root",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": null,
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Burdock_Root",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/cabbage",
+    "id": "cabbage",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cabbage",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cabbage",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_cabbage",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cabbage",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/carrot",
+    "id": "carrot",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Carrot",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "carrot",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_carrot",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Carrot",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/catmint",
+    "id": "catmint",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Catmint",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "catmint",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_catmint",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Catmint",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/cauliflower",
+    "id": "cauliflower",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cauliflower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cauliflower",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_cauliflower",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cauliflower",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/celosia",
+    "id": "celosia",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Celosia",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "celosia",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_celosia",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Celosia",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/cherry",
+    "id": "cherry",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cherry",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cherry",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "sapling_cherry",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cherry",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/chickpea",
+    "id": "chickpea",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Chickpea",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "chickpea",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_chickpea",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Chickpea",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/chili_pepper",
+    "id": "chili_pepper",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Chili Pepper",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "chili_pepper",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_chili_pepper",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Chili_Pepper",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/chrysanthemum",
+    "id": "chrysanthemum",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Chrysanthemum",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "chrysanthemum",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_chrysanthemum",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Chrysanthemum",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/corn",
+    "id": "corn",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Corn",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "corn",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_corn",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Corn",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/cosmos",
+    "id": "cosmos",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cosmos",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cosmos",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_cosmos",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cosmos",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/cranberry",
+    "id": "cranberry",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cranberry",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cranberry",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_cranberry",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cranberry",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/cucumber",
+    "id": "cucumber",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Cucumber",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "cucumber",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_cucumber",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Cucumber",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/daffodil",
+    "id": "daffodil",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Daffodil",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "daffodil",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_daffodil",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Daffodil",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/daikon_radish",
+    "id": "daikon_radish",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Daikon Radish",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "daikon_radish",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_daikon_radish",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Daikon_Radish",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/daisy",
+    "id": "daisy",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Daisy",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "daisy",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_daisy",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Daisy",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/dill",
+    "id": "dill",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Dill",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "dill",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_dill",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Dill",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/frost_lily",
+    "id": "frost_lily",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Frost Lily",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "frost_lily",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_frost_lily",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Frost_Lily",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/garlic",
+    "id": "garlic",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Garlic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "garlic",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_garlic",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Garlic",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/heather",
+    "id": "heather",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Heather",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "heather",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_heather",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Heather",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/iris",
+    "id": "iris",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Iris",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "iris",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_iris",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Iris",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/jasmine",
+    "id": "jasmine",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Jasmine",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "jasmine",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_jasmine",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Jasmine",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/lilac",
+    "id": "lilac",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Lilac",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "lilac",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_lilac",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Lilac",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/marigold",
+    "id": "marigold",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Marigold",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "marigold",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_marigold",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Marigold",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/moon_fruit",
+    "id": "moon_fruit",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Moon Fruit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "moon_fruit",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_moon_fruit",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Moon_Fruit",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/night_queen",
+    "id": "night_queen",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Night Queen",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "night_queen",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_night_queen",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Night_Queen",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/onion",
+    "id": "onion",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Onion",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "onion",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_onion",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Onion",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/orange",
+    "id": "orange",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Orange",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "orange",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "sapling_orange",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Orange",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/oregano",
+    "id": "oregano",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Oregano",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "oregano",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_oregano",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Oregano",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/peas",
+    "id": "peas",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Peas",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "peas",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_peas",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Peas",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/poinsettia",
+    "id": "poinsettia",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Poinsettia",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "poinsettia",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_poinsettia",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Poinsettia",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 14,
+    "icon_key": "crop/pomegranate",
+    "id": "pomegranate",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Pomegranate",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "pomegranate",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "sapling_pomegranate",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Pomegranate",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/potato",
+    "id": "potato",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Potato",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "potato",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_potato",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Potato",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/pumpkin",
+    "id": "pumpkin",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Pumpkin",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "pumpkin",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_pumpkin",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Pumpkin",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/rice_stalk",
+    "id": "rice_stalk",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Rice Stalk",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "rice_stalk",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_rice",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Rice_Stalk",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/rosemary",
+    "id": "rosemary",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Rosemary",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "rosemary",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_rosemary",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Rosemary",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/sage",
+    "id": "sage",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Sage",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "sage",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_sage",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Sage",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/snapdragon",
+    "id": "snapdragon",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Snapdragon",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "snapdragon",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "seed_snapdragon",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Snapdragon",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/snow_peas",
+    "id": "snow_peas",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Snow Peas",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "snow_peas",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "winter"
+    ],
+    "seed_item_id": "snow_pea_seed",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Snow_Peas",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/snowdrop_anemone",
+    "id": "snowdrop_anemone",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Snowdrop Anemone",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "snowdrop_anemone",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_snowdrop_anemone",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Snowdrop_Anemone",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/strawberry",
+    "id": "strawberry",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Strawberry",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "strawberry",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_strawberry",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Strawberry",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/sugar_cane",
+    "id": "sugar_cane",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Sugar Cane",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "sugar_cane",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_sugar_cane",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Sugar_Cane",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/sunflower",
+    "id": "sunflower",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Sunflower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "sunflower",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_sunflower",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Sunflower",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/sweet_potato",
+    "id": "sweet_potato",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Sweet Potato",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "sweet_potato",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_sweet_potato",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Sweet_Potato",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/tea",
+    "id": "tea",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Tea",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "tea",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_tea",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Tea",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/temple_flower",
+    "id": "temple_flower",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Temple Flower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "temple_flower",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "seed_item_id": "seed_temple_flower",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Temple_Flower",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/thyme",
+    "id": "thyme",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Thyme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "thyme",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_thyme",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Thyme",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 5,
+    "icon_key": "crop/tomato",
+    "id": "tomato",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Tomato",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "tomato",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_tomato",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Tomato",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/tulip",
+    "id": "tulip",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Tulip",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "tulip",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_tulip",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Tulip",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 4,
+    "icon_key": "crop/turnip",
+    "id": "turnip",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Turnip",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "turnip",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "spring"
+    ],
+    "seed_item_id": "seed_turnip",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Turnip",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 6,
+    "icon_key": "crop/viola",
+    "id": "viola",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Viola",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "viola",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_viola",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Viola",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/watermelon",
+    "id": "watermelon",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Watermelon",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "watermelon",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": null,
+    "seasons": [
+      "summer"
+    ],
+    "seed_item_id": "seed_watermelon",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Watermelon",
+    "yield": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "greenhouse_ok": null,
+    "growth_days": 9,
+    "icon_key": "crop/wheat",
+    "id": "wheat",
+    "id_status": "provisional",
+    "is_trellis": null,
+    "name": "Wheat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "produce_item_id": "wheat",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality_enabled": null,
+    "regrow_days": 3,
+    "seasons": [
+      "fall"
+    ],
+    "seed_item_id": "seed_wheat",
+    "seed_sources": [],
+    "version_added": null,
+    "wiki_page": "Wheat",
+    "yield": null
+  }
+]

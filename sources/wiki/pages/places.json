@@ -1,0 +1,221 @@
+{
+  "lastEdited": "2026-08-07T03:10:08Z",
+  "places": [
+    {
+      "id": "the_manor_house",
+      "lastEdited": "2026-04-23T11:22:43Z",
+      "page": "Manor House",
+      "region": "Mistria",
+      "residents": [
+        "Adeline",
+        "Eiland",
+        "Elsie"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_inn",
+      "lastEdited": "2026-03-24T07:23:59Z",
+      "page": "Inn",
+      "region": "Mistria",
+      "residents": [
+        "Hemlock",
+        "Josephine",
+        "Reina",
+        "Luc",
+        "Maple",
+        "Balor"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_general_store",
+      "lastEdited": "2026-03-03T02:23:33Z",
+      "page": "General Store",
+      "region": "Mistria",
+      "residents": [
+        "Nora",
+        "Holt",
+        "Dell"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_blacksmith",
+      "lastEdited": "2026-04-07T18:03:23Z",
+      "page": "Blacksmith",
+      "region": "Mistria",
+      "residents": [
+        "March",
+        "Olric"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_carpenter",
+      "lastEdited": "2026-04-08T09:18:55Z",
+      "page": "Carpenter",
+      "region": "The Eastern Road",
+      "residents": [
+        "Ryis",
+        "Landen"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_bathhouse",
+      "lastEdited": "2026-04-07T17:20:58Z",
+      "page": "Bathhouse",
+      "region": "Mistria",
+      "residents": [
+        "Juniper",
+        "Dozy"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_clinic",
+      "lastEdited": "2026-07-06T07:27:20Z",
+      "page": "Clinic",
+      "region": "Mistria",
+      "residents": [
+        "Valen"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_museum",
+      "lastEdited": "2026-03-04T01:20:36Z",
+      "page": "Museum",
+      "region": "The Narrows",
+      "residents": [],
+      "unlockQuest": "Museum Donations Wanted"
+    },
+    {
+      "id": "the_mill",
+      "lastEdited": "2026-03-15T22:22:40Z",
+      "page": "Mill",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": "The Mill Restoration Project"
+    },
+    {
+      "id": "the_bell_tower",
+      "lastEdited": "2026-08-07T03:06:46Z",
+      "page": "Bell Tower",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": "Repair the Bell Tower"
+    },
+    {
+      "id": "the_tackle_shop",
+      "lastEdited": "2026-04-01T00:09:56Z",
+      "page": "Tackle Shop",
+      "region": "The Beach",
+      "residents": [
+        "Terithia"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "balors_wagon",
+      "lastEdited": "2026-07-02T00:10:21Z",
+      "page": "Balor's Wagon",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_wishing_well",
+      "lastEdited": "2025-04-16T05:29:30Z",
+      "page": "Wishing Well",
+      "region": "The Eastern Road",
+      "residents": [],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_deep_woods",
+      "lastEdited": "2026-04-15T14:51:15Z",
+      "page": "The Deep Woods",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": "Breaking The Fire Seal"
+    },
+    {
+      "id": "the_summit",
+      "lastEdited": "2026-04-15T14:51:12Z",
+      "page": "The Summit",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": "Beautification of Mistria"
+    },
+    {
+      "id": "the_narrows",
+      "lastEdited": "2026-04-15T14:51:02Z",
+      "page": "The Narrows",
+      "region": "Mistria",
+      "residents": [
+        "Errol"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_beach",
+      "lastEdited": "2026-04-15T14:50:56Z",
+      "page": "The Beach",
+      "region": "Mistria",
+      "residents": [
+        "Terithia"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_eastern_road",
+      "lastEdited": "2026-04-15T14:51:04Z",
+      "page": "The Eastern Road",
+      "region": "Mistria",
+      "residents": [
+        "Landen",
+        "Ryis"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_western_ruins",
+      "lastEdited": "2026-06-23T01:06:30Z",
+      "page": "The Western Ruins",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": null
+    },
+    {
+      "id": "mistria",
+      "lastEdited": "2026-08-07T03:10:08Z",
+      "page": "Mistria",
+      "region": "Mistria",
+      "residents": [],
+      "unlockQuest": null
+    },
+    {
+      "id": "the_farm",
+      "lastEdited": "2026-04-15T14:44:35Z",
+      "page": "Farm",
+      "region": "Mistria",
+      "residents": [
+        "Caldarus"
+      ],
+      "unlockQuest": null
+    },
+    {
+      "id": "sweetwater_farm",
+      "lastEdited": "2026-04-15T14:51:27Z",
+      "page": "Sweetwater Farm",
+      "region": "Mistria",
+      "residents": [
+        "Hayden",
+        "Henrietta"
+      ],
+      "unlockQuest": null
+    }
+  ]
+}

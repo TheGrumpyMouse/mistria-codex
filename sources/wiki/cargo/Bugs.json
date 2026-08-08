@@ -1,0 +1,1341 @@
+[
+  {
+    "museumSet": "Ruins",
+    "name": "Ancient Firefly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Multi-Season",
+    "name": "Ant",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bug Pheromone",
+    "name": "Ant Queen",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "[[File:common bug pheromones.png|30px|link=Common Bug Pheromones]] [[Common Bug Pheromones]]",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Beach",
+    "name": "Beach Hopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bee",
+    "name": "Big Bee",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bug Pheromone",
+    "name": "Biggest Beetle",
+    "rarity": "Very Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "[[File:legendary bug pheromones.png|30px|link=Legendary Bug Pheromones]] [[Legendary Bug Pheromones]]",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Winter",
+    "name": "Brightbulb Moth",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Multi-Season",
+    "name": "Bumblebee",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Spring",
+    "name": "Butterfly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Spring",
+    "name": "Caterpillar",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Chillipede",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Summer",
+    "name": "Cicada",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Fall",
+    "name": "Cicada Nymph",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Cooktop Beetle",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Copper Nugget Beetle",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Tide Caverns",
+    "name": "Coral Mantis",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Summer",
+    "name": "Cricket",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Winter",
+    "name": "Crystal Caterpillar",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Crystal Wing Moth",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Crystalline Cricket",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Deep Earthworm",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Honey",
+    "name": "Deluxe Honey",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Diamond Beetle",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Dragon Horn Beetle",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Summer",
+    "name": "Dragonfly",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Legendary",
+    "name": "Fairy Bee",
+    "rarity": "Very rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Morning &lt;span class=&quot;no-wrap&quot;&gt;[[File:clock icon.png|20px|link=]]6&amp;nbsp;AM - 11&amp;nbsp;AM&lt;/span&gt; &lt;br&gt; Day &lt;span class=&quot;no-wrap&quot;&gt;[[File:clock icon.png|20px|link=]]6&amp;nbsp;AM - 8&amp;nbsp;PM&lt;/span&gt;",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Fire Wasp",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Summer",
+    "name": "Firefly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bee",
+    "name": "Flower Bee",
+    "rarity": "Rare",
+    "season": [
+      "All"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Legendary",
+    "name": "Flower Crown Beetle",
+    "rarity": "Very rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Winter",
+    "name": "Frost Flutter Butterfly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bee",
+    "name": "Fur Bee",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Multi-Season",
+    "name": "Fuzzy Moth",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Gem Shard Caterpillar",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Ruins",
+    "name": "Giant Worm",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Grass",
+    "name": "Grasshopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns when cutting grass",
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Beach",
+    "name": "Hermit Crab",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Tide Caverns",
+    "name": "Hermit Snail",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Ruins",
+    "name": "Hidden Beetle",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Honey",
+    "name": "Honey",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Multi-Season",
+    "name": "Hummingbird Hawk Moth",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Grass",
+    "name": "Icehopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns when cutting grass",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Fall",
+    "name": "Inchworm",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Rare",
+    "name": "Jewel Beetle",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Spring",
+    "name": "Ladybug",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Lantern Moth",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Spawns near light sources",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Lava Snail",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Grass",
+    "name": "Leafhopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns when cutting grass",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Terrarium",
+    "name": "Legendary Bug Pheromones",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Honey",
+    "name": "Legendary Honey",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Rare",
+    "name": "Lightning Dragonfly",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Loam Caterpillar",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Spring",
+    "name": "Luna Moth",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Rare",
+    "name": "Magma Beetle",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Mine Cricket",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Rare",
+    "name": "Mistmoth",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Fall",
+    "name": "Monarch Butterfly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bee",
+    "name": "Moonlight Bee",
+    "rarity": "Rare",
+    "season": [
+      "All"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Mote Firefly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Rare",
+    "name": "Orchid Mantis",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Ruins",
+    "name": "Parchment Moth",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Grass",
+    "name": "Petalhopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns when breaking grass",
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Polar Fly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Pond Skater",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "On water",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Multi-Season",
+    "name": "Praying Mantis",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Honey",
+    "name": "Premium Honey",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Tide Caverns",
+    "name": "Puddle Spider",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bug Pheromone",
+    "name": "Queen&#039;s Birdwing",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "[[File:rare bug pheromones.png|30px|link=Rare Bug Pheromones]] [[Rare Bug Pheromones]]",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Question Mark Butterfly",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Raindrop Beetle",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Terrarium",
+    "name": "Rare Bug Pheromones",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Terrarium",
+    "name": "Rare Fish Bait",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Redhead Worm",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Beach",
+    "name": "Relic Crab",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Rhinoceros Beetle",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Night",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Rock Roach",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Spring",
+    "name": "Roly Poly",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bug Pheromone",
+    "name": "Saint Mantis",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "[[File:uncommon bug pheromones.png|30px|link=Uncommon Bug Pheromones]] [[Uncommon Bug Pheromones]]",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Summer",
+    "name": "Sand Bug",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Tide Caverns",
+    "name": "Sea Scarab",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Singing Katydid",
+    "rarity": "Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Smoke Moth",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Snail",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Legendary",
+    "name": "Snowball Beetle",
+    "rarity": "Very rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": null,
+    "name": "Snug Bug",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Legendary",
+    "name": "Speedy Snail",
+    "rarity": "Very rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Grass",
+    "name": "Strawhopper",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Legendary",
+    "name": "Strobe Firefly",
+    "rarity": "Very Rare",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bug Pheromone",
+    "name": "Sunset Moth",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "[[File:common bug pheromones.png|30px|link=Common Bug Pheromones]] [[Common Bug Pheromones]]",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Beach",
+    "name": "Surf Beetle",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Bee",
+    "name": "Sweet Bee",
+    "rarity": "Uncommon",
+    "season": [
+      "All"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Fall",
+    "name": "Tiger Swallowtail Butterfly",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Tunnel Millipede",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Terrarium",
+    "name": "Uncommon Bug Pheromones",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Terrarium",
+    "name": "Uncommon Fish Bait",
+    "rarity": null,
+    "season": [
+      ""
+    ],
+    "spawnCondition": null,
+    "time": null,
+    "weather": [
+      ""
+    ]
+  },
+  {
+    "museumSet": "Ruins",
+    "name": "Void Snail",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Fall",
+    "name": "Walking Leaf",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "Day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Winter",
+    "name": "Walking Stick",
+    "rarity": "Uncommon",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Beach",
+    "name": "Waterbug",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Tide Caverns",
+    "name": "Waterfly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Windleaf Butterfly",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": null,
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_sunny.png|20px|link=]]&amp;nbsp;[[Weather|Sunny]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Winter",
+    "name": "Winterpillar",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Additional spawns in trees",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Worm",
+    "rarity": "Common",
+    "season": [
+      "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:day spring clear.png|24px|link=]]&amp;nbsp;[[Seasons|All]]&lt;/span&gt;"
+    ],
+    "spawnCondition": "Breaking rocks",
+    "time": "All day",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  }
+]

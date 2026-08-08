@@ -1,0 +1,16 @@
+{
+  "name": "@mistria/sync-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker + KV. Stores one progress blob per device code; the merge happens on the client.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mistria/sync-client": "workspace:*"
+  }
+}

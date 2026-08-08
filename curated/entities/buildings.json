@@ -1,0 +1,213 @@
+{
+  "_comment": [
+    "Farm buildings and home upgrades.",
+    "",
+    "WHY HAND-AUTHORED. The Coop, Barn and Farmhouse tables are rowspan grids —",
+    "one requirement cell spans four rows, one capacity cell spans two — and the",
+    "columns differ on all three pages. Reading them by index means tracking which",
+    "column a spanned cell belongs to, which is the fragile half of table parsing.",
+    "Eleven records, read once.",
+    "",
+    "COLOURS ARE NOT TIERS. The Carpenter sells a Red and a White blueprint for",
+    "every coop and barn at the same price, capacity and requirement. They are one",
+    "building each, not two — the colour is cosmetic and belongs to the shop's",
+    "stock list, where both blueprints already appear.",
+    "",
+    "SOURCES. Coop and Barn tiers from their own pages' Blueprints tables;",
+    "greenhouse and the stairs/ladder from the Carpenter's Buildings table; home",
+    "upgrades from Farmhouse (transcluded onto the Carpenter page as 'Home",
+    "Upgrade'). Checked 2026-08-07.",
+    "",
+    "GREENHOUSE CAPACITY is growing space (5x5 and 10x10 tiles), not animals, so",
+    "`capacity` is null rather than 25 and 100 — the field means occupants",
+    "everywhere else and a number that means something different in one record is",
+    "worse than an absent one.",
+    "",
+    "KITCHEN, CRAFTING STATION, MILL and FARM EXPANSION are real buildings whose",
+    "cost tables are on pages not yet read. They are recorded with no tiers and a",
+    "`tiers` data gap, because a player looking for the Mill should find out that",
+    "we know it exists and not what it costs — rather than find nothing and",
+    "conclude it doesn't."
+  ],
+
+  "buildings": [
+    {
+      "id": "coop",
+      "name": "Coop",
+      "kind": "coop",
+      "vendor": "carpenter",
+      "placeable_on_farm": true,
+      "wiki_page": "Coop",
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 1500,
+          "capacity": 4,
+          "materials": [{ "item": "Wood", "quantity": 75 }, { "item": "Stone", "quantity": 50 }],
+          "requires": []
+        },
+        {
+          "level": 2,
+          "tesserae": 3000,
+          "capacity": 8,
+          "materials": [{ "item": "Wood", "quantity": 100 }, { "item": "Stone", "quantity": 75 }],
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }]
+        },
+        {
+          "level": 3,
+          "tesserae": 6000,
+          "capacity": 12,
+          "materials": [{ "item": "Wood", "quantity": 125 }, { "item": "Stone", "quantity": 100 }],
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }]
+        }
+      ]
+    },
+    {
+      "id": "barn",
+      "name": "Barn",
+      "kind": "barn",
+      "vendor": "carpenter",
+      "placeable_on_farm": true,
+      "wiki_page": "Barn",
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 2000,
+          "capacity": 4,
+          "materials": [{ "item": "Wood", "quantity": 100 }, { "item": "Stone", "quantity": 75 }],
+          "requires": []
+        },
+        {
+          "level": 2,
+          "tesserae": 4000,
+          "capacity": 8,
+          "materials": [{ "item": "Wood", "quantity": 125 }, { "item": "Stone", "quantity": 100 }],
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }]
+        },
+        {
+          "level": 3,
+          "tesserae": 8000,
+          "capacity": 12,
+          "materials": [{ "item": "Wood", "quantity": 150 }, { "item": "Stone", "quantity": 125 }],
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }]
+        }
+      ]
+    },
+    {
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "kind": "greenhouse",
+      "vendor": "carpenter",
+      "placeable_on_farm": true,
+      "wiki_page": "Greenhouse",
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 50000,
+          "capacity": null,
+          "materials": [],
+          "requires": [
+            { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
+          ]
+        },
+        {
+          "level": 2,
+          "tesserae": 100000,
+          "capacity": null,
+          "materials": [],
+          "requires": [
+            { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farmhouse",
+      "name": "Farmhouse",
+      "kind": "home_upgrade",
+      "vendor": "carpenter",
+      "placeable_on_farm": false,
+      "wiki_page": "Farmhouse",
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 5000,
+          "capacity": null,
+          "materials": [{ "item": "Wood", "quantity": 500 }, { "item": "Stone", "quantity": 500 }],
+          "requires": []
+        },
+        {
+          "level": 2,
+          "tesserae": 15000,
+          "capacity": null,
+          "materials": [
+            { "item": "Wood", "quantity": 500 },
+            { "item": "Stone", "quantity": 500 },
+            { "item": "Iron Ingot", "quantity": 20 }
+          ],
+          "requires": []
+        },
+        {
+          "level": 3,
+          "tesserae": 25000,
+          "capacity": null,
+          "materials": [
+            { "item": "Wood", "quantity": 500 },
+            { "item": "Stone", "quantity": 500 },
+            { "item": "Silver Ingot", "quantity": 20 }
+          ],
+          "requires": []
+        },
+        {
+          "level": 4,
+          "tesserae": 50000,
+          "capacity": null,
+          "materials": [
+            { "item": "Hard Wood", "quantity": 200 },
+            { "item": "Refined Stone", "quantity": 100 },
+            { "item": "Gold Ingot", "quantity": 30 }
+          ],
+          "requires": [
+            { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "kind": "kitchen",
+      "vendor": "carpenter",
+      "placeable_on_farm": true,
+      "wiki_page": "Cooking",
+      "tiers": []
+    },
+    {
+      "id": "crafting_station",
+      "name": "Crafting Station",
+      "kind": "crafting_station",
+      "vendor": "carpenter",
+      "placeable_on_farm": true,
+      "wiki_page": "Crafting",
+      "tiers": []
+    },
+    {
+      "id": "mill",
+      "name": "Mill",
+      "kind": "mill",
+      "vendor": null,
+      "placeable_on_farm": false,
+      "wiki_page": "The Mill",
+      "tiers": []
+    },
+    {
+      "id": "farm_expansion",
+      "name": "Farm Expansion",
+      "kind": "farm_expansion",
+      "vendor": "carpenter",
+      "placeable_on_farm": false,
+      "wiki_page": "Farm",
+      "tiers": []
+    }
+  ]
+}

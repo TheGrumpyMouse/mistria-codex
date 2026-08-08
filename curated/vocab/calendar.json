@@ -1,0 +1,36 @@
+{
+  "_comment": [
+    "Where the festival calendar is read from.",
+    "",
+    "SEASON ORDER. The table encodes each date as `data-sort-value=\"310\"` —",
+    "season 3, day 10. The digit is an index into this list, not a name, so the",
+    "mapping has to be written down somewhere. Here, rather than in the parser,",
+    "because it is a fact about the wiki's convention and not about parsing.",
+    "",
+    "TEN FESTIVALS, FOUR IMPLEMENTED. The page marks the other six with an",
+    "asterisk and a `{{Spoiler}}` wrapper: they exist in the game files but do not",
+    "fire in game. They are still extracted — 'the Halloween Festival is datamined",
+    "content, not a live event' is a fact worth carrying, and dropping the rows",
+    "would make it look like nobody had checked.",
+    "",
+    "The page is stamped v0-14-0, which is well before 1.0. Anything it says about",
+    "what is implemented gets a `predates_1_0` gap on the record."
+  ],
+  "page": "Calendar Events",
+  "section": "Annual Events",
+  "seasonOrder": ["spring", "summer", "fall", "winter"],
+
+  "_currencies": [
+    "Two festivals have their own currency: a collectible that only counts on",
+    "the day and decides your placing. Both are stated on the festival's own page",
+    "(Spring Festival: 'collect between 10 - 29 Breath of Springs'; Harvest",
+    "Festival: Queen Berries throughout). The other two implemented festivals",
+    "have no currency, which is why they are absent rather than null.",
+    "",
+    "Item DISPLAY names, resolved to ids by the build like every other reference."
+  ],
+  "currencies": {
+    "Spring Festival": "Breath of Spring",
+    "Harvest Festival": "Queen Berry"
+  }
+}

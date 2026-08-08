@@ -1,0 +1,66 @@
+{
+  "_comment": [
+    "Where NPC schedules are read from, and how their headings are read.",
+    "",
+    "THE FINDING THAT SHAPES THIS FILE: the wiki has schedules for two of the",
+    "thirty-four villagers. Adeline and Celine have full four-season, seven-day",
+    "tables. Every other `<Name>/Schedule` subpage exists and is empty — a tab",
+    "header and nothing under it. Checked across the whole roster, 2026-08-07.",
+    "",
+    "The plan called for 'the 12 romanceables first'. That is not available from",
+    "this source at any effort, so the parser is built for the whole cast and the",
+    "coverage report carries the remaining thirty-two as gaps. When a page gets",
+    "filled in, `pnpm enrich:pages` picks it up with no code change.",
+    "",
+    "SEASON HEADINGS are `== {{Season|Spring}} Schedules ==`. The template is",
+    "reduced to its last argument before matching, so what a rule sees is the word",
+    "'Spring'.",
+    "",
+    "WHAT IS NOT INGESTED, and why. Two heading groups select between several",
+    "tables using state the player cannot see:",
+    "",
+    "  - Rainy schedules are chosen by a hidden rainy-day counter, with a separate",
+    "    winter variant. The wiki says so itself.",
+    "  - Friday Night at the Inn schedules are chosen by how many FNATI events",
+    "    have already happened, and there are three kinds.",
+    "",
+    "Both are extracted into `sources/` so the data is not lost, and neither",
+    "becomes a schedule entry. First-match-wins would pick variant #1 and present",
+    "a coin flip as a fact. The schedule records a `rain_variants` or",
+    "`friday_variants` gap instead, which is the true answer: it varies, and here",
+    "is how many ways.",
+    "",
+    "QUEST-GATED DAYS *are* ingested. 'Before / After Repair the Bridge is",
+    "complete' is exactly what priority-ordered overrides are for: the 'after'",
+    "entry sits above the 'before' one and carries the quest requirement, so a",
+    "save that has finished the quest matches it and every other save falls",
+    "through. No negation operator needed."
+  ],
+
+  "pagePattern": "{page}/Schedule",
+
+  "seasonHeadings": {
+    "spring": "Spring",
+    "summer": "Summer",
+    "fall": "Fall",
+    "winter": "Winter"
+  },
+
+  "dayHeadings": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+
+  "_variant_comment": [
+    "Heading text that marks a group of tables selected by hidden state. Matched",
+    "case-insensitively as a prefix of the section heading."
+  ],
+  "unselectableSections": [
+    { "prefix": "Rainy", "gap": "rain_variants" },
+    { "prefix": "Friday Night at the Inn", "gap": "friday_variants" }
+  ],
+
+  "_gate_comment": [
+    "A `==== … ====` heading that gates a day on a story quest. `after` marks the",
+    "table that applies once the quest is done, and it is given the higher",
+    "priority; `before` is the fallthrough and carries no requirement."
+  ],
+  "gatePattern": "^(Before|After)\\s+(.+?)\\s+is complete$"
+}

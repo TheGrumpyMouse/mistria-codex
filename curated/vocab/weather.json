@@ -1,0 +1,24 @@
+{
+  "_comment": [
+    "Weather aliases, written against the 8 distinct values Fish.weather actually",
+    "contains.",
+    "",
+    "The wiki is inconsistent in two places and both matter: 'Rain' and 'Rainy' are",
+    "the same weather, and 'Storm' and 'Thunderstorm' are the same weather. Treating",
+    "either pair as distinct would split fish across two states, and the app would",
+    "tell someone a fish isn't biting when it is.",
+    "",
+    "Note that 'Clear' never appears in this column — the wiki expresses it as 'Any'.",
+    "'Any' resolves to all six states and the build then intersects that with the",
+    "weather each season can physically have, so a summer window never claims snow."
+  ],
+  "aliases": {
+    "clear": ["Clear", "Sunny", "Sun", "Fine"],
+    "rain": ["Rain", "Rainy"],
+    "storm": ["Storm", "Thunderstorm", "Lightning", "Thunder"],
+    "wind": ["Wind", "Windy"],
+    "snow": ["Snow", "Snowy"],
+    "blizzard": ["Blizzard"]
+  },
+  "allWeather": ["Any", "Any Weather", "All", "Any weather"]
+}

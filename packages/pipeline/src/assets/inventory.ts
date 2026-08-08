@@ -1,0 +1,298 @@
+/**
+ * What we want, before anything is downloaded.
+ *
+ * The inventory is the join between two things that must never be joined inside
+ * `data/`: a record's `icon_key`, which is ours and permanent, and a wiki
+ * filename, which is theirs and can be renamed out from under us. Keeping the
+ * join here is what lets `assets/` be deleted without leaving a dangling
+ * reference anywhere in the dataset.
+ */
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
+import { consola } from 'consola'
+import { CURATED_DIR, DATA_DIR, SOURCES_DIR } from '../lib/paths.js'
+import { collectLinkedWants } from './link-icons.js'
+import type { AssetFamily } from './manifest.js'
+import { canonicalWikiName, fileRef, localName } from './names.js'
+
+/** One record asking for one sprite. Many wants can name the same file. */
+export interface Want {
+  family: AssetFamily
+  /** The record's `icon_key`, e.g. `misc/abyssal_chest`. */
+  iconKey: string
+  /** MediaWiki's canonical spelling of the file. */
+  sourceFile: string
+}
+
+/** One file to fetch, with every record that wants it. */
+export interface InventoryEntry {
+  key: string
+  family: AssetFamily
+  file: string
+  sourceFile: string
+  iconKeys: string[]
+}
+
+const readJson = async <T>(path: string): Promise<T> =>
+  JSON.parse(await readFile(path, 'utf8')) as T
+
+/**
+ * Item sprites, from data we already have committed.
+ *
+ * `Items.icon` is a wikitext fragment — `[[File:Abyssal chest.png]]` — and the
+ * join back to our own ids is on display name, the same fragile seam as
+ * everywhere else in this project. It is asserted rather than assumed: an item
+ * whose name is not in the cargo table is counted and reported, never guessed at.
+ */
+export async function collectItemWants(): Promise<Want[]> {
+  interface CargoItem {
+    itemName: string
+    icon: string | null
+  }
+  interface DataItem {
+    name: string
+    icon_key: string | null
+  }
+
+  const cargo = await readJson<CargoItem[]>(join(SOURCES_DIR, 'wiki', 'cargo', 'items.json'))
+
+  const byName = new Map<string, string>()
+  for (const row of cargo) {
+    const name = fileRef(row.icon ?? '')
+    if (name !== null) byName.set(row.itemName, name)
+  }
+
+  // Crops as well as items: a crop record is the growing plant and carries its
+  // own `crop/…` key, and 27 of the 58 have no matching item row to inherit from.
+  const records = [
+    ...(await readJson<DataItem[]>(join(DATA_DIR, 'items.json'))),
+    ...(await readJson<DataItem[]>(join(DATA_DIR, 'crops.json'))),
+  ]
+
+  const wants: Want[] = []
+  let missing = 0
+  for (const record of records) {
+    if (record.icon_key === null) continue
+    const sourceFile = byName.get(record.name)
+    if (sourceFile === undefined) {
+      missing += 1
+      continue
+    }
+    wants.push({ family: 'item', iconKey: record.icon_key, sourceFile })
+  }
+
+  if (missing > 0) consola.info(`assets: ${missing} records have no sprite on the wiki`)
+  return wants
+}
+
+/**
+ * Villager icons and portraits, from the character-page harvest.
+ *
+ * Joined on the wiki page name, which is what `enrich/characters.ts` keys its
+ * output by and what `data/characters.json` records as `wiki_page` — a stable
+ * join, unlike display name.
+ */
+export async function collectCharacterWants(): Promise<Want[]> {
+  interface Art {
+    characters: { character: string; icon: string | null; portrait: string | null }[]
+  }
+  interface Character {
+    wiki_page: string | null
+    icon_key: string | null
+  }
+
+  let art: Art
+  try {
+    art = await readJson<Art>(join(SOURCES_DIR, 'wiki', 'pages', 'characters.json'))
+  } catch {
+    consola.info('assets: no character art yet — run `pnpm enrich:pages`')
+    return []
+  }
+
+  const byPage = new Map(art.characters.map((c) => [c.character, c]))
+  const records = await readJson<Character[]>(join(DATA_DIR, 'characters.json'))
+  const wants: Want[] = []
+
+  for (const record of records) {
+    if (record.icon_key === null || record.wiki_page === null) continue
+    const found = byPage.get(record.wiki_page)
+    if (found === undefined) continue
+
+    if (found.icon !== null) {
+      wants.push({ family: 'villager', iconKey: record.icon_key, sourceFile: found.icon })
+    }
+    // The portrait is keyed separately: it is a different image of the same
+    // villager, not an alternative to the icon, and only one of the two is ever
+    // packed into a sheet.
+    if (found.portrait !== null) {
+      wants.push({
+        family: 'portrait',
+        iconKey: record.icon_key.replace(/^character\//, 'portrait/'),
+        sourceFile: found.portrait,
+      })
+    }
+  }
+
+  return wants
+}
+
+/** Monster sprites, joined on the name the extract and the dataset agree on. */
+export async function collectMonsterWants(): Promise<Want[]> {
+  interface Extract {
+    monsters: { name: string; icon: string | null }[]
+  }
+
+  let extract: Extract
+  try {
+    extract = await readJson<Extract>(join(SOURCES_DIR, 'wiki', 'pages', 'monsters.json'))
+  } catch {
+    return []
+  }
+
+  const byName = new Map(
+    extract.monsters.flatMap((m) => (m.icon === null ? [] : [[m.name, m.icon] as const])),
+  )
+  const records = await readJson<{ name: string; icon_key: string | null }[]>(
+    join(DATA_DIR, 'monsters.json'),
+  )
+
+  return records.flatMap((record) => {
+    const sourceFile = record.icon_key === null ? undefined : byName.get(record.name)
+    if (sourceFile === undefined || record.icon_key === null) return []
+    return [{ family: 'monster' as const, iconKey: record.icon_key, sourceFile }]
+  })
+}
+
+/** Festival calendar icons, joined on the festival's own page name. */
+export async function collectFestivalWants(): Promise<Want[]> {
+  interface Extract {
+    festivals: { name: string; icon: string | null }[]
+  }
+
+  let extract: Extract
+  try {
+    extract = await readJson<Extract>(join(SOURCES_DIR, 'wiki', 'pages', 'festivals.json'))
+  } catch {
+    return []
+  }
+
+  const byName = new Map(
+    extract.festivals.flatMap((f) => (f.icon === null ? [] : [[f.name, f.icon] as const])),
+  )
+  const records = await readJson<{ name: string; icon_key: string | null }[]>(
+    join(DATA_DIR, 'festivals.json'),
+  )
+
+  return records.flatMap((record) => {
+    const sourceFile = byName.get(record.name)
+    if (sourceFile === undefined || record.icon_key === null) return []
+    return [{ family: 'festival' as const, iconKey: record.icon_key, sourceFile }]
+  })
+}
+
+/**
+ * UI glyphs, named by hand.
+ *
+ * Tesserae, weather, seasons and tool icons are a small fixed set scattered
+ * across inline wikitext in a dozen different templates. Naming twenty-five
+ * files explicitly is both less code and less likely to be wrong than a scraper
+ * that has to recognise every template that might contain one.
+ */
+export async function collectUiWants(): Promise<Want[]> {
+  interface UiAssets {
+    glyphs: { key: string; file: string }[]
+  }
+
+  let ui: UiAssets
+  try {
+    ui = await readJson<UiAssets>(join(CURATED_DIR, 'vocab', 'ui_assets.json'))
+  } catch {
+    return []
+  }
+
+  return ui.glyphs.flatMap((glyph) => {
+    const sourceFile = canonicalWikiName(glyph.file)
+    if (sourceFile === '') return []
+    return [{ family: 'ui' as const, iconKey: `ui/${glyph.key}`, sourceFile }]
+  })
+}
+
+/**
+ * Collapse wants into one entry per file.
+ *
+ * Two things here are the whole point of the function. **Files are deduped on
+ * MediaWiki's canonical spelling**, so `acorn.png` and `Acorn.png` are one
+ * download rather than two. And **local names are checked for collisions** — two
+ * distinct wiki files that kebab-case to the same thing would silently overwrite
+ * each other on disk, which is the one failure that would be invisible in a diff
+ * and wrong in the app.
+ *
+ * Ordering is by key throughout, so the manifest is a stable diff.
+ */
+export function buildInventory(wants: Want[]): InventoryEntry[] {
+  const byFile = new Map<string, InventoryEntry>()
+
+  for (const want of wants) {
+    // **Canonicalised here and only here.** Every collector used to do it for
+    // itself, and the ones that forgot produced `Celine_Portrait.png` and
+    // `march icon.png` — names MediaWiki silently normalises on the way back, so
+    // the resolved URL came home under a key nothing was looking for and
+    // eighteen portraits vanished without a single error. One seam, like
+    // `ctx.idFor`, so no caller can get it wrong.
+    const sourceFile = canonicalWikiName(want.sourceFile)
+    if (sourceFile === '') continue
+
+    const existing = byFile.get(sourceFile)
+    if (existing !== undefined) {
+      if (!existing.iconKeys.includes(want.iconKey)) existing.iconKeys.push(want.iconKey)
+      continue
+    }
+
+    const file = localName(sourceFile)
+    byFile.set(sourceFile, {
+      key: `${want.family}/${file.replace(/\.[a-z0-9]+$/, '')}`,
+      family: want.family,
+      file: `${want.family}/${file}`,
+      sourceFile,
+      iconKeys: [want.iconKey],
+    })
+  }
+
+  const byLocal = new Map<string, string>()
+  for (const entry of byFile.values()) {
+    const clash = byLocal.get(entry.file)
+    if (clash !== undefined && clash !== entry.sourceFile) {
+      throw new Error(
+        `two wiki files map to assets/game/${entry.file}: "${clash}" and "${entry.sourceFile}". ` +
+          'Add a disambiguating rule to localName() rather than letting one overwrite the other.',
+      )
+    }
+    byLocal.set(entry.file, entry.sourceFile)
+  }
+
+  const entries = [...byFile.values()]
+  for (const entry of entries) entry.iconKeys.sort()
+  entries.sort((a, b) => a.key.localeCompare(b.key))
+  return entries
+}
+
+/** Everything we want, from every source. */
+export async function collectInventory(): Promise<InventoryEntry[]> {
+  const linked = await collectLinkedWants()
+  if (linked.unmatched.length > 0) {
+    consola.info(
+      `assets: ${linked.unmatched.length} records have no unambiguous linked icon ` +
+        '(they keep their drawn glyph)',
+    )
+  }
+
+  const wants = [
+    ...(await collectItemWants()),
+    ...(await collectCharacterWants()),
+    ...(await collectMonsterWants()),
+    ...(await collectFestivalWants()),
+    ...linked.wants,
+    ...(await collectUiWants()),
+  ]
+  return buildInventory(wants)
+}

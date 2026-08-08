@@ -1,0 +1,31 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Build output and intermediates — regenerate with `pnpm build:data` / `pnpm build:ship`
+# Anchored: an unanchored `build/` also matched packages/pipeline/src/build/,
+# which silently kept the entire build pipeline out of every commit.
+/build/
+apps/web/public/data/
+# Packed atlases. The committed copies live in assets/game/ — see docs/DATA-POLICY.md.
+apps/web/public/assets/
+
+# HTTP cache for the wiki fetcher
+.cache/
+
+# Never commit a game install path
+.env
+.env.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Playwright MCP scratch output
+.playwright-mcp/
+
+# Internal docs
+docs/

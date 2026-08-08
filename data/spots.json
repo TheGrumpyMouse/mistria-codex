@@ -1,0 +1,209 @@
+[
+  {
+    "id": "beachs_fountain",
+    "kind": "water",
+    "location_id": "the_beach",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1746,
+    "y": 3039
+  },
+  {
+    "id": "broken_beach_bridge",
+    "kind": "entrance",
+    "location_id": "the_beach",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1854,
+    "y": 3076
+  },
+  {
+    "id": "broken_bridge",
+    "kind": "entrance",
+    "location_id": "the_eastern_road",
+    "map_version": 1,
+    "seasons": [],
+    "x": 5051,
+    "y": 1714
+  },
+  {
+    "id": "broken_narrows_stairs",
+    "kind": "entrance",
+    "location_id": "the_narrows",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1725,
+    "y": 1646
+  },
+  {
+    "id": "broken_western_ruins_stairs",
+    "kind": "entrance",
+    "location_id": "the_western_ruins",
+    "map_version": 1,
+    "seasons": [],
+    "x": 773,
+    "y": 1641
+  },
+  {
+    "id": "caldarus_house",
+    "kind": "entrance",
+    "location_id": "the_deep_woods",
+    "map_version": 1,
+    "seasons": [],
+    "x": 5057,
+    "y": 822
+  },
+  {
+    "id": "caldarus_shrine",
+    "kind": "entrance",
+    "location_id": "the_farm",
+    "map_version": 1,
+    "seasons": [],
+    "x": 3512,
+    "y": 2257
+  },
+  {
+    "id": "celines_cottage",
+    "kind": "entrance",
+    "location_id": "mistria",
+    "map_version": 1,
+    "seasons": [],
+    "x": 3552,
+    "y": 2104
+  },
+  {
+    "id": "chicken_statue",
+    "kind": "entrance",
+    "location_id": "sweetwater_farm",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1837,
+    "y": 2652
+  },
+  {
+    "id": "digsite",
+    "kind": "entrance",
+    "location_id": "the_western_ruins",
+    "map_version": 1,
+    "seasons": [],
+    "x": 770,
+    "y": 2062
+  },
+  {
+    "id": "eastern_roads_fountain",
+    "kind": "water",
+    "location_id": "the_eastern_road",
+    "map_version": 1,
+    "seasons": [],
+    "x": 4831,
+    "y": 1553
+  },
+  {
+    "id": "errols_cabin",
+    "kind": "entrance",
+    "location_id": "the_narrows",
+    "map_version": 1,
+    "seasons": [],
+    "x": 2106,
+    "y": 1895
+  },
+  {
+    "id": "fish_trap",
+    "kind": "entrance",
+    "location_id": "the_beach",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1688,
+    "y": 3170
+  },
+  {
+    "id": "grove_of_rest",
+    "kind": "entrance",
+    "location_id": "the_deep_woods",
+    "map_version": 1,
+    "seasons": [],
+    "x": 4501,
+    "y": 973
+  },
+  {
+    "id": "haydens_shop",
+    "kind": "entrance",
+    "location_id": "sweetwater_farm",
+    "map_version": 1,
+    "seasons": [],
+    "x": 2260,
+    "y": 2358
+  },
+  {
+    "id": "horse_statue",
+    "kind": "entrance",
+    "location_id": "the_narrows",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1757,
+    "y": 1784
+  },
+  {
+    "id": "lighthouse",
+    "kind": "entrance",
+    "location_id": "the_beach",
+    "map_version": 1,
+    "seasons": [],
+    "x": 2338,
+    "y": 3159
+  },
+  {
+    "id": "narrows_fountain",
+    "kind": "water",
+    "location_id": "the_narrows",
+    "map_version": 1,
+    "seasons": [],
+    "x": 1723,
+    "y": 1560
+  },
+  {
+    "id": "players_farmhouse",
+    "kind": "entrance",
+    "location_id": "the_farm",
+    "map_version": 1,
+    "seasons": [],
+    "x": 3291,
+    "y": 2320
+  },
+  {
+    "id": "sealed_beach_cave",
+    "kind": "entrance",
+    "location_id": "the_beach",
+    "map_version": 1,
+    "seasons": [],
+    "x": 2450,
+    "y": 3041
+  },
+  {
+    "id": "sealed_narrows_cave",
+    "kind": "entrance",
+    "location_id": "the_narrows",
+    "map_version": 1,
+    "seasons": [],
+    "x": 2036,
+    "y": 1859
+  },
+  {
+    "id": "seridias_house",
+    "kind": "entrance",
+    "location_id": "the_western_ruins",
+    "map_version": 1,
+    "seasons": [],
+    "x": 765,
+    "y": 1511
+  },
+  {
+    "id": "vine_covered_stairs",
+    "kind": "entrance",
+    "location_id": "the_eastern_road",
+    "map_version": 1,
+    "seasons": [],
+    "x": 4950,
+    "y": 1517
+  }
+]

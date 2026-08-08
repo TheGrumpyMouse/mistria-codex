@@ -1,0 +1,408 @@
+[
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_cow_treat"
+    },
+    "building": "barn",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "hay",
+      "quality_hay",
+      "deluxe_hay",
+      "ultimate_hay"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/cow",
+    "id": "cow",
+    "id_status": "provisional",
+    "matures_days": 5,
+    "name": "Cow",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "cow_milk",
+        "quality": null
+      },
+      {
+        "hearts_required": null,
+        "item_id": "bull_horn",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_cow_milk",
+        "quality": "golden"
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_bull_horn",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 2000,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Cow"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_horse_treat"
+    },
+    "building": "barn",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "hay",
+      "quality_hay",
+      "deluxe_hay",
+      "ultimate_hay"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/horse",
+    "id": "horse",
+    "id_status": "provisional",
+    "matures_days": 5,
+    "name": "Horse",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "horse_hair",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_horse_hair",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 2300,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Horse"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_sheep_treat"
+    },
+    "building": "barn",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "hay",
+      "quality_hay",
+      "deluxe_hay",
+      "ultimate_hay"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/sheep",
+    "id": "sheep",
+    "id_status": "provisional",
+    "matures_days": 5,
+    "name": "Sheep",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "sheep_wool",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_sheep_wool",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 2000,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Sheep"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_alpaca_treat"
+    },
+    "building": "barn",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "hay",
+      "quality_hay",
+      "deluxe_hay",
+      "ultimate_hay"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/alpaca",
+    "id": "alpaca",
+    "id_status": "provisional",
+    "matures_days": 5,
+    "name": "Alpaca",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "alpaca_wool",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_alpaca_wool",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 2300,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Alpaca"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_chicken_treat"
+    },
+    "building": "coop",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "grass_seed",
+      "quality_small_animal_feed",
+      "deluxe_small_animal_feed",
+      "ultimate_small_animal_feed"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/chicken",
+    "id": "chicken",
+    "id_status": "provisional",
+    "matures_days": 3,
+    "name": "Chicken",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "egg",
+        "quality": null
+      },
+      {
+        "hearts_required": null,
+        "item_id": "feather",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_egg",
+        "quality": "golden"
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_feather",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 1000,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Chicken"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_duck_treat"
+    },
+    "building": "coop",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "grass_seed",
+      "quality_small_animal_feed",
+      "deluxe_small_animal_feed",
+      "ultimate_small_animal_feed"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/duck",
+    "id": "duck",
+    "id_status": "provisional",
+    "matures_days": 3,
+    "name": "Duck",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "duck_egg",
+        "quality": null
+      },
+      {
+        "hearts_required": null,
+        "item_id": "duck_feather",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_duck_egg",
+        "quality": "golden"
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_duck_feather",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 1500,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Duck"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_rabbit_treat"
+    },
+    "building": "coop",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "grass_seed",
+      "quality_small_animal_feed",
+      "deluxe_small_animal_feed",
+      "ultimate_small_animal_feed"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/rabbit",
+    "id": "rabbit",
+    "id_status": "provisional",
+    "matures_days": 3,
+    "name": "Rabbit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "rabbit_wool",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_rabbit_wool",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 1500,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Rabbit"
+  },
+  {
+    "blurb": null,
+    "breeding": {
+      "gestation_days": 4,
+      "treat_item_id": "heart_shaped_capybara_treat"
+    },
+    "building": "coop",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "feed_item_ids": [
+      "grass_seed",
+      "quality_small_animal_feed",
+      "deluxe_small_animal_feed",
+      "ultimate_small_animal_feed"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "animal/capybara",
+    "id": "capybara",
+    "id_status": "provisional",
+    "matures_days": 3,
+    "name": "Capybara",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "products": [
+      {
+        "hearts_required": null,
+        "item_id": "bristle",
+        "quality": null
+      },
+      {
+        "hearts_required": 8,
+        "item_id": "golden_bristle",
+        "quality": "golden"
+      }
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "purchase": {
+      "currency": "tesserae",
+      "price": 2000,
+      "shop_id": "haydens_shop"
+    },
+    "version_added": null,
+    "wiki_page": "Capybara"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": "breath_of_spring",
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards"
+    ],
+    "date": {
+      "day": 17,
+      "season": "spring"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/spring_festival",
+    "id": "spring_festival",
+    "id_status": "provisional",
+    "implemented": true,
+    "location_id": "mistria",
+    "name": "Spring Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": "Spring Festival"
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 24,
+      "season": "spring"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/cooking_contest",
+    "id": "cooking_contest",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "Cooking Contest",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 5,
+      "season": "summer"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/beach_day",
+    "id": "beach_day",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "Beach Day",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 18,
+      "season": "summer"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/crop_festival",
+    "id": "crop_festival",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "Crop Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards"
+    ],
+    "date": {
+      "day": 28,
+      "season": "summer"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/shooting_star_festival",
+    "id": "shooting_star_festival",
+    "id_status": "provisional",
+    "implemented": true,
+    "location_id": "the_summit",
+    "name": "Shooting Star Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": "Shooting Star Festival"
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": "queen_berry",
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards"
+    ],
+    "date": {
+      "day": 10,
+      "season": "fall"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/harvest_festival",
+    "id": "harvest_festival",
+    "id_status": "provisional",
+    "implemented": true,
+    "location_id": "mistria",
+    "name": "Harvest Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": "Harvest Festival"
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 28,
+      "season": "fall"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/halloween_festival",
+    "id": "halloween_festival",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "Halloween Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards"
+    ],
+    "date": {
+      "day": 10,
+      "season": "winter"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/animal_festival",
+    "id": "animal_festival",
+    "id_status": "provisional",
+    "implemented": true,
+    "location_id": "mistria",
+    "name": "Animal Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": "Animal Festival"
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 24,
+      "season": "winter"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/gift_festival",
+    "id": "gift_festival",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "Gift Festival",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "activities": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "currency_item_id": null,
+    "data_gaps": [
+      "time",
+      "activities",
+      "rewards",
+      "location_id"
+    ],
+    "date": {
+      "day": 28,
+      "season": "winter"
+    },
+    "former_ids": [],
+    "game_version": "v0-14-0",
+    "icon_key": "festival/new_years_eve",
+    "id": "new_years_eve",
+    "id_status": "provisional",
+    "implemented": false,
+    "location_id": null,
+    "name": "New Year's Eve",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prerequisites": [],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "rewards": [],
+    "time": null,
+    "version_added": null,
+    "wiki_page": null
+  }
+]

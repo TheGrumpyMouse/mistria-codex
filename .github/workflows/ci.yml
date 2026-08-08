@@ -1,0 +1,112 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, types, tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec biome ci .
+      - run: pnpm exec tsc -b
+      - run: pnpm exec vitest run
+
+  data:
+    name: Data integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # The emitted JSON Schema is a build artifact of the Zod schemas. If it is
+      # stale, the Ajv pass below is validating against yesterday's contract.
+      - name: Emit JSON Schema
+        run: pnpm schema:emit
+
+      # This job never touches the wiki. `sources/` is committed, so builds are
+      # hermetic, fast, and don't hammer wiki.gg on every push. Refreshing from
+      # the wiki is a separate scheduled workflow that opens a PR.
+      - name: Rebuild data from sources + curated
+        run: pnpm build:data
+
+      # The invariant that makes a committed, generated directory trustworthy:
+      # data/ is a pure function of its inputs. If regenerating changes anything,
+      # either someone hand-edited data/ or the build is non-deterministic.
+      # Both are bugs and both are silent without this check.
+      - name: Assert data/ is reproducible
+        run: |
+          if ! git diff --exit-code -- data/ docs/schema/; then
+            echo "::error::data/ or docs/schema/ is out of date or was hand-edited."
+            echo "Run 'pnpm schema:emit && pnpm build:data' and commit the result."
+            exit 1
+          fi
+
+      - name: Validate
+        run: pnpm validate
+
+      - name: Coverage report
+        if: always()
+        run: cat docs/coverage.md >> "$GITHUB_STEP_SUMMARY"
+
+  bundle:
+    name: Ship bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # Packs the atlases and regenerates ATTRIBUTION.md as well as the data.
+      - run: pnpm build:ship
+
+      # ATTRIBUTION.md is generated from the asset manifest, so a hand-edit or a
+      # stale copy is the same class of bug as a hand-edited data/ — except that
+      # for a credit file being out of date is the whole failure.
+      - name: Assert ATTRIBUTION.md matches the manifest
+        run: |
+          if ! git diff --exit-code -- ATTRIBUTION.md; then
+            echo "::error::ATTRIBUTION.md is out of date. Run 'pnpm build:ship' and commit it."
+            exit 1
+          fi
+
+      # The app has to build against the real base path, because that is where
+      # a leading-slash URL stops working. Building it here means a broken
+      # production path fails a pull request rather than a deploy.
+      - name: Build the app
+        run: pnpm build:web
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: Size report
+        run: |
+          echo '### Shipped bundle' >> "$GITHUB_STEP_SUMMARY"
+          du -sh apps/web/public/data | awk '{print "Data: " $1}' >> "$GITHUB_STEP_SUMMARY"
+          du -sh apps/web/public/assets 2>/dev/null | awk '{print "Assets: " $1}' >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-bundle
+          path: apps/web/public/data
+          retention-days: 7

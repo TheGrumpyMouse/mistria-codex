@@ -1,0 +1,14 @@
+{
+  "name": "@mistria/sync-client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The device code and the CRDT merge. Imported by both the app and the Worker, so the two can never disagree.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}

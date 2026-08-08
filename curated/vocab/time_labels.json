@@ -1,0 +1,33 @@
+{
+  "_comment": [
+    "The wiki's time labels, materialised into concrete hour ranges.",
+    "",
+    "These are the WIKI'S labels, not our canonical UI partition. They overlap —",
+    "'Day' (6am-8pm) fully contains 'Morning' (6am-11am) — so they are useless as",
+    "buckets and are only ever used as ranges to expand into a window's `time`.",
+    "The non-overlapping partition the UI uses lives in packages/schema",
+    "(TIME_BLOCK_RANGES) and is derived from `time`, never authored twice.",
+    "",
+    "SOURCE for the hours: one Bugs row spells them out inline —",
+    "'Morning 6 AM - 11 AM / Day 6 AM - 8 PM' — which confirms the ranges given in",
+    "docs/research/01-game-data.md. Night at 8pm-2am matches the game day ending",
+    "at 2am.",
+    "",
+    "'All day' means there is no time restriction. That is NOT the same as unknown:",
+    "it resolves to a null time with precision 'not_applicable', while an empty",
+    "cell resolves to null with precision 'unknown' plus a data gap. Ten of the 103",
+    "bugs have an empty cell.",
+    "",
+    "Casing is inconsistent on the wiki ('All day' 52, 'All Day' 13); matching is",
+    "case-insensitive."
+  ],
+  "noRestriction": ["All day", "Any", "Anytime", "All"],
+  "ranges": {
+    "morning": { "from": "06:00", "to": "11:00" },
+    "day": { "from": "06:00", "to": "20:00" },
+    "evening": { "from": "18:00", "to": "20:00" },
+    "night": { "from": "20:00", "to": "02:00" }
+  },
+  "_hoursPattern_comment": "Matches an inline range like '6 AM - 11 AM' or '10 PM - 2 AM'.",
+  "hoursPattern": "(\\d{1,2})\\s*(AM|PM)\\s*[-–]\\s*(\\d{1,2})\\s*(AM|PM)"
+}

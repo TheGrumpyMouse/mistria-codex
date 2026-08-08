@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./fonts.css";
+
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    /* The Day Dial is a drag target; a stray text selection while scrubbing it
+       is the single most annoying thing a touch UI can do. */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-size: 15px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    /* Fraunces' oddity is the point of choosing it, so it is dialled up rather
+       than left at the default. Ignored by the fallback stack, harmlessly. */
+    font-variation-settings:
+      "SOFT" 40,
+      "WONK" 1;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  /* Numbers align in dense lists, which is the whole reason for a mono face
+     here — prices, times, coordinates and the sync code. */
+  [data-numeral] {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-tile);
+  }
+
+  ::selection {
+    background: var(--accent-tint);
+  }
+}
+
+@layer components {
+  /*
+   * The time band.
+   *
+   * A native range input paints its track near-black in every browser, which
+   * is the one true black in an otherwise warm palette and reads as a bug. The
+   * thumb is oversized on purpose: it is dragged with a thumb, on a phone,
+   * often one-handed.
+   */
+  .time-band {
+    appearance: none;
+    background: transparent;
+    height: 24px;
+  }
+
+  .time-band::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background: var(--sunk);
+  }
+
+  .time-band::-moz-range-track {
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background: var(--sunk);
+  }
+
+  .time-band::-webkit-slider-thumb {
+    appearance: none;
+    margin-top: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    border: 3px solid var(--surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .time-band::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--surface);
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+@layer utilities {
+  /*
+   * The treatment for anything we are not sure of: a dashed hollow outline in
+   * muted ink, never a colour. An inference must never render identically to a
+   * fact, and colour is already spoken for by the seasons.
+   */
+  .unverified {
+    border: 1px dashed var(--ink-faint);
+    background: transparent;
+    color: var(--ink-mute);
+  }
+}
+
+/*
+ * Game sprites.
+ *
+ * Declared once, here, rather than on every element that shows one: `pixelated`
+ * is not decoration, it is the difference between pixel art and a smudge, and a
+ * rule that has to be remembered per component is a rule that will be forgotten.
+ *
+ * `lib/sprites.ts` overrides `image-rendering` to `auto` on the sprites it is
+ * *reducing* — the wiki's files are 72 pixels square and most list rows give
+ * them 24, and nearest-neighbour throws away eight pixels in nine on the way
+ * down. Sharp going up, smooth coming down; the class carries the default.
+ */
+.sprite {
+  display: block;
+  image-rendering: pixelated;
+}
+
+/*
+ * The standard reduced-motion reset. `!important` is correct here and nowhere
+ * else in this file: it has to beat inline styles and component CSS alike,
+ * because a person who has asked their OS to stop animations has asked once and
+ * should not have to ask each component.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: an accessibility preference has to outrank every other declaration. */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: as above. */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: as above. */
+    transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: as above. */
+    scroll-behavior: auto !important;
+  }
+}

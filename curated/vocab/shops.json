@@ -1,0 +1,165 @@
+{
+  "_comment": [
+    "The eight stores, and where each page keeps its stock.",
+    "",
+    "NO OPENING HOURS. Searched all eight pages for hours, opening times and",
+    "closures: there are none, because the game has none. You can shop until 2am,",
+    "which is the end of the day — the project owner confirmed this from play on",
+    "2026-08-07 and it is why `shop` is in timeNotApplicable in method_rules.json.",
+    "An empty `hours` array therefore means 'no restriction', not 'unknown', and",
+    "no shop carries an `hours` data gap.",
+    "",
+    "OWNERS ARE CURATED, NOT PARSED. The infobox `residents` field lists everyone",
+    "who lives in the building — the Inn's lists six people including two children",
+    "and a travelling merchant. The page prose says who runs the place, and three",
+    "shops are run by more than one person, so `owner` is the single clear",
+    "proprietor and `staff` is everyone the page names. Nora and Holt run the",
+    "General Store jointly; neither is 'the' owner, so it has staff and no owner.",
+    "",
+    "STOCK SECTIONS ARE DECLARED. Every page arranges its headings differently:",
+    "'Stock', '=Stock=', 'Year-Round Stock', 'Farm Supplies'. Worse, Hayden's page",
+    "has tables for selling animals back and for daycare pricing, which are not",
+    "stock at all and would otherwise be read as things you can buy. Rules match a",
+    "case-insensitive substring of the heading path; `ignoreSections` records the",
+    "tables we are deliberately skipping and why. A table under any other heading",
+    "produces a warning, so a new stock section surfaces instead of vanishing.",
+    "",
+    "SEASONS. Only the General Store's seed tables are season-gated, and the page",
+    "says so in the heading. Everything else is year-round — including Balor's,",
+    "whose page states outright that stock is not restricted by season.",
+    "",
+    "SATURDAY MARKET IS NOT HERE. Its eight vendors live on an event page with a",
+    "different structure, and their stock is day-of-week gated. That is a separate",
+    "piece of work rather than something to half-do here."
+  ],
+
+  "_priceTokens": [
+    "`{{Price|N|token}}` is used for far more than money. The same template",
+    "prices a cost, a defence stat and a required cooking level, so a row can",
+    "carry three of them and picking the first put '2 defense' in the price",
+    "column of every armour set.",
+    "",
+    "`priceTokens` maps the tokens that ARE currencies. `nonPriceTokens` names",
+    "the ones that are deliberately not, so an unrecognised token is a build",
+    "warning rather than a silent default to tesserae — which would invent a",
+    "price out of a stat."
+  ],
+  "priceTokens": { "": "tesserae", "renown": "renown", "ess": "essence" },
+  "nonPriceTokens": [
+    { "token": "defense", "reason": "an armour stat, in the Defense column" },
+    { "token": "attack", "reason": "a weapon stat" },
+    { "token": "health", "reason": "an item's restore value" },
+    { "token": "stamina", "reason": "an item's restore value" },
+    { "token": "cookinglevel", "reason": "the Cooking level a recipe needs, not a cost" },
+    { "token": "animalhearts", "reason": "an animal's heart level, on Hayden's tables" },
+    { "token": "stars", "reason": "a quality rating" }
+  ],
+
+  "shops": [
+    {
+      "id": "general_store",
+      "name": "General Store",
+      "page": "General Store",
+      "owner": null,
+      "staff": ["Nora", "Holt"],
+      "rotates": false,
+      "stockSections": [
+        { "match": "Year-Round Stock", "seasons": null },
+        { "match": "Spring Stock", "seasons": ["spring"] },
+        { "match": "Summer Stock", "seasons": ["summer"] },
+        { "match": "Fall Stock", "seasons": ["fall"] },
+        { "match": "Winter Stock", "seasons": ["winter"] }
+      ],
+      "ignoreSections": [{ "match": "Layout", "reason": "room descriptions, not stock" }]
+    },
+    {
+      "id": "tackle_shop",
+      "name": "Tackle Shop",
+      "page": "Tackle Shop",
+      "owner": "Terithia",
+      "staff": ["Terithia"],
+      "rotates": false,
+      "stockSections": [{ "match": "Stock", "seasons": null }],
+      "ignoreSections": [{ "match": "Layout", "reason": "room descriptions, not stock" }]
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "page": "Blacksmith",
+      "owner": "March",
+      "staff": ["March", "Olric"],
+      "rotates": false,
+      "stockSections": [{ "match": "Stock", "seasons": null }],
+      "ignoreSections": [
+        { "match": "Layout", "reason": "room descriptions, not stock" },
+        {
+          "match": "Anvil",
+          "reason": "forging recipes, which belong to recipes and are gated on Blacksmithing rather than bought"
+        }
+      ]
+    },
+    {
+      "id": "carpenter",
+      "name": "Carpenter",
+      "page": "Carpenter",
+      "owner": "Ryis",
+      "staff": ["Ryis", "Landen"],
+      "rotates": false,
+      "stockSections": [{ "match": "Stock", "seasons": null }],
+      "ignoreSections": [
+        { "match": "Layout", "reason": "room descriptions, not stock" },
+        { "match": "Home Upgrade", "reason": "house upgrades, which land with buildings" },
+        { "match": "Farm Expansion", "reason": "land expansion, which lands with buildings" }
+      ]
+    },
+    {
+      "id": "clinic",
+      "name": "Clinic",
+      "page": "Clinic",
+      "owner": "Valen",
+      "staff": ["Valen"],
+      "rotates": false,
+      "stockSections": [{ "match": "Stock", "seasons": null }],
+      "ignoreSections": [{ "match": "Layout", "reason": "room descriptions, not stock" }]
+    },
+    {
+      "id": "haydens_shop",
+      "name": "Hayden's Shop",
+      "page": "Hayden's Shop",
+      "owner": "Hayden",
+      "staff": ["Hayden"],
+      "rotates": false,
+      "stockSections": [{ "match": "Farm Supplies", "seasons": null }],
+      "ignoreSections": [
+        { "match": "Layout", "reason": "room descriptions, not stock" },
+        { "match": "Adoption", "reason": "livestock, which lands with animals" },
+        { "match": "Daycare", "reason": "a service price, not an item you can buy" },
+        { "match": "Selling Animals", "reason": "what Hayden pays YOU, the opposite of stock" },
+        { "match": "Upgrading the Shop", "reason": "a quest, not stock" }
+      ]
+    },
+    {
+      "id": "inn",
+      "name": "Sleeping Dragon Inn",
+      "page": "Inn",
+      "owner": "Hemlock",
+      "staff": ["Hemlock", "Josephine", "Reina"],
+      "rotates": false,
+      "stockSections": [{ "match": "Year-Round Stock", "seasons": null }],
+      "ignoreSections": [
+        { "match": "Layout", "reason": "room descriptions, not stock" },
+        { "match": "Upgrading", "reason": "a quest, not stock" }
+      ]
+    },
+    {
+      "id": "balors_wagon",
+      "name": "Balor's Wagon",
+      "page": "Balor's Wagon",
+      "owner": "Balor",
+      "staff": ["Balor"],
+      "rotates": true,
+      "stockSections": [{ "match": "Stock", "seasons": null }],
+      "ignoreSections": []
+    }
+  ]
+}

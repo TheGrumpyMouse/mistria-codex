@@ -1,0 +1,177 @@
+{
+  "characters": [
+    {
+      "character": "Adeline",
+      "icon": "Adeline icon.png",
+      "portrait": "Adeline Portrait.png"
+    },
+    {
+      "character": "Balor",
+      "icon": "Balor icon.png",
+      "portrait": "Balor Portrait.png"
+    },
+    {
+      "character": "Caldarus",
+      "icon": null,
+      "portrait": null
+    },
+    {
+      "character": "Celine",
+      "icon": "Celine icon.png",
+      "portrait": "Celine_Portrait.png"
+    },
+    {
+      "character": "Darcy",
+      "icon": "Darcy icon.png",
+      "portrait": "Darcy_Portrait.png"
+    },
+    {
+      "character": "Dell",
+      "icon": "Dell icon.png",
+      "portrait": "Dell_Portrait.png"
+    },
+    {
+      "character": "Dozy",
+      "icon": "Dozy icon.png",
+      "portrait": null
+    },
+    {
+      "character": "Eiland",
+      "icon": "Eiland icon.png",
+      "portrait": "Eiland_Portrait.png"
+    },
+    {
+      "character": "Elsie",
+      "icon": "Elsie icon.png",
+      "portrait": "Elsie_Portrait.png"
+    },
+    {
+      "character": "Errol",
+      "icon": "Errol icon.png",
+      "portrait": "Errol Portrait.png"
+    },
+    {
+      "character": "Hayden",
+      "icon": "Hayden icon.png",
+      "portrait": null
+    },
+    {
+      "character": "Hemlock",
+      "icon": "Hemlock icon.png",
+      "portrait": "Hemlock Portrait.png"
+    },
+    {
+      "character": "Henrietta",
+      "icon": "Henrietta icon.png",
+      "portrait": null
+    },
+    {
+      "character": "Holt",
+      "icon": "Holt icon.png",
+      "portrait": "Holt_Portrait.png"
+    },
+    {
+      "character": "Josephine",
+      "icon": "Josephine icon.png",
+      "portrait": "Josephine Portrait.png"
+    },
+    {
+      "character": "Juniper",
+      "icon": "Juniper icon.png",
+      "portrait": "Juniper Portrait.png"
+    },
+    {
+      "character": "Landen",
+      "icon": "Landen icon.png",
+      "portrait": "Landen_Portrait.png"
+    },
+    {
+      "character": "Louis",
+      "icon": "Louis icon.png",
+      "portrait": "Louis_Portrait.png"
+    },
+    {
+      "character": "Luc",
+      "icon": "Luc icon.png",
+      "portrait": "Luc Portrait.png"
+    },
+    {
+      "character": "Maple",
+      "icon": "Maple icon.png",
+      "portrait": "Maple_Portrait.png"
+    },
+    {
+      "character": "March",
+      "icon": "march icon.png",
+      "portrait": null
+    },
+    {
+      "character": "Merri",
+      "icon": "Merri icon.png",
+      "portrait": "Merri_Portrait.png"
+    },
+    {
+      "character": "Nora",
+      "icon": "Nora icon.png",
+      "portrait": "Nora_Portrait.png"
+    },
+    {
+      "character": "Olric",
+      "icon": "Olric icon.png",
+      "portrait": "Olric_Portrait.png"
+    },
+    {
+      "character": "Priestess",
+      "icon": null,
+      "portrait": "Priestess Portrait.png"
+    },
+    {
+      "character": "Reina",
+      "icon": "Reina icon.png",
+      "portrait": "Reina Portrait.png"
+    },
+    {
+      "character": "Ryis",
+      "icon": "Ryis icon.png",
+      "portrait": "Ryis_Portrait.png"
+    },
+    {
+      "character": "Stillwell",
+      "icon": "Stillwell icon.png",
+      "portrait": "Stillwell_Portrait.png"
+    },
+    {
+      "character": "Taliferro",
+      "icon": "Taliferro icon.png",
+      "portrait": "Taliferro_Portrait.png"
+    },
+    {
+      "character": "Terithia",
+      "icon": "Terithia icon.png",
+      "portrait": "Terithia_Portrait.png"
+    },
+    {
+      "character": "Valen",
+      "icon": "Valen icon.png",
+      "portrait": "Valen Portrait.png"
+    },
+    {
+      "character": "Vera",
+      "icon": "Vera icon.png",
+      "portrait": "Vera_Portrait.png"
+    },
+    {
+      "character": "Wheedle",
+      "icon": "Wheedle icon.png",
+      "portrait": "Wheedle_Portrait.png"
+    },
+    {
+      "character": "Zorel",
+      "icon": "Zorel icon.png",
+      "portrait": null
+    }
+  ],
+  "missing": [
+    "Caldarus"
+  ]
+}

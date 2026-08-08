@@ -1,0 +1,133 @@
+{
+  "_comment": [
+    "How the loose tokens in Items.location resolve.",
+    "",
+    "Concrete place names are handled by the `aliases` list on each record in",
+    "vocab/locations.json. This file covers the rest: habitats, tokens to ignore,",
+    "and fragments that are not locations at all.",
+    "",
+    "THE HABITAT DECISION, as settled at D4. The wiki says 'Pond'. There are three",
+    "ponds — and the Fishing page names them, along with the four rivers and the",
+    "three places the ocean is reachable. So the *set* is a fact and is parsed like",
+    "any other fact; see `curated/vocab/waters.json`.",
+    "",
+    "What remains an inference is whether a given fish is in all of them. The",
+    "expanded window carries `confidence: 'inferred'` and the UI draws those pins",
+    "hollow. It is not also a `locations` data gap: the two would be recording the",
+    "same uncertainty twice, and a gap that can never be closed is noise.",
+    "",
+    "The expansion list is NOT hand-typed here. It comes from the source, so a",
+    "region added to the wiki appears without anyone editing this file. What lives",
+    "here is only whether a habitat is expandable at all."
+  ],
+  "habitats": [
+    {
+      "alias": "Ocean",
+      "habitat": "ocean",
+      "policy": "expand",
+      "source": "wiki:Fishing#Ocean"
+    },
+    {
+      "alias": "River",
+      "habitat": "river",
+      "policy": "expand",
+      "source": "wiki:Fishing#River"
+    },
+    {
+      "alias": "Pond",
+      "habitat": "pond",
+      "policy": "expand",
+      "source": "wiki:Fishing#Pond"
+    },
+    {
+      "_policy_note": [
+        "'Overworld' means outdoors with no particular place in mind, so there is",
+        "nothing to expand it into. Nine pins on nine regions would turn an",
+        "absence of information into nine confident claims. It stays a habitat,",
+        "and the item keeps its `locations` data gap."
+      ],
+      "alias": "Overworld",
+      "habitat": "overworld",
+      "policy": "habitat_only"
+    },
+    {
+      "alias": "The Overworld",
+      "habitat": "overworld",
+      "policy": "habitat_only"
+    }
+  ],
+  "_ignore_comment": [
+    "Tokens that carry no location information. 'Any' and 'Any Floor Without a Seal'",
+    "are real values but say nothing a pin could use; they become a data gap rather",
+    "than a guess.",
+    "",
+    "'Archaeology' and 'Mining' are skill names that leaked into the location column",
+    "on the wiki. They are recorded here so they don't sit in the unresolved queue",
+    "forever pretending to be a curation to-do."
+  ],
+  "ignore": [
+    "",
+    "Any",
+    "Any Floor Without a Seal",
+    "Archaeology",
+    "Mining",
+    "No set spawn area, rarely spawn anywhere in the overworld."
+  ],
+  "_pattern_comment": [
+    "Fragments produced when the wiki splits a cell across lines. A floor range is a",
+    "depth constraint on the window, not a place, and 'Dig Spots (requires Well",
+    "Placed Skill)' is a spawn method plus a perk gate.",
+    "",
+    "Anything matching these is consumed by the resolver rather than reported as an",
+    "unresolved location."
+  ],
+  "depthPattern": "^\\(floors?\\s+([\\d,\\s-]+)\\)$",
+  "requiresPattern": "\\(requires\\s+(?:Story Quest\\s+)?\"?([^\")]+?)\"?\\s*(Skill|to be completed)?\\)",
+  "entries": [
+    {
+      "alias": "Fish Trap",
+      "id": null,
+      "method": "fish_trap",
+      "note": "a catch method that leaked into the location column, not a place"
+    },
+    {
+      "alias": "Dig Spots",
+      "id": null,
+      "method": "dig_spot",
+      "note": "a spawn method, not a place"
+    },
+    {
+      "alias": "Mist Spots",
+      "id": null,
+      "method": "dig_spot",
+      "note": "a spawn method gated behind the Mist Sight perk"
+    },
+    {
+      "alias": "Found whilst Diving",
+      "id": null,
+      "method": "diving",
+      "note": "a catch method, not a place"
+    },
+    {
+      "alias": "Found whilst Fishing",
+      "id": null,
+      "method": "fishing",
+      "note": "a catch method, not a place"
+    },
+    {
+      "alias": "Ritual Chambers in The Mines",
+      "id": "the_mines",
+      "note": "a sub-area of the mines; gets its own location once the mine maps exist"
+    },
+    {
+      "alias": "Large Rock in The Narrows",
+      "id": "the_narrows",
+      "note": "a specific spot; becomes a spot record at D4"
+    },
+    {
+      "alias": "3 The Deep Earth",
+      "id": "the_deep_earth",
+      "note": "wiki typo — a stray table cell number leaked into the location column on Glowing Mushroom"
+    }
+  ]
+}

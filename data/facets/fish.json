@@ -1,0 +1,1422 @@
+[
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "alligator_gar",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "amberjack",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "anchovy",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "angel_fish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "archerfish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "armored_bass",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "bait_thief",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "barb",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "blue_crab",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "bluefish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "bluegill",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "bonito",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "bowfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "bream",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "brown_bullhead",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "brown_trout",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "bullfrog",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "burbot",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "butterfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "candelabra_seadragon",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "carp",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "catfish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "cave_eel",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "cave_shark",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "cave_shrimp",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "char",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": true,
+    "item_id": "cherry_fish",
+    "rarity": "legendary",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "chub",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "chum",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "clam",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "cod",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "coelacanth",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "copper_rockfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "crab",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "crayfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "crucian_carp",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "dace",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "dart",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "earth_eel",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "emerald_horned_charger",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "firesail_fish",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "flathead_catfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "forest_perch",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "freshwater_eel",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "freshwater_oyster",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "frog",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "gar",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "gazer",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "giant_jellyfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "giant_koi",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "giant_tilapia",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "goby",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "golden_eel",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "golden_shiner",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "goldfish",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "grayling",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "grouper",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "hake",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "halibut",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "herring",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "horse_mackerel",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "iron_fish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "jellyfish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "killifish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "king_crab",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "koi",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "lake_chub",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "lake_trout",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "lamprey",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "lava_piranha",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": true,
+    "item_id": "leaf_fish",
+    "rarity": "legendary",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": true,
+    "item_id": "lightning_fish",
+    "rarity": "legendary",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "loach",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "lobster",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "luminescent_crab",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "mackerel",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "massive_minnow",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "mini_whale_shark",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "minnow",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "mullet",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "muskie",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "newt",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "oarfish",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "ocean_sunfish",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "octopus",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "paddlefish",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "paper_pondshell",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "pearl_clam",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "pebble_minnow",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "perch",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "pike",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "pollock",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "pond_snail",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "puffer_fish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "rainbow_trout",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "razorback",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "red_snapper",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "river_snail",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "roach",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "rock_bass",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "rock_guppy",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "rockbiter",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "salmon",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sand_lance",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sapphire_betta",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "sardine",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sauger",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "saury",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sea_bass",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sea_bream",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "sea_urchin",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "seaweed",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": null
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "shad",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "shadow_bass",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "shardfin",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "shark",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "shrimp",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "silver_redhorse",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [],
+    "is_legendary": false,
+    "item_id": "silver_squid",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "smallmouth_bass",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "snakehead",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "snapping_turtle",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": true,
+    "item_id": "snow_fish",
+    "rarity": "legendary",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "squid",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "stingray",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "stone_loach",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "striped_bass",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sturgeon",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sulfur_crab",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sunny",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "sweetfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "swordfish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "tarpon",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "giant"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "tetra",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "tilapia",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "transparent_jellyfish",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing",
+      "diving"
+    ],
+    "is_legendary": false,
+    "item_id": "trout",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "tuna",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "turtle",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "walleye",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "large"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "water_balloon_fish",
+    "rarity": "uncommon",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "white_perch",
+    "rarity": "rare",
+    "school_size": null,
+    "shadow_size": "medium"
+  },
+  {
+    "catch_methods": [
+      "fishing"
+    ],
+    "is_legendary": false,
+    "item_id": "winged_shrimp",
+    "rarity": "common",
+    "school_size": null,
+    "shadow_size": "small"
+  }
+]

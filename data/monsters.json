@@ -1,0 +1,1429 @@
+[
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/sapling",
+    "id": "sapling",
+    "id_status": "provisional",
+    "name": "Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/cool_sapling",
+    "id": "cool_sapling",
+    "id_status": "provisional",
+    "name": "Cool Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_sapling",
+    "id": "blue_sapling",
+    "id_status": "provisional",
+    "name": "Blue Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_sapling",
+    "id": "purple_sapling",
+    "id_status": "provisional",
+    "name": "Purple Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/orange_sapling",
+    "id": "orange_sapling",
+    "id_status": "provisional",
+    "name": "Orange Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "skull_mask",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/pink_sapling",
+    "id": "pink_sapling",
+    "id_status": "provisional",
+    "name": "Pink Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Sapling"
+  },
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/rock_clod",
+    "id": "rock_clod",
+    "id_status": "provisional",
+    "name": "Rock Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_clod",
+    "id": "blue_clod",
+    "id_status": "provisional",
+    "name": "Blue Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/green_clod",
+    "id": "green_clod",
+    "id_status": "provisional",
+    "name": "Green Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/red_clod",
+    "id": "red_clod",
+    "id_status": "provisional",
+    "name": "Red Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "ore_mistril",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_pink_diamond",
+        "quantity": null
+      },
+      {
+        "chance": 0.01,
+        "item_id": "perfect_pink_diamond",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_clod",
+    "id": "purple_clod",
+    "id_status": "provisional",
+    "name": "Purple Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_copper",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_ruby",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/copper_clod",
+    "id": "copper_clod",
+    "id_status": "provisional",
+    "name": "Copper Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_iron",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_sapphire",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/iron_clod",
+    "id": "iron_clod",
+    "id_status": "provisional",
+    "name": "Iron Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_emerald",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_silver",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/silver_clod",
+    "id": "silver_clod",
+    "id_status": "provisional",
+    "name": "Silver Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_shell",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_diamond",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_gold",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/gold_clod",
+    "id": "gold_clod",
+    "id_status": "provisional",
+    "name": "Gold Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "ore_mistril",
+        "quantity": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "ore_pink_diamond",
+        "quantity": null
+      },
+      {
+        "chance": 0.01,
+        "item_id": "perfect_pink_diamond",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/mistril_clod",
+    "id": "mistril_clod",
+    "id_status": "provisional",
+    "name": "Mistril Clod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Clod"
+  },
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_powder",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "red_toadstool",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/red_mushroom",
+    "id": "red_mushroom",
+    "id_status": "provisional",
+    "name": "Red Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Mushroom_(Monster)"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_powder",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "wild_mushroom",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/green_mushroom",
+    "id": "green_mushroom",
+    "id_status": "provisional",
+    "name": "Green Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Mushroom_(Monster)"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "glowing_mushroom",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_powder",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_mushroom",
+    "id": "blue_mushroom",
+    "id_status": "provisional",
+    "name": "Blue Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Mushroom_(Monster)"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp",
+      "perk_gated_drops"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_powder",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "purple_mushroom",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_mushroom",
+    "id": "purple_mushroom",
+    "id_status": "provisional",
+    "name": "Purple Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Mushroom_(Monster)"
+  },
+  {
+    "biome_ids": [
+      "upper_mines"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "glass",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_core",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/yellow_enchantern",
+    "id": "yellow_enchantern",
+    "id_status": "provisional",
+    "name": "Yellow Enchantern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Enchantern"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "glass",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_core",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_enchantern",
+    "id": "blue_enchantern",
+    "id_status": "provisional",
+    "name": "Blue Enchantern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Enchantern"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_horn",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_copper",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_stalagmite",
+    "id": "blue_stalagmite",
+    "id_status": "provisional",
+    "name": "Blue Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Stalagmite"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_horn",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_iron",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/green_stalagmite",
+    "id": "green_stalagmite",
+    "id_status": "provisional",
+    "name": "Green Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Stalagmite"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_horn",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_gold",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_stalagmite",
+    "id": "purple_stalagmite",
+    "id_status": "provisional",
+    "name": "Purple Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Stalagmite"
+  },
+  {
+    "biome_ids": [
+      "tide_caverns"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "essence_drop",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_wing",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_essence_bat",
+    "id": "purple_essence_bat",
+    "id_status": "provisional",
+    "name": "Purple Essence Bat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Essence_Bat"
+  },
+  {
+    "biome_ids": [
+      "deep_earth"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "essence_drop",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_wing",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/blue_essence_bat",
+    "id": "blue_essence_bat",
+    "id_status": "provisional",
+    "name": "Blue Essence Bat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Essence_Bat"
+  },
+  {
+    "biome_ids": [
+      "upper_mines",
+      "tide_caverns",
+      "deep_earth",
+      "lava_caves",
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "drops",
+      "hp"
+    ],
+    "drops": [],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/mimic",
+    "id": "mimic",
+    "id_status": "provisional",
+    "name": "Mimic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Mimic"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "basic_wood",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_core",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "peat",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/flame_spirit",
+    "id": "flame_spirit",
+    "id_status": "provisional",
+    "name": "Flame Spirit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Flame_Spirit"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "basic_wood",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_core",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "peat",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/purple_flame_spirit",
+    "id": "purple_flame_spirit",
+    "id_status": "provisional",
+    "name": "Purple Flame Spirit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Flame_Spirit"
+  },
+  {
+    "biome_ids": [
+      "lava_caves"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.7,
+        "item_id": "glass",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_whisker",
+        "quantity": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "obsidian",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/lava_cat",
+    "id": "lava_cat",
+    "id_status": "provisional",
+    "name": "Lava Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Lava_Cat"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_whisker",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/void_cat",
+    "id": "void_cat",
+    "id_status": "provisional",
+    "name": "Void Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Void_Cat"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/flying_tome",
+    "id": "flying_tome",
+    "id_status": "provisional",
+    "name": "Flying Tome",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Flying_Tome"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_block",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "ore_stone",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/rock_stack",
+    "id": "rock_stack",
+    "id_status": "provisional",
+    "name": "Rock Stack",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Rock_Stack"
+  },
+  {
+    "biome_ids": [
+      "ancient_ruins"
+    ],
+    "blurb": null,
+    "combat_xp": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "combat_xp",
+      "cosmetic_drops",
+      "hp"
+    ],
+    "drops": [
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": null
+      },
+      {
+        "chance": 0.7,
+        "item_id": "sap",
+        "quantity": null
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "hp": null,
+    "icon_key": "monster/living_gryphon_statue",
+    "id": "living_gryphon_statue",
+    "id_status": "provisional",
+    "name": "Living Gryphon Statue",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Living_Gryphon_Statue"
+  }
+]

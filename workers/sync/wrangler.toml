@@ -1,0 +1,18 @@
+name = "mistria-sync"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# Free tier: 1,000 KV writes a day. That number is why the client generates its
+# own code (no write to hand one out), why sync is debounced and suppressed when
+# the merge changes nothing, and why the merge itself happens on the client —
+# the Worker only ever reads and writes one blob.
+[[kv_namespaces]]
+binding = "PROGRESS"
+id = "replace-me-after-wrangler-kv-namespace-create"
+
+# Costs no KV operations, unlike counting requests in KV itself.
+[[unsafe.bindings]]
+name = "RATE_LIMIT"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 30, period = 60 }

@@ -1,0 +1,449 @@
+[
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/coop",
+    "id": "coop",
+    "id_status": "provisional",
+    "kind": "coop",
+    "name": "Coop",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": true,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [
+      {
+        "capacity": 4,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 75
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 50
+            }
+          ],
+          "tesserae": 1500
+        },
+        "level": 1,
+        "requires": []
+      },
+      {
+        "capacity": 8,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 100
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 75
+            }
+          ],
+          "tesserae": 3000
+        },
+        "level": 2,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "capacity": 12,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 125
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 100
+            }
+          ],
+          "tesserae": 6000
+        },
+        "level": 3,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ]
+      }
+    ],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Coop"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/barn",
+    "id": "barn",
+    "id_status": "provisional",
+    "kind": "barn",
+    "name": "Barn",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": true,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [
+      {
+        "capacity": 4,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 100
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 75
+            }
+          ],
+          "tesserae": 2000
+        },
+        "level": 1,
+        "requires": []
+      },
+      {
+        "capacity": 8,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 125
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 100
+            }
+          ],
+          "tesserae": 4000
+        },
+        "level": 2,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "capacity": 12,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 150
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 125
+            }
+          ],
+          "tesserae": 8000
+        },
+        "level": 3,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ]
+      }
+    ],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Barn"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/greenhouse",
+    "id": "greenhouse",
+    "id_status": "provisional",
+    "kind": "greenhouse",
+    "name": "Greenhouse",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": true,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 50000
+        },
+        "level": 1,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ]
+      },
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 100000
+        },
+        "level": 2,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ]
+      }
+    ],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Greenhouse"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/home_upgrade",
+    "id": "farmhouse",
+    "id_status": "provisional",
+    "kind": "home_upgrade",
+    "name": "Farmhouse",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": false,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 500
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 500
+            }
+          ],
+          "tesserae": 5000
+        },
+        "level": 1,
+        "requires": []
+      },
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 500
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 500
+            },
+            {
+              "item_id": "iron_ingot",
+              "quantity": 20
+            }
+          ],
+          "tesserae": 15000
+        },
+        "level": 2,
+        "requires": []
+      },
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "basic_wood",
+              "quantity": 500
+            },
+            {
+              "item_id": "ore_stone",
+              "quantity": 500
+            },
+            {
+              "item_id": "silver_ingot",
+              "quantity": 20
+            }
+          ],
+          "tesserae": 25000
+        },
+        "level": 3,
+        "requires": []
+      },
+      {
+        "capacity": null,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "hard_wood",
+              "quantity": 200
+            },
+            {
+              "item_id": "refined_stone",
+              "quantity": 100
+            },
+            {
+              "item_id": "gold_ingot",
+              "quantity": 30
+            }
+          ],
+          "tesserae": 50000
+        },
+        "level": 4,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ]
+      }
+    ],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Farmhouse"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "tiers"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/kitchen",
+    "id": "kitchen",
+    "id_status": "provisional",
+    "kind": "kitchen",
+    "name": "Kitchen",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": true,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Cooking"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "tiers"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/crafting_station",
+    "id": "crafting_station",
+    "id_status": "provisional",
+    "kind": "crafting_station",
+    "name": "Crafting Station",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": true,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Crafting"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "tiers"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/mill",
+    "id": "mill",
+    "id_status": "provisional",
+    "kind": "mill",
+    "name": "Mill",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": false,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [],
+    "vendor_shop_id": null,
+    "version_added": null,
+    "wiki_page": "The Mill"
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "tiers"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "icon_key": "building/farm_expansion",
+    "id": "farm_expansion",
+    "id_status": "provisional",
+    "kind": "farm_expansion",
+    "name": "Farm Expansion",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "placeable_on_farm": false,
+    "prov": {
+      "*": "manual"
+    },
+    "tiers": [],
+    "vendor_shop_id": "carpenter",
+    "version_added": null,
+    "wiki_page": "Farm"
+  }
+]

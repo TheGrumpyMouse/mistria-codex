@@ -1,0 +1,38 @@
+{
+  "_comment": [
+    "Map markers whose wiki article is spelled differently from ours.",
+    "",
+    "The join is marker.article -> location.wiki_page, and 27 of 46 match on",
+    "their own. These three do not, and each is a real difference rather than a",
+    "typo, so they are written down with the reason instead of being absorbed by",
+    "a fuzzy matcher.",
+    "",
+    "ANCHORS ONLY. An entry here says 'this marker is that location's position'.",
+    "It does not create a location, and a marker with no entry and no matching",
+    "page is left alone rather than attached to whatever is nearest — geometric",
+    "containment would be an inference, and this file is for facts.",
+    "",
+    "WHAT IS DELIBERATELY ABSENT. The five mine biomes have no anchor and never",
+    "will: a biome is a range of floors, not a place on the overworld, so its",
+    "position is *not applicable* rather than unknown. The Bell Tower and Balor's",
+    "Wagon have no marker at all — the wagon is a travelling merchant and may",
+    "genuinely have no fixed spot. Those three stay as honest gaps."
+  ],
+  "anchors": [
+    {
+      "marker": "The Player's Farm",
+      "location_id": "the_farm",
+      "reason": "The marker links to the article 'Farm'; our page is 'The_Farm'. Same place, two spellings."
+    },
+    {
+      "marker": "The Mines",
+      "location_id": "the_mines",
+      "reason": "The marker links to 'Mines'; our page is 'The_Mines'."
+    },
+    {
+      "marker": "The Manor's Gazebo",
+      "location_id": "the_manors_gardens",
+      "reason": "The gardens have no marker of their own. The gazebo stands in them and is the only published point inside them, so it serves as the anchor — the pin is a few metres off centre, which is well inside the accuracy this map claims anyway."
+    }
+  ]
+}

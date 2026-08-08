@@ -1,0 +1,1221 @@
+{
+  "dropsByKey": {
+    "Blue Clod": [
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Rockclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Rockclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Blue Enchantern": [
+      {
+        "chance": 0.7,
+        "item": "Glass",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Core",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Mini Lantern Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Blue Essence Bat": [
+      {
+        "chance": 0.7,
+        "item": "Essence Drop",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Wing",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Essence Bat Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Blue Mushroom": [
+      {
+        "chance": 0.7,
+        "item": "Glowing Mushroom",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Powder",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Mushroom",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Mushroom Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Blue Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Blue Stalagmite": [
+      {
+        "chance": 0.7,
+        "item": "Copper Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Horn",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Stalagmite Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Cool Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Sunglasses",
+        "kind": "accessory",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Copper Clod": [
+      {
+        "chance": 0.7,
+        "item": "Copper Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Ruby",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Oreclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Flame Spirit": [
+      {
+        "chance": 0.7,
+        "item": "Wood",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Peat",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Core",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Flame Spirit Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Flying Tome": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Flying Tome Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Gold Clod": [
+      {
+        "chance": 0.7,
+        "item": "Gold Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Diamond",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Oreclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Green Clod": [
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Rockclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Rockclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Green Mushroom": [
+      {
+        "chance": 0.7,
+        "item": "Cave Mushroom",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Powder",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Mushroom",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Mushroom Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Green Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Green Stalagmite": [
+      {
+        "chance": 0.7,
+        "item": "Iron Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Horn",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Stalagmite Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Gryphon Statue": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Living Gryphon Statue Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Iron Clod": [
+      {
+        "chance": 0.7,
+        "item": "Iron Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapphire",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Oreclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Lava Cat": [
+      {
+        "chance": 0.7,
+        "item": "Glass",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Obsidian",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Whisker",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Lava Cat Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Mimic": [
+      {
+        "chance": 0.05,
+        "item": "Mimic Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Mistrilclod": [
+      {
+        "chance": 0.7,
+        "item": "Mistril Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pink Diamond",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.01,
+        "item": "Perfect Pink Diamond",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      }
+    ],
+    "Orange Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Pink Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Skull Mask",
+        "kind": "accessory",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Purple Clod": [
+      {
+        "chance": 0.7,
+        "item": "Mistril Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pink Diamond",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.01,
+        "item": "Perfect Pink Diamond",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      }
+    ],
+    "Purple Essence Bat": [
+      {
+        "chance": 0.7,
+        "item": "Essence Drop",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Wing",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Essence Bat Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Purple Flame Spirit": [
+      {
+        "chance": 0.7,
+        "item": "Wood",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Peat",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Core",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Flame Spirit Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Purple Mushroom": [
+      {
+        "chance": 0.7,
+        "item": "Purple Mushroom",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Powder",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Mushroom",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Mushroom Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Purple Sapling": [
+      {
+        "chance": 0.7,
+        "item": "Sap",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Fang",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Sapling",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Sapling Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Purple Stalagmite": [
+      {
+        "chance": 0.7,
+        "item": "Gold Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Horn",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Stalagmite Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Red Clod": [
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Rockclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Rockclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Red Mushroom": [
+      {
+        "chance": 0.7,
+        "item": "Red Toadstool",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Powder",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Mushroom",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Mushroom Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Rock Clod": [
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Rockclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Rockclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Rock Stack": [
+      {
+        "chance": 0.7,
+        "item": "Stone",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Block",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Rock Stack Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Silver Clod": [
+      {
+        "chance": 0.7,
+        "item": "Silver Ore",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Shell",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Emerald",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Oreclod",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
+        "item": "Oreclod Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Void Cat": [
+      {
+        "chance": 0.3,
+        "item": "Monster Whisker",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Void Cat Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ],
+    "Yellow Enchantern": [
+      {
+        "chance": 0.7,
+        "item": "Glass",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.3,
+        "item": "Monster Core",
+        "kind": "item",
+        "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Mini Lantern Hat",
+        "kind": "accessory",
+        "requiresPerk": null
+      }
+    ]
+  },
+  "incompleteKeys": [
+    "Mimic"
+  ],
+  "lastEdited": "2026-08-06T23:15:59Z",
+  "monsters": [
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Green Sapling",
+      "family": "Sapling",
+      "icon": "Sapling main.png",
+      "name": "Sapling",
+      "variant": "Sapling"
+    },
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Cool Sapling",
+      "family": "Sapling",
+      "icon": "Sapling cool.png",
+      "name": "Cool Sapling",
+      "variant": "Cool Sapling"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Blue Sapling",
+      "family": "Sapling",
+      "icon": "Sapling blue.png",
+      "name": "Blue Sapling",
+      "variant": "Blue Sapling"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Purple Sapling",
+      "family": "Sapling",
+      "icon": "Sapling purple.png",
+      "name": "Purple Sapling",
+      "variant": "Purple Sapling"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Orange Sapling",
+      "family": "Sapling",
+      "icon": "Sapling orange.png",
+      "name": "Orange Sapling",
+      "variant": "Orange Sapling"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Pink Sapling",
+      "family": "Sapling",
+      "icon": "Sapling pink skull.png",
+      "name": "Pink Sapling",
+      "variant": "Pink"
+    },
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Rock Clod",
+      "family": "Clod",
+      "icon": "Rockclod main.png",
+      "name": "Rock Clod",
+      "variant": "Rock"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Blue Clod",
+      "family": "Clod",
+      "icon": "Rockclod blue.png",
+      "name": "Blue Clod",
+      "variant": "Blue"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Green Clod",
+      "family": "Clod",
+      "icon": "Rockclod green.png",
+      "name": "Green Clod",
+      "variant": "Green"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Red Clod",
+      "family": "Clod",
+      "icon": "Rockclod red.png",
+      "name": "Red Clod",
+      "variant": "Red"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Purple Clod",
+      "family": "Clod",
+      "icon": "Rockclod purple.png",
+      "name": "Purple Clod",
+      "variant": "Purple"
+    },
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Copper Clod",
+      "family": "Clod",
+      "icon": "Copperclod.png",
+      "name": "Copper Clod",
+      "variant": "Copper"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Iron Clod",
+      "family": "Clod",
+      "icon": "Ironclod.png",
+      "name": "Iron Clod",
+      "variant": "Iron"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Silver Clod",
+      "family": "Clod",
+      "icon": "Silverclod.png",
+      "name": "Silver Clod",
+      "variant": "Silver"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Gold Clod",
+      "family": "Clod",
+      "icon": "Goldclod.png",
+      "name": "Gold Clod",
+      "variant": "Gold"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Mistrilclod",
+      "family": "Clod",
+      "icon": "Mistrilclod.png",
+      "name": "Mistril Clod",
+      "variant": "Mistril"
+    },
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Red Mushroom",
+      "family": "Mushroom (Monster)",
+      "icon": "Mushroom red.png",
+      "name": "Red Mushroom",
+      "variant": "Red"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Green Mushroom",
+      "family": "Mushroom (Monster)",
+      "icon": "Mushroom green.png",
+      "name": "Green Mushroom",
+      "variant": "Green"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Blue Mushroom",
+      "family": "Mushroom (Monster)",
+      "icon": "Mushroom blue.png",
+      "name": "Blue Mushroom",
+      "variant": "Blue"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Purple Mushroom",
+      "family": "Mushroom (Monster)",
+      "icon": "Mushroom purple.png",
+      "name": "Purple Mushroom",
+      "variant": "Purple"
+    },
+    {
+      "biomeOrders": [
+        1
+      ],
+      "dropsKey": "Yellow Enchantern",
+      "family": "Enchantern",
+      "icon": "Enchantern yellow.png",
+      "name": "Yellow Enchantern",
+      "variant": "Yellow"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Blue Enchantern",
+      "family": "Enchantern",
+      "icon": "Enchantern blue.png",
+      "name": "Blue Enchantern",
+      "variant": "Blue"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Blue Stalagmite",
+      "family": "Stalagmite",
+      "icon": "Stalagmite blue.png",
+      "name": "Blue Stalagmite",
+      "variant": "Blue"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Green Stalagmite",
+      "family": "Stalagmite",
+      "icon": "Stalagmite green.png",
+      "name": "Green Stalagmite",
+      "variant": "Green"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Purple Stalagmite",
+      "family": "Stalagmite",
+      "icon": "Stalagmite purple.png",
+      "name": "Purple Stalagmite",
+      "variant": "Purple"
+    },
+    {
+      "biomeOrders": [
+        2
+      ],
+      "dropsKey": "Purple Essence Bat",
+      "family": "Essence Bat",
+      "icon": "Essence bat main.png",
+      "name": "Purple Essence Bat",
+      "variant": "Purple"
+    },
+    {
+      "biomeOrders": [
+        3
+      ],
+      "dropsKey": "Blue Essence Bat",
+      "family": "Essence Bat",
+      "icon": "Essence bat blue.png",
+      "name": "Blue Essence Bat",
+      "variant": "Blue"
+    },
+    {
+      "biomeOrders": [],
+      "dropsKey": "Mimic",
+      "family": "Mimic",
+      "icon": "Mimic main.png",
+      "name": "Mimic",
+      "variant": "Mimic"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Flame Spirit",
+      "family": "Flame Spirit",
+      "icon": "Flame spirit main.png",
+      "name": "Flame Spirit",
+      "variant": "Flame Spirit"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Purple Flame Spirit",
+      "family": "Flame Spirit",
+      "icon": "Flame spirit purple.png",
+      "name": "Purple Flame Spirit",
+      "variant": "Purple Flame Spirit"
+    },
+    {
+      "biomeOrders": [
+        4
+      ],
+      "dropsKey": "Lava Cat",
+      "family": "Lava Cat",
+      "icon": "Lava cat main.png",
+      "name": "Lava Cat",
+      "variant": "Lava Cat"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Void Cat",
+      "family": "Void Cat",
+      "icon": "Void cat main.png",
+      "name": "Void Cat",
+      "variant": "Void Cat"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Flying Tome",
+      "family": "Flying Tome",
+      "icon": "Flying tome main.png",
+      "name": "Flying Tome",
+      "variant": "Flying Tome"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Rock Stack",
+      "family": "Rock Stack",
+      "icon": "Rock stack main.png",
+      "name": "Rock Stack",
+      "variant": "Rock Stack"
+    },
+    {
+      "biomeOrders": [
+        5
+      ],
+      "dropsKey": "Gryphon Statue",
+      "family": "Living Gryphon Statue",
+      "icon": "Living griffin statue main.png",
+      "name": "Living Gryphon Statue",
+      "variant": "Living Gryphon Statue"
+    }
+  ],
+  "wikiVersionStamp": "1"
+}

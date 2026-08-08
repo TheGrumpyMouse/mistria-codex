@@ -1,0 +1,4796 @@
+[
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:apple.png|30px|link=Apple]] [[Apple]] (1)&lt;br&gt;[[File:honey.png|30px|link=Honey]] [[Honey]] (1)&lt;br&gt;[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]] (1)&lt;br&gt;[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]] (1)&lt;br&gt;[[File:onion.png|30px|link=Onion]] [[Onion]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Apple Honey Curry",
+    "recipeSource": [
+      "[[File:Calendar_icon_harvest_festival.png|20px|link=Harvest Festival#Souvenir Stall]] [[Harvest Festival#Souvenir Stall|Harvest Festival]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:apple.png|30px|link=Apple]] [[Apple]] (1)"
+    ],
+    "itemName": "Apple Juice",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] an [[File:apple.png|20px|link=Apple]] [[Apple]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:apple.png|30px|link=Apple]] [[Apple]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Apple Pie",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 18,
+    "stars": 2,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)"
+    ],
+    "itemName": "Baked Potato",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:potato.png|20px|link=Potato]] [[Potato]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sweetroot.png|30px|link=Sweetroot]] [[Sweetroot]] (1)"
+    ],
+    "itemName": "Baked Sweetroot",
+    "recipeSource": [
+      "[[File:Fp_wiki_museum.png|20px|link=Museum#Rewards]] [[Museum#Rewards|Donate]] a [[File:sweetroot.png|20px|link=Sweetroot]] [[Sweetroot]] to [[Museum|The Museum]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:beet.png|30px|link=Beet]] [[Beet]] (1)"
+    ],
+    "itemName": "Beet Salad",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:beet.png|20px|link=Beet]] [[Beet]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:beet.png|30px|link=Beet]] [[Beet]] (1)&lt;br&gt;[[File:carrot.png|30px|link=Carrot]] [[Carrot]] (1)&lt;br&gt;[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:onion.png|30px|link=Onion]] [[Onion]] (1)&lt;br&gt;[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Beet Soup",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bell berry.png|30px|link=Bell Berry]] [[Bell Berry]] (3)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Bell Berry Bakewell Tart",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:bell berry.png|20px|link=Bell berry]] [[Bell berry]]"
+    ],
+    "skillLevel": 26,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (6)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Berries and Cream",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Eiland/Quests#Requests]] Eiland&#039;s [[Eiland/Quests#Requests|Request for Berries]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]] (2)&lt;br&gt;[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (4)&lt;br&gt;[[File:blueberry.png|30px|link=Blueberry]] [[Blueberry]] (4)&lt;br&gt;[[File:honey.png|30px|link=Honey]] [[Honey]] (2)"
+    ],
+    "itemName": "Berry Bowl",
+    "recipeSource": [
+      "[[File:Fp_wiki_wishing_well.png|20px|link=Wishing Well]] [[Wishing Well]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]500t&lt;/span&gt; Wish"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:blackberry.png|30px|link=Blackberry]] [[Blackberry]] (6)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Blackberry Jam",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Elsie/Quests#Requests]] Elsie&#039;s [[Elsie/Quests#Requests|Request for Blackberries]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:blueberry.png|30px|link=Blueberry]] [[Blueberry]] (6)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Blueberry Jam",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Reina/Quests#Requests]] Reina&#039;s [[Reina/Quests#Requests|Request for Blueberries]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:burdock root.png|30px|link=Burdock Root]] [[Burdock Root]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Braised Burdock",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:burdock root.png|20px|link=Burdock Root]] [[Burdock Root]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:carrot.png|30px|link=Carrot]] [[Carrot]] (1)"
+    ],
+    "itemName": "Braised Carrots",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:carrot.png|20px|link=Carrot]] [[Carrot]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Bread",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 6,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:catfish.png|30px|link=Catfish]] [[Catfish]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Breaded Catfish",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Hemlock/Quests#Requests]] Hemlock&#039;s [[Hemlock/Quests#Requests|Request for a Catfish]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]] (1)&lt;br&gt;[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)"
+    ],
+    "itemName": "Broccoli Salad",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Reina/Quests#Requests]] Reina&#039;s [[Reina/Quests#Requests|Request for Broccoli]]"
+    ],
+    "skillLevel": 18,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:milk.png|30px|link=Milk]] [[Milk]] (2)"
+    ],
+    "itemName": "Butter",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:peas.png|30px|link=Peas]] [[Peas]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Buttered Peas",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:peas.png|20px|link=Peas]] [[Peas]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]] (1)&lt;br&gt;[[File:fennel.png|30px|link=Fennel]] [[Fennel]] (1)"
+    ],
+    "itemName": "Cabbage Slaw",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:cabbage.png|20px|link=Cabbage]] [[Cabbage]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Candied Lemon Peel",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:lemon.png|20px|link=Lemon]] [[Lemon]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Candied Strawberries",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:strawberry.png|20px|link=Strawberry]] [[Strawberry]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:walnut.png|30px|link=Walnut]] [[Walnut]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Candied Walnuts",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:walnut.png|20px|link=Walnut]] [[Walnut]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sardine.png|30px|link=Sardine]] [[Sardine]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)"
+    ],
+    "itemName": "Canned Sardines",
+    "recipeSource": [
+      "[[File:Wooden chest.png|20px|link=Wooden Treasure Box]] [[Wooden Treasure Box]]&lt;br&gt;[[File:Tackleshop icon.png|20px|link=Tackle_Shop#]] [[Tackle_Shop#|Tackle Shop]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Caramel Candy",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:moon fruit.png|30px|link=Moon Fruit]] [[Moon Fruit]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Caramelized Moon Fruit",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Eiland/Quests#Requests]] Eiland&#039;s [[Eiland/Quests#Requests|Request for a Moon Fruit]]"
+    ],
+    "skillLevel": 6,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]] (1)"
+    ],
+    "itemName": "Cat Treat",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Cauliflower Curry",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 24,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:milk.png|30px|link=Milk]] [[Milk]] (2)"
+    ],
+    "itemName": "Cheese",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cherry.png|30px|link=Cherry]] [[Cherry]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Cherry Cobbler",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cherry.png|30px|link=Cherry]] [[Cherry]] (1)&lt;br&gt;[[File:honey.png|30px|link=Honey]] [[Honey]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Cherry Smoothie",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cherry.png|30px|link=Cherry]] [[Cherry]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Cherry Tart",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 18,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chickpea.png|30px|link=Chickpea]] [[Chickpea]] (1)&lt;br&gt;[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Chickpea Curry",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:coconut milk.png|30px|link=Coconut Milk]] [[Coconut Milk]] (1)&lt;br&gt;[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]] (1)&lt;br&gt;[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Chili Coconut Curry",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Lava Caves]]  [[Mines/Lava Caves|The Lava Caves]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])&lt;br&gt;[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 36,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)"
+    ],
+    "itemName": "Chocolate Cake",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:clam.png|30px|link=Clam]] [[Clam]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Clam Chowder",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Errol/Quests#Requests]] Errol&#039;s [[Errol/Quests#Requests|Request for a Clam]]"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (6)"
+    ],
+    "itemName": "Clay",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:coconut.png|30px|link=Coconut]] [[Coconut]] (1)&lt;br&gt;[[File:coconut milk.png|30px|link=Coconut Milk]] [[Coconut Milk]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Coconut Cream Pie",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 38,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:coconut.png|30px|link=Coconut]] [[Coconut]] (1)"
+    ],
+    "itemName": "Coconut Milk",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:coconut.png|20px|link=Coconut]] [[Coconut]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cod.png|30px|link=Cod]] [[Cod]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:thyme.png|30px|link=Thyme]] [[Thyme]] (1)"
+    ],
+    "itemName": "Cod with Thyme",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Reina/Quests#Requests]] Reina&#039;s [[Reina/Quests#Requests|Request for Cod]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 40,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Armor",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Axe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Fishing Rod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Greaves",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Helmet",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Hoe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ore.png|30px|link=Copper Ore]] [[Copper Ore]] (10)"
+    ],
+    "itemName": "Copper Ingot",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 1,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Legplates",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Net",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Pickaxe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Shovel",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Sword",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 100,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:copper ingot.png|30px|link=Copper Ingot]] [[Copper Ingot]] (4)"
+    ],
+    "itemName": "Copper Watering Can",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (8)"
+    ],
+    "itemName": "Coral",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:crab.png|30px|link=Crab]] [[Crab]] (2)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:dill.png|30px|link=Dill]] [[Dill]] (1)"
+    ],
+    "itemName": "Crab Cakes",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 30,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]] (1)"
+    ],
+    "itemName": "Cranberry Juice",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:cranberry.png|20px|link=Cranberry]] [[Cranberry]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:orange.png|30px|link=Orange]] [[Orange]] (1)&lt;br&gt;[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Cranberry Orange Scone",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Ryis/Quests#Requests]] Ryis&#039; [[Ryis/Quests#Requests|Request for Cranberries]]"
+    ],
+    "skillLevel": 36,
+    "stars": 4,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:crayfish.png|30px|link=Crayfish]] [[Crayfish]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Crayfish Etouffee",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;&lt;br&gt;[[File:Wooden chest.png|20px|link=Wooden Treasure Box]] [[Wooden Treasure Box]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Crispy Fried Earthshroom",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chickpea.png|30px|link=Chickpea]] [[Chickpea]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)"
+    ],
+    "itemName": "Crunchy Chickpeas",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Upper Mines]]  [[Mines/Upper Mines|The Upper Mines]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (8)"
+    ],
+    "itemName": "Crystal",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:crystal berries.png|30px|link=Crystal Berries]] [[Crystal Berries]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Crystal Berry Pie",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:crystal berries.png|20px|link=Crystal Berries]] [[Crystal Berries|Crystal Berry]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:dill.png|30px|link=Dill]] [[Dill]] (1)&lt;br&gt;[[File:sesame.png|30px|link=Sesame]] [[Sesame]] (1)"
+    ],
+    "itemName": "Cucumber Salad",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:cucumber.png|20px|link=Cucumber]] [[Cucumber]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:bread.png|30px|link=Bread]] [[Bread]] (1)"
+    ],
+    "itemName": "Cucumber Sandwich",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Ancient Ruins]]  [[Mines/Ancient Ruins|The Ancient Ruins]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 22,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:jade dulse.png|30px|link=Jade Dulse]] [[Jade Dulse]] (1)&lt;br&gt;[[File:mines mussels.png|30px|link=Mines Mussels]] [[Mines Mussels]] (1)&lt;br&gt;[[File:underseaweed.png|30px|link=Underseaweed]] [[Underseaweed]] (1)"
+    ],
+    "itemName": "Deep Sea Soup",
+    "recipeSource": [
+      "[[File:Fp_wiki_museum.png|20px|link=Museum#Rewards]] [[Museum#Rewards|Donate]] [[File:jade dulse.png|20px|link=Jade Dulse]] [[Jade Dulse]] to [[Museum|The Museum]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:shrimp.png|30px|link=Shrimp]] [[Shrimp]] (1)&lt;br&gt;[[File:curry powder.png|30px|link=Curry Powder]] [[Curry Powder]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Deluxe Curry",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 24,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:hay.png|30px|link=Hay]] [[Hay]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)&lt;br&gt;[[File:acorn.png|30px|link=Acorn]] [[Acorn]] (1)"
+    ],
+    "itemName": "Deluxe Large Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)&lt;br&gt;[[File:acorn.png|30px|link=Acorn]] [[Acorn]] (1)"
+    ],
+    "itemName": "Deluxe Small Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 30,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)&lt;br&gt;[[File:horseradish.png|30px|link=Horseradish]] [[Horseradish]] (1)"
+    ],
+    "itemName": "Deviled Eggs",
+    "recipeSource": [
+      "[[File:Chicken_statue.png|15px|link=Chicken Statue]] [[Chicken Statue]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:shiny bead.png|20px|link=Shiny Bead]]  10&lt;/span&gt; Offering"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (35)"
+    ],
+    "itemName": "Diamond",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:trout.png|30px|link=Trout]] [[Trout]] (1)"
+    ],
+    "itemName": "Dog Treat",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:monster core.png|30px|link=Monster Core]] [[Monster Core]] (5)&lt;br&gt;[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (1)&lt;br&gt;[[File:pink diamond.png|30px|link=Pink Diamond]] [[Pink Diamond]] (1)&lt;br&gt;[[File:ancient firefly.png|30px|link=Ancient Firefly]] [[Ancient Firefly]] (1)&lt;br&gt;[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]] (1)"
+    ],
+    "itemName": "Dragon-Forged Core",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:monster fang.png|30px|link=Monster Fang]] [[Monster Fang]] (5)&lt;br&gt;[[File:void stone.png|30px|link=Void Stone]] [[Void Stone]] (5)&lt;br&gt;[[File:void herb.png|30px|link=Void Herb]] [[Void Herb]] (5)&lt;br&gt;[[File:written root.png|30px|link=Written Root]] [[Written Root]] (1)&lt;br&gt;[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]] (1)"
+    ],
+    "itemName": "Dragon-Forged Fang",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:monster horn.png|30px|link=Monster Horn]] [[Monster Horn]] (5)&lt;br&gt;[[File:void powder.png|30px|link=Void Powder]] [[Void Powder]] (5)&lt;br&gt;[[File:void pearl.png|30px|link=Void Pearl]] [[Void Pearl]] (5)&lt;br&gt;[[File:void snail.png|30px|link=Void Snail]] [[Void Snail]] (1)&lt;br&gt;[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]] (1)"
+    ],
+    "itemName": "Dragon-Forged Horn",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]] (5)&lt;br&gt;[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (1)&lt;br&gt;[[File:pink diamond.png|30px|link=Pink Diamond]] [[Pink Diamond]] (1)&lt;br&gt;[[File:luminescent crab.png|30px|link=Luminescent Crab]] [[Luminescent Crab]] (1)&lt;br&gt;[[File:Essence stone medium.png|30px|link=Medium Essence Stone]] [[Medium Essence Stone]] (1)"
+    ],
+    "itemName": "Dragon-Forged Powder",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:void herb.png|30px|link=Void Herb]] [[Void Herb]] (5)&lt;br&gt;[[File:void pearl.png|30px|link=Void Pearl]] [[Void Pearl]] (5)&lt;br&gt;[[File:void powder.png|30px|link=Void Powder]] [[Void Powder]] (5)&lt;br&gt;[[File:void stone.png|30px|link=Void Stone]] [[Void Stone]] (5)&lt;br&gt;[[File:voidite.png|30px|link=Voidite]] [[Voidite]] (50)"
+    ],
+    "itemName": "Dragon-Forged Sword",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:squid.png|30px|link=Squid]] [[Squid]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)"
+    ],
+    "itemName": "Dried Squid",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:duck egg.png|30px|link=Duck Egg]] [[Duck Egg]] (2)"
+    ],
+    "itemName": "Duck Mayonnaise",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (30)"
+    ],
+    "itemName": "Emerald",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]] (1)&lt;br&gt;[[File:pike.png|30px|link=Pike]] [[Pike]] (1)"
+    ],
+    "itemName": "Fish Skewers",
+    "recipeSource": [
+      "[[File:Wooden chest.png|20px|link=Wooden Treasure Box]] [[Wooden Treasure Box]]&lt;br&gt;[[File:Tackleshop icon.png|20px|link=Tackle_Shop#]] [[Tackle_Shop#|Tackle Shop]]"
+    ],
+    "skillLevel": 6,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]] (1)&lt;br&gt;[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Fish Stew",
+    "recipeSource": [
+      "[[File:copper chest.png|20px|link=Copper Treasure Box]] [[Copper Treasure Box]]"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:corn.png|30px|link=Corn]] [[Corn]] (1)&lt;br&gt;[[File:cod.png|30px|link=Cod]] [[Cod]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)&lt;br&gt;[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]] (1)"
+    ],
+    "itemName": "Fish Tacos",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 34,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:wheat.png|30px|link=Wheat]] [[Wheat]] (1)"
+    ],
+    "itemName": "Flour",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:carrot.png|30px|link=Carrot]] [[Carrot]] (1)&lt;br&gt;[[File:peas.png|30px|link=Peas]] [[Peas]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Fried Rice",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Lava Caves]]  [[Mines/Lava Caves|The Lava Caves]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])&lt;br&gt;[[File:Fp_wiki_wishing_well.png|20px|link=Wishing Well]] [[Wishing Well]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]500t&lt;/span&gt; Wish"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:garlic.png|30px|link=Garlic]] [[Garlic]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Garlic Bread",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Reina/Quests#Requests]] Reina&#039;s [[Reina/Quests#Requests|Request for Garlic]]"
+    ],
+    "skillLevel": 16,
+    "stars": 1,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:watermelon.png|30px|link=Watermelon]] [[Watermelon]] (1)&lt;br&gt;[[File:basil.png|30px|link=Basil]] [[Basil]] (1)"
+    ],
+    "itemName": "Gazpacho",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 26,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (80)&lt;br&gt;[[File:essence.png|30px|link=Essence]] [[Essence]] (200)"
+    ],
+    "itemName": "Giant Essence Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (8)"
+    ],
+    "itemName": "Glass",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:glowberry.png|30px|link=Glowberry]] [[Glowberry]] (6)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Glowberry Cookies",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:glowberry.png|20px|link=Glowberry]] [[Glowberry]]"
+    ],
+    "skillLevel": 30,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Armor",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 24,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Axe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Fishing Rod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Greaves",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 24,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Helmet",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 24,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Hoe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ore.png|30px|link=Gold Ore]] [[Gold Ore]] (10)"
+    ],
+    "itemName": "Gold Ingot",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 6,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Legplates",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 24,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Net",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Pickaxe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 24,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Shovel",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Sword",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 20,
+    "stars": null,
+    "time": 100,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)"
+    ],
+    "itemName": "Gold Watering Can",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 22,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]] (2)"
+    ],
+    "itemName": "Golden Butter",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]] (2)"
+    ],
+    "itemName": "Golden Cheese",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:golden cheese.png|30px|link=Golden Cheese]] [[Golden Cheese]] (2)&lt;br&gt;[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]] (2)&lt;br&gt;[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]] (2)&lt;br&gt;[[File:golden butter.png|30px|link=Golden Butter]] [[Golden Butter]] (2)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (2)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (2)"
+    ],
+    "itemName": "Golden Cheesecake",
+    "recipeSource": [
+      "[[File:Calendar_icon_animal_festival.png|24px|link=Animal Festival#Souvenir_Stall]] [[Animal Festival#Souvenir_Stall|Animal Festival from The Souvenir Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]] (2)&lt;br&gt;[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]] (2)&lt;br&gt;[[File:golden butter.png|30px|link=Golden Butter]] [[Golden Butter]] (2)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (2)&lt;br&gt;[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]] (2)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (2)"
+    ],
+    "itemName": "Golden Cookies",
+    "recipeSource": [
+      "[[File:Calendar_icon_animal_festival.png|24px|link=Animal Festival#Souvenir_Stall]] [[Animal Festival#Souvenir_Stall|Animal Festival from The Souvenir Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:golden duck egg.png|30px|link=Golden Duck Egg]] [[Golden Duck Egg]] (2)"
+    ],
+    "itemName": "Golden Duck Mayonnaise",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:golden egg.png|30px|link=Golden Egg]] [[Golden Egg]] (2)"
+    ],
+    "itemName": "Golden Mayonnaise",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wild grapes.png|30px|link=Wild Grapes]] [[Wild Grapes]] (1)"
+    ],
+    "itemName": "Grape Juice",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (6)"
+    ],
+    "itemName": "Grass Seed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]] (2)&lt;br&gt;[[File:sod.png|30px|link=Sod]] [[Sod]] (1)"
+    ],
+    "itemName": "Grass Starter",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tea.png|30px|link=Tea]] [[Tea]] (1)"
+    ],
+    "itemName": "Green Tea",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Grilled Cheese",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 22,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:corn.png|30px|link=Corn]] [[Corn]] (1)"
+    ],
+    "itemName": "Grilled Corn",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:corn.png|20px|link=Corn]] [[Corn]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:freshwater eel.png|30px|link=Freshwater Eel]] [[Freshwater Eel]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Grilled Eel Rice Bowl",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=March/Quests#Requests]] March&#039;s [[March/Quests#Requests|Request for Freshwater Eel]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)"
+    ],
+    "itemName": "Hard Boiled Egg",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Eiland/Quests#Requests]] Eiland&#039;s [[Eiland/Quests#Requests|Request for Eggs]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (10)"
+    ],
+    "itemName": "Hard Wood",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]] (1)&lt;br&gt;[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]] (1)&lt;br&gt;[[File:cranberry.png|30px|link=Cranberry]] [[Cranberry]] (1)&lt;br&gt;[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]] (1)&lt;br&gt;[[File:onion.png|30px|link=Onion]] [[Onion]] (1)&lt;br&gt;[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]] (1)"
+    ],
+    "itemName": "Harvest Plate",
+    "recipeSource": [
+      "[[File:Calendar_icon_harvest_festival.png|20px|link=Harvest Festival#Souvenir Stall]] [[Harvest Festival#Souvenir Stall|Harvest Festival]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": null,
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (6)"
+    ],
+    "itemName": "Hay",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:noodles.png|30px|link=Noodles]] [[Noodles]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:thyme.png|30px|link=Thyme]] [[Thyme]] (1)&lt;br&gt;[[File:oregano.png|30px|link=Oregano]] [[Oregano]] (1)"
+    ],
+    "itemName": "Herb Butter Pasta",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 28,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sage.png|30px|link=Sage]] [[Sage]] (1)&lt;br&gt;[[File:basil.png|30px|link=Basil]] [[Basil]] (1)&lt;br&gt;[[File:thyme.png|30px|link=Thyme]] [[Thyme]] (1)&lt;br&gt;[[File:oregano.png|30px|link=Oregano]] [[Oregano]] (1)&lt;br&gt;[[File:dill.png|30px|link=Dill]] [[Dill]] (1)"
+    ],
+    "itemName": "Herb Salad",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Deep Earth]]  [[Mines/Deep Earth|The Deep Earth]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 30,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:salmon.png|30px|link=Salmon]] [[Salmon]] (1)&lt;br&gt;[[File:horseradish.png|30px|link=Horseradish]] [[Horseradish]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Horseradish Salmon",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Terithia/Quests#Requests]] Terithia&#039;s [[Terithia/Quests#Requests|Request for Ingredients]]"
+    ],
+    "skillLevel": 28,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:wintergreen berry.png|30px|link=Wintergreen Berry]] [[Wintergreen Berry]] (2)"
+    ],
+    "itemName": "Hot Chocolate",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Ice Cream Sundae",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 38,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]] (1)&lt;br&gt;[[File:coffee.png|30px|link=Coffee]] [[Coffee]] (1)"
+    ],
+    "itemName": "Iced Coffee",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:flame pepper.png|30px|link=Flame Pepper]] [[Flame Pepper]] (1)&lt;br&gt;[[File:ash mushroom.png|30px|link=Ash Mushroom]] [[Ash Mushroom]] (1)&lt;br&gt;[[File:lava chestnuts.png|30px|link=Lava Chestnuts]] [[Lava Chestnuts]] (1)&lt;br&gt;[[File:hot potato.png|30px|link=Hot Potato]] [[Hot Potato]] (1)&lt;br&gt;[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]] (1)"
+    ],
+    "itemName": "Incredibly Hot Pot",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Lava Caves]]  [[Mines/Lava Caves|The Lava Caves]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 30,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Armor",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 12,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Axe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Fishing Rod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Greaves",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 12,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Helmet",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 12,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Hoe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ore.png|30px|link=Iron Ore]] [[Iron Ore]] (10)"
+    ],
+    "itemName": "Iron Ingot",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 2,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Legplates",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 12,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Net",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Pickaxe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 12,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Shovel",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Sword",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 14,
+    "stars": null,
+    "time": 100,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:iron ingot.png|30px|link=Iron Ingot]] [[Iron Ingot]] (4)"
+    ],
+    "itemName": "Iron Watering Can",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 10,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:wild berry jam.png|30px|link=Wild Berry Jam]] [[Wild Berry Jam]] (1)"
+    ],
+    "itemName": "Jam Sandwich",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tea.png|30px|link=Tea]] [[Tea]] (1)&lt;br&gt;[[File:jasmine.png|30px|link=Jasmine]] [[Jasmine]] (1)"
+    ],
+    "itemName": "Jasmine Tea",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (40)&lt;br&gt;[[File:essence.png|30px|link=Essence]] [[Essence]] (100)"
+    ],
+    "itemName": "Large Essence Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:coffee.png|30px|link=Coffee]] [[Coffee]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Latte",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Lemon Cake",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 18,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Lemon Pie",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Lemonade",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Loaded Baked Potato",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Hayden/Quests#Requests]] Hayden&#039;s [[Hayden/Quests#Requests|Request for Baked Potato]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lobster.png|30px|link=Lobster]] [[Lobster]] (1)&lt;br&gt;[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)&lt;br&gt;[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Lobster Roll",
+    "recipeSource": [
+      "[[File:gold chest.png|20px|link=Golden Treasure Box]] [[Golden Treasure Box]]"
+    ],
+    "skillLevel": 38,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:mackerel.png|30px|link=Mackerel]] [[Mackerel]] (1)"
+    ],
+    "itemName": "Mackerel Sashimi",
+    "recipeSource": [
+      "[[File:Tackleshop icon.png|20px|link=Tackle_Shop#Recipes]] [[Tackle_Shop#Recipes|Tackle Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:orange.png|30px|link=Orange]] [[Orange]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Marmalade",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Elsie/Quests#Requests]] Elsie&#039;s [[Elsie/Quests#Requests|Request for an Orange]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (2)"
+    ],
+    "itemName": "Mayonnaise",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (20)&lt;br&gt;[[File:essence.png|30px|link=Essence]] [[Essence]] (50)"
+    ],
+    "itemName": "Medium Essence Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:upper mines mushroom.png|30px|link=Upper Mines Mushroom]] [[Upper Mines Mushroom]] (1)&lt;br&gt;[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]] (1)"
+    ],
+    "itemName": "Miner&#039;s Mushroom Stew",
+    "recipeSource": [
+      "[[File:Fp_wiki_museum.png|20px|link=Museum#Rewards]] [[Museum#Rewards|Donate]] an [[File:upper mines mushroom.png|20px|link=Upper Mines Mushroom]] [[Upper Mines Mushroom]] to [[Museum|The Museum]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Armor",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Axe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Greaves",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Helmet",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Hoe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ore.png|30px|link=Mistril Ore]] [[Mistril Ore]] (10)"
+    ],
+    "itemName": "Mistril Ingot",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 8,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Legplates",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Net",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Pickaxe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Shovel",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
+    "itemName": "Mistril Watering Can",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:coffee.png|30px|link=Coffee]] [[Coffee]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:chocolate.png|30px|link=Chocolate]] [[Chocolate]] (1)"
+    ],
+    "itemName": "Mocha",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]] (1)&lt;br&gt;[[File:monster core.png|30px|link=Monster Core]] [[Monster Core]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Monster Cookie",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Upper Mines]]  [[Mines/Upper Mines|The Upper Mines]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 40,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:monster fang.png|30px|link=Monster Fang]] [[Monster Fang]] (1)&lt;br&gt;[[File:monster shell.png|30px|link=Monster Shell]] [[Monster Shell]] (1)&lt;br&gt;[[File:monster horn.png|30px|link=Monster Horn]] [[Monster Horn]] (1)&lt;br&gt;[[File:monster powder.png|30px|link=Monster Powder]] [[Monster Powder]] (1)"
+    ],
+    "itemName": "Monster Mash",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chestnut.png|30px|link=Chestnut]] [[Chestnut]] (4)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Mont Blanc",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:moon fruit.png|30px|link=Moon Fruit]] [[Moon Fruit]] (1)&lt;br&gt;[[File:honey.png|30px|link=Honey]] [[Honey]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Moon Fruit Cake",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Juniper/Quests#Requests]] Juniper&#039;s [[Juniper/Quests#Requests|Important Request for a Moon Fruit ]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:morel mushroom.png|30px|link=Morel Mushroom]] [[Morel Mushroom]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Mushroom Rice",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:oyster mushroom.png|30px|link=Oyster Mushroom]] [[Oyster Mushroom]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]] (1)&lt;br&gt;[[File:beet.png|30px|link=Beet]] [[Beet]] (1)&lt;br&gt;[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]] (1)"
+    ],
+    "itemName": "Mushroom Steak Dinner",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 36,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Noodles",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:acorn.png|30px|link=Acorn]] [[Acorn]] (1)"
+    ],
+    "itemName": "Oak Sapling",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (8)"
+    ],
+    "itemName": "Obsidian",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Omelet",
+    "recipeSource": [
+      "[[File:Chicken_statue.png|15px|link=Chicken Statue]] [[Chicken Statue]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:shiny bead.png|20px|link=Shiny Bead]]  10&lt;/span&gt; Offering"
+    ],
+    "skillLevel": 22,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:onion.png|30px|link=Onion]] [[Onion]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)"
+    ],
+    "itemName": "Onion Soup",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] an [[File:onion.png|20px|link=Onion]] [[Onion]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:orange.png|30px|link=Orange]] [[Orange]] (1)"
+    ],
+    "itemName": "Orange Juice",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] an [[File:orange.png|20px|link=Orange]] [[Orange]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bream.png|30px|link=Bream]] [[Bream]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Pan-fried Bream",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:salmon.png|30px|link=Salmon]] [[Salmon]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Pan-fried Salmon",
+    "recipeSource": [
+      "[[File:Wooden chest.png|20px|link=Wooden Treasure Box]] [[Wooden Treasure Box]]&lt;br&gt;[[File:Tackleshop icon.png|20px|link=Tackle_Shop#]] [[Tackle_Shop#|Tackle Shop]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Pan-fried Snapper",
+    "recipeSource": [
+      "[[File:Wooden chest.png|20px|link=Wooden Treasure Box]] [[Wooden Treasure Box]]&lt;br&gt;[[File:Tackleshop icon.png|20px|link=Tackle_Shop#]] [[Tackle_Shop#|Tackle Shop]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:fiber.png|30px|link=Fiber]] [[Fiber]] (10)"
+    ],
+    "itemName": "Paper",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:peach.png|30px|link=Peach]] [[Peach]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Peaches and Cream",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:peach.png|20px|link=Peach]] [[Peach]]"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (6)"
+    ],
+    "itemName": "Peat",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:perch.png|30px|link=Perch]] [[Perch]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:garlic.png|30px|link=Garlic]] [[Garlic]] (1)&lt;br&gt;[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]] (1)"
+    ],
+    "itemName": "Perch Risotto",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Errol/Quests#Requests]] Errol&#039;s [[Errol/Quests#Requests|Request for Perch]]"
+    ],
+    "skillLevel": 34,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:pinecone.png|30px|link=Pinecone]] [[Pinecone]] (1)"
+    ],
+    "itemName": "Pine Sapling",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:pineshroom.png|30px|link=Pineshroom]] [[Pineshroom]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Pineshroom Toast",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Adeline/Quests#Requests]] Adeline&#039;s [[Adeline/Quests#Requests|Request for Pineshrooms]]"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Pizza",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Ancient Ruins]]  [[Mines/Ancient Ruins|The Ancient Ruins]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:pear.png|30px|link=Pear]] [[Pear]] (1)&lt;br&gt;[[File:red wine.png|30px|link=Red Wine]] [[Red Wine]] (1)&lt;br&gt;[[File:honey.png|30px|link=Honey]] [[Honey]] (1)"
+    ],
+    "itemName": "Poached Pear",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:pear.png|20px|link=Pear]] [[Pear]]"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:pomegranate.png|30px|link=Pomegranate]] [[Pomegranate]] (1)"
+    ],
+    "itemName": "Pomegranate Juice",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:pomegranate.png|30px|link=Pomegranate]] [[Pomegranate]] (1)&lt;br&gt;[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Pomegranate Sorbet",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:pomegranate.png|20px|link=Pomegranate]] [[Pomegranate]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Potato Soup",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (2)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Pudding",
+    "recipeSource": [
+      "[[File:Chicken_statue.png|15px|link=Chicken Statue]] [[Chicken Statue]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:shiny bead.png|20px|link=Shiny Bead]]  10&lt;/span&gt; Offering"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)"
+    ],
+    "itemName": "Pumpkin Pie",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;&lt;br&gt;[[File:Calendar_icon_harvest_festival.png|20px|link=Harvest Festival#Souvenir Stall]] [[Harvest Festival#Souvenir Stall|Harvest Festival]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+    ],
+    "skillLevel": 38,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:pumpkin.png|30px|link=Pumpkin]] [[Pumpkin]] (1)&lt;br&gt;[[File:onion.png|30px|link=Onion]] [[Onion]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]] (1)"
+    ],
+    "itemName": "Pumpkin Stew",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:pumpkin.png|20px|link=Pumpkin]] [[Pumpkin]]"
+    ],
+    "skillLevel": 28,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:hay.png|30px|link=Hay]] [[Hay]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)"
+    ],
+    "itemName": "Quality Large Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)"
+    ],
+    "itemName": "Quality Small Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Quiche",
+    "recipeSource": [
+      "[[File:Chicken_statue.png|15px|link=Chicken Statue]] [[Chicken Statue]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:shiny bead.png|20px|link=Shiny Bead]]  10&lt;/span&gt; Offering"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:red snapper.png|30px|link=Red Snapper]] [[Red Snapper]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Red Snapper Sushi",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (10)"
+    ],
+    "itemName": "Refined Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:rice stalk.png|30px|link=Rice Stalk]] [[Rice Stalk]] (1)"
+    ],
+    "itemName": "Rice",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)"
+    ],
+    "itemName": "Rice Ball",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cauliflower.png|30px|link=Cauliflower]] [[Cauliflower]] (1)"
+    ],
+    "itemName": "Roasted Cauliflower",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:cauliflower.png|20px|link=Cauliflower]] [[Cauliflower]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chestnut.png|30px|link=Chestnut]] [[Chestnut]] (2)"
+    ],
+    "itemName": "Roasted Chestnuts",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Hemlock/Quests#Requests]] Hemlock&#039;s [[Hemlock/Quests#Requests|Request for Chestnuts]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:green tea.png|30px|link=Green Tea]] [[Green Tea]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Roasted Rice Tea",
+    "recipeSource": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 6,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]] (1)"
+    ],
+    "itemName": "Roasted Sweet Potato",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:sweet potato.png|20px|link=Sweet Potato]] [[Sweet Potato]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tea.png|30px|link=Tea]] [[Tea]] (1)&lt;br&gt;[[File:rose.png|30px|link=Rose]] [[Rose]] (1)"
+    ],
+    "itemName": "Rose Tea",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] [[File:tea.png|20px|link=Tea]] [[Tea]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:rose hip.png|30px|link=Rose Hip]] [[Rose Hip]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Rosehip Jam",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Valen/Quests#Requests]] Valen&#039;s [[Valen/Quests#Requests|Request for Rose Hips]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:noodles.png|30px|link=Noodles]] [[Noodles]] (1)&lt;br&gt;[[File:rosemary.png|30px|link=Rosemary]] [[Rosemary]] (1)&lt;br&gt;[[File:garlic.png|30px|link=Garlic]] [[Garlic]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Rosemary Garlic Noodles",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (22)"
+    ],
+    "itemName": "Ruby",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:salmon.png|30px|link=Salmon]] [[Salmon]] (1)"
+    ],
+    "itemName": "Salmon Sashimi",
+    "recipeSource": [
+      "[[File:Tackleshop icon.png|20px|link=Tackle_Shop#Recipes]] [[Tackle_Shop#Recipes|Tackle Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:watermelon.png|30px|link=Watermelon]] [[Watermelon]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)"
+    ],
+    "itemName": "Salted Watermelon",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:watermelon.png|20px|link=Watermelon]] [[Watermelon]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (25)"
+    ],
+    "itemName": "Sapphire",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:snow peas.png|30px|link=Snow Peas]] [[Snow Peas]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)"
+    ],
+    "itemName": "Sauteed Snow Peas",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:snow peas.png|20px|link=Snow Peas]] [[Snow Peas|Snow Pea]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sea bream.png|30px|link=Sea Bream]] [[Sea Bream]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)&lt;br&gt;[[File:cave mushroom.png|30px|link=Cave Mushroom]] [[Cave Mushroom]] (1)&lt;br&gt;[[File:earthshroom.png|30px|link=Earthshroom]] [[Earthshroom]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Sea Bream Rice",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Terithia/Quests#Requests]] Terithia&#039;s [[Terithia/Quests#Requests|Request for Earthshroom]]"
+    ],
+    "skillLevel": 36,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:crab.png|30px|link=Crab]] [[Crab]] (2)&lt;br&gt;[[File:mines mussels.png|30px|link=Mines Mussels]] [[Mines Mussels]] (2)&lt;br&gt;[[File:crayfish.png|30px|link=Crayfish]] [[Crayfish]] (2)&lt;br&gt;[[File:corn.png|30px|link=Corn]] [[Corn]] (1)&lt;br&gt;[[File:hot potato.png|30px|link=Hot Potato]] [[Hot Potato]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)"
+    ],
+    "itemName": "Seafood Boil",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:snow peas.png|30px|link=Snow Peas]] [[Snow Peas]] (1)&lt;br&gt;[[File:noodles.png|30px|link=Noodles]] [[Noodles]] (1)&lt;br&gt;[[File:king crab.png|30px|link=King Crab]] [[King Crab]] (1)&lt;br&gt;[[File:bonito.png|30px|link=Bonito]] [[Bonito]] (1)&lt;br&gt;[[File:herring.png|30px|link=Herring]] [[Herring]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Seafood Snow Pea Noodles",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] &lt;small&gt;(After Upgrade)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (3)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Seaweed Salad",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Valen/Quests#Requests]] Valen&#039;s [[Valen/Quests#Requests|Request for Seaweed]]"
+    ],
+    "skillLevel": 10,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]] (1)&lt;br&gt;[[File:sesame.png|30px|link=Sesame]] [[Sesame]] (1)"
+    ],
+    "itemName": "Sesame Broccoli",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Vera/Quests#Requests]] Vera&#039;s [[Vera/Quests#Requests|Request for Sesame]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tuna.png|30px|link=Tuna]] [[Tuna]] (1)&lt;br&gt;[[File:sesame.png|30px|link=Sesame]] [[Sesame]] (1)&lt;br&gt;[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Sesame Tuna Bowl",
+    "recipeSource": [
+      "[[File:gold chest.png|20px|link=Golden Treasure Box]] [[Golden Treasure Box]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (15)"
+    ],
+    "itemName": "Shard Mass",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (10)"
+    ],
+    "itemName": "Shards",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Armor",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 18,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Axe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Fishing Rod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Greaves",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 18,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Helmet",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 18,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Hoe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ore.png|30px|link=Silver Ore]] [[Silver Ore]] (10)"
+    ],
+    "itemName": "Silver Ingot",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 4,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Legplates",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 18,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Net",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Pickaxe",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 18,
+    "stars": null,
+    "time": 50,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Shovel",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Sword",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 20,
+    "stars": null,
+    "time": 100,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:silver ingot.png|30px|link=Silver Ingot]] [[Silver Ingot]] (4)"
+    ],
+    "itemName": "Silver Watering Can",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 16,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:daikon radish.png|30px|link=Daikon Radish]] [[Daikon Radish]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Simmered Daikon",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:daikon radish.png|20px|link=Daikon Radish]] [[Daikon Radish]]"
+    ],
+    "skillLevel": 8,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:turnip.png|30px|link=Turnip]] [[Turnip]] (1)"
+    ],
+    "itemName": "Sliced Turnip",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:turnip.png|20px|link=Turnip]] [[Turnip]]"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (10)&lt;br&gt;[[File:essence.png|30px|link=Essence]] [[Essence]] (25)"
+    ],
+    "itemName": "Small Essence Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:trout.png|30px|link=Trout]] [[Trout]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Smoked Trout Soup",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Terithia/Quests#Requests]] Terithia&#039;s [[Terithia/Quests#Requests|Request for Trout]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (6)"
+    ],
+    "itemName": "Sod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:spell fruit.png|30px|link=Spell Fruit]] [[Spell Fruit]] (1)&lt;br&gt;[[File:lava chestnuts.png|30px|link=Lava Chestnuts]] [[Lava Chestnuts]] (1)&lt;br&gt;[[File:crystal berries.png|30px|link=Crystal Berries]] [[Crystal Berries]] (1)&lt;br&gt;[[File:sweetroot.png|30px|link=Sweetroot]] [[Sweetroot]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:golden milk.png|30px|link=Golden Milk]] [[Golden Milk]] (1)"
+    ],
+    "itemName": "Spell Fruit Parfait",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Ancient Ruins]]  [[Mines/Ancient Ruins|The Ancient Ruins]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Spicy Cheddar Biscuit",
+    "recipeSource": [
+      "[[File:Fp_wiki_wishing_well.png|20px|link=Wishing Well]] [[Wishing Well]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]500t&lt;/span&gt; Wish&lt;br&gt;[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 28,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:corn.png|30px|link=Corn]] [[Corn]] (1)&lt;br&gt;[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)"
+    ],
+    "itemName": "Spicy Corn",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Ancient Ruins]]  [[Mines/Ancient Ruins|The Ancient Ruins]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:crab.png|30px|link=Crab]] [[Crab]] (1)&lt;br&gt;[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (1)&lt;br&gt;[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)"
+    ],
+    "itemName": "Spicy Crab Sushi",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Lava Caves]]  [[Mines/Lava Caves|The Lava Caves]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])&lt;br&gt;[[File:gold chest.png|20px|link=Golden Treasure Box]] [[Golden Treasure Box]]"
+    ],
+    "skillLevel": 22,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (2)"
+    ],
+    "itemName": "Spicy Water Chestnuts",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:chili pepper.png|20px|link=Chili Pepper]] [[Chili Pepper]]"
+    ],
+    "skillLevel": 6,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tea.png|30px|link=Tea]] [[Tea]] (1)&lt;br&gt;[[File:spirit mushroom.png|30px|link=Spirit Mushroom]] [[Spirit Mushroom]] (1)"
+    ],
+    "itemName": "Spirit Mushroom Tea",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:spirit mushroom.png|20px|link=Spirit mushroom]] [[Spirit mushroom]]"
+    ],
+    "skillLevel": 16,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:fiddlehead.png|30px|link=Fiddlehead]] [[Fiddlehead]] (1)&lt;br&gt;[[File:morel mushroom.png|30px|link=Morel Mushroom]] [[Morel Mushroom]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)"
+    ],
+    "itemName": "Spring Galette",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:fennel.png|30px|link=Fennel]] [[Fennel]] (1)&lt;br&gt;[[File:fiddlehead.png|30px|link=Fiddlehead]] [[Fiddlehead]] (1)&lt;br&gt;[[File:nettle.png|30px|link=Nettle]] [[Nettle]] (1)"
+    ],
+    "itemName": "Spring Salad",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Celine/Quests#Requests]] Celine&#039;s [[Celine/Quests#Requests|Request for Fennel]]"
+    ],
+    "skillLevel": 8,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:broccoli.png|30px|link=Broccoli]] [[Broccoli]] (1)"
+    ],
+    "itemName": "Steamed Broccoli",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:broccoli.png|20px|link=Broccoli]] [[Broccoli]]"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Strawberries and Cream",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Eiland/Quests#Requests]] Eiland&#039;s [[Eiland/Quests#Requests|Request for a Strawberry]]"
+    ],
+    "skillLevel": 4,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:strawberry.png|30px|link=Strawberry]] [[Strawberry]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)"
+    ],
+    "itemName": "Strawberry Shortcake",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Eiland/Quests#Requests]] Eiland&#039;s [[Eiland/Quests#Requests|Request for a Strawberry]]"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:sugar cane.png|30px|link=Sugar Cane]] [[Sugar Cane]] (1)"
+    ],
+    "itemName": "Sugar",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:chili pepper.png|30px|link=Chili Pepper]] [[Chili Pepper]] (1)&lt;br&gt;[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:corn.png|30px|link=Corn]] [[Corn]] (1)"
+    ],
+    "itemName": "Summer Salad",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Lava Caves]]  [[Mines/Lava Caves|The Lava Caves]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])&lt;br&gt;[[File:silver chest.png|20px|link=Silver Treasure Box]] [[Silver Treasure Box]]"
+    ],
+    "skillLevel": 28,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tuna.png|30px|link=Tuna]] [[Tuna]] (1)&lt;br&gt;[[File:salmon.png|30px|link=Salmon]] [[Salmon]] (1)&lt;br&gt;[[File:mackerel.png|30px|link=Mackerel]] [[Mackerel]] (1)&lt;br&gt;[[File:rice.png|30px|link=Rice]] [[Rice]] (1)&lt;br&gt;[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Sushi Platter",
+    "recipeSource": [
+      "[[File:gold chest.png|20px|link=Golden Treasure Box]] [[Golden Treasure Box]]"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sweet potato.png|30px|link=Sweet Potato]] [[Sweet Potato]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Sweet Potato Pie",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 50,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sesame.png|30px|link=Sesame]] [[Sesame]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Sweet Sesame Balls",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 20,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:lemon.png|30px|link=Lemon]] [[Lemon]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:tea.png|30px|link=Tea]] [[Tea]] (1)"
+    ],
+    "itemName": "Tea with Lemon",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Adeline/Quests#Requests]] Adeline&#039;s [[Adeline/Quests#Requests|Request for a Lemon]]&lt;br&gt;[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]][[Saturday Market#Darcy&#039;s_Stall|Saturday Market]] at Darcy&#039;s Stall for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]] (1)&lt;br&gt;[[File:sea grapes.png|30px|link=Sea Grapes]] [[Sea Grapes]] (1)&lt;br&gt;[[File:underseaweed.png|30px|link=Underseaweed]] [[Underseaweed]] (1)&lt;br&gt;[[File:jade dulse.png|30px|link=Jade Dulse]] [[Jade Dulse]] (1)"
+    ],
+    "itemName": "Tide Salad",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Tide Caverns]]  [[Mines/Tide Caverns|The Tide Caverns]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 20,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (5)&lt;br&gt;[[File:essence.png|30px|link=Essence]] [[Essence]] (5)"
+    ],
+    "itemName": "Tiny Essence Stone",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 20,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:sunflower.png|30px|link=Sunflower]] [[Sunflower]] (1)&lt;br&gt;[[File:rock salt.png|30px|link=Rock Salt]] [[Rock Salt]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Toasted Sunflower Seeds",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:sunflower.png|20px|link=Sunflower]] [[Sunflower]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:basil.png|30px|link=Basil]] [[Basil]] (1)"
+    ],
+    "itemName": "Tomato Soup",
+    "recipeSource": [
+      "[[File:Shipping bin.png|20px|link=Shipping Bin#Shipping Items]] [[Shipping Bin#Shipping Items|Ship]] a [[File:tomato.png|20px|link=Tomato]] [[Tomato]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (2)&lt;br&gt;[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (1)"
+    ],
+    "itemName": "Trail Mix",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:tuna.png|30px|link=Tuna]] [[Tuna]] (1)"
+    ],
+    "itemName": "Tuna Sashimi",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 1,
+    "stars": 1,
+    "time": 10,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:turnip.png|30px|link=Turnip]] [[Turnip]] (1)&lt;br&gt;[[File:cabbage.png|30px|link=Cabbage]] [[Cabbage]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Turnip and Cabbage Salad",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Upper Mines]]  [[Mines/Upper Mines|The Upper Mines]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:turnip.png|30px|link=Turnip]] [[Turnip]] (1)&lt;br&gt;[[File:butter.png|30px|link=Butter]] [[Butter]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)"
+    ],
+    "itemName": "Turnip and Potato Gratin",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Deep Earth]]  [[Mines/Deep Earth|The Deep Earth]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 26,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:hay.png|30px|link=Hay]] [[Hay]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)&lt;br&gt;[[File:acorn.png|30px|link=Acorn]] [[Acorn]] (1)&lt;br&gt;[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (1)"
+    ],
+    "itemName": "Ultimate Large Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Milling",
+    "ingredients": [
+      "[[File:grass seed.png|30px|link=Grass Seed]] [[Grass Seed]] (1)&lt;br&gt;[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (1)&lt;br&gt;[[File:acorn.png|30px|link=Acorn]] [[Acorn]] (1)&lt;br&gt;[[File:seaweed.png|30px|link=Seaweed]] [[Seaweed]] (1)"
+    ],
+    "itemName": "Ultimate Small Animal Feed",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:turnip.png|30px|link=Turnip]] [[Turnip]] (1)&lt;br&gt;[[File:carrot.png|30px|link=Carrot]] [[Carrot]] (1)&lt;br&gt;[[File:peas.png|30px|link=Peas]] [[Peas]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Vegetable Pot Pie",
+    "recipeSource": [
+      "[[File:Fp_wiki_mining.png|20px|link=Mines/Deep Earth]]  [[Mines/Deep Earth|The Deep Earth]] (requires [[File:Taste_maker.png|15px|link=]]&amp;nbsp;[[Skills#Cooking_Skill_Perks|Taste Maker&amp;nbsp;Skill]])"
+    ],
+    "skillLevel": 38,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:chicken egg.png|30px|link=Chicken Egg]] [[Chicken Egg]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:wild leek.png|30px|link=Wild Leek]] [[Wild Leek]] (1)"
+    ],
+    "itemName": "Vegetable Quiche",
+    "recipeSource": [
+      "[[File:Chicken_statue.png|15px|link=Chicken Statue]] [[Chicken Statue]] &lt;span class=&quot;no-wrap&quot;&gt;[[File:shiny bead.png|20px|link=Shiny Bead]]  10&lt;/span&gt; Offering"
+    ],
+    "skillLevel": 30,
+    "stars": 4,
+    "time": 50,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:potato.png|30px|link=Potato]] [[Potato]] (1)&lt;br&gt;[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:basil.png|30px|link=Basil]] [[Basil]] (1)"
+    ],
+    "itemName": "Vegetable Soup",
+    "recipeSource": [
+      "[[File:quests header icon.png|20px|link=Quests#Important_Quests]] [[Quests#Important_Quests|Important Quest]] &lt;span class=&quot;spoiler-content &quot;  style=&quot;&quot;&gt;&lt;span&gt;&quot;Jo&#039;s Cooking Class&quot;&lt;/span&gt;&lt;/span&gt;"
+    ],
+    "skillLevel": 16,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:bread.png|30px|link=Bread]] [[Bread]] (1)&lt;br&gt;[[File:tide lettuce.png|30px|link=Tide Lettuce]] [[Tide Lettuce]] (1)&lt;br&gt;[[File:tomato.png|30px|link=Tomato]] [[Tomato]] (1)&lt;br&gt;[[File:cucumber.png|30px|link=Cucumber]] [[Cucumber]] (1)&lt;br&gt;[[File:cheese.png|30px|link=Cheese]] [[Cheese]] (1)&lt;br&gt;[[File:mayonnaise.png|30px|link=Mayonnaise]] [[Mayonnaise]] (1)"
+    ],
+    "itemName": "Veggie Sub Sandwich",
+    "recipeSource": [
+      "[[File:Inn_icon.png|20px|link=Inn#Recipes]] [[Inn#Recipes|The Inn]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]t&lt;/span&gt;"
+    ],
+    "skillLevel": 40,
+    "stars": 5,
+    "time": 100,
+    "workbenchLevel": 3
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:water chestnut.png|30px|link=Water Chestnut]] [[Water Chestnut]] (2)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)&lt;br&gt;[[File:oil.png|30px|link=Oil]] [[Oil]] (1)"
+    ],
+    "itemName": "Water Chestnut Fritters",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Juniper/Quests#Requests]] Juniper&#039;s [[Juniper/Quests#Requests|Request for Water Chestnuts]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (6)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Wild Berry Jam",
+    "recipeSource": [
+      "Available From Start"
+    ],
+    "skillLevel": 2,
+    "stars": 1,
+    "time": 20,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (6)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Wild Berry Pie",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Reina/Quests#Requests]] Reina&#039;s [[Reina/Quests#Requests|Request for Berries]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wild berries.png|30px|link=Wild Berries]] [[Wild Berries]] (6)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:flour.png|30px|link=Flour]] [[Flour]] (1)"
+    ],
+    "itemName": "Wild Berry Scone",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Elsie/Quests#Requests]] Elsie&#039;s [[Elsie/Quests#Requests|Request for Wild Berries]]"
+    ],
+    "skillLevel": 12,
+    "stars": 2,
+    "time": 30,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:daikon radish.png|30px|link=Daikon Radish]] [[Daikon Radish]] (1)&lt;br&gt;[[File:burdock root.png|30px|link=Burdock Root]] [[Burdock Root]] (1)&lt;br&gt;[[File:oyster mushroom.png|30px|link=Oyster Mushroom]] [[Oyster Mushroom]] (1)&lt;br&gt;[[File:soy sauce.png|30px|link=Soy Sauce]] [[Soy Sauce]] (1)"
+    ],
+    "itemName": "Winter Stew",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Vera/Quests#Requests]] Vera&#039;s [[Vera/Quests#Requests|Request for a Daikon Radish]]"
+    ],
+    "skillLevel": 24,
+    "stars": 3,
+    "time": 40,
+    "workbenchLevel": 2
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Food",
+    "ingredients": [
+      "[[File:wintergreen berry.png|30px|link=Wintergreen Berry]] [[Wintergreen Berry]] (8)&lt;br&gt;[[File:ice block.png|30px|link=Ice Block]] [[Ice Block]] (1)&lt;br&gt;[[File:milk.png|30px|link=Milk]] [[Milk]] (1)&lt;br&gt;[[File:sugar.png|30px|link=Sugar]] [[Sugar]] (1)"
+    ],
+    "itemName": "Wintergreen Ice Cream",
+    "recipeSource": [
+      "[[File:Fp wiki quests fetch.png|20px|link=Josephine/Quests#Requests]] Josephine&#039;s [[Josephine/Quests#Requests|Request for Ice]]"
+    ],
+    "skillLevel": 14,
+    "stars": 2,
+    "time": 40,
+    "workbenchLevel": 1
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Refinery",
+    "ingredients": [
+      "[[File:stone.png|30px|link=Stone]] [[Stone]] (2)"
+    ],
+    "itemName": "Wood",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": null,
+    "stars": null,
+    "time": 10,
+    "workbenchLevel": null
+  }
+]

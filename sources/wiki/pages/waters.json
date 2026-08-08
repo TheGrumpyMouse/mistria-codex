@@ -1,0 +1,122 @@
+{
+  "lastEdited": "2026-04-15T14:38:51Z",
+  "mineFishing": [
+    {
+      "biomeOrder": 1,
+      "floors": [
+        {
+          "max": 19,
+          "min": 2
+        }
+      ]
+    },
+    {
+      "biomeOrder": 2,
+      "floors": []
+    },
+    {
+      "biomeOrder": 3,
+      "floors": []
+    },
+    {
+      "biomeOrder": 4,
+      "floors": []
+    },
+    {
+      "biomeOrder": 5,
+      "floors": [
+        {
+          "max": 89,
+          "min": 81
+        },
+        {
+          "max": 99,
+          "min": 91
+        }
+      ]
+    }
+  ],
+  "waters": [
+    {
+      "divable": true,
+      "habitat": "pond",
+      "location": {
+        "display": "",
+        "target": "Mistria"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "pond",
+      "location": {
+        "display": "",
+        "target": "The Eastern Road"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "pond",
+      "location": {
+        "display": "",
+        "target": "The Deep Woods"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "river",
+      "location": {
+        "display": "The Player's Farm",
+        "target": "Farm"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "river",
+      "location": {
+        "display": "",
+        "target": "Mistria"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "river",
+      "location": {
+        "display": "",
+        "target": "The Eastern Road"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "river",
+      "location": {
+        "display": "",
+        "target": "The Narrows"
+      }
+    },
+    {
+      "divable": false,
+      "habitat": "ocean",
+      "location": {
+        "display": "",
+        "target": "The Western Ruins"
+      }
+    },
+    {
+      "divable": false,
+      "habitat": "ocean",
+      "location": {
+        "display": "",
+        "target": "Sweetwater Farm"
+      }
+    },
+    {
+      "divable": true,
+      "habitat": "ocean",
+      "location": {
+        "display": "",
+        "target": "The Beach"
+      }
+    }
+  ],
+  "wikiVersionStamp": "0.15"
+}

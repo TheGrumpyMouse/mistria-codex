@@ -1,0 +1,134 @@
+/*
+ * Design tokens. Every colour, radius and step in the app comes from here.
+ *
+ * Two rules make the system hold together:
+ *
+ * 1. **The season is the accent.** `--accent` is not a fixed colour — it is
+ *    whichever season the app is currently showing, set by `data-season` on
+ *    the root element. The chrome tells you which season you are in, so no
+ *    badge has to. That is the one risk this palette takes, and it is worth it
+ *    because season is the dominant state of the whole app.
+ *
+ * 2. **Signal colours sit outside the season system**, so they never shift
+ *    meaning. Museum gold is always museum gold; a gap is always the same rose.
+ *
+ * Unverified data is never a colour. It is a dashed hollow outline in muted
+ * ink — colour is spoken for, and an inference must never render identically
+ * to a fact.
+ */
+
+:root {
+  /* Ground and ink. The ink leans purple, which is what keeps the paper warm
+     without tipping into sepia. */
+  --paper: #fbf8f3;
+  --surface: #ffffff;
+  --sunk: #f4efe7;
+  --ink: #2e2a33;
+  --ink-mute: #736c7a;
+  --ink-faint: #a49dab;
+  --rule: #e8e2da;
+
+  /* Seasons. Each has a full-strength accent and a tint for fills. */
+  --spring: #7fbf8a;
+  --spring-tint: #eaf5ec;
+  --summer: #4fa8c9;
+  --summer-tint: #e6f2f7;
+  --fall: #d4834a;
+  --fall-tint: #faede2;
+  --winter: #8b93c9;
+  --winter-tint: #ecedf7;
+
+  /* Signals. Never season-dependent. */
+  --museum: #c9a227;
+  --museum-tint: #f7f0d8;
+  --gap: #c96a6a;
+  --gap-tint: #f9eaea;
+  --locked: #8a8290;
+
+  /* The accent defaults to spring, because year 1 starts there. */
+  --accent: var(--spring);
+  --accent-tint: var(--spring-tint);
+
+  /* A strict 4px scale. Nothing in the app uses a value that is not on it. */
+  --step-1: 4px;
+  --step-2: 8px;
+  --step-3: 12px;
+  --step-4: 16px;
+  --step-5: 24px;
+  --step-6: 32px;
+  --step-7: 48px;
+  --step-8: 64px;
+
+  /* The tessera is sharp and everything around it is soft. That contrast is
+     the system — it is where the pixel-ness lives, so the type never has to
+     wear a costume. */
+  --radius-tile: 2px;
+  --radius-card: 10px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgb(46 42 51 / 0.04), 0 4px 12px rgb(46 42 51 / 0.04);
+  --shadow-raised: 0 2px 4px rgb(46 42 51 / 0.06), 0 12px 24px rgb(46 42 51 / 0.08);
+
+  /* Self-hosted, OFL, no CDN — the offline promise covers the fonts too. The
+     fallbacks are chosen to be close in colour and width, so a slow font load
+     reflows as little as possible. See styles/fonts.css. */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body:
+    "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+}
+
+:root[data-season="spring"] {
+  --accent: var(--spring);
+  --accent-tint: var(--spring-tint);
+}
+:root[data-season="summer"] {
+  --accent: var(--summer);
+  --accent-tint: var(--summer-tint);
+}
+:root[data-season="fall"] {
+  --accent: var(--fall);
+  --accent-tint: var(--fall-tint);
+}
+:root[data-season="winter"] {
+  --accent: var(--winter);
+  --accent-tint: var(--winter-tint);
+}
+
+/*
+ * Light only, deliberately. A night-cycle game wants a dark mode and it is a
+ * real want — but half-doing it is worse than not doing it, and the season
+ * accent system has to be re-derived for a dark ground rather than inverted.
+ * Post-v1. Until then the app declares itself so the browser stops guessing.
+ */
+:root {
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-sunk: var(--sunk);
+  --color-ink: var(--ink);
+  --color-ink-mute: var(--ink-mute);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-tint: var(--accent-tint);
+  --color-museum: var(--museum);
+  --color-museum-tint: var(--museum-tint);
+  --color-gap: var(--gap);
+  --color-gap-tint: var(--gap-tint);
+  --color-locked: var(--locked);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --radius-tile: var(--radius-tile);
+  --radius-card: var(--radius-card);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-raised: var(--shadow-raised);
+}

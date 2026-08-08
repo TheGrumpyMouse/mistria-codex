@@ -1,0 +1,620 @@
+[
+  {
+    "item_id": "ancient_firefly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "ant",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "ant_queen",
+    "rarity": "common",
+    "spawn_condition_key": "Common Bug Pheromones",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "beach_hopper",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "big_bee",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "biggest_beetle",
+    "rarity": null,
+    "spawn_condition_key": "Legendary Bug Pheromones",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "brightbulb_moth",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "bumblebee",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "butterfly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "caterpillar",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "chillipede",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "cicada",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "cicada_nymph",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "cooktop_beetle",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "copper_beetle",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "coral_mantis",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "cricket",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "crystal_caterpillar",
+    "rarity": "rare",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "crystal_wing_moth",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "crystalline_cricket",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "deep_earthworm",
+    "rarity": "common",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "honey_deluxe",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "diamond_beetle",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "dragon_horn_beetle",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "dragonfly",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fairy_bee",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fire_wasp",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "firefly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "flower_bee",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "flower_crown_beetle",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "frost_flutter_butterfly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fur_bee",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fuzzy_moth",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "gem_shard_caterpillar",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "giant_worm",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "grasshopper",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns when cutting grass",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "hermit_crab",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "hermit_snail",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "hidden_beetle",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "honey",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "hummingbird_hawk_moth",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "icehopper",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns when cutting grass",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "inchworm",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "jewel_beetle",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "ladybug",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "lantern_moth",
+    "rarity": "common",
+    "spawn_condition_key": "Spawns near light sources",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "lava_snail",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "leafhopper",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns when cutting grass",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "bug_pheromone_legendary",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "honey_legendary",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "lightning_dragonfly",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "loam_caterpillar",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "luna_moth",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "magma_beetle",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "mine_cricket",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "mistmoth",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "monarch_butterfly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "moonlight_bee",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "mote_firefly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "orchid_mantis",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "parchment_moth",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "petalhopper",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns when breaking grass",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "polar_fly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "pond_skater",
+    "rarity": "uncommon",
+    "spawn_condition_key": "On water",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "praying_mantis",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "honey_premium",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "puddle_spider",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "queens_birdwing",
+    "rarity": "rare",
+    "spawn_condition_key": "Rare Bug Pheromones",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "question_mark_butterfly",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "raindrop_beetle",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "bug_pheromone_rare",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fish_bait_rare",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "redhead_worm",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "relic_crab",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "rhinoceros_beetle",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "rock_roach",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "roly_poly",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "saint_mantis",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Uncommon Bug Pheromones",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "sand_bug",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "sea_scarab",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "singing_katydid",
+    "rarity": "rare",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "smoke_moth",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "snail",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "snowball_beetle",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "snug_bug",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "speedy_snail",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "strawhopper",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "strobe_firefly",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "sunset_moth",
+    "rarity": "common",
+    "spawn_condition_key": "Common Bug Pheromones",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "surf_beetle",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "sweet_bee",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "tiger_swallowtail_butterfly",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "tunnel_millipede",
+    "rarity": "common",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "bug_pheromone_uncommon",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "fish_bait_uncommon",
+    "rarity": null,
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "void_snail",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "walking_leaf",
+    "rarity": "uncommon",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "walking_stick",
+    "rarity": "uncommon",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "waterbug",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "waterfly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "windleaf_butterfly",
+    "rarity": "common",
+    "spawn_condition_key": null,
+    "spawn_surface": null
+  },
+  {
+    "item_id": "winterpillar",
+    "rarity": "common",
+    "spawn_condition_key": "Additional spawns in trees",
+    "spawn_surface": null
+  },
+  {
+    "item_id": "worm",
+    "rarity": "common",
+    "spawn_condition_key": "Breaking rocks",
+    "spawn_surface": null
+  }
+]

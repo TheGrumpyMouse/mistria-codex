@@ -1,0 +1,8509 @@
+{
+  "lastEdited": "2026-08-07T06:32:16Z",
+  "quests": [
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Greet the Townsfolk",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Potato Seed",
+          "quantity": 3
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "story",
+      "name": "Museum Donations Wanted",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Olric",
+      "kind": "story",
+      "name": "Do a Bro a Favor",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Worn Pickaxe",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Luc",
+      "kind": "story",
+      "name": "Something's Bugging Me",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Worn Net",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "story",
+      "name": "Friday at the Sleeping Dragon Inn",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Mixed Fruit Juice",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "story",
+      "name": "Seeking Gossip",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Introductory Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "story",
+      "name": "The State of the Mines",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "story",
+      "name": "Unlocking the Mines",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "March",
+      "kind": "story",
+      "name": "Cop Some Ore",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "story",
+      "name": "The Water Tablet",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "story",
+      "name": "The Earth Tablet",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "story",
+      "name": "The Fire Tablet",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "story",
+      "name": "Procuring the Sealing Scroll",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Sealing Scroll",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "story",
+      "name": "Breaking The Fire Seal",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "story",
+      "name": "Creating The Void Mass",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "story",
+      "name": "Breaking The Ruins Seal",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "story",
+      "name": "Find The Magic Key",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "story",
+      "name": "The Dragonsworn Tablet",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "story",
+      "name": "Breaking The Final Seal",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Mines' Progression Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Repair the Bridge",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "story",
+      "name": "Greet the Vendors",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Restocking Mistria's Food Reserves",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "The Mill Restoration Project",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Beautification Project",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Repair the General Store",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Terithia",
+      "kind": "story",
+      "name": "Repair the Beach Bridge",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Restocking Mistria's Food Reserves 2",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Cow Cheese Hat",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Upgrade Hayden's Barn",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "story",
+      "name": "Find the Weathervane",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Upgrade the Inn",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Stone Refinery",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Upgrade the Saturday Market",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "story",
+      "name": "Upgrade the Carpenter's Shop",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "story",
+      "name": "Expanding the Saturday Market",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Stillwell",
+      "kind": "story",
+      "name": "Meet the New Vendors",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 50,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Zorel",
+      "kind": "story",
+      "name": "Repair the Bell Tower",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "story",
+      "name": "Complete the Museum",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Story Quests > Town Improvement Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Celine",
+      "kind": "festival",
+      "name": "The Spring Festival",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Breath of Spring",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Festival Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "festival",
+      "name": "The Shooting Star Festival",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Festival Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "festival",
+      "name": "The Harvest Festival",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Festival Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "important",
+      "name": "Stinky Stamina Potion",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Weather Crystal Ball",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Important Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "important",
+      "name": "Jo's Cooking Class",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Vegetable Soup",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Important Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "important",
+      "name": "Crafting Tutorial",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Wooden Fence",
+          "quantity": 5
+        }
+      ],
+      "seasons": [],
+      "section": "Important Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "important",
+      "name": "Tea with Hayden",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Important Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "heart",
+      "name": "The Smell of Drying Ink",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Cherry Tart",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "heart",
+      "name": "A Rewarding Choice",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "heart",
+      "name": "Chief Inspector",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "heart",
+      "name": "Lost Track of Time",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "heart",
+      "name": "Tall, Dark and Mysterious",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "heart",
+      "name": "An Open Book",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "heart",
+      "name": "Lemonade From Lemons",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "heart",
+      "name": "For Good",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus",
+      "kind": "heart",
+      "name": "Life in This Form",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Celine",
+      "kind": "heart",
+      "name": "The Unusual Seed",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Peat",
+          "quantity": 5
+        },
+        {
+          "name": "Sod",
+          "quantity": 5
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Celine",
+      "kind": "heart",
+      "name": "Water and Soil",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Celine",
+      "kind": "heart",
+      "name": "A Change of Green-ery",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Cherry Cobbler",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Celine",
+      "kind": "heart",
+      "name": "A Lost Flower",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Darcy",
+      "kind": "heart",
+      "name": "A New Blend",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "heart",
+      "name": "The Stele",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "heart",
+      "name": "The Ruins",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "heart",
+      "name": "The Manor",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "heart",
+      "name": "The Glade",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "heart",
+      "name": "Sweet Memories",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "heart",
+      "name": "A Mysterious Treasure",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "heart",
+      "name": "A Get Together",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "heart",
+      "name": "Extra Feed",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Quality Small Animal Feed",
+          "quantity": 3
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "heart",
+      "name": "Real Fine Day",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "heart",
+      "name": "A Little While Longer",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hemlock",
+      "kind": "heart",
+      "name": "Happy Anniversary",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "heart",
+      "name": "Josephine's Strays",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "heart",
+      "name": "Becoming Juniper's Guinea Pig",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "heart",
+      "name": "Horsing Around",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "heart",
+      "name": "Working Like a Dog",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "heart",
+      "name": "Potions and Errands",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Luc",
+      "kind": "heart",
+      "name": "A Fine Discovery",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "March",
+      "kind": "heart",
+      "name": "Surprise Me",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Copper Hoe",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "March",
+      "kind": "heart",
+      "name": "Many Hands Make Light Work",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "March",
+      "kind": "heart",
+      "name": "Shield of the Realm",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "heart",
+      "name": "The Market Committee Election",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Olric",
+      "kind": "heart",
+      "name": "Olric's Super Normal Dilemma",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "heart",
+      "name": "Pie in the Sky",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Wild Berry Pie",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "heart",
+      "name": "Shopping Buddy",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Dragon Horn Mushroom with Thyme",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "heart",
+      "name": "Farm Fresh Sous Chef",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Honey Curry",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "heart",
+      "name": "The Aldarian Cooking Contest",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "heart",
+      "name": "Bird Song",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "heart",
+      "name": "A Sapling",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "heart",
+      "name": "A Birdhouse",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Coconut Cream Pie",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "heart",
+      "name": "A Duet",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "SeridiaHuman",
+      "kind": "heart",
+      "name": "Your Heart Desires",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Taliferro",
+      "kind": "heart",
+      "name": "A Heartfelt Apology",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Terithia",
+      "kind": "heart",
+      "name": "The Big One",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "heart",
+      "name": "The Annual Check-up",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "heart",
+      "name": "Batch 312",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "heart",
+      "name": "An Outside Consultant",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "heart",
+      "name": "The Panacea",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Heart Quests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for Heather",
+      "objectives": [
+        {
+          "itemName": "Heather",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Lemon"
+        }
+      ],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for a Lemon",
+      "objectives": [
+        {
+          "itemName": "Lemon",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Tea with Lemon",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for Pineshrooms",
+      "objectives": [
+        {
+          "itemName": "Pineshroom",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Pineshroom Toast",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for a Silver Sword",
+      "objectives": [
+        {
+          "itemName": "Silver Sword",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 2000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for a Turnip",
+      "objectives": [
+        {
+          "itemName": "Turnip",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for an Iron Watering Can",
+      "objectives": [
+        {
+          "itemName": "Iron Watering Can",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 2200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Adeline",
+      "kind": "request",
+      "name": "Request for a Mistril Ingot",
+      "objectives": [
+        {
+          "itemName": "Mistril Ingot",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for an Apple",
+      "objectives": [
+        {
+          "itemName": "Apple",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 180,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for a Copper Ingot",
+      "objectives": [
+        {
+          "itemName": "Copper Ingot",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 220,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for an Emerald",
+      "objectives": [
+        {
+          "itemName": "Emerald",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 180,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "4"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for Gold Ore",
+      "objectives": [
+        {
+          "itemName": "Gold Ore",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for a Ruby",
+      "objectives": [
+        {
+          "itemName": "Ruby",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "The Mill Restoration Project"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for Ultimate Feed",
+      "objectives": [
+        {
+          "itemName": "Ultimate Large Animal Feed",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Request for a Pink Diamond",
+      "objectives": [
+        {
+          "itemName": "Pink Diamond",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 650,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Common Pheromone"
+        }
+      ],
+      "giver": "Balor",
+      "kind": "request",
+      "name": "Uncommon Pheromone Request",
+      "objectives": [
+        {
+          "itemName": "Uncommon Bug Pheromones",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Celine",
+      "kind": "request",
+      "name": "Request for a Copper Shovel",
+      "objectives": [
+        {
+          "itemName": "Copper Shovel",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 960,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Celine",
+      "kind": "request",
+      "name": "Request for Coral",
+      "objectives": [
+        {
+          "itemName": "Coral",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Fennel"
+        }
+      ],
+      "giver": "Celine",
+      "kind": "request",
+      "name": "Request for Fennel",
+      "objectives": [
+        {
+          "itemName": "Fennel",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Spring Salad",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Worn Pickaxe"
+        }
+      ],
+      "giver": "Celine",
+      "kind": "request",
+      "name": "Request for Gardening Materials",
+      "objectives": [
+        {
+          "itemName": "Sod",
+          "quantity": 1
+        },
+        {
+          "itemName": "Peat",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Tulip",
+          "quantity": 1
+        },
+        {
+          "name": "Daffodil",
+          "quantity": 1
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Celine",
+      "kind": "request",
+      "name": "Request for a Shadow Flower",
+      "objectives": [
+        {
+          "itemName": "Shadow Flower",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for Spirit Mushroom Tea",
+      "objectives": [
+        {
+          "itemName": "Spirit Mushroom Tea",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for Walnuts",
+      "objectives": [
+        {
+          "itemName": "Walnut",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 175,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for Coconuts",
+      "objectives": [
+        {
+          "itemName": "Coconut",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 155,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for Peaches",
+      "objectives": [
+        {
+          "itemName": "Peach",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for a Pomegranate",
+      "objectives": [
+        {
+          "itemName": "Pomegranate",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 175,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Apiaries and Terrariums"
+        }
+      ],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for Legendary Honey",
+      "objectives": [
+        {
+          "itemName": "Legendary Honey",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Darcy",
+      "kind": "request",
+      "name": "Request for a Spell Fruit",
+      "objectives": [
+        {
+          "itemName": "Spell Fruit",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for Acorns",
+      "objectives": [
+        {
+          "itemName": "Acorn",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 70,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for Chestnuts",
+      "objectives": [
+        {
+          "itemName": "Chestnut",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Apple",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for a Frog",
+      "objectives": [
+        {
+          "itemName": "Frog",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for Iron",
+      "objectives": [
+        {
+          "itemName": "Iron Ore",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 30,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "4"
+        }
+      ],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for Obsidian",
+      "objectives": [
+        {
+          "itemName": "Obsidian",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for a Snail",
+      "objectives": [
+        {
+          "itemName": "Snail",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Dell",
+      "kind": "request",
+      "name": "Request for a Crocus",
+      "objectives": [
+        {
+          "itemName": "Crocus",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Dozy",
+      "kind": "request",
+      "name": "Request for a Tidestone",
+      "objectives": [
+        {
+          "itemName": "Tidestone",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for Berries",
+      "objectives": [
+        {
+          "itemName": "Wild Berries",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Berries and Cream",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "building",
+          "value": "Coop"
+        }
+      ],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for Eggs",
+      "objectives": [
+        {
+          "itemName": "Egg",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Hardboiled Egg",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for a Moon Fruit",
+      "objectives": [
+        {
+          "itemName": "Moon Fruit",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Caramelized Moon Fruit",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Worn Pickaxe"
+        }
+      ],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for Shards",
+      "objectives": [
+        {
+          "itemName": "Shards",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 20,
+          "value": "Cooking"
+        }
+      ],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for a Strawberry",
+      "objectives": [
+        {
+          "itemName": "Strawberry",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Strawberry Shortcake",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for a Strawberry",
+      "objectives": [
+        {
+          "itemName": "Strawberry",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Strawberries and Cream",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for a Striped Bass",
+      "objectives": [
+        {
+          "itemName": "Striped Bass",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 10,
+          "value": "Cooking"
+        }
+      ],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for Pudding",
+      "objectives": [
+        {
+          "itemName": "Pudding",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Eiland",
+      "kind": "request",
+      "name": "Request for a Pumpkin",
+      "objectives": [
+        {
+          "itemName": "Pumpkin",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for Blackberries",
+      "objectives": [
+        {
+          "itemName": "Blackberry",
+          "quantity": 6
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Blackberry Jam",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for an Orange",
+      "objectives": [
+        {
+          "itemName": "Orange",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Marmalade",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for a Silver Ingot",
+      "objectives": [
+        {
+          "itemName": "Silver Ingot",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for a Snowdrop Anemone",
+      "objectives": [
+        {
+          "itemName": "Snowdrop Anemone",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Snowdrop Anemone Seed",
+          "quantity": 3
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for Wild Berries",
+      "objectives": [
+        {
+          "itemName": "Wild Berries",
+          "quantity": 6
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Wild Berry Scone",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Elsie",
+      "kind": "request",
+      "name": "Request for Roses",
+      "objectives": [
+        {
+          "itemName": "Rose",
+          "quantity": 12
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for Berries",
+      "objectives": [
+        {
+          "itemName": "Wild Berries",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 40,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for a Clam",
+      "objectives": [
+        {
+          "itemName": "Clam",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Clam Chowder",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for Iron Armor",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for a Perch",
+      "objectives": [
+        {
+          "itemName": "Perch",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Perch Risotto",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for a Tilapia",
+      "objectives": [
+        {
+          "itemName": "Tilapia",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 4,
+          "value": "Woodcrafting"
+        }
+      ],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for a Scarecrow",
+      "objectives": [
+        {
+          "itemName": "Scarecrow",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 425,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for Pears",
+      "objectives": [
+        {
+          "itemName": "Pear",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Corrupted Mistril Sword Request",
+      "objectives": [
+        {
+          "itemName": "Corrupted Mistril Sword",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Common Bait"
+        }
+      ],
+      "giver": "Errol",
+      "kind": "request",
+      "name": "Request for Uncommon Bait",
+      "objectives": [
+        {
+          "itemName": "Uncommon Fish Bait",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 4,
+          "value": "Cooking"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Baked Potato",
+      "objectives": [
+        {
+          "itemName": "Baked Potato",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Loaded Baked Potato",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Thorn Vine",
+      "objectives": [
+        {
+          "itemName": "Thorn Vine",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 240,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Hay"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Hay",
+      "objectives": [
+        {
+          "itemName": "Hay",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Milk",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Wooden Fence"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Wood Fencing",
+      "objectives": [
+        {
+          "itemName": "Wooden Fence",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Egg",
+          "quantity": 3
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "The Mill Restoration Project"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Ultimate Feed",
+      "objectives": [
+        {
+          "itemName": "Ultimate Small Animal Feed",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        }
+      ],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Peas",
+      "objectives": [
+        {
+          "itemName": "Peas",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hayden",
+      "kind": "request",
+      "name": "Request for Blackberries",
+      "objectives": [
+        {
+          "itemName": "Blackberry",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for a Caterpillar",
+      "objectives": [
+        {
+          "itemName": "Caterpillar",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Rice Ball",
+          "quantity": 1
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for a Catfish",
+      "objectives": [
+        {
+          "itemName": "Catfish",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Breaded Catfish",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for Chestnuts",
+      "objectives": [
+        {
+          "itemName": "Chestnut",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Roasted Chestnuts",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        }
+      ],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for Rice",
+      "objectives": [
+        {
+          "itemName": "Rice",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for Sapphire",
+      "objectives": [
+        {
+          "itemName": "Sapphire",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade Hayden's Barn"
+        }
+      ],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for Sheep Wool",
+      "objectives": [
+        {
+          "itemName": "Sheep Wool",
+          "quantity": 6
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 800,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 4,
+          "value": "Woodcrafting"
+        }
+      ],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for a Potted Plant",
+      "objectives": [
+        {
+          "itemName": "Potted Plant",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for Wild Grapes",
+      "objectives": [
+        {
+          "itemName": "Wild Grapes",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 125,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Hemlock",
+      "kind": "request",
+      "name": "Request for a Copper Net",
+      "objectives": [
+        {
+          "itemName": "Copper Net",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 520,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for a Beet",
+      "objectives": [
+        {
+          "itemName": "Beet",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for Bell Berry Bakewell Tart",
+      "objectives": [
+        {
+          "itemName": "Bell Berry Bakewell Tart",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 350,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for Tomatoes",
+      "objectives": [
+        {
+          "itemName": "Tomato",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Gazpacho",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 2,
+          "value": "Fishing"
+        }
+      ],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for a Goby",
+      "objectives": [
+        {
+          "itemName": "Goby",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for Lake Trout",
+      "objectives": [
+        {
+          "itemName": "Lake Trout",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for a Monster Horn",
+      "objectives": [
+        {
+          "itemName": "Monster Horn",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for a Cabbage",
+      "objectives": [
+        {
+          "itemName": "Cabbage",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for a Cauliflower",
+      "objectives": [
+        {
+          "itemName": "Cauliflower",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 225,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        }
+      ],
+      "giver": "Holt",
+      "kind": "request",
+      "name": "Request for Sugar Cane",
+      "objectives": [
+        {
+          "itemName": "Sugar Cane",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 225,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Ice",
+      "objectives": [
+        {
+          "itemName": "Ice Block",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Wintergreen Ice Cream",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "building",
+          "value": "Coop"
+        }
+      ],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Rooster Feathers",
+      "objectives": [
+        {
+          "itemName": "Rooster Feather",
+          "quantity": 4
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Salmon",
+      "objectives": [
+        {
+          "itemName": "Salmon",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Trail Mix",
+      "objectives": [
+        {
+          "itemName": "Trail Mix",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Crystal Berries",
+      "objectives": [
+        {
+          "itemName": "Crystal Berries",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Noodles",
+      "objectives": [
+        {
+          "itemName": "Noodles",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Dill",
+      "objectives": [
+        {
+          "itemName": "Dill",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Josephine",
+      "kind": "request",
+      "name": "Request for Chili Peppers",
+      "objectives": [
+        {
+          "itemName": "Chili Pepper",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 310,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade Hayden's Barn"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Capybara Bristles",
+      "objectives": [
+        {
+          "itemName": "Bristle",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Crystals",
+      "objectives": [
+        {
+          "itemName": "Crystal",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade Hayden's Barn"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Duck Egg",
+      "objectives": [
+        {
+          "itemName": "Duck Egg",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Fog Orchid",
+      "objectives": [
+        {
+          "itemName": "Fog Orchid",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Monster Powder"
+        },
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Monster Powder",
+      "objectives": [
+        {
+          "itemName": "Monster Powder",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Monster Mash",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Important Request for a Moon Fruit",
+      "objectives": [
+        {
+          "itemName": "Moon Fruit",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Moon Fruit Cake",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Red Toadstool"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Red Toadstool",
+      "objectives": [
+        {
+          "itemName": "Red Toadstool",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Water Chestnuts",
+      "objectives": [
+        {
+          "itemName": "Water Chestnut",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Water Chestnut Fritters",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Monster Core",
+      "objectives": [
+        {
+          "itemName": "Monster Core",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Carrot",
+      "objectives": [
+        {
+          "itemName": "Carrot",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for a Night Queen",
+      "objectives": [
+        {
+          "itemName": "Night Queen",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 600,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Uncommon Pheromone Request"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Rare Pheromone",
+      "objectives": [
+        {
+          "itemName": "Rare Bug Pheromones",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Juniper",
+      "kind": "request",
+      "name": "Request for Voidite",
+      "objectives": [
+        {
+          "itemName": "Voidite",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 650,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Coconuts",
+      "objectives": [
+        {
+          "itemName": "Coconut",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Coconut Milk",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Glass",
+      "objectives": [
+        {
+          "itemName": "Glass",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 240,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Wood",
+      "objectives": [
+        {
+          "itemName": "Wood",
+          "quantity": 10
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 40,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Sap",
+      "objectives": [
+        {
+          "itemName": "Sap",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 125,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Tomato Soup",
+      "objectives": [
+        {
+          "itemName": "Tomato Soup",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Uncommon Bait"
+        }
+      ],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for Rare Bait",
+      "objectives": [
+        {
+          "itemName": "Rare Fish Bait",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Landen",
+      "kind": "request",
+      "name": "Request for a Silver Axe",
+      "objectives": [
+        {
+          "itemName": "Silver Axe",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 3300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade Hayden's Barn"
+        }
+      ],
+      "giver": "Louis",
+      "kind": "request",
+      "name": "Request for Rabbit Wool",
+      "objectives": [
+        {
+          "itemName": "Rabbit Wool",
+          "quantity": 4
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        },
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Louis",
+      "kind": "request",
+      "name": "Request for a Monster Fang",
+      "objectives": [
+        {
+          "itemName": "Monster Fang",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 220,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        },
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Louis",
+      "kind": "request",
+      "name": "Request for a Middlemist",
+      "objectives": [
+        {
+          "itemName": "Middlemist",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Louis",
+      "kind": "request",
+      "name": "Request for Holly",
+      "objectives": [
+        {
+          "itemName": "Holly",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 310,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Copper Nugget Beetle"
+        }
+      ],
+      "giver": "Luc",
+      "kind": "request",
+      "name": "Request for Copper Beetle",
+      "objectives": [
+        {
+          "itemName": "Copper Nugget Beetle",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Trail Mix",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Luc",
+      "kind": "request",
+      "name": "Request for Dragon Horn Beetle",
+      "objectives": [
+        {
+          "itemName": "Dragon Horn Beetle",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Luc",
+      "kind": "request",
+      "name": "Request for a Pond Skater",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Grilled Cheese",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "The Mill Restoration Project"
+        }
+      ],
+      "giver": "Luc",
+      "kind": "request",
+      "name": "Request for Cheese",
+      "objectives": [
+        {
+          "itemName": "Cheese",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Luc",
+      "kind": "request",
+      "name": "Request for Singing Katydid",
+      "objectives": [
+        {
+          "itemName": "Singing Katydid",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 225,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for a Mullet",
+      "objectives": [
+        {
+          "itemName": "Mullet",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Chocolate",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for a Seashell",
+      "objectives": [
+        {
+          "itemName": "Pink Scallop Shell",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Tulip",
+          "quantity": 1
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for a Freshwater Oyster",
+      "objectives": [
+        {
+          "itemName": "Freshwater Oyster",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "The Deep Woods"
+        }
+      ],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for Temple Flower",
+      "objectives": [
+        {
+          "itemName": "Temple Flower",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for a Sunflower",
+      "objectives": [
+        {
+          "itemName": "Sunflower",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 60,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Apiaries and Terrariums"
+        }
+      ],
+      "giver": "Maple",
+      "kind": "request",
+      "name": "Request for Common Pheromone",
+      "objectives": [
+        {
+          "itemName": "Common Bug Pheromones",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 10,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "4"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for Armored Bass",
+      "objectives": [
+        {
+          "itemName": "Armored Bass",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Cop Some Ore"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for Copper",
+      "objectives": [
+        {
+          "itemName": "Copper Ore",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 75,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for Freshwater Eel",
+      "objectives": [
+        {
+          "itemName": "Freshwater Eel",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Grilled Eel Rice Bowl",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for an Iron Ingot",
+      "objectives": [
+        {
+          "itemName": "Iron Ingot",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Monster Shell"
+        },
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for a Monster Shell",
+      "objectives": [
+        {
+          "itemName": "Monster Shell",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Iron Ingot",
+          "quantity": 2
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for Silver Ore",
+      "objectives": [
+        {
+          "itemName": "Silver Ore",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 4,
+          "value": "Woodcrafting"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for a Shipping Bin",
+      "objectives": [
+        {
+          "itemName": "Shipping Bin",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Dragon-Forged Bracelet Request",
+      "objectives": [
+        {
+          "itemName": "Dragon-Forged Bracelet",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 999,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "March",
+      "kind": "request",
+      "name": "Request for Mistril Ore",
+      "objectives": [
+        {
+          "itemName": "Mistril Ore",
+          "quantity": 4
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 780,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade Hayden's Barn"
+        }
+      ],
+      "giver": "Merri",
+      "kind": "request",
+      "name": "Request for Horse Hair",
+      "objectives": [
+        {
+          "itemName": "Horse Hair",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Merri",
+      "kind": "request",
+      "name": "Request for a Hay Bale",
+      "objectives": [
+        {
+          "itemName": "Hay Bale",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Merri",
+      "kind": "request",
+      "name": "Request for a Watermelon",
+      "objectives": [
+        {
+          "itemName": "Watermelon",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "year",
+          "value": "2"
+        },
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Merri",
+      "kind": "request",
+      "name": "Request for a Fiddlehead",
+      "objectives": [
+        {
+          "itemName": "Fiddlehead",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 310,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Merri",
+      "kind": "request",
+      "name": "Request for Hardwood",
+      "objectives": [
+        {
+          "itemName": "Hard Wood",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Worn Pickaxe"
+        }
+      ],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Art Supplies",
+      "objectives": [
+        {
+          "itemName": "Clay",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 50,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "4"
+        }
+      ],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Breath of Flame",
+      "objectives": [
+        {
+          "itemName": "Breath of Flame",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 300,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Burdock Root",
+      "objectives": [
+        {
+          "itemName": "Burdock Root",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 240,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for an Onion",
+      "objectives": [
+        {
+          "itemName": "Onion",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 270,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "The Mill Restoration Project"
+        }
+      ],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Golden Butter",
+      "objectives": [
+        {
+          "itemName": "Golden Butter",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for a Sweet Potato",
+      "objectives": [
+        {
+          "itemName": "Sweet Potato",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Grilled Corn",
+      "objectives": [
+        {
+          "itemName": "Grilled Corn",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Nora",
+      "kind": "request",
+      "name": "Request for Corn",
+      "objectives": [
+        {
+          "itemName": "Corn",
+          "quantity": 4
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "4"
+        }
+      ],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for Diamond",
+      "objectives": [
+        {
+          "itemName": "Diamond",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "location",
+          "value": "Mines"
+        }
+      ],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for a Miner's Pickaxe",
+      "objectives": [
+        {
+          "itemName": "Miner's Pickaxe",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for a Really Round Rock",
+      "objectives": [
+        {
+          "itemName": "Really Round Rock",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Rock Floor",
+          "quantity": 1
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Stone"
+        }
+      ],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for a Rock",
+      "objectives": [
+        {
+          "itemName": "Stone",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Mines Crate Chair",
+          "quantity": 1
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 2,
+          "value": "Fishing"
+        }
+      ],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for a Pike",
+      "objectives": [
+        {
+          "itemName": "Pike",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Olric",
+      "kind": "request",
+      "name": "Request for Oyster Mushrooms",
+      "objectives": [
+        {
+          "itemName": "Oyster Mushroom",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 310,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 12,
+          "value": "Cooking"
+        }
+      ],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Berries",
+      "objectives": [
+        {
+          "itemName": "Wild Berries",
+          "quantity": 5
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Wild Berry Pie",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Blueberries",
+      "objectives": [
+        {
+          "itemName": "Blueberry",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Blueberry Jam",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Broccoli",
+      "objectives": [
+        {
+          "itemName": "Broccoli",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Broccoli Salad",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Cod",
+      "objectives": [
+        {
+          "itemName": "Cod",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cod with Thyme",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for a Deep Earthworm",
+      "objectives": [
+        {
+          "itemName": "Deep Earthworm",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Coconut Cream Pie",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "building",
+          "value": "Barn"
+        }
+      ],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Milk",
+      "objectives": [
+        {
+          "itemName": "Milk",
+          "quantity": 4
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Ice Cream Sundae",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Rosemary",
+      "objectives": [
+        {
+          "itemName": "Rosemary",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 450,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Wild Leek",
+      "objectives": [
+        {
+          "itemName": "Wild Leek",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Potato Soup",
+          "quantity": 1
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Garlic",
+      "objectives": [
+        {
+          "itemName": "Garlic",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Garlic Bread",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "The Mill Restoration Project"
+        }
+      ],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Butter",
+      "objectives": [
+        {
+          "itemName": "Butter",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 270,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Apiaries and Terrariums"
+        }
+      ],
+      "giver": "Reina",
+      "kind": "request",
+      "name": "Request for Deluxe Honey",
+      "objectives": [
+        {
+          "itemName": "Deluxe Honey",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "building",
+          "value": "Barn"
+        }
+      ],
+      "giver": "Ryis",
+      "kind": "request",
+      "name": "Request for Bull Horns",
+      "objectives": [
+        {
+          "itemName": "Bull Horn",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "request",
+      "name": "Request for Cranberries",
+      "objectives": [
+        {
+          "itemName": "Cranberry",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cranberry Orange Scone",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "request",
+      "name": "Request for Glowberries",
+      "objectives": [
+        {
+          "itemName": "Glowberry",
+          "quantity": 12
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Glowberry Cookies",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Ryis",
+      "kind": "request",
+      "name": "Request for Materials",
+      "objectives": [
+        {
+          "itemName": "Wood",
+          "quantity": 10
+        },
+        {
+          "itemName": "Stone",
+          "quantity": 10
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 80,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 2,
+          "value": "Fishing"
+        }
+      ],
+      "giver": "Ryis",
+      "kind": "request",
+      "name": "Request for Smallmouth Bass",
+      "objectives": [
+        {
+          "itemName": "Smallmouth Bass",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 275,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        }
+      ],
+      "giver": "Taliferro",
+      "kind": "request",
+      "name": "Request for Red Wine",
+      "objectives": [
+        {
+          "itemName": "Red Wine",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 310,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        }
+      ],
+      "giver": "Taliferro",
+      "kind": "request",
+      "name": "Request for Spring Galette",
+      "objectives": [
+        {
+          "itemName": "Spring Galette",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Taliferro",
+      "kind": "request",
+      "name": "Request for Beet Soup",
+      "objectives": [
+        {
+          "itemName": "Beet Soup",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 650,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "item",
+          "value": "Worm"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Bait",
+      "objectives": [
+        {
+          "itemName": "Worm",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 40,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "3"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for an Earthshroom",
+      "objectives": [
+        {
+          "itemName": "Earthshroom",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Sea Bream Rice",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Ingredients",
+      "objectives": [
+        {
+          "itemName": "Salmon",
+          "quantity": 1
+        },
+        {
+          "itemName": "Horseradish",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Horseradish Salmon",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Trout",
+      "objectives": [
+        {
+          "itemName": "Trout",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Smoked Trout Soup",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "2"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Underseaweed",
+      "objectives": [
+        {
+          "itemName": "Underseaweed",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 150,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 2,
+          "value": "Fishing"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Tuna Sashimi",
+      "objectives": [
+        {
+          "itemName": "Tuna Sashimi",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 400,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for a Coelacanth",
+      "objectives": [
+        {
+          "itemName": "Coelacanth",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 70,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Apiaries and Terrariums"
+        }
+      ],
+      "giver": "Terithia",
+      "kind": "request",
+      "name": "Request for Common Bait",
+      "objectives": [
+        {
+          "itemName": "Common Fish Bait",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Herbs",
+      "objectives": [
+        {
+          "itemName": "Basil",
+          "quantity": 1
+        },
+        {
+          "itemName": "Thyme",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Herb Salad",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for a Morel Mushroom",
+      "objectives": [
+        {
+          "itemName": "Morel Mushroom",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 75,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "spring"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Rose Hips",
+      "objectives": [
+        {
+          "itemName": "Rose Hip",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Rosehip Jam",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Seaweed",
+      "objectives": [
+        {
+          "itemName": "Seaweed",
+          "quantity": 2
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Seaweed Salad",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Tea",
+      "objectives": [
+        {
+          "itemName": "Tea",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 270,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "skill",
+          "level": 4,
+          "value": "Woodcrafting"
+        }
+      ],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for a Bird House",
+      "objectives": [
+        {
+          "itemName": "Birdhouse",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 430,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Cucumbers",
+      "objectives": [
+        {
+          "itemName": "Cucumber",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 200,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Apiaries and Terrariums"
+        }
+      ],
+      "giver": "Valen",
+      "kind": "request",
+      "name": "Request for Premium Honey",
+      "objectives": [
+        {
+          "itemName": "Premium Honey",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Vera",
+      "kind": "request",
+      "name": "Request for a Daikon Radish",
+      "objectives": [
+        {
+          "itemName": "Daikon Radish",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Winter Stew",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Vera",
+      "kind": "request",
+      "name": "Request for Sesame",
+      "objectives": [
+        {
+          "itemName": "Sesame",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Sesame Broccoli",
+          "quantity": null
+        }
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Vera",
+      "kind": "request",
+      "name": "Request for Pomegranate Juice",
+      "objectives": [
+        {
+          "itemName": "Pomegranate Juice",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        },
+        {
+          "kind": "skill",
+          "level": 14,
+          "value": "Cooking"
+        }
+      ],
+      "giver": "Vera",
+      "kind": "request",
+      "name": "Request for a Riceball",
+      "objectives": [
+        {
+          "itemName": "Rice Ball",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Greet the Vendors"
+        }
+      ],
+      "giver": "Vera",
+      "kind": "request",
+      "name": "Request for Salted Watermelon",
+      "objectives": [
+        {
+          "itemName": "Salted Watermelon",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 250,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [
+        "summer"
+      ],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        }
+      ],
+      "giver": "Wheedle",
+      "kind": "request",
+      "name": "Request for Gold Ingots",
+      "objectives": [
+        {
+          "itemName": "Gold Ingot",
+          "quantity": 3
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 810,
+          "token": ""
+        },
+        {
+          "amount": 40,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        }
+      ],
+      "giver": "Wheedle",
+      "kind": "request",
+      "name": "Request for Emeralds",
+      "objectives": [
+        {
+          "itemName": "Emerald",
+          "quantity": 7
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 415,
+          "token": ""
+        },
+        {
+          "amount": 40,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        }
+      ],
+      "giver": "Wheedle",
+      "kind": "request",
+      "name": "Request for Golden Cookies",
+      "objectives": [
+        {
+          "itemName": "Golden Cookies",
+          "quantity": 1
+        }
+      ],
+      "repeatable": true,
+      "rewardCurrency": [
+        {
+          "amount": 2100,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [
+        {
+          "kind": "quest",
+          "value": "Upgrade the Saturday Market"
+        },
+        {
+          "kind": "biome",
+          "value": "5"
+        }
+      ],
+      "giver": "Wheedle",
+      "kind": "request",
+      "name": "Request for a Written Root",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for a Dog Treat",
+      "objectives": [
+        {
+          "itemName": "Dog Treat",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 510,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for Fried Rice",
+      "objectives": [
+        {
+          "itemName": "Fried Rice",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 750,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for a Lobster",
+      "objectives": [
+        {
+          "itemName": "Lobster",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 445,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for Monster Mash",
+      "objectives": [
+        {
+          "itemName": "Monster Mash",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for a Pumpkin Pie",
+      "objectives": [
+        {
+          "itemName": "Pumpkin Pie",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 670,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Caldarus Human",
+      "kind": "request",
+      "name": "Request for a Sushi Platter",
+      "objectives": [
+        {
+          "itemName": "Sushi Platter",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 800,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for a Bomb",
+      "objectives": [
+        {
+          "itemName": "Clod Bomb",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 700,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for a Dragon-Forged Core",
+      "objectives": [
+        {
+          "itemName": "Dragon-Forged Core",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for a Fire Wasp",
+      "objectives": [
+        {
+          "itemName": "Fire Wasp",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 666,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for an Iron Shovel",
+      "objectives": [
+        {
+          "itemName": "Iron Shovel",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 777,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for a Latte",
+      "objectives": [
+        {
+          "itemName": "Latte",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 500,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for Mont Blanc",
+      "objectives": [
+        {
+          "itemName": "Mont Blanc",
+          "quantity": 1
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 1000,
+          "token": ""
+        },
+        {
+          "amount": 20,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Seridia Human",
+      "kind": "request",
+      "name": "Request for Void Stone",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Special Requests"
+    },
+    {
+      "conditions": [],
+      "giver": "Adeline",
+      "kind": "crown",
+      "name": "Crown Request: Crops",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Tables and Chairs",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Mine Forageables",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Fish",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Berries",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Ingots",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Iron Ingot",
+          "quantity": 10
+        },
+        {
+          "name": "Silver Ingot",
+          "quantity": 5
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Animal Materials",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Soup",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Stone",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Stone",
+          "quantity": 250
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Archeology Shards",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Shards",
+          "quantity": 15
+        },
+        {
+          "name": "Shard Mass",
+          "quantity": 15
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Copper Tools",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Golden Ingredients",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Golden Cheese",
+          "quantity": 5
+        },
+        {
+          "name": "Golden Mayonnaise",
+          "quantity": 5
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Baked Dishes",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Stone Paths",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Flowers",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Monster Materials",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Grass Starters",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Grass Starter",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Refined Stone",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Refined Stone",
+          "quantity": 20
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Bell Berries",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Bell Berry",
+          "quantity": 20
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "Crown Request: Gold Ingots",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [
+        {
+          "name": "Gold Ingot",
+          "quantity": 10
+        }
+      ],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "crown",
+      "name": "}{{Top}}",
+      "objectives": [],
+      "repeatable": true,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Requests > Crown Requests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Rice Ball Challenge",
+      "objectives": [
+        {
+          "itemName": "Rice Ball",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cooking Stockpot",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Crystal Berry Pie Challenge",
+      "objectives": [
+        {
+          "itemName": "Crystal Berry Pie",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cooking Hanging Pans",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Fried Earthshroom Challenge",
+      "objectives": [
+        {
+          "itemName": "Crispy Fried Earthshroom",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cooking Frying Pan",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Chocolate Cake Challenge",
+      "objectives": [
+        {
+          "itemName": "Chocolate Cake",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Garlic Braid",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Tide Salad Challenge",
+      "objectives": [
+        {
+          "itemName": "Tide Salad",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Hanging Onion Basket",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Omelet Challenge",
+      "objectives": [
+        {
+          "itemName": "Omelet",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Cooking Tea Kettle",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Bell Berry Bakewell Tart Challenge",
+      "objectives": [
+        {
+          "itemName": "Bell Berry Bakewell Tart",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Herb Planter",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Herb Salad Challenge",
+      "objectives": [
+        {
+          "itemName": "Herb Salad",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Oil And Vinegar Basket",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Incredibly Hot Pot Challenge",
+      "objectives": [
+        {
+          "itemName": "Incredibly Hot Pot",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Scale",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Golden Cookies Challenge",
+      "objectives": [
+        {
+          "itemName": "Golden Cookies",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Mixing Bowls",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Veggie Sub Sandwich Challenge",
+      "objectives": [
+        {
+          "itemName": "Veggie Sub Sandwich",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [
+        {
+          "name": "Kitchen Utensil Holder",
+          "quantity": null
+        }
+      ],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "cooking_challenge",
+      "name": "Beet Soup Challenge",
+      "objectives": [
+        {
+          "itemName": "Champions Kitchen",
+          "quantity": null
+        },
+        {
+          "itemName": "Counter Kitchen",
+          "quantity": null
+        }
+      ],
+      "repeatable": false,
+      "rewardCurrency": [],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Cooking Challenges"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Green Sapling Surprise",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Rock Clod Catastrophe",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Mushroom Madness",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Enchantern Explosion",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Staggering Stalagmites",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Essence Gone Batty",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Malicious Mimics",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Flame Spirit Shocker",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Lava Cat Conundrum",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Flying Tome Trouble",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Rock Stack Smackdown",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    },
+    {
+      "conditions": [],
+      "giver": null,
+      "kind": "mission",
+      "name": "Gryphon Grapple",
+      "objectives": [],
+      "repeatable": false,
+      "rewardCurrency": [
+        {
+          "amount": 100,
+          "token": "Renown"
+        }
+      ],
+      "rewardItems": [],
+      "seasons": [],
+      "section": "Mission Quests"
+    }
+  ],
+  "unclassifiedSections": [],
+  "wikiVersionStamp": "v0-14-1"
+}

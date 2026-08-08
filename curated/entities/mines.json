@@ -1,0 +1,113 @@
+{
+  "_comment": [
+    "The five mine biomes.",
+    "",
+    "WHY THIS IS HAND-AUTHORED. The biome pages are almost entirely template",
+    "calls — floor ranges come from `{{BiomesQuick|1|floors no}}`, seal names from",
+    "`{{#vardefine:sealName|...}}` — so `action=raw` returns the machinery rather",
+    "than the values. Resolving that would mean implementing a chunk of the",
+    "MediaWiki parser function suite to extract five records. Everything below was",
+    "read out of Template:BiomesQuick and the five biome pages by hand, and each",
+    "field says where it came from.",
+    "",
+    "FLOORS. From Template:BiomesQuick, which is the wiki's single source for",
+    "them: `floorsNum` is 1-19, 21-39, 41-59, 61-79, 81-99. The gaps are the seal",
+    "floors — 20, 40, 60, 80, 100 — which are story gates, not part of a biome.",
+    "Monsters do not spawn on floor 1 (Mines page, Trivia), and the Ancient Ruins",
+    "monster range is 81-89, 91-99 because floor 90 is a story floor.",
+    "",
+    "SEALS. Each biome ends at a seal that must be broken to continue, named on",
+    "the biome page as `sealName`/`sealFloor`. The seal quest is what gates the",
+    "NEXT biome, so it is recorded on the biome it blocks entry to.",
+    "",
+    "ORE. From each page's Mineables table. Both the base and Perfect variants are",
+    "listed because they are distinct items and gift lists distinguish them.",
+    "All biomes additionally have plain rocks dropping Stone, Peat, Sod and Clay",
+    "(Mines page, All Biomes) — recorded once as `common_drop_item_ids` rather",
+    "than repeated five times.",
+    "",
+    "ARTIFACT SETS. Only sets specific to one biome are listed. Buried, Oopart,",
+    "Gems and Metals are linked from every biome page, and Ritual from every one",
+    "except the Upper Mines (the page's own `#ifeq` says so) — listing shared sets",
+    "would make all five biomes look identical and tell a player nothing. Each",
+    "biome has a set named after it; the Ancient Ruins additionally links to",
+    "Dragon, and that link appears on no other biome page, which is what makes it",
+    "specific rather than a guess.",
+    "",
+    "NOT RECORDED. `monster_ids` is empty everywhere: the monster roster is in an",
+    "Encounters table whose drops come from `{{MonsterDrops|X}}`, another template",
+    "maze, and the monsters dataset does not exist yet. Empty plus a data gap, not",
+    "a half-filled guess. `fish_item_ids` is left to the build, which derives it",
+    "from items already located in the biome rather than repeating the list here."
+  ],
+
+  "commonDropItemNames": ["Stone", "Peat", "Sod", "Clay"],
+
+  "biomes": [
+    {
+      "id": "upper_mines",
+      "name": "The Upper Mines",
+      "location_id": "the_upper_mines",
+      "floors": { "min": 1, "max": 19 },
+      "seal": { "name": "The Water Seal", "floor": 20, "quest": "The Water Tablet" },
+      "unlock_quest": "Unlocking the Mines",
+      "ore_item_names": ["Copper Ore", "Perfect Copper Ore", "Ruby", "Perfect Ruby"],
+      "artifact_set_ids": ["archaeology_upper_mines"],
+      "hazards": [],
+      "wiki_page": "Mines/Upper Mines"
+    },
+    {
+      "id": "tide_caverns",
+      "name": "The Tide Caverns",
+      "location_id": "the_tide_caverns",
+      "floors": { "min": 21, "max": 39 },
+      "seal": { "name": "The Earth Seal", "floor": 40, "quest": "The Earth Tablet" },
+      "unlock_quest": "The Water Tablet",
+      "ore_item_names": ["Iron Ore", "Perfect Iron Ore", "Sapphire", "Perfect Sapphire"],
+      "artifact_set_ids": ["archaeology_tide_cavern"],
+      "hazards": [],
+      "wiki_page": "Mines/Tide Caverns"
+    },
+    {
+      "id": "deep_earth",
+      "name": "The Deep Earth",
+      "location_id": "the_deep_earth",
+      "floors": { "min": 41, "max": 59 },
+      "seal": { "name": "The Fire Seal", "floor": 60, "quest": "Breaking The Fire Seal" },
+      "unlock_quest": "The Earth Tablet",
+      "ore_item_names": ["Silver Ore", "Perfect Silver Ore", "Emerald", "Perfect Emerald"],
+      "artifact_set_ids": ["archaeology_deep_earth"],
+      "hazards": [],
+      "wiki_page": "Mines/Deep Earth"
+    },
+    {
+      "id": "lava_caves",
+      "name": "The Lava Caves",
+      "location_id": "the_lava_caves",
+      "floors": { "min": 61, "max": 79 },
+      "seal": { "name": "The Ruins Seal", "floor": 80, "quest": null },
+      "unlock_quest": "Breaking The Fire Seal",
+      "ore_item_names": ["Gold Ore", "Perfect Gold Ore", "Diamond", "Perfect Diamond"],
+      "artifact_set_ids": ["archaeology_lava_caves"],
+      "hazards": ["lava"],
+      "wiki_page": "Mines/Lava Caves"
+    },
+    {
+      "id": "ancient_ruins",
+      "name": "The Ancient Ruins",
+      "location_id": "the_ancient_ruins",
+      "floors": { "min": 81, "max": 99 },
+      "seal": { "name": "The Final Seal", "floor": 100, "quest": "Breaking The Final Seal" },
+      "unlock_quest": "Breaking The Ruins Seal",
+      "ore_item_names": [
+        "Mistril Ore",
+        "Perfect Mistril Ore",
+        "Pink Diamond",
+        "Perfect Pink Diamond"
+      ],
+      "artifact_set_ids": ["archaeology_dragon"],
+      "hazards": [],
+      "wiki_page": "Mines/Ancient Ruins"
+    }
+  ]
+}

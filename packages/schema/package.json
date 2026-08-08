@@ -1,0 +1,21 @@
+{
+  "name": "@mistria/schema",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zod contracts for the Mistria Codex dataset. The availability model lives here.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./primitives": "./src/primitives.ts",
+    "./availability": "./src/availability.ts",
+    "./search": "./src/search.ts"
+  },
+  "scripts": {
+    "emit": "tsx src/emit-json-schema.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.0.5"
+  }
+}

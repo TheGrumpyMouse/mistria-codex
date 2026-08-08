@@ -1,0 +1,144 @@
+{
+  "_comment": [
+    "Which wiki Cargo tables to fetch, and what to expect back.",
+    "",
+    "expectedRows is asserted after fetching. A mismatch fails the fetch rather than",
+    "writing a short file, because silently truncated pagination is the failure mode",
+    "that corrupts everything downstream without ever looking wrong.",
+    "",
+    "excludedFields records what we deliberately do NOT request, and why. Not asking",
+    "for prose is a stronger guarantee than asking and stripping afterwards.",
+    "",
+    "Row counts confirmed live against Special:CargoTables on 2026-08-07.",
+    "Table names live here rather than in code because FurnitureTEMP is explicitly",
+    "named TEMP and will be renamed."
+  ],
+  "endpoint": "https://fieldsofmistria.wiki.gg/index.php",
+  "pageSize": 500,
+  "_throttle_comment": "1s between requests. GiftPrefs needs eleven of them and wiki.gg returns 429 at 400ms. This is a volunteer-run community wiki; being slow is the correct behaviour.",
+  "throttleMs": 1000,
+  "tables": [
+    {
+      "name": "Items",
+      "expectedRows": 1154,
+      "fields": [
+        "itemName",
+        "icon",
+        "sources",
+        "location",
+        "season",
+        "isCraftable",
+        "isBuyable",
+        "isConsumable",
+        "sellValue",
+        "health",
+        "stamina",
+        "mana",
+        "museum",
+        "tags"
+      ],
+      "listFields": ["sources", "location", "tags"],
+      "excludedFields": [
+        {
+          "field": "description",
+          "reason": "verbatim in-game text — see docs/DATA-POLICY.md"
+        }
+      ]
+    },
+    {
+      "name": "Fish",
+      "expectedRows": 143,
+      "fields": ["fishName", "rarity", "size", "weather", "fishing", "diving"],
+      "listFields": ["weather"],
+      "excludedFields": []
+    },
+    {
+      "name": "Crops",
+      "expectedRows": 58,
+      "fields": ["name", "seed", "growthTime", "regrowTime", "museumSet"],
+      "listFields": [],
+      "excludedFields": []
+    },
+    {
+      "name": "Bugs",
+      "expectedRows": 103,
+      "fields": ["name", "rarity", "weather", "season", "time", "spawnCondition", "museumSet"],
+      "listFields": ["weather", "season"],
+      "excludedFields": []
+    },
+    {
+      "name": "Artifacts",
+      "expectedRows": 110,
+      "fields": ["name", "rarity", "museumSet"],
+      "listFields": [],
+      "excludedFields": []
+    },
+    {
+      "name": "Characters",
+      "expectedRows": 56,
+      "fields": [
+        "charName",
+        "relatives",
+        "affiliation",
+        "occupation",
+        "relationship",
+        "romanceable",
+        "birth",
+        "species",
+        "gender",
+        "eyes"
+      ],
+      "listFields": ["relatives"],
+      "excludedFields": []
+    },
+    {
+      "name": "GiftPrefs",
+      "expectedRows": 5328,
+      "fields": ["charName", "itemName", "interest"],
+      "listFields": [],
+      "excludedFields": []
+    },
+    {
+      "name": "Recipes",
+      "expectedRows": 282,
+      "fields": [
+        "itemName",
+        "colors",
+        "time",
+        "craftType",
+        "skillLevel",
+        "stars",
+        "workbenchLevel",
+        "ingredients",
+        "recipeSource"
+      ],
+      "listFields": ["colors", "ingredients", "recipeSource"],
+      "excludedFields": []
+    },
+    {
+      "name": "Ingredients",
+      "expectedRows": 663,
+      "fields": ["resultItem", "ingredient", "amount"],
+      "listFields": [],
+      "excludedFields": []
+    }
+  ],
+
+  "_notFetched": [
+    {
+      "table": "ArtifactComments",
+      "rows": 101,
+      "reason": "in-character museum placard text — prose, and exactly what docs/DATA-POLICY.md forbids. Not fetched at all rather than fetched and stripped."
+    },
+    {
+      "table": "FurnitureTEMP",
+      "rows": 773,
+      "reason": "explicitly named TEMP and expected to be renamed; furniture is already present in Items and adds nothing the museum or availability model needs. Revisit once the table has a stable name."
+    },
+    {
+      "table": "SortOrders",
+      "rows": 6,
+      "reason": "wiki display ordering, not game data."
+    }
+  ]
+}

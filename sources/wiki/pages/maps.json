@@ -1,0 +1,378 @@
+{
+  "gameVersion": "0.13",
+  "markers": [
+    {
+      "article": "Caldarus' House",
+      "group": "Buildings",
+      "name": "Caldarus' House",
+      "section": null,
+      "x": 5057,
+      "y": 822
+    },
+    {
+      "article": "Celine's Cottage",
+      "group": "Buildings",
+      "name": "Celine's Cottage",
+      "section": null,
+      "x": 3552,
+      "y": 2104
+    },
+    {
+      "article": "The Narrows",
+      "group": "Buildings",
+      "name": "Errol's Cabin",
+      "section": "Errol's Cabin",
+      "x": 2106,
+      "y": 1895
+    },
+    {
+      "article": "Hayden's Shop",
+      "group": "Buildings",
+      "name": "Hayden's Shop",
+      "section": null,
+      "x": 2260,
+      "y": 2358
+    },
+    {
+      "article": "Seridia's House",
+      "group": "Buildings",
+      "name": "Seridia's House",
+      "section": null,
+      "x": 765,
+      "y": 1511
+    },
+    {
+      "article": "Bathhouse",
+      "group": "Buildings",
+      "name": "The Bathhouse",
+      "section": null,
+      "x": 3546,
+      "y": 1694
+    },
+    {
+      "article": "Blacksmith",
+      "group": "Buildings",
+      "name": "The Blacksmith's Shop",
+      "section": null,
+      "x": 3295,
+      "y": 1705
+    },
+    {
+      "article": "Carpenter",
+      "group": "Buildings",
+      "name": "The Carpenter's Shop",
+      "section": null,
+      "x": 4492,
+      "y": 1601
+    },
+    {
+      "article": "Clinic",
+      "group": "Buildings",
+      "name": "The Clinic",
+      "section": null,
+      "x": 3534,
+      "y": 1830
+    },
+    {
+      "article": "General Store",
+      "group": "Buildings",
+      "name": "The General Store",
+      "section": null,
+      "x": 3496,
+      "y": 1969
+    },
+    {
+      "article": "Manor House",
+      "group": "Buildings",
+      "name": "The Manor House",
+      "section": null,
+      "x": 3421,
+      "y": 1580
+    },
+    {
+      "article": "Mill",
+      "group": "Buildings",
+      "name": "The Mill",
+      "section": null,
+      "x": 3613,
+      "y": 1980
+    },
+    {
+      "article": "Mines",
+      "group": "Buildings",
+      "name": "The Mines",
+      "section": null,
+      "x": 1989,
+      "y": 1651
+    },
+    {
+      "article": "Museum",
+      "group": "Buildings",
+      "name": "The Museum",
+      "section": null,
+      "x": 2282,
+      "y": 1728
+    },
+    {
+      "article": "Farmhouse",
+      "group": "Buildings",
+      "name": "The Player's Farmhouse",
+      "section": null,
+      "x": 3291,
+      "y": 2320
+    },
+    {
+      "article": "Inn",
+      "group": "Buildings",
+      "name": "The Sleeping Dragon Inn",
+      "section": null,
+      "x": 3332,
+      "y": 1966
+    },
+    {
+      "article": "Tackle Shop",
+      "group": "Buildings",
+      "name": "The Tackle Shop",
+      "section": null,
+      "x": 1997,
+      "y": 3071
+    },
+    {
+      "article": "The Beach",
+      "group": "Fountains",
+      "name": "The Beach's Fountain",
+      "section": "Rejuvenating Fountain",
+      "x": 1746,
+      "y": 3039
+    },
+    {
+      "article": "The Eastern Road",
+      "group": "Fountains",
+      "name": "The Eastern Road's Fountain",
+      "section": "Rejuvenating Fountain",
+      "x": 4831,
+      "y": 1553
+    },
+    {
+      "article": "The Narrows",
+      "group": "Fountains",
+      "name": "The Narrow's Fountain",
+      "section": "Rejuvenating Fountain",
+      "x": 1723,
+      "y": 1560
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Broken Beach Bridge",
+      "section": null,
+      "x": 1854,
+      "y": 3076
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Broken Bridge",
+      "section": null,
+      "x": 5051,
+      "y": 1714
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Broken Narrows' Stairs",
+      "section": null,
+      "x": 1725,
+      "y": 1646
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Broken Western Ruins' Stairs",
+      "section": null,
+      "x": 773,
+      "y": 1641
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Sealed Beach Cave",
+      "section": null,
+      "x": 2450,
+      "y": 3041
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Sealed Narrows' Cave",
+      "section": null,
+      "x": 2036,
+      "y": 1859
+    },
+    {
+      "article": null,
+      "group": "Quest",
+      "name": "Vine Covered Stairs",
+      "section": null,
+      "x": 4950,
+      "y": 1517
+    },
+    {
+      "article": "Sweetwater Farm",
+      "group": "Regions",
+      "name": "Sweetwater Farm",
+      "section": null,
+      "x": 2261,
+      "y": 2575
+    },
+    {
+      "article": "The Beach",
+      "group": "Regions",
+      "name": "The Beach",
+      "section": null,
+      "x": 2114,
+      "y": 3142.7
+    },
+    {
+      "article": "The Deep Woods",
+      "group": "Regions",
+      "name": "The Deep Woods",
+      "section": null,
+      "x": 4712,
+      "y": 1289
+    },
+    {
+      "article": "The Eastern Road",
+      "group": "Regions",
+      "name": "The Eastern Road",
+      "section": null,
+      "x": 4480,
+      "y": 1738
+    },
+    {
+      "article": "The Narrows",
+      "group": "Regions",
+      "name": "The Narrows",
+      "section": null,
+      "x": 2174.65,
+      "y": 1803.98
+    },
+    {
+      "article": "Farm",
+      "group": "Regions",
+      "name": "The Player's Farm",
+      "section": null,
+      "x": 3457,
+      "y": 2412
+    },
+    {
+      "article": "The Summit",
+      "group": "Regions",
+      "name": "The Summit",
+      "section": null,
+      "x": 2052,
+      "y": 1177.24
+    },
+    {
+      "article": "The Western Ruins",
+      "group": "Regions",
+      "name": "The Western Ruins",
+      "section": null,
+      "x": 906,
+      "y": 1892.7
+    },
+    {
+      "article": "Mistria",
+      "group": "Regions",
+      "name": "Town",
+      "section": null,
+      "x": 3429,
+      "y": 1851
+    },
+    {
+      "article": "Farm",
+      "group": "Statues",
+      "name": "Caldarus' Shrine",
+      "section": "Caldarus' Shrine",
+      "x": 3512,
+      "y": 2257
+    },
+    {
+      "article": "Chicken Statue",
+      "group": "Statues",
+      "name": "The Chicken Statue",
+      "section": null,
+      "x": 1837,
+      "y": 2652
+    },
+    {
+      "article": "The Western Ruins",
+      "group": "Statues",
+      "name": "The Digsite",
+      "section": "The Digsite",
+      "x": 770,
+      "y": 2062
+    },
+    {
+      "article": "The Dragonsworn Glade",
+      "group": "Statues",
+      "name": "The Dragonsworn Glade",
+      "section": null,
+      "x": 4717,
+      "y": 562
+    },
+    {
+      "article": "Fish Trap",
+      "group": "Statues",
+      "name": "The Fish Trap",
+      "section": null,
+      "x": 1688,
+      "y": 3170
+    },
+    {
+      "article": "The Deep Woods",
+      "group": "Statues",
+      "name": "The Grove of Rest",
+      "section": "The Grove of Rest",
+      "x": 4501,
+      "y": 973
+    },
+    {
+      "article": "Horse Statue",
+      "group": "Statues",
+      "name": "The Horse Statue",
+      "section": null,
+      "x": 1757,
+      "y": 1784
+    },
+    {
+      "article": "The Beach",
+      "group": "Statues",
+      "name": "The Lighthouse",
+      "section": "The Lighthouse",
+      "x": 2338,
+      "y": 3159
+    },
+    {
+      "article": "Manor House",
+      "group": "Statues",
+      "name": "The Manor's Gazebo",
+      "section": "The Gardens",
+      "x": 3566,
+      "y": 1518
+    },
+    {
+      "article": "Wishing Well",
+      "group": "Statues",
+      "name": "The Wishing Well",
+      "section": null,
+      "x": 5078,
+      "y": 2005
+    }
+  ],
+  "page": "Map:V0.13 (Unlocked)",
+  "size": [
+    5442,
+    3599
+  ]
+}

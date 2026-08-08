@@ -1,0 +1,78 @@
+{
+  "_comment": [
+    "The Quests page, section by section.",
+    "",
+    "WHY GO NEAR IT AT ALL. Fifteen quest ids are already referenced as gates by",
+    "the mines and the shops — `breaking_the_fire_seal`, `upgrade_the_inn` — and",
+    "until the quests exist those are dangling references that refint skips only",
+    "because the dataset is empty. A gate the app cannot name is a gate it cannot",
+    "explain.",
+    "",
+    "DESCRIPTIONS ARE NEVER READ. Column two of every table on this page is the",
+    "quest's in-game text, verbatim, in the player character's voice. The",
+    "'Requirements to Complete' column is the wiki's own prose. Neither is",
+    "captured. What is: the name, the kind, who gives it, and the rewards — plus",
+    "delivery objectives where the wiki writes them as `{{ItemIcon|Heather}} (3)`,",
+    "which is a structured fact rather than a sentence.",
+    "",
+    "NAME CELLS DIFFER BY SECTION, so the strategy is declared rather than",
+    "guessed:",
+    "  id   — the name cell carries an `id=\"greetthetownsfolk\"` anchor",
+    "  link — the name is a wiki link ([[Adeline/Heart_Events#Four_Hearts|…]])",
+    "  text — the name is the first plain-text cell that isn't just a row number",
+    "The Cooking and Mission tables open with a `#` column, which is why 'text'",
+    "skips purely numeric cells rather than taking the literal first one.",
+    "",
+    "OBJECTIVES. `objectivesFromEnd` counts cells back from the last one, because",
+    "Rewards is always last and the columns before it are not consistent. Requests",
+    "and Cooking Challenges put a deliverable item there; Mission Quests put a",
+    "monster count, and monsters are not ingested, so it is left off rather than",
+    "recorded as an item that does not exist.",
+    "",
+    "The page is stamped v0-14-1 and predates 1.0; every record says so."
+  ],
+
+  "page": "Quests",
+
+  "sections": [
+    { "match": "Story Quests", "kind": "story", "nameFrom": "id", "repeatable": false },
+    { "match": "Festival Quests", "kind": "festival", "nameFrom": "link", "repeatable": true },
+    { "match": "Important Quests", "kind": "important", "nameFrom": "text", "repeatable": false },
+    { "match": "Heart Quests", "kind": "heart", "nameFrom": "link", "repeatable": false },
+    {
+      "match": "Requests > Special Requests",
+      "kind": "request",
+      "nameFrom": "text",
+      "repeatable": false,
+      "objectivesFromEnd": 2
+    },
+    {
+      "match": "Requests > Crown Requests",
+      "kind": "crown",
+      "nameFrom": "text",
+      "repeatable": true,
+      "objectivesFromEnd": 2
+    },
+    {
+      "match": "Requests",
+      "kind": "request",
+      "nameFrom": "text",
+      "repeatable": true,
+      "objectivesFromEnd": 2
+    },
+    {
+      "match": "Cooking Challenges",
+      "kind": "cooking_challenge",
+      "nameFrom": "text",
+      "repeatable": false,
+      "objectivesFromEnd": 2
+    },
+    { "match": "Mission Quests", "kind": "mission", "nameFrom": "text", "repeatable": false }
+  ],
+
+  "ignoreSections": [
+    { "match": "Layout", "reason": "the Request Board's location page, not a quest table" },
+    { "match": "Gallery", "reason": "images" },
+    { "match": "History", "reason": "version changelog" }
+  ]
+}

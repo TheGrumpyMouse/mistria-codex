@@ -1,0 +1,136 @@
+{
+  "_comment": [
+    "The canonical places in Mistria, seeded from the 61 distinct tokens that",
+    "Items.location actually contains.",
+    "",
+    "Every record here has `anchor: null` and carries `anchor` in data_gaps. That is",
+    "deliberate. Anchors are coordinates in a hand-drawn map's viewBox, and the maps",
+    "have not been drawn yet — a placeholder coordinate would look exactly like a",
+    "real one and would put pins in the wrong place with total confidence.",
+    "Anchors land at milestone D4, alongside the SVGs.",
+    "",
+    "Mine biomes are locations AND have floor ranges. The floor range lives on the",
+    "availability window's `depth`, not here, because the same fish can be in a river",
+    "and on mine floors 21-39."
+  ],
+  "locations": [
+    {
+      "id": "the_farm",
+      "name": "The Farm",
+      "kind": "farm",
+      "habitats": ["farm", "overworld"],
+      "aliases": ["The Farm", "Farm", "Your Farm"]
+    },
+    {
+      "id": "mistria",
+      "name": "Mistria",
+      "kind": "outdoor",
+      "habitats": ["overworld"],
+      "aliases": ["Mistria", "The Town", "Town"]
+    },
+    {
+      "id": "the_beach",
+      "name": "The Beach",
+      "kind": "beach",
+      "habitats": ["beach", "ocean", "overworld"],
+      "aliases": ["The Beach", "Beach"]
+    },
+    {
+      "id": "the_eastern_road",
+      "name": "The Eastern Road",
+      "kind": "outdoor",
+      "habitats": ["overworld", "forest"],
+      "aliases": ["The Eastern Road", "Eastern Road", "East Road"]
+    },
+    {
+      "id": "the_narrows",
+      "name": "The Narrows",
+      "kind": "outdoor",
+      "habitats": ["overworld", "river"],
+      "aliases": ["The Narrows", "Narrows"]
+    },
+    {
+      "id": "the_deep_woods",
+      "name": "The Deep Woods",
+      "kind": "outdoor",
+      "habitats": ["forest", "overworld"],
+      "aliases": ["The Deep Woods", "Deep Woods", "The Deepwoods", "Deepwoods"]
+    },
+    {
+      "id": "the_western_ruins",
+      "name": "The Western Ruins",
+      "kind": "outdoor",
+      "habitats": ["overworld"],
+      "aliases": ["The Western Ruins", "Western Ruins"]
+    },
+    {
+      "id": "the_summit",
+      "name": "The Summit",
+      "kind": "outdoor",
+      "habitats": ["mountain", "overworld"],
+      "aliases": ["The Summit", "Summit"]
+    },
+    {
+      "id": "sweetwater_farm",
+      "name": "Sweetwater Farm",
+      "kind": "farm",
+      "habitats": ["farm", "overworld"],
+      "aliases": ["Sweetwater Farm", "Hayden's Farm"]
+    },
+    {
+      "id": "the_manors_gardens",
+      "name": "The Manor's Gardens",
+      "kind": "outdoor",
+      "parent_id": "mistria",
+      "habitats": ["overworld"],
+      "aliases": ["The Manor's Gardens", "Manor Gardens", "The Manor Gardens"]
+    },
+    {
+      "id": "the_mines",
+      "name": "The Mines",
+      "kind": "mine",
+      "habitats": ["cave"],
+      "aliases": ["The Mines", "Mines"]
+    },
+    {
+      "id": "the_upper_mines",
+      "name": "The Upper Mines",
+      "kind": "mine",
+      "parent_id": "the_mines",
+      "habitats": ["cave"],
+      "aliases": ["The Upper Mines", "Upper Mines"]
+    },
+    {
+      "id": "the_tide_caverns",
+      "name": "The Tide Caverns",
+      "kind": "mine",
+      "parent_id": "the_mines",
+      "habitats": ["cave", "mine_water"],
+      "aliases": ["The Tide Caverns", "Tide Caverns"]
+    },
+    {
+      "id": "the_deep_earth",
+      "name": "The Deep Earth",
+      "kind": "mine",
+      "parent_id": "the_mines",
+      "habitats": ["cave"],
+      "aliases": ["The Deep Earth", "Deep Earth"]
+    },
+    {
+      "id": "the_lava_caves",
+      "name": "The Lava Caves",
+      "kind": "mine",
+      "parent_id": "the_mines",
+      "habitats": ["cave"],
+      "aliases": ["The Lava Caves", "Lava Caves"]
+    },
+    {
+      "id": "the_ancient_ruins",
+      "name": "The Ancient Ruins",
+      "kind": "mine",
+      "parent_id": "the_mines",
+      "habitats": ["cave"],
+      "aliases": ["The Ancient Ruins", "Ancient Ruins"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "_comment": [
+    "Where the mines' monsters and their drop rates are read from.",
+    "",
+    "TWO PAGES, TWO HALVES. The Monsters page has a table per family — which",
+    "variants exist and which biome each lives in. `Template:MonsterDrops` has the",
+    "drop table, with rates, as one `#switch` on the monster's name.",
+    "",
+    "COSMETIC DROPS ARE GATED. Every family drops a pet skin at 5%, and a hat, and",
+    "sometimes sunglasses — but only once the Friend-Shaped perk is unlocked. The",
+    "drop shape has nowhere to put that condition, so those are excluded from",
+    "`drops` and the monster carries a `perk_gated_drops` gap. An unconditional",
+    "'5% pet skin' would be a wrong number, and a wrong number is worse than a",
+    "named absence.",
+    "",
+    "WHY THE NAME IS BUILT RATHER THAN READ. The Name column under 'Rock Clods'",
+    "says `Rock`, `Blue`, `Green` — it is a variant label, and the family lives in",
+    "the section heading. The two are put back together, except where the variant",
+    "already carries the family word ('Cool Sapling'), which the same page also",
+    "does. The drop table is keyed by the `{{MonsterDrops|…}}` argument instead,",
+    "because that is the one value on a row that is complete on its own.",
+    "",
+    "THE MIMIC IS IN EVERY BIOME. Its row says `{{BiomesQuick|All Monster}}`, and",
+    "the build writes that out as all five biome ids rather than leaving the list",
+    "empty. An empty list reads exactly like 'we do not know which', and those two",
+    "must never look the same. Writing it out is safe here because the biome list",
+    "is curated in this repo — 'all' cannot quietly come to mean 'all but the one",
+    "added last week'."
+  ],
+
+  "page": "Monsters",
+  "dropsTemplate": "Template:MonsterDrops",
+  "section": "Monsters",
+  "cosmeticPerk": "Friend-Shaped",
+
+  "_incomplete_comment": [
+    "The Mimic's drop table lists a hat and then links away: what it drops",
+    "depends on which biome it was fed in, and that lives on its own page. A",
+    "one-line drop list and a genuinely one-drop monster look identical in the",
+    "output, so the pointer is detected and the record carries a `drops` gap."
+  ],
+  "incompletePattern": "See Page For Loot"
+}

@@ -1,0 +1,1464 @@
+[
+  {
+    "diving": 0,
+    "fishName": "Alligator Gar",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Amberjack",
+    "fishing": null,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Anchovy",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Angel Fish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Archerfish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Armored Bass",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bait Thief",
+    "fishing": null,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Barb",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Blue Crab",
+    "fishing": null,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bluefish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bluegill",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bonito",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bowfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Bream",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Brown Bullhead",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Brown Trout",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Bullfrog",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Burbot",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Butterfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Candelabra Seadragon",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Carp",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Catfish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Cave Eel",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Cave Shark",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Cave Shrimp",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Char",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Cherry Fish",
+    "fishing": 1,
+    "rarity": "Legendary",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_petals.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Chub",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Chum",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Clam",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Cod",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Coelacanth",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Copper Rockfish",
+    "fishing": null,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Crab",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Crayfish",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Crucian Carp",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Dace",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Dart",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Earth Eel",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Emerald Horned Charger",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Firesail Fish",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Flathead Catfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Forest Perch",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Freshwater Eel",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Freshwater Oyster",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Frog",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Gar",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Gazer",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Giant Jellyfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Giant Koi",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Giant Tilapia",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Goby",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Golden Eel",
+    "fishing": null,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Golden Shiner",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Goldfish",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Grayling",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Grouper",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Hake",
+    "fishing": null,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Halibut",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Herring",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Horse Mackerel",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Iron Fish",
+    "fishing": null,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Jellyfish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Killifish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "King Crab",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Koi",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lake Chub",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lake Trout",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lamprey",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lava Piranha",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Leaf Fish",
+    "fishing": 1,
+    "rarity": "Legendary",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_leaves.png|20px|link=]]&amp;nbsp;[[Weather|Wind]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lightning Fish",
+    "fishing": 1,
+    "rarity": "Legendary",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Loach",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Lobster",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Luminescent Crab",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Mackerel",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Massive Minnow",
+    "fishing": null,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Mini-Whale Shark",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Minnow",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Mullet",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Muskie",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Newt",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Oarfish",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Ocean Sunfish",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Octopus",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Paddlefish",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Paper Pondshell",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Pearl Clam",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Pebble Minnow",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Perch",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Pike",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Pollock",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Pond Snail",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Puffer Fish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Rainbow Trout",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Razorback",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_storm.png|20px|link=]]&amp;nbsp;[[Weather|Storm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Red Snapper",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "River Snail",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Roach",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Rock Bass",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Rock Guppy",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Rockbiter",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Salmon",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sand Lance",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sapphire Betta",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Sardine",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sauger",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Saury",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sea Bass",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sea Bream",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sea Urchin",
+    "fishing": null,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Seaweed",
+    "fishing": 0,
+    "rarity": "Common",
+    "size": null,
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Shad",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Shadow Bass",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Shardfin",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Shark",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Shrimp",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Silver Redhorse",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Silver Squid",
+    "fishing": null,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Smallmouth Bass",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Snakehead",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Snapping Turtle",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Snow Fish",
+    "fishing": 1,
+    "rarity": "Legendary",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Squid",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Stingray",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Stone Loach",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Striped Bass",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sturgeon",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sulfur Crab",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sunny",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_snow.png|20px|link=]]&amp;nbsp;[[Weather|Snow]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_blizzard.png|20px|link=]]&amp;nbsp;[[Weather|Blizzard]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Sweetfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Swordfish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Tarpon",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Giant",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Tetra",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Tilapia",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Transparent Jellyfish",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 1,
+    "fishName": "Trout",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Tuna",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Turtle",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Walleye",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Large",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Water Balloon Fish",
+    "fishing": 1,
+    "rarity": "Uncommon",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "White Perch",
+    "fishing": 1,
+    "rarity": "Rare",
+    "size": "Medium",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  },
+  {
+    "diving": 0,
+    "fishName": "Winged Shrimp",
+    "fishing": 1,
+    "rarity": "Common",
+    "size": "Small",
+    "weather": [
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[Weather|Any]]&lt;/span&gt;"
+    ]
+  }
+]

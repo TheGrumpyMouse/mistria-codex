@@ -1,0 +1,42 @@
+{
+  "_comment": [
+    "The nine skills, and which statue manages their perks.",
+    "",
+    "WHY THIS IS PINNED. The Skills page lists its nine skills inside a prose",
+    "sentence and then repeats them as `=== Heading ===` sections — but so does",
+    "`=== Skill Perks ===`, which is not a skill. Rather than heuristically",
+    "deciding which level-3 headings are skills, the parser is handed the list and",
+    "scopes to exactly those sections. A tenth skill in a future patch is then a",
+    "one-line edit here plus a warning from the enricher, not a silent omission.",
+    "",
+    "STATUE. Perks for seven skills are bought at Caldarus' Shrine on the farm;",
+    "Mining and Combat are bought at the Dragon Statue in the mines. Stated on the",
+    "Skills page ('Speak with ... to manage'). It matters to the app because the",
+    "two statues unlock at different points in the game.",
+    "",
+    "MAX LEVEL. The page says 60 levels for every skill, stamped v0-15-0. The XP",
+    "curve is NOT on the wiki in any form — it stays null with an `xp_curve` data",
+    "gap until the game files land at G1. A plausible curve would be indis-",
+    "tinguishable from a real one, which is exactly the failure this project",
+    "refuses to ship.",
+    "",
+    "PERK DESCRIPTIONS ARE NOT CAPTURED. The Description column of every perk",
+    "table is verbatim in-game text. The parser reads the perk name, tier, level",
+    "and Essence cost — all factual numbers — and never the description. See",
+    "docs/DATA-POLICY.md; `effect_key` stays null until game files give us a",
+    "symbolic key rather than a sentence."
+  ],
+  "page": "Skills",
+  "maxLevel": 60,
+  "skills": [
+    { "id": "farming", "name": "Farming", "statue": "caldarus" },
+    { "id": "fishing", "name": "Fishing", "statue": "caldarus" },
+    { "id": "archaeology", "name": "Archaeology", "statue": "caldarus" },
+    { "id": "cooking", "name": "Cooking", "statue": "caldarus" },
+    { "id": "ranching", "name": "Ranching", "statue": "caldarus" },
+    { "id": "woodcrafting", "name": "Woodcrafting", "statue": "caldarus" },
+    { "id": "blacksmithing", "name": "Blacksmithing", "statue": "caldarus" },
+    { "id": "mining", "name": "Mining", "statue": "mines" },
+    { "id": "combat", "name": "Combat", "statue": "mines" }
+  ]
+}

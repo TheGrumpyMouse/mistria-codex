@@ -1,0 +1,96 @@
+{
+  "festivals": [
+    {
+      "day": 17,
+      "icon": "Calendar icon spring festival.png",
+      "implemented": true,
+      "location": "Mistria",
+      "name": "Spring Festival",
+      "page": "Spring Festival",
+      "season": "spring"
+    },
+    {
+      "day": 24,
+      "icon": "Calendar icon cooking contest.png",
+      "implemented": false,
+      "location": null,
+      "name": "Cooking Contest",
+      "page": null,
+      "season": "spring"
+    },
+    {
+      "day": 5,
+      "icon": "Calendar icon beach day.png",
+      "implemented": false,
+      "location": null,
+      "name": "Beach Day",
+      "page": null,
+      "season": "summer"
+    },
+    {
+      "day": 18,
+      "icon": "Calendar icon crop festival.png",
+      "implemented": false,
+      "location": null,
+      "name": "Crop Festival",
+      "page": null,
+      "season": "summer"
+    },
+    {
+      "day": 28,
+      "icon": "Calendar icon shooting star festival.png",
+      "implemented": true,
+      "location": "The Summit",
+      "name": "Shooting Star Festival",
+      "page": "Shooting Star Festival",
+      "season": "summer"
+    },
+    {
+      "day": 10,
+      "icon": "Calendar icon harvest festival.png",
+      "implemented": true,
+      "location": "Mistria",
+      "name": "Harvest Festival",
+      "page": "Harvest Festival",
+      "season": "fall"
+    },
+    {
+      "day": 28,
+      "icon": "Calendar icon halloween festival.png",
+      "implemented": false,
+      "location": null,
+      "name": "Halloween Festival",
+      "page": null,
+      "season": "fall"
+    },
+    {
+      "day": 10,
+      "icon": "Calendar icon animal festival.png",
+      "implemented": true,
+      "location": "Mistria",
+      "name": "Animal Festival",
+      "page": "Animal Festival",
+      "season": "winter"
+    },
+    {
+      "day": 24,
+      "icon": "Calendar icon gift festival.png",
+      "implemented": false,
+      "location": null,
+      "name": "Gift Festival",
+      "page": null,
+      "season": "winter"
+    },
+    {
+      "day": 28,
+      "icon": "Calendar icon new years eve festival.png",
+      "implemented": false,
+      "location": null,
+      "name": "New Year's Eve",
+      "page": null,
+      "season": "winter"
+    }
+  ],
+  "lastEdited": "2026-08-06T07:11:49Z",
+  "wikiVersionStamp": "v0-14-0"
+}

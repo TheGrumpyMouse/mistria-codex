@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // The app runs in a browser, so it needs DOM and a bundler's resolution —
+    // both of which fight the Node settings the pipeline needs. That conflict
+    // is why this is a workspace rather than one tsconfig.
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "types": ["vite/client", "vite-plugin-pwa/react"],
+    // Not `composite`: nothing imports this project, so there is nothing to
+    // emit declarations for, and a composite project may not turn them off.
+    // The root tsconfig references it for `tsc -b` to typecheck it in one pass.
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "scripts/**/*.ts"],
+  "references": [{ "path": "../../packages/schema" }]
+}

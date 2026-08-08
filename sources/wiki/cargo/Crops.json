@@ -1,0 +1,408 @@
+[
+  {
+    "growthTime": 14,
+    "museumSet": "Fall Crop",
+    "name": "Apple",
+    "regrowTime": 3,
+    "seed": "[[File:Apple sapling.png|24px|link=]]&amp;nbsp;[[Apple Sapling]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Forage",
+    "name": "Basil",
+    "regrowTime": 3,
+    "seed": "[[File:Basil seed.png|24px|link=]]&amp;nbsp;[[Basil Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Winter Crop",
+    "name": "Beet",
+    "regrowTime": null,
+    "seed": "[[File:Beet seed.png|24px|link=]]&amp;nbsp;[[Beet Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Fall Crop",
+    "name": "Broccoli",
+    "regrowTime": null,
+    "seed": "[[File:Broccoli seed.png|24px|link=]]&amp;nbsp;[[Broccoli Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Winter Forage",
+    "name": "Burdock Root",
+    "regrowTime": 3,
+    "seed": "[[File:Burdock root seed.png|24px|link=]]&amp;nbsp;[[Burdock Root Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Spring Crop",
+    "name": "Cabbage",
+    "regrowTime": null,
+    "seed": "[[File:Cabbage seed.png|24px|link=]]&amp;nbsp;[[Cabbage Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": null,
+    "name": "Carrot",
+    "regrowTime": null,
+    "seed": "[[File:Carrot seed.png|24px|link=]]&amp;nbsp;[[Carrot Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Summer Flower",
+    "name": "Catmint",
+    "regrowTime": null,
+    "seed": "[[File:Catmint seed.png|24px|link=]]&amp;nbsp;[[Catmint Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Winter Crop",
+    "name": "Cauliflower",
+    "regrowTime": null,
+    "seed": "[[File:Cauliflower seed.png|24px|link=]]&amp;nbsp;[[Cauliflower Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Fall Flower",
+    "name": "Celosia",
+    "regrowTime": null,
+    "seed": "[[File:Celosia seed.png|24px|link=]]&amp;nbsp;[[Celosia Seed]]"
+  },
+  {
+    "growthTime": 14,
+    "museumSet": "Spring Crop",
+    "name": "Cherry",
+    "regrowTime": 3,
+    "seed": "[[File:Cherry sapling.png|24px|link=]]&amp;nbsp;[[Cherry Sapling]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": null,
+    "name": "Chickpea",
+    "regrowTime": 3,
+    "seed": "[[File:Chickpea seed.png|24px|link=]]&amp;nbsp;[[Chickpea Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Summer Crop",
+    "name": "Chili Pepper",
+    "regrowTime": null,
+    "seed": "[[File:Chili pepper seed.png|24px|link=]]&amp;nbsp;[[Chili Pepper Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Fall Flower",
+    "name": "Chrysanthemum",
+    "regrowTime": null,
+    "seed": "[[File:Chrysanthemum seed.png|24px|link=]]&amp;nbsp;[[Chrysanthemum Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Crop",
+    "name": "Corn",
+    "regrowTime": 3,
+    "seed": "[[File:Corn seed.png|24px|link=]]&amp;nbsp;[[Corn Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Summer Flower",
+    "name": "Cosmos",
+    "regrowTime": null,
+    "seed": "[[File:Cosmos seed.png|24px|link=]]&amp;nbsp;[[Cosmos Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Fall Crop",
+    "name": "Cranberry",
+    "regrowTime": 3,
+    "seed": "[[File:Cranberry seed.png|24px|link=]]&amp;nbsp;[[Cranberry Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Summer Crop",
+    "name": "Cucumber",
+    "regrowTime": null,
+    "seed": "[[File:Cucumber seed.png|24px|link=]]&amp;nbsp;[[Cucumber Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Spring Flower",
+    "name": "Daffodil",
+    "regrowTime": null,
+    "seed": "[[File:Daffodil seed.png|24px|link=]]&amp;nbsp;[[Daffodil Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Winter Crop",
+    "name": "Daikon Radish",
+    "regrowTime": null,
+    "seed": "[[File:Daikon radish seed.png|24px|link=]]&amp;nbsp;[[Daikon Radish Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Summer Flower",
+    "name": "Daisy",
+    "regrowTime": null,
+    "seed": "[[File:Daisy seed.png|24px|link=]]&amp;nbsp;[[Daisy Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Forage",
+    "name": "Dill",
+    "regrowTime": 3,
+    "seed": "[[File:Dill seed.png|24px|link=]]&amp;nbsp;[[Dill Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Winter Flower",
+    "name": "Frost Lily",
+    "regrowTime": null,
+    "seed": "[[File:Frost lily seed.png|24px|link=]]&amp;nbsp;[[Frost Lily Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Fall Forage",
+    "name": "Garlic",
+    "regrowTime": 3,
+    "seed": "[[File:Garlic seed.png|24px|link=]]&amp;nbsp;[[Garlic Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Fall Forage",
+    "name": "Heather",
+    "regrowTime": 3,
+    "seed": "[[File:Heather seed.png|24px|link=]]&amp;nbsp;[[Heather Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Summer Flower",
+    "name": "Iris",
+    "regrowTime": null,
+    "seed": "[[File:Iris seed.png|24px|link=]]&amp;nbsp;[[Iris Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Winter Flower",
+    "name": "Jasmine",
+    "regrowTime": 3,
+    "seed": "[[File:Jasmine seed.png|24px|link=]]&amp;nbsp;[[Jasmine Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Spring Flower",
+    "name": "Lilac",
+    "regrowTime": 3,
+    "seed": "[[File:Lilac seed.png|24px|link=]]&amp;nbsp;[[Lilac Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Summer Flower",
+    "name": "Marigold",
+    "regrowTime": null,
+    "seed": "[[File:Marigold seed.png|24px|link=]]&amp;nbsp;[[Marigold Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Fall Forage",
+    "name": "Moon Fruit",
+    "regrowTime": 3,
+    "seed": "[[File:Moon fruit seed.png|24px|link=]]&amp;nbsp;[[Moon Fruit Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": null,
+    "name": "Night Queen",
+    "regrowTime": null,
+    "seed": "[[File:Night queen seed.png|24px|link=]]&amp;nbsp;[[Night Queen Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": null,
+    "name": "Onion",
+    "regrowTime": 3,
+    "seed": "[[File:Onion seed.png|24px|link=]]&amp;nbsp;[[Onion Seed]]"
+  },
+  {
+    "growthTime": 14,
+    "museumSet": null,
+    "name": "Orange",
+    "regrowTime": 3,
+    "seed": "[[File:Orange sapling.png|24px|link=]]&amp;nbsp;[[Orange Sapling]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Forage",
+    "name": "Oregano",
+    "regrowTime": 3,
+    "seed": "[[File:Oregano seed.png|24px|link=]]&amp;nbsp;[[Oregano Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": null,
+    "name": "Peas",
+    "regrowTime": 3,
+    "seed": "[[File:Peas seed.png|24px|link=]]&amp;nbsp;[[Pea Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Winter Flower",
+    "name": "Poinsettia",
+    "regrowTime": null,
+    "seed": "[[File:Poinsettia seed.png|24px|link=]]&amp;nbsp;[[Poinsettia Seed]]"
+  },
+  {
+    "growthTime": 14,
+    "museumSet": "Winter Crop",
+    "name": "Pomegranate",
+    "regrowTime": 3,
+    "seed": "[[File:Pomegranate sapling.png|24px|link=]]&amp;nbsp;[[Pomegranate Sapling]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Spring Crop",
+    "name": "Potato",
+    "regrowTime": null,
+    "seed": "[[File:Potato seed.png|24px|link=]]&amp;nbsp;[[Potato Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Fall Crop",
+    "name": "Pumpkin",
+    "regrowTime": null,
+    "seed": "[[File:Pumpkin seed.png|24px|link=]]&amp;nbsp;[[Pumpkin Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": null,
+    "name": "Rice Stalk",
+    "regrowTime": 3,
+    "seed": "[[File:Rice seed.png|24px|link=]]&amp;nbsp;[[Rice Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Fall Forage",
+    "name": "Rosemary",
+    "regrowTime": 3,
+    "seed": "[[File:Rosemary seed.png|24px|link=]]&amp;nbsp;[[Rosemary Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Forage",
+    "name": "Sage",
+    "regrowTime": 3,
+    "seed": "[[File:Sage seed.png|24px|link=]]&amp;nbsp;[[Sage Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Winter Flower",
+    "name": "Snapdragon",
+    "regrowTime": null,
+    "seed": "[[File:Snapdragon seed.png|24px|link=]]&amp;nbsp;[[Snapdragon Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Winter Crop",
+    "name": "Snow Peas",
+    "regrowTime": 3,
+    "seed": "[[File:Snow pea seed.png|24px|link=]]&amp;nbsp;[[Snow Pea Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Spring Flower",
+    "name": "Snowdrop Anemone",
+    "regrowTime": null,
+    "seed": "[[File:Snowdrop anemone seed.png|24px|link=]]&amp;nbsp;[[Snowdrop Anemone Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Spring Crop",
+    "name": "Strawberry",
+    "regrowTime": 3,
+    "seed": "[[File:Strawberry seed.png|24px|link=]]&amp;nbsp;[[Strawberry Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": null,
+    "name": "Sugar Cane",
+    "regrowTime": null,
+    "seed": "[[File:Sugar cane seed.png|24px|link=]]&amp;nbsp;[[Sugar Cane Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": null,
+    "name": "Sunflower",
+    "regrowTime": null,
+    "seed": "[[File:Sunflower seed.png|24px|link=]]&amp;nbsp;[[Sunflower Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Fall Crop",
+    "name": "Sweet Potato",
+    "regrowTime": null,
+    "seed": "[[File:Sweet potato seed.png|24px|link=]]&amp;nbsp;[[Sweet Potato Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": null,
+    "name": "Tea",
+    "regrowTime": 3,
+    "seed": "[[File:Tea seed.png|24px|link=]]&amp;nbsp;[[Tea Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Deep Woods",
+    "name": "Temple Flower",
+    "regrowTime": 3,
+    "seed": "[[File:Temple flower seed.png|24px|link=]]&amp;nbsp;[[Temple Flower Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Forage",
+    "name": "Thyme",
+    "regrowTime": 3,
+    "seed": "[[File:Thyme seed.png|24px|link=]]&amp;nbsp;[[Thyme Seed]]"
+  },
+  {
+    "growthTime": 5,
+    "museumSet": "Summer Crop",
+    "name": "Tomato",
+    "regrowTime": 3,
+    "seed": "[[File:Tomato seed.png|24px|link=]]&amp;nbsp;[[Tomato Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Spring Flower",
+    "name": "Tulip",
+    "regrowTime": null,
+    "seed": "[[File:Tulip seed.png|24px|link=]]&amp;nbsp;[[Tulip Seed]]"
+  },
+  {
+    "growthTime": 4,
+    "museumSet": "Spring Crop",
+    "name": "Turnip",
+    "regrowTime": null,
+    "seed": "[[File:Turnip seed.png|24px|link=]]&amp;nbsp;[[Turnip Seed]]"
+  },
+  {
+    "growthTime": 6,
+    "museumSet": "Fall Flower",
+    "name": "Viola",
+    "regrowTime": null,
+    "seed": "[[File:Viola seed.png|24px|link=]]&amp;nbsp;[[Viola Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": "Summer Crop",
+    "name": "Watermelon",
+    "regrowTime": null,
+    "seed": "[[File:Watermelon seed.png|24px|link=]]&amp;nbsp;[[Watermelon Seed]]"
+  },
+  {
+    "growthTime": 9,
+    "museumSet": null,
+    "name": "Wheat",
+    "regrowTime": 3,
+    "seed": "[[File:Wheat seed.png|24px|link=]]&amp;nbsp;[[Wheat Seed]]"
+  }
+]

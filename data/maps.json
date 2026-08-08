@@ -1,0 +1,31 @@
+[
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "svg"
+    ],
+    "former_ids": [],
+    "game_version": "0.13",
+    "icon_key": null,
+    "id": "mistria_world",
+    "id_status": "provisional",
+    "layers": [
+      "regions",
+      "buildings",
+      "landmarks"
+    ],
+    "map_version": 1,
+    "name": "Mistria and the valley",
+    "not_to_scale": false,
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "svg": "world.svg",
+    "version_added": null,
+    "view_box": "0 0 5442 3599",
+    "wiki_page": null
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "_comment": [
+    "How the place names in NPC schedule tables resolve to locations.",
+    "",
+    "Schedule tables are hand-typed by wiki editors and name places three ways in",
+    "the same column: `Manor: Adeline's Bedroom`, `Inn (South Table Bottom 1)`,",
+    "and bare `Town`. The build takes the text before the first `:` or `(` as the",
+    "place and everything after it as the anchor inside that place, which becomes",
+    "the block's `activity_key`.",
+    "",
+    "ROOMS RESOLVE TO THEIR BUILDING. `Adeline's Bedroom` is a room in the Manor",
+    "and `Bathhouse Change Room` is a room in the Bathhouse. There are hundreds of",
+    "rooms and thirteen buildings, and a room is not somewhere you can be directed",
+    "to — 'she is in the Manor' is the answer a player can act on.",
+    "",
+    "Names already covered by `aliases` in vocab/locations.json and",
+    "vocab/places.json are not repeated here. This file is only for spellings that",
+    "appear in schedules and nowhere else.",
+    "",
+    "WHAT IS DELIBERATELY ABSENT. `Forest`, `Meadow` and `Saturday Market` appear",
+    "once or twice each and are not mapped. 'Forest' is probably The Deep Woods",
+    "and 'Meadow' is probably somewhere on the Eastern Road, but probably is not a",
+    "source. They go to the unresolved queue, which is where a curation to-do",
+    "belongs — and the block is dropped rather than guessed, leaving a hole in the",
+    "day that reads as 'unknown' instead of a confident wrong place."
+  ],
+
+  "entries": [
+    {
+      "alias": "Town",
+      "id": "mistria",
+      "reason": "the schedules' word for the town itself"
+    },
+    {
+      "alias": "Adeline's Bedroom",
+      "id": "the_manor_house",
+      "reason": "a room in the Manor; Adeline is listed as a resident there"
+    },
+    {
+      "alias": "Adeline's Office",
+      "id": "the_manor_house",
+      "reason": "a room in the Manor, shown in the Manor House page's own image list"
+    },
+    {
+      "alias": "Office",
+      "id": "the_manor_house",
+      "reason": "how the later tables shorten Adeline's Office"
+    },
+    {
+      "alias": "Manor House Dining Room",
+      "id": "the_manor_house",
+      "reason": "a room in the Manor"
+    },
+    {
+      "alias": "Celine's Room",
+      "id": "mistria",
+      "reason": "Celine's cottage is in town — her own schedule puts its garden and bench under `Town` — but the wiki has no page for it, so there is no building record to point at yet"
+    },
+    {
+      "alias": "Celine's House",
+      "id": "mistria",
+      "reason": "as above"
+    },
+    {
+      "alias": "Hayden's House",
+      "id": "sweetwater_farm",
+      "reason": "Hayden's farm; his shop already resolves there"
+    },
+    {
+      "alias": "Hayden's Farm",
+      "id": "sweetwater_farm",
+      "reason": "as above"
+    },
+    {
+      "alias": "General Store Home",
+      "id": "the_general_store",
+      "reason": "the game splits the General Store into a shop half and the Dell family's home, and the schedules use both names"
+    },
+    {
+      "alias": "General Store Store",
+      "id": "the_general_store",
+      "reason": "as above"
+    },
+    {
+      "alias": "Museum Entry",
+      "id": "the_museum",
+      "reason": "the Museum's entrance area"
+    },
+    {
+      "alias": "Beach",
+      "id": "the_beach",
+      "reason": "the schedules drop the leading article"
+    },
+    {
+      "alias": "Western Ruins",
+      "id": "the_western_ruins",
+      "reason": "the schedules drop the leading article"
+    },
+    {
+      "alias": "Eastern Road",
+      "id": "the_eastern_road",
+      "reason": "the schedules drop the leading article"
+    }
+  ]
+}

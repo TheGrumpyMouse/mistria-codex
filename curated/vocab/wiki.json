@@ -1,0 +1,16 @@
+{
+  "_comment": [
+    "Where the page enrichers fetch from, and how politely.",
+    "",
+    "One file rather than one block per enricher, because three copies of a",
+    "throttle value drift and the wiki is a volunteer community resource — being",
+    "impolite to it is both rude and the fastest route to being blocked.",
+    "",
+    "Cargo tables are fetched separately (curated/vocab/cargo_tables.json); this",
+    "covers `action=raw` page reads and the revisions API.",
+    "",
+    "CI never touches the wiki. sources/ is committed so builds are hermetic."
+  ],
+  "endpoint": "https://fieldsofmistria.wiki.gg/index.php",
+  "throttleMs": 1000
+}

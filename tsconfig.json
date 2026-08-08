@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/schema"
+    },
+    {
+      "path": "./packages/sync-client"
+    },
+    {
+      "path": "./packages/pipeline"
+    },
+    {
+      "path": "./apps/web"
+    }
+  ]
+}

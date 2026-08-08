@@ -1,0 +1,1650 @@
+[
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/farming",
+    "id": "farming",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Farming",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "prepared_picker",
+        "level": 1,
+        "name": "Prepared Picker",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "a_day_well_spent",
+        "level": 1,
+        "name": "A Day Well Spent",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "green_thumb",
+        "level": 1,
+        "name": "Green Thumb",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "refreshing",
+        "level": 1,
+        "name": "Refreshing",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 60,
+        "id": "bountiful",
+        "level": 15,
+        "name": "Bountiful",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 30,
+        "id": "heavy_duty",
+        "level": 15,
+        "name": "Heavy Duty",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "well_watered",
+        "level": 15,
+        "name": "Well Watered",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "nice_swing",
+        "level": 15,
+        "name": "Nice Swing",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 95,
+        "id": "living_off_the_land",
+        "level": 30,
+        "name": "Living off the Land",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 100,
+        "id": "superb_sower",
+        "level": 30,
+        "name": "Superb Sower",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 90,
+        "id": "harvest_time",
+        "level": 30,
+        "name": "Harvest Time",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 90,
+        "id": "prize_winning",
+        "level": 30,
+        "name": "Prize Winning",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "sickle_sword",
+        "level": 45,
+        "name": "Sickle Sword",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "ornamental",
+        "level": 45,
+        "name": "Ornamental",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "perfect_pollinators",
+        "level": 45,
+        "name": "Perfect Pollinators",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 160,
+        "id": "magic_design",
+        "level": 45,
+        "name": "Magic Design",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 210,
+        "id": "earthly_essence",
+        "level": 60,
+        "name": "Earthly Essence",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/fishing",
+    "id": "fishing",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Fishing",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "weedline_watcher",
+        "level": 1,
+        "name": "Weedline Watcher",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "aquatic_antiquities",
+        "level": 1,
+        "name": "Aquatic Antiquities",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "appealing_reeling",
+        "level": 1,
+        "name": "Appealing Reeling",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "catch_of_the_day",
+        "level": 1,
+        "name": "Catch of the Day",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "lucky_haul",
+        "level": 15,
+        "name": "Lucky Haul",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 40,
+        "id": "perfect_catch",
+        "level": 15,
+        "name": "Perfect Catch",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "school_crasher",
+        "level": 15,
+        "name": "School Crasher",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 40,
+        "id": "unexpected_haul",
+        "level": 15,
+        "name": "Unexpected Haul",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "full_class_i",
+        "level": 30,
+        "name": "Full Class I",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "legendary",
+        "level": 30,
+        "name": "Legendary",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "treasure_trove",
+        "level": 30,
+        "name": "Treasure Trove",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "weedline_watcher_ii",
+        "level": 30,
+        "name": "Weedline Watcher II",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "appealing_reeling_ii",
+        "level": 45,
+        "name": "Appealing Reeling II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "frenzy",
+        "level": 45,
+        "name": "Frenzy",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "what_a_catch",
+        "level": 45,
+        "name": "What a Catch",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "lucky_haul_ii",
+        "level": 45,
+        "name": "Lucky Haul II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "abyssal_ascendence",
+        "level": 60,
+        "name": "Abyssal Ascendence",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/archaeology",
+    "id": "archaeology",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Archaeology",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "museum_quality_i",
+        "level": 1,
+        "name": "Museum Quality I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "unpeatable",
+        "level": 1,
+        "name": "Unpeatable",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "sunken_secrets",
+        "level": 1,
+        "name": "Sunken Secrets",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "western_ruins_scholar",
+        "level": 1,
+        "name": "Western Ruins Scholar",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 35,
+        "id": "sunken_treasure",
+        "level": 15,
+        "name": "Sunken Treasure",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 40,
+        "id": "stoneturner",
+        "level": 15,
+        "name": "Stoneturner",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "eastern_road_scholar",
+        "level": 15,
+        "name": "Eastern Road Scholar",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "pursuit",
+        "level": 15,
+        "name": "Pursuit",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "back_in_vogue",
+        "level": 30,
+        "name": "Back in Vogue",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 85,
+        "id": "natural_beauty",
+        "level": 30,
+        "name": "Natural Beauty",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "well_placed",
+        "level": 30,
+        "name": "Well Placed",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "museum_quality_ii",
+        "level": 30,
+        "name": "Museum Quality II",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "former_farmers",
+        "level": 45,
+        "name": "Former Farmers",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 140,
+        "id": "museum_quality_iii",
+        "level": 45,
+        "name": "Museum Quality III",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "back_in_vogue_ii",
+        "level": 45,
+        "name": "Back In Vogue II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "natural_beauty_ii",
+        "level": 45,
+        "name": "Natural Beauty II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "mist_sight",
+        "level": 60,
+        "name": "Mist Sight",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/cooking",
+    "id": "cooking",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Cooking",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "waste_not_want_not",
+        "level": 1,
+        "name": "Waste Not Want Not",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "time_to_eat_i",
+        "level": 1,
+        "name": "Time To Eat I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "restorative_cooking",
+        "level": 1,
+        "name": "Restorative Cooking",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "taste_maker",
+        "level": 1,
+        "name": "Taste Maker",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "award_winning",
+        "level": 15,
+        "name": "Award Winning",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "likable_cooking",
+        "level": 15,
+        "name": "Likable Cooking",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "seasoned",
+        "level": 15,
+        "name": "Seasoned",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "time_to_eat_ii",
+        "level": 15,
+        "name": "Time to Eat II",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "a_way_to_the_heart",
+        "level": 30,
+        "name": "A Way to the Heart",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "dinner_for_two",
+        "level": 30,
+        "name": "Dinner For Two",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "speedy_cooking",
+        "level": 30,
+        "name": "Speedy Cooking",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "time_to_eat_iii",
+        "level": 30,
+        "name": "Time to Eat III",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "lovable_cooking",
+        "level": 45,
+        "name": "Lovable Cooking",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "snacktime",
+        "level": 45,
+        "name": "Snacktime",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "caffeine_crimes",
+        "level": 45,
+        "name": "Caffeine Crimes",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "magical_meals",
+        "level": 45,
+        "name": "Magical Meals",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "fairy_cooking",
+        "level": 60,
+        "name": "Fairy Cooking",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0",
+      "tier_5"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/ranching",
+    "id": "ranching",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Ranching",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "feeding_frenzy",
+        "level": 1,
+        "name": "Feeding Frenzy",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 25,
+        "id": "close_bond",
+        "level": 1,
+        "name": "Close Bond",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 30,
+        "id": "barnyard_bounty_i",
+        "level": 1,
+        "name": "Barnyard Bounty I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 25,
+        "id": "currency_of_care",
+        "level": 1,
+        "name": "Currency of Care",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "welcome_home_i",
+        "level": 15,
+        "name": "Welcome Home I",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 40,
+        "id": "feed_prepper",
+        "level": 15,
+        "name": "Feed Prepper",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "currency_of_care_ii",
+        "level": 15,
+        "name": "Currency of Care II",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 40,
+        "id": "discount_treats",
+        "level": 15,
+        "name": "Discount Treats",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "currency_of_care_iii",
+        "level": 30,
+        "name": "Currency of Care III",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "welcome_home_ii",
+        "level": 30,
+        "name": "Welcome Home II",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "barnyard_bounty_ii",
+        "level": 30,
+        "name": "Barnyard Bounty II",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "wind_down",
+        "level": 30,
+        "name": "Wind Down",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "the_bell_tolls",
+        "level": 45,
+        "name": "The Bell Tolls",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "maximum_milling",
+        "level": 45,
+        "name": "Maximum Milling",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "barnyard_bounty_iii",
+        "level": 45,
+        "name": "Barnyard Bounty III",
+        "statue": "caldarus",
+        "tier": 4
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/woodcrafting",
+    "id": "woodcrafting",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Woodcrafting",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "hammer_timing_i",
+        "level": 1,
+        "name": "Hammer Timing I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "lumberjack_i",
+        "level": 1,
+        "name": "Lumberjack I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "masonry",
+        "level": 1,
+        "name": "Masonry",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "forager",
+        "level": 1,
+        "name": "Forager",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "hammer_timing_ii",
+        "level": 15,
+        "name": "Hammer Timing II",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "natural",
+        "level": 15,
+        "name": "Natural",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 95,
+        "id": "quality_crafting",
+        "level": 15,
+        "name": "Quality Crafting",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 60,
+        "id": "working_with_the_grain",
+        "level": 15,
+        "name": "Working with the Grain",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "material_world",
+        "level": 30,
+        "name": "Material World",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "steady_supplies",
+        "level": 30,
+        "name": "Steady Supplies",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "set_pieces",
+        "level": 30,
+        "name": "Set Pieces",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "hammer_timing_iii",
+        "level": 30,
+        "name": "Hammer Timing III",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "lumberjack_ii",
+        "level": 45,
+        "name": "Lumberjack II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 145,
+        "id": "underground_inspiration",
+        "level": 45,
+        "name": "Underground Inspiration",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "deliberate_debris",
+        "level": 45,
+        "name": "Deliberate Debris",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "working_with_the_grain_ii",
+        "level": 45,
+        "name": "Working with the Grain II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "void_crafting",
+        "level": 60,
+        "name": "Void Crafting",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "big_water_sprites",
+        "level": 60,
+        "name": "Big Water Sprites",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/blacksmithing",
+    "id": "blacksmithing",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Blacksmithing",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "copper_expert",
+        "level": 1,
+        "name": "Copper Expert",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "time_sensitive_i",
+        "level": 1,
+        "name": "Time Sensitive I",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "sharp_blacksmithing",
+        "level": 1,
+        "name": "Sharp Blacksmithing",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "fortified_blacksmithing",
+        "level": 1,
+        "name": "Fortified Blacksmithing",
+        "statue": "caldarus",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "iron_expert",
+        "level": 15,
+        "name": "Iron Expert",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "time_sensitive_ii",
+        "level": 15,
+        "name": "Time Sensitive II",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "leech_blacksmithing",
+        "level": 15,
+        "name": "Leech Blacksmithing",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "lightweight_blacksmithing",
+        "level": 15,
+        "name": "Lightweight Blacksmithing",
+        "statue": "caldarus",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 65,
+        "id": "empowered_i",
+        "level": 30,
+        "name": "Empowered I",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "hasty_blacksmithing",
+        "level": 30,
+        "name": "Hasty Blacksmithing",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "silver_expert",
+        "level": 30,
+        "name": "Silver Expert",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "time_sensitive_iii",
+        "level": 30,
+        "name": "Time Sensitive III",
+        "statue": "caldarus",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "empowered_ii",
+        "level": 45,
+        "name": "Empowered II",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "gold_expert",
+        "level": 45,
+        "name": "Gold Expert",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "tireless_blacksmithing",
+        "level": 45,
+        "name": "Tireless Blacksmithing",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "time_sensitive_iv",
+        "level": 45,
+        "name": "Time Sensitive IV",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "mistril_expert",
+        "level": 60,
+        "name": "Mistril Expert",
+        "statue": "caldarus",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/mining",
+    "id": "mining",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Mining",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "earth_breaker",
+        "level": 1,
+        "name": "Earth Breaker",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 25,
+        "id": "ore_riginal",
+        "level": 1,
+        "name": "Ore-riginal",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "reclaimer",
+        "level": 1,
+        "name": "Reclaimer",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "treasure_hunter",
+        "level": 1,
+        "name": "Treasure Hunter",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "iron_hound",
+        "level": 15,
+        "name": "Iron Hound",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "true_blue",
+        "level": 15,
+        "name": "True Blue",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "treasured",
+        "level": 15,
+        "name": "Treasured",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "mine_time",
+        "level": 15,
+        "name": "Mine Time",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "resonance",
+        "level": 30,
+        "name": "Resonance",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "earth_breaker_ii",
+        "level": 30,
+        "name": "Earth Breaker II",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 85,
+        "id": "silver_seeker",
+        "level": 30,
+        "name": "Silver Seeker",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "fantastic_finds",
+        "level": 30,
+        "name": "Fantastic Finds",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "lost_to_history",
+        "level": 45,
+        "name": "Lost to History",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "good_as_gold",
+        "level": 45,
+        "name": "Good as Gold",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 150,
+        "id": "refined_rockery",
+        "level": 45,
+        "name": "Refined Rockery",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "break_one_get_two",
+        "level": 45,
+        "name": "Break One, Get Two",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "mistril_mastery",
+        "level": 60,
+        "name": "Mistril Mastery",
+        "statue": "mines",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 210,
+        "id": "perfect_pick",
+        "level": 60,
+        "name": "Perfect Pick",
+        "statue": "mines",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "void_value",
+        "level": 60,
+        "name": "Void Value",
+        "statue": "mines",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "lost_to_history_ii",
+        "level": 60,
+        "name": "Lost to History II",
+        "statue": "mines",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  },
+  {
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "xp_curve",
+      "effect_key",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": "v0-15-0",
+    "icon_key": "skill/combat",
+    "id": "combat",
+    "id_status": "provisional",
+    "max_level": 60,
+    "name": "Combat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "perks": [
+      {
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "guardians_shield",
+        "level": 1,
+        "name": "Guardian's Shield",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 20,
+        "id": "true_strike",
+        "level": 1,
+        "name": "True Strike",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "jump_attack",
+        "level": 1,
+        "name": "Jump Attack",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 15,
+        "id": "well_armed",
+        "level": 1,
+        "name": "Well Armed",
+        "statue": "mines",
+        "tier": 1
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "quick_footed",
+        "level": 15,
+        "name": "Quick Footed",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "what_an_offer",
+        "level": 15,
+        "name": "What an Offer",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 50,
+        "id": "generous_in_defeat",
+        "level": 15,
+        "name": "Generous in Defeat",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 45,
+        "id": "dungeon_delicacies",
+        "level": 15,
+        "name": "Dungeon Delicacies",
+        "statue": "mines",
+        "tier": 2
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 80,
+        "id": "perfect_prefix",
+        "level": 30,
+        "name": "Perfect Prefix",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "rocking",
+        "level": 30,
+        "name": "Rocking",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 75,
+        "id": "in_motion",
+        "level": 30,
+        "name": "In Motion",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 70,
+        "id": "out_of_juice",
+        "level": 30,
+        "name": "Out of Juice",
+        "statue": "mines",
+        "tier": 3
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 160,
+        "id": "sonic_boom",
+        "level": 45,
+        "name": "Sonic Boom",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "gift_exchange",
+        "level": 45,
+        "name": "Gift Exchange",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 155,
+        "id": "guardians_shield_ii",
+        "level": 45,
+        "name": "Guardian's Shield II",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 160,
+        "id": "true_strike_ii",
+        "level": 45,
+        "name": "True Strike II",
+        "statue": "mines",
+        "tier": 4
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "sure_strike",
+        "level": 60,
+        "name": "Sure Strike",
+        "statue": "mines",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "generous_in_defeat_ii",
+        "level": 60,
+        "name": "Generous in Defeat II",
+        "statue": "mines",
+        "tier": 5
+      },
+      {
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "friend_shaped",
+        "level": 60,
+        "name": "Friend-Shaped",
+        "statue": "mines",
+        "tier": 5
+      }
+    ],
+    "prov": {
+      "*": "wiki_page"
+    },
+    "version_added": null,
+    "wiki_page": "Skills",
+    "xp_curve": null
+  }
+]

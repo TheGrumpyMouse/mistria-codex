@@ -1,0 +1,26 @@
+{
+  "_comment": [
+    "Season aliases, written against the 11 distinct values Items.season actually",
+    "contains (see `pnpm --filter @mistria/pipeline run vocab:report`).",
+    "",
+    "Two things worth knowing before editing:",
+    "",
+    "1. An empty season is the most common value by far (725 of 1154 items). It means",
+    "   'not seasonal' — tools, furniture, cooked dishes — NOT 'unknown'. It resolves",
+    "   to all four seasons, because such an item is obtainable whenever.",
+    "",
+    "2. Two values in this column are not seasons at all but festival date ranges:",
+    "   'Fall 7 to 10' (Queen Berry) and 'Spring 14 to 16' (Breath of Spring). They",
+    "   become an availability window's `dates`, not its `seasons`. The resolver",
+    "   parses them by pattern rather than by alias, so a new festival window works",
+    "   without an edit here."
+  ],
+  "aliases": {
+    "spring": ["Spring"],
+    "summer": ["Summer"],
+    "fall": ["Fall", "Autumn"],
+    "winter": ["Winter"]
+  },
+  "allSeasons": ["All", "All Seasons", "Any", "Year-round", "Year Round", ""],
+  "datePattern": "^(Spring|Summer|Fall|Autumn|Winter)\\s+(\\d{1,2})\\s*(?:to|-|–)\\s*(\\d{1,2})$"
+}

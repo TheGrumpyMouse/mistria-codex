@@ -1,0 +1,181 @@
+{
+  "_comment": [
+    "The buildings and landmarks that are places in their own right.",
+    "",
+    "WHY THIS EXISTS. Until now `locations` held sixteen outdoor regions and no",
+    "interiors at all, so there was nowhere to put an NPC who is indoors — which",
+    "is most of them, most of the day. A schedule saying 'Sleeping Dragon Inn' had",
+    "nothing to resolve to.",
+    "",
+    "WHAT IS CURATED AND WHAT IS SOURCED. The list below is a judgement: which",
+    "buildings are worth being a location rather than a detail of one. Everything",
+    "about each building — the region it sits in, the quest that unlocks it, who",
+    "lives there — is read from its `{{Infobox location}}` by enrich/places.ts.",
+    "Nothing here is a fact typed in by hand.",
+    "",
+    "TWO OF THESE ARE NOT WHERE YOU WOULD GUESS. The Museum is in The Narrows and",
+    "the Carpenter is on The Eastern Road, not in town. Both were read from the",
+    "page, and both are the reason this is sourced rather than assumed.",
+    "",
+    "ROOMS ARE NOT LOCATIONS. Adeline's Office, the Manor's Dining Room and the",
+    "Inn's balcony are rooms inside a building, and there are hundreds of them.",
+    "They become the `activity_key` on a schedule block, which is what they are:",
+    "a named anchor inside a place, not a place you can be directed to.",
+    "",
+    "REGIONS ALREADY IN vocab/locations.json ARE NOT REPEATED HERE, even where",
+    "they have an infobox — Sweetwater Farm's says `location=Mistria`, which means",
+    "the valley rather than the town, and importing it would file Hayden's farm",
+    "inside the town square.",
+    "",
+    "ALIASES are the spellings seen in the wild, mostly in NPC schedule tables,",
+    "which are written by hand and inconsistently: 'Bath House' and 'Bathhouse',",
+    "'Manor' and 'Manor House', 'Inn' and 'Sleeping Dragon Inn'."
+  ],
+
+  "template": "Infobox location",
+
+  "_quest_alias_comment": [
+    "How a place page spells a quest, when it does not spell it the way the",
+    "Quests page does.",
+    "",
+    "The Summit's infobox gates it on 'Beautification of Mistria'. No such quest",
+    "exists: the page for it 404s, and the quest the Narrows names for the same",
+    "town-improvement work is 'Beautification Project', which redirects to the",
+    "Quests page and is in our dataset. So the Summit's gate was pointing at",
+    "nothing — `checkGates` caught it, which is the entire reason that check was",
+    "written.",
+    "",
+    "One entry only. This is a spelling table, not a place to make two different",
+    "quests into one because it would be convenient."
+  ],
+  "questNameAliases": {
+    "Beautification of Mistria": "Beautification Project"
+  },
+
+  "places": [
+    {
+      "page": "Manor House",
+      "id": "the_manor_house",
+      "name": "The Manor House",
+      "kind": "indoor",
+      "aliases": ["Manor House", "The Manor", "Manor", "Manor House Dining Room", "The Manor's"]
+    },
+    {
+      "page": "Inn",
+      "id": "the_inn",
+      "name": "The Sleeping Dragon Inn",
+      "kind": "shop",
+      "aliases": ["Inn", "The Inn", "Sleeping Dragon Inn", "The Sleeping Dragon Inn"]
+    },
+    {
+      "page": "General Store",
+      "id": "the_general_store",
+      "name": "The General Store",
+      "kind": "shop",
+      "aliases": ["General Store", "The General Store", "Store"]
+    },
+    {
+      "page": "Blacksmith",
+      "id": "the_blacksmith",
+      "name": "The Blacksmith",
+      "kind": "shop",
+      "aliases": ["Blacksmith", "The Blacksmith", "Blacksmith Shop", "Forge"]
+    },
+    {
+      "page": "Carpenter",
+      "id": "the_carpenter",
+      "name": "The Carpenter",
+      "kind": "shop",
+      "aliases": ["Carpenter", "The Carpenter", "Carpenter Shop"]
+    },
+    {
+      "page": "Bathhouse",
+      "id": "the_bathhouse",
+      "name": "The Bathhouse",
+      "kind": "shop",
+      "aliases": [
+        "Bathhouse",
+        "The Bathhouse",
+        "Bath House",
+        "The Bath House",
+        "Bathhouse Change Room",
+        "Bath House: Changing Room"
+      ]
+    },
+    {
+      "page": "Clinic",
+      "id": "the_clinic",
+      "name": "The Clinic",
+      "kind": "shop",
+      "aliases": ["Clinic", "The Clinic"]
+    },
+    {
+      "page": "Museum",
+      "id": "the_museum",
+      "name": "The Museum",
+      "kind": "indoor",
+      "aliases": ["Museum", "The Museum"]
+    },
+    {
+      "page": "Mill",
+      "id": "the_mill",
+      "name": "The Mill",
+      "kind": "indoor",
+      "aliases": ["Mill", "The Mill"]
+    },
+    {
+      "page": "Bell Tower",
+      "id": "the_bell_tower",
+      "name": "The Bell Tower",
+      "kind": "indoor",
+      "aliases": ["Bell Tower", "The Bell Tower", "Church"]
+    },
+    {
+      "page": "Tackle Shop",
+      "id": "the_tackle_shop",
+      "name": "The Tackle Shop",
+      "kind": "shop",
+      "aliases": ["Tackle Shop", "The Tackle Shop"]
+    },
+    {
+      "page": "Balor's Wagon",
+      "id": "balors_wagon",
+      "name": "Balor's Wagon",
+      "kind": "shop",
+      "aliases": ["Balor's Wagon", "Wagon", "The Wagon"]
+    },
+    {
+      "page": "Wishing Well",
+      "id": "the_wishing_well",
+      "name": "The Wishing Well",
+      "kind": "outdoor",
+      "aliases": ["Wishing Well", "The Wishing Well"]
+    }
+  ],
+
+  "_regions_comment": [
+    "Regions that already exist in vocab/locations.json, listed here only so",
+    "their `unlock=` is read. Two of the nine are behind a story quest — the",
+    "Deep Woods needs the Fire Seal broken and the Summit needs Mistria",
+    "beautified — and until now nothing in the dataset knew that.",
+    "",
+    "It matters more than it looks. Everything found in the Deep Woods is",
+    "unreachable on day one, and a companion app that lists Glowing Mushroom",
+    "under 'findable now' without saying so is sending a new player somewhere",
+    "they cannot go. The gate turns that into a result tagged `locked`, which is",
+    "shown rather than hidden — a player wants to know it exists.",
+    "",
+    "No `id` or `kind` here: the record already exists and only gains a field."
+  ],
+  "regions": [
+    { "page": "The Deep Woods", "id": "the_deep_woods" },
+    { "page": "The Summit", "id": "the_summit" },
+    { "page": "The Narrows", "id": "the_narrows" },
+    { "page": "The Beach", "id": "the_beach" },
+    { "page": "The Eastern Road", "id": "the_eastern_road" },
+    { "page": "The Western Ruins", "id": "the_western_ruins" },
+    { "page": "Mistria", "id": "mistria" },
+    { "page": "Farm", "id": "the_farm" },
+    { "page": "Sweetwater Farm", "id": "sweetwater_farm" }
+  ]
+}

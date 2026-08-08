@@ -1,0 +1,552 @@
+[
+  {
+    "museumSet": "Alda",
+    "name": "Alda Bronze Sword",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Alda",
+    "name": "Alda Clay Pot",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Alda",
+    "name": "Alda Feather Pendant",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Alda",
+    "name": "Alda Gem Bracelet",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Alda",
+    "name": "Alda Mural Tablet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Aldarian",
+    "name": "Aldarian Gauntlet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Aldarian",
+    "name": "Aldarian Sword",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Aldarian",
+    "name": "Aldarian War Banner",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Prehistoric",
+    "name": "Amber Trapped Insect",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ancient",
+    "name": "Ancient Crystal Goblet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Ancient",
+    "name": "Ancient Gold Coin",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ancient",
+    "name": "Ancient Horn Circlet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Ancient",
+    "name": "Ancient Royal Scepter",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Ancient",
+    "name": "Ancient Stone Lantern",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Oopart",
+    "name": "Black Tablet",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Caldosian",
+    "name": "Caldosian Breastplate",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Caldosian",
+    "name": "Caldosian Drinking Horn",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Caldosian",
+    "name": "Caldosian Emperor Bust",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Caldosian",
+    "name": "Caldosian Sword",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Dig Site",
+    "name": "Clay",
+    "rarity": null
+  },
+  {
+    "museumSet": "Fish Trap",
+    "name": "Clay Amphora",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Aquatic",
+    "name": "Coin Lump",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Oopart",
+    "name": "Completely Wrong Map",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Tide Cavern",
+    "name": "Crab Statue",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Sunken",
+    "name": "Criminal Confession",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Crystal Apple",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Tide Cavern",
+    "name": "Dense Water",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Buried",
+    "name": "Diamond-backed Mirror",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Dragon",
+    "name": "Dragon Claw",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Dragon",
+    "name": "Dragon Pact Tablet",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Dragon",
+    "name": "Dragon Scale",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Dragon",
+    "name": "Dragon-Forged Bracelet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Earth-infused Stone",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Faceted Rock Gem",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Aldarian",
+    "name": "Family Crest Pendant",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Fire Crystal",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Buried",
+    "name": "Flint Arrowhead",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Prehistoric",
+    "name": "Fossilized Egg",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Fossilized Mandrake Root",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Gathering Basket",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Aquatic",
+    "name": "Giant Fish Scale",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Dragon",
+    "name": "Hardened Essence",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Aldarian",
+    "name": "Lost Crown of Aldaria",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Sunken",
+    "name": "Mermaid&#039;s Comb",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Fish Trap",
+    "name": "Message in a Bottle",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Metal Leaf",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Prehistoric",
+    "name": "Meteorite",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Miner&#039;s Helmet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Miner&#039;s Pickaxe",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Miner&#039;s Rucksack",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Miner&#039;s Slab",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Mist",
+    "name": "Mist Crystal",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Mist",
+    "name": "Mist Flute",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Mist",
+    "name": "Mist Scroll",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Mist",
+    "name": "Misty Black Mirror",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Mist",
+    "name": "Misty Feather Quill",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Oopart",
+    "name": "Muttering Cube",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Buried",
+    "name": "Obsidian Blade",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Dig Site",
+    "name": "Peat",
+    "rarity": null
+  },
+  {
+    "museumSet": "Metals Of Mistria",
+    "name": "Perfect Copper Ore",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Gems Of Mistria",
+    "name": "Perfect Diamond",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Gems Of Mistria",
+    "name": "Perfect Emerald",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Metals Of Mistria",
+    "name": "Perfect Gold Ore",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Metals Of Mistria",
+    "name": "Perfect Iron Ore",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Metals Of Mistria",
+    "name": "Perfect Mistril Ore",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Gems Of Mistria",
+    "name": "Perfect Pink Diamond",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Gems Of Mistria",
+    "name": "Perfect Ruby",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Gems Of Mistria",
+    "name": "Perfect Sapphire",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Metals Of Mistria",
+    "name": "Perfect Silver Ore",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Deep Woods",
+    "name": "Petrified Wood",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Fish Trap",
+    "name": "Porcelain Figure",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Rainbow Geode",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Sunken",
+    "name": "Rainbow Seaweed",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Really Round Rock",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Red Obsidian",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ritual",
+    "name": "Ritual Beads",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ritual",
+    "name": "Ritual Chalice",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ritual",
+    "name": "Ritual Incense Burner",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Ritual",
+    "name": "Ritual Scepter",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Ritual",
+    "name": "Ritual Tablet",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Rock Statue",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Sunken",
+    "name": "Rock with a Hole",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Aquatic",
+    "name": "Rubber Fish",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Sunken",
+    "name": "Rusted Shield",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Aquatic",
+    "name": "Rusted Treasure Chest",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Fish Trap",
+    "name": "Sea Glass",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Deep Earth",
+    "name": "Seriously Square Stone",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Dig Site",
+    "name": "Shard Mass",
+    "rarity": null
+  },
+  {
+    "museumSet": "Dig Site",
+    "name": "Shards",
+    "rarity": null
+  },
+  {
+    "museumSet": "Buried",
+    "name": "Shortcut Scroll",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Dig Site",
+    "name": "Sod",
+    "rarity": null
+  },
+  {
+    "museumSet": "Tide Cavern",
+    "name": "Starlight Coral",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Caldosian",
+    "name": "Statuette of Caldarus",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Buried",
+    "name": "Stone Horse",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Tide Cavern",
+    "name": "Stone Shell",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Tide Cavern",
+    "name": "Tidestone",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Upper Mines",
+    "name": "Tin Lunchbox",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Prehistoric",
+    "name": "Tiny Dinosaur Skeleton",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Tiny Volcano",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Prehistoric",
+    "name": "Trilobite Fossil",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Oopart",
+    "name": "Unknown Dragon Statuette",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Vintage Farm Tools",
+    "name": "Vintage Brush",
+    "rarity": "Rare"
+  },
+  {
+    "museumSet": "Vintage Farm Tools",
+    "name": "Vintage Cow Bell",
+    "rarity": "Legendary"
+  },
+  {
+    "museumSet": "Vintage Farm Tools",
+    "name": "Vintage Hammer",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Vintage Farm Tools",
+    "name": "Vintage Sickle",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Vintage Farm Tools",
+    "name": "Vintage Watering Can",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Lava Caves",
+    "name": "Warm Rock",
+    "rarity": "Common"
+  },
+  {
+    "museumSet": "Aquatic",
+    "name": "Water Sphere",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Oopart",
+    "name": "Weightless Stone",
+    "rarity": "Uncommon"
+  },
+  {
+    "museumSet": "Fish Trap",
+    "name": "Worn Pendant",
+    "rarity": "Rare"
+  }
+]

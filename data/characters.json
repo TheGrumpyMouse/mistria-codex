@@ -1,0 +1,1484 @@
+[
+  {
+    "affiliation": "Royal Family",
+    "birthday": {
+      "day": 18,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Baroness Linnet of Mistria (Mother)"
+      },
+      {
+        "character_id": null,
+        "relation": "Baron Wiscar of Mistria (Father)"
+      },
+      {
+        "character_id": null,
+        "relation": "Eiland (Brother)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/adeline",
+    "id": "adeline",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Adeline",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Acting Leader of Mistria",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Adeline"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 10,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/balor",
+    "id": "balor",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Balor",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Traveling Merchant",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Balor"
+  },
+  {
+    "affiliation": null,
+    "birthday": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "birthday",
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/caldarus",
+    "id": "caldarus",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Caldarus",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Dragon",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Dragon",
+    "version_added": null,
+    "wiki_page": "Caldarus"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 14,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Mother: Nora"
+      },
+      {
+        "character_id": null,
+        "relation": "Father: Holt"
+      },
+      {
+        "character_id": null,
+        "relation": "Younger sister: Dell"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/celine",
+    "id": "celine",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Celine",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Gardener, Part-Timer",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Celine"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 13,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/darcy",
+    "id": "darcy",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Darcy",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Cafe Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Darcy"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 3,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Mother: Nora"
+      },
+      {
+        "character_id": null,
+        "relation": "Father: Holt"
+      },
+      {
+        "character_id": null,
+        "relation": "Older sister: Celine"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/dell",
+    "id": "dell",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Dell",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Leader of the Dragonguard",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Dell"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 16,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Owner: Juniper"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/dozy",
+    "id": "dozy",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Dozy",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Bathhouse Co-owner",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Dog",
+    "version_added": null,
+    "wiki_page": "Dozy"
+  },
+  {
+    "affiliation": "Royal Family",
+    "birthday": {
+      "day": 20,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Baroness Linnet of Mistria (Mother)"
+      },
+      {
+        "character_id": null,
+        "relation": "Baron Wiscar of Mistria (Father)"
+      },
+      {
+        "character_id": null,
+        "relation": "Adeline (Sister)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/eiland",
+    "id": "eiland",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Eiland",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Archaeologist, Noble",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Eiland"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 2,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Great Niece: Adeline"
+      },
+      {
+        "character_id": null,
+        "relation": "Great Nephew: Eiland"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/elsie",
+    "id": "elsie",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Elsie",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Retired Socialite",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Elsie"
+  },
+  {
+    "affiliation": "Historical Society",
+    "birthday": {
+      "day": 11,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/errol",
+    "id": "errol",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Errol",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Museum Curator",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Errol"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 8,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Pet: Henrietta"
+      },
+      {
+        "character_id": null,
+        "relation": "Grandmother†: Greta"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/hayden",
+    "id": "hayden",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Hayden",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Runs Sweetwater Farm",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Hayden"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 23,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Josephine (Wife)"
+      },
+      {
+        "character_id": null,
+        "relation": "Reina (Daughter)"
+      },
+      {
+        "character_id": null,
+        "relation": "Maple (Daughter)"
+      },
+      {
+        "character_id": null,
+        "relation": "Luc (Son)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/hemlock",
+    "id": "hemlock",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Hemlock",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Inn Co-owner, Bartender",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Hemlock"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 7,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Owner: Hayden"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/henrietta",
+    "id": "henrietta",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Henrietta",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Prize-winning Chicken",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Chicken",
+    "version_added": null,
+    "wiki_page": "Henrietta"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 14,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Wife: Nora"
+      },
+      {
+        "character_id": null,
+        "relation": "Daughter: Celine"
+      },
+      {
+        "character_id": null,
+        "relation": "Daughter: Dell"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/holt",
+    "id": "holt",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Holt",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "General Store Co-owner",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Holt"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 16,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Hemlock (Husband)"
+      },
+      {
+        "character_id": null,
+        "relation": "Reina (Daughter)"
+      },
+      {
+        "character_id": null,
+        "relation": "Maple (Daughter)"
+      },
+      {
+        "character_id": null,
+        "relation": "Luc (Son)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/josephine",
+    "id": "josephine",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Josephine",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Inn Co-Owner",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Josephine"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 26,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Familiar: Dozy"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/juniper",
+    "id": "juniper",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Juniper",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Sorceress/Bathhouse Owner",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human?",
+    "version_added": null,
+    "wiki_page": "Juniper"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 4,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Nephew: Ryis"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Sister"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Brother-in-law"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Nieces (x?)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/landen",
+    "id": "landen",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Landen",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Semi-retired carpenter",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Landen"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 20,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/louis",
+    "id": "louis",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Louis",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Clothing Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Louis"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 21,
+      "season": "spring"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Josephine (Mother)"
+      },
+      {
+        "character_id": null,
+        "relation": "Hemlock (Father)"
+      },
+      {
+        "character_id": null,
+        "relation": "Reina (Sister)"
+      },
+      {
+        "character_id": null,
+        "relation": "Maple (Sister)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/luc",
+    "id": "luc",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Luc",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Future Entomologist",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Luc"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 26,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Josephine (Mother)"
+      },
+      {
+        "character_id": null,
+        "relation": "Hemlock (Father)"
+      },
+      {
+        "character_id": null,
+        "relation": "Reina (Sister)"
+      },
+      {
+        "character_id": null,
+        "relation": "Luc (Brother)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/maple",
+    "id": "maple",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Maple",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Royalty Expert",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Maple"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 16,
+      "season": "spring"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Jade (Mother) †"
+      },
+      {
+        "character_id": null,
+        "relation": "Olin (Father) †"
+      },
+      {
+        "character_id": null,
+        "relation": "Olric (Brother)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/march",
+    "id": "march",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "March",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Blacksmith",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "March"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 6,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/merri",
+    "id": "merri",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Merri",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Furniture Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Merri"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 24,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Husband: Holt"
+      },
+      {
+        "character_id": null,
+        "relation": "Daughter: Dell"
+      },
+      {
+        "character_id": null,
+        "relation": "Daughter: Celine"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/nora",
+    "id": "nora",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Nora",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "General Store Co-owner Head of Mistria's Chamber of Commerce Head of the Saturday Market",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Nora"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 10,
+      "season": "spring"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Jade (Mother) †"
+      },
+      {
+        "character_id": null,
+        "relation": "Olin (Father) †"
+      },
+      {
+        "character_id": null,
+        "relation": "March (Brother)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/olric",
+    "id": "olric",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Olric",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Part-Timer",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Olric"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 2,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/priestess",
+    "id": "priestess",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Priestess",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Dragon Priestess",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Priestess"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 12,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Josephine (Mother)"
+      },
+      {
+        "character_id": null,
+        "relation": "Hemlock (Father)"
+      },
+      {
+        "character_id": null,
+        "relation": "Maple (Sister)"
+      },
+      {
+        "character_id": null,
+        "relation": "Luc (Brother)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/reina",
+    "id": "reina",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Reina",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Head Cook at the Inn",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Reina"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 4,
+      "season": "spring"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [
+      {
+        "character_id": null,
+        "relation": "Maternal Uncle: Landen"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Aunt"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Mother"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Father"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Sisters (x?)"
+      }
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/ryis",
+    "id": "ryis",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Ryis",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Carpenter",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Ryis"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 27,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/stillwell",
+    "id": "stillwell",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Stillwell",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Fortune Telling Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Stillwell"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 13,
+      "season": "spring"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/taliferro",
+    "id": "taliferro",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Taliferro",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Chef",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Taliferro"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 22,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/terithia",
+    "id": "terithia",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Terithia",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Fisherwoman",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Terithia"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 1,
+      "season": "fall"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/valen",
+    "id": "valen",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Valen",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Town Doctor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": true,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Valen"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 6,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/vera",
+    "id": "vera",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Vera",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Hairstyle & Accessory Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Vera"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 6,
+      "season": "winter"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Male",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/wheedle",
+    "id": "wheedle",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Wheedle",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Salesman",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Wheedle"
+  },
+  {
+    "affiliation": null,
+    "birthday": {
+      "day": 23,
+      "season": "summer"
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "schedule",
+      "heart_events"
+    ],
+    "family": [],
+    "former_ids": [],
+    "game_version": null,
+    "gender": "Female",
+    "heart_events": [],
+    "home_location_id": null,
+    "icon_key": "character/zorel",
+    "id": "zorel",
+    "id_status": "provisional",
+    "is_vendor": false,
+    "name": "Zorel",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "occupation": "Music Vendor",
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "romanceable": false,
+    "schedule_id": null,
+    "shop_id": null,
+    "species": "Human",
+    "version_added": null,
+    "wiki_page": "Zorel"
+  }
+]

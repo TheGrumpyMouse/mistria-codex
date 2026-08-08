@@ -1,0 +1,886 @@
+{
+  "lastEdited": {
+    "archaeology": "2026-02-23T22:50:32Z",
+    "fish": "2026-04-22T00:13:40Z",
+    "flora": "2026-03-03T07:56:28Z",
+    "insects": "2026-08-06T16:52:18Z"
+  },
+  "sets": [
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Aldarian",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Caldosian",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Alda",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Ancient",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Prehistoric",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Oopart",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Aquatic",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Sunken",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Buried",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Upper Mines",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Tide Cavern",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Deep Earth",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Lava Caves",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Dragon",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Ritual",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Mist",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Vintage Farm Tools",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Metals Of Mistria",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Gems Of Mistria",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Deep Woods",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Fish Trap",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Dig Site",
+      "wing": "archaeology"
+    },
+    {
+      "items": [
+        "Koi",
+        "Pike",
+        "Pollock",
+        "Smallmouth Bass",
+        "Trout"
+      ],
+      "rosterSource": "page",
+      "set": "Multi-Season",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Bluegill",
+        "Carp",
+        "Chub",
+        "Paddlefish",
+        "Walleye"
+      ],
+      "rosterSource": "page",
+      "set": "Spring River",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Angel Fish",
+        "Barb",
+        "Brown Trout",
+        "Crucian Carp",
+        "Goldfish"
+      ],
+      "rosterSource": "page",
+      "set": "Spring Pond",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Anchovy",
+        "Lobster",
+        "Mackerel",
+        "Ocean Sunfish",
+        "Shrimp"
+      ],
+      "rosterSource": "page",
+      "set": "Spring Ocean",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Bream",
+        "Loach",
+        "Minnow",
+        "Sweetfish",
+        "Tarpon"
+      ],
+      "rosterSource": "page",
+      "set": "Summer River",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Brown Bullhead",
+        "Giant Koi",
+        "Golden Shiner",
+        "Lake Chub",
+        "Sauger"
+      ],
+      "rosterSource": "page",
+      "set": "Summer Pond",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Char",
+        "Crab",
+        "Dart",
+        "Grouper",
+        "Stingray"
+      ],
+      "rosterSource": "page",
+      "set": "Summer Ocean",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Grayling",
+        "Lamprey",
+        "Perch",
+        "Razorback",
+        "Shad"
+      ],
+      "rosterSource": "page",
+      "set": "Fall River",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Bluefish",
+        "Killifish",
+        "Rainbow Trout",
+        "Striped Bass",
+        "White Perch"
+      ],
+      "rosterSource": "page",
+      "set": "Fall Pond",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Butterfish",
+        "Halibut",
+        "Mullet",
+        "Saury",
+        "Shark"
+      ],
+      "rosterSource": "page",
+      "set": "Fall Ocean",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Bowfish",
+        "Dace",
+        "Freshwater Eel",
+        "Herring",
+        "Shadow Bass"
+      ],
+      "rosterSource": "page",
+      "set": "Winter River",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Alligator Gar",
+        "Burbot",
+        "Flathead Catfish",
+        "Giant Tilapia",
+        "Tilapia"
+      ],
+      "rosterSource": "page",
+      "set": "Winter Pond",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Horse Mackerel",
+        "King Crab",
+        "Oarfish",
+        "Sand Lance",
+        "Sea Bass"
+      ],
+      "rosterSource": "page",
+      "set": "Winter Ocean",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Massive Minnow",
+        "Copper Rockfish",
+        "Iron Fish",
+        "Silver Squid",
+        "Golden Eel"
+      ],
+      "rosterSource": "page",
+      "set": "Fish Bait",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Blue Crab",
+        "Sea Urchin",
+        "Bait Thief",
+        "Hake",
+        "Amberjack"
+      ],
+      "rosterSource": "page",
+      "set": "Fish Trap",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Sunny",
+        "Forest Perch",
+        "Silver Redhorse",
+        "Lake Trout",
+        "Muskie"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Woods",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Cave Eel",
+        "Cave Shark",
+        "Cave Shrimp",
+        "Rock Guppy",
+        "Stone Loach"
+      ],
+      "rosterSource": "page",
+      "set": "Upper Mines",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Archerfish",
+        "Mini-Whale Shark",
+        "Sapphire Betta",
+        "Transparent Jellyfish",
+        "Water Balloon Fish"
+      ],
+      "rosterSource": "page",
+      "set": "Tide Caverns",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Earth Eel",
+        "Emerald Horned Charger",
+        "Pebble Minnow",
+        "Rockbiter",
+        "Shardfin"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Earth",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Armored Bass",
+        "Candelabra Seadragon",
+        "Firesail Fish",
+        "Lava Piranha",
+        "Sulfur Crab"
+      ],
+      "rosterSource": "page",
+      "set": "Lava Caves",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Winged Shrimp",
+        "Gazer",
+        "Luminescent Crab",
+        "Giant Jellyfish",
+        "Coelacanth"
+      ],
+      "rosterSource": "page",
+      "set": "Ruins",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Cherry Fish",
+        "Leaf Fish",
+        "Lightning Fish",
+        "Snow Fish"
+      ],
+      "rosterSource": "page",
+      "set": "Legendary",
+      "wing": "fish"
+    },
+    {
+      "items": [
+        "Cabbage",
+        "Cherry",
+        "Potato",
+        "Strawberry",
+        "Turnip"
+      ],
+      "rosterSource": "page",
+      "set": "Spring Crop",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Daffodil",
+        "Dandelion",
+        "Lilac",
+        "Snowdrop Anemone",
+        "Tulip"
+      ],
+      "rosterSource": "page",
+      "set": "Spring Flower",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Fennel",
+        "Fiddlehead",
+        "Morel Mushroom",
+        "Nettle",
+        "Wild Leek"
+      ],
+      "rosterSource": "page",
+      "set": "Spring Forage",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Chili Pepper",
+        "Corn",
+        "Cucumber",
+        "Tomato",
+        "Watermelon"
+      ],
+      "rosterSource": "page",
+      "set": "Summer Crop",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Catmint",
+        "Cosmos",
+        "Daisy",
+        "Iris",
+        "Marigold"
+      ],
+      "rosterSource": "page",
+      "set": "Summer Flower",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Basil",
+        "Dill",
+        "Oregano",
+        "Sage",
+        "Thyme"
+      ],
+      "rosterSource": "page",
+      "set": "Summer Forage",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Apple",
+        "Broccoli",
+        "Cranberry",
+        "Pumpkin",
+        "Sweet Potato"
+      ],
+      "rosterSource": "page",
+      "set": "Fall Crop",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Celosia",
+        "Chrysanthemum",
+        "Fog Orchid",
+        "Heather",
+        "Viola"
+      ],
+      "rosterSource": "page",
+      "set": "Fall Flower",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Chestnut",
+        "Garlic",
+        "Horseradish",
+        "Moon Fruit",
+        "Rosemary"
+      ],
+      "rosterSource": "page",
+      "set": "Fall Forage",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Beet",
+        "Cauliflower",
+        "Daikon Radish",
+        "Pomegranate",
+        "Snow Peas"
+      ],
+      "rosterSource": "page",
+      "set": "Winter Crop",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Crocus",
+        "Frost Lily",
+        "Jasmine",
+        "Poinsettia",
+        "Snapdragon"
+      ],
+      "rosterSource": "page",
+      "set": "Winter Flower",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Burdock Root",
+        "Holly",
+        "Oyster Mushroom",
+        "Pineshroom",
+        "Rose Hip"
+      ],
+      "rosterSource": "page",
+      "set": "Winter Forage",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Thorn Vine",
+        "The Deep Woods",
+        "Spirit Mushroom",
+        "Temple Flower",
+        "Walnut",
+        "Bell Berry"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Woods",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Narrows Moss",
+        "Red Toadstool",
+        "Shadow Flower",
+        "Sweetroot",
+        "Upper Mines Mushroom"
+      ],
+      "rosterSource": "page",
+      "set": "Upper Mines",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Jade Dulse",
+        "Mines Mussels",
+        "Sea Grapes",
+        "Tide Lettuce",
+        "Underseaweed"
+      ],
+      "rosterSource": "page",
+      "set": "Tide Caverns",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Crystal Berries",
+        "Crystal Rose",
+        "Earthshroom",
+        "Rockroot",
+        "Shale Grass"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Earth",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Ash Mushroom",
+        "Breath of Flame",
+        "Flame Pepper",
+        "Hot Potato",
+        "Lava Chestnuts"
+      ],
+      "rosterSource": "page",
+      "set": "Lava Caves",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Chirping Fern",
+        "Essence Blossom",
+        "Ethereal Grass",
+        "Spell Fruit",
+        "Written Root"
+      ],
+      "rosterSource": "page",
+      "set": "Ruins",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Void Herb",
+        "Void Pearl",
+        "Void Powder",
+        "Void Stone",
+        "Voidite"
+      ],
+      "rosterSource": "page",
+      "set": "Void Forage",
+      "wing": "flora"
+    },
+    {
+      "items": [
+        "Ant",
+        "Bumblebee",
+        "Fuzzy Moth",
+        "Hummingbird Hawk Moth",
+        "Praying Mantis"
+      ],
+      "rosterSource": "page",
+      "set": "Multi-Season",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Butterfly",
+        "Caterpillar",
+        "Ladybug",
+        "Luna Moth",
+        "Roly Poly"
+      ],
+      "rosterSource": "page",
+      "set": "Spring",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Cicada",
+        "Cricket",
+        "Dragonfly",
+        "Firefly",
+        "Sand Bug"
+      ],
+      "rosterSource": "page",
+      "set": "Summer",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Cicada Nymph",
+        "Inchworm",
+        "Monarch Butterfly",
+        "Tiger Swallowtail Butterfly",
+        "Walking Leaf"
+      ],
+      "rosterSource": "page",
+      "set": "Fall",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Brightbulb Moth",
+        "Crystal Caterpillar",
+        "Frost Flutter Butterfly",
+        "Walking Stick",
+        "Winterpillar"
+      ],
+      "rosterSource": "page",
+      "set": "Winter",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Big Bee",
+        "Flower Bee",
+        "Fur Bee",
+        "Moonlight Bee",
+        "Sweet Bee"
+      ],
+      "rosterSource": "page",
+      "set": "Bee",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Ant Queen",
+        "Biggest Beetle",
+        "Queen's Birdwing",
+        "Saint Mantis",
+        "Sunset Moth"
+      ],
+      "rosterSource": "page",
+      "set": "Bug Pheromone",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Jewel Beetle",
+        "Lightning Dragonfly",
+        "Magma Beetle",
+        "Mistmoth",
+        "Orchid Mantis"
+      ],
+      "rosterSource": "page",
+      "set": "Rare",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Fairy Bee",
+        "Flower Crown Beetle",
+        "Snowball Beetle",
+        "Speedy Snail",
+        "Strobe Firefly"
+      ],
+      "rosterSource": "page",
+      "set": "Legendary",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Copper Nugget Beetle",
+        "Lantern Moth",
+        "Mine Cricket",
+        "Tunnel Millipede",
+        "Worm"
+      ],
+      "rosterSource": "page",
+      "set": "Upper Mines",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Coral Mantis",
+        "Hermit Snail",
+        "Puddle Spider",
+        "Sea Scarab",
+        "Waterfly"
+      ],
+      "rosterSource": "page",
+      "set": "Tide Caverns",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Crystal Wing Moth",
+        "Crystalline Cricket",
+        "Deep Earthworm",
+        "Gem Shard Caterpillar",
+        "Rock Roach"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Earth",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Fire Wasp",
+        "Cooktop Beetle",
+        "Lava Snail",
+        "Smoke Moth",
+        "Diamond Beetle"
+      ],
+      "rosterSource": "page",
+      "set": "Lava Caves",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Ancient Firefly",
+        "Giant Worm",
+        "Hidden Beetle",
+        "Parchment Moth",
+        "Void Snail"
+      ],
+      "rosterSource": "page",
+      "set": "Ruins",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Grasshopper",
+        "Icehopper",
+        "Leafhopper",
+        "Petalhopper",
+        "Strawhopper"
+      ],
+      "rosterSource": "page",
+      "set": "Grass",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Beach Hopper",
+        "Hermit Crab",
+        "Relic Crab",
+        "Surf Beetle",
+        "Waterbug"
+      ],
+      "rosterSource": "page",
+      "set": "Beach",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Windleaf Butterfly",
+        "Mote Firefly",
+        "Loam Caterpillar",
+        "Dragon Horn Beetle",
+        "Singing Katydid"
+      ],
+      "rosterSource": "page",
+      "set": "Deep Woods",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Honey",
+        "Premium Honey",
+        "Deluxe Honey",
+        "Legendary Honey",
+        "Honeycomb"
+      ],
+      "rosterSource": "page",
+      "set": "Honey",
+      "wing": "insects"
+    },
+    {
+      "items": [
+        "Uncommon Bug Pheromones",
+        "Rare Bug Pheromones",
+        "Legendary Bug Pheromones",
+        "Uncommon Fish Bait",
+        "Rare Fish Bait"
+      ],
+      "rosterSource": "page",
+      "set": "Terrarium",
+      "wing": "insects"
+    }
+  ],
+  "wikiVersionStamp": {
+    "archaeology": "v0-15",
+    "fish": "v0-14-0",
+    "flora": "v0-15",
+    "insects": "v0-15"
+  },
+  "wings": [
+    {
+      "crossCheck": "Artifacts",
+      "id": "archaeology"
+    },
+    {
+      "crossCheck": null,
+      "id": "fish"
+    },
+    {
+      "crossCheck": "Crops",
+      "id": "flora"
+    },
+    {
+      "crossCheck": "Bugs",
+      "id": "insects"
+    }
+  ]
+}

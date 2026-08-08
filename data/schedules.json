@@ -1,0 +1,3876 @@
+[
+  {
+    "character_id": "adeline",
+    "data_gaps": [
+      "friday_variants",
+      "late_night",
+      "partial_schedule",
+      "rain_variants",
+      "unresolved_places"
+    ],
+    "entries": [
+      {
+        "blocks": [
+          {
+            "activity_key": "fountain",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "20:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "20:30",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:30",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Saturday, after Repair the Bridge",
+        "priority": 10,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [
+            {
+              "key": "repair_the_bridge",
+              "op": "done",
+              "type": "quest",
+              "value": null
+            }
+          ],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "fountain_hang_1",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "20:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "20:12",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Saturday, after Repair the Bridge",
+        "priority": 10,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [
+            {
+              "key": "repair_the_bridge",
+              "op": "done",
+              "type": "quest",
+              "value": null
+            }
+          ],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "foyeur",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "09:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "fountain",
+            "from": "09:30",
+            "location_id": "mistria",
+            "to": "14:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "changing_room",
+            "from": "14:10",
+            "location_id": "the_bathhouse",
+            "to": "18:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:10",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:30",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Saturday, before Repair the Bridge",
+        "priority": 20,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:20",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "06:20",
+            "location_id": "mistria",
+            "to": "11:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_office",
+            "from": "11:30",
+            "location_id": "the_manor_house",
+            "to": "20:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "20:00",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "00:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:10",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "06:10",
+            "location_id": "mistria",
+            "to": "11:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "11:10",
+            "location_id": "the_inn",
+            "to": "18:20",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:20",
+            "location_id": "the_blacksmith",
+            "to": "22:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "22:10",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_office",
+            "from": "06:10",
+            "location_id": "the_manor_house",
+            "to": "11:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "11:10",
+            "location_id": "the_inn",
+            "to": "16:20",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "16:20",
+            "location_id": "the_inn",
+            "to": "18:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "18:30",
+            "location_id": "the_manor_house",
+            "to": "23:50",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "23:50",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "the_carpenter",
+            "to": "08:50",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "08:50",
+            "location_id": "the_blacksmith",
+            "to": "11:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "11:30",
+            "location_id": "the_inn",
+            "to": "13:40",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "13:40",
+            "location_id": "the_general_store",
+            "to": "16:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_meetup_spot_2",
+            "from": "16:00",
+            "location_id": "mistria",
+            "to": "16:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "picnic_bench_top_right",
+            "from": "16:10",
+            "location_id": "the_beach",
+            "to": "21:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "towels",
+            "from": "21:00",
+            "location_id": "the_beach",
+            "to": "22:40",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "right_bench",
+            "from": "22:40",
+            "location_id": "the_beach",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "right_bench",
+            "from": "00:00",
+            "location_id": "the_beach",
+            "to": "00:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:30",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adelines_office",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "10:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "gazebo",
+            "from": "10:10",
+            "location_id": "mistria",
+            "to": "18:50",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_garden",
+            "from": "18:50",
+            "location_id": "mistria",
+            "to": "19:40",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "19:40",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "01:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "01:10",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "town_center_flower_beds",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "09:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "grid_supervisor",
+            "from": "09:23",
+            "location_id": "the_western_ruins",
+            "to": "14:49",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "14:49",
+            "location_id": "the_inn",
+            "to": "21:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "21:22",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adeline_wake_point",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "08:41",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine_entrance",
+            "from": "08:41",
+            "location_id": "the_manor_house",
+            "to": "13:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "13:23",
+            "location_id": "mistria",
+            "to": "17:56",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom_1",
+            "from": "17:56",
+            "location_id": "the_inn",
+            "to": "21:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom_1",
+            "from": "21:12",
+            "location_id": "the_inn",
+            "to": "23:53",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:53",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adeline_wake_point",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "middle_bench_left_seat",
+            "from": "06:21",
+            "location_id": "the_bathhouse",
+            "to": "09:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_top_1",
+            "from": "09:51",
+            "location_id": "the_inn",
+            "to": "16:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "store_shopping_entrance",
+            "from": "16:13",
+            "location_id": "the_general_store",
+            "to": "19:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine_entrance",
+            "from": "19:12",
+            "location_id": "the_manor_house",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "adeline_wake_point",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:41",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "06:41",
+            "location_id": "mistria",
+            "to": "10:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "repair_restoration_review",
+            "from": "10:51",
+            "location_id": "mistria",
+            "to": "13:42",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "mill_restoration_review",
+            "from": "13:42",
+            "location_id": "mistria",
+            "to": "17:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "17:23",
+            "location_id": "mistria",
+            "to": "19:17",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "couch_seat_upper",
+            "from": "19:17",
+            "location_id": "mistria",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "town_center_flower_beds",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "09:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "grid_supervisor",
+            "from": "09:23",
+            "location_id": "the_western_ruins",
+            "to": "14:49",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "14:49",
+            "location_id": "the_inn",
+            "to": "21:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "21:22",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table_bottom_1",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Friday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "fri"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "fountain_hang_1",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "09:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "main_street_table_1",
+            "from": "09:00",
+            "location_id": "mistria",
+            "to": "10:05",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "19:25",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "garden_entrance",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "09:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "inn",
+            "from": "09:23",
+            "location_id": "mistria",
+            "to": "10:57",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "wagon",
+            "from": "10:57",
+            "location_id": "mistria",
+            "to": "13:49",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "13:49",
+            "location_id": "mistria",
+            "to": "15:55",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "fountain",
+            "from": "15:55",
+            "location_id": "mistria",
+            "to": "18:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "18:12",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:23",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine_entrance",
+            "from": "06:01",
+            "location_id": "the_manor_house",
+            "to": "07:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "07:13",
+            "location_id": "mistria",
+            "to": "12:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "museum_conversation",
+            "from": "12:23",
+            "location_id": "the_museum",
+            "to": "17:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "table_right_seat",
+            "from": "17:12",
+            "location_id": "the_manor_house",
+            "to": "23:55",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:55",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:40",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office_chat",
+            "from": "06:40",
+            "location_id": "the_manor_house",
+            "to": "13:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "13:13",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "12:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "museum_conversation",
+            "from": "12:23",
+            "location_id": "the_museum",
+            "to": "17:52",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "17:52",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:13",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "garden_wander_entrance",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "09:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "inn",
+            "from": "09:23",
+            "location_id": "mistria",
+            "to": "10:57",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "wagon_meet_up",
+            "from": "10:57",
+            "location_id": "mistria",
+            "to": "13:49",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board_looking",
+            "from": "13:49",
+            "location_id": "mistria",
+            "to": "15:55",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "fountain_square_right",
+            "from": "15:55",
+            "location_id": "mistria",
+            "to": "18:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "18:12",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table_bottom",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:23",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "fountain_hang",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "20:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "20:12",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bottom_middle_bar_seat",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:12",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Saturday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine_entrance",
+            "from": "06:01",
+            "location_id": "the_manor_house",
+            "to": "07:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "07:13",
+            "location_id": "mistria",
+            "to": "12:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "museum_conversation",
+            "from": "12:23",
+            "location_id": "the_museum",
+            "to": "17:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "table_right_seat",
+            "from": "17:12",
+            "location_id": "the_manor_house",
+            "to": "23:55",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:55",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "06:24",
+            "location_id": "the_manor_house",
+            "to": "13:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "change_room",
+            "from": "13:13",
+            "location_id": "the_bathhouse",
+            "to": "16:26",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "top_bar_seat",
+            "from": "16:26",
+            "location_id": "the_inn",
+            "to": "18:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony_hang",
+            "from": "18:51",
+            "location_id": "the_inn",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "adelines_bedroom",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "home_kitchen_table",
+            "from": "06:24",
+            "location_id": "the_general_store",
+            "to": "12:33",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "12:33",
+            "location_id": "mistria",
+            "to": "18:26",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "18:26",
+            "location_id": "the_manor_house",
+            "to": "23:43",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:43",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "home_kitchen_table",
+            "from": "06:24",
+            "location_id": "the_general_store",
+            "to": "09:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "09:22",
+            "location_id": "mistria",
+            "to": "11:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "11:32",
+            "location_id": "the_manor_house",
+            "to": "16:56",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "dining_room",
+            "from": "16:56",
+            "location_id": "the_manor_house",
+            "to": "21:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony_hang",
+            "from": "21:12",
+            "location_id": "the_inn",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "06:24",
+            "location_id": "the_manor_house",
+            "to": "13:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "change_room",
+            "from": "13:13",
+            "location_id": "the_bathhouse",
+            "to": "16:26",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "top_bar_seat",
+            "from": "16:26",
+            "location_id": "the_inn",
+            "to": "18:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony_hang",
+            "from": "18:51",
+            "location_id": "the_inn",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "06:24",
+            "location_id": "the_manor_house",
+            "to": "13:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "change_room",
+            "from": "13:13",
+            "location_id": "the_bathhouse",
+            "to": "16:26",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "top_bar_seat",
+            "from": "16:26",
+            "location_id": "the_inn",
+            "to": "18:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony_hang",
+            "from": "18:51",
+            "location_id": "the_inn",
+            "to": "23:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:23",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Friday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "fri"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "20:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "20:12",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "00:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:12",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Saturday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "bed",
+            "from": "06:00",
+            "location_id": "the_manor_house",
+            "to": "06:24",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "home_kitchen_table",
+            "from": "06:24",
+            "location_id": "the_general_store",
+            "to": "12:33",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "12:33",
+            "location_id": "mistria",
+            "to": "18:26",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "office",
+            "from": "18:26",
+            "location_id": "the_manor_house",
+            "to": "23:43",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "23:43",
+            "location_id": "the_manor_house",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bed",
+            "from": "00:00",
+            "location_id": "the_manor_house",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      }
+    ]
+  },
+  {
+    "character_id": "balor",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "caldarus",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "celine",
+    "data_gaps": [
+      "friday_variants",
+      "partial_schedule",
+      "rain_variants"
+    ],
+    "entries": [
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:47",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "06:47",
+            "location_id": "mistria",
+            "to": "18:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "18:21",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:41",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:41",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Saturday, after Repair the Bridge",
+        "priority": 10,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [
+            {
+              "key": "repair_the_bridge",
+              "op": "done",
+              "type": "quest",
+              "value": null
+            }
+          ],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "18:41",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:41",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Saturday, after Repair the Bridge",
+        "priority": 10,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [
+            {
+              "key": "repair_the_bridge",
+              "op": "done",
+              "type": "quest",
+              "value": null
+            }
+          ],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "10:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "10:11",
+            "location_id": "the_eastern_road",
+            "to": "15:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "middle_bench",
+            "from": "15:23",
+            "location_id": "the_bathhouse",
+            "to": "18:06",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table",
+            "from": "18:06",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:32",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Saturday, before Repair the Bridge",
+        "priority": 20,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "celines_garden",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "11:49",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "11:49",
+            "location_id": "the_inn",
+            "to": "16:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bar",
+            "from": "16:12",
+            "location_id": "the_inn",
+            "to": "19:35",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "19:35",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "celines_cottage_bench",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "11:40",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "shift",
+            "from": "11:40",
+            "location_id": "the_general_store",
+            "to": "19:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "19:00",
+            "location_id": "mistria",
+            "to": "21:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "21:11",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "00:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:13",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "shift",
+            "from": "06:11",
+            "location_id": "the_general_store",
+            "to": "09:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "chores",
+            "from": "09:21",
+            "location_id": "sweetwater_farm",
+            "to": "15:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bothering_valen",
+            "from": "15:22",
+            "location_id": "the_clinic",
+            "to": "22:31",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "22:31",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "06:11",
+            "location_id": "the_eastern_road",
+            "to": "10:52",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "10:52",
+            "location_id": "mistria",
+            "to": "15:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_meetup_spot",
+            "from": "15:32",
+            "location_id": "mistria",
+            "to": "16:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "picnic_bench",
+            "from": "16:13",
+            "location_id": "the_beach",
+            "to": "21:03",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "chat_below_towels",
+            "from": "21:03",
+            "location_id": "the_beach",
+            "to": "22:42",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "top_bench",
+            "from": "22:42",
+            "location_id": "the_beach",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "top_bench",
+            "from": "00:00",
+            "location_id": "the_beach",
+            "to": "00:31",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:31",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "celines_cottage_bench",
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "09:07",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "gazebo_by_manor",
+            "from": "09:07",
+            "location_id": "mistria",
+            "to": "18:02",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "kitchen_table",
+            "from": "18:02",
+            "location_id": "the_general_store",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "kitchen_table",
+            "from": "00:00",
+            "location_id": "the_general_store",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_gardens",
+            "from": "06:21",
+            "location_id": "mistria",
+            "to": "11:16",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "shift",
+            "from": "11:16",
+            "location_id": "the_general_store",
+            "to": "17:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_cottage_bench",
+            "from": "17:12",
+            "location_id": "mistria",
+            "to": "22:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "22:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_cottage_bench",
+            "from": "06:21",
+            "location_id": "mistria",
+            "to": "09:14",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_cottage_bench",
+            "from": "09:14",
+            "location_id": "mistria",
+            "to": "12:16",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "by_cauldron",
+            "from": "12:16",
+            "location_id": "the_bathhouse",
+            "to": "16:09",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "middle_bench",
+            "from": "16:09",
+            "location_id": "the_bathhouse",
+            "to": "19:12",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "19:12",
+            "location_id": "the_inn",
+            "to": "22:15",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "22:15",
+            "location_id": "the_inn",
+            "to": "23:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:51",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "quest_board",
+            "from": "06:21",
+            "location_id": "mistria",
+            "to": "10:14",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "10:14",
+            "location_id": "mistria",
+            "to": "13:46",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_gardens",
+            "from": "13:46",
+            "location_id": "mistria",
+            "to": "18:09",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:09",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "chores",
+            "from": "06:00",
+            "location_id": "sweetwater_farm",
+            "to": "10:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "10:51",
+            "location_id": "the_museum",
+            "to": "14:23",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "14:23",
+            "location_id": "the_museum",
+            "to": "17:29",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "17:29",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "the_beach",
+            "to": "09:33",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "below_towels",
+            "from": "09:33",
+            "location_id": "the_beach",
+            "to": "13:03",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "lighthouse",
+            "from": "13:03",
+            "location_id": "the_beach",
+            "to": "16:03",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "kitchen_table",
+            "from": "16:03",
+            "location_id": "the_general_store",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "kitchen_table",
+            "from": "00:00",
+            "location_id": "the_general_store",
+            "to": "00:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:13",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Summer Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "summer"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "chores",
+            "from": "06:00",
+            "location_id": "sweetwater_farm",
+            "to": "11:56",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "fountain",
+            "from": "11:56",
+            "location_id": "mistria",
+            "to": "17:43",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "17:43",
+            "location_id": "the_inn",
+            "to": "23:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:15",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "06:15",
+            "location_id": "mistria",
+            "to": "08:42",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "08:42",
+            "location_id": "mistria",
+            "to": "11:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "shift",
+            "from": "11:32",
+            "location_id": "the_general_store",
+            "to": "18:13",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:13",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "08:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "08:32",
+            "location_id": "mistria",
+            "to": "12:19",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "12:19",
+            "location_id": "mistria",
+            "to": "14:52",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "14:52",
+            "location_id": "mistria",
+            "to": "17:10",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "17:10",
+            "location_id": "mistria",
+            "to": "17:14",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "17:14",
+            "location_id": "the_general_store",
+            "to": "18:42",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "kitchen_table",
+            "from": "18:42",
+            "location_id": "the_general_store",
+            "to": "20:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "20:32",
+            "location_id": "the_inn",
+            "to": "23:41",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:41",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "right_stool",
+            "from": "06:11",
+            "location_id": "the_bathhouse",
+            "to": "09:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "cauldron",
+            "from": "09:22",
+            "location_id": "the_bathhouse",
+            "to": "13:47",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "celines_garden",
+            "from": "13:47",
+            "location_id": "mistria",
+            "to": "18:32",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "18:32",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "00:31",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:31",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "16:38",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_table",
+            "from": "16:38",
+            "location_id": "the_inn",
+            "to": "19:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "general_store",
+            "from": "19:22",
+            "location_id": "mistria",
+            "to": "19:52",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "19:52",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Saturday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": "chores",
+            "from": "06:00",
+            "location_id": "sweetwater_farm",
+            "to": "11:56",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "fountain",
+            "from": "11:56",
+            "location_id": "mistria",
+            "to": "17:43",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "north_table",
+            "from": "17:43",
+            "location_id": "the_inn",
+            "to": "23:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "06:01",
+            "location_id": "the_manor_house",
+            "to": "11:36",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_garden",
+            "from": "11:36",
+            "location_id": "mistria",
+            "to": "15:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "15:11",
+            "location_id": "the_manor_house",
+            "to": "18:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony",
+            "from": "18:21",
+            "location_id": "the_inn",
+            "to": "23:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Monday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "mon"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "07:22",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "shift",
+            "from": "07:22",
+            "location_id": "the_general_store",
+            "to": "13:16",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "left_stool",
+            "from": "13:16",
+            "location_id": "the_bathhouse",
+            "to": "17:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "17:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Tuesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "tue"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "07:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_meetup",
+            "from": "07:21",
+            "location_id": "mistria",
+            "to": "08:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "routine",
+            "from": "08:11",
+            "location_id": "the_eastern_road",
+            "to": "13:45",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bartender_entrance",
+            "from": "13:45",
+            "location_id": "the_inn",
+            "to": "20:51",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "bar",
+            "from": "20:51",
+            "location_id": "the_inn",
+            "to": "23:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:11",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Wednesday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "wed"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "06:01",
+            "location_id": "the_manor_house",
+            "to": "11:36",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_garden",
+            "from": "11:36",
+            "location_id": "mistria",
+            "to": "15:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "15:11",
+            "location_id": "the_manor_house",
+            "to": "18:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony",
+            "from": "18:21",
+            "location_id": "the_inn",
+            "to": "23:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Thursday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "thu"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "south_routine",
+            "from": "06:01",
+            "location_id": "mistria",
+            "to": "18:42",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "18:42",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Saturday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "06:00",
+            "location_id": "mistria",
+            "to": "06:01",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "06:01",
+            "location_id": "the_manor_house",
+            "to": "11:36",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "manor_garden",
+            "from": "11:36",
+            "location_id": "mistria",
+            "to": "15:11",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "15:11",
+            "location_id": "the_manor_house",
+            "to": "18:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "balcony",
+            "from": "18:21",
+            "location_id": "the_inn",
+            "to": "23:21",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "23:21",
+            "location_id": "mistria",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "mistria",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Winter Sunday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sun"
+          ],
+          "requires": [],
+          "seasons": [
+            "winter"
+          ],
+          "weather": null
+        }
+      }
+    ]
+  },
+  {
+    "character_id": "darcy",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "dell",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "dozy",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "eiland",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "elsie",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "errol",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "hayden",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "hemlock",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "henrietta",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "holt",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "josephine",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "juniper",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "landen",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "louis",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "luc",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "maple",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "march",
+    "data_gaps": [
+      "partial_schedule",
+      "unresolved_places"
+    ],
+    "entries": [
+      {
+        "blocks": [
+          {
+            "activity_key": "marchs_bedroom",
+            "from": "06:00",
+            "location_id": "the_blacksmith",
+            "to": "06:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "changing_room",
+            "from": "06:30",
+            "location_id": "the_bathhouse",
+            "to": "10:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": "forge",
+            "from": "10:30",
+            "location_id": "the_blacksmith",
+            "to": "15:30",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "15:30",
+            "location_id": "the_inn",
+            "to": "00:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "00:00",
+            "location_id": "the_inn",
+            "to": "06:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Spring Friday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "fri"
+          ],
+          "requires": [],
+          "seasons": [
+            "spring"
+          ],
+          "weather": null
+        }
+      },
+      {
+        "blocks": [
+          {
+            "activity_key": null,
+            "from": "07:00",
+            "location_id": "the_blacksmith",
+            "to": "17:00",
+            "x": null,
+            "y": null
+          },
+          {
+            "activity_key": null,
+            "from": "02:00",
+            "location_id": "the_blacksmith",
+            "to": "07:00",
+            "x": null,
+            "y": null
+          }
+        ],
+        "label": "Fall Saturday",
+        "priority": 30,
+        "when": {
+          "dates": null,
+          "days": [
+            "sat"
+          ],
+          "requires": [],
+          "seasons": [
+            "fall"
+          ],
+          "weather": null
+        }
+      }
+    ]
+  },
+  {
+    "character_id": "merri",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "nora",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "olric",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "priestess",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "reina",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "ryis",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "stillwell",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "taliferro",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "terithia",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "valen",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "vera",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "wheedle",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  },
+  {
+    "character_id": "zorel",
+    "data_gaps": [
+      "schedule"
+    ],
+    "entries": []
+  }
+]

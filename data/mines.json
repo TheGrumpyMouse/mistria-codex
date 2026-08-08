@@ -1,0 +1,313 @@
+[
+  {
+    "artifact_set_ids": [
+      "archaeology_upper_mines"
+    ],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "fish_item_ids": [
+      "cave_eel",
+      "cave_shark",
+      "cave_shrimp",
+      "rock_guppy",
+      "stone_loach"
+    ],
+    "floors": {
+      "max": 19,
+      "min": 1
+    },
+    "former_ids": [],
+    "game_version": null,
+    "gate": [
+      {
+        "key": "unlocking_the_mines",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "hazards": [],
+    "icon_key": "mine/upper_mines",
+    "id": "upper_mines",
+    "id_status": "provisional",
+    "location_id": "the_upper_mines",
+    "monster_ids": [
+      "cool_sapling",
+      "copper_clod",
+      "mimic",
+      "red_mushroom",
+      "rock_clod",
+      "sapling",
+      "yellow_enchantern"
+    ],
+    "name": "The Upper Mines",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "ore_item_ids": [
+      "ore_copper",
+      "perfect_copper_ore",
+      "ore_ruby",
+      "perfect_ruby",
+      "ore_stone",
+      "peat",
+      "sod",
+      "clay"
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "version_added": null,
+    "wiki_page": "Mines/Upper Mines"
+  },
+  {
+    "artifact_set_ids": [
+      "archaeology_tide_cavern"
+    ],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "fish_item_ids": [
+      "archerfish",
+      "mini_whale_shark",
+      "sapphire_betta",
+      "transparent_jellyfish",
+      "water_balloon_fish"
+    ],
+    "floors": {
+      "max": 39,
+      "min": 21
+    },
+    "former_ids": [],
+    "game_version": null,
+    "gate": [
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "hazards": [],
+    "icon_key": "mine/tide_caverns",
+    "id": "tide_caverns",
+    "id_status": "provisional",
+    "location_id": "the_tide_caverns",
+    "monster_ids": [
+      "blue_clod",
+      "blue_enchantern",
+      "blue_sapling",
+      "blue_stalagmite",
+      "green_mushroom",
+      "iron_clod",
+      "mimic",
+      "purple_essence_bat"
+    ],
+    "name": "The Tide Caverns",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "ore_item_ids": [
+      "ore_iron",
+      "perfect_iron_ore",
+      "ore_sapphire",
+      "perfect_sapphire",
+      "ore_stone",
+      "peat",
+      "sod",
+      "clay"
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "version_added": null,
+    "wiki_page": "Mines/Tide Caverns"
+  },
+  {
+    "artifact_set_ids": [
+      "archaeology_deep_earth"
+    ],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "fish_item_ids": [
+      "earth_eel",
+      "emerald_horned_charger",
+      "pebble_minnow",
+      "rockbiter",
+      "shardfin"
+    ],
+    "floors": {
+      "max": 59,
+      "min": 41
+    },
+    "former_ids": [],
+    "game_version": null,
+    "gate": [
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "hazards": [],
+    "icon_key": "mine/deep_earth",
+    "id": "deep_earth",
+    "id_status": "provisional",
+    "location_id": "the_deep_earth",
+    "monster_ids": [
+      "blue_essence_bat",
+      "blue_mushroom",
+      "green_clod",
+      "green_stalagmite",
+      "mimic",
+      "purple_sapling",
+      "silver_clod"
+    ],
+    "name": "The Deep Earth",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "ore_item_ids": [
+      "ore_silver",
+      "perfect_silver_ore",
+      "ore_emerald",
+      "perfect_emerald",
+      "ore_stone",
+      "peat",
+      "sod",
+      "clay"
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "version_added": null,
+    "wiki_page": "Mines/Deep Earth"
+  },
+  {
+    "artifact_set_ids": [
+      "archaeology_lava_caves"
+    ],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "fish_item_ids": [
+      "armored_bass",
+      "candelabra_seadragon",
+      "firesail_fish",
+      "lava_piranha",
+      "sulfur_crab"
+    ],
+    "floors": {
+      "max": 79,
+      "min": 61
+    },
+    "former_ids": [],
+    "game_version": null,
+    "gate": [
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "hazards": [
+      "lava"
+    ],
+    "icon_key": "mine/lava_caves",
+    "id": "lava_caves",
+    "id_status": "provisional",
+    "location_id": "the_lava_caves",
+    "monster_ids": [
+      "flame_spirit",
+      "gold_clod",
+      "lava_cat",
+      "mimic",
+      "orange_sapling",
+      "purple_mushroom",
+      "purple_stalagmite",
+      "red_clod"
+    ],
+    "name": "The Lava Caves",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "ore_item_ids": [
+      "ore_gold",
+      "perfect_gold_ore",
+      "ore_diamond",
+      "perfect_diamond",
+      "ore_stone",
+      "peat",
+      "sod",
+      "clay"
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "version_added": null,
+    "wiki_page": "Mines/Lava Caves"
+  },
+  {
+    "artifact_set_ids": [
+      "archaeology_dragon"
+    ],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [],
+    "fish_item_ids": [
+      "coelacanth",
+      "gazer",
+      "giant_jellyfish",
+      "luminescent_crab",
+      "winged_shrimp"
+    ],
+    "floors": {
+      "max": 99,
+      "min": 81
+    },
+    "former_ids": [],
+    "game_version": null,
+    "gate": [
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "hazards": [],
+    "icon_key": "mine/ancient_ruins",
+    "id": "ancient_ruins",
+    "id_status": "provisional",
+    "location_id": "the_ancient_ruins",
+    "monster_ids": [
+      "flying_tome",
+      "living_gryphon_statue",
+      "mimic",
+      "mistril_clod",
+      "pink_sapling",
+      "purple_clod",
+      "purple_flame_spirit",
+      "rock_stack",
+      "void_cat"
+    ],
+    "name": "The Ancient Ruins",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "ore_item_ids": [
+      "ore_mistril",
+      "perfect_mistril_ore",
+      "ore_pink_diamond",
+      "perfect_pink_diamond",
+      "ore_stone",
+      "peat",
+      "sod",
+      "clay"
+    ],
+    "prov": {
+      "*": "manual"
+    },
+    "version_added": null,
+    "wiki_page": "Mines/Ancient Ruins"
+  }
+]

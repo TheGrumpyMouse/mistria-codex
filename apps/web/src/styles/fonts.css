@@ -1,0 +1,45 @@
+/*
+ * Self-hosted OFL faces. No Google Fonts CDN — an offline PWA that reaches for
+ * a font server on first paint is not offline.
+ *
+ * Paths are **relative**, so Vite hashes each file and rewrites the URL for
+ * whatever base path the site is deployed under. A leading `/` works in dev and
+ * 404s on GitHub Pages, which is the single most common way to ship a broken
+ * production build from a green local one.
+ *
+ * Licences are in `../assets/fonts/OFL.txt` and credited on the About page.
+ * These are variable TTFs, ~690KB together; subsetting them to WOFF2 would cut
+ * roughly two thirds and is listed in docs/assets-needed.md.
+ */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree.ttf") format("truetype-variations");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("../assets/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("../assets/fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

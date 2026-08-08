@@ -1,0 +1,41 @@
+{
+  "_comment": [
+    "Where the enumeration of Mistria's water bodies is read from.",
+    "",
+    "This exists because the biggest gap in the dataset was self-inflicted. 113",
+    "fishing and diving windows said `habitats: ['pond']` and `locations: []`,",
+    "because 'Pond' is a class of place and expanding it into three concrete ponds",
+    "looked like an assertion the wiki had never made.",
+    "",
+    "The wiki does make it. The Fishing page's 'Fishing Locations' section",
+    "enumerates every pond, river and ocean-reachable region, in a structured",
+    "list with `<div id=\"Pond\">` anchors on it. So the set of ponds is a fact and",
+    "gets parsed like every other fact — what remains an inference is only whether",
+    "a *given* fish is in all of them, and that is what `confidence: \"inferred\"`",
+    "on the expanded window records.",
+    "",
+    "DIVABILITY IS AN EXCEPTION LIST. Two of the three ocean-reachable regions are",
+    "marked '(not divable)'. The page uses that parenthetical as its exception",
+    "marker, so an entry without one is divable. This matters: without it, a",
+    "diving window for an ocean fish would drop pins at The Western Ruins and",
+    "Sweetwater Farm, where the player cannot dive at all.",
+    "",
+    "MINE FISHING FLOORS are narrower than the biome. The Upper Mines run 1-19 but",
+    "are only fishable from floor 2, and the Ancient Ruins' 81-99 excludes floor",
+    "90. Two ranges is two windows, which is what the OR-of-ANDs model is for."
+  ],
+
+  "page": "Fishing",
+  "section": "Fishing Locations",
+
+  "_habitat_comment": [
+    "HTML anchor id on the page -> the habitat it enumerates. The ids are there",
+    "so other pages can link to `Fishing#Pond`, which makes them a deliberate,",
+    "stable target rather than incidental markup."
+  ],
+  "habitatByDivId": {
+    "Pond": "pond",
+    "River": "river",
+    "Ocean": "ocean"
+  }
+}

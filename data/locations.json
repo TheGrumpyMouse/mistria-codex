@@ -1,0 +1,2102 @@
+[
+  {
+    "aliases": [
+      "The Farm",
+      "Farm",
+      "Your Farm"
+    ],
+    "anchor": {
+      "x": 3457,
+      "y": 2412
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "farm",
+      "overworld",
+      "river"
+    ],
+    "icon_key": null,
+    "id": "the_farm",
+    "id_status": "confirmed",
+    "kind": "farm",
+    "map_id": "mistria_world",
+    "name": "The Farm",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          52,
+          77,
+          2
+        ],
+        [
+          52,
+          81,
+          1
+        ],
+        [
+          52,
+          86,
+          1
+        ],
+        [
+          52,
+          88,
+          1
+        ],
+        [
+          53,
+          66,
+          30
+        ],
+        [
+          54,
+          66,
+          30
+        ],
+        [
+          55,
+          66,
+          30
+        ],
+        [
+          56,
+          66,
+          30
+        ],
+        [
+          57,
+          66,
+          30
+        ],
+        [
+          58,
+          66,
+          30
+        ],
+        [
+          59,
+          66,
+          30
+        ],
+        [
+          60,
+          66,
+          30
+        ],
+        [
+          61,
+          66,
+          30
+        ],
+        [
+          62,
+          66,
+          30
+        ],
+        [
+          63,
+          66,
+          30
+        ],
+        [
+          64,
+          66,
+          30
+        ],
+        [
+          65,
+          66,
+          30
+        ],
+        [
+          66,
+          66,
+          30
+        ],
+        [
+          67,
+          67,
+          1
+        ],
+        [
+          67,
+          69,
+          1
+        ],
+        [
+          67,
+          71,
+          1
+        ],
+        [
+          67,
+          73,
+          1
+        ],
+        [
+          67,
+          75,
+          2
+        ],
+        [
+          67,
+          78,
+          1
+        ],
+        [
+          67,
+          80,
+          1
+        ],
+        [
+          67,
+          84,
+          1
+        ],
+        [
+          67,
+          86,
+          1
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Farm"
+  },
+  {
+    "aliases": [
+      "Mistria",
+      "The Town",
+      "Town"
+    ],
+    "anchor": {
+      "x": 3429,
+      "y": 1851
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "overworld",
+      "pond",
+      "river"
+    ],
+    "icon_key": null,
+    "id": "mistria",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "Mistria",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          34,
+          72,
+          17
+        ],
+        [
+          35,
+          72,
+          18
+        ],
+        [
+          36,
+          72,
+          18
+        ],
+        [
+          37,
+          73,
+          4
+        ],
+        [
+          37,
+          78,
+          12
+        ],
+        [
+          38,
+          75,
+          15
+        ],
+        [
+          39,
+          73,
+          4
+        ],
+        [
+          39,
+          80,
+          10
+        ],
+        [
+          40,
+          72,
+          18
+        ],
+        [
+          41,
+          72,
+          18
+        ],
+        [
+          42,
+          72,
+          18
+        ],
+        [
+          43,
+          72,
+          18
+        ],
+        [
+          44,
+          72,
+          18
+        ],
+        [
+          45,
+          72,
+          18
+        ],
+        [
+          46,
+          72,
+          18
+        ],
+        [
+          47,
+          72,
+          18
+        ],
+        [
+          48,
+          72,
+          18
+        ],
+        [
+          49,
+          72,
+          18
+        ],
+        [
+          50,
+          72,
+          18
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Mistria"
+  },
+  {
+    "aliases": [
+      "The Beach",
+      "Beach"
+    ],
+    "anchor": {
+      "x": 2114,
+      "y": 3142.7
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "beach",
+      "ocean",
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "the_beach",
+    "id_status": "confirmed",
+    "kind": "beach",
+    "map_id": "mistria_world",
+    "name": "The Beach",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          71,
+          38,
+          1
+        ],
+        [
+          71,
+          44,
+          1
+        ],
+        [
+          71,
+          49,
+          1
+        ],
+        [
+          71,
+          51,
+          1
+        ],
+        [
+          71,
+          58,
+          1
+        ],
+        [
+          72,
+          37,
+          23
+        ],
+        [
+          73,
+          37,
+          23
+        ],
+        [
+          74,
+          37,
+          23
+        ],
+        [
+          75,
+          37,
+          23
+        ],
+        [
+          76,
+          37,
+          23
+        ],
+        [
+          77,
+          37,
+          23
+        ],
+        [
+          78,
+          37,
+          23
+        ],
+        [
+          79,
+          37,
+          23
+        ],
+        [
+          80,
+          37,
+          23
+        ],
+        [
+          81,
+          37,
+          23
+        ],
+        [
+          82,
+          37,
+          23
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Beach"
+  },
+  {
+    "aliases": [
+      "The Eastern Road",
+      "Eastern Road",
+      "East Road"
+    ],
+    "anchor": {
+      "x": 4480,
+      "y": 1738
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "forest",
+      "overworld",
+      "pond",
+      "river"
+    ],
+    "icon_key": null,
+    "id": "the_eastern_road",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Eastern Road",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          35,
+          117,
+          2
+        ],
+        [
+          36,
+          106,
+          2
+        ],
+        [
+          36,
+          113,
+          8
+        ],
+        [
+          37,
+          104,
+          7
+        ],
+        [
+          37,
+          113,
+          8
+        ],
+        [
+          38,
+          104,
+          7
+        ],
+        [
+          38,
+          113,
+          7
+        ],
+        [
+          38,
+          121,
+          1
+        ],
+        [
+          39,
+          104,
+          19
+        ],
+        [
+          40,
+          103,
+          20
+        ],
+        [
+          41,
+          104,
+          18
+        ],
+        [
+          42,
+          104,
+          19
+        ],
+        [
+          43,
+          112,
+          11
+        ],
+        [
+          44,
+          107,
+          2
+        ],
+        [
+          44,
+          111,
+          10
+        ],
+        [
+          45,
+          107,
+          13
+        ],
+        [
+          46,
+          107,
+          14
+        ],
+        [
+          47,
+          107,
+          16
+        ],
+        [
+          48,
+          106,
+          17
+        ],
+        [
+          49,
+          105,
+          11
+        ],
+        [
+          49,
+          120,
+          1
+        ],
+        [
+          50,
+          107,
+          8
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Eastern_Road"
+  },
+  {
+    "aliases": [
+      "The Narrows",
+      "Narrows"
+    ],
+    "anchor": {
+      "x": 2174.65,
+      "y": 1803.98
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "overworld",
+      "river"
+    ],
+    "icon_key": null,
+    "id": "the_narrows",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Narrows",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          35,
+          48,
+          3
+        ],
+        [
+          36,
+          42,
+          3
+        ],
+        [
+          36,
+          48,
+          4
+        ],
+        [
+          37,
+          39,
+          13
+        ],
+        [
+          37,
+          53,
+          3
+        ],
+        [
+          38,
+          39,
+          17
+        ],
+        [
+          39,
+          39,
+          17
+        ],
+        [
+          40,
+          40,
+          16
+        ],
+        [
+          41,
+          40,
+          18
+        ],
+        [
+          42,
+          40,
+          19
+        ],
+        [
+          43,
+          41,
+          4
+        ],
+        [
+          43,
+          47,
+          11
+        ],
+        [
+          44,
+          48,
+          8
+        ],
+        [
+          45,
+          47,
+          8
+        ],
+        [
+          46,
+          47,
+          8
+        ],
+        [
+          47,
+          45,
+          10
+        ],
+        [
+          48,
+          45,
+          11
+        ],
+        [
+          49,
+          45,
+          2
+        ],
+        [
+          49,
+          53,
+          5
+        ],
+        [
+          50,
+          46,
+          1
+        ],
+        [
+          50,
+          54,
+          4
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Narrows"
+  },
+  {
+    "aliases": [
+      "The Deep Woods",
+      "Deep Woods",
+      "The Deepwoods",
+      "Deepwoods"
+    ],
+    "anchor": {
+      "x": 4712,
+      "y": 1289
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "forest",
+      "overworld",
+      "pond"
+    ],
+    "icon_key": null,
+    "id": "the_deep_woods",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Deep Woods",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          19,
+          117,
+          7
+        ],
+        [
+          20,
+          105,
+          4
+        ],
+        [
+          20,
+          117,
+          7
+        ],
+        [
+          21,
+          105,
+          4
+        ],
+        [
+          21,
+          117,
+          7
+        ],
+        [
+          22,
+          105,
+          4
+        ],
+        [
+          22,
+          117,
+          7
+        ],
+        [
+          23,
+          105,
+          4
+        ],
+        [
+          23,
+          117,
+          7
+        ],
+        [
+          24,
+          106,
+          2
+        ],
+        [
+          24,
+          117,
+          7
+        ],
+        [
+          25,
+          104,
+          7
+        ],
+        [
+          25,
+          117,
+          7
+        ],
+        [
+          26,
+          103,
+          10
+        ],
+        [
+          26,
+          117,
+          7
+        ],
+        [
+          27,
+          103,
+          10
+        ],
+        [
+          27,
+          117,
+          6
+        ],
+        [
+          28,
+          103,
+          12
+        ],
+        [
+          28,
+          117,
+          6
+        ],
+        [
+          29,
+          103,
+          20
+        ],
+        [
+          30,
+          103,
+          20
+        ],
+        [
+          31,
+          111,
+          2
+        ],
+        [
+          31,
+          116,
+          7
+        ],
+        [
+          32,
+          111,
+          2
+        ],
+        [
+          33,
+          110,
+          4
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "The_Deep_Woods"
+  },
+  {
+    "aliases": [
+      "The Western Ruins",
+      "Western Ruins"
+    ],
+    "anchor": {
+      "x": 906,
+      "y": 1892.7
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "ocean",
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "the_western_ruins",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Western Ruins",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          35,
+          11,
+          4
+        ],
+        [
+          35,
+          16,
+          1
+        ],
+        [
+          35,
+          18,
+          1
+        ],
+        [
+          36,
+          11,
+          11
+        ],
+        [
+          37,
+          10,
+          12
+        ],
+        [
+          38,
+          11,
+          11
+        ],
+        [
+          39,
+          10,
+          12
+        ],
+        [
+          40,
+          11,
+          11
+        ],
+        [
+          41,
+          11,
+          11
+        ],
+        [
+          42,
+          11,
+          11
+        ],
+        [
+          43,
+          11,
+          12
+        ],
+        [
+          44,
+          10,
+          13
+        ],
+        [
+          45,
+          11,
+          12
+        ],
+        [
+          46,
+          10,
+          12
+        ],
+        [
+          47,
+          11,
+          11
+        ],
+        [
+          48,
+          10,
+          12
+        ],
+        [
+          49,
+          11,
+          11
+        ],
+        [
+          50,
+          11,
+          4
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Western_Ruins"
+  },
+  {
+    "aliases": [
+      "The Summit",
+      "Summit"
+    ],
+    "anchor": {
+      "x": 2052,
+      "y": 1177.24
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "mountain",
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "the_summit",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Summit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          20,
+          41,
+          15
+        ],
+        [
+          21,
+          41,
+          15
+        ],
+        [
+          22,
+          41,
+          15
+        ],
+        [
+          23,
+          41,
+          15
+        ],
+        [
+          24,
+          41,
+          15
+        ],
+        [
+          25,
+          41,
+          15
+        ],
+        [
+          26,
+          41,
+          15
+        ],
+        [
+          27,
+          41,
+          15
+        ],
+        [
+          28,
+          41,
+          15
+        ],
+        [
+          29,
+          41,
+          15
+        ],
+        [
+          30,
+          41,
+          15
+        ],
+        [
+          31,
+          41,
+          15
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [
+      {
+        "key": "beautification_project",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "The_Summit"
+  },
+  {
+    "aliases": [
+      "Sweetwater Farm",
+      "Hayden's Farm"
+    ],
+    "anchor": {
+      "x": 2261,
+      "y": 2575
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id",
+      "predates_1_0"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "farm",
+      "ocean",
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "sweetwater_farm",
+    "id_status": "confirmed",
+    "kind": "farm",
+    "map_id": "mistria_world",
+    "name": "Sweetwater Farm",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": {
+      "cell": 42,
+      "runs": [
+        [
+          53,
+          37,
+          3
+        ],
+        [
+          53,
+          45,
+          2
+        ],
+        [
+          54,
+          37,
+          4
+        ],
+        [
+          54,
+          45,
+          2
+        ],
+        [
+          54,
+          50,
+          8
+        ],
+        [
+          55,
+          37,
+          4
+        ],
+        [
+          55,
+          45,
+          3
+        ],
+        [
+          55,
+          49,
+          9
+        ],
+        [
+          56,
+          37,
+          21
+        ],
+        [
+          57,
+          37,
+          25
+        ],
+        [
+          58,
+          37,
+          25
+        ],
+        [
+          59,
+          37,
+          25
+        ],
+        [
+          60,
+          37,
+          25
+        ],
+        [
+          61,
+          37,
+          24
+        ],
+        [
+          62,
+          37,
+          24
+        ],
+        [
+          63,
+          37,
+          24
+        ],
+        [
+          64,
+          37,
+          25
+        ],
+        [
+          65,
+          37,
+          14
+        ],
+        [
+          65,
+          54,
+          7
+        ],
+        [
+          66,
+          37,
+          7
+        ],
+        [
+          66,
+          46,
+          4
+        ],
+        [
+          66,
+          54,
+          7
+        ],
+        [
+          67,
+          47,
+          2
+        ],
+        [
+          67,
+          55,
+          1
+        ]
+      ],
+      "type": "cells"
+    },
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Sweetwater_Farm"
+  },
+  {
+    "aliases": [
+      "The Manor's Gardens",
+      "Manor Gardens",
+      "The Manor Gardens"
+    ],
+    "anchor": {
+      "x": 3566,
+      "y": 1518
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "the_manors_gardens",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Manor's Gardens",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Manor's_Gardens"
+  },
+  {
+    "aliases": [
+      "The Mines",
+      "Mines"
+    ],
+    "anchor": {
+      "x": 1989,
+      "y": 1651
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave"
+    ],
+    "icon_key": null,
+    "id": "the_mines",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": "mistria_world",
+    "name": "The Mines",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": null,
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Mines"
+  },
+  {
+    "aliases": [
+      "The Upper Mines",
+      "Upper Mines"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave"
+    ],
+    "icon_key": null,
+    "id": "the_upper_mines",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": null,
+    "name": "The Upper Mines",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_mines",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Upper_Mines"
+  },
+  {
+    "aliases": [
+      "The Tide Caverns",
+      "Tide Caverns"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave",
+      "mine_water"
+    ],
+    "icon_key": null,
+    "id": "the_tide_caverns",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": null,
+    "name": "The Tide Caverns",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_mines",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Tide_Caverns"
+  },
+  {
+    "aliases": [
+      "The Deep Earth",
+      "Deep Earth"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave"
+    ],
+    "icon_key": null,
+    "id": "the_deep_earth",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": null,
+    "name": "The Deep Earth",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_mines",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Deep_Earth"
+  },
+  {
+    "aliases": [
+      "The Lava Caves",
+      "Lava Caves"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave"
+    ],
+    "icon_key": null,
+    "id": "the_lava_caves",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": null,
+    "name": "The Lava Caves",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_mines",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Lava_Caves"
+  },
+  {
+    "aliases": [
+      "The Ancient Ruins",
+      "Ancient Ruins"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "cave"
+    ],
+    "icon_key": null,
+    "id": "the_ancient_ruins",
+    "id_status": "confirmed",
+    "kind": "mine",
+    "map_id": null,
+    "name": "The Ancient Ruins",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_mines",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "The_Ancient_Ruins"
+  },
+  {
+    "aliases": [
+      "Manor House",
+      "The Manor",
+      "Manor",
+      "Manor House Dining Room",
+      "The Manor's"
+    ],
+    "anchor": {
+      "x": 3421,
+      "y": 1580
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_manor_house",
+    "id_status": "confirmed",
+    "kind": "indoor",
+    "map_id": "mistria_world",
+    "name": "The Manor House",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Manor_House"
+  },
+  {
+    "aliases": [
+      "Inn",
+      "The Inn",
+      "Sleeping Dragon Inn",
+      "The Sleeping Dragon Inn"
+    ],
+    "anchor": {
+      "x": 3332,
+      "y": 1966
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_inn",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Sleeping Dragon Inn",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Inn"
+  },
+  {
+    "aliases": [
+      "General Store",
+      "The General Store",
+      "Store"
+    ],
+    "anchor": {
+      "x": 3496,
+      "y": 1969
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_general_store",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The General Store",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "General_Store"
+  },
+  {
+    "aliases": [
+      "Blacksmith",
+      "The Blacksmith",
+      "Blacksmith Shop",
+      "Forge"
+    ],
+    "anchor": {
+      "x": 3295,
+      "y": 1705
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_blacksmith",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Blacksmith",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Blacksmith"
+  },
+  {
+    "aliases": [
+      "Carpenter",
+      "The Carpenter",
+      "Carpenter Shop"
+    ],
+    "anchor": {
+      "x": 4492,
+      "y": 1601
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_carpenter",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Carpenter",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_eastern_road",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Carpenter"
+  },
+  {
+    "aliases": [
+      "Bathhouse",
+      "The Bathhouse",
+      "Bath House",
+      "The Bath House",
+      "Bathhouse Change Room",
+      "Bath House: Changing Room"
+    ],
+    "anchor": {
+      "x": 3546,
+      "y": 1694
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_bathhouse",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Bathhouse",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Bathhouse"
+  },
+  {
+    "aliases": [
+      "Clinic",
+      "The Clinic"
+    ],
+    "anchor": {
+      "x": 3534,
+      "y": 1830
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_clinic",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Clinic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Clinic"
+  },
+  {
+    "aliases": [
+      "Museum",
+      "The Museum"
+    ],
+    "anchor": {
+      "x": 2282,
+      "y": 1728
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_museum",
+    "id_status": "confirmed",
+    "kind": "indoor",
+    "map_id": "mistria_world",
+    "name": "The Museum",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_narrows",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [
+      {
+        "key": "museum_donations_wanted",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Museum"
+  },
+  {
+    "aliases": [
+      "Mill",
+      "The Mill"
+    ],
+    "anchor": {
+      "x": 3613,
+      "y": 1980
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_mill",
+    "id_status": "confirmed",
+    "kind": "indoor",
+    "map_id": "mistria_world",
+    "name": "The Mill",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [
+      {
+        "key": "the_mill_restoration_project",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Mill"
+  },
+  {
+    "aliases": [
+      "Bell Tower",
+      "The Bell Tower",
+      "Church"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "anchor",
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_bell_tower",
+    "id_status": "confirmed",
+    "kind": "indoor",
+    "map_id": null,
+    "name": "The Bell Tower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [
+      {
+        "key": "repair_the_bell_tower",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Bell_Tower"
+  },
+  {
+    "aliases": [
+      "Tackle Shop",
+      "The Tackle Shop"
+    ],
+    "anchor": {
+      "x": 1997,
+      "y": 3071
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "the_tackle_shop",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": "mistria_world",
+    "name": "The Tackle Shop",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_beach",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Tackle_Shop"
+  },
+  {
+    "aliases": [
+      "Balor's Wagon",
+      "Wagon",
+      "The Wagon"
+    ],
+    "anchor": null,
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "anchor",
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "indoor"
+    ],
+    "icon_key": null,
+    "id": "balors_wagon",
+    "id_status": "confirmed",
+    "kind": "shop",
+    "map_id": null,
+    "name": "Balor's Wagon",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "mistria",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Balor's_Wagon"
+  },
+  {
+    "aliases": [
+      "Wishing Well",
+      "The Wishing Well"
+    ],
+    "anchor": {
+      "x": 5078,
+      "y": 2005
+    },
+    "blurb": null,
+    "confidence": "wiki",
+    "connections": [],
+    "data_gaps": [
+      "map_id"
+    ],
+    "former_ids": [],
+    "game_version": null,
+    "habitats": [
+      "overworld"
+    ],
+    "icon_key": null,
+    "id": "the_wishing_well",
+    "id_status": "confirmed",
+    "kind": "outdoor",
+    "map_id": "mistria_world",
+    "name": "The Wishing Well",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "parent_id": "the_eastern_road",
+    "prov": {
+      "*": "manual"
+    },
+    "shape": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "Wishing_Well"
+  }
+]

@@ -1,0 +1,1966 @@
+{
+  "checked": [
+    "Adeline",
+    "Balor",
+    "Caldarus",
+    "Celine",
+    "Darcy",
+    "Dell",
+    "Dozy",
+    "Eiland",
+    "Elsie",
+    "Errol",
+    "Hayden",
+    "Hemlock",
+    "Henrietta",
+    "Holt",
+    "Josephine",
+    "Juniper",
+    "Landen",
+    "Louis",
+    "Luc",
+    "Maple",
+    "March",
+    "Merri",
+    "Nora",
+    "Olric",
+    "Priestess",
+    "Reina",
+    "Ryis",
+    "Stillwell",
+    "Taliferro",
+    "Terithia",
+    "Valen",
+    "Vera",
+    "Wheedle",
+    "Zorel"
+  ],
+  "lastEdited": "2026-04-15T14:59:13Z",
+  "schedules": [
+    {
+      "character": "Adeline",
+      "lastEdited": "2026-04-15T14:59:03Z",
+      "page": "Adeline/Schedule",
+      "tables": [
+        {
+          "group": "Monday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town: Quest Board",
+              "time": "6:20 AM"
+            },
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "11:30 AM"
+            },
+            {
+              "place": "Manor: Dining Room",
+              "time": "8:00 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:10 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Town",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town: Quest Board",
+              "time": "6:10 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "11:10 AM"
+            },
+            {
+              "place": "Blacksmith Shop",
+              "time": "6:20 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "10:10 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "6:10 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "11:10 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:20 PM"
+            },
+            {
+              "place": "Manor: Dining Room",
+              "time": "6:30 PM"
+            },
+            {
+              "place": "Manor: Dining Room",
+              "time": "11:50 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:00 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Carpenter Shop",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Blacksmith Shop",
+              "time": "8:50 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "11:30 AM"
+            },
+            {
+              "place": "General Store",
+              "time": "1:40 PM"
+            },
+            {
+              "place": "Town: South \"Meetup Spot 2\"",
+              "time": "4:00 PM"
+            },
+            {
+              "place": "Beach: Picnic Bench (Top Right)",
+              "time": "4:10 PM"
+            },
+            {
+              "place": "Beach: Towels",
+              "time": "9:00 PM"
+            },
+            {
+              "place": "Beach: Right Bench",
+              "time": "10:40 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:30 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Manor: Foyeur",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Fountain",
+              "time": "09:30"
+            },
+            {
+              "place": "Bath House: Changing Room",
+              "time": "14:10"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "18:10"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:30 AM (next day)"
+            }
+          ],
+          "variant": "Before Repair the Bridge is complete"
+        },
+        {
+          "group": "Saturday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Town: Fountain",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "8:30 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:30 AM (next day)"
+            }
+          ],
+          "variant": "After Repair the Bridge is complete"
+        },
+        {
+          "group": "Sunday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town: Gazebo",
+              "time": "10:10 AM"
+            },
+            {
+              "place": "Town: Manor Garden",
+              "time": "6:50 PM"
+            },
+            {
+              "place": "Manor: Dining Room",
+              "time": "7:40 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "1:10 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Town Center Flower Beds)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Western Ruins (Grid Supervisor)",
+              "time": "9:23 AM"
+            },
+            {
+              "place": "Inn (South Table Bottom 1)",
+              "time": "2:49 PM"
+            },
+            {
+              "place": "Inn (South Table Bottom 1)",
+              "time": "9:22 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "1 Day Post"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Town (Adeline Wake Point)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Adeline's Office (Routine Entrance)",
+              "time": "8:41 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "1:23 PM"
+            },
+            {
+              "place": "Inn (North Table Bottom 1)",
+              "time": "5:56 PM"
+            },
+            {
+              "place": "Inn (North Table Bottom 1)",
+              "time": "9:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:53 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Town (Adeline Wake Point)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Bathhouse Change Room (Middle Bench Left Seat)",
+              "time": "6:21 AM"
+            },
+            {
+              "place": "Inn (South Table Top 1)",
+              "time": "9:51 AM"
+            },
+            {
+              "place": "General Store (Store Shopping Entrance)",
+              "time": "4:13 PM"
+            },
+            {
+              "place": "Adeline's Office (Routine Entrance)",
+              "time": "7:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Town (Adeline Wake Point)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "6:41 AM"
+            },
+            {
+              "place": "Town (Repair Restoration Review)",
+              "time": "10:51 AM"
+            },
+            {
+              "place": "Town (Mill Restoration Review)",
+              "time": "1:42 PM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "5:23 PM"
+            },
+            {
+              "place": "Celine's Room (Couch Seat Upper)",
+              "time": "7:17 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Friday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Town Center Flower Beds)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Western Ruins (Grid Supervisor)",
+              "time": "9:23 AM"
+            },
+            {
+              "place": "Inn (South Table Bottom 1)",
+              "time": "2:49 PM"
+            },
+            {
+              "place": "Inn (South Table Bottom 1)",
+              "time": "9:22 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "1 Day Post"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Town (Fountain Hang 1)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Inn (Bottom-Middle Bar Seat)",
+              "time": "8:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "1 Day Post"
+            }
+          ],
+          "variant": "After Repair the Bridge is complete"
+        },
+        {
+          "group": "Sunday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Town (Fountain Hang 1)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Main Street Table 1)",
+              "time": "9:00 AM"
+            },
+            {
+              "place": "Forest (Squirrel Grill)",
+              "time": "10:05 AM"
+            },
+            {
+              "place": "Meadow (Mushroom Table 1)",
+              "time": "1:00 PM"
+            },
+            {
+              "place": "Inn (Bottom-Middle Bar Seat)",
+              "time": "7:25 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "1 Day Post"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Garden Entrance)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Town (Inn)",
+              "time": "9:23 AM"
+            },
+            {
+              "place": "Town (Wagon)",
+              "time": "10:57 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "1:49 PM"
+            },
+            {
+              "place": "Town (Fountain)",
+              "time": "3:55 PM"
+            },
+            {
+              "place": "Inn (North Table Bottom)",
+              "time": "6:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "12:23 AM (Next Day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Office (Routine Entrance)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "7:13 AM"
+            },
+            {
+              "place": "Museum (Museum Conversation)",
+              "time": "12:23 PM"
+            },
+            {
+              "place": "Manor House Dining Room (Table Right Seat)",
+              "time": "5:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:55 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Office (Office Chat)",
+              "time": "6:40 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "1:13 PM"
+            },
+            {
+              "place": "Museum (Museum Conversation)",
+              "time": "12:23 PM"
+            },
+            {
+              "place": "Inn (North Table Bottom)",
+              "time": "5:52 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "12:13 AM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town (Garden Wander Entrance)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Town (Inn)",
+              "time": "9:23 AM"
+            },
+            {
+              "place": "Town (Wagon Meet Up)",
+              "time": "10:57 AM"
+            },
+            {
+              "place": "Town (Quest Board Looking)",
+              "time": "1:49 PM"
+            },
+            {
+              "place": "Town (Fountain Square Right)",
+              "time": "3:55 PM"
+            },
+            {
+              "place": "Inn (North Table Bottom)",
+              "time": "6:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "12:23 AM (Next Day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Town (Fountain Hang)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Inn (Bottom-Middle Bar Seat)",
+              "time": "8:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "12:12 AM (Next Day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Sunday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Office (Routine Entrance)",
+              "time": "6:01 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "7:13 AM"
+            },
+            {
+              "place": "Museum (Museum Conversation)",
+              "time": "12:23 PM"
+            },
+            {
+              "place": "Manor House Dining Room (Table Right Seat)",
+              "time": "5:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:55 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor: Office",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Bathhouse (Change Room)",
+              "time": "1:13 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Top Bar Seat)",
+              "time": "4:26 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Balcony Hang)",
+              "time": "6:51 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "General Store (Home - Kitchen Table)",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "12:33 PM"
+            },
+            {
+              "place": "Manor: Office",
+              "time": "6:26 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:43 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "General Store (Home - Kitchen Table)",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "9:22 AM"
+            },
+            {
+              "place": "Manor (Office)",
+              "time": "11:32 AM"
+            },
+            {
+              "place": "Manor (Dining Room)",
+              "time": "4:56 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Balcony Hang)",
+              "time": "9:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor (Office)",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Bathhouse (Change Room)",
+              "time": "1:13 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Top Bar Seat)",
+              "time": "4:26 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Balcony Hang)",
+              "time": "6:51 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Friday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor (Office)",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Bathhouse (Change Room)",
+              "time": "1:13 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Top Bar Seat)",
+              "time": "4:26 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn (Balcony Hang)",
+              "time": "6:51 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:23 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor (Office)",
+              "time": "8:12 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "12:12 AM (Next Day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Sunday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "General Store (Home - Kitchen Table)",
+              "time": "6:24 AM"
+            },
+            {
+              "place": "Town (Quest Board)",
+              "time": "12:33 PM"
+            },
+            {
+              "place": "Manor (Office)",
+              "time": "6:26 PM"
+            },
+            {
+              "place": "Adeline's Bedroom (Bed)",
+              "time": "11:43 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #1",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Manor: Foyeur",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Bath House: Cauldron",
+              "time": "11:20 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:30 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "6:50 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "9:40 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:30 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #2 & Winter Variant",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "6:10 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "10:10 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:50 PM"
+            },
+            {
+              "place": "Celine's House",
+              "time": "7:10 PM"
+            },
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "12:30 AM (next day)"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #1 & FNATI: Regular #5",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Town: Mill",
+              "time": "6:10 AM"
+            },
+            {
+              "place": "Town: Fountain",
+              "time": "11:20 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:50 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #2 & FNATI: Drawing (Any)",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Blacksmith Shop",
+              "time": "6:40 AM"
+            },
+            {
+              "place": "Carpenter Shop",
+              "time": "10:00 AM"
+            },
+            {
+              "place": "Town: South \"Meetup Spot 2\"",
+              "time": "12:40 PM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:20 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #3",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Manor: Adeline's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Manor: Adeline's Office",
+              "time": "6:30 AM"
+            },
+            {
+              "place": "Town: Fountain",
+              "time": "11:30 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "4:50 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #4 & FNATI: Dessert (Any)",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Beach: Picnic Bench Top Left",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Hayden's House",
+              "time": "8:20 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "11:20 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "5:10 PM"
+            }
+          ],
+          "variant": null
+        }
+      ]
+    },
+    {
+      "character": "Celine",
+      "lastEdited": "2026-04-15T14:58:45Z",
+      "page": "Celine/Schedule",
+      "tables": [
+        {
+          "group": "Monday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Town: Celine's Garden",
+              "time": "06:00"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "11:49"
+            },
+            {
+              "place": "Inn: Bar",
+              "time": "16:12"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "19:35"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Town: Celine's Cottage Bench",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "11:40"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "19:00"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "21:11"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:13"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "06:11"
+            },
+            {
+              "place": "Hayden's Farm: Chores",
+              "time": "09:21"
+            },
+            {
+              "place": "Clinic: Bothering Valen",
+              "time": "15:22"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "22:31"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Eastern Road: Routine",
+              "time": "06:11"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "10:52"
+            },
+            {
+              "place": "Town: South Meetup Spot",
+              "time": "15:32"
+            },
+            {
+              "place": "Beach: Picnic Bench",
+              "time": "16:13"
+            },
+            {
+              "place": "Beach: Chat Below Towels",
+              "time": "21:03"
+            },
+            {
+              "place": "Beach: Top Bench",
+              "time": "22:42"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:31"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Eastern Road: Routine",
+              "time": "10:11"
+            },
+            {
+              "place": "Bathhouse Change Room: Middle Bench",
+              "time": "15:23"
+            },
+            {
+              "place": "Inn: South Table",
+              "time": "18:06"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:32"
+            }
+          ],
+          "variant": "Before Repair the Bridge is complete"
+        },
+        {
+          "group": "Saturday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Routine",
+              "time": "06:47"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "18:21"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:41"
+            }
+          ],
+          "variant": "After Repair the Bridge is complete"
+        },
+        {
+          "group": "Sunday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Town: Celine's Cottage Bench",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Gazebo by Manor",
+              "time": "09:07"
+            },
+            {
+              "place": "General Store Home: Kitchen Table",
+              "time": "18:02"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Manor Gardens",
+              "time": "06:21"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "11:16"
+            },
+            {
+              "place": "Town: Celine's Cottage Bench",
+              "time": "17:12"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "22:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Celine's Cottage Bench",
+              "time": "06:21"
+            },
+            {
+              "place": "Town: Celine's Cottage Bench",
+              "time": "09:14"
+            },
+            {
+              "place": "Bathhouse: By Cauldron",
+              "time": "12:16"
+            },
+            {
+              "place": "Bathhouse Change Room: Middle Bench",
+              "time": "16:09"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "19:12"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "22:15"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:51"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Quest Board",
+              "time": "06:21"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "10:14"
+            },
+            {
+              "place": "Town: Manor Gardens",
+              "time": "13:46"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "18:09"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Hayden's Farm: Chores",
+              "time": "06:00"
+            },
+            {
+              "place": "Museum Entry",
+              "time": "10:51"
+            },
+            {
+              "place": "Museum Entry",
+              "time": "14:23"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "17:29"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Routine",
+              "time": "06:01"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "18:41"
+            }
+          ],
+          "variant": "After Repair the Bridge is complete"
+        },
+        {
+          "group": "Sunday",
+          "section": "Summer",
+          "stops": [
+            {
+              "place": "Beach",
+              "time": "06:00"
+            },
+            {
+              "place": "Beach: Below Towels",
+              "time": "09:33"
+            },
+            {
+              "place": "Beach: Lighthouse",
+              "time": "13:03"
+            },
+            {
+              "place": "General Store Home: Kitchen Table",
+              "time": "16:03"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:13"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Hayden's Farm: Chores",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Fountain",
+              "time": "11:56"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "17:43"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "06:15"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "08:42"
+            },
+            {
+              "place": "General Store Store: Shift",
+              "time": "11:32"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "18:13"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Routine",
+              "time": "08:32"
+            },
+            {
+              "place": "Town",
+              "time": "12:19"
+            },
+            {
+              "place": "Town",
+              "time": "14:52"
+            },
+            {
+              "place": "Town",
+              "time": "17:10"
+            },
+            {
+              "place": "General Store Home: Routine",
+              "time": "17:14"
+            },
+            {
+              "place": "General Store Home: Kitchen Table",
+              "time": "18:42"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "20:32"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:41"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Bathhouse Change Room: Right Stool",
+              "time": "06:11"
+            },
+            {
+              "place": "Bathhouse: Cauldron",
+              "time": "09:22"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "13:47"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "18:32"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:31"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Routine",
+              "time": "06:01"
+            },
+            {
+              "place": "Inn: South Table",
+              "time": "16:38"
+            },
+            {
+              "place": "Town: General Store",
+              "time": "19:22"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "19:52"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Sunday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Hayden's Farm: Chores",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Fountain",
+              "time": "11:56"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "17:43"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Monday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Adeline's Office",
+              "time": "06:01"
+            },
+            {
+              "place": "Town: Manor Garden",
+              "time": "11:36"
+            },
+            {
+              "place": "Manor",
+              "time": "15:11"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "18:21"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Tuesday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store Store: Shift",
+              "time": "07:22"
+            },
+            {
+              "place": "Bathhouse Change Room: Left Stool",
+              "time": "13:16"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "17:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Wednesday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: South Meetup",
+              "time": "07:21"
+            },
+            {
+              "place": "Eastern Road: Routine",
+              "time": "08:11"
+            },
+            {
+              "place": "Inn: Bartender Entrance",
+              "time": "13:45"
+            },
+            {
+              "place": "Inn: Bar",
+              "time": "20:51"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:11"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Thursday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Adeline's Office",
+              "time": "06:01"
+            },
+            {
+              "place": "Town: Manor Garden",
+              "time": "11:36"
+            },
+            {
+              "place": "Manor",
+              "time": "15:11"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "18:21"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: South Routine",
+              "time": "06:01"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "18:42"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Sunday",
+          "section": "Winter",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Adeline's Office",
+              "time": "06:01"
+            },
+            {
+              "place": "Town: Manor Garden",
+              "time": "11:36"
+            },
+            {
+              "place": "Manor",
+              "time": "15:11"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "18:21"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:21"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #1",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "10:55"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "18:39"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "21:39"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:51"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #2 & Winter Variant",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "07:11"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "10:23"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "12:35"
+            },
+            {
+              "place": "Inn: Bar",
+              "time": "16:47"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "19:09"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #3",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "08:15"
+            },
+            {
+              "place": "Museum Entry: Routine",
+              "time": "11:57"
+            },
+            {
+              "place": "Museum Entry",
+              "time": "16:23"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "16:59"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "23:51"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Rainy Day #4",
+          "section": "Rainy",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Bathhouse Change Room: Left Bench",
+              "time": "06:23"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "10:15"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "14:13"
+            },
+            {
+              "place": "Inn: Balcony",
+              "time": "18:59"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "00:24"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #1",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "Town: Quest Board",
+              "time": "06:21"
+            },
+            {
+              "place": "Town: Celine's Garden",
+              "time": "10:55"
+            },
+            {
+              "place": "Inn: South Table",
+              "time": "17:06"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #2",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "06:21"
+            },
+            {
+              "place": "Celine's Room",
+              "time": "11:22"
+            },
+            {
+              "place": "Inn: Bar",
+              "time": "16:46"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #3",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "11:21"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "16:26"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "FNATI: Regular #4",
+          "section": "Friday Night at the Inn",
+          "stops": [
+            {
+              "place": "Celine's Room",
+              "time": "06:00"
+            },
+            {
+              "place": "General Store: Shift",
+              "time": "07:41"
+            },
+            {
+              "place": "Manor: Routine",
+              "time": "12:24"
+            },
+            {
+              "place": "Inn: North Table",
+              "time": "16:46"
+            }
+          ],
+          "variant": null
+        }
+      ]
+    },
+    {
+      "character": "March",
+      "lastEdited": "2026-04-15T14:59:13Z",
+      "page": "March/Schedule",
+      "tables": [
+        {
+          "group": "Friday",
+          "section": "Spring",
+          "stops": [
+            {
+              "place": "Blacksmith: March's Bedroom",
+              "time": "6:00 AM"
+            },
+            {
+              "place": "Bathhouse: Changing Room",
+              "time": "6:30 AM"
+            },
+            {
+              "place": "Blacksmith: Forge",
+              "time": "10:30 AM"
+            },
+            {
+              "place": "Sleeping Dragon Inn",
+              "time": "3:30 PM"
+            }
+          ],
+          "variant": null
+        },
+        {
+          "group": "Saturday",
+          "section": "Fall",
+          "stops": [
+            {
+              "place": "Blacksmith",
+              "time": "7:00am"
+            },
+            {
+              "place": "Saturday Market",
+              "time": "5:00pm"
+            },
+            {
+              "place": "Blacksmith",
+              "time": "2am"
+            }
+          ],
+          "variant": null
+        }
+      ]
+    }
+  ]
+}

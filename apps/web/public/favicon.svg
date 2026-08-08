@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-label="Mistria Codex">
+  <title>Mistria Codex</title>
+  <rect width="16" height="16" rx="2" fill="#FBF8F3"/>
+  <rect x="3" y="3" width="4.5" height="4.5" rx="1" fill="#7FBF8A"/>
+  <rect x="8.5" y="3" width="4.5" height="4.5" rx="1" fill="#4FA8C9"/>
+  <rect x="3" y="8.5" width="4.5" height="4.5" rx="1" fill="#D4834A"/>
+  <rect x="8.5" y="8.5" width="4.5" height="4.5" rx="1" fill="#8B93C9"/>
+</svg>

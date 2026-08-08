@@ -1,0 +1,578 @@
+[
+  {
+    "item_id": "acorn",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "ash_mushroom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "basil",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "bell_berry",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "blackberry",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "blue_conch_shell",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "blueberry",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "breath_of_fire",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "breath_of_spring",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "burdock_root",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "catmint",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "cattail",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "wild_mushroom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "chestnut",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "chickpea",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "chirping_fern",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "coconut",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "cosmos",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "crocus",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "crystal_berries",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "crystal_rose",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "daffodil",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "daisy",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "dandelion",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "dill",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "earthshroom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "essence_blossom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "ethereal_grass",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "fennel",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "fiddlehead",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "flame_pepper",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "fog_orchid",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "frost_lily",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "garlic",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "glowberry",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "glowing_mushroom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "heather",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "holly",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "horseradish",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "hot_potato",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "hydrangea",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "ice_block",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "iris",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "cave_kelp",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "jasmine",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "lava_chestnuts",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "lilac",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "marigold",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "middlemist",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "mines_mussels",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "moon_fruit",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "morel_mushroom",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "narrows_moss",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "nettle",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "night_queen",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "oregano",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "oyster_mushroom",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "pinecone",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "pineshroom",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "pink_scallop_shell",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "plum_blossom",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "poinsettia",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "queen_berry",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "red_toadstool",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "rockroot",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "rose",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "rose_hip",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "rosemary",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "sage",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "sand_dollar",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "sea_grapes",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "sesame",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "shadow_flower",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "shale_grass",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "snapdragon",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "snowdrop_anemone",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "spell_fruit",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "spirit_mushroom",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "spirula_shell",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "sweetroot",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "temple_flower",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "thorn_vine",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "thyme",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "tide_lettuce",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "tulip",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "underseaweed",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "upper_mines_mushroom",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "viola",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "void_herb",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "walnut",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "water_chestnut",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "wild_berries",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "wild_grapes",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "wild_leek",
+    "respawn_days": null,
+    "spawns_on": null,
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "wintergreen_berry",
+    "respawn_days": null,
+    "spawns_on": "bush",
+    "yields_seed_item_id": null
+  },
+  {
+    "item_id": "written_root",
+    "respawn_days": null,
+    "spawns_on": "floor",
+    "yields_seed_item_id": null
+  }
+]

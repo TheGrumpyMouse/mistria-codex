@@ -1,0 +1,46 @@
+{
+  "name": "mistria-codex",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial companion PWA for Fields of Mistria",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "biome ci . && tsc -b && vitest run",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "pnpm --filter @mistria/web run dev",
+    "build:web": "pnpm --filter @mistria/web run build",
+    "preview:web": "pnpm --filter @mistria/web run preview",
+    "schema:emit": "pnpm --filter @mistria/schema run emit",
+    "enrich:cargo": "pnpm --filter @mistria/pipeline run enrich:cargo",
+    "enrich:pages": "pnpm --filter @mistria/pipeline run enrich:pages",
+    "build:data": "pnpm --filter @mistria/pipeline run build:data",
+    "build:ship": "pnpm --filter @mistria/pipeline run build:ship",
+    "validate": "pnpm --filter @mistria/pipeline run validate",
+    "data:unresolved": "pnpm --filter @mistria/pipeline run unresolved",
+    "data:vocab": "pnpm --filter @mistria/pipeline run vocab:report",
+    "findables": "pnpm --filter @mistria/pipeline run findables",
+    "assets:fetch": "pnpm --filter @mistria/pipeline run assets:fetch",
+    "assets:pack": "pnpm --filter @mistria/pipeline run assets:pack"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}

@@ -1,0 +1,11 @@
+# The pipeline writes LF unconditionally, and CI asserts that regenerating
+# `data/` produces a byte-identical result. If Git rewrote line endings on
+# checkout, that check would fail on Windows and pass on Linux — so line endings
+# are pinned to LF everywhere rather than left to core.autocrlf.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary
+*.ico binary

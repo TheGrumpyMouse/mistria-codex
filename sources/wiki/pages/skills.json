@@ -1,0 +1,1162 @@
+{
+  "lastEdited": "2026-04-18T04:50:08Z",
+  "maxLevel": 60,
+  "perks": [
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Prepared Picker",
+      "skill": "farming",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "A Day Well Spent",
+      "skill": "farming",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Green Thumb",
+      "skill": "farming",
+      "tier": 1
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Refreshing",
+      "skill": "farming",
+      "tier": 1
+    },
+    {
+      "cost": 60,
+      "level": 15,
+      "name": "Bountiful",
+      "skill": "farming",
+      "tier": 2
+    },
+    {
+      "cost": 30,
+      "level": 15,
+      "name": "Heavy Duty",
+      "skill": "farming",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Well Watered",
+      "skill": "farming",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Nice Swing",
+      "skill": "farming",
+      "tier": 2
+    },
+    {
+      "cost": 95,
+      "level": 30,
+      "name": "Living off the Land",
+      "skill": "farming",
+      "tier": 3
+    },
+    {
+      "cost": 100,
+      "level": 30,
+      "name": "Superb Sower",
+      "skill": "farming",
+      "tier": 3
+    },
+    {
+      "cost": 90,
+      "level": 30,
+      "name": "Harvest Time",
+      "skill": "farming",
+      "tier": 3
+    },
+    {
+      "cost": 90,
+      "level": 30,
+      "name": "Prize Winning",
+      "skill": "farming",
+      "tier": 3
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Sickle Sword",
+      "skill": "farming",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "Ornamental",
+      "skill": "farming",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Perfect Pollinators",
+      "skill": "farming",
+      "tier": 4
+    },
+    {
+      "cost": 160,
+      "level": 45,
+      "name": "Magic Design",
+      "skill": "farming",
+      "tier": 4
+    },
+    {
+      "cost": 210,
+      "level": 60,
+      "name": "Earthly Essence",
+      "skill": "farming",
+      "tier": 5
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Weedline Watcher",
+      "skill": "fishing",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Aquatic Antiquities",
+      "skill": "fishing",
+      "tier": 1
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Appealing Reeling",
+      "skill": "fishing",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Catch of the Day",
+      "skill": "fishing",
+      "tier": 1
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Lucky Haul",
+      "skill": "fishing",
+      "tier": 2
+    },
+    {
+      "cost": 40,
+      "level": 15,
+      "name": "Perfect Catch",
+      "skill": "fishing",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "School Crasher",
+      "skill": "fishing",
+      "tier": 2
+    },
+    {
+      "cost": 40,
+      "level": 15,
+      "name": "Unexpected Haul",
+      "skill": "fishing",
+      "tier": 2
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Full Class I",
+      "skill": "fishing",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Legendary",
+      "skill": "fishing",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Treasure Trove",
+      "skill": "fishing",
+      "tier": 3
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Weedline Watcher II",
+      "skill": "fishing",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Appealing Reeling II",
+      "skill": "fishing",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Frenzy",
+      "skill": "fishing",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "What a Catch",
+      "skill": "fishing",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Lucky Haul II",
+      "skill": "fishing",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Abyssal Ascendence",
+      "skill": "fishing",
+      "tier": 5
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Museum Quality I",
+      "skill": "archaeology",
+      "tier": 1
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Unpeatable",
+      "skill": "archaeology",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Sunken Secrets",
+      "skill": "archaeology",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Western Ruins Scholar",
+      "skill": "archaeology",
+      "tier": 1
+    },
+    {
+      "cost": 35,
+      "level": 15,
+      "name": "Sunken Treasure",
+      "skill": "archaeology",
+      "tier": 2
+    },
+    {
+      "cost": 40,
+      "level": 15,
+      "name": "Stoneturner",
+      "skill": "archaeology",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Eastern Road Scholar",
+      "skill": "archaeology",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Pursuit",
+      "skill": "archaeology",
+      "tier": 2
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Back in Vogue",
+      "skill": "archaeology",
+      "tier": 3
+    },
+    {
+      "cost": 85,
+      "level": 30,
+      "name": "Natural Beauty",
+      "skill": "archaeology",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Well Placed",
+      "skill": "archaeology",
+      "tier": 3
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Museum Quality II",
+      "skill": "archaeology",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Former Farmers",
+      "skill": "archaeology",
+      "tier": 4
+    },
+    {
+      "cost": 140,
+      "level": 45,
+      "name": "Museum Quality III",
+      "skill": "archaeology",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "Back In Vogue II",
+      "skill": "archaeology",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Natural Beauty II",
+      "skill": "archaeology",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 60,
+      "name": "Mist Sight",
+      "skill": "archaeology",
+      "tier": 5
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Waste Not Want Not",
+      "skill": "cooking",
+      "tier": 1
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Time To Eat I",
+      "skill": "cooking",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Restorative Cooking",
+      "skill": "cooking",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Taste Maker",
+      "skill": "cooking",
+      "tier": 1
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Award Winning",
+      "skill": "cooking",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Likable Cooking",
+      "skill": "cooking",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Seasoned",
+      "skill": "cooking",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Time to Eat II",
+      "skill": "cooking",
+      "tier": 2
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "A Way to the Heart",
+      "skill": "cooking",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Dinner For Two",
+      "skill": "cooking",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Speedy Cooking",
+      "skill": "cooking",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Time to Eat III",
+      "skill": "cooking",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Lovable Cooking",
+      "skill": "cooking",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "Snacktime",
+      "skill": "cooking",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Caffeine Crimes",
+      "skill": "cooking",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Magical Meals",
+      "skill": "cooking",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Fairy Cooking",
+      "skill": "cooking",
+      "tier": 5
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Feeding Frenzy",
+      "skill": "ranching",
+      "tier": 1
+    },
+    {
+      "cost": 25,
+      "level": 1,
+      "name": "Close Bond",
+      "skill": "ranching",
+      "tier": 1
+    },
+    {
+      "cost": 30,
+      "level": 1,
+      "name": "Barnyard Bounty I",
+      "skill": "ranching",
+      "tier": 1
+    },
+    {
+      "cost": 25,
+      "level": 1,
+      "name": "Currency of Care",
+      "skill": "ranching",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 15,
+      "name": "Welcome Home I",
+      "skill": "ranching",
+      "tier": 2
+    },
+    {
+      "cost": 40,
+      "level": 15,
+      "name": "Feed Prepper",
+      "skill": "ranching",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Currency of Care II",
+      "skill": "ranching",
+      "tier": 2
+    },
+    {
+      "cost": 40,
+      "level": 15,
+      "name": "Discount Treats",
+      "skill": "ranching",
+      "tier": 2
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Currency of Care III",
+      "skill": "ranching",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Welcome Home II",
+      "skill": "ranching",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Barnyard Bounty II",
+      "skill": "ranching",
+      "tier": 3
+    },
+    {
+      "cost": 145,
+      "level": 30,
+      "name": "Wind Down",
+      "skill": "ranching",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "The Bell Tolls",
+      "skill": "ranching",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Maximum Milling",
+      "skill": "ranching",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "Barnyard Bounty III",
+      "skill": "ranching",
+      "tier": 4
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Hammer Timing I",
+      "skill": "woodcrafting",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Lumberjack I",
+      "skill": "woodcrafting",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Masonry",
+      "skill": "woodcrafting",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Forager",
+      "skill": "woodcrafting",
+      "tier": 1
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Hammer Timing II",
+      "skill": "woodcrafting",
+      "tier": 2
+    },
+    {
+      "cost": 20,
+      "level": 15,
+      "name": "Natural",
+      "skill": "woodcrafting",
+      "tier": 2
+    },
+    {
+      "cost": 95,
+      "level": 15,
+      "name": "Quality Crafting",
+      "skill": "woodcrafting",
+      "tier": 2
+    },
+    {
+      "cost": 60,
+      "level": 15,
+      "name": "Working with the Grain",
+      "skill": "woodcrafting",
+      "tier": 2
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Material World",
+      "skill": "woodcrafting",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Steady Supplies",
+      "skill": "woodcrafting",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Set Pieces",
+      "skill": "woodcrafting",
+      "tier": 3
+    },
+    {
+      "cost": 50,
+      "level": 30,
+      "name": "Hammer Timing III",
+      "skill": "woodcrafting",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Lumberjack II",
+      "skill": "woodcrafting",
+      "tier": 4
+    },
+    {
+      "cost": 145,
+      "level": 45,
+      "name": "Underground Inspiration",
+      "skill": "woodcrafting",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Deliberate Debris",
+      "skill": "woodcrafting",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Working with the Grain II",
+      "skill": "woodcrafting",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Void Crafting",
+      "skill": "woodcrafting",
+      "tier": 5
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Big Water Sprites",
+      "skill": "woodcrafting",
+      "tier": 5
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Copper Expert",
+      "skill": "blacksmithing",
+      "tier": 1
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Time Sensitive I",
+      "skill": "blacksmithing",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Sharp Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Fortified Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 1
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Iron Expert",
+      "skill": "blacksmithing",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Time Sensitive II",
+      "skill": "blacksmithing",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Leech Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Lightweight Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 2
+    },
+    {
+      "cost": 65,
+      "level": 30,
+      "name": "Empowered I",
+      "skill": "blacksmithing",
+      "tier": 3
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Hasty Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 3
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Silver Expert",
+      "skill": "blacksmithing",
+      "tier": 3
+    },
+    {
+      "cost": 50,
+      "level": 30,
+      "name": "Time Sensitive III",
+      "skill": "blacksmithing",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Empowered II",
+      "skill": "blacksmithing",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Gold Expert",
+      "skill": "blacksmithing",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Tireless Blacksmithing",
+      "skill": "blacksmithing",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Time Sensitive IV",
+      "skill": "blacksmithing",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Mistril Expert",
+      "skill": "blacksmithing",
+      "tier": 5
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Earth Breaker",
+      "skill": "mining",
+      "tier": 1
+    },
+    {
+      "cost": 25,
+      "level": 1,
+      "name": "Ore-riginal",
+      "skill": "mining",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Reclaimer",
+      "skill": "mining",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "Treasure Hunter",
+      "skill": "mining",
+      "tier": 1
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Iron Hound",
+      "skill": "mining",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "True Blue",
+      "skill": "mining",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Treasured",
+      "skill": "mining",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Mine Time",
+      "skill": "mining",
+      "tier": 2
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "Resonance",
+      "skill": "mining",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Earth Breaker II",
+      "skill": "mining",
+      "tier": 3
+    },
+    {
+      "cost": 85,
+      "level": 30,
+      "name": "Silver Seeker",
+      "skill": "mining",
+      "tier": 3
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Fantastic Finds",
+      "skill": "mining",
+      "tier": 3
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Lost to History",
+      "skill": "mining",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Good as Gold",
+      "skill": "mining",
+      "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Refined Rockery",
+      "skill": "mining",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Break One, Get Two",
+      "skill": "mining",
+      "tier": 4
+    },
+    {
+      "cost": 200,
+      "level": 60,
+      "name": "Mistril Mastery",
+      "skill": "mining",
+      "tier": 5
+    },
+    {
+      "cost": 210,
+      "level": 60,
+      "name": "Perfect Pick",
+      "skill": "mining",
+      "tier": 5
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Void Value",
+      "skill": "mining",
+      "tier": 5
+    },
+    {
+      "cost": 200,
+      "level": 60,
+      "name": "Lost to History II",
+      "skill": "mining",
+      "tier": 5
+    },
+    {
+      "cost": 10,
+      "level": 1,
+      "name": "Guardian's Shield",
+      "skill": "combat",
+      "tier": 1
+    },
+    {
+      "cost": 20,
+      "level": 1,
+      "name": "True Strike",
+      "skill": "combat",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Jump Attack",
+      "skill": "combat",
+      "tier": 1
+    },
+    {
+      "cost": 15,
+      "level": 1,
+      "name": "Well Armed",
+      "skill": "combat",
+      "tier": 1
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Quick Footed",
+      "skill": "combat",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "What an Offer",
+      "skill": "combat",
+      "tier": 2
+    },
+    {
+      "cost": 50,
+      "level": 15,
+      "name": "Generous in Defeat",
+      "skill": "combat",
+      "tier": 2
+    },
+    {
+      "cost": 45,
+      "level": 15,
+      "name": "Dungeon Delicacies",
+      "skill": "combat",
+      "tier": 2
+    },
+    {
+      "cost": 80,
+      "level": 30,
+      "name": "Perfect Prefix",
+      "skill": "combat",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Rocking",
+      "skill": "combat",
+      "tier": 3
+    },
+    {
+      "cost": 75,
+      "level": 30,
+      "name": "In Motion",
+      "skill": "combat",
+      "tier": 3
+    },
+    {
+      "cost": 70,
+      "level": 30,
+      "name": "Out of Juice",
+      "skill": "combat",
+      "tier": 3
+    },
+    {
+      "cost": 160,
+      "level": 45,
+      "name": "Sonic Boom",
+      "skill": "combat",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Gift Exchange",
+      "skill": "combat",
+      "tier": 4
+    },
+    {
+      "cost": 155,
+      "level": 45,
+      "name": "Guardian's Shield II",
+      "skill": "combat",
+      "tier": 4
+    },
+    {
+      "cost": 160,
+      "level": 45,
+      "name": "True Strike II",
+      "skill": "combat",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Sure Strike",
+      "skill": "combat",
+      "tier": 5
+    },
+    {
+      "cost": 200,
+      "level": 60,
+      "name": "Generous in Defeat II",
+      "skill": "combat",
+      "tier": 5
+    },
+    {
+      "cost": 200,
+      "level": 60,
+      "name": "Friend-Shaped",
+      "skill": "combat",
+      "tier": 5
+    }
+  ],
+  "skills": [
+    {
+      "id": "farming",
+      "name": "Farming",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "fishing",
+      "name": "Fishing",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "archaeology",
+      "name": "Archaeology",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "cooking",
+      "name": "Cooking",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "ranching",
+      "name": "Ranching",
+      "statue": "caldarus",
+      "tiers": 4
+    },
+    {
+      "id": "woodcrafting",
+      "name": "Woodcrafting",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "blacksmithing",
+      "name": "Blacksmithing",
+      "statue": "caldarus",
+      "tiers": 5
+    },
+    {
+      "id": "mining",
+      "name": "Mining",
+      "statue": "mines",
+      "tiers": 5
+    },
+    {
+      "id": "combat",
+      "name": "Combat",
+      "statue": "mines",
+      "tiers": 5
+    }
+  ],
+  "wikiVersionStamp": "v0-15-0"
+}
