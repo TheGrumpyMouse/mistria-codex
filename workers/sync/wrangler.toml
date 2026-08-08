@@ -8,14 +8,14 @@ compatibility_date = "2026-01-01"
 # the Worker only ever reads and writes one blob.
 [[kv_namespaces]]
 binding = "PROGRESS"
-id = "replace-me-after-wrangler-kv-namespace-create"
+id = "2a5d0d4b1a3b487dbb15b6aa30f5a363"
 
 # An allowlist, never `*`. This endpoint accepts writes, so a wildcard would let
 # any page anyone visits alter their progress in the background. Scheme + host,
 # no path: the Pages project path is not part of an origin, and including it
 # means nothing ever matches. See README.md.
 [vars]
-ALLOWED_ORIGINS = "http://localhost:5173"
+ALLOWED_ORIGINS = "https://thegrumpymouse.github.io/"
 
 # Costs no KV operations, unlike counting requests in KV itself.
 [[unsafe.bindings]]
