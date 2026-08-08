@@ -20,9 +20,19 @@ import type { RequestBoard } from './request-board'
 /** In-flight and settled requests, so two components asking do not fetch twice. */
 const pending = new Map<string, Promise<unknown>>()
 
+class HttpError extends Error {
+  constructor(
+    url: string,
+    readonly status: number,
+    statusText: string,
+  ) {
+    super(`${url}: ${status} ${statusText}`)
+  }
+}
+
 async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
   const response = await fetch(url, init)
-  if (!response.ok) throw new Error(`${url}: ${response.status} ${response.statusText}`)
+  if (!response.ok) throw new HttpError(url, response.status, response.statusText)
   return (await response.json()) as T
 }
 
@@ -33,12 +43,54 @@ async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
  * file that must not be served from cache. Everything it points at is
  * content-addressed and can be cached forever.
  */
+const META_URL = `${import.meta.env.BASE_URL}data/meta.json`
+
 export function loadMeta(): Promise<Meta> {
-  const url = `${import.meta.env.BASE_URL}data/meta.json`
-  const existing = pending.get(url)
+  const existing = pending.get(META_URL)
   if (existing !== undefined) return existing as Promise<Meta>
 
-  const request = fetchJson<Meta>(url, { cache: 'no-store' })
+  const request = fetchJson<Meta>(META_URL, { cache: 'no-store' })
+  pending.set(META_URL, request)
+  return request
+}
+
+/**
+ * Fetch a file under the versioned data directory, healing a stale version.
+ *
+ * The site can redeploy while a session is open, and only the **new** version
+ * directory exists on the server — the old one is gone, so a dataset this
+ * session never touched 404s even though everything else still works (the
+ * service worker keeps already-cached files alive under their old URLs). A 404
+ * here therefore re-reads `meta.json` once and retries at the version it now
+ * names. Anything else — offline, a server hiccup — is rethrown untouched:
+ * retrying those would just double every failure.
+ */
+async function fetchVersioned<T>(name: string): Promise<T> {
+  const meta = await loadMeta()
+  const url = `${import.meta.env.BASE_URL}data/v/${meta.dataVersion}/${name}`
+
+  const existing = pending.get(url)
+  if (existing !== undefined) return existing as Promise<T>
+
+  const request = fetchJson<T>(url).catch(async (error: unknown) => {
+    if (!(error instanceof HttpError) || error.status !== 404) throw error
+    pending.delete(url)
+
+    // Straight to the network: the service worker serves meta.json
+    // stale-while-revalidate, and the stale copy is the very thing being
+    // corrected. The query string dodges its cache without a new route.
+    let fresh: Meta
+    try {
+      fresh = await fetchJson<Meta>(`${META_URL}?fresh=${Date.now()}`, { cache: 'no-store' })
+    } catch {
+      throw error
+    }
+    if (fresh.dataVersion === meta.dataVersion) throw error
+
+    // Adopt the newer manifest so every later load starts at the right place.
+    pending.set(META_URL, Promise.resolve(fresh))
+    return fetchJson<T>(`${import.meta.env.BASE_URL}data/v/${fresh.dataVersion}/${name}`)
+  })
   pending.set(url, request)
   return request
 }
@@ -54,15 +106,7 @@ export function loadMeta(): Promise<Meta> {
  * is correct in both places and needs nothing configured.
  */
 export async function loadDataset<T>(name: string): Promise<T[]> {
-  const meta = await loadMeta()
-  const url = `${import.meta.env.BASE_URL}data/v/${meta.dataVersion}/${name}.json`
-
-  const existing = pending.get(url)
-  if (existing !== undefined) return existing as Promise<T[]>
-
-  const request = fetchJson<T[]>(url)
-  pending.set(url, request)
-  return request
+  return await fetchVersioned<T[]>(`${name}.json`)
 }
 
 /**
@@ -72,15 +116,7 @@ export async function loadDataset<T>(name: string): Promise<T[]> {
  * to print 193 names. 61KB against 1MB.
  */
 export async function loadRequestBoard(): Promise<RequestBoard> {
-  const meta = await loadMeta()
-  const url = `${import.meta.env.BASE_URL}data/v/${meta.dataVersion}/request_board.json`
-
-  const existing = pending.get(url)
-  if (existing !== undefined) return existing as Promise<RequestBoard>
-
-  const request = fetchJson<RequestBoard>(url)
-  pending.set(url, request)
-  return request
+  return await fetchVersioned<RequestBoard>('request_board.json')
 }
 
 /** `id -> { n: name, i: icon_key, c: category }`, for painting a result row. */
@@ -122,15 +158,7 @@ export async function loadAvailability(): Promise<AvailabilityIndex> {
 }
 
 async function loadShipped<T>(file: string): Promise<T> {
-  const meta = await loadMeta()
-  const url = `${import.meta.env.BASE_URL}data/v/${meta.dataVersion}/${file}`
-
-  const existing = pending.get(url)
-  if (existing !== undefined) return existing as Promise<T>
-
-  const request = fetchJson<T>(url)
-  pending.set(url, request)
-  return request
+  return await fetchVersioned<T>(file)
 }
 
 /** Drop every cached response. Only for tests. */

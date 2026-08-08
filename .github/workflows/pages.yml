@@ -59,11 +59,19 @@ jobs:
           cp apps/web/dist/index.html apps/web/dist/404.html
           touch apps/web/dist/.nojekyll
 
-      # `enablement: true` sets the repo's Pages source to "GitHub Actions" if
-      # it is anything else. Without it, a repo left on "Deploy from a branch"
-      # serves a Jekyll render of the README while this workflow's artifact is
-      # ignored — which looks like a broken app the moment a hard refresh
-      # bypasses the service worker's cached copy.
+      # The repo's Pages source must be "GitHub Actions". It was left on
+      # "Deploy from a branch", which serves a Jekyll render of the README and
+      # RACES this workflow's deploy on every push — both ran green, and the
+      # legacy build kept winning. configure-pages' `enablement` only creates a
+      # missing site; it never corrects an existing legacy one, so this step
+      # does, explicitly. Idempotent: a no-op once the source is right.
+      - name: Force Pages source to GitHub Actions
+        run: |
+          curl -sf -X PUT \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages" \
+            -d '{"build_type":"workflow"}'
       - uses: actions/configure-pages@v5
         with:
           enablement: true
