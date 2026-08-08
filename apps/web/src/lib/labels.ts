@@ -23,12 +23,41 @@ export const CATEGORY_LABELS: Record<string, string> = {
   weapon: 'Weapons',
   ranching_product: 'Ranching',
   fruit: 'Fruit',
+  furniture: 'Furniture',
+  cosmetic: 'Wardrobe',
   junk: 'Junk',
   misc: 'Other',
   character: 'Villagers',
   monster: 'Monsters',
   location: 'Places',
   quest: 'Quests',
+}
+
+/**
+ * `basic_chest_set` -> "Basic Chest", `head_gear_misc` -> "Head Gear Misc".
+ * The one sanctioned translation of a sub-category token: the vocabularies are
+ * closed and ours to read (63 furniture set stems, 36 wardrobe categories, all
+ * `words_with_underscores`), the transformation is total, and curating 99
+ * hand-title-cased labels would rot. Rule 8 is about *unknown* tokens leaking
+ * — this is a closed set passing through one named door.
+ */
+export const subcategoryLabel = (token: string): string =>
+  token
+    .replace(/_set$/, '')
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+
+/** Body slot -> where you wear it, for a wardrobe item's subtitle. */
+export const WORN_ON_LABELS: Record<string, string> = {
+  hair: 'Hair',
+  facial_hair: 'Facial hair',
+  eyes: 'Eyes',
+  head_gear: 'Head',
+  face_gear: 'Face',
+  top: 'Top',
+  bottom: 'Bottom',
+  feet: 'Feet',
+  back: 'Back',
 }
 
 /** Singular, for a one-thing subtitle ("Bugs" is wrong under one beetle). */
@@ -46,6 +75,8 @@ export const CATEGORY_LABELS_ONE: Record<string, string> = {
   weapon: 'Weapon',
   ranching_product: 'Ranching product',
   fruit: 'Fruit',
+  furniture: 'Furniture',
+  cosmetic: 'Wardrobe item',
   junk: 'Junk',
   misc: 'Item',
   character: 'Villager',
@@ -64,11 +95,23 @@ export const METHOD_LABELS: Record<string, string> = {
   fish_trap: 'The fish trap',
   fish_bait: 'Baited fishing',
   bug_net: 'Bug net',
+  rock_break: 'Breaking rocks',
   foraging: 'Foraging',
   crop_harvest: 'Harvesting',
   dig_spot: 'Dig spots',
+  tree_shake: 'Shaking trees',
   mine_drop: 'Mining',
+  monster_drop: 'Monster drops',
+  ranching: 'Ranching',
+  apiary: 'From an apiary',
+  terrarium: 'From a terrarium',
   shop: 'Bought',
+  crafting: 'Crafted',
+  cooking: 'Cooked',
+  quest_reward: 'Quest reward',
+  festival: 'At a festival',
+  mail: 'In the mail',
+  chest: 'Found in a chest',
 }
 
 export const methodLabel = (id: string): string => METHOD_LABELS[id] ?? id.replace(/_/g, ' ')

@@ -258,7 +258,7 @@
       {
         "effect": null,
         "effect_key": null,
-        "essence_cost": 50,
+        "essence_cost": 40,
         "id": "lucky_haul",
         "level": 15,
         "name": "Lucky Haul",
@@ -268,7 +268,7 @@
       {
         "effect": null,
         "effect_key": null,
-        "essence_cost": 40,
+        "essence_cost": 50,
         "id": "perfect_catch",
         "level": 15,
         "name": "Perfect Catch",
@@ -368,7 +368,7 @@
       {
         "effect": null,
         "effect_key": null,
-        "essence_cost": 150,
+        "essence_cost": 155,
         "id": "lucky_haul_ii",
         "level": 45,
         "name": "Lucky Haul II",
@@ -575,7 +575,7 @@
       {
         "effect": "makes a mist spot appear around Mistria each day, dug for essence",
         "effect_key": null,
-        "essence_cost": 155,
+        "essence_cost": 200,
         "id": "mist_sight",
         "level": 60,
         "name": "Mist Sight",
@@ -597,8 +597,7 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0",
-      "perk_levels"
+      "predates_1_0"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -785,7 +784,7 @@
         "effect_key": null,
         "essence_cost": 10,
         "id": "time_to_eat",
-        "level": null,
+        "level": 1,
         "name": "Time To Eat",
         "statue": "caldarus",
         "tier": 1
@@ -795,7 +794,7 @@
         "effect_key": null,
         "essence_cost": 205,
         "id": "espresso_yourself",
-        "level": null,
+        "level": 60,
         "name": "Espresso Yourself",
         "statue": "caldarus",
         "tier": 5
@@ -815,8 +814,7 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0",
-      "perk_levels"
+      "predates_1_0"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -983,7 +981,7 @@
         "effect_key": null,
         "essence_cost": 30,
         "id": "barnyard_bounty",
-        "level": null,
+        "level": 1,
         "name": "Barnyard Bounty",
         "statue": "caldarus",
         "tier": 1
@@ -993,7 +991,7 @@
         "effect_key": null,
         "essence_cost": 45,
         "id": "welcome_home",
-        "level": null,
+        "level": 15,
         "name": "Welcome Home",
         "statue": "caldarus",
         "tier": 2
@@ -1003,7 +1001,7 @@
         "effect_key": null,
         "essence_cost": 150,
         "id": "playtime",
-        "level": null,
+        "level": 45,
         "name": "Playtime",
         "statue": "caldarus",
         "tier": 4
@@ -1013,7 +1011,7 @@
         "effect_key": null,
         "essence_cost": 210,
         "id": "close_bond_two",
-        "level": null,
+        "level": 60,
         "name": "Close Bond II",
         "statue": "caldarus",
         "tier": 5
@@ -1023,7 +1021,7 @@
         "effect_key": null,
         "essence_cost": 205,
         "id": "eggstra",
-        "level": null,
+        "level": 60,
         "name": "Eggstra",
         "statue": "caldarus",
         "tier": 5
@@ -1033,7 +1031,7 @@
         "effect_key": null,
         "essence_cost": 215,
         "id": "true_trust",
-        "level": null,
+        "level": 60,
         "name": "True Trust",
         "statue": "caldarus",
         "tier": 5
@@ -1053,8 +1051,7 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0",
-      "perk_levels"
+      "predates_1_0"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1251,7 +1248,7 @@
         "effect_key": null,
         "essence_cost": 10,
         "id": "hammer_timing",
-        "level": null,
+        "level": 1,
         "name": "Hammer Timing",
         "statue": "caldarus",
         "tier": 1
@@ -1261,7 +1258,7 @@
         "effect_key": null,
         "essence_cost": 15,
         "id": "lumberjack",
-        "level": null,
+        "level": 1,
         "name": "Lumberjack",
         "statue": "caldarus",
         "tier": 1
@@ -1271,7 +1268,7 @@
         "effect_key": null,
         "essence_cost": 200,
         "id": "deliberate_debris_two",
-        "level": null,
+        "level": 60,
         "name": "Deliberate Debris II",
         "statue": "caldarus",
         "tier": 5
@@ -1281,7 +1278,7 @@
         "effect_key": null,
         "essence_cost": 210,
         "id": "hammer_timing_four",
-        "level": null,
+        "level": 60,
         "name": "Hammer Timing IV",
         "statue": "caldarus",
         "tier": 5
@@ -1301,8 +1298,7 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0",
-      "perk_levels"
+      "predates_1_0"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1489,7 +1485,7 @@
         "effect_key": null,
         "essence_cost": 10,
         "id": "time_sensitive",
-        "level": null,
+        "level": 1,
         "name": "Time Sensitive",
         "statue": "caldarus",
         "tier": 1
@@ -1499,7 +1495,7 @@
         "effect_key": null,
         "essence_cost": 65,
         "id": "empowered",
-        "level": null,
+        "level": 30,
         "name": "Empowered",
         "statue": "caldarus",
         "tier": 3
@@ -1746,8 +1742,7 @@
     "data_gaps": [
       "xp_curve",
       "effect_key",
-      "predates_1_0",
-      "perk_levels"
+      "predates_1_0"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1802,7 +1797,7 @@
       {
         "effect": null,
         "effect_key": null,
-        "essence_cost": 45,
+        "essence_cost": 50,
         "id": "quick_footed",
         "level": 15,
         "name": "Quick Footed",
@@ -1954,7 +1949,7 @@
         "effect_key": null,
         "essence_cost": 155,
         "id": "guardians_shield_two",
-        "level": null,
+        "level": 45,
         "name": "Guardian Shield II",
         "statue": "mines",
         "tier": 4

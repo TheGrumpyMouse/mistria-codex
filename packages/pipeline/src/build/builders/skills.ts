@@ -19,8 +19,23 @@ import { predates1_0 } from '../freshness.js'
  */
 export function buildSkills(ctx: BuildContext): Skill[] {
   const { skills } = ctx
+  const fold = (name: string): string => name.toLowerCase().replace(/[^a-z0-9]/g, '')
 
   return skills.skills.map((skill) => {
+    // The skill menu's own essence costs, reachable by the wiki's spelling of
+    // the perk. Four of 134 differ from the page and the menu is the game's
+    // own price list, so it wins — matched by folded name for the same reason
+    // the union pass below does: the wiki writes "Well Armed" for the game's
+    // "Well-Armed". See build/reports/source-agreement.md.
+    const gameTree = ctx.game?.artifactFacts?.skillTreeBySkill.get(skill.id) ?? []
+    const perkNames = ctx.game?.artifactFacts?.perkNameById
+    const essenceByFoldedName = new Map(
+      gameTree.flatMap((entry) => {
+        const name = perkNames?.get(entry.id)
+        return name === undefined || entry.essence === null ? [] : [[fold(name), entry.essence]]
+      }),
+    )
+
     const perks: Skill['perks'] = skills.perks
       .filter((perk) => perk.skill === skill.id)
       .map((perk) => {
@@ -30,7 +45,7 @@ export function buildSkills(ctx: BuildContext): Skill[] {
           name: perk.name,
           tier: perk.tier,
           level: perk.level,
-          essence_cost: perk.cost,
+          essence_cost: essenceByFoldedName.get(fold(perk.name)) ?? perk.cost,
           effect_key: null,
           // Hand-written in curated/vocab/perk_effects.json, and only for the
           // perks that gate finding something. Null is the normal state — an
@@ -53,28 +68,31 @@ export function buildSkills(ctx: BuildContext): Skill[] {
     // writes "Well Armed" where the game writes "Well-Armed", and a hyphen
     // must not conjure a second perk. Appended perks carry the game's id —
     // the real internal name — with the tier and essence cost the menu
-    // states; only the unlock level is the wiki's alone and stays a gap.
-    const fold = (name: string): string => name.toLowerCase().replace(/[^a-z0-9]/g, '')
-    const tree = ctx.game?.artifactFacts?.skillTreeBySkill.get(skill.id) ?? []
-    const perkName = ctx.game?.artifactFacts?.perkNameById
+    // states. The unlock level is the tier's, from the menu defaults'
+    // level_requirements — the game states it once for all skills, and the
+    // wiki's own tier headers agree exactly.
+    const tree = gameTree
+    const tierLevels = ctx.game?.artifactFacts?.skillTierLevels ?? []
+    const perkName = perkNames
     const wikiNames = new Set(perks.map((p) => fold(p.name)))
-    let appended = 0
+    let unleveled = 0
     for (const gamePerk of tree) {
       const name = perkName?.get(gamePerk.id)
       if (name === undefined || wikiNames.has(fold(name))) continue
+      const level = tierLevels[gamePerk.tier - 1] ?? null
+      if (level === null) unleveled += 1
       perks.push({
         id: gamePerk.id,
         name,
         tier: gamePerk.tier,
-        level: null,
+        level,
         essence_cost: gamePerk.essence,
         effect_key: null,
         effect: ctx.perkEffects[gamePerk.id] ?? null,
         statue: skill.statue,
       })
-      appended += 1
     }
-    if (appended > 0) gaps.push('perk_levels')
+    if (unleveled > 0) gaps.push('perk_levels')
 
     // Eight skills have five tiers; Ranching has four. That is a hole in the
     // wiki rather than a design decision, so it is recorded as one — otherwise

@@ -1463,7 +1463,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1477,7 +1476,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -3323,6 +3329,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -3573,6 +3585,12 @@
         "key": "the_tide_caverns",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -3878,7 +3896,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "greet_the_vendors",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -3961,7 +3986,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "apiaries_and_terrariums",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -4162,6 +4194,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -4204,6 +4242,12 @@
         "key": "the_lava_caves",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -5048,6 +5092,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -5283,7 +5333,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "request_for_common_bait",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -5778,6 +5835,12 @@
         "key": "the_tide_caverns",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -6515,6 +6578,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -7180,6 +7249,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -7417,7 +7492,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "request_for_uncommon_bait",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -7805,6 +7887,12 @@
         "op": "done",
         "type": "quest",
         "value": null
+      },
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -8082,7 +8170,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "apiaries_and_terrariums",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -8123,6 +8218,12 @@
         "key": "the_lava_caves",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -8344,6 +8445,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -8468,6 +8575,12 @@
         "key": "the_ancient_ruins",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -8771,6 +8884,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -8887,6 +9006,12 @@
     "prerequisites": [
       {
         "key": "the_mill_restoration_project",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      },
+      {
+        "key": "repair_the_mill",
         "op": "done",
         "type": "quest",
         "value": null
@@ -9046,6 +9171,12 @@
         "key": "the_lava_caves",
         "op": "has",
         "type": "location",
+        "value": null
+      },
+      {
+        "key": "breaking_the_fire_seal",
+        "op": "done",
+        "type": "quest",
         "value": null
       }
     ],
@@ -9675,6 +9806,12 @@
         "op": "done",
         "type": "quest",
         "value": null
+      },
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -9712,7 +9849,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "apiaries_and_terrariums",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -10041,7 +10185,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "beet_soup_challenge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -10256,6 +10407,12 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
@@ -10379,7 +10536,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "apiaries_and_terrariums",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -10693,7 +10857,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "apiaries_and_terrariums",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page"
     },
@@ -13125,5 +13296,74 @@
     "season_restriction": null,
     "version_added": null,
     "wiki_page": "Quests"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "objectives",
+      "prerequisites"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "luc",
+    "icon_key": "quest/story",
+    "id": "apiaries_and_terrariums",
+    "id_status": "confirmed",
+    "kind": "story",
+    "name": "Apiaries and Terrariums",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "rewards": {
+      "item_ids": [
+        "apiary",
+        "terrarium"
+      ],
+      "renown": 20,
+      "tesserae": null
+    },
+    "season_restriction": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "objectives",
+      "prerequisites"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "adeline",
+    "icon_key": "quest/story",
+    "id": "repair_the_mill",
+    "id_status": "confirmed",
+    "kind": "story",
+    "name": "The Mill Restoration Project",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": null
+    },
+    "season_restriction": null,
+    "version_added": null,
+    "wiki_page": null
   }
 ]

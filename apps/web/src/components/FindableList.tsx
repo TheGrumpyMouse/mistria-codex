@@ -12,12 +12,12 @@ import { useSpoilers } from '~/lib/spoilers'
 /**
  * What the query found, as sections.
  *
- * Two rules from the data model surface directly in this component, and both are
- * about saying what we do not know rather than hiding it:
+ * Two rules from the data model surface directly in this component:
  *
- * - **Unknown is badged, not omitted.** A fish whose time nobody recorded is
- *   still catchable now; dropping it would make the screen claim less than the
- *   dataset knows. The badge is the dashed hollow treatment, never a colour.
+ * - **Unknown does not exclude, and it does not hedge either.** A fish whose
+ *   time nobody recorded is still catchable now, so the row stays — but the
+ *   row simply says nothing about time. `data_gaps` still records the hole in
+ *   the data; the screen no longer badges it.
  * - **Locked is shown, tagged.** People want to know the Legendary fish exists
  *   and why they cannot catch it.
  */
@@ -174,40 +174,30 @@ export function FindableRow({
             {name(index, entity.id)}
           </Link>
         </p>
-        <p className="truncate text-ink-faint text-xs">
-          {entity.placeUnknown
-            ? 'place unknown'
-            : entity.locationIds.map((locId, i) => (
-                <span key={locId}>
-                  {i > 0 && ' · '}
-                  <Link
-                    to="/place/$id"
-                    params={{ id: locId }}
-                    className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
-                  >
-                    {locationNames.get(locId) ?? locId.replace(/_/g, ' ')}
-                  </Link>
-                </span>
-              ))}
-        </p>
+        {entity.locationIds.length > 0 && (
+          <p className="truncate text-ink-faint text-xs">
+            {entity.locationIds.map((locId, i) => (
+              <span key={locId}>
+                {i > 0 && ' · '}
+                <Link
+                  to="/place/$id"
+                  params={{ id: locId }}
+                  className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
+                >
+                  {locationNames.get(locId) ?? locId.replace(/_/g, ' ')}
+                </Link>
+              </span>
+            ))}
+          </p>
+        )}
       </div>
 
       <div className="flex shrink-0 items-center gap-1.5">
-        {/*
-          Badged rather than dropped. 801 of 832 rules have no recorded time, so
-          this is the common case and not an exception — and an unverified
-          answer beats a missing one.
-        */}
-        {entity.timeUnknown && (
-          <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-            time unknown
-          </span>
-        )}
         {entity.requires.length > 0 && (
           <span
             className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
             style={{ background: 'var(--sunk)', color: 'var(--locked)' }}
-            title={'Needs ' + ruleRequirementsPhrase(entity.requires)}
+            title={`Needs ${ruleRequirementsPhrase(entity.requires)}`}
           >
             locked
           </span>

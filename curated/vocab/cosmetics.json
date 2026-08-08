@@ -1,0 +1,31 @@
+{
+  "_comment": [
+    "The wiki pages that price the player's wardrobe.",
+    "",
+    "The game files name all 384 cosmetics and say which stall stocks each one,",
+    "but price only 26 of them — the rest are priced by compiled game code. These",
+    "three pages are the only published source for the other prices, and they also",
+    "carry two facts the files do not: how many colours a garment comes in, and a",
+    "sprite for each.",
+    "",
+    "NO SHAPE IS DECLARED, ON PURPOSE. These tables do not agree on a column",
+    "count: Clothes runs six wide and Body four, and Accessories mixes them —",
+    "seventeen of its rows drop the 'Part of a Set?' column outright. So the",
+    "parser reads cells by content (a price is what holds {{Price}}, a colour",
+    "count is a bare number, a vendor is what holds a source icon) rather than",
+    "by position, which is also what stops a reordered column from turning a",
+    "price into a colour count.",
+    "",
+    "STALENESS. Both wide pages are stamped v0.14.2, so a 1.0 cosmetic exists in",
+    "the game files and not here — it ships named, slotted and stocked, with a",
+    "price gap, which is the honest state rather than an invented number.",
+    "",
+    "Checked live 2026-08-08: 340 distinct rows, 128 priced. Vera's 24 hairstyles",
+    "are all on the Body page and all priced; Louis 32 of 33; Wheedle 22 of 22."
+  ],
+  "pages": [
+    { "page": "Cosmetics (Clothes)" },
+    { "page": "Accessories" },
+    { "page": "Cosmetics (Body)" }
+  ]
+}

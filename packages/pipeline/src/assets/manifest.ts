@@ -28,6 +28,13 @@ import { ASSETS_MANIFEST } from '../lib/paths.js'
  */
 export const AssetFamily = z.enum([
   'item',
+  /**
+   * The player's wardrobe. Its own family rather than part of `item` because
+   * the two name spaces genuinely collide: the wiki hosts both
+   * `Cloth Helmet.png` (the armour) and `cloth_helmet.png` (the look), which
+   * are different images that normalise to one local filename.
+   */
+  'cosmetic',
   'villager',
   'portrait',
   'monster',
@@ -44,6 +51,7 @@ export type AssetFamily = z.infer<typeof AssetFamily>
 /** Families packed into atlases, in the order sheets are emitted. */
 export const ATLAS_FAMILIES: readonly AssetFamily[] = [
   'item',
+  'cosmetic',
   'villager',
   'monster',
   'skill',
@@ -74,6 +82,13 @@ export const AssetEntry = z.object({
    * share an icon, which is why the manifest is keyed by file and not by record.
    */
   icon_keys: z.array(z.string()),
+  /**
+   * Where the bytes came from. Absent means the wiki (`assets:fetch`);
+   * `game_files` means `assets:game` copied it from an owned install because
+   * the wiki hosts no file for it. The wiki fetch preserves these entries and
+   * never prunes their files.
+   */
+  origin: z.literal('game_files').optional(),
 })
 export type AssetEntry = z.infer<typeof AssetEntry>
 

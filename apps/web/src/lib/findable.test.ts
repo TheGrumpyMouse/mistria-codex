@@ -119,19 +119,11 @@ describe('findAvailable', () => {
     expect(found[0]?.locationIds).toEqual(['the_beach', 'the_narrows'])
   })
 
-  it('is only time-unknown when every route is', () => {
-    // One route with a known time means the thing is findable at a time we can
-    // name; badging it "unknown" would understate what we know.
-    const found = findAvailable(
-      index([rule({ e: 'a', t: [] }), rule({ e: 'a', t: [[0, 1440]] })]),
-      at(),
-    )
-    expect(found[0]?.timeUnknown).toBe(false)
-  })
-
-  it('says so when nothing knows the place', () => {
+  it('still returns a match when nothing knows the place', () => {
+    // Unknown does not exclude: no location on any rule just means an empty
+    // location list, never a dropped row.
     const found = findAvailable(index([rule({ e: 'a', loc: null })]), at())
-    expect(found[0]?.placeUnknown).toBe(true)
+    expect(found).toHaveLength(1)
     expect(found[0]?.locationIds).toEqual([])
   })
 
@@ -190,24 +182,8 @@ describe('every returned rule really matches, and every excluded one really does
 describe('groupByKind', () => {
   it('orders sections and drops empty ones', () => {
     const groups = groupByKind([
-      {
-        id: 'a',
-        kind: 'fish',
-        locationIds: [],
-        timeUnknown: true,
-        placeUnknown: true,
-        rarity: null,
-        requires: [],
-      },
-      {
-        id: 'b',
-        kind: 'forage',
-        locationIds: [],
-        timeUnknown: true,
-        placeUnknown: true,
-        rarity: null,
-        requires: [],
-      },
+      { id: 'a', kind: 'fish', locationIds: [], rarity: null, requires: [] },
+      { id: 'b', kind: 'forage', locationIds: [], rarity: null, requires: [] },
     ])
     expect(groups.map((g) => g.kind)).toEqual(['forage', 'fish'])
   })

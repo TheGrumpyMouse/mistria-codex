@@ -30,6 +30,8 @@
     "data:vocab": "pnpm --filter @mistria/pipeline run vocab:report",
     "findables": "pnpm --filter @mistria/pipeline run findables",
     "assets:fetch": "pnpm --filter @mistria/pipeline run assets:fetch",
+    "assets:game": "pnpm --filter @mistria/pipeline run assets:game",
+    "e2e": "pnpm --filter @mistria/web run e2e",
     "assets:pack": "pnpm --filter @mistria/pipeline run assets:pack"
   },
   "pnpm": {

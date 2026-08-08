@@ -4,6 +4,7 @@ import {
   type GiftPrefs,
   SEASONS,
   type Season,
+  type Shop,
   toSnakeId,
 } from '@mistria/schema'
 import type { GameNpc } from '../../extract/world.js'
@@ -199,6 +200,28 @@ export function buildCharacters(ctx: BuildContext): Character[] {
         schedule_id: null,
       }
     })
+}
+
+/**
+ * Stamp `is_vendor` and `shop_id` from the shops actually built — the same
+ * derive-once pattern as `sold_by` on items, so a character and a shop can
+ * never disagree about who runs what. Owners and named staff both count:
+ * Nora and Holt run the General Store jointly and both sell to you.
+ */
+export function withVendorFlags(characters: Character[], shops: Shop[]): Character[] {
+  const shopByCharacter = new Map<string, string>()
+  for (const shop of shops) {
+    for (const characterId of [shop.owner_character_id, ...shop.staff_character_ids]) {
+      if (characterId !== null && !shopByCharacter.has(characterId)) {
+        shopByCharacter.set(characterId, shop.id)
+      }
+    }
+  }
+
+  return characters.map((character) => {
+    const shopId = shopByCharacter.get(character.id)
+    return shopId === undefined ? character : { ...character, is_vendor: true, shop_id: shopId }
+  })
 }
 
 const INTERESTS: Record<string, GiftInterest> = {

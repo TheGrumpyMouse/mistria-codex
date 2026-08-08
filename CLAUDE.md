@@ -89,6 +89,13 @@ https://fieldsofmistria.wiki.gg/index.php?title=Special:CargoExport
 | `Characters` | 56 | charName, relatives, affiliation, occupation, relationship, romanceable, birth, species, gender, eyes |
 | `Artifacts` 110 · `ArtifactComments` 101 · `Recipes` 282 · `Ingredients` 663 · `FurnitureTEMP` 773 · `SortOrders` 6 |
 
+**`FurnitureTEMP` has no art column** — checked live 2026-08-08: `icon`,
+`image`, `sprite` and `file` all return "No field named". So furniture sprites
+cannot come from the wiki at all, which is what forced the game-install asset
+path (`pnpm assets:game`, see DATA-POLICY). Cosmetics are the opposite: every
+row on the three cosmetics *pages* carries a `[[File:…]]`, so the wardrobe's
+290 sprites came down the ordinary wiki route.
+
 Three consequences:
 
 1. **`Fish` has no season, location, or time.** They come from `Items`, joined on **display name**. Assert `Items.itemName` is unique or the join is silently wrong.
@@ -136,6 +143,48 @@ furniture ingestion), resolving 265/265 with no name matching. The wiki's
 reading it as a bare name is the bug that shipped 282 ingredient-less recipes
 for five milestones. The wiki path survives as the no-extract fallback only.
 
+**`value.store` is the item's shop price and the wiki has no column for it.**
+773 items state one; wiring it in took priced items from 454 to 969 and every
+wiki shop from part-priced to complete. It is the item's *global* price, so a
+shop line filled from it is a small inference — which is why it only ever
+fills a null and never overwrites a page's stated price: the Inn sells the
+Lemon Pie at 650 and its recipe scroll at 400, and one global number cannot
+be both.
+
+**Where the wiki and the files overlap, they agree 98.7% of the time** — 2,020
+facts compared, 26 apart. `build/reports/source-agreement.md`, written by
+`pnpm validate`, is the standing count. Birthdays, museum rosters, recipe
+ingredients, perk tiers, artifact rarity and both crop timings are exact
+matches; the residue is 18 sell values, 4 essence costs and 4 bug rarities,
+all of which look like 1.0 rebalances the pre-1.0 wiki has not caught up with.
+**A disagreement is reported, never auto-corrected** — the two sources
+sometimes describe different things, and only a person can tell which.
+
+**`crop.harvest` is neither unique nor honest, so never index on it naively.**
+`temple_marigold` (a forageable) claims to harvest a marigold and a
+last-write-wins map let it overwrite the real crop, reporting a marigold that
+grows in nought days; `mystery_bag` claims to harvest an apple above a comment
+saying `# this is just a lie, for fun!`. `cropByHarvest` now drops
+single-stage entries and the named liar, and keeps the first of a collision.
+The audit above is what found it — the index had no other consumer yet.
+
+**A cosmetic is not an item, and its colours are not records.** The wardrobe
+lives in `player_assets.toml` — 384 tables, 360 named — outside the `ItemId`
+enum entirely, which is why a store line says `{ cosmetic = "dress_maid" }`
+and why every cosmetic record ships `id_status: 'provisional'` and is exempt
+from the unconfirmed-id check by category. Colour variants are palette LUTs on
+one entry, so there is nothing to collapse: the wiki's "6 colour variants" is
+a `variant_count`, the exact opposite of furniture. The 24 unnamed tables are
+baby-carrier overlays (`name = ""`), worn automatically and never chosen.
+
+**The game prices 26 of 360 cosmetics; the wiki prices the rest.** Joined on
+display name across three pages, whose tables **do not agree on a column
+count** — Accessories drops the Set column on seventeen rows. Cells are read
+by content (a price holds `{{Price}}`, a colour count is a bare number), never
+by position. That is also why Louis's and Vera's stalls shipped empty for a
+milestone: the stock was extracted all along, and nothing modelled a cosmetic
+for it to point at.
+
 **A perk's owning skill, tier and essence cost live in `ui/skill_menu/*.toml`**,
 not in `perks.toml` (which is flat). The skills builder unions game perks the
 wiki lacks — matched by *folded* name, because the wiki writes "Well Armed"
@@ -181,11 +230,13 @@ docs/                   PLAN.md, research/, schema/, generated reports
 
 ```
 pnpm check            biome ci + tsc -b + vitest run
-pnpm validate         zod + ajv + refint + vocab + licensing + determinism + coverage
+pnpm validate         zod + ajv + refint + vocab + licensing + determinism + coverage + source agreement
 pnpm extract          game files -> sources/game/     (never run in CI; needs .env)
 pnpm enrich:cargo     fetch Cargo tables -> sources/  (never run in CI)
 pnpm enrich:pages     fetch wiki pages -> sources/    (never run in CI)
 pnpm assets:fetch     fetch sprites -> assets/game/   (never run in CI)
+pnpm assets:game      copy wiki-less sprites from the game install (never in CI; see DATA-POLICY)
+pnpm e2e              Playwright suite over the built app (apps/web/e2e; local gate, never CI)
 pnpm build:data       sources + curated -> data/
 pnpm build:ship       data/ -> apps/web/public/data/
 pnpm data:unresolved  print the curation to-do list

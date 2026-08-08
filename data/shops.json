@@ -157,6 +157,46 @@
       },
       {
         "currency": "tesserae",
+        "item_id": "starter_potted_plant",
+        "price": 100,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "starter_scarecrow",
+        "price": 160,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "starter_wheelbarrow",
+        "price": 200,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_wood_chest",
+        "price": 250,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "starter_shipping_box",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
         "item_id": "spring_crop_sign_scroll_bundle",
         "price": 500,
         "requires": [],
@@ -598,6 +638,7 @@
         ]
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "General Store"
   },
@@ -863,6 +904,7 @@
         "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Tackle Shop"
   },
@@ -1286,6 +1328,7 @@
         "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Blacksmith"
   },
@@ -1436,6 +1479,86 @@
       },
       {
         "currency": "tesserae",
+        "item_id": "basic_bookshelf",
+        "price": 400,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_chair",
+        "price": 150,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_bed",
+        "price": 300,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_bed_double",
+        "price": 600,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_dresser",
+        "price": 150,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_flooring",
+        "price": 100,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_nightstand",
+        "price": 150,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_table",
+        "price": 300,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_wallpaper",
+        "price": 240,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basic_wall_window",
+        "price": 150,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
         "item_id": "lovely_cottage_scroll_bundle",
         "price": 1000,
         "requires": [],
@@ -1449,8 +1572,25 @@
         "requires": [],
         "rotation": false,
         "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "stairs",
+        "price": 1000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ladder",
+        "price": 1000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Carpenter"
   },
@@ -1521,6 +1661,7 @@
         "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Clinic"
   },
@@ -2031,6 +2172,7 @@
         "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Hayden's Shop"
   },
@@ -2040,7 +2182,6 @@
     "confidence": "wiki",
     "data_gaps": [
       "stock_items",
-      "stock_price",
       "predates_1_0"
     ],
     "former_ids": [],
@@ -2064,6 +2205,142 @@
       "reina"
     ],
     "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "coffee_mug",
+        "price": 140,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "espresso_cup",
+        "price": 130,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_counter",
+        "price": 1000,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_stool",
+        "price": 500,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_cross_stitch",
+        "price": 1000,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_kitchen_shelves",
+        "price": 800,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_candle",
+        "price": 300,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_tile_flooring",
+        "price": 500,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "inn_wooden_flooring",
+        "price": 500,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "kitchen_salt_and_pepper_shakers",
+        "price": 400,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null
+      },
       {
         "currency": "tesserae",
         "item_id": "potato_soup",
@@ -2409,7 +2686,7 @@
       {
         "currency": "tesserae",
         "item_id": "fish_tacos",
-        "price": null,
+        "price": 800,
         "requires": [
           {
             "key": "upgrade_the_inn",
@@ -2439,7 +2716,7 @@
       {
         "currency": "tesserae",
         "item_id": "coconut_cream_pie",
-        "price": null,
+        "price": 1100,
         "requires": [
           {
             "key": "upgrade_the_inn",
@@ -2454,7 +2731,7 @@
       {
         "currency": "tesserae",
         "item_id": "spring_galette",
-        "price": null,
+        "price": 1000,
         "requires": [
           {
             "key": "upgrade_the_inn",
@@ -2469,7 +2746,7 @@
       {
         "currency": "tesserae",
         "item_id": "gazpacho",
-        "price": null,
+        "price": 750,
         "requires": [
           {
             "key": "upgrade_the_inn",
@@ -2830,23 +3107,9 @@
         ],
         "rotation": false,
         "seasons": null
-      },
-      {
-        "currency": "tesserae",
-        "item_id": "veggie_sub_sandwich",
-        "price": null,
-        "requires": [
-          {
-            "key": "upgrade_the_inn",
-            "op": "done",
-            "type": "quest",
-            "value": null
-          }
-        ],
-        "rotation": false,
-        "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Inn"
   },
@@ -2877,6 +3140,102 @@
       "balor"
     ],
     "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_small",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_medium_round",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_medium_square",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_large_round",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_large_square",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_large_rectangle",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "tile_roof_fence",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "moon_gate",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "craft_sewing_tin",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "craft_fabric_rack",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "craft_rug",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "craft_yarn_basket",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
       {
         "currency": "tesserae",
         "item_id": "chess_scroll_bundle",
@@ -4779,7 +5138,2803 @@
         "seasons": null
       }
     ],
+    "unlock_requires": [],
     "version_added": null,
     "wiki_page": "Balor's Wagon"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/darcys_stall",
+    "id": "darcys_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Darcy's Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "darcy",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "darcy"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "berries_and_cream",
+        "price": 120,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "candied_lemon_peel",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "candied_strawberries",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_tart",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_pie",
+        "price": 650,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pudding",
+        "price": 220,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "salted_watermelon",
+        "price": 240,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "poached_pear",
+        "price": 420,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "peaches_and_cream",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "sour_lemon_cake",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "strawberries_and_cream",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wildberry_scone",
+        "price": 260,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "strawberry_shortcake",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "caldosian_chocolate_cake",
+        "price": 650,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wildberry_pie",
+        "price": 330,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "caramelized_moon_fruit",
+        "price": 180,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cranberry_orange_scone",
+        "price": 900,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ice_cream_sundae",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "spicy_cheddar_biscuit",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pumpkin_pie",
+        "price": 1000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_cobbler",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "coffee",
+        "price": 100,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cup_of_tea",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hot_cocoa",
+        "price": 320,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemonade",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "iced_coffee",
+        "price": 110,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "espresso",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "latte",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "mocha",
+        "price": 275,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "green_tea",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "roasted_rice_tea",
+        "price": 360,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jasmine_tea",
+        "price": 190,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "rose_tea",
+        "price": 180,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "mushroom_brew",
+        "price": 80,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "coconut_milk",
+        "price": 150,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "grape_juice",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cranberry_juice",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "orange_juice",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "apple_juice",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pomegranate_juice",
+        "price": 175,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "espresso_machine",
+        "price": 20000,
+        "requires": [
+          {
+            "key": "espresso_yourself",
+            "op": "has",
+            "type": "perk",
+            "value": null
+          }
+        ],
+        "rotation": true,
+        "seasons": null
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "stock_price"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/louis_stall",
+    "id": "louis_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Louis' Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "louis",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "louis"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "dress_maid",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_sneakers_basic",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_hoop_earrings",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_lily_pad",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_cat_ears",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "skirt_pleated_short",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_long_sleeve_striped",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_tangerine",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "skirt_long_scalloped",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_cap_basic",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_dressy_stockings",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_devil_horns",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_tee_oversized",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_tanktop_buttons",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_striped_bow",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_striped_bucket_hat",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_paisley_bandana",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_sprout_hat",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_bunny_ears",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_strawberry_beret",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_lemon_beret",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_cherry_beret",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "suit_halter_bikini_set",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "summer"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_halter_bikini",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "summer"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shorts_swimtrunks",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "summer"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_pumpkin_beanie",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "fall"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_pumpkin_earrings",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "fall"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_boots_pumpkin",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "fall"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_wool_lined_jacket",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "fall"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_winter_beanie",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "winter"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_ear_muffs",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "winter"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_cropped_puff_jacket",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "winter"
+        ]
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_puff_jacket",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": [
+          "winter"
+        ]
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "stock_price"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/merris_stall",
+    "id": "merris_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Merri's Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "merri",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "merri"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_cake_case",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_armoire",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_bed",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_double_bed",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_chair",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_dress_form",
+        "price": 350,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_nightstand",
+        "price": 350,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_rocking_chair",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_table",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_wall_shelf",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_wall_window",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_wallpaper",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_flooring",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_rug_large_square",
+        "price": 700,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "starry_flooring",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "summit_wallpaper",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_sink",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_bench",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_wall_mirror",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "gold_wall_mirror",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_floor_mirror",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "gold_floor_mirror",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "toilet",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathtub",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_wall_sconce",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_curtain_stand",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "small_bathmat",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_fluffy_rug",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "round_cushioned_stool",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_wall_towel",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bathroom_tile_wall",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "herringbone_tile_floor",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "square_tile_floor",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_basic_v1",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_basic_v2",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cabin_walnut",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cabin_oak",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cabin_cherry",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cake_strawberry",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cake_chocolate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cake_double_chocolate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cottage_v1",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "counter_cottage_v2",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_wallpaper",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_flooring",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_rug",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_chair",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_table",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_wallpaper",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_flooring",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_rug",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_stool",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_table",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_privacy_screen_v1",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_privacy_screen_v2",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_privacy_screen_v3",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_privacy_screen_v4",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_privacy_screen_v5",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_cabinet_v1",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_cabinet_v2",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_cabinet_v3",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_cabinet_v4",
+        "price": 800,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_coffee_table_v1",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_coffee_table_v2",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_coffee_table_v3",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_coffee_table_v4",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_wallpaper_v1",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_wallpaper_v2",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_wallpaper_v3",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_wallpaper_v4",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_flooring_v1",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_flooring_v2",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_flooring_v3",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_flooring_v4",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_candle_single",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_candle_cluster",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_wall_cobweb_left",
+        "price": 150,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "haunted_attic_wall_cobweb_right",
+        "price": 150,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_bread_basket",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_cake_slice",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_cake",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_cookie_jar",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bakery_cutting_board",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_basket",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_pie_plate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_place_setting",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_rug",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_donut_plate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_hamburger_plate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_sandwich_plate",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "picnic_sunflower_vase",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "weather_crystal_ball",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "coffee_mug",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "espresso_cup",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "basket",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "beer_mug",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "box_medium_v1",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "box_small",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "candle",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "candle_chamberstick",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_absinthe",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_cocktail",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_lemonade",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_milk",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_water",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "glass_whisky",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "green_bottle",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jar_large",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jar_medium",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jar_pair",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jar_small",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "notepad",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "paper_stack",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "small_vase",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "tea_black",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "tea_green",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wine_glass_red",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wine_glass_rose",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wine_glass_white",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_table_lamp",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_fruit_bowl",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cherry_bonsai",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_table_lamp",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_fruit_bowl",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "lemon_bonsai",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_burner_white",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_burner_purple",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_burner_green",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_burner_blue",
+        "price": 250,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_stick_v1",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_stick_v2",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "incense_stick_v3",
+        "price": 200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_vase_white",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_vase_green",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_vase_blue",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ornate_vase_purple",
+        "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/veras_stall",
+    "id": "veras_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Vera's Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "vera",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "vera"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "hair_afro_puffs",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_curly_pompadour",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_dreadlock_twin_buns",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_medium_half_bun",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_medium_half_bun_fringe",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_medium_pigtails",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_rounded_afro",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_shaggy_bob",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_short_parted_curls",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_short_parted_straight",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_straight_buns_fringed",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_straight_long_twin_buns",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_straight_long_bun",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_straight_pompadour",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_wavy_rugged",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_wavy_medium_twin_buns",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_wavy_long_twin_buns",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "hair_wavy_long_ponytail",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_angel_wing",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_bat_wing",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_heart",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_moon",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_star",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_clips_strawberry",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "stock_requires"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/wheedles_stall",
+    "id": "wheedles_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Wheedle's Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "wheedle",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "wheedle"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "poison_snake_oil",
+        "price": 5000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "fire_snake_oil",
+        "price": 5000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "ice_snake_oil",
+        "price": 5000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_crown",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_sheathed_sword",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_mini_wings",
+        "price": 30000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_ornate_round_shield",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_ornate_shield",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "suit_court",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "dress_court",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_dancer_flower",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_dancer",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "skirt_dancer",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_rogue_cape",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_rogue_hood",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pants_rogue",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_boots_rogue",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_rogue",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_hunter_bow",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "back_gear_hunter_cape",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_hunter_hat",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pants_hunter",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_boots_hunter",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_hunter",
+        "price": 10000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_halo",
+        "price": 999999,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "animated_snow_globe",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "animated_bird_fountain",
+        "price": 30000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_pink",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_red",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_orange",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_gold",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_green",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_aqua",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_blue",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_purple",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_black",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_gray",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_white",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_light_brown",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_storage_chest_dark_brown",
+        "price": 10000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_icebox_white",
+        "price": 12000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_icebox_pink",
+        "price": 12000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_icebox_blue",
+        "price": 12000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_icebox_yellow",
+        "price": 12000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "deluxe_icebox_green",
+        "price": 12000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "fast_food",
+        "price": 5000,
+        "requires": [],
+        "rotation": false,
+        "seasons": null
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "hours": [
+      {
+        "days": [
+          "sat"
+        ],
+        "from": "00:00",
+        "to": "00:00"
+      }
+    ],
+    "icon_key": "shop/zorels_stall",
+    "id": "zorels_stall",
+    "id_status": "provisional",
+    "location_id": "mistria",
+    "name": "Zorel's Stall",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "owner_character_id": "zorel",
+    "prov": {
+      "*": "game_files"
+    },
+    "seasonal_closures": [],
+    "staff_character_ids": [
+      "zorel"
+    ],
+    "stock": [
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_red",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_orange",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_gold",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_green",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_blue",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_purple",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_silver",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_black",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_void",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "crystal_resonator_pink",
+        "price": 20000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_farm_boy",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_pink_twintails",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_crystal_caves",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_misty_pasture",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_purple_potions",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_heros_journey",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_five_more_minutes",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_dream_lobby",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_rainy_window",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_adelines_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_balors_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_caldarus_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_celines_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_eilands_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_haydens_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_junipers_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_marchs_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_reinas_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_ryis_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_seridias_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "song_crystal_valens_theme",
+        "price": 5000,
+        "requires": [],
+        "rotation": true,
+        "seasons": null
+      }
+    ],
+    "unlock_requires": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "version_added": null,
+    "wiki_page": "Saturday Market"
   }
 ]

@@ -201,9 +201,9 @@ export class Resolver {
   /**
    * Record a token this class doesn't resolve itself.
    *
-   * Builders hit references the resolver knows nothing about — a shop selling a
-   * bookshelf that isn't in the Items table because furniture hasn't been
-   * ingested. Those belong in the same queue as everything else: a number in a
+   * Builders hit references the resolver knows nothing about — a shop selling
+   * a cosmetic the dataset deliberately does not model yet. Those belong in
+   * the same queue as everything else: a number in a
    * `data_gaps` array is invisible, whereas `pnpm data:unresolved` is the list
    * somebody actually works through.
    */

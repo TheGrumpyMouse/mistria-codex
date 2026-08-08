@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { Requirement } from '../availability.js'
 import { withEnvelope } from '../envelope.js'
 import { IdRef } from '../ids.js'
-import { Currency, Quality, Season } from '../primitives.js'
+import { Currency, Quality, Rarity, Season } from '../primitives.js'
 
 export const Crop = withEnvelope({
   seed_item_id: IdRef.nullable().default(null),
@@ -93,6 +93,47 @@ export const Animal = withEnvelope({
     .default(null),
 })
 export type Animal = z.infer<typeof Animal>
+
+/**
+ * A production machine — the Apiary and the Terrarium at 1.0.
+ *
+ * The machine itself is an *item* (craftable, placeable on the farm); this
+ * record carries what the item record cannot: the input -> output rules the
+ * game states in the object prototype's `factory` table. Everything here is
+ * resolved item ids — the app never sees the game's internal tags.
+ */
+export const Machine = withEnvelope({
+  /** The item record this machine is crafted and placed as. */
+  item_id: IdRef,
+  days_to_produce: z.number().int().nullable().default(null),
+  /** How many inputs it holds at once. */
+  capacity: z.number().int().nullable().default(null),
+  /** Item ids the machine accepts as working inputs (bees, bugs). */
+  accepts_item_ids: z.array(IdRef).default([]),
+  /** What each input rarity yields. One entry per rarity the game maps. */
+  yields: z
+    .array(
+      z.object({
+        input_rarity: Rarity,
+        item_ids: z.array(IdRef).default([]),
+      }),
+    )
+    .default([]),
+  /**
+   * Items the machine asks for, season by season — the apiary requesting
+   * spring flowers. A request is flavour-plus-bonus, not a requirement to run.
+   */
+  requests: z
+    .array(
+      z.object({
+        item_id: IdRef,
+        season: Season.nullable().default(null),
+        requires: z.array(Requirement).default([]),
+      }),
+    )
+    .default([]),
+})
+export type Machine = z.infer<typeof Machine>
 
 export const Building = withEnvelope({
   kind: z.enum([

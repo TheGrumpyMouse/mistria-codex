@@ -353,8 +353,22 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
     const unreleased =
       folded.includes(UNRELEASED_TAG) && (ctx.game === null || !ctx.game.itemIds.has(id))
 
-    const sellValue = toInteger(row.sellValue)
-    if (sellValue === null) gaps.push('sell_value')
+    // The files state `value.bin` and the wiki states a `sellValue` column;
+    // where both speak they agree on all but 32 of 741, and those are 1.0
+    // rebalances the pre-1.0 wiki has not caught up with (`bomb` 20 -> 50).
+    // The game is the game. Half the items price themselves with a formula
+    // the extract will not evaluate, so the wiki still answers for those.
+    // See build/reports/source-agreement.md.
+    //
+    // **A soulbound item has no sell value, and that is not the same as
+    // zero.** `bath_soap` is priced 90,000 in the files and 0 on the wiki,
+    // and both would mislead: it is `soulbind = "forever"`, so it can never
+    // be sold at all. Null is the honest answer, and `sell_value` is left off
+    // the gap list because nobody can ever fill it.
+    const gameItem = ctx.game?.itemById.get(id)
+    const unsellable = gameItem?.soulbind === 'forever'
+    const sellValue = unsellable ? null : (gameItem?.sell_value ?? toInteger(row.sellValue))
+    if (sellValue === null && !unsellable) gaps.push('sell_value')
 
     const donatable = toBoolean(row.museum)
 
@@ -407,7 +421,12 @@ export function buildItems(ctx: BuildContext, inputs: ItemBuildInput[]): Item[] 
       quality: null,
 
       sell_value: sellValue,
-      buy_value: null,
+      // `value.store` — the item's own shop price, which the wiki's Items
+      // table does not carry at all. 773 items state one, and it agreed with
+      // every wiki shop price checked against it (418 of 418, once
+      // recipe-scroll rows are set aside). Null stays null: half the items
+      // are not for sale.
+      buy_value: ctx.game?.itemById.get(id)?.buy_value ?? null,
       stamina: toInteger(row.stamina),
       health: toInteger(row.health),
       mana: toInteger(row.mana),

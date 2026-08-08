@@ -13,9 +13,19 @@ import { type Finding, warn } from './report.js'
  * itself worth seeing in the report.
  */
 export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
-  items: 1154, // Cargo: Items
+  // Four admission paths: the wiki's Items table (1,154 rows, less the ten
+  // Bugs-table roster rows that are not items of their own), the 1.0
+  // allowlist (curated/vocab/items_1_0.json, 40 ids), furniture from the game
+  // files collapsed to one record per product (925), and the wardrobe (360,
+  // one per game cosmetic — colour variants are palette swaps, not records).
+  // Measured 2026-08-08.
+  items: 2475,
   fish: 143, // Cargo: Fish
-  bugs: 103, // Cargo: Bugs
+  // 93, not the Cargo table's 103: ten of its rows are not catchable bugs —
+  // nine apiary/terrarium products listed for their museum sets, plus the
+  // wiki-only Raindrop Beetle the 1.0 files do not contain. The game's own
+  // bug list has exactly 93. See isMuseumRosterRow in build/builders/fish-crops.ts.
+  bugs: 93,
   // 61, not 58. Cargo's Crops table has 58 rows and omits three of the seven
   // plantable fruit trees — the wiki files Apple and Cherry under Crops and
   // Lemon, Peach and Pear only under their own pages. The three come from
@@ -25,7 +35,9 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   // user pages using the same infobox template. 34 is the real villager roster:
   // 12 romanceable + 14 townfolk + 8 vendors, per docs/research/01-game-data.md.
   characters: 34,
-  recipes: 282, // Cargo: Recipes
+  // 290 non-furniture (game files, wiki fallback) + 576 collapsed furniture
+  // recipes — one per product, not per colourway. Measured 2026-08-08.
+  recipes: 866,
   artifacts: 110, // Cargo: Artifacts
   forageables: 86, // research doc, EA-era count — verify against 1.0
   museum_sets: 82, // counted from the four wing pages; the research doc said ~80
@@ -37,13 +49,17 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   festivals: 10,
   skills: 9,
   mines: 5,
-  // Eight stores in Category:Store. The Saturday Market's eight vendors are a
-  // separate, differently-structured page and are not counted here yet.
-  shops: 8,
+  // Eight stores in Category:Store, plus the Saturday Market's six selling
+  // stalls from the game's stores.toml (Stillwell and Taliferro run boards,
+  // not shops).
+  shops: 14,
   animals: 8, // four coop, four barn
   // seals.toml declares exactly seven: water, earth, fire, ruins, void,
   // priestess and final. A patch adding an eighth shows up here.
   seals: 7,
+  // object_prototypes/furniture.toml has exactly two `*.factory` prototypes at
+  // 1.0.0 — the Apiary and the Terrarium. A third factory shows up here.
+  machines: 2,
   locations: null,
   maps: null,
   spots: null,

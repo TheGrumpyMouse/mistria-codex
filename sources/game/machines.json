@@ -1,0 +1,458 @@
+{
+  "factories": [
+    {
+      "days_to_produce": 3,
+      "id": "apiary",
+      "illegal_tags": [],
+      "inventory_size": 4,
+      "legal_tags": [
+        "bee"
+      ],
+      "placeable_locations": [
+        "farm"
+      ],
+      "requests": [
+        {
+          "item": "tulip",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "lilac",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "snowdrop_anemone",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "middlemist",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "daffodil",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "dandelion",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "peas",
+          "repaired_general_store": true,
+          "season": "spring"
+        },
+        {
+          "item": "carrot",
+          "repaired_general_store": true,
+          "season": "spring"
+        },
+        {
+          "item": "sunflower",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "rose",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "hydrangea",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "daisy",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "iris",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "catmint",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "night_queen",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "cosmos",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "marigold",
+          "repaired_general_store": true,
+          "season": "summer"
+        },
+        {
+          "item": "sugar_cane",
+          "repaired_general_store": true,
+          "season": "summer"
+        },
+        {
+          "item": "tea",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "fog_orchid",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "viola",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "celosia",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "heather",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "chrysanthemum",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "onion",
+          "repaired_general_store": true,
+          "season": "fall"
+        },
+        {
+          "item": "rice_stalk",
+          "repaired_general_store": true,
+          "season": "fall"
+        },
+        {
+          "item": "poinsettia",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "frost_lily",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "jasmine",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "snapdragon",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "crocus",
+          "repaired_general_store": false,
+          "season": "winter"
+        }
+      ],
+      "rewards_map": [
+        [
+          "honey"
+        ],
+        [
+          "honey"
+        ],
+        [
+          "honey_premium"
+        ],
+        [
+          "honey_deluxe"
+        ],
+        [
+          "honey_legendary"
+        ]
+      ]
+    },
+    {
+      "days_to_produce": 3,
+      "id": "terrarium",
+      "illegal_tags": [
+        "bee"
+      ],
+      "inventory_size": 4,
+      "legal_tags": [
+        "bugs"
+      ],
+      "placeable_locations": [
+        "farm"
+      ],
+      "requests": [
+        {
+          "item": "turnip",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "potato",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "cabbage",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "strawberry",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "chickpea",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "wild_leek",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "morel_mushroom",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "fennel",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "fiddlehead",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "nettle",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "wild_berries",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "blueberry",
+          "repaired_general_store": false,
+          "season": "spring"
+        },
+        {
+          "item": "cucumber",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "tomato",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "corn",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "chili_pepper",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "watermelon",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "dill",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "sage",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "sesame",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "thyme",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "oregano",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "basil",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "wild_grapes",
+          "repaired_general_store": false,
+          "season": "summer"
+        },
+        {
+          "item": "sweet_potato",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "broccoli",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "pumpkin",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "cranberry",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "wheat",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "moon_fruit",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "rosemary",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "chestnut",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "garlic",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "horseradish",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "blackberry",
+          "repaired_general_store": false,
+          "season": "fall"
+        },
+        {
+          "item": "cauliflower",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "daikon_radish",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "burdock_root",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "snow_peas",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "beet",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "holly",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "pineshroom",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "glowberry",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "oyster_mushroom",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "rose_hip",
+          "repaired_general_store": false,
+          "season": "winter"
+        },
+        {
+          "item": "wintergreen_berry",
+          "repaired_general_store": false,
+          "season": "winter"
+        }
+      ],
+      "rewards_map": [
+        [
+          "fish_bait_common",
+          "bug_pheromone_common"
+        ],
+        [
+          "fish_bait_common",
+          "bug_pheromone_common"
+        ],
+        [
+          "fish_bait_uncommon",
+          "bug_pheromone_uncommon"
+        ],
+        [
+          "fish_bait_rare",
+          "bug_pheromone_rare"
+        ],
+        [
+          "bug_pheromone_legendary"
+        ]
+      ]
+    }
+  ],
+  "gameVersion": "1.0.0"
+}

@@ -86,6 +86,48 @@ export async function collectItemWants(): Promise<Want[]> {
 }
 
 /**
+ * Wardrobe sprites, from the cosmetics-page harvest.
+ *
+ * Unlike furniture — which no wiki table carries art for — every cosmetics
+ * row has a `[[File:…]]`, so these come down the ordinary wiki path with no
+ * game install involved. The join is display name, which is also how the
+ * cosmetic records got their prices, so a name that resolved there resolves
+ * here.
+ */
+export async function collectCosmeticWants(): Promise<Want[]> {
+  interface Harvested {
+    cosmetics: { name: string; icon: string | null }[]
+  }
+  interface DataItem {
+    name: string
+    category: string
+    icon_key: string | null
+  }
+
+  let harvest: Harvested
+  try {
+    harvest = await readJson<Harvested>(join(SOURCES_DIR, 'wiki', 'pages', 'cosmetics.json'))
+  } catch {
+    consola.info('assets: no cosmetics harvest yet — run `pnpm enrich:pages`')
+    return []
+  }
+
+  const byName = new Map(
+    harvest.cosmetics.flatMap((row) => (row.icon === null ? [] : [[row.name, row.icon] as const])),
+  )
+  const records = await readJson<DataItem[]>(join(DATA_DIR, 'items.json'))
+
+  const wants: Want[] = []
+  for (const record of records) {
+    if (record.category !== 'cosmetic' || record.icon_key === null) continue
+    const sourceFile = byName.get(record.name)
+    if (sourceFile === undefined) continue
+    wants.push({ family: 'cosmetic', iconKey: record.icon_key, sourceFile })
+  }
+  return wants
+}
+
+/**
  * Villager icons and portraits, from the character-page harvest.
  *
  * Joined on the wiki page name, which is what `enrich/characters.ts` keys its
@@ -327,6 +369,7 @@ export async function collectInventory(): Promise<InventoryEntry[]> {
 
   const wants = [
     ...(await collectItemWants()),
+    ...(await collectCosmeticWants()),
     ...(await collectCharacterWants()),
     ...(await collectMonsterWants()),
     ...(await collectFestivalWants()),

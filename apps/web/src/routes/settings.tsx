@@ -19,6 +19,7 @@ import {
   TEXT_SIZES,
   type TextSize,
 } from '~/lib/text-size'
+import { useTourDone } from '~/lib/tour'
 
 /**
  * Settings: the sync code, and getting your progress off this device.
@@ -52,6 +53,7 @@ export function SettingsRoute() {
   // Read once, synchronously: the choice was already applied to the document
   // by main.tsx, so this state only exists to light the right button.
   const [textChoice, setTextChoice] = useState<TextSize>(() => savedTextSize())
+  const [, setTourDone] = useTourDone()
 
   useEffect(() => {
     setCode(savedCode())
@@ -178,6 +180,21 @@ export function SettingsRoute() {
             </button>
           ))}
         </fieldset>
+      </Section>
+
+      <Section title="The tour">
+        <p className="text-ink-mute text-sm">
+          The short walk around the app from your first visit. Replaying it starts right here.
+        </p>
+        <div className="mt-2">
+          <button
+            type="button"
+            onClick={() => setTourDone(false)}
+            className="tap-target rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs hover:text-ink"
+          >
+            Show the tour again
+          </button>
+        </div>
       </Section>
 
       <Section title="Hidden things">

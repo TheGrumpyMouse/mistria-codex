@@ -30,7 +30,10 @@ import {
   type Weather,
 } from '@mistria/schema'
 import type { GameArtifactsExtract, GameSealOffering } from '../extract/artifacts.js'
+import type { GameCosmetic, GameCosmeticsExtract } from '../extract/cosmetics.js'
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
+import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
+import type { GameQuestsExtract, GameRequestGate, GameStoryQuest } from '../extract/quests.js'
 import type {
   GameBug,
   GameCrop,
@@ -39,6 +42,7 @@ import type {
   GameSpawnsExtract,
   GameTree,
 } from '../extract/spawns.js'
+import type { GameStore, GameStoresExtract } from '../extract/stores.js'
 import type {
   GameLocation,
   GameNpc,
@@ -132,7 +136,7 @@ export interface GameFacts {
   fruitTreeByHarvest: Map<string, PlantableTree>
   npcById: Map<string, GameNpc>
   /** Wing id -> set id -> item ids, exactly as the game declares them. */
-  museumSets: { wing: string; set: string; items: string[] }[]
+  museumSets: { wing: string; set: string; name: string | null; items: string[] }[]
   /** Bug tag -> our location ids. The room join, already resolved. */
   locationsByBugTag: Map<string, string[]>
   /** Game room ids we deliberately do not place. */
@@ -150,6 +154,24 @@ export interface GameFacts {
   nonItemNames: Set<string>
   /** Null when the extract predates the artifact work — the wiki answers stand. */
   artifactFacts: ArtifactFacts | null
+  /**
+   * Production machines (the Apiary and Terrarium at 1.0.0), verbatim from the
+   * extract. Empty when the extract predates the machine work — nothing is
+   * produced by machine in that build, which was also true of the dataset.
+   */
+  factories: GameFactory[]
+  /** Item id -> the factory whose `rewards_map` yields it. */
+  factoryByProduct: Map<string, GameFactory>
+  /** Request quest id -> its stated appearance gates. Empty pre-quest-extract. */
+  requestGateByQuest: Map<string, GameRequestGate>
+  /** Story quest id -> title, icon NPC and stated rewards. */
+  storyQuestById: Map<string, GameStoryQuest>
+  /** Store section key -> its stock, verbatim from `stores.toml`. */
+  storeById: Map<string, GameStore>
+  /** The player's wardrobe. Empty when the extract predates the cosmetics read. */
+  cosmetics: GameCosmetic[]
+  /** Cosmetic id -> its record, for resolving a store line. */
+  cosmeticById: Map<string, GameCosmetic>
 }
 
 /** The artifact and seal extract, indexed. See `buildArtifactFacts`. */
@@ -175,6 +197,8 @@ export interface ArtifactFacts {
    * wiki has not written up yet.
    */
   skillTreeBySkill: Map<string, { id: string; tier: number; essence: number | null }[]>
+  /** Tier -> unlock level (index 0 = tier 1), from the skill menu defaults. */
+  skillTierLevels: number[]
   seals: {
     id: string
     questId: string
@@ -437,8 +461,27 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
   // Keyed by harvest, not by crop id: `ash_mushroom` the plant and the item it
   // yields share a name, but `mystery_bag` does not, and our crop records are
   // keyed by the item.
+  //
+  // **A harvest is not a unique key, and one entry lies about it.** Two things
+  // in `crop.toml` claim to harvest a marigold — the crop, and
+  // `temple_marigold`, a forageable — so a plain `set` let the forageable
+  // overwrite the crop and report the marigold as growing in nought days.
+  // And `mystery_bag` declares `harvest = "apple"` above a comment reading
+  // `# this is just a lie, for fun!`; it is the Magic Seed, which grows
+  // something random. Both are filtered here rather than by every caller:
+  //
+  // - anything with a single growth stage is picked, not grown (see CLAUDE.md),
+  //   which is exactly what `temple_marigold` is;
+  // - the declared liar is named, with its citation;
+  // - and a surviving collision keeps the first entry rather than the last,
+  //   because "whichever came last in the file" is not a decision.
+  const CROP_HARVEST_LIARS = new Set(['mystery_bag'])
   const cropByHarvest = new Map<string, GameCrop>()
-  for (const crop of spawns.crops) cropByHarvest.set(crop.harvest, crop)
+  for (const crop of spawns.crops) {
+    if (CROP_HARVEST_LIARS.has(crop.id)) continue
+    if (crop.day_to_stage.length <= 1) continue
+    if (!cropByHarvest.has(crop.harvest)) cropByHarvest.set(crop.harvest, crop)
+  }
 
   const fruitTreeByHarvest = plantableTrees(spawns.trees ?? [], items.items)
 
@@ -447,6 +490,27 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
   const artifactExtract = await readJsonFile<GameArtifactsExtract>(
     join(game, 'artifacts.json'),
   ).catch(() => null)
+
+  const machinesExtract = await readJsonFile<GameMachinesExtract>(
+    join(game, 'machines.json'),
+  ).catch(() => null)
+  const questsExtract = await readJsonFile<GameQuestsExtract>(join(game, 'quests.json')).catch(
+    () => null,
+  )
+  const storesExtract = await readJsonFile<GameStoresExtract>(join(game, 'stores.json')).catch(
+    () => null,
+  )
+  const cosmeticsExtract = await readJsonFile<GameCosmeticsExtract>(
+    join(game, 'cosmetics.json'),
+  ).catch(() => null)
+  const cosmetics = cosmeticsExtract?.cosmetics ?? []
+  const factories = machinesExtract?.factories ?? []
+  const factoryByProduct = new Map<string, GameFactory>()
+  for (const factory of factories) {
+    for (const product of factory.rewards_map.flat()) {
+      factoryByProduct.set(product, factory)
+    }
+  }
 
   const locationsByBugTag = new Map<string, string[]>()
   const unmappedRooms: string[] = []
@@ -478,7 +542,7 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     fruitTreeByHarvest,
     npcById: new Map(world.npcs.map((npc) => [npc.id, npc] as const)),
     museumSets: world.museum.flatMap((wing) =>
-      wing.sets.map((set) => ({ wing: wing.id, set: set.id, items: set.items })),
+      wing.sets.map((set) => ({ wing: wing.id, set: set.id, name: set.name, items: set.items })),
     ),
     locationsByBugTag,
     unmappedRooms: unmappedRooms.sort(),
@@ -486,6 +550,17 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     nonItemNames: new Set(
       (world.animalCosmetics ?? []).flatMap((c) => (c.name === null ? [] : [wordKey(c.name)])),
     ),
+    factories,
+    factoryByProduct,
+    requestGateByQuest: new Map(
+      (questsExtract?.requestGates ?? []).map((gate) => [gate.quest_id, gate] as const),
+    ),
+    storyQuestById: new Map(
+      (questsExtract?.storyQuests ?? []).map((quest) => [quest.id, quest] as const),
+    ),
+    storeById: new Map((storesExtract?.stores ?? []).map((store) => [store.id, store] as const)),
+    cosmetics,
+    cosmeticById: new Map(cosmetics.map((cosmetic) => [cosmetic.id, cosmetic] as const)),
     artifactFacts:
       artifactExtract === null
         ? null
@@ -588,6 +663,7 @@ export function buildArtifactFacts(
     skillTreeBySkill: new Map(
       (extract.skillTrees ?? []).map((tree) => [tree.skill, tree.perks] as const),
     ),
+    skillTierLevels: extract.skillTierLevels ?? [],
     seals,
     offerings: extract.sealOfferings,
     digSiteLocations: [

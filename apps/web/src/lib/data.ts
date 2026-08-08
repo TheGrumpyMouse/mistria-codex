@@ -110,6 +110,20 @@ export async function loadDataset<T>(name: string): Promise<T[]> {
 }
 
 /**
+ * One full item record, from whichever shard carries it.
+ *
+ * Furniture ships as its own file (925 records the page for an apple never
+ * needs), and the display index — precached, and already loaded by any screen
+ * that got here — says which shard an id lives in.
+ */
+export async function loadItemRecord<T extends { id: string }>(id: string): Promise<T | null> {
+  const index = await loadDisplayIndex()
+  const shard = index[id]?.c === 'furniture' ? 'items_furniture' : 'items'
+  const records = await loadDataset<T>(shard)
+  return records.find((record) => record.id === id) ?? null
+}
+
+/**
  * The request board — a shipped form, not a dataset.
  *
  * It is joined at build time so this screen does not pull a megabyte of items
@@ -127,6 +141,8 @@ export type DisplayIndex = Record<
     i: string | null
     c: string
     v: number | null
+    /** Furniture only: the set token Browse groups the category by. */
+    g?: string
     /** 1 when the record is a story spoiler — list rows veil the name. */
     s?: 1
     /**

@@ -51,13 +51,13 @@ export function DesignRoute() {
 
         <Block
           title="Signals"
-          note="Outside the season system, so they never shift meaning. Unverified is never a colour."
+          note="Outside the season system, so they never shift meaning. An inference is never a colour."
         >
           <div className="flex flex-wrap items-center gap-2">
             <Swatch token="museum" />
             <Swatch token="gap" />
             <Swatch token="locked" />
-            <span className="unverified rounded-tile px-2 py-1 text-xs">time unknown</span>
+            <span className="unverified rounded-tile px-2 py-1 text-xs">place inferred</span>
           </div>
         </Block>
 

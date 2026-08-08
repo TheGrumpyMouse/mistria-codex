@@ -74,6 +74,8 @@ export const SPAWN_METHODS = [
   'monster_drop',
   'crop_harvest',
   'ranching',
+  'apiary',
+  'terrarium',
   'shop',
   'crafting',
   'cooking',

@@ -66,6 +66,27 @@ export function buildMuseum(ctx: BuildContext): MuseumIndex {
 
   const crossCheckByWing = new Map(ctx.museum.wings.map((w) => [w.id, w.crossCheck] as const))
 
+  // The game's own titles for its sets, where it gives one. Its display names
+  // are boilerplate — "<Roster> Insect Set", 81 of 82 end in " Set" — and the
+  // wiki's shorter names are the readable form of the same thing, so those
+  // are kept. A game name *outside* that pattern is a real title the wiki
+  // abbreviated away: "Terrarium Treasures", which the wing page files as
+  // plain "Terrarium". Exactly one exists at 1.0.0, and the pattern test is
+  // what keeps this from renaming the other 81. (Game wing id `insect`,
+  // ours `insects` — hence the alias below.)
+  const GAME_WINGS: Record<string, string> = {
+    archaeology: 'archaeology',
+    fish: 'fish',
+    flora: 'flora',
+    insect: 'insects',
+  }
+  const gameSetNames = new Map<string, string>()
+  for (const gameSet of ctx.game?.museumSets ?? []) {
+    const wing = GAME_WINGS[gameSet.wing]
+    if (wing === undefined || gameSet.name === null || / Set$/.test(gameSet.name)) continue
+    gameSetNames.set(`${wing}_${gameSet.set}`, gameSet.name)
+  }
+
   for (const [order, extracted] of ctx.museum.sets.entries()) {
     const wing = WINGS[extracted.wing]
     if (wing === undefined) continue
@@ -105,7 +126,7 @@ export function buildMuseum(ctx: BuildContext): MuseumIndex {
 
     sets.push({
       id: setId,
-      name: extracted.set,
+      name: gameSetNames.get(setId) ?? extracted.set,
       numeric_id: null,
       numeric_id_game_version: null,
       id_status: 'confirmed',

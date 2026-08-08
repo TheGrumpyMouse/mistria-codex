@@ -22,6 +22,7 @@ import { checkMuseum } from './museum.js'
 import { checkDuplicateKeys, checkOrphans, checkReferentialIntegrity } from './refint.js'
 import { type Finding, summarise } from './report.js'
 import { checkAjv, checkZod } from './schema-check.js'
+import { checkSourceAgreement } from './source-agreement.js'
 import { checkSpoilers } from './spoilers.js'
 
 async function main(): Promise<void> {
@@ -45,6 +46,7 @@ async function main(): Promise<void> {
   findings.push(...checkMuseum(loaded))
   findings.push(...checkGates(loaded))
   findings.push(...(await checkGameAgreement(loaded)))
+  findings.push(...(await checkSourceAgreement(loaded)))
   findings.push(...(await checkLicensing()))
   findings.push(...(await checkSpoilers(loaded)))
 

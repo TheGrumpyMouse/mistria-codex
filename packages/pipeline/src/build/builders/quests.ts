@@ -1,5 +1,6 @@
 import type { Quest, Requirement, Season } from '@mistria/schema'
 import { toSnakeId } from '@mistria/schema'
+import { consola } from 'consola'
 import type { ExtractedCondition } from '../../enrich/quests.js'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
@@ -175,14 +176,14 @@ const LOCATION_BY_LABEL: Record<string, string> = {
   'the deep woods': 'the_deep_woods',
 }
 
-export function buildQuests(ctx: BuildContext): Quest[] {
+export function buildQuests(ctx: BuildContext, builtItemIds: Set<string>): Quest[] {
   const { quests } = ctx
   const characterIds = new Set(ctx.characterRules.roster.map((n) => toSnakeId(n)))
   const ids = questIds(quests.quests)
 
   const questIdByName = new Map(quests.quests.map((q, i) => [q.name, ids[i] ?? toSnakeId(q.name)]))
 
-  return quests.quests.map((quest, index) => {
+  const built = quests.quests.map((quest, index) => {
     const gaps: string[] = []
     const id = ids[index] ?? toSnakeId(quest.name)
 
@@ -250,4 +251,144 @@ export function buildQuests(ctx: BuildContext): Quest[] {
       season_restriction: quest.seasons.length > 0 ? (quest.seasons as Season[]) : null,
     }
   })
+
+  return withGameGates(ctx, built, characterIds, builtItemIds)
+}
+
+/**
+ * The game-union pass over quest gates.
+ *
+ * `request_board.toml` states each request's appearance conditions as data —
+ * the wiki's condition column predates 1.0 and never heard of the apiary
+ * chain, so eight requests shipped as available from day one that the game
+ * holds behind a story quest. Two requirement spellings are mapped:
+ * `completed_quest = "x"` directly, and `broke_X_seal = true` through the
+ * seals table to the quest that breaks that seal. Everything else the file
+ * states is counted and reported, never guessed at and never dropped
+ * silently.
+ *
+ * A gate naming a quest the wiki does not list — `apiaries_and_terrariums` —
+ * would dangle, so the referenced story quest is appended from the game's own
+ * statement of it: title, icon NPC, stated rewards. Only *referenced* story
+ * quests are appended; mirroring the whole story file would drown the list
+ * in cutscene beats no other record points at.
+ */
+function withGameGates(
+  ctx: BuildContext,
+  built: Quest[],
+  characterIds: Set<string>,
+  builtItemIds: Set<string>,
+): Quest[] {
+  const game = ctx.game
+  if (game === null || game.requestGateByQuest.size === 0) return built
+
+  const sealQuestBySeal = new Map(
+    (game.artifactFacts?.seals ?? []).map((seal) => [seal.id, seal.questId] as const),
+  )
+  const knownIds = new Set(built.map((quest) => quest.id))
+
+  // First pass: which quests do the gates reference that we do not hold?
+  const referenced = new Set<string>()
+  const gateFor = (quest: Quest): Requirement[] => {
+    const gate = game.requestGateByQuest.get(quest.id)
+    if (gate === undefined) return []
+
+    const out: Requirement[] = []
+    for (const requirement of gate.requirements) {
+      if (requirement.key === 'completed_quest' && typeof requirement.value === 'string') {
+        referenced.add(requirement.value)
+        out.push({ type: 'quest', key: requirement.value, op: 'done', value: null })
+        continue
+      }
+      const seal = /^broke_(.+)_seal$/.exec(requirement.key)
+      if (seal !== null && requirement.value === true) {
+        const questId = sealQuestBySeal.get(seal[1] ?? '')
+        if (questId !== undefined) {
+          referenced.add(questId)
+          out.push({ type: 'quest', key: questId, op: 'done', value: null })
+        }
+      }
+      // Other keys (is_season, reached_date, heart levels…) are real gates the
+      // wiki often also states; mapping them is a later pass and they are
+      // visible in sources/game/quests.json meanwhile.
+    }
+    return out
+  }
+
+  const gates = new Map(built.map((quest) => [quest.id, gateFor(quest)] as const))
+
+  // Append the referenced story quests the wiki does not list.
+  const appended: Quest[] = []
+  for (const id of [...referenced].sort()) {
+    if (knownIds.has(id)) continue
+    const story = game.storyQuestById.get(id)
+    if (story === undefined) continue
+
+    const giver = story.npc !== null && characterIds.has(story.npc) ? story.npc : null
+    const rewardItems = story.reward_item_ids.filter((itemId) => builtItemIds.has(itemId))
+    const hasReward =
+      story.reward_renown !== null || story.reward_tesserae !== null || rewardItems.length > 0
+
+    appended.push({
+      id,
+      name: story.name ?? id,
+      numeric_id: null,
+      numeric_id_game_version: null,
+      id_status: 'confirmed',
+      former_ids: [],
+      also_known_as: [],
+      game_version: game.version,
+      version_added: null,
+      confidence: 'verified',
+      prov: { '*': 'game_files' },
+      // Objectives are stated only as prose stage descriptions, which are
+      // never read; the gap says so instead of paraphrasing them.
+      data_gaps: ['objectives', 'prerequisites'],
+      icon_key: 'quest/story',
+      wiki_page: null,
+      blurb: null,
+
+      kind: 'story',
+      giver_character_id: giver,
+      prerequisites: [],
+      objectives: [],
+      rewards: hasReward
+        ? {
+            renown: story.reward_renown,
+            tesserae: story.reward_tesserae,
+            item_ids: rewardItems,
+          }
+        : null,
+      repeatable: false,
+      season_restriction: null,
+    })
+    knownIds.add(id)
+  }
+  if (appended.length > 0) {
+    consola.info(
+      `quests: appended ${appended.length} game story quest(s) referenced as gates — ` +
+        appended.map((quest) => quest.id).join(', '),
+    )
+  }
+
+  // Second pass: merge the mapped gates in, dropping any whose target quest
+  // still does not exist (a dangling gate helps nobody and fails refint).
+  let gated = 0
+  const merged = built.map((quest) => {
+    const extra = (gates.get(quest.id) ?? []).filter(
+      (requirement) =>
+        knownIds.has(requirement.key) &&
+        !quest.prerequisites.some((p) => p.type === 'quest' && p.key === requirement.key),
+    )
+    if (extra.length === 0) return quest
+    gated += 1
+    return {
+      ...quest,
+      prerequisites: [...quest.prerequisites, ...extra],
+      data_gaps: quest.data_gaps.filter((gap) => gap !== 'prerequisites'),
+    }
+  })
+  if (gated > 0) consola.info(`quests: ${gated} requests gained appearance gates from the game`)
+
+  return [...merged, ...appended]
 }

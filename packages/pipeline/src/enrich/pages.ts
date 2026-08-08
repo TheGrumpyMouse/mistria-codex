@@ -14,6 +14,7 @@ import { pathToFileURL } from 'node:url'
 import { consola } from 'consola'
 import { enrichCalendar } from './calendar.js'
 import { enrichCharacters } from './characters.js'
+import { enrichCosmetics } from './cosmetics.js'
 import { enrichItemNames } from './item-names.js'
 import { enrichMapShapes } from './map-shapes.js'
 import { enrichMaps } from './maps.js'
@@ -41,6 +42,7 @@ async function main(): Promise<void> {
   const itemNames = await enrichItemNames({ useCache })
   const characters = await enrichCharacters({ useCache })
   const maps = await enrichMaps({ useCache })
+  const cosmetics = await enrichCosmetics({ useCache })
   const shapes = await enrichMapShapes()
 
   consola.success(
@@ -52,6 +54,7 @@ async function main(): Promise<void> {
       `${monsters.monsters.length} monsters · ${itemNames.names.length} internal names · ` +
       `${characters.characters.filter((c) => c.portrait !== null).length} villager portraits · ` +
       `${maps.markers.length} map markers · ` +
+      `${cosmetics.cosmetics.filter((c) => c.price !== null).length} cosmetic prices · ` +
       `${shapes.regions.length} region shapes`,
   )
 }

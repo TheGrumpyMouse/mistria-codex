@@ -22,9 +22,15 @@
     "Not listed, deliberately: crystal_resonator_* (furniture — they arrive",
     "with the furniture ingestion), date_photo_wedding and",
     "engagement_ring_recipe_scroll (mementos/wrappers a player never hunts",
-    "for)."
+    "for).",
+    "",
+    "apiary and terrarium are the 1.0 production machines — craftable farm",
+    "objects (other/apiaries_and_terrariums.toml), not furniture. Listing them",
+    "ships their crafting recipes too: the recipes builder holds a recipe back",
+    "only while its output id is absent from the built items."
   ],
   "items": [
+    "apiary",
     "engagement_ring",
     "mystical_feather",
     "pet_skin_enchantern",
@@ -62,6 +68,7 @@
     "song_crystal_reinas_theme",
     "song_crystal_ryis_theme",
     "song_crystal_seridias_theme",
-    "song_crystal_valens_theme"
+    "song_crystal_valens_theme",
+    "terrarium"
   ]
 }

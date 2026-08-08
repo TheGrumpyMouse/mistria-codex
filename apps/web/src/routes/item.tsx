@@ -6,8 +6,14 @@ import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
-import { type DisplayIndex, loadDataset, loadDisplayIndex, loadRequestBoard } from '~/lib/data'
-import { categoryLabelOne, METHOD_LABELS, requirementDisplay } from '~/lib/labels'
+import {
+  type DisplayIndex,
+  loadDataset,
+  loadDisplayIndex,
+  loadItemRecord,
+  loadRequestBoard,
+} from '~/lib/data'
+import { categoryLabelOne, METHOD_LABELS, requirementDisplay, WORN_ON_LABELS } from '~/lib/labels'
 import { doneIn, setDone } from '~/lib/progress'
 import type { BoardRequest } from '~/lib/request-board'
 import { useSpoilers } from '~/lib/spoilers'
@@ -28,6 +34,13 @@ interface ItemRecord {
   name: string
   spoiler?: boolean
   unreleased?: boolean
+  /** Furniture colour groups: the game's own id per colourway. */
+  variant_ids?: string[]
+  variant_recipes_differ?: true
+  /** Wardrobe: how many colours, which slot, and whether you start with it. */
+  variant_count?: number
+  worn_on?: string
+  default_unlocked?: true
   icon_key: string | null
   category: string
   sell_value: number | null
@@ -71,6 +84,20 @@ interface ShopRecord {
   name: string
   location_id: string | null
   owner_character_id: string | null
+  /** Day-gated shops — the Saturday Market stalls. Empty means always open. */
+  hours: { days: string[] }[]
+  stock: { item_id: string; rotation: boolean }[]
+}
+
+/** `['sat']` -> "Saturdays". Only whole days are ever stated on a shop. */
+const DAY_NAMES: Record<string, string> = {
+  mon: 'Mondays',
+  tue: 'Tuesdays',
+  wed: 'Wednesdays',
+  thu: 'Thursdays',
+  fri: 'Fridays',
+  sat: 'Saturdays',
+  sun: 'Sundays',
 }
 
 interface SealRecord {
@@ -78,6 +105,27 @@ interface SealRecord {
   name: string
   quest_id: string
   required_items: { item_id: string; quantity: number }[]
+}
+
+/** The fish facet — only the shadow is rendered here. */
+interface FishFacetLite {
+  item_id: string
+  shadow_size: string | null
+}
+
+/** A production machine — data only its own item page renders. */
+interface MachineRecord {
+  id: string
+  item_id: string
+  days_to_produce: number | null
+  capacity: number | null
+  accepts_item_ids: string[]
+  yields: { input_rarity: string; item_ids: string[] }[]
+  requests: {
+    item_id: string
+    season: string | null
+    requires: { type: string; key: string }[]
+  }[]
 }
 
 interface QuestLite {
@@ -116,6 +164,8 @@ export function ItemRoute() {
     seals: SealRecord[]
     quests: QuestLite[]
     board: BoardRequest[]
+    machines: MachineRecord[]
+    fishFacets: FishFacetLite[]
     loading: boolean
   }>({
     item: null,
@@ -127,6 +177,8 @@ export function ItemRoute() {
     seals: [],
     quests: [],
     board: [],
+    machines: [],
+    fishFacets: [],
     loading: true,
   })
   // What has already been handed in, one Set per progress domain. Loaded with
@@ -136,7 +188,7 @@ export function ItemRoute() {
   useEffect(() => {
     let live = true
     Promise.all([
-      loadDataset<ItemRecord>('items'),
+      loadItemRecord<ItemRecord>(id),
       loadDisplayIndex(),
       loadDataset<GiftPrefs>('gift_prefs'),
       loadDataset<{ id: string; name: string }>('locations'),
@@ -144,6 +196,8 @@ export function ItemRoute() {
       loadDataset<RecipeRecord>('recipes'),
       loadDataset<SealRecord>('seals'),
       loadDataset<QuestLite>('quests'),
+      loadDataset<MachineRecord>('machines'),
+      loadDataset<FishFacetLite>('fish'),
       loadRequestBoard(),
       Promise.all(
         (['museum', 'seal', 'quest', 'request'] as const).map(
@@ -151,22 +205,39 @@ export function ItemRoute() {
         ),
       ),
     ])
-      .then(([items, index, prefs, locations, shops, recipes, seals, quests, board, done]) => {
-        if (!live) return
-        setState({
-          item: items.find((i) => i.id === id) ?? null,
+      .then(
+        ([
+          item,
           index,
           prefs,
-          names: new Map(locations.map((l) => [l.id, l.name])),
-          shops: new Map(shops.map((s) => [s.id, s])),
+          locations,
+          shops,
           recipes,
           seals,
           quests,
-          board: board.requests,
-          loading: false,
-        })
-        setTicked(Object.fromEntries(done))
-      })
+          machines,
+          fishFacets,
+          board,
+          done,
+        ]) => {
+          if (!live) return
+          setState({
+            item,
+            index,
+            prefs,
+            names: new Map(locations.map((l) => [l.id, l.name])),
+            shops: new Map(shops.map((s) => [s.id, s])),
+            recipes,
+            seals,
+            quests,
+            board: board.requests,
+            machines,
+            fishFacets,
+            loading: false,
+          })
+          setTicked(Object.fromEntries(done))
+        },
+      )
       .catch(() => live && setState((s) => ({ ...s, loading: false })))
     return () => {
       live = false
@@ -174,7 +245,20 @@ export function ItemRoute() {
   }, [id])
 
   const spoilers = useSpoilers()
-  const { item, index, prefs, names, shops, recipes, seals, quests, board, loading } = state
+  const {
+    item,
+    index,
+    prefs,
+    names,
+    shops,
+    recipes,
+    seals,
+    quests,
+    board,
+    machines,
+    fishFacets,
+    loading,
+  } = state
 
   // Everything that wants this item handed over. Boolean ticks — the store is
   // a CRDT of {key, signed-timestamp} and cannot count to three — with the
@@ -249,6 +333,7 @@ export function ItemRoute() {
     void setDone('museum', id, now)
   }
   const recipe = item === null ? undefined : recipes.find((r) => r.output.item_id === item.id)
+  const machine = item === null ? undefined : machines.find((m) => m.item_id === item.id)
   // The other direction: everything this item goes into. Matched on the item
   // id alone — a recipe wanting "any fish" is a category, not this item, and
   // claiming it would overstate what we know.
@@ -321,15 +406,66 @@ export function ItemRoute() {
           <h1 className="truncate text-2xl">{item.name}</h1>
           <p className="mt-0.5 text-ink-mute text-sm">
             {categoryLabelOne(item.category)}
+            {item.worn_on !== undefined && (
+              <> · worn on the {(WORN_ON_LABELS[item.worn_on] ?? item.worn_on).toLowerCase()}</>
+            )}
             {item.sell_value !== null && (
               <>
                 {' · sells for '}
                 <span data-numeral>{item.sell_value}t</span>
               </>
             )}
+            {/* A wardrobe item cannot be sold back, so its price is what it
+                costs — the one category where buy_value is the headline. */}
+            {item.sell_value === null && item.buy_value !== null && (
+              <>
+                {' · costs '}
+                <span data-numeral>{item.buy_value}t</span>
+              </>
+            )}
           </p>
         </div>
       </header>
+
+      {/* What the fish looks like from the shore — the game shows a sized
+          silhouette in the water, and knowing which shadow to chase is half
+          the hunt. Rendered only when the facet states a size. */}
+      {item.category === 'fish' &&
+        (() => {
+          const shadow = fishFacets.find((f) => f.item_id === item.id)?.shadow_size
+          if (shadow == null) return null
+          return (
+            <p className="mt-2 flex items-center gap-2.5 text-ink-mute text-sm">
+              <ItemIcon iconKey={`ui/fish_shadow_${shadow}`} name={`${shadow} shadow`} size="md" />
+              <span>
+                Shows a <span className="text-ink">{shadow}</span> shadow in the water.
+              </span>
+            </p>
+          )
+        })()}
+
+      {/* The wardrobe's own two facts: how many colours the palette offers,
+          and whether you already own it from character creation — which is
+          why nothing sells it. */}
+      {(item.variant_count !== undefined || item.default_unlocked === true) && (
+        <p className="mt-2 text-ink-mute text-sm">
+          {item.variant_count !== undefined && (
+            <>
+              Comes in <span data-numeral>{item.variant_count}</span> colours.{' '}
+            </>
+          )}
+          {item.default_unlocked === true && 'Yours from the start — no shop sells it.'}
+        </p>
+      )}
+
+      {item.variant_ids !== undefined && item.variant_ids.length > 1 && (
+        <p className="mt-2 text-ink-mute text-sm">
+          Comes in <span data-numeral>{item.variant_ids.length}</span> colours and styles.{' '}
+          {item.variant_recipes_differ === true
+            ? 'Colours can ask for different materials — the recipe below makes the base one.'
+            : 'One recipe covers them all; you pick the look when crafting.'}
+        </p>
+      )}
 
       {item.museum?.donatable === true && (
         <label
@@ -369,20 +505,18 @@ export function ItemRoute() {
                   )}
                 </p>
                 <p className="text-ink-mute text-xs">
-                  {window.locations.length === 0
-                    ? 'place unknown'
-                    : window.locations.map((l, i) => (
-                        <span key={l}>
-                          {i > 0 && ' · '}
-                          <Link
-                            to="/place/$id"
-                            params={{ id: l }}
-                            className="underline decoration-rule underline-offset-4 hover:text-ink"
-                          >
-                            {names.get(l) ?? l.replace(/_/g, ' ')}
-                          </Link>
-                        </span>
-                      ))}
+                  {window.locations.map((l, i) => (
+                    <span key={l}>
+                      {i > 0 && ' · '}
+                      <Link
+                        to="/place/$id"
+                        params={{ id: l }}
+                        className="underline decoration-rule underline-offset-4 hover:text-ink"
+                      >
+                        {names.get(l) ?? l.replace(/_/g, ' ')}
+                      </Link>
+                    </span>
+                  ))}
                   {window.requires.length > 0 && (
                     <span className="text-ink-faint">
                       {' — needs '}
@@ -420,30 +554,24 @@ export function ItemRoute() {
                       {season}
                     </span>
                   ))}
-                  {window.time === null ? (
-                    // Two different nulls. 'Not applicable' is a fact — dig
-                    // spots sit there all day — and renders plainly; 'unknown'
-                    // keeps the dashed hedge, because nobody has checked.
-                    window.time_precision === 'not_applicable' ? (
-                      <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
-                        any time
-                      </span>
-                    ) : (
-                      <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-                        time unknown
-                      </span>
-                    )
-                  ) : (
-                    window.time.map((range) => (
-                      <span
-                        key={`${range.from}-${range.to}`}
-                        data-numeral
-                        className="text-ink-faint text-[0.625rem]"
-                      >
-                        {range.from}–{range.to}
-                      </span>
-                    ))
-                  )}
+                  {window.time === null
+                    ? // Two different nulls. 'Not applicable' is a fact — dig
+                      // spots sit there all day — and renders plainly; 'unknown'
+                      // renders nothing, and data_gaps still records the hole.
+                      window.time_precision === 'not_applicable' && (
+                        <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
+                          any time
+                        </span>
+                      )
+                    : window.time.map((range) => (
+                        <span
+                          key={`${range.from}-${range.to}`}
+                          data-numeral
+                          className="text-ink-faint text-[0.625rem]"
+                        >
+                          {range.from}–{range.to}
+                        </span>
+                      ))}
                   {/* An inference must never render identically to a fact. */}
                   {window.confidence === 'inferred' && (
                     <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
@@ -539,6 +667,94 @@ export function ItemRoute() {
         </Section>
       )}
 
+      {/* The machine's own rules, on the machine's own page — which bees or
+          bugs it takes, what each rarity turns into, and what it asks for
+          season by season. The products' pages already carry the reverse as
+          an availability window ("From an apiary"). */}
+      {machine !== undefined && (
+        <Section title="What it does">
+          <p className="text-ink-mute text-sm">
+            Put something in and come back
+            {machine.days_to_produce !== null && (
+              <>
+                {' '}
+                <span data-numeral>{machine.days_to_produce}</span> days later
+              </>
+            )}
+            {machine.capacity !== null && (
+              <>
+                {' — it holds '}
+                <span data-numeral>{machine.capacity}</span> at a time
+              </>
+            )}
+            . Rarer inputs yield finer output.
+          </p>
+
+          <h3 className="mt-3 font-display font-semibold text-ink text-sm">What it takes</h3>
+          <ItemLinkList ids={machine.accepts_item_ids} index={index} />
+
+          <h3 className="mt-3 font-display font-semibold text-ink text-sm">What comes out</h3>
+          <ul className="mt-1 flex flex-col gap-0.5 text-ink-mute text-sm">
+            {machine.yields
+              .filter((tier) => tier.item_ids.length > 0)
+              .map((tier) => (
+                <li key={tier.input_rarity}>
+                  {tier.input_rarity} →{' '}
+                  {tier.item_ids.map((outId, i) => (
+                    <span key={outId}>
+                      {i > 0 && ' or '}
+                      <Link
+                        to="/item/$id"
+                        params={{ id: outId }}
+                        className="text-ink underline decoration-rule underline-offset-4 hover:decoration-current"
+                      >
+                        {index[outId]?.n ?? outId.replace(/_/g, ' ')}
+                      </Link>
+                    </span>
+                  ))}
+                </li>
+              ))}
+          </ul>
+
+          {machine.requests.length > 0 && (
+            <>
+              <h3 className="mt-3 font-display font-semibold text-ink text-sm">What it asks for</h3>
+              <p className="text-ink-faint text-xs">
+                It requests one of these now and then — a bonus, not a requirement.
+              </p>
+              <ul className="mt-1 flex flex-col gap-1 text-ink-mute text-sm">
+                {SEASONS.filter((season) =>
+                  machine.requests.some((request) => request.season === season),
+                ).map((season) => (
+                  <li key={season}>
+                    <span
+                      className="mr-1.5 rounded-pill px-1.5 py-0.5 text-[0.625rem]"
+                      style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
+                    >
+                      {season}
+                    </span>
+                    {machine.requests
+                      .filter((request) => request.season === season)
+                      .map((request, i) => (
+                        <span key={request.item_id}>
+                          {i > 0 && ' · '}
+                          <Link
+                            to="/item/$id"
+                            params={{ id: request.item_id }}
+                            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                          >
+                            {index[request.item_id]?.n ?? request.item_id.replace(/_/g, ' ')}
+                          </Link>
+                        </span>
+                      ))}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </Section>
+      )}
+
       {/* There is no shop route, but a shop is a building at a place with an
           owner — and both of those have pages, which is what someone reading
           "the General Store sells this" wants to tap next. */}
@@ -550,6 +766,10 @@ export function ItemRoute() {
               if (shop === undefined) {
                 return <li key={shopId}>{shopId.replace(/_/g, ' ')}</li>
               }
+              const days = [
+                ...new Set(shop.hours.flatMap((h) => h.days.map((d) => DAY_NAMES[d] ?? d))),
+              ]
+              const rotates = shop.stock.some((line) => line.item_id === item.id && line.rotation)
               return (
                 <li key={shopId}>
                   <span className="text-ink">{shop.name}</span>
@@ -577,6 +797,12 @@ export function ItemRoute() {
                           shop.owner_character_id.replace(/_/g, ' ')}
                       </Link>
                     </>
+                  )}
+                  {(days.length > 0 || rotates) && (
+                    <span className="text-ink-faint">
+                      {days.length > 0 && <> — {days.join(', ')} only</>}
+                      {rotates && <> · rotating stock</>}
+                    </span>
                   )}
                 </li>
               )
@@ -734,5 +960,47 @@ export function ItemRoute() {
 
       <NotRecorded gaps={item.data_gaps} wikiPage={item.wiki_page} />
     </Column>
+  )
+}
+
+/**
+ * A capped, linked run of item names. The terrarium accepts 86 different
+ * bugs — a count and a tap beats 86 rows, and nothing is hidden: the button
+ * says exactly how many more there are.
+ */
+function ItemLinkList({ ids, index }: { ids: string[]; index: DisplayIndex }) {
+  const [expanded, setExpanded] = useState(false)
+  const named = ids
+    .map((id) => ({ id, name: index[id]?.n ?? id.replace(/_/g, ' ') }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+  const shown = expanded ? named : named.slice(0, 10)
+
+  return (
+    <p className="mt-1 text-ink-mute text-sm">
+      {shown.map((entry, i) => (
+        <span key={entry.id}>
+          {i > 0 && ' · '}
+          <Link
+            to="/item/$id"
+            params={{ id: entry.id }}
+            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+          >
+            {entry.name}
+          </Link>
+        </span>
+      ))}
+      {named.length > shown.length && (
+        <>
+          {' '}
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            className="tap-target text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+          >
+            and {named.length - shown.length} more
+          </button>
+        </>
+      )}
+    </p>
   )
 }

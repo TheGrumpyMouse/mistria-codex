@@ -17,13 +17,15 @@ will be removed on request from the rights holder — open an issue at
 Every file lives under `assets/game/` and is listed here, so removing all of
 it is `git rm -r assets/game` and a rebuild.
 
-All files were fetched from the community wiki at <https://fieldsofmistria.wiki.gg>, which hosts them
-and does not own them. The wiki’s **text** is CC BY-SA; the game’s **art** is not,
-and nothing in this repository treats it as though it were.
+Files were fetched from the community wiki at <https://fieldsofmistria.wiki.gg>, which hosts them
+and does not own them, except those marked **game files** below: art the wiki
+hosts no file for, read from an owned copy of the game. The wiki’s **text** is
+CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
+this repository treats it as though it were.
 
-**1276 files.**
+**2552 files.**
 
-## Items (1123)
+## Items (2105)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -984,6 +986,988 @@ and nothing in this repository treats it as though it were.
 | `item/spirit-mushroom-tea.png` | Spirit mushroom tea.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirit%20mushroom%20tea.png) |
 | `item/spirit-mushroom.png` | Spirit mushroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirit%20mushroom.png) |
 | `item/spirula-shell.png` | Spirula shell.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirula%20shell.png) |
+| `item/spr_ui_item_alda_bronze_sword.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_bronze_sword.png | game files (NPC Studio) |
+| `item/spr_ui_item_alda_clay_pot.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_clay_pot.png | game files (NPC Studio) |
+| `item/spr_ui_item_alda_feather_pendant.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_feather_pendant.png | game files (NPC Studio) |
+| `item/spr_ui_item_alda_gem_bracelet.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_gem_bracelet.png | game files (NPC Studio) |
+| `item/spr_ui_item_alda_mural_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_mural_tablet.png | game files (NPC Studio) |
+| `item/spr_ui_item_alda_pot_replica_blue.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_alda_pot_replica_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_aldarian_gauntlet.png` | animations/Item Icons/Archaeology/spr_ui_item_aldarian_gauntlet.png | game files (NPC Studio) |
+| `item/spr_ui_item_aldarian_sword.png` | animations/Item Icons/Archaeology/spr_ui_item_aldarian_sword.png | game files (NPC Studio) |
+| `item/spr_ui_item_aldarian_war_banner.png` | animations/Item Icons/Archaeology/spr_ui_item_aldarian_war_banner.png | game files (NPC Studio) |
+| `item/spr_ui_item_amber_trapped_insect.png` | animations/Item Icons/Archaeology/spr_ui_item_amber_trapped_insect.png | game files (NPC Studio) |
+| `item/spr_ui_item_ancient_crystal_goblet.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_crystal_goblet.png | game files (NPC Studio) |
+| `item/spr_ui_item_ancient_gold_coin.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_gold_coin.png | game files (NPC Studio) |
+| `item/spr_ui_item_ancient_horn_circlet.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_horn_circlet.png | game files (NPC Studio) |
+| `item/spr_ui_item_ancient_royal_scepter.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_royal_scepter.png | game files (NPC Studio) |
+| `item/spr_ui_item_ancient_stone_lantern.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_stone_lantern.png | game files (NPC Studio) |
+| `item/spr_ui_item_basic_misc_shipping_bin.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_basic_misc_shipping_bin.png | game files (NPC Studio) |
+| `item/spr_ui_item_big_bell.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_big_bell.png | game files (NPC Studio) |
+| `item/spr_ui_item_black_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_black_tablet.png | game files (NPC Studio) |
+| `item/spr_ui_item_bug_pheromone_legendary.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_legendary.png | game files (NPC Studio) |
+| `item/spr_ui_item_bug_pheromone_rare.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_rare.png | game files (NPC Studio) |
+| `item/spr_ui_item_bug_pheromone_uncommon.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_uncommon.png | game files (NPC Studio) |
+| `item/spr_ui_item_caldosian_breastplate.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_breastplate.png | game files (NPC Studio) |
+| `item/spr_ui_item_caldosian_drinking_horn.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_drinking_horn.png | game files (NPC Studio) |
+| `item/spr_ui_item_caldosian_emperor_bust.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_emperor_bust.png | game files (NPC Studio) |
+| `item/spr_ui_item_caldosian_sword.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_sword.png | game files (NPC Studio) |
+| `item/spr_ui_item_clay_amphora.png` | animations/Item Icons/Archaeology/spr_ui_item_clay_amphora.png | game files (NPC Studio) |
+| `item/spr_ui_item_coin_lump.png` | animations/Item Icons/Archaeology/spr_ui_item_coin_lump.png | game files (NPC Studio) |
+| `item/spr_ui_item_completely_wrong_map.png` | animations/Item Icons/Archaeology/spr_ui_item_completely_wrong_map.png | game files (NPC Studio) |
+| `item/spr_ui_item_crab_statue.png` | animations/Item Icons/Archaeology/spr_ui_item_crab_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_criminal_confession.png` | animations/Item Icons/Archaeology/spr_ui_item_criminal_confession.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_apple.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_apple.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_basil.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_basil.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_beet.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_beet.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_broccoli.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_broccoli.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_burdock_root.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_burdock_root.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cabbage.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cabbage.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_carrot.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_carrot.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_catmint.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_catmint.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cauliflower.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cauliflower.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_celosia.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_celosia.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cherry.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cherry.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_chickpea.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_chickpea.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_chili_pepper.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_chili_pepper.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_chrysanthemum.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_chrysanthemum.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_coconut.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_coconut.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_corn.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_corn.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cosmos.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cosmos.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cranberry.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cranberry.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_cucumber.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_cucumber.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_daffodil.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_daffodil.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_daikon_radish.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_daikon_radish.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_daisy.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_daisy.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_dill.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_dill.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_frost_lily.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_frost_lily.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_garlic.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_garlic.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_heather.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_heather.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_iris.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_iris.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_jasmine.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_jasmine.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_lemon.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_lemon.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_lilac.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_lilac.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_marigold.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_marigold.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_moon_fruit.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_moon_fruit.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_mystery_bag.png` | animations/Item Icons/Placeables/spr_ui_item_crop_sign_mystery_bag.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_night_queen.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_night_queen.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_onion.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_onion.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_orange.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_oregano.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_oregano.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_peach.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_peach.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_pear.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_pear.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_peas.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_peas.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_poinsettia.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_poinsettia.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_pomegranate.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_pomegranate.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_potato.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_potato.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_pumpkin.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_pumpkin.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_rice.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_rice.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_rosemary.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_rosemary.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_sage.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_sage.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_snapdragon.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_snapdragon.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_snow_peas.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_snow_peas.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_snowdrop_anemone.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_snowdrop_anemone.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_strawberry.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_strawberry.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_sugar_cane.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_sugar_cane.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_sunflower.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_sunflower.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_sweet_potato.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_sweet_potato.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_tea.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_tea.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_temple_flower.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_temple_flower.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_thyme.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_thyme.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_tomato.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_tomato.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_tulip.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_tulip.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_turnip.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_turnip.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_viola.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_viola.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_watermelon.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_watermelon.png | game files (NPC Studio) |
+| `item/spr_ui_item_crop_sign_wheat.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_wheat.png | game files (NPC Studio) |
+| `item/spr_ui_item_crystal_apple.png` | animations/Item Icons/Archaeology/spr_ui_item_crystal_apple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_animated_waterfall_v1.png` | animations/Item Icons/Placeables/Furniture/Animated/spr_ui_item_decor_animated_waterfall_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_bread_basket_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_bread_basket_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_cake_case_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cake_case_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_cake_slice_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cake_slice_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_cake_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cake_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_cookie_jar_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cookie_jar_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bakery_cutting_board_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cutting_board_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_beach_campfire.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_beach_campfire.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_pet_bed.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_blue_pet_bed.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_pet_dish.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_blue_pet_dish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_accessory_plant_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_accessory_plant_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_accessory_plant_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_high_stand_black.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_high_stand_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_high_stand_dark_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_high_stand_dark_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_high_stand_light_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_high_stand_light_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_high_stand_white.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_high_stand_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_large_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_large_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_large_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_large_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_large_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_large_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_cabinet_black.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_cabinet_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_cabinet_dark_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_cabinet_dark_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_cabinet_light_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_cabinet_light_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_cabinet_white.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_cabinet_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_stand_black.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_stand_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_stand_dark_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_stand_dark_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_stand_light_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_stand_light_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_stand_white.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_stand_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_table_black.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_table_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_table_dark_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_table_dark_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_table_light_brown.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_table_light_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_low_table_white.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_low_table_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_medium_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_medium_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_medium_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_medium_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_medium_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_medium_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_potted_landscape_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_potted_landscape_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_potted_landscape_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_potted_landscape_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_potted_landscape_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_potted_landscape_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_potted_landscape_v4.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_potted_landscape_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_small_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_small_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_small_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_small_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_small_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_small_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_small_v4.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_small_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bonsai_void_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_void_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_broken_pillar_v1_gray.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_broken_pillar_v1_gray.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bumblebee_plushie.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_bumblebee_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_butterfly_painting_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_butterfly_painting_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_butterfly_wall_lamp_bronze.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_butterfly_wall_lamp_bronze.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_basket.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_basket.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_beer.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_beer.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_box_medium_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_box_medium_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_box_small_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_box_small_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_candle_chamberstick.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_candle_chamberstick.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_candle.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_candle.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_absinthe.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_absinthe.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_cocktail.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_cocktail.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_lemonade.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_lemonade.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_milk.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_milk.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_water.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_water.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_glass_whisky.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_glass_whisky.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_green_bottle.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_green_bottle.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_jar_large.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_jar_large.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_jar_medium.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_jar_medium.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_jar_pair.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_jar_pair.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_jar_small.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_jar_small.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_notepad_white.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_notepad_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_paper_stack.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_paper_stack.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_small_vase_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_small_vase_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_tea_black.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_tea_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_tea_green.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_tea_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_wine_glass_red.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_wine_glass_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_wine_glass_rose.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_wine_glass_rose.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_clutter_wine_glass_white.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_wine_glass_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_coffee_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_coffee_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cooking_frying_pan_v1.png` | animations/Item Icons/Placeables/Furniture/Cooking Set/spr_ui_item_decor_cooking_frying_pan_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cooking_hanging_pans_v1.png` | animations/Item Icons/Placeables/Furniture/Cooking Set/spr_ui_item_decor_cooking_hanging_pans_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cooking_stockpot_v1.png` | animations/Item Icons/Placeables/Furniture/Cooking Set/spr_ui_item_decor_cooking_stockpot_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cooking_tea_kettle_v1.png` | animations/Item Icons/Placeables/Furniture/Cooking Set/spr_ui_item_decor_cooking_tea_kettle_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cottage_garden_arch_v1.png` | animations/Item Icons/Placeables/Furniture/Cottage Garden/spr_ui_item_decor_cottage_garden_arch_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cottage_garden_planter_v1.png` | animations/Item Icons/Placeables/Furniture/Cottage Garden/spr_ui_item_decor_cottage_garden_planter_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cottage_garden_shed_v1.png` | animations/Item Icons/Placeables/Furniture/Cottage Garden/spr_ui_item_decor_cottage_garden_shed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cottage_garden_trellis_v1.png` | animations/Item Icons/Placeables/Furniture/Cottage Garden/spr_ui_item_decor_cottage_garden_trellis_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cottage_garden_workbench_v1.png` | animations/Item Icons/Placeables/Furniture/Cottage Garden/spr_ui_item_decor_cottage_garden_workbench_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_basic_v1.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_basic_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_basic_v2.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_basic_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cabin_cherry.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cabin_cherry.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cabin_oak.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cabin_oak.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cabin_walnut.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cabin_walnut.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cake_chocolate.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cake_chocolate.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cake_double_chocolate.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cake_double_chocolate.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cake_strawberry.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cake_strawberry.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cottage_v1.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cottage_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_cottage_v2.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cottage_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_counter_kitchen_blue.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_kitchen_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_craft_closed_sewing_tin_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_closed_sewing_tin_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_craft_fabric_rack_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_fabric_rack_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_craft_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_craft_yarn_basket_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_yarn_basket_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cream_pet_bed.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_cream_pet_bed.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cream_pet_dish.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_cream_pet_dish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_ash_mushroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_ash_mushroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_basil.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_basil.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_beet.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_beet.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_blue_conch_shell.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_blue_conch_shell.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_breath_of_flame.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_breath_of_flame.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_broccoli.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_broccoli.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_burdock_root.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_burdock_root.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cabbage.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cabbage.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_carrot.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_carrot.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_catmint.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_catmint.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cauliflower.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cauliflower.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cave_kelp.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cave_kelp.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_celosia.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_celosia.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_chestnut.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_chestnut.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_chickpea.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_chickpea.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_chili_pepper.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_chili_pepper.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_chirping_fern.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_chirping_fern.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_chrysanthemum.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_chrysanthemum.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_corn.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_corn.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cosmos.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cosmos.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cranberry.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cranberry.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_crocus.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_crocus.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_crystal_berries.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_crystal_berries.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_crystal_rose.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_crystal_rose.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_cucumber.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_cucumber.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_daffodil.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_daffodil.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_daikon_radish.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_daikon_radish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_daisy.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_daisy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_dandelion.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_dandelion.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_dill.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_dill.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_earthshroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_earthshroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_essence_blossom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_essence_blossom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_ethereal_grass.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_ethereal_grass.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_fennel.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_fennel.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_fiddlehead.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_fiddlehead.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_flame_pepper.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_flame_pepper.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_fog_orchid.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_fog_orchid.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_frost_lily.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_frost_lily.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_garlic.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_garlic.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_heather.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_heather.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_holly.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_holly.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_horseradish.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_horseradish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_hot_potato.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_hot_potato.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_ice_block.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_ice_block.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_iris.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_iris.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_jasmine.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_jasmine.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_lava_chestnut.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_lava_chestnut.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_lilac.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_lilac.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_marigold.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_marigold.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_middlemist.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_middlemist.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_mines_mussels.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_mines_mussels.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_moon_fruit.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_moon_fruit.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_morel_mushroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_morel_mushroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_mystery_bag.png` | animations/Item Icons/Placeables/spr_ui_item_decor_crop_faux_mystery_bag.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_narrows_moss.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_narrows_moss.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_nettle.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_nettle.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_night_queen.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_night_queen.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_onion.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_onion.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_oregano.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_oregano.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_oyster_mushroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_oyster_mushroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_peas.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_peas.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_pineshroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_pineshroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_pink_scallop_shell.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_pink_scallop_shell.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_poinsettia.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_poinsettia.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_potato.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_potato.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_pumpkin.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_pumpkin.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_rice.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_rice.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_rockroot.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_rockroot.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_rosemary.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_rosemary.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sage.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sage.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sand_dollar.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sand_dollar.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sea_grapes.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sea_grapes.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sesame.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sesame.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_shadow_flower.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_shadow_flower.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_shale_grass.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_shale_grass.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_snapdragon.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_snapdragon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_snow_peas.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_snow_peas.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_snowdrop_anemone.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_snowdrop_anemone.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_spell_fruit.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_spell_fruit.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_spirit_mushroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_spirit_mushroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_spirula_shell.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_spirula_shell.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_strawberry.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_strawberry.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sugar_cane.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sugar_cane.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sunflower.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sunflower.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sweet_potato.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sweet_potato.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_sweetroot.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_sweetroot.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_tea.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_tea.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_temple_flower.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_temple_flower.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_thorn_vine.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_thorn_vine.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_thyme.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_thyme.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_tide_lettuce.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_tide_lettuce.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_tomato.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_tomato.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_tulip.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_tulip.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_turnip.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_turnip.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_upper_mines_mushroom.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_upper_mines_mushroom.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_viola.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_viola.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_void_herb.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_void_herb.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_walnut.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_walnut.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_watermelon.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_watermelon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_wheat.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_wheat.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_wild_leek.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_wild_leek.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crop_faux_written_root.png` | animations/Item Icons/Placeables/Furniture/Faux Crops/spr_ui_item_decor_crop_faux_written_root.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_crystal_string_lights_blue.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_crystal_string_lights_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_chest.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_chest.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_fireplace.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_fireplace.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_lamp.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_lamp.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_mosaic_flooring.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_mosaic_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_relief_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_relief_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_road_wall.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_road_wall.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_ruins_pillar_v1.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_ruins_pillar_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_ruins_pillar_v2.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_ruins_pillar_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_stained_glass_window_v1.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_stained_glass_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_stained_glass_window_v2.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_stained_glass_window_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_talon_chair.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_talon_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_wall_head_piece.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_wall_head_piece.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_wall_tail_piece.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_wall_tail_piece.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_water_altar_v1.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_water_altar_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_dragon_water_altar_v2.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_water_altar_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_earth_seal_altar.png` | animations/Item Icons/Placeables/Furniture/Dragon Altar/spr_ui_item_decor_earth_seal_altar.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_espresso_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_espresso_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_firefly_string_lights_blue.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_firefly_string_lights_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_fish_plushie.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_decor_fish_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_floor_tile_small_01.png` | animations/Item Icons/Placeables/Furniture/Color Paving Stones/spr_ui_item_decor_floor_tile_small_01.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gryphon_statue_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_gryphon_statue_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_jadeite_cabbage.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_jadeite_cabbage.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_jadeite_daikon.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_jadeite_daikon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_garlic_braid.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_garlic_braid.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_hanging_onion_basket.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_hanging_onion_basket.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_herb_planter_v1.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_herb_planter_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_mixing_bowls_v1.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_mixing_bowls_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_oil_and_vinegar_basket_v1.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_oil_and_vinegar_basket_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_salt_and_pepper_shakers.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_salt_and_pepper_shakers.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_scale_blue.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_scale_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_kitchen_utensil_holder_blue.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_utensil_holder_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_large_dragon_rug.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_large_dragon_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_large_paving_stone_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_large_paving_stone_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_medium_dragon_rug.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_medium_dragon_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_mistria_history_book.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_history_book.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_mistria_history_scroll.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_history_scroll.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_mistria_wall_map.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_wall_map.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_moon_gate_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_moon_gate_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_mournful_clown_painting.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_mournful_clown_painting.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_obelisk_beige.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_obelisk_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_octopus_plushie.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_decor_octopus_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_cabinet_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_cabinet_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_cabinet_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_cabinet_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_cabinet_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_cabinet_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_cabinet_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_cabinet_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_coffee_table_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_coffee_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_coffee_table_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_coffee_table_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_coffee_table_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_coffee_table_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_coffee_table_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_coffee_table_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_flooring_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_flooring_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_flooring_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_flooring_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_flooring_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_flooring_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_burner_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_burner_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_burner_green.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_burner_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_burner_purple.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_burner_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_burner_white.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_burner_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_stick_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_stick_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_stick_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_stick_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_incense_stick_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_incense_stick_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_privacy_screen_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_privacy_screen_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_privacy_screen_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_privacy_screen_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_privacy_screen_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_privacy_screen_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_privacy_screen_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_privacy_screen_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_privacy_screen_v5.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_privacy_screen_v5.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_large_rectangle_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_large_rectangle_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_large_round_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_large_round_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_large_square_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_large_square_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_medium_round_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_medium_round_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_medium_square_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_medium_square_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_rug_small_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Rug/spr_ui_item_decor_ornate_rug_small_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_vase_blue.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_vase_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_vase_green.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_vase_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_vase_purple.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_vase_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_vase_white.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_vase_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_wallpaper_v2.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_wallpaper_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_wallpaper_v3.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_wallpaper_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_ornate_wallpaper_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_wallpaper_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_pink_pet_bed.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_pink_pet_bed.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_pink_pet_dish.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_pink_pet_dish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spooky_haybale.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_spooky_haybale.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_basket.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_basket.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_breath_of_spring_wreath.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_breath_of_spring_wreath.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_flower_chest.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_flower_chest.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_large_planter.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_large_planter.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_planter.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_planter.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_spring_festival_wreath.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_wreath.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_star_cushion_blue.png` | animations/Item Icons/Placeables/Furniture/Shooting Star Festival/spr_ui_item_decor_star_cushion_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_star_lantern_blue.png` | animations/Item Icons/Placeables/Furniture/Shooting Star Festival/spr_ui_item_decor_star_lantern_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_star_viewing_blanket_blue.png` | animations/Item Icons/Placeables/Furniture/Shooting Star Festival/spr_ui_item_decor_star_viewing_blanket_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_bird_house_red.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_bird_house_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_bridge.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_bridge.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_dirt_clear.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_dirt_clear.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_dirt_dot_one.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_dirt_dot_one.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_dirt_dot_three.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_dirt_dot_three.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_dirt_dot_two.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_dirt_dot_two.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_field_clear.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_field_clear.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_field_flower_two.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_field_flower_two.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_field_flower.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_field_flower.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_field_grass_two.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_field_grass_two.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_field_grass.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_field_grass.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_potted_plant.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_potted_plant.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_scarecrow.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_scarecrow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_stone_path_single.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_stone_path_single.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_stone_path.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_stone_path.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_well.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_well.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_wheelbarrow.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_wheelbarrow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_starter_wood_fence.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_starter_wood_fence.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_stone_bench_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_stone_bench_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_stone_dragon_figure_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_stone_dragon_figure_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_stone_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_stone_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_stone_storage_chest_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_stone_storage_chest_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_stone_table_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_stone_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_strange_garden_stone_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_strange_garden_stone_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_strange_garden_stone_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_strange_garden_stone_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_training_dummy_rockclod.png` | animations/Item Icons/Placeables/Furniture/Training Dummy/spr_ui_item_decor_training_dummy_rockclod.png | game files (NPC Studio) |
+| `item/spr_ui_item_dense_water.png` | animations/Item Icons/Archaeology/spr_ui_item_dense_water.png | game files (NPC Studio) |
+| `item/spr_ui_item_diamond_backed_mirror.png` | animations/Item Icons/Archaeology/spr_ui_item_diamond_backed_mirror.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_claw.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_claw.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_forged_bracelet.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_forged_bracelet.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_pact_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_pact_tablet.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_priestess_fountain_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_dragon_priestess_fountain_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_scale.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_scale.png | game files (NPC Studio) |
+| `item/spr_ui_item_dragon_statue_replica_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_dragon_statue_replica_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_earth_infused_stone.png` | animations/Item Icons/Archaeology/spr_ui_item_earth_infused_stone.png | game files (NPC Studio) |
+| `item/spr_ui_item_engagement_ring.png` | animations/Item Icons/Date/spr_ui_item_engagement_ring.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_cloth_shoes.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_cloth_shoes.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_crystal_boots.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_boots.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_crystal_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_helmet.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_crystal_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_ring.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_crystal_tassets.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_tassets.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_heros_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_heros_ring.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_scrap_metal_boots.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_boots.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_scrap_metal_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_helmet.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_scrap_metal_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_ring.png | game files (NPC Studio) |
+| `item/spr_ui_item_equipment_verdigris_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_verdigris_helmet.png | game files (NPC Studio) |
+| `item/spr_ui_item_espresso_machine_gold.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_espresso_machine_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_faceted_rock_gem.png` | animations/Item Icons/Archaeology/spr_ui_item_faceted_rock_gem.png | game files (NPC Studio) |
+| `item/spr_ui_item_family_crest_pendant.png` | animations/Item Icons/Archaeology/spr_ui_item_family_crest_pendant.png | game files (NPC Studio) |
+| `item/spr_ui_item_fence_picket.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_fence_picket.png | game files (NPC Studio) |
+| `item/spr_ui_item_fence_stone_wall.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_fence_stone_wall.png | game files (NPC Studio) |
+| `item/spr_ui_item_fire_crystal.png` | animations/Item Icons/Archaeology/spr_ui_item_fire_crystal.png | game files (NPC Studio) |
+| `item/spr_ui_item_fish_bait_rare.png` | animations/Item Icons/Misc/spr_ui_item_fish_bait_rare.png | game files (NPC Studio) |
+| `item/spr_ui_item_fish_bait_uncommon.png` | animations/Item Icons/Misc/spr_ui_item_fish_bait_uncommon.png | game files (NPC Studio) |
+| `item/spr_ui_item_flint_arrowhead.png` | animations/Item Icons/Archaeology/spr_ui_item_flint_arrowhead.png | game files (NPC Studio) |
+| `item/spr_ui_item_fossilized_egg.png` | animations/Item Icons/Archaeology/spr_ui_item_fossilized_egg.png | game files (NPC Studio) |
+| `item/spr_ui_item_fossilized_mandrake_root.png` | animations/Item Icons/Archaeology/spr_ui_item_fossilized_mandrake_root.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_adeline_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Adeline/spr_ui_item_furniture_adeline_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_adeline_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Adeline/spr_ui_item_furniture_adeline_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_adeline_hobby_table.png` | animations/Item Icons/Placeables/Spouse Furniture/Adeline/spr_ui_item_furniture_adeline_hobby_table.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_animated_bird_fountain.png` | animations/Item Icons/Placeables/Furniture/Animated/spr_ui_item_furniture_animated_bird_fountain.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_animated_snow_globe.png` | animations/Item Icons/Placeables/Furniture/Animated/spr_ui_item_furniture_animated_snow_globe.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_balor_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Balor/spr_ui_item_furniture_balor_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_balor_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Balor/spr_ui_item_furniture_balor_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_balor_gem_station.png` | animations/Item Icons/Placeables/Spouse Furniture/Balor/spr_ui_item_furniture_balor_gem_station.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_area_rug_v2.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_area_rug_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_bookshelf_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_bookshelf_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_chest_v05.png` | animations/Item Icons/Placeables/Furniture/Basic Chest Set/spr_ui_item_furniture_basic_chest_v05.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_doormat_v2.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_doormat_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_dresser_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_dresser_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_flower_pot_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_flower_pot_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_nightstand_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_nightstand_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_oil_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_oil_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_table_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_wall_window_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_wall_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_basic_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Basic Furniture/spr_ui_item_furniture_basic_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_bench_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_bench_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_curtain_stand_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_curtain_stand_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_floor_mirror_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_floor_mirror_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_floor_mirror_gold.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_floor_mirror_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_sink_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_sink_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_tile_wall_blue.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_tile_wall_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_wall_mirror_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_wall_mirror_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_wall_mirror_gold.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_wall_mirror_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_wall_sconce.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_wall_sconce.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathroom_wall_towel_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathroom_wall_towel_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_bathtub_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_bathtub_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_butterfly_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_butterfly_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_butterfly_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_butterfly_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_bookshelf_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_bookshelf_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_dresser_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_dresser_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_firewood_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_firewood_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_nightstand_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_nightstand_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_stove_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_stove_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_table_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_wall_shelf_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_wall_shelf_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_wall_window_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_wall_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cabin_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Rustic Cabin/spr_ui_item_furniture_cabin_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_caldarus_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Caldarus/spr_ui_item_furniture_caldarus_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_caldarus_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Caldarus/spr_ui_item_furniture_caldarus_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_caldarus_music_station.png` | animations/Item Icons/Placeables/Spouse Furniture/Caldarus/spr_ui_item_furniture_caldarus_music_station.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_caterpillar_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_caterpillar_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_celine_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Celine/spr_ui_item_furniture_celine_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_celine_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Celine/spr_ui_item_furniture_celine_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_celine_garden_shelves.png` | animations/Item Icons/Placeables/Spouse Furniture/Celine/spr_ui_item_furniture_celine_garden_shelves.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_bonsai.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_bonsai.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_chair.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_flooring.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_fruit_bowl.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_fruit_bowl.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_rug.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_table_lamp.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_table_lamp.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_table.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_table.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cherry_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Cherry/spr_ui_item_furniture_cherry_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_bishop_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_bishop_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_king_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_king_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_knight_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_knight_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_pawn_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_pawn_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_queen_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_queen_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_rook_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_rook_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_chess_table_black.png` | animations/Item Icons/Placeables/Furniture/Chess Set/spr_ui_item_furniture_chess_table_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_copper_node.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_copper_node.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_coral_arch.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_coral_arch.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_coral_chair_blue.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_coral_chair_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_coral_lamp_blue.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_coral_lamp_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_coral_storage_chest_blue.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_coral_storage_chest_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_coral_table_blue.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_coral_table_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_bed_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_bed_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_chair_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_chair_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_double_bed_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_double_bed_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_dresser_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_dresser_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_flooring_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_flooring_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_fridge_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_fridge_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_nightstand_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_nightstand_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_plant_shelf_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_plant_shelf_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_potted_fig_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_potted_fig_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_potted_flowers_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_potted_flowers_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_rug_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_rug_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_table_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_table_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_wall_flowers_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_wall_flowers_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_wall_window_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_wall_window_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_cottage_wallpaper_v2.png` | animations/Item Icons/Placeables/Furniture/Lovely Cottage/spr_ui_item_furniture_cottage_wallpaper_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_crystal_lamp_green.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_crystal_lamp_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_fireplace_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_fireplace_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_nightstand_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_nightstand_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_table_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_wall_window_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_wall_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_worn_garden_light.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_worn_garden_light.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_default_worn_rug.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_default_worn_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_icebox_blue.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_icebox_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_icebox_green.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_icebox_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_icebox_pink.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_icebox_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_icebox_white.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_icebox_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_icebox_yellow.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_icebox_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_aqua.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_aqua.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_black.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_blue.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_dark_brown.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_dark_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_gold.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_gray.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_gray.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_green.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_light_brown.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_light_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_orange.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_pink.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_purple.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_red.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_deluxe_storage_chest_white.png` | animations/Item Icons/Placeables/Furniture/Deluxe Chest Set/spr_ui_item_furniture_deluxe_storage_chest_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_diamond_rock.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_diamond_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_bottle_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_bottle_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_bottle_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_bottle_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_plate_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_plate_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_plate_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_plate_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_springs_couch_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_springs_couch_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_springs_couch_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_springs_couch_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_window_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_broken_window_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_broken_window_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_cardboard_box_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_cardboard_box_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_cardboard_box_chair_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_cardboard_box_chair_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_chipped_cup_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_chipped_cup_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_chipped_cup_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_chipped_cup_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_flooring_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_flooring_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_garbage_bag_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_garbage_bag_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_garbage_bag_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_garbage_bag_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_mostly_broken_string_lights_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_mostly_broken_string_lights_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_mostly_broken_string_lights_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_mostly_broken_string_lights_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_mouse_hole_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_mouse_hole_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_mouse_hole_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_mouse_hole_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_pile_of_laundry_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_pile_of_laundry_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_pile_of_laundry_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_pile_of_laundry_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_pile_of_newspapers_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_pile_of_newspapers_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_pile_of_newspapers_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_pile_of_newspapers_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_rickety_table_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_rickety_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_rickety_table_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_rickety_table_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_tattered_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_tattered_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_tattered_rug_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_tattered_rug_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dingy_wallpaper_v2.png` | animations/Item Icons/Placeables/Furniture/Dingy/spr_ui_item_furniture_dingy_wallpaper_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_dozy_pet_bed.png` | animations/Item Icons/Placeables/Spouse Furniture/Juniper/spr_ui_item_furniture_dozy_pet_bed.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_eiland_artifact_shelf.png` | animations/Item Icons/Placeables/Spouse Furniture/Eiland/spr_ui_item_furniture_eiland_artifact_shelf.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_eiland_bench.png` | animations/Item Icons/Placeables/Spouse Furniture/Eiland/spr_ui_item_furniture_eiland_bench.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_eiland_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Eiland/spr_ui_item_furniture_eiland_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_nightstand_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_nightstand_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_rock.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_emerald_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_emerald_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Emerald/spr_ui_item_furniture_emerald_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_enchantern_lamp_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_enchantern_lamp_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_essence_bat_garland_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_essence_bat_garland_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_bed_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_bed_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_chair_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_chair_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_double_bed_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_double_bed_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_flooring_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_flooring_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_globe_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_globe_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_lamp_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_lamp_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_rug_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_rug_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_trunk_table_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_trunk_table_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_explorer_wallpaper_beige.png` | animations/Item Icons/Placeables/Furniture/Explorer/spr_ui_item_furniture_explorer_wallpaper_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fall_bed_cream.png` | animations/Item Icons/Placeables/Furniture/Fall/spr_ui_item_furniture_fall_bed_cream.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fall_double_bed_cream.png` | animations/Item Icons/Placeables/Furniture/Fall/spr_ui_item_furniture_fall_double_bed_cream.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fall_table_cream.png` | animations/Item Icons/Placeables/Furniture/Fall/spr_ui_item_furniture_fall_table_cream.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_bed_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_bed_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_chair_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_chair_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_double_bed_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_double_bed_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_floor_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_floor_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_lamp_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_lamp_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_oars_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_oars_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_plaque_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_plaque_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_rug_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_rug_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_table_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_table_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_tank_gold.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_tank_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_trophy_shelf_silver.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_trophy_shelf_silver.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_wall_blue.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_wall_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_fishing_window_gold.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_furniture_fishing_window_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_flame_spirit_lamp_orange.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_flame_spirit_lamp_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_floating_tome_lamp.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_floating_tome_lamp.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_floor_brazier_blue.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_floor_brazier_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_flooring_deep_earth.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_flooring_deep_earth.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_gold_node.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_gold_node.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_armoire_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_armoire_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_bed_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_bed_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_candle_1.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_candle_1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_candle_3.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_candle_3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_chair_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_chair_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_cobweb_left.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_cobweb_left.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_cobweb_right.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_cobweb_right.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_double_bed_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_double_bed_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_dress_form_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_dress_form_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_flooring_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_flooring_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_nightstand_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_nightstand_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_rocking_chair_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_rocking_chair_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_table_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_table_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_wall_shelf_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_wall_shelf_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_wall_window_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_wall_window_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_haunted_attic_wallpaper_dark.png` | animations/Item Icons/Placeables/Furniture/Haunted Attic/spr_ui_item_furniture_haunted_attic_wallpaper_dark.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_hayden_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Hayden/spr_ui_item_furniture_hayden_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_hayden_crop_station.png` | animations/Item Icons/Placeables/Spouse Furniture/Hayden/spr_ui_item_furniture_hayden_crop_station.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_hayden_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Hayden/spr_ui_item_furniture_hayden_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_herringbone_tile_flooring_blue.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_herringbone_tile_flooring_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_hewn_rock_bookshelf.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_hewn_rock_bookshelf.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_hewn_stone_table.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_hewn_stone_table.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_honeycomb_shelf.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_honeycomb_shelf.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_candle.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_candle.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_counter.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_counter.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_cross_stitch.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_cross_stitch.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_kitchen_shelves.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_kitchen_shelves.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_stool.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_stool.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_tile_flooring.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_tile_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_inn_wooden_flooring.png` | animations/Item Icons/Placeables/Furniture/Inn/spr_ui_item_furniture_inn_wooden_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_insect_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_insect_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_insect_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_insect_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_insect_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_insect_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_iron_node.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_iron_node.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_juniper_cauldron.png` | animations/Item Icons/Placeables/Spouse Furniture/Juniper/spr_ui_item_furniture_juniper_cauldron.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_juniper_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Juniper/spr_ui_item_furniture_juniper_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_juniper_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Juniper/spr_ui_item_furniture_juniper_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ladybug_table_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_ladybug_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_large_fluffy_rug_beige.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_large_fluffy_rug_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_cat_double_bed_orange.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_lava_cat_double_bed_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_flooring.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_bed_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_bed_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_chair_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_chair_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_double_bed_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_double_bed_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_fence_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_fence_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_floor_lamp_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_floor_lamp_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_storage_chest_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_storage_chest_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_obsidian_table_blue.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_obsidian_table_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_stone_beam.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_stone_beam.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lava_caves_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Lava Caves/spr_ui_item_furniture_lava_caves_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_bonsai.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_bonsai.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_flooring.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_fruit_bowl.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_fruit_bowl.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_rug.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_stool.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_stool.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_table_lamp.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_table_lamp.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_table.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_table.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_lemon_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Lemon/spr_ui_item_furniture_lemon_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_march_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/March/spr_ui_item_furniture_march_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_march_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/March/spr_ui_item_furniture_march_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_march_forge.png` | animations/Item Icons/Placeables/Spouse Furniture/March/spr_ui_item_furniture_march_forge.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mermaid_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Mermaid/spr_ui_item_furniture_mermaid_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mermaid_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Mermaid/spr_ui_item_furniture_mermaid_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mimic_storage_chest.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_mimic_storage_chest.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_minecart_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_minecart_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_miners_crate_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_miners_crate_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_miners_crate_chest_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_miners_crate_chest_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_miners_floor_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_miners_floor_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_miners_shelves_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_miners_shelves_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_miners_wall_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_miners_wall_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mines_dirt_flooring.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_mines_dirt_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mines_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_mines_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mines_wooden_arch.png` | animations/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_mines_wooden_arch.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_bed_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_bed_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_bed_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_bed_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_bed_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_bed_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_cushion_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_cushion_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_cushion_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_cushion_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_cushion_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_cushion_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_cushion_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_cushion_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_double_bed_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_double_bed_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_double_bed_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_double_bed_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_double_bed_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_double_bed_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_lamp_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_lamp_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_lamp_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_lamp_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_lamp_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_lamp_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_pet_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_pet_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_pet_bed_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_pet_bed_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_pet_bed_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_pet_bed_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_pet_bed_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_pet_bed_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_rug_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_rug_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_rug_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_rug_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_rug_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_rug_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_storage_chest_v1.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_storage_chest_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_storage_chest_v2.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_storage_chest_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_storage_chest_v3.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_storage_chest_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mist_storage_chest_v4.png` | animations/Item Icons/Placeables/Furniture/Mist/spr_ui_item_furniture_mist_storage_chest_v4.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mistril_node.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_mistril_node.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mossy_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_mossy_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_moth_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_furniture_moth_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mushroom_sofa_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_mushroom_sofa_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_mushroom_stool_green.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_mushroom_stool_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pink_diamond_rock.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_pink_diamond_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_anchor_v1.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_anchor_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_anchor_v2.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_anchor_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_counterfeit_gold_pile_v1.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_counterfeit_gold_pile_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_counterfeit_gold_pile_v2.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_counterfeit_gold_pile_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_nautical_compass_v1.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_nautical_compass_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_nautical_compass_v2.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_nautical_compass_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_ship_in_a_bottle_v1.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_ship_in_a_bottle_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_ship_in_a_bottle_v2.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_ship_in_a_bottle_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_wall_flag_v1.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_wall_flag_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_pirate_wall_flag_v2.png` | animations/Item Icons/Placeables/Furniture/Pirate/spr_ui_item_furniture_pirate_wall_flag_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_reina_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Reina/spr_ui_item_furniture_reina_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_reina_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Reina/spr_ui_item_furniture_reina_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_reina_kitchen.png` | animations/Item Icons/Placeables/Spouse Furniture/Reina/spr_ui_item_furniture_reina_kitchen.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_rock_stack_shelf.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_rock_stack_shelf.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_rockclod_garden_brown.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_rockclod_garden_brown.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_round_cushion_stool_beige.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_round_cushion_stool_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruby_rock.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_ruby_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_crystal_light.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_crystal_light.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_floor_brazier_v1.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_floor_brazier_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_floor_brazier_v2.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_floor_brazier_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_floor_brazier_v3.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_floor_brazier_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_flooring.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_pot1.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_pot1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_pot2.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_pot2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_pot5.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_pot5.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_stone_arch.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_stone_arch.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_wall_crystal_light.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_wall_crystal_light.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_window_v1.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_window_v2.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_window_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ruins_window_v3.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_window_v3.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ryis_crafting_table.png` | animations/Item Icons/Placeables/Spouse Furniture/Ryis/spr_ui_item_furniture_ryis_crafting_table.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ryis_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Ryis/spr_ui_item_furniture_ryis_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_ryis_rocking_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Ryis/spr_ui_item_furniture_ryis_rocking_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_sand_rug.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_sand_rug.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_sapling_beanbag_chair_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_sapling_beanbag_chair_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_sapphire_rock.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_sapphire_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_seridia_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Seridia/spr_ui_item_furniture_seridia_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_seridia_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Seridia/spr_ui_item_furniture_seridia_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_seridia_magic_fire.png` | animations/Item Icons/Placeables/Spouse Furniture/Seridia/spr_ui_item_furniture_seridia_magic_fire.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_silver_node.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_silver_node.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_small_bathmat_beige.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_small_bathmat_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_bed_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_bed_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_double_bed_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_double_bed_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_flooring_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_flooring_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_lamp_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_lamp_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_potted_tree_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_potted_tree_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_rug_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_rug_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_sofa_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_sofa_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_spring_wallpaper_orange.png` | animations/Item Icons/Placeables/Furniture/Spring Furniture/spr_ui_item_furniture_spring_wallpaper_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_square_tile_flooring_white.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_square_tile_flooring_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_stalagmite_spike_tile_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_stalagmite_spike_tile_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_starry_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_furniture_starry_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_stone_arch.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_stone_arch.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_bed_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_bed_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_chair_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_chair_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_double_bed_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_double_bed_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_flooring_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_flooring_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_jar_lamp_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_jar_lamp_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_rug_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_rug_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_table_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_table_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summer_wallpaper_red.png` | animations/Item Icons/Placeables/Furniture/Summer/spr_ui_item_furniture_summer_wallpaper_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_summit_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_furniture_summit_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_tide_flooring.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_tide_flooring.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_tide_wallpaper.png` | animations/Item Icons/Placeables/Furniture/Tide Caverns/spr_ui_item_furniture_tide_wallpaper.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_toilet_black.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_toilet_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_valen_chair.png` | animations/Item Icons/Placeables/Spouse Furniture/Valen/spr_ui_item_furniture_valen_chair.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_valen_desk.png` | animations/Item Icons/Placeables/Spouse Furniture/Valen/spr_ui_item_furniture_valen_desk.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_valen_potion_station.png` | animations/Item Icons/Placeables/Spouse Furniture/Valen/spr_ui_item_furniture_valen_potion_station.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_chest_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_chest_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_fireplace_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_fireplace_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_flagstone_large_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_flagstone_large_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_flagstone_small_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_flagstone_small_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_gryphon_statue_blue.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_void_gryphon_statue_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_throne_2_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_throne_2_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_throne_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_throne_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_void_window_v1.png` | animations/Item Icons/Placeables/Furniture/Void/spr_ui_item_furniture_void_window_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_wall_brazier_blue.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_wall_brazier_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_wallpaper_deep_earth.png` | animations/Item Icons/Placeables/Furniture/Cavern/spr_ui_item_furniture_wallpaper_deep_earth.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_cauldron_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_cauldron_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_chair_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_chair_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_double_bed_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_double_bed_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_dressing_table_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_dressing_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_flooring_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_flooring_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_moon_lamp_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_moon_lamp_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_nightstand_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_nightstand_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_pillar_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_pillar_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_rug_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_table_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_table_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_throne_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_throne_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_witch_queen_wallpaper_v1.png` | animations/Item Icons/Placeables/Furniture/Witch Queen/spr_ui_item_furniture_witch_queen_wallpaper_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_worn_well.png` | animations/Item Icons/Placeables/Furniture/Worn Furniture/spr_ui_item_furniture_worn_well.png | game files (NPC Studio) |
+| `item/spr_ui_item_gathering_basket.png` | animations/Item Icons/Archaeology/spr_ui_item_gathering_basket.png | game files (NPC Studio) |
+| `item/spr_ui_item_giant_fish_scale.png` | animations/Item Icons/Archaeology/spr_ui_item_giant_fish_scale.png | game files (NPC Studio) |
+| `item/spr_ui_item_hardened_essence.png` | animations/Item Icons/Archaeology/spr_ui_item_hardened_essence.png | game files (NPC Studio) |
+| `item/spr_ui_item_honey_deluxe.png` | animations/Item Icons/Food/spr_ui_item_honey_deluxe.png | game files (NPC Studio) |
+| `item/spr_ui_item_honey_legendary.png` | animations/Item Icons/Food/spr_ui_item_honey_legendary.png | game files (NPC Studio) |
+| `item/spr_ui_item_honey_premium.png` | animations/Item Icons/Food/spr_ui_item_honey_premium.png | game files (NPC Studio) |
+| `item/spr_ui_item_honey.png` | animations/Item Icons/Food/spr_ui_item_honey.png | game files (NPC Studio) |
+| `item/spr_ui_item_insect_queens_birdwing.png` | animations/Item Icons/Bugs/spr_ui_item_insect_queens_birdwing.png | game files (NPC Studio) |
+| `item/spr_ui_item_kitchen_tier_3_champion_blue.png` | animations/Item Icons/Placeables/Kitchens/spr_ui_item_kitchen_tier_3_champion_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_lost_crown_of_aldaria.png` | animations/Item Icons/Archaeology/spr_ui_item_lost_crown_of_aldaria.png | game files (NPC Studio) |
+| `item/spr_ui_item_mermaids_comb.png` | animations/Item Icons/Archaeology/spr_ui_item_mermaids_comb.png | game files (NPC Studio) |
+| `item/spr_ui_item_message_in_a_bottle.png` | animations/Item Icons/Archaeology/spr_ui_item_message_in_a_bottle.png | game files (NPC Studio) |
+| `item/spr_ui_item_metal_leaf.png` | animations/Item Icons/Archaeology/spr_ui_item_metal_leaf.png | game files (NPC Studio) |
+| `item/spr_ui_item_meteorite.png` | animations/Item Icons/Archaeology/spr_ui_item_meteorite.png | game files (NPC Studio) |
+| `item/spr_ui_item_miner_mushroom_stew.png` | animations/Item Icons/Food/spr_ui_item_miner_mushroom_stew.png | game files (NPC Studio) |
+| `item/spr_ui_item_miners_helmet.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_helmet.png | game files (NPC Studio) |
+| `item/spr_ui_item_miners_pickaxe.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_pickaxe.png | game files (NPC Studio) |
+| `item/spr_ui_item_miners_rucksack.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_rucksack.png | game files (NPC Studio) |
+| `item/spr_ui_item_miners_slab.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_slab.png | game files (NPC Studio) |
+| `item/spr_ui_item_mist_crystal.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_crystal.png | game files (NPC Studio) |
+| `item/spr_ui_item_mist_flute.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_flute.png | game files (NPC Studio) |
+| `item/spr_ui_item_mist_scroll.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_scroll.png | game files (NPC Studio) |
+| `item/spr_ui_item_misty_black_mirror.png` | animations/Item Icons/Archaeology/spr_ui_item_misty_black_mirror.png | game files (NPC Studio) |
+| `item/spr_ui_item_misty_feather_quill.png` | animations/Item Icons/Archaeology/spr_ui_item_misty_feather_quill.png | game files (NPC Studio) |
+| `item/spr_ui_item_muttering_cube.png` | animations/Item Icons/Archaeology/spr_ui_item_muttering_cube.png | game files (NPC Studio) |
+| `item/spr_ui_item_mystical_feather.png` | animations/Item Icons/Misc/spr_ui_item_mystical_feather.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_apiary.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_apiary.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_black.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_blue.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_gold.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_gold.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_green.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_orange.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_pink.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_purple.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_red.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_silver.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_silver.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_crystal_resonator_void.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_void.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_journal.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_journal.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_ladder.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ladder.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_ocarina_statue.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ocarina_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_stairs.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_stairs.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_teleportation_pad.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_teleportation_pad.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_terrarium.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_terrarium.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_wall_calendar.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_wall_calendar.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_water_sprite_statue_large_v1.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_water_sprite_statue_large_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_water_sprite_statue_v1.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_water_sprite_statue_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_obsidian_blade.png` | animations/Item Icons/Archaeology/spr_ui_item_obsidian_blade.png | game files (NPC Studio) |
+| `item/spr_ui_item_ornate_flagstone_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_ornate_flagstone_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_copper_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_copper_ore.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_diamond.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_diamond.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_emerald.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_emerald.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_gold_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_gold_ore.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_iron_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_iron_ore.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_mistril_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_mistril_ore.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_pink_diamond.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_pink_diamond.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_ruby.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_ruby.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_sapphire.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_sapphire.png | game files (NPC Studio) |
+| `item/spr_ui_item_perfect_silver_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_silver_ore.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_enchantern.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_enchantern.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_essence_bat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_essence_bat.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_flame_spirit.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flame_spirit.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_flying_tome.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flying_tome.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_griffin_statue.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_griffin_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_lava_cat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_lava_cat.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_mimic.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_mimic.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_rock_stack.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_rock_stack.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_stalagmite.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_stalagmite.png | game files (NPC Studio) |
+| `item/spr_ui_item_pet_unlock_void_cat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_void_cat.png | game files (NPC Studio) |
+| `item/spr_ui_item_petrified_wood.png` | animations/Item Icons/Archaeology/spr_ui_item_petrified_wood.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_basket_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_basket_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_pie_plate_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_pie_plate_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_place_setting_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_place_setting_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_rug_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_rug_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_snack_plate_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_snack_plate_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_snack_plate_red.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_snack_plate_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_snack_plate_yellow.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_snack_plate_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_picnic_sunflower_vase_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_sunflower_vase_pink.png | game files (NPC Studio) |
+| `item/spr_ui_item_porcelain_figurine.png` | animations/Item Icons/Archaeology/spr_ui_item_porcelain_figurine.png | game files (NPC Studio) |
+| `item/spr_ui_item_rainbow_geode.png` | animations/Item Icons/Archaeology/spr_ui_item_rainbow_geode.png | game files (NPC Studio) |
+| `item/spr_ui_item_rainbow_seaweed.png` | animations/Item Icons/Archaeology/spr_ui_item_rainbow_seaweed.png | game files (NPC Studio) |
+| `item/spr_ui_item_really_round_rock.png` | animations/Item Icons/Archaeology/spr_ui_item_really_round_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_red_obsidian.png` | animations/Item Icons/Archaeology/spr_ui_item_red_obsidian.png | game files (NPC Studio) |
+| `item/spr_ui_item_ritual_beads.png` | animations/Item Icons/Archaeology/spr_ui_item_ritual_beads.png | game files (NPC Studio) |
+| `item/spr_ui_item_ritual_chalice.png` | animations/Item Icons/Archaeology/spr_ui_item_ritual_chalice.png | game files (NPC Studio) |
+| `item/spr_ui_item_ritual_incense_burner.png` | animations/Item Icons/Archaeology/spr_ui_item_ritual_incense_burner.png | game files (NPC Studio) |
+| `item/spr_ui_item_ritual_scepter.png` | animations/Item Icons/Archaeology/spr_ui_item_ritual_scepter.png | game files (NPC Studio) |
+| `item/spr_ui_item_ritual_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_ritual_tablet.png | game files (NPC Studio) |
+| `item/spr_ui_item_rock_statue.png` | animations/Item Icons/Archaeology/spr_ui_item_rock_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_rock_with_a_hole.png` | animations/Item Icons/Archaeology/spr_ui_item_rock_with_a_hole.png | game files (NPC Studio) |
+| `item/spr_ui_item_rubber_fish.png` | animations/Item Icons/Archaeology/spr_ui_item_rubber_fish.png | game files (NPC Studio) |
+| `item/spr_ui_item_rusted_shield.png` | animations/Item Icons/Archaeology/spr_ui_item_rusted_shield.png | game files (NPC Studio) |
+| `item/spr_ui_item_rusted_treasure_chest.png` | animations/Item Icons/Archaeology/spr_ui_item_rusted_treasure_chest.png | game files (NPC Studio) |
+| `item/spr_ui_item_sea_glass.png` | animations/Item Icons/Archaeology/spr_ui_item_sea_glass.png | game files (NPC Studio) |
+| `item/spr_ui_item_seriously_square_rock.png` | animations/Item Icons/Archaeology/spr_ui_item_seriously_square_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_shortcut_scroll.png` | animations/Item Icons/Archaeology/spr_ui_item_shortcut_scroll.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_adelines_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_adelines_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_another_tower.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_another_tower.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_balors_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_balors_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_caldarus_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_caldarus_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_celines_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_celines_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_crystal_caves.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_crystal_caves.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_dream_lobby.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_dream_lobby.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_eilands_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_eilands_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_farm_boy.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_farm_boy.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_five_more_minutes.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_five_more_minutes.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_haydens_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_haydens_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_heros_journey.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_heros_journey.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_junipers_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_junipers_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_marchs_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_marchs_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_misty_pasture.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_misty_pasture.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_purple_potions.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_purple_potions.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_rainy_window.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_rainy_window.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_reinas_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_reinas_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_ryis_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_ryis_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_seridias_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_seridias_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_song_crystal_valens_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_valens_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_starlight_coral.png` | animations/Item Icons/Archaeology/spr_ui_item_starlight_coral.png | game files (NPC Studio) |
+| `item/spr_ui_item_statuette_of_caldarus.png` | animations/Item Icons/Archaeology/spr_ui_item_statuette_of_caldarus.png | game files (NPC Studio) |
+| `item/spr_ui_item_stone_horse.png` | animations/Item Icons/Archaeology/spr_ui_item_stone_horse.png | game files (NPC Studio) |
+| `item/spr_ui_item_stone_shell.png` | animations/Item Icons/Archaeology/spr_ui_item_stone_shell.png | game files (NPC Studio) |
+| `item/spr_ui_item_tidestone.png` | animations/Item Icons/Archaeology/spr_ui_item_tidestone.png | game files (NPC Studio) |
+| `item/spr_ui_item_tile_roof_fence_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_tile_roof_fence_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_tin_lunchbox.png` | animations/Item Icons/Archaeology/spr_ui_item_tin_lunchbox.png | game files (NPC Studio) |
+| `item/spr_ui_item_tiny_dinosaur_skeleton.png` | animations/Item Icons/Archaeology/spr_ui_item_tiny_dinosaur_skeleton.png | game files (NPC Studio) |
+| `item/spr_ui_item_tiny_volcano.png` | animations/Item Icons/Archaeology/spr_ui_item_tiny_volcano.png | game files (NPC Studio) |
+| `item/spr_ui_item_trilobite_fossil.png` | animations/Item Icons/Archaeology/spr_ui_item_trilobite_fossil.png | game files (NPC Studio) |
+| `item/spr_ui_item_unknown_dragon_statuette.png` | animations/Item Icons/Archaeology/spr_ui_item_unknown_dragon_statuette.png | game files (NPC Studio) |
+| `item/spr_ui_item_vintage_bell.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_bell.png | game files (NPC Studio) |
+| `item/spr_ui_item_vintage_brush.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_brush.png | game files (NPC Studio) |
+| `item/spr_ui_item_vintage_hammer.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_hammer.png | game files (NPC Studio) |
+| `item/spr_ui_item_vintage_sickle.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_sickle.png | game files (NPC Studio) |
+| `item/spr_ui_item_vintage_watering_can.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_watering_can.png | game files (NPC Studio) |
+| `item/spr_ui_item_warm_rock.png` | animations/Item Icons/Archaeology/spr_ui_item_warm_rock.png | game files (NPC Studio) |
+| `item/spr_ui_item_water_sphere.png` | animations/Item Icons/Archaeology/spr_ui_item_water_sphere.png | game files (NPC Studio) |
+| `item/spr_ui_item_weather_crystal_ball.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_weather_crystal_ball.png | game files (NPC Studio) |
+| `item/spr_ui_item_weathervane.png` | animations/Item Icons/Misc/spr_ui_item_weathervane.png | game files (NPC Studio) |
+| `item/spr_ui_item_weightless_stone.png` | animations/Item Icons/Archaeology/spr_ui_item_weightless_stone.png | game files (NPC Studio) |
+| `item/spr_ui_item_worn_pendant.png` | animations/Item Icons/Archaeology/spr_ui_item_worn_pendant.png | game files (NPC Studio) |
 | `item/spring-crop-sign-scroll-bundle.png` | Spring crop sign scroll bundle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spring%20crop%20sign%20scroll%20bundle.png) |
 | `item/spring-galette.png` | Spring galette.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spring%20galette.png) |
 | `item/spring-salad.png` | Spring salad.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spring%20salad.png) |
@@ -1151,6 +2135,301 @@ and nothing in this repository treats it as though it were.
 | `item/written-root.png` | Written root.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Written%20root.png) |
 | `item/yellow-chicken-bow.png` | Yellow chicken bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Yellow%20chicken%20bow.png) |
 
+## Wardrobe (290)
+
+| In this repo | Original filename | Source |
+| --- | --- | --- |
+| `cosmetic/adventurer-hood.png` | Adventurer hood.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Adventurer%20hood.png) |
+| `cosmetic/afro-puffs.png` | Afro puffs.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Afro%20puffs.png) |
+| `cosmetic/afro.png` | Afro.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Afro.png) |
+| `cosmetic/aviator-goggles.png` | Aviator goggles.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Aviator%20goggles.png) |
+| `cosmetic/back-gear-ancient-witch-broom.png` | Back gear ancient witch broom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20ancient%20witch%20broom.png) |
+| `cosmetic/back-gear-butterfly-wings.png` | Back gear butterfly wings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20butterfly%20wings.png) |
+| `cosmetic/back-gear-cabbage-backpack.png` | Back gear cabbage backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20cabbage%20backpack.png) |
+| `cosmetic/back-gear-cauliflower-backpack.png` | Back gear cauliflower backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20cauliflower%20backpack.png) |
+| `cosmetic/back-gear-cloud-backpack.png` | Back gear cloud backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20cloud%20backpack.png) |
+| `cosmetic/back-gear-daikon-radish-backpack.png` | Back gear daikon radish backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20daikon%20radish%20backpack.png) |
+| `cosmetic/back-gear-daisy-backpack.png` | Back gear daisy backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20daisy%20backpack.png) |
+| `cosmetic/back-gear-dragon-cleric-cape.png` | Back gear dragon cleric cape.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20dragon%20cleric%20cape.png) |
+| `cosmetic/back-gear-dragonfly-wings.png` | Back gear dragonfly wings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20dragonfly%20wings.png) |
+| `cosmetic/back-gear-exalted-cloak.png` | Back gear exalted cloak.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20exalted%20cloak.png) |
+| `cosmetic/back-gear-fire-cloak.png` | Back gear fire cloak.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20fire%20cloak.png) |
+| `cosmetic/back-gear-fish-scale-cape.png` | Back gear fish scale cape.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20fish%20scale%20cape.png) |
+| `cosmetic/back-gear-frost-lily-backpack.png` | Back gear frost lily backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20frost%20lily%20backpack.png) |
+| `cosmetic/back-gear-hunter-bow.png` | Back gear hunter bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20hunter%20bow.png) |
+| `cosmetic/back-gear-hunter-cape.png` | Back gear hunter cape.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20hunter%20cape.png) |
+| `cosmetic/back-gear-jasmine-backpack.png` | Back gear jasmine backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20jasmine%20backpack.png) |
+| `cosmetic/back-gear-mini-wings.png` | Back gear mini wings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20mini%20wings.png) |
+| `cosmetic/back-gear-noble-cape.png` | Back gear noble cape.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20noble%20cape.png) |
+| `cosmetic/back-gear-onion-backpack.png` | Back gear onion backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20onion%20backpack.png) |
+| `cosmetic/back-gear-ornate-round-shield.png` | Back gear ornate round shield.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20ornate%20round%20shield.png) |
+| `cosmetic/back-gear-ornate-shield.png` | Back gear ornate shield.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20ornate%20shield.png) |
+| `cosmetic/back-gear-pumpkin-backpack.png` | Back gear pumpkin backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20pumpkin%20backpack.png) |
+| `cosmetic/back-gear-rogue-cape.png` | Back gear rogue cape.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20rogue%20cape.png) |
+| `cosmetic/back-gear-sheathed-sword.png` | Back gear sheathed sword.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20sheathed%20sword.png) |
+| `cosmetic/back-gear-snowdrop-anemone-backpack.png` | Back gear snowdrop anemone backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20snowdrop%20anemone%20backpack.png) |
+| `cosmetic/back-gear-strawberry-backpack.png` | Back gear strawberry backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20strawberry%20backpack.png) |
+| `cosmetic/back-gear-sunflower-backpack.png` | Back gear sunflower backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20sunflower%20backpack.png) |
+| `cosmetic/back-gear-sweet-potato-backpack.png` | Back gear sweet potato backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20sweet%20potato%20backpack.png) |
+| `cosmetic/back-gear-tomato-backpack.png` | Back gear tomato backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20tomato%20backpack.png) |
+| `cosmetic/back-gear-turnip-backpack.png` | Back gear turnip backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20turnip%20backpack.png) |
+| `cosmetic/back-gear-watermelon-backpack.png` | Back gear watermelon backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20watermelon%20backpack.png) |
+| `cosmetic/back-gear-wheat-backpack.png` | Back gear wheat backpack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Back%20gear%20wheat%20backpack.png) |
+| `cosmetic/bandana.png` | Bandana.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bandana.png) |
+| `cosmetic/baseball-cap.png` | Baseball cap.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baseball%20cap.png) |
+| `cosmetic/beard-basic.png` | Beard basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beard%20basic.png) |
+| `cosmetic/beard-thick.png` | Beard thick.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beard%20thick.png) |
+| `cosmetic/beetle-mandible-horns.png` | Beetle mandible horns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beetle%20mandible%20horns.png) |
+| `cosmetic/beret.png` | Beret.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beret.png) |
+| `cosmetic/berry-hat.png` | Berry hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Berry%20hat.png) |
+| `cosmetic/blown-out-twist.png` | Blown out twist.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Blown%20out%20twist.png) |
+| `cosmetic/blush.png` | Blush.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Blush.png) |
+| `cosmetic/boots-adventurer.png` | Boots adventurer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20adventurer.png) |
+| `cosmetic/boots-ancient-witch.png` | Boots ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20ancient%20witch.png) |
+| `cosmetic/boots-beekeeper.png` | Boots beekeeper.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20beekeeper.png) |
+| `cosmetic/boots-caldosian.png` | Boots caldosian.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20caldosian.png) |
+| `cosmetic/boots-cloth-armor.png` | Boots cloth armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20cloth%20armor.png) |
+| `cosmetic/boots-crystal-armor.png` | Boots crystal armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20crystal%20armor.png) |
+| `cosmetic/boots-dark-regent.png` | Boots dark regent.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20dark%20regent.png) |
+| `cosmetic/boots-exalted.png` | Boots exalted.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20exalted.png) |
+| `cosmetic/boots-explorer.png` | Boots explorer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20explorer.png) |
+| `cosmetic/boots-farmer.png` | Boots farmer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20farmer.png) |
+| `cosmetic/boots-fire.png` | Boots fire.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20fire.png) |
+| `cosmetic/boots-fishing.png` | Boots fishing.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20fishing.png) |
+| `cosmetic/boots-hunter.png` | Boots hunter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20hunter.png) |
+| `cosmetic/boots-miner.png` | Boots miner.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20miner.png) |
+| `cosmetic/boots-noble.png` | Boots noble.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20noble.png) |
+| `cosmetic/boots-pirate.png` | Boots pirate.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20pirate.png) |
+| `cosmetic/boots-pumpkin.png` | Boots pumpkin.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20pumpkin.png) |
+| `cosmetic/boots-ranger.png` | Boots ranger.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20ranger.png) |
+| `cosmetic/boots-rogue.png` | Boots rogue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20rogue.png) |
+| `cosmetic/boots-scrap-metal.png` | Boots scrap metal.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20scrap%20metal.png) |
+| `cosmetic/boots-short-basic.png` | Boots short basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20short%20basic.png) |
+| `cosmetic/boots-verdigris-armor.png` | Boots verdigris armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20verdigris%20armor.png) |
+| `cosmetic/boots-work.png` | Boots work.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots%20work.png) |
+| `cosmetic/boots.png` | Boots.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Boots.png) |
+| `cosmetic/braided-pigtails.png` | Braided pigtails.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Braided%20pigtails.png) |
+| `cosmetic/bunny-ears.png` | Bunny ears.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bunny%20ears.png) |
+| `cosmetic/buzzcut.png` | Buzzcut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Buzzcut.png) |
+| `cosmetic/caldosian-hat.png` | Caldosian hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Caldosian%20hat.png) |
+| `cosmetic/caldosian-moon-earrings.png` | Caldosian moon earrings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Caldosian%20moon%20earrings.png) |
+| `cosmetic/cap-basic.png` | Cap basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cap%20basic.png) |
+| `cosmetic/cat-ears.png` | Cat ears.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cat%20ears.png) |
+| `cosmetic/cherry-beret.png` | Cherry beret.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cherry%20beret.png) |
+| `cosmetic/circlet-earth.png` | Circlet earth.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Circlet%20earth.png) |
+| `cosmetic/clips-angel-wing.png` | Clips angel wing.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20angel%20wing.png) |
+| `cosmetic/clips-bat-wing.png` | Clips bat wing.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20bat%20wing.png) |
+| `cosmetic/clips-heart.png` | Clips heart.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20heart.png) |
+| `cosmetic/clips-moon.png` | Clips moon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20moon.png) |
+| `cosmetic/clips-star.png` | Clips star.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20star.png) |
+| `cosmetic/clips-strawberry.png` | Clips strawberry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Clips%20strawberry.png) |
+| `cosmetic/cloth-helmet.png` | Cloth helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20helmet.png) |
+| `cosmetic/cowboy-hat-basic.png` | Cowboy hat basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cowboy%20hat%20basic.png) |
+| `cosmetic/cowlick.png` | Cowlick.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cowlick.png) |
+| `cosmetic/crown-berry.png` | Crown berry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown%20berry.png) |
+| `cosmetic/crown-dark-regent.png` | Crown dark regent.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown%20dark%20regent.png) |
+| `cosmetic/crown-tide.png` | Crown tide.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown%20tide.png) |
+| `cosmetic/crown.png` | Crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown.png) |
+| `cosmetic/crystal-helmet.png` | Crystal helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20helmet.png) |
+| `cosmetic/curly-high-top.png` | Curly high top.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20high%20top.png) |
+| `cosmetic/curly-medium-fringe.png` | Curly medium fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20medium%20fringe.png) |
+| `cosmetic/curly-medium.png` | Curly medium.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20medium.png) |
+| `cosmetic/curly-pompadour.png` | Curly pompadour.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20pompadour.png) |
+| `cosmetic/curly-short.png` | Curly short.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20short.png) |
+| `cosmetic/curly-shorter.png` | Curly shorter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20shorter.png) |
+| `cosmetic/curly-undercut.png` | Curly undercut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20undercut.png) |
+| `cosmetic/curly-updo.png` | Curly updo.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20updo.png) |
+| `cosmetic/dancer-flower.png` | Dancer flower.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dancer%20flower.png) |
+| `cosmetic/devil-horns.png` | Devil horns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Devil%20horns.png) |
+| `cosmetic/dreadlock-twin-buns.png` | Dreadlock twin buns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dreadlock%20twin%20buns.png) |
+| `cosmetic/dreads-bun.png` | Dreads bun.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dreads%20bun.png) |
+| `cosmetic/dress-berry.png` | Dress berry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20berry.png) |
+| `cosmetic/dress-court.png` | Dress court.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20court.png) |
+| `cosmetic/dress-maid.png` | Dress maid.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20maid.png) |
+| `cosmetic/dress-modest.png` | Dress modest.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20modest.png) |
+| `cosmetic/dress-sleeveless-basic.png` | Dress sleeveless basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20sleeveless%20basic.png) |
+| `cosmetic/dress-spring-festival.png` | Dress spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dress%20spring%20festival.png) |
+| `cosmetic/dressy-stockings.png` | Dressy stockings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dressy%20stockings.png) |
+| `cosmetic/ear-muffs.png` | Ear muffs.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ear%20muffs.png) |
+| `cosmetic/enchantern-hat.png` | Enchantern hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Enchantern%20hat.png) |
+| `cosmetic/essence-bat-hat.png` | Essence bat hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Essence%20bat%20hat.png) |
+| `cosmetic/exalted-crown.png` | Exalted crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Exalted%20crown.png) |
+| `cosmetic/explorer-hat.png` | Explorer hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Explorer%20hat.png) |
+| `cosmetic/eyes-closed.png` | Eyes closed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20closed.png) |
+| `cosmetic/eyes-default.png` | Eyes default.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20default.png) |
+| `cosmetic/eyes-droopy.png` | Eyes droopy.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20droopy.png) |
+| `cosmetic/eyes-eyelashes.png` | Eyes eyelashes.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20eyelashes.png) |
+| `cosmetic/eyes-serious.png` | Eyes serious.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20serious.png) |
+| `cosmetic/eyes-small.png` | Eyes small.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Eyes%20small.png) |
+| `cosmetic/face-mask.png` | Face mask.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Face%20mask.png) |
+| `cosmetic/fade.png` | Fade.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fade.png) |
+| `cosmetic/farmer-cap.png` | Farmer cap.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Farmer%20cap.png) |
+| `cosmetic/fighter-headband.png` | Fighter headband.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fighter%20headband.png) |
+| `cosmetic/fishing-hat.png` | Fishing hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Fishing%20hat.png) |
+| `cosmetic/flame-spirit-hat.png` | Flame spirit hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flame%20spirit%20hat.png) |
+| `cosmetic/floating-cloud-headpiece.png` | Floating cloud headpiece.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Floating%20cloud%20headpiece.png) |
+| `cosmetic/flower-crown.png` | Flower crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flower%20crown.png) |
+| `cosmetic/flower-earrings.png` | Flower earrings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flower%20earrings.png) |
+| `cosmetic/flower-hat.png` | Flower hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flower%20hat.png) |
+| `cosmetic/flower-top-hat.png` | Flower top hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flower%20top%20hat.png) |
+| `cosmetic/flying-tome-hat.png` | Flying tome hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Flying%20tome%20hat.png) |
+| `cosmetic/glasses.png` | Glasses.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Glasses.png) |
+| `cosmetic/halo.png` | Halo.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Halo.png) |
+| `cosmetic/handlebar-moustache.png` | Handlebar moustache.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Handlebar%20moustache.png) |
+| `cosmetic/headband-basic.png` | Headband basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Headband%20basic.png) |
+| `cosmetic/hijab.png` | Hijab.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hijab.png) |
+| `cosmetic/hood-fire.png` | Hood fire.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hood%20fire.png) |
+| `cosmetic/hoop-earrings.png` | Hoop earrings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hoop%20earrings.png) |
+| `cosmetic/hunter-hat.png` | Hunter hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hunter%20hat.png) |
+| `cosmetic/lava-cat-hat.png` | Lava cat hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Lava%20cat%20hat.png) |
+| `cosmetic/lemon-beret.png` | Lemon beret.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Lemon%20beret.png) |
+| `cosmetic/lily-pad.png` | Lily pad.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Lily%20pad.png) |
+| `cosmetic/long-dreadlocks.png` | Long dreadlocks.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Long%20dreadlocks.png) |
+| `cosmetic/medium-half-bun-fringe.png` | Medium half bun fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Medium%20half%20bun%20fringe.png) |
+| `cosmetic/medium-half-bun.png` | Medium half bun.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Medium%20half%20bun.png) |
+| `cosmetic/medium-length.png` | Medium length.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Medium%20length.png) |
+| `cosmetic/medium-pigtails.png` | Medium pigtails.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Medium%20pigtails.png) |
+| `cosmetic/mimic-hat.png` | Mimic hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mimic%20hat.png) |
+| `cosmetic/miners-helmet.png` | Miners helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Miners%20helmet.png) |
+| `cosmetic/mini-horns.png` | Mini horns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mini%20horns.png) |
+| `cosmetic/mohawk.png` | Mohawk.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mohawk.png) |
+| `cosmetic/moustache.png` | Moustache.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Moustache.png) |
+| `cosmetic/mushroom-cut.png` | Mushroom cut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mushroom%20cut.png) |
+| `cosmetic/mushroom-hat.png` | Mushroom hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mushroom%20hat.png) |
+| `cosmetic/noble-hat.png` | Noble hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Noble%20hat.png) |
+| `cosmetic/noble-tunic.png` | Noble tunic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Noble%20tunic.png) |
+| `cosmetic/oreclod-hat.png` | Oreclod hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Oreclod%20hat.png) |
+| `cosmetic/overalls-basic.png` | Overalls basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20basic.png) |
+| `cosmetic/overalls-shorts.png` | Overalls shorts.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20shorts.png) |
+| `cosmetic/overalls-skirt.png` | Overalls skirt.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20skirt.png) |
+| `cosmetic/paisley-bandana.png` | Paisley bandana.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Paisley%20bandana.png) |
+| `cosmetic/pants-adventurer.png` | Pants adventurer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20adventurer.png) |
+| `cosmetic/pants-basic.png` | Pants basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20basic.png) |
+| `cosmetic/pants-cloth-armor.png` | Pants cloth armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20cloth%20armor.png) |
+| `cosmetic/pants-exalted.png` | Pants exalted.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20exalted.png) |
+| `cosmetic/pants-explorer.png` | Pants explorer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20explorer.png) |
+| `cosmetic/pants-hunter.png` | Pants hunter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20hunter.png) |
+| `cosmetic/pants-rogue.png` | Pants rogue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20rogue.png) |
+| `cosmetic/pants-scrap-metal.png` | Pants scrap metal.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20scrap%20metal.png) |
+| `cosmetic/parted-mushroom-cut.png` | Parted mushroom cut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Parted%20mushroom%20cut.png) |
+| `cosmetic/pixie-cut.png` | Pixie cut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pixie%20cut.png) |
+| `cosmetic/player-skull-mask.png` | Player skull mask.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Player%20skull%20mask.png) |
+| `cosmetic/pumpkin-beanie.png` | Pumpkin beanie.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pumpkin%20beanie.png) |
+| `cosmetic/pumpkin-earrings.png` | Pumpkin earrings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pumpkin%20earrings.png) |
+| `cosmetic/rain-hat.png` | Rain hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rain%20hat.png) |
+| `cosmetic/ranger-leaves.png` | Ranger leaves.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ranger%20leaves.png) |
+| `cosmetic/reading-glasses-small.png` | Reading glasses small.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Reading%20glasses%20small.png) |
+| `cosmetic/reading-glasses.png` | Reading glasses.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Reading%20glasses.png) |
+| `cosmetic/ribbons-basic.png` | Ribbons basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ribbons%20basic.png) |
+| `cosmetic/robe-earth.png` | Robe earth.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Robe%20earth.png) |
+| `cosmetic/robe-fire.png` | Robe fire.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Robe%20fire.png) |
+| `cosmetic/robe-tide.png` | Robe tide.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Robe%20tide.png) |
+| `cosmetic/rock-stack-hat.png` | Rock stack hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rock%20stack%20hat.png) |
+| `cosmetic/rockclod-hat.png` | Rockclod hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rockclod%20hat.png) |
+| `cosmetic/rogue-hood.png` | Rogue hood.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rogue%20hood.png) |
+| `cosmetic/rounded-afro.png` | Rounded afro.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rounded%20afro.png) |
+| `cosmetic/sandals-earth.png` | Sandals earth.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sandals%20earth.png) |
+| `cosmetic/sandals-tide.png` | Sandals tide.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sandals%20tide.png) |
+| `cosmetic/sandals-worn.png` | Sandals worn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sandals%20worn.png) |
+| `cosmetic/sapling-hat.png` | Sapling hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sapling%20hat.png) |
+| `cosmetic/scrap-metal-helmet.png` | Scrap metal helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20metal%20helmet.png) |
+| `cosmetic/shaggy-bob.png` | Shaggy bob.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shaggy%20bob.png) |
+| `cosmetic/short-beard.png` | Short beard.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Short%20beard.png) |
+| `cosmetic/short-bow.png` | Short bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Short%20bow.png) |
+| `cosmetic/short-parted-curls.png` | Short parted curls.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Short%20parted%20curls.png) |
+| `cosmetic/short-parted-straight.png` | Short parted straight.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Short%20parted%20straight.png) |
+| `cosmetic/shorts-basic.png` | Shorts basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20basic.png) |
+| `cosmetic/shorts-fishing.png` | Shorts fishing.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20fishing.png) |
+| `cosmetic/skirt-ancient-witch.png` | Skirt ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20ancient%20witch.png) |
+| `cosmetic/skirt-dancer.png` | Skirt dancer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20dancer.png) |
+| `cosmetic/skirt-long-basic.png` | Skirt long basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20long%20basic.png) |
+| `cosmetic/skirt-long-scalloped.png` | Skirt long scalloped.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20long%20scalloped.png) |
+| `cosmetic/skirt-maid.png` | Skirt maid.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20maid.png) |
+| `cosmetic/skirt-pleated-medium.png` | Skirt pleated medium.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20pleated%20medium.png) |
+| `cosmetic/skirt-pleated-short.png` | Skirt pleated short.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20pleated%20short.png) |
+| `cosmetic/skirt-short-basic.png` | Skirt short basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20short%20basic.png) |
+| `cosmetic/sneakers-basic.png` | Sneakers basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sneakers%20basic.png) |
+| `cosmetic/soul-patch.png` | Soul patch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Soul%20patch.png) |
+| `cosmetic/soup-pot.png` | Soup pot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Soup%20pot.png) |
+| `cosmetic/special-flower-crown.png` | Special flower crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Special%20flower%20crown.png) |
+| `cosmetic/sprout-hat.png` | Sprout hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sprout%20hat.png) |
+| `cosmetic/stalagmite-hat.png` | Stalagmite hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Stalagmite%20hat.png) |
+| `cosmetic/straight-buns-fringed.png` | Straight buns fringed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20buns%20fringed.png) |
+| `cosmetic/straight-long-bun.png` | Straight long bun.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20long%20bun.png) |
+| `cosmetic/straight-long-fringe.png` | Straight long fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20long%20fringe.png) |
+| `cosmetic/straight-long-tucked.png` | Straight long tucked.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20long%20tucked.png) |
+| `cosmetic/straight-long-twin-buns.png` | Straight long twin buns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20long%20twin%20buns.png) |
+| `cosmetic/straight-long.png` | Straight long.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20long.png) |
+| `cosmetic/straight-medium-fluffy-bangs-ponytail.png` | Straight medium fluffy bangs ponytail.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20medium%20fluffy%20bangs%20ponytail.png) |
+| `cosmetic/straight-medium-ponytail.png` | Straight medium ponytail.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20medium%20ponytail.png) |
+| `cosmetic/straight-medium.png` | Straight medium.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20medium.png) |
+| `cosmetic/straight-pompadour.png` | Straight pompadour.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20pompadour.png) |
+| `cosmetic/straight-undercut.png` | Straight undercut.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20undercut.png) |
+| `cosmetic/strawberry-beret.png` | Strawberry beret.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Strawberry%20beret.png) |
+| `cosmetic/striped-bow.png` | Striped bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Striped%20bow.png) |
+| `cosmetic/striped-bucket-hat.png` | Striped bucket hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Striped%20bucket%20hat.png) |
+| `cosmetic/stubble.png` | Stubble.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Stubble.png) |
+| `cosmetic/stud-earrings.png` | Stud earrings.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Stud%20earrings.png) |
+| `cosmetic/suit-berry.png` | Suit berry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Suit%20berry.png) |
+| `cosmetic/suit-court.png` | Suit court.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Suit%20court.png) |
+| `cosmetic/suit-halter-bikini-set.png` | Suit halter bikini set.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Suit%20halter%20bikini%20set.png) |
+| `cosmetic/suit-miner.png` | Suit miner.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Suit%20miner.png) |
+| `cosmetic/suit-spring-festival.png` | Suit spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Suit%20spring%20festival.png) |
+| `cosmetic/sunglasses.png` | Sunglasses.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sunglasses.png) |
+| `cosmetic/sunhat-straw.png` | Sunhat straw.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sunhat%20straw.png) |
+| `cosmetic/tangerine.png` | Tangerine.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tangerine.png) |
+| `cosmetic/teapot.png` | Teapot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Teapot.png) |
+| `cosmetic/textured-buzz.png` | Textured buzz.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Textured%20buzz.png) |
+| `cosmetic/tiara-ancient-witch.png` | Tiara ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tiara%20ancient%20witch.png) |
+| `cosmetic/top-ancient-witch.png` | Top ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20ancient%20witch.png) |
+| `cosmetic/top-buttoned-tanktop.png` | Top buttoned tanktop.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20buttoned%20tanktop.png) |
+| `cosmetic/top-caldosian-overcoat.png` | Top caldosian overcoat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20caldosian%20overcoat.png) |
+| `cosmetic/top-cami.png` | Top cami.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20cami.png) |
+| `cosmetic/top-cloth-chestpiece.png` | Top cloth chestpiece.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20cloth%20chestpiece.png) |
+| `cosmetic/top-cropped-puff-jacket.png` | Top cropped puff jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20cropped%20puff%20jacket.png) |
+| `cosmetic/top-crystal-armor.png` | Top crystal armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20crystal%20armor.png) |
+| `cosmetic/top-dancer.png` | Top dancer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20dancer.png) |
+| `cosmetic/top-exalted.png` | Top exalted.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20exalted.png) |
+| `cosmetic/top-explorers-jacket.png` | Top explorers jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20explorers%20jacket.png) |
+| `cosmetic/top-fishing-vest.png` | Top fishing vest.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20fishing%20vest.png) |
+| `cosmetic/top-halter-bikini.png` | Top halter bikini.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20halter%20bikini.png) |
+| `cosmetic/top-hunter.png` | Top hunter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20hunter.png) |
+| `cosmetic/top-jacket-and-tee-basic.png` | Top jacket and tee basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20jacket%20and%20tee%20basic.png) |
+| `cosmetic/top-long-sleeve-baseball.png` | Top long sleeve baseball.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20long%20sleeve%20baseball.png) |
+| `cosmetic/top-long-sleeve-basic-cropped.png` | Top long sleeve basic cropped.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20long%20sleeve%20basic%20cropped.png) |
+| `cosmetic/top-long-sleeve-basic.png` | Top long sleeve basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20long%20sleeve%20basic.png) |
+| `cosmetic/top-long-sleeve-striped.png` | Top long sleeve striped.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20long%20sleeve%20striped.png) |
+| `cosmetic/top-noble-jacket.png` | Top noble jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20noble%20jacket.png) |
+| `cosmetic/top-plaid-flannel.png` | Top plaid flannel.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20plaid%20flannel.png) |
+| `cosmetic/top-puff-jacket.png` | Top puff jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20puff%20jacket.png) |
+| `cosmetic/top-ranger-short-sleeve.png` | Top ranger short sleeve.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20ranger%20short%20sleeve.png) |
+| `cosmetic/top-rangers-jacket.png` | Top rangers jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20rangers%20jacket.png) |
+| `cosmetic/top-rogue.png` | Top rogue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20rogue.png) |
+| `cosmetic/top-scrap-chestpiece.png` | Top scrap chestpiece.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20scrap%20chestpiece.png) |
+| `cosmetic/top-tanktop.png` | Top tanktop.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20tanktop.png) |
+| `cosmetic/top-tee-basic.png` | Top tee basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20tee%20basic.png) |
+| `cosmetic/top-tee-oversized.png` | Top tee oversized.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20tee%20oversized.png) |
+| `cosmetic/top-tee-ringer-basic.png` | Top tee ringer basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20tee%20ringer%20basic.png) |
+| `cosmetic/top-verdigris-chestpiece.png` | Top verdigris chestpiece.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20verdigris%20chestpiece.png) |
+| `cosmetic/top-wool-lined-jacket.png` | Top wool lined jacket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20wool%20lined%20jacket.png) |
+| `cosmetic/underwear-bra-small.png` | Underwear bra small.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20bra%20small.png) |
+| `cosmetic/underwear-bra.png` | Underwear bra.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20bra.png) |
+| `cosmetic/underwear-briefs.png` | Underwear briefs.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20briefs.png) |
+| `cosmetic/underwear-shorts-polkadot.png` | Underwear shorts polkadot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20shorts%20polkadot.png) |
+| `cosmetic/underwear-shorts.png` | Underwear shorts.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20shorts.png) |
+| `cosmetic/verdigris-helmet.png` | Verdigris helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20helmet.png) |
+| `cosmetic/void-cat-hat.png` | Void cat hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Void%20cat%20hat.png) |
+| `cosmetic/wavy-long-fringe.png` | Wavy long fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20long%20fringe.png) |
+| `cosmetic/wavy-long-ponytail.png` | Wavy long ponytail.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20long%20ponytail.png) |
+| `cosmetic/wavy-long-twin-buns.png` | Wavy long twin buns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20long%20twin%20buns.png) |
+| `cosmetic/wavy-long.png` | Wavy long.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20long.png) |
+| `cosmetic/wavy-medium-fringe.png` | Wavy medium fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20medium%20fringe.png) |
+| `cosmetic/wavy-medium-twin-buns.png` | Wavy medium twin buns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20medium%20twin%20buns.png) |
+| `cosmetic/wavy-medium.png` | Wavy medium.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20medium.png) |
+| `cosmetic/wavy-rugged.png` | Wavy rugged.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20rugged.png) |
+| `cosmetic/winter-beanie.png` | Winter beanie.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Winter%20beanie.png) |
+| `cosmetic/witch-hat.png` | Witch hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Witch%20hat.png) |
+
 ## Villager icons (32)
 
 | In this repo | Original filename | Source |
@@ -1286,7 +2565,7 @@ and nothing in this repository treats it as though it were.
 | `festival/calendar-icon-shooting-star-festival.png` | Calendar icon shooting star festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20shooting%20star%20festival.png) |
 | `festival/calendar-icon-spring-festival.png` | Calendar icon spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20spring%20festival.png) |
 
-## Interface (41)
+## Interface (45)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -1329,6 +2608,10 @@ and nothing in this repository treats it as though it were.
 | `ui/season-icon-summer.png` | Season icon summer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20summer.png) |
 | `ui/season-icon-winter.png` | Season icon winter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20winter.png) |
 | `ui/sheep-category-icon.png` | Sheep category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20category%20icon.png) |
+| `ui/spr_fish_silhouette_giant_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_giant_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_large_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_medium_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_small_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
 | `ui/tackleshop-icon.png` | Tackleshop icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png) |
 | `ui/woodcrafting-icon.png` | Woodcrafting icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Woodcrafting%20icon.png) |
 

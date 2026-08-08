@@ -1,4 +1,4 @@
-import { Link, Outlet, useRouterState } from '@tanstack/react-router'
+import { Link, Outlet, useRouter, useRouterState } from '@tanstack/react-router'
 import {
   ChevronsDown,
   ClipboardList,
@@ -8,9 +8,11 @@ import {
   Search,
   Settings,
   Sun,
+  X,
 } from 'lucide-react'
 import type { ComponentType } from 'react'
 import { useAtlas } from '~/app/AtlasProvider'
+import { Tour } from '~/app/Tour'
 import { Footer } from '~/components/Footer'
 
 /**
@@ -35,6 +37,9 @@ interface NavItem {
  * primary slot: it is a thing you check *before* going out, which is the same
  * job as Today.
  */
+/** The tour's anchor name for a nav destination — `data-tour` on the link. */
+const tourAnchor = (to: string): string => (to === '/' ? 'calendar' : to.slice(1))
+
 const NAV: NavItem[] = [
   { to: '/', label: 'Calendar', icon: Sun },
   { to: '/board', label: 'Board', icon: ClipboardList },
@@ -83,17 +88,12 @@ export function AppShell() {
         <Link
           to="/map"
           aria-label="Map"
+          data-tour="map"
           className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
         >
           <MapIcon size={19} strokeWidth={2} />
         </Link>
-        <Link
-          to="/settings"
-          aria-label="Settings"
-          className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
-        >
-          <Settings size={19} strokeWidth={2} />
-        </Link>
+        <CornerSettings />
       </div>
 
       {/*
@@ -110,6 +110,8 @@ export function AppShell() {
       </main>
 
       <BottomNav />
+
+      <Tour />
     </div>
   )
 }
@@ -132,6 +134,51 @@ export function Column({
   return <div className={`mx-auto ${width === 'wide' ? 'max-w-4xl' : 'max-w-lg'}`}>{children}</div>
 }
 
+/**
+ * The corner settings control: a gear everywhere, a close on the settings
+ * screen itself — tapping it again would otherwise do nothing, and the way
+ * out of Settings is "back to whatever I was doing". Falls back to home when
+ * there is no history to return to (a deep link straight into Settings).
+ */
+function CornerSettings() {
+  const router = useRouter()
+  const pathname = useRouterState({ select: (state) => state.location.pathname })
+  const shared =
+    'grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink'
+
+  if (!pathname.startsWith('/settings')) {
+    return (
+      <Link to="/settings" aria-label="Settings" data-tour="settings" className={shared}>
+        <Settings size={19} strokeWidth={2} />
+      </Link>
+    )
+  }
+
+  const close = (): void => {
+    if (!router.history.canGoBack()) {
+      void router.navigate({ to: '/' })
+      return
+    }
+    const before = router.state.location.href
+    router.history.back()
+    window.setTimeout(() => {
+      if (router.state.location.href === before) void router.navigate({ to: '/' })
+    }, 250)
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={close}
+      aria-label="Close settings"
+      data-tour="settings"
+      className={shared}
+    >
+      <X size={19} strokeWidth={2} />
+    </button>
+  )
+}
+
 function useIsActive(): (to: string) => boolean {
   const pathname = useRouterState({ select: (state) => state.location.pathname })
   return (to) => (to === '/' ? pathname === '/' : pathname.startsWith(to))
@@ -152,6 +199,7 @@ function Sidebar() {
             <Link
               to={to}
               aria-current={isActive(to) ? 'page' : undefined}
+              data-tour={tourAnchor(to)}
               className="flex items-center gap-3 rounded-tile px-3 py-2 text-sm transition-colors"
               style={
                 isActive(to)
@@ -192,6 +240,7 @@ function BottomNav() {
             <Link
               to={to}
               aria-current={isActive(to) ? 'page' : undefined}
+              data-tour={tourAnchor(to)}
               className="flex flex-col items-center gap-0.5 py-2.5 text-[0.6875rem] transition-colors"
               style={
                 isActive(to)

@@ -31,7 +31,7 @@
   },
   {
     "item_id": "biggest_beetle",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": "Legendary Bug Pheromones",
     "spawn_surface": null
   },
@@ -115,20 +115,14 @@
   },
   {
     "item_id": "crystalline_cricket",
-    "rarity": "uncommon",
+    "rarity": "common",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
   {
     "item_id": "deep_earthworm",
-    "rarity": "common",
+    "rarity": "uncommon",
     "spawn_condition_key": "Breaking rocks",
-    "spawn_surface": null
-  },
-  {
-    "item_id": "honey_deluxe",
-    "rarity": null,
-    "spawn_condition_key": null,
     "spawn_surface": null
   },
   {
@@ -151,7 +145,7 @@
   },
   {
     "item_id": "fairy_bee",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -175,7 +169,7 @@
   },
   {
     "item_id": "flower_crown_beetle",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -234,12 +228,6 @@
     "spawn_surface": null
   },
   {
-    "item_id": "honey",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
     "item_id": "hummingbird_hawk_moth",
     "rarity": "rare",
     "spawn_condition_key": null,
@@ -285,18 +273,6 @@
     "item_id": "leafhopper",
     "rarity": "common",
     "spawn_condition_key": "Additional spawns when cutting grass",
-    "spawn_surface": null
-  },
-  {
-    "item_id": "bug_pheromone_legendary",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
-    "item_id": "honey_legendary",
-    "rarity": null,
-    "spawn_condition_key": null,
     "spawn_surface": null
   },
   {
@@ -390,12 +366,6 @@
     "spawn_surface": null
   },
   {
-    "item_id": "honey_premium",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
     "item_id": "puddle_spider",
     "rarity": "rare",
     "spawn_condition_key": null,
@@ -410,24 +380,6 @@
   {
     "item_id": "question_mark_butterfly",
     "rarity": "uncommon",
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
-    "item_id": "raindrop_beetle",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
-    "item_id": "bug_pheromone_rare",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
-    "item_id": "fish_bait_rare",
-    "rarity": null,
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -499,7 +451,7 @@
   },
   {
     "item_id": "snowball_beetle",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -511,7 +463,7 @@
   },
   {
     "item_id": "speedy_snail",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -523,7 +475,7 @@
   },
   {
     "item_id": "strobe_firefly",
-    "rarity": null,
+    "rarity": "epic",
     "spawn_condition_key": null,
     "spawn_surface": null
   },
@@ -553,20 +505,8 @@
   },
   {
     "item_id": "tunnel_millipede",
-    "rarity": "common",
+    "rarity": "uncommon",
     "spawn_condition_key": "Breaking rocks",
-    "spawn_surface": null
-  },
-  {
-    "item_id": "bug_pheromone_uncommon",
-    "rarity": null,
-    "spawn_condition_key": null,
-    "spawn_surface": null
-  },
-  {
-    "item_id": "fish_bait_uncommon",
-    "rarity": null,
-    "spawn_condition_key": null,
     "spawn_surface": null
   },
   {
@@ -613,7 +553,7 @@
   },
   {
     "item_id": "worm",
-    "rarity": "common",
+    "rarity": "uncommon",
     "spawn_condition_key": "Breaking rocks",
     "spawn_surface": null
   }

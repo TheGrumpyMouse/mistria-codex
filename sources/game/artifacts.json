@@ -1505,6 +1505,13 @@
       "quest_id": "the_water_tablet"
     }
   ],
+  "skillTierLevels": [
+    1,
+    15,
+    30,
+    45,
+    60
+  ],
   "skillTrees": [
     {
       "perks": [

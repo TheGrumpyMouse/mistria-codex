@@ -1,0 +1,2925 @@
+{
+  "gameVersion": "1.0.0",
+  "requestGates": [
+    {
+      "quest_id": "becoming_junipers_guinea_pig",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_heart_level"
+      ]
+    },
+    {
+      "quest_id": "cop_some_ore",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "do_a_bro_a_favor",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "gossip_for_elsie",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "jos_cooking_class",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_a_miners_pickaxe",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_a_red_toadstool",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "red_toadstool"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_a_rock",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "ore_stone"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_acorn",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_apple",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_apple_pie",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        },
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_armored_bass",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "breaking_the_fire_seal"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bait",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "worm"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_baked_potato",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_basil_thyme",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_beet",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_beet_soup",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "beet_soup_challenge"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bell_berries",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        },
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bell_berry_bakewell",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_berries",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_berries_gold",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bird_house",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_blackberries",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_blackberries_2",
+      "requirements": [
+        {
+          "key": "has_any_animal",
+          "value": true
+        },
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_blueberries",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_blueberry_jam",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_bomb",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_breath_of_flame",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "breaking_the_fire_seal"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bristles",
+      "requirements": [
+        {
+          "key": "repaired_haydens_farm",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_broccoli",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_bull_horn",
+      "requirements": [
+        {
+          "key": "has_barn",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_burdock_root",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_butter",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_mill"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_butterfly",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cabbage",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_carrot",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_caterpillar",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "net_worn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_catfish",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_cauliflower",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cheese",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_mill"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cherry_tart",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_chestnuts",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_chili_pepper",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_clam",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_clay",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "pick_axe_worn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_coconuts",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_coconuts_2",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cod",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_coelacanth",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_coffee",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_common_bait",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "apiaries_and_terrariums"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_common_pheromone",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "apiaries_and_terrariums"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_copper",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "ore_copper"
+        },
+        {
+          "key": "completed_quest",
+          "value": "cop_some_ore"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_copper_beetle",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "copper_beetle"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_copper_ingot",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_copper_net",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_copper_shovel",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_coral",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_corn",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_corrupted_mistril_sword",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_crab",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cranberry_orange",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_crocus",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_crystal",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_crystal_berries",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_cucumbers",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_daikon",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_deep_earthworm",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_deluxe_honey",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "apiaries_and_terrariums"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_diamond",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "breaking_the_fire_seal"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_dill",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_dog_treat",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_dragon_forged_bracelet",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_dragon_forged_core",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_dragon_horn_beetle",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_duck_egg",
+      "requirements": [
+        {
+          "key": "repaired_haydens_farm",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_duck_mayonnaise",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_earthshroom",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_eel",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_egg",
+      "requirements": [
+        {
+          "key": "has_coop",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_emerald",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_emeralds",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_fennel",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "fennel"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_fiddlehead",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_fire_crystal",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_fire_wasp",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_fog_orchid",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_fried_rice",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_frog",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_gardening_supplies",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "pick_axe_worn"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_garlic",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_glass",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_glowberry",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_glowing_mushroom",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_goby",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_gold_ingots",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_gold_ore",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "breaking_the_fire_seal"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_golden_butter",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_mill"
+        },
+        {
+          "key": "has_barn",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_golden_cookies",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_golden_duck_mayonnaise",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "request_for_duck_mayonnaise"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_grilled_corn",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_hard_wood",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        },
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_hay",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "hay"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_haybale",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_heather",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_holly",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_horse_hair",
+      "requirements": [
+        {
+          "key": "repaired_haydens_farm",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_horseradish_salmon",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_ice",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_iron",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_iron_armor",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_iron_ingot",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_iron_shovel",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_iron_watering_can",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_lake_trout",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_latte",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_legendary_honey",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "apiaries_and_terrariums"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_lemon",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "lemon"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_lobster",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_middlemist",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_milk",
+      "requirements": [
+        {
+          "key": "has_barn",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_mistril_ingot",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_mistril_ore",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_core",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_fang",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        },
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_horn",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_mash",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_powder",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        },
+        {
+          "key": "acquired_item",
+          "value": "monster_powder"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_monster_shell",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        },
+        {
+          "key": "acquired_item",
+          "value": "monster_shell"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_mont_blanc",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_moon",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_moon_fruit",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_more_wildberries",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_morel_mushroom",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_mullet",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_mushroom_rice",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_night_queen",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_obsidian",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "breaking_the_fire_seal"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_onion",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_orange",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_oyster_mushrooms",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_peaches",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pear",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_peas",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_perch",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pike",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_pineshrooms",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pink_diamond",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pink_scallop_shell",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_poached_pear",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        },
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pomegranate",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pomegranate_juice",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pond_skater",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_premium_honey",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "apiaries_and_terrariums"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pudding",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_pumpkin",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_pumpkin_pie",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rabbit_wool",
+      "requirements": [
+        {
+          "key": "repaired_haydens_farm",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rare_bait",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "request_for_uncommon_bait"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rare_pheromone",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "request_for_uncommon_pheromone"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_red_wine",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rice",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_riceball",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_roasted_chestnuts",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rooster_feather",
+      "requirements": [
+        {
+          "key": "has_coop",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rose_hip",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_rosemary",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_roses",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_round_rock",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_ruby",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        },
+        {
+          "key": "acquired_item",
+          "value": "pick_axe_worn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_salmon",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "fishing_rod_worn"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_salted_watermelon",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        },
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sap",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sapphire",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_scarecrow",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_seaweed",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sesame",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_shadow_flower",
+      "requirements": [
+        {
+          "key": "opened_mines",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_shards",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "pick_axe_worn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sheep_wool",
+      "requirements": [
+        {
+          "key": "repaired_haydens_farm",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_shipping_bin",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_silver_ingot",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_silver_ore",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_silver_sword",
+      "requirements": [
+        {
+          "key": "broke_earth_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_singing_katydid",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_smallmouth_bass",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_snail",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "net_worn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_snowdrop_anemone",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_spell_fruit",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_spirit_mushroom_tea",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_spring_galette",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        },
+        {
+          "key": "is_day_type",
+          "value": "saturday"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_strawberries",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_strawberries_cream",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "strawberry"
+        },
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_striped_bass",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sugar_cane",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "request_for_sunflower",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sushi_platter",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_sweet_potato",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tea",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_temple_flower",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_thorn_vine",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tidestone",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tilapia",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "winter"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tomato",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tomato_soup",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_trail_mix",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_trout",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_tuna_sashimi",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_skill_level"
+      ]
+    },
+    {
+      "quest_id": "request_for_turnip",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_ultimate_hay",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_mill"
+        },
+        {
+          "key": "has_any_animal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_ultimate_small_animal_feed",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_mill"
+        },
+        {
+          "key": "has_any_animal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_uncommon_bait",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "request_for_common_bait"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_uncommon_pheromone",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "request_for_common_pheromone"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_underseaweed",
+      "requirements": [
+        {
+          "key": "broke_water_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_void_stone",
+      "requirements": [
+        {
+          "key": "seridia_house_open",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_voidite",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_walnut",
+      "requirements": [
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_water_chestnuts",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_watermelon",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_wild_berry",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_wild_grapes",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "summer"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_wild_leek",
+      "requirements": [
+        {
+          "key": "is_season",
+          "value": "spring"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_wood_2",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "greet_the_vendors"
+        },
+        {
+          "key": "is_season",
+          "value": "fall"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_wood_fence",
+      "requirements": [
+        {
+          "key": "acquired_item",
+          "value": "starter_wood_fence"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "request_for_written_root",
+      "requirements": [
+        {
+          "key": "broke_ruins_seal",
+          "value": true
+        },
+        {
+          "key": "completed_quest",
+          "value": "upgrade_the_saturday_market"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "quest_id": "somethings_bugging_me",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "stinky_stamina_potion",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "quest_id": "tall_dark_and_mysterious",
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "repair_the_bridge"
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level"
+      ]
+    },
+    {
+      "quest_id": "the_annual_check_up",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_heart_level"
+      ]
+    }
+  ],
+  "storyQuests": [
+    {
+      "id": "apiaries_and_terrariums",
+      "name": "Apiaries and Terrariums",
+      "npc": "luc",
+      "reward_item_ids": [
+        "apiary",
+        "terrarium"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "breaking_the_final_seal",
+      "name": "Breaking The Final Seal",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "breaking_the_fire_seal",
+      "name": "Breaking The Fire Seal",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "breaking_the_ruins_seal",
+      "name": "Breaking the Ruins Seal",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "complete_the_museum",
+      "name": "Complete the Museum",
+      "npc": "errol",
+      "reward_item_ids": [
+        "mini_museum_blueprint"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "cop_some_ore",
+      "name": "Cop Some Ore",
+      "npc": "march",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "crafting_tutorial",
+      "name": "Crafting Tutorial",
+      "npc": "ryis",
+      "reward_item_ids": [
+        "starter_wood_fence"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "creating_the_void_mass",
+      "name": "Creating the Void Mass",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "delivering_the_sealing_scroll",
+      "name": "Delivering the Sealing Scroll",
+      "npc": "balor",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "do_a_bro_a_favor",
+      "name": "Do a Bro a Favor",
+      "npc": "olric",
+      "reward_item_ids": [
+        "pick_axe_worn"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "find_the_magic_key",
+      "name": "Find the Magic Key",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "find_the_weathervane",
+      "name": "Find the Weathervane",
+      "npc": "hayden",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "friday_at_the_sleeping_dragon_inn",
+      "name": "Friday at the Sleeping Dragon Inn",
+      "npc": "reina",
+      "reward_item_ids": [
+        "mixed_fruit_juice"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "gossip_for_elsie",
+      "name": "Seeking Gossip",
+      "npc": "elsie",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "greet_the_townsfolk",
+      "name": "Greet the Townsfolk",
+      "npc": "adeline",
+      "reward_item_ids": [
+        "seed_potato"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "greet_the_vendors",
+      "name": "Greet the Vendors",
+      "npc": "nora",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "jos_cooking_class",
+      "name": "Jo's Cooking Class",
+      "npc": "josephine",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "lost_and_found",
+      "name": "Lost & Found",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "meet_the_new_vendors",
+      "name": "Meet the New Vendors",
+      "npc": "nora",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "museum_donation_wanted",
+      "name": "Museum Donations Wanted",
+      "npc": "errol",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "procuring_the_sealing_scroll",
+      "name": "Procuring the Sealing Scroll",
+      "npc": "balor",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_copper_star_town_rank",
+      "name": "Reach Copper Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_diamond_star_town_rank",
+      "name": "Reach Diamond Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_emerald_star_town_rank",
+      "name": "Reach Emerald Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_gold_star_town_rank",
+      "name": "Reach Gold Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_iron_star_town_rank",
+      "name": "Reach Iron Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_mistril_star_town_rank",
+      "name": "Reach Mistril Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_ruby_star_town_rank",
+      "name": "Reach Ruby Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_sapphire_star_town_rank",
+      "name": "Reach Sapphire Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "reach_silver_star_town_rank",
+      "name": "Reach Silver Star Town Rank",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_haydens_barn",
+      "name": "Upgrade Hayden's Barn",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_beach_bridge",
+      "name": "Repair the Beach Bridge",
+      "npc": "terithia",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_bell_tower",
+      "name": "Repair the Bell Tower",
+      "npc": "zorel",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_bridge",
+      "name": "Repair the Bridge",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 30,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_general_store",
+      "name": "Repair the General Store",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_inn",
+      "name": "Upgrade the Inn",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_mill",
+      "name": "The Mill Restoration Project",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "repair_the_summit_stairs",
+      "name": "Beautification Project",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "replenishing_mistrias_food_reserves_1",
+      "name": "Restocking Mistria's Food Reserves",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "replenishing_mistrias_food_reserves_2",
+      "name": "Restocking Mistria's Food Reserves 2",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 30,
+      "reward_tesserae": null
+    },
+    {
+      "id": "somethings_bugging_me",
+      "name": "Something's Bugging Me",
+      "npc": "luc",
+      "reward_item_ids": [
+        "net_worn"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "stinky_stamina_potion",
+      "name": "Stinky Stamina Potion",
+      "npc": "juniper",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "stone_refinery",
+      "name": "Stone Refinery",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 30,
+      "reward_tesserae": null
+    },
+    {
+      "id": "tea_with_hayden",
+      "name": "Tea with Hayden",
+      "npc": "hayden",
+      "reward_item_ids": [
+        "cup_of_tea",
+        "grass_seed",
+        "hay"
+      ],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_animal_festival",
+      "name": "The Animal Festival",
+      "npc": "josephine",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_dragonsworn_tablet",
+      "name": "The Dragonsworn Tablet",
+      "npc": "seridia",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_earth_tablet",
+      "name": "The Earth Tablet",
+      "npc": "juniper",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_fire_tablet",
+      "name": "The Fire Tablet",
+      "npc": "juniper",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_harvest_festival",
+      "name": "The Harvest Festival",
+      "npc": "reina",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_shooting_star_festival",
+      "name": "The Shooting Star Festival",
+      "npc": "elsie",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_spring_festival",
+      "name": "The Spring Festival",
+      "npc": "celine",
+      "reward_item_ids": [],
+      "reward_renown": null,
+      "reward_tesserae": null
+    },
+    {
+      "id": "the_water_tablet",
+      "name": "The Water Tablet",
+      "npc": "eiland",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "unlocking_the_mines_pt_1",
+      "name": "The State of the Mines",
+      "npc": "eiland",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "unlocking_the_mines_pt_2",
+      "name": "Unlocking the Mines",
+      "npc": "errol",
+      "reward_item_ids": [],
+      "reward_renown": 20,
+      "reward_tesserae": null
+    },
+    {
+      "id": "upgrade_the_carpenters_shop",
+      "name": "Upgrade the Carpenter's Shop",
+      "npc": "adeline",
+      "reward_item_ids": [
+        "small_greenhouse_white_blueprint"
+      ],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "upgrade_the_saturday_market",
+      "name": "Upgrade the Saturday Market",
+      "npc": "adeline",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    },
+    {
+      "id": "upgrade_the_saturday_market_plaza",
+      "name": "Expanding the Saturday Market",
+      "npc": "nora",
+      "reward_item_ids": [],
+      "reward_renown": 50,
+      "reward_tesserae": null
+    }
+  ]
+}

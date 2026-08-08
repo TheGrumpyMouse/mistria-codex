@@ -50,6 +50,13 @@ const sha256 = (text: string): string => createHash('sha256').update(text, 'utf8
  */
 const PRECACHE: readonly string[] = ['index.json', 'availability.json', 'locations.json']
 
+/**
+ * Categories too big to list flat, which therefore ship a sub-group token.
+ * Browse renders one group at a time for these; every other category is a
+ * few hundred rows at most and reads fine whole.
+ */
+const GROUPED_CATEGORIES = new Set(['furniture', 'cosmetic'])
+
 interface ShippedFile {
   name: string
   text: string
@@ -67,6 +74,26 @@ export async function buildShip(): Promise<Meta> {
     } catch {
       records = []
     }
+
+    // Furniture ships in its own shard. `items.json` is parsed on the main
+    // thread by the one screen that needs a full record, and the 925 furniture
+    // records would take it well past the 500KB parse budget — while a page
+    // for an apple never needs a bookshelf. The display index still covers
+    // everything, and `loadItemRecord` in the app picks the shard by the
+    // index's category.
+    if (name === 'items') {
+      const items = records as { category?: string }[]
+      const furniture = items.filter((r) => r.category === 'furniture')
+      const rest = items.filter((r) => r.category !== 'furniture')
+      files.push({ name: 'items.json', text: JSON.stringify(rest), records: rest.length })
+      files.push({
+        name: 'items_furniture.json',
+        text: JSON.stringify(furniture),
+        records: furniture.length,
+      })
+      continue
+    }
+
     // Flatten `facets/fish.json` to `fish.json` — the shipped tree is flat so
     // the service worker's precache list stays simple.
     files.push({
@@ -213,6 +240,8 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     i: string | null
     c: string
     v: number | null
+    /** Furniture and wardrobe only: the token Browse sub-groups the category by. */
+    g?: string
     a?: string[]
     /** 1 when the record is a story spoiler — list rows veil the name. */
     s?: 1
@@ -247,6 +276,7 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     name: string
     icon_key: string | null
     category: string
+    subcategory: string | null
     sell_value: number | null
     also_known_as?: string[]
     spoiler?: true
@@ -258,6 +288,12 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       i: item.icon_key,
       c: item.category,
       v: item.sell_value,
+      // The sub-group token, for the two categories big enough to need a
+      // second level: 925 furniture and 360 wardrobe rows. Nothing else pays
+      // for the field.
+      ...(GROUPED_CATEGORIES.has(item.category) && item.subcategory !== null
+        ? { g: item.subcategory }
+        : {}),
       ...alsoKnownAs(item.also_known_as),
       ...spoilerMarks(item),
     }

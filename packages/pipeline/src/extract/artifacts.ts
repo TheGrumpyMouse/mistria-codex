@@ -85,6 +85,12 @@ export interface GameArtifactsExtract {
    * skill is stated; `perks.toml` itself is a flat list.
    */
   skillTrees: GameSkillTree[]
+  /**
+   * `ui/skill_menu/defaults.toml [category] level_requirements`: the skill
+   * level that unlocks each tier, index 0 = tier 1. Stated once, globally —
+   * no per-skill file overrides it — with the game's own comment saying so.
+   */
+  skillTierLevels: number[]
   /** `seals.toml`: seal id -> the quest that breaks it. */
   seals: { id: string; quest_id: string }[]
   /** Every quest stage that demands a delivery of items. */
@@ -220,6 +226,30 @@ export async function extractSkillTrees(root: string): Promise<GameSkillTree[]> 
   return sortByKey(trees, 'skill')
 }
 
+/**
+ * The tier -> unlock-level map, from the skill menu's shared defaults.
+ *
+ * `defaults.toml` is otherwise menu chrome and stays unread; this one array is
+ * data — "the minimum level to unlock entries on each tier", in the game's own
+ * words — and it is the only statement of perk unlock levels anywhere in the
+ * files. The wiki's independently-parsed tier headers agree with it exactly,
+ * which is as verified as a number gets around here.
+ */
+export async function extractSkillTierLevels(root: string): Promise<number[]> {
+  const doc = await readToml(resolveIn(root, 'fiddle', 'ui', 'skill_menu', 'defaults.toml'))
+  const category = table(doc.category)
+  const raw = Array.isArray(category?.level_requirements) ? category.level_requirements : []
+  const levels = raw.flatMap((value) => {
+    const level = num(value)
+    return level === null ? [] : [level]
+  })
+
+  if (levels.length === 0) {
+    throw new Error('ui/skill_menu/defaults.toml has no [category] level_requirements.')
+  }
+  return levels
+}
+
 export async function extractSeals(root: string): Promise<{ id: string; quest_id: string }[]> {
   const doc = await readToml(resolveIn(root, 'fiddle', 'seals.toml'))
 
@@ -280,16 +310,25 @@ export async function extractArtifacts(
   root: string,
   gameVersion: string,
 ): Promise<GameArtifactsExtract> {
-  const [pools, mineBiomes, ritualChambers, perks, skillTrees, seals, sealOfferings] =
-    await Promise.all([
-      extractArtifactPools(root),
-      extractMineBiomes(root),
-      extractRitualChambers(root),
-      extractPerks(root),
-      extractSkillTrees(root),
-      extractSeals(root),
-      extractSealOfferings(root),
-    ])
+  const [
+    pools,
+    mineBiomes,
+    ritualChambers,
+    perks,
+    skillTrees,
+    skillTierLevels,
+    seals,
+    sealOfferings,
+  ] = await Promise.all([
+    extractArtifactPools(root),
+    extractMineBiomes(root),
+    extractRitualChambers(root),
+    extractPerks(root),
+    extractSkillTrees(root),
+    extractSkillTierLevels(root),
+    extractSeals(root),
+    extractSealOfferings(root),
+  ])
   return {
     gameVersion,
     ...pools,
@@ -297,6 +336,7 @@ export async function extractArtifacts(
     ritualChambers,
     perks,
     skillTrees,
+    skillTierLevels,
     seals,
     sealOfferings,
   }

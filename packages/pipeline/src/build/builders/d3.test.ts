@@ -82,6 +82,7 @@ interface ShopRecord {
   owner_character_id: string | null
   staff_character_ids: string[]
   hours: unknown[]
+  unlock_requires: { type: string; key: string }[]
   data_gaps: string[]
   stock: {
     item_id: string
@@ -321,29 +322,43 @@ describe('biome_id on availability windows', () => {
 })
 
 describe('shops', () => {
-  it('has the eight stores, each with stock and a location', () => {
+  it('has the eight stores and six market stalls, each with a location', () => {
     expect(shops.map((s) => s.id).sort()).toEqual([
       'balors_wagon',
       'blacksmith',
       'carpenter',
       'clinic',
+      'darcys_stall',
       'general_store',
       'haydens_shop',
       'inn',
+      'louis_stall',
+      'merris_stall',
       'tackle_shop',
+      'veras_stall',
+      'wheedles_stall',
+      'zorels_stall',
     ])
     for (const shop of shops) {
-      expect(shop.stock.length).toBeGreaterThan(0)
       expect(shop.location_id).not.toBeNull()
+      // A stall whose whole inventory is deferred cosmetics ships empty and
+      // says so; every other shop has stock.
+      if (shop.stock.length === 0) expect(shop.data_gaps).toContain('stock')
     }
   })
 
-  it('records no opening hours, and does not call that a gap', () => {
-    // Shops in this game never close — you can buy until 2am, which is the end
-    // of the day. Empty means "no restriction"; an `hours` gap would put an
-    // un-clearable warning on every shop.
+  it('records no opening hours except the market stalls, and never calls hours a gap', () => {
+    // Shops in this game never close within a day — you can buy until 2am,
+    // which is the end of the day. Empty means "no restriction". The Saturday
+    // Market stalls are the one *day-of-week* gate, stated as a full-Saturday
+    // window.
     for (const shop of shops) {
-      expect(shop.hours).toEqual([])
+      if (shop.id.endsWith('_stall')) {
+        expect(shop.hours).toEqual([{ days: ['sat'], from: '00:00', to: '00:00' }])
+        expect(shop.unlock_requires.map((r) => r.key)).toEqual(['repair_the_bridge'])
+      } else {
+        expect(shop.hours).toEqual([])
+      }
       expect(shop.data_gaps).not.toContain('hours')
     }
   })
@@ -397,17 +412,24 @@ describe('shops', () => {
     expect(gated?.length ?? 0).toBeGreaterThan(5)
   })
 
-  it('season-gates only the seeds that the wiki season-gates', () => {
+  it('season-gates the seed tables and the seasonal wardrobe, and nothing else', () => {
     const seasonal = shops.flatMap((s) => s.stock.filter((l) => l.seasons !== null))
     expect(seasonal.length).toBeGreaterThan(0)
-    // Only the General Store's seed tables carry a season.
+    // Two sources of a season, and only two: the General Store's seed tables,
+    // which the wiki heads by season, and Louis's seasonal rack, which the
+    // game gates with `is_season` (bunny ears in spring, swimwear in summer).
     const shopsWithSeasonal = shops.filter((s) => s.stock.some((l) => l.seasons !== null))
-    expect(shopsWithSeasonal.map((s) => s.id)).toEqual(['general_store'])
+    expect(shopsWithSeasonal.map((s) => s.id).sort()).toEqual(['general_store', 'louis_stall'])
   })
 
-  it("marks Balor's stock as rotating and nobody else's", () => {
+  it("marks Balor's and the market stalls' stock as rotating and nobody else's", () => {
+    // Balor's whole wagon rotates; a stall line rotates when its category
+    // declares a draw size (`target_selections`).
     const rotating = shops.filter((s) => s.stock.some((l) => l.rotation))
-    expect(rotating.map((s) => s.id)).toEqual(['balors_wagon'])
+    for (const shop of rotating) {
+      expect(shop.id === 'balors_wagon' || shop.id.endsWith('_stall')).toBe(true)
+    }
+    expect(rotating.map((s) => s.id)).toContain('balors_wagon')
   })
 })
 

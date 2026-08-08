@@ -38,6 +38,12 @@
     "  the same established fact that makes every mine fishing window",
     "  not-applicable. Time stays 'unknown': nothing sourced says ore and gem",
     "  drops ignore the clock, even though they almost certainly do.",
+    "- apiary/terrarium: a farm object on a days_to_produce timer, stated in",
+    "  object_prototypes/furniture.toml's [apiary.factory] and [terrarium.factory]",
+    "  tables — three days per batch, no hour and no weather field anywhere in",
+    "  the prototype. You collect whenever it is done, like a crop. Placeable",
+    "  only on the farm: placeable_locations = [\"farm\"], which is what puts",
+    "  both in locationByMethod. Read from the 1.0.0 files, 2026-08-08.",
     "",
     "NOT listed, deliberately: bug_net and foraging. Bugs demonstrably have time",
     "windows (the wiki has a `time` column for them), and forageable timing has not",
@@ -62,8 +68,14 @@
     "fish_bait",
     "crop_harvest",
     "shop",
-    "dig_spot"
+    "dig_spot",
+    "apiary",
+    "terrarium"
   ],
-  "weatherNotApplicable": ["crop_harvest", "dig_spot", "mine_drop"],
-  "locationByMethod": { "crop_harvest": ["the_farm"] }
+  "weatherNotApplicable": ["crop_harvest", "dig_spot", "mine_drop", "apiary", "terrarium"],
+  "locationByMethod": {
+    "crop_harvest": ["the_farm"],
+    "apiary": ["the_farm"],
+    "terrarium": ["the_farm"]
+  }
 }

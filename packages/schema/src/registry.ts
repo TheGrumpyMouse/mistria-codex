@@ -1,7 +1,7 @@
 import type { z } from 'zod'
 import { Character, GiftPrefs, Schedule } from './entities/character.js'
 import { ArtifactFacet, BugFacet, FishFacet, ForageableFacet, Item } from './entities/item.js'
-import { Animal, Building, Crop, Recipe } from './entities/production.js'
+import { Animal, Building, Crop, Machine, Recipe } from './entities/production.js'
 import { Festival, MuseumSet, Quest, Shop, Skill } from './entities/progression.js'
 import { Location, MapRegion, MineBiome, Monster, Seal, Spot } from './entities/world.js'
 
@@ -131,6 +131,12 @@ export const DATASETS = {
     schema: Building,
     key: 'id',
     description: 'Farm buildings and home upgrades.',
+  },
+  machines: {
+    file: 'machines.json',
+    schema: Machine,
+    key: 'id',
+    description: 'Production machines — what they accept, yield and request.',
   },
   mines: {
     file: 'mines.json',

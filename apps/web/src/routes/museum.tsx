@@ -1,10 +1,35 @@
 import { getRouteApi, Link } from '@tanstack/react-router'
+import { ChevronDown } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { loadDataset, loadDisplayIndex } from '~/lib/data'
 import { doneIn, setDone } from '~/lib/progress'
 import { useData } from '~/lib/use-data'
+
+/**
+ * Which sets are folded shut, remembered across visits — 82 sets is a long
+ * scroll, and re-collapsing them on every visit would make the fold useless.
+ * Stored as a plain id list; a corrupt value reads as "nothing collapsed".
+ */
+const COLLAPSED_KEY = 'mistria-codex:museum-collapsed'
+
+function readCollapsed(): Set<string> {
+  try {
+    const raw = JSON.parse(localStorage.getItem(COLLAPSED_KEY) ?? '[]') as unknown
+    return new Set(Array.isArray(raw) ? raw.filter((v): v is string => typeof v === 'string') : [])
+  } catch {
+    return new Set()
+  }
+}
+
+function writeCollapsed(ids: Set<string>): void {
+  try {
+    localStorage.setItem(COLLAPSED_KEY, JSON.stringify([...ids].sort()))
+  } catch {
+    // Private mode: the fold still works for this session via state.
+  }
+}
 
 const route = getRouteApi('/museum')
 
@@ -68,6 +93,22 @@ export function MuseumRoute() {
   const index = data?.index ?? {}
   const [donated, setDonated] = useState<Set<string>>(new Set())
   const [gapsOnly, setGapsOnly] = useState(false)
+  const [collapsed, setCollapsed] = useState<Set<string>>(() => readCollapsed())
+
+  const toggleCollapsed = (setId: string): void => {
+    setCollapsed((current) => {
+      const next = new Set(current)
+      if (next.has(setId)) next.delete(setId)
+      else next.add(setId)
+      writeCollapsed(next)
+      return next
+    })
+  }
+  const setAllCollapsed = (fold: boolean): void => {
+    const next = fold ? new Set((sets ?? []).map((s) => s.id)) : new Set<string>()
+    writeCollapsed(next)
+    setCollapsed(next)
+  }
 
   useEffect(() => {
     let live = true
@@ -171,6 +212,23 @@ export function MuseumRoute() {
           />
           Only what is missing
         </label>
+
+        <div className="flex items-center gap-2 text-xs">
+          <button
+            type="button"
+            onClick={() => setAllCollapsed(true)}
+            className="tap-target text-ink-faint underline decoration-rule underline-offset-4 hover:text-ink"
+          >
+            Collapse all
+          </button>
+          <button
+            type="button"
+            onClick={() => setAllCollapsed(false)}
+            className="tap-target text-ink-faint underline decoration-rule underline-offset-4 hover:text-ink"
+          >
+            Expand all
+          </button>
+        </div>
       </div>
 
       <input
@@ -186,70 +244,88 @@ export function MuseumRoute() {
         {shown.map((set) => {
           const have = set.item_ids.filter((id) => donated.has(id)).length
           const complete = have >= set.required_count
+          // A search overrides the fold: hiding a hit inside a collapsed set
+          // would read as "not in the museum", which is a lie.
+          const folded = collapsed.has(set.id) && matches === null
           return (
             <section key={set.id}>
-              <h2 className="flex items-baseline gap-2 font-display font-semibold text-ink text-sm">
-                {set.name}
-                <span
-                  data-numeral
-                  className="font-normal text-xs"
-                  style={{ color: complete ? 'var(--museum)' : 'var(--ink-faint)' }}
+              <h2>
+                <button
+                  type="button"
+                  onClick={() => toggleCollapsed(set.id)}
+                  aria-expanded={!folded}
+                  className="tap-target flex w-full items-baseline gap-2 text-left font-display font-semibold text-ink text-sm"
                 >
-                  {have}/{set.required_count}
-                </span>
+                  <ChevronDown
+                    aria-hidden
+                    size={14}
+                    strokeWidth={2}
+                    className={`shrink-0 self-center text-ink-faint transition-transform ${folded ? '-rotate-90' : ''}`}
+                  />
+                  {set.name}
+                  <span
+                    data-numeral
+                    className="font-normal text-xs"
+                    style={{ color: complete ? 'var(--museum)' : 'var(--ink-faint)' }}
+                  >
+                    {have}/{set.required_count}
+                  </span>
+                </button>
               </h2>
 
-              <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
-                {set.item_ids
-                  .filter((id) => matches === null || matches.has(id))
-                  .filter((id) => !gapsOnly || !donated.has(id))
-                  .map((id) => {
-                    const entry = index[id]
-                    const isDone = donated.has(id)
-                    return (
-                      <li key={id} className="flex items-center gap-3 py-2">
-                        <input
-                          type="checkbox"
-                          checked={isDone}
-                          onChange={() => toggle(id)}
-                          aria-label={`${entry?.n ?? id} donated`}
-                        />
-                        <ItemIcon
-                          iconKey={entry?.i ?? `item/${id}`}
-                          name={entry?.n ?? id}
-                          size="sm"
-                        />
-                        <Link
-                          to="/item/$id"
-                          params={{ id }}
-                          className="min-w-0 flex-1 truncate text-sm"
-                          style={{
-                            color: isDone ? 'var(--ink-faint)' : 'var(--ink)',
-                            textDecoration: isDone ? 'line-through' : 'none',
-                          }}
-                        >
-                          {entry?.n ?? id.replace(/_/g, ' ')}
-                        </Link>
+              {folded ? null : (
+                <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
+                  {set.item_ids
+                    .filter((id) => matches === null || matches.has(id))
+                    .filter((id) => !gapsOnly || !donated.has(id))
+                    .map((id) => {
+                      const entry = index[id]
+                      const isDone = donated.has(id)
+                      return (
+                        <li key={id} className="flex items-center gap-3 py-2">
+                          <input
+                            type="checkbox"
+                            checked={isDone}
+                            onChange={() => toggle(id)}
+                            aria-label={`${entry?.n ?? id} donated`}
+                          />
+                          <ItemIcon
+                            iconKey={entry?.i ?? `item/${id}`}
+                            name={entry?.n ?? id}
+                            size="sm"
+                          />
+                          <Link
+                            to="/item/$id"
+                            params={{ id }}
+                            className="min-w-0 flex-1 truncate text-sm"
+                            style={{
+                              color: isDone ? 'var(--ink-faint)' : 'var(--ink)',
+                              textDecoration: isDone ? 'line-through' : 'none',
+                            }}
+                          >
+                            {entry?.n ?? id.replace(/_/g, ' ')}
+                          </Link>
 
-                        {/*
+                          {/*
                           The most valuable placement of the reverse lookup:
                           this row is a thing you still need, and "where do I
                           get it" is the only question left about it. Not shown
                           on a donated row — that question is answered.
                         */}
-                        {!isDone && (
-                          <Link
-                            to="/item/$id/where"
-                            params={{ id }}
-                            className="tap-target shrink-0 text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
-                          >
-                            where?
-                          </Link>
-                        )}
-                      </li>
-                    )
-                  })}
-              </ul>
+                          {!isDone && (
+                            <Link
+                              to="/item/$id/where"
+                              params={{ id }}
+                              className="tap-target shrink-0 text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+                            >
+                              where?
+                            </Link>
+                          )}
+                        </li>
+                      )
+                    })}
+                </ul>
+              )}
             </section>
           )
         })}

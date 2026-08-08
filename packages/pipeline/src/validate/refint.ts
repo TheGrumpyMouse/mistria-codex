@@ -17,6 +17,7 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   seed_item_id: 'items',
   yields_seed_item_id: 'items',
   currency_item_id: 'items',
+  accepts_item_ids: 'items',
   treat_item_id: 'items',
   item_ids: 'items',
   feed_item_ids: 'items',
@@ -74,6 +75,9 @@ const REF_EXEMPT: Readonly<Record<string, string>> = {
   target_id: 'polymorphic target, keyed by the objective’s type',
   // A former id is by definition no longer in the dataset — that is the point of it.
   former_ids: 'historical ids, intentionally unresolvable',
+  // The game's own ids for a collapsed colour group. Deliberately NOT records
+  // — that is what the collapse is — so there is nothing to resolve them to.
+  variant_ids: 'game item ids carried by a collapsed record, not references',
   // Reward and source lists mix item ids with recipe and furniture ids; the
   // build resolves them once those categories land.
   rewards: 'mixed target types, resolved at D3',

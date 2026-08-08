@@ -1,0 +1,2885 @@
+{
+  "cosmetics": [
+    {
+      "default_unlocked": false,
+      "id": "back_gear_ancient_witch_broom",
+      "name": "Ancient Witch Broom",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "back_gear_basic_backpack",
+      "name": "Basic Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": true,
+      "id": "back_gear_basic_cape",
+      "name": "Basic Cape",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_butterfly_wings",
+      "name": "Butterfly Wings",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_cabbage_backpack",
+      "name": "Cabbage Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_cauliflower_backpack",
+      "name": "Cauliflower Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_cloud_backpack",
+      "name": "Cloud Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_daikon_radish_backpack",
+      "name": "Daikon Radish Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_daisy_backpack",
+      "name": "Daisy Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_dark_regent_cape",
+      "name": "Dark Regent Cape",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_dragon_cleric_cape",
+      "name": "Dragon Cleric Cape",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_dragonfly_wings",
+      "name": "Dragonfly Wings",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_dragonsworn_cloak",
+      "name": "Dragonsworn Cloak",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_dragonsworn_cloak_seridia",
+      "name": "Seridia's Dragonsworn Cloak",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_exalted_cloak",
+      "name": "Exalted Cloak",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_fire_cloak",
+      "name": "Fire Sage Cloak",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_fish_scale_cape",
+      "name": "Fish Scale Cape",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_frost_lily_backpack",
+      "name": "Frost Lily Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_hunter_bow",
+      "name": "Hunter's Bow",
+      "price_override": 5000,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_hunter_cape",
+      "name": "Hunter's Cape",
+      "price_override": 5000,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_jasmine_backpack",
+      "name": "Jasmine Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_march_mistrian_shield",
+      "name": "March's Mistrian Shield",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_mini_wings",
+      "name": "Mini Wings",
+      "price_override": 30000,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_noble_cape",
+      "name": "Noble Cape",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_onion_backpack",
+      "name": "Onion Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_ornate_round_shield",
+      "name": "Ornate Round Shield",
+      "price_override": 10000,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_ornate_shield",
+      "name": "Ornate Shield",
+      "price_override": 10000,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_pumpkin_backpack",
+      "name": "Pumpkin Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_rogue_cape",
+      "name": "Rogue's Cape",
+      "price_override": 5000,
+      "slot": "back",
+      "sub_category": "capes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_sheathed_sword",
+      "name": "Sheathed Sword",
+      "price_override": 20000,
+      "slot": "back",
+      "sub_category": "back_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_snowdrop_anemone_backpack",
+      "name": "Snowdrop Anemone Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_strawberry_backpack",
+      "name": "Strawberry Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_sunflower_backpack",
+      "name": "Sunflower Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_sweet_potato_backpack",
+      "name": "Sweet Potato Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_tomato_backpack",
+      "name": "Tomato Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_turnip_backpack",
+      "name": "Turnip Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_watermelon_backpack",
+      "name": "Watermelon Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": false,
+      "id": "back_gear_wheat_backpack",
+      "name": "Wheat Backpack",
+      "price_override": null,
+      "slot": "back",
+      "sub_category": "backpacks"
+    },
+    {
+      "default_unlocked": true,
+      "id": "beard_basic",
+      "name": "Basic Beard",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "beard_thick",
+      "name": "Thick Beard",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_berry",
+      "name": "Berry Dress",
+      "price_override": 1000,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_caped_wedding_gown",
+      "name": "Caped Wedding Gown",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_court",
+      "name": "Court Dress",
+      "price_override": 20000,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_maid",
+      "name": "Maid Dress",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_mermaid_wedding_gown",
+      "name": "Mermaid Wedding Gown",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_dress"
+    },
+    {
+      "default_unlocked": true,
+      "id": "dress_modest",
+      "name": "Long Sleeve Dress",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_romantic_wedding_gown",
+      "name": "Romantic Wedding Gown",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_dress"
+    },
+    {
+      "default_unlocked": true,
+      "id": "dress_sleeveless_basic",
+      "name": "Sleeveless Dress",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": false,
+      "id": "dress_spring_festival",
+      "name": "Spring Festival Dress",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "dress"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_closed",
+      "name": "Closed Eyes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_default",
+      "name": "Basic Eyes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_droopy",
+      "name": "Droopy Eyes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_eyelashes",
+      "name": "Eyelashes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_serious",
+      "name": "Serious Eyes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "eyes_small",
+      "name": "Small Eyes",
+      "price_override": null,
+      "slot": "eyes",
+      "sub_category": "eyes"
+    },
+    {
+      "default_unlocked": true,
+      "id": "face_gear_blush",
+      "name": "Blush Face",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "face_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_caldosian_moon_earrings",
+      "name": "Caldosian Traveler's Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_dragon_cleric_earrings",
+      "name": "Dragon Cleric Eye Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_face_mask",
+      "name": "Face Mask",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "face_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_flower_earrings",
+      "name": "Flower Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": true,
+      "id": "face_gear_glasses",
+      "name": "Glasses",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "glasses"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_hoop_earrings",
+      "name": "Hoop Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_pumpkin_earrings",
+      "name": "Pumpkin Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_reading_glasses",
+      "name": "Reading Glasses",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "glasses"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_reading_glasses_small",
+      "name": "Small Reading Glasses",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "glasses"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_stud_earrings",
+      "name": "Stud Earrings",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "ear_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "face_gear_sunglasses",
+      "name": "Sunglasses",
+      "price_override": null,
+      "slot": "face_gear",
+      "sub_category": "glasses"
+    },
+    {
+      "default_unlocked": true,
+      "id": "facial_hair_handlebar_moustache",
+      "name": "Handlebar Moustache",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "facial_hair_moustache",
+      "name": "Moustache",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "facial_hair_short_beard",
+      "name": "Short Beard",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "facial_hair_soul_patch",
+      "name": "Soul Patch",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "facial_hair_stubble",
+      "name": "Stubble",
+      "price_override": null,
+      "slot": "facial_hair",
+      "sub_category": "facial_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_afro",
+      "name": "Afro",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_afro_puffs",
+      "name": "Afro Puffs",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_blown_out_twist",
+      "name": "Blown Out Twist",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_braided_pigtails",
+      "name": "Braided Pigtails",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_buzzcut",
+      "name": "Buzzcut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_cowlick",
+      "name": "Cowlick",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_high_top",
+      "name": "Curly High Top",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_medium",
+      "name": "Curly Medium",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_medium_fringe",
+      "name": "Curly Medium Fringe",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_curly_pompadour",
+      "name": "Curly Pompadour",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_shaved_side",
+      "name": "Curly Undercut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_short",
+      "name": "Curly Short",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_shorter",
+      "name": "Curly Shorter",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_curly_updo",
+      "name": "Curly Updo",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_dreadlock_twin_buns",
+      "name": "Dreadlock Twin Buns",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_dreadlocks_bun",
+      "name": "Dreads Bun",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_dreadlocks_long",
+      "name": "Long Dreadlocks",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_fade",
+      "name": "Fade",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_medium_boyish",
+      "name": "Medium Length",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_medium_half_bun",
+      "name": "Medium Half Bun",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_medium_half_bun_fringe",
+      "name": "Medium Half Bun Fringe",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_medium_pigtails",
+      "name": "Medium Pigtails",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_mohawk",
+      "name": "Mohawk",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_mushroom",
+      "name": "Mushroom Cut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_parted_mushroom",
+      "name": "Parted Mushroom Cut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_pixie",
+      "name": "Pixie Cut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_rounded_afro",
+      "name": "Rounded Afro",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_shaggy_bob",
+      "name": "Shaggy Bob",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_short_parted_curls",
+      "name": "Short Parted Curls",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_short_parted_straight",
+      "name": "Short Parted Straight",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_straight_buns_fringed",
+      "name": "Straight Buns Fringed",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_long",
+      "name": "Straight Long",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_straight_long_bun",
+      "name": "Straight Long Bun",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_long_fringed",
+      "name": "Straight Long Fringe",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_long_tucked",
+      "name": "Straight Long Tucked",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_straight_long_twin_buns",
+      "name": "Straight Long Twin Buns",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_medium",
+      "name": "Straight Medium",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_medium_ponytail",
+      "name": "Straight Medium Ponytail",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_medium_ponytail_fluffy_bangs",
+      "name": "Straight Medium Fluffy Bangs Ponytail",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_straight_pompadour",
+      "name": "Straight Pompadour",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_straight_shaved_side",
+      "name": "Straight Undercut",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_textured_buzzcut",
+      "name": "Textured Buzz",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "short_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_wavy_long",
+      "name": "Wavy Long",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_wavy_long_fringed",
+      "name": "Wavy Long Fringe",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_wavy_long_ponytail",
+      "name": "Wavy Long Ponytail",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_wavy_long_twin_buns",
+      "name": "Wavy Long Twin Buns",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "long_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_wavy_medium",
+      "name": "Wavy Medium",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": true,
+      "id": "hair_wavy_medium_fringed",
+      "name": "Wavy Medium Fringe",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_wavy_medium_twin_buns",
+      "name": "Wavy Medium Twin Buns",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "hair_wavy_rugged",
+      "name": "Wavy Rugged",
+      "price_override": null,
+      "slot": "hair",
+      "sub_category": "medium_hair"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_adventurer_hood",
+      "name": "Adventurer's Hood",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_ancient_witch_tiara",
+      "name": "Ancient Witch Tiara",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_aviator_goggles",
+      "name": "Aviator Goggles",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_bandana",
+      "name": "Bandana",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_barrel_roller_hat",
+      "name": "Barrel Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_baseball_cap",
+      "name": "Baseball Cap",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_beekeeper_hat",
+      "name": "Beekeeper's Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_beetle_mandible_horns",
+      "name": "Beetle Mandible Horns",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_beret",
+      "name": "Beret",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_berry_crown",
+      "name": "Berry Crown",
+      "price_override": 1000,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_berry_hat",
+      "name": "Berry Hat",
+      "price_override": 1000,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_bunny_ears",
+      "name": "Bunny Ears",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_caldosian_hat",
+      "name": "Caldosian Traveler's Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_cap_basic",
+      "name": "Cap",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_cat_ears",
+      "name": "Cat Ears",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_cherry_beret",
+      "name": "Cherry Beret",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_circlet_earth",
+      "name": "Sage of Earth Gem Circlet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_angel_wing",
+      "name": "Angel Wing Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_bat_wing",
+      "name": "Bat Wing Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_fin",
+      "name": "Fin Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_heart",
+      "name": "Heart Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_moon",
+      "name": "Moon Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_star",
+      "name": "Star Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_strawberry",
+      "name": "Strawberry Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_clips_wedding_flower",
+      "name": "Wedding Flower Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_wedding"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_cloth_helmet",
+      "name": "Cloth Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_copper_helmet",
+      "name": "Copper Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_corrupted_mistril_helmet",
+      "name": "Corrupted Mistril Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_cowboy_hat_basic",
+      "name": "Cowboy Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_crown",
+      "name": "Crown",
+      "price_override": 10000,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_crown_tide",
+      "name": "Crown of the Tide",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_crystal_helmet",
+      "name": "Crystal Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_dancer_flower",
+      "name": "Dancer's Flower",
+      "price_override": 5000,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_dark_regent_crown",
+      "name": "Dark Regent Crown",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_devil_horns",
+      "name": "Devil Horns",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_dragon_cleric_diadem",
+      "name": "Dragon Cleric Horned Diadem",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_dragonsworn_helmet",
+      "name": "Dragonsworn Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_dragonsworn_helmet_seridia",
+      "name": "Seridia's Dragonsworn Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_ear_muffs",
+      "name": "Ear Muffs",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_enchantern_hat",
+      "name": "Mini Lantern Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_essence_bat_hat",
+      "name": "Essence Bat Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_exalted_crown",
+      "name": "Exalted Crown",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_explorer_hat",
+      "name": "Explorer's Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_farmer_cap",
+      "name": "Farmer's Cap",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_fighter_headband",
+      "name": "Fighter Headband",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_fire_hood",
+      "name": "Fire Sage Hood",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_fishing_hat",
+      "name": "Fishing Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_flame_spirit_hat",
+      "name": "Flame Spirit Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_floating_cloud_headpiece",
+      "name": "Floating Cloud Headpiece",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_flower_crown",
+      "name": "Flower Crown",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_flower_hat",
+      "name": "Flower Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_flower_top_hat",
+      "name": "Flower Top Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_flying_tome_hat",
+      "name": "Flying Tome Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_gold_helmet",
+      "name": "Gold Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_griffin_statue_hat",
+      "name": "Living Gryphon Statue Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_halo",
+      "name": "Halo",
+      "price_override": 999999,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_headband_basic",
+      "name": "Headband",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_hijab",
+      "name": "Hijab",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_hunter_hat",
+      "name": "Hunter's Hat",
+      "price_override": 5000,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_iron_helmet",
+      "name": "Iron Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_lava_cat_hat",
+      "name": "Lava Cat Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_lemon_beret",
+      "name": "Lemon Beret",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_lily_pad",
+      "name": "Lily Pad Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_mimic_hat",
+      "name": "Mimic Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_miners_helmet",
+      "name": "Miner's Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_mini_horns",
+      "name": "Mini Horns",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_mistril_helmet",
+      "name": "Mistril Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_mushroom_hat",
+      "name": "Mushroom Cap Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_noble_hat",
+      "name": "Noble Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_oreclod_hat",
+      "name": "Oreclod Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_paisley_bandana",
+      "name": "Paisley Bandana",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_pumpkin_beanie",
+      "name": "Pumpkin Beanie",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_rain_hat",
+      "name": "Rain Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_ranger_leaves",
+      "name": "Ranger's Leaf Hair Clips",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_ribbons_basic",
+      "name": "Ribbons",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_rock_stack_hat",
+      "name": "Rock Stack Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_rockclod_hat",
+      "name": "Rockclod Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_rogue_hood",
+      "name": "Rogue's Hood",
+      "price_override": 5000,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_sapling_hat",
+      "name": "Sapling Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_scrap_metal_helmet",
+      "name": "Scrap Metal Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_short_bow",
+      "name": "Short Bow",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_silver_helmet",
+      "name": "Silver Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_skull_mask",
+      "name": "Skull Mask",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_soup_pot",
+      "name": "Soup Pot Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_special_flower_crown",
+      "name": "Special Flower Crown",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "crown"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_sprout_hat",
+      "name": "Sprout Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_stalagmite_hat",
+      "name": "Stalagmite Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_strawberry_beret",
+      "name": "Strawberry Beret",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_striped_bow",
+      "name": "Striped Bow",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hair_accessory"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_striped_bucket_hat",
+      "name": "Striped Bucket Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_sunhat_straw",
+      "name": "Straw Sunhat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_tangerine",
+      "name": "Tangerine Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_tarnished_gold_helmet",
+      "name": "Tarnished Gold Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_teapot",
+      "name": "Teapot Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_verdigris_helmet",
+      "name": "Verdigris Helmet",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "helmet"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_void_cat_hat",
+      "name": "Void Cat Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_wedding_top_hat",
+      "name": "Wedding Top Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_wedding"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_wedding_veil",
+      "name": "Wedding Veil",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "head_gear_wedding"
+    },
+    {
+      "default_unlocked": false,
+      "id": "head_winter_beanie",
+      "name": "Winter Beanie",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "head_witch_hat",
+      "name": "Witch Hat",
+      "price_override": null,
+      "slot": "head_gear",
+      "sub_category": "hat"
+    },
+    {
+      "default_unlocked": true,
+      "id": "overalls_basic",
+      "name": "Overalls",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "overalls_farmer",
+      "name": "Farmer's Overalls",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "overalls_shorts",
+      "name": "Overall Shorts",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "overalls_skirt",
+      "name": "Overall Skirt",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_adventurer",
+      "name": "Adventurer's Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": true,
+      "id": "pants_basic",
+      "name": "Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_beekeeper",
+      "name": "Beekeeper's Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": true,
+      "id": "pants_cloth_armor",
+      "name": "Cloth Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_copper_armor",
+      "name": "Copper Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_corrupted_mistril",
+      "name": "Corrupted Mistril Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_crystal_armor",
+      "name": "Crystal Tassets",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_dragonsworn_armor",
+      "name": "Dragonsworn Cuisses",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_dragonsworn_armor_seridia",
+      "name": "Seridia's Dragonsworn Cuisses",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_exalted",
+      "name": "Exalted Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_explorer",
+      "name": "Explorer's Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_gold_armor",
+      "name": "Gold Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_hunter",
+      "name": "Hunter's Pants",
+      "price_override": 10000,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_iron_armor",
+      "name": "Iron Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_mistril",
+      "name": "Mistril Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_rogue",
+      "name": "Rogue's Pants",
+      "price_override": 10000,
+      "slot": "bottom",
+      "sub_category": "pants"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_scrap_metal",
+      "name": "Scrap Metal Pants",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_silver_armor",
+      "name": "Silver Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_tarnished_gold_armor",
+      "name": "Tarnished Gold Legplates",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "pants_verdigris_armor",
+      "name": "Verdigris Tassets",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "bottom_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "robe_dark_regent",
+      "name": "Dark Regent Robe",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "robe_dragon_cleric",
+      "name": "Dragon Cleric Robes",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "robe_earth",
+      "name": "Sage of Earth Robe",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "robe_fire",
+      "name": "Fire Sage Robe",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "robe_tide",
+      "name": "Robe of the Waves",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": true,
+      "id": "shoes_boots",
+      "name": "Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_adventurer",
+      "name": "Adventurer's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_ancient_witch",
+      "name": "Ancient Witch Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_beekeeper",
+      "name": "Beekeeper's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_caldosian",
+      "name": "Caldosian Traveler's High Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": true,
+      "id": "shoes_boots_cloth_armor",
+      "name": "Cloth Shoes",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_copper_armor",
+      "name": "Copper Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_corrupted_mistril",
+      "name": "Corrupted Mistril Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_crystal_armor",
+      "name": "Crystal Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_dark_regent",
+      "name": "Dark Regent Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_dragon_cleric",
+      "name": "Dragon Cleric Clawed Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_dragonsworn_armor",
+      "name": "Dragonsworn Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_dragonsworn_armor_seridia",
+      "name": "Seridia's Dragonsworn Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_exalted",
+      "name": "Exalted Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_explorer",
+      "name": "Explorer's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_farmer",
+      "name": "Farmer's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_fire",
+      "name": "Fire Sage Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_fishing",
+      "name": "Fishing Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_gold_armor",
+      "name": "Gold Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_hunter",
+      "name": "Hunter's Boots",
+      "price_override": 5000,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_iron_armor",
+      "name": "Iron Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_miner",
+      "name": "Miner's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_mistril",
+      "name": "Mistril Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_noble",
+      "name": "Noble Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_pirate",
+      "name": "Pirate Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_pumpkin",
+      "name": "Pumpkin Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_ranger",
+      "name": "Ranger's Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_rogue",
+      "name": "Rogue's Boots",
+      "price_override": 5000,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_scrap_metal",
+      "name": "Scrap Metal Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "shoes_boots_short_basic",
+      "name": "Short Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_silver_armor",
+      "name": "Silver Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_tarnished_gold_armor",
+      "name": "Tarnished Gold Greaves",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_verdigris_armor",
+      "name": "Verdigris Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_boots_work",
+      "name": "Work Boots",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "boots"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_dressy_stockings",
+      "name": "Dressy Stockings",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "feet_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_floral_wedding_dress",
+      "name": "Floral Wedding Shoes",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "shoes_wedding"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_sandals_earth",
+      "name": "Sage of Earth Sandals",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "sandals"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_sandals_tide",
+      "name": "Sandals of the Water",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "sandals"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_sandals_worn",
+      "name": "Worn Sandals",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "sandals"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_sneakers_basic",
+      "name": "Sneakers",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "shoes"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shoes_wedding_dress",
+      "name": "Wedding Shoes",
+      "price_override": null,
+      "slot": "feet",
+      "sub_category": "shoes_wedding"
+    },
+    {
+      "default_unlocked": true,
+      "id": "shorts_basic",
+      "name": "Shorts",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shorts_fishing",
+      "name": "Fishing Shorts",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": false,
+      "id": "shorts_swimtrunks",
+      "name": "Swim Trunks",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_ancient_witch",
+      "name": "Ancient Witch Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_dancer",
+      "name": "Dancer's Skirt",
+      "price_override": 10000,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": true,
+      "id": "skirt_long_basic",
+      "name": "Long Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_long_scalloped",
+      "name": "Scalloped Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_maid",
+      "name": "Maid Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_pleated_medium",
+      "name": "Long Pleated Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "skirt_pleated_short",
+      "name": "Short Pleated Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": true,
+      "id": "skirt_short_basic",
+      "name": "Short Skirt",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "skirt"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_berry",
+      "name": "Berry Suit",
+      "price_override": 1000,
+      "slot": "top",
+      "sub_category": "suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_classy_bowtie_wedding",
+      "name": "Bowtie Wedding Suit",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_court",
+      "name": "Court Suit",
+      "price_override": 20000,
+      "slot": "top",
+      "sub_category": "suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_halter_bikini_set",
+      "name": "Halter Bikini Set",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_miner",
+      "name": "Miner's Jumpsuit",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_spring_festival",
+      "name": "Spring Festival Suit",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_tailcoat_wedding",
+      "name": "Tailcoat Wedding Suit",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "suit_tailcoat_wedding_tuxedo",
+      "name": "Tailcoat Wedding Tuxedo",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "wedding_suit"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_adventurer",
+      "name": "Adventurer's Jerkin",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_ancient_witch",
+      "name": "Ancient Witch Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_caldosian_overcoat",
+      "name": "Caldosian Traveler's Overcoat",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_cami",
+      "name": "Cami",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "sleeveless"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_cloth_armor",
+      "name": "Cloth Chestpiece",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_copper_armor",
+      "name": "Copper Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_corrupted_mistril",
+      "name": "Corrupted Mistril Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_cropped_puff_jacket",
+      "name": "Cropped Puff Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_crystal_armor",
+      "name": "Crystal Chestpiece",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_dancer",
+      "name": "Dancer's Top",
+      "price_override": 10000,
+      "slot": "top",
+      "sub_category": "short_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_dragonsworn_armor",
+      "name": "Dragonsworn Cuirass",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_dragonsworn_armor_seridia",
+      "name": "Seridia's Dragonsworn Cuirass",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_exalted",
+      "name": "Exalted Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_explorer",
+      "name": "Explorer's Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_fishing_vest",
+      "name": "Fishing Vest",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_gold_armor",
+      "name": "Gold Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_halter_bikini",
+      "name": "Halter Bikini Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "sleeveless"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_hunter",
+      "name": "Hunter's Top",
+      "price_override": 10000,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_iron_armor",
+      "name": "Iron Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_jacket_and_tee_basic",
+      "name": "Jacket and Tee",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_long_sleeve_baseball",
+      "name": "Baseball Shirt",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_long_sleeve_basic",
+      "name": "Long Sleeve",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_long_sleeve_basic_cropped",
+      "name": "Cropped Long Sleeve",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_long_sleeve_beekeeper",
+      "name": "Beekeeper's Shirt",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_long_sleeve_striped",
+      "name": "Striped Long Sleeve",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_mistril",
+      "name": "Mistril Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_noble_jacket",
+      "name": "Noble Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_noble_tunic",
+      "name": "Noble Tunic",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_plaid_flannel",
+      "name": "Plaid Flannel",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_puff_jacket",
+      "name": "Puff Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_ranger",
+      "name": "Ranger's Short Sleeve Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "short_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_ranger_jacket",
+      "name": "Ranger's Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "robe"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_rogue",
+      "name": "Rogue's Top",
+      "price_override": 10000,
+      "slot": "top",
+      "sub_category": "long_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_scrap_metal",
+      "name": "Scrap Metal Chestpiece",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_silver_armor",
+      "name": "Silver Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_tanktop",
+      "name": "Tank Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "sleeveless"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_tanktop_buttons",
+      "name": "Buttoned Tanktop",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "sleeveless"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_tarnished_gold_armor",
+      "name": "Tarnished Gold Armor",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "top_tee_basic",
+      "name": "T-Shirt",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "short_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_tee_oversized",
+      "name": "Oversized Tee Outfit",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "short_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_tee_ringer_basic",
+      "name": "Ringer Tee",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "short_sleeve"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_verdigris_armor",
+      "name": "Verdigris Chestpiece",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": false,
+      "id": "top_wool_lined_jacket",
+      "name": "Wool-Lined Jacket",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "jacket"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_bottoms_polkadot",
+      "name": "Polkadot Underwear",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_bra",
+      "name": "Bra",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_bra_small",
+      "name": "Small Bra",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "top_misc"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_briefs",
+      "name": "Briefs",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_shorts",
+      "name": "Boxers",
+      "price_override": null,
+      "slot": "bottom",
+      "sub_category": "shorts"
+    },
+    {
+      "default_unlocked": true,
+      "id": "underwear_tank",
+      "name": "Thin Strap Tank Top",
+      "price_override": null,
+      "slot": "top",
+      "sub_category": "sleeveless"
+    }
+  ],
+  "gameVersion": "1.0.0"
+}

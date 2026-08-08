@@ -7,8 +7,15 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { SpoilerChip } from '~/components/Spoiler'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
-import { type AvailabilityIndex, findAvailable, groupByKind, KIND_LABELS } from '~/lib/findable'
+import {
+  type AvailabilityIndex,
+  type FindableEntity,
+  findAvailable,
+  groupByKind,
+  KIND_LABELS,
+} from '~/lib/findable'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
+import { doneIn } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
 
 interface CharacterRecord {
@@ -35,6 +42,8 @@ interface CalendarData {
   locationNames: Map<string, string>
   characters: CharacterRecord[]
   festivals: FestivalRecord[]
+  /** Every donatable item id, from the museum sets. */
+  museumItemIds: Set<string>
 }
 
 const route = getRouteApi('/')
@@ -80,8 +89,9 @@ export function TodayRoute() {
       loadDataset<{ id: string; name: string }>('locations'),
       loadDataset<CharacterRecord>('characters'),
       loadDataset<FestivalRecord>('festivals'),
+      loadDataset<{ item_ids: string[] }>('museum_sets'),
     ])
-      .then(([availability, index, locations, characters, festivals]) => {
+      .then(([availability, index, locations, characters, festivals, museumSets]) => {
         if (!live) return
         setData({
           availability,
@@ -89,9 +99,21 @@ export function TodayRoute() {
           locationNames: new Map(locations.map((l) => [l.id, l.name])),
           characters,
           festivals,
+          museumItemIds: new Set(museumSets.flatMap((set) => set.item_ids)),
         })
       })
       .catch((err: unknown) => live && setError(err instanceof Error ? err.message : String(err)))
+    return () => {
+      live = false
+    }
+  }, [])
+
+  // Ticks are read fresh every mount, never cached with the almanac — they
+  // change while the app runs, on the museum screen and on item pages.
+  const [donated, setDonated] = useState<Set<string>>(new Set())
+  useEffect(() => {
+    let live = true
+    doneIn('museum').then((done) => live && setDonated(done))
     return () => {
       live = false
     }
@@ -153,19 +175,63 @@ export function TodayRoute() {
     [data, instant],
   )
 
+  // The filter matches more than names: the kind ("fish") and every place the
+  // thing is found ("spring pond") count too, token by token — so "spring
+  // pond fish" narrows to exactly the fish in that pond. Anything less and
+  // the box only answers questions the player already knows the answer to.
   const needle = query.trim().toLowerCase()
-  const groups = useMemo(() => {
-    const named = (id: string): string => data?.index[id]?.n ?? id.replace(/_/g, ' ')
-    return groupByKind(findable)
-      .map((group) => ({
-        ...group,
-        entities:
-          needle === ''
-            ? group.entities
-            : group.entities.filter((e) => named(e.id).toLowerCase().includes(needle)),
-      }))
-      .filter((group) => group.entities.length > 0)
-  }, [findable, needle, data])
+  const matchesQuery = useMemo(() => {
+    const tokens = needle.split(/\s+/).filter((t) => t !== '')
+    return (entity: FindableEntity): boolean => {
+      if (tokens.length === 0) return true
+      const haystack = [
+        data?.index[entity.id]?.n ?? entity.id.replace(/_/g, ' '),
+        KIND_LABELS[entity.kind] ?? entity.kind,
+        ...entity.locationIds.map((l) => data?.locationNames.get(l) ?? l.replace(/_/g, ' ')),
+      ]
+        .join(' ')
+        .toLowerCase()
+      return tokens.every((token) => haystack.includes(token))
+    }
+  }, [needle, data])
+
+  const groups = useMemo(
+    () =>
+      groupByKind(findable)
+        .map((group) => ({ ...group, entities: group.entities.filter(matchesQuery) }))
+        .filter((group) => group.entities.length > 0),
+    [findable, matchesQuery],
+  )
+
+  // The museum cut of the same answer: findable now, wanted by a set, not
+  // yet donated. Grouped kind -> place, because that is the errand's shape:
+  // "I'm at the spring pond with a rod — what does the museum still need?"
+  const museumGroups = useMemo(() => {
+    const needed = findable.filter(
+      (entity) =>
+        data?.museumItemIds.has(entity.id) === true &&
+        !donated.has(entity.id) &&
+        matchesQuery(entity),
+    )
+    const placeName = (id: string): string => data?.locationNames.get(id) ?? id.replace(/_/g, ' ')
+    return groupByKind(needed).map((group) => {
+      const byPlace = new Map<string, FindableEntity[]>()
+      for (const entity of group.entities) {
+        for (const loc of entity.locationIds.length > 0 ? entity.locationIds : ['']) {
+          byPlace.set(loc, [...(byPlace.get(loc) ?? []), entity])
+        }
+      }
+      const places = [...byPlace.entries()]
+        .map(([loc, entities]) => ({
+          loc,
+          label: loc === '' ? 'No place recorded yet' : placeName(loc),
+          entities,
+        }))
+        .sort((a, b) => (a.loc === '' ? 1 : b.loc === '' ? -1 : a.label.localeCompare(b.label)))
+      return { kind: group.kind, count: group.entities.length, places }
+    })
+  }, [findable, data, donated, matchesQuery])
+  const museumCount = useMemo(() => museumGroups.reduce((n, g) => n + g.count, 0), [museumGroups])
 
   return (
     <Column>
@@ -282,7 +348,7 @@ export function TodayRoute() {
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Find something in this day…"
+              placeholder="Filter this day — a name, a place, a kind…"
               aria-label="Filter what is findable"
               className="mt-2 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
             />
@@ -299,6 +365,65 @@ export function TodayRoute() {
                 </Link>
                 .
               </p>
+            )}
+
+            {/* The museum's cut of the day, above the full groups: what a
+                set still wants that this instant can supply. Gold-tinted —
+                the museum's colour everywhere in the app — and nested:
+                kind, then place, because that is how the errand is walked. */}
+            {museumCount > 0 && (
+              <details
+                key={`museum:${needle === '' ? '' : 'open'}`}
+                open={needle !== ''}
+                className="mt-3 rounded-card border border-rule px-3 py-1"
+                style={{ background: 'var(--museum-tint)' }}
+              >
+                <summary className="tap-target cursor-pointer py-1.5 text-ink text-sm">
+                  For the museum
+                  <span className="text-ink-mute"> · {museumCount} still needed, findable now</span>
+                </summary>
+                <div className="flex flex-col gap-1 border-rule border-t pt-1.5 pb-1">
+                  {museumGroups.map((group) => (
+                    <details
+                      key={`${group.kind}:${needle === '' ? '' : 'open'}`}
+                      open={needle !== ''}
+                      className="rounded-tile bg-surface/70 px-2 py-0.5"
+                    >
+                      <summary className="tap-target cursor-pointer py-1 text-ink text-sm">
+                        {KIND_LABELS[group.kind] ?? group.kind.replace(/_/g, ' ')}
+                        <span className="text-ink-faint"> · {group.count}</span>
+                      </summary>
+                      {group.places.map((place) => (
+                        <div key={place.loc} className="mb-1.5">
+                          <h4 className="mt-1 text-[0.6875rem] text-ink-mute uppercase tracking-wide">
+                            {place.loc === '' ? (
+                              place.label
+                            ) : (
+                              <Link
+                                to="/place/$id"
+                                params={{ id: place.loc }}
+                                className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
+                              >
+                                {place.label}
+                              </Link>
+                            )}
+                          </h4>
+                          <ul className="flex flex-col divide-y divide-rule">
+                            {place.entities.map((entity) => (
+                              <FindableRow
+                                key={entity.id}
+                                entity={entity}
+                                index={data.index}
+                                locationNames={data.locationNames}
+                              />
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </details>
+                  ))}
+                </div>
+              </details>
             )}
 
             <div className="mt-3 flex flex-col gap-2">

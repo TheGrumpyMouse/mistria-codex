@@ -1,0 +1,2734 @@
+{
+  "cosmetics": [
+    {
+      "icon": "Boots_adventurer.png",
+      "name": "Adventurer's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "8",
+      "variants": 6
+    },
+    {
+      "icon": "adventurer_hood.png",
+      "name": "Adventurer's Hood",
+      "page": "Accessories",
+      "price": null,
+      "source": "2",
+      "variants": 6
+    },
+    {
+      "icon": "Top_adventurers_jerkin.png",
+      "name": "Adventurer’s Jerkin",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 6
+    },
+    {
+      "icon": "Pants_adventurer.png",
+      "name": "Adventurer's Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "6",
+      "variants": 6
+    },
+    {
+      "icon": "Afro.png",
+      "name": "Afro",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Afro_puffs.png",
+      "name": "Afro Puffs",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Boots ancient witch.png",
+      "name": "Ancient Witch Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Abyssal",
+      "variants": 4
+    },
+    {
+      "icon": "Back gear ancient witch broom.png",
+      "name": "Ancient Witch Broom",
+      "page": "Accessories",
+      "price": null,
+      "source": "Abyssal",
+      "variants": 4
+    },
+    {
+      "icon": "Skirt ancient witch.png",
+      "name": "Ancient Witch Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Abyssal",
+      "variants": 4
+    },
+    {
+      "icon": "Tiara ancient witch.png",
+      "name": "Ancient Witch Tiara",
+      "page": "Accessories",
+      "price": null,
+      "source": "Abyssal",
+      "variants": 4
+    },
+    {
+      "icon": "Top ancient witch.png",
+      "name": "Ancient Witch Top",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Abyssal",
+      "variants": 4
+    },
+    {
+      "icon": "clips_angel_wing.png",
+      "name": "Angel Wing Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 5
+    },
+    {
+      "icon": "aviator_goggles.png",
+      "name": "Aviator Goggles",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 4
+    },
+    {
+      "icon": "Back_gear_basic_backpack.png",
+      "name": "Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 6
+    },
+    {
+      "icon": "bandana.png",
+      "name": "Bandana",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 10
+    },
+    {
+      "icon": "baseball_cap.png",
+      "name": "Baseball Cap",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 13
+    },
+    {
+      "icon": "Top_long_sleeve_baseball.png",
+      "name": "Baseball Shirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Beard basic.png",
+      "name": "Basic Beard",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Eyes default.png",
+      "name": "Basic Eyes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "clips_bat_wing.png",
+      "name": "Bat Wing Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 5
+    },
+    {
+      "icon": "Boots_beekeeper.png",
+      "name": "Beekeeper's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 5
+    },
+    {
+      "icon": "beekeeper_hat.png",
+      "name": "Beekeeper’s Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": 7
+    },
+    {
+      "icon": "Pants_beekeeper.png",
+      "name": "Beekeeper’s Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": 5
+    },
+    {
+      "icon": "Top_beekeepers_shirt.png",
+      "name": "Beekeeper’s Shirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 5
+    },
+    {
+      "icon": "beetle_mandible_horns.png",
+      "name": "Beetle Mandible Horns",
+      "page": "Accessories",
+      "price": null,
+      "source": "19",
+      "variants": 5
+    },
+    {
+      "icon": "beret.png",
+      "name": "Beret",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 12
+    },
+    {
+      "icon": "Crown berry.png",
+      "name": "Berry Crown",
+      "page": "Accessories",
+      "price": 1000,
+      "source": "Souvenir Stall",
+      "variants": 8
+    },
+    {
+      "icon": "Dress berry.png",
+      "name": "Berry Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": 1000,
+      "source": "Souvenir Stall",
+      "variants": 4
+    },
+    {
+      "icon": "Berry hat.png",
+      "name": "Berry Hat",
+      "page": "Accessories",
+      "price": 1000,
+      "source": "Souvenir Stall",
+      "variants": 4
+    },
+    {
+      "icon": "Suit berry.png",
+      "name": "Berry Suit",
+      "page": "Cosmetics (Clothes)",
+      "price": 1000,
+      "source": "Souvenir Stall",
+      "variants": 4
+    },
+    {
+      "icon": "Blown out twist.png",
+      "name": "Blown Out Twist",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "blush.png",
+      "name": "Blush Face",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 7
+    },
+    {
+      "icon": "Boots.png",
+      "name": "Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 7
+    },
+    {
+      "icon": "Underwear_shorts.png",
+      "name": "Boxers",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Underwear_bra.png",
+      "name": "Bra",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Braided_bun_fade.png",
+      "name": "Braided Bun Fade",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Braided_pigtails.png",
+      "name": "Braided Pigtails",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Underwear_briefs.png",
+      "name": "Briefs",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Bunny ears.png",
+      "name": "Bunny Ears",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 9
+    },
+    {
+      "icon": "Back_gear_butterfly_wings.png",
+      "name": "Butterfly Wings",
+      "page": "Accessories",
+      "price": null,
+      "source": "17",
+      "variants": 8
+    },
+    {
+      "icon": "Top_buttoned_tanktop.png",
+      "name": "Buttoned Tanktop",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Buzzcut.png",
+      "name": "Buzzcut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_cabbage_backpack.png",
+      "name": "Cabbage Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "Harvesting short",
+      "variants": 2
+    },
+    {
+      "icon": "Caldosian moon earrings.png",
+      "name": "Caldosian Traveler's Earrings",
+      "page": "Accessories",
+      "price": null,
+      "source": "44",
+      "variants": 3
+    },
+    {
+      "icon": "Caldosian hat.png",
+      "name": "Caldosian Traveler's Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "48",
+      "variants": 3
+    },
+    {
+      "icon": "Boots caldosian.png",
+      "name": "Caldosian Traveler's High Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "46",
+      "variants": 3
+    },
+    {
+      "icon": "Top_caldosian_overcoat.png",
+      "name": "Caldosian Traveler's Overcoat",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "42",
+      "variants": 3
+    },
+    {
+      "icon": "Top_cami.png",
+      "name": "Cami",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "cap_basic.png",
+      "name": "Cap",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 3
+    },
+    {
+      "icon": "cat_ears.png",
+      "name": "Cat Ears",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 4
+    },
+    {
+      "icon": "Back_gear_cauliflower_backpack.png",
+      "name": "Cauliflower Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "Harvesting short",
+      "variants": 2
+    },
+    {
+      "icon": "Cherry beret.png",
+      "name": "Cherry Beret",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 4
+    },
+    {
+      "icon": "Eyes closed.png",
+      "name": "Closed Eyes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Top_cloth_chestpiece.png",
+      "name": "Cloth Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 2
+    },
+    {
+      "icon": "cloth_helmet.png",
+      "name": "Cloth Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 2
+    },
+    {
+      "icon": "Pants_cloth_armor.png",
+      "name": "Cloth Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 2
+    },
+    {
+      "icon": "Boots_cloth_armor.png",
+      "name": "Cloth Shoes",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_cloud_backpack.png",
+      "name": "Cloud Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "Mist Sight",
+      "variants": 4
+    },
+    {
+      "icon": "Boots_copper_armor.png",
+      "name": "Copper Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 6,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_copper_armor.png",
+      "name": "Copper Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": 6,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "copper_helmet.png",
+      "name": "Copper Helmet",
+      "page": "Accessories",
+      "price": 6,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Pants_copper_armor.png",
+      "name": "Copper Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 6,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Boots_corrupted_mistril_armor.png",
+      "name": "Corrupted Mistril Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Top_corrupted_mistril_armor.png",
+      "name": "Corrupted Mistril Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "corrupted mistril helmet.png",
+      "name": "Corrupted Mistril Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Pants_corrupted_mistril_armor.png",
+      "name": "Corrupted Mistril Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Dress court.png",
+      "name": "Court Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": 20000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Suit court.png",
+      "name": "Court Suit",
+      "page": "Cosmetics (Clothes)",
+      "price": 20000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "cowboy_hat_basic.png",
+      "name": "Cowboy Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 5
+    },
+    {
+      "icon": "Cowlick.png",
+      "name": "Cowlick",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Top_long_sleeve_basic_cropped.png",
+      "name": "Cropped Long Sleeve",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Top cropped puff jacket.png",
+      "name": "Cropped Puff Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Crown.png",
+      "name": "Crown",
+      "page": "Accessories",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 4
+    },
+    {
+      "icon": "crown_tide.png",
+      "name": "Crown of the Tide",
+      "page": "Accessories",
+      "price": null,
+      "source": "2",
+      "variants": 2
+    },
+    {
+      "icon": "Boots_crystal_armor.png",
+      "name": "Crystal Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Top_crystal_armor.png",
+      "name": "Crystal Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "crystal_helmet.png",
+      "name": "Crystal Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Pants_crystal_armor.png",
+      "name": "Crystal Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Curly_high_top.png",
+      "name": "Curly High Top",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly_medium.png",
+      "name": "Curly Medium",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly_medium fringe.png",
+      "name": "Curly Medium Fringe",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly pompadour.png",
+      "name": "Curly Pompadour",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Curly short.png",
+      "name": "Curly Short",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly shorter.png",
+      "name": "Curly Shorter",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly_undercut.png",
+      "name": "Curly Undercut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Curly_updo.png",
+      "name": "Curly Updo",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_daikon_radish_backpack.png",
+      "name": "Daikon Radish Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_daisy_backpack.png",
+      "name": "Daisy Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "Harvesting short",
+      "variants": 4
+    },
+    {
+      "icon": "Dancer flower.png",
+      "name": "Dancer's Flower",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 7
+    },
+    {
+      "icon": "Skirt dancer.png",
+      "name": "Dancer's Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 7
+    },
+    {
+      "icon": "Top dancer.png",
+      "name": "Dancer's Top",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 7
+    },
+    {
+      "icon": "Boots_dark_regent.png",
+      "name": "Dark Regent Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "5",
+      "variants": 4
+    },
+    {
+      "icon": "crown_dark regent.png",
+      "name": "Dark Regent Crown",
+      "page": "Accessories",
+      "price": null,
+      "source": "5",
+      "variants": 4
+    },
+    {
+      "icon": "devil_horns.png",
+      "name": "Devil Horns",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 9
+    },
+    {
+      "icon": "Boots_dragon_cleric.png",
+      "name": "Dragon Cleric Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Ritual Chambers",
+      "variants": 3
+    },
+    {
+      "icon": "Back_gear_dragon_cleric_cape.png",
+      "name": "Dragon Cleric Cape",
+      "page": "Accessories",
+      "price": null,
+      "source": "Ritual Chambers",
+      "variants": 3
+    },
+    {
+      "icon": "Diadem_dragon_cleric.png",
+      "name": "Dragon Cleric Diadem",
+      "page": "Accessories",
+      "price": null,
+      "source": "Ritual Chambers",
+      "variants": 3
+    },
+    {
+      "icon": "Dragon_cleric_earrings.png",
+      "name": "Dragon Cleric Earrings",
+      "page": "Accessories",
+      "price": null,
+      "source": "Ritual Chambers",
+      "variants": 3
+    },
+    {
+      "icon": "Robe_dragon_cleric.png",
+      "name": "Dragon Cleric Robe",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Ritual Chambers",
+      "variants": 3
+    },
+    {
+      "icon": "Back_gear_dragonfly_wings.png",
+      "name": "Dragonfly Wings",
+      "page": "Accessories",
+      "price": null,
+      "source": "18",
+      "variants": 6
+    },
+    {
+      "icon": "Dreadlock twin buns.png",
+      "name": "Dreadlock Twin Buns",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Dreads_bun.png",
+      "name": "Dreads Bun",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Dressy stockings.png",
+      "name": "Dressy Stockings",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 10
+    },
+    {
+      "icon": "Eyes droopy.png",
+      "name": "Droopy Eyes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Ear muffs.png",
+      "name": "Ear Muffs",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Essence bat hat.png",
+      "name": "Essence Bat Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Essence Bat",
+      "variants": 2
+    },
+    {
+      "icon": "Boots exalted.png",
+      "name": "Exalted Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "87",
+      "variants": 7
+    },
+    {
+      "icon": "Back_gear_exalted_cloak.png",
+      "name": "Exalted Cloak",
+      "page": "Accessories",
+      "price": null,
+      "source": "81",
+      "variants": 7
+    },
+    {
+      "icon": "Exalted crown.png",
+      "name": "Exalted Crown",
+      "page": "Accessories",
+      "price": null,
+      "source": "88",
+      "variants": 7
+    },
+    {
+      "icon": "Pants exalted.png",
+      "name": "Exalted Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "85",
+      "variants": 7
+    },
+    {
+      "icon": "Top exalted.png",
+      "name": "Exalted Top",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "83",
+      "variants": 7
+    },
+    {
+      "icon": "Boots_explorer.png",
+      "name": "Explorer's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 4
+    },
+    {
+      "icon": "explorer_hat.png",
+      "name": "Explorer's Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": 4
+    },
+    {
+      "icon": "Top_explorers_jacket.png",
+      "name": "Explorer's Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 4
+    },
+    {
+      "icon": "Pants_explorer.png",
+      "name": "Explorer's Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": null
+    },
+    {
+      "icon": "Eyes eyelashes.png",
+      "name": "Eyelashes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "face_mask.png",
+      "name": "Face Mask",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 10
+    },
+    {
+      "icon": "Fade.png",
+      "name": "Fade",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Boots_farmer.png",
+      "name": "Farmer's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": 4
+    },
+    {
+      "icon": "farmer_cap.png",
+      "name": "Farmer's Cap",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": 5
+    },
+    {
+      "icon": "overalls_farmer.png",
+      "name": "Farmer’s Overalls",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 3
+    },
+    {
+      "icon": "fighter_headband.png",
+      "name": "Fighter Headband",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 14
+    },
+    {
+      "icon": "Clips_fin.png",
+      "name": "Fin Clips",
+      "page": "Accessories",
+      "price": null,
+      "source": "21",
+      "variants": 12
+    },
+    {
+      "icon": "Boots_fire.png",
+      "name": "Fire Sage Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 4
+    },
+    {
+      "icon": "Back_gear_fire_cloak.png",
+      "name": "Fire Sage Cloak",
+      "page": "Accessories",
+      "price": null,
+      "source": "4",
+      "variants": 4
+    },
+    {
+      "icon": "Hood_fire.png",
+      "name": "Fire Sage Hood",
+      "page": "Accessories",
+      "price": null,
+      "source": "4",
+      "variants": 4
+    },
+    {
+      "icon": "robe_fire.png",
+      "name": "Fire Sage Robe",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 4
+    },
+    {
+      "icon": "Back_gear_fish_scale_cape.png",
+      "name": "Fish Scale Cape",
+      "page": "Accessories",
+      "price": null,
+      "source": "22",
+      "variants": 6
+    },
+    {
+      "icon": "Boots_fishing.png",
+      "name": "Fishing Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "4",
+      "variants": 6
+    },
+    {
+      "icon": "fishing_hat.png",
+      "name": "Fishing Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": 6
+    },
+    {
+      "icon": "Shorts_fishing.png",
+      "name": "Fishing Shorts",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": 6
+    },
+    {
+      "icon": "Top_fishing_vest.png",
+      "name": "Fishing Vest",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 6
+    },
+    {
+      "icon": "Flame spirit hat.png",
+      "name": "Flame Spirit Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "4",
+      "variants": 2
+    },
+    {
+      "icon": "Floating cloud headpiece.png",
+      "name": "Floating Cloud Headpiece",
+      "page": "Accessories",
+      "price": null,
+      "source": "Mist Sight",
+      "variants": 4
+    },
+    {
+      "icon": "flower_crown.png",
+      "name": "Flower Crown",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Clothing Stall",
+      "variants": 4
+    },
+    {
+      "icon": "flower_earrings.png",
+      "name": "Flower Earrings",
+      "page": "Accessories",
+      "price": 500,
+      "source": "2",
+      "variants": 4
+    },
+    {
+      "icon": "flower_hat.png",
+      "name": "Flower Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 10
+    },
+    {
+      "icon": "flower_top_hat.png",
+      "name": "Flower Top Hat",
+      "page": "Accessories",
+      "price": 500,
+      "source": "1+",
+      "variants": 4
+    },
+    {
+      "icon": "Flying tome hat.png",
+      "name": "Flying Tome Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_frost_lily_backpack.png",
+      "name": "Frost Lily Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 4
+    },
+    {
+      "icon": "glasses.png",
+      "name": "Glasses",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 10
+    },
+    {
+      "icon": "Boots_gold_armor.png",
+      "name": "Gold Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 24,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_gold_armor.png",
+      "name": "Gold Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": 24,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "gold helmet.png",
+      "name": "Gold Helmet",
+      "page": "Accessories",
+      "price": 24,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Pants_gold_armor.png",
+      "name": "Gold Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 24,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "halo.png",
+      "name": "Halo",
+      "page": "Accessories",
+      "price": 999999,
+      "source": "Wheedle",
+      "variants": 5
+    },
+    {
+      "icon": "Suit halter bikini set.png",
+      "name": "Halter Bikini Set",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Top halter bikini.png",
+      "name": "Halter Bikini Top",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Handlebar moustache.png",
+      "name": "Handlebar Moustache",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "headband_basic.png",
+      "name": "Headband",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 11
+    },
+    {
+      "icon": "clips_heart.png",
+      "name": "Heart Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 11
+    },
+    {
+      "icon": "hijab.png",
+      "name": "Hijab",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 10
+    },
+    {
+      "icon": "hoop_earrings.png",
+      "name": "Hoop Earrings",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 10
+    },
+    {
+      "icon": "Boots hunter.png",
+      "name": "Hunter's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Back gear hunter bow.png",
+      "name": "Hunter's Bow",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Back gear hunter cape.png",
+      "name": "Hunter's Cape",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Hunter hat.png",
+      "name": "Hunter's Hat",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Pants hunter.png",
+      "name": "Hunter's Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Top hunter.png",
+      "name": "Hunter's Top",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Boots_iron_armor.png",
+      "name": "Iron Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 12,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_iron_armor.png",
+      "name": "Iron Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": 12,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "iron_helmet.png",
+      "name": "Iron Helmet",
+      "page": "Accessories",
+      "price": 12,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Pants_iron_armor.png",
+      "name": "Iron Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 12,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_jacket_and_tee_basic.png",
+      "name": "Jacket and Tee",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Back_gear_jasmine_backpack.png",
+      "name": "Jasmine Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 4
+    },
+    {
+      "icon": "Lava cat hat.png",
+      "name": "Lava Cat Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Lava Cat",
+      "variants": 2
+    },
+    {
+      "icon": "Lemon beret.png",
+      "name": "Lemon Beret",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 4
+    },
+    {
+      "icon": "lily_pad.png",
+      "name": "Lily Pad Hat",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 3
+    },
+    {
+      "icon": "Living gryphon hat.png",
+      "name": "Living Gryphon Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Living Gryphon Statue",
+      "variants": 2
+    },
+    {
+      "icon": "Long dreadlocks.png",
+      "name": "Long Dreadlocks",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "skirt_pleated_medium.png",
+      "name": "Long Pleated Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 11
+    },
+    {
+      "icon": "skirt_long_basic.png",
+      "name": "Long Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Top_long_sleeve_basic.png",
+      "name": "Long Sleeve",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "dress_modest.png",
+      "name": "Long Sleeve Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "dress_maid.png",
+      "name": "Maid Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 6
+    },
+    {
+      "icon": "maid_headdress.png",
+      "name": "Maid Headdress?",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "skirt_maid.png",
+      "name": "Maid Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 6
+    },
+    {
+      "icon": "Medium_half_bun.png",
+      "name": "Medium Half Bun",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Medium_half_bun_fringe.png",
+      "name": "Medium Half Bun Fringe",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Medium_length.png",
+      "name": "Medium Length",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Medium_pigtails.png",
+      "name": "Medium Pigtails",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Messy_short_fringed.png",
+      "name": "Messy Short Fringed",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Mimic_hat.png",
+      "name": "Mimic Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Mimics",
+      "variants": null
+    },
+    {
+      "icon": "Boots_miner.png",
+      "name": "Miner's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "1",
+      "variants": 2
+    },
+    {
+      "icon": "miners_helmet.png",
+      "name": "Miner's Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": 7
+    },
+    {
+      "icon": "suit_miner.png",
+      "name": "Miner's Jumpsuit",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "1",
+      "variants": 6
+    },
+    {
+      "icon": "mini_horns.png",
+      "name": "Mini Horns",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 9
+    },
+    {
+      "icon": "enchantern hat.png",
+      "name": "Mini Lantern Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_mini_wings.png",
+      "name": "Mini Wings",
+      "page": "Accessories",
+      "price": 30000,
+      "source": "Wheedle",
+      "variants": 4
+    },
+    {
+      "icon": "Boots_mistril_armor.png",
+      "name": "Mistril Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 30,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_mistril_armor.png",
+      "name": "Mistril Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": 30,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "mistril helmet.png",
+      "name": "Mistril Helmet",
+      "page": "Accessories",
+      "price": 30,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Pants_mistril_armor.png",
+      "name": "Mistril Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 30,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Mohawk.png",
+      "name": "Mohawk",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "clips_moon.png",
+      "name": "Moon Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 5
+    },
+    {
+      "icon": "Moustache.png",
+      "name": "Moustache",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "mushroom hat.png",
+      "name": "Mushroom Cap Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 3
+    },
+    {
+      "icon": "Mushroom_cut.png",
+      "name": "Mushroom Cut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Boots_noble.png",
+      "name": "Noble Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "66",
+      "variants": 6
+    },
+    {
+      "icon": "Back_gear_noble_cape.png",
+      "name": "Noble Cape",
+      "page": "Accessories",
+      "price": null,
+      "source": "62",
+      "variants": 6
+    },
+    {
+      "icon": "noble_hat.png",
+      "name": "Noble Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "69",
+      "variants": 6
+    },
+    {
+      "icon": "Top_noble_jacket.png",
+      "name": "Noble Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "64",
+      "variants": 6
+    },
+    {
+      "icon": "Noble_tunic.png",
+      "name": "Noble Tunic",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "68",
+      "variants": 6
+    },
+    {
+      "icon": "Back_gear_onion_backpack.png",
+      "name": "Onion Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": "Harvesting short",
+      "variants": 2
+    },
+    {
+      "icon": "Oreclod hat.png",
+      "name": "Oreclod Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 3
+    },
+    {
+      "icon": "Back_gear_ornate_round_shield.png",
+      "name": "Ornate Round Shield",
+      "page": "Accessories",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 14
+    },
+    {
+      "icon": "Back_gear_ornate_shield.png",
+      "name": "Ornate Shield",
+      "page": "Accessories",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 14
+    },
+    {
+      "icon": "overalls_shorts.png",
+      "name": "Overall Shorts",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "overalls_skirt.png",
+      "name": "Overall Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "overalls_basic.png",
+      "name": "Overalls",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Top_tee_oversized.png",
+      "name": "Oversized Tee Outfit",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Paisley bandana.png",
+      "name": "Paisley Bandana",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 12
+    },
+    {
+      "icon": "Pants_basic.png",
+      "name": "Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Parted mushroom_cut.png",
+      "name": "Parted Mushroom Cut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Boots_pirate.png",
+      "name": "Pirate Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 7
+    },
+    {
+      "icon": "Pixie_cut.png",
+      "name": "Pixie Cut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Top_plaid_flannel.png",
+      "name": "Plaid Flannel",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 3
+    },
+    {
+      "icon": "Underwear_shorts_polkadot.png",
+      "name": "Polkadot Underwear",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Top puff jacket.png",
+      "name": "Puff Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Back_gear_pumpkin_backpack.png",
+      "name": "Pumpkin Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Pumpkin beanie.png",
+      "name": "Pumpkin Beanie",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 9
+    },
+    {
+      "icon": "Boots pumpkin.png",
+      "name": "Pumpkin Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Pumpkin earrings.png",
+      "name": "Pumpkin Earrings",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 6
+    },
+    {
+      "icon": "rain_hat.png",
+      "name": "Rain Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 6
+    },
+    {
+      "icon": "Boots_ranger.png",
+      "name": "Ranger's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "26",
+      "variants": 4
+    },
+    {
+      "icon": "Top_rangers_jacket.png",
+      "name": "Ranger's Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 4
+    },
+    {
+      "icon": "ranger leaves.png",
+      "name": "Ranger's Leaf Hair Clips",
+      "page": "Accessories",
+      "price": null,
+      "source": "28",
+      "variants": 4
+    },
+    {
+      "icon": "Top_ranger_short_sleeve.png",
+      "name": "Ranger's Short Sleeve Top",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "24",
+      "variants": 4
+    },
+    {
+      "icon": "reading_glasses.png",
+      "name": "Reading Glasses",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 10
+    },
+    {
+      "icon": "ribbons_basic.png",
+      "name": "Ribbons",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 11
+    },
+    {
+      "icon": "Top_tee_ringer_basic.png",
+      "name": "Ringer Tee",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "robe_tide.png",
+      "name": "Robe of the Waves",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 2
+    },
+    {
+      "icon": "Rock stack hat.png",
+      "name": "Rock Stack Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 2
+    },
+    {
+      "icon": "Rockclod hat.png",
+      "name": "Rockclod Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 3
+    },
+    {
+      "icon": "Boots rogue.png",
+      "name": "Rogue's Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Back gear rogue cape.png",
+      "name": "Rogue's Cape",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Rogue hood.png",
+      "name": "Rogue's Hood",
+      "page": "Accessories",
+      "price": 5000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Pants rogue.png",
+      "name": "Rogue's Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Top rogue.png",
+      "name": "Rogue's Top",
+      "page": "Cosmetics (Clothes)",
+      "price": 10000,
+      "source": "Wheedle",
+      "variants": 8
+    },
+    {
+      "icon": "Rounded_afro.png",
+      "name": "Rounded Afro",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "circlet_earth.png",
+      "name": "Sage of Earth Gem Circlet",
+      "page": "Accessories",
+      "price": null,
+      "source": "3",
+      "variants": 2
+    },
+    {
+      "icon": "robe_earth.png",
+      "name": "Sage of Earth Robe",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": 2
+    },
+    {
+      "icon": "sandals_earth.png",
+      "name": "Sage of Earth Sandals",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "3",
+      "variants": 2
+    },
+    {
+      "icon": "sandals_tide.png",
+      "name": "Sandals of the Water",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "2",
+      "variants": 2
+    },
+    {
+      "icon": "Sapling_hat.png",
+      "name": "Sapling Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 4
+    },
+    {
+      "icon": "skirt_long_scalloped.png",
+      "name": "Scalloped Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Boots_scrap_metal.png",
+      "name": "Scrap Metal Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": 3
+    },
+    {
+      "icon": "Top_scrap_chestpiece.png",
+      "name": "Scrap Metal Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": 3
+    },
+    {
+      "icon": "scrap metal_helmet.png",
+      "name": "Scrap Metal Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 3
+    },
+    {
+      "icon": "Pants_scrap_metal.png",
+      "name": "Scrap Metal Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": 3
+    },
+    {
+      "icon": "Eyes serious.png",
+      "name": "Serious Eyes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Shaggy bob.png",
+      "name": "Shaggy Bob",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_sheathed_sword.png",
+      "name": "Sheathed Sword",
+      "page": "Accessories",
+      "price": 20000,
+      "source": "Wheedle",
+      "variants": 5
+    },
+    {
+      "icon": "Short beard.png",
+      "name": "Short Beard",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Boots_short_basic.png",
+      "name": "Short Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 7
+    },
+    {
+      "icon": "short_bow.png",
+      "name": "Short Bow",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 14
+    },
+    {
+      "icon": "Short_parted_curls.png",
+      "name": "Short Parted Curls",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Short_parted_straight.png",
+      "name": "Short Parted Straight",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "skirt_pleated_short.png",
+      "name": "Short Pleated Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "skirt_short_basic.png",
+      "name": "Short Skirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Shorts_basic.png",
+      "name": "Shorts",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Boots_silver_armor.png",
+      "name": "Silver Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 18,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Top_silver_chestpiece.png",
+      "name": "Silver Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": 18,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Silver_helmet.png",
+      "name": "Silver Helmet",
+      "page": "Accessories",
+      "price": 18,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Pants_silver_armor.png",
+      "name": "Silver Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": 18,
+      "source": "Armor",
+      "variants": null
+    },
+    {
+      "icon": "Player skull mask.png",
+      "name": "Skull Mask",
+      "page": "Accessories",
+      "price": null,
+      "source": "pink",
+      "variants": 2
+    },
+    {
+      "icon": "Dress sleeveless basic.png",
+      "name": "Sleeveless Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "underwear_bra_small.png",
+      "name": "Small Bra",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Eyes small.png",
+      "name": "Small Eyes",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "reading_glasses_small.png",
+      "name": "Small Reading Glasses",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 10
+    },
+    {
+      "icon": "sneakers basic.png",
+      "name": "Sneakers",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Back_gear_snowdrop_anemone_backpack.png",
+      "name": "Snowdrop Anemone Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 4
+    },
+    {
+      "icon": "Soul patch.png",
+      "name": "Soul Patch",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "soup pot.png",
+      "name": "Soup Pot Hat",
+      "page": "Accessories",
+      "price": 100,
+      "source": "Wishing Well",
+      "variants": 2
+    },
+    {
+      "icon": "special_flower_crown.png",
+      "name": "Special Flower Crown",
+      "page": "Accessories",
+      "price": null,
+      "source": "1",
+      "variants": null
+    },
+    {
+      "icon": "Spiky.png",
+      "name": "Spiky",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "dress_spring_festival.png",
+      "name": "Spring Festival Dress",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "1",
+      "variants": 4
+    },
+    {
+      "icon": "suit_spring_festival.png",
+      "name": "Spring Festival Suit",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "1",
+      "variants": 4
+    },
+    {
+      "icon": "Sprout hat.png",
+      "name": "Sprout Hat",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 12
+    },
+    {
+      "icon": "Stalagmite_hat.png",
+      "name": "Stalagmite Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Any",
+      "variants": 2
+    },
+    {
+      "icon": "clips_star.png",
+      "name": "Star Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 11
+    },
+    {
+      "icon": "Straight_buns_fringed.png",
+      "name": "Straight Buns Fringed",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Straight_long.png",
+      "name": "Straight Long",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_long_bun.png",
+      "name": "Straight Long Bun",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Straight_long_fringe.png",
+      "name": "Straight Long Fringe",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_long tucked.png",
+      "name": "Straight Long Tucked",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_long_twin_buns.png",
+      "name": "Straight Long Twin Buns",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Straight_medium.png",
+      "name": "Straight Medium",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_medium_fluffy_bangs_ponytail.png",
+      "name": "Straight Medium Fluffy Bangs Ponytail",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_medium_ponytail.png",
+      "name": "Straight Medium Ponytail",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_pompadour.png",
+      "name": "Straight Pompadour",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Straight_short_fringed.png",
+      "name": "Straight Short Fringed",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Straight_undercut.png",
+      "name": "Straight Undercut",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "sunhat_straw.png",
+      "name": "Straw Sunhat",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 15
+    },
+    {
+      "icon": "Back_gear_strawberry_backpack.png",
+      "name": "Strawberry Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Strawberry beret.png",
+      "name": "Strawberry Beret",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 2
+    },
+    {
+      "icon": "clips_strawberry.png",
+      "name": "Strawberry Hair Clips",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Vera",
+      "variants": 3
+    },
+    {
+      "icon": "Striped bow.png",
+      "name": "Striped Bow",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 17
+    },
+    {
+      "icon": "striped bucket hat.png",
+      "name": "Striped Bucket Hat",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 17
+    },
+    {
+      "icon": "Top_long_sleeve_striped.png",
+      "name": "Striped Long Sleeve",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 11
+    },
+    {
+      "icon": "Stubble.png",
+      "name": "Stubble",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "stud_earrings.png",
+      "name": "Stud Earrings",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_sunflower_backpack.png",
+      "name": "Sunflower Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 4
+    },
+    {
+      "icon": "sunglasses.png",
+      "name": "Sunglasses",
+      "page": "Accessories",
+      "price": null,
+      "source": "Cool",
+      "variants": 2
+    },
+    {
+      "icon": "Surfer.png",
+      "name": "Surfer",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_sweet_potato_backpack.png",
+      "name": "Sweet Potato Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Shorts swimtrunks.png",
+      "name": "Swimtrunks",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 8
+    },
+    {
+      "icon": "Top_tee_basic.png",
+      "name": "T-Shirt",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "tangerine.png",
+      "name": "Tangerine Hat",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 3
+    },
+    {
+      "icon": "Top_tanktop.png",
+      "name": "Tank Top",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Boots_tarnished_gold_armor.png",
+      "name": "Tarnished Gold Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Top_tarnished_gold_armor.png",
+      "name": "Tarnished Gold Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "tarnished gold helmet.png",
+      "name": "Tarnished Gold Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Pants_tarnished_gold_armor.png",
+      "name": "Tarnished Gold Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "teapot.png",
+      "name": "Teapot Hat",
+      "page": "Accessories",
+      "price": 100,
+      "source": "Wishing Well",
+      "variants": 2
+    },
+    {
+      "icon": "Textured_buzz.png",
+      "name": "Textured Buzz",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Beard thick.png",
+      "name": "Thick Beard",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Underwear_tank.png",
+      "name": "Thin Strap Tanktop",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": "Character Creation",
+      "variants": 11
+    },
+    {
+      "icon": "Back_gear_tomato_backpack.png",
+      "name": "Tomato Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_turnip_backpack.png",
+      "name": "Turnip Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Boots_verdigris_armor.png",
+      "name": "Verdigris Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Top_verdigris_chestpiece.png",
+      "name": "Verdigris Chestpiece",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "verdigris_helmet.png",
+      "name": "Verdigris Helmet",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Pants_verdigris_armor.png",
+      "name": "Verdigris Pants",
+      "page": "Cosmetics (Clothes)",
+      "price": null,
+      "source": null,
+      "variants": null
+    },
+    {
+      "icon": "Void cat hat.png",
+      "name": "Void Cat Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "Void Cat",
+      "variants": 2
+    },
+    {
+      "icon": "Back_gear_watermelon_backpack.png",
+      "name": "Watermelon Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Wavy_long.png",
+      "name": "Wavy Long",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Wavy_long_fringe.png",
+      "name": "Wavy Long Fringe",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Wavy long ponytail.png",
+      "name": "Wavy Long Ponytail",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Wavy_long_twin_buns.png",
+      "name": "Wavy Long Twin Buns",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Wavy medium.png",
+      "name": "Wavy Medium",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Wavy medium fringe.png",
+      "name": "Wavy Medium Fringe",
+      "page": "Cosmetics (Body)",
+      "price": null,
+      "source": "Character creation",
+      "variants": null
+    },
+    {
+      "icon": "Wavy medium twin buns.png",
+      "name": "Wavy Medium Twin Buns",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Wavy_rugged.png",
+      "name": "Wavy Rugged",
+      "page": "Cosmetics (Body)",
+      "price": 500,
+      "source": "Vera",
+      "variants": null
+    },
+    {
+      "icon": "Back_gear_wheat_backpack.png",
+      "name": "Wheat Backpack",
+      "page": "Accessories",
+      "price": null,
+      "source": null,
+      "variants": 2
+    },
+    {
+      "icon": "Winter beanie.png",
+      "name": "Winter Beanie",
+      "page": "Accessories",
+      "price": 500,
+      "source": "Louis",
+      "variants": 12
+    },
+    {
+      "icon": "witch_hat.png",
+      "name": "Witch Hat",
+      "page": "Accessories",
+      "price": null,
+      "source": "character creation",
+      "variants": 4
+    },
+    {
+      "icon": "Top wool lined jacket.png",
+      "name": "Wool-Lined Jacket",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Louis",
+      "variants": 4
+    },
+    {
+      "icon": "boots work.png",
+      "name": "Work Boots",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 7
+    },
+    {
+      "icon": "sandals worn.png",
+      "name": "Worn Sandals",
+      "page": "Cosmetics (Clothes)",
+      "price": 500,
+      "source": "Cosmetics",
+      "variants": 7
+    }
+  ],
+  "lastEdited": {
+    "Accessories": "2026-08-08T01:42:52Z",
+    "Cosmetics (Body)": "2026-08-08T01:38:08Z",
+    "Cosmetics (Clothes)": "2026-07-15T21:52:41Z"
+  },
+  "wikiVersionStamp": {
+    "Accessories": "1",
+    "Cosmetics (Body)": null,
+    "Cosmetics (Clothes)": "v0-14-2"
+  }
+}

@@ -1,3 +1,4 @@
+import { SEASON_BIT, SEASONS, type Season } from '@mistria/schema'
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
@@ -52,7 +53,7 @@ interface SpotRecord {
 export function MapRoute() {
   const artUrl = useAtlas().mapUrl('map/valley')
   const navigate = route.useNavigate()
-  const { region } = route.useSearch()
+  const { region, season, q } = route.useSearch()
   const [state, setState] = useState<{
     map: MapRecord | null
     locations: LocationRecord[]
@@ -93,8 +94,21 @@ export function MapRoute() {
       ? region
       : null
 
+  // Changing region drops the filters — they describe a place's list, and
+  // carrying "spring" from the Beach to the Mines would silently hide most
+  // of a screen the player just opened.
   const select = (id: string | null): void =>
     void navigate({ search: id === null ? {} : { region: id } })
+  const setSeason = (next: string | undefined): void =>
+    void navigate({
+      search: ({ season: _, ...rest }) => (next === undefined ? rest : { ...rest, season: next }),
+      replace: true,
+    })
+  const setQuery = (next: string): void =>
+    void navigate({
+      search: ({ q: _, ...rest }) => (next === '' ? rest : { ...rest, q: next }),
+      replace: true,
+    })
 
   // What the focused region yields — the region itself plus everything
   // inside it, because a building's stock counts as the region's.
@@ -106,6 +120,19 @@ export function MapRoute() {
     ])
     return foundAt(availability, ids)
   }, [availability, locations, selected])
+
+  // The region's list, narrowed. Season keeps only what any rule here yields
+  // in that season; the text matches names the way the calendar's box does.
+  const needle = (q ?? '').trim().toLowerCase()
+  const filteredFound = useMemo(() => {
+    const bit = season === undefined ? null : SEASON_BIT[season as Season]
+    return found.filter((entity) => {
+      if (bit !== null && (entity.seasonMask & bit) === 0) return false
+      if (needle === '') return true
+      const name = index[entity.id]?.n ?? entity.id.replace(/_/g, ' ')
+      return name.toLowerCase().includes(needle)
+    })
+  }, [found, season, needle, index])
 
   if (error !== null) {
     return (
@@ -216,13 +243,63 @@ export function MapRoute() {
       </div>
 
       {/* The reason anyone zooms in: what is findable here, without leaving
-          the map. Same shared list the place page renders. */}
+          the map. Same shared list the place page renders, narrowable by
+          season and by name — "what can I still get at the Beach this
+          winter" is a real planning question. */}
       {selected !== null && (
         <section className="mt-5">
           <h2 className="mb-2 font-display font-semibold text-ink text-sm">
             What you can get here
           </h2>
-          <FoundHereList entities={found} index={index} />
+
+          <div className="mb-2 flex flex-wrap items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setSeason(undefined)}
+              className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+              style={
+                season === undefined
+                  ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
+                  : { color: 'var(--ink-mute)' }
+              }
+            >
+              Any season
+            </button>
+            {SEASONS.map((s) => (
+              <button
+                key={s}
+                type="button"
+                onClick={() => setSeason(season === s ? undefined : s)}
+                className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+                style={
+                  season === s
+                    ? { background: `var(--${s}-tint)`, color: `var(--${s})`, fontWeight: 600 }
+                    : { color: 'var(--ink-mute)' }
+                }
+              >
+                {titleCase(s)}
+              </button>
+            ))}
+          </div>
+          <input
+            type="search"
+            value={q ?? ''}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Filter what this place yields"
+            aria-label="Filter what this place yields"
+            className="mb-3 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
+          />
+
+          {filteredFound.length === 0 && found.length > 0 ? (
+            <p className="text-ink-mute text-sm">
+              Nothing here matches
+              {needle !== '' && <> “{(q ?? '').trim()}”</>}
+              {season !== undefined && <> in {titleCase(season)}</>} — clear a filter to see the
+              full list.
+            </p>
+          ) : (
+            <FoundHereList entities={filteredFound} index={index} />
+          )}
         </section>
       )}
 

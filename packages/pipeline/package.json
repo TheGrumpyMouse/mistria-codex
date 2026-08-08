@@ -17,6 +17,7 @@
     "findables": "tsx src/demo/findables.ts",
     "test": "vitest run",
     "assets:fetch": "tsx src/assets/fetch.ts",
+    "assets:game": "tsx src/assets/game-art.ts",
     "assets:pack": "tsx src/assets/pack.ts"
   },
   "dependencies": {

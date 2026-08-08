@@ -5,6 +5,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import { loadDisplayIndex } from '~/lib/data'
+import { categoryLabel, subcategoryLabel } from '~/lib/labels'
 import { routeFor, typedTheName } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 import { useData } from '~/lib/use-data'
@@ -19,11 +20,17 @@ const route = getRouteApi('/browse')
  * it does not need every availability window, and downloading them to show a
  * list is the parse that freezes a mid-range phone.
  *
- * Not virtualised, deliberately. The largest category is 235 rows, and a
- * virtualiser costs a dependency, a measured row height and a class of
- * scroll-restoration bug to save painting a few hundred list items that the
- * browser is already good at. If a category ever reaches thousands, revisit it.
+ * Not virtualised, deliberately. A virtualiser costs a dependency, a measured
+ * row height and a class of scroll-restoration bug to save painting a few
+ * hundred list items that the browser is already good at. Two categories
+ * would break that — furniture at 925 rows and the wardrobe at 360 — so
+ * neither renders whole: a sub-group chip is always active, and the largest
+ * group is 105 rows. Typing a filter searches the whole category instead,
+ * because a name beats a shelf.
  */
+
+/** Categories the index gives a sub-group token (`g`) to. See build/ship.ts. */
+const GROUPED = new Set(['furniture', 'cosmetic'])
 
 const CATEGORIES: { id: string; label: string }[] = [
   { id: 'fish', label: 'Fish' },
@@ -39,6 +46,8 @@ const CATEGORIES: { id: string; label: string }[] = [
   { id: 'weapon', label: 'Weapons' },
   { id: 'ranching_product', label: 'Ranching' },
   { id: 'fruit', label: 'Fruit' },
+  { id: 'furniture', label: 'Furniture' },
+  { id: 'cosmetic', label: 'Wardrobe' },
   { id: 'junk', label: 'Junk' },
   { id: 'misc', label: 'Other' },
   { id: 'character', label: 'Villagers' },
@@ -57,12 +66,15 @@ export function BrowseRoute() {
   const navigate = route.useNavigate()
   const category = search.c ?? 'fish'
   const filter = search.q ?? ''
+  const chosenSet = search.s
   // Defaults are omitted from the URL rather than written as `undefined` —
   // exactOptionalPropertyTypes treats those differently, and a bare /browse
   // should stay a bare /browse.
   const setCategory = (c: string): void =>
     void navigate({
-      search: ({ c: _, ...rest }) => (c === 'fish' ? rest : { ...rest, c }),
+      // Changing category always drops the furniture set — it means nothing
+      // anywhere else.
+      search: ({ c: _, s: __, ...rest }) => (c === 'fish' ? rest : { ...rest, c }),
       replace: true,
     })
   const setFilter = (q: string): void =>
@@ -70,18 +82,42 @@ export function BrowseRoute() {
       search: ({ q: _, ...rest }) => (q === '' ? rest : { ...rest, q }),
       replace: true,
     })
+  const setChosenSet = (s: string): void =>
+    void navigate({
+      search: ({ s: _, ...rest }) => ({ ...rest, s }),
+      replace: true,
+    })
 
   const { data: index, error } = useData('display-index', loadDisplayIndex)
   const spoilers = useSpoilers()
+
+  // The sub-groups of a grouped category — furniture sets, wardrobe slots.
+  const subGroups = useMemo(() => {
+    if (index === null || !GROUPED.has(category)) return []
+    const tally = new Map<string, number>()
+    for (const entry of Object.values(index)) {
+      if (entry.c !== category) continue
+      const group = entry.g ?? 'other'
+      tally.set(group, (tally.get(group) ?? 0) + 1)
+    }
+    return [...tally.entries()].sort((a, b) =>
+      subcategoryLabel(a[0]).localeCompare(subcategoryLabel(b[0])),
+    )
+  }, [index, category])
+  const activeSet =
+    GROUPED.has(category) && filter.trim() === ''
+      ? (subGroups.find(([group]) => group === chosenSet)?.[0] ?? subGroups[0]?.[0])
+      : undefined
 
   const rows = useMemo(() => {
     if (index === null) return []
     const needle = filter.trim().toLowerCase()
     return Object.entries(index)
       .filter(([, entry]) => entry.c === category)
+      .filter(([, entry]) => activeSet === undefined || (entry.g ?? 'other') === activeSet)
       .filter(([, entry]) => needle === '' || entry.n.toLowerCase().includes(needle))
       .sort((a, b) => a[1].n.localeCompare(b[1].n))
-  }, [index, category, filter])
+  }, [index, category, filter, activeSet])
 
   const counts = useMemo(() => {
     const tally = new Map<string, number>()
@@ -126,11 +162,35 @@ export function BrowseRoute() {
         ))}
       </div>
 
+      {GROUPED.has(category) && filter.trim() === '' && (
+        <div className="mt-2 flex flex-wrap gap-1">
+          {subGroups.map(([group, count]) => (
+            <button
+              key={group}
+              type="button"
+              onClick={() => setChosenSet(group)}
+              className="tap-target rounded-pill border border-rule px-2 py-0.5 text-[0.6875rem] transition-colors"
+              style={
+                activeSet === group
+                  ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
+                  : { color: 'var(--ink-faint)' }
+              }
+            >
+              {subcategoryLabel(group)} <span data-numeral>{count}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
       <input
         type="search"
         value={filter}
         onChange={(event) => setFilter(event.target.value)}
-        placeholder="Filter by name"
+        placeholder={
+          GROUPED.has(category)
+            ? `Search all ${categoryLabel(category).toLowerCase()} by name`
+            : 'Filter by name'
+        }
         aria-label="Filter by name"
         className="mt-3 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
       />

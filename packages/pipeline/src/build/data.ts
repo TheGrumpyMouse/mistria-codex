@@ -29,11 +29,14 @@ import { BUILD_DIR, DATA_DIR } from '../lib/paths.js'
 import { readSpoilerRules, stampSpoilers } from '../lib/spoilers.js'
 import { writeJson } from '../lib/write-json.js'
 import { buildSeals } from './builders/artifacts.js'
-import { buildCharacters, buildGiftPrefs } from './builders/characters.js'
+import { buildCharacters, buildGiftPrefs, withVendorFlags } from './builders/characters.js'
+import { buildCosmetics } from './builders/cosmetics.js'
 import { buildAnimals, buildBuildings } from './builders/farm.js'
 import { buildFestivals } from './builders/festivals.js'
 import { buildCrops, buildFishFacets, buildLocations, itemInputs } from './builders/fish-crops.js'
+import { collapseFurniture } from './builders/furniture.js'
 import { buildGameOnlyItems, buildItems } from './builders/items.js'
+import { buildMachines } from './builders/machines.js'
 import {
   anchoredMarkerNames,
   buildMapRegion,
@@ -166,7 +169,7 @@ const BUILDERS: Record<DatasetName, Builder> = {
   artifacts: buildArtifactFacets,
   crops: buildCrops,
   recipes: (_ctx, derived) => derived.recipes,
-  characters: buildCharacters,
+  characters: (ctx, derived) => withVendorFlags(buildCharacters(ctx), derived.shops),
   gift_prefs: buildGiftPrefs,
   schedules: buildSchedules,
   locations: (ctx) =>
@@ -175,11 +178,12 @@ const BUILDERS: Record<DatasetName, Builder> = {
   museum_sets: (_ctx, derived) => derived.museum.sets,
   spots: (ctx) => mapSpots(ctx),
   festivals: buildFestivals,
-  quests: buildQuests,
+  quests: (ctx, derived) => buildQuests(ctx, new Set(derived.items.map((i) => i.id))),
   shops: (_ctx, derived) => derived.shops,
   skills: buildSkills,
   animals: buildAnimals,
   buildings: buildBuildings,
+  machines: (ctx, derived) => buildMachines(ctx, new Set(derived.items.map((i) => i.id))),
   mines: (ctx, derived) => buildMines(ctx, derived.items, monstersByBiome(derived.monsters)),
   seals: buildSeals,
   monsters: (_ctx, derived) => derived.monsters,
@@ -188,14 +192,36 @@ const BUILDERS: Record<DatasetName, Builder> = {
 export async function buildData(): Promise<Record<DatasetName, number>> {
   const ctx = await loadContext()
   const museum = buildMuseum(ctx)
-  const shops = buildShops(ctx)
+  // Furniture collapses first: the market stalls' stock and the recipe
+  // outputs both resolve variant ids through its map.
+  const furniture = collapseFurniture(ctx)
+  const shops = buildShops(ctx, furniture.shippedIdByGameId)
   const soldBy = soldByIndex(shops)
   const shopLocation = new Map(shops.map((shop) => [shop.id, shop.location_id] as const))
   const wikiItems = buildItems(ctx, itemInputs(ctx, museum.byItem))
   // 1.0 outran the wiki: allowlisted game items get records of their own
   // until the wiki documents them, at which point the wiki row wins and the
   // game-only constructor skips the id.
-  const allItems = [...wikiItems, ...buildGameOnlyItems(ctx, new Set(wikiItems.map((i) => i.id)))]
+  const nonFurniture = [
+    ...wikiItems,
+    ...buildGameOnlyItems(ctx, new Set(wikiItems.map((i) => i.id))),
+  ]
+  const nonFurnitureIds = new Set(nonFurniture.map((i) => i.id))
+  for (const record of furniture.records) {
+    if (nonFurnitureIds.has(record.id)) {
+      throw new Error(
+        `furniture record "${record.id}" collides with an existing item id. ` +
+          'A recipe_key that doubles as another item id must be resolved by hand.',
+      )
+    }
+  }
+  // The wardrobe, last: it reads the built shops to learn who sells what, and
+  // asserts its ids against everything already claimed.
+  const withFurniture = [...nonFurniture, ...furniture.records]
+  const allItems = [
+    ...withFurniture,
+    ...buildCosmetics(ctx, shops, new Set(withFurniture.map((i) => i.id))),
+  ]
   const items = allItems.map((item) => {
     const sellers = soldBy.get(item.id) ?? []
     return {
@@ -224,9 +250,9 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
       // so it is a field nobody filled in rather than a claim that nothing is
       // for sale. A shop listing an item at a price is better evidence, and
       // leaving the flag false while `sold_by` names two shops is a
-      // contradiction the app would eventually trip over. The reverse is not
-      // inferred: no shop selling it does not mean it cannot be bought, because
-      // the Saturday Market's eight vendors are not ingested yet.
+      // contradiction the app would eventually trip over. The reverse is still
+      // not inferred: no shop selling it does not mean it cannot be bought —
+      // cosmetic stock and festival stalls remain outside the shops dataset.
       is_buyable: sellers.length > 0 ? true : item.is_buyable,
     }
   })
@@ -235,7 +261,7 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
   // are gated on the item records actually shipping — a recipe may never point
   // at a record that does not exist. The reverse link is then stamped the same
   // way `sold_by` was above: derived once, written onto the item.
-  const recipes = buildRecipes(ctx, new Set(items.map((i) => i.id)))
+  const recipes = buildRecipes(ctx, new Set(items.map((i) => i.id)), furniture)
   const usedIn = new Map<string, string[]>()
   for (const recipe of recipes) {
     for (const ingredient of recipe.ingredients) {

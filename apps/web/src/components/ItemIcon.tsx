@@ -1,4 +1,4 @@
-import { CookingPot, Home, Landmark, Lock, MapPin, ScrollText } from 'lucide-react'
+import { Armchair, CookingPot, Home, Landmark, Lock, MapPin, ScrollText, Shirt } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { useAtlas } from '~/app/AtlasProvider'
 import { integerScale, spriteStyle } from '~/lib/sprites'
@@ -75,6 +75,8 @@ const PREFIX_GLYPHS: Record<string, typeof ScrollText> = {
   building: Home,
   museum: Landmark,
   seal: Lock,
+  furniture: Armchair,
+  cosmetic: Shirt,
 }
 
 export interface ItemIconProps {

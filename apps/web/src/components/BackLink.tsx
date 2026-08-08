@@ -8,6 +8,12 @@ import { ArrowLeft } from 'lucide-react'
  * goes back to that villager, not to a generic index — and a sensible landing
  * when there is none, because a shared deep link opens with an empty history
  * and a back control that does nothing reads as broken.
+ *
+ * The button is self-healing: `canGoBack()` trusts the router's own index,
+ * which an installed PWA or a restored tab can leave wrong. So after asking
+ * the history to go back, it checks that the location actually changed — and
+ * when it did not, it navigates to the fallback instead. A Back that
+ * sometimes silently does nothing is the worst version of this control.
  */
 export function BackLink({
   fallback = '/search',
@@ -20,10 +26,23 @@ export function BackLink({
   const router = useRouter()
 
   if (router.history.canGoBack()) {
+    const onBack = (): void => {
+      const before = router.state.location.href
+      router.history.back()
+      window.setTimeout(() => {
+        if (router.state.location.href === before) {
+          void router.navigate({
+            to: fallback,
+            ...(params === undefined ? {} : { params }),
+          })
+        }
+      }, 250)
+    }
+
     return (
       <button
         type="button"
-        onClick={() => router.history.back()}
+        onClick={onBack}
         className="tap-target mb-2 inline-flex items-center gap-1 rounded-tile border border-rule px-3 py-1.5 text-ink-mute text-xs transition-colors hover:text-ink"
       >
         <ArrowLeft size={14} strokeWidth={2} />

@@ -1,0 +1,211 @@
+{{#vardefine:currentVer|[[Version History|'''v0.14.2''']]}}{{#vardefine:header|{{th}}class="unsortable" style="width: 90px"{{!}}Image{{th2}}Item Name{{th2}}Source{{th2}}Price}}{{#vardefine:tableDeets|class="wikitable mw-collapsible sortable" data-expandtext="&#9660;" data-collapsetext="&#9650;" width="40%"}}{{#vardefine:noPrice|}}
+{{About|[[Cosmetics]] that alter the physical body of [[The Player]] like their [[Cosmetics_(Body)#Hairstyles|hairstyles]] and [[Cosmetics_(Body)#Facial_Hair|facial hair]]|[[Cosmetics_(Clothes)#Clothing|clothes]] and [[Cosmetics_(Clothes)#Shoes|shoes]]|Cosmetics (Clothes)|smaller cosmetics that alter [[The Player|The Player's]] physical appearance, like [[Accessories#Head Wear|head wear]], [[Accessories#Earrings|earrings]], [[Accessories#Glasses|glasses]], and [[Accessories#Back Accessories|capes]]|Accessories|the main page|Cosmetics}}
+
+Below are [[Cosmetics]] that alter [[The Player|The Player's]] character's physical appearance, including hair, facial hair, and eyes.
+==Acquisition==
+While the bulk of the available body modifications are available from {{sourceIcon|Character creation}}, new [[#Hairstyles|Hairstyles]] can be purchased from {{SourceIcon|Saturday Short|Vera}}.
+== Hair ==
+=== Hairstyles ===
+====[[File: Customization_icon_short hair.png|40px]] Short Hair====
+{|{{#var:tableDeets}}
+!colspan="4"|Short Hair
+|-
+{{#var:header}}
+|-
+| [[File:Afro_puffs.png|80px]]||Afro Puffs||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Braided_bun_fade.png|80px]]||Braided Bun Fade||{{sourceIcon|Character creation}}||
+|-
+| [[File:Buzzcut.png|80px]]||Buzzcut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Cowlick.png|80px]]||Cowlick||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly short.png|80px]]||Curly Short||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly shorter.png|80px]]||Curly Shorter||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Fade.png|80px]]||Fade||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Messy_short_fringed.png|80px]]||Messy Short Fringed||{{sourceIcon|Character creation}}||
+|-
+| [[File:Mushroom_cut.png|80px]]||Mushroom Cut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Parted mushroom_cut.png|80px]]||Parted Mushroom Cut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Pixie_cut.png|80px]]||Pixie Cut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Short_parted_straight.png|80px]]||Short Parted Straight||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Short_parted_curls.png|80px]]||Short Parted Curls||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Spiky.png|80px]]||Spiky||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_buns_fringed.png|80px]]||Straight Buns Fringed||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_pompadour.png|80px]]||Straight Pompadour||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_undercut.png|80px]]||Straight Undercut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_short_fringed.png|80px]]||Straight Short Fringed||{{sourceIcon|Character creation}}||
+|-
+| [[File:Textured_buzz.png|80px]]||Textured Buzz||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+|}{{Top}}
+
+====[[File: Customization_icon_medium hair.png|40px]] Medium Hair====
+{|{{#var:tableDeets}}
+!colspan="4"|Medium Hair
+|-
+{{#var:header}}
+|-
+| [[File:Afro.png|80px]]||Afro||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Blown out twist.png|80px]]||Blown Out Twist||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly_high_top.png|80px]]||Curly High Top||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly_medium.png|80px]]||Curly Medium||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly_medium fringe.png|80px]]||Curly Medium Fringe||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly pompadour.png|80px]]||Curly Pompadour||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Curly_undercut.png|80px]]||Curly Undercut||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Medium_length.png|80px]]||Medium Length||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Medium_half_bun.png|80px]]||Medium Half Bun||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Medium_half_bun_fringe.png|80px]]||Medium Half Bun Fringe||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Medium_pigtails.png|80px]]||Medium Pigtails||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Mohawk.png|80px]]||Mohawk||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Rounded_afro.png|80px]]||Rounded Afro||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Shaggy bob.png|80px]]||Shaggy Bob||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_medium.png|80px]]||Straight Medium||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_medium_ponytail.png|80px]]||Straight Medium Ponytail||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_medium_fluffy_bangs_ponytail.png|80px]]||Straight Medium Fluffy Bangs Ponytail||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Surfer.png|80px]]||Surfer||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Wavy medium.png|80px]]||Wavy Medium||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Wavy medium twin buns.png|80px]]||Wavy Medium Twin Buns||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Wavy medium fringe.png|80px]]||Wavy Medium Fringe||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Wavy_rugged.png|80px]]||Wavy Rugged||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+|}{{Top}}
+
+====[[File: Customization_icon_long hair.png|40px]] Long Hair====
+{|{{#var:tableDeets}}
+!colspan="4"|Long Hair
+|-
+{{#var:header}}
+|-
+| [[File:Braided_pigtails.png|80px]]||Braided Pigtails||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Curly_updo.png|80px]]||Curly Updo||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Dreads_bun.png|80px]]||Dreads Bun||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Long dreadlocks.png|80px]]||Long Dreadlocks||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Dreadlock twin buns.png|80px]]||Dreadlock Twin Buns||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_long.png|80px]]||Straight Long||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_long_bun.png|80px]]||Straight Long Bun||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Straight_long_fringe.png|80px]]||Straight Long Fringe||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_long tucked.png|80px]]||Straight Long Tucked||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Straight_long_twin_buns.png|80px]]||Straight Long Twin Buns||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Wavy_long.png|80px]]||Wavy Long||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Wavy_long_fringe.png|80px]]||Wavy Long Fringe||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Wavy long ponytail.png|80px]]||Wavy Long Ponytail||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+|-
+| [[File:Wavy_long_twin_buns.png|80px]]||Wavy Long Twin Buns||{{SourceIcon|saturday market short|Vera}}||{{Price|500}}
+
+|-
+<!--| [[File:Long_ponytail_side_fringe.png|80px]]||Unknown||Unknown||Unknown
+|--->
+|}{{Top}}
+
+===[[File: Customization_icon_facial hair.png|40px]] Facial Hair===
+{|{{#var:tableDeets}}
+!colspan="4"|Facial Hair
+|-
+{{#var:header}}
+|-
+| [[File:Beard basic.png]]||Basic Beard||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Handlebar moustache.png]]||Handlebar Moustache||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Moustache.png]]||Moustache||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Short beard.png]]||Short Beard||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Soul patch.png]]||Soul Patch||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Stubble.png]]||Stubble||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Beard thick.png]]||Thick Beard||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|}{{Top}}
+===Hair Colors ===
+<gallery mode="nolines" class="left" widths="300px" heights="300px">
+Player_hair_color_options.png|All hair color options currently in game ({{#var:currentVer}})
+</gallery>{{Top}}
+==[[File: Customization_icon_eyes.png|40px]] Eyes==
+{|{{#var:tableDeets}}
+!colspan="4"|Eyes
+|-
+{{#var:header}}
+|-
+| [[File:Eyes default.png]]||Basic Eyes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Eyes closed.png]]||Closed Eyes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Eyes droopy.png]]||Droopy Eyes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Eyes eyelashes.png]]||Eyelashes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Eyes serious.png]]||Serious Eyes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|-
+| [[File:Eyes small.png]]||Small Eyes||{{sourceIcon|Character creation}}||{{#var:noPrice}}
+|}{{Top}}
+===Eye Colors ===
+<gallery mode="nolines" class="left" widths="300px" heights="300px">
+Player_eye_color_options.png|All eye color options currently in game ({{#var:currentVer}})
+</gallery>{{Top}}
+==[[File: Customization_icon_skin tone.png|40px]] Skin Tone==
+<gallery mode="nolines" class="left" widths="300px" heights="300px">
+Player_skin tone_options.png|All skin tones currently in game ({{#var:currentVer}})
+</gallery>{{Top}}
+==History==
+*[[Version History|'''v1.0.2''']]: 
+**🌼New [[Cosmetics_(Body)#Hairstyles|hairstyles]] have been added to the default menu and to {{SourceIcon|Saturday Short|Vera}}.
+* [[Version History|'''v0.12.2''']]: 
+**New facial hair have been added to Character Creation, and the hairstyle, Curly Pompadour, have been added {{SourceIcon|Saturday short|Vera}} at The {{SourceIcon|Saturday}}.
+* [[Version History|'''v0.12.0''']]: 
+**New hairstyles have added to {{SourceIcon|Saturday short|Vera}} at The {{SourceIcon|Saturday}}. New default hairstyles have been added to Character Creation.
+* [[Version History|'''v0.11.6''']]:
+**Additional hair colors have been added, including white and pastel color options.
+**Additional eye colors have been added.
+**Color swatches have been added to the eye color selection in the Character Customization UI.
+{{Top}}
+{{AllNavigation|Cosmetics}}
+
+
+[[pt-br: Cosméticos_(Corpo)]]

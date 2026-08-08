@@ -17,8 +17,12 @@ import { consola } from 'consola'
 import { REPO_ROOT, SOURCES_DIR } from '../lib/paths.js'
 import { writeJson } from '../lib/write-json.js'
 import { extractArtifacts, type GameArtifactsExtract } from './artifacts.js'
+import { extractCosmetics, type GameCosmeticsExtract } from './cosmetics.js'
 import { extractItems, type GameItemsExtract } from './items.js'
+import { extractMachines, type GameMachinesExtract } from './machines.js'
+import { extractQuests, type GameQuestsExtract } from './quests.js'
 import { extractSpawns, type GameSpawnsExtract } from './spawns.js'
+import { extractStores, type GameStoresExtract } from './stores.js'
 import { gameRoot, gameVersion } from './toml.js'
 import { extractWorld, type GameWorldExtract } from './world.js'
 
@@ -29,20 +33,28 @@ export interface GameExtract {
   spawns: GameSpawnsExtract
   world: GameWorldExtract
   artifacts: GameArtifactsExtract
+  machines: GameMachinesExtract
+  quests: GameQuestsExtract
+  stores: GameStoresExtract
+  cosmetics: GameCosmeticsExtract
 }
 
 export async function extractGame(): Promise<GameExtract> {
   const root = await gameRoot()
   const version = gameVersion()
 
-  const [items, spawns, world, artifacts] = await Promise.all([
+  const [items, spawns, world, artifacts, machines, quests, stores, cosmetics] = await Promise.all([
     extractItems(root, version),
     extractSpawns(root, version),
     extractWorld(root, version),
     extractArtifacts(root, version),
+    extractMachines(root, version),
+    extractQuests(root, version),
+    extractStores(root, version),
+    extractCosmetics(root, version),
   ])
 
-  return { items, spawns, world, artifacts }
+  return { items, spawns, world, artifacts, machines, quests, stores, cosmetics }
 }
 
 export async function writeGameExtract(extract: GameExtract): Promise<void> {
@@ -51,6 +63,10 @@ export async function writeGameExtract(extract: GameExtract): Promise<void> {
     writeJson(join(GAME_DIR, 'spawns.json'), extract.spawns),
     writeJson(join(GAME_DIR, 'world.json'), extract.world),
     writeJson(join(GAME_DIR, 'artifacts.json'), extract.artifacts),
+    writeJson(join(GAME_DIR, 'machines.json'), extract.machines),
+    writeJson(join(GAME_DIR, 'quests.json'), extract.quests),
+    writeJson(join(GAME_DIR, 'stores.json'), extract.stores),
+    writeJson(join(GAME_DIR, 'cosmetics.json'), extract.cosmetics),
   ])
 }
 
@@ -86,6 +102,24 @@ async function main(): Promise<void> {
       `loot ${Object.keys(extract.artifacts.lootRarity).length} · ` +
       `perks ${extract.artifacts.perks.length} · seals ${extract.artifacts.seals.length} ` +
       `(${extract.artifacts.sealOfferings.length} offerings)`,
+  )
+  consola.info(
+    `machines ${extract.machines.factories.length} — ` +
+      extract.machines.factories.map((f) => `${f.id} (${f.requests.length} requests)`).join(' · '),
+  )
+  consola.info(
+    `quests: ${extract.quests.storyQuests.length} story · ` +
+      `${extract.quests.requestGates.length} gated requests`,
+  )
+  const stockLines = extract.stores.stores.reduce(
+    (n, s) => n + s.categories.reduce((m, c) => m + c.entries.length, 0),
+    0,
+  )
+  consola.info(`stores: ${extract.stores.stores.length} sections · ${stockLines} stock entries`)
+  const priced = extract.cosmetics.cosmetics.filter((c) => c.price_override !== null).length
+  consola.info(
+    `cosmetics: ${extract.cosmetics.cosmetics.length} (${priced} priced in the files, ` +
+      'the rest from the wiki)',
   )
   if (argv.includes('--dry-run')) consola.warn('--dry-run: nothing written')
 }

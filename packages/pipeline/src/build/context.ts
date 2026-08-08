@@ -8,6 +8,7 @@ import {
   toSnakeId,
 } from '@mistria/schema'
 import type { CalendarExtract } from '../enrich/calendar.js'
+import type { CosmeticsExtract } from '../enrich/cosmetics.js'
 import type { ItemNamesExtract } from '../enrich/item-names.js'
 import type { MapShapesExtract } from '../enrich/map-shapes.js'
 import type { MapsExtract } from '../enrich/maps.js'
@@ -133,6 +134,17 @@ export interface ShopInputs {
     lastEdited: string | null
   }[]
   stock: ShopStockRow[]
+  /** The Saturday Market stalls' curated facts. Null on a clone without them. */
+  market: MarketConfig | null
+}
+
+/** See the `saturdayMarket` block in curated/vocab/shops.json. */
+export interface MarketConfig {
+  location: string
+  days: string[]
+  unlockQuest: string
+  wikiPage: string
+  vendors: { storeId: string; shopId: string }[]
 }
 
 /** The eight farm animals, hand-authored. See `curated/entities/animals.json`. */
@@ -213,6 +225,8 @@ export interface BuildContext {
   festivals: FestivalInputs
   mines: MineInputs
   shops: ShopInputs
+  /** Wiki prices and colour counts for the wardrobe. Null before the enricher ran. */
+  cosmetics: CosmeticsExtract | null
   quests: QuestExtract
   animals: AnimalInputs
   buildings: BuildingInputs
@@ -317,6 +331,11 @@ export async function loadContext(): Promise<BuildContext> {
     readJsonFile<MonstersExtract>(pages('monsters.json')),
   ])
 
+  // Optional, like the map extracts: a clone whose `sources/` predates the
+  // cosmetics enricher builds fine, and its wardrobe ships unpriced rather
+  // than not at all.
+  const cosmetics = await readJsonFile<CosmeticsExtract>(pages('cosmetics.json')).catch(() => null)
+
   const { currencies } = await readJsonFile<{ currencies: Record<string, string> }>(
     join(CURATED_DIR, 'vocab', 'calendar.json'),
   )
@@ -345,6 +364,7 @@ export async function loadContext(): Promise<BuildContext> {
     priceTokens: Record<string, Currency>
     nonPriceTokens: { token: string; reason: string }[]
     shops: { id: string; owner: string | null; staff: string[] }[]
+    saturdayMarket?: MarketConfig
   }>(join(CURATED_DIR, 'vocab', 'shops.json'))
 
   const curatedShop = new Map(shopVocab.shops.map((s) => [s.id, s] as const))
@@ -371,6 +391,7 @@ export async function loadContext(): Promise<BuildContext> {
         seasons: row.seasons,
       })),
     ),
+    market: shopVocab.saturdayMarket ?? null,
   }
 
   const festivals: FestivalInputs = {
@@ -488,6 +509,7 @@ export async function loadContext(): Promise<BuildContext> {
     festivals,
     mines,
     shops,
+    cosmetics,
     quests,
     animals,
     buildings,

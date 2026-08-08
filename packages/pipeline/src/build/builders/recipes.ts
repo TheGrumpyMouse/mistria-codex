@@ -2,7 +2,10 @@ import type { ArtifactFacet, BugFacet, ForageableFacet, Rarity, Recipe } from '@
 import { consola } from 'consola'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
+import { rarityFor } from '../game-facts.js'
 import { artifactSource } from './artifacts.js'
+import { isMuseumRosterRow } from './fish-crops.js'
+import type { FurnitureCollapse } from './furniture.js'
 
 const RARITIES: Record<string, Rarity> = {
   common: 'common',
@@ -33,12 +36,12 @@ const CRAFT_KINDS: Record<string, Recipe['kind']> = {
 const SKILL_BY_KIND: Partial<Record<Recipe['kind'], string>> = {
   cooking: 'cooking',
   blacksmithing: 'blacksmithing',
+  woodcrafting: 'woodcrafting',
 }
 
-/** Which game source file makes which kind of recipe. Furniture is skipped
- *  until furniture items are ingested — the count is reported, not silent. */
-function kindForGameFile(file: string): Recipe['kind'] | null {
-  if (file.startsWith('furniture/')) return null
+/** Which game source file makes which kind of recipe. */
+function kindForGameFile(file: string): Recipe['kind'] {
+  if (file.startsWith('furniture/')) return 'woodcrafting'
   if (file.includes('cooked_dishes')) return 'cooking'
   if (file.includes('blacksmithing') || file.includes('armor')) return 'blacksmithing'
   return 'crafting'
@@ -63,28 +66,46 @@ function stationForGameFile(file: string): string | null {
  *
  * `itemIds` is the set of item records actually being shipped this build.
  * Both outputs and ingredients are gated on it, so a recipe can never point
- * at a record that does not exist (refint would fail the build) — which is
- * also what keeps the 1,085 furniture recipes out until furniture items are
- * ingested, at which point they appear with no code change here.
+ * at a record that does not exist (refint would fail the build).
+ *
+ * Furniture goes through the collapse: colour variants share one record, so
+ * only each group's canonical member emits a recipe, addressed to the
+ * collapsed id. Without the collapse (a clone whose extract predates it)
+ * furniture recipes are held back and counted, exactly as before.
  */
-export function buildRecipes(ctx: BuildContext, itemIds: Set<string>): Recipe[] {
+export function buildRecipes(
+  ctx: BuildContext,
+  itemIds: Set<string>,
+  furniture?: FurnitureCollapse,
+): Recipe[] {
   const wiki = wikiRecipes(ctx)
   const game = ctx.game
   if (game === null) return wiki.sort((a, b) => a.id.localeCompare(b.id))
 
   const wikiById = new Map(wiki.map((r) => [r.id, r]))
   const out: Recipe[] = []
-  let furniture = 0
+  let variantRecipes = 0
   let unknownOutput = 0
 
   for (const item of game.itemById.values()) {
     if (item.recipe.length === 0) continue
     const kind = kindForGameFile(item.file)
-    if (kind === null) {
-      furniture += 1
-      continue
+
+    let outputId = item.id
+    if (item.file.startsWith('furniture/')) {
+      const shippedId = furniture?.shippedIdByGameId.get(item.id)
+      const canonical =
+        shippedId === undefined ? undefined : furniture?.canonicalById.get(shippedId)
+      if (shippedId === undefined || canonical === undefined || canonical.id !== item.id) {
+        // A colour variant of a recipe already emitted, or furniture not
+        // collapsed this build. Either way: one recipe per product.
+        variantRecipes += 1
+        continue
+      }
+      outputId = shippedId
     }
-    if (!itemIds.has(item.id)) {
+
+    if (!itemIds.has(outputId)) {
       unknownOutput += 1
       continue
     }
@@ -95,13 +116,13 @@ export function buildRecipes(ctx: BuildContext, itemIds: Set<string>): Recipe[] 
     const gaps: string[] = []
     if (ingredients.length !== item.recipe.length) gaps.push('unresolved_ingredients')
 
-    const fromWiki = wikiById.get(item.id)
+    const fromWiki = wikiById.get(outputId)
     const skillId = SKILL_BY_KIND[kind]
     const level = item.crafting_level ?? fromWiki?.skill?.level ?? null
 
     out.push({
-      id: item.id,
-      name: item.name ?? fromWiki?.name ?? item.id,
+      id: outputId,
+      name: item.name ?? fromWiki?.name ?? outputId,
       numeric_id: null,
       numeric_id_game_version: null,
       id_status: 'confirmed',
@@ -112,12 +133,12 @@ export function buildRecipes(ctx: BuildContext, itemIds: Set<string>): Recipe[] 
       confidence: 'verified',
       prov: { '*': 'game_files' },
       data_gaps: gaps,
-      icon_key: `recipe/${item.id}`,
+      icon_key: `recipe/${outputId}`,
       wiki_page: fromWiki?.wiki_page ?? null,
       blurb: null,
 
       kind,
-      output: { item_id: item.id, quantity: 1 },
+      output: { item_id: outputId, quantity: 1 },
       ingredients,
       station: stationForGameFile(item.file) ?? fromWiki?.station ?? null,
       station_level:
@@ -131,10 +152,10 @@ export function buildRecipes(ctx: BuildContext, itemIds: Set<string>): Recipe[] 
     })
   }
 
-  if (furniture > 0 || unknownOutput > 0) {
+  if (variantRecipes > 0 || unknownOutput > 0) {
     consola.info(
-      `recipes: ${furniture} furniture recipes and ${unknownOutput} with un-ingested outputs ` +
-        'held back — they ship the build their items do',
+      `recipes: ${variantRecipes} colour-variant duplicates collapsed and ` +
+        `${unknownOutput} with un-ingested outputs held back`,
     )
   }
 
@@ -216,18 +237,30 @@ function wikiRecipes(ctx: BuildContext): Recipe[] {
 }
 
 export function buildBugFacets(ctx: BuildContext): BugFacet[] {
-  return ctx.bugs.map((row) => {
-    const condition = text(row.spawnCondition)
-    return {
-      item_id: ctx.idFor(itemName(row.name)),
-      // The wiki phrases these as instructions ("Breaking rocks"), so they are
-      // kept as a key for the UI to render rather than mapped to a surface we'd
-      // be guessing at.
-      spawn_surface: null,
-      spawn_condition_key: condition === '' ? null : condition,
-      rarity: RARITIES[text(row.rarity).toLowerCase()] ?? null,
-    }
-  })
+  // The same skip as itemInputs: an apiary/terrarium product listed for its
+  // museum set is not a bug, and must not appear on the bug facet.
+  return ctx.bugs
+    .filter((row) => !isMuseumRosterRow(ctx, row))
+    .map((row) => {
+      const condition = text(row.spawnCondition)
+      const id = ctx.idFor(itemName(row.name))
+      return {
+        item_id: id,
+        // The wiki phrases these as instructions ("Breaking rocks"), so they are
+        // kept as a key for the UI to render rather than mapped to a surface we'd
+        // be guessing at.
+        spawn_surface: null,
+        spawn_condition_key: condition === '' ? null : condition,
+        // The game's own grade wins, as it already does on the item record —
+        // these two disagreed for four bugs purely because the facet had
+        // never been given the game's answer. It also grades six bugs
+        // `very_rare`, which maps to `epic`; the wiki has no such step.
+        rarity:
+          rarityFor(ctx.game?.bugById.get(id)?.rarity ?? null) ??
+          RARITIES[text(row.rarity).toLowerCase()] ??
+          null,
+      }
+    })
 }
 
 export function buildArtifactFacets(ctx: BuildContext): ArtifactFacet[] {

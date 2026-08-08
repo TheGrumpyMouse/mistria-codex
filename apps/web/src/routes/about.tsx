@@ -74,11 +74,13 @@ export function AboutRoute() {
 
         <Section title="What it does not know">
           <p>
-            The dataset says so when it does not know something, rather than guessing. An unverified
-            value is drawn hollow and dashed, like this:{' '}
-            <span className="unverified rounded-tile px-1.5 py-0.5 text-xs">time unknown</span>. A
-            thing you cannot reach yet is shown and tagged, not hidden — you should be able to learn
-            that the Legendary fish exists and why you cannot catch it.
+            When the dataset does not know something, the app says nothing rather than guessing — a
+            missing time or place is simply left off. An inferred value is drawn hollow and dashed,
+            like this:{' '}
+            <span className="unverified rounded-tile px-1.5 py-0.5 text-xs">place inferred</span>,
+            so a deduction never reads like a fact. A thing you cannot reach yet is shown and
+            tagged, not hidden — you should be able to learn that the Legendary fish exists and why
+            you cannot catch it.
           </p>
         </Section>
 

@@ -120,6 +120,12 @@ export const Shop = withEnvelope({
     .array(z.object({ days: z.array(DayOfWeek).default([]), from: TimeOfDay, to: TimeOfDay }))
     .default([]),
   seasonal_closures: z.array(Season).default([]),
+  /**
+   * Gates on the shop existing at all — the Saturday Market stalls appear
+   * once the bridge is repaired. Empty means open from day one, which is
+   * true of every year-round store.
+   */
+  unlock_requires: z.array(Requirement).default([]),
   stock: z
     .array(
       z.object({

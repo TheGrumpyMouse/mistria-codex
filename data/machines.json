@@ -1,0 +1,642 @@
+[
+  {
+    "accepts_item_ids": [
+      "big_bee",
+      "bumblebee",
+      "fairy_bee",
+      "flower_bee",
+      "fur_bee",
+      "moonlight_bee",
+      "sweet_bee"
+    ],
+    "also_known_as": [],
+    "blurb": null,
+    "capacity": 4,
+    "confidence": "verified",
+    "data_gaps": [],
+    "days_to_produce": 3,
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "misc/apiary",
+    "id": "apiary",
+    "id_status": "confirmed",
+    "item_id": "apiary",
+    "name": "Apiary",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "requests": [
+      {
+        "item_id": "tulip",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "lilac",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "snowdrop_anemone",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "middlemist",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "daffodil",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "dandelion",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "peas",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "spring"
+      },
+      {
+        "item_id": "carrot",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "spring"
+      },
+      {
+        "item_id": "sunflower",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "rose",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "hydrangea",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "daisy",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "iris",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "catmint",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "night_queen",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "cosmos",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "marigold",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "summer"
+      },
+      {
+        "item_id": "sugar_cane",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "summer"
+      },
+      {
+        "item_id": "tea",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "fog_orchid",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "viola",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "celosia",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "heather",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "chrysanthemum",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "onion",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "fall"
+      },
+      {
+        "item_id": "rice_stalk",
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "season": "fall"
+      },
+      {
+        "item_id": "poinsettia",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "frost_lily",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "jasmine",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "snapdragon",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "crocus",
+        "requires": [],
+        "season": "winter"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null,
+    "yields": [
+      {
+        "input_rarity": "common",
+        "item_ids": [
+          "honey"
+        ]
+      },
+      {
+        "input_rarity": "uncommon",
+        "item_ids": [
+          "honey"
+        ]
+      },
+      {
+        "input_rarity": "rare",
+        "item_ids": [
+          "honey_premium"
+        ]
+      },
+      {
+        "input_rarity": "epic",
+        "item_ids": [
+          "honey_deluxe"
+        ]
+      },
+      {
+        "input_rarity": "legendary",
+        "item_ids": [
+          "honey_legendary"
+        ]
+      }
+    ]
+  },
+  {
+    "accepts_item_ids": [
+      "ancient_firefly",
+      "ant",
+      "ant_queen",
+      "beach_hopper",
+      "biggest_beetle",
+      "brightbulb_moth",
+      "butterfly",
+      "caterpillar",
+      "chillipede",
+      "cicada",
+      "cicada_nymph",
+      "cooktop_beetle",
+      "copper_beetle",
+      "coral_mantis",
+      "cricket",
+      "crystal_caterpillar",
+      "crystal_wing_moth",
+      "crystalline_cricket",
+      "deep_earthworm",
+      "diamond_beetle",
+      "dragon_horn_beetle",
+      "dragonfly",
+      "fire_wasp",
+      "firefly",
+      "flower_crown_beetle",
+      "frost_flutter_butterfly",
+      "fuzzy_moth",
+      "gem_shard_caterpillar",
+      "giant_worm",
+      "grasshopper",
+      "hermit_crab",
+      "hermit_snail",
+      "hidden_beetle",
+      "hummingbird_hawk_moth",
+      "icehopper",
+      "inchworm",
+      "jewel_beetle",
+      "ladybug",
+      "lantern_moth",
+      "lava_snail",
+      "leafhopper",
+      "lightning_dragonfly",
+      "loam_caterpillar",
+      "luna_moth",
+      "magma_beetle",
+      "mine_cricket",
+      "mistmoth",
+      "monarch_butterfly",
+      "mote_firefly",
+      "orchid_mantis",
+      "parchment_moth",
+      "petalhopper",
+      "polar_fly",
+      "pond_skater",
+      "praying_mantis",
+      "puddle_spider",
+      "queens_birdwing",
+      "question_mark_butterfly",
+      "redhead_worm",
+      "relic_crab",
+      "rhinoceros_beetle",
+      "rock_roach",
+      "roly_poly",
+      "saint_mantis",
+      "sand_bug",
+      "sea_scarab",
+      "singing_katydid",
+      "smoke_moth",
+      "snail",
+      "snowball_beetle",
+      "snug_bug",
+      "speedy_snail",
+      "strawhopper",
+      "strobe_firefly",
+      "sunset_moth",
+      "surf_beetle",
+      "tiger_swallowtail_butterfly",
+      "tunnel_millipede",
+      "void_snail",
+      "walking_leaf",
+      "walking_stick",
+      "waterbug",
+      "waterfly",
+      "windleaf_butterfly",
+      "winterpillar",
+      "worm"
+    ],
+    "also_known_as": [],
+    "blurb": null,
+    "capacity": 4,
+    "confidence": "verified",
+    "data_gaps": [],
+    "days_to_produce": 3,
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "misc/terrarium",
+    "id": "terrarium",
+    "id_status": "confirmed",
+    "item_id": "terrarium",
+    "name": "Terrarium",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files"
+    },
+    "requests": [
+      {
+        "item_id": "turnip",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "potato",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "cabbage",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "strawberry",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "chickpea",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "wild_leek",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "morel_mushroom",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "fennel",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "fiddlehead",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "nettle",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "wild_berries",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "blueberry",
+        "requires": [],
+        "season": "spring"
+      },
+      {
+        "item_id": "cucumber",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "tomato",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "corn",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "chili_pepper",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "watermelon",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "dill",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "sage",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "sesame",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "thyme",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "oregano",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "basil",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "wild_grapes",
+        "requires": [],
+        "season": "summer"
+      },
+      {
+        "item_id": "sweet_potato",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "broccoli",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "pumpkin",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "cranberry",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "wheat",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "moon_fruit",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "rosemary",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "chestnut",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "garlic",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "horseradish",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "blackberry",
+        "requires": [],
+        "season": "fall"
+      },
+      {
+        "item_id": "cauliflower",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "daikon_radish",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "burdock_root",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "snow_peas",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "beet",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "holly",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "pineshroom",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "glowberry",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "oyster_mushroom",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "rose_hip",
+        "requires": [],
+        "season": "winter"
+      },
+      {
+        "item_id": "wintergreen_berry",
+        "requires": [],
+        "season": "winter"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null,
+    "yields": [
+      {
+        "input_rarity": "common",
+        "item_ids": [
+          "bug_pheromone_common",
+          "fish_bait_common"
+        ]
+      },
+      {
+        "input_rarity": "uncommon",
+        "item_ids": [
+          "bug_pheromone_common",
+          "fish_bait_common"
+        ]
+      },
+      {
+        "input_rarity": "rare",
+        "item_ids": [
+          "bug_pheromone_uncommon",
+          "fish_bait_uncommon"
+        ]
+      },
+      {
+        "input_rarity": "epic",
+        "item_ids": [
+          "bug_pheromone_rare",
+          "fish_bait_rare"
+        ]
+      },
+      {
+        "input_rarity": "legendary",
+        "item_ids": [
+          "bug_pheromone_legendary"
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
-import type { Currency, Requirement, Season, Shop } from '@mistria/schema'
-import { toSnakeId } from '@mistria/schema'
+import type { Currency, DayOfWeek, Requirement, Season, Shop } from '@mistria/schema'
+import { SEASONS, toSnakeId } from '@mistria/schema'
 import { consola } from 'consola'
 import type { BuildContext, ShopStockRow } from '../context.js'
 import { predates1_0 } from '../freshness.js'
@@ -82,9 +82,23 @@ export function parseRequirement(token: string): Requirement | null | undefined 
   return undefined
 }
 
-export function buildShops(ctx: BuildContext): Shop[] {
+export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, string>): Shop[] {
   const { shops } = ctx
   const characterIds = new Set(ctx.characterRules.roster.map((n) => toSnakeId(n)))
+
+  // Furniture display names -> the collapsed record that carries them, for
+  // the wiki store pages that stock a bookshelf. Only unambiguous names —
+  // a name two products share identifies neither.
+  const furnitureByName = new Map<string, string | null>()
+  if (ctx.game !== null && furnitureShipped !== undefined) {
+    for (const [gameId, shippedId] of furnitureShipped) {
+      const name = ctx.game.itemById.get(gameId)?.name
+      if (name == null) continue
+      const known = furnitureByName.get(name)
+      if (known === undefined) furnitureByName.set(name, shippedId)
+      else if (known !== shippedId) furnitureByName.set(name, null)
+    }
+  }
 
   /**
    * Which of a link's two halves names the item.
@@ -98,14 +112,21 @@ export function buildShops(ctx: BuildContext): Shop[] {
     for (const candidate of [row.item.display, row.item.target]) {
       if (candidate !== '' && ctx.itemByName.has(candidate)) return ctx.idFor(candidate)
     }
+    // The wiki's furniture stock predates the ingestion; the names join here.
+    for (const candidate of [row.item.display, row.item.target]) {
+      const shippedId = furnitureByName.get(candidate)
+      if (typeof shippedId === 'string') return shippedId
+    }
     return null
   }
 
-  return shops.shops.map((shop) => {
+  const wikiShops = shops.shops.map((shop): Shop => {
     const gaps: string[] = []
     const unknownTokens = new Set<string>()
     let unresolvedItems = 0
     let unparsedRequires = 0
+    let filledPrices = 0
+    const priceDrift: string[] = []
 
     const stock: Shop['stock'] = []
     const seen = new Set<string>()
@@ -141,6 +162,21 @@ export function buildShops(ctx: BuildContext): Shop[] {
         if (!shops.nonPriceTokens.has(candidate.token)) unknownTokens.add(candidate.token)
       }
 
+      // Where the page prints no price, the item's own `value.store` fills it.
+      // **Only where the page prints none.** A stated wiki price is per-shop
+      // and knows the difference between the Lemon Pie and its recipe scroll,
+      // which the item's single global value cannot: the Inn sells the pie at
+      // 650 and the scroll at 400, and overwriting would price both at 650.
+      // Where the two disagree on a line the wiki *did* price, the wiki wins
+      // and the disagreement is counted below rather than resolved silently.
+      const gamePrice = ctx.game?.itemById.get(itemId)?.buy_value ?? null
+      if (price === null && currency === 'tesserae' && gamePrice !== null) {
+        price = gamePrice
+        filledPrices += 1
+      } else if (price !== null && gamePrice !== null && price !== gamePrice) {
+        priceDrift.push(`${itemId} (page ${price}, files ${gamePrice})`)
+      }
+
       const requires: Requirement[] = []
       for (const token of row.requires) {
         const parsed = parseRequirement(token)
@@ -169,6 +205,18 @@ export function buildShops(ctx: BuildContext): Shop[] {
     if (unparsedRequires > 0) gaps.push('stock_requires')
     if (stock.some((line) => line.price === null)) gaps.push('stock_price')
     if (predates1_0(shop.lastEdited)) gaps.push('predates_1_0')
+    if (filledPrices > 0) {
+      consola.info(`${shop.name}: ${filledPrices} price(s) filled from the game files`)
+    }
+    if (priceDrift.length > 0) {
+      // Kept, not resolved. The page states a per-shop price and the files a
+      // global one; where they differ one of them is describing something
+      // else, and that is a question for a person.
+      consola.info(
+        `${shop.name}: ${priceDrift.length} price(s) differ from the files — ` +
+          `page wins: ${priceDrift.slice(0, 3).join(', ')}`,
+      )
+    }
     if (unknownTokens.size > 0) {
       consola.warn(
         `${shop.name}: unrecognised price tokens ${[...unknownTokens].join(', ')} — ` +
@@ -209,7 +257,205 @@ export function buildShops(ctx: BuildContext): Shop[] {
       // Empty means no restriction. Shops in this game do not close.
       hours: [],
       seasonal_closures: [],
+      unlock_requires: [],
       stock,
     }
   })
+
+  return [...wikiShops, ...buildMarketStalls(ctx, characterIds, furnitureShipped)]
+}
+
+/**
+ * The Saturday Market stalls, from the game's own store file.
+ *
+ * The wiki keeps these six vendors on one event page the store parser cannot
+ * read; `stores.toml` states each stall's stock as data, per category, with
+ * the rotation size (`target_selections`) and per-line gates. What the game
+ * does NOT state is prices — items carry a store value, stock lines do not —
+ * so every line ships `price: null` and the stall carries a `stock_price`
+ * gap until someone parses the wiki's market page.
+ *
+ * Lines are gated on the item actually shipping this build, the same rule as
+ * recipes: cosmetics are deferred wholesale, furniture arrives with its own
+ * ingestion (`furnitureShipped` maps a game id to the collapsed record that
+ * carries it), and anything else unresolved goes in the queue rather than
+ * being counted and forgotten.
+ */
+function buildMarketStalls(
+  ctx: BuildContext,
+  characterIds: Set<string>,
+  furnitureShipped?: Map<string, string>,
+): Shop[] {
+  const market = ctx.shops.market
+  const game = ctx.game
+  if (market === null || game === null || game.storeById.size === 0) return []
+
+  // Where the record for a game item id will live this build, or null.
+  const shipsAs = (gameId: string): string | null => {
+    if (ctx.gameOnlyItems.includes(gameId)) return gameId
+    const fromFurniture = furnitureShipped?.get(gameId)
+    if (fromFurniture !== undefined) return fromFurniture
+    const name = game.itemById.get(gameId)?.name ?? null
+    if (name !== null && ctx.itemByName.has(name)) return ctx.idFor(name)
+    return null
+  }
+
+  // What a cosmetic costs: the files' own override where they state one, the
+  // wiki's price otherwise. The same two sources the cosmetics builder joins,
+  // read here so the shop record prices its own shelf rather than making the
+  // reader open the item to find out.
+  const wikiPrice = new Map(
+    (ctx.cosmetics?.cosmetics ?? []).map((row) => [row.name, row.price] as const),
+  )
+  const cosmeticPrice = (id: string): number | null => {
+    const cosmetic = game.cosmeticById.get(id)
+    if (cosmetic === undefined) return null
+    return cosmetic.price_override ?? wikiPrice.get(cosmetic.name) ?? null
+  }
+
+  const unlock: Requirement[] = [
+    { type: 'quest', key: market.unlockQuest, op: 'done', value: null },
+  ]
+  const days = market.days as DayOfWeek[]
+
+  const stalls: Shop[] = []
+  for (const vendor of market.vendors) {
+    const store = game.storeById.get(vendor.storeId)
+    if (store === undefined) {
+      throw new Error(
+        `curated/vocab/shops.json names market vendor "${vendor.storeId}", which is not a ` +
+          'store section in sources/game/stores.json. Fix the id or re-run pnpm extract.',
+      )
+    }
+
+    const gaps: string[] = []
+    let cosmetics = 0
+    let unresolvedItems = 0
+    let ungated = 0
+    const stock: Shop['stock'] = []
+    const seen = new Set<string>()
+
+    for (const category of store.categories) {
+      const rotation = category.target_selections !== null
+      for (const entry of category.entries) {
+        // A cosmetic is a wardrobe id, not an item id, and it ships as its own
+        // record — so the stock line resolves straight to it. A recipe scroll
+        // is still a later pass and stays counted rather than silently gone.
+        const cosmeticId =
+          entry.cosmetic !== null && game.cosmeticById.has(entry.cosmetic) ? entry.cosmetic : null
+        if (entry.item === null && cosmeticId === null) {
+          cosmetics += 1
+          continue
+        }
+
+        const gameItemId = entry.item ?? ''
+        const itemId = cosmeticId ?? shipsAs(gameItemId)
+        if (itemId === null) {
+          unresolvedItems += 1
+          ctx.resolver.recordUnresolved(
+            game.itemById.get(gameItemId)?.name ?? gameItemId,
+            'shop_stock_item',
+            `shop:${vendor.shopId}`,
+          )
+          continue
+        }
+
+        // The only gates these six stalls state: is_season (a seasons entry,
+        // not a requirement), has_perk, and three one-off flags the model
+        // cannot express (an upstairs, a partner, a cutscene). A line whose
+        // gate cannot be stated is held back — shipping it ungated would
+        // claim "always stocked", which is the wrong direction to be wrong in.
+        let season: Season | null = null
+        let perk: string | null = null
+        let expressible = true
+        for (const requirement of [
+          ...entry.requirements,
+          ...entry.unread_requirement_keys.map((key) => ({ key, value: undefined })),
+        ]) {
+          if (requirement.key === 'is_season' && typeof requirement.value === 'string') {
+            season = SEASONS.find((s) => s === requirement.value) ?? null
+            continue
+          }
+          if (requirement.key === 'has_perk' && typeof requirement.value === 'string') {
+            perk = requirement.value
+            continue
+          }
+          expressible = false
+        }
+        if (!expressible) {
+          ungated += 1
+          continue
+        }
+
+        const poolSeason = SEASONS.find((s) => s === entry.pool) ?? null
+        const seasons = season ?? poolSeason
+
+        const key = `${itemId}|${seasons ?? ''}`
+        if (seen.has(key)) continue
+        seen.add(key)
+
+        stock.push({
+          item_id: itemId,
+          // No wiki page prices these stalls, so the files are the only
+          // source: a cosmetic's own price, or the item's `value.store`.
+          price:
+            cosmeticId === null
+              ? (game.itemById.get(gameItemId)?.buy_value ?? null)
+              : cosmeticPrice(cosmeticId),
+          currency: 'tesserae',
+          requires: perk === null ? [] : [{ type: 'perk', key: perk, op: 'has', value: null }],
+          seasons: seasons === null ? null : [seasons],
+          rotation,
+        })
+      }
+    }
+
+    if (stock.length === 0) {
+      // A stall whose every line is deferred (Louis and Vera sell only
+      // cosmetics today) still exists — the player can walk up to it — so the
+      // record ships with its gaps saying why it looks empty.
+      gaps.push('stock')
+    }
+    if (cosmetics > 0 || unresolvedItems > 0) gaps.push('stock_items')
+    if (ungated > 0) {
+      gaps.push('stock_requires')
+      consola.info(
+        `${store.name ?? vendor.shopId}: ${ungated} stock line(s) held back — ` +
+          'their gates are not expressible yet',
+      )
+    }
+    if (stock.some((line) => line.price === null)) gaps.push('stock_price')
+
+    const resolved = ctx.resolver.resolveLocations([market.location], `shop:${vendor.shopId}`)
+
+    stalls.push({
+      id: vendor.shopId,
+      name: store.name ?? vendor.shopId,
+      numeric_id: null,
+      numeric_id_game_version: null,
+      id_status: 'provisional',
+      former_ids: [],
+      also_known_as: [],
+      game_version: game.version,
+      version_added: null,
+      confidence: 'verified',
+      prov: { '*': 'game_files' },
+      data_gaps: gaps,
+      icon_key: `shop/${vendor.shopId}`,
+      wiki_page: market.wikiPage,
+      blurb: null,
+
+      location_id: resolved.locations[0] ?? null,
+      owner_character_id: characterIds.has(vendor.storeId) ? vendor.storeId : null,
+      staff_character_ids: characterIds.has(vendor.storeId) ? [vendor.storeId] : [],
+      // A full-Saturday window: the market is weekly, and shops in this game
+      // have no within-day closing time (`to: "00:00"` is end of day).
+      hours: [{ days, from: '00:00', to: '00:00' }],
+      seasonal_closures: [],
+      unlock_requires: unlock,
+      stock,
+    })
+  }
+
+  return stalls
 }

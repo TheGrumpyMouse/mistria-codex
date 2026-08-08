@@ -67,10 +67,6 @@ export interface Match {
   rule: Rule
   /** The location id, or null when the rule does not say. */
   locationId: string | null
-  /** True when the rule states no time — the result is real but unverified. */
-  timeUnknown: boolean
-  /** True when the rule states no place. */
-  placeUnknown: boolean
   /** Gate tokens the player may not have met. Shown, never used to hide. */
   requires: string[]
 }
@@ -113,10 +109,6 @@ export function findMatches(index: AvailabilityIndex, instant: Instant): Match[]
     matches.push({
       rule,
       locationId: rule.loc === null ? null : (index.locations[rule.loc] ?? null),
-      // Not merely "no intervals": a dig spot has no clock at all, and that is
-      // a fact (`ta`), not a gap. Only the genuinely unsourced get the hedge.
-      timeUnknown: rule.t.length === 0 && rule.ta !== 1,
-      placeUnknown: rule.loc === null,
       requires: rule.req,
     })
   }
@@ -129,10 +121,6 @@ export interface FindableEntity {
   kind: string
   /** Distinct locations this can be found in right now. */
   locationIds: string[]
-  /** True when *every* matching rule lacked a time. */
-  timeUnknown: boolean
-  /** True when *every* matching rule lacked a place. */
-  placeUnknown: boolean
   /** The lowest rarity across matching rules — the easiest way to get it. */
   rarity: number | null
   requires: string[]
@@ -141,11 +129,8 @@ export interface FindableEntity {
 /**
  * Collapse matches to one row per entity.
  *
- * `timeUnknown` and `placeUnknown` are ANDs across the matching rules: if one
- * route to the thing has a known time, the entity is not "time unknown" — it is
- * findable at a time we can name, and badging it otherwise would understate
- * what we know. The same logic as `gated` on the request board, for the same
- * reason.
+ * A rule with no recorded time or place still matches — unknown does not
+ * exclude — the row just says nothing where the data says nothing.
  */
 export function findAvailable(index: AvailabilityIndex, instant: Instant): FindableEntity[] {
   const byEntity = new Map<string, FindableEntity & { locationSet: Set<string> }>()
@@ -155,16 +140,12 @@ export function findAvailable(index: AvailabilityIndex, instant: Instant): Finda
       id: match.rule.e,
       kind: match.rule.k,
       locationIds: [],
-      timeUnknown: true,
-      placeUnknown: true,
       rarity: match.rule.rar,
       requires: [],
       locationSet: new Set<string>(),
     }
 
     if (match.locationId !== null) existing.locationSet.add(match.locationId)
-    if (!match.timeUnknown) existing.timeUnknown = false
-    if (!match.placeUnknown) existing.placeUnknown = false
     if (match.rule.rar !== null) {
       existing.rarity =
         existing.rarity === null ? match.rule.rar : Math.min(existing.rarity, match.rule.rar)

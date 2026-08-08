@@ -17,6 +17,7 @@ import { type AssetEntry, ATTRIBUTION_TEXT, readManifestOrEmpty } from './manife
 // in-copyright image is the worst possible file to leave uncredited.
 const FAMILY_TITLES: Record<string, string> = {
   item: 'Items',
+  cosmetic: 'Wardrobe',
   villager: 'Villager icons',
   portrait: 'Villager portraits',
   monster: 'Monsters',
@@ -56,9 +57,11 @@ export function renderAttribution(assets: AssetEntry[], source: string): string 
     'Every file lives under `assets/game/` and is listed here, so removing all of',
     'it is `git rm -r assets/game` and a rebuild.',
     '',
-    `All files were fetched from the community wiki at <${source}>, which hosts them`,
-    'and does not own them. The wiki’s **text** is CC BY-SA; the game’s **art** is not,',
-    'and nothing in this repository treats it as though it were.',
+    `Files were fetched from the community wiki at <${source}>, which hosts them`,
+    'and does not own them, except those marked **game files** below: art the wiki',
+    'hosts no file for, read from an owned copy of the game. The wiki’s **text** is',
+    'CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in',
+    'this repository treats it as though it were.',
     '',
     `**${assets.length} files.**`,
     '',
@@ -75,9 +78,11 @@ export function renderAttribution(assets: AssetEntry[], source: string): string 
       '| --- | --- | --- |',
     )
     for (const asset of [...entries].sort((a, b) => a.file.localeCompare(b.file))) {
-      lines.push(
-        `| \`${cell(asset.file)}\` | ${cell(asset.source_file)} | [file page](${asset.source_url}) |`,
-      )
+      const source =
+        asset.origin === 'game_files'
+          ? 'game files (NPC Studio)'
+          : `[file page](${asset.source_url})`
+      lines.push(`| \`${cell(asset.file)}\` | ${cell(asset.source_file)} | ${source} |`)
     }
     lines.push('')
   }

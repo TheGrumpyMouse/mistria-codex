@@ -57,6 +57,30 @@ export const Item = withEnvelope({
   used_in_recipe_ids: z.array(IdRef).default([]),
   /** Derived at build time from shop stock. */
   sold_by: z.array(IdRef).default([]),
+
+  /**
+   * Colour/style variants collapsed into this record — the game's own item
+   * ids for each colourway of one product (fifteen "Basic Wood Chest"
+   * chests share a `recipe_key` and one record). Absent everywhere else.
+   */
+  variant_ids: z.array(z.string()).optional(),
+  /**
+   * Set when the collapsed variants craft from *different* ingredients (each
+   * paving-stone colour needs its own dye). The record carries the base
+   * variant's recipe; this flag is what lets the UI say so.
+   */
+  variant_recipes_differ: z.literal(true).optional(),
+
+  /**
+   * Cosmetics only: how many colours it comes in. Unlike furniture these are
+   * palette swaps of one wardrobe entry, not separate records — so this is a
+   * count, and there is nothing to link to.
+   */
+  variant_count: z.number().int().min(2).optional(),
+  /** Cosmetics only: the body slot it occupies — `hair`, `head_gear`, `feet`. */
+  worn_on: z.string().optional(),
+  /** Cosmetics only: you start with it, so nothing sells it and it costs nothing. */
+  default_unlocked: z.literal(true).optional(),
 })
 export type Item = z.infer<typeof Item>
 

@@ -83,6 +83,12 @@ export interface GameItem {
   craft_minutes: number | null
   /** `forever`, or null. The conditional forms are gates, not a soulbind class. */
   soulbind: string | null
+  /**
+   * The item's own icon sprite name (`spr_ui_item_furniture_basic_chest_v01`).
+   * An identifier, not an image — it is what lets the asset step name the
+   * exact PNG for art the wiki does not host. See docs/DATA-POLICY.md.
+   */
+  icon_sprite: string | null
 }
 
 export interface GameItemsExtract {
@@ -156,6 +162,7 @@ function readItem(id: string, entry: Table, base: Table, file: string): GameItem
     // Only the string form. The object forms are unlock conditions expressed in
     // the same field, and flattening them to "soulbound" would be a wrong fact.
     soulbind: str(get('soulbind')),
+    icon_sprite: str(get('icon_sprite')),
   }
 }
 

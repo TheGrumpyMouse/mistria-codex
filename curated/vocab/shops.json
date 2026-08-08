@@ -28,9 +28,12 @@
     "says so in the heading. Everything else is year-round — including Balor's,",
     "whose page states outright that stock is not restricted by season.",
     "",
-    "SATURDAY MARKET IS NOT HERE. Its eight vendors live on an event page with a",
-    "different structure, and their stock is day-of-week gated. That is a separate",
-    "piece of work rather than something to half-do here."
+    "THE SATURDAY MARKET IS THE `saturdayMarket` BLOCK BELOW, built from the",
+    "game's own stores.toml (sources/game/stores.json) rather than the wiki:",
+    "the wiki keeps its vendors on one event page this parser cannot read, and",
+    "the game states every stall's stock as data. The wiki page remains the",
+    "only candidate source for per-line PRICES, which is why every stall line",
+    "ships price null and a stock_price gap until someone parses it."
   ],
 
   "_priceTokens": [
@@ -44,6 +47,36 @@
     "warning rather than a silent default to tesserae — which would invent a",
     "price out of a stat."
   ],
+  "_saturdayMarket": [
+    "The six SELLING vendors. Stillwell and Taliferro attend the market too but",
+    "run challenge/mission boards (stillwell_challenges.toml, tali_challenges.toml)",
+    "— nothing for sale means no shop record. `storeId` is the section key in",
+    "stores.toml, which is also the vendor's character id; `shopId` is ours.",
+    "",
+    "Facts and their sources, checked 2026-08-08:",
+    "- Held in Mistria town square every SATURDAY once the bridge is repaired —",
+    "  the wiki's Mistria page, 'The Saturday Market' section, and the",
+    "  repair_the_bridge story quest in the game's own files. The day lives on",
+    "  `hours` as a full-Saturday window (shops in this game never close within",
+    "  a day); the unlock on `unlock_requires`.",
+    "- Stock rotates: stores.toml gives each stall category `target_selections`,",
+    "  the draw size — a line from such a category ships rotation: true."
+  ],
+  "saturdayMarket": {
+    "location": "Mistria",
+    "days": ["sat"],
+    "unlockQuest": "repair_the_bridge",
+    "wikiPage": "Saturday Market",
+    "vendors": [
+      { "storeId": "darcy", "shopId": "darcys_stall" },
+      { "storeId": "louis", "shopId": "louis_stall" },
+      { "storeId": "merri", "shopId": "merris_stall" },
+      { "storeId": "vera", "shopId": "veras_stall" },
+      { "storeId": "wheedle", "shopId": "wheedles_stall" },
+      { "storeId": "zorel", "shopId": "zorels_stall" }
+    ]
+  },
+
   "priceTokens": { "": "tesserae", "renown": "renown", "ess": "essence" },
   "nonPriceTokens": [
     { "token": "defense", "reason": "an armour stat, in the Defense column" },

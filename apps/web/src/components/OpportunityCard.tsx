@@ -49,11 +49,7 @@ export function OpportunityCard({
       <div className="flex items-baseline justify-between gap-3">
         <p className="text-ink text-sm">
           {KIND_LABELS[rule.k] ?? rule.k.replace(/_/g, ' ')}
-          {place === null ? (
-            <span className="unverified ml-1.5 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-              place unknown
-            </span>
-          ) : (
+          {place !== null && (
             <span className="text-ink-mute">
               {' · '}
               <Link
@@ -92,27 +88,21 @@ export function OpportunityCard({
           </span>
         ))}
 
-        {time.length === 0 ? (
-          // Two different empties. `ta` says the method has no clock — fish
-          // bite around the clock, dig spots sit there all day — which is a
-          // fact and renders plainly. Without it, nobody has sourced a time,
-          // and the dashed hedge stays.
-          rule.ta === 1 ? (
-            <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
-              any time
-            </span>
-          ) : (
-            <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-              time unknown
-            </span>
-          )
-        ) : (
-          time.map(([from, to]) => (
-            <span key={`${from}-${to}`} data-numeral className="text-ink-faint text-[0.625rem]">
-              {formatClock(from)}–{formatClock(to)}
-            </span>
-          ))
-        )}
+        {time.length === 0
+          ? // Two different empties. `ta` says the method has no clock — fish
+            // bite around the clock, dig spots sit there all day — which is a
+            // fact and renders plainly. Without it, nobody has sourced a time,
+            // and the card says nothing rather than hedging.
+            rule.ta === 1 && (
+              <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
+                any time
+              </span>
+            )
+          : time.map(([from, to]) => (
+              <span key={`${from}-${to}`} data-numeral className="text-ink-faint text-[0.625rem]">
+                {formatClock(from)}–{formatClock(to)}
+              </span>
+            ))}
 
         {requires.length > 0 && (
           <span

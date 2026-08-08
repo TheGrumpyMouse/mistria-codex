@@ -34,9 +34,14 @@ The dataset is careful about the difference between *not applicable*, *unknown*
 and *none*. Rendering an unknown as `0`, `—` or an empty list throws that away
 and reads as a confident "there is none", which is worse than saying nothing.
 
-Unknown gets the `.unverified` treatment: a dashed hollow outline in muted ink.
-**Never a colour** — colour is spoken for by the seasons, and an inference must
-never render identically to a fact.
+**Unknown renders as nothing.** A window with no recorded time simply has no
+time line — never a "time unknown" badge (removed by owner decision: it served
+no reader). *Not applicable* is a fact and renders plainly ("any time").
+`data_gaps` still records the hole in the data.
+
+The `.unverified` dashed treatment marks **inferences** ("place inferred") and
+kindred hedges — a deduction must never render identically to a fact. **Never
+a colour** — colour is spoken for by the seasons.
 
 ### 3. Never write `if (start > end)` for a time window
 
@@ -154,7 +159,24 @@ pnpm dev              vite, from the repo root
 pnpm build:web        production build
 pnpm preview:web      serve the build
 pnpm check            biome + tsc + vitest, whole repo
+pnpm e2e              the Playwright suite in e2e/ against dist/ (build:ship + build:web first)
 ```
+
+**`pnpm e2e` is the local gate for UI changes.** It serves `dist/` under the
+production base path and runs six specs, in three layers:
+
+- **`sweep`** opens every static route and a sample of every category — ids
+  drawn from the shipped index, so it covers whatever the dataset grew — and
+  fails on anything that *looks* broken with no feature attached to it: a
+  console error, a 404, a raw `snake_case` token on screen, an `undefined`,
+  an empty page. ~600 assertions.
+- **`journeys`** walks multi-screen intentions, where the seams are: a museum
+  tick showing on the item page and back again, a filter surviving the back
+  button, a setting outliving a reload, a spoiler staying revealed.
+- **`smoke` / `mobile` / `tour` / `stale-version`** assert named features.
+
+It never runs in CI (needs a data bundle and a Chromium); run it before
+handing over anything that touches routes or components.
 
 `BASE_PATH` sets the base for a production build. CI passes the repository name;
 locally it is `/`.

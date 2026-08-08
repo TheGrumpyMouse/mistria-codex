@@ -1,5 +1,13 @@
-import type { Crop, FishFacet, Location, MuseumWing, Rarity, SpawnMethod } from '@mistria/schema'
-import { toSnakeId } from '@mistria/schema'
+import type {
+  Crop,
+  FishFacet,
+  Location,
+  MuseumWing,
+  Rarity,
+  Season,
+  SpawnMethod,
+} from '@mistria/schema'
+import { SEASONS, SPAWN_METHODS, toSnakeId } from '@mistria/schema'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
 import { hoursToRange, rarityFor, seasonsFor, statedWeather } from '../game-facts.js'
@@ -41,6 +49,30 @@ function gameBugWindow(ctx: BuildContext, displayName: string): GameWindowFacts 
 /** The game's rarity for a bug. It grades six of them `very_rare`; the wiki drops those. */
 const gameRarity = (ctx: BuildContext, displayName: string): Rarity | null =>
   rarityFor(ctx.game?.bugById.get(ctx.idFor(displayName))?.rarity ?? null)
+
+/**
+ * Is this Bugs row a museum-roster entry rather than a catchable bug?
+ *
+ * Ten rows in the wiki's Bugs table are not catchable bugs: nine are apiary
+ * and terrarium products — the honey tiers, bug pheromones and fish bait —
+ * listed because they donate to insect-wing museum sets, and one (Raindrop
+ * Beetle) is a wiki-only entry the 1.0 files do not contain at all. Every
+ * window column on all ten is empty, and the game's own bug list (93 bugs,
+ * all with hours and rooms) knows none of them. Reading such a row as a bug
+ * gave honey a `bug_net` window and a `bug` category, which the app
+ * presented as fact. The products' real availability comes from the factory
+ * that yields them; the beetle honestly has none.
+ *
+ * The test requires *both* signals — unknown to the game's bug list *and* a
+ * fully empty window — so a genuine bug the extract happens to lack still
+ * builds the wiki way rather than vanishing.
+ */
+export function isMuseumRosterRow(ctx: BuildContext, row: BuildContext['bugs'][number]): boolean {
+  if (ctx.game?.bugById.has(ctx.idFor(itemName(row.name)))) return false
+  return (
+    toTokens(row.season).length === 0 && text(row.time) === '' && toTokens(row.weather).length === 0
+  )
+}
 
 /**
  * The game's seasons and weather for one fish, across all of its spawn rules.
@@ -123,6 +155,9 @@ export function itemInputs(
   for (const row of ctx.bugs) {
     const name = itemName(row.name)
     if (name === '') continue
+    // Apiary/terrarium products stay in the all-items loop's shape — a plain
+    // item whose window the factory supplies — never a bug-net window.
+    if (isMuseumRosterRow(ctx, row)) continue
 
     // The game states every bug's hours, seasons, weather and rooms as data;
     // the wiki states seasons in a column, weather in another, and time as
@@ -256,6 +291,42 @@ export function itemInputs(
       methods: [...new Set([...(prior?.methods ?? []), 'shop' as const])],
       categoryOverride: 'seed',
     })
+  }
+
+  // Factory products — honey from the apiary, bait and pheromones from the
+  // terrarium. The factory's `rewards_map` is the only source stating how
+  // these are obtained. The window it yields: the machine's own id as the
+  // method, year-round (the prototype has no season field — the *requests*
+  // are seasonal, the production is not), no clock and no weather (both on
+  // the method's not-applicable lists, sourced in method_rules.json), and
+  // the farm, because `placeable_locations = ["farm"]`.
+  for (const factory of ctx.game?.factories ?? []) {
+    const method = SPAWN_METHODS.find((m) => m === factory.id)
+    if (method === undefined) {
+      throw new Error(
+        `machines extract has a "${factory.id}" factory with no matching spawn method. ` +
+          'Add it to SPAWN_METHODS and curated/vocab/method_rules.json — a machine the ' +
+          'model cannot express must not silently ship nothing.',
+      )
+    }
+
+    for (const product of new Set(factory.rewards_map.flat())) {
+      const name = gameDisplayName(ctx, product)
+      if (name === null) continue
+
+      const existing = inputs.get(name)
+      inputs.set(name, {
+        ...existing,
+        displayName: name,
+        methods: [...new Set([...(existing?.methods ?? []), method])],
+        game: existing?.game ?? {
+          seasons: [...SEASONS] as Season[],
+          weather: null,
+          time: null,
+          locations: [],
+        },
+      })
+    }
   }
 
   // Stamp museum membership on whichever input ended up representing each item.

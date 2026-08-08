@@ -123,8 +123,18 @@ export async function checkGameAgreement(loaded: Loaded): Promise<Finding[]> {
   //    "Bag Upgrade" naming two different pouches, "Burdock root Seed" cased
   //    differently, pet cosmetics that live somewhere this does not yet read —
   //    and every one of those is worth a human deciding about.
+  //    Two exemptions, both structural rather than by name. A record with
+  //    `variant_ids` is a collapsed furniture colour group whose id is the
+  //    game's recipe_key — a deliberate non-ItemId whose real ItemIds are the
+  //    variants it carries. And every cosmetic is a wardrobe entry: the game
+  //    models it outside the item enum entirely, so "not an ItemId" is what it
+  //    is, not something anyone can fix.
   const unconfirmed = items.filter(
-    (i) => i.id_status === 'provisional' && !game.nonItemNames.has(wordKey(i.name)),
+    (i) =>
+      i.id_status === 'provisional' &&
+      i.category !== 'cosmetic' &&
+      !Array.isArray((i as { variant_ids?: string[] }).variant_ids) &&
+      !game.nonItemNames.has(wordKey(i.name)),
   )
   if (unconfirmed.length > 0) {
     findings.push(

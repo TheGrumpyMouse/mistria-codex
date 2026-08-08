@@ -102,7 +102,14 @@ export interface FetchResult {
 export async function fetchAssets({ dryRun = false } = {}): Promise<FetchResult> {
   const wiki = await readJsonFile<WikiConfig>(join(CURATED_DIR, 'vocab', 'wiki.json'))
   const inventory = await collectInventory()
-  const previous = new Map((await readManifestOrEmpty()).assets.map((a) => [a.key, a]))
+  const manifest = await readManifestOrEmpty()
+  const previous = new Map(manifest.assets.map((a) => [a.key, a]))
+
+  // Game-sourced sprites (`assets:game`) are outside this fetch's inventory —
+  // the wiki has no file for them, which is why they exist. Carried through
+  // verbatim so the rewrite below cannot drop them and the prune cannot
+  // delete their files.
+  const gameSourced = manifest.assets.filter((a) => a.origin === 'game_files')
 
   consola.info(`assets: ${inventory.length} wanted`)
 
@@ -211,6 +218,7 @@ export async function fetchAssets({ dryRun = false } = {}): Promise<FetchResult>
     if (fetched % 100 === 0) consola.info(`assets: ${fetched}/${wanted.length} fetched`)
   }
 
+  assets.push(...gameSourced)
   const removed = await pruneOrphans(assets, argv.includes('--prune'))
 
   assets.sort((a, b) => a.key.localeCompare(b.key))

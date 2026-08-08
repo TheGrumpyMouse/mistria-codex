@@ -57,7 +57,13 @@ const browseRoute = createRoute({
   validateSearch: (search: Record<string, unknown>) => {
     const c = optionalString(search.c)
     const q = optionalString(search.q)
-    return { ...(c === undefined ? {} : { c }), ...(q === undefined ? {} : { q }) }
+    // `s` is the furniture set — a second grouping level only that category has.
+    const s = optionalString(search.s)
+    return {
+      ...(c === undefined ? {} : { c }),
+      ...(q === undefined ? {} : { q }),
+      ...(s === undefined ? {} : { s }),
+    }
   },
 })
 
@@ -170,7 +176,15 @@ const mapRoute = createRoute({
   // no link. The id is validated against real regions in the component.
   validateSearch: (search: Record<string, unknown>) => {
     const region = search.region
-    return typeof region === 'string' && region !== '' ? { region } : {}
+    const season = ['spring', 'summer', 'fall', 'winter'].includes(search.season as string)
+      ? (search.season as string)
+      : undefined
+    const q = optionalString(search.q)
+    return {
+      ...(typeof region === 'string' && region !== '' ? { region } : {}),
+      ...(season === undefined ? {} : { season }),
+      ...(q === undefined ? {} : { q }),
+    }
   },
 })
 
