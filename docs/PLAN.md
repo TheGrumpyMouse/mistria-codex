@@ -134,7 +134,16 @@ The invariant that makes this work: **`data/` is a pure deterministic function o
 
 The monorepo is not about build orchestration. It's that `workers/sync` needs `@cloudflare/workers-types` and `apps/web` needs DOM lib, and those two type environments fight in one tsconfig — while `sync-client`'s merge genuinely must be imported by both.
 
-**Tooling:** pnpm 10 · tsx · Zod 4 (`z.toJSONSchema()` emits `docs/schema/*.json`) · Ajv 8 as an independent second validator · smol-toml · MiniSearch · Biome · Vitest + fast-check · Hono + wrangler 4.
+**Tooling:** pnpm 10 · tsx · Zod 4 (`z.toJSONSchema()` emits `build/schema/*.json`) · Ajv 8 as an independent second validator · smol-toml · MiniSearch · Biome · Vitest + fast-check · Hono + wrangler 4.
+
+> **Stale, kept for the record.** Several entries above were planned and never
+> adopted — MiniSearch, fast-check and Hono are not dependencies of this
+> repository. See "What was planned and dropped" in
+> [ARCHITECTURE.md](ARCHITECTURE.md), which describes the system as built.
+> The emitted JSON Schema moved from `docs/schema/` to `build/schema/`
+> (`packages/schema/src/emit-json-schema.ts`); the abandoned copy under `docs/`
+> was deleted after it began failing `biome ci` and was found to be two
+> datasets out of date.
 
 **App:** Vite 7 · React 19 · TanStack Router (the Today view's whole state — `?season&day&year&weather&time` — belongs in validated search params, not string-munging) · Tailwind v4 with CSS-variable tokens (shared with the SVG maps) · Radix primitives, cherry-picked · Dexie 4 · Zustand · `vite-plugin-pwa` in `injectManifest` mode · `@use-gesture/react` + raw SVG for maps · `@tanstack/react-virtual`.
 
