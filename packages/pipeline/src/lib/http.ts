@@ -12,9 +12,15 @@ import { CACHE_DIR } from './paths.js'
  * — measured, the same requests a second apart got 8/8 without it and 4/8 with
  * it. And the URL it gave did not exist, so the one purpose a User-Agent has
  * beyond identification was not served.
+ *
+ * That second fault then came back a second time, under a stale account name,
+ * and went unnoticed for as long as it did because nothing can detect it:
+ * **a dead URL in a string fails no test and no build.** Check this against
+ * `git remote -v` whenever the account or the repository name changes — this
+ * line is how a wiki.gg admin reaches whoever is making the requests.
  */
 const USER_AGENT =
-  'mistria-codex/0.1 (+https://github.com/ChristoSmuts/mistria-codex; unofficial fan project)'
+  'mistria-codex/0.1 (+https://github.com/TheGrumpyMouse/mistria-codex; unofficial fan project)'
 
 let lastRequestAt = 0
 

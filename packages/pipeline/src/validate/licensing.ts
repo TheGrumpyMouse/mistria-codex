@@ -1,9 +1,13 @@
+import { execFile } from 'node:child_process'
 import type { Dirent } from 'node:fs'
 import { readdir, readFile } from 'node:fs/promises'
 import { extname, join, relative } from 'node:path'
+import { promisify } from 'node:util'
 import { ASSETS_MANIFEST, CURATED_DIR, DATA_DIR, REPO_ROOT } from '../lib/paths.js'
 import { PROSE_KEY_DENYLIST } from '../lib/write-json.js'
 import { error, type Finding } from './report.js'
+
+const execFileAsync = promisify(execFile)
 
 /**
  * Fields allowed to hold more than a few words, because we wrote them.
@@ -34,6 +38,32 @@ const IMAGE_ALLOWED_PREFIXES = [
 ]
 
 const GAME_ART_PREFIX = join('assets', 'game')
+
+/**
+ * Text files that could be a wiki page someone pasted in while writing a parser.
+ *
+ * JSON is deliberately **not** here. `sources/wiki/cargo/items.json` legitimately
+ * holds `[[File:…]]` in its `icon` cells — that is the cell's real content, and
+ * scanning it would fail the build on correct data.
+ */
+const WIKITEXT_SCAN_EXTENSIONS = new Set(['.txt', '.wiki', '.md'])
+
+/**
+ * Wikitext markers, and how many it takes to mean "this is a pasted page".
+ *
+ * Documentation talks *about* wikitext — CLAUDE.md names `[[File:…]]` three
+ * times explaining that eighteen icon cells lack it. So presence alone cannot
+ * be the test, and the threshold is set by measurement rather than taste: the
+ * three cosmetics pages that prompted this carried 253, 538 and 595 markers,
+ * and the wordiest real document in the repository carries 4. Anywhere in that
+ * gap works; 10 leaves both sides a wide margin.
+ *
+ * A wikitable opener at the start of a line is on its own conclusive — no prose
+ * document has ever begun a line with `{|` — so it short-circuits the count.
+ */
+const WIKITEXT_MARKERS = /\{\{|\[\[File:|\[\[Image:/g
+const WIKITABLE_OPENER = /^\{\|/m
+const WIKITEXT_THRESHOLD = 10
 
 /** `apps/web/public/assets` is packed build output, like `public/data`. */
 const SKIP_DIRS = new Set(['node_modules', '.git', 'dist', 'build', '.cache'])
@@ -144,7 +174,85 @@ export async function checkLicensing(): Promise<Finding[]> {
   }
 
   findings.push(...(await checkManifest(onDisk)))
+  findings.push(...(await checkWikitext()))
   return findings
+}
+
+/**
+ * No raw wiki page source, anywhere in the repository.
+ *
+ * The prose scan above walks JSON under `data/` and `curated/`, which is where
+ * prose was expected to arrive. It is not where it actually arrived: three
+ * cosmetics pages were pasted into `cos.txt`, `acc.txt` and `body.txt` at the
+ * repo root while the price parser was being written, and committed. A `.txt`
+ * at the root is outside every guard the project had — the prose scan skipped
+ * it for not being JSON, the image check for not being an image — so verbatim
+ * wiki sentences sat in a public repository whose own policy says *"page
+ * wikitext is never committed"*.
+ *
+ * Parse the page, keep the facts, and let `sources/wiki/pages/` hold the
+ * result. The input is scratch and does not belong in git.
+ *
+ * **Tracked files only**, which is the whole rule: pasting a page into a
+ * scratch file to work out a parser is the normal way to write one, and
+ * `.gitignore` already stops that file being committed. Failing the build on an
+ * ignored working file would punish the correct workflow and teach people to
+ * skip the check.
+ */
+async function checkWikitext(): Promise<Finding[]> {
+  const findings: Finding[] = []
+  const tracked = await trackedFiles()
+
+  for await (const file of walk(REPO_ROOT)) {
+    if (!WIKITEXT_SCAN_EXTENSIONS.has(extname(file).toLowerCase())) continue
+    const rel = relative(REPO_ROOT, file)
+    // `docs/` is gitignored and internal, so it cannot be committed anyway.
+    if (SKIP_PATHS.some((prefix) => rel.startsWith(prefix)) || rel.startsWith('docs')) continue
+    if (tracked !== null && !tracked.has(rel.replace(/\\/g, '/'))) continue
+
+    let text: string
+    try {
+      text = await readFile(file, 'utf8')
+    } catch {
+      continue
+    }
+
+    const markers = text.match(WIKITEXT_MARKERS)?.length ?? 0
+    if (!WIKITABLE_OPENER.test(text) && markers < WIKITEXT_THRESHOLD) continue
+
+    findings.push(
+      error(
+        'licensing:wikitext',
+        `this reads as raw wiki page source (${markers} wikitext markers). Page wikitext is ` +
+          'never committed — parse it, keep the facts in sources/wiki/pages/, and leave the ' +
+          'paste out of git. See docs/DATA-POLICY.md.',
+        rel.replace(/\\/g, '/'),
+      ),
+    )
+  }
+
+  return findings
+}
+
+/**
+ * Every path git tracks, or `null` when that cannot be determined.
+ *
+ * `null` rather than an empty set on purpose — an empty set is indistinguishable
+ * from "git is missing" and would silently switch the check off. The caller
+ * treats `null` as "scan everything", so a source tarball with no `.git` gets a
+ * stricter check rather than no check.
+ */
+async function trackedFiles(): Promise<Set<string> | null> {
+  try {
+    const { stdout } = await execFileAsync('git', ['ls-files', '-z'], {
+      cwd: REPO_ROOT,
+      maxBuffer: 32 * 1024 * 1024,
+    })
+    const paths = stdout.split('\0').filter((p) => p !== '')
+    return paths.length === 0 ? null : new Set(paths)
+  } catch {
+    return null
+  }
 }
 
 /**

@@ -52,7 +52,7 @@ export function renderAttribution(assets: AssetEntry[], source: string): string 
     'create a licence**: the files listed below are used under attribution because',
     'this is the kind of fan project NPC Studio has been tolerant toward, and they',
     'will be removed on request from the rights holder — open an issue at',
-    '<https://github.com/ChristoSmuts/mistria-codex/issues>.',
+    '<https://github.com/TheGrumpyMouse/mistria-codex/issues>.',
     '',
     'Every file lives under `assets/game/` and is listed here, so removing all of',
     'it is `git rm -r assets/game` and a rebuild.',

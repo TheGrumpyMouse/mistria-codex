@@ -35,6 +35,7 @@ See [docs/DATA-POLICY.md](docs/DATA-POLICY.md).
 | Change what a record looks like | `packages/schema/`, then `pnpm schema:emit` |
 | Change how data is fetched or built | `packages/pipeline/` |
 | Add or replace a game sprite | `pnpm assets:fetch` — never drop a file in by hand |
+| Add a sprite the wiki hosts no file for | `pnpm assets:game`, which needs an owned install. A wiki-hosted sprite always wins |
 
 **Never edit `data/` or `sources/` by hand.** `data/` is regenerated from
 `sources/ + curated/` and CI diffs it, so hand edits are silently reverted.
@@ -43,6 +44,8 @@ See [docs/DATA-POLICY.md](docs/DATA-POLICY.md).
 ## Pull request checklist
 
 - [ ] `pnpm check` and `pnpm validate` pass
+- [ ] `pnpm e2e` passes, if the change touches the app. It runs against a real
+      build and never runs in CI, so this is the only place it gets checked
 - [ ] `data/` was regenerated (`pnpm build:data`) rather than hand-edited
 - [ ] No in-game text and no wiki prose — see above
 - [ ] Any game art is under `assets/game/` and listed in its manifest, nowhere else

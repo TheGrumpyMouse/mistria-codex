@@ -8,43 +8,107 @@ the question you actually have mid-game:
 
 Today that takes four wiki tabs. This answers it on one screen.
 
+**→ [thegrumpymouse.github.io/mistria-codex](https://thegrumpymouse.github.io/mistria-codex/)**
+
 Installable, works offline, no account. Progress is stored on your device, with a
 code you can type into a second device to bring it along.
 
 **Unofficial fan project. Not affiliated with NPC Studio.**
 
+## What's in it
+
+- **Calendar** — pick a day, weather and time; see everything findable, grouped,
+  with birthdays and festivals notched into the day tiles.
+- **Museum** — all 82 sets across four wings, with donation ticks that survive a
+  reload and tell you where to get what is still missing.
+- **Map** — the valley, filterable by season and weather, with what each region
+  yields.
+- **Items, villagers, places, monsters, quests** — a page each, cross-linked:
+  where it comes from, what it is worth, who wants it as a gift, what it goes
+  into, and which shop sells it at what price.
+- **Request board**, **bestiary** and **mines** alongside.
+
+Shipped in `data/` but not yet on a screen of their own: skills and perks,
+crops, animals, buildings. They surface where something else references them —
+a skill level gating a tool, a perk gating a shop line — but there is no page
+for them yet.
+
 ## Status
 
-Early. The data layer was built first, because the data *is* the product —
-getting it wrong poisons everything downstream. `pnpm validate` writes
-`build/reports/coverage.md`, which is the honest account of what has actually
-been ingested and what is still missing.
+Usable, and honest about what it does not know. Every dataset with a known
+target count is fully ingested — 2,475 items, 143 fish, 93 bugs, 110 artifacts,
+353 quests, 82 museum sets — and 3,064 of the 3,096 records that ask for a
+sprite have one.
+
+The data layer was built first, because the data *is* the product: getting it
+wrong poisons everything downstream. `pnpm validate` writes
+`build/reports/coverage.md`, which is the standing account of what has actually
+been ingested and what is still missing. The largest remaining hole is time of
+day — 106 of 678 availability windows have no time recorded, and the app says so
+rather than guessing.
+
+Outstanding: sync needs a Cloudflare deploy (the code is written and tested;
+unset, the app builds with sync off and says so — see
+[workers/sync/README.md](workers/sync/README.md)), and a Lighthouse pass.
 
 ## Repository layout
 
 ```
-packages/schema/     Zod contracts. The availability model lives here.
-packages/pipeline/   extract / enrich / normalise / build / validate
+packages/schema/      Zod contracts. The availability model lives here.
+packages/pipeline/    extract / enrich / normalise / build / validate
 packages/sync-client/ the CRDT merge, shared by the app and the Worker
-apps/web/            the PWA
-workers/sync/        progress sync
+apps/web/             the PWA
+workers/sync/         progress sync
 
-sources/             raw snapshots      — generated, committed, never hand-edited
-curated/             human knowledge    — hand-authored, never generated
-data/                the database       — generated, committed, never hand-edited
+sources/              raw snapshots      — generated, committed, never hand-edited
+curated/              human knowledge    — hand-authored, never generated
+data/                 the database       — generated, committed, never hand-edited
+assets/game/          game sprites       — generated, committed, and the only place they live
 ```
 
 `data/` is a pure deterministic function of `sources/ + curated/`; CI regenerates
 it and diffs. That is what makes a committed, generated directory trustworthy.
 
+`assets/game/` being the *only* place art lives is what makes
+`git rm -r assets/game` a complete removal rather than the start of a search.
+Nothing in `data/` names a file in it.
+
 ## Commands
 
 ```
+pnpm dev              the app, on localhost
 pnpm check            biome + tsc + vitest
+pnpm validate         schema, references, licensing, determinism, coverage
 pnpm build:data       sources + curated -> data/
 pnpm build:ship       data/ -> the bundle the app fetches
-pnpm validate         schema, references, licensing, coverage
+pnpm build:web        production build (BASE_PATH sets the Pages base path)
+pnpm e2e              Playwright over the built app — the local gate for UI changes
 ```
+
+Building the web app needs the base path GitHub Pages serves from:
+
+```sh
+pnpm build:ship
+BASE_PATH=/mistria-codex/ pnpm build:web
+```
+
+On Windows, Git Bash rewrites that leading slash into a Windows path — set
+`MSYS_NO_PATHCONV=1` with it, or use PowerShell's `$env:BASE_PATH`.
+
+These talk to the wiki or to a local game install and **never run in CI**, which
+is what keeps builds hermetic and polite to wiki.gg. `sources/` and
+`assets/game/` are committed, so a clone needs none of them:
+
+```
+pnpm enrich:cargo     fetch Cargo tables  -> sources/wiki/
+pnpm enrich:pages     fetch wiki pages    -> sources/wiki/
+pnpm extract          read a game install -> sources/game/    (needs .env)
+pnpm assets:fetch     fetch sprites       -> assets/game/
+pnpm assets:game      sprites the wiki does not host, from the install
+```
+
+Refreshing from the wiki is a deliberate, reviewed act: run the fetch locally,
+then commit the `sources/` diff like any other change.
 
 ## Data and licensing
 

@@ -35,7 +35,7 @@ export function AboutRoute() {
           <p className="mt-3">
             The sprites are used under attribution, not under a licence. If the rights holder would
             like them removed,{' '}
-            <External href="https://github.com/ChristoSmuts/mistria-codex/issues">
+            <External href="https://github.com/TheGrumpyMouse/mistria-codex/issues">
               open an issue
             </External>{' '}
             and they will be — they live in one directory precisely so that is a single deletion.
@@ -86,7 +86,7 @@ export function AboutRoute() {
         <p className="text-ink-faint text-xs">
           Version <span data-numeral>{__APP_VERSION__}</span> · MIT licensed ·{' '}
           <a
-            href="https://github.com/ChristoSmuts/mistria-codex"
+            href="https://github.com/TheGrumpyMouse/mistria-codex"
             className="underline decoration-rule underline-offset-4"
           >
             source

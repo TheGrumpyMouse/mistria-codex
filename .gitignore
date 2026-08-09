@@ -27,5 +27,11 @@ Thumbs.db
 # Playwright MCP scratch output
 .playwright-mcp/
 
+# Pasted wiki page source, at the repo root, while working out a parser.
+# Three of these (cos/acc/body.txt — the cosmetics pages) were committed by
+# accident and carried verbatim wiki prose. Page wikitext is never committed;
+# the parsed, facts-only result belongs in sources/wiki/pages/.
+/*.txt
+
 # Internal docs
 docs/
