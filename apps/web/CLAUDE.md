@@ -51,7 +51,39 @@ four fifths of the dataset would wear a label that narrows nothing.
 `weatherRestriction` compares against what is *possible* and returns `null`
 otherwise — 122 of 610 entities carry a note, which is what keeps it a signal.
 It also flips to `except` when that is shorter: "not in wind" beats five
-weathers nobody finishes reading.
+weathers nobody finishes reading. `<AvailabilityTags>` is the single renderer,
+shared by the calendar's rows and the place/map list so one fact cannot render
+two ways.
+
+### 2a. A sort by season or weather means *how narrow*, not *which one*
+
+Every row on the calendar already matches the chosen instant, and every row
+under a map chip already matches the chip — so ordering by the value would put
+everything first. `lib/list-sort.ts` orders by how much the window narrows:
+what is here *because* of today, then what is here anyway, then (for a caller
+that did not filter) what today rules out. That is the question a calendar is
+asked — "what disappears if I leave it".
+
+Two consequences that are easy to get wrong:
+
+- **`FindableEntity`'s masks are the entity's whole window, not the matching
+  slice.** Unioning only the rules that match the instant would tag a moth
+  that flies spring-clear and fall-rain as "spring only" on a clear spring day
+  — a deadline it does not have. `findAvailable` makes a second pass over
+  every rule for exactly this.
+- **Cluster tiebreaks use canonical indices, never names.** Sorting season
+  names as text runs fall, spring, summer, winter, and snow sorts before storm.
+  Every other list in the app runs spring → winter, and a sort that alone
+  disagreed reads as a data bug.
+
+An order with no visible cause looks shuffled, so the rows carry the tag that
+explains their position. That is why the calendar's rows gained
+`<AvailabilityTags>` at the same time — the sort and the tag ship together or
+neither is legible.
+
+The choice is a **preference**, in localStorage beside `display-mode`, not in
+the URL: it changes the order of the same rows, not the answer, and two
+identical answers should not be two different links.
 
 ### 3. Never write `if (start > end)` for a time window
 
@@ -97,8 +129,23 @@ size means anything.
 
 (The same sprites were also a live bug: the game ships them as 388×97 animation
 strips, and the icon box was scaling the whole four-frame reel to 36 pixels.
-`cropPng` in the asset step takes the frame, so a manifest sprite is always a
-picture and never a reel.)
+`cropPng` in the asset step takes each frame separately, so a manifest sprite is
+always a picture and never a reel.)
+
+**The shadow swims, and the frame count is read, not assumed.** All four frames
+ship — `ui/fish_shadow_<size>` plus `_1`.`_3` — and `<FishShadow>` cycles them
+at the `duration = 0.1` the sprite's own `.meta.toml` states. That same file
+gives `frame_len` and `frame_size`, which is where the asset step gets them: a
+hardcoded four would be a guess that is right today and crops past the end of a
+shorter strip tomorrow. A bundle with only frame 0 still renders the still, the
+same way a missing sprite renders a glyph.
+
+**The water behind it is `var(--water)`, not a sprite, and that was a bug fix.**
+The crop we had taken out of the spring water tile caught four pale pond-edge
+lobes, so a panel showing one fish read as showing five. The token is measured
+from that same tile (88% of its pixels) and the silhouette on top is `#328bc9`,
+a darker blue the artist chose to sit on exactly it. A colour also survives a
+clone with no art, which a tile cannot.
 
 ### 4a. Icons go on lists, not into prose
 
@@ -217,7 +264,7 @@ pnpm e2e              the Playwright suite in e2e/ against dist/ (build:ship + b
 ```
 
 **`pnpm e2e` is the local gate for UI changes.** It serves `dist/` under the
-production base path and runs six specs, in three layers:
+production base path and runs eight specs, in three layers:
 
 - **`sweep`** opens every static route and a sample of every category — ids
   drawn from the shipped index, so it covers whatever the dataset grew — and
@@ -230,6 +277,9 @@ production base path and runs six specs, in three layers:
 - **`icons`** asserts that specific surfaces draw a real sprite, because the
   glyph fallback means a broken join renders as a design choice. One case per
   root cause, so a failure says which join broke.
+- **`sort`** asserts the findable lists order by what their own tags say. A
+  sort is the kind of feature that always *looks* like it works, so the checks
+  read the rendered tag and the position and require them to agree.
 - **`smoke` / `mobile` / `tour` / `stale-version`** assert named features.
 
 **A conditional assertion is not an assertion.** `if (await x.count() > 0)`

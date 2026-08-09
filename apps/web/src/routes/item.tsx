@@ -441,7 +441,10 @@ export function ItemRoute() {
           const shadow = fishFacets.find((f) => f.item_id === item.id)?.shadow_size
           if (shadow == null) return null
           return (
-            <div className="mt-3 flex items-center gap-3">
+            // Stacked on a phone, side by side once there is room: the panel is
+            // 192px wide and a 390px screen leaves the sentence two cramped
+            // lines beside it. The label goes under the thing it labels.
+            <div className="mt-3 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-3">
               <FishShadow size={shadow} />
               <p className="text-ink-mute text-sm">
                 Shows a <span className="text-ink">{shadow}</span> shadow in the water.

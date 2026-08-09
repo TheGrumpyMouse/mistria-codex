@@ -5,6 +5,7 @@ import { DayDial, type DayMark } from '~/components/DayDial'
 import { FindableRow } from '~/components/FindableList'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
+import { SortPicker } from '~/components/SortPicker'
 import { SpoilerChip } from '~/components/Spoiler'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import {
@@ -15,6 +16,7 @@ import {
   KIND_LABELS,
 } from '~/lib/findable'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
+import { sortEntities, useListSort } from '~/lib/list-sort'
 import { doneIn } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -195,12 +197,34 @@ export function TodayRoute() {
     }
   }, [needle, data])
 
+  /**
+   * The order within each group.
+   *
+   * "Season" and "weather" mean *how narrow*, not *which one* — every row here
+   * already matches the chosen instant, so ordering by the value itself would
+   * put everything in one bucket. What differs is whether a thing is here
+   * because of today or here regardless, which is the difference between an
+   * errand and a note. See `lib/list-sort.ts`.
+   */
+  const [sort, setSort] = useListSort()
+  const nameOf = useMemo(
+    () => (entity: FindableEntity) => data?.index[entity.id]?.n ?? entity.id.replace(/_/g, ' '),
+    [data],
+  )
+  const focus = useMemo(
+    () => ({ season: instant.season, weather: instant.weather }),
+    [instant.season, instant.weather],
+  )
+
   const groups = useMemo(
     () =>
       groupByKind(findable)
-        .map((group) => ({ ...group, entities: group.entities.filter(matchesQuery) }))
+        .map((group) => ({
+          ...group,
+          entities: sortEntities(group.entities.filter(matchesQuery), sort, nameOf, focus),
+        }))
         .filter((group) => group.entities.length > 0),
-    [findable, matchesQuery],
+    [findable, matchesQuery, sort, nameOf, focus],
   )
 
   // The museum cut of the same answer: findable now, wanted by a set, not
@@ -225,12 +249,12 @@ export function TodayRoute() {
         .map(([loc, entities]) => ({
           loc,
           label: loc === '' ? 'No place recorded yet' : placeName(loc),
-          entities,
+          entities: sortEntities(entities, sort, nameOf, focus),
         }))
         .sort((a, b) => (a.loc === '' ? 1 : b.loc === '' ? -1 : a.label.localeCompare(b.label)))
       return { kind: group.kind, count: group.entities.length, places }
     })
-  }, [findable, data, donated, matchesQuery])
+  }, [findable, data, donated, matchesQuery, sort, nameOf, focus])
   const museumCount = useMemo(() => museumGroups.reduce((n, g) => n + g.count, 0), [museumGroups])
 
   return (
@@ -339,10 +363,11 @@ export function TodayRoute() {
 
         {data !== null && (
           <div>
-            <div className="flex items-baseline justify-between gap-3">
+            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
               <p className="text-ink-mute text-sm">
                 <span data-numeral>{findable.length}</span> things findable now
               </p>
+              <SortPicker value={sort} onChange={setSort} />
             </div>
             <input
               type="search"

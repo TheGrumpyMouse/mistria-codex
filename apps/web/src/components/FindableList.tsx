@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
+import { AvailabilityTags } from '~/components/AvailabilityTags'
 import { ItemIcon } from '~/components/ItemIcon'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
@@ -124,7 +125,18 @@ function Section({
 
 const name = (index: DisplayIndex, id: string): string => index[id]?.n ?? id.replace(/_/g, ' ')
 
-/** One findable thing. Exported for the calendar's collapsed groups. */
+/**
+ * One findable thing. Exported for the calendar's collapsed groups.
+ *
+ * The season and weather tags are the same two the place and map lists carry,
+ * rendered by the same rules, and they say something a calendar row could not
+ * say without them: **whether this is here because of today**. Every row
+ * already matches the chosen instant, so "spring" on a spring day is not a
+ * restatement of the filter — it is the difference between a fish you can get
+ * any time and one that is gone in a fortnight. It is also what makes the
+ * season and weather sorts legible: without a visible reason, a reordered list
+ * looks shuffled.
+ */
 export function FindableRow({
   entity,
   index,
@@ -192,7 +204,7 @@ export function FindableRow({
         )}
       </div>
 
-      <div className="flex shrink-0 items-center gap-1.5">
+      <div className="flex shrink-0 items-center gap-1">
         {entity.requires.length > 0 && (
           <span
             className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
@@ -202,6 +214,7 @@ export function FindableRow({
             locked
           </span>
         )}
+        <AvailabilityTags seasonMask={entity.seasonMask} weatherMask={entity.weatherMask} />
       </div>
     </li>
   )

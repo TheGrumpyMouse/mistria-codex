@@ -45,6 +45,13 @@
   --gap-tint: #f9eaea;
   --locked: #8a8290;
 
+  /* Open water, for the fish-shadow panel. Measured from the game's own spring
+     water tile — 88% of its pixels are exactly this — because the silhouette
+     drawn on top is #328bc9, a darker blue chosen by the artist to read against
+     this one and nothing else. A token rather than the tile itself: the tile we
+     had cropped four pond-edge lobes, which looked like four fish. */
+  --water: #47a2dd;
+
   /* The accent defaults to spring, because year 1 starts there. */
   --accent: var(--spring);
   --accent-tint: var(--spring-tint);

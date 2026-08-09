@@ -375,7 +375,17 @@ export function MapRoute() {
               full list.
             </p>
           ) : (
-            <FoundHereList entities={filteredFound} index={index} />
+            <FoundHereList
+              entities={filteredFound}
+              index={index}
+              // The chips above are what "the selected weather" means to the
+              // sort. Undefined is "Any", which is a real state and not a
+              // missing one — see `SortFocus`.
+              focus={{
+                season: season === undefined ? null : (season as Season),
+                weather: weather === undefined ? null : (weather as Weather),
+              }}
+            />
           )}
         </section>
       )}

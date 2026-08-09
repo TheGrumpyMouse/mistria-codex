@@ -131,6 +131,31 @@ describe('findAvailable', () => {
     const found = findAvailable(index([rule({ e: 'a', rar: 3 }), rule({ e: 'a', rar: 1 })]), at())
     expect(found[0]?.rarity).toBe(1)
   })
+
+  it('unions the whole window, not only the part the instant satisfies', () => {
+    // The moth is on the list because the spring rule matches. The fall rule
+    // does not match and must still count: tagged from matching rules alone it
+    // would read "spring only" and sort as though it vanishes with the season.
+    const found = findAvailable(
+      index([
+        rule({ e: 'moth', sea: SPRING, wx: CLEAR }),
+        rule({ e: 'moth', sea: FALL, wx: RAIN }),
+      ]),
+      at({ season: 'spring', weather: 'clear' }),
+    )
+    expect(found).toHaveLength(1)
+    expect(found[0]?.seasonMask).toBe(SPRING | FALL)
+    expect(found[0]?.weatherMask).toBe(CLEAR | RAIN)
+  })
+
+  it('does not widen a window with some other entity’s rules', () => {
+    const found = findAvailable(
+      index([rule({ e: 'a', sea: SPRING, wx: CLEAR }), rule({ e: 'b', sea: FALL, wx: RAIN })]),
+      at({ season: 'spring', weather: 'clear' }),
+    )
+    expect(found.map((e) => e.id)).toEqual(['a'])
+    expect(found[0]?.seasonMask).toBe(SPRING)
+  })
 })
 
 describe('every returned rule really matches, and every excluded one really does not', () => {
@@ -181,10 +206,16 @@ describe('every returned rule really matches, and every excluded one really does
 
 describe('groupByKind', () => {
   it('orders sections and drops empty ones', () => {
-    const groups = groupByKind([
-      { id: 'a', kind: 'fish', locationIds: [], rarity: null, requires: [] },
-      { id: 'b', kind: 'forage', locationIds: [], rarity: null, requires: [] },
-    ])
+    const entity = (id: string, kind: string) => ({
+      id,
+      kind,
+      locationIds: [],
+      rarity: null,
+      requires: [],
+      seasonMask: SPRING,
+      weatherMask: CLEAR,
+    })
+    const groups = groupByKind([entity('a', 'fish'), entity('b', 'forage')])
     expect(groups.map((g) => g.kind)).toEqual(['forage', 'fish'])
   })
 })

@@ -23,7 +23,7 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2591 files.**
+**2602 files.**
 
 ## Items (2107)
 
@@ -2602,7 +2602,7 @@ this repository treats it as though it were.
 | `festival/calendar-icon-shooting-star-festival.png` | Calendar icon shooting star festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20shooting%20star%20festival.png) |
 | `festival/calendar-icon-spring-festival.png` | Calendar icon spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20spring%20festival.png) |
 
-## Interface (47)
+## Interface (58)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -2645,11 +2645,22 @@ this repository treats it as though it were.
 | `ui/season-icon-summer.png` | Season icon summer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20summer.png) |
 | `ui/season-icon-winter.png` | Season icon winter.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Season%20icon%20winter.png) |
 | `ui/sheep-category-icon.png` | Sheep category icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20category%20icon.png) |
+| `ui/spr_fish_silhouette_giant_0_swim_f1.png` | animations/Animals/Fish/spr_fish_silhouette_giant_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_giant_0_swim_f2.png` | animations/Animals/Fish/spr_fish_silhouette_giant_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_giant_0_swim_f3.png` | animations/Animals/Fish/spr_fish_silhouette_giant_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_giant_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_giant_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_large_0_swim_f1.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_large_0_swim_f2.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_large_0_swim_f3.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_large_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_medium_0_swim_f1.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_medium_0_swim_f2.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_medium_0_swim_f3.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_medium_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_small_0_swim_f1.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_small_0_swim_f2.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
+| `ui/spr_fish_silhouette_small_0_swim_f3.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_small_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
-| `ui/spr_main_exteriors_water_spring.png` | animations/Tile Sets/Sprites/_GENERIC/spr_main_exteriors_water_spring.png | game files (NPC Studio) |
 | `ui/spr_ui_journal_quests_festival_subicon.png` | animations/UI NEW/Journal/Quests/spr_ui_journal_quests_festival_subicon.png | game files (NPC Studio) |
 | `ui/tackleshop-icon.png` | Tackleshop icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png) |
 | `ui/woodcrafting-icon.png` | Woodcrafting icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Woodcrafting%20icon.png) |

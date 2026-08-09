@@ -25,7 +25,7 @@ import { dirname, join, relative, sep } from 'node:path'
 import process, { argv, env } from 'node:process'
 import { pathToFileURL } from 'node:url'
 import { consola } from 'consola'
-import { gameRoot } from '../extract/toml.js'
+import { gameRoot, num, readToml, type Table, table } from '../extract/toml.js'
 import { ASSETS_DIR, ASSETS_MANIFEST, DATA_DIR, REPO_ROOT, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 import { writeJson } from '../lib/write-json.js'
@@ -52,6 +52,13 @@ const today = (): string =>
 interface GameWant {
   family: 'item' | 'ui' | 'cosmetic'
   sprite: string
+  /**
+   * The manifest key and filename stem, when one sprite yields more than one
+   * asset. Defaults to `sprite`, which is right for every want but the fish
+   * frames — four crops of one strip would otherwise collide on one key and
+   * the last written would silently win.
+   */
+  name?: string
   iconKeys: string[]
   /**
    * True when the sprite name was worked out from a naming convention rather
@@ -85,43 +92,68 @@ interface GameWant {
  */
 const FISH_SHADOW_WINDOW: CropRect = { x: 6, y: 33, width: 64, height: 32 }
 
-/**
- * The in-water silhouettes, one per shadow size the fish facet records. The
- * `_0_swim` frame is the level swimming pose — the other angles are the same
- * shape rotated.
- */
-const FISH_SILHOUETTES: GameWant[] = ['small', 'medium', 'large', 'giant'].map((size) => ({
-  family: 'ui',
-  sprite: `spr_fish_silhouette_${size}_0_swim`,
-  iconKeys: [`ui/fish_shadow_${size}`],
-  crop: FISH_SHADOW_WINDOW,
-}))
+const FISH_SIZES = ['small', 'medium', 'large', 'giant'] as const
 
 /**
- * Open water, to put the silhouettes on.
+ * The in-water silhouettes: every frame of the swim cycle, at every size.
  *
- * A shadow on the page background is a grey blob; on water it is what you look
- * down at from the bank, which is the whole point of showing it. Taken from the
- * spring exterior tileset, whose sheet is sixteen animation frames of a
- * 21-column, 16-pixel grid — tile rows 32 to 34 are the one solid block of
- * open water in frame 0, every other blue region being an edge or a transition.
- * Cropped to exactly the silhouette window so the two compose with no tiling
- * and therefore no seam.
+ * The `_0_swim` file is the level swimming pose — the other numbered files are
+ * the same shape pitched up or down — and it is an **animation strip**, not a
+ * picture. Its sibling `.meta.toml` says so: `frame_size = [97, 97]`,
+ * `frame_len = 4`, `duration = 0.1`. The tail wags across those four frames,
+ * which is the difference between a fish and a blob.
+ *
+ * The count and the frame width are **read from that file, never assumed**. A
+ * hardcoded four would be a guess that happens to be right today, and the
+ * failure mode — cropping past the end of a shorter strip, or silently
+ * dropping frames of a longer one — is exactly the kind that looks fine until
+ * someone notices the fish has stopped swimming.
+ *
+ * No meta, or a meta that does not describe a strip: one frame, the same
+ * still we shipped before. Never a guessed second frame.
  */
-const WATER: GameWant = {
-  family: 'ui',
-  sprite: 'spr_main_exteriors_water_spring',
-  iconKeys: ['ui/water'],
-  // Tiles 12–15 of rows 32–33, on the grid rather than across it. Chosen by
-  // measuring: of the fourteen 64×32 windows that block affords, this is the
-  // one with the fewest colours and the highest single-colour share (88%), so
-  // it reads as open water rather than as a wave caught mid-frame.
-  crop: {
-    x: 12 * 16,
-    y: 32 * 16,
-    width: FISH_SHADOW_WINDOW.width,
-    height: FISH_SHADOW_WINDOW.height,
-  },
+async function fishSilhouetteWants(sprites: Map<string, string>): Promise<GameWant[]> {
+  const wants: GameWant[] = []
+
+  for (const size of FISH_SIZES) {
+    const sprite = `spr_fish_silhouette_${size}_0_swim`
+    const path = sprites.get(sprite)
+    if (path === undefined) continue
+
+    const { frames, frameWidth } = await animationShape(path)
+    for (let frame = 0; frame < frames; frame += 1) {
+      wants.push({
+        family: 'ui',
+        sprite,
+        // Frame 0 keeps the unsuffixed key it has always had, so a bundle
+        // packed before this change still resolves a still silhouette. A
+        // missing sprite is normal; a missing *frame* must be too.
+        name: frame === 0 ? sprite : `${sprite}_f${frame}`,
+        iconKeys: [frame === 0 ? `ui/fish_shadow_${size}` : `ui/fish_shadow_${size}_${frame}`],
+        crop: { ...FISH_SHADOW_WINDOW, x: FISH_SHADOW_WINDOW.x + frame * frameWidth },
+      })
+    }
+  }
+
+  return wants
+}
+
+/** `frame_len` and `frame_size` off a sprite's sibling `.meta.toml`. */
+async function animationShape(pngPath: string): Promise<{ frames: number; frameWidth: number }> {
+  const still = { frames: 1, frameWidth: 0 }
+  let doc: Table
+  try {
+    doc = await readToml(pngPath.replace(/\.png$/, '.meta.toml'))
+  } catch {
+    return still
+  }
+
+  const asset = table(doc.asset_properties)
+  const frames = num(asset?.frame_len)
+  const frameSize = asset?.frame_size
+  const frameWidth = Array.isArray(frameSize) ? num(frameSize[0]) : null
+  if (frames === null || frameWidth === null || frames < 1 || frameWidth < 1) return still
+  return { frames, frameWidth }
 }
 
 /**
@@ -179,7 +211,10 @@ const cosmeticSprites = (id: string): string[] => [
   `spr_ui_item_wearable_${id}_merged`,
 ]
 
-async function collectWants(covered: Set<string>, sprites: Set<string>): Promise<GameWant[]> {
+async function collectWants(
+  covered: Set<string>,
+  sprites: Map<string, string>,
+): Promise<GameWant[]> {
   interface DataItem {
     id: string
     category: string
@@ -228,11 +263,13 @@ async function collectWants(covered: Set<string>, sprites: Set<string>): Promise
 
   return [
     ...bySprite.values(),
-    ...FISH_SILHOUETTES,
-    WATER,
+    ...(await fishSilhouetteWants(sprites)),
     ...UI_ICONS.filter((want) => !want.iconKeys.every((key) => covered.has(key))),
-  ].sort((a, b) => a.sprite.localeCompare(b.sprite))
+  ].sort((a, b) => nameOf(a).localeCompare(nameOf(b)))
 }
+
+/** The manifest key stem: the override when a sprite yields several assets. */
+const nameOf = (want: GameWant): string => want.name ?? want.sprite
 
 export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
   const root = await gameRoot()
@@ -245,7 +282,7 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
   // Indexed before collecting, because a derived name is only a want if the
   // install actually has it — the convention is checked, never assumed.
   const sprites = await indexSprites(root)
-  const wants = await collectWants(covered, new Set(sprites.keys()))
+  const wants = await collectWants(covered, sprites)
   consola.info(`assets:game — ${wants.length} sprites wanted from the install`)
   if (dryRun) {
     for (const want of wants.slice(0, 20)) consola.log(`would copy ${want.sprite}`)
@@ -275,14 +312,14 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
     const size = pngSize(body)
     if (size === null) throw new Error(`assets:game — ${want.sprite}.png is not a PNG`)
 
-    const file = `${want.family}/${want.sprite}.png`
+    const file = `${want.family}/${nameOf(want)}.png`
     const target = join(ASSETS_DIR, file)
     await mkdir(dirname(target), { recursive: true })
     await writeFile(target, body)
 
     const gameRelative = relative(root, sourcePath).split(sep).join('/')
     entries.push({
-      key: `${want.family}/${want.sprite}`,
+      key: `${want.family}/${nameOf(want)}`,
       family: want.family,
       file,
       source_file: gameRelative,
@@ -332,7 +369,9 @@ async function removeOrphans(previous: AssetEntry[], current: AssetEntry[]): Pro
   for (const entry of previous) {
     if (entry.origin !== 'game_files' || keep.has(entry.file)) continue
     await rm(join(ASSETS_DIR, entry.file), { force: true })
-    consola.warn(`assets:game — removed ${entry.file} (the wiki now covers it)`)
+    // Either the wiki gained art for it, or nothing wants it any more. Both
+    // end the same way: an unmanifested file on disk is art nothing credits.
+    consola.warn(`assets:game — removed ${entry.file}, no longer wanted`)
   }
 }
 

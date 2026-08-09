@@ -127,6 +127,25 @@ export interface FindableEntity {
   /** The lowest rarity across matching rules — the easiest way to get it. */
   rarity: number | null
   requires: string[]
+  /**
+   * The thing's **whole** window, unioned across every one of its rules — not
+   * only the ones this instant satisfies.
+   *
+   * That distinction is the entire value of these two fields, and getting it
+   * backwards is a quiet lie. Every row on the calendar matches the chosen
+   * instant by construction, so what separates two of them is whether the
+   * thing is also there tomorrow. A moth that flies spring-in-the-clear *and*
+   * fall-in-the-rain would, unioned over matching rules alone, read "spring
+   * only, only in clear" on a clear spring day — tagged as though it vanishes
+   * with the season when it comes back in eight weeks.
+   *
+   * So this matches what `foundAt` gives the map: the total window, regardless
+   * of the question asked. Everything else on the row — the places, the
+   * rarity, the gates — stays instant-scoped, because those really are
+   * properties of getting it *now*.
+   */
+  seasonMask: number
+  weatherMask: number
 }
 
 /**
@@ -145,6 +164,8 @@ export function findAvailable(index: AvailabilityIndex, instant: Instant): Finda
       locationIds: [],
       rarity: match.rule.rar,
       requires: [],
+      seasonMask: 0,
+      weatherMask: 0,
       locationSet: new Set<string>(),
     }
 
@@ -158,6 +179,17 @@ export function findAvailable(index: AvailabilityIndex, instant: Instant): Finda
     }
 
     byEntity.set(match.rule.e, existing)
+  }
+
+  // A second pass, over every rule rather than only the matching ones, because
+  // the window is a fact about the thing and not about the question. Another
+  // linear scan of an integer array — the same microseconds the first one
+  // costs, and the alternative is a row that claims a deadline it does not have.
+  for (const rule of index.rules) {
+    const existing = byEntity.get(rule.e)
+    if (existing === undefined) continue
+    existing.seasonMask |= rule.sea
+    existing.weatherMask |= rule.wx
   }
 
   return [...byEntity.values()].map(({ locationSet, ...entity }) => ({

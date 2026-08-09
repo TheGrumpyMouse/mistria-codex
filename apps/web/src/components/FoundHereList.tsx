@@ -1,11 +1,12 @@
-import { SEASONS } from '@mistria/schema'
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
+import { AvailabilityTags } from '~/components/AvailabilityTags'
 import { ItemIcon } from '~/components/ItemIcon'
+import { SortPicker } from '~/components/SortPicker'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
-import { type FoundEntity, KIND_LABELS, KIND_ORDER, weatherRestriction } from '~/lib/findable'
-import { seasonsOf } from '~/lib/opportunity'
+import { type FoundEntity, KIND_LABELS, KIND_ORDER } from '~/lib/findable'
+import { type ListSort, NO_FOCUS, type SortFocus, sortEntities, useListSort } from '~/lib/list-sort'
 import { iconKeyFor, routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -19,6 +20,10 @@ import { useSpoilers } from '~/lib/spoilers'
  * thousands of pixels under the Narrows), season pills say when, and veiled
  * records show the chip rather than their name — the row still navigates,
  * and the page it lands on does the asking.
+ *
+ * The sort picker lives here rather than in the two routes for the same
+ * reason: one control, one ordering, no way for the map to sort a list the
+ * place page renders differently.
  */
 
 const PREVIEW = 8
@@ -26,10 +31,19 @@ const PREVIEW = 8
 export function FoundHereList({
   entities,
   index,
+  focus = NO_FOCUS,
 }: {
   entities: FoundEntity[]
   index: DisplayIndex
+  /**
+   * The season and weather currently chosen, when the screen has chips for
+   * them. Sorting by weather puts what is here *because* of that weather
+   * first; with nothing chosen there is nothing to be first, and the sort
+   * falls back to constrained-before-unconstrained.
+   */
+  focus?: SortFocus
 }) {
+  const [sort, setSort] = useListSort()
   const groups = new Map<string, FoundEntity[]>()
   for (const entity of entities) {
     groups.set(entity.kind, [...(groups.get(entity.kind) ?? []), entity])
@@ -55,11 +69,18 @@ export function FoundHereList({
   }
 
   return (
-    <ul className="flex flex-col gap-4">
-      {ordered.map(({ kind, entities: found }) => (
-        <Group key={kind} kind={kind} entities={found} index={index} />
-      ))}
-    </ul>
+    <>
+      {/* Above the groups, not above the whole section: it orders these rows
+          and nothing else on the page. */}
+      <div className="mb-3">
+        <SortPicker value={sort} onChange={setSort} />
+      </div>
+      <ul className="flex flex-col gap-4">
+        {ordered.map(({ kind, entities: found }) => (
+          <Group key={kind} kind={kind} entities={found} index={index} sort={sort} focus={focus} />
+        ))}
+      </ul>
+    </>
   )
 }
 
@@ -67,17 +88,22 @@ function Group({
   kind,
   entities,
   index,
+  sort,
+  focus,
 }: {
   kind: string
   entities: FoundEntity[]
   index: DisplayIndex
+  sort: ListSort
+  focus: SortFocus
 }) {
   const [expanded, setExpanded] = useState(false)
   const spoilers = useSpoilers()
 
-  const sorted = [...entities].sort((a, b) =>
-    (index[a.id]?.n ?? a.id).localeCompare(index[b.id]?.n ?? b.id),
-  )
+  // Within the kind, never across it. The groups are the shape of the errand —
+  // you go fishing or you go foraging — so an ordering that interleaved them
+  // would trade a useful answer for a tidier list.
+  const sorted = sortEntities(entities, sort, (e) => index[e.id]?.n ?? e.id, focus)
   const shown = expanded ? sorted : sorted.slice(0, PREVIEW)
   const rest = sorted.length - shown.length
 
@@ -92,8 +118,6 @@ function Group({
           const entry = index[entity.id]
           const reason = veilReasonOf(entry)
           const veiled = reason !== null && !spoilers.shown(entity.id)
-          const seasons = seasonsOf(entity.seasonMask)
-          const weather = weatherRestriction(entity.seasonMask, entity.weatherMask)
           return (
             <li key={entity.id}>
               <Link
@@ -114,32 +138,10 @@ function Group({
                       {entry?.n ?? entity.id.replace(/_/g, ' ')}
                     </span>
                     <span className="flex shrink-0 items-center gap-1">
-                      {/* Weather before season, because it is the rarer and
-                          therefore more surprising constraint — "only in rain"
-                          changes a plan in a way "spring" does not. Absent on
-                          most rows by design: see `weatherRestriction`. */}
-                      {weather !== null && (
-                        <span className="rounded-pill border border-rule px-1.5 py-0.5 text-[0.625rem] text-ink-mute">
-                          {weather.kind === 'except' && 'not in '}
-                          {weather.weathers.join(' / ')}
-                        </span>
-                      )}
-                      {seasons.length === SEASONS.length ? (
-                        <span className="text-ink-faint text-[0.625rem]">all year</span>
-                      ) : (
-                        seasons.map((season) => (
-                          <span
-                            key={season}
-                            className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
-                            style={{
-                              background: `var(--${season}-tint)`,
-                              color: `var(--${season})`,
-                            }}
-                          >
-                            {season}
-                          </span>
-                        ))
-                      )}
+                      <AvailabilityTags
+                        seasonMask={entity.seasonMask}
+                        weatherMask={entity.weatherMask}
+                      />
                     </span>
                   </>
                 )}

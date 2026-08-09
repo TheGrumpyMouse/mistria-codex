@@ -159,6 +159,35 @@ check(
   (await page.locator('main').innerText()).includes('medium shadow in the water'),
 )
 
+// The panel holds exactly one fish. It used to hold one fish over a water crop
+// that had caught four pale pond-edge lobes, which read as four more.
+const shadowPanel = page.locator('[role="img"][aria-label*="shadow"]').first()
+check(
+  'the panel draws one silhouette, not a row of them',
+  (await shadowPanel.locator('span').count()) === 1,
+)
+check(
+  'the water behind it is the flat water colour, not a tile',
+  await shadowPanel.evaluate((el) => {
+    const style = getComputedStyle(el)
+    return style.backgroundImage === 'none' && style.backgroundColor !== 'rgba(0, 0, 0, 0)'
+  }),
+)
+
+// It swims. The game's own meta.toml says four frames at 0.1s, and a still
+// silhouette would be a picture of a fish rather than a fish.
+const framePos = () =>
+  shadowPanel
+    .locator('span')
+    .first()
+    .evaluate((el) => getComputedStyle(el).backgroundPosition)
+const observed = new Set()
+for (let i = 0; i < 12; i += 1) {
+  observed.add(await framePos())
+  await page.waitForTimeout(60)
+}
+check('the shadow animates through its swim cycle', observed.size === 4, `${observed.size} frames`)
+
 // ── Map: weather filter, and the tag that only appears when it means something ──
 await go('/map?region=the_beach')
 const beach = await page.locator('main').innerText()
