@@ -40,7 +40,18 @@ registerRoute(
 )
 
 /**
- * The atlases and portraits: also content-addressed in their filenames.
+ * The atlases, portraits and map art.
+ *
+ * **CacheFirst is only sound because the app versions these URLs itself, and
+ * for a long time it did not.** This comment used to claim the filenames were
+ * content-addressed. The eight atlas *sheets* are; `atlas.json`, the 28
+ * portraits and the brand icons are not — so a device that had once fetched
+ * the index kept it forever, and a build adding new sprite keys shipped a JS
+ * bundle asking a stale index for frames it had never contained. That is not a
+ * cache miss, it is a lookup returning `null`, which this app is designed to
+ * treat as "no art exists" — so it rendered a still fish and logged nothing.
+ * `Atlas` now appends `?v=${meta.assets.version}` to every URL it builds, which
+ * is what makes the whole family immutable and this route correct.
  *
  * Deliberately **not** precached. They come to a couple of megabytes and the app
  * renders completely without them — every icon falls back to a drawn glyph — so

@@ -2,10 +2,12 @@ import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { AvailabilityTags } from '~/components/AvailabilityTags'
 import { ItemIcon } from '~/components/ItemIcon'
+import { PlaceLink } from '~/components/PlaceLink'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
 import type { FindableEntity } from '~/lib/findable'
 import { groupByKind, KIND_LABELS } from '~/lib/findable'
+import type { PlaceLabel } from '~/lib/labels'
 import { ruleRequirementsPhrase } from '~/lib/labels'
 import { routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
@@ -26,11 +28,11 @@ import { useSpoilers } from '~/lib/spoilers'
 export interface FindableListProps {
   entities: FindableEntity[]
   index: DisplayIndex
-  /** Location id -> display name. */
-  locationNames: Map<string, string>
+  /** Location id -> its name and, for a mine biome, its floor range. */
+  places: Map<string, PlaceLabel>
 }
 
-export function FindableList({ entities, index, locationNames }: FindableListProps) {
+export function FindableList({ entities, index, places }: FindableListProps) {
   const groups = groupByKind(entities)
 
   if (groups.length === 0) {
@@ -53,7 +55,7 @@ export function FindableList({ entities, index, locationNames }: FindableListPro
             </span>
           </h2>
 
-          <Section group={group} index={index} locationNames={locationNames} />
+          <Section group={group} index={index} places={places} />
         </section>
       ))}
     </div>
@@ -75,11 +77,11 @@ const PREVIEW = 8
 function Section({
   group,
   index,
-  locationNames,
+  places,
 }: {
   group: { kind: string; entities: FindableEntity[] }
   index: DisplayIndex
-  locationNames: Map<string, string>
+  places: Map<string, PlaceLabel>
 }) {
   const [expanded, setExpanded] = useState(false)
   const sorted = [...group.entities].sort((a, b) =>
@@ -92,12 +94,7 @@ function Section({
     <>
       <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
         {shown.map((entity) => (
-          <FindableRow
-            key={entity.id}
-            entity={entity}
-            index={index}
-            locationNames={locationNames}
-          />
+          <FindableRow key={entity.id} entity={entity} index={index} places={places} />
         ))}
       </ul>
 
@@ -140,11 +137,11 @@ const name = (index: DisplayIndex, id: string): string => index[id]?.n ?? id.rep
 export function FindableRow({
   entity,
   index,
-  locationNames,
+  places,
 }: {
   entity: FindableEntity
   index: DisplayIndex
-  locationNames: Map<string, string>
+  places: Map<string, PlaceLabel>
 }) {
   const entry = index[entity.id]
   const spoilers = useSpoilers()
@@ -191,13 +188,11 @@ export function FindableRow({
             {entity.locationIds.map((locId, i) => (
               <span key={locId}>
                 {i > 0 && ' · '}
-                <Link
-                  to="/place/$id"
-                  params={{ id: locId }}
+                <PlaceLink
+                  id={locId}
+                  places={places}
                   className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
-                >
-                  {locationNames.get(locId) ?? locId.replace(/_/g, ' ')}
-                </Link>
+                />
               </span>
             ))}
           </p>

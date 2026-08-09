@@ -1,7 +1,8 @@
 import { SEASONS } from '@mistria/schema'
 import { Link } from '@tanstack/react-router'
+import { PlaceLink } from '~/components/PlaceLink'
 import { titleCase } from '~/lib/instant'
-import { METHOD_LABELS, requirementDisplay } from '~/lib/labels'
+import { METHOD_LABELS, type PlaceLabel, requirementDisplay } from '~/lib/labels'
 import type { Opportunity, WeatherOddsTable } from '~/lib/opportunity'
 import { oddsPhrase } from '~/lib/opportunity'
 
@@ -26,14 +27,14 @@ import { oddsPhrase } from '~/lib/opportunity'
 
 export interface OpportunityCardProps {
   opportunity: Opportunity
-  /** Location id -> display name. */
-  locationNames: Map<string, string>
+  /** Location id -> its name and, for a mine biome, its floor range. */
+  places: Map<string, PlaceLabel>
   odds: WeatherOddsTable | undefined
   /** Display index, for naming the quest or perk a requirement points at. */
   names?: Record<string, { n: string } | undefined>
 }
 
-export function OpportunityCard({ opportunity, locationNames, odds, names }: OpportunityCardProps) {
+export function OpportunityCard({ opportunity, places, odds, names }: OpportunityCardProps) {
   const {
     method,
     seasons,
@@ -61,20 +62,18 @@ export function OpportunityCard({ opportunity, locationNames, odds, names }: Opp
           {locationIds.map((locationId, i) => (
             <span key={locationId}>
               {i > 0 && ' · '}
-              <Link
-                to="/place/$id"
-                params={{ id: locationId }}
-                // An inference must never render identically to a fact: where
-                // the places were deduced from a habitat rather than sourced,
-                // the links themselves carry the hedge.
+              {/* An inference must never render identically to a fact: where
+                  the places were deduced from a habitat rather than sourced,
+                  the links themselves carry the hedge. */}
+              <PlaceLink
+                id={locationId}
+                places={places}
                 className={
                   placesInferred
                     ? 'unverified px-1 underline decoration-transparent underline-offset-4 hover:text-ink'
                     : 'underline decoration-rule underline-offset-4 hover:text-ink'
                 }
-              >
-                {locationNames.get(locationId) ?? locationId.replace(/_/g, ' ')}
-              </Link>
+              />
             </span>
           ))}
         </p>

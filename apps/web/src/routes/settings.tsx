@@ -1,6 +1,9 @@
+import type { Meta } from '@mistria/schema'
 import { useEffect, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { useServiceWorker } from '~/app/ServiceWorkerProvider'
 import { Section } from '~/components/Section'
+import { loadMeta } from '~/lib/data'
 import { allProgress, db } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
 import {
@@ -34,6 +37,20 @@ import { useTourDone } from '~/lib/tour'
  * costs nothing and works offline. The second device types it in.
  */
 
+/**
+ * What the update check found, in words.
+ *
+ * `offline` says what failed rather than what is true. A check that never
+ * reached the server has established nothing, and borrowing "up to date" for it
+ * would send someone away from the one control that would have helped.
+ */
+const UPDATE_STATUS: Record<string, string> = {
+  checking: 'Checking…',
+  ready: 'A new version is ready.',
+  current: 'This is the newest version.',
+  offline: 'Could not reach the server. Nothing has changed on this device.',
+}
+
 const REASONS: Record<string, string> = {
   not_configured: 'This build has no sync server configured.',
   no_code: 'Enter or create a code first.',
@@ -54,11 +71,19 @@ export function SettingsRoute() {
   // by main.tsx, so this state only exists to light the right button.
   const [textChoice, setTextChoice] = useState<TextSize>(() => savedTextSize())
   const [, setTourDone] = useTourDone()
+  const sw = useServiceWorker()
+  const [meta, setMeta] = useState<Meta | null>(null)
 
   useEffect(() => {
     setCode(savedCode())
     setSyncedAt(lastSyncedAt())
     allProgress().then((all) => setRows(all.length))
+    // Naming the version is half of what this section is for: "which build am
+    // I actually running" is unanswerable from the outside, and it is the first
+    // thing anyone reporting a stale app needs to be able to say.
+    loadMeta()
+      .then(setMeta)
+      .catch(() => undefined)
   }, [])
 
   const configured = syncConfigured()
@@ -100,6 +125,23 @@ export function SettingsRoute() {
     const timer = setTimeout(() => setArmed(false), 5000)
     return () => clearTimeout(timer)
   }, [armed])
+
+  // The reinstall arms separately from the erase above — one confirm state for
+  // two destructive buttons would let a tap meant for one arm the other.
+  const [resetArmed, setResetArmed] = useState(false)
+  useEffect(() => {
+    if (!resetArmed) return
+    const timer = setTimeout(() => setResetArmed(false), 5000)
+    return () => clearTimeout(timer)
+  }, [resetArmed])
+
+  const reinstall = async (): Promise<void> => {
+    if (!resetArmed) {
+      setResetArmed(true)
+      return
+    }
+    await sw.reinstall()
+  }
 
   const clearProgress = async (): Promise<void> => {
     if (!armed) {
@@ -146,6 +188,98 @@ export function SettingsRoute() {
           }
         >
           {armed ? 'Tap again to erase everything' : 'Erase progress on this device'}
+        </button>
+      </Section>
+
+      {/* The app updates itself when it notices a new version, and until now
+          there was no way to make it notice. Two things it cannot see on its
+          own: a redeploy that changed only the data (the worker script is
+          byte-identical, so nothing prompts), and a device whose cached files
+          are wrong in a way a new version does not correct. */}
+      <Section title="Updates">
+        <dl className="text-sm">
+          <div className="flex justify-between gap-3 border-rule border-b py-1">
+            <dt className="text-ink-mute">App</dt>
+            <dd data-numeral className="text-ink">
+              {__APP_VERSION__}
+            </dd>
+          </div>
+          <div className="flex justify-between gap-3 py-1">
+            <dt className="text-ink-mute">Data</dt>
+            <dd className="min-w-0 truncate text-ink">
+              {meta === null ? (
+                '—'
+              ) : (
+                <>
+                  <span data-numeral>{meta.dataVersion}</span>
+                  {meta.builtAt !== null && (
+                    <span className="text-ink-faint">
+                      {' · '}
+                      {new Date(meta.builtAt).toLocaleDateString(undefined, {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                      })}
+                    </span>
+                  )}
+                </>
+              )}
+            </dd>
+          </div>
+        </dl>
+
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            disabled={sw.status === 'checking'}
+            onClick={() => void (sw.status === 'ready' ? sw.applyUpdate() : sw.check())}
+            className="tap-target rounded-tile border px-3 py-1.5 text-xs"
+            style={
+              sw.status === 'ready'
+                ? {
+                    borderColor: 'var(--rule)',
+                    background: 'var(--accent-tint)',
+                    color: 'var(--accent)',
+                    fontWeight: 600,
+                  }
+                : { borderColor: 'var(--rule)', color: 'var(--ink-mute)' }
+            }
+          >
+            {sw.status === 'ready' ? 'Reload to update' : 'Check for updates'}
+          </button>
+        </div>
+
+        {sw.status !== 'idle' && (
+          <p aria-live="polite" className="mt-2 text-ink-mute text-xs">
+            {UPDATE_STATUS[sw.status]}
+          </p>
+        )}
+
+        <p className="mt-4 text-ink-faint text-xs">
+          Still showing something old? This throws away the copies of the app and its data held on
+          this device and fetches them again.{' '}
+          <strong className="font-normal text-ink-mute">
+            Your progress is not stored with them and is not touched.
+          </strong>{' '}
+          It needs a connection.
+        </p>
+        <button
+          type="button"
+          disabled={!navigator.onLine}
+          onClick={() => void reinstall()}
+          aria-live="polite"
+          className="tap-target mt-2 rounded-tile border px-3 py-1.5 text-xs disabled:opacity-50"
+          style={
+            resetArmed
+              ? { borderColor: 'var(--gap)', color: 'var(--gap)' }
+              : { borderColor: 'var(--rule)', color: 'var(--ink-mute)' }
+          }
+        >
+          {!navigator.onLine
+            ? 'Re-download the offline files — needs a connection'
+            : resetArmed
+              ? 'Tap again to re-download everything'
+              : 'Re-download the offline files'}
         </button>
       </Section>
 

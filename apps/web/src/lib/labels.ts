@@ -268,3 +268,69 @@ export const ruleToken = (token: string): { type: string | null; name: string } 
     ? { type: null, name: token }
     : { type: token.slice(0, at), name: token.slice(at + 1) }
 }
+
+/** A mine biome's depth, as `mines.json` states it. */
+export interface MineFloors {
+  min: number
+  max: number
+}
+
+/**
+ * A place, as any screen needs to print it.
+ *
+ * `floors` is `null` for everywhere that is not a mine biome, which is *not
+ * applicable* rather than unknown — the surface of the valley has no depth to
+ * state. The five that do are the only records in the app whose name alone
+ * under-describes them: "The Tide Caverns" says nothing about being floors 21
+ * to 39, and that is the fact you need to decide whether to go.
+ */
+export interface PlaceLabel {
+  name: string
+  floors: MineFloors | null
+}
+
+interface LocationLike {
+  id: string
+  name: string
+}
+interface MineLike {
+  location_id: string | null
+  floors: MineFloors
+}
+
+/**
+ * `location_id -> { name, floors }`, built once per screen.
+ *
+ * The join lives here so the range cannot say one thing on the calendar and
+ * another on an item page. Mines that name no location are skipped rather than
+ * keyed on their own id: a biome with no `location_id` is not a place anything
+ * links to.
+ *
+ * **The parent, `the_mines`, deliberately gets no range.** Deriving 1–99 from
+ * its five children would be an inference dressed as a reading — and the
+ * shipped ranges skip floors 20, 40, 60, 80 and 100, so the derived answer
+ * would also be wrong.
+ */
+export function placeLabels(
+  locations: LocationLike[],
+  mines: MineLike[] = [],
+): Map<string, PlaceLabel> {
+  const floors = new Map<string, MineFloors>()
+  for (const mine of mines) {
+    if (mine.location_id !== null) floors.set(mine.location_id, mine.floors)
+  }
+  return new Map(locations.map((l) => [l.id, { name: l.name, floors: floors.get(l.id) ?? null }]))
+}
+
+/**
+ * The fallback when a place id resolves to nothing.
+ *
+ * Every call site used to spell `id.replace(/_/g, ' ')` inline, which is the
+ * de-underscoring §8 forbids — but here it is the last resort before printing
+ * a raw id, and a readable guess beats `the_tide_caverns` on screen.
+ */
+export const placeLabel = (places: Map<string, PlaceLabel>, id: string): PlaceLabel =>
+  places.get(id) ?? { name: id.replace(/_/g, ' '), floors: null }
+
+/** "floors 21–39" — an en-dash, and lowercase, as the Mines screen has always written it. */
+export const floorRange = (floors: MineFloors): string => `floors ${floors.min}–${floors.max}`

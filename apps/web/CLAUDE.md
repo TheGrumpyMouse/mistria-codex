@@ -283,6 +283,16 @@ src/
   styles/     tokens.css, app.css, fonts.css
 ```
 
+**A place is a name plus, for five of them, a depth.** `placeLabels(locations,
+mines)` in `lib/labels.ts` is the one join and `<PlaceLink>` the one renderer,
+so "The Tide Caverns (floors 21–39)" cannot read one way on the calendar and
+another on an item page. The range renders **outside** the anchor: the link's
+text is the destination a screen reader announces, and the calendar folds place
+names into its search haystack — fold the range in and typing `39` starts
+matching every ore in the Tide Caverns. `the_mines`, the parent, gets none:
+deriving 1–99 from its five children would be an inference, and a wrong one,
+since the shipped ranges skip floors 20, 40, 60, 80 and 100.
+
 **The display index holds four kinds of thing, and only `c` says which.** Items,
 characters, monsters and locations share one id namespace, so search has always
 returned all four — and every result used to link to `/item/$id`, which loads
@@ -369,15 +379,35 @@ MSYS_NO_PATHCONV=1 BASE_PATH=/mistria-codex/ pnpm preview:web
   installed. Call `navigator.storage.persist()`, and make a missing data file
   trigger a re-fetch rather than a white screen.
 - **Never `skipWaiting` a service worker automatically.** Reloading someone
-  mid-museum-audit is hostile. Show a toast and let them choose.
+  mid-museum-audit is hostile. Show a toast and let them choose. The
+  registration lives in `ServiceWorkerProvider` so Settings can offer a check
+  against the same worker the toast watches — registering twice gives two
+  independent opinions about whether an update is waiting.
+- **`registration.update()` cannot see a data-only redeploy.** The data bundle
+  is `globIgnore`d from the precache manifest, so a build that changes only
+  `data/` or the art leaves `sw.js` byte-identical and the browser finds
+  nothing. Comparing `meta.json` is the other half of the check, and it is most
+  of what actually ships between releases. And `updateServiceWorker()` messages
+  a *waiting* worker: with nothing waiting it resolves never, so the data-only
+  path must plain `location.reload()`.
 - **At A3, no atlas sheet goes in tier-1 precache.** They total a couple of
   megabytes and the app renders completely without them, so putting them behind
   Workbox's all-or-nothing install would trade a working offline app for
-  prettier icons. `meta.json`'s `assets.sheets` is the tier-2 warm list;
-  the filenames are content-addressed, so cache them forever once fetched.
+  prettier icons. `meta.json`'s `assets.sheets` is the tier-2 warm list.
   Portraits are lazier still. And do not precache `assets/game/portrait/*` file
   by file — a thousand individual entries is exactly what the packing step
   exists to avoid.
+- **A stable URL behind CacheFirst is a permanent lie, and this one shipped.**
+  The art route was justified by "the filenames are content-addressed". The
+  eight atlas *sheets* are; `atlas.json`, the 28 portraits and the brand icons
+  are not. So a device that had ever loaded the index kept that index forever,
+  and the build that added the fish-shadow animation reached people as new code
+  asking a months-old atlas for frames `_1`.`_3`. §4 says a missing sprite is
+  normal — so the lookup returned `null`, the still frame rendered, and nothing
+  404'd, threw or logged. **The visible symptom was "the PWA doesn't update",
+  because the shell had.** `Atlas` now stamps `?v=${meta.assets.version}` on
+  every URL it builds; keep it that way, and if a new art family is added, it
+  goes through the atlas rather than round it.
 - **Counter-scale map pins** (`scale(1/k)` and `vector-effect="non-scaling-stroke"`)
   or they blob at high zoom and vanish at low. And never re-render the map art on
   pan — only the transform string changes.

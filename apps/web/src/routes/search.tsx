@@ -3,8 +3,8 @@ import { useEffect, useMemo, useRef } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
-import { loadDisplayIndex } from '~/lib/data'
-import { categoryLabelOne } from '~/lib/labels'
+import { loadDataset, loadDisplayIndex } from '~/lib/data'
+import { categoryLabelOne, floorRange, type MineFloors } from '~/lib/labels'
 import { routeFor, search, typedTheName } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 import { useData } from '~/lib/use-data'
@@ -35,6 +35,19 @@ export function SearchRoute() {
     void navigate({ search: next === '' ? {} : { q: next }, replace: true })
 
   const { data: index } = useData('display-index', loadDisplayIndex)
+  // A search hit on a mine is a reference to it like any other, and the index
+  // has no floor data — 4KB joins the five that need it. `undefined` while it
+  // loads simply means no range yet, never a wrong one.
+  const { data: mines } = useData('mines', () =>
+    loadDataset<{ location_id: string | null; floors: MineFloors }>('mines'),
+  )
+  const floorsByPlace = useMemo(
+    () =>
+      new Map(
+        (mines ?? []).flatMap((m) => (m.location_id === null ? [] : [[m.location_id, m.floors]])),
+      ),
+    [mines],
+  )
   const input = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -75,6 +88,7 @@ export function SearchRoute() {
             // The typed-it exemption: a veiled record shows its real name to
             // someone whose query already is that name — redacting "Caldarus"
             // from the person who typed "caldarus" would only look broken.
+            const floors = floorsByPlace.get(id)
             const reason = veilReasonOf(entry)
             const veiled = reason !== null && !spoilers.shown(id) && !typedTheName(entry, query)
             return (
@@ -91,6 +105,12 @@ export function SearchRoute() {
                       <ItemIcon iconKey={entry.i ?? `${entry.c}/${id}`} name={entry.n} size="sm" />
                       <span className="min-w-0 flex-1 truncate text-ink text-sm">
                         {entry.n}
+                        {floors !== undefined && (
+                          <span data-numeral className="text-ink-faint">
+                            {' '}
+                            ({floorRange(floors)})
+                          </span>
+                        )}
                         {/* Why this row is here at all. Without it a result whose name
                             does not contain what you typed reads as a broken search. */}
                         {via !== null && (

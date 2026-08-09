@@ -4,6 +4,7 @@ import { Column } from '~/app/AppShell'
 import { DayDial, type DayMark } from '~/components/DayDial'
 import { FindableRow } from '~/components/FindableList'
 import { ItemIcon } from '~/components/ItemIcon'
+import { PlaceLink } from '~/components/PlaceLink'
 import { LoadError } from '~/components/Section'
 import { SortPicker } from '~/components/SortPicker'
 import { SpoilerChip } from '~/components/Spoiler'
@@ -16,9 +17,15 @@ import {
   KIND_LABELS,
 } from '~/lib/findable'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
+import { type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
 import { sortEntities, useListSort } from '~/lib/list-sort'
 import { doneIn } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
+
+interface MineRecord {
+  location_id: string | null
+  floors: { min: number; max: number }
+}
 
 interface CharacterRecord {
   id: string
@@ -41,7 +48,7 @@ interface FestivalRecord {
 interface CalendarData {
   availability: AvailabilityIndex
   index: DisplayIndex
-  locationNames: Map<string, string>
+  places: Map<string, PlaceLabel>
   characters: CharacterRecord[]
   festivals: FestivalRecord[]
   /** Every donatable item id, from the museum sets. */
@@ -92,13 +99,16 @@ export function TodayRoute() {
       loadDataset<CharacterRecord>('characters'),
       loadDataset<FestivalRecord>('festivals'),
       loadDataset<{ item_ids: string[] }>('museum_sets'),
+      // 4KB, for five floor ranges — a mine's name alone does not say how deep
+      // it is, and that is the fact that decides whether to go down there.
+      loadDataset<MineRecord>('mines'),
     ])
-      .then(([availability, index, locations, characters, festivals, museumSets]) => {
+      .then(([availability, index, locations, characters, festivals, museumSets, mines]) => {
         if (!live) return
         setData({
           availability,
           index,
-          locationNames: new Map(locations.map((l) => [l.id, l.name])),
+          places: placeLabels(locations, mines),
           characters,
           festivals,
           museumItemIds: new Set(museumSets.flatMap((set) => set.item_ids)),
@@ -189,7 +199,12 @@ export function TodayRoute() {
       const haystack = [
         data?.index[entity.id]?.n ?? entity.id.replace(/_/g, ' '),
         KIND_LABELS[entity.kind] ?? entity.kind,
-        ...entity.locationIds.map((l) => data?.locationNames.get(l) ?? l.replace(/_/g, ' ')),
+        // The name only. The floor range is rendered beside it but deliberately
+        // kept out of the haystack — otherwise typing "39" starts matching
+        // every ore in the Tide Caverns.
+        ...entity.locationIds.map((l) =>
+          data === null ? l.replace(/_/g, ' ') : placeLabel(data.places, l).name,
+        ),
       ]
         .join(' ')
         .toLowerCase()
@@ -237,7 +252,10 @@ export function TodayRoute() {
         !donated.has(entity.id) &&
         matchesQuery(entity),
     )
-    const placeName = (id: string): string => data?.locationNames.get(id) ?? id.replace(/_/g, ' ')
+    const places = data?.places ?? new Map()
+    // Sorted and grouped by the name alone, so a mine's floor range cannot
+    // change where its heading lands in the list.
+    const placeName = (id: string): string => placeLabel(places, id).name
     return groupByKind(needed).map((group) => {
       const byPlace = new Map<string, FindableEntity[]>()
       for (const entity of group.entities) {
@@ -245,14 +263,14 @@ export function TodayRoute() {
           byPlace.set(loc, [...(byPlace.get(loc) ?? []), entity])
         }
       }
-      const places = [...byPlace.entries()]
+      const grouped = [...byPlace.entries()]
         .map(([loc, entities]) => ({
           loc,
           label: loc === '' ? 'No place recorded yet' : placeName(loc),
           entities: sortEntities(entities, sort, nameOf, focus),
         }))
         .sort((a, b) => (a.loc === '' ? 1 : b.loc === '' ? -1 : a.label.localeCompare(b.label)))
-      return { kind: group.kind, count: group.entities.length, places }
+      return { kind: group.kind, count: group.entities.length, places: grouped }
     })
   }, [findable, data, donated, matchesQuery, sort, nameOf, focus])
   const museumCount = useMemo(() => museumGroups.reduce((n, g) => n + g.count, 0), [museumGroups])
@@ -337,14 +355,11 @@ export function TodayRoute() {
                     {festival.location_id !== null && (
                       <>
                         <span className="text-ink-mute"> — at </span>
-                        <Link
-                          to="/place/$id"
-                          params={{ id: festival.location_id }}
+                        <PlaceLink
+                          id={festival.location_id}
+                          places={data.places}
                           className="text-ink-mute underline decoration-rule underline-offset-4 hover:text-ink"
-                        >
-                          {data.locationNames.get(festival.location_id) ??
-                            festival.location_id.replace(/_/g, ' ')}
-                        </Link>
+                        />
                       </>
                     )}
                     {/* Revealed but still not runnable — the badge keeps saying
@@ -424,13 +439,11 @@ export function TodayRoute() {
                             {place.loc === '' ? (
                               place.label
                             ) : (
-                              <Link
-                                to="/place/$id"
-                                params={{ id: place.loc }}
+                              <PlaceLink
+                                id={place.loc}
+                                places={data.places}
                                 className="underline decoration-transparent underline-offset-2 transition-colors hover:decoration-rule"
-                              >
-                                {place.label}
-                              </Link>
+                              />
                             )}
                           </h4>
                           <ul className="flex flex-col divide-y divide-rule">
@@ -439,7 +452,7 @@ export function TodayRoute() {
                                 key={entity.id}
                                 entity={entity}
                                 index={data.index}
-                                locationNames={data.locationNames}
+                                places={data.places}
                               />
                             ))}
                           </ul>
@@ -472,7 +485,7 @@ export function TodayRoute() {
                         key={entity.id}
                         entity={entity}
                         index={data.index}
-                        locationNames={data.locationNames}
+                        places={data.places}
                       />
                     ))}
                   </ul>

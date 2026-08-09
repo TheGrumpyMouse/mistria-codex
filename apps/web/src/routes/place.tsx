@@ -10,7 +10,13 @@ import { SpoilerAsk } from '~/components/Spoiler'
 import { ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, foundAt } from '~/lib/findable'
-import { requirementDisplay } from '~/lib/labels'
+import {
+  floorRange,
+  type PlaceLabel,
+  placeLabel,
+  placeLabels,
+  requirementDisplay,
+} from '~/lib/labels'
 import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -50,12 +56,17 @@ interface SealRecord {
   required_items: { item_id: string; quantity: number }[]
 }
 
+interface MineRecord {
+  location_id: string | null
+  floors: { min: number; max: number }
+}
+
 export function PlaceRoute() {
   const { id } = route.useParams()
   const [state, setState] = useState<{
     place: LocationRecord | null
     all: LocationRecord[]
-    places: Map<string, string>
+    places: Map<string, PlaceLabel>
     availability: AvailabilityIndex | null
     index: DisplayIndex
     seals: SealRecord[]
@@ -77,13 +88,14 @@ export function PlaceRoute() {
       loadAvailability(),
       loadDisplayIndex(),
       loadDataset<SealRecord>('seals'),
+      loadDataset<MineRecord>('mines'),
     ])
-      .then(([locations, availability, index, seals]) => {
+      .then(([locations, availability, index, seals, mines]) => {
         if (!live) return
         setState({
           place: locations.find((l) => l.id === id) ?? null,
           all: locations,
-          places: new Map(locations.map((l) => [l.id, l.name])),
+          places: placeLabels(locations, mines),
           availability,
           index,
           seals,
@@ -98,6 +110,7 @@ export function PlaceRoute() {
 
   const spoilers = useSpoilers()
   const { place, all, places, availability, index, seals, loading } = state
+  const selfFloors = places.get(id)?.floors ?? null
   // The region this place sits in — itself when it is one, its parent when it
   // is a building. The map panel crops to that region.
   const regionId =
@@ -170,6 +183,15 @@ export function PlaceRoute() {
           <h1 className="text-2xl">{place.name}</h1>
           <p className="mt-0.5 text-ink-mute text-sm">
             {place.kind?.replace(/_/g, ' ') ?? 'place'}
+            {/* A mine biome's depth belongs in the subtitle, not the heading:
+                the name is what the rest of the app links to, and "The Tide
+                Caverns (floors 21–39)" as an h1 reads as the place's name. */}
+            {selfFloors !== null && (
+              <>
+                {' · '}
+                <span data-numeral>{floorRange(selfFloors)}</span>
+              </>
+            )}
             {place.parent_id !== null && (
               <>
                 {' · in '}
@@ -178,7 +200,7 @@ export function PlaceRoute() {
                   params={{ id: place.parent_id }}
                   className="underline decoration-rule underline-offset-4 hover:text-ink"
                 >
-                  {places.get(place.parent_id) ?? place.parent_id.replace(/_/g, ' ')}
+                  {placeLabel(places, place.parent_id).name}
                 </Link>
               </>
             )}

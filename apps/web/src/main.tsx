@@ -2,6 +2,7 @@ import { RouterProvider } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { AtlasProvider } from '~/app/AtlasProvider'
+import { ServiceWorkerProvider } from '~/app/ServiceWorkerProvider'
 import { UpdateToast } from '~/app/UpdateToast'
 import { applyTextSize, savedTextSize } from '~/lib/text-size'
 import { router } from '~/router'
@@ -21,6 +22,13 @@ applyTextSize(savedTextSize())
  * browser pick the house; on a clone with no assets the probe 404s and the SVG
  * mark keeps the tab. `force-cache` lets the service worker satisfy this
  * offline.
+ *
+ * **The one art URL with no `?v=`, and deliberately.** Everything the atlas
+ * builds carries the asset version, because a stale sprite is a wrong picture.
+ * This request is not asking for a picture — it asks *whether packed art
+ * exists*, and a cached 200 answers that as well as a fresh one. It also runs
+ * before React and before any manifest is read, so versioning it would mean
+ * waiting on `meta.json` to decide a favicon.
  */
 void fetch(`${import.meta.env.BASE_URL}assets/game/brand/app-icon-64.png`, {
   cache: 'force-cache',
@@ -47,10 +55,14 @@ if (root === null) throw new Error('No #root element — index.html has changed.
 createRoot(root).render(
   <StrictMode>
     {/* Outside the router: the atlas is loaded once for the whole app, and a
-        route change must never re-fetch it. */}
-    <AtlasProvider>
-      <RouterProvider router={router} />
-      <UpdateToast />
-    </AtlasProvider>
+        route change must never re-fetch it. The worker registration is out
+        here for the same reason, and so the toast and the Settings check are
+        looking at one registration rather than two. */}
+    <ServiceWorkerProvider>
+      <AtlasProvider>
+        <RouterProvider router={router} />
+        <UpdateToast />
+      </AtlasProvider>
+    </ServiceWorkerProvider>
   </StrictMode>,
 )

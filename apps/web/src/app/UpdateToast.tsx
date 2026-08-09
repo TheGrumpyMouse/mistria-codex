@@ -1,5 +1,5 @@
-import { useRegisterSW } from 'virtual:pwa-register/react'
 import { useState } from 'react'
+import { useServiceWorker } from '~/app/ServiceWorkerProvider'
 
 /**
  * "There's a new version" — an offer, never an interruption.
@@ -14,12 +14,12 @@ import { useState } from 'react'
  * on purpose: offline is this app's normal state, not an event, and announcing
  * plumbing is noise. The About page still states the promise for anyone who
  * wants it in writing.
+ *
+ * This waits to be told. The registration lives in `ServiceWorkerProvider`, so
+ * Settings can ask for a check with the same worker this toast is watching.
  */
 export function UpdateToast() {
-  const {
-    needRefresh: [needRefresh, setNeedRefresh],
-    updateServiceWorker,
-  } = useRegisterSW()
+  const { needRefresh, applyUpdate, dismiss } = useServiceWorker()
 
   const [busy, setBusy] = useState(false)
   if (!needRefresh) return null
@@ -42,7 +42,7 @@ export function UpdateToast() {
           disabled={busy}
           onClick={() => {
             setBusy(true)
-            void updateServiceWorker(true)
+            void applyUpdate()
           }}
           className="tap-target rounded-pill px-3 py-1 text-xs"
           style={{ background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }}
@@ -51,7 +51,7 @@ export function UpdateToast() {
         </button>
         <button
           type="button"
-          onClick={() => setNeedRefresh(false)}
+          onClick={dismiss}
           className="tap-target rounded-pill border border-rule px-3 py-1 text-ink-mute text-xs"
         >
           Later

@@ -51,6 +51,29 @@ describe('Atlas', () => {
     expect(atlas.portrait('character/caldarus')).toBeNull()
   })
 
+  it('stamps every URL with the asset version', () => {
+    // The whole art bundle sits behind one CacheFirst route, and only the
+    // sheets carry a hash in their own filename — the portraits and the index
+    // do not. Without this the cache pins a device to the first art it ever
+    // saw, which is how the fish animation reached devices that never showed
+    // it. Sheets take the suffix too: one rule, no per-family exceptions.
+    const atlas = new Atlas(index, '/mistria-codex/', 'f87dff6b13')
+    expect(atlas.get('item/milk')?.url).toBe(
+      '/mistria-codex/assets/game/atlas-item.abc123.png?v=f87dff6b13',
+    )
+    expect(atlas.portrait('character/adeline')).toBe(
+      '/mistria-codex/assets/game/portrait/adeline-portrait.png?v=f87dff6b13',
+    )
+  })
+
+  it('omits the query when there is no version to state', () => {
+    // A clone with no packed assets has no version, and inventing `?v=null`
+    // would be a cache key that means nothing.
+    expect(new Atlas(index, '/', null).get('item/milk')?.url).toBe(
+      '/assets/game/atlas-item.abc123.png',
+    )
+  })
+
   it('is empty, not broken, before the index loads', () => {
     // The app renders entirely from drawn glyphs in this state, which is also
     // the state of a clone that has never run `pnpm assets:fetch`.

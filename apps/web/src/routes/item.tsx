@@ -7,6 +7,7 @@ import { BackLink } from '~/components/BackLink'
 import { FishShadow } from '~/components/FishShadow'
 import { ItemIcon } from '~/components/ItemIcon'
 import { OpportunityCard } from '~/components/OpportunityCard'
+import { PlaceLink } from '~/components/PlaceLink'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import { ValleyMap } from '~/components/ValleyMap'
@@ -18,7 +19,13 @@ import {
   loadMeta,
   loadRequestBoard,
 } from '~/lib/data'
-import { categoryLabelOne, gateDisplay, WORN_ON_LABELS } from '~/lib/labels'
+import {
+  categoryLabelOne,
+  gateDisplay,
+  type PlaceLabel,
+  placeLabels,
+  WORN_ON_LABELS,
+} from '~/lib/labels'
 import { opportunitiesFromWindows } from '~/lib/opportunity'
 import { doneIn, setDone } from '~/lib/progress'
 import type { BoardRequest } from '~/lib/request-board'
@@ -140,6 +147,11 @@ interface LocationLite {
   anchor: { x: number; y: number } | null
 }
 
+interface MineRecord {
+  location_id: string | null
+  floors: { min: number; max: number }
+}
+
 /** `['sat']` -> "Saturdays". Only whole days are ever stated on a shop. */
 const DAY_NAMES: Record<string, string> = {
   mon: 'Mondays',
@@ -209,7 +221,7 @@ export function ItemRoute() {
     item: ItemRecord | null
     index: DisplayIndex
     prefs: GiftPrefs[]
-    names: Map<string, string>
+    places: Map<string, PlaceLabel>
     locations: LocationLite[]
     shops: Map<string, ShopRecord>
     recipes: RecipeRecord[]
@@ -224,7 +236,7 @@ export function ItemRoute() {
     item: null,
     index: {},
     prefs: [],
-    names: new Map(),
+    places: new Map(),
     locations: [],
     shops: new Map(),
     recipes: [],
@@ -247,6 +259,9 @@ export function ItemRoute() {
       loadDisplayIndex(),
       loadDataset<GiftPrefs>('gift_prefs'),
       loadDataset<LocationLite>('locations'),
+      // 4KB, for five floor ranges. "The Tide Caverns" does not say it is
+      // floors 21 to 39, and that is what decides whether to go.
+      loadDataset<MineRecord>('mines'),
       loadDataset<ShopRecord>('shops'),
       loadDataset<RecipeRecord>('recipes'),
       loadDataset<SealRecord>('seals'),
@@ -267,6 +282,7 @@ export function ItemRoute() {
           index,
           prefs,
           locations,
+          mines,
           shops,
           recipes,
           seals,
@@ -282,7 +298,7 @@ export function ItemRoute() {
             item,
             index,
             prefs,
-            names: new Map(locations.map((l) => [l.id, l.name])),
+            places: placeLabels(locations, mines),
             locations,
             shops: new Map(shops.map((s) => [s.id, s])),
             recipes,
@@ -310,7 +326,7 @@ export function ItemRoute() {
     item,
     index,
     prefs,
-    names,
+    places,
     locations,
     shops,
     recipes,
@@ -600,7 +616,7 @@ export function ItemRoute() {
                 <OpportunityCard
                   key={`${opportunity.method}:${opportunity.seasons.join()}:${opportunity.locationIds.join()}`}
                   opportunity={opportunity}
-                  locationNames={names}
+                  places={places}
                   odds={meta?.weatherOdds}
                   names={index}
                 />
@@ -803,13 +819,11 @@ export function ItemRoute() {
                     {shop.location_id !== null && (
                       <>
                         {' — in '}
-                        <Link
-                          to="/place/$id"
-                          params={{ id: shop.location_id }}
+                        <PlaceLink
+                          id={shop.location_id}
+                          places={places}
                           className="underline decoration-rule underline-offset-4 hover:text-ink"
-                        >
-                          {names.get(shop.location_id) ?? shop.location_id.replace(/_/g, ' ')}
-                        </Link>
+                        />
                       </>
                     )}
                     {shop.owner_character_id !== null && (

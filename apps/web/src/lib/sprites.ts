@@ -56,9 +56,26 @@ export class Atlas {
   private readonly portraits = new Map<string, string>()
   private readonly maps = new Map<string, string>()
 
-  constructor(index: AtlasIndex, baseUrl: string) {
+  /**
+   * @param version `meta.assets.version`, appended to every URL as `?v=`.
+   *
+   * **Not decoration — it is the only thing keeping the art cache honest.** The
+   * service worker holds `assets/game/**` CacheFirst, which is only safe while
+   * every URL under it is content-addressed. The eight atlas *sheets* are; the
+   * 28 portraits and the brand icons are not, and neither is `atlas.json`
+   * itself. That gap shipped the fish animation to devices whose cached index
+   * had never heard of frames `_1`.`_3`, so they drew the still and nothing
+   * anywhere logged a thing. One `?v=` on everything makes the whole family
+   * immutable by construction rather than immutable for eight files out of
+   * eleven.
+   *
+   * `null` when a clone has no packed assets — then there is nothing to
+   * version and the bare path is right.
+   */
+  constructor(index: AtlasIndex, baseUrl: string, version: string | null = null) {
+    const suffix = version === null ? '' : `?v=${version}`
     for (const sheet of index.sheets) {
-      const url = `${baseUrl}assets/game/${sheet.file}`
+      const url = `${baseUrl}assets/game/${sheet.file}${suffix}`
       for (const [key, [x, y, width, height]] of Object.entries(sheet.frames)) {
         this.frames.set(key, {
           url,
@@ -72,10 +89,10 @@ export class Atlas {
       }
     }
     for (const [key, file] of Object.entries(index.portraits)) {
-      this.portraits.set(key, `${baseUrl}assets/game/${file}`)
+      this.portraits.set(key, `${baseUrl}assets/game/${file}${suffix}`)
     }
     for (const [key, file] of Object.entries(index.maps ?? {})) {
-      this.maps.set(key, `${baseUrl}assets/game/${file}`)
+      this.maps.set(key, `${baseUrl}assets/game/${file}${suffix}`)
     }
   }
 

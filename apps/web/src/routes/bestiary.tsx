@@ -5,6 +5,7 @@ import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { floorRange, type MineFloors } from '~/lib/labels'
 import { iconKeyFor } from '~/lib/search'
 
 const route = getRouteApi('/monster/$id')
@@ -32,7 +33,7 @@ export function BestiaryRoute() {
   const { id } = route.useParams()
   const [state, setState] = useState<{
     monster: MonsterRecord | null
-    biomes: Map<string, { name: string; locationId: string | null }>
+    biomes: Map<string, { name: string; locationId: string | null; floors: MineFloors }>
     index: DisplayIndex
     loading: boolean
   }>({ monster: null, biomes: new Map(), index: {}, loading: true })
@@ -41,14 +42,21 @@ export function BestiaryRoute() {
     let live = true
     Promise.all([
       loadDataset<MonsterRecord>('monsters'),
-      loadDataset<{ id: string; name: string; location_id: string | null }>('mines'),
+      loadDataset<{
+        id: string
+        name: string
+        location_id: string | null
+        floors: MineFloors
+      }>('mines'),
       loadDisplayIndex(),
     ])
       .then(([monsters, mines, index]) => {
         if (!live) return
         setState({
           monster: monsters.find((m) => m.id === id) ?? null,
-          biomes: new Map(mines.map((m) => [m.id, { name: m.name, locationId: m.location_id }])),
+          biomes: new Map(
+            mines.map((m) => [m.id, { name: m.name, locationId: m.location_id, floors: m.floors }]),
+          ),
           index,
           loading: false,
         })
@@ -114,6 +122,14 @@ export function BestiaryRoute() {
                         >
                           {label}
                         </Link>
+                      )}
+                      {/* "The Lava Caves" does not say how far down it is, and
+                          for a monster's home that is the whole question. */}
+                      {biome !== undefined && (
+                        <span data-numeral className="text-ink-faint">
+                          {' '}
+                          ({floorRange(biome.floors)})
+                        </span>
                       )}
                     </span>
                   )

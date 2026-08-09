@@ -55,6 +55,27 @@ export function loadMeta(): Promise<Meta> {
 }
 
 /**
+ * The manifest as the *server* has it, past every cache between here and it.
+ *
+ * `cache: 'no-store'` only speaks to the HTTP cache — the service worker serves
+ * `meta.json` stale-while-revalidate and would happily answer with the very
+ * copy being questioned. The query string is what dodges it, without needing a
+ * second route in the worker.
+ *
+ * Two callers, and they want opposite things from the answer: the 404 heal
+ * below adopts it silently, while the update check only reports it. So this
+ * returns the manifest and decides nothing.
+ */
+export function fetchFreshMeta(): Promise<Meta> {
+  return fetchJson<Meta>(`${META_URL}?fresh=${Date.now()}`, { cache: 'no-store' })
+}
+
+/** Replace the session's manifest, so every later load starts at the right place. */
+export function adoptMeta(meta: Meta): void {
+  pending.set(META_URL, Promise.resolve(meta))
+}
+
+/**
  * Fetch a file under the versioned data directory, healing a stale version.
  *
  * The site can redeploy while a session is open, and only the **new** version
@@ -76,19 +97,17 @@ async function fetchVersioned<T>(name: string): Promise<T> {
     if (!(error instanceof HttpError) || error.status !== 404) throw error
     pending.delete(url)
 
-    // Straight to the network: the service worker serves meta.json
-    // stale-while-revalidate, and the stale copy is the very thing being
-    // corrected. The query string dodges its cache without a new route.
+    // Straight to the network: the stale copy is the very thing being
+    // corrected. See `fetchFreshMeta`.
     let fresh: Meta
     try {
-      fresh = await fetchJson<Meta>(`${META_URL}?fresh=${Date.now()}`, { cache: 'no-store' })
+      fresh = await fetchFreshMeta()
     } catch {
       throw error
     }
     if (fresh.dataVersion === meta.dataVersion) throw error
 
-    // Adopt the newer manifest so every later load starts at the right place.
-    pending.set(META_URL, Promise.resolve(fresh))
+    adoptMeta(fresh)
     return fetchJson<T>(`${import.meta.env.BASE_URL}data/v/${fresh.dataVersion}/${name}`)
   })
   pending.set(url, request)
