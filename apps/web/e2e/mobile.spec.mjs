@@ -34,14 +34,22 @@ await phone.getByRole('button', { name: 'Back' }).tap()
 await phone.waitForTimeout(800)
 check('back returns to search with the query', phone.url().includes('q=heather'), phone.url())
 
-// — item -> where -> Back -> item —
+// — item -> place -> Back -> item —
+//
+// This used to hop item -> /item/$id/where -> back. That screen was folded into
+// the item page, so the hop it tested no longer exists; the place link inside
+// "Where to find it" is the same two-screen journey through the same section,
+// and it exercises the thing the fold actually produced.
 await phone.locator('a[href*="/item/heather"]').first().tap()
 await phone.waitForTimeout(800)
-await phone.getByRole('link', { name: /Where can I get this/ }).tap()
+const placeLink = phone.locator('main a[href*="/place/"]').first()
+check('the item page offers a place to tap', (await placeLink.count()) === 1)
+await placeLink.tap()
 await phone.waitForTimeout(800)
+check('tapping a place leaves the item', /\/place\//.test(phone.url()), phone.url())
 await phone.getByRole('button', { name: 'Back' }).tap()
 await phone.waitForTimeout(800)
-check('back from the where page lands on the item', /\/item\/heather(?!\/where)/.test(phone.url()))
+check('back from the place lands on the item', /\/item\/heather$/.test(phone.url()), phone.url())
 
 // — settings corner becomes a close —
 await go('/museum')

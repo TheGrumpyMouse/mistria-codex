@@ -1,50 +1,32 @@
 import { describe, expect, it } from 'vitest'
-import { type Instant, type Rule, ruleMatches } from './findable'
 import {
-  daysUntilSeason,
+  maskOfSeasons,
+  maskOfWeathers,
   oddsFor,
   oddsPhrase,
-  opportunitiesFor,
+  opportunitiesFromWindows,
   possibleWeather,
   seasonsOf,
+  type Window,
   weathersOf,
 } from './opportunity'
 
 const SPRING = 1
-const SUMMER = 2
 const FALL = 4
-const WINTER = 8
 const CLEAR = 1
-const RAIN = 2
 const STORM = 4
-const WIND = 8
-const SNOW = 16
-const BLIZZARD = 32
 
-const rule = (over: Partial<Rule>): Rule => ({
-  e: 'walleye',
-  k: 'fish',
-  loc: 0,
-  sub: null,
-  sea: SPRING,
-  wx: CLEAR | RAIN | STORM | WIND,
-  t: [],
-  d: null,
-  dow: null,
-  y: null,
-  rar: null,
-  req: [],
-  p: null,
-  conf: 'wiki',
-  ...over,
-})
-
-const at = (over: Partial<Instant> = {}): Instant => ({
-  season: 'spring',
-  day: 1,
-  year: 1,
-  weather: 'clear',
+const window = (over: Partial<Window> = {}): Window => ({
+  method: 'fishing',
+  seasons: ['spring'],
+  weather: ['clear', 'rain', 'storm', 'wind'],
+  locations: ['the_farm'],
+  habitats: [],
   time: null,
+  time_precision: 'not_applicable',
+  rarity: 'common',
+  confidence: 'wiki',
+  requires: [],
   ...over,
 })
 
@@ -73,22 +55,13 @@ describe('weathersOf / seasonsOf', () => {
     expect(weathersOf(CLEAR | STORM)).toEqual(['clear', 'storm'])
     expect(seasonsOf(FALL | SPRING)).toEqual(['spring', 'fall'])
   })
-})
 
-describe('daysUntilSeason', () => {
-  it('is zero for the season you are already in', () => {
-    expect(daysUntilSeason(at({ season: 'spring', day: 12 }), 'spring')).toBe(0)
-  })
-
-  it('counts to the first day of the next occurrence', () => {
-    // Spring 1 -> Summer 1 is 28 days.
-    expect(daysUntilSeason(at({ season: 'spring', day: 1 }), 'summer')).toBe(28)
-    // Eleven days into spring, summer is eleven days closer.
-    expect(daysUntilSeason(at({ season: 'spring', day: 12 }), 'summer')).toBe(17)
-  })
-
-  it('wraps the year rather than going negative', () => {
-    expect(daysUntilSeason(at({ season: 'winter', day: 1 }), 'spring')).toBe(28)
+  it('round-trips through the inverses, dropping names it does not know', () => {
+    expect(seasonsOf(maskOfSeasons(['fall', 'spring']))).toEqual(['spring', 'fall'])
+    expect(weathersOf(maskOfWeathers(['storm', 'clear']))).toEqual(['clear', 'storm'])
+    // A season a later schema adds must not take a page down on the way past.
+    expect(maskOfSeasons(['harvest'])).toBe(0)
+    expect(seasonsOf(maskOfSeasons(['spring', 'harvest']))).toEqual(['spring'])
   })
 })
 
@@ -104,75 +77,90 @@ describe('possibleWeather', () => {
   })
 })
 
-describe('opportunitiesFor', () => {
-  const find = (rules: Rule[], instant: Instant) =>
-    opportunitiesFor(rules, ['the_farm', 'mistria'], 'walleye', instant, ruleMatches, ODDS)
+describe('opportunitiesFromWindows', () => {
+  const find = (windows: Window[]) => opportunitiesFromWindows(windows, ODDS)
 
-  it('returns only the entity asked about', () => {
-    const rules = [rule({}), rule({ e: 'chum' })]
-    expect(find(rules, at())).toHaveLength(1)
+  it('names a weather the window genuinely narrows', () => {
+    const found = find([window({ seasons: ['fall'], weather: ['rain', 'storm'] })])
+    expect(found[0]?.weather).toEqual(['rain', 'storm'])
   })
 
-  it('dates a rule that is not weather-gated', () => {
-    // Every weather spring can have, so weather is not a gate and a date is a
-    // real answer.
-    const found = find([rule({ sea: SUMMER })], at({ season: 'spring', day: 1 }))
-    expect(found[0]?.daysAway).toBe(28)
-    expect(found[0]?.noDateReason).toBe(null)
-  })
-
-  it('refuses a date for a weather-gated rule, and says why', () => {
-    const found = find([rule({ sea: FALL, wx: RAIN })], at({ season: 'spring', day: 1 }))
-    expect(found[0]?.daysAway).toBe(null)
-    expect(found[0]?.noDateReason).toBe('weather')
-    expect(found[0]?.weather).toEqual(['rain'])
-  })
-
-  it('does not call a winter rule weather-gated for lacking rain', () => {
-    // Winter has no rain. A rule allowing everything winter *can* have is
-    // unrestricted, and withholding its date would be wrong.
-    const found = find(
-      [rule({ sea: WINTER, wx: CLEAR | SNOW | BLIZZARD })],
-      at({ season: 'spring', day: 1 }),
-    )
+  it('says nothing when the weather excludes nothing its seasons can produce', () => {
+    // The case that matters most. A rule's weather is already intersected with
+    // what its seasons allow, so a fall fish that bites in anything ships as
+    // all four — and tagging it would put a label that narrows nothing on four
+    // fifths of the dataset.
+    const found = find([window({ seasons: ['fall'], weather: ['clear', 'rain', 'storm', 'wind'] })])
     expect(found[0]?.weather).toBe(null)
-    expect(found[0]?.daysAway).toBe(84)
   })
 
-  it('marks a rule that matches the instant as available now, with no date', () => {
-    const found = find(
-      [rule({ sea: SPRING, wx: CLEAR })],
-      at({ season: 'spring', weather: 'clear' }),
+  it('does not call a winter window weather-gated for lacking rain', () => {
+    // Winter has no rain, and the shipped odds give it no wind either. A window
+    // allowing everything winter *can* have is unrestricted.
+    const found = find([window({ seasons: ['winter'], weather: ['clear', 'snow', 'blizzard'] })])
+    expect(found[0]?.weather).toBe(null)
+  })
+
+  it('treats null weather as "does not apply", not as a restriction', () => {
+    // A mine drop and an apiary have no weather at all. Reading the empty list
+    // as "appears in no weather" would tag them as impossible.
+    expect(find([window({ weather: null })])[0]?.weather).toBe(null)
+  })
+
+  it('keeps a window whole, with every place on the one entry', () => {
+    // Splitting them into a row each — which the screen this replaced did,
+    // because each of its rows carried a different countdown — produces three
+    // cards identical but for the place name, each repeating the same weather
+    // sentence. The map pins all three either way.
+    const found = find([window({ locations: ['mistria', 'the_farm', 'the_beach'] })])
+    expect(found).toHaveLength(1)
+    expect(found[0]?.locationIds).toEqual(['mistria', 'the_farm', 'the_beach'])
+  })
+
+  it('keeps a window that names no place at all', () => {
+    // Eleven items are only ever produced by a machine and the flat rules index
+    // has no row for any of them. Dropping a placeless window would blank their
+    // whole section.
+    const found = find([window({ method: 'apiary', locations: [] })])
+    expect(found).toHaveLength(1)
+    expect(found[0]).toMatchObject({ method: 'apiary', locationIds: [] })
+  })
+
+  it('keeps two windows apart', () => {
+    // A bug can be spring-in-town-at-night *and* all-season-in-the-mines. The
+    // array is an OR and flattening it gives wrong answers.
+    const found = find([window({ seasons: ['spring'] }), window({ seasons: ['fall'] })])
+    expect(found.map((o) => o.seasons)).toEqual([['spring'], ['fall']])
+  })
+
+  it('carries the method, not a kind, and the rarity as written', () => {
+    const found = find([window({ method: 'dig_spot', rarity: 'uncommon' })])
+    expect(found[0]).toMatchObject({ method: 'dig_spot', rarity: 'uncommon' })
+  })
+
+  it('flags an inferred place and what it was inferred from', () => {
+    const found = find([window({ confidence: 'inferred', habitats: ['ocean'] })])
+    expect(found[0]).toMatchObject({ placesInferred: true, habitat: 'ocean' })
+    // An inference with no habitat recorded still hedges — 30 of the 153 do.
+    expect(find([window({ confidence: 'inferred' })])[0]).toMatchObject({
+      placesInferred: true,
+      habitat: null,
+    })
+    expect(find([window()])[0]?.placesInferred).toBe(false)
+  })
+
+  it('separates a stated "any time" from an unsourced one', () => {
+    expect(find([window({ time: null, time_precision: 'not_applicable' })])[0]?.timeIsAnyTime).toBe(
+      true,
     )
-    expect(found[0]?.availableNow).toBe(true)
-    expect(found[0]?.daysAway).toBe(null)
-    expect(found[0]?.noDateReason).toBe(null)
+    expect(find([window({ time: null, time_precision: 'unknown' })])[0]?.timeIsAnyTime).toBe(false)
   })
 
-  it('puts what is available now first, then the soonest', () => {
-    const found = find(
-      [
-        rule({ sea: WINTER, wx: CLEAR | WIND | SNOW | BLIZZARD }),
-        rule({ sea: SUMMER }),
-        rule({ sea: SPRING, wx: CLEAR }),
-      ],
-      at({ season: 'spring', day: 1, weather: 'clear' }),
-    )
-    expect(found.map((o) => o.availableNow)).toEqual([true, false, false])
-    expect(found[1]?.daysAway).toBe(28)
-    expect(found[2]?.daysAway).toBe(84)
-  })
-
-  it('resolves the location index to an id, and keeps null as null', () => {
-    const found = find([rule({ loc: 1 }), rule({ loc: null })], at())
-    expect(found.map((o) => o.locationId)).toEqual(['mistria', null])
-  })
-
-  it('keeps one opportunity per location rather than collapsing them', () => {
-    // Three ponds is three places to go. Collapsing them answers "where" with
-    // a shrug.
-    const found = find([rule({ loc: 0 }), rule({ loc: 1 })], at())
-    expect(found).toHaveLength(2)
+  it('passes clock ranges through untouched, midnight wrap and all', () => {
+    // Ten windows still wrap (the night bugs). Nothing here works out which
+    // side of midnight they fall on — see apps/web/CLAUDE.md §3.
+    const found = find([window({ time: [{ from: '20:00', to: '02:00' }] })])
+    expect(found[0]?.time).toEqual([{ from: '20:00', to: '02:00' }])
   })
 })
 

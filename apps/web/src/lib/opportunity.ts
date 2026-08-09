@@ -1,20 +1,16 @@
 /**
- * "When can I next get this?" — the reverse of the Today query.
+ * "Where do I get this, and what does it take?" — one item's whole answer.
  *
- * Same index, walked the other way. `findAvailable` asks which entities match
- * one instant; this asks which instants match one entity, and answers with the
- * rules themselves rather than with a list of dates.
+ * The Today query asks which entities match one instant. This asks the reverse
+ * of one entity, and answers with the windows themselves rather than with a
+ * list of dates.
  *
- * **That is the whole design decision, and it is not a shortcut.** Weather in
- * Mistria is rolled per season, not scheduled: the game gives Fall four to six
- * wet days and does not say which. So "the next Storm is Fall 17" would be a
- * fabrication, and the fabrication is the tempting part — a date is so much more
- * satisfying to render than a frequency. A rule that needs weather gets a
- * frequency, drawn from the game's own seasonal counts, and never a date.
- *
- * A rule that does *not* need weather has a real answer, and gets one: the day
- * its season next starts, counted forward from now. Keeping those two cases
- * apart is what makes the date trustworthy where it appears.
+ * **Refusing to invent a date is the design decision here, not a shortcut.**
+ * Weather in Mistria is rolled per season, not scheduled: the game gives Fall
+ * four to six wet days and does not say which. So "the next Storm is Fall 17"
+ * would be a fabrication, and the fabrication is the tempting part — a date is
+ * so much more satisfying to render than a frequency. Anything weather-gated
+ * gets a frequency, drawn from the game's own seasonal counts.
  */
 import {
   DAYS_PER_SEASON,
@@ -26,7 +22,6 @@ import {
   WEATHERS,
   type Weather,
 } from '@mistria/schema'
-import type { Instant, Rule } from './findable'
 
 /** How often a weather happens, as shipped in `meta.json`. */
 export interface WeatherOdds {
@@ -47,32 +42,59 @@ export interface WeatherOdds {
 
 export type WeatherOddsTable = Record<string, Record<string, WeatherOdds>>
 
-export interface Opportunity {
-  rule: Rule
-  /** The seasons this rule can fire in, in calendar order. */
-  seasons: Season[]
-  /** The weathers it needs, or null when it does not care. */
-  weather: Weather[] | null
-  /** Minute intervals, already split at midnight by the build. */
-  time: [number, number][]
-  locationId: string | null
-  requires: string[]
-  /**
-   * Days until this rule's season next comes round, or null when it cannot be
-   * counted — either because it is available now, or because the rule needs
-   * weather and no date can be honest about that.
-   */
-  daysAway: number | null
-  /** True when the rule matches the instant asked about. */
-  availableNow: boolean
-  /**
-   * Why there is no date, when there is none. Null when `daysAway` is set or
-   * when the thing is available now.
-   */
-  noDateReason: 'weather' | null
+/** One availability window, exactly as an item record ships it. */
+export interface Window {
+  method: string
+  seasons: string[]
+  /** `null` is "weather does not apply here", not "unknown". */
+  weather: string[] | null
+  locations: string[]
+  /** The habitat the places were expanded from, when they were. */
+  habitats?: string[]
+  time: { from: string; to: string }[] | null
+  time_precision: string
+  rarity: string | null
+  confidence: string
+  requires: { type: string; key: string; op?: string; value?: unknown }[]
 }
 
-const SEASON_ORDER: Record<Season, number> = { spring: 0, summer: 1, fall: 2, winter: 3 }
+export interface Opportunity {
+  /** How you get it — `fishing`, `dig_spot`, `apiary`. See `METHOD_LABELS`. */
+  method: string
+  /** The seasons this window covers, in calendar order. */
+  seasons: Season[]
+  /** The weathers it needs, or null when it does not narrow anything. */
+  weather: Weather[] | null
+  /**
+   * Clock ranges as the record states them, rendered and never compared.
+   *
+   * Ten of them still wrap midnight (`20:00–02:00`, the night bugs) because the
+   * split-at-build guarantee holds for the flat rules index and not for
+   * `items.json`. Nothing here works out which side of midnight a range is on —
+   * see apps/web/CLAUDE.md §3 — which is why this page has no "available now".
+   */
+  time: { from: string; to: string }[]
+  /** 1 when an empty `time` is a fact — the method has no clock — not a gap. */
+  timeIsAnyTime: boolean
+  /**
+   * Every place this one window covers, kept together rather than split into a
+   * row each.
+   *
+   * The screen this was folded in from split them, and rightly — each of its
+   * rows carried its own countdown, so three ponds really were three answers.
+   * With no date to differ on, splitting produced three cards identical but for
+   * the place name, each repeating the same weather sentence. The map still
+   * pins every one of them, which is where "three ponds is three places to go"
+   * actually gets answered.
+   */
+  locationIds: string[]
+  rarity: string | null
+  requires: { type: string; key: string; op?: string; value?: unknown }[]
+  /** True when the places were deduced from a habitat rather than sourced. */
+  placesInferred: boolean
+  /** `ocean`, `pond`, `river` — what they were deduced from, when stated. */
+  habitat: string | null
+}
 
 /** Every weather the mask allows, in the canonical order. */
 export function weathersOf(mask: number): Weather[] {
@@ -83,6 +105,19 @@ export function weathersOf(mask: number): Weather[] {
 export function seasonsOf(mask: number): Season[] {
   return SEASONS.filter((season) => (mask & SEASON_BIT[season]) !== 0)
 }
+
+/**
+ * The inverses, for records that ship names rather than masks.
+ *
+ * Unknown names are dropped rather than throwing: a season the schema gains
+ * later must not take a page down, and the bit it would have set is one this
+ * build has no meaning for anyway.
+ */
+export const maskOfSeasons = (seasons: readonly string[]): number =>
+  seasons.reduce((mask, s) => mask | (SEASON_BIT[s as Season] ?? 0), 0)
+
+export const maskOfWeathers = (weathers: readonly string[]): number =>
+  weathers.reduce((mask, w) => mask | (WEATHER_BIT[w as Weather] ?? 0), 0)
 
 /**
  * Every weather that can actually occur across a set of seasons.
@@ -117,76 +152,53 @@ export function possibleWeather(seasons: Season[], odds: WeatherOddsTable | unde
 }
 
 /**
- * Days from one instant to the first day of the next occurrence of a season.
+ * Every way to get one item, one card per place.
  *
- * Zero when that season is the current one — you are already in it, and the
- * thing is available today or later this season either way. The year is 112
- * days, so this never exceeds 84.
- */
-export function daysUntilSeason(from: Instant, season: Season): number {
-  const current = SEASON_ORDER[from.season]
-  const target = SEASON_ORDER[season]
-  if (current === target) return 0
-
-  const seasonsAhead = (target - current + 4) % 4
-  return seasonsAhead * DAYS_PER_SEASON - (from.day - 1)
-}
-
-/**
- * Every way to get one entity, soonest first.
+ * **Read from the item's own windows and not from the flat rules index**, which
+ * looks like the obvious source and is the wrong one three times over: the index
+ * drops eleven items whose only method is a machine (`apiary`, `terrarium`), it
+ * keys rows by entity *kind* so a fish's page would say "Fish" where the window
+ * says "Fishing", and its requirements are display-name strings that have to be
+ * matched back to ids. The window carries the method, the string rarity and
+ * requirement objects with real ids, so every link it produces is exact.
  *
- * Rules are not deduplicated across locations: three ponds is three places to
- * go, and collapsing them would answer "where" with a shrug. They are ordered
- * by how soon they can happen, with anything available right now first.
+ * One entry per window, and every window keeps all of its places.
  */
-export function opportunitiesFor(
-  rules: Rule[],
-  locations: string[],
-  entityId: string,
-  from: Instant,
-  matches: (rule: Rule, instant: Instant) => boolean,
+export function opportunitiesFromWindows(
+  windows: readonly Window[],
   odds?: WeatherOddsTable,
 ): Opportunity[] {
   const found: Opportunity[] = []
 
-  for (const rule of rules) {
-    if (rule.e !== entityId) continue
+  for (const window of windows) {
+    const seasons = seasonsOf(maskOfSeasons(window.seasons))
 
-    const seasons = seasonsOf(rule.sea)
-    const weather = weathersOf(rule.wx)
-
-    // Gated only if the rule excludes weather that could otherwise happen in
-    // its own seasons. Comparing against all six instead would call a winter
+    // Gated only when the window excludes weather its own seasons could
+    // otherwise produce. Comparing against all six instead would call a winter
     // fish weather-gated for not biting in the rain, and winter has no rain —
-    // it would refuse a date that is perfectly honest to give.
+    // four fifths of the dataset would wear a label that narrows nothing.
+    // `null` weather is "does not apply", which narrows nothing either.
+    const stated = window.weather === null ? [] : weathersOf(maskOfWeathers(window.weather))
     const possible = possibleWeather(seasons, odds)
-    const gatedByWeather = weather.length > 0 && possible.some((w) => !weather.includes(w))
-    const availableNow = matches(rule, from)
-
-    const soonest = seasons.reduce<number | null>((best, season) => {
-      const days = daysUntilSeason(from, season)
-      return best === null || days < best ? days : best
-    }, null)
+    const gated = stated.length > 0 && possible.some((w) => !stated.includes(w))
 
     found.push({
-      rule,
+      method: window.method,
       seasons,
-      weather: gatedByWeather ? weather : null,
-      time: rule.t,
-      locationId: rule.loc === null ? null : (locations[rule.loc] ?? null),
-      requires: rule.req,
-      daysAway: availableNow || gatedByWeather ? null : soonest,
-      availableNow,
-      noDateReason: !availableNow && gatedByWeather ? 'weather' : null,
+      weather: gated ? stated : null,
+      time: window.time ?? [],
+      timeIsAnyTime: window.time === null && window.time_precision === 'not_applicable',
+      // A window naming no place is still a way to get the thing — a machine,
+      // a shop line — and dropping it would lose the row entirely.
+      locationIds: window.locations,
+      rarity: window.rarity,
+      requires: window.requires,
+      placesInferred: window.confidence === 'inferred',
+      habitat: window.habitats?.[0] ?? null,
     })
   }
 
-  return found.sort((a, b) => {
-    if (a.availableNow !== b.availableNow) return a.availableNow ? -1 : 1
-    const aDays = a.daysAway ?? Number.POSITIVE_INFINITY
-    const bDays = b.daysAway ?? Number.POSITIVE_INFINITY
-    return aDays - bDays
-  })
+  return found
 }
 
 /**

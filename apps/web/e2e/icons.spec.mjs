@@ -127,9 +127,17 @@ check('a biome heading draws an icon', (await page.locator('section h2 [role="im
 // none), so one row proves both halves.
 await go('/item/apple_juice')
 const soldBy = page.locator('section:has-text("Sold by")').first()
+// Counted per row, not as two totals. A row now carries a second icon when the
+// line has a price, so "as many icons as rows" stopped being the same question
+// as "every row has an icon" — and it was the second one that mattered.
+const soldByRows = await soldBy
+  .locator('li')
+  .evaluateAll((rows) => rows.map((row) => row.querySelectorAll('[role="img"]').length))
+check('the sold-by list has rows to check', soldByRows.length > 0, `${soldByRows.length} rows`)
 check(
   'every sold-by row renders an icon, art or not',
-  (await soldBy.locator('li [role="img"]').count()) === (await soldBy.locator('li').count()),
+  soldByRows.every((icons) => icons >= 1),
+  soldByRows.join(','),
 )
 
 // ── The fish shadow, which is a measurement and not a decoration ──

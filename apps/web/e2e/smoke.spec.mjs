@@ -171,9 +171,14 @@ check('the apiary story quest exists', t.includes('Apiaries and Terrariums'))
 // — About copy matches the badge removal —
 await go('/about')
 t = await text()
+// The hedge is still documented and the removed "time unknown" badge is still
+// not. The wording moved — it used to show a standalone "place inferred" chip
+// and now shows the treatment on a deduced place — so this matches the
+// doctrine rather than the old chip's exact words.
 check(
   'about: no unknown-badge doctrine',
-  t.includes('place inferred') && !t.includes('time unknown'),
+  t.includes('hollow and dashed') && t.includes('deduced from') && !t.includes('time unknown'),
+  t.slice(0, 200),
 )
 
 await page.close()

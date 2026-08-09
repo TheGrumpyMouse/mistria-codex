@@ -1,20 +1,25 @@
-import { SEASONS } from '@mistria/schema'
-import { getRouteApi, Link } from '@tanstack/react-router'
+import { type Meta, SEASONS } from '@mistria/schema'
+import { getRouteApi, Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
+import { useAtlas } from '~/app/AtlasProvider'
 import { BackLink } from '~/components/BackLink'
 import { FishShadow } from '~/components/FishShadow'
 import { ItemIcon } from '~/components/ItemIcon'
+import { OpportunityCard } from '~/components/OpportunityCard'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
+import { ValleyMap } from '~/components/ValleyMap'
 import {
   type DisplayIndex,
   loadDataset,
   loadDisplayIndex,
   loadItemRecord,
+  loadMeta,
   loadRequestBoard,
 } from '~/lib/data'
-import { categoryLabelOne, METHOD_LABELS, requirementDisplay, WORN_ON_LABELS } from '~/lib/labels'
+import { categoryLabelOne, gateDisplay, WORN_ON_LABELS } from '~/lib/labels'
+import { opportunitiesFromWindows } from '~/lib/opportunity'
 import { doneIn, setDone } from '~/lib/progress'
 import type { BoardRequest } from '~/lib/request-board'
 import { iconKeyFor } from '~/lib/search'
@@ -57,12 +62,14 @@ interface ItemRecord {
     seasons: string[]
     weather: string[] | null
     locations: string[]
+    /** What the places were expanded from, when they were deduced. */
+    habitats: string[]
     time: { from: string; to: string }[] | null
     time_precision: string
     weather_precision: string
     rarity: string | null
     confidence: string
-    requires: { type: string; key: string }[]
+    requires: Gate[]
   }[]
 }
 
@@ -81,6 +88,14 @@ interface GiftPrefs {
   prefs: Record<string, string[]>
 }
 
+/** A gate on a stock line, a shop, or an availability window. */
+interface Gate {
+  type: string
+  key: string
+  op?: string
+  value?: unknown
+}
+
 interface ShopRecord {
   id: string
   name: string
@@ -90,7 +105,39 @@ interface ShopRecord {
   owner_character_id: string | null
   /** Day-gated shops — the Saturday Market stalls. Empty means always open. */
   hours: { days: string[] }[]
-  stock: { item_id: string; rotation: boolean }[]
+  /**
+   * Gates on the shop existing at all: the six Saturday Market stalls appear
+   * once the bridge is repaired. Empty means open from day one.
+   */
+  unlock_requires: Gate[]
+  /**
+   * The whole line, not just the id.
+   *
+   * This interface used to declare `{ item_id, rotation }` and everything else
+   * on the line was discarded on the way in — which is why 68 items sold only
+   * after a shop upgrade said nothing about it, and why every price on the page
+   * was the item's *global* one. A shop's own price is the accurate figure:
+   * the Inn sells the Lemon Pie at 650 and its recipe scroll at 400, and one
+   * global number cannot be both.
+   */
+  stock: {
+    item_id: string
+    price: number | null
+    currency: string
+    requires: Gate[]
+    /** Seasons this line is stocked in. `null` is year-round, not unknown. */
+    seasons: string[] | null
+    rotation: boolean
+  }[]
+}
+
+/** A place, with what the valley map needs to draw it. */
+interface LocationLite {
+  id: string
+  name: string
+  parent_id: string | null
+  shape: { type: 'cells'; cell: number; runs: [number, number, number][] } | null
+  anchor: { x: number; y: number } | null
 }
 
 /** `['sat']` -> "Saturdays". Only whole days are ever stated on a shop. */
@@ -163,6 +210,7 @@ export function ItemRoute() {
     index: DisplayIndex
     prefs: GiftPrefs[]
     names: Map<string, string>
+    locations: LocationLite[]
     shops: Map<string, ShopRecord>
     recipes: RecipeRecord[]
     seals: SealRecord[]
@@ -170,12 +218,14 @@ export function ItemRoute() {
     board: BoardRequest[]
     machines: MachineRecord[]
     fishFacets: FishFacetLite[]
+    meta: Meta | null
     loading: boolean
   }>({
     item: null,
     index: {},
     prefs: [],
     names: new Map(),
+    locations: [],
     shops: new Map(),
     recipes: [],
     seals: [],
@@ -183,6 +233,7 @@ export function ItemRoute() {
     board: [],
     machines: [],
     fishFacets: [],
+    meta: null,
     loading: true,
   })
   // What has already been handed in, one Set per progress domain. Loaded with
@@ -195,7 +246,7 @@ export function ItemRoute() {
       loadItemRecord<ItemRecord>(id),
       loadDisplayIndex(),
       loadDataset<GiftPrefs>('gift_prefs'),
-      loadDataset<{ id: string; name: string }>('locations'),
+      loadDataset<LocationLite>('locations'),
       loadDataset<ShopRecord>('shops'),
       loadDataset<RecipeRecord>('recipes'),
       loadDataset<SealRecord>('seals'),
@@ -203,6 +254,7 @@ export function ItemRoute() {
       loadDataset<MachineRecord>('machines'),
       loadDataset<FishFacetLite>('fish'),
       loadRequestBoard(),
+      loadMeta(),
       Promise.all(
         (['museum', 'seal', 'quest', 'request'] as const).map(
           async (domain) => [domain, await doneIn(domain)] as const,
@@ -222,6 +274,7 @@ export function ItemRoute() {
           machines,
           fishFacets,
           board,
+          meta,
           done,
         ]) => {
           if (!live) return
@@ -230,6 +283,7 @@ export function ItemRoute() {
             index,
             prefs,
             names: new Map(locations.map((l) => [l.id, l.name])),
+            locations,
             shops: new Map(shops.map((s) => [s.id, s])),
             recipes,
             seals,
@@ -237,6 +291,7 @@ export function ItemRoute() {
             board: board.requests,
             machines,
             fishFacets,
+            meta,
             loading: false,
           })
           setTicked(Object.fromEntries(done))
@@ -249,11 +304,14 @@ export function ItemRoute() {
   }, [id])
 
   const spoilers = useSpoilers()
+  const navigate = useNavigate()
+  const artUrl = useAtlas().mapUrl('map/valley')
   const {
     item,
     index,
     prefs,
     names,
+    locations,
     shops,
     recipes,
     seals,
@@ -261,8 +319,17 @@ export function ItemRoute() {
     board,
     machines,
     fishFacets,
+    meta,
     loading,
   } = state
+
+  // Every way to get this, one entry per place. Built from the record's own
+  // windows rather than the flat rules index — see `opportunitiesFromWindows`
+  // for why the index is the wrong source here.
+  const opportunities = useMemo(
+    () => (item === null ? [] : opportunitiesFromWindows(item.availability, meta?.weatherOdds)),
+    [item, meta],
+  )
 
   // Everything that wants this item handed over. Boolean ticks — the store is
   // a CRDT of {key, signed-timestamp} and cannot count to three — with the
@@ -501,121 +568,51 @@ export function ItemRoute() {
         </label>
       )}
 
-      <Section title="Where to find it">
-        {item.availability.length === 0 ? (
-          <Unknown>No source recorded.</Unknown>
-        ) : (
-          <ul className="flex flex-col divide-y divide-rule border-rule border-y">
-            {item.availability.map((window) => (
-              // Keyed by what makes the window distinct rather than by its
-              // position: an array index changes meaning the moment a window is
-              // inserted, and these are ordered by the source, not by us.
-              <li
-                key={`${window.method}:${window.seasons.join()}:${window.locations.join()}`}
-                className="py-2"
-              >
-                <p className="text-ink text-sm">
-                  {METHOD_LABELS[window.method] ?? window.method}
-                  {window.rarity !== null && window.rarity !== 'common' && (
-                    <span className="text-ink-faint"> · {window.rarity.replace(/_/g, ' ')}</span>
-                  )}
-                </p>
-                <p className="text-ink-mute text-xs">
-                  {window.locations.map((l, i) => (
-                    <span key={l}>
-                      {i > 0 && ' · '}
-                      <Link
-                        to="/place/$id"
-                        params={{ id: l }}
-                        className="underline decoration-rule underline-offset-4 hover:text-ink"
-                      >
-                        {names.get(l) ?? l.replace(/_/g, ' ')}
-                      </Link>
-                    </span>
-                  ))}
-                  {window.requires.length > 0 && (
-                    <span className="text-ink-faint">
-                      {' — needs '}
-                      {window.requires.map((r, i) => {
-                        const parts = requirementDisplay(r, index[r.key]?.n)
-                        return (
-                          <span key={`${r.type}:${r.key}`}>
-                            {i > 0 && ' and '}
-                            {parts.prefix}
-                            {parts.linkTo === null ? (
-                              parts.label
-                            ) : (
-                              <Link
-                                to={parts.linkTo.to}
-                                params={{ id: parts.linkTo.id }}
-                                className="underline decoration-rule underline-offset-2 hover:text-ink"
-                              >
-                                {parts.label}
-                              </Link>
-                            )}
-                            {parts.suffix}
-                          </span>
-                        )
-                      })}
-                    </span>
-                  )}
-                </p>
-                <div className="mt-1 flex flex-wrap items-center gap-1">
-                  {SEASONS.filter((s) => window.seasons.includes(s)).map((season) => (
-                    <span
-                      key={season}
-                      className="rounded-pill px-1.5 py-0.5 text-[0.625rem]"
-                      style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
-                    >
-                      {season}
-                    </span>
-                  ))}
-                  {window.time === null
-                    ? // Two different nulls. 'Not applicable' is a fact — dig
-                      // spots sit there all day — and renders plainly; 'unknown'
-                      // renders nothing, and data_gaps still records the hole.
-                      window.time_precision === 'not_applicable' && (
-                        <span className="rounded-tile px-1.5 py-0.5 text-[0.625rem] text-ink-faint">
-                          any time
-                        </span>
-                      )
-                    : window.time.map((range) => (
-                        <span
-                          key={`${range.from}-${range.to}`}
-                          data-numeral
-                          className="text-ink-faint text-[0.625rem]"
-                        >
-                          {range.from}–{range.to}
-                        </span>
-                      ))}
-                  {/* An inference must never render identically to a fact. */}
-                  {window.confidence === 'inferred' && (
-                    <span className="unverified rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-                      place inferred
-                    </span>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
+      {/*
+        One section, where there used to be two.
 
-        {/*
-          The reverse lookup runs off the availability index the app has already
-          downloaded, so offering it costs nothing — and it answers the question
-          the list above raises: yes, but *where*, with the clock only where
-          the method has one.
-        */}
-        {item.availability.length > 0 && (
-          <p className="mt-2">
-            <Link
-              to="/item/$id/where"
-              params={{ id: item.id }}
-              className="tap-target text-ink-mute text-xs underline decoration-rule underline-offset-4 hover:text-ink"
-            >
-              Where can I get this? →
-            </Link>
-          </p>
+        This list and the "Where can I get this? →" link beneath it asked the
+        same question, and the page it linked to answered it better — weather,
+        frequencies and a map, none of which were here. The two are now one:
+        `OpportunityCard` renders a row per place, and the map that used to be
+        on the other screen sits under it.
+      */}
+      <Section title="Where to find it">
+        {opportunities.length === 0 ? (
+          // "No source recorded" is true of the availability data and was
+          // being printed directly above a shop selling the thing at a stated
+          // price — which is 482 items, the largest group on this screen, and
+          // reads as the app contradicting itself one line later. The gap is
+          // real and still says so; it just no longer claims to be the whole
+          // answer when the page already holds a better one.
+          <Unknown>
+            {item.sold_by.length > 0
+              ? 'Not recorded as found anywhere in the wild — but it is sold, below.'
+              : 'No source recorded.'}
+          </Unknown>
+        ) : (
+          <>
+            <ul className="flex flex-col divide-y divide-rule border-rule border-y">
+              {opportunities.map((opportunity) => (
+                // Keyed by what makes the row distinct rather than by its
+                // position: an array index changes meaning the moment a window
+                // is inserted, and these are ordered by the source, not by us.
+                <OpportunityCard
+                  key={`${opportunity.method}:${opportunity.seasons.join()}:${opportunity.locationIds.join()}`}
+                  opportunity={opportunity}
+                  locationNames={names}
+                  odds={meta?.weatherOdds}
+                  names={index}
+                />
+              ))}
+            </ul>
+            <WhereMap
+              opportunities={opportunities}
+              locations={locations}
+              artUrl={artUrl}
+              onOpen={(placeId) => void navigate({ to: '/place/$id', params: { id: placeId } })}
+            />
+          </>
         )}
       </Section>
 
@@ -791,9 +788,11 @@ export function ItemRoute() {
               const days = [
                 ...new Set(shop.hours.flatMap((h) => h.days.map((d) => DAY_NAMES[d] ?? d))),
               ]
-              const rotates = shop.stock.some((line) => line.item_id === item.id && line.rotation)
+              // The line, not just a flag off it. Everything below reads from
+              // this one lookup rather than re-scanning the stock per fact.
+              const line = shop.stock.find((entry) => entry.item_id === item.id)
               return (
-                <li key={shopId} className="flex items-center gap-2.5">
+                <li key={shopId} className="flex items-start gap-2.5">
                   <ItemIcon
                     iconKey={shop.icon_key ?? `shop/${shop.id}`}
                     name={shop.name}
@@ -826,10 +825,57 @@ export function ItemRoute() {
                         </Link>
                       </>
                     )}
-                    {(days.length > 0 || rotates) && (
+                    {(days.length > 0 || line?.rotation === true) && (
                       <span className="text-ink-faint">
                         {days.length > 0 && <> — {days.join(', ')} only</>}
-                        {rotates && <> · rotating stock</>}
+                        {line?.rotation === true && <> · rotating stock</>}
+                      </span>
+                    )}
+
+                    {/*
+                      This shop's own price, which is the accurate one. The
+                      header states the item's global `buy_value`, and one
+                      global figure cannot be right for two shops at once —
+                      the Inn sells the Lemon Pie at 650 and its recipe scroll
+                      at 400. The coin decorates and the `t` is the fact, so
+                      the figure still reads on a clone with no art.
+                    */}
+                    {line?.price !== null && line?.price !== undefined && (
+                      <span className="mt-0.5 flex items-center gap-1 text-ink text-xs">
+                        <ItemIcon iconKey="ui/tesserae" name="tesserae" size="sm" />
+                        <span>
+                          <span data-numeral>{line.price}</span>t
+                        </span>
+                        {line.seasons !== null && line.seasons.length > 0 && (
+                          <span className="text-ink-faint">
+                            {' · '}
+                            {SEASONS.filter((s) => line.seasons?.includes(s)).join(', ')} only
+                          </span>
+                        )}
+                      </span>
+                    )}
+
+                    {/*
+                      What it takes before this line appears at all — the Inn's
+                      31 upgrade-gated dishes, Hayden's 24, the Tackle Shop's
+                      five rods behind rising Fishing levels. Sixty-eight items
+                      are sold only behind one of these and, until now, none of
+                      them said so.
+
+                      Two levels, and they are different statements: the line
+                      can be gated inside a shop that is already open, and the
+                      six Saturday Market stalls do not exist at all until the
+                      bridge is repaired.
+                    */}
+                    {line !== undefined && line.requires.length > 0 && (
+                      <span className="mt-0.5 block text-xs" style={{ color: 'var(--locked)' }}>
+                        Not stocked until you <GateRun gates={line.requires} index={index} />
+                      </span>
+                    )}
+                    {shop.unlock_requires.length > 0 && (
+                      <span className="mt-0.5 block text-xs" style={{ color: 'var(--locked)' }}>
+                        The stall opens once you{' '}
+                        <GateRun gates={shop.unlock_requires} index={index} />
                       </span>
                     )}
                   </span>
@@ -1050,6 +1096,94 @@ function ItemLinkList({ ids, index }: { ids: string[]; index: DisplayIndex }) {
           and {named.length - shown.length} more
         </button>
       )}
+    </div>
+  )
+}
+
+/**
+ * A run of gates, worded as things you do and linked where they have a page.
+ *
+ * Joined with "and" rather than a separator, because these are conjunctive:
+ * every one has to be true before the line is stocked, and a "·" between them
+ * reads as a choice.
+ */
+function GateRun({ gates, index }: { gates: Gate[]; index: DisplayIndex }) {
+  return (
+    <>
+      {gates.map((gate, i) => {
+        const parts = gateDisplay(gate, index[gate.key]?.n)
+        return (
+          <span key={`${gate.type}:${gate.key}`}>
+            {i > 0 && ' and '}
+            {parts.prefix}
+            {parts.linkTo === null ? (
+              parts.label
+            ) : (
+              <Link
+                to={parts.linkTo.to}
+                params={{ id: parts.linkTo.id }}
+                className="underline decoration-current underline-offset-2"
+              >
+                {parts.label}
+              </Link>
+            )}
+            {parts.suffix}
+          </span>
+        )
+      })}
+    </>
+  )
+}
+
+/**
+ * The places above, on the map.
+ *
+ * Moved here from the `/item/$id/where` screen when that screen was folded in.
+ * Pins land on each opportunity's location; a single region focuses, several
+ * show the whole valley. Rendered under the list because the list is the
+ * answer and the map is where to point it — and skipped entirely when no
+ * opportunity names a place, because an empty map answers nothing.
+ */
+function WhereMap({
+  opportunities,
+  locations,
+  artUrl,
+  onOpen,
+}: {
+  opportunities: { locationIds: string[] }[]
+  locations: LocationLite[]
+  artUrl: string | null
+  onOpen: (placeId: string) => void
+}) {
+  const byId = new Map(locations.map((l) => [l.id, l]))
+  // Every place across every window, deduplicated. This is where "three ponds
+  // is three places to go" is actually answered — three pins, one row.
+  const targets = [...new Set(opportunities.flatMap((o) => o.locationIds))]
+    .map((locId) => byId.get(locId))
+    .filter((l): l is LocationLite => l !== undefined)
+  if (targets.length === 0) return null
+
+  const regionOf = (l: LocationLite): string | null =>
+    l.shape !== null ? l.id : (l.parent_id ?? null)
+  const regionIds = [
+    ...new Set(targets.flatMap((l) => (regionOf(l) === null ? [] : [regionOf(l)]))),
+  ]
+  const regions = locations
+    .filter((l) => l.shape !== null)
+    .map((l) => ({ id: l.id, name: l.name, shape: l.shape, anchor: l.anchor }))
+
+  return (
+    <div className="mt-4 rounded-card border border-rule bg-surface p-2">
+      <ValleyMap
+        viewBox="0 0 5442 3599"
+        regions={regions}
+        focusId={regionIds.length === 1 ? (regionIds[0] ?? null) : null}
+        artUrl={artUrl}
+        pins={targets.flatMap((l) =>
+          l.anchor === null ? [] : [{ id: l.id, x: l.anchor.x, y: l.anchor.y, label: l.name }],
+        )}
+        onPinClick={onOpen}
+      />
     </div>
   )
 }

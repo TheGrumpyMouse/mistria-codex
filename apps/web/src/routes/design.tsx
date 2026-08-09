@@ -57,7 +57,15 @@ export function DesignRoute() {
             <Swatch token="museum" />
             <Swatch token="gap" />
             <Swatch token="locked" />
-            <span className="unverified rounded-tile px-2 py-1 text-xs">place inferred</span>
+            {/* `.unverified` marks the deduced thing itself, not a chip beside
+                it. It used to be a standalone "place inferred" tile, which read
+                as a fact about the row rather than a qualifier on the place. */}
+            <span className="text-sm">
+              The Beach <span className="unverified px-1">Sweetwater Farm</span>
+              <span className="block text-ink-faint text-xs">
+                place inferred from its ocean habitat
+              </span>
+            </span>
           </div>
         </Block>
 

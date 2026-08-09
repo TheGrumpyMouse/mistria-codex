@@ -206,7 +206,40 @@ export function requirementDisplay(req: Requirement, name?: string): Requirement
   if (req.type === 'location') {
     return { prefix: '', label, suffix: ' unlocked', linkTo: { to: '/place/$id', id: req.key } }
   }
+  // A skill gate is the one requirement whose *number* is the requirement:
+  // the Tackle Shop sells five rods behind Fishing 8, 15, 20, 30 and 45, and
+  // without the level all five read as the same gate. Falling through to the
+  // bare label lost it silently.
+  if (req.type === 'skill' && typeof req.value === 'number') {
+    return { prefix: '', label, suffix: ` level ${req.value}`, linkTo: null }
+  }
   return { prefix: '', label, suffix: '', linkTo: null }
+}
+
+/**
+ * The same requirement worded as something you *do*, for a sentence that leads
+ * with "until you".
+ *
+ * `requirementDisplay` hands back a noun for a perk and a verb for a quest,
+ * which is right where the lead-in is "needs" and wrong where it is "until
+ * you" — "until you the Steady Supplies perk" is not a sentence. Each type gets
+ * its own verb here rather than the caller picking one, because a screen that
+ * spells its own wording is how the next requirement type reaches a player as
+ * `town_rank`.
+ */
+export function gateDisplay(req: Requirement, name?: string): RequirementDisplay {
+  const label = name ?? titleCase(req.key)
+  if (req.type === 'quest') {
+    return { prefix: 'finish “', label, suffix: '”', linkTo: { to: '/quest/$id', id: req.key } }
+  }
+  if (req.type === 'perk') return { prefix: 'take the ', label, suffix: ' perk', linkTo: null }
+  if (req.type === 'location') {
+    return { prefix: 'unlock ', label, suffix: '', linkTo: { to: '/place/$id', id: req.key } }
+  }
+  if (req.type === 'skill' && typeof req.value === 'number') {
+    return { prefix: 'reach ', label, suffix: ` level ${req.value}`, linkTo: null }
+  }
+  return { prefix: 'have ', label, suffix: '', linkTo: null }
 }
 
 /**

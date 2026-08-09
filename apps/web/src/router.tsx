@@ -22,7 +22,6 @@ import { SearchRoute } from '~/routes/search'
 import { SettingsRoute } from '~/routes/settings'
 import { TodayRoute } from '~/routes/today'
 import { VillagerRoute } from '~/routes/villager'
-import { WhereRoute } from '~/routes/where'
 
 const rootRoute = createRootRoute({ component: AppShell })
 
@@ -74,17 +73,23 @@ const itemRoute = createRoute({
 })
 
 /**
- * Reverse lookup, under the item it is about: where, and if it matters, when.
+ * The reverse lookup used to live here, and now lives on the item page.
  *
- * It takes the same validated instant as Today, because "in 43 days" has to be
- * counted from somewhere and the somewhere is whatever date the user was
- * looking at. A link to this page therefore carries that date with it.
+ * It and the item page's own "Where to find it" asked the same question from
+ * one tap apart, and this screen answered it better — weather, frequencies and
+ * a map that the item page did not have. Folding it in put those on the page
+ * that was already open rather than behind a link that read like a different
+ * question.
+ *
+ * The path survives as a redirect for the same reason `/calendar` does: a URL
+ * that once worked should never start answering "not found".
  */
 const whereRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/item/$id/where',
-  component: WhereRoute,
-  validateSearch: InstantSearch,
+  beforeLoad: ({ params }) => {
+    throw redirect({ to: '/item/$id', params: { id: params.id } })
+  },
 })
 
 /**

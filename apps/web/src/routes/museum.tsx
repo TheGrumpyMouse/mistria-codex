@@ -306,6 +306,14 @@ export function MuseumRoute() {
                             name={entry?.n ?? id}
                             size="sm"
                           />
+                          {/*
+                            One link, not two. This row used to carry a
+                            separate "where?" shortcut to the reverse-lookup
+                            screen; that screen is now the item page's first
+                            section, so the shortcut and the name pointed at
+                            the same URL — and two links to one place in a
+                            three-element row is noise, not an affordance.
+                          */}
                           <Link
                             to="/item/$id"
                             params={{ id }}
@@ -317,22 +325,6 @@ export function MuseumRoute() {
                           >
                             {entry?.n ?? id.replace(/_/g, ' ')}
                           </Link>
-
-                          {/*
-                          The most valuable placement of the reverse lookup:
-                          this row is a thing you still need, and "where do I
-                          get it" is the only question left about it. Not shown
-                          on a donated row — that question is answered.
-                        */}
-                          {!isDone && (
-                            <Link
-                              to="/item/$id/where"
-                              params={{ id }}
-                              className="tap-target shrink-0 text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
-                            >
-                              where?
-                            </Link>
-                          )}
                         </li>
                       )
                     })}

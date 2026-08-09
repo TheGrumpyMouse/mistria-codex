@@ -126,9 +126,12 @@ async function sweep(label, viewport) {
     }
   }
 
-  // —— the where-screen, for something with real availability ——
+  // —— the retired where-screen still answers, rather than 404ing ——
+  // It was folded into the item page; the path stays as a redirect because a
+  // URL that once worked should never start saying "not found".
   const whereText = await visit('/item/heather/where')
-  check(`${label} where screen renders`, whereText.includes('Where to get'))
+  check(`${label} the old where URL still answers`, whereText.includes('Where to find it'))
+  check(`${label} the old where URL redirects to the item`, /\/item\/heather$/.test(page.url()))
 
   // —— an unknown id must land somewhere sane, not blow up ——
   const missing = await visit('/item/definitely_not_an_item')

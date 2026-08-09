@@ -39,9 +39,17 @@ time line — never a "time unknown" badge (removed by owner decision: it served
 no reader). *Not applicable* is a fact and renders plainly ("any time").
 `data_gaps` still records the hole in the data.
 
-The `.unverified` dashed treatment marks **inferences** ("place inferred") and
-kindred hedges — a deduction must never render identically to a fact. **Never
-a colour** — colour is spoken for by the seasons.
+The `.unverified` dashed treatment marks **inferences** and kindred hedges — a
+deduction must never render identically to a fact. **Never a colour** — colour
+is spoken for by the seasons.
+
+**The hedge goes on the deduced thing, and says what it was deduced from.** It
+used to be a standalone "place inferred" chip in the item page's tag row, which
+read as a fact about the whole window rather than a qualifier on the three
+places above it. Now the place links themselves carry `.unverified` and a line
+underneath names the habitat they were expanded from — 123 of the 153 inferred
+windows state one, and the other 30 say "places inferred" flat. A hedge that
+does not say what it is hedging is a warning label with no text.
 
 **A constraint that excludes nothing is not worth printing.** Weather is the
 case that makes this concrete: a rule's `wx` is already intersected with what
@@ -85,12 +93,56 @@ The choice is a **preference**, in localStorage beside `display-mode`, not in
 the URL: it changes the order of the same rows, not the answer, and two
 identical answers should not be two different links.
 
+### 2b. The item page reads its own record, never the flat rules index
+
+"Where to find it" and a "Where can I get this? →" link one line below it asked
+the same question, and the linked screen answered it better. They are one
+section now; `/item/$id/where` is a redirect, and `OpportunityCard` is what
+survived of it.
+
+**The obvious source for that list is `availability.json`, and it is the wrong
+one three times over** — this is the part to not undo:
+
+- The index **has no row for eleven items** whose only method is a machine
+  (`apiary`, `terrarium` — honey, fish bait, bug pheromone). Reading from it
+  blanks their section entirely, and silently.
+- `rule.k` is the entity **kind**, not the method. A fish's page would say
+  "Fish · The Beach" where its own window says "Fishing".
+- A window's `requires` are `{type, key}` with real ids. The index ships
+  display-name strings (`quest:Repair the Beach Bridge`) that have to be matched
+  back, and cannot link at all when two records share a name.
+
+It also costs a 222KB fetch the page has no other use for.
+
+**One card per window, not per place.** The screen this replaced split them,
+correctly — each of its rows carried its own countdown, so three ponds were
+three answers. With no date to differ on, splitting produces three cards
+identical but for the place name, each repeating the same weather sentence. The
+map under the list pins every place, which is where "three ponds is three places
+to go" actually gets answered.
+
+**No date, deliberately.** The countdown did not come across. The item route
+carries no instant — so `/where` had been counting "in 43 days" from Spring 1
+year 1 whatever date you were looking at — and "available now" needs a clock
+comparison that §3 forbids here, because `items.json` still ships ten wrapping
+windows. Dates belong to the calendar and the map, which both have one.
+
 ### 3. Never write `if (start > end)` for a time window
 
-Midnight wrapping is resolved at build time. An availability window ships as
-non-wrapping minute intervals; a schedule block ships split, with `to: "00:00"`
-meaning end of day. If you find yourself comparing a start to an end to work out
-which side of midnight something is on, the bug is upstream — fix it there.
+Midnight wrapping is resolved at build time **in the flat rules index** — a
+`Rule`'s `t` is non-wrapping minute intervals — and a schedule block ships
+split, with `to: "00:00"` meaning end of day. If you find yourself comparing a
+start to an end to work out which side of midnight something is on, the bug is
+upstream — fix it there.
+
+**`items.json` is the exception, and it is not fixed.** Ten of its 58 time
+ranges still wrap (`20:00–02:00`, the night bugs), because the split happens on
+the way into the index and not into the record. Clock strings off an
+availability window are therefore safe to **render** and never safe to compare;
+the item page renders them and states no "available now" for exactly this
+reason. Splitting them at build would make the record uglier to read than the
+screen it feeds, so the honest options are to leave them and never compare, or
+to ship a second pre-split field. Do not quietly start comparing.
 
 ### 4. A missing sprite is normal, not an error
 
@@ -264,7 +316,7 @@ pnpm e2e              the Playwright suite in e2e/ against dist/ (build:ship + b
 ```
 
 **`pnpm e2e` is the local gate for UI changes.** It serves `dist/` under the
-production base path and runs eight specs, in three layers:
+production base path and runs nine specs, in three layers:
 
 - **`sweep`** opens every static route and a sample of every category — ids
   drawn from the shipped index, so it covers whatever the dataset grew — and
@@ -280,6 +332,11 @@ production base path and runs eight specs, in three layers:
 - **`sort`** asserts the findable lists order by what their own tags say. A
   sort is the kind of feature that always *looks* like it works, so the checks
   read the rendered tag and the position and require them to agree.
+- **`item`** asserts the two things the item page derives rather than prints —
+  the weather note and a shop line's gate. Both fail as *absence*, which looks
+  like a fish with no weather and an item you can buy today, so every positive
+  case is paired with the negative one that proves the test rather than the
+  rendering.
 - **`smoke` / `mobile` / `tour` / `stale-version`** assert named features.
 
 **A conditional assertion is not an assertion.** `if (await x.count() > 0)`
