@@ -4,6 +4,7 @@ import { Column } from '~/app/AppShell'
 import { useServiceWorker } from '~/app/ServiceWorkerProvider'
 import { Section } from '~/components/Section'
 import { loadMeta } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { allProgress, db } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
 import {
@@ -60,6 +61,7 @@ const REASONS: Record<string, string> = {
 }
 
 export function SettingsRoute() {
+  useDocumentTitle('Settings')
   const [code, setCode] = useState<string | null>(null)
   const [draft, setDraft] = useState('')
   const [rows, setRows] = useState<number | null>(null)

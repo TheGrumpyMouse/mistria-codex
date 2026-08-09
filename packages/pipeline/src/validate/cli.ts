@@ -27,6 +27,7 @@ import { checkMuseum } from './museum.js'
 import { checkDuplicateKeys, checkOrphans, checkReferentialIntegrity } from './refint.js'
 import { type Finding, summarise } from './report.js'
 import { checkAjv, checkZod } from './schema-check.js'
+import { checkSeo } from './seo.js'
 import { checkSourceAgreement } from './source-agreement.js'
 import { checkSpoilers } from './spoilers.js'
 
@@ -54,6 +55,7 @@ async function main(): Promise<void> {
   findings.push(...(await checkSourceAgreement(loaded)))
   findings.push(...(await checkLicensing()))
   findings.push(...(await checkSpoilers(loaded)))
+  findings.push(...(await checkSeo()))
 
   const coverage = computeCoverage(loaded)
   findings.push(...coverageFindings(coverage))

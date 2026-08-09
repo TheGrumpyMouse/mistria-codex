@@ -291,6 +291,49 @@ Compiles `data/` into what the app actually fetches:
 `dataVersion` is content-addressed, so a rebuild with no data change produces
 the same version: no service-worker churn, no spurious re-download.
 
+### `build:seo` — the crawlable surface
+
+The app is invisible to search, for two compounding reasons that no amount of
+metadata fixes:
+
+1. **Hash routing collapses every screen to one URL.** Crawlers strip
+   fragments, so `#/item/ore_copper` and `#/museum` are both
+   `/mistria-codex/`. Google's `#!` scheme was deprecated in 2015 and removed.
+2. **AI crawlers do not execute JavaScript.** GPTBot, ClaudeBot and
+   PerplexityBot fetch raw HTML and stop; one measurement had ClaudeBot
+   downloading JS on 23.8% of requests and running it on none. Googlebot is
+   the only major crawler that renders. So an AI crawler sees
+   `<div id="root"></div>` and nothing else.
+
+The answer is a second surface rather than a rebuilt first one: `build/seo/`
+emits **1,396 static HTML pages plus 177 moved-id stubs** into
+`apps/web/public/guide/`, generated from the same `data/`, needing no runtime.
+`sitemap.xml`, `robots.txt` and `llms.txt` land beside them.
+
+| Decision | Why |
+|---|---|
+| One directory, wiped and rewritten each run | `rm -rf guide/` removes the feature entirely — the `assets/game/` discipline applied to a second generated tree. Also means a renamed record cannot strand a stale page. |
+| `render.ts` owns all markup; `pages.ts` returns data | Escaping lives in one function instead of fourteen builders. |
+| Furniture, cosmetics and 221 factless rows excluded | 1,285 near-duplicate pages ("Basic Wood Chest" ×15) is the thin-content pattern, and it drags the pages worth reading down with it. |
+| Nothing `spoiler` or `unreleased` is published | The app veils these; publishing them hands the reveal to Google. `validate/seo.ts` fails the build on it. |
+| No `lastmod` in the sitemap | The only available timestamp is `builtAt`, which moves every deploy. An always-"now" lastmod is worse than none. |
+| Text only, no game art | Keeps pages light and the takedown story unchanged. `og:image` is the one exception and is omitted when no art is packed. |
+
+**The trap it had to avoid** is worth stating because it would have been
+silent: `injectManifest.globPatterns` includes `**/*.html`, and Vite copies
+`public/` into `dist/` verbatim, so all 1,573 pages would have entered the
+Workbox precache — which is all-or-nothing, meaning one 404 among them stops
+the service worker installing and takes offline mode with it. `'**/guide/**'`
+in `globIgnores` prevents it and CI asserts the precache holds zero `guide/`
+entries.
+
+`robots.txt` is emitted but **does nothing today**: crawlers read it only at
+the domain root, which on `user.github.io` belongs to the user-page repository.
+It becomes correct the day a custom domain is attached. `llms.txt` is
+speculative — Google's June 2026 documentation says Search ignores it, and
+Ahrefs found 97% of valid files received zero bot requests in a month — so it
+ships as a free option and nothing depends on it.
+
 ### `assets/` — the art path
 
 `fetch.ts` pulls wiki-hosted sprites; `game-art.ts` copies the ones the wiki has
@@ -538,7 +581,7 @@ that cannot work.
 
 ## 10. Validation and CI
 
-### `pnpm validate` — thirteen checks
+### `pnpm validate` — fourteen checks
 
 | Check | Catches |
 |---|---|
@@ -553,6 +596,7 @@ that cannot work.
 | `checkSourceAgreement` | Wiki vs game files — **reported, never auto-corrected** |
 | `checkLicensing` | Prose keys, long strings, stray images, manifest parity, pasted wikitext |
 | `checkSpoilers` | Spoiler flags against the curated rules |
+| `checkSeo` | Guide slug collisions, a spoiler reaching a public URL, a broken internal link |
 | `coverageFindings` | Fields below their expected fill rate |
 | `assetCoverageFindings` | Records whose `icon_key` resolves to no sprite |
 
@@ -582,7 +626,7 @@ detects and fails loudly instead of deploying an artifact nobody will see.
 
 ### `pnpm e2e` — the local gate, never CI
 
-Ten Playwright specs against a real production build in three layers:
+Eleven Playwright specs against a real production build in four layers:
 
 - **`sweep`** opens every static route and a sample of every category, with ids
   drawn from the shipped index so it covers whatever the dataset grew. It fails
@@ -596,6 +640,13 @@ Ten Playwright specs against a real production build in three layers:
   than prints — a sprite really rendering, a list ordering by what its own tags
   say, a weather note, a shop gate, a mine's floor range. These exist because
   every one of them fails as **absence**, which looks like ordinary data.
+- **`crawl`** runs the whole context with `javaScriptEnabled: false` — the
+  closest a browser gets to being GPTBot — and asserts a guide page carries its
+  facts, its canonical, its structured data and its attribution in the raw
+  response. Its negative control is the load-bearing half: the app shell, same
+  browser and same settings, must render an *empty* `#root`. Either assertion
+  alone proves nothing; the pair is what shows the static page is doing the
+  work.
 
 Two standing rules: a conditional assertion is not an assertion (assert the
 precondition too), and every positive case is paired with the negative one that

@@ -25,6 +25,7 @@
     "enrich:pages": "pnpm --filter @mistria/pipeline run enrich:pages",
     "build:data": "pnpm --filter @mistria/pipeline run build:data",
     "build:ship": "pnpm --filter @mistria/pipeline run build:ship",
+    "build:seo": "pnpm --filter @mistria/pipeline run build:seo",
     "validate": "pnpm --filter @mistria/pipeline run validate",
     "data:unresolved": "pnpm --filter @mistria/pipeline run unresolved",
     "data:vocab": "pnpm --filter @mistria/pipeline run vocab:report",

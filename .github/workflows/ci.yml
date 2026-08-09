@@ -110,11 +110,29 @@ jobs:
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
 
+      # The guide is ~1,400 static HTML pages under public/, and every one of
+      # them matches the service worker's `**/*.html` precache glob. They are
+      # excluded by `globIgnores` in vite.config.ts — but precaching is
+      # all-or-nothing, so if that exclusion is ever dropped the worker stops
+      # installing and offline mode dies silently, on every device, while the
+      # site still looks perfect. Cheap assertion, total failure mode.
+      - name: Assert the guide is not in the service worker precache
+        run: |
+          COUNT=$(grep -o '"url":"[^"]*"' apps/web/dist/sw.js | grep -c 'guide/' || true)
+          echo "precache entries under guide/: $COUNT"
+          if [ "$COUNT" != "0" ]; then
+            echo "::error::$COUNT guide pages entered the Workbox precache manifest. Precaching is all-or-nothing — one 404 stops the service worker installing. Restore '**/guide/**' in injectManifest.globIgnores (apps/web/vite.config.ts)."
+            exit 1
+          fi
+
       - name: Size report
         run: |
           echo '### Shipped bundle' >> "$GITHUB_STEP_SUMMARY"
           du -sh apps/web/public/data | awk '{print "Data: " $1}' >> "$GITHUB_STEP_SUMMARY"
           du -sh apps/web/public/assets 2>/dev/null | awk '{print "Assets: " $1}' >> "$GITHUB_STEP_SUMMARY" || true
+          du -sh apps/web/public/guide 2>/dev/null | awk '{print "Guide: " $1}' >> "$GITHUB_STEP_SUMMARY" || true
+          find apps/web/public/guide -name index.html 2>/dev/null | wc -l \
+            | awk '{print "Guide pages: " $1}' >> "$GITHUB_STEP_SUMMARY" || true
       - uses: actions/upload-artifact@v4
         with:
           name: data-bundle

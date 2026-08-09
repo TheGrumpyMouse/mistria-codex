@@ -4,6 +4,7 @@ import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { loadRequestBoard } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import type { BoardRequest } from '~/lib/request-board'
 import { itemsWanted } from '~/lib/request-board'
 import { useData } from '~/lib/use-data'
@@ -30,6 +31,7 @@ const SEASONS = ['spring', 'summer', 'fall', 'winter'] as const
 type SeasonFilter = (typeof SEASONS)[number] | 'all'
 
 export function BoardRoute() {
+  useDocumentTitle('Request board')
   // View, season and filter live in the URL so back restores this screen
   // as it was — same grouping, same rows, same scroll.
   const searchParams = route.useSearch()

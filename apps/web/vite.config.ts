@@ -18,6 +18,25 @@ const here = dirname(fileURLToPath(import.meta.url))
  */
 const base = process.env.BASE_PATH ?? '/'
 
+/**
+ * The absolute origin the site is served from.
+ *
+ * `base` is only the path half, and three tags in index.html — canonical,
+ * og:url and og:image — are required to be absolute. Hardcoding a host in the
+ * HTML would mean a fork or a rename silently pointing every share and every
+ * canonical at the original site, which is the same failure mode as the leading
+ * slash: correct locally, wrong in production, and silent either way.
+ *
+ * Shared with the guide generator, which reads the same variable.
+ */
+const siteUrl = `${(process.env.MISTRIA_SITE_URL ?? 'https://thegrumpymouse.github.io/mistria-codex/').replace(/\/+$/, '')}/`
+
+/** Substitute `%SITE_URL%` in index.html. Vite only expands `%VAR%` from .env files. */
+const absoluteUrls = {
+  name: 'mistria-absolute-urls',
+  transformIndexHtml: (html: string): string => html.replaceAll('%SITE_URL%', siteUrl),
+}
+
 /** The repo's own package version, so the About page can name what you're running. */
 const pkg = JSON.parse(readFileSync(resolve(here, 'package.json'), 'utf8')) as { version: string }
 
@@ -26,6 +45,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    absoluteUrls,
     VitePWA({
       // `injectManifest` rather than `generateSW`: the caching rules here are
       // specific enough — versioned-immutable, art-lazy, meta-revalidated —
@@ -38,8 +58,19 @@ export default defineConfig({
         // The shell only. The data bundle and the sprite atlases are cached at
         // runtime, because precaching is all-or-nothing and a single 404 there
         // would stop the worker installing at all.
+        //
+        // `guide/**` is the same hazard wearing a different hat, and it is the
+        // one that would actually have fired: `pnpm build:seo` writes ~1,400
+        // static HTML pages under `public/guide/`, every one of them matching
+        // `**/*.html`. Left in, each install would precache several megabytes
+        // of crawler pages nobody asked for, and one 404 among them would stop
+        // the service worker installing at all — taking offline mode with it.
+        //
+        // The guide is deliberately not offline-capable. It is a crawler and
+        // cold-visitor surface; the app is the offline one, and conflating the
+        // two is what breaks the install.
         globPatterns: ['**/*.{js,css,html,svg,ttf}'],
-        globIgnores: ['**/data/**', '**/assets/game/**'],
+        globIgnores: ['**/data/**', '**/assets/game/**', '**/guide/**'],
       },
       manifest: {
         name: 'Mistria Codex',

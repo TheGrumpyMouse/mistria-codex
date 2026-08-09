@@ -9,6 +9,7 @@ import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { useDisplayMode } from '~/lib/display-mode'
+import { useDocumentTitle } from '~/lib/head'
 import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -103,6 +104,7 @@ export function VillagerRoute() {
   }, [id])
 
   const { person, prefs, index, loading } = state
+  useDocumentTitle(person?.name ?? null)
   const portrait = useAtlas().portrait(person?.icon_key ?? null)
   const [mode] = useDisplayMode()
   const spoilers = useSpoilers()

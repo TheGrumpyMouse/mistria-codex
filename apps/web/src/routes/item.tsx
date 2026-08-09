@@ -19,6 +19,7 @@ import {
   loadMeta,
   loadRequestBoard,
 } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import {
   categoryLabelOne,
   gateDisplay,
@@ -338,6 +339,7 @@ export function ItemRoute() {
     meta,
     loading,
   } = state
+  useDocumentTitle(item?.name ?? null)
 
   // Every way to get this, one entry per place. Built from the record's own
   // windows rather than the flat rules index — see `opportunitiesFromWindows`

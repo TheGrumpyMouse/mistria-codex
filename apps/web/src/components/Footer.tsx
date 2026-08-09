@@ -11,14 +11,13 @@
  * type the palette allows, and never competes with the thing you came for.
  */
 
-export const ATTRIBUTION_TEXT =
-  'This is an unofficial fan-made companion app. All game assets, sprites, UI ' +
-  'graphics, and character designs are the sole property of NPC Studio. We do ' +
-  'not claim ownership of these assets. Full credit goes to the creators at NPC ' +
-  'Studio.'
+// From `@mistria/schema`, not declared here: the generated guide prints the
+// same statement on every page and the pipeline cannot import from `apps/web`.
+// Re-exported so `about.tsx` keeps importing it from the component that
+// renders it, rather than every consumer having to learn where it moved.
+import { ATTRIBUTION_TEXT, OFFICIAL_SITE, STEAM_PAGE, WIKI_SITE } from '@mistria/schema'
 
-export const OFFICIAL_SITE = 'https://fieldsofmistria.com'
-export const STEAM_PAGE = 'https://store.steampowered.com/app/2142790'
+export { ATTRIBUTION_TEXT, OFFICIAL_SITE, STEAM_PAGE }
 
 export function Footer() {
   return (
@@ -27,7 +26,7 @@ export function Footer() {
       <p className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
         <FooterLink href={OFFICIAL_SITE}>Official site</FooterLink>
         <FooterLink href={STEAM_PAGE}>Steam</FooterLink>
-        <FooterLink href="https://fieldsofmistria.wiki.gg">Wiki</FooterLink>
+        <FooterLink href={WIKI_SITE}>Wiki</FooterLink>
       </p>
     </footer>
   )

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { doneIn, setDone } from '~/lib/progress'
 import { iconKeyFor } from '~/lib/search'
 import { useData } from '~/lib/use-data'
@@ -65,6 +66,7 @@ const WINGS = [
 ] as const
 
 export function MuseumRoute() {
+  useDocumentTitle('Museum')
   // Wing and filter live in the URL, so back from an item page restores the
   // same tab, the same rows, and (with the data cache) the same scroll.
   const searchParams = route.useSearch()

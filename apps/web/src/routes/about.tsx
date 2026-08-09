@@ -1,5 +1,6 @@
 import { Column } from '~/app/AppShell'
 import { ATTRIBUTION_TEXT, OFFICIAL_SITE, STEAM_PAGE } from '~/components/Footer'
+import { useDocumentTitle } from '~/lib/head'
 
 /**
  * About, credits, and the honest statement of what this is.
@@ -12,6 +13,7 @@ import { ATTRIBUTION_TEXT, OFFICIAL_SITE, STEAM_PAGE } from '~/components/Footer
  * in the footer, and two copies of a legal statement drift.
  */
 export function AboutRoute() {
+  useDocumentTitle('About & credits')
   return (
     <Column>
       <div className="flex flex-col gap-6">

@@ -16,6 +16,7 @@ import {
   groupByKind,
   KIND_LABELS,
 } from '~/lib/findable'
+import { useDocumentTitle } from '~/lib/head'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
 import { type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
 import { sortEntities, useListSort } from '~/lib/list-sort'
@@ -71,6 +72,7 @@ const route = getRouteApi('/')
  * that match — finding one fish must not require knowing it is a fish.
  */
 export function TodayRoute() {
+  useDocumentTitle('Calendar')
   const search = route.useSearch()
   const navigate = route.useNavigate()
 

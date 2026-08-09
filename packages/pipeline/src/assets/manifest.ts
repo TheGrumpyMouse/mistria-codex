@@ -100,12 +100,17 @@ export const AssetManifest = z.object({
 })
 export type AssetManifest = z.infer<typeof AssetManifest>
 
-/** The attribution line, verbatim, in the register itself as well as in the UI. */
-export const ATTRIBUTION_TEXT =
-  'This is an unofficial fan-made companion app. All game assets, sprites, UI ' +
-  'graphics, and character designs are the sole property of NPC Studio. We do ' +
-  'not claim ownership of these assets. Full credit goes to the creators at NPC ' +
-  'Studio.'
+/**
+ * The attribution line, verbatim, in the register itself as well as in the UI.
+ *
+ * Re-exported rather than declared: it now lives in `@mistria/schema` because
+ * the app footer, the asset register and the generated guide all print it, and
+ * three literals is three chances to drift. Kept as an export here so the
+ * asset modules that already import it from this file do not all have to move.
+ */
+import { ATTRIBUTION_TEXT } from '@mistria/schema'
+
+export { ATTRIBUTION_TEXT }
 
 export const MANIFEST_COMMENT: readonly string[] = [
   'Every piece of game art in this repository, and where it came from.',

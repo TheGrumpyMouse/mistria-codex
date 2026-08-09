@@ -40,6 +40,7 @@ import { writeJson } from '../lib/write-json.js'
 import { buildAvailabilityBundle } from './availability.js'
 import { loadGameFacts, loadWeatherClasses, weatherOdds } from './game-facts.js'
 import { buildRequestBoard } from './request-board.js'
+import { buildSeo } from './seo.js'
 
 const sha256 = (text: string): string => createHash('sha256').update(text, 'utf8').digest('hex')
 
@@ -451,6 +452,14 @@ async function main(): Promise<void> {
         `+ ${meta.assets.portraits} portraits, v${meta.assets.version}`,
     )
   }
+
+  // The static guide, from the same `data/` and the meta just computed — it
+  // needs `assets` to decide whether a social image exists. Here rather than in
+  // `buildShip()` because that function's contract is the bundle the PWA
+  // fetches, and the guide is a different surface that happens to share inputs.
+  // `pnpm build:seo` runs it alone when iterating on the pages.
+  const seo = await buildSeo(meta)
+  consola.success(`Guide: ${seo.pages} pages + ${seo.redirects} moved-id stubs`)
 }
 
 const entry = argv[1]

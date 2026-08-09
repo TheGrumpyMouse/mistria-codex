@@ -5,6 +5,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import { loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { categoryLabel, subcategoryLabel } from '~/lib/labels'
 import { routeFor, typedTheName } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
@@ -59,6 +60,7 @@ const CATEGORIES: { id: string; label: string }[] = [
 ]
 
 export function BrowseRoute() {
+  useDocumentTitle('Browse')
   // Category and filter live in the URL, so the back button restores this
   // screen exactly — same rows, same scroll. Typing replaces the history
   // entry rather than stacking one per keystroke.

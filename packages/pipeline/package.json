@@ -11,6 +11,7 @@
     "enrich:pages": "tsx src/enrich/pages.ts",
     "build:data": "tsx src/build/data.ts",
     "build:ship": "tsx src/build/ship.ts",
+    "build:seo": "tsx src/build/seo.ts",
     "validate": "tsx src/validate/cli.ts",
     "unresolved": "tsx src/validate/unresolved.ts",
     "vocab:report": "tsx src/normalise/vocab-report.ts",

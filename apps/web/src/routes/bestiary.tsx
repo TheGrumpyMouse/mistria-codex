@@ -5,6 +5,7 @@ import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { floorRange, type MineFloors } from '~/lib/labels'
 import { iconKeyFor } from '~/lib/search'
 
@@ -68,6 +69,7 @@ export function BestiaryRoute() {
   }, [id])
 
   const { monster, biomes, index, loading } = state
+  useDocumentTitle(monster?.name ?? null)
 
   if (loading) {
     return (

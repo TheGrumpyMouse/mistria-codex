@@ -16,6 +16,7 @@ import { LoadError } from '~/components/Section'
 import { type MapRegionShape, ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, foundAt } from '~/lib/findable'
+import { useDocumentTitle } from '~/lib/head'
 import { titleCase } from '~/lib/labels'
 
 const route = getRouteApi('/map')
@@ -59,6 +60,7 @@ interface SpotRecord {
 }
 
 export function MapRoute() {
+  useDocumentTitle('Map')
   const artUrl = useAtlas().mapUrl('map/valley')
   const navigate = route.useNavigate()
   const { region, season, weather, q } = route.useSearch()

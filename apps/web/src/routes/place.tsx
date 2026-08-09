@@ -10,6 +10,7 @@ import { SpoilerAsk } from '~/components/Spoiler'
 import { ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, foundAt } from '~/lib/findable'
+import { useDocumentTitle } from '~/lib/head'
 import {
   floorRange,
   type PlaceLabel,
@@ -110,6 +111,7 @@ export function PlaceRoute() {
 
   const spoilers = useSpoilers()
   const { place, all, places, availability, index, seals, loading } = state
+  useDocumentTitle(place?.name ?? null)
   const selfFloors = places.get(id)?.floors ?? null
   // The region this place sits in — itself when it is one, its parent when it
   // is a building. The map panel crops to that region.

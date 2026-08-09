@@ -5,6 +5,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { SpoilerChip } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -44,6 +45,7 @@ interface SealRecord {
 }
 
 export function MinesRoute() {
+  useDocumentTitle('The Mines')
   const [state, setState] = useState<{
     mines: MineRecord[]
     seals: SealRecord[]

@@ -32,8 +32,16 @@ jobs:
       # The data bundle is a build artifact, not something committed. Building
       # it here is what makes the deployed app's data a pure function of
       # sources + curated, exactly like data/ is.
-      - name: Ship the data bundle
+      #
+      # This also writes the static guide (public/guide/, ~1,400 crawlable HTML
+      # pages) plus sitemap.xml, robots.txt and llms.txt. MISTRIA_SITE_URL is
+      # the absolute origin those need for canonicals and og:url — derived from
+      # the repository like BASE_PATH is, so a fork does not publish canonicals
+      # pointing at this account's site.
+      - name: Ship the data bundle and the guide
         run: pnpm build:ship
+        env:
+          MISTRIA_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
 
       # GitHub Pages serves a project site from /<repo>/, and every URL in the
       # app is built from import.meta.env.BASE_URL. Passing the path in rather
@@ -48,6 +56,7 @@ jobs:
         run: pnpm build:web
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
+          MISTRIA_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
           VITE_SYNC_URL: ${{ vars.VITE_SYNC_URL }}
 
       # Pages sends fixed response headers and has no rewrite rules, so a

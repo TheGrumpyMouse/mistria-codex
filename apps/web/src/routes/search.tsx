@@ -4,6 +4,7 @@ import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import { loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { categoryLabelOne, floorRange, type MineFloors } from '~/lib/labels'
 import { routeFor, search, typedTheName } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
@@ -26,6 +27,7 @@ const route = getRouteApi('/search')
  */
 
 export function SearchRoute() {
+  useDocumentTitle('Search')
   // The query lives in the URL: back from a result returns to the same
   // results at the same scroll, and a search is shareable.
   const { q } = route.useSearch()

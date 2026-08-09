@@ -9,6 +9,12 @@ dist/
 apps/web/public/data/
 # Packed atlases. The committed copies live in assets/game/ — see docs/DATA-POLICY.md.
 apps/web/public/assets/
+# The static crawler guide and its index files, from `pnpm build:seo`. Rewritten
+# wholesale every run, so nothing hand-written may live in guide/.
+apps/web/public/guide/
+apps/web/public/sitemap.xml
+apps/web/public/robots.txt
+apps/web/public/llms.txt
 
 # HTTP cache for the wiki fetcher
 .cache/

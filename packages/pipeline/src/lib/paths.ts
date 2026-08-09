@@ -36,8 +36,26 @@ export const ASSETS_MANIFEST = join(ASSETS_DIR, 'manifest.json')
 export const BUILD_DIR = join(REPO_ROOT, 'build')
 export const REPORTS_DIR = join(BUILD_DIR, 'reports')
 export const SCHEMA_DIR = join(BUILD_DIR, 'schema')
+/**
+ * The web app's static root. Vite copies it into `dist/` verbatim.
+ *
+ * Only generated output goes in here — `data/`, `assets/game/` and `guide/` are
+ * all gitignored build products. The one committed file is `favicon.svg`.
+ */
+export const WEB_PUBLIC_DIR = join(REPO_ROOT, 'apps', 'web', 'public')
+
 /** Shipped bundle the PWA fetches. Gitignored. */
-export const SHIP_DIR = join(REPO_ROOT, 'apps', 'web', 'public', 'data')
+export const SHIP_DIR = join(WEB_PUBLIC_DIR, 'data')
+
+/**
+ * The static, JS-free guide: one HTML page per record, for crawlers.
+ *
+ * Gitignored, and rewritten wholesale on every `build:seo` — so a renamed
+ * record cannot leave a stale page behind, and nothing hand-written may live
+ * here. Deleting this directory removes the entire SEO surface, which is the
+ * point: same one-directory discipline as `assets/game/`.
+ */
+export const GUIDE_DIR = join(WEB_PUBLIC_DIR, 'guide')
 /** Packed atlases and portraits the PWA fetches. Gitignored build output. */
 export const ASSETS_SHIP_DIR = join(REPO_ROOT, 'apps', 'web', 'public', 'assets', 'game')
 

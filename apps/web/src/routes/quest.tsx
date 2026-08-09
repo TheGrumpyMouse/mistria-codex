@@ -6,6 +6,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { useDocumentTitle } from '~/lib/head'
 import { iconKeyFor, routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
@@ -90,6 +91,7 @@ export function QuestRoute() {
 
   const spoilers = useSpoilers()
   const { quest, seal, index, loading } = state
+  useDocumentTitle(quest?.name ?? null)
 
   if (loading) {
     return (

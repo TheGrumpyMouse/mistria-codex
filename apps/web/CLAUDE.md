@@ -28,6 +28,16 @@ path (`../assets/fonts/Fraunces.ttf`, not `/fonts/Fraunces.ttf`).
 Routing is hash-based for the same reason: a static host has no rewrite rules,
 so `/museum` is a request for a file that does not exist.
 
+**The cost of that, stated plainly: the app is one URL to a search engine.**
+Fragments are stripped before indexing, so `#/item/ore_copper` and `#/museum`
+are the same document — and no major AI crawler executes JavaScript, so what
+they see is `<div id="root"></div>`. This is not something meta tags fix. It is
+why `pnpm build:seo` generates a separate static surface under `public/guide/`:
+~1,400 plain HTML pages, one per record, that need no runtime. If you are
+tempted to add SEO to the app itself, that is the thing to extend instead —
+and read the precache note under "Things that will bite" before you generate
+anything into `public/`.
+
 ### 2. `null` is "unknown", and it never renders as `0` or an empty list
 
 The dataset is careful about the difference between *not applicable*, *unknown*
@@ -408,6 +418,16 @@ MSYS_NO_PATHCONV=1 BASE_PATH=/mistria-codex/ pnpm preview:web
   because the shell had.** `Atlas` now stamps `?v=${meta.assets.version}` on
   every URL it builds; keep it that way, and if a new art family is added, it
   goes through the atlas rather than round it.
+- **A generated HTML tree under `public/` joins the precache unless you stop
+  it, and precaching is all-or-nothing.** `injectManifest.globPatterns` is
+  `**/*.{js,css,html,svg,ttf}`, and Vite copies `public/` into `dist/`
+  verbatim — so `pnpm build:seo` writing ~1,400 pages to `public/guide/` would
+  put every one of them in the service worker's install manifest. Several
+  megabytes per install, and **one 404 among them stops the worker installing
+  at all**, which takes offline mode with it while the site still looks
+  perfect. `'**/guide/**'` is in `globIgnores` and CI asserts the precache has
+  no `guide/` entry. The guide is deliberately not offline-capable: it is a
+  crawler and cold-visitor surface, and the app is the offline one.
 - **Counter-scale map pins** (`scale(1/k)` and `vector-effect="non-scaling-stroke"`)
   or they blob at high zoom and vanish at low. And never re-render the map art on
   pan — only the transform string changes.

@@ -1,3 +1,4 @@
+export * from './attribution.js'
 export * from './availability.js'
 export * from './entities/character.js'
 export * from './entities/item.js'
