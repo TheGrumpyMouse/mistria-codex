@@ -17,7 +17,7 @@ import {
 import { type AvailabilityIndex, ruleMatches } from '~/lib/findable'
 import { titleCase } from '~/lib/instant'
 import { opportunitiesFor } from '~/lib/opportunity'
-import { questIdByName } from '~/lib/search'
+import { iconKeyFor, questIdByName } from '~/lib/search'
 
 const route = getRouteApi('/item/$id/where')
 
@@ -123,7 +123,7 @@ export function WhereRoute() {
       <BackLink fallback="/item/$id" params={{ id }} />
 
       <header className="flex items-center gap-3">
-        <ItemIcon iconKey={entry?.i ?? `item/${id}`} name={name} size="lg" />
+        <ItemIcon iconKey={iconKeyFor(id, entry)} name={name} size="lg" />
         <div className="min-w-0">
           <h1 className="truncate text-2xl">Where to get {name}</h1>
           <p className="mt-0.5 text-ink-mute text-sm">

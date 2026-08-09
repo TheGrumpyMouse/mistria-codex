@@ -78,6 +78,35 @@ export function routeFor(
 }
 
 /**
+ * Which sprite a result should draw — `routeFor`'s companion.
+ *
+ * Almost every id is in the display index and carries its own `icon_key`, so
+ * this is a fallback: it only fires for an id the index does not know. Twenty
+ * call sites used to spell that fallback as `` `item/${id}` `` regardless of
+ * what they were drawing, which handed a monster or a place the wrong glyph
+ * family and, for the two families with no art at all, two arbitrary letters.
+ * The category picks the prefix here for the same reason it picks the route
+ * there: it is the only thing that knows what the id refers to.
+ *
+ * An item falls back to `item/`, which matches no sprite and no glyph by
+ * design — its real prefix is its subcategory (`fish/`, `cooked/`, …) and an
+ * unindexed record has not told us which.
+ */
+export function iconKeyFor(id: string, entry?: { i?: string | null; c?: string }): string {
+  if (entry?.i != null) return entry.i
+  const category = entry?.c
+  if (
+    category === 'character' ||
+    category === 'location' ||
+    category === 'monster' ||
+    category === 'quest'
+  ) {
+    return `${category}/${id}`
+  }
+  return `item/${id}`
+}
+
+/**
  * Quest display name -> id, unique names only.
  *
  * Shipped rule tokens carry display names, and six request names are

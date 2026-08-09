@@ -9,6 +9,7 @@ import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { useDisplayMode } from '~/lib/display-mode'
+import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/villager/$id')
@@ -274,7 +275,7 @@ export function VillagerRoute() {
                             className="tap-target flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink text-xs transition-colors hover:bg-sunk"
                           >
                             <ItemIcon
-                              iconKey={index[item.id]?.i ?? `item/${item.id}`}
+                              iconKey={iconKeyFor(item.id, index[item.id])}
                               name={item.name}
                               size="sm"
                             />
@@ -340,24 +341,30 @@ export function VillagerRoute() {
               60 entries, pets included. The rest are unnamed or lore-only
               relatives ("Unnamed Aunt", the deceased marked †) and honestly
               stay text. */}
-          <p className="text-ink-mute text-sm">
-            {person.family.map((entry, i) => (
-              <span key={entry.relation}>
-                {i > 0 && ' · '}
+          <ul className="flex flex-wrap items-center gap-1.5 text-ink-mute text-sm">
+            {person.family.map((entry) => (
+              <li key={entry.relation}>
                 {entry.character_id === null ? (
-                  entry.relation
+                  <span className="rounded-tile border border-rule px-2 py-1 text-xs">
+                    {entry.relation}
+                  </span>
                 ) : (
                   <Link
                     to="/villager/$id"
                     params={{ id: entry.character_id }}
-                    className="underline decoration-rule underline-offset-4 hover:text-ink"
+                    className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
                   >
+                    <ItemIcon
+                      iconKey={iconKeyFor(entry.character_id, index[entry.character_id])}
+                      name={index[entry.character_id]?.n ?? entry.relation}
+                      size="sm"
+                    />
                     {entry.relation}
                   </Link>
                 )}
-              </span>
+              </li>
             ))}
-          </p>
+          </ul>
         </Section>
       )}
 

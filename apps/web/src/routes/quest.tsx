@@ -6,7 +6,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
-import { routeFor } from '~/lib/search'
+import { iconKeyFor, routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/quest/$id')
@@ -25,6 +25,8 @@ interface QuestRecord {
   id: string
   name: string
   spoiler?: boolean
+  /** `quest/<kind>`. Six of the eight kinds have art; the rest take the scroll. */
+  icon_key: string | null
   kind: string
   giver_character_id: string | null
   repeatable: boolean
@@ -127,24 +129,31 @@ export function QuestRoute() {
   return (
     <Column>
       <BackLink />
-      <header>
-        <h1 className="text-2xl">{quest.name}</h1>
-        <p className="mt-0.5 text-ink-mute text-sm">
-          {KIND_LABELS[quest.kind] ?? 'Quest'}
-          {giver !== null && (
-            <>
-              {' · from '}
-              <Link
-                to="/villager/$id"
-                params={{ id: giver }}
-                className="underline decoration-rule underline-offset-4 hover:text-ink"
-              >
-                {index[giver]?.n ?? giver.replace(/_/g, ' ')}
-              </Link>
-            </>
-          )}
-          {quest.repeatable && ' · repeatable'}
-        </p>
+      <header className="flex items-center gap-3">
+        <ItemIcon
+          iconKey={quest.icon_key ?? `quest/${quest.kind}`}
+          name={KIND_LABELS[quest.kind] ?? 'Quest'}
+          size="lg"
+        />
+        <div className="min-w-0">
+          <h1 className="text-2xl">{quest.name}</h1>
+          <p className="mt-0.5 text-ink-mute text-sm">
+            {KIND_LABELS[quest.kind] ?? 'Quest'}
+            {giver !== null && (
+              <>
+                {' · from '}
+                <Link
+                  to="/villager/$id"
+                  params={{ id: giver }}
+                  className="underline decoration-rule underline-offset-4 hover:text-ink"
+                >
+                  {index[giver]?.n ?? giver.replace(/_/g, ' ')}
+                </Link>
+              </>
+            )}
+            {quest.repeatable && ' · repeatable'}
+          </p>
+        </div>
       </header>
 
       {quest.season_restriction !== null && quest.season_restriction.length > 0 && (
@@ -174,7 +183,7 @@ export function QuestRoute() {
                   className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
                 >
                   <ItemIcon
-                    iconKey={index[entry.item_id]?.i ?? `item/${entry.item_id}`}
+                    iconKey={iconKeyFor(entry.item_id, index[entry.item_id])}
                     name={index[entry.item_id]?.n ?? entry.item_id}
                     size="sm"
                   />
@@ -207,7 +216,7 @@ export function QuestRoute() {
                         className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
                       >
                         <ItemIcon
-                          iconKey={index[objective.target_id]?.i ?? `item/${objective.target_id}`}
+                          iconKey={iconKeyFor(objective.target_id, index[objective.target_id])}
                           name={index[objective.target_id]?.n ?? objective.target_id}
                           size="sm"
                         />
@@ -227,12 +236,24 @@ export function QuestRoute() {
 
       {quest.prerequisites.length > 0 && (
         <Section title="Before it appears">
-          <ul className="flex flex-col gap-1 text-ink-mute text-sm">
-            {quest.prerequisites.map((r) => (
-              <li key={`${r.type}:${r.key}`}>
-                <Prerequisite requirement={r} index={index} />
-              </li>
-            ))}
+          <ul className="flex flex-col gap-1.5 text-ink-mute text-sm">
+            {quest.prerequisites.map((r) => {
+              const iconKey = prerequisiteIcon(r, index)
+              return (
+                <li key={`${r.type}:${r.key}`} className="flex items-center gap-2.5">
+                  {iconKey !== null && (
+                    <ItemIcon
+                      iconKey={iconKey}
+                      name={index[r.key]?.n ?? r.key.replace(/_/g, ' ')}
+                      size="sm"
+                    />
+                  )}
+                  <span className="min-w-0">
+                    <Prerequisite requirement={r} index={index} />
+                  </span>
+                </li>
+              )
+            })}
           </ul>
         </Section>
       )}
@@ -243,15 +264,18 @@ export function QuestRoute() {
         ) : (
           <>
             {(quest.rewards.tesserae !== null || quest.rewards.renown !== null) && (
-              <p className="text-ink-mute text-sm">
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-ink-mute text-sm">
                 {quest.rewards.tesserae !== null && (
-                  <span data-numeral>{quest.rewards.tesserae}t</span>
+                  <span className="inline-flex items-center gap-1">
+                    <ItemIcon iconKey="ui/tesserae" name="tesserae" size="sm" />
+                    <span data-numeral>{quest.rewards.tesserae}t</span>
+                  </span>
                 )}
-                {quest.rewards.tesserae !== null && quest.rewards.renown !== null && ' · '}
                 {quest.rewards.renown !== null && (
-                  <>
+                  <span className="inline-flex items-center gap-1">
+                    <ItemIcon iconKey="ui/renown_gold" name="renown" size="sm" />
                     <span data-numeral>{quest.rewards.renown}</span> renown
-                  </>
+                  </span>
                 )}
               </p>
             )}
@@ -265,7 +289,7 @@ export function QuestRoute() {
                       className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
                     >
                       <ItemIcon
-                        iconKey={index[itemId]?.i ?? `item/${itemId}`}
+                        iconKey={iconKeyFor(itemId, index[itemId])}
                         name={index[itemId]?.n ?? itemId}
                         size="sm"
                       />
@@ -287,6 +311,25 @@ export function QuestRoute() {
       <NotRecorded gaps={quest.data_gaps} wikiPage={quest.wiki_page} />
     </Column>
   )
+}
+
+/**
+ * Which sprite stands for a prerequisite.
+ *
+ * Distinct from `iconKeyFor` because a requirement's `key` is not always a
+ * display-index id: a skill requirement names a skill, and skills are not in
+ * the index at all. That branch is the only reason all nine `skill/*` sprites
+ * are reachable — they exist in the atlas and nothing else in the app asks for
+ * one. `year` gets nothing: a number is not a thing with a picture.
+ */
+function prerequisiteIcon(
+  requirement: { type: string; key: string },
+  index: DisplayIndex,
+): string | null {
+  if (requirement.type === 'year') return null
+  if (requirement.type === 'skill') return `skill/${requirement.key}`
+  if (requirement.type === 'building') return `building/${requirement.key}`
+  return iconKeyFor(requirement.key, index[requirement.key])
 }
 
 /**

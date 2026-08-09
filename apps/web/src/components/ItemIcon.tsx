@@ -1,4 +1,18 @@
-import { Armchair, CookingPot, Home, Landmark, Lock, MapPin, ScrollText, Shirt } from 'lucide-react'
+import {
+  Armchair,
+  CookingPot,
+  Home,
+  Landmark,
+  Lock,
+  MapPin,
+  Pickaxe,
+  Rabbit,
+  ScrollText,
+  Shirt,
+  Sparkles,
+  Store,
+  User,
+} from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { useAtlas } from '~/app/AtlasProvider'
 import { integerScale, spriteStyle } from '~/lib/sprites'
@@ -67,6 +81,12 @@ const SIZES = { sm: 24, md: 36, lg: 72 } as const
  * two arbitrary letters — recognisable at a glance without pretending to be
  * game art. Families absent here keep the initials, which remain the last
  * resort for the thousand item categories a single pictogram can't cover.
+ *
+ * `shop`, `mine`, `animal` and `skill` are here because their coverage is
+ * partial by nature: eight shops have art and the six Saturday Market stalls
+ * never will, and no `mine/*` sprite exists at all. "DS" in a tile next to a
+ * drawn General Store reads as a loading failure; a drawn store next to it
+ * reads as a stall.
  */
 const PREFIX_GLYPHS: Record<string, typeof ScrollText> = {
   quest: ScrollText,
@@ -77,6 +97,11 @@ const PREFIX_GLYPHS: Record<string, typeof ScrollText> = {
   seal: Lock,
   furniture: Armchair,
   cosmetic: Shirt,
+  shop: Store,
+  mine: Pickaxe,
+  animal: Rabbit,
+  skill: Sparkles,
+  character: User,
 }
 
 export interface ItemIconProps {

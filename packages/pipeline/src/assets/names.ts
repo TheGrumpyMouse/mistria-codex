@@ -76,16 +76,34 @@ export function localName(canonical: string): string {
 }
 
 /**
+ * A lone filename, no wikitext: `Chicken top hat.png`.
+ *
+ * Deliberately strict. Anything with a bracket, a brace, a pipe or a newline is
+ * markup rather than a name, and anything without an image extension is not a
+ * file — a loose match here would send the fetcher after prose.
+ */
+const BARE_FILE = /^[^[\]{}|<>\n]+\.(?:png|jpe?g|gif|webp|svg)$/i
+
+/**
  * `[[File:Abyssal chest.png]]` -> `Abyssal chest.png`. Null if there is no ref.
  *
  * Entities are decoded first, because Cargo hands back `Dragon&#039;s horn.png`
  * and asking the wiki for a file with a literal `&#039;` in its name gets
  * nothing — quietly, since a name that does not exist looks exactly like a
  * record that never had an icon.
+ *
+ * **A bare filename counts too.** Eighteen of the Items table's 1,154 `icon`
+ * cells hold `Chicken top hat.png` with no `[[File:…]]` around it — every animal
+ * accessory and a couple of armour pieces. Requiring the wikitext dropped all of
+ * them from the fetch inventory, and because a record that never enters the
+ * inventory cannot be reported missing, they drew a hashed glyph for months with
+ * nothing anywhere saying why. The wiki hosts the art; only the punctuation was
+ * absent.
  */
 export function fileRef(wikitext: string): string | null {
-  const match = /\[\[\s*File:([^\]|]+)/i.exec(decodeEntities(wikitext))
-  const raw = match?.[1]
+  const decoded = decodeEntities(wikitext).trim()
+  const match = /\[\[\s*File:([^\]|]+)/i.exec(decoded)
+  const raw = match?.[1] ?? (BARE_FILE.test(decoded) ? decoded : undefined)
   if (raw === undefined) return null
   const canonical = canonicalWikiName(raw)
   return canonical === '' ? null : canonical

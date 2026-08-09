@@ -53,15 +53,44 @@ which side of midnight something is on, the bug is upstream — fix it there.
 ### 4. A missing sprite is normal, not an error
 
 `<ItemIcon>` draws the game's sprite when the atlas has one and a hashed glyph
-when it does not. **The glyph path is permanent.** About thirty records have no
-art on the wiki, the atlas may not have loaded yet, and a clone that has never
-run `pnpm assets:fetch` has no art at all — the app must render correctly in
-every one of those cases. Never branch on "atlas not loaded"; ask for a sprite
-and handle `null`.
+when it does not. **The glyph path is permanent.** Thirty-two records have no art
+anywhere, the atlas may not have loaded yet, and a clone that has never run
+`pnpm assets:fetch` has no art at all — the app must render correctly in every
+one of those cases. Never branch on "atlas not loaded"; ask for a sprite and
+handle `null`.
+
+**Never spell the fallback key by hand — use `iconKeyFor(id, index[id])`.**
+Twenty call sites used to write ``index[id]?.i ?? `item/${id}` `` regardless of
+what they were drawing, so an unindexed monster or place got the item family and
+fell through to two arbitrary letters. It is `routeFor`'s companion and lives
+beside it in `lib/search.ts`: the category decides the prefix there for the same
+reason it decides the route.
+
+That silence is the thing to watch. Every icon failure — a join that stops
+resolving, an interface that drops `icon_key`, a wrong prefix — degrades to
+something that looks designed. Nothing throws and nothing logs, so `e2e/icons.spec.mjs`
+asserts that named surfaces render a *sprite*, not merely an icon.
 
 Scaling is integer-only (`integerScale`). Pixel art at 1.5x renders visibly
 lopsided, and `image-rendering: pixelated` does not rescue it. The `.sprite`
 class carries that declaration once — do not repeat it per component.
+
+### 4a. Icons go on lists, not into prose
+
+A row, a chip or a heading takes an icon. A comma-separated run of names inside
+a sentence does not: two dozen faces inline is noise, and a 24px tile in a 14px
+line drags the leading around. "As a gift" on the item page and the asker run on
+the board are deliberately text — the villager page already offers the icon view
+of the same data behind its `DisplayToggle`.
+
+Currency is the one exception, on detail pages only (`ui/tesserae`,
+`ui/renown_gold`), and **the coin never replaces the unit**: it is `500t` beside
+a coin, not `500`. The sprite is decoration that helps scanning; the `t` is the
+fact, it matches every list row, and it still reads on a clone with no art.
+
+Method labels stay text. Only three of twenty-two spawn methods have a
+`ui/method_*` sprite, and three icons against nineteen blanks reads as broken
+rather than sparse.
 
 ### 5. Never invent a date for something weather-gated
 
@@ -173,7 +202,14 @@ production base path and runs six specs, in three layers:
 - **`journeys`** walks multi-screen intentions, where the seams are: a museum
   tick showing on the item page and back again, a filter surviving the back
   button, a setting outliving a reload, a spoiler staying revealed.
+- **`icons`** asserts that specific surfaces draw a real sprite, because the
+  glyph fallback means a broken join renders as a design choice. One case per
+  root cause, so a failure says which join broke.
 - **`smoke` / `mobile` / `tour` / `stale-version`** assert named features.
+
+**A conditional assertion is not an assertion.** `if (await x.count() > 0)`
+around a check means a surface that stops rendering passes silently — assert the
+precondition too, or pick a fixture that cannot vanish.
 
 It never runs in CI (needs a data bundle and a Chromium); run it before
 handing over anything that touches routes or components.

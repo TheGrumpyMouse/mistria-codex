@@ -1,0 +1,30 @@
+{
+  "_comment": [
+    "Wiki filenames the wiki's own data gets wrong.",
+    "",
+    "A row in the Items cargo table names the file its sprite lives in. Usually",
+    "that name is right. Occasionally the row and the file library disagree —",
+    "somebody typed the caption and somebody else uploaded the image — and the",
+    "fetcher asks for a file that does not exist. The record then keeps its drawn",
+    "glyph, which is correct behaviour and also a permanent hole for a sprite",
+    "that is sitting right there.",
+    "",
+    "The fetcher will not guess at this, and should not: `fetch.ts` says so in",
+    "as many words, because a plural that happens to be right once becomes a rule",
+    "that is wrong later. This file is the other thing — a person looked the file",
+    "up, confirmed it exists under a different name, and wrote both down. Every",
+    "entry needs a `checked` date and a reason, because an entry nobody can",
+    "re-verify is indistinguishable from the guess this file exists to avoid.",
+    "",
+    "Keys are the wrong name exactly as the source states it, before",
+    "canonicalisation. Values are the name the wiki actually hosts."
+  ],
+  "corrections": [
+    {
+      "wrong": "Rabbit horns.png",
+      "right": "Rabbit horn.png",
+      "reason": "Items.icon for Rabbit Horn is plural; the uploaded file is singular. The plural title has never existed on the wiki.",
+      "checked": "2026-08-09"
+    }
+  ]
+}

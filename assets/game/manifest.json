@@ -627,6 +627,21 @@
       "width": 72
     },
     {
+      "bytes": 250,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/beekeeper-hat.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/head_beekeeper_hat"
+      ],
+      "key": "cosmetic/beekeeper-hat",
+      "sha256": "9ec12a101c8e000873f638fbbe38ec3f60d7b23582038eba055ec078d28fdeb5",
+      "source_file": "Beekeeper hat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Beekeeper%20hat.png",
+      "width": 72
+    },
+    {
       "bytes": 233,
       "family": "cosmetic",
       "fetched_at": "2026-08-08",
@@ -1389,21 +1404,6 @@
       "sha256": "1876de5b2bcc111d6d48541d819e14f417f126611c34c696805c4c18640a6d3e",
       "source_file": "Crown tide.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crown%20tide.png",
-      "width": 72
-    },
-    {
-      "bytes": 252,
-      "family": "cosmetic",
-      "fetched_at": "2026-08-08",
-      "file": "cosmetic/crystal-helmet.png",
-      "height": 72,
-      "icon_keys": [
-        "cosmetic/head_crystal_helmet"
-      ],
-      "key": "cosmetic/crystal-helmet",
-      "sha256": "76c265a420fd0a54dab57abb208405dfdb5e90d57de4a62b3ea0f3dd0ea3c53b",
-      "source_file": "Crystal helmet.png",
-      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20helmet.png",
       "width": 72
     },
     {
@@ -2442,6 +2442,21 @@
       "width": 72
     },
     {
+      "bytes": 288,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/overalls-farmer.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/overalls_farmer"
+      ],
+      "key": "cosmetic/overalls-farmer",
+      "sha256": "ed377bfad856b9c252aab240dc07166d3bb780e4bcd5efcbdfd676d05307a48c",
+      "source_file": "Overalls farmer.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20farmer.png",
+      "width": 72
+    },
+    {
       "bytes": 229,
       "family": "cosmetic",
       "fetched_at": "2026-08-08",
@@ -2514,6 +2529,21 @@
       "sha256": "5d5e93388d583167b12df5d5312cf83e3e43fdca5079f3f7af19ee436a2a27fc",
       "source_file": "Pants basic.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pants%20basic.png",
+      "width": 72
+    },
+    {
+      "bytes": 177,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/pants-beekeeper.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/pants_beekeeper"
+      ],
+      "key": "cosmetic/pants-beekeeper",
+      "sha256": "9d7b70c592ef1aba416e21217d77c4815989c7b0b30762307a07db2e1e303ca2",
+      "source_file": "Pants beekeeper.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pants%20beekeeper.png",
       "width": 72
     },
     {
@@ -3042,6 +3072,21 @@
       "width": 72
     },
     {
+      "bytes": 173,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/shorts-swimtrunks.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/shorts_swimtrunks"
+      ],
+      "key": "cosmetic/shorts-swimtrunks",
+      "sha256": "6c48fa75703897022c5ab040f45af6ac2d8e750bff185a04952e85585c454702",
+      "source_file": "Shorts swimtrunks.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20swimtrunks.png",
+      "width": 72
+    },
+    {
       "bytes": 211,
       "family": "cosmetic",
       "fetched_at": "2026-08-08",
@@ -3220,6 +3265,470 @@
       "source_file": "Special flower crown.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Special%20flower%20crown.png",
       "width": 72
+    },
+    {
+      "bytes": 278,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_back_gear_basic_backpack.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/back_gear_basic_backpack"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_back_gear_basic_backpack",
+      "origin": "game_files",
+      "sha256": "942ee1bf36400ec52bacc436dd2d7ff812a5fa2643b2ded98aad8050232556e2",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_backpack.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_backpack.png",
+      "width": 18
+    },
+    {
+      "bytes": 310,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_back_gear_basic_cape.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/back_gear_basic_cape"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_back_gear_basic_cape",
+      "origin": "game_files",
+      "sha256": "d86ed5702c26efd54574c94cf9e8f8f4492961779b7e45e63aebb5a19bf03097",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_cape.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_cape.png",
+      "width": 18
+    },
+    {
+      "bytes": 550,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_back_gear_dark_regent_cape.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/back_gear_dark_regent_cape"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_back_gear_dark_regent_cape",
+      "origin": "game_files",
+      "sha256": "20bee2ddc5539e533d4a95a24e769c487069085b84c34650b1b694a48c2085f0",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dark_regent_cape.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dark_regent_cape.png",
+      "width": 18
+    },
+    {
+      "bytes": 311,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/back_gear_dragonsworn_cloak_seridia"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia",
+      "origin": "game_files",
+      "sha256": "8e27def05fe884f95f0784696c2b03dc97c3e2b8a8ac4362f36d80c9d3da67d1",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia.png",
+      "width": 18
+    },
+    {
+      "bytes": 301,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_back_gear_march_mistrian_shield.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/back_gear_march_mistrian_shield"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_back_gear_march_mistrian_shield",
+      "origin": "game_files",
+      "sha256": "e81c82b4460e4f7e373946d487dff0a80ab1cbda6d8635f9bd603d34e70eaa21",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_march_mistrian_shield.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_march_mistrian_shield.png",
+      "width": 18
+    },
+    {
+      "bytes": 314,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_dress_caped_wedding_gown.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/dress_caped_wedding_gown"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_dress_caped_wedding_gown",
+      "origin": "game_files",
+      "sha256": "7de43fe1f175a0c921ba3ddfc2636d5a77f7950e83ed0428ad8fd0771c3c652d",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_dress_caped_wedding_gown.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_dress_caped_wedding_gown.png",
+      "width": 18
+    },
+    {
+      "bytes": 333,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_dress_mermaid_wedding_gown.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/dress_mermaid_wedding_gown"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_dress_mermaid_wedding_gown",
+      "origin": "game_files",
+      "sha256": "28d248f983c00bd27721e358a0791845c9ba8c3497c130b1b8bca4765c747011",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_dress_mermaid_wedding_gown.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_dress_mermaid_wedding_gown.png",
+      "width": 18
+    },
+    {
+      "bytes": 393,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_dress_romantic_wedding_gown.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/dress_romantic_wedding_gown"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_dress_romantic_wedding_gown",
+      "origin": "game_files",
+      "sha256": "65a995f8c9525e69c4b3eb2f682154c73a49fda44f6e831294eae410d239fa19",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_dress_romantic_wedding_gown.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_dress_romantic_wedding_gown.png",
+      "width": 18
+    },
+    {
+      "bytes": 473,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/face_gear_dragon_cleric_earrings"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged",
+      "origin": "game_files",
+      "sha256": "8e78a7d8315fe7ec1475373b488c97386a9bab5ef4235e01c8cfb6ac2bd5f479",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged.png",
+      "width": 18
+    },
+    {
+      "bytes": 327,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_barrel_roller_hat.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_barrel_roller_hat"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_barrel_roller_hat",
+      "origin": "game_files",
+      "sha256": "935b2285580174b1c27da65ab45b646d72e589fa5c4b96ff45de3bc605f5ea66",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_barrel_roller_hat.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_barrel_roller_hat.png",
+      "width": 18
+    },
+    {
+      "bytes": 445,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_clips_fin.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_clips_fin"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_clips_fin",
+      "origin": "game_files",
+      "sha256": "41d62412a2973f7bd3387287f33f7ced312887743c8707f81e683f070df6dd90",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_fin.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_fin.png",
+      "width": 18
+    },
+    {
+      "bytes": 197,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_clips_wedding_flower.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_clips_wedding_flower"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_clips_wedding_flower",
+      "origin": "game_files",
+      "sha256": "5f71776f3f7e9b1732829ec316b18810614a71651c3de7ce51e0dababc4bc2ec",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_wedding_flower.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_wedding_flower.png",
+      "width": 18
+    },
+    {
+      "bytes": 350,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_dragon_cleric_diadem.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_dragon_cleric_diadem"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_dragon_cleric_diadem",
+      "origin": "game_files",
+      "sha256": "449d89dac8d9418be847311841ff1bec8ce333fbb592c1ce0b405c226905bde5",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragon_cleric_diadem.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragon_cleric_diadem.png",
+      "width": 18
+    },
+    {
+      "bytes": 359,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_dragonsworn_helmet_seridia.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_dragonsworn_helmet_seridia"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_dragonsworn_helmet_seridia",
+      "origin": "game_files",
+      "sha256": "c453ccfc3ea2a2047b17f2f12c83f9f70a0e58837514f3382dff804d4893389c",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragonsworn_helmet_seridia.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragonsworn_helmet_seridia.png",
+      "width": 18
+    },
+    {
+      "bytes": 613,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_griffin_statue_hat.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_griffin_statue_hat"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_griffin_statue_hat",
+      "origin": "game_files",
+      "sha256": "40c5f51ebd2f3ae8a9e70d18e4119188dd823da1925820a447d74ce5031c2c99",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_griffin_statue_hat.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_griffin_statue_hat.png",
+      "width": 18
+    },
+    {
+      "bytes": 272,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_wedding_top_hat.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_wedding_top_hat"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_wedding_top_hat",
+      "origin": "game_files",
+      "sha256": "8f172f271cbe6c94a8a6d6f3d3f3282dabb243f403f7c50cb2163405b1a78b4e",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_top_hat.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_top_hat.png",
+      "width": 18
+    },
+    {
+      "bytes": 303,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_head_wedding_veil.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/head_wedding_veil"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_head_wedding_veil",
+      "origin": "game_files",
+      "sha256": "78061c25e475967c25f0a321f18bbfdffe7cfdf87cbe582c03bfdfca8da1fdb9",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_veil.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_veil.png",
+      "width": 18
+    },
+    {
+      "bytes": 247,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_pants_dragonsworn_armor_seridia.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/pants_dragonsworn_armor_seridia"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_pants_dragonsworn_armor_seridia",
+      "origin": "game_files",
+      "sha256": "5a8491e57557086f8e1e50d403e46d668bf4736d5194cbb694b5e29fe1c97b15",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_pants_dragonsworn_armor_seridia.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_pants_dragonsworn_armor_seridia.png",
+      "width": 18
+    },
+    {
+      "bytes": 585,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_robe_dark_regent.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/robe_dark_regent"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_robe_dark_regent",
+      "origin": "game_files",
+      "sha256": "4a8ea495405645892640f904c6ab509b5f68786c5091d2de08d8962786dec364",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dark_regent.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dark_regent.png",
+      "width": 18
+    },
+    {
+      "bytes": 490,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_robe_dragon_cleric.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/robe_dragon_cleric"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_robe_dragon_cleric",
+      "origin": "game_files",
+      "sha256": "5a04e9513660636366d6d921842ad15ab62a1a9742245762e2eae76d545cfd6b",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dragon_cleric.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dragon_cleric.png",
+      "width": 18
+    },
+    {
+      "bytes": 273,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_shoes_boots_dragon_cleric.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/shoes_boots_dragon_cleric"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_shoes_boots_dragon_cleric",
+      "origin": "game_files",
+      "sha256": "a2b41f96cb903a477e1d8cdd73462e3dacce49de43b6753514ce4ea86a2d7b77",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragon_cleric.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragon_cleric.png",
+      "width": 18
+    },
+    {
+      "bytes": 191,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/shoes_boots_dragonsworn_armor_seridia"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia",
+      "origin": "game_files",
+      "sha256": "16068084b9ebcb330fc00f7cf1ac4b963da4f3d0e2db18c9df033679b7d4df2b",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia.png",
+      "width": 18
+    },
+    {
+      "bytes": 175,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_shoes_floral_wedding_dress.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/shoes_floral_wedding_dress"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_shoes_floral_wedding_dress",
+      "origin": "game_files",
+      "sha256": "a953b2e7edc9945a4f22f0ad86a28e69cbe0f85e8c3f837d1db8a686dd7cc33d",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_floral_wedding_dress.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_floral_wedding_dress.png",
+      "width": 18
+    },
+    {
+      "bytes": 127,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_shoes_wedding_dress.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/shoes_wedding_dress"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_shoes_wedding_dress",
+      "origin": "game_files",
+      "sha256": "b4a626fd9db9026f463562c0e95cd0f826d32dac866d7f3e5349c479f92bd0ff",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_wedding_dress.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_wedding_dress.png",
+      "width": 18
+    },
+    {
+      "bytes": 351,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_suit_classy_bowtie_wedding.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/suit_classy_bowtie_wedding"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_suit_classy_bowtie_wedding",
+      "origin": "game_files",
+      "sha256": "77a940ed02fd32f0d506053e41f7fc86fcf459c88cab0514a00c6a160bfb50c8",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_suit_classy_bowtie_wedding.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_suit_classy_bowtie_wedding.png",
+      "width": 18
+    },
+    {
+      "bytes": 365,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/suit_tailcoat_wedding"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding",
+      "origin": "game_files",
+      "sha256": "0a5d8b8f309107590caa458b9f007ec1a706913a4b6a16d55a5cf623dfeee09e",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding.png",
+      "width": 18
+    },
+    {
+      "bytes": 406,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/suit_tailcoat_wedding_tuxedo"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo",
+      "origin": "game_files",
+      "sha256": "acff78602efb290bef7cd0084167691e86cf08a36eb1256409de8237ea5ef7de",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo.png",
+      "width": 18
+    },
+    {
+      "bytes": 330,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_top_dragonsworn_armor_seridia.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/top_dragonsworn_armor_seridia"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_top_dragonsworn_armor_seridia",
+      "origin": "game_files",
+      "sha256": "ad20f35feb4131f162bb7216794bfe2ac780cc31d199f5a662ede79214d305b8",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_top_dragonsworn_armor_seridia.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_top_dragonsworn_armor_seridia.png",
+      "width": 18
+    },
+    {
+      "bytes": 360,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/spr_ui_item_wearable_top_tarnished_gold_armor.png",
+      "height": 18,
+      "icon_keys": [
+        "cosmetic/top_tarnished_gold_armor"
+      ],
+      "key": "cosmetic/spr_ui_item_wearable_top_tarnished_gold_armor",
+      "origin": "game_files",
+      "sha256": "38c3760591862def80650c54040903efd2c6f311bbc45a07661fe4343634459e",
+      "source_file": "animations/Item Icons/Wearable/spr_ui_item_wearable_top_tarnished_gold_armor.png",
+      "source_url": "game://animations/Item Icons/Wearable/spr_ui_item_wearable_top_tarnished_gold_armor.png",
+      "width": 18
     },
     {
       "bytes": 182,
@@ -3657,6 +4166,21 @@
       "width": 72
     },
     {
+      "bytes": 261,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/top-adventurers-jerkin.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/top_adventurer"
+      ],
+      "key": "cosmetic/top-adventurers-jerkin",
+      "sha256": "922b1f5b4a5fc0dea123ce0bee574732ba57ef5c7af15901a2b10d885c13d605",
+      "source_file": "Top adventurers jerkin.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Top%20adventurers%20jerkin.png",
+      "width": 72
+    },
+    {
       "bytes": 228,
       "family": "cosmetic",
       "fetched_at": "2026-08-08",
@@ -3669,6 +4193,21 @@
       "sha256": "f7d89c4668f29fba2b4321c4ad0dec06016944bafaaef8daf588e6e98e1b3b1b",
       "source_file": "Top ancient witch.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Top%20ancient%20witch.png",
+      "width": 72
+    },
+    {
+      "bytes": 252,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/top-beekeepers-shirt.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/top_long_sleeve_beekeeper"
+      ],
+      "key": "cosmetic/top-beekeepers-shirt",
+      "sha256": "15a36fff0f5a154834cd8bf9743462221b7f793f3178d32d5605e81c27251422",
+      "source_file": "Top beekeepers shirt.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Top%20beekeepers%20shirt.png",
       "width": 72
     },
     {
@@ -4195,6 +4734,21 @@
       "source_file": "Underwear shorts polkadot.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20shorts%20polkadot.png",
       "width": 80
+    },
+    {
+      "bytes": 167,
+      "family": "cosmetic",
+      "fetched_at": "2026-08-08",
+      "file": "cosmetic/underwear-tank.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/underwear_tank"
+      ],
+      "key": "cosmetic/underwear-tank",
+      "sha256": "4ba0ce770975fb4b80bfebc9f56cc3572a235506876e99e187a9a88a76328d2d",
+      "source_file": "Underwear tank.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20tank.png",
+      "width": 72
     },
     {
       "bytes": 248,
@@ -7141,6 +7695,21 @@
       "width": 72
     },
     {
+      "bytes": 190,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/chicken-top-hat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/chicken_top_hat"
+      ],
+      "key": "item/chicken-top-hat",
+      "sha256": "db96ca3d35903a6090ca373942703f04421fd95147684d5f5870ba970333f104",
+      "source_file": "Chicken top hat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20top%20hat.png",
+      "width": 72
+    },
+    {
       "bytes": 194,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -7547,6 +8116,22 @@
       "sha256": "6fb66933850e7fc58fda80b1cbf352b9fd4a7669aef8a7dc2f339b3f52e9dbea",
       "source_file": "Cloth Pants.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Pants.png",
+      "width": 72
+    },
+    {
+      "bytes": 553,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/cloth-shoes.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/shoes_boots_cloth_armor",
+        "equipment/cloth_shoes"
+      ],
+      "key": "item/cloth-shoes",
+      "sha256": "3ccf15cf90df2baf1c470b02f5e340b06fd7baecfd9a8d053743af226873c3af",
+      "source_file": "Cloth Shoes.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Shoes.png",
       "width": 72
     },
     {
@@ -8760,6 +9345,52 @@
       "width": 72
     },
     {
+      "bytes": 263,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/crystal-greaves.png",
+      "height": 72,
+      "icon_keys": [
+        "equipment/crystal_boots"
+      ],
+      "key": "item/crystal-greaves",
+      "sha256": "8c1a0c3e324be91f195ef14ce2a1a1717292bf48bb16a148102c1a5804352868",
+      "source_file": "Crystal greaves.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20greaves.png",
+      "width": 72
+    },
+    {
+      "bytes": 252,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/crystal-helmet.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/head_crystal_helmet",
+        "equipment/crystal_helmet"
+      ],
+      "key": "item/crystal-helmet",
+      "sha256": "76c265a420fd0a54dab57abb208405dfdb5e90d57de4a62b3ea0f3dd0ea3c53b",
+      "source_file": "Crystal helmet.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20helmet.png",
+      "width": 72
+    },
+    {
+      "bytes": 250,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/crystal-ring.png",
+      "height": 72,
+      "icon_keys": [
+        "equipment/crystal_ring"
+      ],
+      "key": "item/crystal-ring",
+      "sha256": "5a4483b8010a68242e75d3df2fcd53d3442365c09c7bc113f34f282dd6a11ffc",
+      "source_file": "Crystal ring.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20ring.png",
+      "width": 72
+    },
+    {
       "bytes": 681,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -8787,6 +9418,22 @@
       "sha256": "ff4cdee0b990d4e1300c178dcc1b296ddd17b8e2e71aaf590c8f59ae07ba5f66",
       "source_file": "Crystal sword.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20sword.png",
+      "width": 72
+    },
+    {
+      "bytes": 248,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/crystal-tassets.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/pants_crystal_armor",
+        "equipment/crystal_tassets"
+      ],
+      "key": "item/crystal-tassets",
+      "sha256": "860957a980c4321ec96345810dd23d5e978d6016bf9b8fe98ce2648c4b8a8992",
+      "source_file": "Crystal tassets.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20tassets.png",
       "width": 72
     },
     {
@@ -12106,6 +12753,21 @@
       "width": 72
     },
     {
+      "bytes": 178,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/horse-cowboy-hat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/horse_cowboy_hat"
+      ],
+      "key": "item/horse-cowboy-hat",
+      "sha256": "c94b0d9ef882d08a79e38294bc4ff3b4eed396a4a3dc2942c9a1b6a65c6691b6",
+      "source_file": "Horse cowboy hat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Horse%20cowboy%20hat.png",
+      "width": 72
+    },
+    {
       "bytes": 200,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -12268,6 +12930,21 @@
       "sha256": "f173118929065c419969d56e4f1db94b22c272fca158fc4100a514b1c3673a2e",
       "source_file": "Horse seashell clips.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Horse%20seashell%20clips.png",
+      "width": 72
+    },
+    {
+      "bytes": 142,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/horse-unicorn-horn.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/horse_unicorn_horn"
+      ],
+      "key": "item/horse-unicorn-horn",
+      "sha256": "52e915a2580b998d0259e2106c6cc78b02796fcd9726063212cc65117f78311a",
+      "source_file": "Horse unicorn horn.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Horse%20unicorn%20horn.png",
       "width": 72
     },
     {
@@ -15725,6 +16402,21 @@
       "width": 72
     },
     {
+      "bytes": 171,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/pink-horse-bow.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pink_horse_bow"
+      ],
+      "key": "item/pink-horse-bow",
+      "sha256": "fbab80f4af9c24bd5dc4f8be5b9dff89289659abad231e3e89cbdae8d9359ea3",
+      "source_file": "Pink horse bow.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pink%20horse%20bow.png",
+      "width": 72
+    },
+    {
       "bytes": 327,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -16339,6 +17031,36 @@
       "sha256": "455ec239f1d3de0a80c0142fd5465611482c1495d2a8b02b809ccda0e07a9be9",
       "source_file": "Rabbit heart clips.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20heart%20clips.png",
+      "width": 72
+    },
+    {
+      "bytes": 168,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/rabbit-horn.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/rabbit_horn"
+      ],
+      "key": "item/rabbit-horn",
+      "sha256": "a4cee0c09d0d337c81468ec86a4abfd67f4c1bee10ea211e736cbf36d376b80a",
+      "source_file": "Rabbit horn.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20horn.png",
+      "width": 72
+    },
+    {
+      "bytes": 154,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/rabbit-pink-bow.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pink_rabbit_bow"
+      ],
+      "key": "item/rabbit-pink-bow",
+      "sha256": "6aba5a69af482a097a83781fe54ae1c8fe9f7c2a7b9b7a3df51d7eed46854ba0",
+      "source_file": "Rabbit pink bow.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20pink%20bow.png",
       "width": 72
     },
     {
@@ -17545,6 +18267,68 @@
       "width": 72
     },
     {
+      "bytes": 508,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/scrap-metal-boots.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/shoes_boots_scrap_metal",
+        "equipment/scrap_metal_boots"
+      ],
+      "key": "item/scrap-metal-boots",
+      "sha256": "620512796b380bae0ffce2d79d286f1fcd1397e7e1c2bae6a42cffd88d2d59b6",
+      "source_file": "Scrap Metal Boots.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Boots.png",
+      "width": 72
+    },
+    {
+      "bytes": 578,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/scrap-metal-helmet.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/head_scrap_metal_helmet",
+        "equipment/scrap_metal_helmet"
+      ],
+      "key": "item/scrap-metal-helmet",
+      "sha256": "a14f7d8ffcff3b38f27b9da2fb4ff3ad0aaff438a26bf534938208bd81c61e2f",
+      "source_file": "Scrap Metal Helmet.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Helmet.png",
+      "width": 72
+    },
+    {
+      "bytes": 833,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/scrap-metal-legplates.png",
+      "height": 72,
+      "icon_keys": [
+        "equipment/scrap_metal_legplates"
+      ],
+      "key": "item/scrap-metal-legplates",
+      "sha256": "2b2f763eebb6b38b0c43022b71082304dee510fcc1e2a060072544e4fb1b0baa",
+      "source_file": "Scrap Metal Legplates.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Legplates.png",
+      "width": 72
+    },
+    {
+      "bytes": 356,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/scrap-metal-ring.png",
+      "height": 72,
+      "icon_keys": [
+        "equipment/scrap_metal_ring"
+      ],
+      "key": "item/scrap-metal-ring",
+      "sha256": "4feb49f37c3026c6869dd0df54422804c91f9f241b9edab906e1fdd8bf80fc37",
+      "source_file": "Scrap Metal Ring.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Ring.png",
+      "width": 72
+    },
+    {
       "bytes": 477,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -17995,6 +18779,21 @@
       "width": 72
     },
     {
+      "bytes": 184,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/sheep-mushroom-hat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/sheep_mushroom_hat"
+      ],
+      "key": "item/sheep-mushroom-hat",
+      "sha256": "338a41c24a85bf316887f0fb6c98f5a2f0f5c10b5a330e208c30b5eed5d50371",
+      "source_file": "Sheep mushroom hat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20mushroom%20hat.png",
+      "width": 72
+    },
+    {
       "bytes": 171,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -18007,6 +18806,36 @@
       "sha256": "8a321ab4ec61c80703bde61bbfd5c54ff9e3eeee5e165e6febb7967bed30e92b",
       "source_file": "Sheep palm tree.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20palm%20tree.png",
+      "width": 72
+    },
+    {
+      "bytes": 207,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/sheep-party-hat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/sheep_party_hat"
+      ],
+      "key": "item/sheep-party-hat",
+      "sha256": "ec4952d9c612dffc00a00f79912be6ecc1197a614bf27f38341de3732176fb5f",
+      "source_file": "Sheep party hat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20party%20hat.png",
+      "width": 72
+    },
+    {
+      "bytes": 176,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/sheep-pink-bow.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pink_sheep_bow"
+      ],
+      "key": "item/sheep-pink-bow",
+      "sha256": "03e39a124940ddffcae64975d089d874ee7c7506d4dd83c859bad49cb3b983b5",
+      "source_file": "Sheep pink bow.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20pink%20bow.png",
       "width": 72
     },
     {
@@ -19231,54 +20060,6 @@
       "sha256": "5945ff971ae39fed83728a072e27c4e78180ad1264349d95ff20135ccf7f632e",
       "source_file": "animations/Item Icons/Archaeology/spr_ui_item_black_tablet.png",
       "source_url": "game://animations/Item Icons/Archaeology/spr_ui_item_black_tablet.png",
-      "width": 18
-    },
-    {
-      "bytes": 403,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_bug_pheromone_legendary.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/bug_pheromone_legendary"
-      ],
-      "key": "item/spr_ui_item_bug_pheromone_legendary",
-      "origin": "game_files",
-      "sha256": "5927d328bad47efdaf14b44e50ab590cbf25ef3ddac809fd53a0240e744499db",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_bug_pheromone_legendary.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_bug_pheromone_legendary.png",
-      "width": 18
-    },
-    {
-      "bytes": 402,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_bug_pheromone_rare.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/bug_pheromone_rare"
-      ],
-      "key": "item/spr_ui_item_bug_pheromone_rare",
-      "origin": "game_files",
-      "sha256": "2c6fd3cd558f000d996df3502854203d1e92eae4fb5a86a1ae4311786a3ba6a9",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_bug_pheromone_rare.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_bug_pheromone_rare.png",
-      "width": 18
-    },
-    {
-      "bytes": 399,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_bug_pheromone_uncommon.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/bug_pheromone_uncommon"
-      ],
-      "key": "item/spr_ui_item_bug_pheromone_uncommon",
-      "origin": "game_files",
-      "sha256": "e4865e52ef456f83ddb71a2deaa9ca5145539621ede26161f1e5afea8fe54758",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_bug_pheromone_uncommon.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_bug_pheromone_uncommon.png",
       "width": 18
     },
     {
@@ -25730,86 +26511,6 @@
       "width": 18
     },
     {
-      "bytes": 474,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_cloth_shoes.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/cloth_shoes"
-      ],
-      "key": "item/spr_ui_item_equipment_cloth_shoes",
-      "origin": "game_files",
-      "sha256": "ee31b2961310ae1a535c51f128886b13ed8736d7a23d3cf02f7eb7fd1ec727a9",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_cloth_shoes.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_cloth_shoes.png",
-      "width": 18
-    },
-    {
-      "bytes": 568,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_crystal_boots.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/crystal_boots"
-      ],
-      "key": "item/spr_ui_item_equipment_crystal_boots",
-      "origin": "game_files",
-      "sha256": "e8d664a3a37cf2f37ffe29b3b30c88472253f9e054469ad0011a5af961d0e6ea",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_boots.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_boots.png",
-      "width": 18
-    },
-    {
-      "bytes": 544,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_crystal_helmet.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/crystal_helmet"
-      ],
-      "key": "item/spr_ui_item_equipment_crystal_helmet",
-      "origin": "game_files",
-      "sha256": "18e8662783b7ddddf250cf070c4d1a87a157e347fc1265631c71a735a3e4a75f",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_helmet.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_helmet.png",
-      "width": 18
-    },
-    {
-      "bytes": 554,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_crystal_ring.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/crystal_ring"
-      ],
-      "key": "item/spr_ui_item_equipment_crystal_ring",
-      "origin": "game_files",
-      "sha256": "c7af223bc773a5634420f1b22663d9d6e4365000b3a66ac27592f9f9701c382f",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_ring.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_ring.png",
-      "width": 18
-    },
-    {
-      "bytes": 517,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_crystal_tassets.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/crystal_tassets"
-      ],
-      "key": "item/spr_ui_item_equipment_crystal_tassets",
-      "origin": "game_files",
-      "sha256": "6d7d37036bfef1b8e8ffd627f1d5b69191aab11cea04e4d6546032e69046eb6f",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_tassets.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_tassets.png",
-      "width": 18
-    },
-    {
       "bytes": 630,
       "family": "item",
       "fetched_at": "2026-08-08",
@@ -25823,70 +26524,6 @@
       "sha256": "800cadc471f4b87e945cd78fa6ecf8a7f70e9a894b763e9bc333ea662d3d8186",
       "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_heros_ring.png",
       "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_heros_ring.png",
-      "width": 18
-    },
-    {
-      "bytes": 531,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_scrap_metal_boots.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/scrap_metal_boots"
-      ],
-      "key": "item/spr_ui_item_equipment_scrap_metal_boots",
-      "origin": "game_files",
-      "sha256": "1899dba6914e9424afd822f3aa812eeb479e1c14153da9d3ec75a4b2ba928f31",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_boots.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_boots.png",
-      "width": 18
-    },
-    {
-      "bytes": 535,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_scrap_metal_helmet.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/scrap_metal_helmet"
-      ],
-      "key": "item/spr_ui_item_equipment_scrap_metal_helmet",
-      "origin": "game_files",
-      "sha256": "010a51b5bc817e38c1df3fc06269bde273c68986c4901c94b069dbec0a38b38b",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_helmet.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_helmet.png",
-      "width": 18
-    },
-    {
-      "bytes": 576,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_scrap_metal_ring.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/scrap_metal_ring"
-      ],
-      "key": "item/spr_ui_item_equipment_scrap_metal_ring",
-      "origin": "game_files",
-      "sha256": "4e6b9b5de70e16a996d5d59d8984960b42e1e2b472da2099c019e42ba5d3c11e",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_ring.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_ring.png",
-      "width": 18
-    },
-    {
-      "bytes": 558,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_equipment_verdigris_helmet.png",
-      "height": 18,
-      "icon_keys": [
-        "equipment/verdigris_helmet"
-      ],
-      "key": "item/spr_ui_item_equipment_verdigris_helmet",
-      "origin": "game_files",
-      "sha256": "f0665ae288b63ecff2e818477361d17ad6c8baa45eaffed203df7a008e7e3f11",
-      "source_file": "animations/Item Icons/Player Equipment/spr_ui_item_equipment_verdigris_helmet.png",
-      "source_url": "game://animations/Item Icons/Player Equipment/spr_ui_item_equipment_verdigris_helmet.png",
       "width": 18
     },
     {
@@ -25983,38 +26620,6 @@
       "sha256": "70035ffce65ae649401d2c7d085c9875ebc93416afdeaa31fe1f70ec98c272a6",
       "source_file": "animations/Item Icons/Archaeology/spr_ui_item_fire_crystal.png",
       "source_url": "game://animations/Item Icons/Archaeology/spr_ui_item_fire_crystal.png",
-      "width": 18
-    },
-    {
-      "bytes": 516,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_fish_bait_rare.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/fish_bait_rare"
-      ],
-      "key": "item/spr_ui_item_fish_bait_rare",
-      "origin": "game_files",
-      "sha256": "4d517f6f498ce962e46ba7df63dca2d4c0f179f8d87266441fe11a7c45c73a69",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_fish_bait_rare.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_fish_bait_rare.png",
-      "width": 18
-    },
-    {
-      "bytes": 512,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_fish_bait_uncommon.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/fish_bait_uncommon"
-      ],
-      "key": "item/spr_ui_item_fish_bait_uncommon",
-      "origin": "game_files",
-      "sha256": "1c6cada376c5f286d20c24f0f41870dc3d5885beb02f9b2a37bf7fbe90c30ca2",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_fish_bait_uncommon.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_fish_bait_uncommon.png",
       "width": 18
     },
     {
@@ -32498,70 +33103,6 @@
       "width": 18
     },
     {
-      "bytes": 362,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_honey.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/honey"
-      ],
-      "key": "item/spr_ui_item_honey",
-      "origin": "game_files",
-      "sha256": "ac4c6326c95f368e0b6c85c2b1c60a0ddf25c5c8486ed99c0b08b6dacc0405f0",
-      "source_file": "animations/Item Icons/Food/spr_ui_item_honey.png",
-      "source_url": "game://animations/Item Icons/Food/spr_ui_item_honey.png",
-      "width": 18
-    },
-    {
-      "bytes": 426,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_honey_deluxe.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/honey_deluxe"
-      ],
-      "key": "item/spr_ui_item_honey_deluxe",
-      "origin": "game_files",
-      "sha256": "d6a0e8396f99bbabcc89c926331be51d987890d9e4626afc35e0312f4f0f3522",
-      "source_file": "animations/Item Icons/Food/spr_ui_item_honey_deluxe.png",
-      "source_url": "game://animations/Item Icons/Food/spr_ui_item_honey_deluxe.png",
-      "width": 18
-    },
-    {
-      "bytes": 422,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_honey_legendary.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/honey_legendary"
-      ],
-      "key": "item/spr_ui_item_honey_legendary",
-      "origin": "game_files",
-      "sha256": "43928fcfbf633519eeab381dd49b486d0f018c9073b79e034ad2f2aa11827f5d",
-      "source_file": "animations/Item Icons/Food/spr_ui_item_honey_legendary.png",
-      "source_url": "game://animations/Item Icons/Food/spr_ui_item_honey_legendary.png",
-      "width": 18
-    },
-    {
-      "bytes": 432,
-      "family": "item",
-      "fetched_at": "2026-08-08",
-      "file": "item/spr_ui_item_honey_premium.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/honey_premium"
-      ],
-      "key": "item/spr_ui_item_honey_premium",
-      "origin": "game_files",
-      "sha256": "b5bb1b04fff3f292e1274ecedc40411cb849627d8a9faf0817c7846cf72df431",
-      "source_file": "animations/Item Icons/Food/spr_ui_item_honey_premium.png",
-      "source_url": "game://animations/Item Icons/Food/spr_ui_item_honey_premium.png",
-      "width": 18
-    },
-    {
       "bytes": 493,
       "family": "item",
       "fetched_at": "2026-08-08",
@@ -36157,6 +36698,37 @@
       "width": 72
     },
     {
+      "bytes": 431,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/verdigris-greaves.png",
+      "height": 72,
+      "icon_keys": [
+        "equipment/verdigris_greaves"
+      ],
+      "key": "item/verdigris-greaves",
+      "sha256": "764779883a5903eb5315bf3525387686901f5e742663995e7ab6ca28a282dee7",
+      "source_file": "Verdigris Greaves.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Greaves.png",
+      "width": 72
+    },
+    {
+      "bytes": 360,
+      "family": "item",
+      "fetched_at": "2026-08-08",
+      "file": "item/verdigris-helmet.png",
+      "height": 72,
+      "icon_keys": [
+        "cosmetic/head_verdigris_helmet",
+        "equipment/verdigris_helmet"
+      ],
+      "key": "item/verdigris-helmet",
+      "sha256": "a9fc761914341ed16277502ab23a21f2a50e0be65ff43febfe2762488c7d3d45",
+      "source_file": "Verdigris Helmet.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Helmet.png",
+      "width": 72
+    },
+    {
       "bytes": 560,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -38862,6 +39434,22 @@
       "source_file": "animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png",
       "source_url": "game://animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png",
       "width": 388
+    },
+    {
+      "bytes": 249,
+      "family": "ui",
+      "fetched_at": "2026-08-08",
+      "file": "ui/spr_ui_journal_quests_festival_subicon.png",
+      "height": 11,
+      "icon_keys": [
+        "quest/festival"
+      ],
+      "key": "ui/spr_ui_journal_quests_festival_subicon",
+      "origin": "game_files",
+      "sha256": "b22b73d68f950829901839245fe26e9c573b598c2c10e57e1283ad8b960e61c6",
+      "source_file": "animations/UI NEW/Journal/Quests/spr_ui_journal_quests_festival_subicon.png",
+      "source_url": "game://animations/UI NEW/Journal/Quests/spr_ui_journal_quests_festival_subicon.png",
+      "width": 10
     },
     {
       "bytes": 1056,

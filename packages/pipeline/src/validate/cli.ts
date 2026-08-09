@@ -8,6 +8,11 @@
 import { parseArgs } from 'node:util'
 import { consola } from 'consola'
 import {
+  assetCoverageFindings,
+  computeAssetCoverage,
+  writeAssetCoverageReport,
+} from './asset-coverage.js'
+import {
   availabilityCoverage,
   computeCoverage,
   coverageFindings,
@@ -54,6 +59,10 @@ async function main(): Promise<void> {
   findings.push(...coverageFindings(coverage))
   await writeCoverageReport(coverage, availabilityCoverage(loaded))
   await writeIdDivergenceReport(loaded)
+
+  const assets = await computeAssetCoverage(loaded)
+  findings.push(...assetCoverageFindings(assets))
+  await writeAssetCoverageReport(assets)
 
   const errors = findings.filter((f) => f.severity === 'error')
   const warnings = findings.filter((f) => f.severity === 'warning')

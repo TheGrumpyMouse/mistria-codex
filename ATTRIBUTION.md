@@ -23,9 +23,9 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2552 files.**
+**2590 files.**
 
-## Items (2105)
+## Items (2107)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -203,6 +203,7 @@ this repository treats it as though it were.
 | `item/chicken-ribbon-red.png` | Chicken ribbon red.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20ribbon%20red.png) |
 | `item/chicken-ribbon-white.png` | Chicken ribbon white.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20ribbon%20white.png) |
 | `item/chicken-sunglasses.png` | Chicken sunglasses.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20sunglasses.png) |
+| `item/chicken-top-hat.png` | Chicken top hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20top%20hat.png) |
 | `item/chicken-winter-hat.png` | Chicken winter hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chicken%20winter%20hat.png) |
 | `item/chickpea-curry.png` | Chickpea curry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chickpea%20curry.png) |
 | `item/chickpea-seed.png` | Chickpea seed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Chickpea%20seed.png) |
@@ -230,6 +231,7 @@ this repository treats it as though it were.
 | `item/cloth-chestpiece.png` | Cloth Chestpiece.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Chestpiece.png) |
 | `item/cloth-helmet.png` | Cloth Helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Helmet.png) |
 | `item/cloth-pants.png` | Cloth Pants.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Pants.png) |
+| `item/cloth-shoes.png` | Cloth Shoes.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Shoes.png) |
 | `item/cloth-wristband.png` | Cloth Wristband.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Cloth%20Wristband.png) |
 | `item/coconut-cream-pie.png` | Coconut cream pie.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Coconut%20cream%20pie.png) |
 | `item/coconut-milk.png` | Coconut milk.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Coconut%20milk.png) |
@@ -309,8 +311,12 @@ this repository treats it as though it were.
 | `item/crystal-berries.png` | Crystal berries.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20berries.png) |
 | `item/crystal-berry-pie.png` | Crystal berry pie.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20berry%20pie.png) |
 | `item/crystal-caterpillar.png` | Crystal caterpillar.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20caterpillar.png) |
+| `item/crystal-greaves.png` | Crystal greaves.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20greaves.png) |
+| `item/crystal-helmet.png` | Crystal helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20helmet.png) |
+| `item/crystal-ring.png` | Crystal ring.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20ring.png) |
 | `item/crystal-rose.png` | Crystal rose.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20rose.png) |
 | `item/crystal-sword.png` | Crystal sword.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20sword.png) |
+| `item/crystal-tassets.png` | Crystal tassets.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20tassets.png) |
 | `item/crystal-wing-moth.png` | Crystal wing moth.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20wing%20moth.png) |
 | `item/crystal.png` | Crystal.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal.png) |
 | `item/crystalline-cricket.png` | Crystalline cricket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystalline%20cricket.png) |
@@ -532,6 +538,7 @@ this repository treats it as though it were.
 | `item/honeycomb.png` | Honeycomb.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Honeycomb.png) |
 | `item/horse-antlers.png` | Horse antlers.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20antlers.png) |
 | `item/horse-bandana.png` | Horse bandana.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20bandana.png) |
+| `item/horse-cowboy-hat.png` | Horse cowboy hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20cowboy%20hat.png) |
 | `item/horse-crown.png` | Horse crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20crown.png) |
 | `item/horse-dark-unicorn-horn.png` | Horse dark unicorn horn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20dark%20unicorn%20horn.png) |
 | `item/horse-derby-hat.png` | Horse derby hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20derby%20hat.png) |
@@ -543,6 +550,7 @@ this repository treats it as though it were.
 | `item/horse-ribbon-red.png` | Horse ribbon red.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20ribbon%20red.png) |
 | `item/horse-ribbon-white.png` | Horse ribbon white.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20ribbon%20white.png) |
 | `item/horse-seashell-clips.png` | Horse seashell clips.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20seashell%20clips.png) |
+| `item/horse-unicorn-horn.png` | Horse unicorn horn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20unicorn%20horn.png) |
 | `item/horseradish-salmon.png` | Horseradish salmon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horseradish%20salmon.png) |
 | `item/horseradish.png` | Horseradish.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horseradish.png) |
 | `item/hot-cocoa.png` | Hot cocoa.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hot%20cocoa.png) |
@@ -772,6 +780,7 @@ this repository treats it as though it were.
 | `item/pink-cow-bow.png` | Pink cow bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pink%20cow%20bow.png) |
 | `item/pink-cow-sunglasses.png` | Pink cow sunglasses.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pink%20cow%20sunglasses.png) |
 | `item/pink-diamond.png` | Pink diamond.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pink%20diamond.png) |
+| `item/pink-horse-bow.png` | Pink horse bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pink%20horse%20bow.png) |
 | `item/pink-scallop-shell.png` | Pink scallop shell.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pink%20scallop%20shell.png) |
 | `item/pizza.png` | Pizza.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pizza.png) |
 | `item/plum-blossom.png` | Plum blossom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Plum%20blossom.png) |
@@ -813,6 +822,8 @@ this repository treats it as though it were.
 | `item/rabbit-hair.png` | Rabbit hair.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20hair.png) |
 | `item/rabbit-halo.png` | Rabbit halo.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20halo.png) |
 | `item/rabbit-heart-clips.png` | Rabbit heart clips.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20heart%20clips.png) |
+| `item/rabbit-horn.png` | Rabbit horn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20horn.png) |
+| `item/rabbit-pink-bow.png` | Rabbit pink bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20pink%20bow.png) |
 | `item/rabbit-ribbon-blue.png` | Rabbit ribbon blue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20ribbon%20blue.png) |
 | `item/rabbit-ribbon-red.png` | Rabbit ribbon red.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20ribbon%20red.png) |
 | `item/rabbit-ribbon-white.png` | Rabbit ribbon white.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Rabbit%20ribbon%20white.png) |
@@ -893,6 +904,10 @@ this repository treats it as though it were.
 | `item/sauteed-snow-peas.png` | Sauteed snow peas.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sauteed%20snow%20peas.png) |
 | `item/scent-of-spring.png` | Scent of spring.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scent%20of%20spring.png) |
 | `item/scrap-metal-armor.png` | Scrap Metal Armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Armor.png) |
+| `item/scrap-metal-boots.png` | Scrap Metal Boots.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Boots.png) |
+| `item/scrap-metal-helmet.png` | Scrap Metal Helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Helmet.png) |
+| `item/scrap-metal-legplates.png` | Scrap Metal Legplates.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Legplates.png) |
+| `item/scrap-metal-ring.png` | Scrap Metal Ring.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20Metal%20Ring.png) |
 | `item/scrap-metal-sword.png` | Scrap metal sword.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Scrap%20metal%20sword.png) |
 | `item/sea-bass.png` | Sea bass.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sea%20bass.png) |
 | `item/sea-bream-rice.png` | Sea bream rice.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sea%20bream%20rice.png) |
@@ -923,7 +938,10 @@ this repository treats it as though it were.
 | `item/sheep-green-visor.png` | Sheep green visor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20green%20visor.png) |
 | `item/sheep-horns.png` | Sheep horns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20horns.png) |
 | `item/sheep-hot-water-bottle.png` | Sheep hot water bottle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20hot%20water%20bottle.png) |
+| `item/sheep-mushroom-hat.png` | Sheep mushroom hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20mushroom%20hat.png) |
 | `item/sheep-palm-tree.png` | Sheep palm tree.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20palm%20tree.png) |
+| `item/sheep-party-hat.png` | Sheep party hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20party%20hat.png) |
+| `item/sheep-pink-bow.png` | Sheep pink bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20pink%20bow.png) |
 | `item/sheep-ribbon-blue.png` | Sheep ribbon blue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20ribbon%20blue.png) |
 | `item/sheep-ribbon-red.png` | Sheep ribbon red.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20ribbon%20red.png) |
 | `item/sheep-ribbon-white.png` | Sheep ribbon white.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sheep%20ribbon%20white.png) |
@@ -1004,9 +1022,6 @@ this repository treats it as though it were.
 | `item/spr_ui_item_basic_misc_shipping_bin.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_basic_misc_shipping_bin.png | game files (NPC Studio) |
 | `item/spr_ui_item_big_bell.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_big_bell.png | game files (NPC Studio) |
 | `item/spr_ui_item_black_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_black_tablet.png | game files (NPC Studio) |
-| `item/spr_ui_item_bug_pheromone_legendary.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_legendary.png | game files (NPC Studio) |
-| `item/spr_ui_item_bug_pheromone_rare.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_rare.png | game files (NPC Studio) |
-| `item/spr_ui_item_bug_pheromone_uncommon.png` | animations/Item Icons/Misc/spr_ui_item_bug_pheromone_uncommon.png | game files (NPC Studio) |
 | `item/spr_ui_item_caldosian_breastplate.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_breastplate.png | game files (NPC Studio) |
 | `item/spr_ui_item_caldosian_drinking_horn.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_drinking_horn.png | game files (NPC Studio) |
 | `item/spr_ui_item_caldosian_emperor_bust.png` | animations/Item Icons/Archaeology/spr_ui_item_caldosian_emperor_bust.png | game files (NPC Studio) |
@@ -1410,24 +1425,13 @@ this repository treats it as though it were.
 | `item/spr_ui_item_dragon_statue_replica_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_dragon_statue_replica_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_earth_infused_stone.png` | animations/Item Icons/Archaeology/spr_ui_item_earth_infused_stone.png | game files (NPC Studio) |
 | `item/spr_ui_item_engagement_ring.png` | animations/Item Icons/Date/spr_ui_item_engagement_ring.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_cloth_shoes.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_cloth_shoes.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_crystal_boots.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_boots.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_crystal_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_helmet.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_crystal_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_ring.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_crystal_tassets.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_crystal_tassets.png | game files (NPC Studio) |
 | `item/spr_ui_item_equipment_heros_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_heros_ring.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_scrap_metal_boots.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_boots.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_scrap_metal_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_helmet.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_scrap_metal_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_scrap_metal_ring.png | game files (NPC Studio) |
-| `item/spr_ui_item_equipment_verdigris_helmet.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_verdigris_helmet.png | game files (NPC Studio) |
 | `item/spr_ui_item_espresso_machine_gold.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_espresso_machine_gold.png | game files (NPC Studio) |
 | `item/spr_ui_item_faceted_rock_gem.png` | animations/Item Icons/Archaeology/spr_ui_item_faceted_rock_gem.png | game files (NPC Studio) |
 | `item/spr_ui_item_family_crest_pendant.png` | animations/Item Icons/Archaeology/spr_ui_item_family_crest_pendant.png | game files (NPC Studio) |
 | `item/spr_ui_item_fence_picket.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_fence_picket.png | game files (NPC Studio) |
 | `item/spr_ui_item_fence_stone_wall.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_fence_stone_wall.png | game files (NPC Studio) |
 | `item/spr_ui_item_fire_crystal.png` | animations/Item Icons/Archaeology/spr_ui_item_fire_crystal.png | game files (NPC Studio) |
-| `item/spr_ui_item_fish_bait_rare.png` | animations/Item Icons/Misc/spr_ui_item_fish_bait_rare.png | game files (NPC Studio) |
-| `item/spr_ui_item_fish_bait_uncommon.png` | animations/Item Icons/Misc/spr_ui_item_fish_bait_uncommon.png | game files (NPC Studio) |
 | `item/spr_ui_item_flint_arrowhead.png` | animations/Item Icons/Archaeology/spr_ui_item_flint_arrowhead.png | game files (NPC Studio) |
 | `item/spr_ui_item_fossilized_egg.png` | animations/Item Icons/Archaeology/spr_ui_item_fossilized_egg.png | game files (NPC Studio) |
 | `item/spr_ui_item_fossilized_mandrake_root.png` | animations/Item Icons/Archaeology/spr_ui_item_fossilized_mandrake_root.png | game files (NPC Studio) |
@@ -1833,10 +1837,6 @@ this repository treats it as though it were.
 | `item/spr_ui_item_gathering_basket.png` | animations/Item Icons/Archaeology/spr_ui_item_gathering_basket.png | game files (NPC Studio) |
 | `item/spr_ui_item_giant_fish_scale.png` | animations/Item Icons/Archaeology/spr_ui_item_giant_fish_scale.png | game files (NPC Studio) |
 | `item/spr_ui_item_hardened_essence.png` | animations/Item Icons/Archaeology/spr_ui_item_hardened_essence.png | game files (NPC Studio) |
-| `item/spr_ui_item_honey_deluxe.png` | animations/Item Icons/Food/spr_ui_item_honey_deluxe.png | game files (NPC Studio) |
-| `item/spr_ui_item_honey_legendary.png` | animations/Item Icons/Food/spr_ui_item_honey_legendary.png | game files (NPC Studio) |
-| `item/spr_ui_item_honey_premium.png` | animations/Item Icons/Food/spr_ui_item_honey_premium.png | game files (NPC Studio) |
-| `item/spr_ui_item_honey.png` | animations/Item Icons/Food/spr_ui_item_honey.png | game files (NPC Studio) |
 | `item/spr_ui_item_insect_queens_birdwing.png` | animations/Item Icons/Bugs/spr_ui_item_insect_queens_birdwing.png | game files (NPC Studio) |
 | `item/spr_ui_item_kitchen_tier_3_champion_blue.png` | animations/Item Icons/Placeables/Kitchens/spr_ui_item_kitchen_tier_3_champion_blue.png | game files (NPC Studio) |
 | `item/spr_ui_item_lost_crown_of_aldaria.png` | animations/Item Icons/Archaeology/spr_ui_item_lost_crown_of_aldaria.png | game files (NPC Studio) |
@@ -2067,6 +2067,8 @@ this repository treats it as though it were.
 | `item/vegetable-soup.png` | Vegetable soup.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Vegetable%20soup.png) |
 | `item/veggie-sub-sandwich.png` | Veggie sub sandwich.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Veggie%20sub%20sandwich.png) |
 | `item/verdigris-armor.png` | Verdigris Armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Armor.png) |
+| `item/verdigris-greaves.png` | Verdigris Greaves.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Greaves.png) |
+| `item/verdigris-helmet.png` | Verdigris Helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Helmet.png) |
 | `item/verdigris-ring.png` | Verdigris Ring.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20Ring.png) |
 | `item/verdigris-sword.png` | Verdigris sword.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20sword.png) |
 | `item/verdigris-tassets.png` | Verdigris tassets.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20tassets.png) |
@@ -2135,7 +2137,7 @@ this repository treats it as though it were.
 | `item/written-root.png` | Written root.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Written%20root.png) |
 | `item/yellow-chicken-bow.png` | Yellow chicken bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Yellow%20chicken%20bow.png) |
 
-## Wardrobe (290)
+## Wardrobe (325)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -2179,6 +2181,7 @@ this repository treats it as though it were.
 | `cosmetic/baseball-cap.png` | Baseball cap.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baseball%20cap.png) |
 | `cosmetic/beard-basic.png` | Beard basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beard%20basic.png) |
 | `cosmetic/beard-thick.png` | Beard thick.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beard%20thick.png) |
+| `cosmetic/beekeeper-hat.png` | Beekeeper hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beekeeper%20hat.png) |
 | `cosmetic/beetle-mandible-horns.png` | Beetle mandible horns.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beetle%20mandible%20horns.png) |
 | `cosmetic/beret.png` | Beret.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Beret.png) |
 | `cosmetic/berry-hat.png` | Berry hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Berry%20hat.png) |
@@ -2230,7 +2233,6 @@ this repository treats it as though it were.
 | `cosmetic/crown-dark-regent.png` | Crown dark regent.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown%20dark%20regent.png) |
 | `cosmetic/crown-tide.png` | Crown tide.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown%20tide.png) |
 | `cosmetic/crown.png` | Crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crown.png) |
-| `cosmetic/crystal-helmet.png` | Crystal helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Crystal%20helmet.png) |
 | `cosmetic/curly-high-top.png` | Curly high top.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20high%20top.png) |
 | `cosmetic/curly-medium-fringe.png` | Curly medium fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20medium%20fringe.png) |
 | `cosmetic/curly-medium.png` | Curly medium.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Curly%20medium.png) |
@@ -2300,11 +2302,13 @@ this repository treats it as though it were.
 | `cosmetic/noble-tunic.png` | Noble tunic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Noble%20tunic.png) |
 | `cosmetic/oreclod-hat.png` | Oreclod hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Oreclod%20hat.png) |
 | `cosmetic/overalls-basic.png` | Overalls basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20basic.png) |
+| `cosmetic/overalls-farmer.png` | Overalls farmer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20farmer.png) |
 | `cosmetic/overalls-shorts.png` | Overalls shorts.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20shorts.png) |
 | `cosmetic/overalls-skirt.png` | Overalls skirt.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Overalls%20skirt.png) |
 | `cosmetic/paisley-bandana.png` | Paisley bandana.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Paisley%20bandana.png) |
 | `cosmetic/pants-adventurer.png` | Pants adventurer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20adventurer.png) |
 | `cosmetic/pants-basic.png` | Pants basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20basic.png) |
+| `cosmetic/pants-beekeeper.png` | Pants beekeeper.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20beekeeper.png) |
 | `cosmetic/pants-cloth-armor.png` | Pants cloth armor.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20cloth%20armor.png) |
 | `cosmetic/pants-exalted.png` | Pants exalted.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20exalted.png) |
 | `cosmetic/pants-explorer.png` | Pants explorer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pants%20explorer.png) |
@@ -2340,6 +2344,7 @@ this repository treats it as though it were.
 | `cosmetic/short-parted-straight.png` | Short parted straight.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Short%20parted%20straight.png) |
 | `cosmetic/shorts-basic.png` | Shorts basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20basic.png) |
 | `cosmetic/shorts-fishing.png` | Shorts fishing.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20fishing.png) |
+| `cosmetic/shorts-swimtrunks.png` | Shorts swimtrunks.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Shorts%20swimtrunks.png) |
 | `cosmetic/skirt-ancient-witch.png` | Skirt ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20ancient%20witch.png) |
 | `cosmetic/skirt-dancer.png` | Skirt dancer.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20dancer.png) |
 | `cosmetic/skirt-long-basic.png` | Skirt long basic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Skirt%20long%20basic.png) |
@@ -2352,6 +2357,35 @@ this repository treats it as though it were.
 | `cosmetic/soul-patch.png` | Soul patch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Soul%20patch.png) |
 | `cosmetic/soup-pot.png` | Soup pot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Soup%20pot.png) |
 | `cosmetic/special-flower-crown.png` | Special flower crown.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Special%20flower%20crown.png) |
+| `cosmetic/spr_ui_item_wearable_back_gear_basic_backpack.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_backpack.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_back_gear_basic_cape.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_basic_cape.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_back_gear_dark_regent_cape.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dark_regent_cape.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_dragonsworn_cloak_seridia.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_back_gear_march_mistrian_shield.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_back_gear_march_mistrian_shield.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_dress_caped_wedding_gown.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_dress_caped_wedding_gown.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_dress_mermaid_wedding_gown.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_dress_mermaid_wedding_gown.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_dress_romantic_wedding_gown.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_dress_romantic_wedding_gown.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_face_gear_dragon_cleric_earrings_merged.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_barrel_roller_hat.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_barrel_roller_hat.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_clips_fin.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_fin.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_clips_wedding_flower.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_clips_wedding_flower.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_dragon_cleric_diadem.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragon_cleric_diadem.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_dragonsworn_helmet_seridia.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_dragonsworn_helmet_seridia.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_griffin_statue_hat.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_griffin_statue_hat.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_wedding_top_hat.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_top_hat.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_head_wedding_veil.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_head_wedding_veil.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_pants_dragonsworn_armor_seridia.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_pants_dragonsworn_armor_seridia.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_robe_dark_regent.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dark_regent.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_robe_dragon_cleric.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_robe_dragon_cleric.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_shoes_boots_dragon_cleric.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragon_cleric.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_boots_dragonsworn_armor_seridia.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_shoes_floral_wedding_dress.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_floral_wedding_dress.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_shoes_wedding_dress.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_shoes_wedding_dress.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_suit_classy_bowtie_wedding.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_suit_classy_bowtie_wedding.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding_tuxedo.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_suit_tailcoat_wedding.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_suit_tailcoat_wedding.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_top_dragonsworn_armor_seridia.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_top_dragonsworn_armor_seridia.png | game files (NPC Studio) |
+| `cosmetic/spr_ui_item_wearable_top_tarnished_gold_armor.png` | animations/Item Icons/Wearable/spr_ui_item_wearable_top_tarnished_gold_armor.png | game files (NPC Studio) |
 | `cosmetic/sprout-hat.png` | Sprout hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sprout%20hat.png) |
 | `cosmetic/stalagmite-hat.png` | Stalagmite hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Stalagmite%20hat.png) |
 | `cosmetic/straight-buns-fringed.png` | Straight buns fringed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Straight%20buns%20fringed.png) |
@@ -2381,7 +2415,9 @@ this repository treats it as though it were.
 | `cosmetic/teapot.png` | Teapot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Teapot.png) |
 | `cosmetic/textured-buzz.png` | Textured buzz.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Textured%20buzz.png) |
 | `cosmetic/tiara-ancient-witch.png` | Tiara ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tiara%20ancient%20witch.png) |
+| `cosmetic/top-adventurers-jerkin.png` | Top adventurers jerkin.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20adventurers%20jerkin.png) |
 | `cosmetic/top-ancient-witch.png` | Top ancient witch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20ancient%20witch.png) |
+| `cosmetic/top-beekeepers-shirt.png` | Top beekeepers shirt.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20beekeepers%20shirt.png) |
 | `cosmetic/top-buttoned-tanktop.png` | Top buttoned tanktop.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20buttoned%20tanktop.png) |
 | `cosmetic/top-caldosian-overcoat.png` | Top caldosian overcoat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20caldosian%20overcoat.png) |
 | `cosmetic/top-cami.png` | Top cami.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Top%20cami.png) |
@@ -2417,6 +2453,7 @@ this repository treats it as though it were.
 | `cosmetic/underwear-briefs.png` | Underwear briefs.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20briefs.png) |
 | `cosmetic/underwear-shorts-polkadot.png` | Underwear shorts polkadot.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20shorts%20polkadot.png) |
 | `cosmetic/underwear-shorts.png` | Underwear shorts.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20shorts.png) |
+| `cosmetic/underwear-tank.png` | Underwear tank.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Underwear%20tank.png) |
 | `cosmetic/verdigris-helmet.png` | Verdigris helmet.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Verdigris%20helmet.png) |
 | `cosmetic/void-cat-hat.png` | Void cat hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Void%20cat%20hat.png) |
 | `cosmetic/wavy-long-fringe.png` | Wavy long fringe.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wavy%20long%20fringe.png) |
@@ -2565,7 +2602,7 @@ this repository treats it as though it were.
 | `festival/calendar-icon-shooting-star-festival.png` | Calendar icon shooting star festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20shooting%20star%20festival.png) |
 | `festival/calendar-icon-spring-festival.png` | Calendar icon spring festival.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Calendar%20icon%20spring%20festival.png) |
 
-## Interface (45)
+## Interface (46)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -2612,6 +2649,7 @@ this repository treats it as though it were.
 | `ui/spr_fish_silhouette_large_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_large_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_medium_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_medium_0_swim.png | game files (NPC Studio) |
 | `ui/spr_fish_silhouette_small_0_swim.png` | animations/Animals/Fish/spr_fish_silhouette_small_0_swim.png | game files (NPC Studio) |
+| `ui/spr_ui_journal_quests_festival_subicon.png` | animations/UI NEW/Journal/Quests/spr_ui_journal_quests_festival_subicon.png | game files (NPC Studio) |
 | `ui/tackleshop-icon.png` | Tackleshop icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tackleshop%20icon.png) |
 | `ui/woodcrafting-icon.png` | Woodcrafting icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Woodcrafting%20icon.png) |
 

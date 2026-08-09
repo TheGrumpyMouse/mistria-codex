@@ -16,6 +16,7 @@ import {
 import { categoryLabelOne, METHOD_LABELS, requirementDisplay, WORN_ON_LABELS } from '~/lib/labels'
 import { doneIn, setDone } from '~/lib/progress'
 import type { BoardRequest } from '~/lib/request-board'
+import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/item/$id')
@@ -82,6 +83,8 @@ interface GiftPrefs {
 interface ShopRecord {
   id: string
   name: string
+  /** `shop/<id>`. The eight fixed shops have art; the six stalls glyph. */
+  icon_key: string | null
   location_id: string | null
   owner_character_id: string | null
   /** Day-gated shops — the Saturday Market stalls. Empty means always open. */
@@ -404,24 +407,26 @@ export function ItemRoute() {
         <ItemIcon iconKey={item.icon_key ?? `item/${item.id}`} name={item.name} size="lg" />
         <div className="min-w-0">
           <h1 className="truncate text-2xl">{item.name}</h1>
-          <p className="mt-0.5 text-ink-mute text-sm">
-            {categoryLabelOne(item.category)}
-            {item.worn_on !== undefined && (
-              <> · worn on the {(WORN_ON_LABELS[item.worn_on] ?? item.worn_on).toLowerCase()}</>
-            )}
-            {item.sell_value !== null && (
-              <>
-                {' · sells for '}
-                <span data-numeral>{item.sell_value}t</span>
-              </>
-            )}
-            {/* A wardrobe item cannot be sold back, so its price is what it
-                costs — the one category where buy_value is the headline. */}
-            {item.sell_value === null && item.buy_value !== null && (
-              <>
-                {' · costs '}
-                <span data-numeral>{item.buy_value}t</span>
-              </>
+          <p className="mt-0.5 flex flex-wrap items-center gap-x-1 text-ink-mute text-sm">
+            <span>
+              {categoryLabelOne(item.category)}
+              {item.worn_on !== undefined && (
+                <> · worn on the {(WORN_ON_LABELS[item.worn_on] ?? item.worn_on).toLowerCase()}</>
+              )}
+              {item.sell_value !== null && ' · sells for'}
+              {/* A wardrobe item cannot be sold back, so its price is what it
+                  costs — the one category where buy_value is the headline. */}
+              {item.sell_value === null && item.buy_value !== null && ' · costs'}
+            </span>
+            {/* The coin is decoration; the "t" is the unit. Keeping both is
+                mildly redundant and survives a clone with no art, where the
+                sprite is a lettered tile and "500" alone would name no
+                currency. Every list row says "500t" too. */}
+            {(item.sell_value ?? item.buy_value) !== null && (
+              <span className="inline-flex items-center gap-1">
+                <ItemIcon iconKey="ui/tesserae" name="tesserae" size="sm" />
+                <span data-numeral>{item.sell_value ?? item.buy_value}t</span>
+              </span>
             )}
           </p>
         </div>
@@ -475,6 +480,13 @@ export function ItemRoute() {
           {/* The same museum:<item_id> key the museum screen writes, so the
               two checkboxes can never disagree. */}
           <input type="checkbox" checked={museumDone} onChange={toggleMuseum} />
+          {item.museum.wing !== null && (
+            <ItemIcon
+              iconKey={`museum/${item.museum.wing}`}
+              name={`${item.museum.wing} wing`}
+              size="sm"
+            />
+          )}
           <span className={museumDone ? 'line-through opacity-70' : undefined}>
             <Link to="/museum" className="underline decoration-rule underline-offset-4">
               The museum wants this
@@ -638,7 +650,7 @@ export function ItemRoute() {
                   {ingredient.item_id !== null ? (
                     <>
                       <ItemIcon
-                        iconKey={index[ingredient.item_id]?.i ?? `item/${ingredient.item_id}`}
+                        iconKey={iconKeyFor(ingredient.item_id, index[ingredient.item_id])}
                         name={index[ingredient.item_id]?.n ?? ingredient.item_id}
                         size="sm"
                       />
@@ -694,23 +706,26 @@ export function ItemRoute() {
           <ItemLinkList ids={machine.accepts_item_ids} index={index} />
 
           <h3 className="mt-3 font-display font-semibold text-ink text-sm">What comes out</h3>
-          <ul className="mt-1 flex flex-col gap-0.5 text-ink-mute text-sm">
+          <ul className="mt-1 flex flex-col gap-1 text-ink-mute text-sm">
             {machine.yields
               .filter((tier) => tier.item_ids.length > 0)
               .map((tier) => (
-                <li key={tier.input_rarity}>
-                  {tier.input_rarity} →{' '}
-                  {tier.item_ids.map((outId, i) => (
-                    <span key={outId}>
-                      {i > 0 && ' or '}
-                      <Link
-                        to="/item/$id"
-                        params={{ id: outId }}
-                        className="text-ink underline decoration-rule underline-offset-4 hover:decoration-current"
-                      >
-                        {index[outId]?.n ?? outId.replace(/_/g, ' ')}
-                      </Link>
-                    </span>
+                <li key={tier.input_rarity} className="flex flex-wrap items-center gap-1.5">
+                  <span className="shrink-0">{tier.input_rarity} →</span>
+                  {tier.item_ids.map((outId) => (
+                    <Link
+                      key={outId}
+                      to="/item/$id"
+                      params={{ id: outId }}
+                      className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+                    >
+                      <ItemIcon
+                        iconKey={iconKeyFor(outId, index[outId])}
+                        name={index[outId]?.n ?? outId}
+                        size="sm"
+                      />
+                      {index[outId]?.n ?? outId.replace(/_/g, ' ')}
+                    </Link>
                   ))}
                 </li>
               ))}
@@ -722,30 +737,33 @@ export function ItemRoute() {
               <p className="text-ink-faint text-xs">
                 It requests one of these now and then — a bonus, not a requirement.
               </p>
-              <ul className="mt-1 flex flex-col gap-1 text-ink-mute text-sm">
+              <ul className="mt-1 flex flex-col gap-2 text-ink-mute text-sm">
                 {SEASONS.filter((season) =>
                   machine.requests.some((request) => request.season === season),
                 ).map((season) => (
-                  <li key={season}>
+                  <li key={season} className="flex flex-wrap items-center gap-1.5">
                     <span
-                      className="mr-1.5 rounded-pill px-1.5 py-0.5 text-[0.625rem]"
+                      className="shrink-0 rounded-pill px-1.5 py-0.5 text-[0.625rem]"
                       style={{ background: `var(--${season}-tint)`, color: `var(--${season})` }}
                     >
                       {season}
                     </span>
                     {machine.requests
                       .filter((request) => request.season === season)
-                      .map((request, i) => (
-                        <span key={request.item_id}>
-                          {i > 0 && ' · '}
-                          <Link
-                            to="/item/$id"
-                            params={{ id: request.item_id }}
-                            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                          >
-                            {index[request.item_id]?.n ?? request.item_id.replace(/_/g, ' ')}
-                          </Link>
-                        </span>
+                      .map((request) => (
+                        <Link
+                          key={request.item_id}
+                          to="/item/$id"
+                          params={{ id: request.item_id }}
+                          className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+                        >
+                          <ItemIcon
+                            iconKey={iconKeyFor(request.item_id, index[request.item_id])}
+                            name={index[request.item_id]?.n ?? request.item_id}
+                            size="sm"
+                          />
+                          {index[request.item_id]?.n ?? request.item_id.replace(/_/g, ' ')}
+                        </Link>
                       ))}
                   </li>
                 ))}
@@ -771,39 +789,46 @@ export function ItemRoute() {
               ]
               const rotates = shop.stock.some((line) => line.item_id === item.id && line.rotation)
               return (
-                <li key={shopId}>
-                  <span className="text-ink">{shop.name}</span>
-                  {shop.location_id !== null && (
-                    <>
-                      {' — in '}
-                      <Link
-                        to="/place/$id"
-                        params={{ id: shop.location_id }}
-                        className="underline decoration-rule underline-offset-4 hover:text-ink"
-                      >
-                        {names.get(shop.location_id) ?? shop.location_id.replace(/_/g, ' ')}
-                      </Link>
-                    </>
-                  )}
-                  {shop.owner_character_id !== null && (
-                    <>
-                      {', run by '}
-                      <Link
-                        to="/villager/$id"
-                        params={{ id: shop.owner_character_id }}
-                        className="underline decoration-rule underline-offset-4 hover:text-ink"
-                      >
-                        {index[shop.owner_character_id]?.n ??
-                          shop.owner_character_id.replace(/_/g, ' ')}
-                      </Link>
-                    </>
-                  )}
-                  {(days.length > 0 || rotates) && (
-                    <span className="text-ink-faint">
-                      {days.length > 0 && <> — {days.join(', ')} only</>}
-                      {rotates && <> · rotating stock</>}
-                    </span>
-                  )}
+                <li key={shopId} className="flex items-center gap-2.5">
+                  <ItemIcon
+                    iconKey={shop.icon_key ?? `shop/${shop.id}`}
+                    name={shop.name}
+                    size="sm"
+                  />
+                  <span className="min-w-0">
+                    <span className="text-ink">{shop.name}</span>
+                    {shop.location_id !== null && (
+                      <>
+                        {' — in '}
+                        <Link
+                          to="/place/$id"
+                          params={{ id: shop.location_id }}
+                          className="underline decoration-rule underline-offset-4 hover:text-ink"
+                        >
+                          {names.get(shop.location_id) ?? shop.location_id.replace(/_/g, ' ')}
+                        </Link>
+                      </>
+                    )}
+                    {shop.owner_character_id !== null && (
+                      <>
+                        {', run by '}
+                        <Link
+                          to="/villager/$id"
+                          params={{ id: shop.owner_character_id }}
+                          className="underline decoration-rule underline-offset-4 hover:text-ink"
+                        >
+                          {index[shop.owner_character_id]?.n ??
+                            shop.owner_character_id.replace(/_/g, ' ')}
+                        </Link>
+                      </>
+                    )}
+                    {(days.length > 0 || rotates) && (
+                      <span className="text-ink-faint">
+                        {days.length > 0 && <> — {days.join(', ')} only</>}
+                        {rotates && <> · rotating stock</>}
+                      </span>
+                    )}
+                  </span>
                 </li>
               )
             })}
@@ -825,7 +850,7 @@ export function ItemRoute() {
                     className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
                   >
                     <ItemIcon
-                      iconKey={index[r.output.item_id]?.i ?? `item/${r.output.item_id}`}
+                      iconKey={iconKeyFor(r.output.item_id, index[r.output.item_id])}
                       name={index[r.output.item_id]?.n ?? r.output.item_id}
                       size="sm"
                     />
@@ -862,6 +887,26 @@ export function ItemRoute() {
                     onChange={() => toggleNeed(need)}
                     aria-label={`${veiled ? 'Hidden need' : need.label} — handed in`}
                   />
+                  {/* Who is asking, as a picture: a quest scroll, or the wing
+                      of the museum that wants it. A veiled row draws nothing —
+                      the quest sprite says which kind of quest it is, and for
+                      a late-story one that is already a hint. */}
+                  {!veiled &&
+                    (need.linkTo?.to === '/museum' ? (
+                      item.museum?.wing != null && (
+                        <ItemIcon
+                          iconKey={`museum/${item.museum.wing}`}
+                          name={`${item.museum.wing} wing`}
+                          size="sm"
+                        />
+                      )
+                    ) : need.aboutId === null ? null : (
+                      <ItemIcon
+                        iconKey={iconKeyFor(need.aboutId, entry ?? { c: 'quest' })}
+                        name={need.label}
+                        size="sm"
+                      />
+                    ))}
                   <span className="min-w-0 flex-1 truncate text-sm">
                     {veiled && reason !== null ? (
                       // The need exists and can even be ticked — only the name
@@ -964,9 +1009,13 @@ export function ItemRoute() {
 }
 
 /**
- * A capped, linked run of item names. The terrarium accepts 86 different
- * bugs — a count and a tap beats 86 rows, and nothing is hidden: the button
- * says exactly how many more there are.
+ * A capped, linked run of items. The terrarium accepts 86 different bugs — a
+ * count and a tap beats 86 rows, and nothing is hidden: the button says
+ * exactly how many more there are.
+ *
+ * Chips rather than a comma run, because every one of these is an item with a
+ * sprite: "which bugs does the terrarium take" is answered far faster by
+ * eighty-six pictures than by eighty-six names.
  */
 function ItemLinkList({ ids, index }: { ids: string[]; index: DisplayIndex }) {
   const [expanded, setExpanded] = useState(false)
@@ -976,31 +1025,27 @@ function ItemLinkList({ ids, index }: { ids: string[]; index: DisplayIndex }) {
   const shown = expanded ? named : named.slice(0, 10)
 
   return (
-    <p className="mt-1 text-ink-mute text-sm">
-      {shown.map((entry, i) => (
-        <span key={entry.id}>
-          {i > 0 && ' · '}
-          <Link
-            to="/item/$id"
-            params={{ id: entry.id }}
-            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-          >
-            {entry.name}
-          </Link>
-        </span>
+    <div className="mt-1 flex flex-wrap items-center gap-1.5">
+      {shown.map((entry) => (
+        <Link
+          key={entry.id}
+          to="/item/$id"
+          params={{ id: entry.id }}
+          className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+        >
+          <ItemIcon iconKey={iconKeyFor(entry.id, index[entry.id])} name={entry.name} size="sm" />
+          {entry.name}
+        </Link>
       ))}
       {named.length > shown.length && (
-        <>
-          {' '}
-          <button
-            type="button"
-            onClick={() => setExpanded(true)}
-            className="tap-target text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
-          >
-            and {named.length - shown.length} more
-          </button>
-        </>
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="tap-target text-ink-faint text-xs underline decoration-rule underline-offset-4 hover:text-ink"
+        >
+          and {named.length - shown.length} more
+        </button>
       )}
-    </p>
+    </div>
   )
 }

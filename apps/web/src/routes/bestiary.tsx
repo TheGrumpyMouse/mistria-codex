@@ -5,6 +5,7 @@ import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { iconKeyFor } from '~/lib/search'
 
 const route = getRouteApi('/monster/$id')
 
@@ -136,7 +137,7 @@ export function BestiaryRoute() {
                     className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
                   >
                     <ItemIcon
-                      iconKey={index[drop.item_id]?.i ?? `item/${drop.item_id}`}
+                      iconKey={iconKeyFor(drop.item_id, index[drop.item_id])}
                       name={index[drop.item_id]?.n ?? drop.item_id}
                       size="sm"
                     />

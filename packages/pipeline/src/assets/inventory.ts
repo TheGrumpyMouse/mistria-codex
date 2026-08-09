@@ -93,6 +93,13 @@ export async function collectItemWants(): Promise<Want[]> {
  * game install involved. The join is display name, which is also how the
  * cosmetic records got their prices, so a name that resolved there resolves
  * here.
+ *
+ * **Folded, not exact.** The wiki writes "Beekeeper’s Hat" with a curly
+ * apostrophe where the game writes a straight one, and "Swimtrunks" where the
+ * game writes "Swim Trunks" — seven wardrobe pieces whose art was on the wiki
+ * all along and which an exact join threw away. The skills builder folds names
+ * for the same reason ("Well Armed" against "Well-Armed"); punctuation and
+ * spacing are not identity.
  */
 export async function collectCosmeticWants(): Promise<Want[]> {
   interface Harvested {
@@ -113,19 +120,50 @@ export async function collectCosmeticWants(): Promise<Want[]> {
   }
 
   const byName = new Map(
-    harvest.cosmetics.flatMap((row) => (row.icon === null ? [] : [[row.name, row.icon] as const])),
+    harvest.cosmetics.flatMap((row) =>
+      row.icon === null ? [] : [[foldName(row.name), row.icon] as const],
+    ),
   )
   const records = await readJson<DataItem[]>(join(DATA_DIR, 'items.json'))
 
   const wants: Want[] = []
+  const missed: string[] = []
   for (const record of records) {
     if (record.category !== 'cosmetic' || record.icon_key === null) continue
-    const sourceFile = byName.get(record.name)
-    if (sourceFile === undefined) continue
+    const sourceFile = byName.get(foldName(record.name))
+    if (sourceFile === undefined) {
+      // Counted, never silent. A bare `continue` here is what hid 37 wardrobe
+      // pieces: no want, no gap, no number — the join simply produced less and
+      // said nothing. Whatever is left after folding is a real wiki gap, and
+      // `pnpm assets:game` is what covers it.
+      missed.push(record.name)
+      continue
+    }
     wants.push({ family: 'cosmetic', iconKey: record.icon_key, sourceFile })
+  }
+
+  if (missed.length > 0) {
+    consola.info(
+      `assets: ${missed.length} cosmetics are not on the wiki's pages ` +
+        `(e.g. ${missed.slice(0, 3).join(', ')}) — the game install covers these`,
+    )
   }
   return wants
 }
+
+/**
+ * Two names are the same name if they differ only in punctuation or spacing.
+ *
+ * Curly versus straight apostrophes, and "Swim Trunks" versus "Swimtrunks".
+ * Spaces go too, not just collapse, because the disagreement is sometimes about
+ * whether a compound is one word.
+ */
+const foldName = (name: string): string =>
+  name
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]/g, '')
 
 /**
  * Villager icons and portraits, from the character-page harvest.
@@ -357,6 +395,42 @@ export function buildInventory(wants: Want[]): InventoryEntry[] {
   return entries
 }
 
+/**
+ * Wiki filenames a person has verified the wiki gets wrong.
+ *
+ * Applied to the collected wants, before dedupe, so the correction lands in one
+ * place and everything downstream — the local name, the manifest's
+ * `source_file`, the gap report — records the file that actually exists rather
+ * than the one the cargo row claims. See `curated/aliases/asset_files.json` for
+ * why this is a curated file and not a rule in the fetcher.
+ */
+async function applyCorrections(wants: Want[]): Promise<Want[]> {
+  interface Corrections {
+    corrections: { wrong: string; right: string }[]
+  }
+
+  let file: Corrections
+  try {
+    file = await readJson<Corrections>(join(CURATED_DIR, 'aliases', 'asset_files.json'))
+  } catch {
+    return wants
+  }
+
+  const byWrong = new Map(
+    file.corrections.map((c) => [canonicalWikiName(c.wrong), canonicalWikiName(c.right)] as const),
+  )
+  let applied = 0
+  const corrected = wants.map((want) => {
+    const right = byWrong.get(canonicalWikiName(want.sourceFile))
+    if (right === undefined) return want
+    applied += 1
+    return { ...want, sourceFile: right }
+  })
+
+  if (applied > 0) consola.info(`assets: ${applied} want(s) use a corrected wiki filename`)
+  return corrected
+}
+
 /** Everything we want, from every source. */
 export async function collectInventory(): Promise<InventoryEntry[]> {
   const linked = await collectLinkedWants()
@@ -377,5 +451,5 @@ export async function collectInventory(): Promise<InventoryEntry[]> {
     ...(await collectUiWants()),
     ...(await collectMapWants()),
   ]
-  return buildInventory(wants)
+  return buildInventory(await applyCorrections(wants))
 }

@@ -20,7 +20,7 @@
  * Never runs in CI. Deterministic given the same install and inputs.
  */
 import { createHash } from 'node:crypto'
-import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { dirname, join, relative, sep } from 'node:path'
 import process, { argv, env } from 'node:process'
 import { pathToFileURL } from 'node:url'
@@ -49,9 +49,21 @@ const today = (): string =>
 
 /** One sprite to copy: the game's sprite name, and who wants it. */
 interface GameWant {
-  family: 'item' | 'ui'
+  family: 'item' | 'ui' | 'cosmetic'
   sprite: string
   iconKeys: string[]
+  /**
+   * True when the sprite name was worked out from a naming convention rather
+   * than read from a field.
+   *
+   * The difference decides what a miss means. An `icon_sprite` is the game
+   * telling us the filename, so an install that does not have it means we
+   * misread something and the run must stop. A derived name is our guess at
+   * the convention, so a miss is a record with no art — the ordinary case this
+   * whole fallback exists for, and stopping on it would make one unusual
+   * wardrobe entry break every other sprite's copy.
+   */
+  derived?: true
 }
 
 /**
@@ -64,6 +76,26 @@ const FISH_SILHOUETTES: GameWant[] = ['small', 'medium', 'large', 'giant'].map((
   sprite: `spr_fish_silhouette_${size}_0_swim`,
   iconKeys: [`ui/fish_shadow_${size}`],
 }))
+
+/**
+ * Chrome the wiki hosts all but one of.
+ *
+ * The five `quest/*` icons already in the manifest are the wiki's copies of the
+ * game's own journal subicons — same artwork, same set. The wiki simply never
+ * uploaded the festival one, so seven festival quests drew a scroll glyph next
+ * to six siblings drawing their real icon, which reads as a missing file rather
+ * than a style. Taken from the install because that is where it exists.
+ *
+ * `quest/cooking_challenge` stays a gap: the install has no subicon for it, and
+ * picking a neighbouring one because it is nearby would be inventing an answer.
+ */
+const UI_ICONS: GameWant[] = [
+  {
+    family: 'ui',
+    sprite: 'spr_ui_journal_quests_festival_subicon',
+    iconKeys: ['quest/festival'],
+  },
+]
 
 /** Every PNG under `animations/`, indexed by basename. ~30k files, one walk. */
 async function indexSprites(root: string): Promise<Map<string, string>> {
@@ -83,9 +115,27 @@ async function indexSprites(root: string): Promise<Map<string, string>> {
   return index
 }
 
-async function collectWants(covered: Set<string>): Promise<GameWant[]> {
+/**
+ * The wardrobe names no sprite anywhere, but the install names it the same way
+ * every time: `spr_ui_item_wearable_<cosmetic id>`.
+ *
+ * A cosmetic is not an item — it lives in `player_assets.toml`, outside the
+ * `ItemId` enum — so `sources/game/items.json` will never hold it and the
+ * extractor drops the rendering keys it does have (`lut` is a palette, not an
+ * icon). Our record id *is* the game's table key, which is what makes the
+ * convention safe to lean on. The `_merged` variant is the one exception the
+ * install ships: a couple of pieces are drawn from layered parts and only the
+ * flattened frame is a usable icon.
+ */
+const cosmeticSprites = (id: string): string[] => [
+  `spr_ui_item_wearable_${id}`,
+  `spr_ui_item_wearable_${id}_merged`,
+]
+
+async function collectWants(covered: Set<string>, sprites: Set<string>): Promise<GameWant[]> {
   interface DataItem {
     id: string
+    category: string
     icon_key: string | null
     variant_ids?: string[]
   }
@@ -103,13 +153,25 @@ async function collectWants(covered: Set<string>): Promise<GameWant[]> {
   let unsourced = 0
   for (const record of items) {
     if (record.icon_key === null || covered.has(record.icon_key)) continue
+
     // A collapsed furniture group's canonical member is its first variant.
-    const sprite = spriteById.get(record.id) ?? spriteById.get(record.variant_ids?.[0] ?? '')
+    const stated = spriteById.get(record.id) ?? spriteById.get(record.variant_ids?.[0] ?? '')
+    const derived =
+      record.category === 'cosmetic'
+        ? cosmeticSprites(record.id).find((name) => sprites.has(name))
+        : undefined
+    const sprite = stated ?? derived
+
     if (sprite === null || sprite === undefined) {
       unsourced += 1
       continue
     }
-    const want = bySprite.get(sprite) ?? { family: 'item' as const, sprite, iconKeys: [] }
+    const want = bySprite.get(sprite) ?? {
+      sprite,
+      iconKeys: [],
+      family: record.category === 'cosmetic' ? ('cosmetic' as const) : ('item' as const),
+      ...(stated == null ? { derived: true as const } : {}),
+    }
     want.iconKeys.push(record.icon_key)
     bySprite.set(sprite, want)
   }
@@ -117,9 +179,11 @@ async function collectWants(covered: Set<string>): Promise<GameWant[]> {
     consola.info(`assets:game — ${unsourced} uncovered records name no game sprite either`)
   }
 
-  return [...bySprite.values(), ...FISH_SILHOUETTES].sort((a, b) =>
-    a.sprite.localeCompare(b.sprite),
-  )
+  return [
+    ...bySprite.values(),
+    ...FISH_SILHOUETTES,
+    ...UI_ICONS.filter((want) => !want.iconKeys.every((key) => covered.has(key))),
+  ].sort((a, b) => a.sprite.localeCompare(b.sprite))
 }
 
 export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
@@ -130,15 +194,17 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
   const covered = new Set(
     manifest.assets.filter((a) => a.origin !== 'game_files').flatMap((a) => a.icon_keys),
   )
-  const wants = await collectWants(covered)
+  // Indexed before collecting, because a derived name is only a want if the
+  // install actually has it — the convention is checked, never assumed.
+  const sprites = await indexSprites(root)
+  const wants = await collectWants(covered, new Set(sprites.keys()))
   consola.info(`assets:game — ${wants.length} sprites wanted from the install`)
   if (dryRun) {
     for (const want of wants.slice(0, 20)) consola.log(`would copy ${want.sprite}`)
     return 0
   }
 
-  const sprites = await indexSprites(root)
-  const missing = wants.filter((w) => !sprites.has(w.sprite))
+  const missing = wants.filter((w) => w.derived !== true && !sprites.has(w.sprite))
   if (missing.length > 0) {
     // An icon_sprite the install cannot produce is a misread, not a gap.
     throw new Error(
@@ -193,7 +259,30 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
     assets,
   })
 
+  await removeOrphans(manifest.assets, entries)
   return entries.length
+}
+
+/**
+ * Delete game-sourced files this run no longer wants.
+ *
+ * The wiki fetcher has always pruned its own; this step did not, and the day
+ * the wiki gained art for something the install had been covering, eighteen
+ * files stayed on disk with no manifest entry — which the licensing check
+ * correctly calls an error, because an unmanifested sprite is art nothing
+ * credits and a takedown would miss.
+ *
+ * Only ever its own: `origin: 'game_files'` and named by the previous run.
+ * Touching a file this step did not create would let a bug here delete the
+ * wiki's library.
+ */
+async function removeOrphans(previous: AssetEntry[], current: AssetEntry[]): Promise<void> {
+  const keep = new Set(current.map((entry) => entry.file))
+  for (const entry of previous) {
+    if (entry.origin !== 'game_files' || keep.has(entry.file)) continue
+    await rm(join(ASSETS_DIR, entry.file), { force: true })
+    consola.warn(`assets:game — removed ${entry.file} (the wiki now covers it)`)
+  }
 }
 
 async function main(): Promise<void> {

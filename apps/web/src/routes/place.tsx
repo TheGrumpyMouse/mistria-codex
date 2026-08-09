@@ -4,12 +4,14 @@ import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
 import { BackLink } from '~/components/BackLink'
 import { FoundHereList } from '~/components/FoundHereList'
+import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section } from '~/components/Section'
 import { SpoilerAsk } from '~/components/Spoiler'
 import { ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, foundAt } from '~/lib/findable'
 import { requirementDisplay } from '~/lib/labels'
+import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 const route = getRouteApi('/place/$id')
@@ -158,23 +160,30 @@ export function PlaceRoute() {
   return (
     <Column>
       <BackLink />
-      <header>
-        <h1 className="text-2xl">{place.name}</h1>
-        <p className="mt-0.5 text-ink-mute text-sm">
-          {place.kind?.replace(/_/g, ' ') ?? 'place'}
-          {place.parent_id !== null && (
-            <>
-              {' · in '}
-              <Link
-                to="/place/$id"
-                params={{ id: place.parent_id }}
-                className="underline decoration-rule underline-offset-4 hover:text-ink"
-              >
-                {places.get(place.parent_id) ?? place.parent_id.replace(/_/g, ' ')}
-              </Link>
-            </>
-          )}
-        </p>
+      <header className="flex items-center gap-3">
+        {/* No location sprite exists anywhere, so this is always the map pin.
+            It is here for the same reason the other detail screens have one:
+            a page that starts with a bare heading reads as a different kind
+            of page. */}
+        <ItemIcon iconKey={`location/${place.id}`} name={place.name} size="lg" />
+        <div className="min-w-0">
+          <h1 className="text-2xl">{place.name}</h1>
+          <p className="mt-0.5 text-ink-mute text-sm">
+            {place.kind?.replace(/_/g, ' ') ?? 'place'}
+            {place.parent_id !== null && (
+              <>
+                {' · in '}
+                <Link
+                  to="/place/$id"
+                  params={{ id: place.parent_id }}
+                  className="underline decoration-rule underline-offset-4 hover:text-ink"
+                >
+                  {places.get(place.parent_id) ?? place.parent_id.replace(/_/g, ' ')}
+                </Link>
+              </>
+            )}
+          </p>
+        </div>
       </header>
 
       {place.unlock_requires.length > 0 && (
@@ -209,24 +218,31 @@ export function PlaceRoute() {
           {/* When the door is a seal, the lock message carries the price —
               which is the half a player actually came to look up. */}
           {gateSeal !== undefined && gateSeal.required_items.length > 0 && (
-            <span>
-              {' '}
-              That seal asks for:{' '}
-              {gateSeal.required_items.map((entry, i) => (
-                <span key={entry.item_id}>
-                  {i > 0 && ', '}
-                  <Link
-                    to="/item/$id"
-                    params={{ id: entry.item_id }}
-                    className="underline decoration-rule underline-offset-2 hover:text-ink"
-                  >
-                    {index[entry.item_id]?.n ?? entry.item_id.replace(/_/g, ' ')}
-                  </Link>
-                  {entry.quantity > 1 && ` ×${entry.quantity}`}
-                </span>
-              ))}
-              .
-            </span>
+            <>
+              <p className="mt-1.5">That seal asks for:</p>
+              {/* The same shopping list the mines screen and the quest page
+                  draw, drawn the same way — chips with sprites, because the
+                  answer to "what do I still need" is scanned, not read. */}
+              <ul className="mt-1 flex flex-wrap gap-1.5">
+                {gateSeal.required_items.map((entry) => (
+                  <li key={entry.item_id}>
+                    <Link
+                      to="/item/$id"
+                      params={{ id: entry.item_id }}
+                      className="tap-target flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink transition-colors hover:bg-sunk"
+                    >
+                      <ItemIcon
+                        iconKey={iconKeyFor(entry.item_id, index[entry.item_id])}
+                        name={index[entry.item_id]?.n ?? entry.item_id}
+                        size="sm"
+                      />
+                      {index[entry.item_id]?.n ?? entry.item_id.replace(/_/g, ' ')}
+                      {entry.quantity > 1 && <span data-numeral>×{entry.quantity}</span>}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
           )}
         </div>
       )}

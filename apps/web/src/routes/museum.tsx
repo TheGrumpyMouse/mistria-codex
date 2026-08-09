@@ -5,6 +5,7 @@ import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { loadDataset, loadDisplayIndex } from '~/lib/data'
 import { doneIn, setDone } from '~/lib/progress'
+import { iconKeyFor } from '~/lib/search'
 import { useData } from '~/lib/use-data'
 
 /**
@@ -48,6 +49,8 @@ const route = getRouteApi('/museum')
 interface MuseumSet {
   id: string
   name: string
+  /** `museum/<wing>` — one sprite per wing, shared by its sets. */
+  icon_key: string | null
   wing: string
   item_ids: string[]
   required_count: number
@@ -188,13 +191,14 @@ export function MuseumRoute() {
                 key={w.id}
                 type="button"
                 onClick={() => setWing(w.id)}
-                className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+                className="tap-target flex items-center gap-1.5 rounded-pill border border-rule py-1 pr-2.5 pl-1 text-xs transition-colors"
                 style={
                   wing === w.id
                     ? { background: 'var(--museum-tint)', color: 'var(--ink)', fontWeight: 600 }
                     : { color: 'var(--ink-mute)' }
                 }
               >
+                <ItemIcon iconKey={`museum/${w.id}`} name={w.label} size="sm" />
                 {w.label}{' '}
                 <span data-numeral>
                   {have}/{items.length}
@@ -254,13 +258,21 @@ export function MuseumRoute() {
                   type="button"
                   onClick={() => toggleCollapsed(set.id)}
                   aria-expanded={!folded}
-                  className="tap-target flex w-full items-baseline gap-2 text-left font-display font-semibold text-ink text-sm"
+                  className="tap-target flex w-full items-center gap-2 text-left font-display font-semibold text-ink text-sm"
                 >
                   <ChevronDown
                     aria-hidden
                     size={14}
                     strokeWidth={2}
-                    className={`shrink-0 self-center text-ink-faint transition-transform ${folded ? '-rotate-90' : ''}`}
+                    className={`shrink-0 text-ink-faint transition-transform ${folded ? '-rotate-90' : ''}`}
+                  />
+                  {/* The wing, not the set: 82 sets share four sprites, and
+                      which wing a set belongs to is the thing a folded row
+                      stops telling you. */}
+                  <ItemIcon
+                    iconKey={set.icon_key ?? `museum/${set.wing}`}
+                    name={`${set.wing} wing`}
+                    size="sm"
                   />
                   {set.name}
                   <span
@@ -290,7 +302,7 @@ export function MuseumRoute() {
                             aria-label={`${entry?.n ?? id} donated`}
                           />
                           <ItemIcon
-                            iconKey={entry?.i ?? `item/${id}`}
+                            iconKey={iconKeyFor(id, entry)}
                             name={entry?.n ?? id}
                             size="sm"
                           />

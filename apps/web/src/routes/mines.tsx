@@ -5,6 +5,7 @@ import { ItemIcon } from '~/components/ItemIcon'
 import { Section, Unknown } from '~/components/Section'
 import { SpoilerChip } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
+import { iconKeyFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 /**
@@ -23,6 +24,8 @@ import { useSpoilers } from '~/lib/spoilers'
 interface MineRecord {
   id: string
   name: string
+  /** `mine/<id>`. No mine sprite exists, so this always draws the pickaxe. */
+  icon_key: string | null
   floors: { min: number; max: number }
   gate: { type: string; key: string }[]
   ore_item_ids: string[]
@@ -100,19 +103,26 @@ export function MinesRoute() {
           )
           return (
             <section key={biome.id} className="rounded-card border border-rule bg-surface p-4">
-              <h2 className="flex items-baseline justify-between gap-2 font-display font-semibold text-ink">
-                {biome.location_id === null ? (
-                  biome.name
-                ) : (
-                  <Link
-                    to="/place/$id"
-                    params={{ id: biome.location_id }}
-                    className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                  >
-                    {biome.name}
-                  </Link>
-                )}
-                <span data-numeral className="font-normal text-ink-mute text-xs">
+              <h2 className="flex items-center justify-between gap-2 font-display font-semibold text-ink">
+                <span className="flex min-w-0 items-center gap-2">
+                  <ItemIcon
+                    iconKey={biome.icon_key ?? `mine/${biome.id}`}
+                    name={biome.name}
+                    size="sm"
+                  />
+                  {biome.location_id === null ? (
+                    biome.name
+                  ) : (
+                    <Link
+                      to="/place/$id"
+                      params={{ id: biome.location_id }}
+                      className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                    >
+                      {biome.name}
+                    </Link>
+                  )}
+                </span>
+                <span data-numeral className="shrink-0 font-normal text-ink-mute text-xs">
                   floors {biome.floors.min}–{biome.floors.max}
                 </span>
               </h2>
@@ -162,7 +172,7 @@ export function MinesRoute() {
                             className="tap-target flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-1 pr-2 pl-1 text-ink text-xs transition-colors hover:bg-sunk"
                           >
                             <ItemIcon
-                              iconKey={index[entry.item_id]?.i ?? `item/${entry.item_id}`}
+                              iconKey={iconKeyFor(entry.item_id, index[entry.item_id])}
                               name={index[entry.item_id]?.n ?? entry.item_id}
                               size="sm"
                             />
@@ -224,7 +234,7 @@ export function MinesRoute() {
           {seals
             .filter((s) => s.unlocks_mine_id === null)
             .map((seal) => (
-              <li key={seal.id}>
+              <li key={seal.id} className="flex items-center gap-2">
                 {seal.spoiler === true && !spoilers.shown(seal.id) ? (
                   // The row exists and still navigates — the quest page it
                   // lands on is the one that asks. Only the name is withheld.
@@ -239,14 +249,20 @@ export function MinesRoute() {
                   <Link
                     to="/quest/$id"
                     params={{ id: seal.quest_id }}
-                    className="text-ink text-sm underline decoration-rule underline-offset-4 hover:text-ink"
+                    className="flex items-center gap-2 text-ink text-sm hover:text-ink"
                   >
-                    {seal.name}
+                    <ItemIcon
+                      iconKey={iconKeyFor(seal.quest_id, index[seal.quest_id] ?? { c: 'quest' })}
+                      name={index[seal.quest_id]?.n ?? seal.name}
+                      size="sm"
+                    />
+                    <span className="underline decoration-rule underline-offset-4">
+                      {seal.name}
+                    </span>
                   </Link>
                 )}
                 {seal.required_items.length > 0 && (
-                  <span className="text-ink-faint text-xs">
-                    {' '}
+                  <span data-numeral className="text-ink-faint text-xs">
                     · {seal.required_items.length} items
                   </span>
                 )}
@@ -270,6 +286,9 @@ function MineList({
   index: DisplayIndex
 }) {
   if (ids.length === 0) return null
+  // The list is drawn from a route, not from the index, so an id the index
+  // does not carry still knows what family it belongs to.
+  const fallbackKind = { c: to === '/monster/$id' ? 'monster' : 'item' }
   return (
     <div className="mt-3">
       <p className="text-ink-mute text-xs">{title}</p>
@@ -282,7 +301,7 @@ function MineList({
               className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
             >
               <ItemIcon
-                iconKey={index[id]?.i ?? `item/${id}`}
+                iconKey={iconKeyFor(id, index[id] ?? fallbackKind)}
                 name={index[id]?.n ?? id}
                 size="sm"
               />

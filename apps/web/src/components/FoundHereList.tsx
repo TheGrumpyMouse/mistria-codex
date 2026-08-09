@@ -6,7 +6,7 @@ import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
 import { type FoundEntity, KIND_LABELS, KIND_ORDER } from '~/lib/findable'
 import { seasonsOf } from '~/lib/opportunity'
-import { routeFor } from '~/lib/search'
+import { iconKeyFor, routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
 
 /**
@@ -105,7 +105,7 @@ function Group({
                 ) : (
                   <>
                     <ItemIcon
-                      iconKey={entry?.i ?? `item/${entity.id}`}
+                      iconKey={iconKeyFor(entity.id, entry)}
                       name={entry?.n ?? entity.id}
                       size="sm"
                     />

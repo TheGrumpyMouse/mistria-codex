@@ -96,6 +96,22 @@ path (`pnpm assets:game`, see DATA-POLICY). Cosmetics are the opposite: every
 row on the three cosmetics *pages* carries a `[[File:…]]`, so the wardrobe's
 290 sprites came down the ordinary wiki route.
 
+**`Items.icon` is not always wikitext.** Eighteen of the 1,154 rows hold a bare
+`Chicken top hat.png` with no `[[File:…]]` around it, and `fileRef` used to
+return null for those — so every animal accessory and two armour pieces never
+entered the fetch inventory at all. **A want that is never collected cannot be
+reported missing**, which is why they drew a hashed glyph for months while
+`build/asset-gaps.json` listed exactly one of the forty-eight. That file records
+the wiki contradicting itself, not coverage; `build/reports/asset-coverage.md`
+is the coverage report, and it runs from `data/` outwards so a gap cannot open
+without appearing in it. 3,064 of 3,096 records now resolve to art.
+
+**Join wiki names folded, never exactly.** The wiki writes "Beekeeper’s Hat"
+with a curly apostrophe and "Swimtrunks" as one word; a silent `continue` on a
+non-match hid 37 wardrobe pieces. Same fold, same reason as the skills builder's
+"Well Armed"/"Well-Armed". And when a join drops a record, **count it** — the
+number is the only thing that makes the next such bug visible.
+
 Three consequences:
 
 1. **`Fish` has no season, location, or time.** They come from `Items`, joined on **display name**. Assert `Items.itemName` is unique or the join is silently wrong.
@@ -230,7 +246,7 @@ docs/                   PLAN.md, research/, schema/, generated reports
 
 ```
 pnpm check            biome ci + tsc -b + vitest run
-pnpm validate         zod + ajv + refint + vocab + licensing + determinism + coverage + source agreement
+pnpm validate         zod + ajv + refint + vocab + licensing + determinism + coverage + source agreement + asset coverage
 pnpm extract          game files -> sources/game/     (never run in CI; needs .env)
 pnpm enrich:cargo     fetch Cargo tables -> sources/  (never run in CI)
 pnpm enrich:pages     fetch wiki pages -> sources/    (never run in CI)

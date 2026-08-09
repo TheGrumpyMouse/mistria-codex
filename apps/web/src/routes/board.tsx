@@ -245,7 +245,13 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
     <div className="mt-4 flex flex-col gap-5">
       {byVillager.map(([id, group]) => (
         <section key={id}>
-          <h2 className="font-display font-semibold text-ink text-sm">
+          <h2 className="flex items-center gap-2 font-display font-semibold text-ink text-sm">
+            {/* `character/<id>` is the icon key by convention, so the face
+                needs no display index — this screen ships its own joined
+                form and deliberately never loads one. */}
+            {id !== 'unknown' && (
+              <ItemIcon iconKey={`character/${id}`} name={group.name} size="sm" />
+            )}
             {id === 'unknown' ? (
               group.name
             ) : (
@@ -256,7 +262,7 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
               >
                 {group.name}
               </Link>
-            )}{' '}
+            )}
             <span className="font-normal text-ink-faint">· {group.requests.length}</span>
           </h2>
           <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
