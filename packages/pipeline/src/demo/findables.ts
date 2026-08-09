@@ -28,6 +28,7 @@ import {
   type Weather,
 } from '@mistria/schema'
 import { consola } from 'consola'
+import { FINDABLE_METHODS } from '../build/availability.js'
 import { DATA_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 
@@ -90,6 +91,12 @@ export async function findables(ctx: QueryContext): Promise<Match[]> {
 
   for (const item of items) {
     for (const window of item.availability) {
+      // The same set the shipped flattener buckets by. A window whose method
+      // answers no season/weather/time question — a letter, a museum reward
+      // tier, a quest hand-over — is a fact about the item, not an answer to
+      // "what can I find right now", and this query is the reference
+      // implementation of that question.
+      if (!FINDABLE_METHODS.has(window.method)) continue
       const unknowns = matches(window, ctx)
       if (unknowns === null) continue
       results.push({

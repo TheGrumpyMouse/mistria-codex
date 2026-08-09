@@ -144,6 +144,33 @@ the community both use to refer to the same thing, in the same way a file path
 is. Adopting them is interoperability, and it is why user progress saved here
 will still mean something when the game files land.
 
+### Which source wins
+
+**The more specific source wins. Where both are equally specific, the game files
+win. A disagreement is reported, never resolved silently.**
+
+Two sources describe most of this dataset and they overlap on about two thousand
+facts. The rule is about specificity rather than provenance, because a flat
+"game first" breaks two things that are currently right:
+
+- The wiki prices 334 of 360 cosmetics that the files never price. Absence in
+  the primary source is not an answer.
+- A wiki **per-shop** price beats the item's **global** `value.store`. The Inn
+  sells the Lemon Pie at 650 and its recipe scroll at 400; one global number
+  cannot be both, and the narrower source is the correct one.
+
+**A boolean derived from a rich source is a bug, not a fallback.** The wiki's
+`Recipes.recipeSource` cell names a stall, a mine, a request or "Available From
+Start". It was read as *is this cell non-empty*, and that shipped 163 recipes
+all claiming "shop" for five milestones while looking like working code. If a
+source says more than the field being filled, model the rest or write `null` —
+never compress it into a value that reads as an answer.
+
+`pnpm validate` writes a precedence table into
+`build/reports/source-agreement.md`: per field, how many records both sources
+state, and which one ships. A field marked wiki-first with no stated reason
+raises `sources:precedence`.
+
 ## If you think a rule is wrong
 
 Open an issue. Don't work around it in a pull request — a bypassed guard is

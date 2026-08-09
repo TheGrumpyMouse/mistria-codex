@@ -1,5 +1,7 @@
 # Mistria Codex
 
+[![Release](https://img.shields.io/github/v/release/TheGrumpyMouse/mistria-codex?label=release)](https://github.com/TheGrumpyMouse/mistria-codex/releases)
+
 A companion app for [Fields of Mistria](https://www.fieldsofmistria.com/), for
 the question you actually have mid-game:
 
@@ -94,6 +96,21 @@ BASE_PATH=/mistria-codex/ pnpm build:web
 
 On Windows, Git Bash rewrites that leading slash into a Windows path — set
 `MSYS_NO_PATHCONV=1` with it, or use PowerShell's `$env:BASE_PATH`.
+
+## Releases
+
+The version lives in exactly one place — `version` in the root `package.json` —
+and the build compiles it into the app, where Settings and About both show it.
+Cutting a release is a tag:
+
+```sh
+git tag v1.0.0 && git push --tags
+```
+
+`.github/workflows/release.yml` refuses a tag that disagrees with
+`package.json`, then publishes the GitHub Release. Deployment is separate: Pages
+builds from `main` on every push, so a release marks a version rather than
+shipping one.
 
 These talk to the wiki or to a local game install and **never run in CI**, which
 is what keeps builds hermetic and polite to wiki.gg. `sources/` and

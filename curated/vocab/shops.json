@@ -91,6 +91,7 @@
   "shops": [
     {
       "id": "general_store",
+      "gameStoreId": "general",
       "name": "General Store",
       "page": "General Store",
       "owner": null,
@@ -107,6 +108,7 @@
     },
     {
       "id": "tackle_shop",
+      "gameStoreId": "terithia",
       "name": "Tackle Shop",
       "page": "Tackle Shop",
       "owner": "Terithia",
@@ -117,6 +119,7 @@
     },
     {
       "id": "blacksmith",
+      "gameStoreId": "blacksmith",
       "name": "Blacksmith",
       "page": "Blacksmith",
       "owner": "March",
@@ -133,6 +136,7 @@
     },
     {
       "id": "carpenter",
+      "gameStoreId": "carpenter",
       "name": "Carpenter",
       "page": "Carpenter",
       "owner": "Ryis",
@@ -147,6 +151,7 @@
     },
     {
       "id": "clinic",
+      "gameStoreId": "valens_clinic",
       "name": "Clinic",
       "page": "Clinic",
       "owner": "Valen",
@@ -157,6 +162,7 @@
     },
     {
       "id": "haydens_shop",
+      "gameStoreId": "hayden",
       "name": "Hayden's Shop",
       "page": "Hayden's Shop",
       "owner": "Hayden",
@@ -173,6 +179,7 @@
     },
     {
       "id": "inn",
+      "gameStoreId": "inn",
       "name": "Sleeping Dragon Inn",
       "page": "Inn",
       "owner": "Hemlock",
@@ -186,6 +193,7 @@
     },
     {
       "id": "balors_wagon",
+      "gameStoreId": "balor",
       "name": "Balor's Wagon",
       "page": "Balor's Wagon",
       "owner": "Balor",

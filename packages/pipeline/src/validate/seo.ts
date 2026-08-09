@@ -29,6 +29,7 @@ import {
   type MonsterRecord,
   type PlaceRecord,
   type QuestRecord,
+  type RecipeRecord,
 } from '../build/seo/pages.js'
 import { renderPage } from '../build/seo/render.js'
 import { DATA_DIR } from '../lib/paths.js'
@@ -153,6 +154,9 @@ export async function checkSeo(): Promise<Finding[]> {
     places: await read<PlaceRecord>('locations.json'),
     mines: await read<MineRecord>('mines.json'),
     quests: await read<QuestRecord>('quests.json'),
+    recipes: await read<RecipeRecord>('recipes.json'),
+    shops: await read<{ id: string; name: string }>('shops.json'),
+    festivals: await read<{ id: string; name: string }>('festivals.json'),
   }
 
   // Nothing built yet — a clone that has not run `build:data` is not a failure.

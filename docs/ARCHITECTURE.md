@@ -221,13 +221,22 @@ or politeness.
 ### `extract/` — the game's own files
 
 `pnpm extract` reads an owned game install (`MISTRIA_GAME_DIR`, from a gitignored
-`.env`) and writes eight JSON snapshots. Nothing writes *into* the game folder,
+`.env`) and writes nine JSON snapshots. Nothing writes *into* the game folder,
 and no localisation string comes out of it. See
 [game-file-extraction.md](game-file-extraction.md).
 
 This is where the dataset's authority comes from. The game states things the
 wiki cannot: exact spawn rules, internal item ids, recipe ingredients as ids
 rather than wikitext, shop prices, quest item requirements.
+
+`unlocks.json` is the ninth and the odd one out: it is not a category but a
+*shape*. The same grant table — a recipe scroll, or an item — appears in the
+post, the quest boards, the festival stalls, the museum reward tiers, the
+Wishing Well and the Chicken Statue, and it is the only source anywhere for how
+a recipe is learned. One reader covers all six, and it **reports any grant key
+it does not understand** rather than narrowing the dataset in silence: the
+furniture spelling of the token, `crafting_scroll`, had been sitting in those
+files unread the whole time.
 
 ### `enrich/` — the wiki
 
@@ -588,12 +597,12 @@ that cannot work.
 | `checkZod` | Records that do not match their schema |
 | `checkAjv` | The same, via an *independent* implementation over the emitted JSON Schema |
 | `checkDuplicateKeys` | Two records claiming one id |
-| `checkReferentialIntegrity` | A foreign key pointing at nothing |
+| `checkReferentialIntegrity` | A foreign key pointing at nothing — including a recipe source's `source_id`, whose table is named by the sibling `method` |
 | `checkOrphans` | A record nothing references |
 | `checkMuseum` | Set membership consistency |
-| `checkGates` | Requirement tokens naming real quests, perks, skills |
+| `checkGates` | Requirement tokens naming real quests, perks, skills, shipped/donated items |
 | `checkGameAgreement` | Ids absent from the game's `ItemId` enum |
-| `checkSourceAgreement` | Wiki vs game files — **reported, never auto-corrected** |
+| `checkSourceAgreement` | Wiki vs game files — **reported, never auto-corrected** — plus the precedence table, and a field shipping the wiki's value where the game also states one |
 | `checkLicensing` | Prose keys, long strings, stray images, manifest parity, pasted wikitext |
 | `checkSpoilers` | Spoiler flags against the curated rules |
 | `checkSeo` | Guide slug collisions, a spoiler reaching a public URL, a broken internal link |
@@ -608,7 +617,7 @@ It also *writes* reports — `coverage.md`, `id-divergence.md`,
 `source-agreement.md`, `asset-coverage.md` — so drift is visible as a number
 rather than discovered later.
 
-### Two workflows
+### Three workflows
 
 **`ci.yml`** runs three jobs. `check` is Biome + tsc + Vitest. `data` emits the
 JSON Schema fresh (a stale one means Ajv is validating yesterday's contract),
@@ -623,6 +632,17 @@ fallback and `.nojekyll`, and — usefully — *verifies the Pages source is
 the README and races the real deploy, both green. The workflow cannot fix that
 itself (it needs administration permission `GITHUB_TOKEN` can never hold), so it
 detects and fails loudly instead of deploying an artifact nobody will see.
+
+**`release.yml`** fires on a `v*` tag and does two things: asserts the tag equals
+`version` in the root `package.json`, then publishes the GitHub Release with
+generated notes. The assertion is the point — that field is what
+`apps/web/vite.config.ts` compiles into `__APP_VERSION__`, so a tag disagreeing
+with it means the Releases sidebar and the app's own Settings screen name two
+different versions, and nothing else would ever surface that. There is exactly
+one version literal in the repository; the workspace packages stay at `0.0.0`
+because they are private and a second number is a second thing to forget.
+Releasing marks a version rather than shipping one — Pages deploys from `main`
+independently.
 
 ### `pnpm e2e` — the local gate, never CI
 

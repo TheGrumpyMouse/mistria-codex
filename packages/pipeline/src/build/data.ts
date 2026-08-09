@@ -16,9 +16,12 @@ import { pathToFileURL } from 'node:url'
 import {
   DATASETS,
   type DatasetName,
+  type Festival,
   type Item,
   type Location,
+  type MineBiome,
   type Monster,
+  type Quest,
   type Recipe,
   type Shop,
   type Spot,
@@ -35,6 +38,7 @@ import { buildAnimals, buildBuildings } from './builders/farm.js'
 import { buildFestivals } from './builders/festivals.js'
 import { buildCrops, buildFishFacets, buildLocations, itemInputs } from './builders/fish-crops.js'
 import { collapseFurniture } from './builders/furniture.js'
+import { buildGrantIndex, foldPlaceName } from './builders/grants.js'
 import { buildGameOnlyItems, buildItems } from './builders/items.js'
 import { buildMachines } from './builders/machines.js'
 import {
@@ -77,6 +81,15 @@ interface Derived {
   items: Item[]
   monsters: Monster[]
   recipes: Recipe[]
+  festivals: Festival[]
+  /**
+   * Built before the recipes, because a recipe learned from a quest reward has
+   * to name the quest record, and the join from the game's own quest keys to
+   * our wiki-derived ids is not the identity. Same for the mines: a treasure
+   * chest names the biome it sits in.
+   */
+  quests: Quest[]
+  mines: MineBiome[]
 }
 
 /** A builder turns sources + curated inputs into records for one dataset. */
@@ -177,14 +190,14 @@ const BUILDERS: Record<DatasetName, Builder> = {
   maps: (ctx) => (ctx.maps === null ? [] : [buildMapRegion(ctx.maps)]),
   museum_sets: (_ctx, derived) => derived.museum.sets,
   spots: (ctx) => mapSpots(ctx),
-  festivals: buildFestivals,
-  quests: (ctx, derived) => buildQuests(ctx, new Set(derived.items.map((i) => i.id))),
+  festivals: (_ctx, derived) => derived.festivals,
+  quests: (_ctx, derived) => derived.quests,
   shops: (_ctx, derived) => derived.shops,
   skills: buildSkills,
   animals: buildAnimals,
   buildings: buildBuildings,
   machines: (ctx, derived) => buildMachines(ctx, new Set(derived.items.map((i) => i.id))),
-  mines: (ctx, derived) => buildMines(ctx, derived.items, monstersByBiome(derived.monsters)),
+  mines: (_ctx, derived) => derived.mines,
   seals: buildSeals,
   monsters: (_ctx, derived) => derived.monsters,
 }
@@ -222,8 +235,54 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     ...withFurniture,
     ...buildCosmetics(ctx, shops, new Set(withFurniture.map((i) => i.id))),
   ]
+  // ── The grant index ───────────────────────────────────────────────────────
+  //
+  // Every stated way the game hands you a recipe or an item, resolved against
+  // the records this build ships. It needs three things that already exist by
+  // now — the furniture collapse to turn a colour variant into its record, the
+  // quests to resolve a reward's `source_id`, and the mines to name the biome a
+  // treasure chest sits in — so it is computed once here and passed down, the
+  // same way `museum` and `shops` are.
+  const monsters = buildMonsters(ctx)
+  const allItemIds = new Set(allItems.map((i) => i.id))
+  const quests = buildQuests(ctx, allItemIds)
+  const mines = buildMines(ctx, allItems, monstersByBiome(monsters))
+
+  // Game store key -> our shop id, from both directions the two sources meet:
+  // the curated `gameStoreId` for the eight wiki shops, and the market vendor
+  // table for the six stalls that only exist in the game files.
+  const shopIdByStore = new Map<string, string>()
+  for (const shop of ctx.shops.shops) {
+    if (shop.gameStoreId !== null) shopIdByStore.set(shop.gameStoreId, shop.id)
+  }
+  for (const vendor of ctx.shops.market?.vendors ?? []) {
+    shopIdByStore.set(vendor.storeId, vendor.shopId)
+  }
+
+  const festivals = buildFestivals(ctx)
+  const grants = buildGrantIndex(
+    ctx,
+    (gameKey) =>
+      furniture.shippedIdByGameId.get(gameKey) ?? (allItemIds.has(gameKey) ? gameKey : null),
+    {
+      quests,
+      mineIdByBiome: new Map(
+        mines.map(
+          (mine) =>
+            [foldPlaceName(mine.name), { id: mine.id, locationId: mine.location_id }] as const,
+        ),
+      ),
+      shopIdByStore,
+      festivalIds: new Set(festivals.map((f) => f.id)),
+    },
+  )
+
   const items = allItems.map((item) => {
     const sellers = soldBy.get(item.id) ?? []
+    // Windows the game states outright — a museum reward tier, a treasure
+    // chest, the post. Appended rather than replacing: an item can be both
+    // forageable and posted to you, and the array is an OR of windows.
+    const granted = grants.itemWindows.get(item.id) ?? []
     return {
       ...item,
       // A "buy it" window knows where to send you: the shops that stock it.
@@ -231,20 +290,26 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
       // twice, and it is a fact, not an inference — the shop is a building at a
       // named place. Fifty-seven items said "location unknown" for want of a
       // join that was already sitting here.
-      availability: item.availability.map((window) =>
-        window.method === 'shop' && window.locations.length === 0
-          ? {
-              ...window,
-              locations: [
-                ...new Set(
-                  sellers
-                    .map((id) => shopLocation.get(id))
-                    .filter((id): id is string => typeof id === 'string'),
-                ),
-              ].sort(),
-            }
-          : window,
-      ),
+      availability: [
+        ...item.availability.map((window) =>
+          window.method === 'shop' && window.locations.length === 0
+            ? {
+                ...window,
+                locations: [
+                  ...new Set(
+                    sellers
+                      .map((id) => shopLocation.get(id))
+                      .filter((id): id is string => typeof id === 'string'),
+                  ),
+                ].sort(),
+              }
+            : window,
+        ),
+        // A window the item already states wins: the wiki's forage rule knows
+        // the season and the place, and a grant window knows neither. Only
+        // methods the record has no window for are appended.
+        ...granted.filter((g) => !item.availability.some((w) => w.method === g.method)),
+      ],
       sold_by: sellers,
       // The Items table's own `isBuyable` is true for exactly one of 1,154 rows,
       // so it is a field nobody filled in rather than a claim that nothing is
@@ -254,6 +319,15 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
       // not inferred: no shop selling it does not mean it cannot be bought —
       // cosmetic stock and festival stalls remain outside the shops dataset.
       is_buyable: sellers.length > 0 ? true : item.is_buyable,
+      // `obtain_method` was every furniture record's standing gap, because the
+      // wiki's furniture table says nothing about where anything comes from.
+      // Three things now answer it — a stated grant window, a shop that stocks
+      // it, or a recipe that makes it — and leaving the gap on a record naming
+      // a mine biome and a museum reward tier would badge a fact as unknown.
+      data_gaps:
+        granted.length > 0 || sellers.length > 0 || item.is_craftable === true
+          ? item.data_gaps.filter((gap) => gap !== 'obtain_method')
+          : item.data_gaps,
     }
   })
 
@@ -261,7 +335,36 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
   // are gated on the item records actually shipping — a recipe may never point
   // at a record that does not exist. The reverse link is then stamped the same
   // way `sold_by` was above: derived once, written onto the item.
-  const recipes = buildRecipes(ctx, new Set(items.map((i) => i.id)), furniture)
+  const builtRecipes = buildRecipes(ctx, new Set(items.map((i) => i.id)), furniture, grants)
+
+  // What the scroll costs, from the shelf that sells it.
+  //
+  // The grant index knows *that* the Inn teaches the Lemon Pie, because the
+  // game's store table says so; it cannot know the price, because the game
+  // prices items and not stock lines. The wiki page prices the line. Joining
+  // them here is the only place both are in scope, and it is why the source
+  // reads "Sold at the Sleeping Dragon Inn — 400t" rather than trailing off.
+  const scrollPrice = new Map<string, { price: number; currency: string }>()
+  for (const shop of shops) {
+    for (const line of shop.stock) {
+      if (line.teaches_recipe_id === null || line.price === null) continue
+      scrollPrice.set(`${shop.id}|${line.teaches_recipe_id}`, {
+        price: line.price,
+        currency: line.currency,
+      })
+    }
+  }
+  const recipes = builtRecipes.map((recipe) => ({
+    ...recipe,
+    sources: recipe.sources.map((source) => {
+      if (source.method !== 'shop' || source.source_id === null || source.price !== null) {
+        return source
+      }
+      const priced = scrollPrice.get(`${source.source_id}|${recipe.id}`)
+      return priced === undefined ? source : { ...source, ...priced }
+    }),
+  })) as typeof builtRecipes
+
   const usedIn = new Map<string, string[]>()
   for (const recipe of recipes) {
     for (const ingredient of recipe.ingredients) {
@@ -276,12 +379,38 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     return recipeIds === undefined ? item : { ...item, used_in_recipe_ids: recipeIds.sort() }
   })
 
+  // A stock line claiming to teach a recipe has to point at one that shipped.
+  // Shops are built before recipes — they gate items, which gate recipes — so
+  // the check happens here rather than inside the builder, the same
+  // stamp-afterwards shape as `sold_by` above. An unmatched claim is dropped
+  // and counted: a dangling id would fail refint, and a silent one would put a
+  // recipe line on a shelf for a recipe nobody can look up.
+  const recipeIds = new Set(recipes.map((r) => r.id))
+  let droppedTeaches = 0
+  const shopsWithRecipes = shops.map((shop) => ({
+    ...shop,
+    stock: shop.stock.map((line) => {
+      if (line.teaches_recipe_id === null || recipeIds.has(line.teaches_recipe_id)) return line
+      droppedTeaches += 1
+      return { ...line, teaches_recipe_id: null }
+    }),
+  }))
+  if (droppedTeaches > 0) {
+    consola.info(
+      `shops: ${droppedTeaches} stock line(s) named a recipe that did not ship — ` +
+        'the line stays, the claim does not.',
+    )
+  }
+
   const derived: Derived = {
     museum,
-    shops,
+    shops: shopsWithRecipes,
     items: itemsWithRecipes,
-    monsters: buildMonsters(ctx),
+    monsters,
     recipes,
+    quests,
+    mines,
+    festivals,
   }
   const counts = {} as Record<DatasetName, number>
 

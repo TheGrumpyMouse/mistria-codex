@@ -6,6 +6,7 @@ import { rarityFor } from '../game-facts.js'
 import { artifactSource } from './artifacts.js'
 import { isMuseumRosterRow } from './fish-crops.js'
 import type { FurnitureCollapse } from './furniture.js'
+import type { GrantIndex } from './grants.js'
 
 const RARITIES: Record<string, Rarity> = {
   common: 'common',
@@ -77,10 +78,11 @@ export function buildRecipes(
   ctx: BuildContext,
   itemIds: Set<string>,
   furniture?: FurnitureCollapse,
+  grants?: GrantIndex,
 ): Recipe[] {
   const wiki = wikiRecipes(ctx)
   const game = ctx.game
-  if (game === null) return wiki.sort((a, b) => a.id.localeCompare(b.id))
+  if (game === null) return withFallbackSources(wiki.sort((a, b) => a.id.localeCompare(b.id)))
 
   const wikiById = new Map(wiki.map((r) => [r.id, r]))
   const out: Recipe[] = []
@@ -147,7 +149,7 @@ export function buildRecipes(
           : (fromWiki?.station_level ?? null),
       skill: skillId !== undefined && level !== null ? { id: skillId, level } : null,
       craft_minutes: item.craft_minutes ?? fromWiki?.craft_minutes ?? null,
-      unlock: fromWiki?.unlock ?? null,
+      sources: grants?.recipeSources.get(outputId) ?? [],
       effects: null,
     })
   }
@@ -167,8 +169,65 @@ export function buildRecipes(
     if (!gameIds.has(row.id) && itemIds.has(row.output.item_id)) out.push(row)
   }
 
-  return out.sort((a, b) => a.id.localeCompare(b.id))
+  return withLevelFallback(out.sort((a, b) => a.id.localeCompare(b.id)))
 }
+
+/**
+ * The answer for a recipe no grant names: the crafting level, and nothing else.
+ *
+ * Every `recipe_scroll` and `crafting_scroll` in the game is collected, so a
+ * recipe with no grant anywhere and a stated level is gated by that level —
+ * there is nothing else left to gate it. That is a **structural deduction, not
+ * a stated fact**, which is why it ships `confidence: 'inferred'` and must
+ * never render like a source the game names. Four recipes have neither a grant
+ * nor a level (the apiary, the terrarium, the engagement ring and the giant
+ * essence stone, each handed over by a story beat nothing models yet); those
+ * say so in `data_gaps` rather than inventing a third answer.
+ */
+function withLevelFallback(recipes: Recipe[]): Recipe[] {
+  let inferred = 0
+  let unknown = 0
+
+  const out = recipes.map((recipe): Recipe => {
+    if (recipe.sources.length > 0) return recipe
+    if (recipe.skill === null) {
+      unknown += 1
+      return { ...recipe, data_gaps: [...new Set([...recipe.data_gaps, 'sources'])] }
+    }
+    inferred += 1
+    return {
+      ...recipe,
+      sources: [
+        {
+          method: 'skill_level',
+          source_id: null,
+          character_id: null,
+          price: null,
+          currency: 'tesserae',
+          requires: [{ type: 'skill', key: recipe.skill.id, op: '>=', value: recipe.skill.level }],
+          confidence: 'inferred',
+        },
+      ],
+    }
+  })
+
+  const stated = out.length - inferred - unknown
+  consola.info(
+    `recipes: ${stated} with a stated source · ${inferred} inferred from a crafting level · ` +
+      `${unknown} with neither`,
+  )
+  return out
+}
+
+/**
+ * The no-extract path's sources.
+ *
+ * A clone with no `sources/game/` has only the wiki's `recipeSource` cell,
+ * which states *that* a source exists without stating which. `wikiRecipes`
+ * already turns a non-empty cell into a bare `shop` source; this only adds the
+ * level fallback for the rest, so the two paths agree on shape.
+ */
+const withFallbackSources = (recipes: Recipe[]): Recipe[] => withLevelFallback(recipes)
 
 /**
  * The wiki path: `Recipes` joined to `Ingredients` on the result's display
@@ -230,7 +289,26 @@ function wikiRecipes(ctx: BuildContext): Recipe[] {
       skill:
         skillId !== undefined && skillLevel !== null ? { id: skillId, level: skillLevel } : null,
       craft_minutes: toInteger(row.time),
-      unlock: toTokens(row.recipeSource).length > 0 ? { method: 'shop', source_id: null } : null,
+      // The wiki states *that* there is a source without stating which: the
+      // cell is wikitext naming a stall, a mine, a quest or "Available From
+      // Start", and reducing it to a boolean is what made 163 recipes claim
+      // "shop" for five milestones. It survives only as the no-extract
+      // fallback, and only because a bare "somewhere sells it" still beats
+      // silence — `sources/game/unlocks.json` is what actually answers this.
+      sources:
+        toTokens(row.recipeSource).length > 0
+          ? [
+              {
+                method: 'shop' as const,
+                source_id: null,
+                character_id: null,
+                price: null,
+                currency: 'tesserae' as const,
+                requires: [],
+                confidence: 'wiki' as const,
+              },
+            ]
+          : [],
       effects: null,
     }
   })

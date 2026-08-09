@@ -160,6 +160,38 @@ furniture ingestion), resolving 265/265 with no name matching. The wiki's
 reading it as a bare name is the bug that shipped 282 ingredient-less recipes
 for five milestones. The wiki path survives as the no-extract fallback only.
 
+**Two tokens teach a recipe and three give an item, and reading one of each is
+how a whole grant surface stays invisible.** `recipe_scroll` is the cooking
+spelling and **`crafting_scroll` is the furniture one**; `item`, `item_id` and
+`item_name` are the same field in different files. They appear as identical
+grant tables in eight places — `letters.toml`, `stores.toml`, every file under
+`quests/`, `festivals.toml`, **all four `museum_wings/*.toml`**, `chicken_statue`
+and `wishing_well` — collected by `extract/unlocks.ts`. Reading only the first
+of each pair finds 88 grants and concludes furniture recipes have no source at
+all; reading both finds 570, of which 184 teach a recipe. **`unreadGrantKeys` in
+the extract reports any grant key nobody handles**, because "the game added a
+way to give you something" must not be silence.
+
+**A biome's `taste_maker` list is recipes; its `dungeon_delicacies` list is
+cooked dishes.** They sit side by side in `dungeons/dungeons.toml`, share
+entries, and look identical. The only thing that distinguishes them is the two
+perk descriptions in `perks.toml`, one of which says "Cooking Recipes will
+sometimes drop from Treasure Chests" and the other "Certain Cooked Dishes will".
+The same biome tables also carry `furniture` — chest drops, and the only source
+anywhere for where 74 furniture pieces come from.
+
+**The game does not spell its own mine names consistently.** Three biomes are
+`Upper Mines`, `Deep Earth`, `Ancient Ruins`; two are `The Tide Caverns`, `The
+Lava Caves`. We write "The" on all five, so a plain fold joins two and silently
+drops three — `foldPlaceName` strips a leading article for *this* join only,
+because an article can be load-bearing in a quest title.
+
+**`recipe_is_default = true` means the recipe is known from day one** — 206
+items say so. It is the counterpart to a scroll grant, and its absence is not a
+statement: a recipe with no grant *anywhere* and a stated `crafting_level` is
+gated by that level and nothing else. That is a **deduction, not a reading**, so
+it ships `confidence: 'inferred'` and must never render like a stated source.
+
 **`value.store` is the item's shop price and the wiki has no column for it.**
 773 items state one; wiring it in took priced items from 454 to 969 and every
 wiki shop from part-priced to complete. It is the item's *global* price, so a
@@ -176,6 +208,29 @@ matches; the residue is 18 sell values, 4 essence costs and 4 bug rarities,
 all of which look like 1.0 rebalances the pre-1.0 wiki has not caught up with.
 **A disagreement is reported, never auto-corrected** — the two sources
 sometimes describe different things, and only a person can tell which.
+
+### Which source wins
+
+**The more specific source wins. Where both are equally specific, the game files
+win. A disagreement is still reported, never resolved silently.**
+
+The files are primary for anything they state: ids, recipes, spawn tables,
+prices, unlock grants. The wiki fills what they do not — 334 of 360 cosmetic
+prices, the museum's prose-derived groupings, page layout. Where the wiki states
+something *narrower*, the wiki wins on that field: a per-shop price beats the
+item's global `value.store`, which is exactly why the Inn sells the Lemon Pie at
+650 and its recipe scroll at 400 and one global number cannot be both.
+
+**A boolean squeezed out of a rich source is a bug, not a fallback.** The wiki's
+`Recipes.recipeSource` cell names a festival stall, a mine, a villager request
+or "Available From Start"; it was read as *is this cell non-empty*, which
+shipped 163 recipes all claiming "shop" — and looked like working code for five
+milestones. If a source says more than the field you are filling, either model
+the rest or write `null`.
+
+The precedence table in `build/reports/source-agreement.md` counts, per field,
+how many records both sources state and which one ships. A field marked
+wiki-first with no reason raises `sources:precedence`.
 
 **`crop.harvest` is neither unique nor honest, so never index on it naively.**
 `temple_marigold` (a forageable) claims to harvest a marigold and a

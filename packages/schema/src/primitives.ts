@@ -83,6 +83,14 @@ export const SPAWN_METHODS = [
   'festival',
   'mail',
   'chest',
+  /**
+   * The Wishing Well and the Chicken Statue: a paid roll at a fixed place, with
+   * a stated pool. Folding either into `chest` would be wrong — a chest is
+   * something you break open where you find it, and neither of these is
+   * anywhere but where it stands.
+   */
+  'wishing_well',
+  'chicken_statue',
 ] as const
 export const SpawnMethod = z.enum(SPAWN_METHODS)
 export type SpawnMethod = z.infer<typeof SpawnMethod>

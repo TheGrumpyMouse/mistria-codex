@@ -46,6 +46,23 @@ const EMPTY: FurnitureCollapse = {
   records: [],
 }
 
+/**
+ * The tiles a piece occupies, keyed off the prototype it places.
+ *
+ * An item's `object` is the prototype id, and that is where `size` lives — the
+ * item table has no footprint of its own. Spread rather than returned so an
+ * absent size adds no key at all, which is what keeps `size` optional on the
+ * schema rather than a nullable field on 925 records.
+ */
+function sizeOf(
+  sizes: Record<string, [number, number]>,
+  item: GameItem,
+): { size?: { width: number; height: number } } {
+  const stated = item.object === null ? undefined : sizes[item.object]
+  if (stated === undefined) return {}
+  return { size: { width: stated[0], height: stated[1] } }
+}
+
 export function collapseFurniture(ctx: BuildContext): FurnitureCollapse {
   const game = ctx.game
   if (game === null) return EMPTY
@@ -161,6 +178,11 @@ export function collapseFurniture(ctx: BuildContext): FurnitureCollapse {
 
       ...(members.length > 1 ? { variant_ids: members.map((m) => m.id) } : {}),
       ...(differs ? { variant_recipes_differ: true as const } : {}),
+      // The footprint, from the object prototype the item places. Absent where
+      // the prototype states none — the file's `[default]` declares `[2, 2]`
+      // and inheriting it would hand a size to every rug and wall hanging on
+      // the strength of a fallback nobody has checked applies.
+      ...sizeOf(game.objectSizes, canonical),
     })
   }
 

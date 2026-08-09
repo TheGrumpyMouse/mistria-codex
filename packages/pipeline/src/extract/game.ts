@@ -24,6 +24,7 @@ import { extractQuests, type GameQuestsExtract } from './quests.js'
 import { extractSpawns, type GameSpawnsExtract } from './spawns.js'
 import { extractStores, type GameStoresExtract } from './stores.js'
 import { gameRoot, gameVersion } from './toml.js'
+import { extractUnlocks, type GameUnlocksExtract } from './unlocks.js'
 import { extractWorld, type GameWorldExtract } from './world.js'
 
 export const GAME_DIR = join(SOURCES_DIR, 'game')
@@ -37,24 +38,27 @@ export interface GameExtract {
   quests: GameQuestsExtract
   stores: GameStoresExtract
   cosmetics: GameCosmeticsExtract
+  unlocks: GameUnlocksExtract
 }
 
 export async function extractGame(): Promise<GameExtract> {
   const root = await gameRoot()
   const version = gameVersion()
 
-  const [items, spawns, world, artifacts, machines, quests, stores, cosmetics] = await Promise.all([
-    extractItems(root, version),
-    extractSpawns(root, version),
-    extractWorld(root, version),
-    extractArtifacts(root, version),
-    extractMachines(root, version),
-    extractQuests(root, version),
-    extractStores(root, version),
-    extractCosmetics(root, version),
-  ])
+  const [items, spawns, world, artifacts, machines, quests, stores, cosmetics, unlocks] =
+    await Promise.all([
+      extractItems(root, version),
+      extractSpawns(root, version),
+      extractWorld(root, version),
+      extractArtifacts(root, version),
+      extractMachines(root, version),
+      extractQuests(root, version),
+      extractStores(root, version),
+      extractCosmetics(root, version),
+      extractUnlocks(root, version),
+    ])
 
-  return { items, spawns, world, artifacts, machines, quests, stores, cosmetics }
+  return { items, spawns, world, artifacts, machines, quests, stores, cosmetics, unlocks }
 }
 
 export async function writeGameExtract(extract: GameExtract): Promise<void> {
@@ -67,6 +71,7 @@ export async function writeGameExtract(extract: GameExtract): Promise<void> {
     writeJson(join(GAME_DIR, 'quests.json'), extract.quests),
     writeJson(join(GAME_DIR, 'stores.json'), extract.stores),
     writeJson(join(GAME_DIR, 'cosmetics.json'), extract.cosmetics),
+    writeJson(join(GAME_DIR, 'unlocks.json'), extract.unlocks),
   ])
 }
 
@@ -121,6 +126,29 @@ async function main(): Promise<void> {
     `cosmetics: ${extract.cosmetics.cosmetics.length} (${priced} priced in the files, ` +
       'the rest from the wiki)',
   )
+  const { letters, quests, festivals, museumRewards, wishingWell, chickenStatue } = extract.unlocks
+  const grants = [
+    ...letters,
+    ...quests,
+    ...festivals,
+    ...museumRewards,
+    ...wishingWell,
+    ...chickenStatue,
+  ]
+  const taught = grants.filter((g) => g.recipe !== null).length
+  consola.info(
+    `unlocks: ${grants.length} grants (${taught} teach a recipe) — ` +
+      `letters ${letters.length} · quests ${quests.length} · festivals ${festivals.length} · ` +
+      `museum ${museumRewards.length} · well ${wishingWell.length} · statue ${chickenStatue.length}`,
+  )
+  // Empty is the expected state. Anything here is a way the game hands you
+  // something that no reader collects — the exact hole `crafting_scroll` sat in.
+  if (extract.unlocks.unreadGrantKeys.length > 0) {
+    consola.warn(
+      `unlocks: ${extract.unlocks.unreadGrantKeys.length} unrecognised grant key(s) — ` +
+        `${extract.unlocks.unreadGrantKeys.join(', ')}. Each is a grant nobody is reading.`,
+    )
+  }
   if (argv.includes('--dry-run')) consola.warn('--dry-run: nothing written')
 }
 

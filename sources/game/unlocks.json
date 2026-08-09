@@ -1,0 +1,5251 @@
+{
+  "chickenStatue": [
+    {
+      "count": 6,
+      "item": "golden_butter",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 6,
+      "item": "golden_cheese",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "golden_cheesecake",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "golden_cookies",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 12,
+      "item": "golden_cow_milk",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 12,
+      "item": "golden_egg",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "golden_mayonnaise",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 10,
+      "item": "ultimate_hay",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 10,
+      "item": "ultimate_small_animal_feed",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "butter",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "cheese",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 3,
+      "item": "cow_milk",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 5,
+      "item": "deluxe_hay",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 5,
+      "item": "deluxe_small_animal_feed",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 3,
+      "item": "egg",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "golden_cow_milk",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "golden_egg",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "mayonnaise",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "omelet",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "pudding",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 10,
+      "item": "quality_hay",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 10,
+      "item": "quality_small_animal_feed",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "quiche",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "vegetable_quiche",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": "deviled_eggs"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": "omelet"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": "pudding"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": "quiche"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": "vegetable_quiche"
+    }
+  ],
+  "festivals": [
+    {
+      "count": null,
+      "festival": "animal",
+      "item": "chicky_hot_chocolate",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "animal",
+      "item": "cow_donut",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": "golden_cheesecake",
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": "golden_cookies",
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": "autumn_scarecrow",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": "candied_queen_berries",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": "cornucopia",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": "queen_berry_pie",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": "apple_honey_curry",
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": "harvest_plate",
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": "pumpkin_pie",
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "coffee",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "floral_tea",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "lavender_tea",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "mocha",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "rose_tea",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "tulip_cake",
+      "recipe": null,
+      "stall": "maple_spring_festival"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "scent_of_spring",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "spring_festival_basket",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "spring_festival_flower_chest",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "spring_festival_large_planter",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "spring_festival_planter",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "count": null,
+      "festival": "spring",
+      "item": "spring_festival_wreath",
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    }
+  ],
+  "gameVersion": "1.0.0",
+  "letters": [
+    {
+      "count": 25,
+      "item": "basic_wood",
+      "letter": "adeline_4h_reward_1",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 25,
+      "item": "ore_stone",
+      "letter": "adeline_4h_reward_1",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 1,
+      "item": "big_cookie",
+      "letter": "adeline_4h_reward_2",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "apple_juice_recipe",
+      "npc": "dell",
+      "recipe": "apple_juice",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "apple"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "crop_faux_tulip",
+      "letter": "ari_birthday_adeline_best_friend",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "crop_faux_tulip",
+      "letter": "ari_birthday_adeline_romantic",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "lemon_pie",
+      "letter": "ari_birthday_adeline",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "apple_honey_curry",
+      "letter": "ari_birthday_balor_best_friend",
+      "npc": "balor",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "apple_honey_curry",
+      "letter": "ari_birthday_balor_romantic",
+      "npc": "balor",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "chickpea_curry",
+      "letter": "ari_birthday_balor",
+      "npc": "balor",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "essence_stone_large",
+      "letter": "ari_birthday_caldarus_best_friend",
+      "npc": "caldarus",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "essence_stone_large",
+      "letter": "ari_birthday_caldarus_romantic",
+      "npc": "caldarus",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "marigold",
+      "letter": "ari_birthday_caldarus",
+      "npc": "caldarus",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 5,
+      "item": "seed_temple_flower",
+      "letter": "ari_birthday_celine_best_friend",
+      "npc": "celine",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 5,
+      "item": "seed_temple_flower",
+      "letter": "ari_birthday_celine_romantic",
+      "npc": "celine",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "rose_tea",
+      "letter": "ari_birthday_celine",
+      "npc": "celine",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "golden_cheesecake",
+      "letter": "ari_birthday_eiland_best_friend",
+      "npc": "eiland",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "golden_cheesecake",
+      "letter": "ari_birthday_eiland_romantic",
+      "npc": "eiland",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "caldosian_chocolate_cake",
+      "letter": "ari_birthday_eiland",
+      "npc": "eiland",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 2,
+      "item": "golden_bull_horn",
+      "letter": "ari_birthday_hayden_best_friend",
+      "npc": "hayden",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 2,
+      "item": "golden_bull_horn",
+      "letter": "ari_birthday_hayden_romantic",
+      "npc": "hayden",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "loaded_baked_potato",
+      "letter": "ari_birthday_hayden",
+      "npc": "hayden",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "cavern_crystal_lamp_purple",
+      "letter": "ari_birthday_juniper_best_friend",
+      "npc": "juniper",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "cavern_crystal_lamp_purple",
+      "letter": "ari_birthday_juniper_romantic",
+      "npc": "juniper",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "pizza",
+      "letter": "ari_birthday_juniper",
+      "npc": "juniper",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 10,
+      "item": "refined_stone",
+      "letter": "ari_birthday_march_best_friend",
+      "npc": "march",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": 10,
+      "item": "refined_stone",
+      "letter": "ari_birthday_march_romantic",
+      "npc": "march",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": 4,
+      "item": "iron_ingot",
+      "letter": "ari_birthday_march",
+      "npc": "march",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "vegetable_pot_pie",
+      "letter": "ari_birthday_reina_best_friend",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "pomegranate_juice",
+      "letter": "ari_birthday_reina_romantic",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "pudding",
+      "letter": "ari_birthday_reina_romantic",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "vegetable_pot_pie",
+      "letter": "ari_birthday_reina_romantic",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "spicy_cheddar_biscuit",
+      "letter": "ari_birthday_reina",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "golden_cookies",
+      "letter": "ari_birthday_ryis_best_friend",
+      "npc": "ryis",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "golden_cookies",
+      "letter": "ari_birthday_ryis_romantic",
+      "npc": "ryis",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": 5,
+      "item": "hard_wood",
+      "letter": "ari_birthday_ryis",
+      "npc": "ryis",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "essence_stone_large",
+      "letter": "ari_birthday_seridia_best_friend",
+      "npc": "seridia",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "essence_stone_large",
+      "letter": "ari_birthday_seridia_romantic",
+      "npc": "seridia",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "monster_cookie",
+      "letter": "ari_birthday_seridia",
+      "npc": "seridia",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "stamina_syrup",
+      "letter": "ari_birthday_valen_best_friend",
+      "npc": "valen",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "stamina_syrup",
+      "letter": "ari_birthday_valen_romantic",
+      "npc": "valen",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or",
+        "reached_heart_level"
+      ]
+    },
+    {
+      "count": null,
+      "item": "green_tea",
+      "letter": "ari_birthday_valen",
+      "npc": "valen",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_player_birthday",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "reached_heart_level",
+        "world_fact_is"
+      ]
+    },
+    {
+      "count": null,
+      "item": "baby_cradle",
+      "letter": "baby_cradle_female",
+      "npc": "landen",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "baby_is_due",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "invert"
+      ]
+    },
+    {
+      "count": null,
+      "item": "baby_cradle",
+      "letter": "baby_cradle_male",
+      "npc": "landen",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "baby_is_due",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "or"
+      ]
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "baked_potato_recipe",
+      "npc": "nora",
+      "recipe": "baked_potato",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "potato"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "baked_sweetroot",
+      "npc": "errol",
+      "recipe": "baked_sweetroot",
+      "requirements": [
+        {
+          "key": "donated_item",
+          "value": "sweetroot"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "beet_salad_recipe",
+      "npc": "valen",
+      "recipe": "beet_salad",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "beet"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "bell_berry_bakewell_tart_recipe",
+      "npc": "reina",
+      "recipe": "bell_berry_bakewell_tart",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "bell_berry"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "braised_burdock_recipe",
+      "npc": "nora",
+      "recipe": "braised_burdock",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "burdock_root"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "braised_carrots_recipe",
+      "npc": "nora",
+      "recipe": "braised_carrots",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "carrot"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "buttered_peas_recipe",
+      "npc": "nora",
+      "recipe": "buttered_peas",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "peas"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "cabbage_slaw_recipe",
+      "npc": "nora",
+      "recipe": "cabbage_slaw",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "cabbage"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "candied_lemon_peel_recipe",
+      "npc": "nora",
+      "recipe": "candied_lemon_peel",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "lemon"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "candied_strawberries_recipe",
+      "npc": "nora",
+      "recipe": "candied_strawberries",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "strawberry"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "candied_walnuts_recipe",
+      "npc": "landen",
+      "recipe": "candied_walnuts",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "walnut"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "coconut_milk_recipe",
+      "npc": "landen",
+      "recipe": "coconut_milk",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "coconut"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "mini_museum_blueprint",
+      "letter": "complete_the_museum_complete",
+      "npc": "errol",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "completed_quest",
+          "value": "complete_the_museum"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "strawberry_shortcake",
+      "letter": "copper_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 20
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "cranberry_juice_recipe",
+      "npc": "nora",
+      "recipe": "cranberry_juice",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "cranberry"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "crystal_berry_pie_recipe",
+      "npc": "reina",
+      "recipe": "crystal_berry_pie",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "crystal_berries"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "cucumber_salad_recipe",
+      "npc": "nora",
+      "recipe": "cucumber_salad",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "cucumber"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "deep_sea_soup",
+      "npc": "reina",
+      "recipe": "deep_sea_soup",
+      "requirements": [
+        {
+          "key": "donated_item",
+          "value": "cave_kelp"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "mana_potion",
+      "letter": "diamond_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 90
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "picnic_set",
+      "letter": "elsie_dating_followup",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "seen_cutscene",
+          "value": "elsie_dating_tutorial"
+        },
+        {
+          "key": "unlocked_deep_woods",
+          "value": true
+        }
+      ],
+      "unread_requirement_keys": [
+        "invert"
+      ]
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "letter": "emerald_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 70
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "glowberry_cookies_recipe",
+      "npc": "ryis",
+      "recipe": "glowberry_cookies",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "glowberry"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "letter": "gold_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 80
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "grilled_corn_recipe",
+      "npc": "nora",
+      "recipe": "grilled_corn",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "corn"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 10,
+      "item": "queen_berry",
+      "letter": "harvest_festival_patch_case",
+      "npc": "reina",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "or"
+      ]
+    },
+    {
+      "count": 3,
+      "item": "silver_ingot",
+      "letter": "iron_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 40
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "miners_mushroom_stew",
+      "npc": "errol",
+      "recipe": "miners_mushroom_stew",
+      "requirements": [
+        {
+          "key": "donated_item",
+          "value": "upper_mines_mushroom"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "onion_soup_recipe",
+      "npc": "nora",
+      "recipe": "onion_soup",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "onion"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "orange_juice_recipe",
+      "npc": "nora",
+      "recipe": "orange_juice",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "orange"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "peaches_and_cream_recipe",
+      "npc": "adeline",
+      "recipe": "peaches_and_cream",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "peach"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "poached_pear_recipe",
+      "npc": "elsie",
+      "recipe": "poached_pear",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "pear"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "pomegranate_sorbet_recipe",
+      "npc": "elsie",
+      "recipe": "pomegranate_sorbet",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "pomegranate"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "mana_potion",
+      "letter": "post_carpenters_upgrade",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "completed_quest"
+      ]
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "pumpkin_stew_recipe",
+      "npc": "nora",
+      "recipe": "pumpkin_stew",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "pumpkin"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "roasted_cauliflower_recipe",
+      "npc": "nora",
+      "recipe": "roasted_cauliflower",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "cauliflower"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "roasted_sweet_potato_recipe",
+      "npc": "nora",
+      "recipe": "roasted_sweet_potato",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "sweet_potato"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "rose_tea_recipe",
+      "npc": "josephine",
+      "recipe": "rose_tea",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "tea"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 3,
+      "item": "iron_ingot",
+      "letter": "ruby_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 30
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "salted_watermelon_recipe",
+      "npc": "nora",
+      "recipe": "salted_watermelon",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "watermelon"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "letter": "sapphire_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 50
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "sauteed_snow_peas_recipe",
+      "npc": "nora",
+      "recipe": "sauteed_snow_peas",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "snow_peas"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "shooting_star_morning_letter",
+      "npc": "josephine",
+      "recipe": "star_cushion_yellow",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "shooting_star_morning_letter",
+      "npc": "josephine",
+      "recipe": "star_lantern_yellow",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "shooting_star_morning_letter",
+      "npc": "josephine",
+      "recipe": "star_viewing_blanket_yellow",
+      "requirements": [],
+      "unread_requirement_keys": [
+        "reached_date"
+      ]
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "letter": "silver_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 60
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "simmered_daikon_recipe",
+      "npc": "nora",
+      "recipe": "simmered_daikon",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "daikon_radish"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "sliced_turnip_recipe",
+      "npc": "nora",
+      "recipe": "sliced_turnip",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "turnip"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "spicy_water_chestunut_recipe",
+      "npc": "nora",
+      "recipe": "spicy_water_chestnuts",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "chili_pepper"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "spirit_mushroom_tea_recipe",
+      "npc": "valen",
+      "recipe": "spirit_mushroom_tea",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "spirit_mushroom"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "steamed_broccoli_recipe",
+      "npc": "nora",
+      "recipe": "steamed_broccoli",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "broccoli"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "copper_ingot",
+      "letter": "stone_star_rank_letter",
+      "npc": "adeline",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "reached_renown_level",
+          "value": 10
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "toasted_sunflower_seeds_recipe",
+      "npc": "nora",
+      "recipe": "toasted_sunflower_seeds",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "sunflower"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": null,
+      "item": null,
+      "letter": "tomato_soup_recipe",
+      "npc": "nora",
+      "recipe": "tomato_soup",
+      "requirements": [
+        {
+          "key": "shipped_item",
+          "value": "tomato"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "weather_crystal_ball",
+      "letter": "weather_globe_letter",
+      "npc": "juniper",
+      "recipe": null,
+      "requirements": [],
+      "unread_requirement_keys": [
+        "completed_quest"
+      ]
+    },
+    {
+      "count": 1,
+      "item": "adeline_chair",
+      "letter": "wedding_gifts_adeline",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "adeline"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "adeline_desk",
+      "letter": "wedding_gifts_adeline",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "adeline"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "adeline_hobby_table",
+      "letter": "wedding_gifts_adeline",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "adeline"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "balor_chair",
+      "letter": "wedding_gifts_balor",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "balor"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "balor_desk",
+      "letter": "wedding_gifts_balor",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "balor"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "balor_gem_station",
+      "letter": "wedding_gifts_balor",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "balor"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "caldarus_chair",
+      "letter": "wedding_gifts_caldarus",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "caldarus"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "caldarus_desk",
+      "letter": "wedding_gifts_caldarus",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "caldarus"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "caldarus_music_station",
+      "letter": "wedding_gifts_caldarus",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "caldarus"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "celine_chair",
+      "letter": "wedding_gifts_celine",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "celine"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "celine_desk",
+      "letter": "wedding_gifts_celine",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "celine"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "celine_garden_shelf",
+      "letter": "wedding_gifts_celine",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "celine"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "eiland_artifact_shelf",
+      "letter": "wedding_gifts_eiland",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "eiland"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "eiland_chair",
+      "letter": "wedding_gifts_eiland",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "eiland"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "eiland_desk",
+      "letter": "wedding_gifts_eiland",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "eiland"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "hayden_chair",
+      "letter": "wedding_gifts_hayden",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "hayden"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "hayden_desk",
+      "letter": "wedding_gifts_hayden",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "hayden"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "hayden_indoor_garden",
+      "letter": "wedding_gifts_hayden",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "hayden"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "dozy_pet_bed",
+      "letter": "wedding_gifts_juniper",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "juniper"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "juniper_cauldron",
+      "letter": "wedding_gifts_juniper",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "juniper"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "juniper_chair",
+      "letter": "wedding_gifts_juniper",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "juniper"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "juniper_desk",
+      "letter": "wedding_gifts_juniper",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "juniper"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "march_chair",
+      "letter": "wedding_gifts_march",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "march"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "march_desk",
+      "letter": "wedding_gifts_march",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "march"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "march_forge",
+      "letter": "wedding_gifts_march",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "march"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "reina_chair",
+      "letter": "wedding_gifts_reina",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "reina"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "reina_desk",
+      "letter": "wedding_gifts_reina",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "reina"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "reina_test_kitchen",
+      "letter": "wedding_gifts_reina",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "reina"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "ryis_chair",
+      "letter": "wedding_gifts_ryis",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "ryis"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "ryis_crafting_station",
+      "letter": "wedding_gifts_ryis",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "ryis"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "ryis_desk",
+      "letter": "wedding_gifts_ryis",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "ryis"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "seridia_chair",
+      "letter": "wedding_gifts_seridia",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "seridia"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "seridia_desk",
+      "letter": "wedding_gifts_seridia",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "seridia"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "seridia_magic_fire",
+      "letter": "wedding_gifts_seridia",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "seridia"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "valen_chair",
+      "letter": "wedding_gifts_valen",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "valen"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "valen_desk",
+      "letter": "wedding_gifts_valen",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "valen"
+        }
+      ],
+      "unread_requirement_keys": []
+    },
+    {
+      "count": 1,
+      "item": "valen_workstation",
+      "letter": "wedding_gifts_valen",
+      "npc": "elsie",
+      "recipe": null,
+      "requirements": [
+        {
+          "key": "is_spouse",
+          "value": "valen"
+        }
+      ],
+      "unread_requirement_keys": []
+    }
+  ],
+  "museumRewards": [
+    {
+      "count": null,
+      "item": "treasure_box_wood",
+      "recipe": null,
+      "tier": 1,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 2,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 3,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 4,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_bed_beige",
+      "recipe": null,
+      "tier": 5,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_double_bed_beige",
+      "recipe": null,
+      "tier": 5,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 5,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_bed_beige",
+      "tier": 5,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_double_bed_beige",
+      "tier": 5,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_trunk_table_beige",
+      "recipe": null,
+      "tier": 6,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 6,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_trunk_table_beige",
+      "tier": 6,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_rug_beige",
+      "recipe": null,
+      "tier": 7,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 7,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_rug_beige",
+      "tier": 7,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_chair_beige",
+      "recipe": null,
+      "tier": 8,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 8,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_chair_beige",
+      "tier": 8,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_lamp_beige",
+      "recipe": null,
+      "tier": 9,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 9,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_lamp_beige",
+      "tier": 9,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_wallpaper_beige",
+      "recipe": null,
+      "tier": 10,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 10,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_wallpaper_beige",
+      "tier": 10,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_flooring_beige",
+      "recipe": null,
+      "tier": 11,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 11,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_flooring_beige",
+      "tier": 11,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "explorer_globe_beige",
+      "recipe": null,
+      "tier": 12,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 12,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "explorer_globe_beige",
+      "tier": 12,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "alda_pot_replica_blue",
+      "recipe": null,
+      "tier": 13,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 13,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "alda_pot_replica_blue",
+      "tier": 13,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "dragon_altar_water",
+      "recipe": null,
+      "tier": 14,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 14,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "dragon_altar_water",
+      "tier": 14,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "color_paving_stone_v20",
+      "recipe": null,
+      "tier": 15,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 15,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "color_paving_stone_v20",
+      "tier": 15,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "gryphon_statue_replica_v1",
+      "recipe": null,
+      "tier": 16,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 16,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "gryphon_statue_replica_v1",
+      "tier": 16,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "crystal_string_lights_purple",
+      "recipe": null,
+      "tier": 17,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 17,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "crystal_string_lights_purple",
+      "tier": 17,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "obelisk_beige",
+      "recipe": null,
+      "tier": 18,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 18,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "obelisk_beige",
+      "tier": 18,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "forge_mistril",
+      "recipe": null,
+      "tier": 19,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 19,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "forge_mistril",
+      "tier": 19,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "broken_pillar_v1_white",
+      "recipe": null,
+      "tier": 20,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 20,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "broken_pillar_v1_white",
+      "tier": 20,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "dragon_statue_replica_v1",
+      "recipe": null,
+      "tier": 21,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 21,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "dragon_statue_replica_v1",
+      "tier": 21,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "gemstone_bridge_v1",
+      "recipe": null,
+      "tier": 22,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 22,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "gemstone_bridge_v1",
+      "tier": 22,
+      "wing": "archaeology"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_wood",
+      "recipe": null,
+      "tier": 1,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 2,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 3,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 4,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_bed_blue",
+      "recipe": null,
+      "tier": 5,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_double_bed_blue",
+      "recipe": null,
+      "tier": 5,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 5,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_bed_blue",
+      "tier": 5,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_double_bed_blue",
+      "tier": 5,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_table_blue",
+      "recipe": null,
+      "tier": 6,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 6,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_table_blue",
+      "tier": 6,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_rug_blue",
+      "recipe": null,
+      "tier": 7,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 7,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_rug_blue",
+      "tier": 7,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_chair_blue",
+      "recipe": null,
+      "tier": 8,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 8,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_chair_blue",
+      "tier": 8,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_lamp_blue",
+      "recipe": null,
+      "tier": 9,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 9,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_lamp_blue",
+      "tier": 9,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_wallpaper_blue",
+      "recipe": null,
+      "tier": 10,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 10,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_wallpaper_blue",
+      "tier": 10,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_flooring_blue",
+      "recipe": null,
+      "tier": 11,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 11,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_flooring_blue",
+      "tier": 11,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_oar_wall_decor_blue",
+      "recipe": null,
+      "tier": 12,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 12,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_oar_wall_decor_blue",
+      "tier": 12,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_window_silver",
+      "recipe": null,
+      "tier": 13,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 13,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_window_silver",
+      "tier": 13,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_plaque_blue",
+      "recipe": null,
+      "tier": 14,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 14,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_plaque_blue",
+      "tier": 14,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_trophy_shelf_blue",
+      "recipe": null,
+      "tier": 15,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 15,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_trophy_shelf_blue",
+      "tier": 15,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fishing_tank_silver",
+      "recipe": null,
+      "tier": 16,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 16,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fishing_tank_silver",
+      "tier": 16,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "fish_plush_toy",
+      "recipe": null,
+      "tier": 17,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 17,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fish_plush_toy",
+      "tier": 17,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "octopus_plushie",
+      "recipe": null,
+      "tier": 18,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 18,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "octopus_plushie",
+      "tier": 18,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "mermaid_bed_v3",
+      "recipe": null,
+      "tier": 19,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 19,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "mermaid_bed_v3",
+      "tier": 19,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "animated_waterfall_v1",
+      "recipe": null,
+      "tier": 20,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 20,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "animated_waterfall_v1",
+      "tier": 20,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 21,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 22,
+      "wing": "fish"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_wood",
+      "recipe": null,
+      "tier": 1,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 2,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 3,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_bed_orange",
+      "recipe": null,
+      "tier": 4,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_double_bed_orange",
+      "recipe": null,
+      "tier": 4,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 4,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_bed_orange",
+      "tier": 4,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_double_bed_orange",
+      "tier": 4,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_lamp_orange",
+      "recipe": null,
+      "tier": 5,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 5,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_lamp_orange",
+      "tier": 5,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_rug_orange",
+      "recipe": null,
+      "tier": 6,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 6,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_rug_orange",
+      "tier": 6,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_sofa_orange",
+      "recipe": null,
+      "tier": 7,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 7,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_sofa_orange",
+      "tier": 7,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_potted_tree_orange",
+      "recipe": null,
+      "tier": 8,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 8,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_potted_tree_orange",
+      "tier": 8,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_flooring_orange",
+      "recipe": null,
+      "tier": 9,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 9,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_flooring_orange",
+      "tier": 9,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "spring_wallpaper_orange",
+      "recipe": null,
+      "tier": 10,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 10,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "spring_wallpaper_orange",
+      "tier": 10,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_bed_red",
+      "recipe": null,
+      "tier": 11,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_double_bed_red",
+      "recipe": null,
+      "tier": 11,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 11,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_bed_red",
+      "tier": 11,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_double_bed_red",
+      "tier": 11,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_table_red",
+      "recipe": null,
+      "tier": 12,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 12,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_table_red",
+      "tier": 12,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_rug_red",
+      "recipe": null,
+      "tier": 13,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 13,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_rug_red",
+      "tier": 13,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_chair_red",
+      "recipe": null,
+      "tier": 14,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_jar_lamp_red",
+      "recipe": null,
+      "tier": 14,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_chair_red",
+      "tier": 14,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_jar_lamp_red",
+      "tier": 14,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_flooring_red",
+      "recipe": null,
+      "tier": 15,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "summer_wallpaper_red",
+      "recipe": null,
+      "tier": 15,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_flooring_red",
+      "tier": 15,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "summer_wallpaper_red",
+      "tier": 15,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "fall_bed_orange",
+      "recipe": null,
+      "tier": 16,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "fall_double_bed_orange",
+      "recipe": null,
+      "tier": 16,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 16,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fall_bed_orange",
+      "tier": 16,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fall_double_bed_orange",
+      "tier": 16,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "fall_table_orange",
+      "recipe": null,
+      "tier": 17,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 17,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "fall_table_orange",
+      "tier": 17,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "tesserae_tree",
+      "recipe": null,
+      "tier": 18,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 18,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 19,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "void_bonsai_v1",
+      "recipe": null,
+      "tier": 19,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "void_bonsai_v1",
+      "tier": 19,
+      "wing": "flora"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_wood",
+      "recipe": null,
+      "tier": 1,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 2,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 3,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_copper",
+      "recipe": null,
+      "tier": 4,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "butterfly_bed_v1",
+      "recipe": null,
+      "tier": 5,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "butterfly_double_bed_v1",
+      "recipe": null,
+      "tier": 5,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 5,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "butterfly_bed_v1",
+      "tier": 5,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "butterfly_double_bed_v1",
+      "tier": 5,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "ladybug_table_v1",
+      "recipe": null,
+      "tier": 6,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_silver",
+      "recipe": null,
+      "tier": 6,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "ladybug_table_v1",
+      "tier": 6,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "insect_rug_v1",
+      "recipe": null,
+      "tier": 7,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 7,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "insect_rug_v1",
+      "tier": 7,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "caterpillar_chair_v1",
+      "recipe": null,
+      "tier": 8,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 8,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "caterpillar_chair_v1",
+      "tier": 8,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "moth_lamp_v1",
+      "recipe": null,
+      "tier": 9,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 9,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "moth_lamp_v1",
+      "tier": 9,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "insect_wallpaper_v1",
+      "recipe": null,
+      "tier": 10,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 10,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "insect_wallpaper_v1",
+      "tier": 10,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "insect_flooring_v1",
+      "recipe": null,
+      "tier": 11,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 11,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "insect_flooring_v1",
+      "tier": 11,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "firefly_wall_string_lights_yellow",
+      "recipe": null,
+      "tier": 12,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 12,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "firefly_wall_string_lights_yellow",
+      "tier": 12,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "butterfly_wall_lamp_gold",
+      "recipe": null,
+      "tier": 13,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 13,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "butterfly_wall_lamp_gold",
+      "tier": 13,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "bumblebee_plushie",
+      "recipe": null,
+      "tier": 14,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 14,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "bumblebee_plushie",
+      "tier": 14,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "butterfly_painting_v1",
+      "recipe": null,
+      "tier": 15,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 15,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "butterfly_painting_v1",
+      "tier": 15,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "honeycomb_shelf",
+      "recipe": null,
+      "tier": 16,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 16,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": null,
+      "recipe": "honeycomb_shelf",
+      "tier": 16,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 17,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 18,
+      "wing": "insect"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "recipe": null,
+      "tier": 19,
+      "wing": "insect"
+    }
+  ],
+  "quests": [
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_animal_materials",
+      "quest_name": "Crown Request: Animal Materials",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_archaeology_shards",
+      "quest_name": "Crown Request: Archaeology Shards",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_baked_dishes",
+      "quest_name": "Crown Request: Baked Main Dishes",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_bell_berries",
+      "quest_name": "Crown Request: Bell Berries",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_berries",
+      "quest_name": "Crown Request: Berries",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_copper_tools",
+      "quest_name": "Crown Request: Copper Tools",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_crops",
+      "quest_name": "Crown Request: Crops",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_fish",
+      "quest_name": "Crown Request: Fish",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_flowers",
+      "quest_name": "Crown Request: Flowers",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_gold_ingots",
+      "quest_name": "Crown Request: Gold Ingots",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_golden_ingredients",
+      "quest_name": "Crown Request: Golden Ingredients",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_grass_starter",
+      "quest_name": "Crown Request: Grass Starters",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_ingots",
+      "quest_name": "Crown Request: Ingots",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_mine_forageables",
+      "quest_name": "Crown Request: Mine Forageables",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_monster_materials",
+      "quest_name": "Crown Request: Monster Materials",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_refined_stone",
+      "quest_name": "Crown Request: Refined Stone",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_soup",
+      "quest_name": "Crown Request: Soup",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_stone_paths",
+      "quest_name": "Crown Request: Stone Paths",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_stone",
+      "quest_name": "Crown Request: Stone",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": null,
+      "item": "treasure_box_gold",
+      "npc": "adeline",
+      "quest": "crown_request_tables_and_chairs",
+      "quest_name": "Crown Request: Tables and Chairs",
+      "recipe": null,
+      "source_file": "crown_quests"
+    },
+    {
+      "count": 1,
+      "item": "miners_crate_chair_v1",
+      "npc": "olric",
+      "quest": "request_for_a_rock",
+      "quest_name": "Request for a Rock",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "hayden",
+      "quest": "request_for_baked_potato",
+      "quest_name": "Request for Baked Potato",
+      "recipe": "loaded_baked_potato",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": "herb_salad",
+      "npc": "valen",
+      "quest": "request_for_basil_thyme",
+      "quest_name": "Request for Herbs",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "eiland",
+      "quest": "request_for_berries",
+      "quest_name": "Request for Berries",
+      "recipe": "berries_and_cream",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "elsie",
+      "quest": "request_for_blackberries",
+      "quest_name": "Request for Blackberries",
+      "recipe": "blackberry_jam",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "reina",
+      "quest": "request_for_blueberries",
+      "quest_name": "Request for Blueberries",
+      "recipe": "blueberry_jam",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "reina",
+      "quest": "request_for_broccoli",
+      "quest_name": "Request for Broccoli",
+      "recipe": "broccoli_salad",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "riceball",
+      "npc": "hemlock",
+      "quest": "request_for_caterpillar",
+      "quest_name": "Request for a Caterpillar",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "hemlock",
+      "quest": "request_for_catfish",
+      "quest_name": "Request for a Catfish",
+      "recipe": "breaded_catfish",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "apple",
+      "npc": "dell",
+      "quest": "request_for_chestnuts",
+      "quest_name": "Request for Chestnuts",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "errol",
+      "quest": "request_for_clam",
+      "quest_name": "Request for a Clam",
+      "recipe": "clam_chowder",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "coconut_milk",
+      "npc": "landen",
+      "quest": "request_for_coconuts",
+      "quest_name": "Request for Coconuts",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "reina",
+      "quest": "request_for_cod",
+      "quest_name": "Request for Cod",
+      "recipe": "cod_with_thyme",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "trail_mix",
+      "npc": "luc",
+      "quest": "request_for_copper_beetle",
+      "quest_name": "Request for Copper Beetle",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "ryis",
+      "quest": "request_for_cranberry_orange",
+      "quest_name": "Request for Cranberries",
+      "recipe": "cranberry_orange_scone",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "vera",
+      "quest": "request_for_daikon",
+      "quest_name": "Request for a Daikon Radish",
+      "recipe": "winter_stew",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "coconut_cream_pie",
+      "npc": "reina",
+      "quest": "request_for_deep_earthworm",
+      "quest_name": "Request for a Deep Earthworm",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "terithia",
+      "quest": "request_for_earthshroom",
+      "quest_name": "Request for an Earthshroom",
+      "recipe": "sea_bream_rice",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "march",
+      "quest": "request_for_eel",
+      "quest_name": "Request for Freshwater Eel",
+      "recipe": "grilled_eel_rice_bowl",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "eiland",
+      "quest": "request_for_egg",
+      "quest_name": "Request for Eggs",
+      "recipe": "hard_boiled_egg",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "celine",
+      "quest": "request_for_fennel",
+      "quest_name": "Request for Fennel",
+      "recipe": "spring_salad",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "daffodil",
+      "npc": "celine",
+      "quest": "request_for_gardening_supplies",
+      "quest_name": "Request for Gardening Materials",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "tulip",
+      "npc": "celine",
+      "quest": "request_for_gardening_supplies",
+      "quest_name": "Request for Gardening Materials",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "reina",
+      "quest": "request_for_garlic",
+      "quest_name": "Request for Garlic",
+      "recipe": "garlic_bread",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "glowberry_cookies",
+      "npc": "ryis",
+      "quest": "request_for_glowberry",
+      "quest_name": "Request for Glowberries",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "cow_milk",
+      "npc": "hayden",
+      "quest": "request_for_hay",
+      "quest_name": "Request for Hay",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "terithia",
+      "quest": "request_for_horseradish_salmon",
+      "quest_name": "Request for Ingredients",
+      "recipe": "horseradish_salmon",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "josephine",
+      "quest": "request_for_ice",
+      "quest_name": "Request for Ice",
+      "recipe": "wintergreen_ice_cream",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "adeline",
+      "quest": "request_for_lemon",
+      "quest_name": "Request for a Lemon",
+      "recipe": "cup_of_tea",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "ice_cream_sundae",
+      "npc": "reina",
+      "quest": "request_for_milk",
+      "quest_name": "Request for Milk",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "monster_mash",
+      "npc": "juniper",
+      "quest": "request_for_monster_powder",
+      "quest_name": "Request for Monster Powder",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 2,
+      "item": "iron_ingot",
+      "npc": "march",
+      "quest": "request_for_monster_shell",
+      "quest_name": "Request for a Monster Shell",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "eiland",
+      "quest": "request_for_moon_fruit",
+      "quest_name": "Request for a Moon Fruit",
+      "recipe": "caramelized_moon_fruit",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "juniper",
+      "quest": "request_for_moon",
+      "quest_name": "Important Request for a Moon Fruit",
+      "recipe": "moon_fruit_cake",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "reina",
+      "quest": "request_for_more_wildberries",
+      "quest_name": "Request for Berries",
+      "recipe": "wildberry_pie",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "chocolate",
+      "npc": "maple",
+      "quest": "request_for_mullet",
+      "quest_name": "Request for a Mullet",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "elsie",
+      "quest": "request_for_orange",
+      "quest_name": "Request for an Orange",
+      "recipe": "marmalade",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "errol",
+      "quest": "request_for_perch",
+      "quest_name": "Request for a Perch",
+      "recipe": "perch_risotto",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "adeline",
+      "quest": "request_for_pineshrooms",
+      "quest_name": "Request for Pineshrooms",
+      "recipe": "pineshroom_toast",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "tulip",
+      "npc": "maple",
+      "quest": "request_for_pink_scallop_shell",
+      "quest_name": "Request for a Seashell",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "grilled_cheese",
+      "npc": "luc",
+      "quest": "request_for_pond_skater",
+      "quest_name": "Request for a Pond Skater",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "hemlock",
+      "quest": "request_for_roasted_chestnuts",
+      "quest_name": "Request for Chestnuts",
+      "recipe": "roasted_chestnuts",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "valen",
+      "quest": "request_for_rose_hip",
+      "quest_name": "Request for Rose Hips",
+      "recipe": "rosehip_jam",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "cavern_rock_flooring",
+      "npc": "olric",
+      "quest": "request_for_round_rock",
+      "quest_name": "Request for a Really Round Rock",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "valen",
+      "quest": "request_for_seaweed",
+      "quest_name": "Request for Seaweed",
+      "recipe": "seaweed_salad",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "vera",
+      "quest": "request_for_sesame",
+      "quest_name": "Request for Sesame",
+      "recipe": "sesame_broccoli",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 3,
+      "item": "seed_snowdrop_anemone",
+      "npc": "elsie",
+      "quest": "request_for_snowdrop_anemone",
+      "quest_name": "Request for a Snowdrop Anemone",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "eiland",
+      "quest": "request_for_strawberries_cream",
+      "quest_name": "Request for a Strawberry",
+      "recipe": "strawberries_and_cream",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "eiland",
+      "quest": "request_for_strawberries",
+      "quest_name": "Request for a Strawberry",
+      "recipe": "strawberry_shortcake",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": "gazpacho",
+      "npc": "holt",
+      "quest": "request_for_tomato",
+      "quest_name": "Request for Tomatoes",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "terithia",
+      "quest": "request_for_trout",
+      "quest_name": "Request for Trout",
+      "recipe": "smoked_trout_soup",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "juniper",
+      "quest": "request_for_water_chestnuts",
+      "quest_name": "Request for Water Chestnuts",
+      "recipe": "water_chestnut_fritters",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "elsie",
+      "quest": "request_for_wild_berry",
+      "quest_name": "Request for Wild Berries",
+      "recipe": "wildberry_scone",
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 1,
+      "item": "potato_soup",
+      "npc": "reina",
+      "quest": "request_for_wild_leek",
+      "quest_name": "Request for Wild Leek",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": 3,
+      "item": "egg",
+      "npc": "hayden",
+      "quest": "request_for_wood_fence",
+      "quest_name": "Request for Wood Fencing",
+      "recipe": null,
+      "source_file": "fetch_quests"
+    },
+    {
+      "count": null,
+      "item": "cherry_cobbler",
+      "npc": "celine",
+      "quest": "a_change_of_greenery",
+      "quest_name": "A Change of Green-ery",
+      "recipe": null,
+      "source_file": "heart_quests"
+    },
+    {
+      "count": null,
+      "item": "honey_curry",
+      "npc": "reina",
+      "quest": "farm_fresh_sous_chef",
+      "quest_name": "Farm Fresh Sous Chef",
+      "recipe": null,
+      "source_file": "heart_quests"
+    },
+    {
+      "count": null,
+      "item": "wildberry_pie",
+      "npc": "reina",
+      "quest": "pie_in_the_sky",
+      "quest_name": "Pie in the Sky",
+      "recipe": null,
+      "source_file": "heart_quests"
+    },
+    {
+      "count": null,
+      "item": "cherry_tart",
+      "npc": "adeline",
+      "quest": "the_smell_of_drying_ink",
+      "quest_name": "The Smell of Drying Ink",
+      "recipe": null,
+      "source_file": "heart_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "enchantern_explosion",
+      "quest_name": "Enchantern Explosion",
+      "recipe": "enchantern_lamp_blue",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "essence_gone_batty",
+      "quest_name": "Essence Gone Batty",
+      "recipe": "essence_bat_garland_blue",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "flame_spirit_shocker",
+      "quest_name": "Flame Spirit Shocker",
+      "recipe": "flame_spirit_lamp_orange",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "flying_tome_trouble",
+      "quest_name": "Flying Tome Trouble",
+      "recipe": "floating_tome_lamp",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "green_sapling_surprise",
+      "quest_name": "Green Sapling Surprise",
+      "recipe": "sapling_beanbag_chair_green",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "gryphon_grapple",
+      "quest_name": "Gryphon Grapple",
+      "recipe": "void_gryphon_statue_purple",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "lava_cat_conundrum",
+      "quest_name": "Lava Cat Conundrum",
+      "recipe": "lava_cat_bed_orange",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "malicious_mimics",
+      "quest_name": "Malicious Mimics",
+      "recipe": "mimic_storage_chest",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "mushroom_madness",
+      "quest_name": "Mushroom Madness",
+      "recipe": "mushroom_sofa_green",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "rock_clod_catastrophe",
+      "quest_name": "Rock Clod Catastrophe",
+      "recipe": "rock_clod_garden_brown",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "rock_stack_smackdown",
+      "quest_name": "Rock Stack Smackdown",
+      "recipe": "rock_stack_shelf",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "stillwell",
+      "quest": "staggering_stalagmites",
+      "quest_name": "Staggering Stalagmites",
+      "recipe": "stalagmite_tile_green",
+      "source_file": "stillwell_challenges"
+    },
+    {
+      "count": null,
+      "item": "apiary",
+      "npc": "luc",
+      "quest": "apiaries_and_terrariums",
+      "quest_name": "Apiaries and Terrariums",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "terrarium",
+      "npc": "luc",
+      "quest": "apiaries_and_terrariums",
+      "quest_name": "Apiaries and Terrariums",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "luc",
+      "quest": "apiaries_and_terrariums",
+      "quest_name": "Apiaries and Terrariums",
+      "recipe": "apiary",
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "luc",
+      "quest": "apiaries_and_terrariums",
+      "quest_name": "Apiaries and Terrariums",
+      "recipe": "terrarium",
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "mini_museum_blueprint",
+      "npc": "errol",
+      "quest": "complete_the_museum",
+      "quest_name": "Complete the Museum",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": 5,
+      "item": "starter_wood_fence",
+      "npc": "ryis",
+      "quest": "crafting_tutorial",
+      "quest_name": "Crafting Tutorial",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "pick_axe_worn",
+      "npc": "olric",
+      "quest": "do_a_bro_a_favor",
+      "quest_name": "Do a Bro a Favor",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "mixed_fruit_juice",
+      "npc": "reina",
+      "quest": "friday_at_the_sleeping_dragon_inn",
+      "quest_name": "Friday at the Sleeping Dragon Inn",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": 3,
+      "item": "seed_potato",
+      "npc": "adeline",
+      "quest": "greet_the_townsfolk",
+      "quest_name": "Greet the Townsfolk",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "josephine",
+      "quest": "jos_cooking_class",
+      "quest_name": "Jo's Cooking Class",
+      "recipe": "vegetable_soup",
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "net_worn",
+      "npc": "luc",
+      "quest": "somethings_bugging_me",
+      "quest_name": "Something's Bugging Me",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": 1,
+      "item": "cup_of_tea",
+      "npc": "hayden",
+      "quest": "tea_with_hayden",
+      "quest_name": "Tea with Hayden",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": 10,
+      "item": "grass_seed",
+      "npc": "hayden",
+      "quest": "tea_with_hayden",
+      "quest_name": "Tea with Hayden",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": 10,
+      "item": "hay",
+      "npc": "hayden",
+      "quest": "tea_with_hayden",
+      "quest_name": "Tea with Hayden",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "small_greenhouse_white_blueprint",
+      "npc": "adeline",
+      "quest": "upgrade_the_carpenters_shop",
+      "quest_name": "Upgrade the Carpenter's Shop",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "count": null,
+      "item": "champions_kitchen_blue",
+      "npc": "taliferro",
+      "quest": "beet_soup_challenge",
+      "quest_name": "Beet Soup Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "counter_kitchen_blue",
+      "npc": "taliferro",
+      "quest": "beet_soup_challenge",
+      "quest_name": "Beet Soup Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "beet_soup_challenge",
+      "quest_name": "Beet Soup Challenge",
+      "recipe": "champions_kitchen_blue",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "beet_soup_challenge",
+      "quest_name": "Beet Soup Challenge",
+      "recipe": "counter_kitchen_blue",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_herb_planter_v1",
+      "npc": "taliferro",
+      "quest": "bell_berry_bakewell_tart_challenge",
+      "quest_name": "Bell Berry Bakewell Tart Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "bell_berry_bakewell_tart_challenge",
+      "quest_name": "Bell Berry Bakewell Tart Challenge",
+      "recipe": "kitchen_herb_planter_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_garlic_braid",
+      "npc": "taliferro",
+      "quest": "chocolate_cake_challenge",
+      "quest_name": "Chocolate Cake Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "chocolate_cake_challenge",
+      "quest_name": "Chocolate Cake Challenge",
+      "recipe": "kitchen_garlic_braid",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "cooking_frying_pan_v1",
+      "npc": "taliferro",
+      "quest": "crispy_fried_earthshroom_challenge",
+      "quest_name": "Fried Earthshroom Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "crispy_fried_earthshroom_challenge",
+      "quest_name": "Fried Earthshroom Challenge",
+      "recipe": "cooking_frying_pan_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "cooking_hanging_pans_v1",
+      "npc": "taliferro",
+      "quest": "crystal_berry_pie_challenge",
+      "quest_name": "Crystal Berry Pie Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "crystal_berry_pie_challenge",
+      "quest_name": "Crystal Berry Pie Challenge",
+      "recipe": "cooking_hanging_pans_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_mixing_bowls_v1",
+      "npc": "taliferro",
+      "quest": "golden_cookies_challenge",
+      "quest_name": "Golden Cookies Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "golden_cookies_challenge",
+      "quest_name": "Golden Cookies Challenge",
+      "recipe": "kitchen_mixing_bowls_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_oil_and_vinegar_basket_v1",
+      "npc": "taliferro",
+      "quest": "herb_salad_challenge",
+      "quest_name": "Herb Salad Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "herb_salad_challenge",
+      "quest_name": "Herb Salad Challenge",
+      "recipe": "kitchen_oil_and_vinegar_basket_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_scale_blue",
+      "npc": "taliferro",
+      "quest": "incredibly_hot_pot_challenge",
+      "quest_name": "Incredibly Hot Pot Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "incredibly_hot_pot_challenge",
+      "quest_name": "Incredibly Hot Pot Challenge",
+      "recipe": "kitchen_scale_blue",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "cooking_tea_kettle_v1",
+      "npc": "taliferro",
+      "quest": "omelet_challenge",
+      "quest_name": "Omelet Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "omelet_challenge",
+      "quest_name": "Omelet Challenge",
+      "recipe": "cooking_tea_kettle_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "cooking_stockpot_v1",
+      "npc": "taliferro",
+      "quest": "rice_ball_challenge",
+      "quest_name": "Rice Ball Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "rice_ball_challenge",
+      "quest_name": "Rice Ball Challenge",
+      "recipe": "cooking_stockpot_v1",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_hanging_onion_basket",
+      "npc": "taliferro",
+      "quest": "tide_salad_challenge",
+      "quest_name": "Tide Salad Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "tide_salad_challenge",
+      "quest_name": "Tide Salad Challenge",
+      "recipe": "kitchen_hanging_onion_basket",
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": "kitchen_utensil_holder_blue",
+      "npc": "taliferro",
+      "quest": "veggie_sub_sandwich_challenge",
+      "quest_name": "Veggie Sub Sandwich Challenge",
+      "recipe": null,
+      "source_file": "tali_challenges"
+    },
+    {
+      "count": null,
+      "item": null,
+      "npc": "taliferro",
+      "quest": "veggie_sub_sandwich_challenge",
+      "quest_name": "Veggie Sub Sandwich Challenge",
+      "recipe": "kitchen_utensil_holder_blue",
+      "source_file": "tali_challenges"
+    }
+  ],
+  "unreadGrantKeys": [],
+  "wishingWell": [
+    {
+      "count": null,
+      "item": "berry_bowl",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_chest",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_fireplace",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_lamp",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 5,
+      "item": "dragon_road_wall",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_ruins_pillar_v1",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_ruins_pillar_v2",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_stained_glass_window_v1",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_stained_glass_window_v2",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_talon_chair",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_wall_head_piece",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_wall_tail_piece",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_water_altar_v1",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "dragon_water_altar_v2",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "fried_rice",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "large_dragon_rug",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "medium_dragon_rug",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "silver_ingot",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "spicy_cheddar_biscuit",
+      "pool": "common.large_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.large_roll",
+      "recipe": "berry_bowl"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.large_roll",
+      "recipe": "fried_rice"
+    },
+    {
+      "count": null,
+      "item": null,
+      "pool": "common.large_roll",
+      "recipe": "spicy_cheddar_biscuit"
+    },
+    {
+      "count": null,
+      "item": "blueberry_jam",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "cabbage_slaw",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "copper_ingot",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "iron_ingot",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "latte",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "ore_emerald",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "ore_ruby",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": 2,
+      "item": "ore_sapphire",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "spring_salad",
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "count": null,
+      "item": "wild_berry_jam",
+      "pool": "common.small_roll",
+      "recipe": null
+    }
+  ]
+}

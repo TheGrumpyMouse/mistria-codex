@@ -89,6 +89,56 @@ describe('gate targets', () => {
     expect(checkGates(loaded)).toEqual([])
   })
 
+  it('catches a shipping gate naming an item that does not exist', () => {
+    // The post is the game's milestone reward system, and 38 recipe sources are
+    // gated on having shipped or donated something. Those name an item by bare
+    // string, exactly like a quest gate does, so the same drift applies: rename
+    // the item and the letter becomes a condition nobody can satisfy.
+    const loaded = withRecords({
+      skills: SKILLS,
+      quests: QUESTS,
+      items: [{ id: 'potato' }],
+      recipes: [
+        {
+          id: 'baked_potato',
+          sources: [
+            {
+              method: 'mail',
+              requires: [{ type: 'shipped_item', key: 'potatoe', op: 'has', value: null }],
+            },
+          ],
+        },
+      ],
+    })
+
+    const findings = checkGates(loaded)
+    expect(findings.map((f) => f.check)).toEqual(['gate:unknown-target'])
+    expect(findings[0]?.message).toContain('shipped_item:potatoe')
+  })
+
+  it('is quiet when the shipping gate names a real item', () => {
+    const loaded = withRecords({
+      skills: SKILLS,
+      quests: QUESTS,
+      items: [{ id: 'potato' }, { id: 'sweetroot' }],
+      recipes: [
+        {
+          id: 'baked_potato',
+          sources: [
+            {
+              method: 'mail',
+              requires: [
+                { type: 'shipped_item', key: 'potato', op: 'has', value: null },
+                { type: 'donated_item', key: 'sweetroot', op: 'has', value: null },
+              ],
+            },
+          ],
+        },
+      ],
+    })
+    expect(checkGates(loaded)).toEqual([])
+  })
+
   it('checks prerequisites and unlock_requires, not just requires', () => {
     const loaded = withRecords({
       skills: SKILLS,

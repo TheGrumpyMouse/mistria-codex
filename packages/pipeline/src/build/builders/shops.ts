@@ -22,11 +22,17 @@ import { predates1_0 } from '../freshness.js'
  *
  * Derived here rather than authored on the item, so the two can't disagree: the
  * shop's stock list is the one place a price and a seller are recorded.
+ *
+ * **A recipe line is not a seller of the thing.** It is addressed by the item
+ * the recipe makes, so counting it here would put the Inn in the Lemon Pie's
+ * `sold_by` on the strength of selling the *scroll* — and give the item a
+ * "buy it here" window at a shop that stocks no pies.
  */
 export function soldByIndex(shops: Shop[]): Map<string, string[]> {
   const index = new Map<string, string[]>()
   for (const shop of shops) {
     for (const line of shop.stock) {
+      if (line.teaches_recipe_id !== null) continue
       const sellers = index.get(line.item_id) ?? []
       if (!sellers.includes(shop.id)) sellers.push(shop.id)
       index.set(line.item_id, sellers)
@@ -148,6 +154,11 @@ export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, str
         continue
       }
 
+      // The heading is the only thing that says this row is the recipe rather
+      // than the thing it makes: both link to the same article, and the wiki
+      // files them under `… > Recipes`.
+      const teachesRecipeId = /(^|>\s*)recipes\s*$/i.test(row.section) ? itemId : null
+
       // A price token that is neither a currency nor a known stat is not
       // defaulted to tesserae — that would invent a price out of a stat.
       let price: number | null = null
@@ -163,13 +174,16 @@ export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, str
       }
 
       // Where the page prints no price, the item's own `value.store` fills it.
-      // **Only where the page prints none.** A stated wiki price is per-shop
-      // and knows the difference between the Lemon Pie and its recipe scroll,
-      // which the item's single global value cannot: the Inn sells the pie at
-      // 650 and the scroll at 400, and overwriting would price both at 650.
+      // **Only where the page prints none, and never on a recipe line.** A
+      // stated wiki price is per-shop and knows the difference between the
+      // Lemon Pie and its recipe scroll, which the item's single global value
+      // cannot: the Inn sells the pie at 650 and the scroll at 400, and the
+      // global number is the pie's. Filling a scroll line from it would price
+      // the scroll at the dish's price and look entirely plausible.
       // Where the two disagree on a line the wiki *did* price, the wiki wins
       // and the disagreement is counted below rather than resolved silently.
-      const gamePrice = ctx.game?.itemById.get(itemId)?.buy_value ?? null
+      const gamePrice =
+        teachesRecipeId === null ? (ctx.game?.itemById.get(itemId)?.buy_value ?? null) : null
       if (price === null && currency === 'tesserae' && gamePrice !== null) {
         price = gamePrice
         filledPrices += 1
@@ -184,10 +198,12 @@ export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, str
         else if (parsed !== null) requires.push(parsed)
       }
 
-      // The same item can be listed twice — once as a dish and once as its
-      // recipe scroll, at different prices. Keyed by item and price so both
-      // survive, while a genuine duplicate row does not.
-      const key = `${itemId}|${price ?? ''}|${currency}`
+      // The same item is listed twice — once as the dish and once as its
+      // recipe scroll — and the *only* thing distinguishing them is the heading
+      // the row sits under. Keying the dedupe by price instead let both through
+      // as two identical-looking dish lines at two prices: 23 of them at the
+      // Inn, with nothing saying which was the recipe.
+      const key = `${itemId}|${teachesRecipeId === null ? 'item' : 'recipe'}|${currency}`
       if (seen.has(key)) continue
       seen.add(key)
 
@@ -198,6 +214,7 @@ export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, str
         requires,
         seasons: (row.seasons as Season[] | null) ?? null,
         rotation: shop.rotates,
+        teaches_recipe_id: teachesRecipeId,
       })
     }
 
@@ -339,16 +356,33 @@ function buildMarketStalls(
       const rotation = category.target_selections !== null
       for (const entry of category.entries) {
         // A cosmetic is a wardrobe id, not an item id, and it ships as its own
-        // record — so the stock line resolves straight to it. A recipe scroll
-        // is still a later pass and stays counted rather than silently gone.
+        // record — so the stock line resolves straight to it.
         const cosmeticId =
           entry.cosmetic !== null && game.cosmeticById.has(entry.cosmetic) ? entry.cosmetic : null
-        if (entry.item === null && cosmeticId === null) {
+
+        // A scroll line sells the recipe for a thing, not the thing. It is
+        // addressed by the item the recipe makes — which is also the recipe's
+        // id — so the line still links somewhere useful, and `teaches_recipe_id`
+        // is what stops it rendering as a second copy of the product. These
+        // used to be dropped outright as "a later pass", which is why the Inn
+        // and the Tackle Shop shipped their Recipes shelves empty.
+        //
+        // **`include_recipe` is a different line and must not come through
+        // here.** `{ item = "haunted_attic_bed", include_recipe = true }` sells
+        // the bed *and* teaches its recipe: it is a real product line with a
+        // real price and a real seller. Treating it as a scroll nulls the price
+        // and drops the stall out of the item's `sold_by`, which is exactly
+        // what it did. The recipe half is already recorded — `buildGrantIndex`
+        // reads the same flag and writes "Sold at Merri's Stall" onto the
+        // recipe's own sources.
+        const scrollFor = entry.recipe_scroll
+
+        if (entry.item === null && cosmeticId === null && entry.recipe_scroll === null) {
           cosmetics += 1
           continue
         }
 
-        const gameItemId = entry.item ?? ''
+        const gameItemId = entry.item ?? entry.recipe_scroll ?? ''
         const itemId = cosmeticId ?? shipsAs(gameItemId)
         if (itemId === null) {
           unresolvedItems += 1
@@ -390,7 +424,13 @@ function buildMarketStalls(
         const poolSeason = SEASONS.find((s) => s === entry.pool) ?? null
         const seasons = season ?? poolSeason
 
-        const key = `${itemId}|${seasons ?? ''}`
+        // A scroll only becomes a `teaches_recipe_id` if the recipe it names
+        // resolves to a shipped record; `buildData` nulls anything that did not.
+        const teachesRecipeId = scrollFor === null ? null : shipsAs(scrollFor)
+
+        // The scroll and the product are two lines, not one, so the dedupe key
+        // has to know which it is looking at.
+        const key = `${itemId}|${teachesRecipeId === null ? 'item' : 'recipe'}|${seasons ?? ''}`
         if (seen.has(key)) continue
         seen.add(key)
 
@@ -398,14 +438,21 @@ function buildMarketStalls(
           item_id: itemId,
           // No wiki page prices these stalls, so the files are the only
           // source: a cosmetic's own price, or the item's `value.store`.
+          //
+          // A scroll line gets **no** price from that field. `value.store` is
+          // what the product costs, and a scroll priced at its product's price
+          // is a wrong number that looks entirely reasonable.
           price:
-            cosmeticId === null
-              ? (game.itemById.get(gameItemId)?.buy_value ?? null)
-              : cosmeticPrice(cosmeticId),
+            teachesRecipeId !== null
+              ? null
+              : cosmeticId === null
+                ? (game.itemById.get(gameItemId)?.buy_value ?? null)
+                : cosmeticPrice(cosmeticId),
           currency: 'tesserae',
           requires: perk === null ? [] : [{ type: 'perk', key: perk, op: 'has', value: null }],
           seasons: seasons === null ? null : [seasons],
           rotation,
+          teaches_recipe_id: teachesRecipeId,
         })
       }
     }

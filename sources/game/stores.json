@@ -711,6 +711,114 @@
             {
               "cosmetic": null,
               "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_small_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_medium_round_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_medium_square_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_large_round_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_large_square_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "ornate_rug_large_rectangle_red",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "moon_gate_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "tile_roof_fence_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "craft_closed_sewing_tin_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "craft_fabric_rack_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "craft_rug_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
+              "item": null,
+              "pool": "random",
+              "recipe_scroll": "craft_yarn_basket_v1",
+              "requirements": [],
+              "unread_requirement_keys": []
+            },
+            {
+              "cosmetic": null,
+              "include_recipe": false,
               "item": "chess_scroll_bundle",
               "pool": "random",
               "recipe_scroll": null,

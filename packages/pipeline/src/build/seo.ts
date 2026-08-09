@@ -41,6 +41,7 @@ import {
   type MonsterRecord,
   type PlaceRecord,
   type QuestRecord,
+  type RecipeRecord,
   type UrlContext,
 } from './seo/pages.js'
 import { escapeHtml, renderPage, renderRedirect } from './seo/render.js'
@@ -74,6 +75,14 @@ async function loadDataset(): Promise<Dataset> {
     places: await readDataset<PlaceRecord>('locations.json'),
     mines: await readDataset<MineRecord>('mines.json'),
     quests: await readDataset<QuestRecord>('quests.json'),
+    // Recipes get no page of their own — a recipe's id is its output item's id,
+    // so a page for it would be a second URL about one subject. They render as
+    // two blocks on the item's page, which is also where a crawler looking for
+    // "how do I get the Lemon Pie recipe" should land.
+    recipes: await readDataset<RecipeRecord>('recipes.json'),
+    // Names only, for a recipe source that points at one.
+    shops: await readDataset<{ id: string; name: string }>('shops.json'),
+    festivals: await readDataset<{ id: string; name: string }>('festivals.json'),
   }
 }
 

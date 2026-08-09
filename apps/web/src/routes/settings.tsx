@@ -206,7 +206,7 @@ export function SettingsRoute() {
               {__APP_VERSION__}
             </dd>
           </div>
-          <div className="flex justify-between gap-3 py-1">
+          <div className="flex justify-between gap-3 border-rule border-b py-1">
             <dt className="text-ink-mute">Data</dt>
             <dd className="min-w-0 truncate text-ink">
               {meta === null ? (
@@ -225,6 +225,20 @@ export function SettingsRoute() {
                     </span>
                   )}
                 </>
+              )}
+            </dd>
+          </div>
+          {/* The app's own version is now 1.0.0 and so is the game's, and an
+              unlabelled 1.0.0 on the line above is ambiguous the moment the two
+              diverge. Naming which build the data was read from costs a row and
+              answers "is this app caught up with my patch". */}
+          <div className="flex justify-between gap-3 py-1">
+            <dt className="text-ink-mute">Game</dt>
+            <dd className="min-w-0 truncate text-ink">
+              {meta?.gameVersion === null || meta === null ? (
+                '—'
+              ) : (
+                <span data-numeral>{meta.gameVersion}</span>
               )}
             </dd>
           </div>

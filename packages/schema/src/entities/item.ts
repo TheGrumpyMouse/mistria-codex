@@ -81,6 +81,15 @@ export const Item = withEnvelope({
   worn_on: z.string().optional(),
   /** Cosmetics only: you start with it, so nothing sells it and it costs nothing. */
   default_unlocked: z.literal(true).optional(),
+
+  /**
+   * Furniture only: the tiles it occupies, from the object prototype's `size`.
+   *
+   * A fact, not an inference, and the one thing someone planning a room needs
+   * that no other field carries. 407 of the 1,503 prototypes state it; the rest
+   * are absent rather than guessed.
+   */
+  size: z.object({ width: z.number().int().min(1), height: z.number().int().min(1) }).optional(),
 })
 export type Item = z.infer<typeof Item>
 

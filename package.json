@@ -1,6 +1,6 @@
 {
   "name": "mistria-codex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "Unofficial companion PWA for Fields of Mistria",

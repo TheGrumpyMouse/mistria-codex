@@ -12,10 +12,16 @@
  * - `[categories.seasonal]` — one list per season.
  *
  * An entry is a bare item id or a table naming exactly one of `item`,
- * `cosmetic` or `recipe_scroll`, optionally with `requirements` and
- * `include_recipe`. All three kinds are extracted; what the build consumes is
- * its decision (cosmetics are deferred wholesale, and the extract must not
- * pre-empt that by dropping them).
+ * `cosmetic` or a scroll, optionally with `requirements` and `include_recipe`.
+ * All three kinds are extracted; what the build consumes is its decision
+ * (cosmetics are deferred wholesale, and the extract must not pre-empt that by
+ * dropping them).
+ *
+ * **A scroll has two spellings.** `recipe_scroll` is the cooking one (35 lines)
+ * and `crafting_scroll` the furniture one (12); they mean the same thing and
+ * appear in the same lists. Reading only the first left the Carpenter's
+ * furniture recipes out entirely — see `extract/unlocks.ts`, which reads the
+ * same pair everywhere else in the game.
  *
  * **No prices.** The game prices items on the item (`value.store`), not on
  * the stock line — a price here would be invented. The wiki remains the only
@@ -29,6 +35,7 @@ export interface GameStockEntry {
   /** Exactly one of these three is non-null. */
   item: string | null
   cosmetic: string | null
+  /** The recipe this line teaches, from either `recipe_scroll` or `crafting_scroll`. */
   recipe_scroll: string | null
   /** Buying it also teaches the recipe. */
   include_recipe: boolean
@@ -74,7 +81,7 @@ function readEntry(raw: unknown, pool: string): GameStockEntry | null {
   if (entry === null) return null
   const item = str(entry.item)
   const cosmetic = str(entry.cosmetic)
-  const recipeScroll = str(entry.recipe_scroll)
+  const recipeScroll = str(entry.recipe_scroll) ?? str(entry.crafting_scroll)
   if (item === null && cosmetic === null && recipeScroll === null) return null
 
   const { requirements, unread } = readRequirements(entry.requirements)

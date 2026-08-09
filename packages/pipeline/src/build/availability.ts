@@ -35,7 +35,16 @@ import {
   weatherMask,
 } from '@mistria/schema'
 
-/** Which query bucket a gathering method belongs to. */
+/**
+ * Which query bucket a gathering method belongs to.
+ *
+ * **Being absent from this map is a decision, not an omission.** A method that
+ * is not here answers no season/weather/time question — a letter arrives when
+ * its condition is met, a museum tier pays out when you fill it, a quest reward
+ * is handed over once. Those are windows on the item's own page, not answers to
+ * "what can I find right now", and shipping them as rules would put a posted
+ * treasure box on the flagship screen at 7pm in the rain.
+ */
 const KIND_BY_METHOD: Record<string, AvailabilityKind> = {
   fishing: 'fish',
   diving: 'fish',
@@ -47,6 +56,17 @@ const KIND_BY_METHOD: Record<string, AvailabilityKind> = {
   mine_drop: 'mine_drop',
   shop: 'shop_stock',
 }
+
+/**
+ * The methods that answer "what can I find right now".
+ *
+ * Exported so the reference query in `demo/findables.ts` and the shipped
+ * flattener cannot disagree about it. They did: the demo filtered nothing, so
+ * once grant windows landed it started reporting a treasure box that arrives in
+ * the post as catchable in the rain, while the shipped rules had excluded it all
+ * along.
+ */
+export const FINDABLE_METHODS: ReadonlySet<string> = new Set(Object.keys(KIND_BY_METHOD))
 
 const RARITY_ORDINAL: Record<string, number> = {
   common: 0,

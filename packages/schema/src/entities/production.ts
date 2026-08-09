@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { Requirement } from '../availability.js'
 import { withEnvelope } from '../envelope.js'
 import { IdRef } from '../ids.js'
-import { Currency, Quality, Rarity, Season } from '../primitives.js'
+import { Confidence, Currency, Quality, Rarity, Season } from '../primitives.js'
 
 export const Crop = withEnvelope({
   seed_item_id: IdRef.nullable().default(null),
@@ -34,6 +34,54 @@ export const RecipeIngredient = z
   })
 export type RecipeIngredient = z.infer<typeof RecipeIngredient>
 
+/**
+ * One way a recipe becomes known.
+ *
+ * The game states nearly all of these through a single token — `recipe_scroll`,
+ * which appears in the store tables, the letters, the quest rewards, the
+ * festival stalls, the Wishing Well pool and the Chicken Statue pool. Reading
+ * that token is what turned 163 records that all claimed "shop" into 435 that
+ * name where they actually come from.
+ *
+ * `skill_level` is the one **inferred** method. Every `recipe_scroll` in the
+ * game files is collected, so a recipe with no grant anywhere and a stated
+ * crafting level is gated by that level and nothing else — a structural
+ * deduction, not a stated fact, which is why it carries
+ * `confidence: 'inferred'` and must never render like the others.
+ */
+export const RecipeSource = z.object({
+  method: z.enum([
+    /** `recipe_is_default` — yours from the first day. */
+    'default',
+    /** A store sells the scroll, or sells a dish that teaches it. */
+    'shop',
+    'mail',
+    'quest',
+    'festival',
+    'wishing_well',
+    'chicken_statue',
+    /** Treasure chests in a named mine, behind the Taste Maker perk. */
+    'mines_chest',
+    'cutscene',
+    /** Inferred: no grant exists anywhere, and the level is the only gate. */
+    'skill_level',
+  ]),
+  /**
+   * A shop, quest, festival or mine id — **which one depends on `method`**, so
+   * refint checks it per method rather than against a single table. Null where
+   * the join was genuinely ambiguous, which is honest and is counted.
+   */
+  source_id: IdRef.nullable().default(null),
+  /** The letter's sender, or the quest's giver. */
+  character_id: IdRef.nullable().default(null),
+  /** What the scroll costs, where a source states it. Never the dish's price. */
+  price: z.number().int().nullable().default(null),
+  currency: Currency.default('tesserae'),
+  requires: z.array(Requirement).default([]),
+  confidence: Confidence,
+})
+export type RecipeSource = z.infer<typeof RecipeSource>
+
 export const Recipe = withEnvelope({
   kind: z.enum(['cooking', 'crafting', 'blacksmithing', 'woodcrafting']),
   output: z.object({ item_id: IdRef, quantity: z.number().int().min(1).default(1) }),
@@ -47,13 +95,16 @@ export const Recipe = withEnvelope({
     .default(null),
   craft_minutes: z.number().int().nullable().default(null),
 
-  unlock: z
-    .object({
-      method: z.enum(['shop', 'mail', 'quest', 'skill', 'festival', 'chest', 'story', 'default']),
-      source_id: IdRef.nullable().default(null),
-    })
-    .nullable()
-    .default(null),
+  /**
+   * How the recipe is **learned** — which is a different question from how the
+   * thing it makes is obtained, and the one the app could not answer at all.
+   *
+   * A list, not a single value: the Wishing Well and the Inn both hand out the
+   * Spicy Cheddar Biscuit, and collapsing two sources into one would pick a
+   * winner arbitrarily. Empty plus `sources` in `data_gaps[]` is the honest
+   * "we do not know" — see `RecipeSource` for what each method means.
+   */
+  sources: z.array(RecipeSource).default([]),
 
   effects: z
     .object({

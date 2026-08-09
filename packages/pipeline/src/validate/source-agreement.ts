@@ -62,8 +62,16 @@ interface Comparison {
   note: string
   /**
    * Which side the dataset actually ships, so a warning reads as "the wiki is
-   * behind" rather than "our data is wrong". Absent where neither is a
-   * straight copy of the other.
+   * behind" rather than "our data is wrong".
+   *
+   * Also the precedence declaration. The project's rule is **the more specific
+   * source wins; where both are equally specific, the game files win** — so
+   * `'wiki'` on a field the game also states is a claim that the wiki is
+   * narrower there, and it needs a `note` saying why. The precedence table in
+   * the report counts these; see docs/DATA-POLICY.md.
+   *
+   * Absent where neither side is a straight copy — the record is assembled from
+   * both, and there is no single winner to name.
    */
   ships?: 'game' | 'wiki'
 }
@@ -375,6 +383,26 @@ function renderReport(rows: Comparison[]): string {
     )
   }
 
+  lines.push(
+    '',
+    '## Precedence',
+    '',
+    'Which source each field is read from, on the records where **both** state a',
+    'value. The rule is the more specific source wins; where both are equally',
+    'specific, the game files win — so a `wiki` row here is a claim that the wiki',
+    'is narrower on that field, and it needs a reason. A boolean squeezed out of a',
+    'rich source is not a fallback, it is a bug: reducing `Recipes.recipeSource` to',
+    '"is this cell non-empty" shipped 163 recipes all claiming "shop".',
+    '',
+    '| Field | Both state it | Ships |',
+    '| --- | ---: | --- |',
+  )
+  for (const row of rows) {
+    const both = row.agree + row.differ.length
+    const ships = row.ships === undefined ? 'assembled from both' : `**${row.ships}**`
+    lines.push(`| ${row.field} | ${both} | ${ships} |`)
+  }
+
   for (const row of rows.filter((r) => r.differ.length > 0)) {
     lines.push('', `## ${row.field} — ${row.differ.length} differ`, '')
     if (row.note !== '') lines.push(`> ${row.note}`, '')
@@ -396,23 +424,43 @@ export async function checkSourceAgreement(loaded: Loaded): Promise<Finding[]> {
   await mkdir(REPORTS_DIR, { recursive: true })
   await writeFile(join(REPORTS_DIR, 'source-agreement.md'), renderReport(rows), 'utf8')
 
-  return rows
-    .filter((row) => row.differ.length > row.tolerance)
-    .map((row) => {
-      const shipped =
-        row.ships === 'game'
-          ? ' — the files win and ship'
-          : row.ships === 'wiki'
-            ? ' — the page wins and ships'
-            : ''
-      return warn(
-        'sources:disagree',
-        `${row.field}: the wiki and the files differ on ${row.differ.length} of ` +
-          `${row.agree + row.differ.length}${shipped} (e.g. ${row.differ
-            .slice(0, 3)
-            .map((d) => `${d.id} wiki ${d.ours}, files ${d.game}`)
-            .join('; ')})`,
+  // The precedence rule, as a check rather than a paragraph. A field read from
+  // the wiki on records the game also answers is either a deliberate
+  // specificity call (a per-shop price beating a global `value.store`) or the
+  // bug this whole file exists to surface — and only a stated reason tells the
+  // two apart.
+  const unexplainedWikiFirst = rows.filter(
+    (row) => row.ships === 'wiki' && row.agree + row.differ.length > 0 && row.note === '',
+  )
+
+  return [
+    ...unexplainedWikiFirst.map((row) =>
+      warn(
+        'sources:precedence',
+        `${row.field} ships the wiki's value on ${row.agree + row.differ.length} record(s) the ` +
+          'game files also state, with no reason given. Either the wiki is the more specific ' +
+          "source here — say so in the comparison's `note` — or the field should be game-first.",
         join(REPORTS_DIR, 'source-agreement.md'),
-      )
-    })
+      ),
+    ),
+    ...rows
+      .filter((row) => row.differ.length > row.tolerance)
+      .map((row) => {
+        const shipped =
+          row.ships === 'game'
+            ? ' — the files win and ship'
+            : row.ships === 'wiki'
+              ? ' — the page wins and ships'
+              : ''
+        return warn(
+          'sources:disagree',
+          `${row.field}: the wiki and the files differ on ${row.differ.length} of ` +
+            `${row.agree + row.differ.length}${shipped} (e.g. ${row.differ
+              .slice(0, 3)
+              .map((d) => `${d.id} wiki ${d.ours}, files ${d.game}`)
+              .join('; ')})`,
+          join(REPORTS_DIR, 'source-agreement.md'),
+        )
+      }),
+  ]
 }

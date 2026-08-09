@@ -141,6 +141,26 @@ export const Shop = withEnvelope({
         seasons: z.array(Season).nullable().default(null),
         /** Rotating stock (Balor's Wagon, Saturday Market) rather than always available. */
         rotation: z.boolean().default(false),
+
+        /**
+         * Set when the line sells a **recipe**, not the thing the recipe makes.
+         *
+         * The Inn stocks the Lemon Pie at 650 and its recipe scroll at 400, and
+         * both rows resolve to `lemon_pie`. Keeping them apart by price is what
+         * the builder used to do, and it put the same dish on the shelf twice
+         * with nothing saying which was which — 23 lines at the Inn alone. This
+         * separates them by meaning instead: `item_id` is still the dish the
+         * recipe makes, so the line links somewhere useful, and `price` is the
+         * scroll's price rather than the dish's.
+         *
+         * **Not set for a line that sells the product and teaches the recipe.**
+         * The game's `include_recipe` lines (Merri sells the Haunted Attic Bed
+         * and you learn to make it) are ordinary product lines with a price and
+         * a seller; the recipe half lives on the recipe's own `sources`. A line
+         * carrying this field is *only* a scroll, which is why `sold_by` skips
+         * it.
+         */
+        teaches_recipe_id: IdRef.nullable().default(null),
       }),
     )
     .default([]),

@@ -55,6 +55,22 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   sold_by: 'shops',
 
   used_in_recipe_ids: 'recipes',
+  teaches_recipe_id: 'recipes',
+}
+
+/**
+ * `source_id` on a recipe source: which table it points at depends on `method`.
+ *
+ * It used to be exempt as "polymorphic, resolved at D3". D3 has landed, so the
+ * target is resolved from the sibling `method` instead of the field name — the
+ * one place in the dataset where a reference is not identifiable from its key
+ * alone. A method with no entry here states no id and is not checked.
+ */
+const SOURCE_ID_TARGET: Readonly<Record<string, DatasetName>> = {
+  shop: 'shops',
+  quest: 'quests',
+  festival: 'festivals',
+  mines_chest: 'mines',
 }
 
 /**
@@ -65,9 +81,10 @@ const REF_EXEMPT: Readonly<Record<string, string>> = {
   id: 'the record’s own key',
   // Not a reference at all — a version-stamped scalar that nothing may point at.
   numeric_id: 'a game-internal number, deliberately not a foreign key',
-  // A recipe unlock points at a shop, quest or festival depending on `method`,
-  // so it has no single target. Resolved at D3 when those datasets land.
-  source_id: 'polymorphic target, resolved at D3',
+  // Still not resolvable from the key alone — but no longer unchecked. The
+  // sibling `method` names the table, and `collectRefs` reads it; see
+  // SOURCE_ID_TARGET.
+  source_id: 'target depends on the sibling `method`; checked via SOURCE_ID_TARGET',
   // A quest objective's target depends on its `type`: an item to deliver, a
   // monster to defeat, a character to talk to. Only `deliver` is populated
   // today, and every one of those is checked as an item by the build before it
@@ -100,7 +117,18 @@ function collectRefs(value: unknown, at: string, out: Ref[], unknownKeys: Set<st
   }
   if (value === null || typeof value !== 'object') return
 
-  for (const [key, child] of Object.entries(value as Record<string, unknown>)) {
+  // The one reference whose target is named by a sibling rather than by its own
+  // key: a recipe source's `source_id` points at a shop, a quest, a festival or
+  // a mine depending on `method`. Read here, at the object that holds both.
+  const record = value as Record<string, unknown>
+  if (typeof record.source_id === 'string' && typeof record.method === 'string') {
+    const target = SOURCE_ID_TARGET[record.method]
+    if (target !== undefined) {
+      out.push({ key: 'source_id', target, id: record.source_id, at: `${at}.source_id` })
+    }
+  }
+
+  for (const [key, child] of Object.entries(record)) {
     const target = REF_TARGETS[key]
 
     if (target !== undefined) {

@@ -25,7 +25,7 @@
  * applies absolutely to prose. Names (titles) are taken on the same footing as
  * item and NPC names.
  */
-import { entries, num, readToml, resolveIn, str, table } from './toml.js'
+import { entries, num, readToml, resolveIn, str, strList, table } from './toml.js'
 
 export interface GameMineBiome {
   /** 1-based position in the file, which is floor order. */
@@ -35,6 +35,18 @@ export interface GameMineBiome {
   floor: number | null
   /** The archaeology pool found while digging here. */
   artifact_set: string | null
+  /**
+   * Recipes that drop from this biome's treasure chests, **with the Taste
+   * Maker perk**. The perk's own description says so outright.
+   *
+   * The sibling list `dungeon_delicacies` looks identical and is not the same
+   * thing: it drops the finished dish, behind a different perk. The two share
+   * entries, so reading either as the other produces confident nonsense, and
+   * the only place the difference is stated is the two perk descriptions.
+   */
+  taste_maker: string[]
+  /** Furniture that drops from this biome's treasure chests. */
+  furniture: string[]
 }
 
 export interface GamePerk {
@@ -141,6 +153,8 @@ export async function extractMineBiomes(root: string): Promise<GameMineBiome[]> 
         name: str(biome.name),
         floor: num(biome.floor),
         artifact_set: str(biome.artifact_set),
+        taste_maker: strList(biome.taste_maker) ?? [],
+        furniture: strList(biome.furniture) ?? [],
       },
     ]
   })

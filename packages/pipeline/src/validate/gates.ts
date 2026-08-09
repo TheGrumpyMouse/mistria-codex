@@ -43,6 +43,12 @@ export function checkGates(loaded: Loaded): Finding[] {
     quest: questIds,
     skill: skillIds,
     perk: perkIds,
+    // A "once you have shipped a potato" gate names an item, and the item table
+    // is complete — so a typo in one is catchable here rather than becoming a
+    // condition no player can ever satisfy. This is the same reasoning that
+    // makes `perk` and `skill` strict.
+    shipped_item: idsOf('items'),
+    donated_item: idsOf('items'),
   }
 
   /** Walk any record shape looking for `requires`-shaped arrays. */

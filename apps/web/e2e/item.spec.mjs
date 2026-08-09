@@ -146,6 +146,72 @@ check(
 )
 check('and that fixture really is on a rendered item page', empty.includes('Abyssal Chest'), empty)
 
+// ── A dish and its recipe are two things ──
+//
+// The Inn sells the Lemon Pie at 650 and the recipe for it at 400, at the same
+// counter, and both rows resolve to `lemon_pie`. The page has to answer both
+// questions without merging them — and until now it answered the second with
+// "No source recorded" three sections up.
+const madeText = async (id) => {
+  await go(id)
+  const section = page.locator('section').filter({ hasText: 'How it’s made' }).first()
+  return (await section.innerText()).replace(/\s+/g, ' ')
+}
+
+const lemonPie = await go('lemon_pie')
+check('a cooked dish still says where the dish itself comes from', lemonPie.includes('Sold by'))
+// The heading is styled uppercase, so match it the way it renders.
+check(
+  'and separately, where the recipe comes from',
+  /where to learn the recipe/i.test(lemonPie),
+  lemonPie.slice(0, 200),
+)
+
+const lemonPieMade = await madeText('lemon_pie')
+check(
+  'the recipe names the shop that teaches it, at the scroll’s own price',
+  /Sold at Sleeping Dragon Inn — 400t/.test(lemonPieMade),
+  lemonPieMade,
+)
+check(
+  'the crafting level is shown, which no page ever did before',
+  /needs Cooking level 20/.test(lemonPieMade),
+  lemonPieMade,
+)
+
+const lemonPieSold = await soldByText('lemon_pie')
+check(
+  'the dish keeps the dish price, not the scroll’s',
+  /650t/.test(lemonPieSold) && !/400t/.test(lemonPieSold),
+  lemonPieSold,
+)
+
+// The post is the game's milestone reward system, and the gate is the fact.
+const bakedPotato = await madeText('baked_potato')
+check(
+  'a posted recipe names its sender and what earns it',
+  /Arrives in the post from Nora/.test(bakedPotato) && /ship a Potato/.test(bakedPotato),
+  bakedPotato,
+)
+
+// An inference must never render like a stated source. No scroll for this
+// recipe exists anywhere in the game files, so the level is the only gate left.
+const brazier = await madeText('cavern_floor_brazier')
+check(
+  'a level-only recipe says so and says it is inferred',
+  /inferred/.test(brazier) && /Woodcrafting level 10/.test(brazier),
+  brazier,
+)
+
+// The furniture half: 925 records shipped with no source at all because the
+// wiki's furniture table has no column for one.
+const brazierWhere = await whereText('cavern_floor_brazier')
+check(
+  'furniture found in a mine chest says so, where it used to say nothing at all',
+  /chest/i.test(brazierWhere) && !/No source recorded/.test(brazierWhere),
+  brazierWhere,
+)
+
 await page.close()
 await browser.close()
 finish()

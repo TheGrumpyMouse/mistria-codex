@@ -13,8 +13,15 @@
  * machine — so a patch that adds a third factory shows up without a name list.
  * Sprite keys, sounds and UI offsets in the same table are chrome and are
  * never read.
+ *
+ * **Two things come out of this file, not one.** Every placeable object's
+ * footprint is here too, as `size = [w, h]`, and it is the one fact a player
+ * arranging a room needs that no other source states — the wiki's furniture
+ * table has no column for it. Parsing 1,503 tables twice to keep the two reads
+ * in separate modules would cost more than the honesty is worth, so the extract
+ * carries both and is named for the file rather than for the factories.
  */
-import { entries, num, readToml, resolveIn, str, strList, table } from './toml.js'
+import { entries, num, range, readToml, resolveIn, str, strList, table } from './toml.js'
 
 export interface GameFactoryRequest {
   item: string
@@ -43,6 +50,17 @@ export interface GameFactory {
 export interface GameMachinesExtract {
   gameVersion: string
   factories: GameFactory[]
+  /**
+   * Object prototype id -> `[width, height]` in tiles, for the 865 prototypes
+   * that state one.
+   *
+   * **Only a stated size.** The file's `[default]` table declares `[2, 2]`, and
+   * inheriting it would hand a footprint to every rug and wall hanging in the
+   * game on the strength of a fallback nobody has checked applies. An absent
+   * size stays absent, which is the correct answer to a question no source has
+   * answered.
+   */
+  objectSizes: Record<string, [number, number]>
 }
 
 /** The keys a request's `requirements` may carry. Anything new must be looked at, not dropped. */
@@ -93,7 +111,11 @@ export async function extractMachines(
   const doc = await readToml(resolveIn(root, 'fiddle', 'object_prototypes', 'furniture.toml'))
 
   const factories: GameFactory[] = []
+  const objectSizes: Record<string, [number, number]> = {}
   for (const [id, prototype] of entries(doc)) {
+    const size = range(prototype.size)
+    if (size !== null) objectSizes[id] = size
+
     const factory = table(prototype.factory)
     if (factory === null) continue
 
@@ -112,5 +134,12 @@ export async function extractMachines(
   if (factories.length === 0) {
     throw new Error('object_prototypes/furniture.toml has no *.factory tables.')
   }
-  return { gameVersion, factories: factories.sort((a, b) => (a.id < b.id ? -1 : 1)) }
+  if (Object.keys(objectSizes).length === 0) {
+    throw new Error('object_prototypes/furniture.toml parsed to zero stated sizes.')
+  }
+  return {
+    gameVersion,
+    factories: factories.sort((a, b) => (a.id < b.id ? -1 : 1)),
+    objectSizes: Object.fromEntries(Object.entries(objectSizes).sort()),
+  }
 }

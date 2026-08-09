@@ -454,5 +454,3463 @@
       ]
     }
   ],
-  "gameVersion": "1.0.0"
+  "gameVersion": "1.0.0",
+  "objectSizes": {
+    "adeline_chair": [
+      4,
+      4
+    ],
+    "adeline_desk": [
+      8,
+      6
+    ],
+    "adeline_hobby_table": [
+      6,
+      5
+    ],
+    "adept_kitchen": [
+      8,
+      3
+    ],
+    "alda_pot_replica_blue": [
+      2,
+      2
+    ],
+    "alda_pot_replica_gold": [
+      2,
+      2
+    ],
+    "alda_pot_replica_green": [
+      2,
+      2
+    ],
+    "alda_pot_replica_purple": [
+      2,
+      2
+    ],
+    "alda_pot_replica_red": [
+      2,
+      2
+    ],
+    "alpaca_plushie": [
+      1,
+      2
+    ],
+    "animated_bird_fountain": [
+      3,
+      3
+    ],
+    "animated_snow_globe": [
+      2,
+      1
+    ],
+    "animated_waterfall_v1": [
+      6,
+      4
+    ],
+    "animated_waterfall_v2": [
+      6,
+      4
+    ],
+    "apiary": [
+      4,
+      2
+    ],
+    "auto_feeder_platform": [
+      2,
+      2
+    ],
+    "baby_cradle": [
+      4,
+      3
+    ],
+    "bakery_bread_basket_coffee": [
+      2,
+      2
+    ],
+    "bakery_bread_basket_pastel": [
+      2,
+      2
+    ],
+    "bakery_cake_case_coffee": [
+      6,
+      2
+    ],
+    "bakery_cake_case_pastel": [
+      6,
+      2
+    ],
+    "bakery_cake_coffee": [
+      2,
+      2
+    ],
+    "bakery_cake_pastel": [
+      2,
+      2
+    ],
+    "bakery_cake_slice_coffee": [
+      2,
+      2
+    ],
+    "bakery_cake_slice_pastel": [
+      2,
+      2
+    ],
+    "bakery_cookie_jar_coffee": [
+      2,
+      2
+    ],
+    "bakery_cookie_jar_pastel": [
+      2,
+      2
+    ],
+    "bakery_cutting_board_coffee": [
+      2,
+      2
+    ],
+    "bakery_cutting_board_pastel": [
+      2,
+      2
+    ],
+    "balor_chair": [
+      4,
+      3
+    ],
+    "balor_desk": [
+      5,
+      4
+    ],
+    "balor_gem_station": [
+      7,
+      5
+    ],
+    "barn_construction_large_tl": [
+      1,
+      1
+    ],
+    "barn_construction_large_tm": [
+      1,
+      1
+    ],
+    "barn_construction_medium_bl": [
+      1,
+      1
+    ],
+    "barn_construction_medium_br": [
+      1,
+      1
+    ],
+    "barn_construction_medium_mr": [
+      1,
+      1
+    ],
+    "barn_construction_medium_tl": [
+      1,
+      1
+    ],
+    "barn_construction_medium_tr": [
+      1,
+      1
+    ],
+    "basic_area_rug_green": [
+      10,
+      6
+    ],
+    "basic_area_rug_yellow": [
+      10,
+      6
+    ],
+    "basic_bed_oak": [
+      6,
+      5
+    ],
+    "basic_bed_walnut": [
+      6,
+      5
+    ],
+    "basic_bookshelf_oak": [
+      4,
+      2
+    ],
+    "basic_bookshelf_walnut": [
+      4,
+      2
+    ],
+    "basic_doormat_green": [
+      4,
+      3
+    ],
+    "basic_doormat_yellow": [
+      4,
+      3
+    ],
+    "basic_double_bed_oak": [
+      8,
+      5
+    ],
+    "basic_double_bed_walnut": [
+      8,
+      5
+    ],
+    "basic_dresser_oak": [
+      4,
+      2
+    ],
+    "basic_dresser_walnut": [
+      4,
+      2
+    ],
+    "basic_flower_pot_orange": [
+      2,
+      2
+    ],
+    "basic_nightstand_oak": [
+      3,
+      2
+    ],
+    "basic_nightstand_walnut": [
+      3,
+      2
+    ],
+    "basic_table_oak": [
+      6,
+      6
+    ],
+    "basic_table_walnut": [
+      6,
+      6
+    ],
+    "basic_wall_window_oak": [
+      4,
+      7
+    ],
+    "basic_wall_window_walnut": [
+      4,
+      7
+    ],
+    "basic_wood_chest_black": [
+      4,
+      2
+    ],
+    "basic_wood_chest_blue": [
+      4,
+      2
+    ],
+    "basic_wood_chest_cottage": [
+      4,
+      2
+    ],
+    "basic_wood_chest_dark": [
+      4,
+      2
+    ],
+    "basic_wood_chest_green": [
+      4,
+      2
+    ],
+    "basic_wood_chest_haunted_attic": [
+      4,
+      2
+    ],
+    "basic_wood_chest_light": [
+      4,
+      2
+    ],
+    "basic_wood_chest_medium": [
+      4,
+      2
+    ],
+    "basic_wood_chest_orange": [
+      4,
+      2
+    ],
+    "basic_wood_chest_pink": [
+      4,
+      2
+    ],
+    "basic_wood_chest_purple": [
+      4,
+      2
+    ],
+    "basic_wood_chest_red": [
+      4,
+      2
+    ],
+    "basic_wood_chest_white": [
+      4,
+      2
+    ],
+    "basic_wood_chest_witch_queen": [
+      4,
+      2
+    ],
+    "basic_wood_chest_yellow": [
+      4,
+      2
+    ],
+    "bathroom_bench_black": [
+      4,
+      2
+    ],
+    "bathroom_bench_white": [
+      4,
+      2
+    ],
+    "bathroom_curtain_stand_black": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_blue": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_brown": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_green": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_light_green": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_pink": [
+      6,
+      2
+    ],
+    "bathroom_curtain_stand_white": [
+      6,
+      2
+    ],
+    "bathroom_floor_mirror_black": [
+      3,
+      2
+    ],
+    "bathroom_floor_mirror_white": [
+      3,
+      2
+    ],
+    "bathroom_sink_black": [
+      4,
+      2
+    ],
+    "bathroom_sink_white": [
+      4,
+      2
+    ],
+    "bathroom_wall_mirror_black": [
+      4,
+      7
+    ],
+    "bathroom_wall_mirror_white": [
+      4,
+      7
+    ],
+    "bathroom_wall_sconce": [
+      2,
+      7
+    ],
+    "bathroom_wall_towel_black": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_blue": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_brown": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_green": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_light_green": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_pink": [
+      4,
+      7
+    ],
+    "bathroom_wall_towel_white": [
+      4,
+      7
+    ],
+    "bathtub_black": [
+      4,
+      6
+    ],
+    "bathtub_white": [
+      4,
+      6
+    ],
+    "beach_sandcastle": [
+      4,
+      3
+    ],
+    "beer_mug": [
+      1,
+      1
+    ],
+    "beginner_kitchen": [
+      3,
+      3
+    ],
+    "big_bell": [
+      4,
+      2
+    ],
+    "blue_capybara_wall_ribbon": [
+      4,
+      7
+    ],
+    "blue_chicken_wall_ribbon": [
+      4,
+      7
+    ],
+    "blue_duck_wall_ribbon": [
+      4,
+      7
+    ],
+    "blue_pet_bed": [
+      4,
+      3
+    ],
+    "blue_pet_dish": [
+      1,
+      1
+    ],
+    "blue_rabbit_wall_ribbon": [
+      4,
+      7
+    ],
+    "blueprint_filler": [
+      1,
+      1
+    ],
+    "bonsai_large_v1": [
+      2,
+      4
+    ],
+    "bonsai_large_v2": [
+      2,
+      4
+    ],
+    "bonsai_large_v3": [
+      2,
+      4
+    ],
+    "bonsai_low_cabinet_black": [
+      4,
+      2
+    ],
+    "bonsai_low_cabinet_brown": [
+      4,
+      2
+    ],
+    "bonsai_low_cabinet_light_brown": [
+      4,
+      2
+    ],
+    "bonsai_low_cabinet_white": [
+      4,
+      2
+    ],
+    "bonsai_low_table_black": [
+      4,
+      2
+    ],
+    "bonsai_low_table_brown": [
+      4,
+      2
+    ],
+    "bonsai_low_table_light_brown": [
+      4,
+      2
+    ],
+    "bonsai_low_table_white": [
+      4,
+      2
+    ],
+    "broken_pillar_v1_gray": [
+      3,
+      3
+    ],
+    "broken_pillar_v1_green": [
+      3,
+      3
+    ],
+    "broken_pillar_v1_tan": [
+      3,
+      3
+    ],
+    "broken_pillar_v1_white": [
+      3,
+      3
+    ],
+    "broken_pillar_v2_gray": [
+      3,
+      3
+    ],
+    "broken_pillar_v2_green": [
+      3,
+      3
+    ],
+    "broken_pillar_v2_tan": [
+      3,
+      3
+    ],
+    "broken_pillar_v2_white": [
+      3,
+      3
+    ],
+    "bumblebee_plushie": [
+      1,
+      1
+    ],
+    "butterfly_bed_v1": [
+      6,
+      5
+    ],
+    "butterfly_bed_v2": [
+      6,
+      5
+    ],
+    "butterfly_bed_v3": [
+      6,
+      5
+    ],
+    "butterfly_double_bed_v1": [
+      8,
+      5
+    ],
+    "butterfly_double_bed_v2": [
+      8,
+      5
+    ],
+    "butterfly_double_bed_v3": [
+      8,
+      5
+    ],
+    "butterfly_painting_v1": [
+      6,
+      7
+    ],
+    "butterfly_painting_v2": [
+      6,
+      7
+    ],
+    "butterfly_painting_v3": [
+      6,
+      7
+    ],
+    "butterfly_wall_lamp_bronze": [
+      2,
+      7
+    ],
+    "butterfly_wall_lamp_gold": [
+      2,
+      7
+    ],
+    "butterfly_wall_lamp_silver": [
+      2,
+      7
+    ],
+    "cabin_bed_cherry": [
+      6,
+      5
+    ],
+    "cabin_bed_oak": [
+      6,
+      5
+    ],
+    "cabin_bed_walnut": [
+      6,
+      5
+    ],
+    "cabin_bookshelf_dark": [
+      5,
+      3
+    ],
+    "cabin_bookshelf_light": [
+      5,
+      3
+    ],
+    "cabin_bookshelf_red": [
+      5,
+      3
+    ],
+    "cabin_double_bed_cherry": [
+      8,
+      5
+    ],
+    "cabin_double_bed_oak": [
+      8,
+      5
+    ],
+    "cabin_double_bed_walnut": [
+      8,
+      5
+    ],
+    "cabin_dresser_cherry": [
+      4,
+      2
+    ],
+    "cabin_dresser_oak": [
+      4,
+      2
+    ],
+    "cabin_dresser_walnut": [
+      4,
+      2
+    ],
+    "cabin_firewood_cherry": [
+      3,
+      2
+    ],
+    "cabin_firewood_oak": [
+      3,
+      2
+    ],
+    "cabin_firewood_walnut": [
+      3,
+      2
+    ],
+    "cabin_nightstand_cherry": [
+      3,
+      2
+    ],
+    "cabin_nightstand_oak": [
+      3,
+      2
+    ],
+    "cabin_nightstand_walnut": [
+      3,
+      2
+    ],
+    "cabin_stove_short": [
+      4,
+      8
+    ],
+    "cabin_stove_tall": [
+      4,
+      9
+    ],
+    "cabin_table_cherry": [
+      6,
+      6
+    ],
+    "cabin_table_oak": [
+      6,
+      6
+    ],
+    "cabin_table_walnut": [
+      6,
+      6
+    ],
+    "cabin_wall_shelf_blue": [
+      3,
+      7
+    ],
+    "cabin_wall_shelf_red": [
+      3,
+      7
+    ],
+    "cabin_wall_shelf_yellow": [
+      3,
+      7
+    ],
+    "cabin_wall_window_cherry": [
+      4,
+      7
+    ],
+    "cabin_wall_window_oak": [
+      4,
+      7
+    ],
+    "cabin_wall_window_walnut": [
+      4,
+      7
+    ],
+    "caldarus_chair": [
+      3,
+      3
+    ],
+    "caldarus_desk": [
+      7,
+      5
+    ],
+    "caldarus_dragonsworn_statue": [
+      2,
+      2
+    ],
+    "caldarus_music_station": [
+      9,
+      4
+    ],
+    "campfire": [
+      4,
+      4
+    ],
+    "candle": [
+      1,
+      1
+    ],
+    "capybara_plushie": [
+      1,
+      2
+    ],
+    "caterpillar_chair_v1": [
+      3,
+      3
+    ],
+    "caterpillar_chair_v2": [
+      3,
+      3
+    ],
+    "caterpillar_chair_v3": [
+      3,
+      3
+    ],
+    "cavern_hewn_rock_bookshelf": [
+      4,
+      2
+    ],
+    "cavern_hewn_rock_table": [
+      6,
+      5
+    ],
+    "cavern_mossy_rug_v1": [
+      8,
+      6
+    ],
+    "cavern_mossy_rug_v2": [
+      8,
+      6
+    ],
+    "cavern_stone_arch": [
+      10,
+      2
+    ],
+    "cavern_wall_brazier_blue": [
+      2,
+      7
+    ],
+    "cavern_wall_brazier_orange": [
+      2,
+      7
+    ],
+    "cavern_wall_brazier_purple": [
+      2,
+      7
+    ],
+    "celine_chair": [
+      4,
+      3
+    ],
+    "celine_desk": [
+      9,
+      5
+    ],
+    "celine_garden_shelf": [
+      6,
+      3
+    ],
+    "champions_kitchen_blue": [
+      7,
+      3
+    ],
+    "champions_kitchen_green": [
+      7,
+      3
+    ],
+    "champions_kitchen_pink": [
+      7,
+      3
+    ],
+    "champions_kitchen_yellow": [
+      7,
+      3
+    ],
+    "cherry_chair": [
+      4,
+      5
+    ],
+    "cherry_rug": [
+      6,
+      6
+    ],
+    "cherry_table": [
+      4,
+      3
+    ],
+    "cherry_table_lamp": [
+      2,
+      1
+    ],
+    "chess_table_black": [
+      4,
+      3
+    ],
+    "chess_table_light_wood": [
+      4,
+      3
+    ],
+    "chess_table_purple": [
+      4,
+      3
+    ],
+    "chess_table_white": [
+      4,
+      3
+    ],
+    "chicken_plushie": [
+      1,
+      1
+    ],
+    "coffee_mug_v1": [
+      1,
+      1
+    ],
+    "coffee_mug_v2": [
+      1,
+      1
+    ],
+    "coffee_mug_v3": [
+      1,
+      1
+    ],
+    "cooking_hanging_pans_v1": [
+      3,
+      7
+    ],
+    "cooking_hanging_pans_v2": [
+      4,
+      7
+    ],
+    "coop_construction_large_bl": [
+      1,
+      1
+    ],
+    "coop_construction_large_br": [
+      1,
+      1
+    ],
+    "coop_construction_large_mc": [
+      1,
+      1
+    ],
+    "coop_construction_large_tl": [
+      1,
+      1
+    ],
+    "coop_construction_large_tr": [
+      1,
+      1
+    ],
+    "coop_construction_medium_bl": [
+      1,
+      1
+    ],
+    "coop_construction_medium_tl": [
+      1,
+      1
+    ],
+    "coop_construction_medium_tm": [
+      1,
+      1
+    ],
+    "coop_construction_medium_tr": [
+      1,
+      1
+    ],
+    "coral_stone_archway": [
+      10,
+      2
+    ],
+    "coral_storage_chest_blue": [
+      4,
+      2
+    ],
+    "coral_storage_chest_purple": [
+      4,
+      2
+    ],
+    "coral_table_blue": [
+      4,
+      3
+    ],
+    "coral_table_purple": [
+      4,
+      3
+    ],
+    "cornucopia": [
+      4,
+      2
+    ],
+    "cottage_bed_pink": [
+      6,
+      5
+    ],
+    "cottage_bed_white": [
+      6,
+      5
+    ],
+    "cottage_double_bed_pink": [
+      8,
+      5
+    ],
+    "cottage_double_bed_white": [
+      8,
+      5
+    ],
+    "cottage_dresser_pink": [
+      4,
+      2
+    ],
+    "cottage_dresser_white": [
+      4,
+      2
+    ],
+    "cottage_fridge_v1": [
+      3,
+      2
+    ],
+    "cottage_fridge_v2": [
+      3,
+      2
+    ],
+    "cottage_garden_arch_v1": [
+      8,
+      2
+    ],
+    "cottage_garden_arch_v2": [
+      8,
+      2
+    ],
+    "cottage_garden_planter_v1": [
+      4,
+      2
+    ],
+    "cottage_garden_planter_v2": [
+      4,
+      2
+    ],
+    "cottage_garden_planter_v3": [
+      4,
+      2
+    ],
+    "cottage_garden_trellis_v1": [
+      4,
+      2
+    ],
+    "cottage_garden_trellis_v2": [
+      4,
+      2
+    ],
+    "cottage_garden_trellis_v3": [
+      4,
+      2
+    ],
+    "cottage_garden_workbench_v1": [
+      4,
+      2
+    ],
+    "cottage_garden_workbench_v2": [
+      4,
+      2
+    ],
+    "cottage_nightstand_green": [
+      3,
+      2
+    ],
+    "cottage_nightstand_pink": [
+      3,
+      2
+    ],
+    "cottage_plant_shelf_tall": [
+      4,
+      2
+    ],
+    "cottage_plant_shelf_wide": [
+      4,
+      2
+    ],
+    "cottage_rug_green": [
+      10,
+      7
+    ],
+    "cottage_rug_pink": [
+      10,
+      7
+    ],
+    "cottage_table_white": [
+      6,
+      6
+    ],
+    "cottage_table_wood": [
+      6,
+      6
+    ],
+    "cottage_wall_flowers_green": [
+      3,
+      7
+    ],
+    "cottage_wall_flowers_pink": [
+      3,
+      7
+    ],
+    "cottage_wall_window_pink": [
+      5,
+      7
+    ],
+    "cottage_wall_window_white": [
+      5,
+      7
+    ],
+    "cow_plushie": [
+      1,
+      2
+    ],
+    "cozy_kitchen": [
+      6,
+      3
+    ],
+    "craft_closed_sewing_tin_v1": [
+      3,
+      2
+    ],
+    "craft_closed_sewing_tin_v2": [
+      3,
+      2
+    ],
+    "craft_closed_sewing_tin_v3": [
+      3,
+      2
+    ],
+    "craft_fabric_rack_v1": [
+      4,
+      2
+    ],
+    "craft_fabric_rack_v2": [
+      4,
+      2
+    ],
+    "craft_fabric_rack_v3": [
+      4,
+      2
+    ],
+    "craft_open_sewing_tin_v1": [
+      3,
+      2
+    ],
+    "craft_open_sewing_tin_v2": [
+      3,
+      2
+    ],
+    "craft_open_sewing_tin_v3": [
+      3,
+      2
+    ],
+    "craft_rug_v1": [
+      6,
+      6
+    ],
+    "craft_rug_v2": [
+      6,
+      6
+    ],
+    "craft_rug_v3": [
+      6,
+      6
+    ],
+    "craft_yarn_basket_v1": [
+      3,
+      2
+    ],
+    "craft_yarn_basket_v2": [
+      3,
+      2
+    ],
+    "craft_yarn_basket_v3": [
+      3,
+      2
+    ],
+    "cream_pet_bed": [
+      4,
+      3
+    ],
+    "cream_pet_dish": [
+      1,
+      1
+    ],
+    "crystal_string_lights_blue": [
+      6,
+      7
+    ],
+    "crystal_string_lights_pink": [
+      6,
+      7
+    ],
+    "crystal_string_lights_purple": [
+      6,
+      7
+    ],
+    "date_photo_bath": [
+      2,
+      7
+    ],
+    "date_photo_beach": [
+      2,
+      7
+    ],
+    "date_photo_deep_woods": [
+      2,
+      7
+    ],
+    "date_photo_gem_cutting": [
+      2,
+      7
+    ],
+    "date_photo_harvest": [
+      2,
+      7
+    ],
+    "date_photo_inn": [
+      2,
+      7
+    ],
+    "date_photo_park": [
+      2,
+      7
+    ],
+    "date_photo_shooting_star": [
+      2,
+      7
+    ],
+    "date_photo_wedding": [
+      2,
+      7
+    ],
+    "deluxe_icebox_blue": [
+      4,
+      2
+    ],
+    "deluxe_icebox_green": [
+      4,
+      2
+    ],
+    "deluxe_icebox_pink": [
+      4,
+      2
+    ],
+    "deluxe_icebox_white": [
+      4,
+      2
+    ],
+    "deluxe_icebox_yellow": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_aqua": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_black": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_blue": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_dark_brown": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_gold": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_gray": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_green": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_light_brown": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_orange": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_pink": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_purple": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_red": [
+      4,
+      2
+    ],
+    "deluxe_storage_chest_white": [
+      4,
+      2
+    ],
+    "dingy_broken_bottle_v1": [
+      2,
+      1
+    ],
+    "dingy_broken_bottle_v2": [
+      2,
+      1
+    ],
+    "dingy_broken_plate_v1": [
+      2,
+      2
+    ],
+    "dingy_broken_plate_v2": [
+      2,
+      2
+    ],
+    "dingy_chipped_cup_v1": [
+      1,
+      1
+    ],
+    "dingy_chipped_cup_v2": [
+      1,
+      1
+    ],
+    "dingy_couch_v1": [
+      6,
+      3
+    ],
+    "dingy_couch_v2": [
+      6,
+      3
+    ],
+    "dingy_garbage_bag_v1": [
+      2,
+      2
+    ],
+    "dingy_garbage_bag_v2": [
+      2,
+      2
+    ],
+    "dingy_mouse_hole_v1": [
+      1,
+      7
+    ],
+    "dingy_mouse_hole_v2": [
+      1,
+      7
+    ],
+    "dingy_pile_of_laundry_v1": [
+      3,
+      2
+    ],
+    "dingy_pile_of_laundry_v2": [
+      3,
+      2
+    ],
+    "dingy_pile_of_newspapers_v1": [
+      2,
+      2
+    ],
+    "dingy_pile_of_newspapers_v2": [
+      2,
+      2
+    ],
+    "dingy_rug_v1": [
+      12,
+      8
+    ],
+    "dingy_rug_v2": [
+      12,
+      8
+    ],
+    "dingy_string_lights_v1": [
+      6,
+      7
+    ],
+    "dingy_string_lights_v2": [
+      6,
+      7
+    ],
+    "dingy_table_v1": [
+      6,
+      6
+    ],
+    "dingy_table_v2": [
+      6,
+      6
+    ],
+    "dingy_window_v1": [
+      10,
+      7
+    ],
+    "dingy_window_v2": [
+      10,
+      7
+    ],
+    "dozy_pet_bed": [
+      4,
+      3
+    ],
+    "dragon_chest": [
+      4,
+      2
+    ],
+    "dragon_fireplace": [
+      6,
+      9
+    ],
+    "dragon_priestess_fountain_v1": [
+      3,
+      2
+    ],
+    "dragon_priestess_fountain_v2": [
+      3,
+      2
+    ],
+    "dragon_priestess_fountain_v3": [
+      3,
+      2
+    ],
+    "dragon_stained_glass_window_v1": [
+      4,
+      7
+    ],
+    "dragon_stained_glass_window_v2": [
+      4,
+      7
+    ],
+    "dragon_statue_replica_v1": [
+      2,
+      2
+    ],
+    "dragon_statue_replica_v2": [
+      2,
+      2
+    ],
+    "duck_plushie": [
+      1,
+      1
+    ],
+    "earth_seal_door": [
+      6,
+      8
+    ],
+    "eiland_artifact_shelf": [
+      8,
+      3
+    ],
+    "eiland_chair": [
+      6,
+      3
+    ],
+    "eiland_desk": [
+      8,
+      6
+    ],
+    "eilands_legacy_stele": [
+      4,
+      2
+    ],
+    "emerald_bed_v1": [
+      6,
+      5
+    ],
+    "emerald_bed_v2": [
+      6,
+      5
+    ],
+    "emerald_double_bed_v1": [
+      8,
+      5
+    ],
+    "emerald_double_bed_v2": [
+      8,
+      5
+    ],
+    "emerald_nightstand_v1": [
+      3,
+      2
+    ],
+    "emerald_nightstand_v2": [
+      3,
+      2
+    ],
+    "emerald_rug_v1": [
+      8,
+      6
+    ],
+    "emerald_rug_v2": [
+      8,
+      6
+    ],
+    "enchantern_lamp_blue": [
+      2,
+      3
+    ],
+    "enchantern_lamp_yellow": [
+      2,
+      3
+    ],
+    "espresso_cup_v1": [
+      1,
+      1
+    ],
+    "espresso_cup_v2": [
+      1,
+      1
+    ],
+    "espresso_cup_v3": [
+      1,
+      1
+    ],
+    "espresso_machine": [
+      2,
+      2
+    ],
+    "essence_bat_garland_blue": [
+      8,
+      7
+    ],
+    "essence_bat_garland_purple": [
+      8,
+      7
+    ],
+    "explorer_bed_beige": [
+      6,
+      5
+    ],
+    "explorer_bed_brown": [
+      6,
+      5
+    ],
+    "explorer_bed_green": [
+      6,
+      5
+    ],
+    "explorer_chair_beige": [
+      3,
+      3
+    ],
+    "explorer_chair_brown": [
+      3,
+      3
+    ],
+    "explorer_chair_green": [
+      3,
+      3
+    ],
+    "explorer_double_bed_beige": [
+      8,
+      5
+    ],
+    "explorer_double_bed_brown": [
+      8,
+      5
+    ],
+    "explorer_double_bed_green": [
+      8,
+      5
+    ],
+    "explorer_globe_beige": [
+      3,
+      2
+    ],
+    "explorer_globe_brown": [
+      3,
+      2
+    ],
+    "explorer_globe_green": [
+      3,
+      2
+    ],
+    "explorer_rug_beige": [
+      8,
+      6
+    ],
+    "explorer_rug_brown": [
+      8,
+      6
+    ],
+    "explorer_rug_green": [
+      8,
+      6
+    ],
+    "explorer_trunk_table_beige": [
+      4,
+      3
+    ],
+    "explorer_trunk_table_brown": [
+      4,
+      3
+    ],
+    "explorer_trunk_table_green": [
+      4,
+      3
+    ],
+    "extra_large_decorative_pumpkin_black": [
+      3,
+      2
+    ],
+    "extra_large_decorative_pumpkin_green": [
+      3,
+      2
+    ],
+    "extra_large_decorative_pumpkin_orange": [
+      3,
+      2
+    ],
+    "extra_large_decorative_pumpkin_purple": [
+      3,
+      2
+    ],
+    "extra_large_decorative_pumpkin_white": [
+      3,
+      2
+    ],
+    "extra_large_decorative_pumpkin_yellow": [
+      3,
+      2
+    ],
+    "fall_bed_cream": [
+      6,
+      6
+    ],
+    "fall_bed_orange": [
+      6,
+      6
+    ],
+    "fall_bed_red": [
+      6,
+      6
+    ],
+    "fall_bed_yellow": [
+      6,
+      6
+    ],
+    "fall_double_bed_cream": [
+      8,
+      6
+    ],
+    "fall_double_bed_orange": [
+      8,
+      6
+    ],
+    "fall_double_bed_red": [
+      8,
+      6
+    ],
+    "fall_double_bed_yellow": [
+      8,
+      6
+    ],
+    "fall_table_cream": [
+      6,
+      6
+    ],
+    "fall_table_orange": [
+      6,
+      6
+    ],
+    "fall_table_red": [
+      6,
+      6
+    ],
+    "fall_table_yellow": [
+      6,
+      6
+    ],
+    "farm_bridge": [
+      16,
+      9
+    ],
+    "farm_house_calendar": [
+      4,
+      7
+    ],
+    "fire_seal_door": [
+      6,
+      8
+    ],
+    "firefly_wall_string_lights_blue": [
+      6,
+      7
+    ],
+    "firefly_wall_string_lights_pink": [
+      6,
+      7
+    ],
+    "firefly_wall_string_lights_purple": [
+      6,
+      7
+    ],
+    "firefly_wall_string_lights_white": [
+      6,
+      7
+    ],
+    "firefly_wall_string_lights_yellow": [
+      6,
+      7
+    ],
+    "fish_plush_toy": [
+      1,
+      2
+    ],
+    "fishing_bed_blue": [
+      6,
+      5
+    ],
+    "fishing_bed_red": [
+      6,
+      5
+    ],
+    "fishing_double_bed_blue": [
+      8,
+      5
+    ],
+    "fishing_double_bed_red": [
+      8,
+      5
+    ],
+    "fishing_oar_wall_decor_blue": [
+      4,
+      7
+    ],
+    "fishing_oar_wall_decor_red": [
+      4,
+      7
+    ],
+    "fishing_plaque_blue": [
+      4,
+      7
+    ],
+    "fishing_plaque_red": [
+      4,
+      7
+    ],
+    "fishing_rug_blue": [
+      10,
+      7
+    ],
+    "fishing_rug_red": [
+      10,
+      7
+    ],
+    "fishing_table_blue": [
+      4,
+      6
+    ],
+    "fishing_table_red": [
+      4,
+      6
+    ],
+    "fishing_tank_gold": [
+      4,
+      2
+    ],
+    "fishing_tank_silver": [
+      4,
+      2
+    ],
+    "fishing_trophy_shelf_blue": [
+      4,
+      7
+    ],
+    "fishing_trophy_shelf_red": [
+      4,
+      7
+    ],
+    "fishing_window_gold": [
+      4,
+      7
+    ],
+    "fishing_window_silver": [
+      4,
+      7
+    ],
+    "forge": [
+      6,
+      6
+    ],
+    "forge_mistril": [
+      6,
+      6
+    ],
+    "gemstone_bridge_v1": [
+      16,
+      10
+    ],
+    "gemstone_bridge_v2": [
+      16,
+      10
+    ],
+    "gemstone_bridge_v3": [
+      16,
+      10
+    ],
+    "glass_absinthe": [
+      1,
+      1
+    ],
+    "glass_cocktail": [
+      1,
+      1
+    ],
+    "glass_lemonade": [
+      1,
+      1
+    ],
+    "glass_milk": [
+      1,
+      1
+    ],
+    "glass_water": [
+      1,
+      1
+    ],
+    "glass_whisky": [
+      1,
+      1
+    ],
+    "gold_floor_mirror": [
+      3,
+      2
+    ],
+    "gold_wall_mirror": [
+      4,
+      7
+    ],
+    "green_bottle": [
+      1,
+      1
+    ],
+    "greenhouse_construction_large": [
+      1,
+      1
+    ],
+    "greenhouse_construction_small": [
+      1,
+      1
+    ],
+    "gryphon_statue_replica_v1": [
+      4,
+      4
+    ],
+    "gryphon_statue_replica_v2": [
+      4,
+      4
+    ],
+    "gryphon_statue_replica_v3": [
+      4,
+      4
+    ],
+    "harvest_festival_arch": [
+      8,
+      2
+    ],
+    "harvest_festival_centerpiece": [
+      2,
+      1
+    ],
+    "haunted_attic_armoire_dark": [
+      5,
+      3
+    ],
+    "haunted_attic_armoire_dusty": [
+      5,
+      3
+    ],
+    "haunted_attic_bed_dark": [
+      6,
+      5
+    ],
+    "haunted_attic_bed_dusty": [
+      6,
+      5
+    ],
+    "haunted_attic_double_bed_dark": [
+      8,
+      5
+    ],
+    "haunted_attic_double_bed_dusty": [
+      8,
+      5
+    ],
+    "haunted_attic_nightstand_dark": [
+      3,
+      2
+    ],
+    "haunted_attic_nightstand_dusty": [
+      3,
+      2
+    ],
+    "haunted_attic_rocking_chair_dark": [
+      3,
+      3
+    ],
+    "haunted_attic_rocking_chair_dusty": [
+      3,
+      3
+    ],
+    "haunted_attic_table_dark": [
+      6,
+      6
+    ],
+    "haunted_attic_table_dusty": [
+      6,
+      6
+    ],
+    "haunted_attic_wall_cobweb_left": [
+      1,
+      7
+    ],
+    "haunted_attic_wall_cobweb_left_dark": [
+      1,
+      7
+    ],
+    "haunted_attic_wall_cobweb_right": [
+      1,
+      7
+    ],
+    "haunted_attic_wall_cobweb_right_dark": [
+      1,
+      7
+    ],
+    "haunted_attic_wall_shelf_dark": [
+      4,
+      7
+    ],
+    "haunted_attic_wall_shelf_dusty": [
+      4,
+      7
+    ],
+    "haunted_attic_wall_window_dark": [
+      4,
+      7
+    ],
+    "haunted_attic_wall_window_dusty": [
+      4,
+      7
+    ],
+    "hayden_chair": [
+      4,
+      3
+    ],
+    "hayden_desk": [
+      7,
+      5
+    ],
+    "hayden_indoor_garden": [
+      7,
+      2
+    ],
+    "haydens_carved_nest": [
+      3,
+      2
+    ],
+    "hero_shield_bronze": [
+      2,
+      7
+    ],
+    "hero_shield_gold": [
+      2,
+      7
+    ],
+    "hero_shield_silver": [
+      2,
+      7
+    ],
+    "honeycomb_shelf": [
+      5,
+      1
+    ],
+    "horse_plushie": [
+      1,
+      2
+    ],
+    "incense_stick_v1": [
+      1,
+      1
+    ],
+    "incense_stick_v2": [
+      1,
+      1
+    ],
+    "incense_stick_v3": [
+      1,
+      1
+    ],
+    "inn_counter": [
+      4,
+      3
+    ],
+    "inn_cross_stitch": [
+      4,
+      7
+    ],
+    "inn_kitchen_shelves": [
+      4,
+      7
+    ],
+    "insect_rug_v1": [
+      12,
+      8
+    ],
+    "insect_rug_v2": [
+      12,
+      8
+    ],
+    "insect_rug_v3": [
+      12,
+      8
+    ],
+    "jar_medium": [
+      1,
+      1
+    ],
+    "jar_small": [
+      1,
+      1
+    ],
+    "journal": [
+      2,
+      2
+    ],
+    "juniper_cauldron": [
+      6,
+      4
+    ],
+    "juniper_chair": [
+      4,
+      3
+    ],
+    "juniper_desk": [
+      8,
+      4
+    ],
+    "kitchen_garlic_braid": [
+      1,
+      7
+    ],
+    "kitchen_hanging_onion_basket": [
+      2,
+      7
+    ],
+    "kitchen_herb_planter_v1": [
+      2,
+      1
+    ],
+    "kitchen_herb_planter_v2": [
+      2,
+      1
+    ],
+    "kitchen_oil_and_vinegar_basket_v1": [
+      2,
+      1
+    ],
+    "kitchen_oil_and_vinegar_basket_v2": [
+      2,
+      1
+    ],
+    "kitchen_salt_and_pepper_shakers": [
+      2,
+      1
+    ],
+    "kitchen_scale_blue": [
+      1,
+      1
+    ],
+    "kitchen_scale_orange": [
+      1,
+      1
+    ],
+    "kitchen_scale_pink": [
+      1,
+      1
+    ],
+    "kitchen_scale_yellow": [
+      1,
+      1
+    ],
+    "kitchen_utensil_holder_blue": [
+      1,
+      1
+    ],
+    "kitchen_utensil_holder_green": [
+      1,
+      1
+    ],
+    "kitchen_utensil_holder_pink": [
+      1,
+      1
+    ],
+    "kitchen_utensil_holder_white": [
+      1,
+      1
+    ],
+    "ladder": [
+      3,
+      3
+    ],
+    "ladder_upper": [
+      3,
+      3
+    ],
+    "ladybug_table_v1": [
+      6,
+      6
+    ],
+    "ladybug_table_v2": [
+      6,
+      6
+    ],
+    "ladybug_table_v3": [
+      6,
+      6
+    ],
+    "large_animal_ball": [
+      12,
+      6
+    ],
+    "large_animal_gramophone": [
+      10,
+      6
+    ],
+    "large_barn_construction_dropcloth": [
+      18,
+      12
+    ],
+    "large_coop_construction_dropcloth": [
+      16,
+      12
+    ],
+    "large_decorative_pumpkin_green": [
+      2,
+      1
+    ],
+    "large_decorative_pumpkin_purple": [
+      2,
+      1
+    ],
+    "large_decorative_pumpkin_yellow": [
+      2,
+      1
+    ],
+    "large_dragon_rug": [
+      14,
+      10
+    ],
+    "large_fluffy_rug_beige": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_black": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_blue": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_brown": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_green": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_light_green": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_pink": [
+      8,
+      6
+    ],
+    "large_fluffy_rug_white": [
+      8,
+      6
+    ],
+    "large_greenhouse_construction_dropcloth": [
+      14,
+      8
+    ],
+    "large_paving_stone_v1": [
+      4,
+      4
+    ],
+    "large_paving_stone_v2": [
+      4,
+      4
+    ],
+    "large_paving_stone_v3": [
+      4,
+      4
+    ],
+    "lava_cat_bed_orange": [
+      8,
+      6
+    ],
+    "lava_cat_bed_void": [
+      8,
+      6
+    ],
+    "lava_caves_obsidian_bed_blue": [
+      6,
+      5
+    ],
+    "lava_caves_obsidian_bed_purple": [
+      6,
+      5
+    ],
+    "lava_caves_obsidian_chair_blue": [
+      3,
+      3
+    ],
+    "lava_caves_obsidian_chair_purple": [
+      3,
+      3
+    ],
+    "lava_caves_obsidian_double_bed_blue": [
+      8,
+      5
+    ],
+    "lava_caves_obsidian_double_bed_purple": [
+      8,
+      5
+    ],
+    "lava_caves_obsidian_floor_lamp_blue": [
+      2,
+      1
+    ],
+    "lava_caves_obsidian_floor_lamp_purple": [
+      2,
+      1
+    ],
+    "lava_caves_obsidian_storage_chest_blue": [
+      3,
+      2
+    ],
+    "lava_caves_obsidian_storage_chest_purple": [
+      3,
+      2
+    ],
+    "lava_caves_obsidian_table_blue": [
+      4,
+      3
+    ],
+    "lava_caves_obsidian_table_purple": [
+      4,
+      3
+    ],
+    "lava_caves_stone_arch": [
+      10,
+      2
+    ],
+    "lemon_rug": [
+      6,
+      6
+    ],
+    "lemon_table": [
+      4,
+      3
+    ],
+    "lemon_table_lamp": [
+      2,
+      1
+    ],
+    "lopsided_animal": [
+      1,
+      1
+    ],
+    "maples_drawing": [
+      2,
+      7
+    ],
+    "march_chair": [
+      4,
+      3
+    ],
+    "march_desk": [
+      7,
+      4
+    ],
+    "march_forge": [
+      6,
+      6
+    ],
+    "marchs_mistrian_shield": [
+      2,
+      7
+    ],
+    "medium_barn_construction_dropcloth": [
+      16,
+      12
+    ],
+    "medium_coop_construction_dropcloth": [
+      14,
+      12
+    ],
+    "medium_decorative_pumpkin_black": [
+      2,
+      1
+    ],
+    "medium_decorative_pumpkin_green": [
+      2,
+      1
+    ],
+    "medium_decorative_pumpkin_orange": [
+      2,
+      1
+    ],
+    "medium_decorative_pumpkin_purple": [
+      2,
+      1
+    ],
+    "medium_decorative_pumpkin_white": [
+      2,
+      1
+    ],
+    "medium_decorative_pumpkin_yellow": [
+      1,
+      1
+    ],
+    "medium_dragon_rug": [
+      8,
+      6
+    ],
+    "mermaid_bed_v1": [
+      6,
+      5
+    ],
+    "mermaid_bed_v2": [
+      6,
+      5
+    ],
+    "mermaid_bed_v3": [
+      6,
+      5
+    ],
+    "mermaid_double_bed_v1": [
+      8,
+      5
+    ],
+    "mermaid_double_bed_v2": [
+      8,
+      5
+    ],
+    "mermaid_double_bed_v3": [
+      8,
+      5
+    ],
+    "mimic_storage_chest": [
+      4,
+      2
+    ],
+    "miners_copper_node": [
+      2,
+      2
+    ],
+    "miners_crate_chair_v1": [
+      2,
+      2
+    ],
+    "miners_crate_chair_v2": [
+      2,
+      2
+    ],
+    "miners_crate_chest_v1": [
+      4,
+      2
+    ],
+    "miners_crate_chest_v2": [
+      4,
+      2
+    ],
+    "miners_floor_lamp_v1": [
+      2,
+      2
+    ],
+    "miners_floor_lamp_v2": [
+      2,
+      2
+    ],
+    "miners_minecart_v1": [
+      4,
+      3
+    ],
+    "miners_minecart_v2": [
+      4,
+      3
+    ],
+    "miners_ruby_rock": [
+      2,
+      2
+    ],
+    "miners_shelves_v1": [
+      3,
+      2
+    ],
+    "miners_shelves_v2": [
+      3,
+      2
+    ],
+    "miners_wall_lamp_v1": [
+      2,
+      7
+    ],
+    "miners_wall_lamp_v2": [
+      2,
+      7
+    ],
+    "mines_blocked_door": [
+      6,
+      5
+    ],
+    "mines_wooden_arch": [
+      10,
+      2
+    ],
+    "mini_mill": [
+      6,
+      3
+    ],
+    "mini_museum_construction": [
+      10,
+      3
+    ],
+    "mini_museum_construction_dropcloth": [
+      14,
+      8
+    ],
+    "mist_bed_v1": [
+      6,
+      5
+    ],
+    "mist_bed_v2": [
+      6,
+      5
+    ],
+    "mist_bed_v3": [
+      6,
+      5
+    ],
+    "mist_bed_v4": [
+      6,
+      5
+    ],
+    "mist_double_bed_v1": [
+      8,
+      5
+    ],
+    "mist_double_bed_v2": [
+      8,
+      5
+    ],
+    "mist_double_bed_v3": [
+      8,
+      5
+    ],
+    "mist_double_bed_v4": [
+      8,
+      5
+    ],
+    "mist_pet_bed_v1": [
+      5,
+      4
+    ],
+    "mist_pet_bed_v2": [
+      5,
+      4
+    ],
+    "mist_pet_bed_v3": [
+      5,
+      4
+    ],
+    "mist_pet_bed_v4": [
+      5,
+      4
+    ],
+    "mist_rug_v1": [
+      8,
+      5
+    ],
+    "mist_rug_v2": [
+      8,
+      5
+    ],
+    "mist_rug_v3": [
+      8,
+      5
+    ],
+    "mist_rug_v4": [
+      8,
+      5
+    ],
+    "mist_storage_chest_v1": [
+      4,
+      2
+    ],
+    "mist_storage_chest_v2": [
+      4,
+      2
+    ],
+    "mist_storage_chest_v3": [
+      4,
+      2
+    ],
+    "mist_storage_chest_v4": [
+      4,
+      2
+    ],
+    "mistria_history_book_v1": [
+      4,
+      3
+    ],
+    "mistria_history_scroll_v1": [
+      3,
+      4
+    ],
+    "mistria_wall_map_v1": [
+      6,
+      7
+    ],
+    "moon_gate_v1": [
+      12,
+      2
+    ],
+    "moon_gate_v2": [
+      12,
+      2
+    ],
+    "moon_gate_v3": [
+      12,
+      2
+    ],
+    "mournful_clown_painting": [
+      4,
+      7
+    ],
+    "mushroom_sofa_blue": [
+      8,
+      3
+    ],
+    "mushroom_sofa_green": [
+      8,
+      3
+    ],
+    "mushroom_sofa_purple": [
+      8,
+      3
+    ],
+    "mushroom_sofa_red": [
+      8,
+      3
+    ],
+    "obelisk_beige": [
+      3,
+      3
+    ],
+    "obelisk_black": [
+      3,
+      3
+    ],
+    "obelisk_pink": [
+      3,
+      3
+    ],
+    "obelisk_plum": [
+      3,
+      3
+    ],
+    "obelisk_teal": [
+      3,
+      3
+    ],
+    "obelisk_white": [
+      3,
+      3
+    ],
+    "octopus_plushie": [
+      1,
+      1
+    ],
+    "ornamental_iron_node": [
+      2,
+      2
+    ],
+    "ornamental_sapphire_rock": [
+      2,
+      2
+    ],
+    "ornate_cabinet_v1": [
+      4,
+      2
+    ],
+    "ornate_cabinet_v2": [
+      4,
+      2
+    ],
+    "ornate_cabinet_v3": [
+      4,
+      2
+    ],
+    "ornate_cabinet_v4": [
+      4,
+      2
+    ],
+    "ornate_coffee_table_v1": [
+      4,
+      2
+    ],
+    "ornate_coffee_table_v2": [
+      4,
+      2
+    ],
+    "ornate_coffee_table_v3": [
+      4,
+      2
+    ],
+    "ornate_coffee_table_v4": [
+      4,
+      2
+    ],
+    "ornate_flagstone_v1": [
+      4,
+      4
+    ],
+    "ornate_flagstone_v2": [
+      4,
+      4
+    ],
+    "ornate_flagstone_v3": [
+      4,
+      4
+    ],
+    "ornate_rug_large_rectangle_blue": [
+      14,
+      10
+    ],
+    "ornate_rug_large_rectangle_cream": [
+      14,
+      10
+    ],
+    "ornate_rug_large_rectangle_red": [
+      14,
+      10
+    ],
+    "ornate_rug_large_round_blue": [
+      14,
+      14
+    ],
+    "ornate_rug_large_round_cream": [
+      14,
+      14
+    ],
+    "ornate_rug_large_round_red": [
+      14,
+      14
+    ],
+    "ornate_rug_large_square_blue": [
+      14,
+      14
+    ],
+    "ornate_rug_large_square_cream": [
+      14,
+      14
+    ],
+    "ornate_rug_large_square_red": [
+      14,
+      14
+    ],
+    "ornate_rug_medium_round_blue": [
+      8,
+      8
+    ],
+    "ornate_rug_medium_round_cream": [
+      8,
+      8
+    ],
+    "ornate_rug_medium_round_red": [
+      8,
+      8
+    ],
+    "ornate_rug_medium_square_blue": [
+      8,
+      8
+    ],
+    "ornate_rug_medium_square_cream": [
+      8,
+      8
+    ],
+    "ornate_rug_medium_square_red": [
+      8,
+      8
+    ],
+    "ornate_rug_small_blue": [
+      4,
+      3
+    ],
+    "ornate_rug_small_cream": [
+      4,
+      3
+    ],
+    "ornate_rug_small_red": [
+      4,
+      3
+    ],
+    "perpetual_soup_pot": [
+      6,
+      3
+    ],
+    "picnic_basket_pink": [
+      3,
+      2
+    ],
+    "picnic_basket_red": [
+      3,
+      2
+    ],
+    "picnic_basket_yellow": [
+      3,
+      2
+    ],
+    "picnic_rug_pink": [
+      7,
+      6
+    ],
+    "picnic_rug_red": [
+      7,
+      6
+    ],
+    "picnic_rug_yellow": [
+      7,
+      6
+    ],
+    "pink_pet_bed": [
+      4,
+      3
+    ],
+    "pink_pet_dish": [
+      1,
+      1
+    ],
+    "pirate_anchor_v1": [
+      3,
+      2
+    ],
+    "pirate_anchor_v2": [
+      3,
+      2
+    ],
+    "pirate_ship_in_a_bottle_v1": [
+      2,
+      1
+    ],
+    "pirate_ship_in_a_bottle_v2": [
+      2,
+      1
+    ],
+    "pirate_wall_flag_v1": [
+      5,
+      7
+    ],
+    "pirate_wall_flag_v2": [
+      5,
+      7
+    ],
+    "potted_landscape_v1": [
+      6,
+      3
+    ],
+    "potted_landscape_v2": [
+      6,
+      3
+    ],
+    "potted_landscape_v3": [
+      6,
+      3
+    ],
+    "potted_landscape_v4": [
+      6,
+      3
+    ],
+    "pumpkin_pile_black": [
+      4,
+      2
+    ],
+    "pumpkin_pile_green": [
+      4,
+      2
+    ],
+    "pumpkin_pile_orange": [
+      4,
+      2
+    ],
+    "pumpkin_pile_purple": [
+      4,
+      2
+    ],
+    "pumpkin_pile_white": [
+      4,
+      2
+    ],
+    "pumpkin_pile_yellow": [
+      4,
+      2
+    ],
+    "rabbit_plushie": [
+      1,
+      2
+    ],
+    "red_capybara_wall_ribbon": [
+      4,
+      7
+    ],
+    "red_chicken_wall_ribbon": [
+      4,
+      7
+    ],
+    "red_duck_wall_ribbon": [
+      4,
+      7
+    ],
+    "red_rabbit_wall_ribbon": [
+      4,
+      7
+    ],
+    "reina_chair": [
+      4,
+      3
+    ],
+    "reina_desk": [
+      6,
+      5
+    ],
+    "reina_test_kitchen": [
+      9,
+      3
+    ],
+    "rock_clod_garden_brown": [
+      6,
+      4
+    ],
+    "rock_clod_garden_green": [
+      6,
+      4
+    ],
+    "rock_clod_garden_navy": [
+      6,
+      4
+    ],
+    "rock_clod_garden_red": [
+      6,
+      4
+    ],
+    "rock_stack_shelf": [
+      6,
+      2
+    ],
+    "round_cushioned_stool_beige": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_black": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_blue": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_brown": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_green": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_light_green": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_pink": [
+      2,
+      2
+    ],
+    "round_cushioned_stool_white": [
+      2,
+      2
+    ],
+    "royal_chest_blue": [
+      4,
+      2
+    ],
+    "royal_chest_dark_wood": [
+      4,
+      2
+    ],
+    "royal_chest_green": [
+      4,
+      2
+    ],
+    "royal_chest_purple": [
+      4,
+      2
+    ],
+    "royal_chest_red": [
+      4,
+      2
+    ],
+    "royal_chest_wood": [
+      4,
+      2
+    ],
+    "ruins_seal_door": [
+      6,
+      8
+    ],
+    "ruins_stone_arch": [
+      10,
+      2
+    ],
+    "ruins_wall_crystal_light": [
+      2,
+      7
+    ],
+    "ruins_window_v1": [
+      3,
+      7
+    ],
+    "ruins_window_v2": [
+      3,
+      7
+    ],
+    "ruins_window_v3": [
+      3,
+      7
+    ],
+    "ryis_chair": [
+      3,
+      3
+    ],
+    "ryis_crafting_station": [
+      6,
+      6
+    ],
+    "ryis_desk": [
+      6,
+      4
+    ],
+    "ryis_hawthorn_tree": [
+      6,
+      3
+    ],
+    "sand_rug": [
+      10,
+      6
+    ],
+    "sapling_beanbag_chair_blue": [
+      3,
+      3
+    ],
+    "sapling_beanbag_chair_green": [
+      3,
+      3
+    ],
+    "sapling_beanbag_chair_orange": [
+      3,
+      3
+    ],
+    "sapling_beanbag_chair_pink": [
+      3,
+      3
+    ],
+    "sapling_beanbag_chair_purple": [
+      3,
+      3
+    ],
+    "seed_maker": [
+      4,
+      2
+    ],
+    "seridia_chair": [
+      3,
+      3
+    ],
+    "seridia_desk": [
+      9,
+      5
+    ],
+    "seridia_magic_fire": [
+      8,
+      3
+    ],
+    "seridias_dragonsworn_armor": [
+      3,
+      2
+    ],
+    "sheep_plushie": [
+      1,
+      2
+    ],
+    "small_animal_hot_spring": [
+      8,
+      6
+    ],
+    "small_animal_seesaw": [
+      6,
+      2
+    ],
+    "small_barn_construction_dropcloth": [
+      14,
+      10
+    ],
+    "small_barn_construction_left": [
+      4,
+      4
+    ],
+    "small_barn_construction_right": [
+      4,
+      4
+    ],
+    "small_bathmat_beige": [
+      4,
+      3
+    ],
+    "small_bathmat_black": [
+      4,
+      3
+    ],
+    "small_bathmat_blue": [
+      4,
+      3
+    ],
+    "small_bathmat_brown": [
+      4,
+      3
+    ],
+    "small_bathmat_green": [
+      4,
+      3
+    ],
+    "small_bathmat_light_green": [
+      4,
+      3
+    ],
+    "small_bathmat_pink": [
+      4,
+      3
+    ],
+    "small_bathmat_white": [
+      4,
+      3
+    ],
+    "small_coop_construction_dropcloth": [
+      12,
+      10
+    ],
+    "small_coop_construction_square": [
+      4,
+      4
+    ],
+    "small_coop_construction_tall": [
+      3,
+      6
+    ],
+    "small_decorative_pumpkin_black": [
+      1,
+      1
+    ],
+    "small_decorative_pumpkin_green": [
+      1,
+      1
+    ],
+    "small_decorative_pumpkin_orange": [
+      1,
+      1
+    ],
+    "small_decorative_pumpkin_purple": [
+      1,
+      1
+    ],
+    "small_decorative_pumpkin_white": [
+      1,
+      1
+    ],
+    "small_decorative_pumpkin_yellow": [
+      1,
+      1
+    ],
+    "small_greenhouse_construction_dropcloth": [
+      12,
+      6
+    ],
+    "spooky_haybale": [
+      4,
+      2
+    ],
+    "spring_bed_orange": [
+      6,
+      5
+    ],
+    "spring_bed_pink": [
+      6,
+      5
+    ],
+    "spring_bed_purple": [
+      6,
+      5
+    ],
+    "spring_double_bed_orange": [
+      8,
+      5
+    ],
+    "spring_double_bed_pink": [
+      8,
+      5
+    ],
+    "spring_double_bed_purple": [
+      8,
+      5
+    ],
+    "spring_festival_basket": [
+      3,
+      3
+    ],
+    "spring_festival_breath_of_spring_wreath": [
+      4,
+      7
+    ],
+    "spring_festival_flower_chest": [
+      4,
+      2
+    ],
+    "spring_festival_large_planter": [
+      5,
+      5
+    ],
+    "spring_festival_wreath": [
+      4,
+      7
+    ],
+    "spring_potted_tree_orange": [
+      3,
+      2
+    ],
+    "spring_potted_tree_pink": [
+      3,
+      2
+    ],
+    "spring_potted_tree_purple": [
+      3,
+      2
+    ],
+    "spring_rug_orange": [
+      5,
+      5
+    ],
+    "spring_rug_pink": [
+      5,
+      5
+    ],
+    "spring_rug_purple": [
+      5,
+      5
+    ],
+    "spring_sofa_orange": [
+      6,
+      3
+    ],
+    "spring_sofa_pink": [
+      6,
+      3
+    ],
+    "spring_sofa_purple": [
+      6,
+      3
+    ],
+    "stable_crafting_table": [
+      4,
+      3
+    ],
+    "stable_storage_chest": [
+      4,
+      2
+    ],
+    "stable_window": [
+      4,
+      7
+    ],
+    "stairs": [
+      4,
+      5
+    ],
+    "stairs_upper": [
+      4,
+      5
+    ],
+    "stalagmite_tile_blue": [
+      4,
+      4
+    ],
+    "stalagmite_tile_green": [
+      4,
+      4
+    ],
+    "stalagmite_tile_purple": [
+      4,
+      4
+    ],
+    "star_viewing_blanket_blue": [
+      8,
+      7
+    ],
+    "star_viewing_blanket_pink": [
+      8,
+      7
+    ],
+    "star_viewing_blanket_purple": [
+      8,
+      7
+    ],
+    "star_viewing_blanket_yellow": [
+      8,
+      7
+    ],
+    "starter_shipping_box": [
+      4,
+      2
+    ],
+    "starter_well": [
+      4,
+      4
+    ],
+    "starter_wheelbarrow": [
+      4,
+      2
+    ],
+    "stone_bench_v1": [
+      6,
+      2
+    ],
+    "stone_bench_v2": [
+      6,
+      2
+    ],
+    "stone_bench_v3": [
+      6,
+      2
+    ],
+    "stone_storage_chest_v1": [
+      4,
+      2
+    ],
+    "stone_storage_chest_v2": [
+      4,
+      2
+    ],
+    "stone_storage_chest_v3": [
+      4,
+      2
+    ],
+    "summer_bed_red": [
+      6,
+      5
+    ],
+    "summer_bed_yellow": [
+      6,
+      5
+    ],
+    "summer_chair_red": [
+      3,
+      3
+    ],
+    "summer_chair_yellow": [
+      3,
+      3
+    ],
+    "summer_double_bed_red": [
+      8,
+      5
+    ],
+    "summer_double_bed_yellow": [
+      8,
+      5
+    ],
+    "summer_rug_red": [
+      5,
+      5
+    ],
+    "summer_rug_yellow": [
+      5,
+      5
+    ],
+    "summer_table_red": [
+      6,
+      6
+    ],
+    "summer_table_yellow": [
+      6,
+      6
+    ],
+    "tea_black": [
+      1,
+      1
+    ],
+    "tea_green": [
+      1,
+      1
+    ],
+    "teleportation_pad": [
+      3,
+      3
+    ],
+    "terrarium": [
+      4,
+      2
+    ],
+    "turn_in_box": [
+      3,
+      2
+    ],
+    "valen_chair": [
+      4,
+      3
+    ],
+    "valen_desk": [
+      8,
+      4
+    ],
+    "valen_workstation": [
+      13,
+      3
+    ],
+    "void_bonsai_v1": [
+      4,
+      2
+    ],
+    "void_bonsai_v2": [
+      4,
+      2
+    ],
+    "void_fireplace_v1": [
+      6,
+      9
+    ],
+    "void_fireplace_v2": [
+      6,
+      9
+    ],
+    "void_flagstone_large_v1": [
+      2,
+      2
+    ],
+    "void_flagstone_large_v2": [
+      2,
+      2
+    ],
+    "void_flagstone_small_v1": [
+      2,
+      2
+    ],
+    "void_flagstone_small_v2": [
+      2,
+      2
+    ],
+    "void_gryphon_statue_blue": [
+      4,
+      4
+    ],
+    "void_gryphon_statue_purple": [
+      4,
+      4
+    ],
+    "void_lamp_v1": [
+      1,
+      1
+    ],
+    "void_lamp_v2": [
+      1,
+      1
+    ],
+    "void_storage_chest_v1": [
+      4,
+      2
+    ],
+    "void_storage_chest_v2": [
+      4,
+      2
+    ],
+    "void_throne_one_v1": [
+      3,
+      3
+    ],
+    "void_throne_one_v2": [
+      3,
+      3
+    ],
+    "void_throne_two_v1": [
+      2,
+      2
+    ],
+    "void_throne_two_v2": [
+      2,
+      2
+    ],
+    "void_window_v1": [
+      3,
+      7
+    ],
+    "void_window_v2": [
+      3,
+      7
+    ],
+    "water_seal_door": [
+      6,
+      8
+    ],
+    "white_capybara_wall_ribbon": [
+      4,
+      7
+    ],
+    "white_chicken_wall_ribbon": [
+      4,
+      7
+    ],
+    "white_duck_wall_ribbon": [
+      4,
+      7
+    ],
+    "white_rabbit_wall_ribbon": [
+      4,
+      7
+    ],
+    "wine_glass_red": [
+      1,
+      1
+    ],
+    "wine_glass_rose": [
+      1,
+      1
+    ],
+    "wine_glass_white": [
+      1,
+      1
+    ],
+    "witch_queen_bed_v1": [
+      6,
+      5
+    ],
+    "witch_queen_bed_v2": [
+      6,
+      5
+    ],
+    "witch_queen_cauldron_v1": [
+      3,
+      3
+    ],
+    "witch_queen_cauldron_v2": [
+      3,
+      3
+    ],
+    "witch_queen_double_bed_v1": [
+      8,
+      5
+    ],
+    "witch_queen_double_bed_v2": [
+      8,
+      5
+    ],
+    "witch_queen_dressing_table_v1": [
+      4,
+      2
+    ],
+    "witch_queen_dressing_table_v2": [
+      4,
+      2
+    ],
+    "witch_queen_nightstand_v1": [
+      3,
+      2
+    ],
+    "witch_queen_nightstand_v2": [
+      3,
+      2
+    ],
+    "witch_queen_rug_v1": [
+      14,
+      10
+    ],
+    "witch_queen_rug_v2": [
+      14,
+      10
+    ],
+    "witch_queen_table_v1": [
+      6,
+      6
+    ],
+    "witch_queen_table_v2": [
+      6,
+      6
+    ],
+    "witch_queen_throne_v1": [
+      3,
+      3
+    ],
+    "witch_queen_throne_v2": [
+      3,
+      3
+    ],
+    "woodcrafting_station": [
+      6,
+      6
+    ],
+    "worn_bed": [
+      6,
+      5
+    ],
+    "worn_fireplace": [
+      6,
+      9
+    ],
+    "worn_nightstand": [
+      3,
+      2
+    ],
+    "worn_rug": [
+      8,
+      8
+    ],
+    "worn_table": [
+      6,
+      4
+    ],
+    "worn_well": [
+      4,
+      4
+    ],
+    "worn_window": [
+      4,
+      7
+    ]
+  }
 }

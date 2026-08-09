@@ -25,6 +25,8 @@ import {
   gateDisplay,
   type PlaceLabel,
   placeLabels,
+  recipeSourceLabel,
+  titleCase,
   WORN_ON_LABELS,
 } from '~/lib/labels'
 import { opportunitiesFromWindows } from '~/lib/opportunity'
@@ -87,8 +89,29 @@ interface RecipeRecord {
   station: string | null
   station_level: number | null
   craft_minutes: number | null
+  /** What the bench asks of you before the recipe is craftable at all. */
+  skill: { id: string; level: number } | null
   ingredients: { item_id: string | null; tag: string | null; quantity: number }[]
   output: { item_id: string | null; quantity: number }
+  /**
+   * How the recipe is *learned*, which is a different question from how the
+   * thing it makes is obtained — you buy a Lemon Pie at the Inn for 650 and you
+   * buy the recipe for it at the same counter for 400.
+   *
+   * An array because a recipe can be taught in more than one place, and the
+   * screen must not pick a winner. `confidence: 'inferred'` is the one entry
+   * the game does not state: no scroll for it exists anywhere, so the crafting
+   * level is the only gate left, and it renders hedged.
+   */
+  sources: {
+    method: string
+    source_id: string | null
+    character_id: string | null
+    price: number | null
+    currency: string
+    requires: Gate[]
+    confidence: string
+  }[]
 }
 
 interface GiftPrefs {
@@ -136,6 +159,14 @@ interface ShopRecord {
     /** Seasons this line is stocked in. `null` is year-round, not unknown. */
     seasons: string[] | null
     rotation: boolean
+    /**
+     * Set when the line sells the *recipe*, not the thing it makes.
+     *
+     * `item_id` is still the product, so the line links somewhere useful — but
+     * rendering it as a plain product line is what put the Lemon Pie on the
+     * Inn's shelf twice, at 650 and at 400, with nothing saying which was which.
+     */
+    teaches_recipe_id: string | null
   }[]
 }
 
@@ -149,6 +180,8 @@ interface LocationLite {
 }
 
 interface MineRecord {
+  id: string
+  name: string
   location_id: string | null
   floors: { min: number; max: number }
 }
@@ -225,6 +258,8 @@ export function ItemRoute() {
     places: Map<string, PlaceLabel>
     locations: LocationLite[]
     shops: Map<string, ShopRecord>
+    /** Keyed by mine id, not location id — a recipe's chest source names the biome. */
+    mines: Map<string, MineRecord>
     recipes: RecipeRecord[]
     seals: SealRecord[]
     quests: QuestLite[]
@@ -240,6 +275,7 @@ export function ItemRoute() {
     places: new Map(),
     locations: [],
     shops: new Map(),
+    mines: new Map(),
     recipes: [],
     seals: [],
     quests: [],
@@ -300,6 +336,7 @@ export function ItemRoute() {
             index,
             prefs,
             places: placeLabels(locations, mines),
+            mines: new Map(mines.map((mine) => [mine.id, mine])),
             locations,
             shops: new Map(shops.map((s) => [s.id, s])),
             recipes,
@@ -330,6 +367,7 @@ export function ItemRoute() {
     places,
     locations,
     shops,
+    mines,
     recipes,
     seals,
     quests,
@@ -652,9 +690,18 @@ export function ItemRoute() {
                 )}
               </>
             )}
+            {/* The skill the bench asks for. 814 recipes state one and none of
+                them had ever shown it, so "why can't I craft this" had no
+                answer on the page that is supposed to answer it. */}
+            {recipe.skill !== null && (
+              <>
+                {recipe.station !== null ? ' · ' : ''}needs {titleCase(recipe.skill.id)} level{' '}
+                <span data-numeral>{recipe.skill.level}</span>
+              </>
+            )}
             {recipe.craft_minutes !== null && (
               <>
-                {recipe.station !== null ? ' · ' : ''}takes{' '}
+                {recipe.station !== null || recipe.skill !== null ? ' · ' : ''}takes{' '}
                 <span data-numeral>{recipe.craft_minutes}</span> minutes
               </>
             )}
@@ -692,6 +739,37 @@ export function ItemRoute() {
                     ×{ingredient.quantity}
                   </span>
                 </li>
+              ))}
+            </ul>
+          )}
+
+          {/*
+            Where the *recipe* comes from — a different question from where the
+            thing it makes comes from, and the one this page used to answer with
+            "No source recorded" three sections up. You buy a Lemon Pie at the
+            Inn for 650 and you buy the recipe for it at the same counter for
+            400; those are two facts and the page now states both.
+
+            One row per source, never merged: the Spicy Cheddar Biscuit is
+            taught by the Inn *and* by the Wishing Well, and picking a winner
+            would be an answer nobody can act on.
+          */}
+          <h3 className="mt-4 text-ink-mute text-xs uppercase tracking-wide">
+            Where to learn the recipe
+          </h3>
+          {recipe.sources.length === 0 ? (
+            <Unknown>No source recorded for the recipe itself.</Unknown>
+          ) : (
+            <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
+              {recipe.sources.map((source) => (
+                <RecipeSourceRow
+                  key={`${source.method}:${source.source_id ?? ''}`}
+                  source={source}
+                  shops={shops}
+                  quests={quests}
+                  mines={mines}
+                  index={index}
+                />
               ))}
             </ul>
           )}
@@ -808,7 +886,15 @@ export function ItemRoute() {
               ]
               // The line, not just a flag off it. Everything below reads from
               // this one lookup rather than re-scanning the stock per fact.
-              const line = shop.stock.find((entry) => entry.item_id === item.id)
+              //
+              // **Skipping the recipe line matters.** The Inn stocks the Lemon
+              // Pie and its recipe scroll under the same `item_id`, and taking
+              // whichever came first would print the scroll's 400t as the
+              // dish's price. The scroll has its own home, in "Where to learn
+              // the recipe" above.
+              const line = shop.stock.find(
+                (entry) => entry.item_id === item.id && entry.teaches_recipe_id === null,
+              )
               return (
                 <li key={shopId} className="flex items-start gap-2.5">
                   <ItemIcon
@@ -1148,6 +1234,98 @@ function GateRun({ gates, index }: { gates: Gate[]; index: DisplayIndex }) {
         )
       })}
     </>
+  )
+}
+
+/**
+ * One way to learn a recipe.
+ *
+ * The wording lives in `recipeSourceLabel`, not here: a method with no entry
+ * there falls back to its own label rather than reaching a player as
+ * `chicken_statue`. What this owns is the *shape* — a lead-in, the named thing
+ * as a link where one exists, then the gates and the price.
+ *
+ * **`skill_level` is the only inferred source and must not look like the
+ * others.** No scroll for those recipes exists anywhere in the game, so the
+ * level is a deduction rather than something a source states; it gets the same
+ * `unverified` treatment every other inference on this screen gets.
+ */
+function RecipeSourceRow({
+  source,
+  shops,
+  quests,
+  mines,
+  index,
+}: {
+  source: RecipeRecord['sources'][number]
+  shops: Map<string, ShopRecord>
+  quests: QuestLite[]
+  mines: Map<string, MineRecord>
+  index: DisplayIndex
+}) {
+  const words = recipeSourceLabel(source.method)
+  const inferred = source.confidence === 'inferred'
+
+  // The named thing, and where it links. Only three of the ten methods name
+  // something with a page of its own; the rest are places without records and
+  // read as the standalone phrase.
+  const quest = quests.find((q) => q.id === source.source_id)
+  const named: { text: string; to?: '/quest/$id'; id?: string } | null =
+    source.method === 'shop' && source.source_id !== null
+      ? { text: shops.get(source.source_id)?.name ?? titleCase(source.source_id) }
+      : source.method === 'quest' && quest !== undefined
+        ? { text: `“${quest.name}”`, to: '/quest/$id', id: quest.id }
+        : source.method === 'mines_chest' && source.source_id !== null
+          ? { text: mines.get(source.source_id)?.name ?? titleCase(source.source_id) }
+          : null
+
+  return (
+    <li className="flex flex-wrap items-baseline gap-x-1.5 py-2 text-sm">
+      <span className={inferred ? 'text-ink-mute' : 'text-ink'}>
+        {named === null ? (
+          words.standalone
+        ) : (
+          <>
+            {words.lead}
+            {named.to === undefined || named.id === undefined ? (
+              named.text
+            ) : (
+              <Link
+                to={named.to}
+                params={{ id: named.id }}
+                className="underline decoration-rule underline-offset-4"
+              >
+                {named.text}
+              </Link>
+            )}
+          </>
+        )}
+        {/* The letter's sender, which is the only useful thing about a piece of
+            post: "Nora sends it" beats "it arrives". */}
+        {source.method === 'mail' && source.character_id !== null && (
+          <> from {index[source.character_id]?.n ?? titleCase(source.character_id)}</>
+        )}
+      </span>
+
+      {source.price !== null && (
+        <span data-numeral className="text-ink-mute">
+          — {source.price}
+          {source.currency === 'tesserae' ? 't' : ` ${source.currency.replace(/_/g, ' ')}`}
+        </span>
+      )}
+
+      {source.requires.length > 0 && (
+        <span className="text-ink-mute text-xs">
+          (<GateRun gates={source.requires} index={index} />)
+        </span>
+      )}
+
+      {inferred && (
+        <span className="unverified rounded-tile px-1.5 py-0.5 text-xs">
+          inferred — no scroll for it exists in the game files
+        </span>
+      )}
+    </li>
   )
 }
 

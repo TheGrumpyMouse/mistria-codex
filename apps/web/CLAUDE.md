@@ -137,6 +137,27 @@ year 1 whatever date you were looking at — and "available now" needs a clock
 comparison that §3 forbids here, because `items.json` still ships ten wrapping
 windows. Dates belong to the calendar and the map, which both have one.
 
+### 2c. A dish and its recipe are two things, obtained two ways
+
+The Inn sells the Lemon Pie for 650 and it sells the recipe for the Lemon Pie
+for 400, at the same counter, and **both rows resolve to `lemon_pie`**. The page
+has to answer two questions and must never merge them:
+
+- **"Where to find it"** is the thing. Availability windows and `sold_by`.
+- **"Where to learn the recipe"**, inside "How it's made", is the scroll.
+  `recipe.sources[]` — one row per source, never merged, because the Spicy
+  Cheddar Biscuit is taught by both Darcy's stall and the Wishing Well.
+
+A shop stock line carries `teaches_recipe_id` when it sells the scroll. **Any
+lookup into `shop.stock` by `item_id` must say which of the two it wants**, or
+it takes whichever came first — which is how the Inn shipped the Lemon Pie
+twice, at two prices, with nothing saying which was which.
+
+`sources[].confidence === 'inferred'` is the one entry the game does not state:
+no scroll for that recipe exists anywhere in the files, so the crafting level is
+the only gate left. It renders hedged, like every other inference here (§6, and
+the hollow map pins) — never as a plain fact.
+
 ### 3. Never write `if (start > end)` for a time window
 
 Midnight wrapping is resolved at build time **in the flat rules index** — a

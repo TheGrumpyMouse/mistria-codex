@@ -1,0 +1,46 @@
+name: Release
+
+# Cutting a release is `git tag v1.0.0 && git push --tags`. Nothing here
+# deploys — Pages already builds from main on every push, and the two are
+# deliberately independent: a release marks a version, it does not ship one.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Publish the release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # --generate-notes diffs against the previous tag, and a shallow
+          # checkout has no previous tag to find.
+          fetch-depth: 0
+
+      # The whole reason this is a workflow rather than a hand-made release.
+      #
+      # `version` in the root package.json is what vite.config.ts compiles into
+      # __APP_VERSION__, which is what the Settings and About screens show. A
+      # tag that disagrees with it means the Releases sidebar and the running
+      # app name two different versions, and nothing would ever surface that.
+      # Failing here is cheap; a wrong number in a user's bug report is not.
+      - name: Assert the tag matches package.json
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="v$(node -p "require('./package.json').version")"
+          echo "tag: $TAG  package.json: $VERSION"
+          if [ "$TAG" != "$VERSION" ]; then
+            echo "::error::Tag $TAG does not match package.json ($VERSION). Bump the root package.json and re-tag — the app compiles that field into __APP_VERSION__, so publishing this would ship a version the app does not report."
+            exit 1
+          fi
+
+      # `gh` is preinstalled on the runner, so this needs no third-party action
+      # and adds no supply-chain surface for a step that only writes a release.
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "${GITHUB_REF_NAME}" --generate-notes --verify-tag

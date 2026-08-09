@@ -38,6 +38,13 @@ export const Requirement = z.object({
     'location',
     /** `year >= 2`. The request board holds some things back until year two. */
     'year',
+    /**
+     * Shipped, and donated to the museum. Both are how the post office decides
+     * to send you a recipe, and neither is `item`: `{type:'item', op:'has'}`
+     * means *hold one right now*, which a shipped crate by definition is not.
+     */
+    'shipped_item',
+    'donated_item',
   ]),
   key: z.string().min(1),
   op: z.enum(['>=', '>', '==', 'has', 'done']),

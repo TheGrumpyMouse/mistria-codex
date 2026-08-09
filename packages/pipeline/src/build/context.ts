@@ -115,6 +115,16 @@ export interface ShopStockRow {
   prices: { amount: number | null; token: string }[]
   requires: string[]
   seasons: string[] | null
+  /**
+   * The heading path the row was read under (`Year-Round Stock > Recipes`).
+   *
+   * Load-bearing, not provenance: a row under a `Recipes` heading names a
+   * recipe scroll, and the row above it under `Food` names the dish. Both link
+   * to the same article, so the *only* thing telling them apart is the heading
+   * — which is why the Inn shipped the Lemon Pie twice, at 650 and at 400, with
+   * nothing saying one of them was the recipe.
+   */
+  section: string
 }
 
 export interface ShopInputs {
@@ -132,6 +142,17 @@ export interface ShopInputs {
     location: string | null
     wikiVersionStamp: string | null
     lastEdited: string | null
+    /**
+     * The section key this shop has in the game's `stores.toml`, where the two
+     * sources describe the same counter.
+     *
+     * Curated because it is a judgement nothing states: the game calls the
+     * Tackle Shop `terithia` and the Clinic `valens_clinic`, after the people
+     * behind the counter rather than after the building. Without it the game's
+     * own shelves — including every recipe scroll it sells — cannot be attached
+     * to the shop record the wiki built.
+     */
+    gameStoreId: string | null
   }[]
   stock: ShopStockRow[]
   /** The Saturday Market stalls' curated facts. Null on a clone without them. */
@@ -363,7 +384,7 @@ export async function loadContext(): Promise<BuildContext> {
   const shopVocab = await readJsonFile<{
     priceTokens: Record<string, Currency>
     nonPriceTokens: { token: string; reason: string }[]
-    shops: { id: string; owner: string | null; staff: string[] }[]
+    shops: { id: string; owner: string | null; staff: string[]; gameStoreId?: string }[]
     saturdayMarket?: MarketConfig
   }>(join(CURATED_DIR, 'vocab', 'shops.json'))
 
@@ -381,6 +402,7 @@ export async function loadContext(): Promise<BuildContext> {
       location: shop.location,
       wikiVersionStamp: shop.wikiVersionStamp,
       lastEdited: shop.lastEdited,
+      gameStoreId: curatedShop.get(shop.id)?.gameStoreId ?? null,
     })),
     stock: extractedShops.flatMap((shop) =>
       shop.stock.map((row) => ({
@@ -389,6 +411,7 @@ export async function loadContext(): Promise<BuildContext> {
         prices: row.prices,
         requires: row.requires,
         seasons: row.seasons,
+        section: row.section,
       })),
     ),
     market: shopVocab.saturdayMarket ?? null,

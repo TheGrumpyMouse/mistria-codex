@@ -94,6 +94,32 @@ export interface QuestRecord extends Common {
   rewards: { item_ids: string[]; tesserae: number | null; renown: number | null } | null
 }
 
+/**
+ * A recipe, which is **not** a page of its own.
+ *
+ * Its id is its output item's id, so a recipe page would be a second document
+ * about the same subject at a second URL — the duplicate-content pattern the
+ * inclusion gate exists to avoid. It renders as two blocks on the item's page
+ * instead: how the thing is made, and where the recipe is learned.
+ */
+export interface RecipeRecord extends Common {
+  kind: string
+  output: { item_id: string | null; quantity: number }
+  ingredients: { item_id: string | null; tag: string | null; quantity: number }[]
+  station: string | null
+  station_level: number | null
+  skill: { id: string; level: number } | null
+  craft_minutes: number | null
+  sources: {
+    method: string
+    source_id: string | null
+    character_id: string | null
+    price: number | null
+    currency: string
+    confidence: string
+  }[]
+}
+
 export interface Dataset {
   items: ItemRecord[]
   characters: CharacterRecord[]
@@ -101,6 +127,10 @@ export interface Dataset {
   places: PlaceRecord[]
   mines: MineRecord[]
   quests: QuestRecord[]
+  recipes: RecipeRecord[]
+  /** Names only — neither gets a page, but a recipe source names both. */
+  shops: Common[]
+  festivals: Common[]
 }
 
 export interface GuidePage {
@@ -148,7 +178,9 @@ const METHOD_LABEL: Record<SpawnMethod, string> = {
   quest_reward: 'Quest reward',
   festival: 'Festival',
   mail: 'Mail',
-  chest: 'Chest',
+  chest: 'Treasure chest',
+  wishing_well: 'The Wishing Well',
+  chicken_statue: 'The Chicken Statue',
 }
 
 const HABITAT_LABEL: Record<Habitat, string> = {
@@ -274,6 +306,16 @@ interface Lookup {
   placeName: (id: string) => string
   itemName: (id: string) => string
   characterName: (id: string) => string
+  /**
+   * Any record's display name, or null when nothing of that id is known.
+   *
+   * The three above all resolve against the same index and differ only in what
+   * the call site means. This one is for a reference whose *table* depends on a
+   * sibling field — a recipe source's `source_id`, which is a shop, a quest, a
+   * festival or a mine — where "not found" has to be distinguishable so the
+   * sentence can fall back rather than print a slug.
+   */
+  recordName: (id: string) => string | null
   /** A guide path for an id, or null when that record has no page. */
   pathOf: (id: string) => string[] | null
 }
@@ -383,7 +425,105 @@ function crossLinks(
   return links.length === 0 ? null : { heading, kind: 'links', links }
 }
 
-function itemPage(item: ItemRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
+/**
+ * Where a recipe is learned, as one sentence per source.
+ *
+ * The same wording rule as `describeWindow`: one line per source, never merged,
+ * because the Spicy Cheddar Biscuit is taught by the Inn *and* by the Wishing
+ * Well and picking one would be a claim. An inferred source says so in the
+ * sentence — the guide has no styling to lean on, so the hedge has to be words.
+ */
+function describeRecipeSource(source: RecipeRecord['sources'][number], lookup: Lookup): string {
+  const named =
+    source.source_id === null ? null : (lookup.recordName(source.source_id) ?? source.source_id)
+  const price = source.price === null ? '' : ` for ${source.price} tesserae`
+
+  switch (source.method) {
+    case 'default':
+      return 'Known from the start'
+    case 'shop':
+      return named === null ? `Sold in a shop${price}` : `Sold at ${named}${price}`
+    case 'mail':
+      return source.character_id === null
+        ? 'Arrives in the post'
+        : `Sent in the post by ${lookup.characterName(source.character_id)}`
+    case 'quest':
+      return named === null ? 'A quest reward' : `Reward for ${named}`
+    case 'festival':
+      return named === null ? 'Sold at a festival stall' : `Sold at a stall at ${named}`
+    case 'wishing_well':
+      return 'From the Wishing Well'
+    case 'chicken_statue':
+      return 'From the Chicken Statue'
+    case 'mines_chest':
+      return named === null
+        ? 'Treasure chests in the mines, with the Taste Maker perk'
+        : `Treasure chests in ${named}, with the Taste Maker perk`
+    case 'cutscene':
+      return 'Given during the story'
+    case 'skill_level':
+      return 'Appears once the crafting level is reached — inferred, as no recipe scroll for it exists in the game files'
+    default:
+      return titleCase(source.method)
+  }
+}
+
+/**
+ * The recipe's two blocks, for the item it makes.
+ *
+ * Deliberately `Thing` + `additionalProperty` like every other page rather than
+ * schema.org `Recipe`: that type is for food a person can actually cook, and
+ * marking up a game dish with it would publish structured data claiming this
+ * page is a cooking recipe. The facts are the same either way; the claim is not.
+ */
+function recipeSections(recipe: RecipeRecord, lookup: Lookup): Section[] {
+  const sections: Section[] = []
+
+  const made: { label: string; value: string }[] = []
+  if (recipe.station !== null) {
+    made.push({
+      label: 'Station',
+      value:
+        recipe.station_level === null
+          ? recipe.station
+          : `${recipe.station} (level ${recipe.station_level})`,
+    })
+  }
+  if (recipe.skill !== null) {
+    made.push({
+      label: 'Skill',
+      value: `${titleCase(recipe.skill.id)} level ${recipe.skill.level}`,
+    })
+  }
+  if (recipe.craft_minutes !== null) {
+    made.push({ label: 'Takes', value: `${recipe.craft_minutes} minutes` })
+  }
+  for (const ingredient of recipe.ingredients) {
+    const what =
+      ingredient.item_id === null
+        ? `any ${(ingredient.tag ?? '').replace(/_/g, ' ')}`
+        : lookup.itemName(ingredient.item_id)
+    made.push({ label: 'Ingredient', value: `${what} ×${ingredient.quantity}` })
+  }
+  if (made.length > 0) sections.push({ heading: 'How it’s made', kind: 'facts', rows: made })
+
+  if (recipe.sources.length > 0) {
+    sections.push({
+      heading: 'Where to learn the recipe',
+      kind: 'list',
+      items: recipe.sources.map((source) => describeRecipeSource(source, lookup)),
+    })
+  }
+
+  return sections
+}
+
+function itemPage(
+  item: ItemRecord,
+  ctx: UrlContext,
+  lookup: Lookup,
+  recipe: RecipeRecord | undefined,
+): GuidePage {
   const segments = ['guide', item.category.replace(/_/g, '-'), slugFor(item.id)]
   const depth = segments.length
   const kind = CATEGORY_KIND[item.category] ?? 'Item'
@@ -415,13 +555,20 @@ function itemPage(item: ItemRecord, ctx: UrlContext, lookup: Lookup): GuidePage 
   if (item.is_craftable) value.push({ label: 'Craftable', value: 'Yes' })
   if (value.length > 0) sections.push({ heading: 'Value', kind: 'facts', rows: value })
 
+  // The recipe, as its own two blocks. A dish and its recipe are obtained two
+  // different ways — you buy a Lemon Pie at the Inn for 650 and its recipe at
+  // the same counter for 400 — so they are separate sections, not one.
+  if (recipe !== undefined) sections.push(...recipeSections(recipe, lookup))
+
   const used = crossLinks('Used in', item.used_in_recipe_ids, depth, lookup, lookup.itemName)
   if (used !== null) sections.push(used)
 
   const first = item.availability[0]
+  const learn = recipe?.sources[0]
   const description = metaDescription([
     `${item.name} is a ${kind.toLowerCase()} in Fields of Mistria.`,
     first === undefined ? null : whereSentence(first, lookup),
+    learn === undefined ? null : `Recipe: ${describeRecipeSource(learn, lookup).toLowerCase()}.`,
     item.sell_value === null ? null : `Sells for ${item.sell_value} tesserae.`,
     item.museum?.donatable === true ? 'Can be donated to the museum.' : null,
   ])
@@ -759,6 +906,8 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...data.places.map((r) => [r.id, r.name] as const),
     ...data.mines.map((r) => [r.id, r.name] as const),
     ...data.quests.map((r) => [r.id, r.name] as const),
+    ...data.shops.map((r) => [r.id, r.name] as const),
+    ...data.festivals.map((r) => [r.id, r.name] as const),
   ])
   const nameOf = (id: string): string => nameIndex.get(id) ?? titleCase(id)
 
@@ -775,11 +924,21 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     placeName: nameOf,
     itemName: nameOf,
     characterName: nameOf,
+    recordName: (id) => nameIndex.get(id) ?? null,
     pathOf: (id) => pathIndex.get(id) ?? null,
   }
 
+  // A recipe is addressed by the item it makes, so this is keyed by output
+  // rather than by recipe id — they happen to be equal today, and relying on
+  // that would be relying on a coincidence the furniture collapse could end.
+  const recipeByOutput = new Map(
+    data.recipes.flatMap((r) =>
+      r.output.item_id === null ? [] : [[r.output.item_id, r] as const],
+    ),
+  )
+
   const pages: GuidePage[] = [
-    ...items.map((item) => itemPage(item, ctx, lookup)),
+    ...items.map((item) => itemPage(item, ctx, lookup, recipeByOutput.get(item.id))),
     ...characters.map((character) => characterPage(character, ctx)),
     ...monsters.map((monster) => monsterPage(monster, ctx, lookup)),
     ...places.map((place) => placePage(place, mineByLocation.get(place.id), ctx, lookup)),

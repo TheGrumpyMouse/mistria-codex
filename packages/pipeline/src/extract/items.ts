@@ -76,6 +76,15 @@ export interface GameItem {
   crop_object: string | null
   sapling: string | null
   recipe_key: string | null
+  /**
+   * `recipe_is_default` — the recipe is known from the first day.
+   *
+   * The counterpart to a `recipe_scroll` grant: 206 items say this, and for
+   * every one of them the answer to "where do I learn it" is "you already have
+   * it". Absent is distinct from false, so this is nullable — an item with no
+   * recipe at all says nothing rather than "not default".
+   */
+  recipe_is_default: boolean | null
   crafting_level: number | null
   kitchen_tier: number | null
   recipe: GameRecipeComponent[]
@@ -155,6 +164,7 @@ function readItem(id: string, entry: Table, base: Table, file: string): GameItem
     crop_object: str(get('crop_object')),
     sapling: str(get('sapling')),
     recipe_key: str(get('recipe_key')),
+    recipe_is_default: bool(get('recipe_is_default')),
     crafting_level: num(get('crafting_level_requirement')),
     kitchen_tier: num(get('kitchen_tier_requirement')),
     recipe: components,

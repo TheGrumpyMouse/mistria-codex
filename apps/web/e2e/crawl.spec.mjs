@@ -113,6 +113,32 @@ for (const [path, needle] of [
   check(`${path} has its content`, result.body.includes(needle), needle)
 }
 
+// ── A recipe is two blocks on the dish's page, not a page of its own ──
+// "How do I get the Lemon Pie recipe" is exactly the kind of query this whole
+// surface exists to answer, and the page that answers it has to be the same one
+// that describes the dish — a recipe's id *is* its output item's id, so a second
+// page would be a second URL about one subject.
+const pie = await fetchText('guide/cooked/lemon-pie/')
+check('the dish page is served', pie.status === 200, String(pie.status))
+check('with the recipe on it', pie.body.includes('Where to learn the recipe'), '')
+check(
+  'naming the shop and the scroll’s own price',
+  pie.body.includes('Sold at Sleeping Dragon Inn for 400 tesserae'),
+  '',
+)
+check('and its ingredients', /Ingredient/.test(pie.body), '')
+check(
+  'but not as a schema.org Recipe, which is for food a person can cook',
+  !pie.body.includes('"Recipe"'),
+  'marking a game dish up that way would publish a false claim about the page',
+)
+const noRecipePage = await fetchText('guide/recipe/lemon-pie/')
+check(
+  'and no separate recipe page competes with it',
+  noRecipePage.status === 404,
+  String(noRecipePage.status),
+)
+
 // ── The hub, which is how a crawler reaches everything ──
 const hub = await fetchText('guide/')
 check('the hub is served', hub.status === 200, String(hub.status))

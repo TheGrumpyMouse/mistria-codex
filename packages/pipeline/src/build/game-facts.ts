@@ -29,7 +29,7 @@ import {
   WEATHERS,
   type Weather,
 } from '@mistria/schema'
-import type { GameArtifactsExtract, GameSealOffering } from '../extract/artifacts.js'
+import type { GameArtifactsExtract, GameMineBiome, GameSealOffering } from '../extract/artifacts.js'
 import type { GameCosmetic, GameCosmeticsExtract } from '../extract/cosmetics.js'
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
@@ -43,6 +43,7 @@ import type {
   GameTree,
 } from '../extract/spawns.js'
 import type { GameStore, GameStoresExtract } from '../extract/stores.js'
+import type { GameUnlocksExtract } from '../extract/unlocks.js'
 import type {
   GameLocation,
   GameNpc,
@@ -172,6 +173,20 @@ export interface GameFacts {
   cosmetics: GameCosmetic[]
   /** Cosmetic id -> its record, for resolving a store line. */
   cosmeticById: Map<string, GameCosmetic>
+  /**
+   * Every grant the game states — the post, the quest boards, the festival
+   * stalls, the museum reward tiers, the Wishing Well and the Chicken Statue.
+   * Null when the extract predates the unlocks read, in which case recipes fall
+   * back to the wiki's `recipeSource` and furniture keeps no availability.
+   */
+  unlocks: GameUnlocksExtract | null
+  /**
+   * The mine biomes in floor order, including their treasure-chest pools.
+   * Empty when the extract predates the artifact read.
+   */
+  mineBiomes: GameMineBiome[]
+  /** Object prototype id -> `[width, height]` in tiles, where the game states one. */
+  objectSizes: Record<string, [number, number]>
 }
 
 /** The artifact and seal extract, indexed. See `buildArtifactFacts`. */
@@ -503,6 +518,9 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
   const cosmeticsExtract = await readJsonFile<GameCosmeticsExtract>(
     join(game, 'cosmetics.json'),
   ).catch(() => null)
+  const unlocks = await readJsonFile<GameUnlocksExtract>(join(game, 'unlocks.json')).catch(
+    () => null,
+  )
   const cosmetics = cosmeticsExtract?.cosmetics ?? []
   const factories = machinesExtract?.factories ?? []
   const factoryByProduct = new Map<string, GameFactory>()
@@ -561,6 +579,9 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     storeById: new Map((storesExtract?.stores ?? []).map((store) => [store.id, store] as const)),
     cosmetics,
     cosmeticById: new Map(cosmetics.map((cosmetic) => [cosmetic.id, cosmetic] as const)),
+    unlocks,
+    mineBiomes: artifactExtract?.mineBiomes ?? [],
+    objectSizes: machinesExtract?.objectSizes ?? {},
     artifactFacts:
       artifactExtract === null
         ? null

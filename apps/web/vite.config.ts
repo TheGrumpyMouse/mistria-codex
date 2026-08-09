@@ -37,8 +37,19 @@ const absoluteUrls = {
   transformIndexHtml: (html: string): string => html.replaceAll('%SITE_URL%', siteUrl),
 }
 
-/** The repo's own package version, so the About page can name what you're running. */
-const pkg = JSON.parse(readFileSync(resolve(here, 'package.json'), 'utf8')) as { version: string }
+/**
+ * The version, from the **repository root** rather than from this workspace.
+ *
+ * There is exactly one version literal in the repo and this is where it lives:
+ * the release workflow reads the same field and refuses to publish a tag that
+ * disagrees with it, so the Releases sidebar and the app's Settings screen
+ * cannot tell a user two different things. The workspace packages stay at
+ * `0.0.0` — they are private and unpublished, and a second number would only be
+ * a second thing to forget.
+ */
+const pkg = JSON.parse(readFileSync(resolve(here, '../../package.json'), 'utf8')) as {
+  version: string
+}
 
 export default defineConfig({
   base,

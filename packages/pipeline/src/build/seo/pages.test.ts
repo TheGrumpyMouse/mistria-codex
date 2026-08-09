@@ -54,6 +54,9 @@ const dataset = (over: Partial<Dataset> = {}): Dataset => ({
   places: [],
   mines: [],
   quests: [],
+  recipes: [],
+  shops: [],
+  festivals: [],
   ...over,
 })
 
@@ -173,6 +176,99 @@ describe('the publication gate', () => {
       CTX,
     )
     expect(pages.map((p) => p.source.id)).toEqual(['adeline'])
+  })
+})
+
+describe('a recipe is two blocks on the item’s page, not a page of its own', () => {
+  const built = buildPages(
+    dataset({
+      items: [item({ id: 'lemon_pie', name: 'Lemon Pie', category: 'cooked', sell_value: 650 })],
+      shops: [{ id: 'inn', name: 'Sleeping Dragon Inn' }],
+      recipes: [
+        {
+          id: 'lemon_pie',
+          name: 'Lemon Pie',
+          kind: 'cooking',
+          output: { item_id: 'lemon_pie', quantity: 1 },
+          ingredients: [{ item_id: 'lemon', tag: null, quantity: 2 }],
+          station: 'Food',
+          station_level: 2,
+          skill: { id: 'cooking', level: 20 },
+          craft_minutes: 100,
+          sources: [
+            {
+              method: 'shop',
+              source_id: 'inn',
+              character_id: null,
+              price: 400,
+              currency: 'tesserae',
+              confidence: 'verified',
+            },
+          ],
+        },
+      ],
+    }),
+    CTX,
+  )
+  const html = renderPage(only(built.pages).input)
+
+  it('publishes exactly one page for the dish and its recipe', () => {
+    // The recipe's id *is* the item's id, so a page of its own would be a
+    // second URL about one subject — the duplicate-content pattern the whole
+    // inclusion gate exists to avoid.
+    expect(built.pages).toHaveLength(1)
+    expect(only(built.pages).segments).toEqual(['guide', 'cooked', 'lemon-pie'])
+  })
+
+  it('separates how it is made from where the recipe is learned', () => {
+    expect(html).toContain('How it’s made')
+    expect(html).toContain('Where to learn the recipe')
+    expect(html).toContain('Sold at Sleeping Dragon Inn for 400 tesserae')
+  })
+
+  it('states the crafting level, which no page had ever shown', () => {
+    expect(html).toContain('Cooking level 20')
+  })
+
+  it('does not claim to be a schema.org Recipe', () => {
+    // That type is for food a person can cook. Marking up a game dish with it
+    // would publish structured data asserting something untrue about the page.
+    const block = /<script type="application\/ld\+json">(.*?)<\/script>/s.exec(html)?.[1] ?? ''
+    expect(block).not.toContain('"Recipe"')
+    expect(JSON.parse(block)).toBeTruthy()
+  })
+
+  it('hedges the inferred source in words, since the guide has no styling', () => {
+    const inferred = buildPages(
+      dataset({
+        items: [item({ id: 'oak_chair', name: 'Oak Chair', category: 'misc', sell_value: 40 })],
+        recipes: [
+          {
+            id: 'oak_chair',
+            name: 'Oak Chair',
+            kind: 'woodcrafting',
+            output: { item_id: 'oak_chair', quantity: 1 },
+            ingredients: [],
+            station: null,
+            station_level: null,
+            skill: { id: 'woodcrafting', level: 4 },
+            craft_minutes: null,
+            sources: [
+              {
+                method: 'skill_level',
+                source_id: null,
+                character_id: null,
+                price: null,
+                currency: 'tesserae',
+                confidence: 'inferred',
+              },
+            ],
+          },
+        ],
+      }),
+      CTX,
+    )
+    expect(renderPage(only(inferred.pages).input)).toContain('inferred')
   })
 })
 

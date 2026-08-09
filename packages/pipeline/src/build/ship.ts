@@ -270,6 +270,18 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       : {}),
   })
 
+  // Anything a recipe makes answers to "<name> recipe" as well as to its own
+  // name, because that is what people type. It is an alias on the *item*, not
+  // a row of its own: the recipe's id is the item's id, so a second entry could
+  // not be keyed anyway — and two rows saying "Lemon Pie" would be the
+  // duplicate-result pattern rather than a better answer. The dish's page
+  // carries both halves, which is the thing worth landing on.
+  const craftable = new Set(
+    (await read<{ output: { item_id: string | null } }>('recipes.json')).flatMap((recipe) =>
+      recipe.output.item_id === null ? [] : [recipe.output.item_id],
+    ),
+  )
+
   // Items carry their own category — fish, bug, cooked — which is what Browse
   // groups by. Everything else takes the name of its table.
   for (const item of await read<{
@@ -295,7 +307,10 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       ...(GROUPED_CATEGORIES.has(item.category) && item.subcategory !== null
         ? { g: item.subcategory }
         : {}),
-      ...alsoKnownAs(item.also_known_as),
+      ...alsoKnownAs([
+        ...(item.also_known_as ?? []),
+        ...(craftable.has(item.id) ? [`${item.name} Recipe`] : []),
+      ]),
       ...spoilerMarks(item),
     }
   }

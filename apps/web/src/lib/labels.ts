@@ -111,7 +111,9 @@ export const METHOD_LABELS: Record<string, string> = {
   quest_reward: 'Quest reward',
   festival: 'At a festival',
   mail: 'In the mail',
-  chest: 'Found in a chest',
+  chest: 'Treasure chests',
+  wishing_well: 'The Wishing Well',
+  chicken_statue: 'The Chicken Statue',
 }
 
 export const methodLabel = (id: string): string => METHOD_LABELS[id] ?? id.replace(/_/g, ' ')
@@ -194,7 +196,7 @@ export interface RequirementDisplay {
   prefix: string
   label: string
   suffix: string
-  linkTo: { to: '/quest/$id' | '/place/$id'; id: string } | null
+  linkTo: { to: '/quest/$id' | '/place/$id' | '/item/$id'; id: string } | null
 }
 
 export function requirementDisplay(req: Requirement, name?: string): RequirementDisplay {
@@ -212,6 +214,20 @@ export function requirementDisplay(req: Requirement, name?: string): Requirement
   // bare label lost it silently.
   if (req.type === 'skill' && typeof req.value === 'number') {
     return { prefix: '', label, suffix: ` level ${req.value}`, linkTo: null }
+  }
+  // The post office's two conditions. Neither is `item`: holding a potato and
+  // having shipped one are different states, and the letter only cares about
+  // the second.
+  if (req.type === 'shipped_item') {
+    return { prefix: 'shipping a ', label, suffix: '', linkTo: { to: '/item/$id', id: req.key } }
+  }
+  if (req.type === 'donated_item') {
+    return {
+      prefix: 'donating a ',
+      label,
+      suffix: ' to the museum',
+      linkTo: { to: '/item/$id', id: req.key },
+    }
   }
   return { prefix: '', label, suffix: '', linkTo: null }
 }
@@ -239,8 +255,44 @@ export function gateDisplay(req: Requirement, name?: string): RequirementDisplay
   if (req.type === 'skill' && typeof req.value === 'number') {
     return { prefix: 'reach ', label, suffix: ` level ${req.value}`, linkTo: null }
   }
+  if (req.type === 'shipped_item') {
+    return { prefix: 'ship a ', label, suffix: '', linkTo: { to: '/item/$id', id: req.key } }
+  }
+  if (req.type === 'donated_item') {
+    return {
+      prefix: 'donate a ',
+      label,
+      suffix: ' to the museum',
+      linkTo: { to: '/item/$id', id: req.key },
+    }
+  }
   return { prefix: 'have ', label, suffix: '', linkTo: null }
 }
+
+/**
+ * How a recipe is learned, as the lead-in of a sentence.
+ *
+ * Only the lead-in: the source's own id (which shop, which quest) is a link the
+ * caller renders, so this hands back the words either side of it rather than a
+ * finished string. Wording lives here rather than in JSX for the same reason
+ * `gateDisplay` does — a screen that spells its own phrasing is how the next
+ * method reaches a player as `chicken_statue`.
+ */
+export const RECIPE_SOURCE_LABELS: Record<string, { lead: string; standalone: string }> = {
+  default: { lead: '', standalone: 'Yours from the start' },
+  shop: { lead: 'Sold at ', standalone: 'Sold in a shop' },
+  mail: { lead: 'Sent by ', standalone: 'Arrives in the post' },
+  quest: { lead: 'Reward for ', standalone: 'A quest reward' },
+  festival: { lead: 'A stall at ', standalone: 'A festival stall' },
+  wishing_well: { lead: '', standalone: 'From the Wishing Well' },
+  chicken_statue: { lead: '', standalone: 'From the Chicken Statue' },
+  mines_chest: { lead: 'Treasure chests in ', standalone: 'Treasure chests in the mines' },
+  cutscene: { lead: '', standalone: 'Given during the story' },
+  skill_level: { lead: '', standalone: 'Appears when you reach the level' },
+}
+
+export const recipeSourceLabel = (method: string): { lead: string; standalone: string } =>
+  RECIPE_SOURCE_LABELS[method] ?? { lead: '', standalone: methodLabel(method) }
 
 /**
  * A shipped availability-rule token (`perk:Well Placed`) as a phrase.
