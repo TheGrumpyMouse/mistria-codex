@@ -43,6 +43,16 @@ The `.unverified` dashed treatment marks **inferences** ("place inferred") and
 kindred hedges — a deduction must never render identically to a fact. **Never
 a colour** — colour is spoken for by the seasons.
 
+**A constraint that excludes nothing is not worth printing.** Weather is the
+case that makes this concrete: a rule's `wx` is already intersected with what
+its seasons can produce, so a summer fish that bites in anything and a mine drop
+that has no weather at all both carry `clear|rain|storm|wind`. Tagged naively,
+four fifths of the dataset would wear a label that narrows nothing.
+`weatherRestriction` compares against what is *possible* and returns `null`
+otherwise — 122 of 610 entities carry a note, which is what keeps it a signal.
+It also flips to `except` when that is shorter: "not in wind" beats five
+weathers nobody finishes reading.
+
 ### 3. Never write `if (start > end)` for a time window
 
 Midnight wrapping is resolved at build time. An availability window ships as
@@ -74,6 +84,21 @@ asserts that named surfaces render a *sprite*, not merely an icon.
 Scaling is integer-only (`integerScale`). Pixel art at 1.5x renders visibly
 lopsided, and `image-rendering: pixelated` does not rescue it. The `.sprite`
 class carries that declaration once — do not repeat it per component.
+
+**Some sprites are a measurement, and `<ItemIcon>` will destroy them.** The four
+fish silhouettes are drawn at their true relative sizes — 12×5 pixels up to
+31×16 — inside one shared canvas, so they answer "how big is a large shadow"
+only while every one renders in the same box at the same scale. An icon
+component fits each sprite to *its* box, which draws a minnow the size of a
+tuna: not a cosmetic flaw, the picture stating the opposite of the fact. That is
+what `<FishShadow>` exists for, and why the asset step crops all four to one
+identical window. Before putting a sprite in an `<ItemIcon>`, ask whether its
+size means anything.
+
+(The same sprites were also a live bug: the game ships them as 388×97 animation
+strips, and the icon box was scaling the whole four-frame reel to 36 pixels.
+`cropPng` in the asset step takes the frame, so a manifest sprite is always a
+picture and never a reel.)
 
 ### 4a. Icons go on lists, not into prose
 

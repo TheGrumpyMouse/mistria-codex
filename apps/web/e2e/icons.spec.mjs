@@ -132,6 +132,81 @@ check(
   (await soldBy.locator('li [role="img"]').count()) === (await soldBy.locator('li').count()),
 )
 
+// ── The fish shadow, which is a measurement and not a decoration ──
+// The four silhouettes are drawn at true relative size in one shared canvas,
+// so the sizes are only honest while every one renders in the same box. An
+// icon component would fit each to its own box and quietly say a minnow is as
+// big as a tuna.
+const shadowBox = async (id) => {
+  await go(`/item/${id}`)
+  const el = page.locator('[role="img"][aria-label*="shadow"]').first()
+  if ((await el.count()) === 0) return null
+  const box = await el.boundingBox()
+  return box === null ? null : { w: Math.round(box.width), h: Math.round(box.height) }
+}
+const koi = await shadowBox('koi') // medium
+const tuna = await shadowBox('tuna') // large
+check('a fish page draws its shadow on water', koi !== null, JSON.stringify(koi))
+check(
+  'every shadow is the same box, so the fish inside are comparable',
+  koi !== null && tuna !== null && koi.w === tuna.w && koi.h === tuna.h,
+  `${JSON.stringify(koi)} vs ${JSON.stringify(tuna)}`,
+)
+check('the shadow is not squashed into an icon tile', (koi?.w ?? 0) >= 120, `${koi?.w}px wide`)
+await go('/item/koi')
+check(
+  'the size is still stated in words',
+  (await page.locator('main').innerText()).includes('medium shadow in the water'),
+)
+
+// ── Map: weather filter, and the tag that only appears when it means something ──
+await go('/map?region=the_beach')
+const beach = await page.locator('main').innerText()
+check(
+  'the map offers a weather filter',
+  beach.includes('Any weather') && beach.includes('Blizzard'),
+)
+check('a weather-gated row is tagged', /not in wind|rain \/ storm|blizzard/.test(beach))
+
+// All-weather things carry no tag — the owner's call, and the reason the tag
+// is worth reading at all. The Clam is available in every weather its seasons
+// allow, so its row must say nothing about weather.
+const clamRow = (await page.locator('main a[href$="/item/clam"]').first().innerText()).replace(
+  /\s+/g,
+  ' ',
+)
+check('an all-weather row carries no weather tag', !/not in| \/ /.test(clamRow), clamRow)
+
+// Winter cannot rain, so offering Rain beside Winter would be a dead end.
+await go('/map?region=the_beach&season=winter')
+const winter = await page.locator('main').innerText()
+check(
+  'the season narrows which weathers are offered',
+  !winter.includes('Rain'),
+  'no Rain in winter',
+)
+check('winter weathers are still offered', winter.includes('Blizzard') && winter.includes('Snow'))
+
+// The filter is in the URL and actually narrows.
+//
+// Counting rendered rows would prove nothing — each group previews eight and
+// hides the rest behind "Show N more", so the visible count is the same 36
+// whatever the filter does. The group headings carry the real totals.
+const totals = async () =>
+  (await page.locator('main section p').allInnerTexts())
+    .flatMap((t) => [...t.matchAll(/·\s*(\d+)/g)].map((m) => Number(m[1])))
+    .reduce((sum, n) => sum + n, 0)
+
+await go('/map?region=the_beach')
+const allFound = await totals()
+await go('/map?region=the_beach&weather=blizzard')
+const inBlizzard = await totals()
+check(
+  'filtering by weather narrows the list',
+  inBlizzard > 0 && inBlizzard < allFound,
+  `${inBlizzard} of ${allFound}`,
+)
+
 await page.close()
 await browser.close()
 finish()

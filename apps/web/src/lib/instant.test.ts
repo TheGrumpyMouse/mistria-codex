@@ -70,6 +70,6 @@ describe('legalWeather', () => {
 
 describe('formatDate', () => {
   it('reads the way the game writes a date', () => {
-    expect(formatDate({ season: 'fall', day: 12, year: 2 })).toBe('Fall 12 · Y2')
+    expect(formatDate({ season: 'fall', day: 12 })).toBe('Fall 12')
   })
 })

@@ -63,8 +63,14 @@ export function formatClock(minutes: number): string {
 }
 
 /** `Fall 12 · Y2`. */
-export const formatDate = (instant: Pick<Instant, 'season' | 'day' | 'year'>): string =>
-  `${titleCase(instant.season)} ${instant.day} · Y${instant.year}`
+/**
+ * "Fall 12". No year — nothing on any screen varies by one, so printing `Y1`
+ * beside a date the reader cannot change was a label pretending to be a
+ * setting. `year` stays in the instant (and in shared links) so the matcher's
+ * `min_year` clause keeps working the day something needs it.
+ */
+export const formatDate = (instant: Pick<Instant, 'season' | 'day'>): string =>
+  `${titleCase(instant.season)} ${instant.day}`
 
 export const titleCase = (word: string): string => word.charAt(0).toUpperCase() + word.slice(1)
 

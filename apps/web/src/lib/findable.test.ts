@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { AvailabilityIndex, Instant, Rule } from './findable'
-import { findAvailable, groupByKind, ruleMatches, weekdayOf } from './findable'
+import { findAvailable, groupByKind, ruleMatches, weatherRestriction, weekdayOf } from './findable'
 
 const SPRING = 1
 const SUMMER = 2
@@ -186,5 +186,67 @@ describe('groupByKind', () => {
       { id: 'b', kind: 'forage', locationIds: [], rarity: null, requires: [] },
     ])
     expect(groups.map((g) => g.kind)).toEqual(['forage', 'fish'])
+  })
+})
+
+describe('weatherRestriction', () => {
+  const SPRING = 1
+  const WINTER = 8
+  const CLEAR = 1
+  const RAIN = 2
+  const STORM = 4
+  const WIND = 8
+  const SNOW = 16
+  const BLIZZARD = 32
+  const SPRING_ALL = CLEAR | RAIN | STORM | WIND
+  const WINTER_ALL = CLEAR | WIND | SNOW | BLIZZARD
+
+  it('says nothing when every possible weather is covered', () => {
+    // The common case by a distance, and the reason the tag is worth reading
+    // at all: a spring fish that bites in anything must not be labelled with
+    // the four weathers spring has.
+    expect(weatherRestriction(SPRING, SPRING_ALL)).toBeNull()
+  })
+
+  it('says nothing for a rule with no weather of its own', () => {
+    // Mines and interiors are `not_applicable`, which the build ships as every
+    // legal weather — indistinguishable here from unrestricted, and correctly
+    // so: neither fact narrows anything.
+    expect(weatherRestriction(WINTER, WINTER_ALL)).toBeNull()
+  })
+
+  it('never names a weather the covered seasons cannot produce', () => {
+    // Snow is set in the mask but the entity is spring-only, so quoting it
+    // would describe a day that cannot happen.
+    const note = weatherRestriction(SPRING, CLEAR | SNOW)
+    expect(note).toEqual({ kind: 'only', weathers: ['clear'] })
+  })
+
+  it('lists what it appears in when that is the shorter list', () => {
+    expect(weatherRestriction(SPRING, RAIN | STORM)).toEqual({
+      kind: 'only',
+      weathers: ['rain', 'storm'],
+    })
+  })
+
+  it('lists what it misses when that is shorter', () => {
+    // Five of six read as a wall of text; "not in wind" is the same fact.
+    expect(weatherRestriction(WINTER, CLEAR | SNOW | BLIZZARD)).toEqual({
+      kind: 'except',
+      weathers: ['wind'],
+    })
+  })
+
+  it('prefers the positive list on a tie', () => {
+    expect(weatherRestriction(SPRING, CLEAR | RAIN)).toEqual({
+      kind: 'only',
+      weathers: ['clear', 'rain'],
+    })
+  })
+
+  it('refuses to claim a thing is never available', () => {
+    // An empty mask cannot come out of the build; if one ever does, saying
+    // nothing beats telling a player to stop looking.
+    expect(weatherRestriction(SPRING, 0)).toBeNull()
   })
 })

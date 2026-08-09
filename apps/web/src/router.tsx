@@ -179,10 +179,16 @@ const mapRoute = createRoute({
     const season = ['spring', 'summer', 'fall', 'winter'].includes(search.season as string)
       ? (search.season as string)
       : undefined
+    const weather = ['clear', 'rain', 'storm', 'wind', 'snow', 'blizzard'].includes(
+      search.weather as string,
+    )
+      ? (search.weather as string)
+      : undefined
     const q = optionalString(search.q)
     return {
       ...(typeof region === 'string' && region !== '' ? { region } : {}),
       ...(season === undefined ? {} : { season }),
+      ...(weather === undefined ? {} : { weather }),
       ...(q === undefined ? {} : { q }),
     }
   },

@@ -3,6 +3,7 @@ import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { BackLink } from '~/components/BackLink'
+import { FishShadow } from '~/components/FishShadow'
 import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
 import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
@@ -440,12 +441,12 @@ export function ItemRoute() {
           const shadow = fishFacets.find((f) => f.item_id === item.id)?.shadow_size
           if (shadow == null) return null
           return (
-            <p className="mt-2 flex items-center gap-2.5 text-ink-mute text-sm">
-              <ItemIcon iconKey={`ui/fish_shadow_${shadow}`} name={`${shadow} shadow`} size="md" />
-              <span>
+            <div className="mt-3 flex items-center gap-3">
+              <FishShadow size={shadow} />
+              <p className="text-ink-mute text-sm">
                 Shows a <span className="text-ink">{shadow}</span> shadow in the water.
-              </span>
-            </p>
+              </p>
+            </div>
           )
         })()}
 

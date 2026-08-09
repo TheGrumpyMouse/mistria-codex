@@ -191,7 +191,19 @@ function ItemList({ wanted }: { wanted: ReturnType<typeof itemsWanted> }) {
                   )}
                 </span>
               ))}
-              {entry.gated ? ' · not from the start' : ''}
+              {/* Name the gate rather than hedging. 106 of the 193 items are
+                  gated, and they all used to read "not from the start" — which
+                  is true of every one and tells you nothing about any. "The
+                  Mines unlocked" or "Year 2" is the same sentence's worth of
+                  space and is the answer. Several labels are alternative
+                  routes, so they join with "or". */}
+              {entry.gated && entry.gateLabels.length > 0 && (
+                <> · {entry.gateLabels.slice(0, 2).join(' or ')}</>
+              )}
+              {entry.gated && entry.gateLabels.length > 2 && (
+                <> or {entry.gateLabels.length - 2} other ways</>
+              )}
+              {entry.gated && entry.gateLabels.length === 0 && ' · not from the start'}
             </p>
           </div>
 

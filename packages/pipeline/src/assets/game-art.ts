@@ -29,6 +29,7 @@ import { gameRoot } from '../extract/toml.js'
 import { ASSETS_DIR, ASSETS_MANIFEST, DATA_DIR, REPO_ROOT, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 import { writeJson } from '../lib/write-json.js'
+import { type CropRect, cropPng } from './crop.js'
 import {
   type AssetEntry,
   ATTRIBUTION_TEXT,
@@ -64,7 +65,25 @@ interface GameWant {
    * wardrobe entry break every other sprite's copy.
    */
   derived?: true
+  /** Take a rectangle out of the source rather than the whole file. */
+  crop?: CropRect
 }
+
+/**
+ * One window over all four silhouettes, and it must stay one window.
+ *
+ * The files are 388×97 strips of four 97×97 frames, and inside that shared
+ * canvas each fish is drawn at its **true relative size** — 12×5 pixels for a
+ * small one up to 31×16 for a giant, all centred on roughly the same point. So
+ * the same rectangle over each turns four sprites into a size chart, which is
+ * the entire reason the app shows them. Cropping each to its own content, or
+ * letting the icon box scale each to fit, would make all four the same size and
+ * throw away the only thing they say.
+ *
+ * The rectangle is the union of the four fish plus a margin of water, centred
+ * on where they sit rather than on the frame — they swim left of centre.
+ */
+const FISH_SHADOW_WINDOW: CropRect = { x: 6, y: 33, width: 64, height: 32 }
 
 /**
  * The in-water silhouettes, one per shadow size the fish facet records. The
@@ -75,7 +94,35 @@ const FISH_SILHOUETTES: GameWant[] = ['small', 'medium', 'large', 'giant'].map((
   family: 'ui',
   sprite: `spr_fish_silhouette_${size}_0_swim`,
   iconKeys: [`ui/fish_shadow_${size}`],
+  crop: FISH_SHADOW_WINDOW,
 }))
+
+/**
+ * Open water, to put the silhouettes on.
+ *
+ * A shadow on the page background is a grey blob; on water it is what you look
+ * down at from the bank, which is the whole point of showing it. Taken from the
+ * spring exterior tileset, whose sheet is sixteen animation frames of a
+ * 21-column, 16-pixel grid — tile rows 32 to 34 are the one solid block of
+ * open water in frame 0, every other blue region being an edge or a transition.
+ * Cropped to exactly the silhouette window so the two compose with no tiling
+ * and therefore no seam.
+ */
+const WATER: GameWant = {
+  family: 'ui',
+  sprite: 'spr_main_exteriors_water_spring',
+  iconKeys: ['ui/water'],
+  // Tiles 12–15 of rows 32–33, on the grid rather than across it. Chosen by
+  // measuring: of the fourteen 64×32 windows that block affords, this is the
+  // one with the fewest colours and the highest single-colour share (88%), so
+  // it reads as open water rather than as a wave caught mid-frame.
+  crop: {
+    x: 12 * 16,
+    y: 32 * 16,
+    width: FISH_SHADOW_WINDOW.width,
+    height: FISH_SHADOW_WINDOW.height,
+  },
+}
 
 /**
  * Chrome the wiki hosts all but one of.
@@ -182,6 +229,7 @@ async function collectWants(covered: Set<string>, sprites: Set<string>): Promise
   return [
     ...bySprite.values(),
     ...FISH_SILHOUETTES,
+    WATER,
     ...UI_ICONS.filter((want) => !want.iconKeys.every((key) => covered.has(key))),
   ].sort((a, b) => a.sprite.localeCompare(b.sprite))
 }
@@ -220,7 +268,10 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
   for (const want of wants) {
     const sourcePath = sprites.get(want.sprite)
     if (sourcePath === undefined) continue
-    const body = await readFile(sourcePath)
+    // Cropped before anything measures it, so the manifest's dimensions, hash
+    // and byte count all describe what is actually on disk.
+    const raw = await readFile(sourcePath)
+    const body = want.crop === undefined ? raw : cropPng(raw, want.crop)
     const size = pngSize(body)
     if (size === null) throw new Error(`assets:game — ${want.sprite}.png is not a PNG`)
 

@@ -113,6 +113,29 @@ check('back restores the board filter', page.url().includes('q=heather'), page.u
 await go('/board?view=villagers&q=heather')
 check('the villager view lists who wants it', (await body()).includes('Adeline'))
 
+// A gated item names its gate rather than hedging. All 106 gated rows used to
+// read "not from the start", which is true of every one and tells you nothing
+// about any — the label is the answer the row exists to give.
+await go('/board?q=carrot')
+const carrot = await body()
+check('a year-gated item names the year', carrot.includes('Year 2'), 'Carrot')
+check('the vague fallback is gone', !carrot.includes('not from the start'))
+await go('/board?q=sap')
+check('a place-gated item names the place', (await body()).includes('The Mines unlocked'))
+
+// ── The calendar has no year control, because nothing varies by year ──
+// Not one of the availability rules carries a min_year, so the input filtered
+// nothing and only relabelled its own date. Year still parses out of a shared
+// link; it just does not pretend to be a setting.
+await go('/?season=fall&day=12&year=3&weather=rain&time=600')
+check(
+  'the calendar offers no year input',
+  (await page.locator('input[type="number"]').count()) === 0,
+)
+const dial = await body()
+check('the date reads without a year', dial.includes('Fall 12') && !/\bY\d+\b/.test(dial))
+check('an old link carrying a year still loads', dial.includes('findable now'))
+
 // ── 7. The calendar answers a different day differently ──
 await go('/?season=spring&day=3&year=1&weather=clear&time=600')
 const spring = await body()

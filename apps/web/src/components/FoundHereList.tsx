@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ItemIcon } from '~/components/ItemIcon'
 import { SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import type { DisplayIndex } from '~/lib/data'
-import { type FoundEntity, KIND_LABELS, KIND_ORDER } from '~/lib/findable'
+import { type FoundEntity, KIND_LABELS, KIND_ORDER, weatherRestriction } from '~/lib/findable'
 import { seasonsOf } from '~/lib/opportunity'
 import { iconKeyFor, routeFor } from '~/lib/search'
 import { useSpoilers } from '~/lib/spoilers'
@@ -93,6 +93,7 @@ function Group({
           const reason = veilReasonOf(entry)
           const veiled = reason !== null && !spoilers.shown(entity.id)
           const seasons = seasonsOf(entity.seasonMask)
+          const weather = weatherRestriction(entity.seasonMask, entity.weatherMask)
           return (
             <li key={entity.id}>
               <Link
@@ -112,7 +113,17 @@ function Group({
                     <span className="min-w-0 flex-1 truncate text-ink text-sm">
                       {entry?.n ?? entity.id.replace(/_/g, ' ')}
                     </span>
-                    <span className="flex shrink-0 gap-1">
+                    <span className="flex shrink-0 items-center gap-1">
+                      {/* Weather before season, because it is the rarer and
+                          therefore more surprising constraint — "only in rain"
+                          changes a plan in a way "spring" does not. Absent on
+                          most rows by design: see `weatherRestriction`. */}
+                      {weather !== null && (
+                        <span className="rounded-pill border border-rule px-1.5 py-0.5 text-[0.625rem] text-ink-mute">
+                          {weather.kind === 'except' && 'not in '}
+                          {weather.weathers.join(' / ')}
+                        </span>
+                      )}
                       {seasons.length === SEASONS.length ? (
                         <span className="text-ink-faint text-[0.625rem]">all year</span>
                       ) : (

@@ -1,4 +1,12 @@
-import { SEASON_BIT, SEASONS, type Season } from '@mistria/schema'
+import {
+  SEASON_BIT,
+  SEASON_LEGAL_WEATHER,
+  SEASONS,
+  type Season,
+  WEATHER_BIT,
+  WEATHERS,
+  type Weather,
+} from '@mistria/schema'
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
@@ -53,7 +61,7 @@ interface SpotRecord {
 export function MapRoute() {
   const artUrl = useAtlas().mapUrl('map/valley')
   const navigate = route.useNavigate()
-  const { region, season, q } = route.useSearch()
+  const { region, season, weather, q } = route.useSearch()
   const [state, setState] = useState<{
     map: MapRecord | null
     locations: LocationRecord[]
@@ -99,9 +107,27 @@ export function MapRoute() {
   // of a screen the player just opened.
   const select = (id: string | null): void =>
     void navigate({ search: id === null ? {} : { region: id } })
+  // Changing season can strand the weather choice — there is no snow in
+  // summer — so a weather the new season cannot produce is dropped with it.
+  // Leaving it set would show an empty list and blame the wrong filter.
   const setSeason = (next: string | undefined): void =>
     void navigate({
-      search: ({ season: _, ...rest }) => (next === undefined ? rest : { ...rest, season: next }),
+      search: ({ season: _, weather: w, ...rest }) => {
+        const keep =
+          w !== undefined &&
+          (next === undefined ||
+            (SEASON_LEGAL_WEATHER[next as Season] & WEATHER_BIT[w as Weather]) !== 0)
+        return {
+          ...rest,
+          ...(next === undefined ? {} : { season: next }),
+          ...(keep ? { weather: w } : {}),
+        }
+      },
+      replace: true,
+    })
+  const setWeather = (next: string | undefined): void =>
+    void navigate({
+      search: ({ weather: _, ...rest }) => (next === undefined ? rest : { ...rest, weather: next }),
       replace: true,
     })
   const setQuery = (next: string): void =>
@@ -126,13 +152,28 @@ export function MapRoute() {
   const needle = (q ?? '').trim().toLowerCase()
   const filteredFound = useMemo(() => {
     const bit = season === undefined ? null : SEASON_BIT[season as Season]
+    const wx = weather === undefined ? null : WEATHER_BIT[weather as Weather]
     return found.filter((entity) => {
       if (bit !== null && (entity.seasonMask & bit) === 0) return false
+      // Unrestricted rules carry every legal weather, so they pass every
+      // weather filter — which is right: they really are available in rain.
+      if (wx !== null && (entity.weatherMask & wx) === 0) return false
       if (needle === '') return true
       const name = index[entity.id]?.n ?? entity.id.replace(/_/g, ' ')
       return name.toLowerCase().includes(needle)
     })
-  }, [found, season, needle, index])
+  }, [found, season, weather, needle, index])
+
+  /**
+   * Only weathers the chosen season can actually produce.
+   *
+   * Offering "Snow" beside "Summer" invites a click that can only ever return
+   * nothing, and an empty list reads as missing data rather than as an
+   * impossible question. With no season chosen, all six are on the table.
+   */
+  const offeredWeather = WEATHERS.filter(
+    (w) => season === undefined || (SEASON_LEGAL_WEATHER[season as Season] & WEATHER_BIT[w]) !== 0,
+  )
 
   if (error !== null) {
     return (
@@ -281,6 +322,41 @@ export function MapRoute() {
               </button>
             ))}
           </div>
+
+          {/* Weather is its own row rather than more chips on the season row:
+              the two narrow different things, and a single wrapping run of ten
+              pills reads as one list of alternatives. No season colour here —
+              colour is spoken for by the seasons. */}
+          <div className="mb-2 flex flex-wrap items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setWeather(undefined)}
+              className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+              style={
+                weather === undefined
+                  ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
+                  : { color: 'var(--ink-mute)' }
+              }
+            >
+              Any weather
+            </button>
+            {offeredWeather.map((w) => (
+              <button
+                key={w}
+                type="button"
+                onClick={() => setWeather(weather === w ? undefined : w)}
+                className="tap-target rounded-pill border border-rule px-2.5 py-1 text-xs transition-colors"
+                style={
+                  weather === w
+                    ? { background: 'var(--accent-tint)', color: 'var(--accent)', fontWeight: 600 }
+                    : { color: 'var(--ink-mute)' }
+                }
+              >
+                {titleCase(w)}
+              </button>
+            ))}
+          </div>
+
           <input
             type="search"
             value={q ?? ''}
@@ -294,7 +370,8 @@ export function MapRoute() {
             <p className="text-ink-mute text-sm">
               Nothing here matches
               {needle !== '' && <> “{(q ?? '').trim()}”</>}
-              {season !== undefined && <> in {titleCase(season)}</>} — clear a filter to see the
+              {season !== undefined && <> in {titleCase(season)}</>}
+              {weather !== undefined && <> in {titleCase(weather)}</>} — clear a filter to see the
               full list.
             </p>
           ) : (

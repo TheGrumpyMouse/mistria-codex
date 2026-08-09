@@ -46,6 +46,16 @@ export interface WantedItem {
   seasons: string[]
   /** True when *every* request for it is gated — you cannot be asked yet. */
   gated: boolean
+  /**
+   * What stands in the way, when `gated` — the distinct gate labels, in the
+   * order first seen.
+   *
+   * These are alternative routes, not a checklist: each request is its own way
+   * to be asked, so opening any one of them opens the item. Within a single
+   * request several gates are an AND, but that detail belongs on the request
+   * itself (the villager view shows it) rather than on a summary row.
+   */
+  gateLabels: string[]
 }
 
 const SEASON_ORDER = ['spring', 'summer', 'fall', 'winter']
@@ -65,7 +75,12 @@ const SEASON_ORDER = ['spring', 'summer', 'fall', 'winter']
 export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
   const byItem = new Map<
     string,
-    WantedItem & { askerSet: Map<string, string | null>; seasonSet: Set<string>; ungated: boolean }
+    WantedItem & {
+      askerSet: Map<string, string | null>
+      seasonSet: Set<string>
+      ungated: boolean
+      labelSet: Set<string>
+    }
   >()
 
   for (const request of requests) {
@@ -79,9 +94,11 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
         askers: [],
         seasons: [],
         gated: true,
+        gateLabels: [],
         askerSet: new Map<string, string | null>(),
         seasonSet: new Set<string>(),
         ungated: false,
+        labelSet: new Set<string>(),
       }
 
       existing.keep = Math.max(existing.keep, item.quantity)
@@ -98,6 +115,7 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
       // One open route is enough. See the note above: this is an OR, and
       // `gated` is its negation.
       if (request.gates.length === 0) existing.ungated = true
+      for (const gate of request.gates) existing.labelSet.add(gate.label)
 
       byItem.set(item.id, existing)
     }
@@ -117,6 +135,10 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
         (a, b) => SEASON_ORDER.indexOf(a) - SEASON_ORDER.indexOf(b),
       ),
       gated: !entry.ungated,
+      // Only when nothing is open: on an available item the labels describe
+      // routes you do not need, which would read as a warning about something
+      // you can already have.
+      gateLabels: entry.ungated ? [] : [...entry.labelSet],
     }))
     .sort((a, b) => b.requests - a.requests || b.keep - a.keep || a.name.localeCompare(b.name))
 }

@@ -20,8 +20,11 @@ import {
   type DayOfWeek,
   DOW_BIT,
   SEASON_BIT,
+  SEASON_LEGAL_WEATHER,
+  SEASONS,
   type Season,
   WEATHER_BIT,
+  WEATHERS,
   type Weather,
 } from '@mistria/schema'
 
@@ -168,6 +171,59 @@ export interface FoundEntity {
   kind: string
   /** Which of the four seasons any rule here covers, as season names. */
   seasonMask: number
+  /** Which weathers any rule here covers. See `weatherRestriction`. */
+  weatherMask: number
+}
+
+/**
+ * What weather does to this thing's availability, said the shorter way round.
+ *
+ * `only` lists the weathers it appears in; `except` lists the ones it does not.
+ * Both are true statements about the same mask and the shorter one wins — a
+ * fish available in five of the six weathers is described by the one it misses,
+ * because "clear / rain / storm / snow / blizzard" is a tag nobody finishes
+ * reading and "not in wind" is the fact it was trying to convey.
+ */
+export interface WeatherNote {
+  kind: 'only' | 'except'
+  weathers: Weather[]
+}
+
+/**
+ * The weather worth naming, or null when weather says nothing here.
+ *
+ * A rule's `wx` is already intersected with what can physically fall in its
+ * seasons (`windowWeatherMask`), so a summer fish that bites in anything
+ * carries `clear|rain|storm|wind` and a mine drop — which has no weather at all
+ * — carries the same. Compared against all six weathers both look restricted,
+ * and tagging them "clear, rain, storm, wind" would put a meaningless label on
+ * most of the dataset while burying the handful that genuinely matter.
+ *
+ * So the comparison is against what is *possible*: a thing is weather-gated
+ * only when there is legal weather it does not appear in. Rain-only forageables
+ * and blizzard fish light up; everything else stays quiet — 122 of 610 entities
+ * carry a note, which is the difference between a signal and a decoration.
+ */
+export function weatherRestriction(seasonMask: number, weatherMask: number): WeatherNote | null {
+  const possible = SEASONS.reduce(
+    (mask, season) =>
+      (seasonMask & SEASON_BIT[season]) === 0 ? mask : mask | SEASON_LEGAL_WEATHER[season],
+    0,
+  )
+  if ((possible & ~weatherMask) === 0) return null
+
+  // Both lists are drawn from what is possible, so a spring-and-winter fish is
+  // never described by snow it could not meet in spring.
+  const only = WEATHERS.filter((w) => (possible & weatherMask & WEATHER_BIT[w]) !== 0)
+  const except = WEATHERS.filter((w) => (possible & ~weatherMask & WEATHER_BIT[w]) !== 0)
+
+  // An empty `only` would be a rule matching no weather at all, which the build
+  // cannot emit. Claiming "never" on the strength of a bug is worse than saying
+  // nothing.
+  if (only.length === 0) return null
+  return only.length <= except.length
+    ? { kind: 'only', weathers: only }
+    : { kind: 'except', weathers: except }
 }
 
 /**
@@ -190,9 +246,10 @@ export function foundAt(index: AvailabilityIndex, placeIds: Set<string>): FoundE
 
     const existing = byEntity.get(rule.e)
     if (existing === undefined) {
-      byEntity.set(rule.e, { id: rule.e, kind: rule.k, seasonMask: rule.sea })
+      byEntity.set(rule.e, { id: rule.e, kind: rule.k, seasonMask: rule.sea, weatherMask: rule.wx })
     } else {
       existing.seasonMask |= rule.sea
+      existing.weatherMask |= rule.wx
     }
   }
 

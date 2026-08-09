@@ -109,9 +109,16 @@ export function DayDial({ value, onChange, marks = {} }: DayDialProps) {
 function SeasonRow({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>) {
   return (
     <div className="mb-4 flex items-center justify-between gap-3">
-      {/* The group shrinks before the year input does — at 390px the four
-          seasons plus a year field do not fit at their natural width, and the
-          season that gets clipped is the one on the right, which is Winter. */}
+      {/* There is no year control here, and that is deliberate.
+          Nothing on this screen — or in the dataset — varies by year: not one
+          of the 1,459 availability rules carries a `min_year`, and no game file
+          gates a spawn by year, so the input filtered nothing and changed
+          nothing but its own label. A control that does nothing is worse than
+          no control, because people reasonably assume it works.
+          Year is not meaningless in the game, just not *here*: six board
+          requests unlock in year two, and the Board names that gate itself.
+          The `min_year` field and the matcher's year clause stay — they are
+          correct, and dormant is not the same as wrong. */}
       <fieldset className="flex min-w-0 flex-1 overflow-hidden rounded-tile border border-rule">
         <legend className="sr-only">Season</legend>
         {SEASONS.map((season) => {
@@ -133,23 +140,6 @@ function SeasonRow({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>
           )
         })}
       </fieldset>
-
-      <label className="flex shrink-0 items-center gap-1.5 text-ink-mute text-sm">
-        {/* The word is dropped on a phone, where those thirty-five pixels are
-            the difference between seeing Winter and seeing "Winte". The input
-            keeps its accessible name either way. */}
-        <span className="hidden sm:inline">Year</span>
-        <span className="sr-only sm:hidden">Year</span>
-        <input
-          type="number"
-          min={1}
-          value={value.year}
-          onChange={(event) => onChange({ year: Math.max(1, Number(event.target.value) || 1) })}
-          data-numeral
-          aria-label="Year"
-          className="w-11 rounded-tile border border-rule bg-paper px-1.5 py-1 text-ink"
-        />
-      </label>
     </div>
   )
 }
