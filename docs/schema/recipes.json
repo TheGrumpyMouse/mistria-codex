@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/recipes.json",
+  "title": "recipes",
+  "description": "Cooking, crafting, blacksmithing and woodcrafting recipes. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "kind": {
+        "type": "string",
+        "enum": [
+          "cooking",
+          "crafting",
+          "blacksmithing",
+          "woodcrafting"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "item_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          "quantity": {
+            "default": 1,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          }
+        },
+        "required": [
+          "item_id",
+          "quantity"
+        ],
+        "additionalProperties": false
+      },
+      "ingredients": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "tag": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "quantity": {
+              "default": 1,
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "item_id",
+            "tag",
+            "quantity"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "station": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "station_level": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "skill": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+              },
+              "level": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 60
+              }
+            },
+            "required": [
+              "id",
+              "level"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "craft_minutes": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "unlock": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": "string",
+                "enum": [
+                  "shop",
+                  "mail",
+                  "quest",
+                  "skill",
+                  "festival",
+                  "chest",
+                  "story",
+                  "default"
+                ]
+              },
+              "source_id": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "method",
+              "source_id"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "effects": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "health": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "stamina": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "mana": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "buffs": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "health",
+              "stamina",
+              "mana",
+              "buffs"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "kind",
+      "output",
+      "ingredients",
+      "station",
+      "station_level",
+      "skill",
+      "craft_minutes",
+      "unlock",
+      "effects"
+    ],
+    "additionalProperties": false
+  }
+}

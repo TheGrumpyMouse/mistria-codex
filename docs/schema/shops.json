@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/shops.json",
+  "title": "shops",
+  "description": "Shops, opening hours and stock. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "location_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "owner_character_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "staff_character_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "hours": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "days": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "mon",
+                  "tue",
+                  "wed",
+                  "thu",
+                  "fri",
+                  "sat",
+                  "sun"
+                ]
+              }
+            },
+            "from": {
+              "type": "string",
+              "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+            },
+            "to": {
+              "type": "string",
+              "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+            }
+          },
+          "required": [
+            "days",
+            "from",
+            "to"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "seasonal_closures": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+          ]
+        }
+      },
+      "stock": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+            },
+            "price": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "currency": {
+              "default": "tesserae",
+              "type": "string",
+              "enum": [
+                "tesserae",
+                "renown",
+                "essence",
+                "shiny_bead",
+                "breath_of_spring",
+                "queen_berry"
+              ]
+            },
+            "requires": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "skill",
+                      "perk",
+                      "quest",
+                      "town_rank",
+                      "building",
+                      "tool",
+                      "hearts",
+                      "item",
+                      "season_unlocked",
+                      "location",
+                      "year"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "op": {
+                    "type": "string",
+                    "enum": [
+                      ">=",
+                      ">",
+                      "==",
+                      "has",
+                      "done"
+                    ]
+                  },
+                  "value": {
+                    "default": null,
+                    "anyOf": [
+                      {
+                        "anyOf": [
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "type",
+                  "key",
+                  "op",
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "seasons": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "spring",
+                      "summer",
+                      "fall",
+                      "winter"
+                    ]
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "rotation": {
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "item_id",
+            "price",
+            "currency",
+            "requires",
+            "seasons",
+            "rotation"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "location_id",
+      "owner_character_id",
+      "staff_character_ids",
+      "hours",
+      "seasonal_closures",
+      "stock"
+    ],
+    "additionalProperties": false
+  }
+}

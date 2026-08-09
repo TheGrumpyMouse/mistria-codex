@@ -1,0 +1,338 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/animals.json",
+  "title": "animals",
+  "description": "Coop and barn animals. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "building": {
+        "type": "string",
+        "enum": [
+          "coop",
+          "barn"
+        ]
+      },
+      "matures_days": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "products": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "item_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+            },
+            "hearts_required": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "quality": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "normal",
+                    "silver",
+                    "gold",
+                    "perfect",
+                    "golden"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "item_id",
+            "hearts_required",
+            "quality"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "breeding": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "treat_item_id": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "gestation_days": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "treat_item_id",
+              "gestation_days"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "feed_item_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "purchase": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "price": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "currency": {
+                "default": "tesserae",
+                "type": "string",
+                "enum": [
+                  "tesserae",
+                  "renown",
+                  "essence",
+                  "shiny_bead",
+                  "breath_of_spring",
+                  "queen_berry"
+                ]
+              },
+              "shop_id": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+              }
+            },
+            "required": [
+              "price",
+              "currency",
+              "shop_id"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "building",
+      "matures_days",
+      "products",
+      "breeding",
+      "feed_item_ids",
+      "purchase"
+    ],
+    "additionalProperties": false
+  }
+}

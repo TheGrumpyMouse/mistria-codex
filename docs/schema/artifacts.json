@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/artifacts.json",
+  "title": "artifacts",
+  "description": "Artifact-only fields, keyed to an item. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "item_id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "dig_source": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "dig_spot",
+              "rock",
+              "floor_range",
+              "diving",
+              "panning"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "biome_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "rarity": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "common",
+              "uncommon",
+              "rare",
+              "epic",
+              "legendary"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [
+      "item_id",
+      "dig_source",
+      "biome_id",
+      "rarity"
+    ],
+    "additionalProperties": false
+  }
+}

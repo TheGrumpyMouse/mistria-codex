@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/schedules.json",
+  "title": "schedules",
+  "description": "NPC daily schedules as priority-ordered overrides. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "character_id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "entries": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "priority": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "when": {
+              "type": "object",
+              "properties": {
+                "seasons": {
+                  "default": null,
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "spring",
+                          "summer",
+                          "fall",
+                          "winter"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "days": {
+                  "default": null,
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "mon",
+                          "tue",
+                          "wed",
+                          "thu",
+                          "fri",
+                          "sat",
+                          "sun"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "weather": {
+                  "default": null,
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "clear",
+                          "rain",
+                          "storm",
+                          "wind",
+                          "snow",
+                          "blizzard"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "dates": {
+                  "default": null,
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "season": {
+                            "type": "string",
+                            "enum": [
+                              "spring",
+                              "summer",
+                              "fall",
+                              "winter"
+                            ]
+                          },
+                          "day": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 28
+                          }
+                        },
+                        "required": [
+                          "season",
+                          "day"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "requires": {
+                  "default": [],
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "skill",
+                          "perk",
+                          "quest",
+                          "town_rank",
+                          "building",
+                          "tool",
+                          "hearts",
+                          "item",
+                          "season_unlocked",
+                          "location",
+                          "year"
+                        ]
+                      },
+                      "key": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "op": {
+                        "type": "string",
+                        "enum": [
+                          ">=",
+                          ">",
+                          "==",
+                          "has",
+                          "done"
+                        ]
+                      },
+                      "value": {
+                        "default": null,
+                        "anyOf": [
+                          {
+                            "anyOf": [
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "key",
+                      "op",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "seasons",
+                "days",
+                "weather",
+                "dates",
+                "requires"
+              ],
+              "additionalProperties": false
+            },
+            "blocks": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "string",
+                    "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+                  },
+                  "to": {
+                    "type": "string",
+                    "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+                  },
+                  "location_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                  },
+                  "x": {
+                    "default": null,
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "y": {
+                    "default": null,
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "activity_key": {
+                    "default": null,
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "from",
+                  "to",
+                  "location_id",
+                  "x",
+                  "y",
+                  "activity_key"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "priority",
+            "label",
+            "when",
+            "blocks"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "character_id",
+      "entries",
+      "data_gaps"
+    ],
+    "additionalProperties": false
+  }
+}

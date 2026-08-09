@@ -1,0 +1,903 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/items.json",
+  "title": "items",
+  "description": "Every inventory item. The canonical table; facets reference it. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "fish",
+          "bug",
+          "forageable",
+          "crop",
+          "fruit",
+          "artifact",
+          "material",
+          "ranching_product",
+          "cooked",
+          "tool",
+          "weapon",
+          "equipment",
+          "furniture",
+          "cosmetic",
+          "seed",
+          "ingot",
+          "gem",
+          "ore",
+          "junk",
+          "misc"
+        ]
+      },
+      "subcategory": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "base_item_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "quality": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "normal",
+              "silver",
+              "gold",
+              "perfect",
+              "golden"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "sell_value": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "buy_value": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "stamina": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "health": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "mana": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "is_consumable": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "is_craftable": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "is_buyable": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "is_giftable": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "tags": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "museum": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "donatable": {
+                "type": "boolean"
+              },
+              "set_id": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "wing": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "archaeology",
+                      "flora",
+                      "insects",
+                      "fish"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "donation_points": {
+                "default": null,
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": -9007199254740991,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "donatable",
+              "set_id",
+              "wing",
+              "donation_points"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "availability": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": [
+                "fishing",
+                "diving",
+                "fish_trap",
+                "fish_bait",
+                "bug_net",
+                "rock_break",
+                "foraging",
+                "dig_spot",
+                "tree_shake",
+                "mine_drop",
+                "monster_drop",
+                "crop_harvest",
+                "ranching",
+                "shop",
+                "crafting",
+                "cooking",
+                "quest_reward",
+                "festival",
+                "mail",
+                "chest"
+              ]
+            },
+            "habitats": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "ocean",
+                  "river",
+                  "pond",
+                  "beach",
+                  "mine_water",
+                  "overworld",
+                  "forest",
+                  "mountain",
+                  "cave",
+                  "indoor",
+                  "farm"
+                ]
+              }
+            },
+            "locations": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+              }
+            },
+            "spot_ids": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+              }
+            },
+            "seasons": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "spring",
+                  "summer",
+                  "fall",
+                  "winter"
+                ]
+              }
+            },
+            "weather": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "clear",
+                      "rain",
+                      "storm",
+                      "wind",
+                      "snow",
+                      "blizzard"
+                    ]
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "weather_precision": {
+              "type": "string",
+              "enum": [
+                "exact",
+                "coarse",
+                "block",
+                "not_applicable",
+                "unknown"
+              ]
+            },
+            "time": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "from": {
+                        "type": "string",
+                        "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+                      },
+                      "to": {
+                        "type": "string",
+                        "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+                      }
+                    },
+                    "required": [
+                      "from",
+                      "to"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "time_blocks": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "morning",
+                      "day",
+                      "evening",
+                      "night"
+                    ]
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "time_precision": {
+              "type": "string",
+              "enum": [
+                "exact",
+                "coarse",
+                "block",
+                "not_applicable",
+                "unknown"
+              ]
+            },
+            "days": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "mon",
+                      "tue",
+                      "wed",
+                      "thu",
+                      "fri",
+                      "sat",
+                      "sun"
+                    ]
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "dates": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "season": {
+                        "type": "string",
+                        "enum": [
+                          "spring",
+                          "summer",
+                          "fall",
+                          "winter"
+                        ]
+                      },
+                      "day": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 28
+                      }
+                    },
+                    "required": [
+                      "season",
+                      "day"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "depth": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "type": "integer",
+                      "minimum": -9007199254740991,
+                      "maximum": 9007199254740991
+                    },
+                    "max": {
+                      "type": "integer",
+                      "minimum": -9007199254740991,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "min",
+                    "max"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "biome_id": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "min_year": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "rarity": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "common",
+                    "uncommon",
+                    "rare",
+                    "epic",
+                    "legendary"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "chance": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "quantity": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 9007199254740991
+                    },
+                    "max": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "min",
+                    "max"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "requires": {
+              "default": [],
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "skill",
+                      "perk",
+                      "quest",
+                      "town_rank",
+                      "building",
+                      "tool",
+                      "hearts",
+                      "item",
+                      "season_unlocked",
+                      "location",
+                      "year"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "op": {
+                    "type": "string",
+                    "enum": [
+                      ">=",
+                      ">",
+                      "==",
+                      "has",
+                      "done"
+                    ]
+                  },
+                  "value": {
+                    "default": null,
+                    "anyOf": [
+                      {
+                        "anyOf": [
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "type",
+                  "key",
+                  "op",
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "confidence": {
+              "type": "string",
+              "enum": [
+                "verified",
+                "wiki",
+                "inferred"
+              ]
+            },
+            "prov": {
+              "type": "string",
+              "enum": [
+                "game_files",
+                "wiki_cargo",
+                "wiki_page",
+                "manual",
+                "community_archive"
+              ]
+            }
+          },
+          "required": [
+            "method",
+            "habitats",
+            "locations",
+            "spot_ids",
+            "seasons",
+            "weather",
+            "weather_precision",
+            "time",
+            "time_blocks",
+            "time_precision",
+            "days",
+            "dates",
+            "depth",
+            "biome_id",
+            "min_year",
+            "rarity",
+            "chance",
+            "quantity",
+            "requires",
+            "confidence",
+            "prov"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "used_in_recipe_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "sold_by": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "category",
+      "subcategory",
+      "base_item_id",
+      "quality",
+      "sell_value",
+      "buy_value",
+      "stamina",
+      "health",
+      "mana",
+      "is_consumable",
+      "is_craftable",
+      "is_buyable",
+      "is_giftable",
+      "tags",
+      "museum",
+      "availability",
+      "used_in_recipe_ids",
+      "sold_by"
+    ],
+    "additionalProperties": false
+  }
+}

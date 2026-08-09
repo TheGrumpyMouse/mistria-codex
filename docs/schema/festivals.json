@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/festivals.json",
+  "title": "festivals",
+  "description": "Seasonal festivals. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "date": {
+        "type": "object",
+        "properties": {
+          "season": {
+            "type": "string",
+            "enum": [
+              "spring",
+              "summer",
+              "fall",
+              "winter"
+            ]
+          },
+          "day": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 28
+          }
+        },
+        "required": [
+          "season",
+          "day"
+        ],
+        "additionalProperties": false
+      },
+      "implemented": {
+        "default": true,
+        "type": "boolean"
+      },
+      "location_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "time": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "from": {
+                "type": "string",
+                "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+              },
+              "to": {
+                "type": "string",
+                "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "currency_item_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "activities": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "rewards": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "prerequisites": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "skill",
+                "perk",
+                "quest",
+                "town_rank",
+                "building",
+                "tool",
+                "hearts",
+                "item",
+                "season_unlocked",
+                "location",
+                "year"
+              ]
+            },
+            "key": {
+              "type": "string",
+              "minLength": 1
+            },
+            "op": {
+              "type": "string",
+              "enum": [
+                ">=",
+                ">",
+                "==",
+                "has",
+                "done"
+              ]
+            },
+            "value": {
+              "default": null,
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "key",
+            "op",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "date",
+      "implemented",
+      "location_id",
+      "time",
+      "currency_item_id",
+      "activities",
+      "rewards",
+      "prerequisites"
+    ],
+    "additionalProperties": false
+  }
+}

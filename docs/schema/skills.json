@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mistria-codex/schema/skills.json",
+  "title": "skills",
+  "description": "The nine skills and their perks. Generated from packages/schema — do not edit.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "numeric_id": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "numeric_id_game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id_status": {
+        "default": "provisional",
+        "type": "string",
+        "enum": [
+          "provisional",
+          "confirmed_stale",
+          "confirmed"
+        ]
+      },
+      "former_ids": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        }
+      },
+      "game_version": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "version_added": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "verified",
+          "wiki",
+          "inferred"
+        ]
+      },
+      "prov": {
+        "type": "object",
+        "propertyNames": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "string",
+          "enum": [
+            "game_files",
+            "wiki_cargo",
+            "wiki_page",
+            "manual",
+            "community_archive"
+          ]
+        }
+      },
+      "data_gaps": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "icon_key": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "wiki_page": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "blurb": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 300
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "max_level": {
+        "default": 60,
+        "type": "integer",
+        "minimum": -9007199254740991,
+        "maximum": 9007199254740991
+      },
+      "xp_curve": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "perks": {
+        "default": [],
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+            },
+            "name": {
+              "type": "string"
+            },
+            "tier": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "level": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "essence_cost": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "effect_key": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "statue": {
+              "default": null,
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "caldarus",
+                    "mines"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "tier",
+            "level",
+            "essence_cost",
+            "effect_key",
+            "statue"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "numeric_id",
+      "numeric_id_game_version",
+      "id_status",
+      "former_ids",
+      "game_version",
+      "version_added",
+      "confidence",
+      "prov",
+      "data_gaps",
+      "icon_key",
+      "wiki_page",
+      "blurb",
+      "max_level",
+      "xp_curve",
+      "perks"
+    ],
+    "additionalProperties": false
+  }
+}

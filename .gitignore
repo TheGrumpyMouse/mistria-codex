@@ -34,4 +34,5 @@ Thumbs.db
 /*.txt
 
 # Internal docs
-docs/
+docs/assets
+docs/research
