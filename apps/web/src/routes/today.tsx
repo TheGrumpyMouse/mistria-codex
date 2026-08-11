@@ -18,7 +18,7 @@ import {
 } from '~/lib/findable'
 import { useDocumentTitle } from '~/lib/head'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
-import { saveCalendarSelection } from '~/lib/instant-memory'
+import { recordCalendarSelection, saveCalendarSelection } from '~/lib/instant-memory'
 import { type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
 import { sortEntities, useListSort } from '~/lib/list-sort'
 import { doneIn } from '~/lib/progress'
@@ -93,6 +93,19 @@ export function TodayRoute() {
   }, [instant.season, instant.day])
 
   const update = (next: Partial<Instant>): void => {
+    // A deliberate act on the dial is the "last selected date" fact that rides
+    // sync — narrowing weather or time is not choosing a date, so it is not
+    // one. The localStorage cache is written by the effect above instead,
+    // which also catches Back and pasted links.
+    const changedDate =
+      (next.season !== undefined && next.season !== instant.season) ||
+      (next.day !== undefined && next.day !== instant.day)
+    if (changedDate) {
+      recordCalendarSelection({
+        season: next.season ?? instant.season,
+        day: next.day ?? instant.day,
+      })
+    }
     void navigate({ search: (prev) => ({ ...prev, ...next }), replace: true })
   }
 

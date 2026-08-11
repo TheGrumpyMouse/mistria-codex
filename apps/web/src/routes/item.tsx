@@ -1147,28 +1147,43 @@ export function ItemRoute() {
 
       {opinions.size > 0 && (
         <Section title="As a gift">
-          <ul className="flex flex-col gap-1.5">
+          {/* Chips with faces, the villager page's Family pattern — a chip
+              list is where an icon belongs (§4a), and "who loves this" is
+              answered faster by six faces than six names. A veiled villager
+              keeps the chip and loses the face and the name: a sprite is as
+              much a spoiler as the text beside it. */}
+          <ul className="flex flex-col gap-2">
             {PREF_ORDER.filter((level) => opinions.has(level)).map((level) => (
               <li key={level} className="text-sm">
                 <span className="text-ink capitalize">{level}</span>
-                <span className="text-ink-mute">
-                  {' — '}
+                <ul className="mt-1 flex flex-wrap items-center gap-1.5">
                   {(opinions.get(level) ?? [])
                     .map((c) => ({ id: c, name: index[c]?.n ?? c.replace(/_/g, ' ') }))
                     .sort((a, b) => a.name.localeCompare(b.name))
-                    .map((person, i) => (
-                      <span key={person.id}>
-                        {i > 0 && ', '}
-                        <Link
-                          to="/villager/$id"
-                          params={{ id: person.id }}
-                          className="underline decoration-rule underline-offset-4 hover:text-ink"
-                        >
-                          {person.name}
-                        </Link>
-                      </span>
-                    ))}
-                </span>
+                    .map((person) => {
+                      const veiled = veilReasonOf(index[person.id])
+                      return (
+                        <li key={person.id}>
+                          {veiled !== null && !spoilers.shown(person.id) ? (
+                            <SpoilerChip reason={veiled} />
+                          ) : (
+                            <Link
+                              to="/villager/$id"
+                              params={{ id: person.id }}
+                              className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+                            >
+                              <ItemIcon
+                                iconKey={iconKeyFor(person.id, index[person.id])}
+                                name={person.name}
+                                size="sm"
+                              />
+                              {person.name}
+                            </Link>
+                          )}
+                        </li>
+                      )
+                    })}
+                </ul>
               </li>
             ))}
           </ul>

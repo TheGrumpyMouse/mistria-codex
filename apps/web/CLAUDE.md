@@ -234,9 +234,13 @@ clone with no art, which a tile cannot.
 
 A row, a chip or a heading takes an icon. A comma-separated run of names inside
 a sentence does not: two dozen faces inline is noise, and a 24px tile in a 14px
-line drags the leading around. "As a gift" on the item page and the asker run on
-the board are deliberately text — the villager page already offers the icon view
-of the same data behind its `DisplayToggle`.
+line drags the leading around. The asker run on the board is deliberately text —
+the villager page already offers the icon view of the same data behind its
+`DisplayToggle`. "As a gift" on the item page used to be the other cited case;
+by owner decision it is now a **chip list** (the villager page's Family
+pattern), which is the sanctioned form — the rule bans icons inside sentences,
+not lists of chips. A veiled villager keeps the chip and loses the face and the
+name: a sprite is as much a spoiler as the text beside it.
 
 Currency is the one exception, on detail pages only (`ui/tesserae`,
 `ui/renown_gold`), and **the coin never replaces the unit**: it is `500t` beside

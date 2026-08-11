@@ -1,4 +1,5 @@
 import { generateCode, parseCode } from '@mistria/sync-client'
+import { adoptSyncedCalendarSelection } from './instant-memory'
 import { allProgress, applyMerged, mergeProgress, type ProgressRow } from './progress'
 
 /**
@@ -103,6 +104,10 @@ export async function syncNow(): Promise<SyncResult> {
     const etag = pulled.headers.get('etag')
     const merged = mergeProgress(await allProgress(), remote.rows ?? [])
     await applyMerged(merged)
+    // The calendar's last-selected date rides the same rows; its localStorage
+    // cache has to follow the merge or the dial would keep restoring this
+    // device's older selection.
+    adoptSyncedCalendarSelection(merged)
 
     const push = await fetch(url, {
       method: 'PUT',
@@ -124,6 +129,7 @@ export async function syncNow(): Promise<SyncResult> {
       const conflict = (await push.json()) as { current?: Blob }
       const remerged = mergeProgress(merged, conflict.current?.rows ?? [])
       await applyMerged(remerged)
+      adoptSyncedCalendarSelection(remerged)
 
       const retry = await fetch(url, {
         method: 'PUT',
