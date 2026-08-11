@@ -45,11 +45,17 @@ const MAX_ROWS = 20_000
 function corsHeaders(request: Request, env: Env): Record<string, string> {
   // An explicit allowlist. `*` on an endpoint that accepts writes lets any page
   // anyone visits alter their progress in the background.
+  //
+  // Trailing slashes are stripped before comparing: an Origin header is scheme
+  // + host and never ends in one, and a configured `https://host/` silently
+  // matching nothing is exactly how sync shipped broken — the browser blocked
+  // every response and the app could only say "could not reach the server".
+  const normalize = (o: string): string => o.replace(/\/+$/, '')
   const allowed = (env.ALLOWED_ORIGINS ?? '')
     .split(',')
-    .map((o) => o.trim())
+    .map((o) => normalize(o.trim()))
     .filter(Boolean)
-  const origin = request.headers.get('origin') ?? ''
+  const origin = normalize(request.headers.get('origin') ?? '')
   const ok = allowed.includes(origin)
 
   return {

@@ -293,7 +293,7 @@ packages/pipeline/      extract/ enrich/ normalise/ build/ validate/
                         extract/ reads the game's TOML; build/game-facts.ts is what the builders see of it.
 packages/sync-client/   the CRDT merge — imported by both the app and the Worker
 apps/web/               the PWA (Vite + React + TanStack Router + Tailwind v4) — has its own CLAUDE.md
-workers/sync/           Cloudflare Worker (Hono) — not started
+workers/sync/           Cloudflare Worker — deployed; a dumb blob store with an etag, the CRDT merge stays client-side
 sources/ curated/ data/ see the tier table above; curated/ has its own CLAUDE.md
 docs/                   PLAN.md, research/, schema/, generated reports
 ```

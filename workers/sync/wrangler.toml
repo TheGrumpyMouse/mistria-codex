@@ -15,7 +15,7 @@ id = "2a5d0d4b1a3b487dbb15b6aa30f5a363"
 # no path: the Pages project path is not part of an origin, and including it
 # means nothing ever matches. See README.md.
 [vars]
-ALLOWED_ORIGINS = "https://thegrumpymouse.github.io/"
+ALLOWED_ORIGINS = "https://thegrumpymouse.github.io"
 
 # Costs no KV operations, unlike counting requests in KV itself.
 [[unsafe.bindings]]
