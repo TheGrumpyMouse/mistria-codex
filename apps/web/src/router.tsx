@@ -10,6 +10,7 @@ import { AppShell } from '~/app/AppShell'
 import { InstantSearch } from '~/lib/instant'
 import { savedCalendarSelection } from '~/lib/instant-memory'
 import { AboutRoute } from '~/routes/about'
+import { AnimalRoute } from '~/routes/animal'
 import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
 import { BrowseRoute } from '~/routes/browse'
@@ -18,8 +19,10 @@ import { ItemRoute } from '~/routes/item'
 import { MapRoute } from '~/routes/map'
 import { MinesRoute } from '~/routes/mines'
 import { MuseumRoute } from '~/routes/museum'
+import { PetRoute } from '~/routes/pet'
 import { PlaceRoute } from '~/routes/place'
 import { QuestRoute } from '~/routes/quest'
+import { RanchRoute } from '~/routes/ranch'
 import { SearchRoute } from '~/routes/search'
 import { SettingsRoute } from '~/routes/settings'
 import { TodayRoute } from '~/routes/today'
@@ -130,6 +133,24 @@ const monsterRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/monster/$id',
   component: BestiaryRoute,
+})
+
+const ranchRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/ranch',
+  component: RanchRoute,
+})
+
+const animalRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/animal/$id',
+  component: AnimalRoute,
+})
+
+const petRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/pet/$id',
+  component: PetRoute,
 })
 
 const searchRoute = createRoute({
@@ -257,6 +278,9 @@ const routeTree = rootRoute.addChildren([
   villagerRoute,
   placeRoute,
   monsterRoute,
+  ranchRoute,
+  animalRoute,
+  petRoute,
   calendarRoute,
   minesRoute,
   questRoute,

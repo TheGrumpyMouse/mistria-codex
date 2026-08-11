@@ -1,7 +1,15 @@
 import type { z } from 'zod'
 import { Character, GiftPrefs, Schedule } from './entities/character.js'
 import { ArtifactFacet, BugFacet, FishFacet, ForageableFacet, Item } from './entities/item.js'
-import { Animal, Building, Crop, Machine, Recipe } from './entities/production.js'
+import {
+  Animal,
+  Building,
+  Crop,
+  Machine,
+  Pet,
+  RanchingRules,
+  Recipe,
+} from './entities/production.js'
 import { Festival, MuseumSet, Quest, Shop, Skill } from './entities/progression.js'
 import { Location, MapRegion, MineBiome, Monster, Seal, Spot } from './entities/world.js'
 
@@ -125,6 +133,18 @@ export const DATASETS = {
     schema: Animal,
     key: 'id',
     description: 'Coop and barn animals.',
+  },
+  pets: {
+    file: 'pets.json',
+    schema: Pet,
+    key: 'id',
+    description: 'Pet kinds and their colour variants.',
+  },
+  ranching: {
+    file: 'ranching.json',
+    schema: RanchingRules,
+    key: 'id',
+    description: 'The ranching rulebook: heart math, production tiers, pet jobs.',
   },
   buildings: {
     file: 'buildings.json',

@@ -6,6 +6,7 @@ import {
   Ellipsis,
   Landmark,
   Map as MapIcon,
+  PawPrint,
   Search,
   Settings,
   Sun,
@@ -43,11 +44,12 @@ const MUSEUM: NavItem = { to: '/museum', label: 'Museum', icon: Landmark }
 const MINES: NavItem = { to: '/mines', label: 'Mines', icon: ChevronsDown }
 const BROWSE: NavItem = { to: '/browse', label: 'Browse', icon: Compass }
 const MAP: NavItem = { to: '/map', label: 'Map', icon: MapIcon }
+const RANCH: NavItem = { to: '/ranch', label: 'Ranch', icon: PawPrint }
 const SETTINGS: NavItem = { to: '/settings', label: 'Settings', icon: Settings }
 
 /** The sidebar's primary block; SECONDARY continues it where there is room. */
 const NAV: NavItem[] = [CALENDAR, BOARD, SEARCH, MUSEUM, MINES]
-const SECONDARY: NavItem[] = [BROWSE, MAP, SETTINGS]
+const SECONDARY: NavItem[] = [BROWSE, MAP, RANCH, SETTINGS]
 
 /**
  * Four destinations and a More menu on a phone — a sixth bottom-nav item is a
@@ -56,7 +58,7 @@ const SECONDARY: NavItem[] = [BROWSE, MAP, SETTINGS]
  * rather than glanced at, and one extra tap through More does not hurt them.
  */
 const MOBILE_NAV: NavItem[] = [CALENDAR, MAP, SEARCH, MUSEUM]
-const MORE_ITEMS: NavItem[] = [BOARD, MINES, BROWSE, SETTINGS]
+const MORE_ITEMS: NavItem[] = [BOARD, MINES, BROWSE, RANCH, SETTINGS]
 
 export function AppShell() {
   return (

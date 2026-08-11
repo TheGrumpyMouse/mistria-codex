@@ -22,7 +22,9 @@ import { extractFestivals, type GameFestivalsExtract } from './festivals.js'
 import { extractItems, type GameItemsExtract } from './items.js'
 import { extractMachines, type GameMachinesExtract } from './machines.js'
 import { extractMonsters, type GameMonstersExtract } from './monsters.js'
+import { extractPets, type GamePetsExtract } from './pets.js'
 import { extractQuests, type GameQuestsExtract } from './quests.js'
+import { extractRanching, type GameRanchingExtract } from './ranching.js'
 import { extractSchedules, type GameSchedulesExtract } from './schedules.js'
 import { extractSpawns, type GameSpawnsExtract } from './spawns.js'
 import { extractStores, type GameStoresExtract } from './stores.js'
@@ -45,6 +47,8 @@ export interface GameExtract {
   monsters: GameMonstersExtract
   festivals: GameFestivalsExtract
   schedules: GameSchedulesExtract
+  ranching: GameRanchingExtract
+  pets: GamePetsExtract
 }
 
 export async function extractGame(): Promise<GameExtract> {
@@ -61,11 +65,13 @@ export async function extractGame(): Promise<GameExtract> {
     extractStores(root, version),
     extractCosmetics(root, version),
   ])
-  const [unlocks, monsters, festivals, schedules] = await Promise.all([
+  const [unlocks, monsters, festivals, schedules, ranching, pets] = await Promise.all([
     extractUnlocks(root, version),
     extractMonsters(root, version),
     extractFestivals(root, version),
     extractSchedules(root, version),
+    extractRanching(root, version),
+    extractPets(root, version),
   ])
 
   return {
@@ -81,6 +87,8 @@ export async function extractGame(): Promise<GameExtract> {
     monsters,
     festivals,
     schedules,
+    ranching,
+    pets,
   }
 }
 
@@ -98,6 +106,8 @@ export async function writeGameExtract(extract: GameExtract): Promise<void> {
     writeJson(join(GAME_DIR, 'monsters.json'), extract.monsters),
     writeJson(join(GAME_DIR, 'festivals.json'), extract.festivals),
     writeJson(join(GAME_DIR, 'schedules.json'), extract.schedules),
+    writeJson(join(GAME_DIR, 'ranching.json'), extract.ranching),
+    writeJson(join(GAME_DIR, 'pets.json'), extract.pets),
   ])
 }
 
@@ -168,6 +178,25 @@ async function main(): Promise<void> {
       `(${plain.length} with fully-stated conditions) across ` +
       `${new Set(extract.schedules.files.flatMap((f) => f.npcs.map((n) => n.npc))).size} npcs`,
   )
+  const ranchVariants = extract.ranching.animals.reduce((n, a) => n + a.variants.length, 0)
+  consola.info(
+    `ranching: ${extract.ranching.animals.length} animals (${ranchVariants} variants) · ` +
+      `${extract.ranching.stables.length} stables · ` +
+      `${extract.ranching.misc.production_tiers.length} production tiers`,
+  )
+  const petKinds = new Set(extract.pets.variants.map((v) => v.pet_kind).filter((k) => k !== null))
+    .size
+  consola.info(
+    `pets: ${extract.pets.variants.length} variants across ${petKinds} kinds · ` +
+      `${extract.pets.jobs.length} jobs · ${extract.pets.cosmetics.length} cosmetics`,
+  )
+  // A requirement key nobody reads is a purchase gate the app would silently omit.
+  const unreadReqs = extract.ranching.animals.flatMap((a) =>
+    a.requirements.unread_keys.map((k) => `${a.id}:${k}`),
+  )
+  if (unreadReqs.length > 0) {
+    consola.warn(`ranching: unread requirement key(s) — ${unreadReqs.join(', ')}`)
+  }
   const { letters, quests, festivals, museumRewards, wishingWell, chickenStatue } = extract.unlocks
   const grants = [
     ...letters,

@@ -1,0 +1,631 @@
+[
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/cat",
+    "id": "pet_cat",
+    "id_status": "confirmed",
+    "kind_key": "cat",
+    "name": "Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "cat_black",
+        "name": "Black Cat"
+      },
+      {
+        "key": "cat_calico",
+        "name": "Calico Cat"
+      },
+      {
+        "key": "cat_grey",
+        "name": "Grey Cat"
+      },
+      {
+        "key": "cat_navy",
+        "name": "Navy Cat"
+      },
+      {
+        "key": "cat_orange",
+        "name": "Orange Cat"
+      },
+      {
+        "key": "cat_pink",
+        "name": "Pink Cat"
+      },
+      {
+        "key": "cat_purple",
+        "name": "Purple Cat"
+      },
+      {
+        "key": "cat_siamese",
+        "name": "Siamese Cat"
+      },
+      {
+        "key": "cat_tabby",
+        "name": "Tabby Cat"
+      },
+      {
+        "key": "cat_tortie",
+        "name": "Tortie Cat"
+      },
+      {
+        "key": "cat_tuxedo",
+        "name": "Tuxedo Cat"
+      },
+      {
+        "key": "cat_white",
+        "name": "White Cat"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/dog",
+    "id": "pet_dog",
+    "id_status": "confirmed",
+    "kind_key": "dog",
+    "name": "Dog",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "dog_beige",
+        "name": "Beige Dog"
+      },
+      {
+        "key": "dog_black",
+        "name": "Black Dog"
+      },
+      {
+        "key": "dog_brown",
+        "name": "Brown Dog"
+      },
+      {
+        "key": "dog_dalmation",
+        "name": "Dalmation Dog"
+      },
+      {
+        "key": "dog_grey",
+        "name": "Grey Dog"
+      },
+      {
+        "key": "dog_navy",
+        "name": "Navy Dog"
+      },
+      {
+        "key": "dog_orange",
+        "name": "Orange Dog"
+      },
+      {
+        "key": "dog_pink",
+        "name": "Pink Dog"
+      },
+      {
+        "key": "dog_purple",
+        "name": "Purple Dog"
+      },
+      {
+        "key": "dog_spots",
+        "name": "Spotted Dog"
+      },
+      {
+        "key": "dog_white",
+        "name": "White Dog"
+      },
+      {
+        "key": "dog_yellow",
+        "name": "Yellow Dog"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/enchantern",
+    "id": "pet_enchantern",
+    "id_status": "confirmed",
+    "kind_key": "enchantern",
+    "name": "Enchantern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "enchantern_blue",
+        "name": "Blue Enchantern"
+      },
+      {
+        "key": "enchantern_yellow",
+        "name": "Yellow Enchantern"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/essence_bat",
+    "id": "pet_essence_bat",
+    "id_status": "confirmed",
+    "kind_key": "essence_bat",
+    "name": "Essence Bat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "essence_bat_blue",
+        "name": "Blue Essence Bat"
+      },
+      {
+        "key": "essence_bat_purple",
+        "name": "Essence Bat"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/flame_spirit",
+    "id": "pet_flame_spirit",
+    "id_status": "confirmed",
+    "kind_key": "flame_spirit",
+    "name": "Flame Spirit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "flame_spirit_orange",
+        "name": "Orange Flame Spirit"
+      },
+      {
+        "key": "flame_spirit_purple",
+        "name": "Purple Flame Spirit"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/flying_tome",
+    "id": "pet_flying_tome",
+    "id_status": "confirmed",
+    "kind_key": "flying_tome",
+    "name": "Flying Tome",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "flying_tome",
+        "name": "Flying Tome"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/griffin_statue",
+    "id": "pet_griffin_statue",
+    "id_status": "confirmed",
+    "kind_key": "griffin_statue",
+    "name": "Gryphon Statue",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "griffin_statue",
+        "name": "Gryphon Statue"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/lava_cat",
+    "id": "pet_lava_cat",
+    "id_status": "confirmed",
+    "kind_key": "lava_cat",
+    "name": "Lava Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "lava_cat",
+        "name": "Lava Cat"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/mimic",
+    "id": "pet_mimic",
+    "id_status": "confirmed",
+    "kind_key": "mimic",
+    "name": "Mimic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "mimic",
+        "name": "Mimic"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/mushroom",
+    "id": "pet_mushroom",
+    "id_status": "confirmed",
+    "kind_key": "mushroom",
+    "name": "Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "mushroom_blue",
+        "name": "Blue Mushroom"
+      },
+      {
+        "key": "mushroom_green",
+        "name": "Green Mushroom"
+      },
+      {
+        "key": "mushroom_purple",
+        "name": "Purple Mushroom"
+      },
+      {
+        "key": "mushroom_red",
+        "name": "Mushroom"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/oreclod",
+    "id": "pet_oreclod",
+    "id_status": "confirmed",
+    "kind_key": "oreclod",
+    "name": "Oreclod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "copperclod",
+        "name": "Copperclod"
+      },
+      {
+        "key": "goldclod",
+        "name": "Goldclod"
+      },
+      {
+        "key": "ironclod",
+        "name": "Ironclod"
+      },
+      {
+        "key": "silverclod",
+        "name": "Silverclod"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/rock_stack",
+    "id": "pet_rock_stack",
+    "id_status": "confirmed",
+    "kind_key": "rock_stack",
+    "name": "Rock Stack",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "rock_stack",
+        "name": "Rock Stack"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/rockclod",
+    "id": "pet_rockclod",
+    "id_status": "confirmed",
+    "kind_key": "rockclod",
+    "name": "Rockclod",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "rockclod",
+        "name": "Rockclod"
+      },
+      {
+        "key": "rockclod_blue",
+        "name": "Blue Rockclod"
+      },
+      {
+        "key": "rockclod_green",
+        "name": "Green Rockclod"
+      },
+      {
+        "key": "rockclod_red",
+        "name": "Red Rockclod"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/sapling",
+    "id": "pet_sapling",
+    "id_status": "confirmed",
+    "kind_key": "sapling",
+    "name": "Sapling",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "sapling_blue",
+        "name": "Blue Sapling"
+      },
+      {
+        "key": "sapling_cool",
+        "name": "Cool Sapling"
+      },
+      {
+        "key": "sapling_green",
+        "name": "Green Sapling"
+      },
+      {
+        "key": "sapling_orange",
+        "name": "Orange Sapling"
+      },
+      {
+        "key": "sapling_pink",
+        "name": "Pink Sapling"
+      },
+      {
+        "key": "sapling_purple",
+        "name": "Purple Sapling"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/stalagmite",
+    "id": "pet_stalagmite",
+    "id_status": "confirmed",
+    "kind_key": "stalagmite",
+    "name": "Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "variants": [
+      {
+        "key": "stalagmite_blue",
+        "name": "Stalagmite"
+      },
+      {
+        "key": "stalagmite_green",
+        "name": "Green Stalagmite"
+      },
+      {
+        "key": "stalagmite_purple",
+        "name": "Purple Stalagmite"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "acquisition"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "pet/void_cat",
+    "id": "pet_void_cat",
+    "id_status": "confirmed",
+    "kind_key": "void_cat",
+    "name": "Void Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "game_files",
+      "name": "manual"
+    },
+    "spoiler": true,
+    "variants": [
+      {
+        "key": "void_cat",
+        "name": "Void Cat"
+      }
+    ],
+    "version_added": null,
+    "wiki_page": null
+  }
+]

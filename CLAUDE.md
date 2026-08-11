@@ -308,6 +308,23 @@ does not resolve.
 are declared under `other/` with a `furniture` tag; filtering furniture
 ingestion on the path alone shipped none of them.
 
+**`ranching/animals/default.toml` is a whole FILE the eight animal files
+inherit from, per leaf table** — a different mechanism from the in-file
+`[default]` that `toml.ts defaults()` handles. Its riskiest default is
+`breeding.treat = "heart_shaped_chicken_treat"`: a mammal file that forgot to
+override it would silently breed cows with chicken treats (all eight do
+override it — checked, not assumed). `[variants.default]` is a template whose
+`name` is `"<n/a>"`, never a variant. And the golden-produce thresholds live in
+`ranching/misc.toml [production_tiers]` (chance from 8♥, golden-only at 10♥) —
+derive them from that table, never hardcode an 8.
+
+**A pet kind has no stated display name — only its variants do** — so kind
+names are curated in `curated/aliases/pet_kinds.json`, each traced to the
+variant names it is read from. Pet records are `pet_<kind>` because `mimic`
+the pet collides with `mimic` the monster, and the ship display index keeps
+the first arrival: it now *counts* what it skips (the standing count is 1 —
+`purple_mushroom` is both an item and a monster, and predates pets).
+
 ## Modelling rules
 
 **Availability is an array of windows. Each window is an AND of constraints; the array is an OR.** A bug can be spring-in-town-at-night *and* all-season-in-the-mines-any-time. Never flatten two windows into one — it produces wrong answers on the flagship screen.

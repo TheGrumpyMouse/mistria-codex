@@ -1,11 +1,12 @@
 [
   {
     "also_known_as": [],
+    "animal_size": "small",
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "building/coop",
     "id": "coop",
     "id_status": "provisional",
@@ -15,7 +16,8 @@
     "numeric_id_game_version": null,
     "placeable_on_farm": true,
     "prov": {
-      "*": "manual"
+      "*": "manual",
+      "tiers": "game_files"
     },
     "tiers": [
       {
@@ -33,6 +35,7 @@
           ],
           "tesserae": 1500
         },
+        "incubators": 1,
         "level": 1,
         "requires": []
       },
@@ -51,6 +54,7 @@
           ],
           "tesserae": 3000
         },
+        "incubators": 2,
         "level": 2,
         "requires": [
           {
@@ -76,6 +80,7 @@
           ],
           "tesserae": 6000
         },
+        "incubators": 4,
         "level": 3,
         "requires": [
           {
@@ -93,11 +98,12 @@
   },
   {
     "also_known_as": [],
+    "animal_size": "large",
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "building/barn",
     "id": "barn",
     "id_status": "provisional",
@@ -107,7 +113,8 @@
     "numeric_id_game_version": null,
     "placeable_on_farm": true,
     "prov": {
-      "*": "manual"
+      "*": "manual",
+      "tiers": "game_files"
     },
     "tiers": [
       {
@@ -125,6 +132,7 @@
           ],
           "tesserae": 2000
         },
+        "incubators": 0,
         "level": 1,
         "requires": []
       },
@@ -143,6 +151,7 @@
           ],
           "tesserae": 4000
         },
+        "incubators": 0,
         "level": 2,
         "requires": [
           {
@@ -168,6 +177,7 @@
           ],
           "tesserae": 8000
         },
+        "incubators": 0,
         "level": 3,
         "requires": [
           {
@@ -185,6 +195,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -208,6 +219,7 @@
           "materials": [],
           "tesserae": 50000
         },
+        "incubators": null,
         "level": 1,
         "requires": [
           {
@@ -224,6 +236,7 @@
           "materials": [],
           "tesserae": 100000
         },
+        "incubators": null,
         "level": 2,
         "requires": [
           {
@@ -241,6 +254,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [],
@@ -273,6 +287,7 @@
           ],
           "tesserae": 5000
         },
+        "incubators": null,
         "level": 1,
         "requires": []
       },
@@ -295,6 +310,7 @@
           ],
           "tesserae": 15000
         },
+        "incubators": null,
         "level": 2,
         "requires": []
       },
@@ -317,6 +333,7 @@
           ],
           "tesserae": 25000
         },
+        "incubators": null,
         "level": 3,
         "requires": []
       },
@@ -339,6 +356,7 @@
           ],
           "tesserae": 50000
         },
+        "incubators": null,
         "level": 4,
         "requires": [
           {
@@ -356,6 +374,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -381,6 +400,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -406,6 +426,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
@@ -431,6 +452,7 @@
   },
   {
     "also_known_as": [],
+    "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [

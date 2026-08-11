@@ -130,11 +130,15 @@ export type Recipe = z.infer<typeof Recipe>
 
 export const Animal = withEnvelope({
   building: z.enum(['coop', 'barn']),
+  size: z.enum(['small', 'large']).nullable().default(null),
   matures_days: z.number().int().nullable().default(null),
   products: z
     .array(
       z.object({
         item_id: IdRef,
+        /** Which sex produces it. Null means both — a fact, not a gap. */
+        sex: z.enum(['male', 'female']).nullable().default(null),
+        days_to_produce: z.number().int().nullable().default(null),
         hearts_required: z.number().int().min(0).max(10).nullable().default(null),
         quality: Quality.nullable().default(null),
       }),
@@ -143,17 +147,172 @@ export const Animal = withEnvelope({
   breeding: z
     .object({
       treat_item_id: IdRef.nullable().default(null),
+      /** Wiki-stated for mammals; the game files state no gestation length. */
       gestation_days: z.number().int().nullable().default(null),
+      uses_egg: z.boolean().nullable().default(null),
+      /** Egg layers only. Null on mammals is *not applicable*, not unknown. */
+      incubation_days: z.number().int().nullable().default(null),
     })
     .nullable()
     .default(null),
   feed_item_ids: z.array(IdRef).default([]),
   purchase: z
-    .object({ price: z.number().int(), currency: Currency.default('tesserae'), shop_id: IdRef })
+    .object({
+      price: z.number().int(),
+      currency: Currency.default('tesserae'),
+      shop_id: IdRef,
+      requires: z.array(Requirement).default([]),
+      /**
+       * The earliest in-game date the animal appears for sale, where the game
+       * gates one (alpaca and capybara arrive Winter 1 of year 1). A typed
+       * field rather than a Requirement: a season/day/year triple does not fit
+       * `Requirement.value` honestly.
+       */
+      available_from: z
+        .object({ season: Season, day: z.number().int(), year: z.number().int() })
+        .nullable()
+        .default(null),
+    })
     .nullable()
     .default(null),
+  /**
+   * Sale prices, straight from the game's pricing table. `adult_by_heart` is
+   * indexed by heart level (0–10); `tier_multipliers` is indexed by variant
+   * tier and carried raw — its exact index semantics are unverified, so the
+   * UI must not multiply the two until they are.
+   */
+  sell: z
+    .object({
+      baby: z.number().int().nullable().default(null),
+      adult_by_heart: z.array(z.number().int()).default([]),
+      tier_multipliers: z.array(z.number()).default([]),
+    })
+    .nullable()
+    .default(null),
+  /**
+   * Colour and seasonal breeds. `key` is the game's variant token — never
+   * rendered raw. `purchasable` is the game's `default_unlocked`: buyable at
+   * Hayden's without breeding it first.
+   */
+  variants: z
+    .array(
+      z.object({
+        key: z.string(),
+        name: z.string().nullable().default(null),
+        tier: z.number().int().min(1).max(6),
+        born_in: z.array(Season).default([]),
+        purchasable: z.boolean(),
+        acquirable: z.boolean(),
+        renown_value: z.number().int().nullable().default(null),
+        /** The accessory the variant is born wearing, as an item record. */
+        default_cosmetic_item_id: IdRef.nullable().default(null),
+      }),
+    )
+    .default([]),
+  is_mount: z.boolean().nullable().default(null),
+  petting: z
+    .object({
+      kind: z.enum(['pet', 'pick_up']),
+      essence_points: z.number().int().nullable().default(null),
+      stamina_cost: z.number().int().nullable().default(null),
+    })
+    .nullable()
+    .default(null),
+  eats: z.enum(['seed', 'hay']).nullable().default(null),
 })
 export type Animal = z.infer<typeof Animal>
+
+/**
+ * A pet kind — cat, dog, and the fourteen monster-shaped companions.
+ *
+ * Pets are not ranch animals: no produce, no purchase, one shared set of jobs
+ * (on the `ranching` rules record). A record is the *kind*; the colourways the
+ * player chooses between are `variants`. The game states no display name for a
+ * kind, only for variants, so kind names are curated.
+ */
+export const Pet = withEnvelope({
+  /** The game's `pet_kind` token — never rendered raw. */
+  kind_key: z.string(),
+  variants: z
+    .array(z.object({ key: z.string(), name: z.string().nullable().default(null) }))
+    .default([]),
+})
+export type Pet = z.infer<typeof Pet>
+
+/**
+ * The ranching rulebook — one singleton record (`ranching_rules`).
+ *
+ * Global tables that belong to no single animal: how heart points accrue, what
+ * each heart level does to production, festival scoring, and the pet jobs
+ * every pet shares. A dataset of one record keeps the registry machinery
+ * (zod, ajv, determinism, ship) working with zero special cases.
+ */
+export const RanchingRules = withEnvelope({
+  min_hearts_to_breed: z.number().int().nullable().default(null),
+  /** Cumulative points to reach heart 1..10, in order. */
+  heart_point_table: z.array(z.number().int()).default([]),
+  /** Production rolls at each heart threshold, verbatim from the game. */
+  production_tiers: z
+    .array(
+      z.object({
+        hearts_required: z.number().int(),
+        normal: z.object({ count: z.number().int(), additional_chance: z.number() }),
+        golden: z.object({ count: z.number().int(), additional_chance: z.number() }),
+      }),
+    )
+    .default([]),
+  /** Heart points per action. Feed bonuses stack on the base `feed` value. */
+  heart_actions: z
+    .object({
+      pet: z.number().int().nullable().default(null),
+      feed: z.number().int().nullable().default(null),
+      go_outside: z.number().int().nullable().default(null),
+      left_outside_penalty: z.number().int().nullable().default(null),
+      feed_bonus: z
+        .object({
+          normal: z.number().int().nullable().default(null),
+          quality: z.number().int().nullable().default(null),
+          deluxe: z.number().int().nullable().default(null),
+          ultimate: z.number().int().nullable().default(null),
+        })
+        .nullable()
+        .default(null),
+      crop_bonus: z.number().int().nullable().default(null),
+      /** Bonus per star of a cooked dish used as feed, index 0 = 1 star. */
+      cooked_star_bonuses: z.array(z.number().int()).default([]),
+      child_born: z.number().int().nullable().default(null),
+      toy: z.number().int().nullable().default(null),
+    })
+    .nullable()
+    .default(null),
+  /**
+   * Animal Festival entry scoring. Two point tables the game sums: one by
+   * variant tier, one by heart level. Carried raw — `heart_points` has ten
+   * entries against eleven heart levels, and until that indexing is verified
+   * the UI renders the tables without computing a total.
+   */
+  festival_scoring: z
+    .object({
+      tier_points: z.array(z.number().int()).default([]),
+      heart_points: z.array(z.number().int()).default([]),
+    })
+    .nullable()
+    .default(null),
+  /** The three jobs every pet shares, rewards indexed by pet heart level 0–10. */
+  pet_jobs: z
+    .array(
+      z.object({
+        job: z.enum(['wood', 'stone', 'forageables']),
+        location_id: IdRef.nullable().default(null),
+        reward_item_id: IdRef.nullable().default(null),
+        /** True when the reward is the game's pooled forage roll, not one item. */
+        reward_custom: z.boolean().default(false),
+        reward_by_heart: z.array(z.tuple([z.number().int(), z.number().int()])).default([]),
+      }),
+    )
+    .default([]),
+})
+export type RanchingRules = z.infer<typeof RanchingRules>
 
 /**
  * A production machine — the Apiary and the Terrarium at 1.0.
@@ -219,10 +378,14 @@ export const Building = withEnvelope({
             .default([]),
         }),
         capacity: z.number().int().nullable().default(null),
+        /** Egg slots, for coops. Barns state 0 — a fact, not a gap. */
+        incubators: z.number().int().nullable().default(null),
         requires: z.array(Requirement).default([]),
       }),
     )
     .default([]),
+  /** Which animal size the building houses — coops small, barns large. */
+  animal_size: z.enum(['small', 'large']).nullable().default(null),
   vendor_shop_id: IdRef.nullable().default(null),
   placeable_on_farm: z.boolean().nullable().default(null),
 })

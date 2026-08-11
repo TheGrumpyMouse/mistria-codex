@@ -1,0 +1,304 @@
+[
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [],
+    "festival_scoring": {
+      "heart_points": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45
+      ],
+      "tier_points": [
+        20,
+        25,
+        30,
+        35,
+        40,
+        45
+      ]
+    },
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "heart_actions": {
+      "child_born": 10,
+      "cooked_star_bonuses": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "crop_bonus": 5,
+      "feed": 5,
+      "feed_bonus": {
+        "deluxe": 3,
+        "normal": 0,
+        "quality": 1,
+        "ultimate": 5
+      },
+      "go_outside": 5,
+      "left_outside_penalty": -5,
+      "pet": 5,
+      "toy": 2
+    },
+    "heart_point_table": [
+      100,
+      220,
+      360,
+      520,
+      700,
+      900,
+      1100,
+      1330,
+      1560,
+      1800
+    ],
+    "icon_key": null,
+    "id": "ranching_rules",
+    "id_status": "confirmed",
+    "min_hearts_to_breed": 2,
+    "name": "Ranching",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "pet_jobs": [
+      {
+        "job": "forageables",
+        "location_id": "the_eastern_road",
+        "reward_by_heart": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "reward_custom": true,
+        "reward_item_id": null
+      },
+      {
+        "job": "stone",
+        "location_id": "the_narrows",
+        "reward_by_heart": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "reward_custom": false,
+        "reward_item_id": "ore_stone"
+      },
+      {
+        "job": "wood",
+        "location_id": "mistria",
+        "reward_by_heart": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "reward_custom": false,
+        "reward_item_id": "basic_wood"
+      }
+    ],
+    "production_tiers": [
+      {
+        "golden": {
+          "additional_chance": 0,
+          "count": 0
+        },
+        "hearts_required": 0,
+        "normal": {
+          "additional_chance": 0,
+          "count": 1
+        }
+      },
+      {
+        "golden": {
+          "additional_chance": 0,
+          "count": 0
+        },
+        "hearts_required": 2,
+        "normal": {
+          "additional_chance": 0.2,
+          "count": 1
+        }
+      },
+      {
+        "golden": {
+          "additional_chance": 0,
+          "count": 0
+        },
+        "hearts_required": 4,
+        "normal": {
+          "additional_chance": 0,
+          "count": 2
+        }
+      },
+      {
+        "golden": {
+          "additional_chance": 0,
+          "count": 0
+        },
+        "hearts_required": 6,
+        "normal": {
+          "additional_chance": 0.2,
+          "count": 2
+        }
+      },
+      {
+        "golden": {
+          "additional_chance": 0.1,
+          "count": 0
+        },
+        "hearts_required": 8,
+        "normal": {
+          "additional_chance": 0,
+          "count": 2
+        }
+      },
+      {
+        "golden": {
+          "additional_chance": 0.1,
+          "count": 1
+        },
+        "hearts_required": 10,
+        "normal": {
+          "additional_chance": 0,
+          "count": 0
+        }
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "version_added": null,
+    "wiki_page": "Animals"
+  }
+]

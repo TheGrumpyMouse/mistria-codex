@@ -4,11 +4,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_cow_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_cow_treat",
+      "uses_egg": false
     },
     "building": "barn",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "hay",
     "feed_item_ids": [
       "hay",
       "quality_hay",
@@ -16,44 +19,304 @@
       "ultimate_hay"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/cow",
     "id": "cow",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": true,
     "matures_days": 5,
     "name": "Cow",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pet",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 1,
         "hearts_required": null,
         "item_id": "cow_milk",
-        "quality": null
+        "quality": null,
+        "sex": "female"
       },
       {
-        "hearts_required": null,
-        "item_id": "bull_horn",
-        "quality": null
-      },
-      {
+        "days_to_produce": 1,
         "hearts_required": 8,
         "item_id": "golden_cow_milk",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "female"
       },
       {
+        "days_to_produce": 3,
+        "hearts_required": null,
+        "item_id": "bull_horn",
+        "quality": null,
+        "sex": "male"
+      },
+      {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_bull_horn",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "male"
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 2000,
+      "requires": [],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        700,
+        750,
+        900,
+        1000,
+        1100,
+        1200,
+        1400,
+        1600,
+        2000,
+        2200,
+        2300
+      ],
+      "baby": 500,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "large",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown",
+        "name": "Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "spotted",
+        "name": "Spotted",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black",
+        "name": "Black",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "chocolate",
+        "name": "Chocolate",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "red",
+        "name": "Red",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "cow_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "cow_sun_hat",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "cow_horns",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "cow_antlers",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Cow"
   },
@@ -62,11 +325,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_horse_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_horse_treat",
+      "uses_egg": false
     },
     "building": "barn",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "hay",
     "feed_item_ids": [
       "hay",
       "quality_hay",
@@ -74,34 +340,342 @@
       "ultimate_hay"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/horse",
     "id": "horse",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": true,
     "matures_days": 5,
     "name": "Horse",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pet",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 3,
         "hearts_required": null,
         "item_id": "horse_hair",
-        "quality": null
+        "quality": null,
+        "sex": null
       },
       {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_horse_hair",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": null
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 2300,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        900,
+        975,
+        1170,
+        1300,
+        1450,
+        1600,
+        1850,
+        2100,
+        2300,
+        2500,
+        2600
+      ],
+      "baby": 650,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "large",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "spotted",
+        "name": "Spotted",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "sandy_bay",
+        "name": "Sandy Bay",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "champagne",
+        "name": "Champagne",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "chestnut",
+        "name": "Chestnut",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black",
+        "name": "Black",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "horse_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "horse_seashell_clips",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "horse_dark_unicorn_horn",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "horse_antlers",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": false,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "mistmare",
+        "name": "Mistmare",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": false,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "giant_chicken_white",
+        "name": "Big Chicken",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": false,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "giant_chicken_gold",
+        "name": "Big Chicken Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 1
+      }
+    ],
     "version_added": null,
     "wiki_page": "Horse"
   },
@@ -110,11 +684,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_sheep_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_sheep_treat",
+      "uses_egg": false
     },
     "building": "barn",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "hay",
     "feed_item_ids": [
       "hay",
       "quality_hay",
@@ -122,34 +699,297 @@
       "ultimate_hay"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/sheep",
     "id": "sheep",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": true,
     "matures_days": 5,
     "name": "Sheep",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pet",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 3,
         "hearts_required": null,
         "item_id": "sheep_wool",
-        "quality": null
+        "quality": null,
+        "sex": null
       },
       {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_sheep_wool",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": null
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 2000,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        700,
+        750,
+        900,
+        1000,
+        1100,
+        1200,
+        1400,
+        1600,
+        2000,
+        2200,
+        2300
+      ],
+      "baby": 500,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "large",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black",
+        "name": "Black",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown",
+        "name": "Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black_nosed",
+        "name": "Black Nosed",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "beige",
+        "name": "Beige",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white_nosed",
+        "name": "White Nosed",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "sheep_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "sheep_horns",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "sheep_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Sheep"
   },
@@ -158,11 +998,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_alpaca_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_alpaca_treat",
+      "uses_egg": false
     },
     "building": "barn",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "hay",
     "feed_item_ids": [
       "hay",
       "quality_hay",
@@ -170,34 +1013,301 @@
       "ultimate_hay"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/alpaca",
     "id": "alpaca",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": true,
     "matures_days": 5,
     "name": "Alpaca",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pet",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 3,
         "hearts_required": null,
         "item_id": "alpaca_wool",
-        "quality": null
+        "quality": null,
+        "sex": null
       },
       {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_alpaca_wool",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": null
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": {
+        "day": 1,
+        "season": "winter",
+        "year": 1
+      },
       "currency": "tesserae",
       "price": 2300,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        900,
+        975,
+        1170,
+        1300,
+        1450,
+        1600,
+        1850,
+        2100,
+        2300,
+        2500,
+        2600
+      ],
+      "baby": 650,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "large",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black",
+        "name": "Black",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown",
+        "name": "Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "snowy",
+        "name": "Snowy",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "desert",
+        "name": "Desert",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "indigo",
+        "name": "Indigo",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "alpaca_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "alpaca_sunglasses",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "alpaca_horns",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "alpaca_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Alpaca"
   },
@@ -205,12 +1315,15 @@
     "also_known_as": [],
     "blurb": null,
     "breeding": {
-      "gestation_days": 4,
-      "treat_item_id": "heart_shaped_chicken_treat"
+      "gestation_days": null,
+      "incubation_days": 3,
+      "treat_item_id": "heart_shaped_chicken_treat",
+      "uses_egg": true
     },
     "building": "coop",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "seed",
     "feed_item_ids": [
       "grass_seed",
       "quality_small_animal_feed",
@@ -218,44 +1331,304 @@
       "ultimate_small_animal_feed"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/chicken",
     "id": "chicken",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": false,
     "matures_days": 3,
     "name": "Chicken",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pick_up",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 1,
         "hearts_required": null,
         "item_id": "egg",
-        "quality": null
+        "quality": null,
+        "sex": "female"
       },
       {
-        "hearts_required": null,
-        "item_id": "feather",
-        "quality": null
-      },
-      {
+        "days_to_produce": 1,
         "hearts_required": 8,
         "item_id": "golden_egg",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "female"
       },
       {
+        "days_to_produce": 3,
+        "hearts_required": null,
+        "item_id": "feather",
+        "quality": null,
+        "sex": "male"
+      },
+      {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_feather",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "male"
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 1000,
+      "requires": [],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        350,
+        375,
+        450,
+        500,
+        550,
+        600,
+        700,
+        800,
+        1000,
+        1100,
+        1150
+      ],
+      "baby": 250,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "small",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown",
+        "name": "Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "spotted",
+        "name": "Spotted",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "red",
+        "name": "Red",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "yellow",
+        "name": "Yellow",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gray",
+        "name": "Gray",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "chicken_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "chicken_sunglasses",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "chicken_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Chicken"
   },
@@ -263,12 +1636,15 @@
     "also_known_as": [],
     "blurb": null,
     "breeding": {
-      "gestation_days": 4,
-      "treat_item_id": "heart_shaped_duck_treat"
+      "gestation_days": null,
+      "incubation_days": 3,
+      "treat_item_id": "heart_shaped_duck_treat",
+      "uses_egg": true
     },
     "building": "coop",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "seed",
     "feed_item_ids": [
       "grass_seed",
       "quality_small_animal_feed",
@@ -276,44 +1652,311 @@
       "ultimate_small_animal_feed"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/duck",
     "id": "duck",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": false,
     "matures_days": 3,
     "name": "Duck",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pick_up",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 1,
         "hearts_required": null,
         "item_id": "duck_egg",
-        "quality": null
+        "quality": null,
+        "sex": "female"
       },
       {
-        "hearts_required": null,
-        "item_id": "duck_feather",
-        "quality": null
-      },
-      {
+        "days_to_produce": 1,
         "hearts_required": 8,
         "item_id": "golden_duck_egg",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "female"
       },
       {
+        "days_to_produce": 3,
+        "hearts_required": null,
+        "item_id": "duck_feather",
+        "quality": null,
+        "sex": "male"
+      },
+      {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_duck_feather",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": "male"
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 1500,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        500,
+        560,
+        675,
+        750,
+        825,
+        900,
+        1050,
+        1200,
+        1500,
+        1700,
+        1800
+      ],
+      "baby": 375,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "small",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "mallard",
+        "name": "Mallard",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "muscovy",
+        "name": "Muscovy",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "mandarin",
+        "name": "Mandarin",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "ruddy_shelduck",
+        "name": "Ruddy Shelduck",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "cayuga",
+        "name": "Cayuga",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "duck_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "duck_sunglasses",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "duck_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Duck"
   },
@@ -322,11 +1965,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_rabbit_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_rabbit_treat",
+      "uses_egg": false
     },
     "building": "coop",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "seed",
     "feed_item_ids": [
       "grass_seed",
       "quality_small_animal_feed",
@@ -334,34 +1980,297 @@
       "ultimate_small_animal_feed"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/rabbit",
     "id": "rabbit",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": false,
     "matures_days": 3,
     "name": "Rabbit",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pick_up",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 3,
         "hearts_required": null,
         "item_id": "rabbit_wool",
-        "quality": null
+        "quality": null,
+        "sex": null
       },
       {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_rabbit_wool",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": null
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": null,
       "currency": "tesserae",
       "price": 1500,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        500,
+        560,
+        675,
+        750,
+        825,
+        900,
+        1050,
+        1200,
+        1500,
+        1700,
+        1800
+      ],
+      "baby": 375,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "small",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown",
+        "name": "Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black_and_white",
+        "name": "Black and White",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "brown_sable",
+        "name": "Brown Sable",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "orange_sable",
+        "name": "Orange Sable",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "black",
+        "name": "Black",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "rabbit_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "rabbit_sunglasses",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "rabbit_horn",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "rabbit_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Rabbit"
   },
@@ -370,11 +2279,14 @@
     "blurb": null,
     "breeding": {
       "gestation_days": 4,
-      "treat_item_id": "heart_shaped_capybara_treat"
+      "incubation_days": null,
+      "treat_item_id": "heart_shaped_capybara_treat",
+      "uses_egg": false
     },
     "building": "coop",
-    "confidence": "wiki",
+    "confidence": "verified",
     "data_gaps": [],
+    "eats": "seed",
     "feed_item_ids": [
       "grass_seed",
       "quality_small_animal_feed",
@@ -382,34 +2294,301 @@
       "ultimate_small_animal_feed"
     ],
     "former_ids": [],
-    "game_version": null,
+    "game_version": "1.0.0",
     "icon_key": "animal/capybara",
     "id": "capybara",
-    "id_status": "provisional",
+    "id_status": "confirmed",
+    "is_mount": false,
     "matures_days": 3,
     "name": "Capybara",
     "numeric_id": null,
     "numeric_id_game_version": null,
+    "petting": {
+      "essence_points": 3,
+      "kind": "pick_up",
+      "stamina_cost": 1
+    },
     "products": [
       {
+        "days_to_produce": 3,
         "hearts_required": null,
         "item_id": "bristle",
-        "quality": null
+        "quality": null,
+        "sex": null
       },
       {
+        "days_to_produce": 3,
         "hearts_required": 8,
         "item_id": "golden_bristle",
-        "quality": "golden"
+        "quality": "golden",
+        "sex": null
       }
     ],
     "prov": {
-      "*": "manual"
+      "*": "game_files",
+      "breeding": "manual",
+      "feed_item_ids": "manual",
+      "wiki_page": "manual"
     },
     "purchase": {
+      "available_from": {
+        "day": 1,
+        "season": "winter",
+        "year": 1
+      },
       "currency": "tesserae",
       "price": 2000,
+      "requires": [
+        {
+          "key": "upgrade_haydens_barn",
+          "op": "done",
+          "type": "quest",
+          "value": null
+        }
+      ],
       "shop_id": "haydens_shop"
     },
+    "sell": {
+      "adult_by_heart": [
+        700,
+        750,
+        900,
+        1000,
+        1150,
+        1200,
+        1400,
+        1600,
+        2000,
+        2200,
+        2300
+      ],
+      "baby": 500,
+      "tier_multipliers": [
+        1,
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2
+      ]
+    },
+    "size": "small",
+    "variants": [
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "light_brown",
+        "name": "Light Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "dark_brown",
+        "name": "Dark Brown",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pale",
+        "name": "Pale",
+        "purchasable": true,
+        "renown_value": 1,
+        "tier": 1
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gray",
+        "name": "Gray",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "white",
+        "name": "White",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "red",
+        "name": "Red",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 2
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "blue",
+        "name": "Blue",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "purple",
+        "name": "Purple",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "pink",
+        "name": "Pink",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 3
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "gold",
+        "name": "Gold",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 5
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "default_cosmetic_item_id": null,
+        "key": "silver",
+        "name": "Silver",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 4
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "spring"
+        ],
+        "default_cosmetic_item_id": "capybara_flower_crown",
+        "key": "spring",
+        "name": "Spring",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "summer"
+        ],
+        "default_cosmetic_item_id": "capybara_umbrella_hat",
+        "key": "summer",
+        "name": "Summer",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "fall"
+        ],
+        "default_cosmetic_item_id": "capybara_horns",
+        "key": "fall",
+        "name": "Fall",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      },
+      {
+        "acquirable": true,
+        "born_in": [
+          "winter"
+        ],
+        "default_cosmetic_item_id": "capybara_winter_hat",
+        "key": "winter",
+        "name": "Winter",
+        "purchasable": false,
+        "renown_value": 1,
+        "tier": 6
+      }
+    ],
     "version_added": null,
     "wiki_page": "Capybara"
   }

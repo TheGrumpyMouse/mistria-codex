@@ -19,6 +19,8 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   currency_item_id: 'items',
   accepts_item_ids: 'items',
   treat_item_id: 'items',
+  reward_item_id: 'items',
+  default_cosmetic_item_id: 'items',
   item_ids: 'items',
   feed_item_ids: 'items',
   ore_item_ids: 'items',

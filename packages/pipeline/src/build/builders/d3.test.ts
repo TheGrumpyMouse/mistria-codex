@@ -66,7 +66,12 @@ interface AnimalRecord {
   matures_days: number | null
   data_gaps: string[]
   products: { item_id: string; hearts_required: number | null; quality: string | null }[]
-  breeding: { treat_item_id: string | null; gestation_days: number | null } | null
+  breeding: {
+    treat_item_id: string | null
+    gestation_days: number | null
+    uses_egg: boolean | null
+    incubation_days: number | null
+  } | null
   feed_item_ids: string[]
 }
 interface BuildingRecord {
@@ -584,7 +589,15 @@ describe('animals and buildings', () => {
   it('matures coop animals faster than barn animals', () => {
     for (const animal of animals) {
       expect(animal.matures_days).toBe(animal.building === 'coop' ? 3 : 5)
-      expect(animal.breeding?.gestation_days).toBe(4)
+      // Egg layers incubate (a stated 3 days) and gestate not at all — null
+      // there is *not applicable*, not missing. Mammals keep the wiki's 4.
+      if (animal.breeding?.uses_egg === true) {
+        expect(animal.breeding.incubation_days).toBe(3)
+        expect(animal.breeding.gestation_days).toBeNull()
+      } else {
+        expect(animal.breeding?.gestation_days).toBe(4)
+        expect(animal.breeding?.incubation_days).toBeNull()
+      }
     }
   })
 

@@ -39460,6 +39460,262 @@
       "width": 128
     },
     {
+      "bytes": 363,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat"
+      ],
+      "key": "pet/cat",
+      "origin": "game_files",
+      "sha256": "4c02e2ad7464bdc5add4d8098ce156b3c29e19eb15fdad14188311ba48466edf",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "width": 18
+    },
+    {
+      "bytes": 369,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog"
+      ],
+      "key": "pet/dog",
+      "origin": "game_files",
+      "sha256": "c43fb6621441f59716e779c16e8b4366b84bb9825b507a176eb7d261ccb2f610",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "width": 18
+    },
+    {
+      "bytes": 296,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/enchantern.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/enchantern"
+      ],
+      "key": "pet/enchantern",
+      "origin": "game_files",
+      "sha256": "a45dc582675aac9d5e282f0d4322df989efceefe8d1ffee9f3c50798e6700d71",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_blue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_blue.png",
+      "width": 18
+    },
+    {
+      "bytes": 290,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/essence_bat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/essence_bat"
+      ],
+      "key": "pet/essence_bat",
+      "origin": "game_files",
+      "sha256": "dec4470440bae37d2356d63796341ebf76593ded058e44712d9e87a7fb0b9bf1",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
+      "width": 18
+    },
+    {
+      "bytes": 281,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/flame_spirit.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/flame_spirit"
+      ],
+      "key": "pet/flame_spirit",
+      "origin": "game_files",
+      "sha256": "b779d59d5e76da96d156a3ea543e21ac8a021759b66990ba2278510946cd78ec",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_orange.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_orange.png",
+      "width": 18
+    },
+    {
+      "bytes": 304,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/flying_tome.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/flying_tome"
+      ],
+      "key": "pet/flying_tome",
+      "origin": "game_files",
+      "sha256": "05d9be095a98b7a145df284be3553c0860ddb11c93b9922499badc0e1bc032fc",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flying_tome.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_flying_tome.png",
+      "width": 18
+    },
+    {
+      "bytes": 371,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/griffin_statue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/griffin_statue"
+      ],
+      "key": "pet/griffin_statue",
+      "origin": "game_files",
+      "sha256": "b192b7d8f6c6661747a1f7c3da2d7fc7e94dbdc4fac0b652536b1b7a4ba60484",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_griffin_statue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_griffin_statue.png",
+      "width": 18
+    },
+    {
+      "bytes": 265,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/lava_cat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/lava_cat"
+      ],
+      "key": "pet/lava_cat",
+      "origin": "game_files",
+      "sha256": "aa4a9dc963bacee30ec3100000fbcb70edb2ecff6147c7b9d7253df85e3c60e5",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_lava.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_lava.png",
+      "width": 18
+    },
+    {
+      "bytes": 303,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mimic.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mimic"
+      ],
+      "key": "pet/mimic",
+      "origin": "game_files",
+      "sha256": "3c9e228fbce996ca56bf344c5bdb80c0799ab61a535f0909922ddbf61c685eb8",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mimic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mimic.png",
+      "width": 18
+    },
+    {
+      "bytes": 450,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mushroom.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mushroom"
+      ],
+      "key": "pet/mushroom",
+      "origin": "game_files",
+      "sha256": "ed08ffb2cfa4ff6873f289a49ea4918b30c3ba029136cc78b4d41c09114d4e1c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "width": 18
+    },
+    {
+      "bytes": 392,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/oreclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/oreclod"
+      ],
+      "key": "pet/oreclod",
+      "origin": "game_files",
+      "sha256": "c11be1f4417a0b7712919c54c599abb8ba1e30833633690f14215226cf2763df",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "width": 18
+    },
+    {
+      "bytes": 247,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rock_stack.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rock_stack"
+      ],
+      "key": "pet/rock_stack",
+      "origin": "game_files",
+      "sha256": "232b6e09a56d356df2d868de5e38bd224c85e16434c014a704f468a453d8750e",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rock_stack.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rock_stack.png",
+      "width": 18
+    },
+    {
+      "bytes": 386,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rockclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rockclod"
+      ],
+      "key": "pet/rockclod",
+      "origin": "game_files",
+      "sha256": "fdc81c631bf9dd0f7f98ca05ef39f97280c4b7edaaf74a83686caaa125e44211",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "width": 18
+    },
+    {
+      "bytes": 447,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling"
+      ],
+      "key": "pet/sapling",
+      "origin": "game_files",
+      "sha256": "cc5139a81e9347e157900d257c44ec24b21f98334646d034cef2336e1910cbb3",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "width": 18
+    },
+    {
+      "bytes": 226,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/stalagmite.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/stalagmite"
+      ],
+      "key": "pet/stalagmite",
+      "origin": "game_files",
+      "sha256": "903f4bafcb5871436c99ac5f5ac07ecb74744727e4c8ccb04b8307515e0a923f",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "width": 18
+    },
+    {
+      "bytes": 268,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/void_cat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/void_cat"
+      ],
+      "key": "pet/void_cat",
+      "origin": "game_files",
+      "sha256": "ec78e6cb560de25d7d05ce77b136160e449465375e20de233c11f83e3575d6ef",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_void.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_void.png",
+      "width": 18
+    },
+    {
       "bytes": 3028,
       "family": "portrait",
       "fetched_at": "2026-08-07",

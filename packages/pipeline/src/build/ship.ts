@@ -315,6 +315,10 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     }
   }
 
+  // `??=` keeps the first arrival, which means an id claimed twice loses its
+  // second record *silently* — the pet/monster "mimic" collision is why pets
+  // ship prefixed ids. Count what gets skipped so the next collision is loud.
+  let collisions = 0
   for (const [file, category] of [
     ['characters.json', 'character'],
     ['monsters.json', 'monster'],
@@ -322,6 +326,8 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     // Quests are searchable — "what was that quest called" is a real query —
     // and their route renders giver, rewards and, for the seals, the price.
     ['quests.json', 'quest'],
+    ['animals.json', 'animal'],
+    ['pets.json', 'pet'],
   ] as const) {
     for (const record of await read<{
       id: string
@@ -334,7 +340,11 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
       unreleased?: true
       spoiler_aliases?: string[]
     }>(file)) {
-      entries[record.id] ??= {
+      if (entries[record.id] !== undefined) {
+        collisions += 1
+        continue
+      }
+      entries[record.id] = {
         n: record.name,
         i: record.icon_key,
         c: category,
@@ -351,6 +361,10 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
         ...spoilerMarks(record),
       }
     }
+  }
+
+  if (collisions > 0) {
+    consola.warn(`index: ${collisions} record(s) skipped — their id is already claimed`)
   }
 
   const count = Object.keys(entries).length

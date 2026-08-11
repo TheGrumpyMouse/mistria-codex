@@ -50,7 +50,7 @@ const today = (): string =>
 
 /** One sprite to copy: the game's sprite name, and who wants it. */
 interface GameWant {
-  family: 'item' | 'ui' | 'cosmetic'
+  family: 'item' | 'ui' | 'cosmetic' | 'animal' | 'pet'
   sprite: string
   /**
    * The manifest key and filename stem, when one sprite yields more than one
@@ -211,6 +211,89 @@ const cosmeticSprites = (id: string): string[] => [
   `spr_ui_item_wearable_${id}_merged`,
 ]
 
+/**
+ * The install's Ranching UI icons, one per species — but the suffix varies by
+ * how the species is drawn: sexed animals have `_basic_female`/`_basic_male`,
+ * unsexed ones repeat the species (`_basic_duck`), and the two whose base
+ * sprite carries no suffix at all (`_basic`) are the horse and alpaca. All
+ * derived, so a miss is a glyph, never a stopped run.
+ */
+const animalSprites = (id: string): string[] => [
+  `spr_ui_icon_animal_${id}_basic_female`,
+  `spr_ui_icon_animal_${id}_basic_male`,
+  `spr_ui_icon_animal_${id}_basic_${id}`,
+  `spr_ui_icon_animal_${id}_basic`,
+]
+
+/**
+ * One icon per pet kind, from the stated `ui_icon` of the kind's first variant
+ * (sorted by key, so the choice is deterministic). The field is the game's,
+ * but which variant fronts the kind is our call — hence `derived`.
+ */
+async function petWants(covered: Set<string>, sprites: Map<string, string>): Promise<GameWant[]> {
+  interface PetRecord {
+    id: string
+    kind_key: string
+    icon_key: string | null
+  }
+  interface PetsExtract {
+    variants: { key: string; pet_kind: string | null; ui_icon: string | null }[]
+  }
+
+  let pets: PetRecord[]
+  let extract: PetsExtract
+  try {
+    pets = await readJsonFile<PetRecord[]>(join(DATA_DIR, 'pets.json'))
+    extract = await readJsonFile<PetsExtract>(join(SOURCES_DIR, 'game', 'pets.json'))
+  } catch {
+    return []
+  }
+
+  const wants: GameWant[] = []
+  for (const pet of pets) {
+    if (pet.icon_key === null || covered.has(pet.icon_key)) continue
+    const stated = extract.variants
+      .filter((v) => v.pet_kind === pet.kind_key && v.ui_icon !== null)
+      .sort((a, b) => a.key.localeCompare(b.key))
+      .map((v) => v.ui_icon as string)
+      .find((sprite) => sprites.has(sprite))
+    if (stated === undefined) continue
+    wants.push({
+      family: 'pet',
+      sprite: stated,
+      name: pet.kind_key,
+      iconKeys: [pet.icon_key],
+      derived: true,
+    })
+  }
+  return wants
+}
+
+async function animalWants(
+  covered: Set<string>,
+  sprites: Map<string, string>,
+): Promise<GameWant[]> {
+  interface AnimalRecord {
+    id: string
+    icon_key: string | null
+  }
+  let animals: AnimalRecord[]
+  try {
+    animals = await readJsonFile<AnimalRecord[]>(join(DATA_DIR, 'animals.json'))
+  } catch {
+    return []
+  }
+
+  const wants: GameWant[] = []
+  for (const animal of animals) {
+    if (animal.icon_key === null || covered.has(animal.icon_key)) continue
+    const sprite = animalSprites(animal.id).find((name) => sprites.has(name))
+    if (sprite === undefined) continue
+    wants.push({ family: 'animal', sprite, iconKeys: [animal.icon_key], derived: true })
+  }
+  return wants
+}
+
 async function collectWants(
   covered: Set<string>,
   sprites: Map<string, string>,
@@ -263,6 +346,8 @@ async function collectWants(
 
   return [
     ...bySprite.values(),
+    ...(await animalWants(covered, sprites)),
+    ...(await petWants(covered, sprites)),
     ...(await fishSilhouetteWants(sprites)),
     ...UI_ICONS.filter((want) => !want.iconKeys.every((key) => covered.has(key))),
   ].sort((a, b) => nameOf(a).localeCompare(nameOf(b)))

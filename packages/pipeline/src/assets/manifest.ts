@@ -38,6 +38,10 @@ export const AssetFamily = z.enum([
   'villager',
   'portrait',
   'monster',
+  /** Ranch animals — species icons from the install's Ranching UI set. */
+  'animal',
+  /** Pet kinds — one icon per kind, from the install's Pets UI set. */
+  'pet',
   'skill',
   'festival',
   'ui',
@@ -54,6 +58,8 @@ export const ATLAS_FAMILIES: readonly AssetFamily[] = [
   'cosmetic',
   'villager',
   'monster',
+  'animal',
+  'pet',
   'skill',
   'festival',
   'ui',

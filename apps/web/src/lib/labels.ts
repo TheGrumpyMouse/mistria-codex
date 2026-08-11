@@ -146,12 +146,34 @@ export const GAP_LABELS: Record<string, string> = {
   essence: 'essence',
   drops: 'drops',
   anchor: 'map position',
+  acquisition: 'how to get one',
+  purchase_requirements: 'what unlocks it',
+  feed: 'what it eats',
 }
 
 /** The gaps worth telling a player about, in their words. Internal ones vanish. */
 export const gapLabels = (gaps: string[]): string[] => [
   ...new Set(gaps.flatMap((gap) => (GAP_LABELS[gap] === undefined ? [] : [GAP_LABELS[gap]]))),
 ]
+
+/** The pets' three shared jobs, in a player's words. */
+export const PET_JOB_LABELS: Record<string, string> = {
+  wood: 'Fetching wood',
+  stone: 'Fetching stone',
+  forageables: 'Foraging',
+}
+
+/** How an animal is petted — `pick_up` must never reach the screen raw. */
+export const PETTING_LABELS: Record<string, string> = {
+  pet: 'petted',
+  pick_up: 'picked up',
+}
+
+/** What an animal eats, as the word a player buys it under. */
+export const FEED_KIND_LABELS: Record<string, string> = {
+  seed: 'grass seeds',
+  hay: 'hay',
+}
 
 /** What a spot pin is, for map labels and tooltips. */
 export const SPOT_KIND_LABELS: Record<string, string> = {
@@ -199,7 +221,7 @@ export interface RequirementDisplay {
   prefix: string
   label: string
   suffix: string
-  linkTo: { to: '/quest/$id' | '/place/$id' | '/item/$id'; id: string } | null
+  linkTo: { to: '/quest/$id' | '/place/$id' | '/item/$id' | '/animal/$id'; id: string } | null
 }
 
 export function requirementDisplay(req: Requirement, name?: string): RequirementDisplay {
@@ -221,6 +243,14 @@ export function requirementDisplay(req: Requirement, name?: string): Requirement
   // The post office's two conditions. Neither is `item`: holding a potato and
   // having shipped one are different states, and the letter only cares about
   // the second.
+  if (req.type === 'animal') {
+    return {
+      prefix: 'keep a ',
+      label: label.toLowerCase(),
+      suffix: '',
+      linkTo: { to: '/animal/$id', id: req.key },
+    }
+  }
   if (req.type === 'shipped_item') {
     return { prefix: 'shipping a ', label, suffix: '', linkTo: { to: '/item/$id', id: req.key } }
   }
@@ -271,7 +301,12 @@ export function gateDisplay(req: Requirement, name?: string): RequirementDisplay
   }
   if (req.type === 'animal') {
     // The key is the species token; the label reads as the animal's name.
-    return { prefix: 'keep a ', label: label.toLowerCase(), suffix: '', linkTo: null }
+    return {
+      prefix: 'keep a ',
+      label: label.toLowerCase(),
+      suffix: '',
+      linkTo: { to: '/animal/$id', id: req.key },
+    }
   }
   return { prefix: 'have ', label, suffix: '', linkTo: null }
 }

@@ -21,6 +21,7 @@
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import {
+  type AnimalRecord,
   buildPages,
   type CharacterRecord,
   type Dataset,
@@ -151,6 +152,7 @@ export async function checkSeo(): Promise<Finding[]> {
     items: await read<ItemRecord>('items.json'),
     characters: await read<CharacterRecord>('characters.json'),
     monsters: await read<MonsterRecord>('monsters.json'),
+    animals: await read<AnimalRecord>('animals.json'),
     places: await read<PlaceRecord>('locations.json'),
     mines: await read<MineRecord>('mines.json'),
     quests: await read<QuestRecord>('quests.json'),

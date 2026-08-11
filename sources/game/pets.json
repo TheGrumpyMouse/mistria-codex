@@ -1,0 +1,1449 @@
+{
+  "cosmetics": [
+    {
+      "cosmetic_set": "black_bow",
+      "key": "cat_black_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "cat_blue_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "cat_flower_crown",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "cat_green_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "cat_halo",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "cat_pink_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "cat_purple_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "cat_red_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "cat_sun_hat",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "cat_unicorn_horn",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "cat_yellow_bow",
+      "pet_kind": "cat"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "dog_black_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "dog_blue_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "dog_flower_crown",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "dog_green_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "dog_halo",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "dog_pink_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "dog_purple_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "dog_red_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "dog_sun_hat",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "dog_unicorn_horn",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "dog_yellow_bow",
+      "pet_kind": "dog"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "enchantern_black_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "enchantern_blue_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "enchantern_flower_crown",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "enchantern_green_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "enchantern_halo",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "enchantern_pink_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "enchantern_purple_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "enchantern_red_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "enchantern_sun_hat",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "enchantern_unicorn_horn",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "enchantern_yellow_bow",
+      "pet_kind": "enchantern"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "essence_bat_black_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "essence_bat_blue_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "essence_bat_flower_crown",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "essence_bat_green_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "essence_bat_halo",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "essence_bat_pink_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "essence_bat_purple_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "essence_bat_red_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "essence_bat_sun_hat",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "essence_bat_unicorn_horn",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "essence_bat_yellow_bow",
+      "pet_kind": "essence_bat"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "flame_spirit_black_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "flame_spirit_blue_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "flame_spirit_flower_crown",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "flame_spirit_green_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "flame_spirit_halo",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "flame_spirit_pink_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "flame_spirit_purple_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "flame_spirit_red_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "flame_spirit_sun_hat",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "flame_spirit_unicorn_horn",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "flame_spirit_yellow_bow",
+      "pet_kind": "flame_spirit"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "flying_tome_black_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "flying_tome_blue_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "flying_tome_flower_crown",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "flying_tome_green_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "flying_tome_halo",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "flying_tome_pink_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "flying_tome_purple_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "flying_tome_red_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "flying_tome_sun_hat",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "flying_tome_unicorn_horn",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "flying_tome_yellow_bow",
+      "pet_kind": "flying_tome"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "griffin_statue_black_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "griffin_statue_blue_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "griffin_statue_flower_crown",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "griffin_statue_green_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "griffin_statue_halo",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "griffin_statue_pink_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "griffin_statue_purple_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "griffin_statue_red_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "griffin_statue_sun_hat",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "griffin_statue_unicorn_horn",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "griffin_statue_yellow_bow",
+      "pet_kind": "griffin_statue"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "lava_cat_black_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "lava_cat_blue_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "lava_cat_flower_crown",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "lava_cat_green_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "lava_cat_halo",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "lava_cat_pink_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "lava_cat_purple_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "lava_cat_red_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "lava_cat_sun_hat",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "lava_cat_unicorn_horn",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "lava_cat_yellow_bow",
+      "pet_kind": "lava_cat"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "mimic_black_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "mimic_blue_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "mimic_flower_crown",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "mimic_green_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "mimic_halo",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "mimic_pink_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "mimic_purple_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "mimic_red_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "mimic_sun_hat",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "mimic_unicorn_horn",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "mimic_yellow_bow",
+      "pet_kind": "mimic"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "mushroom_black_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "mushroom_blue_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "mushroom_flower_crown",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "mushroom_green_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "mushroom_halo",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "mushroom_pink_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "mushroom_purple_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "mushroom_red_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "mushroom_sun_hat",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "mushroom_unicorn_horn",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "mushroom_yellow_bow",
+      "pet_kind": "mushroom"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "oreclod_black_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "oreclod_blue_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "oreclod_flower_crown",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "oreclod_green_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "oreclod_halo",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "oreclod_pink_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "oreclod_purple_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "oreclod_red_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "oreclod_sun_hat",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "oreclod_unicorn_horn",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "oreclod_yellow_bow",
+      "pet_kind": "oreclod"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "rock_stack_black_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "rock_stack_blue_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "rock_stack_flower_crown",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "rock_stack_green_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "rock_stack_halo",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "rock_stack_pink_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "rock_stack_purple_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "rock_stack_red_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "rock_stack_sun_hat",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "rock_stack_unicorn_horn",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "rock_stack_yellow_bow",
+      "pet_kind": "rock_stack"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "rockclod_black_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "rockclod_blue_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "rockclod_flower_crown",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "rockclod_green_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "rockclod_halo",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "rockclod_pink_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "rockclod_purple_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "rockclod_red_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "rockclod_sun_hat",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "rockclod_unicorn_horn",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "rockclod_yellow_bow",
+      "pet_kind": "rockclod"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "sapling_black_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "sapling_blue_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "sapling_flower_crown",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "sapling_green_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "sapling_halo",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "sapling_pink_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "sapling_purple_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "sapling_red_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "skull_mask",
+      "key": "sapling_skull_mask",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "sapling_sun_hat",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "sapling_unicorn_horn",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "sapling_yellow_bow",
+      "pet_kind": "sapling"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "stalagmite_black_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "stalagmite_blue_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "stalagmite_flower_crown",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "stalagmite_green_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "stalagmite_halo",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "stalagmite_pink_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "stalagmite_purple_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "stalagmite_red_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "stalagmite_sun_hat",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "stalagmite_unicorn_horn",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "stalagmite_yellow_bow",
+      "pet_kind": "stalagmite"
+    },
+    {
+      "cosmetic_set": "black_bow",
+      "key": "void_cat_black_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "blue_bow",
+      "key": "void_cat_blue_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "flower_crown",
+      "key": "void_cat_flower_crown",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "green_bow",
+      "key": "void_cat_green_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "halo",
+      "key": "void_cat_halo",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "pink_bow",
+      "key": "void_cat_pink_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "purple_bow",
+      "key": "void_cat_purple_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "red_bow",
+      "key": "void_cat_red_bow",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "sun_hat",
+      "key": "void_cat_sun_hat",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "unicorn_horn",
+      "key": "void_cat_unicorn_horn",
+      "pet_kind": "void_cat"
+    },
+    {
+      "cosmetic_set": "yellow_bow",
+      "key": "void_cat_yellow_bow",
+      "pet_kind": "void_cat"
+    }
+  ],
+  "gameVersion": "1.0.0",
+  "jobs": [
+    {
+      "key": "forageables",
+      "location_room": "eastern_road",
+      "reward_custom": true,
+      "reward_item": null,
+      "reward_table": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "key": "stone",
+      "location_room": "narrows",
+      "reward_custom": false,
+      "reward_item": "ore_stone",
+      "reward_table": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          13,
+          15
+        ]
+      ]
+    },
+    {
+      "key": "wood",
+      "location_room": "town",
+      "reward_custom": false,
+      "reward_item": "basic_wood",
+      "reward_table": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          13,
+          15
+        ]
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "key": "cat_black",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_black",
+      "name": "Black Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_calico",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_calico",
+      "name": "Calico Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_calico"
+    },
+    {
+      "key": "cat_grey",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_grey",
+      "name": "Grey Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_navy",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_navy",
+      "name": "Navy Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_orange",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_orange",
+      "name": "Orange Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_pink",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_pink",
+      "name": "Pink Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_purple",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_purple",
+      "name": "Purple Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_siamese",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_siamese",
+      "name": "Siamese Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_siamese"
+    },
+    {
+      "key": "cat_tabby",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_tabby",
+      "name": "Tabby Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_tortie",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_tortie",
+      "name": "Tortie Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_tortie"
+    },
+    {
+      "key": "cat_tuxedo",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_tuxedo",
+      "name": "Tuxedo Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "cat_white",
+      "map_icon": "spr_ui_generic_icon_pet_cat_small_white",
+      "name": "White Cat",
+      "pet_kind": "cat",
+      "ui_icon": "spr_ui_icon_animal_cat_basic"
+    },
+    {
+      "key": "copperclod",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Copperclod",
+      "pet_kind": "oreclod",
+      "ui_icon": "spr_ui_icon_pet_oreclod"
+    },
+    {
+      "key": "dog_beige",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_beige",
+      "name": "Beige Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_black",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_black",
+      "name": "Black Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_brown",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_brown",
+      "name": "Brown Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_dalmation",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_dalmation",
+      "name": "Dalmation Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_grey",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_grey",
+      "name": "Grey Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_navy",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_navy",
+      "name": "Navy Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_orange",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_orange",
+      "name": "Orange Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_pink",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_pink",
+      "name": "Pink Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_purple",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_purple",
+      "name": "Purple Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_spots",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_spots",
+      "name": "Spotted Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_white",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_white",
+      "name": "White Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "dog_yellow",
+      "map_icon": "spr_ui_generic_icon_pet_dog_small_yellow",
+      "name": "Yellow Dog",
+      "pet_kind": "dog",
+      "ui_icon": "spr_ui_icon_animal_dog_basic"
+    },
+    {
+      "key": "enchantern_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Blue Enchantern",
+      "pet_kind": "enchantern",
+      "ui_icon": "spr_ui_icon_pet_enchantern_blue"
+    },
+    {
+      "key": "enchantern_yellow",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Yellow Enchantern",
+      "pet_kind": "enchantern",
+      "ui_icon": "spr_ui_icon_pet_enchantern_yellow"
+    },
+    {
+      "key": "essence_bat_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Blue Essence Bat",
+      "pet_kind": "essence_bat",
+      "ui_icon": "spr_ui_icon_pet_essence_bat_blue"
+    },
+    {
+      "key": "essence_bat_purple",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Essence Bat",
+      "pet_kind": "essence_bat",
+      "ui_icon": "spr_ui_icon_pet_essence_bat_purple"
+    },
+    {
+      "key": "flame_spirit_orange",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Orange Flame Spirit",
+      "pet_kind": "flame_spirit",
+      "ui_icon": "spr_ui_icon_pet_flame_spirit_orange"
+    },
+    {
+      "key": "flame_spirit_purple",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Purple Flame Spirit",
+      "pet_kind": "flame_spirit",
+      "ui_icon": "spr_ui_icon_pet_flame_spirit_purple"
+    },
+    {
+      "key": "flying_tome",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Flying Tome",
+      "pet_kind": "flying_tome",
+      "ui_icon": "spr_ui_icon_pet_flying_tome"
+    },
+    {
+      "key": "goldclod",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Goldclod",
+      "pet_kind": "oreclod",
+      "ui_icon": "spr_ui_icon_pet_oreclod"
+    },
+    {
+      "key": "griffin_statue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Gryphon Statue",
+      "pet_kind": "griffin_statue",
+      "ui_icon": "spr_ui_icon_pet_griffin_statue"
+    },
+    {
+      "key": "ironclod",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Ironclod",
+      "pet_kind": "oreclod",
+      "ui_icon": "spr_ui_icon_pet_oreclod"
+    },
+    {
+      "key": "lava_cat",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Lava Cat",
+      "pet_kind": "lava_cat",
+      "ui_icon": "spr_ui_icon_pet_lava_cat_lava"
+    },
+    {
+      "key": "mimic",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Mimic",
+      "pet_kind": "mimic",
+      "ui_icon": "spr_ui_icon_pet_mimic"
+    },
+    {
+      "key": "mushroom_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Blue Mushroom",
+      "pet_kind": "mushroom",
+      "ui_icon": "spr_ui_icon_pet_mushroom_basic"
+    },
+    {
+      "key": "mushroom_green",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Green Mushroom",
+      "pet_kind": "mushroom",
+      "ui_icon": "spr_ui_icon_pet_mushroom_basic"
+    },
+    {
+      "key": "mushroom_purple",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Purple Mushroom",
+      "pet_kind": "mushroom",
+      "ui_icon": "spr_ui_icon_pet_mushroom_basic"
+    },
+    {
+      "key": "mushroom_red",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Mushroom",
+      "pet_kind": "mushroom",
+      "ui_icon": "spr_ui_icon_pet_mushroom_basic"
+    },
+    {
+      "key": "rock_stack",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Rock Stack",
+      "pet_kind": "rock_stack",
+      "ui_icon": "spr_ui_icon_pet_rock_stack"
+    },
+    {
+      "key": "rockclod",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Rockclod",
+      "pet_kind": "rockclod",
+      "ui_icon": "spr_ui_icon_pet_rockclod"
+    },
+    {
+      "key": "rockclod_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Blue Rockclod",
+      "pet_kind": "rockclod",
+      "ui_icon": "spr_ui_icon_pet_rockclod"
+    },
+    {
+      "key": "rockclod_green",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Green Rockclod",
+      "pet_kind": "rockclod",
+      "ui_icon": "spr_ui_icon_pet_rockclod"
+    },
+    {
+      "key": "rockclod_red",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Red Rockclod",
+      "pet_kind": "rockclod",
+      "ui_icon": "spr_ui_icon_pet_rockclod"
+    },
+    {
+      "key": "sapling_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Blue Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "sapling_cool",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Cool Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "sapling_green",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Green Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "sapling_orange",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Orange Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "sapling_pink",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Pink Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "sapling_purple",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Purple Sapling",
+      "pet_kind": "sapling",
+      "ui_icon": "spr_ui_icon_pet_sapling_green"
+    },
+    {
+      "key": "silverclod",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Silverclod",
+      "pet_kind": "oreclod",
+      "ui_icon": "spr_ui_icon_pet_oreclod"
+    },
+    {
+      "key": "stalagmite_blue",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Stalagmite",
+      "pet_kind": "stalagmite",
+      "ui_icon": "spr_ui_icon_pet_stalagmite"
+    },
+    {
+      "key": "stalagmite_green",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Green Stalagmite",
+      "pet_kind": "stalagmite",
+      "ui_icon": "spr_ui_icon_pet_stalagmite"
+    },
+    {
+      "key": "stalagmite_purple",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Purple Stalagmite",
+      "pet_kind": "stalagmite",
+      "ui_icon": "spr_ui_icon_pet_stalagmite"
+    },
+    {
+      "key": "void_cat",
+      "map_icon": "spr_ui_generic_icon_pet_monster_small",
+      "name": "Void Cat",
+      "pet_kind": "void_cat",
+      "ui_icon": "spr_ui_icon_pet_lava_cat_void"
+    }
+  ]
+}

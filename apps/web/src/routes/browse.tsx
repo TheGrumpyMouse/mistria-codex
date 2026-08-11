@@ -53,6 +53,8 @@ const CATEGORIES: { id: string; label: string }[] = [
   { id: 'misc', label: 'Other' },
   { id: 'character', label: 'Villagers' },
   { id: 'monster', label: 'Monsters' },
+  { id: 'animal', label: 'Animals' },
+  { id: 'pet', label: 'Pets' },
   { id: 'location', label: 'Places' },
   // 352 records — a fifth of the index. Absent from this list, they were
   // findable only through search, which read as missing data.

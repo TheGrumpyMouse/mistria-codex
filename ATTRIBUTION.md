@@ -23,7 +23,7 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2676 files.**
+**2692 files.**
 
 ## Items (2181)
 

@@ -1,0 +1,68 @@
+{
+  "_comment": [
+    "Display names for the sixteen pet kinds in `fiddle/pets.toml`.",
+    "",
+    "The game names every *variant* ('Tabby Cat', 'Lava Cat') but states no",
+    "name for the kind itself — `pet_kind = \"flying_tome\"` is a token, and a",
+    "token must never be de-snake-cased into a name mechanically. Each name",
+    "here is taken from the game's own variant names: where one variant exists",
+    "its stated name IS the kind's name, and where several exist the shared",
+    "noun they all end in is used. `oreclod` is the one kind whose variants",
+    "share no noun (Copperclod, Ironclod, Silverclod, Goldclod) — 'Oreclod' is",
+    "our reading of the token, marked as such.",
+    "",
+    "A kind missing from this file is dropped from the build AND counted, so a",
+    "game patch adding a seventeenth pet shows up as a warning, not silence."
+  ],
+  "kinds": {
+    "cat": { "name": "Cat", "source": "shared noun of 12 stated variant names ('Tabby Cat' …)" },
+    "dog": { "name": "Dog", "source": "shared noun of 12 stated variant names ('Yellow Dog' …)" },
+    "sapling": {
+      "name": "Sapling",
+      "source": "shared noun of 6 stated variant names ('Green Sapling' …)"
+    },
+    "mushroom": {
+      "name": "Mushroom",
+      "source": "stated variant name 'Mushroom' (mushroom_red); the other three prefix it"
+    },
+    "rockclod": {
+      "name": "Rockclod",
+      "source": "stated variant name 'Rockclod' (rockclod); the other three prefix it"
+    },
+    "oreclod": {
+      "name": "Oreclod",
+      "source": "our reading of the pet_kind token — the four variants (Copperclod…Goldclod) share no noun"
+    },
+    "enchantern": {
+      "name": "Enchantern",
+      "source": "shared noun of 2 stated variant names ('Yellow Enchantern', 'Blue Enchantern')"
+    },
+    "stalagmite": {
+      "name": "Stalagmite",
+      "source": "stated variant name 'Stalagmite' (stalagmite_blue); the other two prefix it"
+    },
+    "essence_bat": {
+      "name": "Essence Bat",
+      "source": "stated variant name 'Essence Bat' (essence_bat_purple)"
+    },
+    "mimic": { "name": "Mimic", "source": "stated variant name 'Mimic' (sole variant)" },
+    "flame_spirit": {
+      "name": "Flame Spirit",
+      "source": "shared noun of 2 stated variant names ('Orange Flame Spirit', 'Purple Flame Spirit')"
+    },
+    "lava_cat": { "name": "Lava Cat", "source": "stated variant name 'Lava Cat' (sole variant)" },
+    "void_cat": { "name": "Void Cat", "source": "stated variant name 'Void Cat' (sole variant)" },
+    "rock_stack": {
+      "name": "Rock Stack",
+      "source": "stated variant name 'Rock Stack' (sole variant)"
+    },
+    "flying_tome": {
+      "name": "Flying Tome",
+      "source": "stated variant name 'Flying Tome' (sole variant)"
+    },
+    "griffin_statue": {
+      "name": "Gryphon Statue",
+      "source": "stated variant name 'Gryphon Statue' (sole variant) — the game spells the token 'griffin' and the name 'Gryphon'; the stated name wins"
+    }
+  }
+}

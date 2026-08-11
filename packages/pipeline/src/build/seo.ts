@@ -32,6 +32,7 @@ import type { Meta } from '@mistria/schema'
 import { consola } from 'consola'
 import { DATA_DIR, GUIDE_DIR, WEB_PUBLIC_DIR } from '../lib/paths.js'
 import {
+  type AnimalRecord,
   buildPages,
   type CharacterRecord,
   type Dataset,
@@ -72,6 +73,7 @@ async function loadDataset(): Promise<Dataset> {
     items: await readDataset<ItemRecord>('items.json'),
     characters: await readDataset<CharacterRecord>('characters.json'),
     monsters: await readDataset<MonsterRecord>('monsters.json'),
+    animals: await readDataset<AnimalRecord>('animals.json'),
     places: await readDataset<PlaceRecord>('locations.json'),
     mines: await readDataset<MineRecord>('mines.json'),
     quests: await readDataset<QuestRecord>('quests.json'),

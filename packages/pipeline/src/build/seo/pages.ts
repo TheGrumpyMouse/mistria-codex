@@ -74,6 +74,20 @@ export interface MonsterRecord extends Common {
   drops: { item_id: string; chance: number | null }[]
 }
 
+export interface AnimalRecord extends Common {
+  building: 'coop' | 'barn'
+  matures_days: number | null
+  products: {
+    item_id: string
+    sex: 'male' | 'female' | null
+    days_to_produce: number | null
+    hearts_required: number | null
+    quality: string | null
+  }[]
+  breeding: { treat_item_id: string | null } | null
+  purchase: { price: number } | null
+}
+
 export interface PlaceRecord extends Common {
   kind: string
   parent_id: string | null
@@ -125,6 +139,8 @@ export interface Dataset {
   items: ItemRecord[]
   characters: CharacterRecord[]
   monsters: MonsterRecord[]
+  /** Pets get no page — colours and three shared jobs is a thin document. */
+  animals: AnimalRecord[]
   places: PlaceRecord[]
   mines: MineRecord[]
   quests: QuestRecord[]
@@ -666,6 +682,77 @@ function characterPage(character: CharacterRecord, ctx: UrlContext): GuidePage {
   }
 }
 
+function animalPage(animal: AnimalRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
+  const segments = ['guide', 'animal', slugFor(animal.id)]
+  const depth = segments.length
+  const sections: Section[] = []
+  const properties: { name: string; value: string }[] = []
+
+  const rows: { label: string; value: string }[] = []
+  rows.push({ label: 'Home', value: animal.building === 'coop' ? 'Coop' : 'Barn' })
+  properties.push({ name: 'Home', value: animal.building === 'coop' ? 'Coop' : 'Barn' })
+  if (animal.purchase !== null) {
+    rows.push({ label: 'Price', value: `${animal.purchase.price}t` })
+    properties.push({ name: 'Price', value: `${animal.purchase.price}t` })
+  }
+  if (animal.matures_days !== null) {
+    rows.push({ label: 'Grows up in', value: `${animal.matures_days} days` })
+  }
+  if (animal.breeding?.treat_item_id != null) {
+    rows.push({ label: 'Breeding treat', value: lookup.itemName(animal.breeding.treat_item_id) })
+  }
+  sections.push({ heading: 'About', kind: 'facts', rows })
+
+  if (animal.products.length > 0) {
+    sections.push({
+      heading: 'Produce',
+      kind: 'list',
+      items: animal.products.map((product) => {
+        const parts: string[] = [lookup.itemName(product.item_id)]
+        if (product.sex !== null) parts.push(product.sex === 'female' ? 'females' : 'males')
+        if (product.days_to_produce !== null) {
+          parts.push(
+            product.days_to_produce === 1 ? 'daily' : `every ${product.days_to_produce} days`,
+          )
+        }
+        if (product.quality === 'golden' && product.hearts_required !== null) {
+          parts.push(`from ${product.hearts_required} hearts`)
+        }
+        return parts.join(' — ')
+      }),
+    })
+  }
+
+  const makes =
+    animal.products.length === 0
+      ? null
+      : `It produces ${list(animal.products.map((p) => lookup.itemName(p.item_id)))}.`
+
+  return {
+    segments,
+    source: { dataset: 'animals', id: animal.id },
+    aliases: (animal.former_ids ?? []).map((old) => ['guide', 'animal', slugFor(old)]),
+    input: {
+      name: animal.name,
+      kind: 'Ranch animal',
+      description: metaDescription([
+        `The ${animal.name} is a ${animal.building} animal in Fields of Mistria.`,
+        makes,
+      ]),
+      canonical: canonicalOf(ctx, segments),
+      siteUrl: ctx.siteUrl,
+      appHref: `${upTo(depth)}#/animal/${animal.id}`,
+      hubHref: `${upTo(depth)}guide/`,
+      rootHref: upTo(depth),
+      sourceUrl: wikiUrl(animal.wiki_page),
+      ogImage: ctx.ogImage,
+      sections,
+      gaps: animal.data_gaps ?? [],
+      properties,
+    },
+  }
+}
+
 function monsterPage(monster: MonsterRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
   const segments = ['guide', 'monster', slugFor(monster.id)]
   const depth = segments.length
@@ -896,6 +983,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
 
   const characters = gate(data.characters)
   const monsters = gate(data.monsters)
+  const animals = gate(data.animals)
   const quests = gate(data.quests).filter(
     (q) => q.rewards !== null || q.giver_character_id !== null,
   )
@@ -912,6 +1000,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...data.items.map((r) => [r.id, r.name] as const),
     ...data.characters.map((r) => [r.id, r.name] as const),
     ...data.monsters.map((r) => [r.id, r.name] as const),
+    ...data.animals.map((r) => [r.id, r.name] as const),
     ...data.places.map((r) => [r.id, r.name] as const),
     ...data.mines.map((r) => [r.id, r.name] as const),
     ...data.quests.map((r) => [r.id, r.name] as const),
@@ -926,6 +1015,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
   }
   for (const r of characters) pathIndex.set(r.id, ['guide', 'villager', slugFor(r.id)])
   for (const r of monsters) pathIndex.set(r.id, ['guide', 'monster', slugFor(r.id)])
+  for (const r of animals) pathIndex.set(r.id, ['guide', 'animal', slugFor(r.id)])
   for (const r of places) pathIndex.set(r.id, ['guide', 'place', slugFor(r.id)])
   for (const r of quests) pathIndex.set(r.id, ['guide', 'quest', slugFor(r.id)])
 
@@ -950,6 +1040,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...items.map((item) => itemPage(item, ctx, lookup, recipeByOutput.get(item.id))),
     ...characters.map((character) => characterPage(character, ctx)),
     ...monsters.map((monster) => monsterPage(monster, ctx, lookup)),
+    ...animals.map((animal) => animalPage(animal, ctx, lookup)),
     ...places.map((place) => placePage(place, mineByLocation.get(place.id), ctx, lookup)),
     ...quests.map((quest) => questPage(quest, ctx, lookup)),
   ]

@@ -120,6 +120,39 @@ check(
 await go('/mines')
 check('a biome heading draws an icon', (await page.locator('section h2 [role="img"]').count()) > 0)
 
+// ── The two new art families ──
+// Animal icons ride the wiki's category images (`animal/<id>` keys) and pet
+// icons are the first game-install family added since furniture — each is one
+// join that can silently stop resolving, so one case per root cause.
+await go('/ranch')
+const animalRows = page.locator('main a[href*="/animal/"]')
+const animalCount = await animalRows.count()
+check('the ranch lists animals at all', animalCount > 0, `${animalCount} rows`)
+check(
+  'every animal row draws its sprite, not initials',
+  (await spritesIn('main a[href*="/animal/"]')) === animalCount,
+)
+const petCount = await page.locator('main a[href*="/pet/"]').count()
+check('the ranch lists pets at all', petCount > 0, `${petCount} rows`)
+// A veiled pet keeps its spoiler chip instead of a sprite — the chip IS the
+// correct rendering there, so the assertion is "sprite or chip", never "some
+// icon": a glyph tile satisfies neither and fails.
+const petRowStates = await page.locator('main a[href*="/pet/"]').evaluateAll((rows) =>
+  rows.map((row) => {
+    const sprite = row.querySelector('.sprite')
+    if (sprite !== null) {
+      const image = getComputedStyle(sprite).backgroundImage
+      if (image !== '' && image !== 'none') return 'sprite'
+    }
+    return row.querySelector('.unverified') !== null ? 'veiled' : 'glyph'
+  }),
+)
+check(
+  'every pet row draws its sprite or its spoiler chip, not initials',
+  petRowStates.every((s) => s !== 'glyph'),
+  petRowStates.join(','),
+)
+
 // ── The glyph is still the answer where there is no art ──
 // Not a nice-to-have: a stall drawing a *wrong* sprite would be worse than a
 // stall drawing a store, and this is what tells the two apart.

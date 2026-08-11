@@ -35,7 +35,9 @@ import type { GameFestival, GameFestivalsExtract } from '../extract/festivals.js
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
 import type { GameMonstersExtract, GameMonsterVariant } from '../extract/monsters.js'
+import type { GamePetsExtract } from '../extract/pets.js'
 import type { GameQuestsExtract, GameRequestGate, GameStoryQuest } from '../extract/quests.js'
+import type { GameRanchingExtract } from '../extract/ranching.js'
 import type { GameScheduleFile, GameSchedulesExtract } from '../extract/schedules.js'
 import type {
   GameBug,
@@ -221,6 +223,21 @@ export interface GameFacts {
   gameScheduleFiles: GameScheduleFile[]
   /** Room id -> its `locations.toml` row, for a schedule stop's name and outdoor map. */
   roomById: Map<string, GameLocation>
+  /**
+   * The ranch-animal extract, verbatim. Null when the extract predates the
+   * ranching read — the animals builder keeps its curated-only output.
+   */
+  ranching: GameRanchingExtract | null
+  /** The pets extract. Null when it predates the read — no pet records ship. */
+  petsExtract: GamePetsExtract | null
+  /**
+   * Game requirement flag -> our quest id, from
+   * `curated/aliases/game_flags.json`. A flag with no entry is held back into
+   * a data gap by its consumer, never guessed at.
+   */
+  questByFlag: Map<string, string>
+  /** Pet kind token -> display name, from `curated/aliases/pet_kinds.json`. */
+  petKindNames: Map<string, string>
 }
 
 /** The artifact and seal extract, indexed. See `buildArtifactFacts`. */
@@ -564,6 +581,16 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
   const schedulesExtract = await readJsonFile<GameSchedulesExtract>(
     join(game, 'schedules.json'),
   ).catch(() => null)
+  const ranchingExtract = await readJsonFile<GameRanchingExtract>(
+    join(game, 'ranching.json'),
+  ).catch(() => null)
+  const petsExtract = await readJsonFile<GamePetsExtract>(join(game, 'pets.json')).catch(() => null)
+  const flagAliases = await readJsonFile<{ flags: Record<string, { quest: string }> }>(
+    join(CURATED_DIR, 'aliases', 'game_flags.json'),
+  ).catch(() => ({ flags: {} }))
+  const petKindAliases = await readJsonFile<{ kinds: Record<string, { name: string }> }>(
+    join(CURATED_DIR, 'aliases', 'pet_kinds.json'),
+  ).catch(() => ({ kinds: {} }))
 
   // Our monster ids -> game variant tables, through the curated alias — the
   // same shape as the room join. A variant nobody maps is reported, because
@@ -666,6 +693,14 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     ),
     gameScheduleFiles: schedulesExtract?.files ?? [],
     roomById: new Map(world.locations.map((room) => [room.id, room] as const)),
+    ranching: ranchingExtract,
+    petsExtract,
+    questByFlag: new Map(
+      Object.entries(flagAliases.flags).map(([flag, alias]) => [flag, alias.quest] as const),
+    ),
+    petKindNames: new Map(
+      Object.entries(petKindAliases.kinds).map(([kind, alias]) => [kind, alias.name] as const),
+    ),
     artifactFacts:
       artifactExtract === null
         ? null

@@ -54,6 +54,10 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   // not shops).
   shops: 14,
   animals: 8, // four coop, four barn
+  // pets.toml names 16 pet_kind values — cat, dog and fourteen monster-shaped
+  // companions. A patch adding a kind shows up here.
+  pets: 16,
+  ranching: 1, // the singleton rulebook record
   // seals.toml declares exactly seven: water, earth, fire, ruins, void,
   // priestess and final. A patch adding an eighth shows up here.
   seals: 7,

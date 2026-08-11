@@ -243,6 +243,22 @@ interface QuestLite {
   objectives: { type: string; target_id: string | null; quantity: number | null }[]
 }
 
+/** Just enough of an animal to say "your cow makes this" with a link. */
+interface AnimalLite {
+  id: string
+  name: string
+  icon_key: string | null
+  products: {
+    item_id: string
+    sex: 'male' | 'female' | null
+    days_to_produce: number | null
+    hearts_required: number | null
+    quality: string | null
+  }[]
+  breeding: { treat_item_id: string | null } | null
+  feed_item_ids: string[]
+}
+
 /** Just enough of a monster to say "this drops it" with a link. */
 interface MonsterLite {
   id: string
@@ -292,6 +308,7 @@ export function ItemRoute() {
     machines: MachineRecord[]
     fishFacets: FishFacetLite[]
     monsters: MonsterLite[]
+    animals: AnimalLite[]
     meta: Meta | null
     loading: boolean
   }>({
@@ -310,6 +327,7 @@ export function ItemRoute() {
     machines: [],
     fishFacets: [],
     monsters: [],
+    animals: [],
     meta: null,
     loading: true,
   })
@@ -339,6 +357,9 @@ export function ItemRoute() {
       // 6KB, for the reverse of the bestiary's drop tables — "where do I get
       // Monster Shell" is answered by who drops it, and nothing else says so.
       loadDataset<MonsterLite>('monsters'),
+      // A few KB, for the reverse of the ranch's produce tables — an egg's
+      // page should name the hen.
+      loadDataset<AnimalLite>('animals'),
       loadRequestBoard(),
       loadMeta(),
       Promise.all(
@@ -362,6 +383,7 @@ export function ItemRoute() {
           machines,
           fishFacets,
           monsters,
+          animals,
           board,
           meta,
           done,
@@ -383,6 +405,7 @@ export function ItemRoute() {
             machines,
             fishFacets,
             monsters,
+            animals,
             meta,
             loading: false,
           })
@@ -414,6 +437,7 @@ export function ItemRoute() {
     machines,
     fishFacets,
     monsters,
+    animals,
     meta,
     loading,
   } = state
@@ -519,6 +543,14 @@ export function ItemRoute() {
   // recorded" while the bestiary listed exactly who to hit for them.
   const droppedBy =
     item === null ? [] : monsters.filter((m) => m.drops.some((d) => d.item_id === item.id))
+
+  // The reverse of the ranch's produce tables: which animal makes this, which
+  // one breeds with it, which ones eat it. Ranching products used to answer
+  // "where does milk come from" with silence.
+  const producedBy =
+    item === null ? [] : animals.filter((a) => a.products.some((p) => p.item_id === item.id))
+  const treatFor = item === null ? [] : animals.filter((a) => a.breeding?.treat_item_id === item.id)
+  const feedFor = item === null ? [] : animals.filter((a) => a.feed_item_ids.includes(item.id))
 
   // Who feels how about this item, from the reverse of the gift table.
   const opinions = useMemo(() => {
@@ -697,6 +729,7 @@ export function ItemRoute() {
                 ...(item.sold_by.length > 0 ? ['sold'] : []),
                 ...(recipe !== undefined ? ['made'] : []),
                 ...(droppedBy.length > 0 ? ['dropped by monsters'] : []),
+                ...(producedBy.length > 0 ? ['made by your animals'] : []),
               ]
               return below.length === 0
                 ? 'No source recorded.'
@@ -764,6 +797,95 @@ export function ItemRoute() {
                 </li>
               )
             })}
+          </ul>
+        </Section>
+      )}
+
+      {/* The reverse of the ranch's produce tables — an egg's page names the
+          hen, a treat's page names what it breeds, feed names who eats it. */}
+      {(producedBy.length > 0 || treatFor.length > 0 || feedFor.length > 0) && (
+        <Section title="From the ranch">
+          <ul className="flex flex-col gap-1 text-ink-mute text-sm">
+            {producedBy.map((animal) => {
+              const product = animal.products.find((p) => p.item_id === item.id)
+              return (
+                <li key={`makes:${animal.id}`} className="flex items-center gap-2.5">
+                  <ItemIcon
+                    iconKey={animal.icon_key ?? `animal/${animal.id}`}
+                    name={animal.name}
+                    size="sm"
+                  />
+                  <span className="min-w-0">
+                    {product?.sex !== null && product !== undefined && (
+                      <>{product.sex === 'female' ? 'Female ' : 'Male '}</>
+                    )}
+                    <Link
+                      to="/animal/$id"
+                      params={{ id: animal.id }}
+                      className="text-ink underline decoration-rule underline-offset-4 hover:text-ink"
+                    >
+                      {animal.name}
+                    </Link>
+                    {product?.days_to_produce != null && (
+                      <>
+                        {product.days_to_produce === 1 ? (
+                          <> — daily</>
+                        ) : (
+                          <>
+                            {' — every '}
+                            <span data-numeral>{product.days_to_produce}</span> days
+                          </>
+                        )}
+                      </>
+                    )}
+                    {product?.quality === 'golden' && product.hearts_required !== null && (
+                      <>
+                        {', from '}
+                        <span data-numeral>{product.hearts_required}♥</span>
+                      </>
+                    )}
+                  </span>
+                </li>
+              )
+            })}
+            {treatFor.map((animal) => (
+              <li key={`treat:${animal.id}`} className="flex items-center gap-2.5">
+                <ItemIcon
+                  iconKey={animal.icon_key ?? `animal/${animal.id}`}
+                  name={animal.name}
+                  size="sm"
+                />
+                <span>
+                  Breeds the{' '}
+                  <Link
+                    to="/animal/$id"
+                    params={{ id: animal.id }}
+                    className="text-ink underline decoration-rule underline-offset-4 hover:text-ink"
+                  >
+                    {animal.name}
+                  </Link>
+                </span>
+              </li>
+            ))}
+            {feedFor.length > 0 && (
+              <li className="flex items-start gap-2.5">
+                <span className="min-w-0 text-ink-mute">
+                  Feed for the{' '}
+                  {feedFor.map((animal, i) => (
+                    <span key={animal.id}>
+                      {i > 0 && (i === feedFor.length - 1 ? ' and ' : ', ')}
+                      <Link
+                        to="/animal/$id"
+                        params={{ id: animal.id }}
+                        className="text-ink underline decoration-rule underline-offset-4 hover:text-ink"
+                      >
+                        {animal.name}
+                      </Link>
+                    </span>
+                  ))}
+                </span>
+              </li>
+            )}
           </ul>
         </Section>
       )}

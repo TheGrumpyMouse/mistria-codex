@@ -34,7 +34,7 @@ import { writeJson } from '../lib/write-json.js'
 import { buildSeals } from './builders/artifacts.js'
 import { buildCharacters, buildGiftPrefs, withVendorFlags } from './builders/characters.js'
 import { buildCosmetics } from './builders/cosmetics.js'
-import { buildAnimals, buildBuildings } from './builders/farm.js'
+import { buildAnimals, buildBuildings, buildPets, buildRanching } from './builders/farm.js'
 import { buildFestivals } from './builders/festivals.js'
 import { buildCrops, buildFishFacets, buildLocations, itemInputs } from './builders/fish-crops.js'
 import { collapseFurniture } from './builders/furniture.js'
@@ -244,8 +244,15 @@ const BUILDERS: Record<DatasetName, Builder> = {
   quests: (_ctx, derived) => derived.quests,
   shops: (_ctx, derived) => derived.shops,
   skills: buildSkills,
-  animals: buildAnimals,
+  animals: (ctx, derived) =>
+    buildAnimals(
+      ctx,
+      new Set(derived.items.map((i) => i.id)),
+      new Set(derived.quests.map((q) => q.id)),
+    ),
   buildings: buildBuildings,
+  pets: buildPets,
+  ranching: (ctx, derived) => buildRanching(ctx, new Set(derived.items.map((i) => i.id))),
   machines: (ctx, derived) => buildMachines(ctx, new Set(derived.items.map((i) => i.id))),
   mines: (_ctx, derived) => derived.mines,
   seals: buildSeals,

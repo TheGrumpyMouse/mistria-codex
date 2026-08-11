@@ -1,0 +1,24 @@
+{
+  "_comment": [
+    "Game requirement flags -> the quest record whose completion sets them.",
+    "",
+    "The game gates content on named flags (`requirements.repaired_haydens_farm",
+    "= true` on six of the eight ranch animals), and `fiddle/requirements.toml`",
+    "states what each flag means — almost always `seen_cutscene = \"...\"`, and a",
+    "cutscene belongs to a quest stage. That chain is stated, but the last hop",
+    "(game quest id -> our record id) needs a human because the game's ids and",
+    "titles disagree with each other: `repair_haydens_barn` is titled 'Upgrade",
+    "Hayden's Barn', which is why our record is `upgrade_haydens_barn`.",
+    "",
+    "A flag not listed here is held back into a data gap by the builders, never",
+    "guessed at. Each entry says why the mapping is right and where it is",
+    "stated."
+  ],
+  "flags": {
+    "repaired_haydens_farm": {
+      "quest": "upgrade_haydens_barn",
+      "reason": "requirements.toml [repaired_haydens_farm] states seen_cutscene = 'repair_haydens_barn_pt_2', a stage of the game quest repair_haydens_barn — which ships as upgrade_haydens_barn after its own stated title, 'Upgrade Hayden's Barn'.",
+      "source": "fiddle/requirements.toml + fiddle/quests/story_quests.toml"
+    }
+  }
+}

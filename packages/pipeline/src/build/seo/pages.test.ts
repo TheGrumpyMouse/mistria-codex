@@ -51,6 +51,7 @@ const dataset = (over: Partial<Dataset> = {}): Dataset => ({
   items: [],
   characters: [],
   monsters: [],
+  animals: [],
   places: [],
   mines: [],
   quests: [],

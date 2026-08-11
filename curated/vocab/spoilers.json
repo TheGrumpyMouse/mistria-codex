@@ -32,7 +32,8 @@
       "breaking_the_final_seal"
     ],
     "seals": ["ruins", "void", "priestess", "final"],
-    "mines": ["ancient_ruins"]
+    "mines": ["ancient_ruins"],
+    "pets": ["pet_void_cat"]
   },
   "aliases": {
     "priestess": ["Seridia"]

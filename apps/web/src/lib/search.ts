@@ -69,11 +69,20 @@ export function rankOf(name: string, needle: string): number | null {
  */
 export function routeFor(
   category: string,
-): '/item/$id' | '/villager/$id' | '/place/$id' | '/monster/$id' | '/quest/$id' {
+):
+  | '/item/$id'
+  | '/villager/$id'
+  | '/place/$id'
+  | '/monster/$id'
+  | '/quest/$id'
+  | '/animal/$id'
+  | '/pet/$id' {
   if (category === 'character') return '/villager/$id'
   if (category === 'location') return '/place/$id'
   if (category === 'monster') return '/monster/$id'
   if (category === 'quest') return '/quest/$id'
+  if (category === 'animal') return '/animal/$id'
+  if (category === 'pet') return '/pet/$id'
   return '/item/$id'
 }
 
@@ -99,10 +108,13 @@ export function iconKeyFor(id: string, entry?: { i?: string | null; c?: string }
     category === 'character' ||
     category === 'location' ||
     category === 'monster' ||
-    category === 'quest'
+    category === 'quest' ||
+    category === 'animal'
   ) {
     return `${category}/${id}`
   }
+  // Pet records are `pet_<kind>` and their sprites are keyed by the kind alone.
+  if (category === 'pet') return `pet/${id.replace(/^pet_/, '')}`
   return `item/${id}`
 }
 
