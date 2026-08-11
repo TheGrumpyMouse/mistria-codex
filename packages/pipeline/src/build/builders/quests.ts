@@ -1,9 +1,11 @@
-import type { Quest, Requirement, Season } from '@mistria/schema'
+import type { Quest, Recipe, Requirement, Season, Shop } from '@mistria/schema'
 import { toSnakeId } from '@mistria/schema'
 import { consola } from 'consola'
 import type { ExtractedCondition } from '../../enrich/quests.js'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
+import { buildLocations } from './fish-crops.js'
+import { foldName, type GrantIndex } from './grants.js'
 
 /**
  * Build the quest list.
@@ -249,6 +251,14 @@ export function buildQuests(ctx: BuildContext, builtItemIds: Set<string>): Quest
       // Empty is different from "no restriction": a request with no season
       // condition is available all year, which is what null means here.
       season_restriction: quest.seasons.length > 0 ? (quest.seasons as Season[]) : null,
+
+      // Stamped by `withQuestUnlocks` after shops and recipes are final —
+      // these are reverse indexes over datasets that do not exist yet here.
+      required_items: [],
+      unlocks_shop_ids: [],
+      unlocks_location_ids: [],
+      unlocks_mine_ids: [],
+      teaches_recipe_ids: [],
     }
   })
 
@@ -361,6 +371,12 @@ function withGameGates(
         : null,
       repeatable: false,
       season_restriction: null,
+
+      required_items: [],
+      unlocks_shop_ids: [],
+      unlocks_location_ids: [],
+      unlocks_mine_ids: [],
+      teaches_recipe_ids: [],
     })
     knownIds.add(id)
   }
@@ -391,4 +407,178 @@ function withGameGates(
   if (gated > 0) consola.info(`quests: ${gated} requests gained appearance gates from the game`)
 
   return [...merged, ...appended]
+}
+
+/**
+ * The stamp-afterwards pass: what a quest costs, unlocks and teaches.
+ *
+ * Runs from `data.ts` once shops and recipes are final, because every field it
+ * fills is a **reverse index over facts stated elsewhere** — a shop whose
+ * `unlock_requires` names the quest, a mine biome curated as opening after it,
+ * a recipe whose sources already carry the quest id, a delivery the game
+ * states as `supplied_items`. Nothing here is a new claim, which is why no
+ * entry carries its own confidence: anything not flatly stated stays out, and
+ * a join that does not resolve is dropped and counted, never guessed.
+ *
+ * This is what turns "Repair the Bridge — no rewards recorded" into the
+ * answer the player wanted: what to bring, and that the six Saturday Market
+ * stalls are the reward.
+ */
+export function withQuestUnlocks(
+  ctx: BuildContext,
+  quests: Quest[],
+  inputs: {
+    shops: Shop[]
+    recipes: Recipe[]
+    grants: GrantIndex
+    builtItemIds: Set<string>
+  },
+): Quest[] {
+  const { shops, recipes, grants, builtItemIds } = inputs
+  const questIds = new Set(quests.map((quest) => quest.id))
+
+  const push = (map: Map<string, string[]>, questId: string, value: string): void => {
+    const list = map.get(questId) ?? []
+    if (!list.includes(value)) list.push(value)
+    map.set(questId, list)
+  }
+
+  const shopsByQuest = new Map<string, string[]>()
+  for (const shop of shops) {
+    for (const gate of shop.unlock_requires) {
+      if (gate.type === 'quest' && questIds.has(gate.key)) push(shopsByQuest, gate.key, shop.id)
+    }
+  }
+
+  const locationsByQuest = new Map<string, string[]>()
+  for (const location of buildLocations(ctx)) {
+    for (const gate of location.unlock_requires) {
+      if (gate.type === 'quest' && questIds.has(gate.key)) {
+        push(locationsByQuest, gate.key, location.id)
+      }
+    }
+  }
+
+  // The same curated join `buildSeals` runs — from the biome's own statement,
+  // not from the seals dataset, so a future biome gated by a non-seal quest
+  // still lands here.
+  const minesByQuest = new Map<string, string[]>()
+  for (const biome of ctx.mines.biomes) {
+    if (biome.unlock_quest === null) continue
+    const questId = toSnakeId(biome.unlock_quest)
+    if (questIds.has(questId)) push(minesByQuest, questId, biome.id)
+  }
+
+  // Museum reward tiers ship `method: 'quest'` with a null source_id and are
+  // correctly invisible here — a reward band is not a quest record.
+  const recipesByQuest = new Map<string, string[]>()
+  for (const recipe of recipes) {
+    for (const source of recipe.sources) {
+      if (source.method === 'quest' && source.source_id !== null) {
+        push(recipesByQuest, source.source_id, recipe.id)
+      }
+    }
+  }
+
+  // What each quest asks the player to hand over: the game's `supplied_items`
+  // stages — seal offerings and the bridge/mill/inn repairs alike. Joined by
+  // id first, folded title second; multiple stages concatenate in extract
+  // order, never summed — arithmetic the source does not state.
+  const questsByName = new Map<string, Quest[]>()
+  for (const quest of quests) {
+    const key = foldName(quest.name)
+    questsByName.set(key, [...(questsByName.get(key) ?? []), quest])
+  }
+
+  const costByQuest = new Map<string, { item_id: string; quantity: number }[]>()
+  let unresolvedOfferings = 0
+  let droppedOfferingItems = 0
+  for (const offering of ctx.game?.artifactFacts?.offerings ?? []) {
+    let questId: string | null = questIds.has(offering.quest_id) ? offering.quest_id : null
+    if (questId === null && offering.quest_name !== null) {
+      const byName = questsByName.get(foldName(offering.quest_name)) ?? []
+      questId = byName.length === 1 ? (byName[0]?.id ?? null) : null
+    }
+    if (questId === null) {
+      unresolvedOfferings += 1
+      continue
+    }
+    const kept = offering.items.filter((entry) => builtItemIds.has(entry.item_id))
+    droppedOfferingItems += offering.items.length - kept.length
+    const sorted = [...kept].sort((a, b) => a.item_id.localeCompare(b.item_id))
+    costByQuest.set(questId, [...(costByQuest.get(questId) ?? []), ...sorted])
+  }
+  if (unresolvedOfferings > 0) {
+    consola.info(
+      `quests: ${unresolvedOfferings} delivery stage(s) name a quest no record holds — ` +
+        'the cost stays in game facts, the quest ships without it.',
+    )
+  }
+  if (droppedOfferingItems > 0) {
+    consola.info(
+      `quests: ${droppedOfferingItems} delivery item(s) did not ship as records and were dropped.`,
+    )
+  }
+
+  let stamped = 0
+  const result = quests.map((quest) => {
+    const requiredItems = costByQuest.get(quest.id) ?? []
+    const shopIds = [...(shopsByQuest.get(quest.id) ?? [])].sort()
+    const locationIds = [...(locationsByQuest.get(quest.id) ?? [])].sort()
+    const mineIds = [...(minesByQuest.get(quest.id) ?? [])].sort()
+    const recipeIds = [...(recipesByQuest.get(quest.id) ?? [])].sort()
+    const grantItems = grants.itemsByQuest.get(quest.id) ?? []
+
+    const untouched =
+      requiredItems.length === 0 &&
+      shopIds.length === 0 &&
+      locationIds.length === 0 &&
+      mineIds.length === 0 &&
+      recipeIds.length === 0 &&
+      grantItems.length === 0
+    if (untouched) return quest
+    stamped += 1
+
+    // Game grant items union into the reward the record already states — the
+    // same field the wiki fills, deduplicated, so the UI keeps one list.
+    const rewards =
+      grantItems.length === 0
+        ? quest.rewards
+        : {
+            renown: quest.rewards?.renown ?? null,
+            tesserae: quest.rewards?.tesserae ?? null,
+            item_ids: [...new Set([...(quest.rewards?.item_ids ?? []), ...grantItems])].sort(),
+          }
+
+    // Per-field provenance, only where a field actually got a value: the
+    // deliveries and taught recipes are read from the game files, the unlock
+    // gates from curated statements.
+    const prov = { ...quest.prov }
+    if (requiredItems.length > 0) prov.required_items = 'game_files'
+    if (recipeIds.length > 0) prov.teaches_recipe_ids = 'game_files'
+    if (shopIds.length > 0) prov.unlocks_shop_ids = 'manual'
+    if (locationIds.length > 0) prov.unlocks_location_ids = 'manual'
+    if (mineIds.length > 0) prov.unlocks_mine_ids = 'manual'
+
+    return {
+      ...quest,
+      required_items: requiredItems,
+      unlocks_shop_ids: shopIds,
+      unlocks_location_ids: locationIds,
+      unlocks_mine_ids: mineIds,
+      teaches_recipe_ids: recipeIds,
+      rewards,
+      prov,
+      // A stated delivery answers "what does it ask for" — the gap closes.
+      data_gaps:
+        requiredItems.length > 0
+          ? quest.data_gaps.filter((gap) => gap !== 'objectives')
+          : quest.data_gaps,
+    }
+  })
+  if (stamped > 0) {
+    consola.info(`quests: ${stamped} quest(s) gained costs, unlocks or grant rewards`)
+  }
+
+  return result
 }

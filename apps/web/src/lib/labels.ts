@@ -295,6 +295,20 @@ export const recipeSourceLabel = (method: string): { lead: string; standalone: s
   RECIPE_SOURCE_LABELS[method] ?? { lead: '', standalone: methodLabel(method) }
 
 /**
+ * A festival stall's `stall_key`, as a name.
+ *
+ * The key is the game's own token from `festivals.toml [<festival>.stocks]`
+ * and must never render raw (rule 8). An unknown key returns null and the
+ * caller falls back to the festival alone — "A stall at the Animal Festival"
+ * is right where "nora_souvenir_stall" would look broken.
+ */
+const STALL_LABELS: Record<string, string> = {
+  nora_souvenir_stall: 'Nora’s souvenir stall',
+}
+
+export const stallLabel = (stallKey: string): string | null => STALL_LABELS[stallKey] ?? null
+
+/**
  * A shipped availability-rule token (`perk:Well Placed`) as a phrase.
  * The build resolves names before shipping, so the part after the colon is
  * already the display name.

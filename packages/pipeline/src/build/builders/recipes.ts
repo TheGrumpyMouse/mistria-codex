@@ -201,6 +201,7 @@ function withLevelFallback(recipes: Recipe[]): Recipe[] {
         {
           method: 'skill_level',
           source_id: null,
+          stall_key: null,
           character_id: null,
           price: null,
           currency: 'tesserae',
@@ -301,6 +302,7 @@ function wikiRecipes(ctx: BuildContext): Recipe[] {
               {
                 method: 'shop' as const,
                 source_id: null,
+                stall_key: null,
                 character_id: null,
                 price: null,
                 currency: 'tesserae' as const,

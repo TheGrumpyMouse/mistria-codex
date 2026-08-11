@@ -784,6 +784,12 @@ function placePage(
   }
 }
 
+// Quest records also carry `required_items`, `unlocks_*_ids` and
+// `teaches_recipe_ids`, deliberately not rendered yet. If this page grows
+// them, route every target through `crossLinks`/`pathOf` (which withholds
+// unpublished records) — printing a veiled record's *name* in plain text
+// would leak what the app's spoiler system hides, and validate/seo.ts only
+// catches links, not prose.
 function questPage(quest: QuestRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
   const segments = ['guide', 'quest', slugFor(quest.id)]
   const depth = segments.length

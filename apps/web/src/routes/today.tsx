@@ -18,6 +18,7 @@ import {
 } from '~/lib/findable'
 import { useDocumentTitle } from '~/lib/head'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
+import { saveCalendarSelection } from '~/lib/instant-memory'
 import { type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
 import { sortEntities, useListSort } from '~/lib/list-sort'
 import { doneIn } from '~/lib/progress'
@@ -83,6 +84,13 @@ export function TodayRoute() {
   useEffect(() => {
     document.documentElement.dataset.season = instant.season
   }, [instant.season])
+
+  // Remember where the dial is pointed, so the next visit reopens there. An
+  // effect rather than a hook in `update`: it also catches the back button and
+  // a pasted link, which never pass through `update` at all.
+  useEffect(() => {
+    saveCalendarSelection({ season: instant.season, day: instant.day })
+  }, [instant.season, instant.day])
 
   const update = (next: Partial<Instant>): void => {
     void navigate({ search: (prev) => ({ ...prev, ...next }), replace: true })

@@ -4,9 +4,11 @@ import {
   createRoute,
   createRouter,
   redirect,
+  type SearchSchemaInput,
 } from '@tanstack/react-router'
 import { AppShell } from '~/app/AppShell'
 import { InstantSearch } from '~/lib/instant'
+import { savedCalendarSelection } from '~/lib/instant-memory'
 import { AboutRoute } from '~/routes/about'
 import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
@@ -32,12 +34,23 @@ const rootRoute = createRootRoute({ component: AppShell })
  * way in — including when it arrives from somebody else's pasted link with a
  * day of 99 in it. Zod's defaults mean a missing or nonsense param becomes a
  * sensible value instead of a crash.
+ *
+ * The stored last selection sits *under* the URL's own params: an explicit
+ * param always wins because it spreads last, so a shared link shows what was
+ * shared, and a bare `/` (bottom-nav tap, fresh open) restores where you left
+ * off. A *present but invalid* param (`season=harvest`) falls to the schema's
+ * `.catch` default, not to storage — a broken shared link should behave like a
+ * shared link, not like this device's history.
  */
 const todayRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
   component: TodayRoute,
-  validateSearch: InstantSearch,
+  // The `SearchSchemaInput` marker keeps the params *optional* on the way in
+  // (a bare `<Link to="/">` must stay legal), exactly as the raw Zod schema
+  // did before the stored-selection merge wrapped it.
+  validateSearch: (search: Record<string, unknown> & SearchSchemaInput) =>
+    InstantSearch.parse({ ...savedCalendarSelection(), ...search }),
 })
 
 /**

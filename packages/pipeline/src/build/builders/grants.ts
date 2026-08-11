@@ -38,6 +38,13 @@ export interface GrantIndex {
   recipeSources: Map<string, RecipeSource[]>
   /** Shipped item id -> every stated way of obtaining it, as availability windows. */
   itemWindows: Map<string, AvailabilityWindow[]>
+  /**
+   * Resolved quest id -> the shipped item ids its grants hand over. The same
+   * facts as the `quest_reward` windows above, indexed the other way so a
+   * quest record can state its own rewards — built here because this loop is
+   * the one place the game-key → quest join exists.
+   */
+  itemsByQuest: Map<string, string[]>
 }
 
 /** Names differ in case, punctuation and curly apostrophes. Fold before joining. */
@@ -149,6 +156,7 @@ export function buildGrantIndex(
   const { quests, mineIdByBiome, shopIdByStore, festivalIds } = targets
   const recipeSources = new Map<string, RecipeSource[]>()
   const itemWindows = new Map<string, AvailabilityWindow[]>()
+  const itemsByQuest = new Map<string, string[]>()
   const game = ctx.game
   const unlocks = game?.unlocks ?? null
 
@@ -157,8 +165,16 @@ export function buildGrantIndex(
     const id = shipsAs(key)
     if (id === null) return
     const list = recipeSources.get(id) ?? []
-    // A pool that lists the same scroll twice is one way of getting it.
-    if (!list.some((s) => s.method === source.method && s.source_id === source.source_id)) {
+    // A pool that lists the same scroll twice is one way of getting it — but
+    // two different stalls at one festival are genuinely two sources.
+    if (
+      !list.some(
+        (s) =>
+          s.method === source.method &&
+          s.source_id === source.source_id &&
+          s.stall_key === source.stall_key,
+      )
+    ) {
       list.push(source)
     }
     recipeSources.set(id, list)
@@ -175,7 +191,7 @@ export function buildGrantIndex(
     itemWindows.set(id, list)
   }
 
-  if (unlocks === null) return { recipeSources, itemWindows }
+  if (unlocks === null) return { recipeSources, itemWindows, itemsByQuest }
 
   // ── The post ──────────────────────────────────────────────────────────────
   let unreadLetterGates = 0
@@ -189,6 +205,7 @@ export function buildGrantIndex(
     addRecipe(letter.recipe, {
       method: 'mail',
       source_id: null,
+      stall_key: null,
       character_id: letter.npc,
       price: null,
       currency: 'tesserae',
@@ -223,6 +240,7 @@ export function buildGrantIndex(
     addRecipe(grant.recipe, {
       method: 'quest',
       source_id: questId,
+      stall_key: null,
       character_id: grant.npc,
       price: null,
       currency: 'tesserae',
@@ -236,6 +254,16 @@ export function buildGrantIndex(
           questId === null ? [] : [{ type: 'quest', key: questId, op: 'done', value: null }],
       }),
     )
+    // The reverse product: the quest knows what it hands over. Only where both
+    // halves of the join resolved — an unresolved half is already counted.
+    if (questId !== null && grant.item !== null) {
+      const itemId = shipsAs(grant.item)
+      if (itemId !== null) {
+        const list = itemsByQuest.get(questId) ?? []
+        if (!list.includes(itemId)) list.push(itemId)
+        itemsByQuest.set(questId, list)
+      }
+    }
   }
 
   // ── Festival stalls ───────────────────────────────────────────────────────
@@ -254,6 +282,9 @@ export function buildGrantIndex(
     addRecipe(grant.recipe, {
       method: 'festival',
       source_id: festivalId(grant.festival),
+      // The stall is the half of the answer a player walks to, and the game
+      // states it — `[<festival>.stocks.<stall>]` — so it ships.
+      stall_key: grant.stall,
       character_id: null,
       price: null,
       currency: 'tesserae',
@@ -272,6 +303,7 @@ export function buildGrantIndex(
     addRecipe(grant.recipe, {
       method: 'quest',
       source_id: null,
+      stall_key: null,
       character_id: null,
       price: null,
       currency: 'tesserae',
@@ -290,6 +322,7 @@ export function buildGrantIndex(
       addRecipe(grant.recipe, {
         method,
         source_id: null,
+        stall_key: null,
         character_id: null,
         price: null,
         currency: 'tesserae',
@@ -312,6 +345,7 @@ export function buildGrantIndex(
         addRecipe(taught, {
           method: 'shop',
           source_id: shopId,
+          stall_key: null,
           character_id: null,
           price: null,
           currency: 'tesserae',
@@ -333,6 +367,7 @@ export function buildGrantIndex(
       addRecipe(recipe, {
         method: 'mines_chest',
         source_id: mineId,
+        stall_key: null,
         character_id: null,
         price: null,
         currency: 'tesserae',
@@ -360,6 +395,7 @@ export function buildGrantIndex(
     addRecipe(item.recipe_key ?? item.id, {
       method: 'default',
       source_id: null,
+      stall_key: null,
       character_id: null,
       price: null,
       currency: 'tesserae',
@@ -383,5 +419,9 @@ export function buildGrantIndex(
     consola.info(`grants: ${unreadLetterGates} letter gate(s) use a condition nobody models yet.`)
   }
 
-  return { recipeSources, itemWindows }
+  // Deterministic output: the extract's iteration order must not decide the
+  // order a quest lists its rewards in.
+  for (const [questId, items] of itemsByQuest) itemsByQuest.set(questId, [...items].sort())
+
+  return { recipeSources, itemWindows, itemsByQuest }
 }

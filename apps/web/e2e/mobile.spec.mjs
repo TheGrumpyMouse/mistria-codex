@@ -1,5 +1,5 @@
 /**
- * Phone-sized checks: the bottom nav, the corner controls, the back journeys
+ * Phone-sized checks: the bottom nav and its More menu, the back journeys
  * the thumb actually makes, and the settings close control.
  */
 import { BASE, dismissTour, launch, makeChecker } from './helpers.mjs'
@@ -21,8 +21,16 @@ const go = async (hash) => {
 
 // — chrome —
 await go('/')
-check('bottom nav has five entries', (await phone.locator('nav.fixed.inset-x-0 a').count()) === 5)
-check('corner buttons present', (await phone.locator('a[aria-label="Map"]').count()) === 1)
+check(
+  'bottom nav has four links and the More button',
+  (await phone.locator('nav.fixed.inset-x-0 a').count()) === 4 &&
+    (await phone.locator('nav.fixed.inset-x-0 button[aria-expanded]').count()) === 1,
+)
+check(
+  'the map is a nav entry, not a corner button',
+  (await phone.locator('a[aria-label="Map"]').count()) === 0 &&
+    (await phone.locator('nav.fixed.inset-x-0 a', { hasText: 'Map' }).count()) === 1,
+)
 
 // — search -> item -> Back keeps the query —
 await go('/search')
@@ -51,13 +59,28 @@ await phone.getByRole('button', { name: 'Back' }).tap()
 await phone.waitForTimeout(800)
 check('back from the place lands on the item', /\/item\/heather$/.test(phone.url()), phone.url())
 
-// — settings corner becomes a close —
+// — the More menu opens, lists its destinations, and closes on navigation —
 await go('/museum')
-await phone.locator('a[aria-label="Settings"]').tap()
+const more = phone.getByRole('button', { name: 'More' })
+await more.tap()
+await phone.waitForTimeout(300)
+const menu = phone.locator('#more-menu')
+check('More opens its menu', await menu.isVisible())
+check(
+  'the menu holds board, mines, browse and settings',
+  (await menu.locator('a', { hasText: 'Board' }).count()) === 1 &&
+    (await menu.locator('a', { hasText: 'Mines' }).count()) === 1 &&
+    (await menu.locator('a', { hasText: 'Browse' }).count()) === 1 &&
+    (await menu.locator('a', { hasText: 'Settings' }).count()) === 1,
+)
+await menu.locator('a', { hasText: 'Settings' }).tap()
 await phone.waitForTimeout(700)
-check('settings opens', phone.url().includes('/settings'))
+check('settings opens from the menu', phone.url().includes('/settings'))
+check('navigating closed the menu', (await phone.locator('#more-menu').count()) === 0)
+
+// — settings shows a corner close —
 const close = phone.locator('button[aria-label="Close settings"]')
-check('corner icon is now a close', await close.isVisible())
+check('the corner shows a close control', await close.isVisible())
 await close.tap()
 await phone.waitForTimeout(800)
 check('close returns to the museum', phone.url().includes('/museum'), phone.url())

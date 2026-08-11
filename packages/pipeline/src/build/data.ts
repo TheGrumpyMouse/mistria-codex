@@ -52,7 +52,7 @@ import {
 import { buildMines } from './builders/mines.js'
 import { buildMonsters, monstersByBiome } from './builders/monsters.js'
 import { buildMuseum, type MuseumIndex } from './builders/museum.js'
-import { buildQuests } from './builders/quests.js'
+import { buildQuests, withQuestUnlocks } from './builders/quests.js'
 import {
   buildArtifactFacets,
   buildBugFacets,
@@ -402,13 +402,24 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     )
   }
 
+  // The quests' own stamp-afterwards pass, last of all: what a quest costs,
+  // unlocks and teaches is a reverse index over the *final* shops and recipes,
+  // so it cannot run inside `buildQuests` — the same reasoning as
+  // `itemsWithRecipes` above.
+  const questsWithUnlocks = withQuestUnlocks(ctx, quests, {
+    shops: shopsWithRecipes,
+    recipes,
+    grants,
+    builtItemIds: allItemIds,
+  })
+
   const derived: Derived = {
     museum,
     shops: shopsWithRecipes,
     items: itemsWithRecipes,
     monsters,
     recipes,
-    quests,
+    quests: questsWithUnlocks,
     mines,
     festivals,
   }

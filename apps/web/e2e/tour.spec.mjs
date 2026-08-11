@@ -1,7 +1,9 @@
 /**
  * The first-run tour: opens once, walks the nav, closes for good, and comes
- * back only from Settings. Desktop shows all eight steps; a phone filters the
- * sidebar-only Browse anchor out and gets seven.
+ * back only from Settings. Desktop shows all eight sidebar steps (the More
+ * anchor is mobile-only chrome); a phone shows five — calendar, map, search,
+ * museum and More, since board, mines, browse and settings sit inside the
+ * closed More menu and measure as zero rects.
  */
 import { BASE, launch, makeChecker } from './helpers.mjs'
 
@@ -61,7 +63,7 @@ for (; msteps < 12; msteps++) {
   await phone.getByRole('button', { name: /Next|Done/ }).tap()
   await phone.waitForTimeout(150)
 }
-check('mobile tour has 7 steps (no sidebar Browse)', msteps === 7, `steps=${msteps}`)
+check('mobile tour has 5 steps (nav four plus More)', msteps === 5, `steps=${msteps}`)
 check('mobile card stays inside the viewport', fits)
 
 await phone.close()

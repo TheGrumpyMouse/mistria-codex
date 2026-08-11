@@ -23,6 +23,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "seed_potato"
@@ -31,6 +32,10 @@
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -55,15 +60,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_location_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [
+      "the_museum"
+    ],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -91,6 +104,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "pick_axe_worn"
@@ -99,6 +113,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -126,6 +144,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "net_worn"
@@ -134,6 +153,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -161,6 +184,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "mixed_fruit_juice"
@@ -169,6 +193,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -196,12 +224,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -229,12 +262,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -259,11 +297,19 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [
+      "upper_mines"
+    ],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -291,8 +337,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -301,8 +352,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -317,11 +367,37 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "lantern_moth",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_ruby",
+        "quantity": 1
+      },
+      {
+        "item_id": "stone_loach",
+        "quantity": 1
+      },
+      {
+        "item_id": "upper_mines_mushroom",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [
+      "tide_caverns"
+    ],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -330,8 +406,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -346,11 +421,37 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "archerfish",
+        "quantity": 1
+      },
+      {
+        "item_id": "cave_kelp",
+        "quantity": 1
+      },
+      {
+        "item_id": "coral_mantis",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_sapphire",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [
+      "deep_earth"
+    ],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -378,8 +479,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -388,8 +494,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -404,9 +509,28 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "ore_emerald",
+        "quantity": 10
+      },
+      {
+        "item_id": "ore_ruby",
+        "quantity": 10
+      },
+      {
+        "item_id": "ore_sapphire",
+        "quantity": 10
+      },
+      {
+        "item_id": "silver_ingot",
+        "quantity": 10
+      }
+    ],
     "rewards": {
       "item_ids": [
         "sealing_scroll"
@@ -415,6 +539,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -423,8 +551,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -439,11 +566,40 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_location_ids": "manual",
+      "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "faceted_rock_gem",
+        "quantity": 1
+      },
+      {
+        "item_id": "ore_emerald",
+        "quantity": 1
+      },
+      {
+        "item_id": "rockroot",
+        "quantity": 1
+      },
+      {
+        "item_id": "sealing_scroll",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [
+      "the_deep_woods"
+    ],
+    "unlocks_mine_ids": [
+      "lava_caves"
+    ],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -453,8 +609,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
-      "objectives"
+      "giver_character_id"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -469,12 +624,35 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "void_herb",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_pearl",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_powder",
+        "quantity": 5
+      },
+      {
+        "item_id": "void_stone",
+        "quantity": 5
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
     "spoiler": true,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -484,8 +662,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
-      "objectives"
+      "giver_character_id"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -500,12 +677,38 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "breath_of_fire",
+        "quantity": 1
+      },
+      {
+        "item_id": "firesail_fish",
+        "quantity": 1
+      },
+      {
+        "item_id": "obsidian",
+        "quantity": 1
+      },
+      {
+        "item_id": "smoke_moth",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
     "spoiler": true,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [
+      "ancient_ruins"
+    ],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -515,8 +718,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
-      "objectives"
+      "giver_character_id"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -531,12 +733,27 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "marigold",
+        "quantity": 1
+      },
+      {
+        "item_id": "temple_flower",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
     "spoiler": true,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -565,9 +782,14 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
     "spoiler": true,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -577,8 +799,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
-      "objectives"
+      "giver_character_id"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -593,12 +814,35 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "dragon_forged_core",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_fang",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_horn",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_powder",
+        "quantity": 1
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
     "spoiler": true,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -607,8 +851,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -623,11 +866,34 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_shop_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 60
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 60
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [
+      "darcys_stall",
+      "louis_stall",
+      "merris_stall",
+      "veras_stall",
+      "wheedles_stall",
+      "zorels_stall"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -655,12 +921,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": null,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -688,12 +959,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -718,11 +994,19 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_location_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [
+      "the_mill"
+    ],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -747,11 +1031,19 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_location_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [
+      "the_summit"
+    ],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -760,8 +1052,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -776,11 +1067,34 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 300
+      },
+      {
+        "item_id": "copper_ingot",
+        "quantity": 5
+      },
+      {
+        "item_id": "iron_ingot",
+        "quantity": 5
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 500
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -789,8 +1103,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -805,11 +1118,30 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 300
+      },
+      {
+        "item_id": "fiber",
+        "quantity": 50
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 150
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -818,8 +1150,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -834,9 +1165,20 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "cheese",
+        "quantity": 10
+      },
+      {
+        "item_id": "egg",
+        "quantity": 12
+      }
+    ],
     "rewards": {
       "item_ids": [
         "cow_cheese_hat"
@@ -845,6 +1187,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -853,8 +1199,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -869,11 +1214,30 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 400
+      },
+      {
+        "item_id": "iron_ingot",
+        "quantity": 8
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 500
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -901,8 +1265,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -911,8 +1280,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -927,11 +1295,38 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 600
+      },
+      {
+        "item_id": "glass",
+        "quantity": 25
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 500
+      },
+      {
+        "item_id": "peat",
+        "quantity": 10
+      },
+      {
+        "item_id": "silver_ingot",
+        "quantity": 10
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -940,8 +1335,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -956,11 +1350,30 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 200
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 400
+      },
+      {
+        "item_id": "sap",
+        "quantity": 20
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -969,8 +1382,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -985,11 +1397,38 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "crystal",
+        "quantity": 20
+      },
+      {
+        "item_id": "gold_ingot",
+        "quantity": 8
+      },
+      {
+        "item_id": "hard_wood",
+        "quantity": 100
+      },
+      {
+        "item_id": "obsidian",
+        "quantity": 20
+      },
+      {
+        "item_id": "refined_stone",
+        "quantity": 50
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -998,8 +1437,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -1014,11 +1452,34 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "crystal",
+        "quantity": 30
+      },
+      {
+        "item_id": "glass",
+        "quantity": 100
+      },
+      {
+        "item_id": "obsidian",
+        "quantity": 30
+      },
+      {
+        "item_id": "refined_stone",
+        "quantity": 100
+      }
+    ],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1027,8 +1488,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -1043,15 +1503,42 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "mistril_ingot",
+        "quantity": 5
+      },
+      {
+        "item_id": "monster_block",
+        "quantity": 5
+      },
+      {
+        "item_id": "monster_core",
+        "quantity": 10
+      },
+      {
+        "item_id": "refined_stone",
+        "quantity": 20
+      },
+      {
+        "item_id": "voidite",
+        "quantity": 50
+      }
+    ],
     "rewards": {
       "item_ids": [],
       "renown": 50,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1079,12 +1566,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 50,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1093,8 +1585,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "objectives"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
@@ -1109,15 +1600,41 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "required_items": "game_files",
+      "unlocks_location_ids": "manual"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "dragon_forged_core",
+        "quantity": 1
+      },
+      {
+        "item_id": "dragon_forged_fang",
+        "quantity": 1
+      },
+      {
+        "item_id": "hard_wood",
+        "quantity": 30
+      },
+      {
+        "item_id": "refined_stone",
+        "quantity": 20
+      }
+    ],
     "rewards": {
       "item_ids": [],
       "renown": 50,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [
+      "the_bell_tower"
+    ],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1145,6 +1662,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "breath_of_spring"
@@ -1153,6 +1671,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1180,8 +1702,13 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1209,8 +1736,13 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1238,8 +1770,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1264,9 +1801,11 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "vegetable_soup"
@@ -1275,6 +1814,12 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "vegetable_soup"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1302,8 +1847,19 @@
       "*": "wiki_page"
     },
     "repeatable": false,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "starter_wood_fence"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1331,8 +1887,21 @@
       "*": "wiki_page"
     },
     "repeatable": false,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "cup_of_tea",
+        "grass_seed",
+        "hay"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1360,6 +1929,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cherry_tart"
@@ -1368,6 +1938,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1395,8 +1969,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1424,8 +2003,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1453,8 +2037,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1488,8 +2077,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1517,8 +2111,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1546,8 +2145,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1575,8 +2179,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1604,8 +2213,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1633,6 +2247,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "peat",
@@ -1642,6 +2257,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1669,8 +2288,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1698,6 +2322,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cherry_cobbler"
@@ -1706,6 +2331,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1733,8 +2362,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1762,8 +2396,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1791,8 +2430,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1820,8 +2464,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1849,8 +2498,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1878,8 +2532,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1907,8 +2566,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1936,8 +2600,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1965,8 +2634,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1994,6 +2668,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "quality_small_animal_feed"
@@ -2002,6 +2677,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2029,8 +2708,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2058,8 +2742,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2087,8 +2776,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2116,8 +2810,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2145,8 +2844,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2174,8 +2878,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2203,8 +2912,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2232,8 +2946,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2261,8 +2980,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2290,6 +3014,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "hoe_copper"
@@ -2298,6 +3023,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2325,8 +3054,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2354,8 +3088,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2383,8 +3122,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2412,8 +3156,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2441,6 +3190,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "wildberry_pie"
@@ -2449,6 +3199,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2476,6 +3230,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "dragon_horn_mushroom_with_thyme"
@@ -2484,6 +3239,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2511,6 +3270,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "honey_curry"
@@ -2519,6 +3279,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2546,8 +3310,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2575,12 +3344,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": null,
       "tesserae": 150
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2608,8 +3382,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2637,6 +3416,7 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "coconut_cream_pie"
@@ -2645,6 +3425,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2672,8 +3456,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2702,8 +3491,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2731,8 +3525,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2760,8 +3559,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2789,8 +3593,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2818,12 +3627,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": null,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2851,8 +3665,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2880,8 +3699,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2912,6 +3736,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -2920,6 +3745,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2954,9 +3783,11 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cup_of_tea"
@@ -2967,6 +3798,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "cup_of_tea"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2994,9 +3831,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "pineshroom_toast"
@@ -3007,6 +3846,12 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [
+      "pineshroom_toast"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3044,12 +3889,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 2000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3080,6 +3930,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -3088,6 +3939,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3125,12 +3980,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 2200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3168,12 +4028,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3204,6 +4069,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -3212,6 +4078,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3249,12 +4119,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 220
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3292,12 +4167,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 180
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3341,12 +4221,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3384,12 +4269,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3427,12 +4317,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 750
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3470,12 +4365,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 650
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3506,12 +4406,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3549,12 +4454,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 960
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3598,12 +4508,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3638,9 +4553,11 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "spring_salad"
@@ -3651,6 +4568,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "spring_salad"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3693,10 +4616,11 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "tulip",
-        "daffodil"
+        "daffodil",
+        "tulip"
       ],
       "renown": 20,
       "tesserae": null
@@ -3704,6 +4628,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3741,12 +4669,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3784,12 +4717,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3827,12 +4765,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 175
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3863,6 +4806,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -3871,6 +4815,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3908,6 +4856,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -3916,6 +4865,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3953,6 +4906,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -3961,6 +4915,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3998,12 +4956,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4041,12 +5004,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 750
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4077,6 +5045,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4085,6 +5054,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4115,6 +5088,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "apple"
@@ -4125,6 +5099,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4155,6 +5133,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4163,6 +5142,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4206,12 +5189,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 30
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4255,12 +5243,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4291,12 +5284,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4327,6 +5325,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4335,6 +5334,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4372,12 +5375,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 450
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4405,9 +5413,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "berries_and_cream"
@@ -4418,6 +5428,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "berries_and_cream"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4448,15 +5464,23 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "hard_boiled_egg"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4484,9 +5508,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "caramelized_moon_fruit"
@@ -4497,6 +5523,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "caramelized_moon_fruit"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4534,12 +5566,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 50
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4577,6 +5614,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "strawberry_shortcake"
@@ -4587,6 +5625,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4617,6 +5659,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "strawberries_and_cream"
@@ -4627,6 +5670,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4657,6 +5704,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4665,6 +5713,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4702,12 +5754,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4738,6 +5795,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4746,6 +5804,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4773,9 +5835,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "blackberry_jam"
@@ -4786,6 +5850,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "blackberry_jam"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4813,9 +5883,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "marmalade"
@@ -4826,6 +5898,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "marmalade"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4863,12 +5941,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4899,6 +5982,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "seed_snowdrop_anemone"
@@ -4909,6 +5993,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4936,9 +6024,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "wildberry_scone"
@@ -4949,6 +6039,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "wildberry_scone"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4979,6 +6075,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -4987,6 +6084,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5017,6 +6118,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5025,6 +6127,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5052,9 +6158,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "clam_chowder"
@@ -5065,6 +6173,12 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [
+      "clam_chowder"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5104,12 +6218,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1450
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5137,9 +6256,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "perch_risotto"
@@ -5150,6 +6271,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "perch_risotto"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5180,6 +6307,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5188,6 +6316,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5221,12 +6353,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 425
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5257,6 +6394,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5265,6 +6403,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5302,12 +6444,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5345,12 +6492,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5385,9 +6537,11 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "loaded_baked_potato"
@@ -5396,6 +6550,12 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "loaded_baked_potato"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5433,12 +6593,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 240
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5476,6 +6641,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cow_milk"
@@ -5484,6 +6650,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5510,12 +6680,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "egg"
+      ],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5553,12 +6730,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5596,6 +6778,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5604,6 +6787,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5634,6 +6821,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5642,6 +6830,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5672,6 +6864,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "riceball"
@@ -5680,6 +6873,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5707,9 +6904,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "breaded_catfish"
@@ -5720,6 +6919,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "breaded_catfish"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5747,9 +6952,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "roasted_chestnuts"
@@ -5760,6 +6967,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "roasted_chestnuts"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5797,6 +7010,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5805,6 +7019,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5848,12 +7066,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 150
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5891,12 +7114,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 800
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5930,12 +7158,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5966,6 +7199,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -5974,6 +7208,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6011,12 +7249,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 520
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6047,6 +7290,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6055,6 +7299,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6092,12 +7340,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 350
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6128,6 +7381,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "gazpacho"
@@ -6138,6 +7392,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6175,12 +7433,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6218,12 +7481,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6261,12 +7529,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6297,6 +7570,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6305,6 +7579,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6335,6 +7613,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6343,6 +7622,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6380,6 +7663,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6388,6 +7672,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6415,9 +7703,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "wintergreen_ice_cream"
@@ -6428,6 +7718,12 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [
+      "wintergreen_ice_cream"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6465,12 +7761,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6501,6 +7802,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6509,6 +7811,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6539,6 +7845,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6547,6 +7854,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6590,12 +7901,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6626,12 +7942,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6662,6 +7983,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6670,6 +7992,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6700,6 +8026,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6708,6 +8035,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6745,12 +8076,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6788,12 +8124,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6831,12 +8172,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6867,6 +8213,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -6875,6 +8222,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6918,6 +8269,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "monster_mash"
@@ -6926,6 +8278,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6953,9 +8309,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "moon_fruit_cake"
@@ -6966,6 +8324,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "moon_fruit_cake"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7003,12 +8367,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 50
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7036,9 +8405,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "water_chestnut_fritters"
@@ -7049,6 +8420,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "water_chestnut_fritters"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7086,12 +8463,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7129,6 +8511,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -7137,6 +8520,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7167,6 +8554,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -7175,6 +8563,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7212,12 +8604,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7261,12 +8658,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 650
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7297,6 +8699,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "coconut_milk"
@@ -7307,6 +8710,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7344,12 +8751,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 240
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7380,12 +8792,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 40
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7423,12 +8840,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 125
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7459,6 +8881,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -7467,6 +8890,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7504,12 +8931,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7540,12 +8972,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 3300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7583,12 +9020,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7632,12 +9074,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 220
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7681,6 +9128,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -7689,6 +9137,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7726,12 +9178,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 310
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7769,6 +9226,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "trail_mix"
@@ -7777,6 +9235,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7814,12 +9276,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7846,6 +9313,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "grilled_cheese"
@@ -7856,6 +9324,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7899,12 +9371,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7942,12 +9419,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 225
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7978,6 +9460,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "chocolate"
@@ -7988,6 +9471,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8018,6 +9505,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "tulip"
@@ -8028,6 +9516,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8058,12 +9550,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8101,12 +9598,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 150
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8137,6 +9639,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8145,6 +9648,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8182,12 +9689,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 10
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8231,12 +9743,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8274,12 +9791,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 75
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8307,9 +9829,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "grilled_eel_rice_bowl"
@@ -8320,6 +9844,12 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [
+      "grilled_eel_rice_bowl"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8357,12 +9887,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8406,6 +9941,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "iron_ingot"
@@ -8414,6 +9950,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8457,12 +9997,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8496,12 +10041,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8539,12 +10089,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 999
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8588,12 +10143,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 780
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8631,12 +10191,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8670,12 +10235,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8706,6 +10276,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8714,6 +10285,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8757,6 +10332,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8765,6 +10341,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8802,6 +10382,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8810,6 +10391,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8847,12 +10432,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 50
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8896,12 +10486,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 300
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8932,6 +10527,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8940,6 +10536,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8970,6 +10570,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -8978,6 +10579,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9021,12 +10626,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 750
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9057,6 +10667,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -9065,6 +10676,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9095,6 +10710,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -9103,6 +10719,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9133,6 +10753,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -9141,6 +10762,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9184,12 +10809,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9227,12 +10857,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9270,12 +10905,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "cavern_rock_flooring"
+      ],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9313,12 +10955,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "miners_crate_chair"
+      ],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9356,12 +11005,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 200
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9392,6 +11046,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -9400,6 +11055,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9434,9 +11093,11 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "wildberry_pie"
@@ -9447,6 +11108,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "wildberry_pie"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9474,9 +11141,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "blueberry_jam"
@@ -9487,6 +11156,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "blueberry_jam"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9514,9 +11189,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "broccoli_salad"
@@ -9527,6 +11204,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "broccoli_salad"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9554,9 +11237,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cod_with_thyme"
@@ -9567,6 +11252,12 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [
+      "cod_with_thyme"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9604,6 +11295,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "coconut_cream_pie"
@@ -9612,6 +11304,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9649,6 +11345,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "ice_cream_sundae"
@@ -9657,6 +11354,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9687,6 +11388,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -9695,6 +11397,10 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9725,6 +11431,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "potato_soup"
@@ -9735,6 +11442,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9762,9 +11473,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "garlic_bread"
@@ -9775,6 +11488,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "garlic_bread"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9818,12 +11537,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 270
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9861,12 +11585,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 750
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9904,12 +11633,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9937,9 +11671,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "cranberry_orange_scone"
@@ -9950,6 +11686,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "cranberry_orange_scone"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9980,6 +11722,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "glowberry_cookies"
@@ -9990,6 +11733,10 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10025,12 +11772,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 80
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10068,12 +11820,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 275
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10111,12 +11868,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 310
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10154,12 +11916,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10197,12 +11964,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 650
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10240,12 +12012,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 40
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10280,9 +12057,11 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "sea_bream_rice"
@@ -10291,6 +12070,12 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "sea_bream_rice"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10323,9 +12108,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "horseradish_salmon"
@@ -10336,6 +12123,12 @@
     "season_restriction": [
       "fall"
     ],
+    "teaches_recipe_ids": [
+      "horseradish_salmon"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10363,9 +12156,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "smoked_trout_soup"
@@ -10376,6 +12171,12 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [
+      "smoked_trout_soup"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10419,12 +12220,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 150
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10462,12 +12268,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 400
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10505,12 +12316,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 70
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10548,12 +12364,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10589,6 +12410,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "herb_salad"
@@ -10599,6 +12421,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10629,6 +12455,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -10637,6 +12464,10 @@
     "season_restriction": [
       "spring"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10664,9 +12495,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "rosehip_jam"
@@ -10677,6 +12510,12 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [
+      "rosehip_jam"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10704,9 +12543,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "seaweed_salad"
@@ -10717,6 +12558,12 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [
+      "seaweed_salad"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10747,6 +12594,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -10755,6 +12603,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10788,12 +12640,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 430
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10824,6 +12681,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -10832,6 +12690,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10869,12 +12731,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10902,9 +12769,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "winter_stew"
@@ -10915,6 +12784,12 @@
     "season_restriction": [
       "winter"
     ],
+    "teaches_recipe_ids": [
+      "winter_stew"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10942,9 +12817,11 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "sesame_broccoli"
@@ -10955,6 +12832,12 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [
+      "sesame_broccoli"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10992,12 +12875,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11041,12 +12929,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 250
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11084,6 +12977,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
@@ -11092,6 +12986,10 @@
     "season_restriction": [
       "summer"
     ],
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11129,12 +13027,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 40,
       "tesserae": 810
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11172,12 +13075,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 40,
       "tesserae": 415
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11215,12 +13123,17 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 2100
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11260,8 +13173,13 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11294,12 +13212,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 510
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11332,12 +13255,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 750
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11370,12 +13298,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 445
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11408,12 +13341,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11446,12 +13384,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 670
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11484,12 +13427,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 800
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11522,12 +13470,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 700
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11560,12 +13513,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11598,12 +13556,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 666
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11636,12 +13599,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 777
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11674,12 +13642,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 500
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11712,12 +13685,17 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": 1000
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11745,8 +13723,13 @@
       "*": "wiki_page"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11774,8 +13757,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11804,8 +13798,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11834,8 +13839,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11864,8 +13880,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11894,8 +13921,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11924,15 +13962,21 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "iron_ingot",
-        "silver_ingot"
+        "silver_ingot",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11961,8 +14005,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11991,8 +14046,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12021,14 +14087,20 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "ore_stone"
+        "ore_stone",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12057,6 +14129,7 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "shards",
@@ -12066,6 +14139,10 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12094,8 +14171,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12124,15 +14212,21 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "golden_cheese",
-        "golden_mayonnaise"
+        "golden_mayonnaise",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12161,8 +14255,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12191,8 +14296,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12221,8 +14337,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12251,8 +14378,19 @@
       "*": "wiki_page"
     },
     "repeatable": true,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "treasure_box_gold"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12281,14 +14419,20 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "small_grass_starter"
+        "small_grass_starter",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12317,14 +14461,20 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "refined_stone"
+        "refined_stone",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12353,14 +14503,20 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "bell_berry"
+        "bell_berry",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12389,14 +14545,20 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": {
       "item_ids": [
-        "gold_ingot"
+        "gold_ingot",
+        "treasure_box_gold"
       ],
       "renown": null,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12425,8 +14587,13 @@
       "*": "wiki_page"
     },
     "repeatable": true,
+    "required_items": [],
     "rewards": null,
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12457,15 +14624,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "cooking_stockpot"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "cooking_stockpot"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12496,15 +14673,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "cooking_hanging_pans"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "cooking_hanging_pans"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12535,15 +14722,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "cooking_frying_pan"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "cooking_frying_pan"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12574,15 +14771,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_garlic_braid"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_garlic_braid"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12613,15 +14820,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_hanging_onion_basket"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_hanging_onion_basket"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12652,15 +14869,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "cooking_tea_kettle"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "cooking_tea_kettle"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12691,15 +14918,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_herb_planter"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_herb_planter"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12730,15 +14967,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_oil_and_vinegar_basket"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_oil_and_vinegar_basket"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12769,15 +15016,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_scale"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_scale"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12808,15 +15065,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_mixing_bowls"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_mixing_bowls"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12847,15 +15114,25 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
-      "item_ids": [],
+      "item_ids": [
+        "kitchen_utensil_holder"
+      ],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "kitchen_utensil_holder"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12881,11 +15158,27 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
-    "rewards": null,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [
+        "champions_kitchen",
+        "counter_kitchen"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "champions_kitchen",
+      "counter_kitchen"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12911,15 +15204,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "sapling_beanbag_chair"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12945,15 +15246,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "rock_clod_garden"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12979,15 +15288,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "mushroom_sofa"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13013,15 +15330,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "enchantern_lamp"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13047,15 +15372,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "stalagmite_spike_tile"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13081,15 +15414,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "essence_bat_garland"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13115,15 +15456,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "mimic_storage_chest"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13149,15 +15498,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "flame_spirit_lamp"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13183,15 +15540,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "lava_cat_bed"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13217,15 +15582,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "floating_tome_lamp"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13251,15 +15624,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "rock_stack_shelf"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13285,15 +15666,23 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 100,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "void_gryphon_statue"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13318,9 +15707,11 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "game_files"
+      "*": "game_files",
+      "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
+    "required_items": [],
     "rewards": {
       "item_ids": [
         "apiary",
@@ -13330,6 +15721,13 @@
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [
+      "apiary",
+      "terrarium"
+    ],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": null
   },
@@ -13338,7 +15736,6 @@
     "blurb": null,
     "confidence": "verified",
     "data_gaps": [
-      "objectives",
       "prerequisites"
     ],
     "former_ids": [],
@@ -13354,15 +15751,34 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "game_files"
+      "*": "game_files",
+      "required_items": "game_files"
     },
     "repeatable": false,
+    "required_items": [
+      {
+        "item_id": "basic_wood",
+        "quantity": 150
+      },
+      {
+        "item_id": "copper_ingot",
+        "quantity": 2
+      },
+      {
+        "item_id": "ore_stone",
+        "quantity": 200
+      }
+    ],
     "rewards": {
       "item_ids": [],
       "renown": 20,
       "tesserae": null
     },
     "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_shop_ids": [],
     "version_added": null,
     "wiki_page": null
   }

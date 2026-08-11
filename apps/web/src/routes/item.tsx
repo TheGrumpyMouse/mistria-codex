@@ -26,6 +26,7 @@ import {
   type PlaceLabel,
   placeLabels,
   recipeSourceLabel,
+  stallLabel,
   titleCase,
   WORN_ON_LABELS,
 } from '~/lib/labels'
@@ -106,12 +107,22 @@ interface RecipeRecord {
   sources: {
     method: string
     source_id: string | null
+    /** Which stall at the festival — an internal token, labelled or dropped. */
+    stall_key: string | null
     character_id: string | null
     price: number | null
     currency: string
     requires: Gate[]
     confidence: string
   }[]
+}
+
+/** Just enough of a festival to name a recipe stall's host — and to veil it. */
+interface FestivalLite {
+  id: string
+  name: string
+  spoiler?: boolean
+  unreleased?: boolean
 }
 
 interface GiftPrefs {
@@ -263,6 +274,7 @@ export function ItemRoute() {
     recipes: RecipeRecord[]
     seals: SealRecord[]
     quests: QuestLite[]
+    festivals: Map<string, FestivalLite>
     board: BoardRequest[]
     machines: MachineRecord[]
     fishFacets: FishFacetLite[]
@@ -279,6 +291,7 @@ export function ItemRoute() {
     recipes: [],
     seals: [],
     quests: [],
+    festivals: new Map(),
     board: [],
     machines: [],
     fishFacets: [],
@@ -303,6 +316,9 @@ export function ItemRoute() {
       loadDataset<RecipeRecord>('recipes'),
       loadDataset<SealRecord>('seals'),
       loadDataset<QuestLite>('quests'),
+      // 3KB, so a festival-taught recipe can say *which* festival — and stay
+      // veiled when the calendar veils it.
+      loadDataset<FestivalLite>('festivals'),
       loadDataset<MachineRecord>('machines'),
       loadDataset<FishFacetLite>('fish'),
       loadRequestBoard(),
@@ -324,6 +340,7 @@ export function ItemRoute() {
           recipes,
           seals,
           quests,
+          festivals,
           machines,
           fishFacets,
           board,
@@ -342,6 +359,7 @@ export function ItemRoute() {
             recipes,
             seals,
             quests,
+            festivals: new Map(festivals.map((f) => [f.id, f])),
             board: board.requests,
             machines,
             fishFacets,
@@ -371,6 +389,7 @@ export function ItemRoute() {
     recipes,
     seals,
     quests,
+    festivals,
     board,
     machines,
     fishFacets,
@@ -754,7 +773,7 @@ export function ItemRoute() {
             taught by the Inn *and* by the Wishing Well, and picking a winner
             would be an answer nobody can act on.
           */}
-          <h3 className="mt-4 text-ink-mute text-xs uppercase tracking-wide">
+          <h3 className="mt-4 font-display font-semibold text-ink text-sm">
             Where to learn the recipe
           </h3>
           {recipe.sources.length === 0 ? (
@@ -763,11 +782,12 @@ export function ItemRoute() {
             <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
               {recipe.sources.map((source) => (
                 <RecipeSourceRow
-                  key={`${source.method}:${source.source_id ?? ''}`}
+                  key={`${source.method}:${source.source_id ?? ''}:${source.stall_key ?? ''}`}
                   source={source}
                   shops={shops}
                   quests={quests}
                   mines={mines}
+                  festivals={festivals}
                   index={index}
                 />
               ))}
@@ -1255,20 +1275,60 @@ function RecipeSourceRow({
   shops,
   quests,
   mines,
+  festivals,
   index,
 }: {
   source: RecipeRecord['sources'][number]
   shops: Map<string, ShopRecord>
   quests: QuestLite[]
   mines: Map<string, MineRecord>
+  festivals: Map<string, FestivalLite>
   index: DisplayIndex
 }) {
-  const words = recipeSourceLabel(source.method)
+  const spoilers = useSpoilers()
   const inferred = source.confidence === 'inferred'
 
-  // The named thing, and where it links. Only three of the ten methods name
-  // something with a page of its own; the rest are places without records and
-  // read as the standalone phrase.
+  // A festival source names its festival and, where labelled, its stall — but
+  // a festival the calendar veils stays veiled here too: the row keeps its
+  // "festival stall" fact and the *which* waits behind the same tap-to-reveal
+  // the calendar uses, since a festival has no detail page to do the asking.
+  const festival = source.method === 'festival' ? festivals.get(source.source_id ?? '') : undefined
+  const festivalVeil =
+    festival === undefined
+      ? null
+      : festival.spoiler === true
+        ? ('spoiler' as const)
+        : festival.unreleased === true
+          ? ('unreleased' as const)
+          : null
+  if (festival !== undefined && festivalVeil !== null && !spoilers.shown(festival.id)) {
+    return (
+      <li className="flex flex-wrap items-center gap-x-2 py-2 text-sm">
+        <span className="text-ink">A festival stall</span>
+        <button
+          type="button"
+          onClick={() => spoilers.reveal(festival.id)}
+          className="tap-target inline-flex items-center gap-1.5"
+        >
+          <SpoilerChip size={18} reason={festivalVeil} />
+          <span className="text-ink-faint text-xs">tap to show which</span>
+        </button>
+      </li>
+    )
+  }
+  const stall = source.stall_key === null ? null : stallLabel(source.stall_key)
+
+  const words =
+    festival === undefined
+      ? recipeSourceLabel(source.method)
+      : // "Nora’s souvenir stall at the Animal Festival", falling back to
+        // "A stall at the Animal Festival" when the stall has no label yet —
+        // an internal token never renders raw.
+        { lead: stall === null ? 'A stall at the ' : `${stall} at the `, standalone: '' }
+
+  // The named thing, and where it links. Only the quest has a page of its
+  // own; a shop, a mine and a festival are named in place, and the remaining
+  // methods read as the standalone phrase.
   const quest = quests.find((q) => q.id === source.source_id)
   const named: { text: string; to?: '/quest/$id'; id?: string } | null =
     source.method === 'shop' && source.source_id !== null
@@ -1277,7 +1337,9 @@ function RecipeSourceRow({
         ? { text: `“${quest.name}”`, to: '/quest/$id', id: quest.id }
         : source.method === 'mines_chest' && source.source_id !== null
           ? { text: mines.get(source.source_id)?.name ?? titleCase(source.source_id) }
-          : null
+          : festival !== undefined
+            ? { text: festival.name }
+            : null
 
   return (
     <li className="flex flex-wrap items-baseline gap-x-1.5 py-2 text-sm">

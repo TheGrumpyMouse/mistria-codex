@@ -400,6 +400,11 @@ MSYS_NO_PATHCONV=1 BASE_PATH=/mistria-codex/ pnpm build:web
 MSYS_NO_PATHCONV=1 BASE_PATH=/mistria-codex/ pnpm preview:web
 ```
 
+And if that dies with `Cannot find module '...corepack\dist\pnpm.js'`, the
+same flag has now broken corepack's *own* shim path — it disables conversion
+for everything, pnpm included. Run the build from PowerShell instead:
+`$env:BASE_PATH='/mistria-codex/'; pnpm build:web`.
+
 ## Things that will bite
 
 - **`JSON.parse` on the main thread.** A multi-megabyte parse freezes a

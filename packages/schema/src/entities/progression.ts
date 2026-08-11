@@ -91,6 +91,32 @@ export const Quest = withEnvelope({
     .default(null),
   repeatable: z.boolean().default(false),
   season_restriction: z.array(Season).nullable().default(null),
+
+  /**
+   * The quest's stated delivery cost — what it asks the player to hand over,
+   * from the quest stage's `supplied_items` in the game files. The same shape
+   * as `Seal.required_items`, because a seal's price and the bridge repair's
+   * price are the same structure in `story_quests.toml`. Empty means none
+   * stated, which for most quests is the truth.
+   */
+  required_items: z
+    .array(z.object({ item_id: IdRef, quantity: z.number().int().min(1) }))
+    .default([]),
+
+  /**
+   * Reverse indexes over gates stated elsewhere in the dataset: a shop whose
+   * `unlock_requires` names this quest, a location or mine biome gated on it,
+   * a recipe whose sources include it. Flat per-type arrays, not `{type, id}`
+   * pairs, so refint checks each key against its own table.
+   *
+   * Every entry is a stated fact re-indexed — nothing inferred can enter,
+   * which is why there is no per-entry confidence. Anything not flatly stated
+   * stays out.
+   */
+  unlocks_shop_ids: z.array(IdRef).default([]),
+  unlocks_location_ids: z.array(IdRef).default([]),
+  unlocks_mine_ids: z.array(IdRef).default([]),
+  teaches_recipe_ids: z.array(IdRef).default([]),
 })
 export type Quest = z.infer<typeof Quest>
 

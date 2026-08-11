@@ -262,7 +262,10 @@ const DAY_LENGTH = 20 * 60
 
 function TimeBand({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>) {
   const minutes = value.time
-  const offset = minutes === null ? 0 : (minutes - DAY_STARTS_AT + 1440) % 1440
+  // With no time chosen the thumb rests at noon — the same time the "Any time"
+  // chip toggles to — so grabbing it starts the drag from where it appears.
+  const offset =
+    minutes === null ? 12 * 60 - DAY_STARTS_AT : (minutes - DAY_STARTS_AT + 1440) % 1440
 
   return (
     <div className="mt-5">
@@ -289,18 +292,25 @@ function TimeBand({ value, onChange }: Pick<DayDialProps, 'value' | 'onChange'>)
         </div>
       </div>
 
+      {/* Never disabled: touching the slider *is* choosing a time, so it stays
+          live and only dims while no time is set. A plain tap on the thumb
+          moves nothing and fires no change event, so pointer-down commits the
+          resting noon. */}
       <input
         type="range"
         min={0}
         max={DAY_LENGTH}
         step={10}
         value={offset}
-        disabled={minutes === null}
         aria-label="Time of day"
+        aria-valuetext={minutes === null ? 'Any time' : formatClock(minutes)}
+        onPointerDown={() => {
+          if (minutes === null) onChange({ time: 12 * 60 })
+        }}
         onChange={(event) =>
           onChange({ time: (DAY_STARTS_AT + Number(event.target.value)) % 1440 })
         }
-        className="time-band w-full disabled:opacity-40"
+        className={`time-band w-full ${minutes === null ? 'opacity-40' : ''}`}
       />
 
       <div className="flex justify-between text-[0.6875rem] text-ink-faint" data-numeral>

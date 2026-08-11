@@ -3,6 +3,7 @@ import {
   ChevronsDown,
   ClipboardList,
   Compass,
+  Ellipsis,
   Landmark,
   Map as MapIcon,
   Search,
@@ -10,7 +11,7 @@ import {
   Sun,
   X,
 } from 'lucide-react'
-import type { ComponentType } from 'react'
+import { type ComponentType, useEffect, useRef, useState } from 'react'
 import { useAtlas } from '~/app/AtlasProvider'
 import { Tour } from '~/app/Tour'
 import { Footer } from '~/components/Footer'
@@ -29,34 +30,33 @@ interface NavItem {
   icon: ComponentType<{ size?: number; strokeWidth?: number }>
 }
 
-/**
- * Five on a phone, because a sixth bottom-nav item is a 60px tap target.
- *
- * Browse and Search are both "find a thing you can name" and Search is the one
- * you reach for, so Browse moves to the sidebar-only list. The board earns a
- * primary slot: it is a thing you check *before* going out, which is the same
- * job as Today.
- */
 /** The tour's anchor name for a nav destination — `data-tour` on the link. */
 const tourAnchor = (to: string): string => (to === '/' ? 'calendar' : to.slice(1))
 
-const NAV: NavItem[] = [
-  { to: '/', label: 'Calendar', icon: Sun },
-  { to: '/board', label: 'Board', icon: ClipboardList },
-  { to: '/search', label: 'Search', icon: Search },
-  { to: '/museum', label: 'Museum', icon: Landmark },
-  // The Mines earned the Map's slot: seal costs and biome contents are a
-  // mid-game lookup, while the map is mostly reached from a place page — and
-  // every place page links to it. On a phone the map keeps a corner button.
-  { to: '/mines', label: 'Mines', icon: ChevronsDown },
-]
+// One const per destination so the four arrays below compose the same objects
+// rather than restating them — a label that drifted between the sidebar and
+// the More menu would read as two different places.
+const CALENDAR: NavItem = { to: '/', label: 'Calendar', icon: Sun }
+const BOARD: NavItem = { to: '/board', label: 'Board', icon: ClipboardList }
+const SEARCH: NavItem = { to: '/search', label: 'Search', icon: Search }
+const MUSEUM: NavItem = { to: '/museum', label: 'Museum', icon: Landmark }
+const MINES: NavItem = { to: '/mines', label: 'Mines', icon: ChevronsDown }
+const BROWSE: NavItem = { to: '/browse', label: 'Browse', icon: Compass }
+const MAP: NavItem = { to: '/map', label: 'Map', icon: MapIcon }
+const SETTINGS: NavItem = { to: '/settings', label: 'Settings', icon: Settings }
 
-/** Reachable from the sidebar, where there is room, and from links. */
-const SECONDARY: NavItem[] = [
-  { to: '/browse', label: 'Browse', icon: Compass },
-  { to: '/map', label: 'Map', icon: MapIcon },
-  { to: '/settings', label: 'Settings', icon: Settings },
-]
+/** The sidebar's primary block; SECONDARY continues it where there is room. */
+const NAV: NavItem[] = [CALENDAR, BOARD, SEARCH, MUSEUM, MINES]
+const SECONDARY: NavItem[] = [BROWSE, MAP, SETTINGS]
+
+/**
+ * Four destinations and a More menu on a phone — a sixth bottom-nav item is a
+ * 60px tap target. The Map earned the Board's slot: it is looked at mid-game
+ * with one hand, while the board, mines, browse and settings are consulted
+ * rather than glanced at, and one extra tap through More does not hurt them.
+ */
+const MOBILE_NAV: NavItem[] = [CALENDAR, MAP, SEARCH, MUSEUM]
+const MORE_ITEMS: NavItem[] = [BOARD, MINES, BROWSE, SETTINGS]
 
 export function AppShell() {
   return (
@@ -77,22 +77,13 @@ export function AppShell() {
       <Sidebar />
 
       {/*
-        The corner pair, on a phone. The bottom nav is full at five, and these
-        two do not earn a slot you hit mid-game — but until these buttons
-        existed Settings was unreachable on mobile without typing the URL. A
-        fixed corner costs one thumb-stretch for screens visited occasionally.
+        The one surviving corner control, on a phone: the close-X on the
+        settings screen. Map moved into the bottom nav and Settings into the
+        More menu, so the corner gear and map button retired — but "the way out
+        of Settings is back to whatever I was doing" is a behaviour the bottom
+        nav cannot express, so the X stays.
       */}
-      <div className="fixed top-3 right-3 z-10 flex gap-2 lg:hidden">
-        {/* size-11 is 44px — the minimum comfortable touch target, and these
-            two are thumb-only controls by definition. */}
-        <Link
-          to="/map"
-          aria-label="Map"
-          data-tour="map"
-          className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
-        >
-          <MapIcon size={19} strokeWidth={2} />
-        </Link>
+      <div className="fixed top-3 right-3 z-10 lg:hidden">
         <CornerSettings />
       </div>
 
@@ -135,24 +126,16 @@ export function Column({
 }
 
 /**
- * The corner settings control: a gear everywhere, a close on the settings
- * screen itself — tapping it again would otherwise do nothing, and the way
- * out of Settings is "back to whatever I was doing". Falls back to home when
+ * The close control on the settings screen, and nothing anywhere else — the
+ * way *into* Settings is the More menu now, but the way out is "back to
+ * whatever I was doing", which only this can say. Falls back to home when
  * there is no history to return to (a deep link straight into Settings).
  */
 function CornerSettings() {
   const router = useRouter()
   const pathname = useRouterState({ select: (state) => state.location.pathname })
-  const shared =
-    'grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink'
 
-  if (!pathname.startsWith('/settings')) {
-    return (
-      <Link to="/settings" aria-label="Settings" data-tour="settings" className={shared}>
-        <Settings size={19} strokeWidth={2} />
-      </Link>
-    )
-  }
+  if (!pathname.startsWith('/settings')) return null
 
   const close = (): void => {
     if (!router.history.canGoBack()) {
@@ -171,8 +154,7 @@ function CornerSettings() {
       type="button"
       onClick={close}
       aria-label="Close settings"
-      data-tour="settings"
-      className={shared}
+      className="grid size-11 place-items-center rounded-full border border-rule bg-surface/90 text-ink-mute backdrop-blur transition-colors hover:text-ink"
     >
       <X size={19} strokeWidth={2} />
     </button>
@@ -225,17 +207,98 @@ function Sidebar() {
 
 function BottomNav() {
   const isActive = useIsActive()
+  const [open, setOpen] = useState(false)
+  const moreRef = useRef<HTMLButtonElement>(null)
+  const panelRef = useRef<HTMLUListElement>(null)
+  const pathname = useRouterState({ select: (state) => state.location.pathname })
+
+  // Navigation closes the menu however it happens — a tapped link closes it
+  // itself, but the back button never passes through a click handler.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pathname is the trigger, not an input — any route change closes the menu.
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
+
+  // Escape closes and hands focus back to the button that opened it. On the
+  // window, not the panel, so it works wherever focus happens to sit — the
+  // same reasoning as the tour's listener.
+  useEffect(() => {
+    if (!open) return
+    const onEscape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return
+      event.preventDefault()
+      setOpen(false)
+      moreRef.current?.focus()
+    }
+    window.addEventListener('keydown', onEscape)
+    return () => window.removeEventListener('keydown', onEscape)
+  }, [open])
+
+  // The first destination takes focus when the menu opens, so a keyboard user
+  // is in the list rather than behind it.
+  useEffect(() => {
+    if (open) panelRef.current?.querySelector('a')?.focus()
+  }, [open])
+
+  const moreActive = MORE_ITEMS.some(({ to }) => isActive(to))
 
   return (
     <nav
       aria-label="Sections"
       // `env(safe-area-inset-bottom)` is what keeps the bar clear of the iOS
       // home indicator. Without it the last 34px of every tap target is dead.
+      // It also means the More panel, anchored `absolute` to this nav, clears
+      // the indicator for free.
       className="fixed inset-x-0 bottom-0 z-10 border-rule border-t bg-surface/95 backdrop-blur lg:hidden"
       style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
+      {open && (
+        <>
+          {/* Transparent backdrop, no scrim — this is a small disclosure, not
+              a modal, and the scrim stays reserved for the tour's spotlight.
+              Rendered before the panel so the panel paints above it. */}
+          <button
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 cursor-default"
+          />
+          {/* Disclosure-navigation pattern: a list of links behind
+              aria-expanded, no role="menu" — menu roles obligate arrow-key
+              roving that four links do not need. */}
+          <ul
+            id="more-menu"
+            ref={panelRef}
+            className="absolute right-3 bottom-full mb-2 w-48 rounded-card border border-rule bg-surface p-1 shadow-raised"
+          >
+            {MORE_ITEMS.map(({ to, label, icon: Icon }) => (
+              <li key={to}>
+                <Link
+                  to={to}
+                  aria-current={isActive(to) ? 'page' : undefined}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-3 rounded-tile px-3 py-2.5 text-sm transition-colors"
+                  style={
+                    isActive(to)
+                      ? {
+                          background: 'var(--accent-tint)',
+                          color: 'var(--accent)',
+                          fontWeight: 600,
+                        }
+                      : { color: 'var(--ink-mute)' }
+                  }
+                >
+                  <Icon size={18} strokeWidth={2} />
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
       <ul className="mx-auto flex max-w-lg">
-        {NAV.map(({ to, label, icon: Icon }) => (
+        {MOBILE_NAV.map(({ to, label, icon: Icon }) => (
           <li key={to} className="flex-1">
             <Link
               to={to}
@@ -253,6 +316,28 @@ function BottomNav() {
             </Link>
           </li>
         ))}
+        <li className="flex-1">
+          {/* Lit while the menu is open *or* while one of its destinations is
+              the current screen — a closed menu must still say "you are in
+              here somewhere". */}
+          <button
+            ref={moreRef}
+            type="button"
+            onClick={() => setOpen((was) => !was)}
+            aria-expanded={open}
+            aria-controls="more-menu"
+            data-tour="more"
+            className="flex w-full flex-col items-center gap-0.5 py-2.5 text-[0.6875rem] transition-colors"
+            style={
+              open || moreActive
+                ? { color: 'var(--accent)', fontWeight: 600 }
+                : { color: 'var(--ink-mute)' }
+            }
+          >
+            <Ellipsis size={20} strokeWidth={2} />
+            More
+          </button>
+        </li>
       </ul>
     </nav>
   )

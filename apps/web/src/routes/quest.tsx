@@ -4,7 +4,7 @@ import { Column } from '~/app/AppShell'
 import { BackLink } from '~/components/BackLink'
 import { ItemIcon } from '~/components/ItemIcon'
 import { NotRecorded, Section, Unknown } from '~/components/Section'
-import { SpoilerAsk } from '~/components/Spoiler'
+import { SpoilerAsk, SpoilerChip, veilReasonOf } from '~/components/Spoiler'
 import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { useDocumentTitle } from '~/lib/head'
 import { iconKeyFor, routeFor } from '~/lib/search'
@@ -35,6 +35,13 @@ interface QuestRecord {
   prerequisites: { type: string; key: string; value?: number | null }[]
   objectives: { type: string; target_id: string | null; quantity: number | null }[]
   rewards: { item_ids: string[]; renown: number | null; tesserae: number | null } | null
+  /** The game's stated delivery — what the quest asks you to hand over. */
+  required_items: { item_id: string; quantity: number }[]
+  /** Re-indexed stated gates: what finishing this quest opens or teaches. */
+  unlocks_shop_ids: string[]
+  unlocks_location_ids: string[]
+  unlocks_mine_ids: string[]
+  teaches_recipe_ids: string[]
   data_gaps: string[]
   wiki_page: string | null
 }
@@ -44,6 +51,12 @@ interface SealRecord {
   name: string
   quest_id: string
   required_items: { item_id: string; quantity: number }[]
+}
+
+/** Enough of a shop or a mine to name it — neither has a page of its own. */
+interface NamedRecord {
+  id: string
+  name: string
 }
 
 /** Every kind the dataset ships; an unknown one falls back to "Quest". */
@@ -64,22 +77,29 @@ export function QuestRoute() {
     quest: QuestRecord | null
     seal: SealRecord | null
     index: DisplayIndex
+    /** For the unlocks section: shops and mines have names but no pages. */
+    shops: Map<string, string>
+    mines: Map<string, string>
     loading: boolean
-  }>({ quest: null, seal: null, index: {}, loading: true })
+  }>({ quest: null, seal: null, index: {}, shops: new Map(), mines: new Map(), loading: true })
 
   useEffect(() => {
     let live = true
     Promise.all([
       loadDataset<QuestRecord>('quests'),
       loadDataset<SealRecord>('seals'),
+      loadDataset<NamedRecord>('shops'),
+      loadDataset<NamedRecord>('mines'),
       loadDisplayIndex(),
     ])
-      .then(([quests, seals, index]) => {
+      .then(([quests, seals, shops, mines, index]) => {
         if (!live) return
         setState({
           quest: quests.find((q) => q.id === id) ?? null,
           seal: seals.find((s) => s.quest_id === id) ?? null,
           index,
+          shops: new Map(shops.map((s) => [s.id, s.name])),
+          mines: new Map(mines.map((m) => [m.id, m.name])),
           loading: false,
         })
       })
@@ -90,7 +110,7 @@ export function QuestRoute() {
   }, [id])
 
   const spoilers = useSpoilers()
-  const { quest, seal, index, loading } = state
+  const { quest, seal, index, shops, mines, loading } = state
   useDocumentTitle(quest?.name ?? null)
 
   if (loading) {
@@ -176,29 +196,16 @@ export function QuestRoute() {
           so it renders as a shopping list rather than a paragraph. */}
       {seal !== null && seal.required_items.length > 0 && (
         <Section title={`To break ${seal.name.replace(/^The /, 'the ')}, bring`}>
-          <ul className="flex flex-col divide-y divide-rule border-rule border-y">
-            {seal.required_items.map((entry) => (
-              <li key={entry.item_id}>
-                <Link
-                  to="/item/$id"
-                  params={{ id: entry.item_id }}
-                  className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
-                >
-                  <ItemIcon
-                    iconKey={iconKeyFor(entry.item_id, index[entry.item_id])}
-                    name={index[entry.item_id]?.n ?? entry.item_id}
-                    size="sm"
-                  />
-                  <span className="min-w-0 flex-1 truncate text-ink text-sm">
-                    {index[entry.item_id]?.n ?? entry.item_id.replace(/_/g, ' ')}
-                  </span>
-                  <span data-numeral className="shrink-0 text-ink-mute text-xs">
-                    ×{entry.quantity}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <DeliveryList items={seal.required_items} index={index} />
+        </Section>
+      )}
+
+      {/* The same game statement on a quest that breaks no seal — the bridge,
+          the mill, the inn repairs. The seal section already shows a seal
+          quest's list, so this renders only where that one does not. */}
+      {seal === null && quest.required_items.length > 0 && (
+        <Section title="What to bring">
+          <DeliveryList items={quest.required_items} index={index} />
         </Section>
       )}
 
@@ -310,8 +317,116 @@ export function QuestRoute() {
         )}
       </Section>
 
+      {/* The other half of a quest's payoff: what finishing it opens. Every
+          entry is a stated gate elsewhere in the dataset re-indexed — the
+          Saturday Market stalls name repair_the_bridge, not the other way
+          round — so nothing here is a guess. A veiled target shows the chip,
+          not the name: a quest page must not leak what the calendar hides. */}
+      {(quest.unlocks_location_ids.length > 0 ||
+        quest.unlocks_mine_ids.length > 0 ||
+        quest.unlocks_shop_ids.length > 0 ||
+        quest.teaches_recipe_ids.length > 0) && (
+        <Section title="What it unlocks">
+          <ul className="flex flex-col gap-1.5 text-ink-mute text-sm">
+            {quest.unlocks_location_ids.map((locationId) => (
+              <li key={`location:${locationId}`}>
+                Opens <UnlockName id={locationId} index={index} />
+              </li>
+            ))}
+            {quest.unlocks_mine_ids.map((mineId) => (
+              <li key={`mine:${mineId}`}>
+                Opens{' '}
+                <Link
+                  to="/mines"
+                  className="underline decoration-rule underline-offset-4 hover:text-ink"
+                >
+                  {mines.get(mineId) ?? mineId.replace(/_/g, ' ')}
+                </Link>{' '}
+                in the mines
+              </li>
+            ))}
+            {quest.unlocks_shop_ids.map((shopId) => (
+              <li key={`shop:${shopId}`}>Opens {shops.get(shopId) ?? shopId.replace(/_/g, ' ')}</li>
+            ))}
+            {quest.teaches_recipe_ids.map((recipeId) => (
+              <li key={`recipe:${recipeId}`}>
+                Teaches the recipe for <UnlockName id={recipeId} index={index} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
       <NotRecorded gaps={quest.data_gaps} wikiPage={quest.wiki_page} />
     </Column>
+  )
+}
+
+/**
+ * A stated delivery, as a shopping list. Shared by the seal section and the
+ * quest's own `required_items` — they are the same game statement
+ * (`supplied_items`) read from two records, and they must render identically.
+ */
+function DeliveryList({
+  items,
+  index,
+}: {
+  items: { item_id: string; quantity: number }[]
+  index: DisplayIndex
+}) {
+  return (
+    <ul className="flex flex-col divide-y divide-rule border-rule border-y">
+      {items.map((entry) => (
+        <li key={entry.item_id}>
+          <Link
+            to="/item/$id"
+            params={{ id: entry.item_id }}
+            className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
+          >
+            <ItemIcon
+              iconKey={iconKeyFor(entry.item_id, index[entry.item_id])}
+              name={index[entry.item_id]?.n ?? entry.item_id}
+              size="sm"
+            />
+            <span className="min-w-0 flex-1 truncate text-ink text-sm">
+              {index[entry.item_id]?.n ?? entry.item_id.replace(/_/g, ' ')}
+            </span>
+            <span data-numeral className="shrink-0 text-ink-mute text-xs">
+              ×{entry.quantity}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/**
+ * A record an unlock points at, linked where it has a page — and veiled where
+ * the index veils it. The chip keeps the link ("locked is shown, not hidden":
+ * the veil withholds names, never navigation), and the page it lands on is
+ * the one that asks.
+ */
+function UnlockName({ id, index }: { id: string; index: DisplayIndex }) {
+  const spoilers = useSpoilers()
+  const entry = index[id]
+  const veil = veilReasonOf(entry)
+  const veiled = veil !== null && !spoilers.shown(id)
+  const name = entry?.n ?? id.replace(/_/g, ' ')
+
+  if (entry === undefined) return <>{name}</>
+  return (
+    <Link
+      to={routeFor(entry.c)}
+      params={{ id }}
+      className={
+        veiled
+          ? 'inline-flex items-baseline gap-1'
+          : 'underline decoration-rule underline-offset-4 hover:text-ink'
+      }
+    >
+      {veiled && veil !== null ? <SpoilerChip size={16} reason={veil} /> : name}
+    </Link>
   )
 }
 

@@ -72,6 +72,16 @@ export const RecipeSource = z.object({
    * the join was genuinely ambiguous, which is honest and is counted.
    */
   source_id: IdRef.nullable().default(null),
+  /**
+   * Which stall at the festival, for `method: 'festival'` only — the game's
+   * own stall key from `festivals.toml [<festival>.stocks]`
+   * (`nora_souvenir_stall`), preserved because "which stall" is the part of
+   * the answer a player walks to. Named `_key`, not `_id`: stalls are not
+   * records anywhere, so there is nothing for refint to resolve. An internal
+   * token — the UI labels it or falls back to the festival alone, never
+   * renders it raw.
+   */
+  stall_key: z.string().nullable().default(null),
   /** The letter's sender, or the quest's giver. */
   character_id: IdRef.nullable().default(null),
   /** What the scroll costs, where a source states it. Never the dish's price. */

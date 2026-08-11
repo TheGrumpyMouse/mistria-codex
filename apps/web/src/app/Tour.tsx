@@ -67,6 +67,15 @@ const STEPS: Step[] = [
     title: 'Settings',
     body: 'Text size, hidden spoilers, and syncing progress to another device.',
   },
+  // Mobile-only by construction: the anchor is the bottom nav's More button,
+  // which the desktop layout never renders — the zero-rect filter does the
+  // rest. On a phone the board, mines, browse and settings anchors are inside
+  // this closed menu, so this step is what introduces them.
+  {
+    anchor: 'more',
+    title: 'More',
+    body: 'The board, the mines, browsing by category and settings all live here.',
+  },
 ]
 
 function anchorRect(name: string): DOMRect | null {

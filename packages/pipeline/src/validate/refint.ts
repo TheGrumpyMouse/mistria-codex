@@ -45,6 +45,12 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   quest_id: 'quests',
   unlocks_mine_id: 'mines',
   unlocks_location_id: 'locations',
+  // A quest's reverse indexes over gates stated elsewhere — flat per-type
+  // arrays precisely so each lands here and gets checked against its table.
+  unlocks_shop_ids: 'shops',
+  unlocks_location_ids: 'locations',
+  unlocks_mine_ids: 'mines',
+  teaches_recipe_ids: 'recipes',
 
   biome_id: 'mines',
   biome_ids: 'mines',
@@ -129,6 +135,12 @@ function collectRefs(value: unknown, at: string, out: Ref[], unknownKeys: Set<st
   }
 
   for (const [key, child] of Object.entries(record)) {
+    // A `prov` map's keys are *field names* and its values are source names —
+    // `prov.unlocks_mine_ids: "manual"` is provenance for a reference, not a
+    // reference. Descending into it would read every ref-shaped field name as
+    // a lookup for a record called "manual".
+    if (key === 'prov') continue
+
     const target = REF_TARGETS[key]
 
     if (target !== undefined) {

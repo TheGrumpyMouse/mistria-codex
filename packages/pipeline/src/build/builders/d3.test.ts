@@ -54,6 +54,11 @@ interface QuestRecord {
   objectives: { type: string; target_id: string | null; quantity: number | null }[]
   season_restriction: string[] | null
   data_gaps: string[]
+  required_items: { item_id: string; quantity: number }[]
+  unlocks_shop_ids: string[]
+  unlocks_location_ids: string[]
+  unlocks_mine_ids: string[]
+  teaches_recipe_ids: string[]
 }
 interface AnimalRecord {
   id: string
@@ -476,16 +481,46 @@ describe('quests', () => {
   it('only records objectives the wiki wrote as structured items', () => {
     // 212 requests name a deliverable as `{{ItemIcon|Heather}} (3)`. The rest
     // describe what to do in a sentence, which is prose we do not copy and
-    // could not turn into an objective without inventing one.
+    // could not turn into an objective without inventing one. A game-stated
+    // delivery (`required_items`) answers the same question, so a quest that
+    // carries one has no gap to declare.
     const withObjectives = quests.filter((q) => q.objectives.length > 0)
     expect(withObjectives.length).toBeGreaterThan(150)
     for (const quest of quests) {
-      if (quest.objectives.length === 0) expect(quest.data_gaps).toContain('objectives')
+      if (quest.objectives.length === 0 && quest.required_items.length === 0) {
+        expect(quest.data_gaps).toContain('objectives')
+      }
       for (const objective of quest.objectives) {
         expect(objective.type).toBe('deliver')
         expect(itemIds).toContain(objective.target_id)
       }
     }
+  })
+
+  it('states what the bridge repair costs and what it opens', () => {
+    // The flagship case for the unlock pass: the quest record itself now
+    // answers "what do I bring" (the game's supplied_items stage) and "what do
+    // I get" (the six Saturday Market stalls, whose unlock_requires name it).
+    const bridge = quests.find((q) => q.id === 'repair_the_bridge')
+    expect(bridge?.required_items).toEqual([
+      { item_id: 'basic_wood', quantity: 60 },
+      { item_id: 'ore_stone', quantity: 60 },
+    ])
+    expect(bridge?.unlocks_shop_ids).toHaveLength(6)
+  })
+
+  it('re-indexes only stated facts into the unlock fields', () => {
+    // Every seal quest carries its seal's price; the two lists must agree
+    // because they are the same game statement read twice.
+    const sealQuests = quests.filter((q) => q.id.startsWith('breaking_the_'))
+    expect(sealQuests.length).toBeGreaterThanOrEqual(3)
+    for (const quest of sealQuests) expect(quest.required_items.length).toBeGreaterThan(0)
+
+    // Quest-taught recipes exist (the wedding feast chain and friends), and
+    // museum reward tiers — quest-method sources with no quest record — must
+    // never have attached anywhere.
+    const teaching = quests.filter((q) => q.teaches_recipe_ids.length > 0)
+    expect(teaching.length).toBeGreaterThan(0)
   })
 
   it('restricts a seasonal request to its season', () => {

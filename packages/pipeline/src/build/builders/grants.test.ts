@@ -30,6 +30,7 @@ interface RecipeRecord {
   sources: {
     method: string
     source_id: string | null
+    stall_key: string | null
     character_id: string | null
     price: number | null
     requires: { type: string; key: string }[]
@@ -116,6 +117,23 @@ describe('every recipe answers "where do I learn this"', () => {
     const furniture = recipes.filter((r) => r.kind === 'woodcrafting')
     const stated = furniture.filter((r) => r.sources.some((s) => s.confidence !== 'inferred'))
     expect(stated.length).toBeGreaterThan(200)
+  })
+
+  it('names the festival and the stall a festival recipe is sold from', () => {
+    // The game states both halves — `[<festival>.stocks.<stall>]` — and the
+    // stall is the half a player walks to. A null here means the extract's
+    // stall key stopped reaching the shipped source.
+    const festival = recipes.flatMap((r) => r.sources.filter((s) => s.method === 'festival'))
+    expect(festival.length).toBeGreaterThan(0)
+    for (const source of festival) {
+      expect(source.source_id).not.toBeNull()
+      expect(source.stall_key).not.toBeNull()
+    }
+    // And nothing else carries a stall — the field is festival-only.
+    const strays = recipes.flatMap((r) =>
+      r.sources.filter((s) => s.method !== 'festival' && s.stall_key !== null),
+    )
+    expect(strays).toEqual([])
   })
 
   it('keeps every source when a recipe is taught in more than one place', () => {
