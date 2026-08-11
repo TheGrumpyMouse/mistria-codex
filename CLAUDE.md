@@ -334,6 +334,13 @@ Google would route around its own spoiler system. `pnpm validate` fails on it.
 
 **`pnpm validate` must pass before any commit touching `data/`, `curated/`, or `sources/`.**
 
+**A change that warrants a version bump carries the bump itself** — the root
+`package.json` version is what Settings and About display (via
+`__APP_VERSION__`), and it does not update on its own. Bump it in the same
+change set as the features it describes, never as a follow-up someone has to
+remember. The data version needs nothing: it is a content hash stamped at
+`build:ship`.
+
 CI never touches the wiki — `sources/` is committed, so builds are hermetic and polite to wiki.gg. A weekly cron opens a refresh PR instead.
 
 ---
