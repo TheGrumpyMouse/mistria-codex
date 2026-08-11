@@ -45,6 +45,12 @@ export const Requirement = z.object({
      */
     'shipped_item',
     'donated_item',
+    /**
+     * A ranch animal you must have unlocked — Hayden's accessory shelf gates
+     * per species (`unlocked_animal = "horse"` in `stores.toml`). `key` is the
+     * animal id.
+     */
+    'animal',
   ]),
   key: z.string().min(1),
   op: z.enum(['>=', '>', '==', 'has', 'done']),

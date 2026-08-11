@@ -243,6 +243,19 @@ interface QuestLite {
   objectives: { type: string; target_id: string | null; quantity: number | null }[]
 }
 
+/** Just enough of a monster to say "this drops it" with a link. */
+interface MonsterLite {
+  id: string
+  name: string
+  icon_key: string | null
+  drops: {
+    item_id: string
+    chance: number | null
+    quantity: { min: number; max: number } | null
+    requires_perk: string | null
+  }[]
+}
+
 /** One thing that wants this item handed over, and its tick. */
 interface Need {
   /** Progress domain — decides the stored key and never collides. */
@@ -278,6 +291,7 @@ export function ItemRoute() {
     board: BoardRequest[]
     machines: MachineRecord[]
     fishFacets: FishFacetLite[]
+    monsters: MonsterLite[]
     meta: Meta | null
     loading: boolean
   }>({
@@ -295,6 +309,7 @@ export function ItemRoute() {
     board: [],
     machines: [],
     fishFacets: [],
+    monsters: [],
     meta: null,
     loading: true,
   })
@@ -321,6 +336,9 @@ export function ItemRoute() {
       loadDataset<FestivalLite>('festivals'),
       loadDataset<MachineRecord>('machines'),
       loadDataset<FishFacetLite>('fish'),
+      // 6KB, for the reverse of the bestiary's drop tables — "where do I get
+      // Monster Shell" is answered by who drops it, and nothing else says so.
+      loadDataset<MonsterLite>('monsters'),
       loadRequestBoard(),
       loadMeta(),
       Promise.all(
@@ -343,6 +361,7 @@ export function ItemRoute() {
           festivals,
           machines,
           fishFacets,
+          monsters,
           board,
           meta,
           done,
@@ -363,6 +382,7 @@ export function ItemRoute() {
             board: board.requests,
             machines,
             fishFacets,
+            monsters,
             meta,
             loading: false,
           })
@@ -393,6 +413,7 @@ export function ItemRoute() {
     board,
     machines,
     fishFacets,
+    monsters,
     meta,
     loading,
   } = state
@@ -492,6 +513,12 @@ export function ItemRoute() {
             r.output.item_id !== item.id &&
             r.ingredients.some((ing) => ing.item_id === item.id),
         )
+
+  // The reverse of the bestiary's drop tables: who drops this. Thirteen
+  // monster materials had no other recorded source and showed "No source
+  // recorded" while the bestiary listed exactly who to hit for them.
+  const droppedBy =
+    item === null ? [] : monsters.filter((m) => m.drops.some((d) => d.item_id === item.id))
 
   // Who feels how about this item, from the reverse of the gift table.
   const opinions = useMemo(() => {
@@ -661,9 +688,20 @@ export function ItemRoute() {
           // real and still says so; it just no longer claims to be the whole
           // answer when the page already holds a better one.
           <Unknown>
-            {item.sold_by.length > 0
-              ? 'Not recorded as found anywhere in the wild — but it is sold, below.'
-              : 'No source recorded.'}
+            {(() => {
+              // Name what the page *does* hold before conceding a gap — the
+              // availability data really is empty, but printing "No source
+              // recorded" above a shop, a recipe or a drop table is the app
+              // contradicting itself one section later.
+              const below = [
+                ...(item.sold_by.length > 0 ? ['sold'] : []),
+                ...(recipe !== undefined ? ['made'] : []),
+                ...(droppedBy.length > 0 ? ['dropped by monsters'] : []),
+              ]
+              return below.length === 0
+                ? 'No source recorded.'
+                : `Not recorded as found anywhere in the wild — but it is ${below.join(' and ')}, below.`
+            })()}
           </Unknown>
         ) : (
           <>
@@ -690,6 +728,45 @@ export function ItemRoute() {
           </>
         )}
       </Section>
+
+      {/* The reverse of the bestiary's drop table. A veiled monster shows a
+          spoiler chip, not its name — the name is the spoiler. */}
+      {droppedBy.length > 0 && (
+        <Section title="Dropped by">
+          <ul className="flex flex-wrap gap-1.5">
+            {droppedBy.map((monster) => {
+              const drop = monster.drops.find((d) => d.item_id === item.id)
+              const veiled = veilReasonOf(index[monster.id])
+              return (
+                <li key={monster.id}>
+                  {veiled !== null && !spoilers.shown(monster.id) ? (
+                    <SpoilerChip reason={veiled} />
+                  ) : (
+                    <Link
+                      to="/monster/$id"
+                      params={{ id: monster.id }}
+                      className="flex items-center gap-1.5 rounded-tile border border-rule py-0.5 pr-2 pl-0.5 text-ink text-xs transition-colors hover:bg-sunk"
+                    >
+                      <ItemIcon
+                        iconKey={monster.icon_key ?? `monster/${monster.id}`}
+                        name={monster.name}
+                        size="sm"
+                      />
+                      {monster.name}
+                      {/* A null chance is unknown and never renders as a number. */}
+                      {drop?.chance != null && (
+                        <span data-numeral className="text-ink-faint">
+                          {Math.round(drop.chance * 100)}%
+                        </span>
+                      )}
+                    </Link>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
+        </Section>
+      )}
 
       {/* The recipe, for anything that is cooked or crafted — which is what
           makes "search for a recipe" honest: the dish's own page explains how

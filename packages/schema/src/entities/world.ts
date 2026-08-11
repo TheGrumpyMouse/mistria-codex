@@ -154,21 +154,36 @@ export const Seal = withEnvelope({
 })
 export type Seal = z.infer<typeof Seal>
 
+const MonsterDrop = z.object({
+  item_id: IdRef,
+  chance: z.number().min(0).max(1).nullable().default(null),
+  quantity: z.object({ min: z.number().int(), max: z.number().int() }).nullable().default(null),
+  /**
+   * The perk that must be active before this line can drop at all — the
+   * pet skins behind Friend-Shaped. Stated by the game (`MonsterUtils.gml`
+   * checks the perk wherever an item carries `pet_skin_unlock`), so the UI
+   * must badge it: a 5% chance that is 0% for most players is not a 5% chance.
+   */
+  requires_perk: z.string().nullable().default(null),
+})
+
+/**
+ * `combat_xp` used to sit here, always null: the game has no combat-XP concept
+ * to record. Its stats are `hp`, contact `damage`, the `essence` a kill pays,
+ * and a coin range — all stated per variant in `fiddle/monsters/`.
+ */
 export const Monster = withEnvelope({
   biome_ids: z.array(IdRef).default([]),
   hp: z.number().int().nullable().default(null),
-  drops: z
-    .array(
-      z.object({
-        item_id: IdRef,
-        chance: z.number().min(0).max(1).nullable().default(null),
-        quantity: z
-          .object({ min: z.number().int(), max: z.number().int() })
-          .nullable()
-          .default(null),
-      }),
-    )
-    .default([]),
-  combat_xp: z.number().int().nullable().default(null),
+  damage: z.number().int().nullable().default(null),
+  essence: z.number().int().nullable().default(null),
+  coins: z.object({ min: z.number().int(), max: z.number().int() }).nullable().default(null),
+  drops: z.array(MonsterDrop).default([]),
+  /**
+   * A second, separately-rolled loot list — the Rock Stack's guaranteed
+   * diamonds for destroying it fully. Folding it into `drops` would state a
+   * 100% diamond chance on an ordinary kill.
+   */
+  super_drops: z.array(MonsterDrop).default([]),
 })
 export type Monster = z.infer<typeof Monster>

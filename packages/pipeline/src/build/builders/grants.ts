@@ -2,6 +2,7 @@ import type { AvailabilityWindow, Quest, RecipeSource, Requirement, Season } fro
 import { SEASONS } from '@mistria/schema'
 import { consola } from 'consola'
 import type { BuildContext } from '../context.js'
+import { wordKey } from '../game-facts.js'
 
 /**
  * `sources/game/unlocks.json`, resolved against the records this build ships.
@@ -191,6 +192,41 @@ export function buildGrantIndex(
     itemWindows.set(id, list)
   }
 
+  /**
+   * What a grant hands over, as a record key: the item id it names, or the
+   * accessory its `(animal, animal_cosmetic)` pair resolves to through the
+   * accessory's own display name. Reading only `item` was why the Chicken
+   * Statue's accessory rolls granted nothing anyone could see.
+   */
+  // Wiki names by word set, unambiguous only — the game says "Alpaca Blue
+  // Ribbon" where the wiki says "Blue Alpaca Ribbon", the exact word-order
+  // trap CLAUDE.md documents. A key two names share resolves to neither.
+  const wikiNameByWordKey = new Map<string, string | null>()
+  for (const name of ctx.itemByName.keys()) {
+    const key = wordKey(name)
+    wikiNameByWordKey.set(key, wikiNameByWordKey.has(key) ? null : name)
+  }
+  const resolveByName = (name: string): string | null => {
+    if (ctx.itemByName.has(name)) return ctx.idFor(name)
+    const folded = wikiNameByWordKey.get(wordKey(name)) ?? null
+    return folded !== null ? ctx.idFor(folded) : null
+  }
+
+  const grantKey = (grant: {
+    item: string | null
+    animal: string | null
+    animal_cosmetic: string | null
+    cosmetic: string | null
+  }): string | null => {
+    if (grant.item !== null) return grant.item
+    // A wardrobe key is the id its record ships under — no resolution to get wrong.
+    if (grant.cosmetic !== null) return grant.cosmetic
+    if (grant.animal === null || grant.animal_cosmetic === null) return null
+    const name =
+      game?.animalCosmeticNameByPair.get(`${grant.animal}|${grant.animal_cosmetic}`) ?? null
+    return name === null ? null : resolveByName(name)
+  }
+
   if (unlocks === null) return { recipeSources, itemWindows, itemsByQuest }
 
   // ── The post ──────────────────────────────────────────────────────────────
@@ -212,7 +248,7 @@ export function buildGrantIndex(
       requires,
       confidence: 'verified',
     })
-    addItem(letter.item, grantWindow('mail', { requires }))
+    addItem(grantKey(letter), grantWindow('mail', { requires }))
   }
 
   // ── Quest rewards ─────────────────────────────────────────────────────────
@@ -291,7 +327,7 @@ export function buildGrantIndex(
       requires: [],
       confidence: 'verified',
     })
-    addItem(grant.item, grantWindow('festival'))
+    addItem(grantKey(grant), grantWindow('festival'))
   }
 
   // ── Museum reward tiers ───────────────────────────────────────────────────
@@ -310,7 +346,7 @@ export function buildGrantIndex(
       requires: [],
       confidence: 'verified',
     })
-    addItem(grant.item, grantWindow('quest_reward'))
+    addItem(grantKey(grant), grantWindow('quest_reward'))
   }
 
   // ── The Wishing Well and the Chicken Statue ───────────────────────────────
@@ -329,7 +365,7 @@ export function buildGrantIndex(
         requires: [],
         confidence: 'verified',
       })
-      addItem(grant.item, grantWindow(spawn))
+      addItem(grantKey(grant), grantWindow(spawn))
     }
   }
 
@@ -375,7 +411,10 @@ export function buildGrantIndex(
         confidence: 'verified',
       })
     }
-    for (const item of biome.furniture) {
+    // Furniture and armor are two chest pools with one shape — the crystal
+    // set at Deep Earth and the corrupted mistril set in the Ancient Ruins
+    // have no other stated source anywhere.
+    for (const item of [...biome.furniture, ...biome.armor]) {
       addItem(
         item,
         grantWindow('chest', {
@@ -387,6 +426,60 @@ export function buildGrantIndex(
         }),
       )
     }
+  }
+
+  // ── Animal Festival placement prizes ─────────────────────────────────────
+  // misc.toml states them twice over: templated placeable ids
+  // (`white_{AnimalKind}_wall_ribbon`) and the animal-cosmetic key the placing
+  // animal wears (`ribbon_white`). Both expand only against things that
+  // actually exist — the item list for placeables, the per-species cosmetic
+  // roster for wearables — never by minting a name.
+  if (game !== null) {
+    const templates = [
+      ...game.animalRewardTemplates.small.placeables,
+      ...game.animalRewardTemplates.large.placeables,
+    ]
+    for (const template of templates) {
+      const pattern = new RegExp(`^${template.replace('{AnimalKind}', '[a-z_]+')}$`)
+      for (const id of game.itemIds) {
+        if (pattern.test(id)) addItem(id, grantWindow('festival'))
+      }
+    }
+    const cosmeticKeys = new Set([
+      ...game.animalRewardTemplates.small.cosmetics,
+      ...game.animalRewardTemplates.large.cosmetics,
+    ])
+    for (const [pair, name] of game.animalCosmeticNameByPair) {
+      const key = pair.split('|')[1] ?? ''
+      if (!cosmeticKeys.has(key)) continue
+      addItem(resolveByName(name), grantWindow('festival'))
+    }
+  }
+
+  // ── The museum's replicator ───────────────────────────────────────────────
+  // Donate an artifact and the replicator will print its furniture replica —
+  // `obj_artifact_replicator.gml` formats `artifact_replica_{ItemId}`, so the
+  // naming convention *is* the mechanism, checked against declared ids rather
+  // than assumed. The only stated source for the whole replica set.
+  for (const item of game?.itemById.values() ?? []) {
+    if (!item.id.startsWith('artifact_replica_')) continue
+    const artifactId = item.id.replace(/^artifact_replica_/, '')
+    if (!(game?.itemIds.has(artifactId) ?? false)) continue
+    addItem(
+      item.id,
+      grantWindow('museum', {
+        requires: [{ type: 'donated_item', key: artifactId, op: 'done', value: null }],
+      }),
+    )
+  }
+
+  // ── Cutscene grants ───────────────────────────────────────────────────────
+  // `given_items`, "directly stuffed into Ari's inventory" per the file's own
+  // comment — the worn axe, the star brooch, the story cloaks. The scene's
+  // trigger conditions are prose-adjacent structures nobody models, so the
+  // window states the method and nothing it cannot back.
+  for (const grant of unlocks.cutscenes) {
+    addItem(grantKey(grant), grantWindow('cutscene'))
   }
 
   // ── Known from the start ──────────────────────────────────────────────────

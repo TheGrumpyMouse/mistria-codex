@@ -5,29 +5,43 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 10,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 24,
     "icon_key": "monster/sapling",
     "id": "sapling",
     "id_status": "provisional",
@@ -35,8 +49,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -46,29 +66,49 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 17,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "face_gear_sunglasses",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 36,
     "icon_key": "monster/cool_sapling",
     "id": "cool_sapling",
     "id_status": "provisional",
@@ -76,8 +116,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -87,29 +133,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 24,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 36,
     "icon_key": "monster/blue_sapling",
     "id": "blue_sapling",
     "id_status": "provisional",
@@ -117,8 +183,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -128,29 +200,49 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 8,
+      "min": 4
+    },
+    "confidence": "verified",
+    "damage": 24,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/purple_sapling",
     "id": "purple_sapling",
     "id_status": "provisional",
@@ -158,8 +250,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -169,29 +267,49 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 1,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 44,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 20,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 72,
     "icon_key": "monster/orange_sapling",
     "id": "orange_sapling",
     "id_status": "provisional",
@@ -199,8 +317,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -210,34 +334,55 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 1,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 50,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_sapling_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_skull_mask",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_sapling",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
-      },
-      {
-        "chance": 0.05,
-        "item_id": "skull_mask",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 25,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 150,
     "icon_key": "monster/pink_sapling",
     "id": "pink_sapling",
     "id_status": "provisional",
@@ -245,8 +390,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Sapling"
   },
@@ -256,29 +407,49 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 10,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_rockclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_rockclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 8,
     "icon_key": "monster/rock_clod",
     "id": "rock_clod",
     "id_status": "provisional",
@@ -286,8 +457,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -297,29 +474,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 12,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_rockclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 4,
+          "min": 2
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_rockclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 16,
     "icon_key": "monster/blue_clod",
     "id": "blue_clod",
     "id_status": "provisional",
@@ -327,8 +524,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -338,29 +541,49 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 8,
+      "min": 4
+    },
+    "confidence": "verified",
+    "damage": 24,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_rockclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 6,
+          "min": 4
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_rockclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 32,
     "icon_key": "monster/green_clod",
     "id": "green_clod",
     "id_status": "provisional",
@@ -368,8 +591,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -379,29 +608,49 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 12,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 36,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_rockclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 4,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 12,
+          "min": 6
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_rockclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 20,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/red_clod",
     "id": "red_clod",
     "id_status": "provisional",
@@ -409,8 +658,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -420,33 +675,37 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 50,
+    "data_gaps": [],
     "drops": [
-      {
-        "chance": 0.7,
-        "item_id": "ore_mistril",
-        "quantity": null
-      },
       {
         "chance": 0.05,
         "item_id": "ore_pink_diamond",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": null,
+        "item_id": "ore_stone",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.01,
         "item_id": "perfect_pink_diamond",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 25,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 1000,
     "icon_key": "monster/purple_clod",
     "id": "purple_clod",
     "id_status": "provisional",
@@ -454,8 +713,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -465,34 +730,58 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 12,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.3,
+        "chance": 0.05,
+        "item_id": "head_oreclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.25,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_copper",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.05,
         "item_id": "ore_ruby",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_oreclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 16,
     "icon_key": "monster/copper_clod",
     "id": "copper_clod",
     "id_status": "provisional",
@@ -500,8 +789,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -511,34 +806,58 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 17,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.3,
+        "chance": 0.05,
+        "item_id": "head_oreclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.25,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_iron",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.05,
         "item_id": "ore_sapphire",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_oreclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 32,
     "icon_key": "monster/iron_clod",
     "id": "iron_clod",
     "id_status": "provisional",
@@ -546,8 +865,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -557,34 +882,58 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 8,
+      "min": 4
+    },
+    "confidence": "verified",
+    "damage": 22,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.3,
+        "chance": 0.05,
+        "item_id": "head_oreclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.25,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.05,
         "item_id": "ore_emerald",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_silver",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_oreclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/silver_clod",
     "id": "silver_clod",
     "id_status": "provisional",
@@ -592,8 +941,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -603,34 +958,55 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 12,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 28,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.3,
+        "chance": 0.05,
+        "item_id": "head_oreclod_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.25,
         "item_id": "monster_shell",
-        "quantity": null
+        "quantity": {
+          "max": 4,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.05,
         "item_id": "ore_diamond",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       },
       {
-        "chance": 0.7,
+        "chance": null,
         "item_id": "ore_gold",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_oreclod",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 20,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/gold_clod",
     "id": "gold_clod",
     "id_status": "provisional",
@@ -638,8 +1014,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -649,33 +1031,37 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 20,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.7,
+        "chance": null,
         "item_id": "ore_mistril",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.05,
         "item_id": "ore_pink_diamond",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.01,
         "item_id": "perfect_pink_diamond",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 1000,
     "icon_key": "monster/mistril_clod",
     "id": "mistril_clod",
     "id_status": "provisional",
@@ -683,8 +1069,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Clod"
   },
@@ -694,29 +1086,43 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 15,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_mushroom_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_powder",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_mushroom",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "red_toadstool",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 24,
     "icon_key": "monster/red_mushroom",
     "id": "red_mushroom",
     "id_status": "provisional",
@@ -724,8 +1130,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Mushroom_(Monster)"
   },
@@ -735,29 +1147,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 25,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_mushroom_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_powder",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_mushroom",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "wild_mushroom",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/green_mushroom",
     "id": "green_mushroom",
     "id_status": "provisional",
@@ -765,8 +1197,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Mushroom_(Monster)"
   },
@@ -776,29 +1214,49 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 8,
+      "min": 4
+    },
+    "confidence": "verified",
+    "damage": 35,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "glowing_mushroom",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_mushroom_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_powder",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_mushroom",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 72,
     "icon_key": "monster/blue_mushroom",
     "id": "blue_mushroom",
     "id_status": "provisional",
@@ -806,8 +1264,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Mushroom_(Monster)"
   },
@@ -817,29 +1281,49 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp",
-      "perk_gated_drops"
-    ],
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 50,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_mushroom_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_powder",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_mushroom",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "purple_mushroom",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       }
     ],
+    "essence": 20,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 96,
     "icon_key": "monster/purple_mushroom",
     "id": "purple_mushroom",
     "id_status": "provisional",
@@ -847,8 +1331,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Mushroom_(Monster)"
   },
@@ -858,28 +1348,49 @@
       "upper_mines"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 12,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "glass",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_enchantern_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_core",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_enchantern",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 24,
     "icon_key": "monster/yellow_enchantern",
     "id": "yellow_enchantern",
     "id_status": "provisional",
@@ -887,8 +1398,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Enchantern"
   },
@@ -898,28 +1415,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 20,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "glass",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_enchantern_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_core",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_enchantern",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/blue_enchantern",
     "id": "blue_enchantern",
     "id_status": "provisional",
@@ -927,8 +1465,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Enchantern"
   },
@@ -938,28 +1482,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 6,
+      "min": 2
+    },
+    "confidence": "verified",
+    "damage": 25,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_stalagmite_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_horn",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_copper",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_stalagmite",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 24,
     "icon_key": "monster/blue_stalagmite",
     "id": "blue_stalagmite",
     "id_status": "provisional",
@@ -967,8 +1532,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Stalagmite"
   },
@@ -978,28 +1549,49 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 5
+    },
+    "confidence": "verified",
+    "damage": 30,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_stalagmite_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_horn",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_iron",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_stalagmite",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 10,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 36,
     "icon_key": "monster/green_stalagmite",
     "id": "green_stalagmite",
     "id_status": "provisional",
@@ -1007,8 +1599,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Stalagmite"
   },
@@ -1018,28 +1616,49 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 5
+    },
+    "confidence": "verified",
+    "damage": 35,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_stalagmite_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_horn",
-        "quantity": null
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_gold",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_stalagmite",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 65,
     "icon_key": "monster/purple_stalagmite",
     "id": "purple_stalagmite",
     "id_status": "provisional",
@@ -1047,8 +1666,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Stalagmite"
   },
@@ -1058,28 +1683,49 @@
       "tide_caverns"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 18,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "essence_drop",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_essence_bat_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_wing",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_essence_bat",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 32,
     "icon_key": "monster/purple_essence_bat",
     "id": "purple_essence_bat",
     "id_status": "provisional",
@@ -1087,8 +1733,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Essence_Bat"
   },
@@ -1098,28 +1750,49 @@
       "deep_earth"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 32,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "essence_drop",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_essence_bat_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_wing",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_essence_bat",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 48,
     "icon_key": "monster/blue_essence_bat",
     "id": "blue_essence_bat",
     "id_status": "provisional",
@@ -1127,8 +1800,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Essence_Bat"
   },
@@ -1142,18 +1821,21 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
+    "coins": {
+      "max": 3,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 20,
     "data_gaps": [
-      "combat_xp",
       "cosmetic_drops",
-      "drops",
-      "hp"
+      "drops"
     ],
     "drops": [],
+    "essence": 0,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 1000,
     "icon_key": "monster/mimic",
     "id": "mimic",
     "id_status": "provisional",
@@ -1161,8 +1843,13 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Mimic"
   },
@@ -1172,33 +1859,58 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 28,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "basic_wood",
-        "quantity": null
+        "quantity": {
+          "max": 5,
+          "min": 3
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_flame_spirit_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_core",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "peat",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_flame_spirit",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 80,
     "icon_key": "monster/flame_spirit",
     "id": "flame_spirit",
     "id_status": "provisional",
@@ -1206,8 +1918,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Flame_Spirit"
   },
@@ -1217,33 +1935,58 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 38,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "basic_wood",
-        "quantity": null
+        "quantity": {
+          "max": 5,
+          "min": 3
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_flame_spirit_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_core",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "peat",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "pet_skin_flame_spirit",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 150,
     "icon_key": "monster/purple_flame_spirit",
     "id": "purple_flame_spirit",
     "id_status": "provisional",
@@ -1251,8 +1994,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Flame_Spirit"
   },
@@ -1262,38 +2011,64 @@
       "lava_caves"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 35,
+    "data_gaps": [],
     "drops": [
       {
         "chance": 0.7,
         "item_id": "glass",
-        "quantity": null
+        "quantity": {
+          "max": 5,
+          "min": 3
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.05,
+        "item_id": "head_lava_cat_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "monster_whisker",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.3,
         "item_id": "obsidian",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 5,
+          "min": 3
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.1,
+        "item_id": "pet_skin_lava_cat",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 120,
     "icon_key": "monster/lava_cat",
     "id": "lava_cat",
     "id_status": "provisional",
@@ -1301,8 +2076,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Lava_Cat"
   },
@@ -1312,23 +2093,37 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 12,
+      "min": 8
+    },
+    "confidence": "verified",
+    "damage": 45,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_void_cat_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_whisker",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.1,
+        "item_id": "pet_skin_void_cat",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 20,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 220,
     "icon_key": "monster/void_cat",
     "id": "void_cat",
     "id_status": "provisional",
@@ -1336,8 +2131,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Void_Cat"
   },
@@ -1347,28 +2148,43 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 5,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 50,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_flying_tome_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_fang",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
+      },
+      {
+        "chance": 0.1,
+        "item_id": "pet_skin_flying_tome",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       },
       {
         "chance": 0.7,
         "item_id": "sap",
-        "quantity": null
+        "quantity": null,
+        "requires_perk": null
       }
     ],
+    "essence": 5,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 150,
     "icon_key": "monster/flying_tome",
     "id": "flying_tome",
     "id_status": "provisional",
@@ -1376,8 +2192,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Flying_Tome"
   },
@@ -1387,28 +2209,49 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 10,
+      "min": 6
+    },
+    "confidence": "verified",
+    "damage": 50,
+    "data_gaps": [],
     "drops": [
+      {
+        "chance": 0.05,
+        "item_id": "head_rock_stack_hat",
+        "quantity": null,
+        "requires_perk": null
+      },
       {
         "chance": 0.3,
         "item_id": "monster_block",
-        "quantity": null
+        "quantity": {
+          "max": 1,
+          "min": 1
+        },
+        "requires_perk": null
       },
       {
         "chance": 0.7,
         "item_id": "ore_stone",
-        "quantity": null
+        "quantity": {
+          "max": 2,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.1,
+        "item_id": "pet_skin_rock_stack",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 15,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 150,
     "icon_key": "monster/rock_stack",
     "id": "rock_stack",
     "id_status": "provisional",
@@ -1416,8 +2259,24 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [
+      {
+        "chance": 1,
+        "item_id": "ore_diamond",
+        "quantity": {
+          "max": 5,
+          "min": 3
+        },
+        "requires_perk": null
+      }
+    ],
     "version_added": null,
     "wiki_page": "Rock_Stack"
   },
@@ -1427,28 +2286,49 @@
       "ancient_ruins"
     ],
     "blurb": null,
-    "combat_xp": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "combat_xp",
-      "cosmetic_drops",
-      "hp"
-    ],
+    "coins": {
+      "max": 1,
+      "min": 1
+    },
+    "confidence": "verified",
+    "damage": 60,
+    "data_gaps": [],
     "drops": [
       {
-        "chance": 0.3,
-        "item_id": "monster_fang",
-        "quantity": null
+        "chance": 0.1,
+        "item_id": "head_griffin_statue_hat",
+        "quantity": null,
+        "requires_perk": null
       },
       {
         "chance": 0.7,
-        "item_id": "sap",
-        "quantity": null
+        "item_id": "monster_block",
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.3,
+        "item_id": "monster_fang",
+        "quantity": {
+          "max": 3,
+          "min": 1
+        },
+        "requires_perk": null
+      },
+      {
+        "chance": 0.1,
+        "item_id": "pet_skin_rock_stack",
+        "quantity": null,
+        "requires_perk": "friend_shaped"
       }
     ],
+    "essence": 0,
     "former_ids": [],
-    "game_version": null,
-    "hp": null,
+    "game_version": "1.0.0",
+    "hp": 200,
     "icon_key": "monster/living_gryphon_statue",
     "id": "living_gryphon_statue",
     "id_status": "provisional",
@@ -1456,8 +2336,14 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "coins": "game_files",
+      "damage": "game_files",
+      "drops": "game_files",
+      "essence": "game_files",
+      "hp": "game_files"
     },
+    "super_drops": [],
     "version_added": null,
     "wiki_page": "Living_Gryphon_Statue"
   }

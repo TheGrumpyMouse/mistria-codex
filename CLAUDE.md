@@ -265,6 +265,49 @@ perk.
 
 **`fish.toml`'s `perk_artifact` is a perk-name *string*, not a flag.** Its `[default]` is `false`, so `bool()` silently nulled all ten artifact rules; only `str()` reads it right. The fished/dived artifact rules yield `unidentified_artifact` and the *rule id* is the artifact — `fishByItem` can never find them.
 
+**A schedule file states its own conditions; the season directories are
+shelving.** `t2/Schedules/Fall Schedules/fall_monday.s.toml` says
+`season = "fall"` in its `requires`; the files under "Spring Schedules" mostly
+state no season because they are the *defaults* every season falls back to.
+Reading the directory as a condition pins the default week to spring and
+leaves three seasons empty. Files whose conditions carry a key nobody models
+(`rain_counter`, the FNATI groups) are skipped whole and counted — first-match
+would render a hidden counter's coin flip as a fact.
+
+**`locations.toml` states `map_location` per room** — Celine's Cottage carries
+`map_location = "town"` — so an interior schedule stop resolves to a place
+without hand-curating eighty rooms. The chain is: curated room alias, else the
+room's own name folded against our location names, else its stated outdoor map.
+
+**Monster drops carry exact internal ids, including `cosmetic` keys.**
+`fiddle/monsters/*.toml` states per-variant `hp`/`damage`/`essence` and drop
+lines like `{ cosmetic = "head_rockclod_hat", chance = 5 }` — which dissolved
+34 unresolved display-name tokens the wiki path produced. `[default]` is a real
+fallback (the Mimic's 1000 hp lives there), and `super_drops` is a second,
+separately-rolled list. The variant-key ↔ wiki-name mapping is curated in
+`curated/aliases/game_monsters.json`; every base-colour call in it was verified
+against both drop tables.
+
+**The grant-key lesson keeps repeating: `item` has five siblings now.**
+`cosmetic` (a wardrobe key, which IS the shipped record id) and the
+`(animal, animal_cosmetic)` pair (resolved through the accessory's stated
+display name) are read by `readGrant` alongside the item spellings — reading
+only `item` is why every unsold accessory and Elsie's festival stock granted
+nothing visible. `cutscenes.toml given_items` and misc.toml's
+`starting_inventory`/`starting_armor` are grant surfaces too.
+
+**`letters.toml` states the story spine.** A letter's `quest_to_start` plus
+`completed_quest = { quest, days_after }` is the quest chain (prerequisites one
+way, `unlocks_quest_ids` the other), and `reached_heart_level = { ryis = 4 }`
+is the only stated source for which heart scene fires at which level. The
+game's letter quest ids do not all match ours (`repair_haydens_barn` is titled
+"Upgrade Hayden's Barn") — resolve through the stated title, and count what
+does not resolve.
+
+**A tag can outrank a directory.** 83 furniture pieces — every festival prize —
+are declared under `other/` with a `furniture` tag; filtering furniture
+ingestion on the path alone shipped none of them.
+
 ## Modelling rules
 
 **Availability is an array of windows. Each window is an AND of constraints; the array is an OR.** A bug can be spring-in-town-at-night *and* all-season-in-the-mines-any-time. Never flatten two windows into one — it produces wrong answers on the flagship screen.

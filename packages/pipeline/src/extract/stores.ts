@@ -32,9 +32,16 @@ import { type GameQuestRequirement, readRequirements } from './quests.js'
 import { entries, num, readToml, resolveIn, str, table } from './toml.js'
 
 export interface GameStockEntry {
-  /** Exactly one of these three is non-null. */
+  /** Exactly one of item / cosmetic / animal_cosmetic / a scroll is non-null. */
   item: string | null
   cosmetic: string | null
+  /**
+   * An accessory for a ranch animal — `{ animal = "chicken", animal_cosmetic =
+   * "ear_muffs" }` at Hayden's. The pair, not either half: the same accessory
+   * key exists per species, and the wiki's item for it is the combination.
+   */
+  animal: string | null
+  animal_cosmetic: string | null
   /** The recipe this line teaches, from either `recipe_scroll` or `crafting_scroll`. */
   recipe_scroll: string | null
   /** Buying it also teaches the recipe. */
@@ -69,6 +76,8 @@ function readEntry(raw: unknown, pool: string): GameStockEntry | null {
     return {
       item: bare,
       cosmetic: null,
+      animal: null,
+      animal_cosmetic: null,
       recipe_scroll: null,
       include_recipe: false,
       pool,
@@ -81,13 +90,18 @@ function readEntry(raw: unknown, pool: string): GameStockEntry | null {
   if (entry === null) return null
   const item = str(entry.item)
   const cosmetic = str(entry.cosmetic)
+  const animalCosmetic = str(entry.animal_cosmetic)
   const recipeScroll = str(entry.recipe_scroll) ?? str(entry.crafting_scroll)
-  if (item === null && cosmetic === null && recipeScroll === null) return null
+  if (item === null && cosmetic === null && animalCosmetic === null && recipeScroll === null) {
+    return null
+  }
 
   const { requirements, unread } = readRequirements(entry.requirements)
   return {
     item,
     cosmetic,
+    animal: str(entry.animal),
+    animal_cosmetic: animalCosmetic,
     recipe_scroll: recipeScroll,
     include_recipe: entry.include_recipe === true,
     pool,

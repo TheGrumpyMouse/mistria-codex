@@ -1,33 +1,76 @@
 import type { Monster } from '@mistria/schema'
 import { toSnakeId } from '@mistria/schema'
+import { consola } from 'consola'
+import type { GameMonsterDrop } from '../../extract/monsters.js'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
 
 /**
- * Build the mines' monsters.
+ * Build the mines' monsters: the wiki's roster, the game's numbers.
  *
- * Two judgements live here, and both are about what not to say.
+ * The wiki names the 35 monsters, their families and their floors, and that
+ * stays the spine of the dataset. What it almost never records is a number —
+ * no hp, no damage, and drop chances of varying age — and all of those are
+ * stated per variant in `fiddle/monsters/`, joined here through
+ * `curated/aliases/game_monsters.json`.
  *
- * **A perk-gated drop is not a drop.** Every family drops a pet skin at 5%,
- * but only once Friend-Shaped is unlocked, and `drops` has nowhere to put a
- * condition. Emitting it anyway would state a 5% chance that is zero for most
- * players, so those move to a `perk_gated_drops` gap.
+ * The game's drop lists also carry exact internal ids, including `cosmetic`
+ * entries that name `player_assets` keys directly — which is what dissolved
+ * the 34 unresolved "Rockclod Hat" tokens the wiki's display names produced.
  *
- * **A short list is not the same as a complete one.** The Mimic's drop table
- * names a hat and then links away, because what it drops depends on the biome
- * it was fed in. Without the `drops` gap that record would read as a monster
- * that drops one hat and nothing else.
+ * **A perk-gated drop ships gated, not silenced.** Every family's pet skin
+ * drops only with Friend-Shaped active (`MonsterUtils.gml` checks the perk
+ * wherever the item carries `pet_skin_unlock`), so the line carries
+ * `requires_perk` and the UI badges it. The old behaviour — dropping the line
+ * and noting a gap — stated less than the game does.
+ *
+ * Where no game extract exists the wiki path below still runs whole, so a
+ * clone without `sources/game/monsters.json` builds the bestiary it always had.
  */
-export function buildMonsters(ctx: BuildContext): Monster[] {
+export function buildMonsters(ctx: BuildContext, builtItemIds: Set<string>): Monster[] {
   const extract = ctx.monsters
   const incomplete = new Set(extract.incompleteKeys)
+  const gameJoined = ctx.game !== null && ctx.game.monsterFactsById.size > 0
 
   // Biome order is floor order, the same reading `{{BiomesQuick|3}}` uses.
   const inFloorOrder = [...ctx.mines.biomes].sort((a, b) => a.floors.min - b.floors.min)
 
-  return extract.monsters.map((monster): Monster => {
+  let unresolvedGameDrops = 0
+  const readGameDrops = (
+    monsterId: string,
+    drops: GameMonsterDrop[],
+    gaps: string[],
+  ): Monster['drops'] => {
+    const out: Monster['drops'] = []
+    for (const drop of drops) {
+      if (!builtItemIds.has(drop.id)) {
+        // An exact internal id that ships no record — count it and say so; a
+        // dropped drop must never be silence.
+        ctx.resolver.recordUnresolved(drop.id, 'monster_drop', `monster:${monsterId}`)
+        unresolvedGameDrops += 1
+        gaps.push('drops')
+        continue
+      }
+      const gameItem = ctx.game?.itemById.get(drop.id)
+      out.push({
+        item_id: drop.id,
+        // The file writes percent; the schema stores 0..1 like the wiki path.
+        chance: drop.chance === null ? null : drop.chance / 100,
+        quantity:
+          drop.count_range === null ? null : { min: drop.count_range[0], max: drop.count_range[1] },
+        requires_perk:
+          gameItem?.pet_skin_unlock !== null && gameItem?.pet_skin_unlock !== undefined
+            ? 'friend_shaped'
+            : null,
+      })
+    }
+    return out.sort((a, b) => a.item_id.localeCompare(b.item_id))
+  }
+
+  const built = extract.monsters.map((monster): Monster => {
     const id = toSnakeId(monster.name)
     const gaps: string[] = []
+    const facts = ctx.game?.monsterFactsById.get(id) ?? null
 
     // The Mimic's row says "All", which is written out rather than left as an
     // empty list. An empty list would read exactly like "we don't know", and
@@ -44,30 +87,55 @@ export function buildMonsters(ctx: BuildContext): Monster[] {
       gaps.push('biome_ids')
     }
 
-    const drops: Monster['drops'] = []
-    let perkGated = false
-    for (const drop of extract.dropsByKey[monster.dropsKey] ?? []) {
-      if (drop.requiresPerk !== null) {
-        perkGated = true
-        continue
+    // Drops: the game's list where one is stated (exact ids, exact chances),
+    // the wiki's otherwise. The Mimic states none — its loot depends on the
+    // biome it spawned in — so it keeps the wiki's partial list and its gap.
+    let drops: Monster['drops']
+    let superDrops: Monster['drops'] = []
+    let dropsFromGame = false
+    if (facts !== null && facts.drops.length > 0) {
+      dropsFromGame = true
+      drops = readGameDrops(id, facts.drops, gaps)
+      superDrops = readGameDrops(id, facts.super_drops, gaps)
+    } else {
+      drops = []
+      let perkGated = false
+      for (const drop of extract.dropsByKey[monster.dropsKey] ?? []) {
+        if (drop.requiresPerk !== null) {
+          perkGated = true
+          continue
+        }
+        if (!ctx.itemByName.has(drop.item)) {
+          ctx.resolver.recordUnresolved(drop.item, 'monster_drop', `monster:${id}`)
+          gaps.push(drop.kind === 'accessory' ? 'cosmetic_drops' : 'drops')
+          continue
+        }
+        drops.push({
+          item_id: ctx.idFor(drop.item),
+          chance: drop.chance,
+          quantity: null,
+          requires_perk: null,
+        })
       }
-      if (!ctx.itemByName.has(drop.item)) {
-        ctx.resolver.recordUnresolved(drop.item, 'monster_drop', `monster:${id}`)
-        // A hat that the wiki files under Accessories is a category we have not
-        // ingested, not a hole in the loot table. Naming those apart is what
-        // stops thirty-three `drops` gaps from reading as thirty-three
-        // monsters whose loot we failed to parse.
-        gaps.push(drop.kind === 'accessory' ? 'cosmetic_drops' : 'drops')
-        continue
-      }
-      drops.push({ item_id: ctx.idFor(drop.item), chance: drop.chance, quantity: null })
+      drops.sort((a, b) => a.item_id.localeCompare(b.item_id))
+      if (perkGated) gaps.push('perk_gated_drops')
     }
-
-    if (perkGated) gaps.push('perk_gated_drops')
     if (incomplete.has(monster.dropsKey)) gaps.push('drops')
-    // Neither page states either number for any monster.
-    gaps.push('hp', 'combat_xp')
+
+    if (facts === null) {
+      // Neither wiki page states any of the numbers.
+      gaps.push('hp', 'damage', 'essence')
+    }
     if (predates1_0(extract.lastEdited)) gaps.push('predates_1_0')
+
+    const prov: Monster['prov'] = { '*': 'wiki_page' }
+    if (facts !== null) {
+      prov.hp = 'game_files'
+      prov.damage = 'game_files'
+      prov.essence = 'game_files'
+      prov.coins = 'game_files'
+      if (dropsFromGame) prov.drops = 'game_files'
+    }
 
     return {
       id,
@@ -77,21 +145,40 @@ export function buildMonsters(ctx: BuildContext): Monster[] {
       id_status: 'provisional',
       former_ids: [],
       also_known_as: [],
-      game_version: null,
+      game_version: facts === null ? null : (ctx.game?.version ?? null),
       version_added: null,
-      confidence: 'wiki',
-      prov: { '*': 'wiki_page' },
+      confidence: facts === null ? 'wiki' : 'verified',
+      prov,
       data_gaps: [...new Set(gaps)].sort(),
       icon_key: `monster/${id}`,
       wiki_page: monster.family.replace(/ /g, '_'),
       blurb: null,
 
       biome_ids: biomeIds,
-      hp: null,
-      drops: drops.sort((a, b) => a.item_id.localeCompare(b.item_id)),
-      combat_xp: null,
+      hp: facts?.hp ?? null,
+      damage: facts?.damage ?? null,
+      essence: facts?.essence ?? null,
+      coins:
+        facts?.coin_count == null ? null : { min: facts.coin_count[0], max: facts.coin_count[1] },
+      drops,
+      super_drops: superDrops,
     }
   })
+
+  if (gameJoined) {
+    const statted = built.filter((m) => m.hp !== null).length
+    consola.info(`monsters: ${statted}/${built.length} joined to game variant tables`)
+    const unmapped = ctx.game?.unmappedMonsterVariants ?? []
+    // sapling_orange_mini is the known, deliberate residue — see the alias file.
+    if (unmapped.length > 0) {
+      consola.info(`monsters: ${unmapped.length} game variant(s) unmapped — ${unmapped.join(', ')}`)
+    }
+  }
+  if (unresolvedGameDrops > 0) {
+    consola.warn(`monsters: ${unresolvedGameDrops} game drop id(s) ship no record`)
+  }
+
+  return built
 }
 
 /** Which monsters live in each biome, derived rather than authored twice. */

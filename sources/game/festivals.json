@@ -1,0 +1,99 @@
+{
+  "animalRewards": {
+    "large": {
+      "cosmetics": [
+        "ribbon_white",
+        "ribbon_red",
+        "ribbon_blue"
+      ],
+      "placeables": [
+        "bronze_{AnimalKind}_trophy",
+        "silver_{AnimalKind}_trophy",
+        "gold_{AnimalKind}_trophy"
+      ]
+    },
+    "small": {
+      "cosmetics": [
+        "ribbon_white",
+        "ribbon_red",
+        "ribbon_blue"
+      ],
+      "placeables": [
+        "white_{AnimalKind}_wall_ribbon",
+        "red_{AnimalKind}_wall_ribbon",
+        "blue_{AnimalKind}_wall_ribbon"
+      ]
+    }
+  },
+  "festivals": [
+    {
+      "associated_quest": "the_animal_festival",
+      "date": {
+        "day": 10,
+        "season": "winter"
+      },
+      "forced_weather": "calm",
+      "has_contest": false,
+      "has_npc_date": false,
+      "implemented": true,
+      "key": "animal",
+      "location": "town",
+      "name": "Animal Festival",
+      "stalls": [
+        "nora_souvenir_stall"
+      ]
+    },
+    {
+      "associated_quest": "the_harvest_festival",
+      "date": {
+        "day": 10,
+        "season": "fall"
+      },
+      "forced_weather": "special",
+      "has_contest": true,
+      "has_npc_date": true,
+      "implemented": true,
+      "key": "harvest",
+      "location": "town",
+      "name": "Harvest Festival",
+      "stalls": [
+        "nora_souvenir_stall"
+      ]
+    },
+    {
+      "associated_quest": "the_shooting_star_festival",
+      "date": {
+        "day": 28,
+        "season": "summer"
+      },
+      "forced_weather": "calm",
+      "has_contest": false,
+      "has_npc_date": true,
+      "implemented": true,
+      "key": "shooting_star",
+      "location": "summit",
+      "name": "Shooting Star Festival",
+      "stalls": []
+    },
+    {
+      "associated_quest": "the_spring_festival",
+      "date": {
+        "day": 17,
+        "season": "spring"
+      },
+      "forced_weather": "special",
+      "has_contest": true,
+      "has_npc_date": false,
+      "implemented": true,
+      "key": "spring",
+      "location": "town",
+      "name": "Spring Festival",
+      "stalls": [
+        "elsie_spring_festival",
+        "maple_spring_festival",
+        "nora_souvenir_stall"
+      ]
+    }
+  ],
+  "gameVersion": "1.0.0"
+}

@@ -18,9 +18,12 @@ import { REPO_ROOT, SOURCES_DIR } from '../lib/paths.js'
 import { writeJson } from '../lib/write-json.js'
 import { extractArtifacts, type GameArtifactsExtract } from './artifacts.js'
 import { extractCosmetics, type GameCosmeticsExtract } from './cosmetics.js'
+import { extractFestivals, type GameFestivalsExtract } from './festivals.js'
 import { extractItems, type GameItemsExtract } from './items.js'
 import { extractMachines, type GameMachinesExtract } from './machines.js'
+import { extractMonsters, type GameMonstersExtract } from './monsters.js'
 import { extractQuests, type GameQuestsExtract } from './quests.js'
+import { extractSchedules, type GameSchedulesExtract } from './schedules.js'
 import { extractSpawns, type GameSpawnsExtract } from './spawns.js'
 import { extractStores, type GameStoresExtract } from './stores.js'
 import { gameRoot, gameVersion } from './toml.js'
@@ -39,26 +42,46 @@ export interface GameExtract {
   stores: GameStoresExtract
   cosmetics: GameCosmeticsExtract
   unlocks: GameUnlocksExtract
+  monsters: GameMonstersExtract
+  festivals: GameFestivalsExtract
+  schedules: GameSchedulesExtract
 }
 
 export async function extractGame(): Promise<GameExtract> {
   const root = await gameRoot()
   const version = gameVersion()
 
-  const [items, spawns, world, artifacts, machines, quests, stores, cosmetics, unlocks] =
-    await Promise.all([
-      extractItems(root, version),
-      extractSpawns(root, version),
-      extractWorld(root, version),
-      extractArtifacts(root, version),
-      extractMachines(root, version),
-      extractQuests(root, version),
-      extractStores(root, version),
-      extractCosmetics(root, version),
-      extractUnlocks(root, version),
-    ])
+  const [items, spawns, world, artifacts, machines, quests, stores, cosmetics] = await Promise.all([
+    extractItems(root, version),
+    extractSpawns(root, version),
+    extractWorld(root, version),
+    extractArtifacts(root, version),
+    extractMachines(root, version),
+    extractQuests(root, version),
+    extractStores(root, version),
+    extractCosmetics(root, version),
+  ])
+  const [unlocks, monsters, festivals, schedules] = await Promise.all([
+    extractUnlocks(root, version),
+    extractMonsters(root, version),
+    extractFestivals(root, version),
+    extractSchedules(root, version),
+  ])
 
-  return { items, spawns, world, artifacts, machines, quests, stores, cosmetics, unlocks }
+  return {
+    items,
+    spawns,
+    world,
+    artifacts,
+    machines,
+    quests,
+    stores,
+    cosmetics,
+    unlocks,
+    monsters,
+    festivals,
+    schedules,
+  }
 }
 
 export async function writeGameExtract(extract: GameExtract): Promise<void> {
@@ -72,6 +95,9 @@ export async function writeGameExtract(extract: GameExtract): Promise<void> {
     writeJson(join(GAME_DIR, 'stores.json'), extract.stores),
     writeJson(join(GAME_DIR, 'cosmetics.json'), extract.cosmetics),
     writeJson(join(GAME_DIR, 'unlocks.json'), extract.unlocks),
+    writeJson(join(GAME_DIR, 'monsters.json'), extract.monsters),
+    writeJson(join(GAME_DIR, 'festivals.json'), extract.festivals),
+    writeJson(join(GAME_DIR, 'schedules.json'), extract.schedules),
   ])
 }
 
@@ -125,6 +151,22 @@ async function main(): Promise<void> {
   consola.info(
     `cosmetics: ${extract.cosmetics.cosmetics.length} (${priced} priced in the files, ` +
       'the rest from the wiki)',
+  )
+  const statted = extract.monsters.variants.filter((v) => v.hp !== null).length
+  consola.info(
+    `monsters: ${extract.monsters.variants.length} variants from ` +
+      `${extract.monsters.files.length} families (${statted} with stated hp)`,
+  )
+  const implemented = extract.festivals.festivals.filter((f) => f.implemented === true).length
+  consola.info(
+    `festivals: ${extract.festivals.festivals.length} (${implemented} implemented) · ` +
+      `letter quest chain: ${extract.unlocks.letterQuests.length} starts`,
+  )
+  const plain = extract.schedules.files.filter((f) => f.unread_requirement_keys.length === 0)
+  consola.info(
+    `schedules: ${extract.schedules.files.length} files ` +
+      `(${plain.length} with fully-stated conditions) across ` +
+      `${new Set(extract.schedules.files.flatMap((f) => f.npcs.map((n) => n.npc))).size} npcs`,
   )
   const { letters, quests, festivals, museumRewards, wishingWell, chickenStatue } = extract.unlocks
   const grants = [

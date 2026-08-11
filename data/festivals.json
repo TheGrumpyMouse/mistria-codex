@@ -1,13 +1,15 @@
 [
   {
-    "activities": [],
+    "activities": [
+      "contest",
+      "stalls"
+    ],
     "also_known_as": [],
     "blurb": null,
-    "confidence": "wiki",
+    "confidence": "verified",
     "currency_item_id": "breath_of_spring",
     "data_gaps": [
       "time",
-      "activities",
       "rewards"
     ],
     "date": {
@@ -15,7 +17,7 @@
       "season": "spring"
     },
     "former_ids": [],
-    "game_version": "v0-14-0",
+    "game_version": "1.0.0",
     "icon_key": "festival/spring_festival",
     "id": "spring_festival",
     "id_status": "provisional",
@@ -26,7 +28,9 @@
     "numeric_id_game_version": null,
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "activities": "game_files",
+      "location_id": "game_files"
     },
     "rewards": [],
     "time": null,
@@ -41,9 +45,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 24,
@@ -77,9 +81,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 5,
@@ -113,9 +117,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 18,
@@ -142,14 +146,15 @@
     "wiki_page": null
   },
   {
-    "activities": [],
+    "activities": [
+      "invite"
+    ],
     "also_known_as": [],
     "blurb": null,
-    "confidence": "wiki",
+    "confidence": "verified",
     "currency_item_id": null,
     "data_gaps": [
       "time",
-      "activities",
       "rewards"
     ],
     "date": {
@@ -157,7 +162,7 @@
       "season": "summer"
     },
     "former_ids": [],
-    "game_version": "v0-14-0",
+    "game_version": "1.0.0",
     "icon_key": "festival/shooting_star_festival",
     "id": "shooting_star_festival",
     "id_status": "provisional",
@@ -168,7 +173,9 @@
     "numeric_id_game_version": null,
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "activities": "game_files",
+      "location_id": "game_files"
     },
     "rewards": [],
     "time": null,
@@ -176,14 +183,17 @@
     "wiki_page": "Shooting Star Festival"
   },
   {
-    "activities": [],
+    "activities": [
+      "contest",
+      "invite",
+      "stalls"
+    ],
     "also_known_as": [],
     "blurb": null,
-    "confidence": "wiki",
+    "confidence": "verified",
     "currency_item_id": "queen_berry",
     "data_gaps": [
       "time",
-      "activities",
       "rewards"
     ],
     "date": {
@@ -191,7 +201,7 @@
       "season": "fall"
     },
     "former_ids": [],
-    "game_version": "v0-14-0",
+    "game_version": "1.0.0",
     "icon_key": "festival/harvest_festival",
     "id": "harvest_festival",
     "id_status": "provisional",
@@ -202,7 +212,9 @@
     "numeric_id_game_version": null,
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "activities": "game_files",
+      "location_id": "game_files"
     },
     "rewards": [],
     "time": null,
@@ -217,9 +229,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 28,
@@ -246,22 +258,22 @@
     "wiki_page": null
   },
   {
-    "activities": [],
+    "activities": [
+      "stalls"
+    ],
     "also_known_as": [],
     "blurb": null,
-    "confidence": "wiki",
+    "confidence": "verified",
     "currency_item_id": null,
     "data_gaps": [
-      "time",
-      "activities",
-      "rewards"
+      "time"
     ],
     "date": {
       "day": 10,
       "season": "winter"
     },
     "former_ids": [],
-    "game_version": "v0-14-0",
+    "game_version": "1.0.0",
     "icon_key": "festival/animal_festival",
     "id": "animal_festival",
     "id_status": "provisional",
@@ -272,9 +284,37 @@
     "numeric_id_game_version": null,
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "activities": "game_files",
+      "location_id": "game_files",
+      "rewards": "game_files"
     },
-    "rewards": [],
+    "rewards": [
+      "blue_capybara_wall_ribbon",
+      "blue_chicken_wall_ribbon",
+      "blue_duck_wall_ribbon",
+      "blue_rabbit_wall_ribbon",
+      "bronze_alpaca_trophy",
+      "bronze_cow_trophy",
+      "bronze_horse_trophy",
+      "bronze_sheep_trophy",
+      "gold_alpaca_trophy",
+      "gold_cow_trophy",
+      "gold_horse_trophy",
+      "gold_sheep_trophy",
+      "red_capybara_wall_ribbon",
+      "red_chicken_wall_ribbon",
+      "red_duck_wall_ribbon",
+      "red_rabbit_wall_ribbon",
+      "silver_alpaca_trophy",
+      "silver_cow_trophy",
+      "silver_horse_trophy",
+      "silver_sheep_trophy",
+      "white_capybara_wall_ribbon",
+      "white_chicken_wall_ribbon",
+      "white_duck_wall_ribbon",
+      "white_rabbit_wall_ribbon"
+    ],
     "time": null,
     "version_added": null,
     "wiki_page": "Animal Festival"
@@ -287,9 +327,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 24,
@@ -323,9 +363,9 @@
     "currency_item_id": null,
     "data_gaps": [
       "time",
+      "location_id",
       "activities",
-      "rewards",
-      "location_id"
+      "rewards"
     ],
     "date": {
       "day": 28,

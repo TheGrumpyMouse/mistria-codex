@@ -256,9 +256,11 @@ export function buildQuests(ctx: BuildContext, builtItemIds: Set<string>): Quest
       // these are reverse indexes over datasets that do not exist yet here.
       required_items: [],
       unlocks_shop_ids: [],
+      unlocks_stock_shop_ids: [],
       unlocks_location_ids: [],
       unlocks_mine_ids: [],
       teaches_recipe_ids: [],
+      unlocks_quest_ids: [],
     }
   })
 
@@ -374,9 +376,11 @@ function withGameGates(
 
       required_items: [],
       unlocks_shop_ids: [],
+      unlocks_stock_shop_ids: [],
       unlocks_location_ids: [],
       unlocks_mine_ids: [],
       teaches_recipe_ids: [],
+      unlocks_quest_ids: [],
     })
     knownIds.add(id)
   }
@@ -450,6 +454,20 @@ export function withQuestUnlocks(
     }
   }
 
+  // Stock-line gates, kept apart from whole-shop gates: Hayden's barn upgrade
+  // adds 24 lines to a shop that was open all along, and "unlocks Hayden's
+  // Shop" would be a false statement about a true fact.
+  const stockShopsByQuest = new Map<string, string[]>()
+  for (const shop of shops) {
+    for (const line of shop.stock) {
+      for (const gate of line.requires) {
+        if (gate.type === 'quest' && questIds.has(gate.key)) {
+          push(stockShopsByQuest, gate.key, shop.id)
+        }
+      }
+    }
+  }
+
   const locationsByQuest = new Map<string, string[]>()
   for (const location of buildLocations(ctx)) {
     for (const gate of location.unlock_requires) {
@@ -490,6 +508,41 @@ export function withQuestUnlocks(
     questsByName.set(key, [...(questsByName.get(key) ?? []), quest])
   }
 
+  // A game quest id -> our record id: direct hit first, then through the
+  // display name the game itself states — `repair_haydens_barn` is titled
+  // "Upgrade Hayden's Barn", which is exactly our wiki-derived id. Ambiguous
+  // or unknown resolves to null, never to a guess.
+  const resolveGameQuest = (gameId: string): string | null => {
+    if (questIds.has(gameId)) return gameId
+    const name = ctx.game?.storyQuestById.get(gameId)?.name ?? null
+    if (name === null) return null
+    const byName = questsByName.get(foldName(name)) ?? []
+    return byName.length === 1 ? (byName[0]?.id ?? null) : null
+  }
+
+  // The letter chain, both ways round: a letter that starts Q and waits on P
+  // being done makes P a stated prerequisite of Q, and Q the follow-up P
+  // unlocks. A row naming a quest no record holds is counted, never guessed.
+  const nextQuestsByQuest = new Map<string, string[]>()
+  const chainGateByQuest = new Map<string, string>()
+  let unresolvedChains = 0
+  for (const chain of ctx.game?.unlocks?.letterQuests ?? []) {
+    if (chain.requires_completed_quest === null) continue
+    const started = resolveGameQuest(chain.quest_to_start)
+    const gate = resolveGameQuest(chain.requires_completed_quest)
+    if (started === null || gate === null) {
+      unresolvedChains += 1
+      continue
+    }
+    push(nextQuestsByQuest, gate, started)
+    chainGateByQuest.set(started, gate)
+  }
+  if (unresolvedChains > 0) {
+    consola.info(
+      `quests: ${unresolvedChains} letter chain(s) name a quest no record holds — dropped.`,
+    )
+  }
+
   const costByQuest = new Map<string, { item_id: string; quantity: number }[]>()
   let unresolvedOfferings = 0
   let droppedOfferingItems = 0
@@ -524,17 +577,26 @@ export function withQuestUnlocks(
   const result = quests.map((quest) => {
     const requiredItems = costByQuest.get(quest.id) ?? []
     const shopIds = [...(shopsByQuest.get(quest.id) ?? [])].sort()
+    const stockShopIds = [...(stockShopsByQuest.get(quest.id) ?? [])].sort()
     const locationIds = [...(locationsByQuest.get(quest.id) ?? [])].sort()
     const mineIds = [...(minesByQuest.get(quest.id) ?? [])].sort()
     const recipeIds = [...(recipesByQuest.get(quest.id) ?? [])].sort()
+    const nextQuestIds = [...(nextQuestsByQuest.get(quest.id) ?? [])].sort()
+    const chainGate = chainGateByQuest.get(quest.id) ?? null
+    const gainsChainGate =
+      chainGate !== null &&
+      !quest.prerequisites.some((p) => p.type === 'quest' && p.key === chainGate)
     const grantItems = grants.itemsByQuest.get(quest.id) ?? []
 
     const untouched =
       requiredItems.length === 0 &&
       shopIds.length === 0 &&
+      stockShopIds.length === 0 &&
       locationIds.length === 0 &&
       mineIds.length === 0 &&
       recipeIds.length === 0 &&
+      nextQuestIds.length === 0 &&
+      !gainsChainGate &&
       grantItems.length === 0
     if (untouched) return quest
     stamped += 1
@@ -557,23 +619,35 @@ export function withQuestUnlocks(
     if (requiredItems.length > 0) prov.required_items = 'game_files'
     if (recipeIds.length > 0) prov.teaches_recipe_ids = 'game_files'
     if (shopIds.length > 0) prov.unlocks_shop_ids = 'manual'
+    if (stockShopIds.length > 0) prov.unlocks_stock_shop_ids = 'game_files'
     if (locationIds.length > 0) prov.unlocks_location_ids = 'manual'
     if (mineIds.length > 0) prov.unlocks_mine_ids = 'manual'
+    if (nextQuestIds.length > 0) prov.unlocks_quest_ids = 'game_files'
+    if (gainsChainGate) prov.prerequisites = 'game_files'
+
+    const dropGaps = new Set<string>()
+    // A stated delivery answers "what does it ask for" — the gap closes.
+    if (requiredItems.length > 0) dropGaps.add('objectives')
+    if (gainsChainGate) dropGaps.add('prerequisites')
 
     return {
       ...quest,
       required_items: requiredItems,
       unlocks_shop_ids: shopIds,
+      unlocks_stock_shop_ids: stockShopIds,
       unlocks_location_ids: locationIds,
       unlocks_mine_ids: mineIds,
       teaches_recipe_ids: recipeIds,
+      unlocks_quest_ids: nextQuestIds,
+      prerequisites: gainsChainGate
+        ? [
+            ...quest.prerequisites,
+            { type: 'quest' as const, key: chainGate, op: 'done' as const, value: null },
+          ]
+        : quest.prerequisites,
       rewards,
       prov,
-      // A stated delivery answers "what does it ask for" — the gap closes.
-      data_gaps:
-        requiredItems.length > 0
-          ? quest.data_gaps.filter((gap) => gap !== 'objectives')
-          : quest.data_gaps,
+      data_gaps: quest.data_gaps.filter((gap) => !dropGaps.has(gap)),
     }
   })
   if (stamped > 0) {

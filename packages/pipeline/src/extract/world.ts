@@ -97,6 +97,12 @@ export interface GameLocation {
   npc_farm: boolean | null
   /** Greenhouses, where a crop's season does not apply. */
   ignore_seasons: boolean | null
+  /**
+   * The outdoor map this room sits on, as the game states it — Celine's
+   * Cottage carries `map_location = "town"`. The join that places an interior
+   * schedule stop somewhere a player can be sent.
+   */
+  map_location: string | null
 }
 
 /**
@@ -130,6 +136,7 @@ export interface GameSeasonWeather {
  * A gate that cannot ever go green teaches everyone to skim past the ones that
  * can. This is what lets `validate` subtract them and report only the residue.
  */
+/** One room from `locations.toml`, plus which outdoor map it sits on. */
 export interface GameAnimalCosmetic {
   /** The animal it belongs to — the file stem. */
   animal: string
@@ -247,6 +254,7 @@ export async function extractLocations(root: string): Promise<GameLocation[]> {
       special_dig_sites: num(get('special_dig_sites')),
       npc_farm: bool(get('npc_farm')),
       ignore_seasons: bool(get('ignore_seasons')),
+      map_location: str(entry.map_location),
     }
   })
 

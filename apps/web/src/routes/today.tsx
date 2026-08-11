@@ -45,6 +45,15 @@ interface FestivalRecord {
   date: { season: string; day: number } | null
   location_id: string | null
   implemented: boolean
+  /** Controlled tokens from the game's own tables; ACTIVITY_LABELS owns the words. */
+  activities: string[]
+}
+
+/** The builder's controlled vocabulary. An unknown token renders as nothing, never raw. */
+const ACTIVITY_LABELS: Record<string, string> = {
+  contest: 'a judged contest',
+  invite: 'invite someone along',
+  stalls: 'festival stalls',
 }
 
 interface CalendarData {
@@ -392,6 +401,14 @@ export function TodayRoute() {
                         not yet in the game
                       </span>
                     )}
+                    {(() => {
+                      const known = festival.activities
+                        .map((token) => ACTIVITY_LABELS[token])
+                        .filter((label): label is string => label !== undefined)
+                      return known.length > 0 ? (
+                        <span className="block text-ink-faint text-xs">{known.join(' · ')}</span>
+                      ) : null
+                    })()}
                   </span>
                 </div>
               ),

@@ -44,12 +44,39 @@ interface CharacterRecord {
   occupation: string | null
   affiliation: string | null
   family: { relation: string; character_id: string | null }[]
+  heart_events: { hearts: number; trigger: string | null }[]
   data_gaps: string[]
 }
 
 interface GiftPrefsRecord {
   character_id: string
   prefs: Record<string, string[]>
+}
+
+interface ScheduleRecord {
+  character_id: string
+  entries: {
+    priority: number
+    label: string
+    when: { seasons: string[] | null; days: string[] | null; weather: string[] | null }
+    blocks: { from: string; to: string; location_id: string }[]
+  }[]
+  data_gaps: string[]
+}
+
+interface LocationLite {
+  id: string
+  name: string
+}
+
+const DAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+
+/** `06:00` -> `6am`, `18:42` -> `6:42pm` — the compact clock a routine reads in. */
+function clockLabel(time: string): string {
+  const [h = 0, m = 0] = time.split(':').map(Number)
+  const meridiem = h < 12 ? 'am' : 'pm'
+  const hour = h % 12 === 0 ? 12 : h % 12
+  return m === 0 ? `${hour}${meridiem}` : `${hour}:${String(m).padStart(2, '0')}${meridiem}`
 }
 
 /** Best first, and hated last rather than dropped. */
@@ -77,22 +104,30 @@ export function VillagerRoute() {
   const [state, setState] = useState<{
     person: CharacterRecord | null
     prefs: GiftPrefsRecord | null
+    schedule: ScheduleRecord | null
+    places: Map<string, string>
     index: DisplayIndex
     loading: boolean
-  }>({ person: null, prefs: null, index: {}, loading: true })
+  }>({ person: null, prefs: null, schedule: null, places: new Map(), index: {}, loading: true })
 
   useEffect(() => {
     let live = true
     Promise.all([
       loadDataset<CharacterRecord>('characters'),
       loadDataset<GiftPrefsRecord>('gift_prefs'),
+      // The routine and the places its blocks name — a schedule that says
+      // `the_inn` has said nothing a player can read.
+      loadDataset<ScheduleRecord>('schedules'),
+      loadDataset<LocationLite>('locations'),
       loadDisplayIndex(),
     ])
-      .then(([characters, prefs, index]) => {
+      .then(([characters, prefs, schedules, locations, index]) => {
         if (!live) return
         setState({
           person: characters.find((c) => c.id === id) ?? null,
           prefs: prefs.find((p) => p.character_id === id) ?? null,
+          schedule: schedules.find((s) => s.character_id === id) ?? null,
+          places: new Map(locations.map((l) => [l.id, l.name])),
           index,
           loading: false,
         })
@@ -103,7 +138,7 @@ export function VillagerRoute() {
     }
   }, [id])
 
-  const { person, prefs, index, loading } = state
+  const { person, prefs, schedule, places, index, loading } = state
   useDocumentTitle(person?.name ?? null)
   const portrait = useAtlas().portrait(person?.icon_key ?? null)
   const [mode] = useDisplayMode()
@@ -336,6 +371,79 @@ export function VillagerRoute() {
           </>
         )}
       </Section>
+
+      {person.heart_events.length > 0 && (
+        <Section title="Heart scenes">
+          {/* Level and name only, never what happens in the scene — the quest
+              page keeps the same silence. */}
+          <ul className="flex flex-col gap-1.5 text-ink-mute text-sm">
+            {person.heart_events.map((event) => (
+              <li key={`${event.hearts}:${event.trigger}`}>
+                <span data-numeral>♥{event.hearts}</span>
+                {event.trigger !== null && (
+                  <>
+                    {' — '}
+                    <Link
+                      to="/quest/$id"
+                      params={{ id: event.trigger }}
+                      className="underline decoration-rule underline-offset-4 hover:text-ink"
+                    >
+                      {index[event.trigger]?.n ?? event.trigger.replace(/_/g, ' ')}
+                    </Link>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {schedule !== null && schedule.entries.length > 0 && (
+        <Section title="A typical week">
+          <p className="text-ink-mute text-xs">
+            From the game’s own routine files. Fridays, rainy days and festival days run their own
+            variations, and story progress can change a day — the labelled rows say which version
+            you’re reading.
+          </p>
+          <ul className="mt-2 flex flex-col divide-y divide-rule border-rule border-y text-sm">
+            {[...schedule.entries]
+              .sort((a, b) => {
+                const dayA = DAY_ORDER.indexOf(a.when.days?.[0] ?? '')
+                const dayB = DAY_ORDER.indexOf(b.when.days?.[0] ?? '')
+                if (dayA !== dayB) return dayA - dayB
+                // Within a day: the default (highest priority number) first,
+                // then its more specific versions.
+                return b.priority - a.priority
+              })
+              .map((entry) => {
+                // Midnight-split and same-place blocks merge back for reading:
+                // "6pm The Inn" is one visit, however many intervals ship.
+                const stops: { at: string; place: string }[] = []
+                for (const block of entry.blocks) {
+                  const place = places.get(block.location_id) ?? null
+                  if (place === null) continue
+                  const last = stops[stops.length - 1]
+                  if (last?.place === place) continue
+                  stops.push({ at: clockLabel(block.from), place })
+                }
+                if (stops.length === 0) return null
+                return (
+                  <li key={`${entry.priority}:${entry.label}`} className="py-2">
+                    <span className="text-ink">{entry.label}</span>
+                    <span className="mt-0.5 block text-ink-mute">
+                      {stops.map((stop, i) => (
+                        <span key={`${stop.at}:${stop.place}`}>
+                          {i > 0 && ' · '}
+                          <span data-numeral>{stop.at}</span> {stop.place}
+                        </span>
+                      ))}
+                    </span>
+                  </li>
+                )
+              })}
+          </ul>
+        </Section>
+      )}
 
       {person.family.length > 0 && (
         <Section title="Family">

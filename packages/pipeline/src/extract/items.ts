@@ -98,6 +98,13 @@ export interface GameItem {
    * exact PNG for art the wiki does not host. See docs/DATA-POLICY.md.
    */
   icon_sprite: string | null
+  /**
+   * The monster family this pet skin unlocks, on the 14 pet-skin items.
+   * Its presence is what gates the drop: `MonsterUtils.gml` hands one out only
+   * with the Friend-Shaped perk active, so a monster's pet-skin drop line is
+   * perk-gated by *this* marker, not by anything in the monster's own table.
+   */
+  pet_skin_unlock: string | null
 }
 
 export interface GameItemsExtract {
@@ -173,6 +180,7 @@ function readItem(id: string, entry: Table, base: Table, file: string): GameItem
     // the same field, and flattening them to "soulbound" would be a wrong fact.
     soulbind: str(get('soulbind')),
     icon_sprite: str(get('icon_sprite')),
+    pet_skin_unlock: str(get('pet_skin_unlock')),
   }
 }
 

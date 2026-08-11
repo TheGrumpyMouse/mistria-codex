@@ -1,182 +1,893 @@
 {
   "chickenStatue": [
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 6,
       "item": "golden_butter",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 6,
       "item": "golden_cheese",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "golden_cheesecake",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "golden_cookies",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 12,
       "item": "golden_cow_milk",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 12,
       "item": "golden_egg",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "golden_mayonnaise",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "ultimate_hay",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "ultimate_small_animal_feed",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": "chicken",
+      "animal_cosmetic": "business_tie",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "chicken",
+      "animal_cosmetic": "pearl_necklace",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "cow",
+      "animal_cosmetic": "halo",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "cow",
+      "animal_cosmetic": "beret",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "horse",
+      "animal_cosmetic": "crown",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "horse",
+      "animal_cosmetic": "derby_hat",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "duck",
+      "animal_cosmetic": "ruffled_collar",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "duck",
+      "animal_cosmetic": "sun_hat",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "sheep",
+      "animal_cosmetic": "tartan_beret",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "sheep",
+      "animal_cosmetic": "unicorn_horn",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "rabbit",
+      "animal_cosmetic": "halo",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "rabbit",
+      "animal_cosmetic": "heart_clips",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "alpaca",
+      "animal_cosmetic": "spiked_collar",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "alpaca",
+      "animal_cosmetic": "gold_pendant",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "capybara",
+      "animal_cosmetic": "leaf",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": "capybara",
+      "animal_cosmetic": "bowler_hat",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "butter",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "cheese",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "cow_milk",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "deluxe_hay",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "deluxe_small_animal_feed",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "egg",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_cow_milk",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_egg",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "mayonnaise",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "omelet",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "pudding",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "quality_hay",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "quality_small_animal_feed",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "quiche",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "vegetable_quiche",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.small_roll",
       "recipe": "deviled_eggs"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.small_roll",
       "recipe": "omelet"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.small_roll",
       "recipe": "pudding"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.small_roll",
       "recipe": "quiche"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.small_roll",
       "recipe": "vegetable_quiche"
     }
   ],
+  "cutscenes": [
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "adeline_eight_hearts",
+      "item": "heros_ring",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "adeline_ten_hearts",
+      "item": "adelines_lifetime_planner",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "balor_ten_hearts",
+      "item": "balors_polished_gem",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "caldarus_ten_hearts",
+      "item": "caldarus_dragonsworn_statue",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "celine_ten_hearts",
+      "item": "celines_revived_flower",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 5,
+      "cutscene": "celine_two_hearts",
+      "item": "peat",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 5,
+      "cutscene": "celine_two_hearts",
+      "item": "sod",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "cop_some_ore",
+      "item": "copper_ingot",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "day_zero",
+      "item": "vegetable_soup",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "delivering_the_sealing_scroll",
+      "item": "sealing_scroll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "eiland_ten_hearts",
+      "item": "eilands_legacy_stele",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "elsie_dating_tutorial",
+      "item": "inn_menu",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "elsie_dating_tutorial",
+      "item": "picnic_set",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "engagement_tutorial",
+      "item": "engagement_ring_recipe_scroll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "farm_introduction",
+      "item": "hoe_worn",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 3,
+      "cutscene": "farm_introduction",
+      "item": "seed_tulip",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 3,
+      "cutscene": "farm_introduction",
+      "item": "seed_turnip",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "farm_introduction",
+      "item": "watering_can_worn",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "great_bird_0",
+      "item": "mystical_feather",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 3,
+      "cutscene": "hayden_four_hearts",
+      "item": "quality_small_animal_feed",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "hayden_ten_hearts",
+      "item": "haydens_carved_nest",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "juniper_ten_hearts",
+      "item": "junipers_protection_scroll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "march_ten_hearts",
+      "item": "marchs_mistrian_shield",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "march_two_hearts",
+      "item": "hoe_copper",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "mistril_rank",
+      "item": "mistril_star_trophy",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "reina_ten_hearts",
+      "item": "reinas_cookbook_manuscript",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 10,
+      "cutscene": "replenishing_mistrias_food_reserves_1",
+      "item": "seed_potato",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "ryis_six_hearts",
+      "item": "coconut_cream_pie",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "ryis_ten_hearts",
+      "item": "ryis_hawthorn_tree",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "seridia_eight_hearts",
+      "item": "strawberry_shortcake",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "seridia_ten_hearts",
+      "item": "seridias_dragonsworn_armor",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "shooting_star_morning",
+      "item": "star_brooch",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "shooting_star_reina",
+      "item": "star_shaped_cookie",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": null,
+      "cutscene": "the_unusual_tree_pt_1",
+      "item": "axe_worn",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
+      "count": 1,
+      "cutscene": "valen_ten_hearts",
+      "item": "valens_panacea_jar",
+      "recipe": null
+    }
+  ],
   "festivals": [
     {
+      "animal": "chicken",
+      "animal_cosmetic": "apple",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "chicken",
+      "animal_cosmetic": "baseball_cap",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "cow",
+      "animal_cosmetic": "bell_collar",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "cow",
+      "animal_cosmetic": "laurels",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "horse",
+      "animal_cosmetic": "monocle",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "horse",
+      "animal_cosmetic": "bandana",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "duck",
+      "animal_cosmetic": "backwards_cap",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "duck",
+      "animal_cosmetic": "strawberry_hat",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "sheep",
+      "animal_cosmetic": "hot_water_bottle",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "sheep",
+      "animal_cosmetic": "green_visor",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "rabbit",
+      "animal_cosmetic": "cowboy_hat",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "rabbit",
+      "animal_cosmetic": "chef_hat",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "alpaca",
+      "animal_cosmetic": "beret",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "alpaca",
+      "animal_cosmetic": "lacy_collar",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "capybara",
+      "animal_cosmetic": "angel_wings",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": "capybara",
+      "animal_cosmetic": "bat_wings",
+      "cosmetic": null,
+      "count": null,
+      "festival": "animal",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "animal",
       "item": "chicky_hot_chocolate",
@@ -184,6 +895,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "animal",
       "item": "cow_donut",
@@ -191,6 +905,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "animal",
       "item": null,
@@ -198,6 +915,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "animal",
       "item": null,
@@ -205,6 +925,49 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_berry_crown",
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_berry_hat",
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "dress_berry",
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "suit_berry",
+      "count": null,
+      "festival": "harvest",
+      "item": null,
+      "recipe": null,
+      "stall": "nora_souvenir_stall"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": "autumn_scarecrow",
@@ -212,6 +975,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": "candied_queen_berries",
@@ -219,6 +985,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": "cornucopia",
@@ -226,6 +995,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": "queen_berry_pie",
@@ -233,6 +1005,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": null,
@@ -240,6 +1015,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": null,
@@ -247,6 +1025,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "harvest",
       "item": null,
@@ -254,6 +1035,59 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_flower_crown",
+      "count": null,
+      "festival": "spring",
+      "item": null,
+      "recipe": null,
+      "stall": "elsie_spring_festival"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "face_gear_flower_earrings",
+      "count": null,
+      "festival": "spring",
+      "item": null,
+      "recipe": null,
+      "stall": "elsie_spring_festival"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "dress_spring_festival",
+      "count": null,
+      "festival": "spring",
+      "item": null,
+      "recipe": null,
+      "stall": "elsie_spring_festival"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "suit_spring_festival",
+      "count": null,
+      "festival": "spring",
+      "item": null,
+      "recipe": null,
+      "stall": "elsie_spring_festival"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_flower_top_hat",
+      "count": null,
+      "festival": "spring",
+      "item": null,
+      "recipe": null,
+      "stall": "elsie_spring_festival"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "coffee",
@@ -261,6 +1095,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "floral_tea",
@@ -268,6 +1105,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "lavender_tea",
@@ -275,6 +1115,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "mocha",
@@ -282,6 +1125,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "rose_tea",
@@ -289,6 +1135,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "tulip_cake",
@@ -296,6 +1145,9 @@
       "stall": "maple_spring_festival"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "scent_of_spring",
@@ -303,6 +1155,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "spring_festival_basket",
@@ -310,6 +1165,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "spring_festival_flower_chest",
@@ -317,6 +1175,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "spring_festival_large_planter",
@@ -324,6 +1185,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "spring_festival_planter",
@@ -331,6 +1195,9 @@
       "stall": "nora_souvenir_stall"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "festival": "spring",
       "item": "spring_festival_wreath",
@@ -339,8 +1206,661 @@
     }
   ],
   "gameVersion": "1.0.0",
+  "letterQuests": [
+    {
+      "days_after": null,
+      "letter": "a_birdhouse",
+      "npc": "ryis",
+      "quest_to_start": "a_birdhouse",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "ryis"
+      },
+      "requires_completed_quest": "a_sapling"
+    },
+    {
+      "days_after": null,
+      "letter": "a_change_of_greenery",
+      "npc": "celine",
+      "quest_to_start": "a_change_of_greenery",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "celine"
+      },
+      "requires_completed_quest": "water_and_soil"
+    },
+    {
+      "days_after": null,
+      "letter": "a_duet",
+      "npc": "ryis",
+      "quest_to_start": "a_duet",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "ryis"
+      },
+      "requires_completed_quest": "a_birdhouse"
+    },
+    {
+      "days_after": null,
+      "letter": "a_get_together",
+      "npc": "hayden",
+      "quest_to_start": "a_get_together",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "hayden"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "a_little_while_longer_ssa",
+      "npc": "hayden",
+      "quest_to_start": "a_little_while_longer",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "hayden"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "a_little_while_longer_ssna",
+      "npc": "hayden",
+      "quest_to_start": "a_little_while_longer",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "hayden"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "a_lost_flower",
+      "npc": "celine",
+      "quest_to_start": "a_lost_flower",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "celine"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "a_rewarding_choice",
+      "npc": "adeline",
+      "quest_to_start": "a_rewarding_choice",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "adeline"
+      },
+      "requires_completed_quest": "the_smell_of_drying_ink"
+    },
+    {
+      "days_after": null,
+      "letter": "a_sapling",
+      "npc": "ryis",
+      "quest_to_start": "a_sapling",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "ryis"
+      },
+      "requires_completed_quest": "bird_song"
+    },
+    {
+      "days_after": null,
+      "letter": "an_open_book",
+      "npc": "balor",
+      "quest_to_start": "an_open_book",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "balor"
+      },
+      "requires_completed_quest": "tall_dark_and_mysterious"
+    },
+    {
+      "days_after": null,
+      "letter": "an_outside_consultant",
+      "npc": "valen",
+      "quest_to_start": "an_outside_consultant",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "valen"
+      },
+      "requires_completed_quest": "batch_312"
+    },
+    {
+      "days_after": null,
+      "letter": "apiaries_and_terrariums",
+      "npc": "luc",
+      "quest_to_start": "apiaries_and_terrariums",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "batch_312",
+      "npc": "valen",
+      "quest_to_start": "batch_312",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "valen"
+      },
+      "requires_completed_quest": "the_annual_check_up"
+    },
+    {
+      "days_after": null,
+      "letter": "bird_song",
+      "npc": "landen",
+      "quest_to_start": "bird_song",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "ryis"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "chief_inspector",
+      "npc": "adeline",
+      "quest_to_start": "chief_inspector",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "adeline"
+      },
+      "requires_completed_quest": "a_rewarding_choice"
+    },
+    {
+      "days_after": 2,
+      "letter": "complete_the_museum_incomplete",
+      "npc": "errol",
+      "quest_to_start": "complete_the_museum",
+      "reached_heart_level": null,
+      "requires_completed_quest": "reach_mistril_star_town_rank"
+    },
+    {
+      "days_after": null,
+      "letter": "crafting_tutorial",
+      "npc": "ryis",
+      "quest_to_start": "crafting_tutorial",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "extra_feed",
+      "npc": "hayden",
+      "quest_to_start": "extra_feed",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "hayden"
+      },
+      "requires_completed_quest": "a_get_together"
+    },
+    {
+      "days_after": null,
+      "letter": "farm_fresh_sous_chef",
+      "npc": "reina",
+      "quest_to_start": "farm_fresh_sous_chef",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "reina"
+      },
+      "requires_completed_quest": "shopping_buddy"
+    },
+    {
+      "days_after": null,
+      "letter": "for_good_ssa",
+      "npc": "balor",
+      "quest_to_start": "for_good",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "balor"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "for_good_ssna",
+      "npc": "balor",
+      "quest_to_start": "for_good",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "friday_at_the_sleeping_dragon_inn",
+      "npc": "reina",
+      "quest_to_start": "friday_at_the_sleeping_dragon_inn",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "greet_the_vendors",
+      "npc": "nora",
+      "quest_to_start": "greet_the_vendors",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_bridge"
+    },
+    {
+      "days_after": null,
+      "letter": "horsing_around",
+      "npc": "juniper",
+      "quest_to_start": "horsing_around",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "juniper"
+      },
+      "requires_completed_quest": "becoming_junipers_guinea_pig"
+    },
+    {
+      "days_after": null,
+      "letter": "lemonade_from_lemons",
+      "npc": "balor",
+      "quest_to_start": "lemonade_from_lemons",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "balor"
+      },
+      "requires_completed_quest": "an_open_book"
+    },
+    {
+      "days_after": null,
+      "letter": "life_in_this_form",
+      "npc": "caldarus",
+      "quest_to_start": "life_in_this_form",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "caldarus"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "lost_and_found",
+      "npc": "adeline",
+      "quest_to_start": "lost_and_found",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "lost_track_of_time_ssa",
+      "npc": "adeline",
+      "quest_to_start": "lost_track_of_time",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "adeline"
+      },
+      "requires_completed_quest": "chief_inspector"
+    },
+    {
+      "days_after": null,
+      "letter": "lost_track_of_time_ssna",
+      "npc": "adeline",
+      "quest_to_start": "lost_track_of_time",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "adeline"
+      },
+      "requires_completed_quest": "chief_inspector"
+    },
+    {
+      "days_after": null,
+      "letter": "many_hands_make_light_work",
+      "npc": "olric",
+      "quest_to_start": "many_hands_make_light_work",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "march"
+      },
+      "requires_completed_quest": "surprise_me"
+    },
+    {
+      "days_after": null,
+      "letter": "meet_the_new_vendors",
+      "npc": "nora",
+      "quest_to_start": "meet_the_new_vendors",
+      "reached_heart_level": null,
+      "requires_completed_quest": "upgrade_the_saturday_market_plaza"
+    },
+    {
+      "days_after": null,
+      "letter": "museum_donation_wanted",
+      "npc": "errol",
+      "quest_to_start": "museum_donation_wanted",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "pie_in_the_sky",
+      "npc": "reina",
+      "quest_to_start": "pie_in_the_sky",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "reina"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "potions_and_errands",
+      "npc": "juniper",
+      "quest_to_start": "potions_and_errands",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "juniper"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "real_fine_day",
+      "npc": "hayden",
+      "quest_to_start": "real_fine_day",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "hayden"
+      },
+      "requires_completed_quest": "extra_feed"
+    },
+    {
+      "days_after": 2,
+      "letter": "repair_haydens_barn",
+      "npc": "adeline",
+      "quest_to_start": "repair_haydens_barn",
+      "reached_heart_level": null,
+      "requires_completed_quest": "replenishing_mistrias_food_reserves_2"
+    },
+    {
+      "days_after": 3,
+      "letter": "repair_the_beach_bridge",
+      "npc": "terithia",
+      "quest_to_start": "repair_the_beach_bridge",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_general_store"
+    },
+    {
+      "days_after": 1,
+      "letter": "repair_the_bell_tower",
+      "npc": "zorel",
+      "quest_to_start": "repair_the_bell_tower",
+      "reached_heart_level": null,
+      "requires_completed_quest": "meet_the_new_vendors"
+    },
+    {
+      "days_after": null,
+      "letter": "repair_the_bridge",
+      "npc": "adeline",
+      "quest_to_start": "repair_the_bridge",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": 3,
+      "letter": "repair_the_general_store",
+      "npc": "adeline",
+      "quest_to_start": "repair_the_general_store",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_summit_stairs"
+    },
+    {
+      "days_after": 3,
+      "letter": "repair_the_inn",
+      "npc": "adeline",
+      "quest_to_start": "repair_the_inn",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_haydens_barn"
+    },
+    {
+      "days_after": 3,
+      "letter": "repair_the_mill",
+      "npc": "adeline",
+      "quest_to_start": "repair_the_mill",
+      "reached_heart_level": null,
+      "requires_completed_quest": "replenishing_mistrias_food_reserves_1"
+    },
+    {
+      "days_after": 3,
+      "letter": "repair_the_summit_stairs",
+      "npc": "adeline",
+      "quest_to_start": "repair_the_summit_stairs",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_mill"
+    },
+    {
+      "days_after": 2,
+      "letter": "replenishing_mistrias_food_reserves_1",
+      "npc": "adeline",
+      "quest_to_start": "replenishing_mistrias_food_reserves_1",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_bridge"
+    },
+    {
+      "days_after": 2,
+      "letter": "replenishing_mistrias_food_reserves_2",
+      "npc": "adeline",
+      "quest_to_start": "replenishing_mistrias_food_reserves_2",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_beach_bridge"
+    },
+    {
+      "days_after": null,
+      "letter": "shield_of_the_realm",
+      "npc": "march",
+      "quest_to_start": "shield_of_the_realm",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "march"
+      },
+      "requires_completed_quest": "many_hands_make_light_work"
+    },
+    {
+      "days_after": null,
+      "letter": "shopping_buddy",
+      "npc": "reina",
+      "quest_to_start": "shopping_buddy",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "reina"
+      },
+      "requires_completed_quest": "pie_in_the_sky"
+    },
+    {
+      "days_after": 2,
+      "letter": "stone_refinery",
+      "npc": "adeline",
+      "quest_to_start": "stone_refinery",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_inn"
+    },
+    {
+      "days_after": null,
+      "letter": "surprise_me",
+      "npc": "march",
+      "quest_to_start": "surprise_me",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "march"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "tea_with_hayden",
+      "npc": "hayden",
+      "quest_to_start": "tea_with_hayden",
+      "reached_heart_level": null,
+      "requires_completed_quest": "repair_the_mill"
+    },
+    {
+      "days_after": null,
+      "letter": "the_aldarian_cooking_contest",
+      "npc": "reina",
+      "quest_to_start": "the_aldarian_cooking_contest",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "reina"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "the_glade",
+      "npc": "eiland",
+      "quest_to_start": "the_glade",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "eiland"
+      },
+      "requires_completed_quest": "the_manor"
+    },
+    {
+      "days_after": null,
+      "letter": "the_manor",
+      "npc": "eiland",
+      "quest_to_start": "the_manor",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "eiland"
+      },
+      "requires_completed_quest": "the_ruins"
+    },
+    {
+      "days_after": null,
+      "letter": "the_panacea",
+      "npc": "valen",
+      "quest_to_start": "the_panacea",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "valen"
+      },
+      "requires_completed_quest": "an_outside_consultant"
+    },
+    {
+      "days_after": null,
+      "letter": "the_ruins",
+      "npc": "eiland",
+      "quest_to_start": "the_ruins",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "eiland"
+      },
+      "requires_completed_quest": "the_stele"
+    },
+    {
+      "days_after": null,
+      "letter": "the_smell_of_drying_ink",
+      "npc": "adeline",
+      "quest_to_start": "the_smell_of_drying_ink",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "adeline"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "the_stele",
+      "npc": "eiland",
+      "quest_to_start": "the_stele",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "eiland"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "the_unusual_seed",
+      "npc": "celine",
+      "quest_to_start": "the_unusual_seed",
+      "reached_heart_level": {
+        "level": 2,
+        "npc": "celine"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "unlocking_the_mines_pt_1",
+      "npc": "eiland",
+      "quest_to_start": "unlocking_the_mines_pt_1",
+      "reached_heart_level": null,
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "unlocking_the_mines_pt_2",
+      "npc": "errol",
+      "quest_to_start": "unlocking_the_mines_pt_2",
+      "reached_heart_level": null,
+      "requires_completed_quest": "unlocking_the_mines_pt_1"
+    },
+    {
+      "days_after": 1,
+      "letter": "upgrade_the_carpenters_shop",
+      "npc": "adeline",
+      "quest_to_start": "upgrade_the_carpenters_shop",
+      "reached_heart_level": null,
+      "requires_completed_quest": "upgrade_the_saturday_market"
+    },
+    {
+      "days_after": 1,
+      "letter": "upgrade_the_saturday_market",
+      "npc": "adeline",
+      "quest_to_start": "upgrade_the_saturday_market",
+      "reached_heart_level": null,
+      "requires_completed_quest": "stone_refinery"
+    },
+    {
+      "days_after": 1,
+      "letter": "upgrade_the_saturday_market_plaza",
+      "npc": "nora",
+      "quest_to_start": "upgrade_the_saturday_market_plaza",
+      "reached_heart_level": null,
+      "requires_completed_quest": "upgrade_the_carpenters_shop"
+    },
+    {
+      "days_after": null,
+      "letter": "water_and_soil",
+      "npc": "celine",
+      "quest_to_start": "water_and_soil",
+      "reached_heart_level": {
+        "level": 4,
+        "npc": "celine"
+      },
+      "requires_completed_quest": "the_unusual_seed"
+    },
+    {
+      "days_after": null,
+      "letter": "whatever_your_heart_desires",
+      "npc": "seridia",
+      "quest_to_start": "whatever_your_heart_desires",
+      "reached_heart_level": {
+        "level": 8,
+        "npc": "seridia"
+      },
+      "requires_completed_quest": null
+    },
+    {
+      "days_after": null,
+      "letter": "working_like_a_dog",
+      "npc": "juniper",
+      "quest_to_start": "working_like_a_dog",
+      "reached_heart_level": {
+        "level": 6,
+        "npc": "juniper"
+      },
+      "requires_completed_quest": "horsing_around"
+    }
+  ],
   "letters": [
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 25,
       "item": "basic_wood",
       "letter": "adeline_4h_reward_1",
@@ -352,6 +1872,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 25,
       "item": "ore_stone",
       "letter": "adeline_4h_reward_1",
@@ -363,6 +1886,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "big_cookie",
       "letter": "adeline_4h_reward_2",
@@ -374,6 +1900,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "apple_juice_recipe",
@@ -388,6 +1917,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "crop_faux_tulip",
       "letter": "ari_birthday_adeline_best_friend",
@@ -405,6 +1937,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "crop_faux_tulip",
       "letter": "ari_birthday_adeline_romantic",
@@ -422,6 +1957,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "lemon_pie",
       "letter": "ari_birthday_adeline",
@@ -439,6 +1977,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "apple_honey_curry",
       "letter": "ari_birthday_balor_best_friend",
@@ -456,6 +1997,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "apple_honey_curry",
       "letter": "ari_birthday_balor_romantic",
@@ -473,6 +2017,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "chickpea_curry",
       "letter": "ari_birthday_balor",
@@ -490,6 +2037,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "essence_stone_large",
       "letter": "ari_birthday_caldarus_best_friend",
@@ -507,6 +2057,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "essence_stone_large",
       "letter": "ari_birthday_caldarus_romantic",
@@ -524,6 +2077,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "marigold",
       "letter": "ari_birthday_caldarus",
@@ -541,6 +2097,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "seed_temple_flower",
       "letter": "ari_birthday_celine_best_friend",
@@ -558,6 +2117,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "seed_temple_flower",
       "letter": "ari_birthday_celine_romantic",
@@ -575,6 +2137,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "rose_tea",
       "letter": "ari_birthday_celine",
@@ -592,6 +2157,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_cheesecake",
       "letter": "ari_birthday_eiland_best_friend",
@@ -609,6 +2177,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_cheesecake",
       "letter": "ari_birthday_eiland_romantic",
@@ -626,6 +2197,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "caldosian_chocolate_cake",
       "letter": "ari_birthday_eiland",
@@ -643,6 +2217,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "golden_bull_horn",
       "letter": "ari_birthday_hayden_best_friend",
@@ -660,6 +2237,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "golden_bull_horn",
       "letter": "ari_birthday_hayden_romantic",
@@ -677,6 +2257,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "loaded_baked_potato",
       "letter": "ari_birthday_hayden",
@@ -694,6 +2277,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cavern_crystal_lamp_purple",
       "letter": "ari_birthday_juniper_best_friend",
@@ -711,6 +2297,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cavern_crystal_lamp_purple",
       "letter": "ari_birthday_juniper_romantic",
@@ -728,6 +2317,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "pizza",
       "letter": "ari_birthday_juniper",
@@ -745,6 +2337,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "refined_stone",
       "letter": "ari_birthday_march_best_friend",
@@ -762,6 +2357,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "refined_stone",
       "letter": "ari_birthday_march_romantic",
@@ -779,6 +2377,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 4,
       "item": "iron_ingot",
       "letter": "ari_birthday_march",
@@ -796,6 +2397,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "vegetable_pot_pie",
       "letter": "ari_birthday_reina_best_friend",
@@ -813,6 +2417,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "pomegranate_juice",
       "letter": "ari_birthday_reina_romantic",
@@ -830,6 +2437,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "pudding",
       "letter": "ari_birthday_reina_romantic",
@@ -847,6 +2457,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "vegetable_pot_pie",
       "letter": "ari_birthday_reina_romantic",
@@ -864,6 +2477,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spicy_cheddar_biscuit",
       "letter": "ari_birthday_reina",
@@ -881,6 +2497,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_cookies",
       "letter": "ari_birthday_ryis_best_friend",
@@ -898,6 +2517,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "golden_cookies",
       "letter": "ari_birthday_ryis_romantic",
@@ -915,6 +2537,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "hard_wood",
       "letter": "ari_birthday_ryis",
@@ -932,6 +2557,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "essence_stone_large",
       "letter": "ari_birthday_seridia_best_friend",
@@ -949,6 +2577,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "essence_stone_large",
       "letter": "ari_birthday_seridia_romantic",
@@ -966,6 +2597,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "monster_cookie",
       "letter": "ari_birthday_seridia",
@@ -983,6 +2617,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "stamina_syrup",
       "letter": "ari_birthday_valen_best_friend",
@@ -1000,6 +2637,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "stamina_syrup",
       "letter": "ari_birthday_valen_romantic",
@@ -1017,6 +2657,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "green_tea",
       "letter": "ari_birthday_valen",
@@ -1034,6 +2677,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "baby_cradle",
       "letter": "baby_cradle_female",
@@ -1050,6 +2696,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "baby_cradle",
       "letter": "baby_cradle_male",
@@ -1066,6 +2715,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "baked_potato_recipe",
@@ -1080,6 +2732,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "baked_sweetroot",
@@ -1094,6 +2749,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "beet_salad_recipe",
@@ -1108,6 +2766,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "bell_berry_bakewell_tart_recipe",
@@ -1122,6 +2783,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "braised_burdock_recipe",
@@ -1136,6 +2800,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "braised_carrots_recipe",
@@ -1150,6 +2817,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "buttered_peas_recipe",
@@ -1164,6 +2834,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "cabbage_slaw_recipe",
@@ -1178,6 +2851,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "candied_lemon_peel_recipe",
@@ -1192,6 +2868,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "candied_strawberries_recipe",
@@ -1206,6 +2885,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "candied_walnuts_recipe",
@@ -1220,6 +2902,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "coconut_milk_recipe",
@@ -1234,6 +2919,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mini_museum_blueprint",
       "letter": "complete_the_museum_complete",
@@ -1248,6 +2936,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "strawberry_shortcake",
       "letter": "copper_star_rank_letter",
@@ -1262,6 +2953,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "cranberry_juice_recipe",
@@ -1276,6 +2970,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "crystal_berry_pie_recipe",
@@ -1290,6 +2987,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "cucumber_salad_recipe",
@@ -1304,6 +3004,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "deep_sea_soup",
@@ -1318,6 +3021,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mana_potion",
       "letter": "diamond_star_rank_letter",
@@ -1332,6 +3038,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "picnic_set",
       "letter": "elsie_dating_followup",
@@ -1352,6 +3061,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "letter": "emerald_star_rank_letter",
@@ -1366,6 +3078,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "glowberry_cookies_recipe",
@@ -1380,6 +3095,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "letter": "gold_star_rank_letter",
@@ -1394,6 +3112,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "grilled_corn_recipe",
@@ -1408,6 +3129,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "queen_berry",
       "letter": "harvest_festival_patch_case",
@@ -1419,6 +3143,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "silver_ingot",
       "letter": "iron_star_rank_letter",
@@ -1433,6 +3160,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "miners_mushroom_stew",
@@ -1447,6 +3177,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "onion_soup_recipe",
@@ -1461,6 +3194,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "orange_juice_recipe",
@@ -1475,6 +3211,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "peaches_and_cream_recipe",
@@ -1489,6 +3228,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "poached_pear_recipe",
@@ -1503,6 +3245,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "pomegranate_sorbet_recipe",
@@ -1517,6 +3262,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mana_potion",
       "letter": "post_carpenters_upgrade",
@@ -1528,6 +3276,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "pumpkin_stew_recipe",
@@ -1542,6 +3293,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "roasted_cauliflower_recipe",
@@ -1556,6 +3310,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "roasted_sweet_potato_recipe",
@@ -1570,6 +3327,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "rose_tea_recipe",
@@ -1584,6 +3344,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "iron_ingot",
       "letter": "ruby_star_rank_letter",
@@ -1598,6 +3361,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "salted_watermelon_recipe",
@@ -1612,6 +3378,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "letter": "sapphire_star_rank_letter",
@@ -1626,6 +3395,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "sauteed_snow_peas_recipe",
@@ -1640,6 +3412,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "shooting_star_morning_letter",
@@ -1651,6 +3426,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "shooting_star_morning_letter",
@@ -1662,6 +3440,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "shooting_star_morning_letter",
@@ -1673,6 +3454,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "letter": "silver_star_rank_letter",
@@ -1687,6 +3471,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "simmered_daikon_recipe",
@@ -1701,6 +3488,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "sliced_turnip_recipe",
@@ -1715,6 +3505,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "spicy_water_chestunut_recipe",
@@ -1729,6 +3522,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "spirit_mushroom_tea_recipe",
@@ -1743,6 +3539,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "steamed_broccoli_recipe",
@@ -1757,6 +3556,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "copper_ingot",
       "letter": "stone_star_rank_letter",
@@ -1771,6 +3573,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "toasted_sunflower_seeds_recipe",
@@ -1785,6 +3590,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "letter": "tomato_soup_recipe",
@@ -1799,6 +3607,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "weather_crystal_ball",
       "letter": "weather_globe_letter",
@@ -1810,6 +3621,9 @@
       ]
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "adeline_chair",
       "letter": "wedding_gifts_adeline",
@@ -1824,6 +3638,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "adeline_desk",
       "letter": "wedding_gifts_adeline",
@@ -1838,6 +3655,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "adeline_hobby_table",
       "letter": "wedding_gifts_adeline",
@@ -1852,6 +3672,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "balor_chair",
       "letter": "wedding_gifts_balor",
@@ -1866,6 +3689,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "balor_desk",
       "letter": "wedding_gifts_balor",
@@ -1880,6 +3706,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "balor_gem_station",
       "letter": "wedding_gifts_balor",
@@ -1894,6 +3723,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "caldarus_chair",
       "letter": "wedding_gifts_caldarus",
@@ -1908,6 +3740,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "caldarus_desk",
       "letter": "wedding_gifts_caldarus",
@@ -1922,6 +3757,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "caldarus_music_station",
       "letter": "wedding_gifts_caldarus",
@@ -1936,6 +3774,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "celine_chair",
       "letter": "wedding_gifts_celine",
@@ -1950,6 +3791,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "celine_desk",
       "letter": "wedding_gifts_celine",
@@ -1964,6 +3808,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "celine_garden_shelf",
       "letter": "wedding_gifts_celine",
@@ -1978,6 +3825,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "eiland_artifact_shelf",
       "letter": "wedding_gifts_eiland",
@@ -1992,6 +3842,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "eiland_chair",
       "letter": "wedding_gifts_eiland",
@@ -2006,6 +3859,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "eiland_desk",
       "letter": "wedding_gifts_eiland",
@@ -2020,6 +3876,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "hayden_chair",
       "letter": "wedding_gifts_hayden",
@@ -2034,6 +3893,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "hayden_desk",
       "letter": "wedding_gifts_hayden",
@@ -2048,6 +3910,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "hayden_indoor_garden",
       "letter": "wedding_gifts_hayden",
@@ -2062,6 +3927,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "dozy_pet_bed",
       "letter": "wedding_gifts_juniper",
@@ -2076,6 +3944,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "juniper_cauldron",
       "letter": "wedding_gifts_juniper",
@@ -2090,6 +3961,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "juniper_chair",
       "letter": "wedding_gifts_juniper",
@@ -2104,6 +3978,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "juniper_desk",
       "letter": "wedding_gifts_juniper",
@@ -2118,6 +3995,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "march_chair",
       "letter": "wedding_gifts_march",
@@ -2132,6 +4012,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "march_desk",
       "letter": "wedding_gifts_march",
@@ -2146,6 +4029,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "march_forge",
       "letter": "wedding_gifts_march",
@@ -2160,6 +4046,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "reina_chair",
       "letter": "wedding_gifts_reina",
@@ -2174,6 +4063,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "reina_desk",
       "letter": "wedding_gifts_reina",
@@ -2188,6 +4080,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "reina_test_kitchen",
       "letter": "wedding_gifts_reina",
@@ -2202,6 +4097,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "ryis_chair",
       "letter": "wedding_gifts_ryis",
@@ -2216,6 +4114,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "ryis_crafting_station",
       "letter": "wedding_gifts_ryis",
@@ -2230,6 +4131,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "ryis_desk",
       "letter": "wedding_gifts_ryis",
@@ -2244,6 +4148,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "seridia_chair",
       "letter": "wedding_gifts_seridia",
@@ -2258,6 +4165,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "seridia_desk",
       "letter": "wedding_gifts_seridia",
@@ -2272,6 +4182,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "seridia_magic_fire",
       "letter": "wedding_gifts_seridia",
@@ -2286,6 +4199,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "valen_chair",
       "letter": "wedding_gifts_valen",
@@ -2300,6 +4216,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "valen_desk",
       "letter": "wedding_gifts_valen",
@@ -2314,6 +4233,9 @@
       "unread_requirement_keys": []
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "valen_workstation",
       "letter": "wedding_gifts_valen",
@@ -2330,6 +4252,19 @@
   ],
   "museumRewards": [
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_explorer_hat",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 1,
+      "wing": "archaeology"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_wood",
       "recipe": null,
@@ -2337,6 +4272,19 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "top_explorer",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 2,
+      "wing": "archaeology"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2344,6 +4292,19 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "pants_explorer",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 3,
+      "wing": "archaeology"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2351,6 +4312,19 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "shoes_boots_explorer",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 4,
+      "wing": "archaeology"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2358,6 +4332,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_bed_beige",
       "recipe": null,
@@ -2365,6 +4342,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_double_bed_beige",
       "recipe": null,
@@ -2372,6 +4352,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2379,6 +4362,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_bed_beige",
@@ -2386,6 +4372,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_double_bed_beige",
@@ -2393,6 +4382,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_trunk_table_beige",
       "recipe": null,
@@ -2400,6 +4392,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2407,6 +4402,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_trunk_table_beige",
@@ -2414,6 +4412,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_rug_beige",
       "recipe": null,
@@ -2421,6 +4422,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2428,6 +4432,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_rug_beige",
@@ -2435,6 +4442,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_chair_beige",
       "recipe": null,
@@ -2442,6 +4452,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2449,6 +4462,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_chair_beige",
@@ -2456,6 +4472,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_lamp_beige",
       "recipe": null,
@@ -2463,6 +4482,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2470,6 +4492,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_lamp_beige",
@@ -2477,6 +4502,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_wallpaper_beige",
       "recipe": null,
@@ -2484,6 +4512,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2491,6 +4522,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_wallpaper_beige",
@@ -2498,6 +4532,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_flooring_beige",
       "recipe": null,
@@ -2505,6 +4542,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2512,6 +4552,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_flooring_beige",
@@ -2519,6 +4562,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "explorer_globe_beige",
       "recipe": null,
@@ -2526,6 +4572,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2533,6 +4582,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "explorer_globe_beige",
@@ -2540,6 +4592,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "alda_pot_replica_blue",
       "recipe": null,
@@ -2547,6 +4602,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2554,6 +4612,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "alda_pot_replica_blue",
@@ -2561,6 +4622,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_altar_water",
       "recipe": null,
@@ -2568,6 +4632,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2575,6 +4642,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "dragon_altar_water",
@@ -2582,6 +4652,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "color_paving_stone_v20",
       "recipe": null,
@@ -2589,6 +4662,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2596,6 +4672,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "color_paving_stone_v20",
@@ -2603,6 +4682,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "gryphon_statue_replica_v1",
       "recipe": null,
@@ -2610,6 +4692,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2617,6 +4702,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "gryphon_statue_replica_v1",
@@ -2624,6 +4712,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "crystal_string_lights_purple",
       "recipe": null,
@@ -2631,6 +4722,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2638,6 +4732,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "crystal_string_lights_purple",
@@ -2645,6 +4742,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "obelisk_beige",
       "recipe": null,
@@ -2652,6 +4752,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2659,6 +4762,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "obelisk_beige",
@@ -2666,6 +4772,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "forge_mistril",
       "recipe": null,
@@ -2673,6 +4782,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2680,6 +4792,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "forge_mistril",
@@ -2687,6 +4802,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "broken_pillar_v1_white",
       "recipe": null,
@@ -2694,6 +4812,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2701,6 +4822,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "broken_pillar_v1_white",
@@ -2708,6 +4832,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_statue_replica_v1",
       "recipe": null,
@@ -2715,6 +4842,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2722,6 +4852,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "dragon_statue_replica_v1",
@@ -2729,6 +4862,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "gemstone_bridge_v1",
       "recipe": null,
@@ -2736,6 +4872,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2743,6 +4882,9 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "gemstone_bridge_v1",
@@ -2750,6 +4892,19 @@
       "wing": "archaeology"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_fishing_hat",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 1,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_wood",
       "recipe": null,
@@ -2757,6 +4912,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "top_fishing_vest",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 2,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2764,6 +4932,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "shorts_fishing",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 3,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2771,6 +4952,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "shoes_boots_fishing",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 4,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -2778,6 +4972,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_bed_blue",
       "recipe": null,
@@ -2785,6 +4982,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_double_bed_blue",
       "recipe": null,
@@ -2792,6 +4992,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2799,6 +5002,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_bed_blue",
@@ -2806,6 +5012,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_double_bed_blue",
@@ -2813,6 +5022,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_table_blue",
       "recipe": null,
@@ -2820,6 +5032,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2827,6 +5042,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_table_blue",
@@ -2834,6 +5052,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_rug_blue",
       "recipe": null,
@@ -2841,6 +5062,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2848,6 +5072,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_rug_blue",
@@ -2855,6 +5082,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_chair_blue",
       "recipe": null,
@@ -2862,6 +5092,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2869,6 +5102,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_chair_blue",
@@ -2876,6 +5112,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_lamp_blue",
       "recipe": null,
@@ -2883,6 +5122,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2890,6 +5132,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_lamp_blue",
@@ -2897,6 +5142,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_wallpaper_blue",
       "recipe": null,
@@ -2904,6 +5152,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2911,6 +5162,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_wallpaper_blue",
@@ -2918,6 +5172,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_flooring_blue",
       "recipe": null,
@@ -2925,6 +5182,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -2932,6 +5192,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_flooring_blue",
@@ -2939,6 +5202,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_oar_wall_decor_blue",
       "recipe": null,
@@ -2946,6 +5212,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2953,6 +5222,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_oar_wall_decor_blue",
@@ -2960,6 +5232,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_window_silver",
       "recipe": null,
@@ -2967,6 +5242,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2974,6 +5252,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_window_silver",
@@ -2981,6 +5262,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_plaque_blue",
       "recipe": null,
@@ -2988,6 +5272,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -2995,6 +5282,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_plaque_blue",
@@ -3002,6 +5292,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_trophy_shelf_blue",
       "recipe": null,
@@ -3009,6 +5302,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3016,6 +5312,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_trophy_shelf_blue",
@@ -3023,6 +5322,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fishing_tank_silver",
       "recipe": null,
@@ -3030,6 +5332,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3037,6 +5342,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fishing_tank_silver",
@@ -3044,6 +5352,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fish_plush_toy",
       "recipe": null,
@@ -3051,6 +5362,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3058,6 +5372,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fish_plush_toy",
@@ -3065,6 +5382,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "octopus_plushie",
       "recipe": null,
@@ -3072,6 +5392,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3079,6 +5402,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "octopus_plushie",
@@ -3086,6 +5412,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mermaid_bed_v3",
       "recipe": null,
@@ -3093,6 +5422,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3100,6 +5432,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "mermaid_bed_v3",
@@ -3107,6 +5442,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "animated_waterfall_v1",
       "recipe": null,
@@ -3114,6 +5452,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3121,6 +5462,9 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "animated_waterfall_v1",
@@ -3128,6 +5472,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_clips_fin",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 21,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3135,6 +5492,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "back_gear_fish_scale_cape",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 22,
+      "wing": "fish"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3142,6 +5512,19 @@
       "wing": "fish"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_farmer_cap",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 1,
+      "wing": "flora"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_wood",
       "recipe": null,
@@ -3149,6 +5532,19 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "overalls_farmer",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 2,
+      "wing": "flora"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -3156,6 +5552,19 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "shoes_boots_farmer",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 3,
+      "wing": "flora"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -3163,6 +5572,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_bed_orange",
       "recipe": null,
@@ -3170,6 +5582,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_double_bed_orange",
       "recipe": null,
@@ -3177,6 +5592,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3184,6 +5602,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_bed_orange",
@@ -3191,6 +5612,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_double_bed_orange",
@@ -3198,6 +5622,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_lamp_orange",
       "recipe": null,
@@ -3205,6 +5632,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3212,6 +5642,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_lamp_orange",
@@ -3219,6 +5652,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_rug_orange",
       "recipe": null,
@@ -3226,6 +5662,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3233,6 +5672,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_rug_orange",
@@ -3240,6 +5682,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_sofa_orange",
       "recipe": null,
@@ -3247,6 +5692,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3254,6 +5702,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_sofa_orange",
@@ -3261,6 +5712,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_potted_tree_orange",
       "recipe": null,
@@ -3268,6 +5722,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3275,6 +5732,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_potted_tree_orange",
@@ -3282,6 +5742,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_flooring_orange",
       "recipe": null,
@@ -3289,6 +5752,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3296,6 +5762,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_flooring_orange",
@@ -3303,6 +5772,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_wallpaper_orange",
       "recipe": null,
@@ -3310,6 +5782,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3317,6 +5792,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "spring_wallpaper_orange",
@@ -3324,6 +5802,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_bed_red",
       "recipe": null,
@@ -3331,6 +5812,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_double_bed_red",
       "recipe": null,
@@ -3338,6 +5822,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3345,6 +5832,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_bed_red",
@@ -3352,6 +5842,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_double_bed_red",
@@ -3359,6 +5852,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_table_red",
       "recipe": null,
@@ -3366,6 +5862,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3373,6 +5872,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_table_red",
@@ -3380,6 +5882,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_rug_red",
       "recipe": null,
@@ -3387,6 +5892,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3394,6 +5902,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_rug_red",
@@ -3401,6 +5912,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_chair_red",
       "recipe": null,
@@ -3408,6 +5922,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_jar_lamp_red",
       "recipe": null,
@@ -3415,6 +5932,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_chair_red",
@@ -3422,6 +5942,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_jar_lamp_red",
@@ -3429,6 +5952,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_flooring_red",
       "recipe": null,
@@ -3436,6 +5962,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "summer_wallpaper_red",
       "recipe": null,
@@ -3443,6 +5972,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_flooring_red",
@@ -3450,6 +5982,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "summer_wallpaper_red",
@@ -3457,6 +5992,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fall_bed_orange",
       "recipe": null,
@@ -3464,6 +6002,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fall_double_bed_orange",
       "recipe": null,
@@ -3471,6 +6012,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3478,6 +6022,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fall_bed_orange",
@@ -3485,6 +6032,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fall_double_bed_orange",
@@ -3492,6 +6042,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fall_table_orange",
       "recipe": null,
@@ -3499,6 +6052,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3506,6 +6062,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "fall_table_orange",
@@ -3513,6 +6072,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "tesserae_tree",
       "recipe": null,
@@ -3520,6 +6082,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3527,6 +6092,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3534,6 +6102,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "void_bonsai_v1",
       "recipe": null,
@@ -3541,6 +6112,9 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "void_bonsai_v1",
@@ -3548,6 +6122,19 @@
       "wing": "flora"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_beekeeper_hat",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 1,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_wood",
       "recipe": null,
@@ -3555,6 +6142,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "top_long_sleeve_beekeeper",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 2,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -3562,6 +6162,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "pants_beekeeper",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 3,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -3569,6 +6182,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "shoes_boots_beekeeper",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 4,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_copper",
       "recipe": null,
@@ -3576,6 +6202,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "butterfly_bed_v1",
       "recipe": null,
@@ -3583,6 +6212,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "butterfly_double_bed_v1",
       "recipe": null,
@@ -3590,6 +6222,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3597,6 +6232,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "butterfly_bed_v1",
@@ -3604,6 +6242,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "butterfly_double_bed_v1",
@@ -3611,6 +6252,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "ladybug_table_v1",
       "recipe": null,
@@ -3618,6 +6262,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_silver",
       "recipe": null,
@@ -3625,6 +6272,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "ladybug_table_v1",
@@ -3632,6 +6282,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "insect_rug_v1",
       "recipe": null,
@@ -3639,6 +6292,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3646,6 +6302,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "insect_rug_v1",
@@ -3653,6 +6312,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "caterpillar_chair_v1",
       "recipe": null,
@@ -3660,6 +6322,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3667,6 +6332,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "caterpillar_chair_v1",
@@ -3674,6 +6342,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "moth_lamp_v1",
       "recipe": null,
@@ -3681,6 +6352,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3688,6 +6362,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "moth_lamp_v1",
@@ -3695,6 +6372,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "insect_wallpaper_v1",
       "recipe": null,
@@ -3702,6 +6382,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3709,6 +6392,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "insect_wallpaper_v1",
@@ -3716,6 +6402,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "insect_flooring_v1",
       "recipe": null,
@@ -3723,6 +6412,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3730,6 +6422,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "insect_flooring_v1",
@@ -3737,6 +6432,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "firefly_wall_string_lights_yellow",
       "recipe": null,
@@ -3744,6 +6442,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3751,6 +6452,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "firefly_wall_string_lights_yellow",
@@ -3758,6 +6462,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "butterfly_wall_lamp_gold",
       "recipe": null,
@@ -3765,6 +6472,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3772,6 +6482,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "butterfly_wall_lamp_gold",
@@ -3779,6 +6492,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "bumblebee_plushie",
       "recipe": null,
@@ -3786,6 +6502,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3793,6 +6512,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "bumblebee_plushie",
@@ -3800,6 +6522,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "butterfly_painting_v1",
       "recipe": null,
@@ -3807,6 +6532,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3814,6 +6542,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "butterfly_painting_v1",
@@ -3821,6 +6552,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "honeycomb_shelf",
       "recipe": null,
@@ -3828,6 +6562,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3835,6 +6572,9 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "recipe": "honeycomb_shelf",
@@ -3842,6 +6582,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "back_gear_butterfly_wings",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 17,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3849,6 +6602,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "back_gear_dragonfly_wings",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 18,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3856,6 +6622,19 @@
       "wing": "insect"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_beetle_mandible_horns",
+      "count": null,
+      "item": null,
+      "recipe": null,
+      "tier": 19,
+      "wing": "insect"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "recipe": null,
@@ -3865,6 +6644,9 @@
   ],
   "quests": [
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3874,6 +6656,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3883,6 +6668,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3892,6 +6680,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3901,6 +6692,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3910,6 +6704,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3919,6 +6716,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3928,6 +6728,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3937,6 +6740,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3946,6 +6752,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3955,6 +6764,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3964,6 +6776,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3973,6 +6788,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3982,6 +6800,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -3991,6 +6812,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4000,6 +6824,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4009,6 +6836,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4018,6 +6848,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4027,6 +6860,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4036,6 +6872,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "treasure_box_gold",
       "npc": "adeline",
@@ -4045,6 +6884,9 @@
       "source_file": "crown_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "miners_crate_chair_v1",
       "npc": "olric",
@@ -4054,6 +6896,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "hayden",
@@ -4063,6 +6908,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "herb_salad",
       "npc": "valen",
@@ -4072,6 +6920,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "eiland",
@@ -4081,6 +6932,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "elsie",
@@ -4090,6 +6944,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "reina",
@@ -4099,6 +6956,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "reina",
@@ -4108,6 +6968,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "riceball",
       "npc": "hemlock",
@@ -4117,6 +6980,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "hemlock",
@@ -4126,6 +6992,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "apple",
       "npc": "dell",
@@ -4135,6 +7004,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "errol",
@@ -4144,6 +7016,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "coconut_milk",
       "npc": "landen",
@@ -4153,6 +7028,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "reina",
@@ -4162,6 +7040,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "trail_mix",
       "npc": "luc",
@@ -4171,6 +7052,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "ryis",
@@ -4180,6 +7064,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "vera",
@@ -4189,6 +7076,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "coconut_cream_pie",
       "npc": "reina",
@@ -4198,6 +7088,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "terithia",
@@ -4207,6 +7100,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "march",
@@ -4216,6 +7112,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "eiland",
@@ -4225,6 +7124,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "celine",
@@ -4234,6 +7136,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "daffodil",
       "npc": "celine",
@@ -4243,6 +7148,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "tulip",
       "npc": "celine",
@@ -4252,6 +7160,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "reina",
@@ -4261,6 +7172,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "glowberry_cookies",
       "npc": "ryis",
@@ -4270,6 +7184,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "cow_milk",
       "npc": "hayden",
@@ -4279,6 +7196,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "terithia",
@@ -4288,6 +7208,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "josephine",
@@ -4297,6 +7220,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "adeline",
@@ -4306,6 +7232,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "ice_cream_sundae",
       "npc": "reina",
@@ -4315,6 +7244,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "monster_mash",
       "npc": "juniper",
@@ -4324,6 +7256,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "iron_ingot",
       "npc": "march",
@@ -4333,6 +7268,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "eiland",
@@ -4342,6 +7280,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "juniper",
@@ -4351,6 +7292,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "reina",
@@ -4360,6 +7304,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "chocolate",
       "npc": "maple",
@@ -4369,6 +7316,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "elsie",
@@ -4378,6 +7328,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "errol",
@@ -4387,6 +7340,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "adeline",
@@ -4396,6 +7352,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "tulip",
       "npc": "maple",
@@ -4405,6 +7364,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "grilled_cheese",
       "npc": "luc",
@@ -4414,6 +7376,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "hemlock",
@@ -4423,6 +7388,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "valen",
@@ -4432,6 +7400,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "cavern_rock_flooring",
       "npc": "olric",
@@ -4441,6 +7412,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "valen",
@@ -4450,6 +7424,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "vera",
@@ -4459,6 +7436,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "seed_snowdrop_anemone",
       "npc": "elsie",
@@ -4468,6 +7448,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "eiland",
@@ -4477,6 +7460,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "eiland",
@@ -4486,6 +7472,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "gazpacho",
       "npc": "holt",
@@ -4495,6 +7484,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "terithia",
@@ -4504,6 +7496,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "juniper",
@@ -4513,6 +7508,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "elsie",
@@ -4522,6 +7520,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "potato_soup",
       "npc": "reina",
@@ -4531,6 +7532,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "egg",
       "npc": "hayden",
@@ -4540,6 +7544,9 @@
       "source_file": "fetch_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cherry_cobbler",
       "npc": "celine",
@@ -4549,6 +7556,9 @@
       "source_file": "heart_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "honey_curry",
       "npc": "reina",
@@ -4558,6 +7568,9 @@
       "source_file": "heart_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "wildberry_pie",
       "npc": "reina",
@@ -4567,6 +7580,9 @@
       "source_file": "heart_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cherry_tart",
       "npc": "adeline",
@@ -4576,6 +7592,9 @@
       "source_file": "heart_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4585,6 +7604,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4594,6 +7616,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4603,6 +7628,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4612,6 +7640,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4621,6 +7652,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4630,6 +7664,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4639,6 +7676,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4648,6 +7688,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4657,6 +7700,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4666,6 +7712,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4675,6 +7724,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "stillwell",
@@ -4684,6 +7736,9 @@
       "source_file": "stillwell_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "apiary",
       "npc": "luc",
@@ -4693,6 +7748,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "terrarium",
       "npc": "luc",
@@ -4702,6 +7760,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "luc",
@@ -4711,6 +7772,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "luc",
@@ -4720,6 +7784,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mini_museum_blueprint",
       "npc": "errol",
@@ -4729,6 +7796,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "starter_wood_fence",
       "npc": "ryis",
@@ -4738,6 +7808,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "pick_axe_worn",
       "npc": "olric",
@@ -4747,6 +7820,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "mixed_fruit_juice",
       "npc": "reina",
@@ -4756,6 +7832,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 3,
       "item": "seed_potato",
       "npc": "adeline",
@@ -4765,6 +7844,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "josephine",
@@ -4774,6 +7856,33 @@
       "source_file": "story_quests"
     },
     {
+      "animal": "cow",
+      "animal_cosmetic": "cheese_hat",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "npc": "adeline",
+      "quest": "replenishing_mistrias_food_reserves_2",
+      "quest_name": "Restocking Mistria's Food Reserves 2",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "animal": "chicken",
+      "animal_cosmetic": "egg_hat",
+      "cosmetic": null,
+      "count": null,
+      "item": null,
+      "npc": "adeline",
+      "quest": "replenishing_mistrias_food_reserves_2",
+      "quest_name": "Restocking Mistria's Food Reserves 2",
+      "recipe": null,
+      "source_file": "story_quests"
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "net_worn",
       "npc": "luc",
@@ -4783,6 +7892,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 1,
       "item": "cup_of_tea",
       "npc": "hayden",
@@ -4792,6 +7904,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "grass_seed",
       "npc": "hayden",
@@ -4801,6 +7916,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 10,
       "item": "hay",
       "npc": "hayden",
@@ -4810,6 +7928,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "small_greenhouse_white_blueprint",
       "npc": "adeline",
@@ -4819,6 +7940,9 @@
       "source_file": "story_quests"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "champions_kitchen_blue",
       "npc": "taliferro",
@@ -4828,6 +7952,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "counter_kitchen_blue",
       "npc": "taliferro",
@@ -4837,6 +7964,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4846,6 +7976,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4855,6 +7988,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_herb_planter_v1",
       "npc": "taliferro",
@@ -4864,6 +8000,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4873,6 +8012,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_garlic_braid",
       "npc": "taliferro",
@@ -4882,6 +8024,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4891,6 +8036,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cooking_frying_pan_v1",
       "npc": "taliferro",
@@ -4900,6 +8048,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4909,6 +8060,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cooking_hanging_pans_v1",
       "npc": "taliferro",
@@ -4918,6 +8072,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4927,6 +8084,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_mixing_bowls_v1",
       "npc": "taliferro",
@@ -4936,6 +8096,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4945,6 +8108,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_oil_and_vinegar_basket_v1",
       "npc": "taliferro",
@@ -4954,6 +8120,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4963,6 +8132,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_scale_blue",
       "npc": "taliferro",
@@ -4972,6 +8144,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4981,6 +8156,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cooking_tea_kettle_v1",
       "npc": "taliferro",
@@ -4990,6 +8168,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -4999,6 +8180,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cooking_stockpot_v1",
       "npc": "taliferro",
@@ -5008,6 +8192,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -5017,6 +8204,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_hanging_onion_basket",
       "npc": "taliferro",
@@ -5026,6 +8216,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -5035,6 +8228,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "kitchen_utensil_holder_blue",
       "npc": "taliferro",
@@ -5044,6 +8240,9 @@
       "source_file": "tali_challenges"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "npc": "taliferro",
@@ -5053,195 +8252,317 @@
       "source_file": "tali_challenges"
     }
   ],
+  "startingItems": [
+    "cloth_chestpiece",
+    "cloth_helmet",
+    "cloth_pants",
+    "cloth_shoes",
+    "cloth_wristband",
+    "sword_worn"
+  ],
   "unreadGrantKeys": [],
   "wishingWell": [
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "berry_bowl",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_chest",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_fireplace",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_lamp",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 5,
       "item": "dragon_road_wall",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_ruins_pillar_v1",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_ruins_pillar_v2",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_stained_glass_window_v1",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_stained_glass_window_v2",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_talon_chair",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_wall_head_piece",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_wall_tail_piece",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_water_altar_v1",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "dragon_water_altar_v2",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "fried_rice",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "large_dragon_rug",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "medium_dragon_rug",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "silver_ingot",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spicy_cheddar_biscuit",
       "pool": "common.large_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.large_roll",
       "recipe": "berry_bowl"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.large_roll",
       "recipe": "fried_rice"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": null,
       "pool": "common.large_roll",
       "recipe": "spicy_cheddar_biscuit"
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_teapot",
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": "head_soup_pot",
+      "count": null,
+      "item": null,
+      "pool": "common.small_roll",
+      "recipe": null
+    },
+    {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "blueberry_jam",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "cabbage_slaw",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "copper_ingot",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "iron_ingot",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "latte",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "ore_emerald",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "ore_ruby",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": 2,
       "item": "ore_sapphire",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "spring_salad",
       "pool": "common.small_roll",
       "recipe": null
     },
     {
+      "animal": null,
+      "animal_cosmetic": null,
+      "cosmetic": null,
       "count": null,
       "item": "wild_berry_jam",
       "pool": "common.small_roll",

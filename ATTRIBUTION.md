@@ -23,9 +23,9 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2602 files.**
+**2676 files.**
 
-## Items (2107)
+## Items (2181)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -1095,6 +1095,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_crop_sign_watermelon.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_watermelon.png | game files (NPC Studio) |
 | `item/spr_ui_item_crop_sign_wheat.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_wheat.png | game files (NPC Studio) |
 | `item/spr_ui_item_crystal_apple.png` | animations/Item Icons/Archaeology/spr_ui_item_crystal_apple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_alpaca_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_alpaca_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_animated_waterfall_v1.png` | animations/Item Icons/Placeables/Furniture/Animated/spr_ui_item_decor_animated_waterfall_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bakery_bread_basket_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_bread_basket_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bakery_cake_case_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cake_case_v2.png | game files (NPC Studio) |
@@ -1103,8 +1104,12 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_bakery_cookie_jar_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cookie_jar_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bakery_cutting_board_v2.png` | animations/Item Icons/Placeables/Furniture/Bakery/spr_ui_item_decor_bakery_cutting_board_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_beach_campfire.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_beach_campfire.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_capybara_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_blue_capybara_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_chicken_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_blue_chicken_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_duck_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_blue_duck_ribbon.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_blue_pet_bed.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_blue_pet_bed.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_blue_pet_dish.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_blue_pet_dish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_blue_rabbit_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_blue_rabbit_ribbon.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bonsai_accessory_plant_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bonsai_accessory_plant_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bonsai_accessory_plant_v3.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_accessory_plant_v3.png | game files (NPC Studio) |
@@ -1140,9 +1145,15 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_bonsai_small_v4.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_small_v4.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bonsai_void_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_bonsai_void_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_broken_pillar_v1_gray.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_broken_pillar_v1_gray.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bronze_alpaca_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_bronze_alpaca_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bronze_cow_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_bronze_cow_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bronze_horse_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_bronze_horse_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_bronze_sheep_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_bronze_sheep_trophy.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_bumblebee_plushie.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_bumblebee_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_butterfly_painting_v1.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_butterfly_painting_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_butterfly_wall_lamp_bronze.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_butterfly_wall_lamp_bronze.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_capybara_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_capybara_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_chicken_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_chicken_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_clutter_basket.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_basket.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_clutter_beer.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_beer.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_clutter_box_medium_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_clutter_box_medium_v1.png | game files (NPC Studio) |
@@ -1189,6 +1200,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_counter_cottage_v1.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cottage_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_counter_cottage_v2.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_cottage_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_counter_kitchen_blue.png` | animations/Item Icons/Placeables/Furniture/Counter/spr_ui_item_decor_counter_kitchen_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_cow_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_cow_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_craft_closed_sewing_tin_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_closed_sewing_tin_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_craft_fabric_rack_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_fabric_rack_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_craft_rug_v1.png` | animations/Item Icons/Placeables/Furniture/Craft Set/spr_ui_item_decor_craft_rug_v1.png | game files (NPC Studio) |
@@ -1313,12 +1325,55 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_dragon_wall_tail_piece.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_wall_tail_piece.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_dragon_water_altar_v1.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_water_altar_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_dragon_water_altar_v2.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_dragon_water_altar_v2.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_duck_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_duck_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_earth_seal_altar.png` | animations/Item Icons/Placeables/Furniture/Dragon Altar/spr_ui_item_decor_earth_seal_altar.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_espresso_v1.png` | animations/Item Icons/Placeables/Furniture/Tabletop Clutter/spr_ui_item_decor_espresso_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_firefly_string_lights_blue.png` | animations/Item Icons/Placeables/Furniture/Insect/spr_ui_item_decor_firefly_string_lights_blue.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_fish_plushie.png` | animations/Item Icons/Placeables/Furniture/Fishing/spr_ui_item_decor_fish_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_floor_tile_small_01.png` | animations/Item Icons/Placeables/Furniture/Color Paving Stones/spr_ui_item_decor_floor_tile_small_01.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gemstone_bridge_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_gemstone_bridge_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gold_alpaca_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_gold_alpaca_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gold_cow_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_gold_cow_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gold_horse_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_gold_horse_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_gold_sheep_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_gold_sheep_trophy.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_gryphon_statue_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_gryphon_statue_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_arch.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_arch.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_autumn_scarecrow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_autumn_scarecrow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_centerpiece.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_centerpiece.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_cornucopia.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_cornucopia.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_black.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_green.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_orange.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_purple.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_white.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_large_yellow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_large_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_black.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_green.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_orange.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_purple.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_white.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_medium_yellow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_medium_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_black.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_green.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_orange.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_purple.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_white.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_pile_yellow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_pile_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_black.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_green.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_orange.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_purple.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_white.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_small_yellow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_small_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_black.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_green.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_green.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_orange.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_orange.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_purple.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_purple.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_white.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_pumpkin_xl_yellow.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_pumpkin_xl_yellow.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_harvest_festival_queen_berry_trophy.png` | animations/Item Icons/Placeables/Furniture/Harvest Festival/spr_ui_item_decor_harvest_festival_queen_berry_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_hero_shield_bronze.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_hero_shield_bronze.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_horse_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_horse_plushie.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_jadeite_cabbage.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_jadeite_cabbage.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_jadeite_daikon.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_jadeite_daikon.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_kitchen_garlic_braid.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_garlic_braid.png | game files (NPC Studio) |
@@ -1331,10 +1386,12 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_kitchen_utensil_holder_blue.png` | animations/Item Icons/Placeables/Furniture/Kitchen Set/spr_ui_item_decor_kitchen_utensil_holder_blue.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_large_dragon_rug.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_large_dragon_rug.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_large_paving_stone_v1.png` | animations/Item Icons/Placeables/Furniture/Stone Garden/spr_ui_item_decor_large_paving_stone_v1.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_maples_drawing.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_maples_drawing.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_medium_dragon_rug.png` | animations/Item Icons/Placeables/Furniture/Wishing Well Dragon Decor Set/spr_ui_item_decor_medium_dragon_rug.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_mistria_history_book.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_history_book.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_mistria_history_scroll.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_history_scroll.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_mistria_wall_map.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_mistria_wall_map.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_mistril_star_trophy.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_mistril_star_trophy.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_moon_gate_v1.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_moon_gate_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_mournful_clown_painting.png` | animations/Item Icons/Placeables/Furniture/Misc/spr_ui_item_decor_mournful_clown_painting.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_obelisk_beige.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_decor_obelisk_beige.png | game files (NPC Studio) |
@@ -1379,6 +1436,16 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_ornate_wallpaper_v4.png` | animations/Item Icons/Placeables/Furniture/Ornate Decor Set/spr_ui_item_decor_ornate_wallpaper_v4.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_pink_pet_bed.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_pink_pet_bed.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_pink_pet_dish.png` | animations/Item Icons/Placeables/Pet Decor/spr_ui_item_decor_pink_pet_dish.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_rabbit_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_rabbit_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_red_capybara_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_red_capybara_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_red_chicken_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_red_chicken_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_red_duck_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_red_duck_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_red_rabbit_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_red_rabbit_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_sheep_plushie.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_sheep_plushie.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_silver_alpaca_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_silver_alpaca_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_silver_cow_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_silver_cow_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_silver_horse_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_silver_horse_trophy.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_silver_sheep_trophy.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_silver_sheep_trophy.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_spooky_haybale.png` | animations/Item Icons/Placeables/Furniture/Starter Farm/spr_ui_item_decor_spooky_haybale.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_spring_festival_basket.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_basket.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_spring_festival_breath_of_spring_wreath.png` | animations/Item Icons/Placeables/Furniture/Spring Festival/spr_ui_item_decor_spring_festival_breath_of_spring_wreath.png | game files (NPC Studio) |
@@ -1415,6 +1482,10 @@ this repository treats it as though it were.
 | `item/spr_ui_item_decor_strange_garden_stone_v1.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_strange_garden_stone_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_strange_garden_stone_v2.png` | animations/Item Icons/Placeables/Furniture/Bonsai Decor Set/spr_ui_item_decor_strange_garden_stone_v2.png | game files (NPC Studio) |
 | `item/spr_ui_item_decor_training_dummy_rockclod.png` | animations/Item Icons/Placeables/Furniture/Training Dummy/spr_ui_item_decor_training_dummy_rockclod.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_white_capybara_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_white_capybara_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_white_chicken_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_white_chicken_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_white_duck_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_white_duck_ribbon.png | game files (NPC Studio) |
+| `item/spr_ui_item_decor_white_rabbit_ribbon.png` | animations/Item Icons/Placeables/Furniture/Animal Festival Rewards Set/spr_ui_item_decor_white_rabbit_ribbon.png | game files (NPC Studio) |
 | `item/spr_ui_item_dense_water.png` | animations/Item Icons/Archaeology/spr_ui_item_dense_water.png | game files (NPC Studio) |
 | `item/spr_ui_item_diamond_backed_mirror.png` | animations/Item Icons/Archaeology/spr_ui_item_diamond_backed_mirror.png | game files (NPC Studio) |
 | `item/spr_ui_item_dragon_claw.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_claw.png | game files (NPC Studio) |
@@ -1754,6 +1825,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_furniture_rock_stack_shelf.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_rock_stack_shelf.png | game files (NPC Studio) |
 | `item/spr_ui_item_furniture_rockclod_garden_brown.png` | animations/Item Icons/Placeables/Furniture/Monster/spr_ui_item_furniture_rockclod_garden_brown.png | game files (NPC Studio) |
 | `item/spr_ui_item_furniture_round_cushion_stool_beige.png` | animations/Item Icons/Placeables/Furniture/Bathroom/spr_ui_item_furniture_round_cushion_stool_beige.png | game files (NPC Studio) |
+| `item/spr_ui_item_furniture_royal_chest_blue.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_furniture_royal_chest_blue.png | game files (NPC Studio) |
 | `item/spr_ui_item_furniture_ruby_rock.png` | animations/Item Icons/Placeables/Furniture/Mineshaft/spr_ui_item_furniture_ruby_rock.png | game files (NPC Studio) |
 | `item/spr_ui_item_furniture_ruins_crystal_light.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_crystal_light.png | game files (NPC Studio) |
 | `item/spr_ui_item_furniture_ruins_floor_brazier_v1.png` | animations/Item Icons/Placeables/Furniture/Ruins/spr_ui_item_furniture_ruins_floor_brazier_v1.png | game files (NPC Studio) |
@@ -1867,12 +1939,14 @@ this repository treats it as though it were.
 | `item/spr_ui_item_object_crystal_resonator_red.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_red.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_crystal_resonator_silver.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_silver.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_crystal_resonator_void.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_void.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_forge_mistril.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_forge_mistril.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_journal.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_journal.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_ladder.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ladder.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_ocarina_statue.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ocarina_statue.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_stairs.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_stairs.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_teleportation_pad.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_teleportation_pad.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_terrarium.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_terrarium.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_tesserae_tree.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_tesserae_tree.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_wall_calendar.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_wall_calendar.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_water_sprite_statue_large_v1.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_water_sprite_statue_large_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_water_sprite_statue_v1.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_water_sprite_statue_v1.png | game files (NPC Studio) |

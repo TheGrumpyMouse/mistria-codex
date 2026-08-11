@@ -182,9 +182,59 @@ const BUILDERS: Record<DatasetName, Builder> = {
   artifacts: buildArtifactFacets,
   crops: buildCrops,
   recipes: (_ctx, derived) => derived.recipes,
-  characters: (ctx, derived) => withVendorFlags(buildCharacters(ctx), derived.shops),
+  characters: (ctx, derived) => {
+    // The schedule gap closes from the schedules actually built, the same
+    // derive-once pattern as `is_vendor` — a character record must not keep
+    // claiming "no schedule" beside a dataset that ships one.
+    const routined = new Set(
+      buildSchedules(ctx, new Set(derived.quests.map((quest) => quest.id)))
+        .filter((s) => s.entries.length > 0)
+        .map((s) => s.character_id),
+    )
+
+    // Heart scenes, from the letter that starts each one: `letters.toml` gates
+    // the letter on `reached_heart_level = { ryis = 4 }`, which is the only
+    // place the game states which scene fires at which level. Only quests that
+    // actually ship become triggers — a scene naming no record stays out.
+    const questIds = new Set(derived.quests.map((quest) => quest.id))
+    const heartEventsByCharacter = new Map<
+      string,
+      { hearts: number; trigger: string | null; requires: [] }[]
+    >()
+    for (const chain of ctx.game?.unlocks?.letterQuests ?? []) {
+      const heart = chain.reached_heart_level
+      if (heart === null) continue
+      if (!questIds.has(chain.quest_to_start)) continue
+      const list = heartEventsByCharacter.get(heart.npc) ?? []
+      // Two letters can start one scene (a re-send after a decline); the scene
+      // is still one event.
+      if (list.some((event) => event.trigger === chain.quest_to_start)) continue
+      list.push({ hearts: heart.level, trigger: chain.quest_to_start, requires: [] })
+      heartEventsByCharacter.set(heart.npc, list)
+    }
+    for (const list of heartEventsByCharacter.values()) {
+      list.sort((a, b) => a.hearts - b.hearts || (a.trigger ?? '').localeCompare(b.trigger ?? ''))
+    }
+
+    return withVendorFlags(buildCharacters(ctx), derived.shops).map((person) => {
+      const heartEvents = heartEventsByCharacter.get(person.id) ?? []
+      const dropGaps = new Set<string>()
+      if (routined.has(person.id)) dropGaps.add('schedule')
+      if (heartEvents.length > 0) dropGaps.add('heart_events')
+      // Only romance candidates have heart scenes — for everyone else an empty
+      // list is not-applicable, not unknown, and must not wear a gap badge.
+      if (person.romanceable === false) dropGaps.add('heart_events')
+      if (dropGaps.size === 0) return person
+      return {
+        ...person,
+        heart_events: heartEvents,
+        ...(heartEvents.length > 0 ? { prov: { ...person.prov, heart_events: 'game_files' } } : {}),
+        data_gaps: person.data_gaps.filter((gap) => !dropGaps.has(gap)),
+      }
+    })
+  },
   gift_prefs: buildGiftPrefs,
-  schedules: buildSchedules,
+  schedules: (ctx, derived) => buildSchedules(ctx, new Set(derived.quests.map((q) => q.id))),
   locations: (ctx) =>
     withShapes(withAnchors(ctx, buildLocations(ctx)), ctx.mapShapes, ctx.mapAliases),
   maps: (ctx) => (ctx.maps === null ? [] : [buildMapRegion(ctx.maps)]),
@@ -243,8 +293,8 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
   // quests to resolve a reward's `source_id`, and the mines to name the biome a
   // treasure chest sits in — so it is computed once here and passed down, the
   // same way `museum` and `shops` are.
-  const monsters = buildMonsters(ctx)
   const allItemIds = new Set(allItems.map((i) => i.id))
+  const monsters = buildMonsters(ctx, allItemIds)
   const quests = buildQuests(ctx, allItemIds)
   const mines = buildMines(ctx, allItems, monstersByBiome(monsters))
 
@@ -259,7 +309,7 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     shopIdByStore.set(vendor.storeId, vendor.shopId)
   }
 
-  const festivals = buildFestivals(ctx)
+  const festivals = buildFestivals(ctx, allItemIds)
   const grants = buildGrantIndex(
     ctx,
     (gameKey) =>
@@ -277,14 +327,21 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     },
   )
 
+  // What a new game hands you before you take a step — the worn sword and the
+  // cloth set. `misc.toml [ari_stats]` states it; the flag is what lets the
+  // page say "yours from the start" instead of "no source recorded".
+  const startingItems = new Set(ctx.game?.unlocks?.startingItems ?? [])
+
   const items = allItems.map((item) => {
     const sellers = soldBy.get(item.id) ?? []
     // Windows the game states outright — a museum reward tier, a treasure
     // chest, the post. Appended rather than replacing: an item can be both
     // forageable and posted to you, and the array is an OR of windows.
     const granted = grants.itemWindows.get(item.id) ?? []
+    const startsWithIt = startingItems.has(item.id)
     return {
       ...item,
+      ...(startsWithIt ? { default_unlocked: true as const } : {}),
       // A "buy it" window knows where to send you: the shops that stock it.
       // That comes from the same list as `sold_by` rather than being resolved
       // twice, and it is a fact, not an inference — the shop is a building at a
@@ -325,7 +382,7 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
       // it, or a recipe that makes it — and leaving the gap on a record naming
       // a mine biome and a museum reward tier would badge a fact as unknown.
       data_gaps:
-        granted.length > 0 || sellers.length > 0 || item.is_craftable === true
+        granted.length > 0 || sellers.length > 0 || item.is_craftable === true || startsWithIt
           ? item.data_gaps.filter((gap) => gap !== 'obtain_method')
           : item.data_gaps,
     }

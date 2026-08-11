@@ -117,6 +117,20 @@ export const Quest = withEnvelope({
   unlocks_location_ids: z.array(IdRef).default([]),
   unlocks_mine_ids: z.array(IdRef).default([]),
   teaches_recipe_ids: z.array(IdRef).default([]),
+  /**
+   * Shops where finishing this quest gates *stock lines*, not the shop itself —
+   * Hayden's 24 barn-upgrade lines against `unlocks_shop_ids`' six Saturday
+   * Market stalls. Conflating them would have the quest page claim it opens a
+   * shop that has been open since day one.
+   */
+  unlocks_stock_shop_ids: z.array(IdRef).default([]),
+  /**
+   * Quests whose starting letter waits on this one — the story chain as
+   * `letters.toml` states it: the Repair the Beach Bridge letter arrives three
+   * days after Repair the General Store is done. The forward reading of the
+   * same rows fills the started quest's `prerequisites`.
+   */
+  unlocks_quest_ids: z.array(IdRef).default([]),
 })
 export type Quest = z.infer<typeof Quest>
 

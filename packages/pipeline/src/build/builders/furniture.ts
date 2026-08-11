@@ -71,7 +71,15 @@ export function collapseFurniture(ctx: BuildContext): FurnitureCollapse {
   const groups = new Map<string, GameItem[]>()
   let unnamed = 0
   for (const item of game.itemById.values()) {
-    if (!item.file.startsWith('furniture/')) continue
+    // The declaring directory is the usual signal, but 83 pieces — every wall
+    // ribbon, trophy and plushie — are declared under `other/` with a
+    // `furniture` tag. Filtering on the path alone is why the Animal
+    // Festival's prizes shipped no record at all. The apiary and terrarium
+    // carry the tag too and are already records of their own (machines), so
+    // their file stays out.
+    const tagged =
+      item.tags.includes('furniture') && item.file !== 'other/apiaries_and_terrariums.toml'
+    if (!item.file.startsWith('furniture/') && !tagged) continue
     if (item.name === null) {
       unnamed += 1
       continue
@@ -151,8 +159,9 @@ export function collapseFurniture(ctx: BuildContext): FurnitureCollapse {
 
       // The declaring file's stem — the game's own shelving, and the token
       // Browse groups the category by (labels translate it; it never renders
-      // raw).
-      subcategory: canonical.file.replace(/^furniture\//, '').replace(/\.toml$/, ''),
+      // raw). For the tag-matched files this yields `festivals` and `misc`,
+      // which the labels map carries like any other stem.
+      subcategory: canonical.file.replace(/^(furniture|other)\//, '').replace(/\.toml$/, ''),
       base_item_id: null,
       quality: null,
 

@@ -8,10 +8,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": null,
@@ -29,7 +26,28 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Female",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "the_smell_of_drying_ink"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "a_rewarding_choice"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "chief_inspector"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "lost_track_of_time"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/adeline",
     "id": "adeline",
@@ -41,7 +59,8 @@
     "occupation": "Acting Leader of Mistria",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -59,15 +78,28 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "an_open_book"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "lemonade_from_lemons"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "for_good"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/balor",
     "id": "balor",
@@ -79,7 +111,8 @@
     "occupation": "Traveling Merchant",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -98,14 +131,19 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "schedule",
-      "heart_events"
+      "schedule"
     ],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "life_in_this_form"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/caldarus",
     "id": "caldarus",
@@ -117,7 +155,8 @@
     "occupation": "Dragon",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -136,10 +175,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "nora",
@@ -157,7 +193,23 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Female",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "the_unusual_seed"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "water_and_soil"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "a_lost_flower"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/celine",
     "id": "celine",
@@ -169,7 +221,8 @@
     "occupation": "Gardener, Part-Timer",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -187,10 +240,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -225,10 +275,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "nora",
@@ -276,10 +323,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "juniper",
@@ -319,10 +363,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": null,
@@ -340,7 +381,28 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "the_stele"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "the_ruins"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "the_manor"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "the_glade"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/eiland",
     "id": "eiland",
@@ -352,7 +414,8 @@
     "occupation": "Archaeologist, Noble",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -370,10 +433,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "adeline",
@@ -417,10 +477,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -455,10 +512,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "henrietta",
@@ -472,7 +526,28 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "a_get_together"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "extra_feed"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "real_fine_day"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "a_little_while_longer"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/hayden",
     "id": "hayden",
@@ -484,7 +559,8 @@
     "occupation": "Runs Sweetwater Farm",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -502,10 +578,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "josephine",
@@ -557,10 +630,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "hayden",
@@ -600,10 +670,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "nora",
@@ -651,10 +718,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "hemlock",
@@ -706,10 +770,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "dozy",
@@ -719,7 +780,23 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Female",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "horsing_around"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "working_like_a_dog"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "potions_and_errands"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/juniper",
     "id": "juniper",
@@ -731,7 +808,8 @@
     "occupation": "Sorceress/Bathhouse Owner",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -749,10 +827,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "ryis",
@@ -804,10 +879,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -842,10 +914,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "josephine",
@@ -897,10 +966,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "josephine",
@@ -952,10 +1018,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": null,
@@ -973,7 +1036,23 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "surprise_me"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "many_hands_make_light_work"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "shield_of_the_realm"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/march",
     "id": "march",
@@ -985,7 +1064,8 @@
     "occupation": "Blacksmith",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1003,10 +1083,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -1041,10 +1118,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "holt",
@@ -1092,10 +1166,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": null,
@@ -1145,7 +1216,6 @@
     "confidence": "wiki",
     "data_gaps": [
       "schedule",
-      "heart_events",
       "id_pending_rename"
     ],
     "family": [],
@@ -1185,10 +1255,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "josephine",
@@ -1210,7 +1277,28 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Female",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "pie_in_the_sky"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "shopping_buddy"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "farm_fresh_sous_chef"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "the_aldarian_cooking_contest"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/reina",
     "id": "reina",
@@ -1222,7 +1310,8 @@
     "occupation": "Head Cook at the Inn",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1240,10 +1329,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [
       {
         "character_id": "landen",
@@ -1269,7 +1355,28 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Male",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 2,
+        "requires": [],
+        "trigger": "bird_song"
+      },
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "a_sapling"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "a_birdhouse"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "a_duet"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/ryis",
     "id": "ryis",
@@ -1281,7 +1388,8 @@
     "occupation": "Carpenter",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1300,8 +1408,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "schedule",
-      "heart_events"
+      "schedule"
     ],
     "family": [],
     "former_ids": [],
@@ -1337,10 +1444,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -1375,10 +1479,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -1413,15 +1514,28 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "gender": "Female",
-    "heart_events": [],
+    "heart_events": [
+      {
+        "hearts": 4,
+        "requires": [],
+        "trigger": "batch_312"
+      },
+      {
+        "hearts": 6,
+        "requires": [],
+        "trigger": "an_outside_consultant"
+      },
+      {
+        "hearts": 8,
+        "requires": [],
+        "trigger": "the_panacea"
+      }
+    ],
     "home_location_id": null,
     "icon_key": "character/valen",
     "id": "valen",
@@ -1433,7 +1547,8 @@
     "occupation": "Town Doctor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "heart_events": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1451,10 +1566,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -1489,10 +1601,7 @@
     },
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "schedule",
-      "heart_events"
-    ],
+    "data_gaps": [],
     "family": [],
     "former_ids": [],
     "game_version": "1.0.0",
@@ -1528,8 +1637,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "schedule",
-      "heart_events"
+      "schedule"
     ],
     "family": [],
     "former_ids": [],

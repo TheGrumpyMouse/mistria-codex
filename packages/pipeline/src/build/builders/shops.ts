@@ -279,7 +279,152 @@ export function buildShops(ctx: BuildContext, furnitureShipped?: Map<string, str
     }
   })
 
-  return [...wikiShops, ...buildMarketStalls(ctx, characterIds, furnitureShipped)]
+  return [
+    ...withGameStoreStock(ctx, wikiShops, furnitureShipped),
+    ...buildMarketStalls(ctx, characterIds, furnitureShipped),
+  ]
+}
+
+/**
+ * Stock lines the game states and the wiki page never listed, appended to the
+ * wiki shop.
+ *
+ * The wiki's store pages are tables someone typed, and whole shelves are
+ * missing from them — Hayden's pet beds and toys, the animal accessories, the
+ * Carpenter's bonsai. `stores.toml` states every line, so anything that
+ * resolves to a record the page did not already stock is appended, deduped by
+ * the resolved id (never by name — the two sources word names differently).
+ *
+ * Gates come through where they are expressible: a season, a perk, a
+ * per-species `unlocked_animal`, a completed quest. A line whose gate cannot
+ * be stated is held back and counted — shipping it ungated would claim
+ * "always stocked", the wrong direction to be wrong in. Prices fill from the
+ * item's global `value.store` exactly like the page path, and only ever a
+ * null.
+ */
+function withGameStoreStock(
+  ctx: BuildContext,
+  wikiShops: Shop[],
+  furnitureShipped?: Map<string, string>,
+): Shop[] {
+  const game = ctx.game
+  if (game === null) return wikiShops
+
+  const resolveItemId = (entry: {
+    item: string | null
+    cosmetic: string | null
+    animal: string | null
+    animal_cosmetic: string | null
+  }): { id: string | null; label: string } => {
+    if (entry.cosmetic !== null) {
+      return {
+        id: game.cosmeticById.has(entry.cosmetic) ? entry.cosmetic : null,
+        label: entry.cosmetic,
+      }
+    }
+    if (entry.animal !== null && entry.animal_cosmetic !== null) {
+      const name =
+        game.animalCosmeticNameByPair.get(`${entry.animal}|${entry.animal_cosmetic}`) ?? null
+      if (name === null) return { id: null, label: `${entry.animal}:${entry.animal_cosmetic}` }
+      return { id: ctx.itemByName.has(name) ? ctx.idFor(name) : null, label: name }
+    }
+    if (entry.item !== null) {
+      const fromFurniture = furnitureShipped?.get(entry.item)
+      if (fromFurniture !== undefined) return { id: fromFurniture, label: entry.item }
+      if (ctx.gameOnlyItems.includes(entry.item)) return { id: entry.item, label: entry.item }
+      const name = game.itemById.get(entry.item)?.name ?? null
+      if (name !== null && ctx.itemByName.has(name)) return { id: ctx.idFor(name), label: name }
+      return { id: null, label: name ?? entry.item }
+    }
+    return { id: null, label: '' }
+  }
+
+  let appended = 0
+  let unresolved = 0
+  let heldBack = 0
+  const result = wikiShops.map((record) => {
+    const source = ctx.shops.shops.find((s) => s.id === record.id)
+    const store = source?.gameStoreId == null ? undefined : game.storeById.get(source.gameStoreId)
+    if (store === undefined) return record
+
+    const stocked = new Set(record.stock.map((line) => line.item_id))
+    const lines: Shop['stock'] = []
+    for (const category of store.categories) {
+      const rotation = category.target_selections !== null
+      for (const entry of category.entries) {
+        // Scroll-only lines belong to the recipe's own sources, not here.
+        if (entry.item === null && entry.cosmetic === null && entry.animal_cosmetic === null) {
+          continue
+        }
+        const { id: itemId, label } = resolveItemId(entry)
+        if (itemId === null) {
+          unresolved += 1
+          ctx.resolver.recordUnresolved(label, 'shop_stock_item', `shop:${record.id}`)
+          continue
+        }
+        if (stocked.has(itemId)) continue
+
+        let season: Season | null = null
+        const requires: Requirement[] = []
+        let expressible = true
+        for (const requirement of [
+          ...entry.requirements,
+          ...entry.unread_requirement_keys.map((key) => ({ key, value: undefined })),
+        ]) {
+          if (requirement.key === 'is_season' && typeof requirement.value === 'string') {
+            season = SEASONS.find((s) => s === requirement.value) ?? null
+            continue
+          }
+          if (requirement.key === 'has_perk' && typeof requirement.value === 'string') {
+            requires.push({ type: 'perk', key: requirement.value, op: 'has', value: null })
+            continue
+          }
+          if (requirement.key === 'unlocked_animal' && typeof requirement.value === 'string') {
+            requires.push({ type: 'animal', key: requirement.value, op: 'has', value: null })
+            continue
+          }
+          // `completed_quest` values are the game's own quest keys, which do
+          // not all match our records (`repair_haydens_barn` vs
+          // `upgrade_haydens_barn`) — and a gate naming a quest we cannot link
+          // is worse than holding the line back until the join exists.
+          expressible = false
+        }
+        if (!expressible) {
+          heldBack += 1
+          continue
+        }
+
+        const poolSeason = SEASONS.find((s) => s === entry.pool) ?? null
+        stocked.add(itemId)
+        lines.push({
+          item_id: itemId,
+          price:
+            entry.cosmetic !== null
+              ? (game.cosmeticById.get(entry.cosmetic)?.price_override ?? null)
+              : (game.itemById.get(entry.item ?? '')?.buy_value ?? null),
+          currency: 'tesserae' as const,
+          requires,
+          seasons: season !== null ? [season] : poolSeason !== null ? [poolSeason] : null,
+          rotation: rotation || entry.pool === 'random',
+          teaches_recipe_id: null,
+        })
+      }
+    }
+    if (lines.length === 0) return record
+    appended += lines.length
+    return { ...record, stock: [...record.stock, ...lines] }
+  })
+
+  if (appended > 0) {
+    consola.info(`shops: ${appended} stock line(s) joined from the game's store file`)
+  }
+  if (heldBack > 0) {
+    consola.info(`shops: ${heldBack} game stock line(s) held back — gates not expressible yet`)
+  }
+  if (unresolved > 0) {
+    consola.warn(`shops: ${unresolved} game stock line(s) name no record — queued.`)
+  }
+  return result
 }
 
 /**

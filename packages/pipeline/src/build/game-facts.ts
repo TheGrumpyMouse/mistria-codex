@@ -31,9 +31,12 @@ import {
 } from '@mistria/schema'
 import type { GameArtifactsExtract, GameMineBiome, GameSealOffering } from '../extract/artifacts.js'
 import type { GameCosmetic, GameCosmeticsExtract } from '../extract/cosmetics.js'
+import type { GameFestival, GameFestivalsExtract } from '../extract/festivals.js'
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
+import type { GameMonstersExtract, GameMonsterVariant } from '../extract/monsters.js'
 import type { GameQuestsExtract, GameRequestGate, GameStoryQuest } from '../extract/quests.js'
+import type { GameScheduleFile, GameSchedulesExtract } from '../extract/schedules.js'
 import type {
   GameBug,
   GameCrop,
@@ -187,6 +190,37 @@ export interface GameFacts {
   mineBiomes: GameMineBiome[]
   /** Object prototype id -> `[width, height]` in tiles, where the game states one. */
   objectSizes: Record<string, [number, number]>
+  /**
+   * Our monster id -> its game variant table, resolved through
+   * `curated/aliases/game_monsters.json`. Empty when the extract predates the
+   * monster read — the bestiary keeps the wiki's answers in that build.
+   */
+  monsterFactsById: Map<string, GameMonsterVariant>
+  /** Game variant keys the alias file maps nothing to. Reported, never guessed at. */
+  unmappedMonsterVariants: string[]
+  /**
+   * The game's festival rows, keyed by *display name* — the game states its
+   * own names and they are the join to the wiki-derived records. Empty when
+   * the extract predates the festival read.
+   */
+  gameFestivalByName: Map<string, GameFestival>
+  /** The Animal Festival's placement prizes, verbatim from misc.toml. */
+  animalRewardTemplates: {
+    small: { placeables: string[]; cosmetics: string[] }
+    large: { placeables: string[]; cosmetics: string[] }
+  }
+  /** Game room id -> our location id (or an explicit null), from the room alias. */
+  locationByRoom: Map<string, string | null>
+  /**
+   * `${animal}|${cosmetic key}` -> the game's own display name for the
+   * accessory ("chicken|ear_muffs" -> "Chicken Ear Muffs"). The join that
+   * turns Hayden's `animal_cosmetic` stock lines into item records.
+   */
+  animalCosmeticNameByPair: Map<string, string>
+  /** NPC routine files from `t2/Schedules`. Empty when the extract predates the read. */
+  gameScheduleFiles: GameScheduleFile[]
+  /** Room id -> its `locations.toml` row, for a schedule stop's name and outdoor map. */
+  roomById: Map<string, GameLocation>
 }
 
 /** The artifact and seal extract, indexed. See `buildArtifactFacts`. */
@@ -521,6 +555,37 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
   const unlocks = await readJsonFile<GameUnlocksExtract>(join(game, 'unlocks.json')).catch(
     () => null,
   )
+  const monstersExtract = await readJsonFile<GameMonstersExtract>(
+    join(game, 'monsters.json'),
+  ).catch(() => null)
+  const festivalsExtract = await readJsonFile<GameFestivalsExtract>(
+    join(game, 'festivals.json'),
+  ).catch(() => null)
+  const schedulesExtract = await readJsonFile<GameSchedulesExtract>(
+    join(game, 'schedules.json'),
+  ).catch(() => null)
+
+  // Our monster ids -> game variant tables, through the curated alias — the
+  // same shape as the room join. A variant nobody maps is reported, because
+  // "the game added a monster" must not be silence.
+  const monsterFactsById = new Map<string, GameMonsterVariant>()
+  const unmappedMonsterVariants: string[] = []
+  if (monstersExtract !== null) {
+    const { monsters: monsterAliases } = await readJsonFile<{
+      monsters: Record<string, string>
+    }>(join(CURATED_DIR, 'aliases', 'game_monsters.json'))
+    const ourIdByVariant = new Map(
+      Object.entries(monsterAliases).map(([ourId, variantKey]) => [variantKey, ourId] as const),
+    )
+    for (const variant of monstersExtract.variants) {
+      const ourId = ourIdByVariant.get(variant.key)
+      if (ourId === undefined) {
+        unmappedMonsterVariants.push(variant.key)
+        continue
+      }
+      monsterFactsById.set(ourId, variant)
+    }
+  }
   const cosmetics = cosmeticsExtract?.cosmetics ?? []
   const factories = machinesExtract?.factories ?? []
   const factoryByProduct = new Map<string, GameFactory>()
@@ -582,6 +647,25 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     unlocks,
     mineBiomes: artifactExtract?.mineBiomes ?? [],
     objectSizes: machinesExtract?.objectSizes ?? {},
+    monsterFactsById,
+    unmappedMonsterVariants: unmappedMonsterVariants.sort(),
+    gameFestivalByName: new Map(
+      (festivalsExtract?.festivals ?? []).flatMap((f) => (f.name === null ? [] : [[f.name, f]])),
+    ),
+    animalRewardTemplates: festivalsExtract?.animalRewards ?? {
+      small: { placeables: [], cosmetics: [] },
+      large: { placeables: [], cosmetics: [] },
+    },
+    locationByRoom: new Map(
+      Object.entries(rooms).map(([room, alias]) => [room, alias.location] as const),
+    ),
+    animalCosmeticNameByPair: new Map(
+      (world.animalCosmetics ?? []).flatMap((c) =>
+        c.name === null ? [] : [[`${c.animal}|${c.key}`, c.name] as const],
+      ),
+    ),
+    gameScheduleFiles: schedulesExtract?.files ?? [],
+    roomById: new Map(world.locations.map((room) => [room.id, room] as const)),
     artifactFacts:
       artifactExtract === null
         ? null

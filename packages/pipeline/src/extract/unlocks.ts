@@ -40,7 +40,7 @@
  */
 import { join } from 'node:path'
 import { type GameQuestRequirement, readRequirements } from './quests.js'
-import { entries, num, readToml, resolveIn, str, table, tomlFiles } from './toml.js'
+import { entries, num, readToml, resolveIn, str, strList, table, tomlFiles } from './toml.js'
 
 /** Teaches a recipe. Two spellings, one meaning. */
 const RECIPE_KEYS = ['recipe_scroll', 'crafting_scroll'] as const
@@ -54,6 +54,10 @@ const ITEM_KEYS = ['item', 'item_id', 'item_name'] as const
  */
 const NON_GRANT_KEYS = new Set([
   'count',
+  // `given_items` spells the count `quantity` and may carry an `infusion` —
+  // a modifier on the granted item, not a different grant.
+  'quantity',
+  'infusion',
   // Currencies and standing, handled by the quest builder.
   'renown',
   'gold',
@@ -76,12 +80,26 @@ const NON_GRANT_KEYS = new Set([
   'preview_sprite',
 ])
 
-/** What a grant hands over. At least one of the two is set. */
+/** What a grant hands over. At least one of recipe / item / accessory is set. */
 export interface GameGrant {
   /** The recipe taught, from `recipe_scroll` or `crafting_scroll`. */
   recipe: string | null
   /** The item given, from `item`, `item_id` or `item_name`. */
   item: string | null
+  /**
+   * A ranch-animal accessory, as the `(animal, animal_cosmetic)` pair the
+   * Chicken Statue's rolls state. Not an item id — the pair resolves to one
+   * through the accessory's display name, in the build. Reading only `item`
+   * here was why every unsold accessory had no source at all.
+   */
+  animal: string | null
+  animal_cosmetic: string | null
+  /**
+   * A wardrobe piece, by its `player_assets` key — which is the id its record
+   * ships under, so no resolution step exists to get wrong. Elsie's festival
+   * stalls and the statue's rolls grant these.
+   */
+  cosmetic: string | null
   /** How many, where the line states it. */
   count: number | null
 }
@@ -98,6 +116,31 @@ export interface GameLetterGrant extends GameGrant {
    */
   requirements: GameQuestRequirement[]
   unread_requirement_keys: string[]
+}
+
+/**
+ * A letter that *starts a quest*, and the quest that must be finished first.
+ *
+ * `letters.toml` is where the story chain is actually stated: the Repair the
+ * Beach Bridge letter arrives three days after Repair the General Store is
+ * done. That is a prerequisite for the started quest and, read the other way,
+ * the follow-up the finished quest unlocks — both directions from one row.
+ */
+export interface GameLetterQuest {
+  letter: string
+  npc: string | null
+  /** The quest this letter starts. */
+  quest_to_start: string
+  /** The quest that must be complete before the letter can arrive, if stated. */
+  requires_completed_quest: string | null
+  /** Days after that completion before it arrives, where the table form states one. */
+  days_after: number | null
+  /**
+   * `reached_heart_level = { ryis = 4 }` — the heart threshold that makes the
+   * letter arrive, and with it the quest it starts. The only stated source for
+   * which heart scene fires at which level.
+   */
+  reached_heart_level: { npc: string; level: number } | null
 }
 
 export interface GameQuestGrant extends GameGrant {
@@ -130,14 +173,33 @@ export interface GameRollGrant extends GameGrant {
   pool: string
 }
 
+export interface GameCutsceneGrant extends GameGrant {
+  /** The cutscene's key — the only identity a scene has that is not prose. */
+  cutscene: string
+}
+
 export interface GameUnlocksExtract {
   gameVersion: string
+  /**
+   * What a new game hands you before you take a step: `starting_inventory`
+   * plus the five `starting_armor` pieces from `misc.toml [ari_stats]`. The
+   * test-mode list is dev tooling and is deliberately not read.
+   */
+  startingItems: string[]
   letters: GameLetterGrant[]
+  letterQuests: GameLetterQuest[]
   quests: GameQuestGrant[]
   festivals: GameFestivalGrant[]
   museumRewards: GameMuseumRewardGrant[]
   wishingWell: GameRollGrant[]
   chickenStatue: GameRollGrant[]
+  /**
+   * Items handed over mid-scene — `given_items` in `cutscenes.toml`, "directly
+   * stuffed into Ari's inventory" by the file's own comment. The only stated
+   * source for the story's one-off grants: the worn axe, the star brooch, the
+   * dragonsworn cloaks.
+   */
+  cutscenes: GameCutsceneGrant[]
   /**
    * Keys seen inside a grant table that this reader does not understand.
    *
@@ -164,6 +226,9 @@ function readGrant(raw: unknown, unread: Unread): GameGrant | null {
   for (const key of RECIPE_KEYS) recipe ??= str(entry[key])
   let item: string | null = null
   for (const key of ITEM_KEYS) item ??= str(entry[key])
+  const animal = str(entry.animal)
+  const animalCosmetic = str(entry.animal_cosmetic)
+  const cosmetic = str(entry.cosmetic)
 
   for (const key of Object.keys(entry)) {
     const known =
@@ -173,8 +238,15 @@ function readGrant(raw: unknown, unread: Unread): GameGrant | null {
     if (!known) unread.add(key)
   }
 
-  if (recipe === null && item === null) return null
-  return { recipe, item, count: num(entry.count) }
+  if (recipe === null && item === null && animalCosmetic === null && cosmetic === null) return null
+  return {
+    recipe,
+    item,
+    animal,
+    animal_cosmetic: animalCosmetic,
+    cosmetic,
+    count: num(entry.count) ?? num(entry.quantity),
+  }
 }
 
 /** Every grant table in an array, in file order. */
@@ -183,16 +255,48 @@ const readGrants = (value: unknown, unread: Unread): GameGrant[] =>
     ? value.map((raw) => readGrant(raw, unread)).filter((g): g is GameGrant => g !== null)
     : []
 
-async function extractLetters(root: string, unread: Unread): Promise<GameLetterGrant[]> {
+async function extractLetters(
+  root: string,
+  unread: Unread,
+): Promise<{ grants: GameLetterGrant[]; quests: GameLetterQuest[] }> {
   const doc = await readToml(resolveIn(root, 'fiddle', 'letters.toml'))
-  const out: GameLetterGrant[] = []
+  const grants: GameLetterGrant[] = []
+  const quests: GameLetterQuest[] = []
 
   for (const [letter, section] of entries(doc)) {
-    const grants = readGrants(section.items, unread)
-    if (grants.length === 0) continue
+    // The quest chain, stated on any letter with a `quest_to_start` — grants
+    // or no grants. `completed_quest` comes in two spellings: a bare string,
+    // and a `{ quest, days_after }` table the scalar reader cannot see.
+    const questToStart = str(section.quest_to_start)
+    if (questToStart !== null) {
+      const reqs = table(section.requirements) ?? {}
+      const completedRaw = reqs.completed_quest
+      const completedTable = table(completedRaw)
+      // `reached_heart_level = { ryis = 4 }` — one NPC, one threshold. A table
+      // with several entries would be a shape nobody has seen; the first entry
+      // is read and a second would simply not be, which the committed diff
+      // would show as a heart event that never appears.
+      const heartTable = table(reqs.reached_heart_level)
+      const heartEntry = heartTable === null ? undefined : Object.entries(heartTable)[0]
+      const heartLevel = heartEntry === undefined ? null : num(heartEntry[1])
+      quests.push({
+        letter,
+        npc: str(section.npc),
+        quest_to_start: questToStart,
+        requires_completed_quest: str(completedRaw) ?? str(completedTable?.quest),
+        days_after: num(completedTable?.days_after),
+        reached_heart_level:
+          heartEntry === undefined || heartLevel === null
+            ? null
+            : { npc: heartEntry[0], level: heartLevel },
+      })
+    }
+
+    const lineGrants = readGrants(section.items, unread)
+    if (lineGrants.length === 0) continue
     const { requirements, unread: unreadReqs } = readRequirements(section.requirements)
-    for (const grant of grants) {
-      out.push({
+    for (const grant of lineGrants) {
+      grants.push({
         ...grant,
         letter,
         npc: str(section.npc),
@@ -202,8 +306,9 @@ async function extractLetters(root: string, unread: Unread): Promise<GameLetterG
     }
   }
 
-  if (out.length === 0) throw new Error('letters.toml parsed to zero grants.')
-  return out
+  if (grants.length === 0) throw new Error('letters.toml parsed to zero grants.')
+  if (quests.length === 0) throw new Error('letters.toml parsed to zero quest starts.')
+  return { grants, quests }
 }
 
 /**
@@ -336,6 +441,31 @@ export async function extractUnlocks(
 
   // Sequential rather than concurrent: they share the unknown-key set, and a
   // handful of small TOML files is not where this command spends its time.
+  const misc = await readToml(resolveIn(root, 'fiddle', 'misc.toml'))
+  const ariStats = table(misc.ari_stats) ?? {}
+  const startingItems = [
+    ...(strList(ariStats.starting_inventory) ?? []),
+    ...Object.values(table(ariStats.starting_armor) ?? {}).flatMap((v) => {
+      const id = str(v)
+      return id === null ? [] : [id]
+    }),
+  ].sort()
+  if (startingItems.length === 0) {
+    throw new Error('misc.toml [ari_stats] parsed to zero starting items.')
+  }
+
+  // Cutscene grants: `given_items` per scene. `item_id` rides the ordinary
+  // grant reader (it is one of the three item spellings); `drop_items` are
+  // scene props, not grants, and are not read.
+  const cutsceneDoc = await readToml(resolveIn(root, 'fiddle', 'cutscenes.toml'))
+  const cutscenes: GameCutsceneGrant[] = []
+  for (const [cutscene, section] of entries(cutsceneDoc)) {
+    for (const grant of readGrants(section.given_items, unread)) {
+      cutscenes.push({ ...grant, cutscene })
+    }
+  }
+  if (cutscenes.length === 0) throw new Error('cutscenes.toml parsed to zero given_items grants.')
+
   const letters = await extractLetters(root, unread)
   const quests = await extractQuestGrants(root, unread)
   const festivals = await extractFestivalGrants(root, unread)
@@ -354,12 +484,15 @@ export async function extractUnlocks(
 
   return {
     gameVersion,
-    letters: sorted(letters, (r) => r.letter),
+    startingItems,
+    letters: sorted(letters.grants, (r) => r.letter),
+    letterQuests: letters.quests.sort((a, b) => a.letter.localeCompare(b.letter)),
     quests: sorted(quests, (r) => `${r.source_file}.${r.quest}`),
     festivals: sorted(festivals, (r) => `${r.festival}.${r.stall}`),
     museumRewards: sorted(museumRewards, (r) => `${r.wing}.${String(r.tier).padStart(3, '0')}`),
     wishingWell: sorted(wishingWell, (r) => r.pool),
     chickenStatue: sorted(chickenStatue, (r) => r.pool),
+    cutscenes: sorted(cutscenes, (r) => r.cutscene),
     unreadGrantKeys: [...unread].sort(),
   }
 }

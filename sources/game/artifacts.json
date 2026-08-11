@@ -104,6 +104,14 @@
   },
   "mineBiomes": [
     {
+      "armor": [
+        "scrap_metal_helmet",
+        "scrap_metal_chestpiece",
+        "scrap_metal_pants",
+        "scrap_metal_boots",
+        "scrap_metal_ring",
+        "sword_scrap_metal"
+      ],
       "artifact_set": "upper_mines_artifacts",
       "floor": 1,
       "furniture": [
@@ -134,6 +142,14 @@
       ]
     },
     {
+      "armor": [
+        "verdigris_helmet",
+        "verdigris_chestpiece",
+        "verdigris_tassets",
+        "verdigris_boots",
+        "verdigris_ring",
+        "sword_verdigris"
+      ],
       "artifact_set": "tide_caverns",
       "floor": 20,
       "furniture": [
@@ -164,6 +180,14 @@
       ]
     },
     {
+      "armor": [
+        "crystal_helmet",
+        "crystal_chestpiece",
+        "crystal_tassets",
+        "crystal_boots",
+        "crystal_ring",
+        "sword_crystal"
+      ],
       "artifact_set": "deep_earth",
       "floor": 40,
       "furniture": [
@@ -198,6 +222,14 @@
       ]
     },
     {
+      "armor": [
+        "tarnished_gold_helmet",
+        "tarnished_gold_armor",
+        "tarnished_gold_legplates",
+        "tarnished_gold_boots",
+        "tarnished_gold_ring",
+        "sword_tarnished_gold"
+      ],
       "artifact_set": "lava_caves",
       "floor": 60,
       "furniture": [
@@ -232,6 +264,14 @@
       ]
     },
     {
+      "armor": [
+        "corrupted_mistril_helmet",
+        "corrupted_mistril_chestpiece",
+        "corrupted_mistril_pants",
+        "corrupted_mistril_boots",
+        "corrupted_mistril_ring",
+        "sword_corrupted_mistril"
+      ],
       "artifact_set": "dragon",
       "floor": 80,
       "furniture": [

@@ -2379,6 +2379,60 @@
         "rotation": false,
         "seasons": null,
         "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pink_pet_bed",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "blue_pet_bed",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cream_pet_bed",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "pink_pet_dish",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "blue_pet_dish",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cream_pet_dish",
+        "price": 500,
+        "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
       }
     ],
     "unlock_requires": [],
@@ -3417,6 +3471,15 @@
         "rotation": false,
         "seasons": null,
         "teaches_recipe_id": "veggie_sub_sandwich"
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "cauliflower_curry",
+        "price": 650,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
       }
     ],
     "unlock_requires": [],
@@ -5682,6 +5745,483 @@
         "currency": "tesserae",
         "item_id": "sapling_pomegranate",
         "price": 400,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_accessory_plant_v1",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_accessory_plant_v2",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_accessory_plant_v3",
+        "price": 300,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_large_v1",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_large_v2",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_large_v3",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_medium_v1",
+        "price": 900,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_medium_v2",
+        "price": 900,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_medium_v3",
+        "price": 900,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_small_v1",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_small_v2",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_small_v3",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_small_v4",
+        "price": 600,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "potted_landscape_v1",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "potted_landscape_v2",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "potted_landscape_v3",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "potted_landscape_v4",
+        "price": 1200,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jadeite_cabbage",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "jadeite_daikon",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "strange_garden_stone_v1",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "strange_garden_stone_v2",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_high_stand_light_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_stand_light_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_cabinet_light_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_table_light_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_high_stand_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_stand_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_cabinet_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_table_brown",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_high_stand_white",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_stand_white",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_cabinet_white",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_table_white",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_high_stand_black",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_stand_black",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_cabinet_black",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "bonsai_low_table_black",
+        "price": 500,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_plaid_flannel",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_face_mask",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_reading_glasses",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_reading_glasses_small",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "face_gear_stud_earrings",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_headband_basic",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_mini_horns",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "overalls_shorts",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_boots_pirate",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_boots_work",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "shoes_sandals_worn",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "skirt_maid",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "skirt_pleated_medium",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "top_tee_ringer_basic",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "head_barrel_roller_hat",
+        "price": null,
+        "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "wildberry_pie",
+        "price": 330,
         "requires": [],
         "rotation": true,
         "seasons": null,

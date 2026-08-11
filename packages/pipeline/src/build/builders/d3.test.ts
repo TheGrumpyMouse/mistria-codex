@@ -222,10 +222,23 @@ describe('festivals', () => {
     expect(dead.map((f) => f.name)).toContain('Halloween Festival')
   })
 
-  it('never copies the wiki description of what happens', () => {
+  it('states activities only as controlled tokens, never as anyone’s prose', () => {
+    // The tokens are read off stated game tables (`challenges`, `npc_date`,
+    // `stocks`); the UI owns the words. A sentence appearing here would be
+    // copied writing — the thing this test originally pinned as `[]` before
+    // the game files gave us a structural source.
+    const vocabulary = new Set(['contest', 'invite', 'stalls'])
     for (const festival of festivals) {
-      expect(festival.activities).toEqual([])
-      expect(festival.data_gaps).toContain('activities')
+      for (const token of festival.activities) {
+        expect(vocabulary).toContain(token)
+      }
+      if (festival.activities.length === 0) {
+        expect(festival.data_gaps).toContain('activities')
+      }
+    }
+    // The four implemented ones all state at least one mechanic.
+    for (const festival of festivals.filter((f) => f.implemented)) {
+      expect(festival.activities.length).toBeGreaterThan(0)
     }
   })
 
@@ -427,12 +440,16 @@ describe('shops', () => {
     expect(shopsWithSeasonal.map((s) => s.id).sort()).toEqual(['general_store', 'louis_stall'])
   })
 
-  it("marks Balor's and the market stalls' stock as rotating and nobody else's", () => {
+  it('marks stock as rotating only where a rotation is stated', () => {
     // Balor's whole wagon rotates; a stall line rotates when its category
-    // declares a draw size (`target_selections`).
+    // declares a draw size (`target_selections`); and the game-store union
+    // carries the Inn's one random-pool line. Anything beyond this set would
+    // be a line claiming a rotation nothing states.
     const rotating = shops.filter((s) => s.stock.some((l) => l.rotation))
     for (const shop of rotating) {
-      expect(shop.id === 'balors_wagon' || shop.id.endsWith('_stall')).toBe(true)
+      expect(shop.id === 'balors_wagon' || shop.id === 'inn' || shop.id.endsWith('_stall')).toBe(
+        true,
+      )
     }
     expect(rotating.map((s) => s.id)).toContain('balors_wagon')
   })

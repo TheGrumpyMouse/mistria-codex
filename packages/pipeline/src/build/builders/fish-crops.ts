@@ -211,6 +211,18 @@ export function itemInputs(
     if (row.fishing === 1) methods.push('fishing')
     if (row.diving === 1) methods.push('diving')
 
+    // The wiki left the five bait fish unmarked both ways, but the game's own
+    // rule states the method: `retrieval` names it, and `bait_only` narrows
+    // plain fishing to the baited kind — a stated restriction, not a guess.
+    // Losing it would claim they bite an empty hook.
+    if (methods.length === 0) {
+      const rules = ctx.game?.fishByItem.get(ctx.idFor(name)) ?? []
+      const tokens = new Set(rules.flatMap((rule) => rule.retrieval ?? []))
+      const baited = rules.some((rule) => rule.bait_only === true)
+      if (tokens.has('fishing')) methods.push(baited ? 'fish_bait' : 'fishing')
+      if (tokens.has('divespot')) methods.push('diving')
+    }
+
     const game = gameFishWindow(ctx, name)
 
     inputs.set(name, {

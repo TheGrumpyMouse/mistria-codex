@@ -1,0 +1,1582 @@
+{
+  "files": [
+    "bat.toml",
+    "cat.toml",
+    "clod.toml",
+    "enchantern.toml",
+    "mimic.toml",
+    "mite.toml",
+    "rock_stack.toml",
+    "sap.toml",
+    "shroom.toml",
+    "spirit.toml",
+    "statue.toml",
+    "tome.toml"
+  ],
+  "gameVersion": "1.0.0",
+  "variants": [
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 18,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "essence_drop",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_wing",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_essence_bat_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_essence_bat",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "bat.toml",
+      "hp": 32,
+      "key": "bat",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 32,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "essence_drop",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_wing",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_essence_bat_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_essence_bat",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "bat.toml",
+      "hp": 48,
+      "key": "bat_blue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        10
+      ],
+      "damage": 35,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            3,
+            5
+          ],
+          "id": "glass",
+          "kind": "item"
+        },
+        {
+          "chance": 70,
+          "count_range": [
+            3,
+            5
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "obsidian",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_whisker",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_lava_cat_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "pet_skin_lava_cat",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "cat.toml",
+      "hp": 120,
+      "key": "cat",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        8,
+        12
+      ],
+      "damage": 45,
+      "drops": [
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_whisker",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_void_cat_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "pet_skin_void_cat",
+          "kind": "item"
+        }
+      ],
+      "essence": 20,
+      "file": "cat.toml",
+      "hp": 220,
+      "key": "cat_void",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 12,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "ore_copper",
+          "kind": "item"
+        },
+        {
+          "chance": 25,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_ruby",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_oreclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_oreclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "clod.toml",
+      "hp": 16,
+      "key": "copperclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 12,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "glass",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_core",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_enchantern_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_enchantern",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "enchantern.toml",
+      "hp": 24,
+      "key": "enchantern",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 20,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "glass",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_core",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_enchantern_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_enchantern",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "enchantern.toml",
+      "hp": 48,
+      "key": "enchantern_blue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        12
+      ],
+      "damage": 28,
+      "drops": [
+        {
+          "chance": null,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "ore_gold",
+          "kind": "item"
+        },
+        {
+          "chance": 25,
+          "count_range": [
+            1,
+            4
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "ore_diamond",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_oreclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_oreclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 20,
+      "file": "clod.toml",
+      "hp": 48,
+      "key": "goldclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        1
+      ],
+      "damage": 60,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_block",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "head_griffin_statue_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "pet_skin_rock_stack",
+          "kind": "item"
+        }
+      ],
+      "essence": 0,
+      "file": "statue.toml",
+      "hp": 200,
+      "key": "griffin_statue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 17,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "ore_iron",
+          "kind": "item"
+        },
+        {
+          "chance": 25,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_sapphire",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_oreclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_oreclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "clod.toml",
+      "hp": 32,
+      "key": "ironclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 20,
+      "drops": [],
+      "essence": 0,
+      "file": "mimic.toml",
+      "hp": 1000,
+      "key": "mimic",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 20,
+      "drops": [
+        {
+          "chance": null,
+          "count_range": null,
+          "id": "ore_mistril",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "ore_pink_diamond",
+          "kind": "item"
+        },
+        {
+          "chance": 1,
+          "count_range": null,
+          "id": "perfect_pink_diamond",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "clod.toml",
+      "hp": 1000,
+      "key": "mistrilclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 15,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": null,
+          "id": "red_toadstool",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_powder",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_mushroom_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_mushroom",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "shroom.toml",
+      "hp": 24,
+      "key": "mushroom",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        4,
+        8
+      ],
+      "damage": 35,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "glowing_mushroom",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_powder",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_mushroom_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_mushroom",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "shroom.toml",
+      "hp": 72,
+      "key": "mushroom_blue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 25,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "wild_mushroom",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_powder",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_mushroom_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_mushroom",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "shroom.toml",
+      "hp": 48,
+      "key": "mushroom_green",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 50,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "purple_mushroom",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_powder",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_mushroom_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_mushroom",
+          "kind": "item"
+        }
+      ],
+      "essence": 20,
+      "file": "shroom.toml",
+      "hp": 96,
+      "key": "mushroom_purple",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        10
+      ],
+      "damage": 50,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_block",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_rock_stack_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "pet_skin_rock_stack",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "rock_stack.toml",
+      "hp": 150,
+      "key": "rock_stack",
+      "super_drops": [
+        {
+          "chance": 100,
+          "count_range": [
+            3,
+            5
+          ],
+          "id": "ore_diamond",
+          "kind": "item"
+        }
+      ]
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 10,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_rockclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_rockclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "clod.toml",
+      "hp": 8,
+      "key": "rockclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 12,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            2,
+            4
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_rockclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_rockclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "clod.toml",
+      "hp": 16,
+      "key": "rockclod_blue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        4,
+        8
+      ],
+      "damage": 24,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            4,
+            6
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_rockclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_rockclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "clod.toml",
+      "hp": 32,
+      "key": "rockclod_green",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        3
+      ],
+      "damage": 50,
+      "drops": [
+        {
+          "chance": null,
+          "count_range": null,
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "ore_pink_diamond",
+          "kind": "item"
+        },
+        {
+          "chance": 1,
+          "count_range": null,
+          "id": "perfect_pink_diamond",
+          "kind": "item"
+        }
+      ],
+      "essence": 25,
+      "file": "clod.toml",
+      "hp": 1000,
+      "key": "rockclod_purple",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        12
+      ],
+      "damage": 36,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            6,
+            12
+          ],
+          "id": "ore_stone",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            4
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_rockclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_rockclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 20,
+      "file": "clod.toml",
+      "hp": 48,
+      "key": "rockclod_red",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 10,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": null,
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "sap.toml",
+      "hp": 24,
+      "key": "sapling",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 24,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "sap.toml",
+      "hp": 36,
+      "key": "sapling_blue",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 17,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": null,
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "face_gear_sunglasses",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "sap.toml",
+      "hp": 36,
+      "key": "sapling_cool",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        1
+      ],
+      "damage": 44,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 20,
+      "file": "sap.toml",
+      "hp": 72,
+      "key": "sapling_orange",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        1
+      ],
+      "damage": 10,
+      "drops": [
+        {
+          "chance": 35,
+          "count_range": null,
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 15,
+          "count_range": null,
+          "id": "monster_fang",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "sap.toml",
+      "hp": 24,
+      "key": "sapling_orange_mini",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        1
+      ],
+      "damage": 50,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_skull_mask",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 25,
+      "file": "sap.toml",
+      "hp": 150,
+      "key": "sapling_pink",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        4,
+        8
+      ],
+      "damage": 24,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_sapling_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_sapling",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "sap.toml",
+      "hp": 48,
+      "key": "sapling_purple",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        4,
+        8
+      ],
+      "damage": 22,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "ore_silver",
+          "kind": "item"
+        },
+        {
+          "chance": 25,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_shell",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_emerald",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_oreclod_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_oreclod",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "clod.toml",
+      "hp": 48,
+      "key": "silverclod",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        10
+      ],
+      "damage": 28,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            3,
+            5
+          ],
+          "id": "basic_wood",
+          "kind": "item"
+        },
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "peat",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_core",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_flame_spirit_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_flame_spirit",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "spirit.toml",
+      "hp": 80,
+      "key": "spirit",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        6,
+        10
+      ],
+      "damage": 38,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            3,
+            5
+          ],
+          "id": "basic_wood",
+          "kind": "item"
+        },
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "peat",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_core",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_flame_spirit_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_flame_spirit",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "spirit.toml",
+      "hp": 150,
+      "key": "spirit_purple",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        2,
+        6
+      ],
+      "damage": 25,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_copper",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "monster_horn",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_stalagmite_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_stalagmite",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "mite.toml",
+      "hp": 24,
+      "key": "stalagmite",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        5,
+        10
+      ],
+      "damage": 30,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_iron",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            2
+          ],
+          "id": "monster_horn",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_stalagmite_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_stalagmite",
+          "kind": "item"
+        }
+      ],
+      "essence": 10,
+      "file": "mite.toml",
+      "hp": 36,
+      "key": "stalagmite_green",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        5,
+        10
+      ],
+      "damage": 35,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": [
+            1,
+            1
+          ],
+          "id": "ore_gold",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": [
+            1,
+            3
+          ],
+          "id": "monster_horn",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_stalagmite_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "pet_skin_stalagmite",
+          "kind": "item"
+        }
+      ],
+      "essence": 15,
+      "file": "mite.toml",
+      "hp": 65,
+      "key": "stalagmite_purple",
+      "super_drops": []
+    },
+    {
+      "coin_count": [
+        1,
+        5
+      ],
+      "damage": 50,
+      "drops": [
+        {
+          "chance": 70,
+          "count_range": null,
+          "id": "sap",
+          "kind": "item"
+        },
+        {
+          "chance": 30,
+          "count_range": null,
+          "id": "monster_fang",
+          "kind": "item"
+        },
+        {
+          "chance": 5,
+          "count_range": null,
+          "id": "head_flying_tome_hat",
+          "kind": "cosmetic"
+        },
+        {
+          "chance": 10,
+          "count_range": null,
+          "id": "pet_skin_flying_tome",
+          "kind": "item"
+        }
+      ],
+      "essence": 5,
+      "file": "tome.toml",
+      "hp": 150,
+      "key": "tome",
+      "super_drops": []
+    }
+  ]
+}

@@ -51,6 +51,8 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   unlocks_location_ids: 'locations',
   unlocks_mine_ids: 'mines',
   teaches_recipe_ids: 'recipes',
+  unlocks_stock_shop_ids: 'shops',
+  unlocks_quest_ids: 'quests',
 
   biome_id: 'mines',
   biome_ids: 'mines',

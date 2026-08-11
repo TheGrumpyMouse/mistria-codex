@@ -47,6 +47,12 @@ export interface GameMineBiome {
   taste_maker: string[]
   /** Furniture that drops from this biome's treasure chests. */
   furniture: string[]
+  /**
+   * Armor and weapons that drop from this biome's treasure chests — the
+   * crystal set at Deep Earth, the corrupted mistril set in the Ancient
+   * Ruins. The only stated source for twelve pieces of equipment.
+   */
+  armor: string[]
 }
 
 export interface GamePerk {
@@ -155,6 +161,7 @@ export async function extractMineBiomes(root: string): Promise<GameMineBiome[]> 
         artifact_set: str(biome.artifact_set),
         taste_maker: strList(biome.taste_maker) ?? [],
         furniture: strList(biome.furniture) ?? [],
+        armor: strList(biome.armor) ?? [],
       },
     ]
   })

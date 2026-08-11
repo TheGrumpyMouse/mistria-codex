@@ -69,7 +69,8 @@ export interface CharacterRecord extends Common {
 export interface MonsterRecord extends Common {
   biome_ids: string[]
   hp: number | null
-  combat_xp: number | null
+  damage: number | null
+  essence: number | null
   drops: { item_id: string; chance: number | null }[]
 }
 
@@ -181,6 +182,8 @@ const METHOD_LABEL: Record<SpawnMethod, string> = {
   chest: 'Treasure chest',
   wishing_well: 'The Wishing Well',
   chicken_statue: 'The Chicken Statue',
+  museum: 'The museum’s replicator',
+  cutscene: 'Given during the story',
 }
 
 const HABITAT_LABEL: Record<Habitat, string> = {
@@ -674,8 +677,8 @@ function monsterPage(monster: MonsterRecord, ctx: UrlContext, lookup: Lookup): G
     rows.push({ label: 'Health', value: String(monster.hp) })
     properties.push({ name: 'Health', value: String(monster.hp) })
   }
-  if (monster.combat_xp !== null)
-    rows.push({ label: 'Combat XP', value: String(monster.combat_xp) })
+  if (monster.damage !== null) rows.push({ label: 'Damage', value: String(monster.damage) })
+  if (monster.essence !== null) rows.push({ label: 'Essence', value: String(monster.essence) })
   if (monster.biome_ids.length > 0) {
     rows.push({ label: 'Found in', value: list(monster.biome_ids.map(lookup.placeName)) })
   }

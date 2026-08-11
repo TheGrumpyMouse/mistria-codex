@@ -1,7 +1,17 @@
-import type { DayOfWeek, Schedule, ScheduleBlock, Season, TimeOfDay } from '@mistria/schema'
+import type {
+  DayOfWeek,
+  Schedule,
+  ScheduleBlock,
+  Season,
+  TimeOfDay,
+  Weather,
+} from '@mistria/schema'
 import { toSnakeId } from '@mistria/schema'
+import { consola } from 'consola'
 import type { ExtractedStop, ExtractedTable } from '../../enrich/schedules.js'
 import type { BuildContext } from '../context.js'
+import { buildLocations } from './fish-crops.js'
+import { foldPlaceName } from './grants.js'
 
 /**
  * Turn the wiki's schedule tables into priority-ordered overrides.
@@ -123,7 +133,7 @@ export function blocksFromStops(
 
 const DAY_IDS: DayOfWeek[] = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 
-export function buildSchedules(ctx: BuildContext): Schedule[] {
+export function buildSchedules(ctx: BuildContext, shippedQuestIds?: Set<string>): Schedule[] {
   const vocab = ctx.scheduleVocab
   const seasonOf = new Map(
     Object.entries(vocab.seasonHeadings).map(([season, heading]) => [
@@ -137,18 +147,17 @@ export function buildSchedules(ctx: BuildContext): Schedule[] {
   const gateRe = new RegExp(vocab.gatePattern, 'i')
 
   const byCharacter = new Map(ctx.schedules.schedules.map((s) => [s.character, s] as const))
+  const game = gameEntries(ctx, shippedQuestIds)
 
-  return ctx.characterRules.roster.map((character): Schedule => {
+  const built = ctx.characterRules.roster.map((character): Schedule => {
     const characterId = toSnakeId(character)
     const extracted = byCharacter.get(character)
-    if (extracted === undefined) {
-      return { character_id: characterId, entries: [], data_gaps: ['schedule'] }
-    }
+    const fromGame = game.entriesByCharacter.get(characterId) ?? []
 
-    const gaps = new Set<string>()
-    const entries: Entry[] = []
+    const gaps = new Set<string>(fromGame.length > 0 ? game.gapsByCharacter.get(characterId) : [])
+    const entries: Entry[] = [...fromGame]
 
-    for (const table of extracted.tables) {
+    for (const table of extracted?.tables ?? []) {
       const unselectable = vocab.unselectableSections.find((u) =>
         table.section.toLowerCase().startsWith(u.prefix.toLowerCase()),
       )
@@ -168,8 +177,18 @@ export function buildSchedules(ctx: BuildContext): Schedule[] {
       if (entry !== null) entries.push(entry)
     }
 
-    // Every day of every season that produced no entry at all.
-    if (entries.length < DAY_IDS.length * seasonOf.size) gaps.add('partial_schedule')
+    if (entries.length === 0) {
+      return { character_id: characterId, entries: [], data_gaps: ['schedule'] }
+    }
+
+    // The game's default week covers six days; Fridays and rain still vary on
+    // conditions nobody models, and both stay said.
+    if (fromGame.length > 0) {
+      gaps.add('friday_variants')
+      gaps.add('rain_variants')
+    } else if (entries.length < DAY_IDS.length * seasonOf.size) {
+      gaps.add('partial_schedule')
+    }
 
     return {
       character_id: characterId,
@@ -179,10 +198,226 @@ export function buildSchedules(ctx: BuildContext): Schedule[] {
       data_gaps: [...gaps].sort(),
     }
   })
+
+  const covered = built.filter((s) => s.entries.length > 0).length
+  consola.info(`schedules: ${covered}/${built.length} characters carry a routine`)
+  return built
 }
 
-/** Gated tables outrank the plain one; "after the quest" outranks "before". */
-const PRIORITY = { after: 10, before: 20, plain: 30 } as const
+/**
+ * The game's own weekday routines, as priority-ordered entries.
+ *
+ * The reading that makes this correct: **a schedule file states its own
+ * conditions, and the season directories are shelving.** `fall_monday` says
+ * `season = "fall"`; the files under "Spring Schedules" mostly state no season
+ * because they are the defaults every season falls back to. Priorities mirror
+ * the game's own specificity — market upgrades above the market, seasonal
+ * overrides above the default week — so first-match-wins resolves exactly as
+ * the game does.
+ *
+ * A file whose conditions carry a key nobody models (`rain_counter`, the
+ * FNATI groups) is **skipped whole and the variance said as a gap** — first
+ * match would render a hidden counter's coin flip as a fact.
+ *
+ * The schedule weather words are their own vocabulary: `pleasant` is the
+ * calm/special classes (clear, wind), `snowy`/`rainy` the inclement ones.
+ * The mapping mirrors curated/vocab/weather.json's class reasoning.
+ */
+const SCHEDULE_WEATHER: Record<string, Weather[]> = {
+  pleasant: ['clear', 'wind'],
+  snowy: ['snow', 'blizzard'],
+  rainy: ['rain', 'storm'],
+}
+
+/** Group -> priority band. Lower is checked first; more specific sits lower. */
+const GROUP_PRIORITY: Record<string, number> = {
+  'Upgraded Market Schedules/Upgrade Two': 2,
+  'Upgraded Market Schedules/Upgrade One': 4,
+}
+
+function gameEntries(
+  ctx: BuildContext,
+  shippedQuestIds?: Set<string>,
+): {
+  entriesByCharacter: Map<string, Entry[]>
+  gapsByCharacter: Map<string, Set<string>>
+} {
+  const entriesByCharacter = new Map<string, Entry[]>()
+  const gapsByCharacter = new Map<string, Set<string>>()
+  const game = ctx.game
+  if (game === null) return { entriesByCharacter, gapsByCharacter }
+
+  // Our locations by folded name, so a room named "Carpenter's Shop" lands on
+  // the_carpenter rather than falling back to its outdoor map.
+  const locationByFoldedName = new Map<string, string>()
+  for (const location of buildLocations(ctx)) {
+    locationByFoldedName.set(foldPlaceName(location.name), location.id)
+  }
+
+  // A gate must name a quest record this build actually ships — the plaza
+  // upgrade is a real game quest and not a record, and a gate pointing at
+  // nothing fails the gate check. When the shipped set is unknown (a caller
+  // outside the build loop) the game's own list is the best available.
+  const questIds = shippedQuestIds ?? new Set(ctx.game?.storyQuestById.keys() ?? [])
+  let unresolvedRooms = 0
+  let skippedVariantFiles = 0
+  const gapFor = (characterId: string): Set<string> => {
+    const set = gapsByCharacter.get(characterId) ?? new Set<string>()
+    gapsByCharacter.set(characterId, set)
+    return set
+  }
+
+  const resolveRoom = (room: string): string | null => {
+    const direct = game.locationByRoom.get(room)
+    if (direct !== undefined) return direct
+    const meta = game.roomById.get(room)
+    if (meta === undefined) return null
+    const byName =
+      meta.name === null ? undefined : locationByFoldedName.get(foldPlaceName(meta.name))
+    if (byName !== undefined) return byName
+    if (meta.map_location !== null) {
+      const outdoor = game.locationByRoom.get(meta.map_location)
+      if (outdoor !== undefined) return outdoor
+    }
+    return null
+  }
+
+  for (const file of game.gameScheduleFiles) {
+    if (file.unread_requirement_keys.length > 0) {
+      skippedVariantFiles += 1
+      // The variance lands on every NPC the file names — their week genuinely
+      // has a version nobody can select for them yet.
+      for (const npc of file.npcs) gapFor(npc.npc).add('schedule_variants')
+      continue
+    }
+    const weather = file.weather === null ? null : (SCHEDULE_WEATHER[file.weather] ?? null)
+    if (file.weather !== null && weather === null) {
+      skippedVariantFiles += 1
+      continue
+    }
+    // A gate naming a quest we cannot link is worse than skipping the file:
+    // the ungated sibling remains and says less, not wrong.
+    if (file.quest_complete !== null && !questIds.has(file.quest_complete)) {
+      skippedVariantFiles += 1
+      continue
+    }
+
+    const day = DAY_IDS.find((d) => file.day_of_week?.startsWith(d) === true) ?? null
+    const season = (['spring', 'summer', 'fall', 'winter'] as Season[]).find(
+      (s) => s === file.season,
+    )
+
+    const priority =
+      GROUP_PRIORITY[file.group] ??
+      (file.quest_complete !== null && season !== undefined
+        ? 6
+        : season !== undefined
+          ? 8
+          : file.quest_complete !== null
+            ? 12
+            : 14)
+
+    const labelParts = [
+      season !== undefined ? season[0]?.toUpperCase() + season.slice(1) : null,
+      day === null ? 'Any day' : DAY_LABELS[day],
+      file.weather === 'snowy' ? 'in snow' : null,
+      file.quest_complete !== null ? `after ${titleWords(file.quest_complete)}` : null,
+      file.group.startsWith('Upgraded Market') ? 'upgraded market' : null,
+    ].filter((part): part is string => part !== null)
+
+    for (const npc of file.npcs) {
+      const stops = npc.stops
+        .flatMap((stop) => {
+          const time = parseClock(stop.time)
+          if (time === null) return []
+          const locationId = resolveRoom(stop.room)
+          if (locationId === null) {
+            unresolvedRooms += 1
+            gapFor(npc.npc).add('unresolved_places')
+          }
+          return [
+            {
+              time,
+              location_id: locationId,
+              activity_key: stop.marker === null ? null : toSnakeId(stop.marker),
+            },
+          ]
+        })
+        // The day runs 06:00 to 02:00; sort in day order, not clock order.
+        .sort((a, b) => dayMinutes(a.time) - dayMinutes(b.time))
+
+      const blocks = blocksFromStops(stops)
+      if (blocks.length === 0) continue
+
+      const entry: Entry = {
+        priority,
+        label: labelParts.join(', '),
+        when: {
+          seasons: season === undefined ? null : [season],
+          days: day === null ? null : [day],
+          weather,
+          dates: null,
+          requires:
+            file.quest_complete === null
+              ? []
+              : [
+                  {
+                    type: 'quest' as const,
+                    key: file.quest_complete,
+                    op: 'done' as const,
+                    value: null,
+                  },
+                ],
+        },
+        blocks,
+      }
+      entriesByCharacter.set(npc.npc, [...(entriesByCharacter.get(npc.npc) ?? []), entry])
+    }
+  }
+
+  if (entriesByCharacter.size > 0) {
+    consola.info(
+      `schedules: game routines for ${entriesByCharacter.size} characters · ` +
+        `${skippedVariantFiles} variant file(s) skipped (conditions nobody models) · ` +
+        `${unresolvedRooms} stop(s) in unplaced rooms`,
+    )
+  }
+  return { entriesByCharacter, gapsByCharacter }
+}
+
+const DAY_LABELS: Record<DayOfWeek, string> = {
+  mon: 'Monday',
+  tue: 'Tuesday',
+  wed: 'Wednesday',
+  thu: 'Thursday',
+  fri: 'Friday',
+  sat: 'Saturday',
+  sun: 'Sunday',
+}
+
+/** Minutes since 06:00, wrapping — the game day ends at 02:00. */
+const dayMinutes = (time: TimeOfDay): number => {
+  const [h, m] = time.split(':')
+  return (Number(h) * 60 + Number(m) - 360 + 1440) % 1440
+}
+
+/** `repair_the_bridge` -> "Repair the Bridge" — a quest id back into words. */
+const titleWords = (id: string): string =>
+  id
+    .split('_')
+    .map((word, index) =>
+      index > 0 && ['the', 'a', 'of', 'and'].includes(word)
+        ? word
+        : word.charAt(0).toUpperCase() + word.slice(1),
+    )
+    .join(' ')
+
+/**
+ * Gated tables outrank the plain one; "after the quest" outranks "before".
+ * The whole band sits below every game entry (2–14): where both sources
+ * describe the same day the game's own file wins, per the precedence rule.
+ */
+const PRIORITY = { after: 40, before: 45, plain: 50 } as const
 
 function entryFor(
   ctx: BuildContext,

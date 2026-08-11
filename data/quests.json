@@ -35,7 +35,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -76,7 +78,9 @@
       "the_museum"
     ],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -116,7 +120,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -156,7 +162,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -196,7 +204,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -234,7 +244,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -259,7 +271,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -272,7 +285,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "unlocking_the_mines"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -281,7 +298,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -295,9 +311,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_state_of_the_mines",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
+      "prerequisites": "game_files",
       "unlocks_mine_ids": "manual"
     },
     "repeatable": false,
@@ -309,7 +333,9 @@
     "unlocks_mine_ids": [
       "upper_mines"
     ],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -343,7 +369,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -397,7 +425,9 @@
     "unlocks_mine_ids": [
       "tide_caverns"
     ],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -451,7 +481,9 @@
     "unlocks_mine_ids": [
       "deep_earth"
     ],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -485,7 +517,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -542,7 +576,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -569,7 +605,8 @@
       "*": "wiki_page",
       "required_items": "game_files",
       "unlocks_location_ids": "manual",
-      "unlocks_mine_ids": "manual"
+      "unlocks_mine_ids": "manual",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -599,7 +636,11 @@
     "unlocks_mine_ids": [
       "lava_caves"
     ],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "balors_wagon"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -652,7 +693,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -708,7 +751,9 @@
     "unlocks_mine_ids": [
       "ancient_ruins"
     ],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -753,7 +798,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -789,7 +836,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -842,7 +891,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -868,6 +919,7 @@
     "prov": {
       "*": "wiki_page",
       "required_items": "game_files",
+      "unlocks_quest_ids": "game_files",
       "unlocks_shop_ids": "manual"
     },
     "repeatable": false,
@@ -886,6 +938,10 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "greet_the_vendors",
+      "restocking_mistrias_food_reserves"
+    ],
     "unlocks_shop_ids": [
       "darcys_stall",
       "louis_stall",
@@ -894,6 +950,7 @@
       "wheedles_stall",
       "zorels_stall"
     ],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -902,7 +959,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -916,9 +972,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -931,7 +995,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -940,7 +1006,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -954,9 +1019,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -969,7 +1043,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "repair_the_mill"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1006,7 +1084,9 @@
       "the_mill"
     ],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1015,7 +1095,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1029,10 +1108,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "unlocks_location_ids": "manual"
+      "prerequisites": "game_files",
+      "unlocks_location_ids": "manual",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -1043,7 +1131,11 @@
       "the_summit"
     ],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "repair_the_general_store"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1051,9 +1143,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1065,10 +1155,20 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "beautification_project",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1094,7 +1194,13 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "repair_the_beach_bridge"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "balors_wagon"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1102,9 +1208,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "terithia",
@@ -1116,10 +1220,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_general_store",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1141,7 +1254,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "restocking_mistrias_food_reserves_2"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1149,9 +1266,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1163,10 +1278,20 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_beach_bridge",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1190,7 +1315,13 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "upgrade_haydens_barn"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "inn"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1198,9 +1329,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1212,10 +1341,20 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "restocking_mistrias_food_reserves_2",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1237,7 +1376,13 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "upgrade_the_inn"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "haydens_shop"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1271,7 +1416,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1279,9 +1426,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1293,10 +1438,20 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "upgrade_haydens_barn",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1326,7 +1481,13 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "stone_refinery"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "inn"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1334,9 +1495,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1348,10 +1507,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_inn",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1373,7 +1541,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "upgrade_the_saturday_market"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1381,9 +1553,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1395,10 +1565,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "stone_refinery",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1428,7 +1607,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "upgrade_the_carpenters_shop"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1436,9 +1619,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "adeline",
@@ -1450,10 +1631,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1479,7 +1669,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "expanding_the_saturday_market"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1487,9 +1681,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "nora",
@@ -1501,10 +1693,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_carpenters_shop",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1538,7 +1739,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "meet_the_new_vendors"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1547,7 +1752,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1561,9 +1765,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "expanding_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -1576,7 +1789,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "repair_the_bell_tower"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1584,9 +1801,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "zorel",
@@ -1598,9 +1813,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "meet_the_new_vendors",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "wiki_page",
+      "prerequisites": "game_files",
       "required_items": "game_files",
       "unlocks_location_ids": "manual"
     },
@@ -1634,7 +1857,9 @@
       "the_bell_tower"
     ],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1674,7 +1899,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1708,7 +1935,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1742,7 +1971,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1776,7 +2007,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1819,7 +2052,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1859,7 +2094,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1868,7 +2105,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1882,9 +2118,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -1901,7 +2145,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1926,7 +2172,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -1941,7 +2188,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "a_rewarding_choice"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1950,7 +2201,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1964,9 +2214,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_smell_of_drying_ink",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -1975,7 +2234,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "chief_inspector"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -1984,7 +2247,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -1998,9 +2260,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "a_rewarding_choice",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2009,7 +2280,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "lost_track_of_time"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2018,7 +2293,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2032,9 +2306,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "chief_inspector",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2043,7 +2325,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2074,7 +2358,8 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2083,7 +2368,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "an_open_book"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2092,7 +2381,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2106,9 +2394,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "tall_dark_and_mysterious",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2117,7 +2414,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "lemonade_from_lemons"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2126,7 +2427,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2140,9 +2440,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "an_open_book",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2151,7 +2459,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2185,7 +2495,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2219,7 +2531,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2244,7 +2558,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2260,7 +2575,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "water_and_soil"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2269,7 +2588,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2283,9 +2601,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_unusual_seed",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2294,7 +2620,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2334,7 +2662,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2368,7 +2698,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2402,7 +2734,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2427,7 +2761,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2436,7 +2771,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "the_ruins"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2445,7 +2784,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2459,9 +2797,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_stele",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2470,7 +2817,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "the_manor"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2479,7 +2830,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2493,9 +2843,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_ruins",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2504,7 +2863,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "the_glade"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2513,7 +2876,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2527,9 +2889,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_manor",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2538,7 +2908,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2572,7 +2944,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2606,7 +2980,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2631,7 +3007,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2640,7 +3017,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "extra_feed"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2649,7 +3030,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2663,9 +3043,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "a_get_together",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2680,7 +3069,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "real_fine_day"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2689,7 +3082,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2703,9 +3095,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "extra_feed",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2714,7 +3114,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2748,7 +3150,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2782,7 +3186,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2816,7 +3222,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2841,7 +3249,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2850,7 +3259,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "horsing_around"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2859,7 +3272,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2873,9 +3285,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "becoming_junipers_guinea_pig",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2884,7 +3305,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "working_like_a_dog"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2893,7 +3318,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -2907,9 +3331,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "horsing_around",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -2918,7 +3350,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2952,7 +3386,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -2986,7 +3422,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3011,7 +3449,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3026,7 +3465,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "many_hands_make_light_work"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3035,7 +3478,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3049,9 +3491,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "surprise_me",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3060,7 +3511,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "shield_of_the_realm"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3069,7 +3524,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3083,9 +3537,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "many_hands_make_light_work",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3094,7 +3556,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3128,7 +3592,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3162,7 +3628,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3187,7 +3655,9 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3202,7 +3672,13 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "shopping_buddy"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "inn"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3211,7 +3687,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3225,9 +3700,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "pie_in_the_sky",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3242,7 +3726,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "farm_fresh_sous_chef"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3251,7 +3739,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3265,9 +3752,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "shopping_buddy",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3282,7 +3777,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3316,7 +3813,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3341,7 +3840,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3354,7 +3854,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "a_sapling"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3363,7 +3867,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3377,9 +3880,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "bird_song",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3388,7 +3900,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "a_birdhouse"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3397,7 +3913,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3411,9 +3926,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "a_sapling",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3428,7 +3952,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "a_duet"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3437,7 +3965,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3451,9 +3978,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "a_birdhouse",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3462,7 +3997,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3497,7 +4034,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3531,7 +4070,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3565,7 +4106,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3590,7 +4133,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3599,7 +4143,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "batch_312"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3608,7 +4156,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3622,9 +4169,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "the_annual_check_up",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3637,7 +4193,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "an_outside_consultant"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3646,7 +4206,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3660,9 +4219,18 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "batch_312",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3671,7 +4239,11 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "the_panacea"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3680,7 +4252,6 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
       "objectives"
     ],
     "former_ids": [],
@@ -3694,9 +4265,17 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "an_outside_consultant",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "prerequisites": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -3705,7 +4284,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3748,7 +4329,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3803,7 +4386,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3851,7 +4436,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3899,7 +4486,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3942,7 +4531,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -3990,7 +4581,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4038,7 +4631,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4081,7 +4676,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4129,7 +4726,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4177,7 +4776,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4231,7 +4832,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4279,7 +4882,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4327,7 +4932,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4375,7 +4982,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4416,7 +5025,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4464,7 +5075,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4518,7 +5131,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4573,7 +5188,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4631,7 +5248,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4679,7 +5298,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4727,7 +5348,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4775,7 +5398,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4818,7 +5443,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4868,7 +5495,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4918,7 +5547,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -4966,7 +5597,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5014,7 +5647,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5057,7 +5692,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5102,7 +5739,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5145,7 +5784,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5199,7 +5840,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5253,7 +5896,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5294,7 +5939,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5337,7 +5984,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5385,7 +6034,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5433,7 +6084,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5480,7 +6133,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5528,7 +6183,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5576,7 +6233,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5628,7 +6287,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5673,7 +6334,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5716,7 +6379,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5764,7 +6429,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5807,7 +6474,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5855,7 +6524,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5903,7 +6574,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5951,7 +6624,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -5996,7 +6671,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6044,7 +6721,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6087,7 +6766,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6130,7 +6811,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6178,7 +6861,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6228,7 +6913,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6276,7 +6963,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6319,7 +7008,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6363,7 +7054,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6406,7 +7099,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6454,7 +7149,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6502,7 +7199,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6555,7 +7254,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6603,7 +7304,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6653,7 +7356,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6692,7 +7397,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6740,7 +7447,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6790,7 +7499,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6833,7 +7544,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6876,7 +7589,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6924,7 +7639,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -6972,7 +7689,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7022,7 +7741,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7076,7 +7797,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7124,7 +7847,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7168,7 +7893,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7211,7 +7938,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7259,7 +7988,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7302,7 +8033,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7350,7 +8083,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7395,7 +8130,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7443,7 +8180,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7491,7 +8230,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7539,7 +8280,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7582,7 +8325,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7625,7 +8370,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7675,7 +8422,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7723,7 +8472,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7771,7 +8522,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7814,7 +8567,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7857,7 +8612,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7911,7 +8668,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7952,7 +8711,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -7995,7 +8756,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8038,7 +8801,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8086,7 +8851,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8134,7 +8901,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8182,7 +8951,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8225,7 +8996,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8281,7 +9054,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8329,7 +9104,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8377,7 +9154,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8425,7 +9204,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8473,7 +9254,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8523,7 +9306,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8566,7 +9351,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8614,7 +9401,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8668,7 +9457,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8713,7 +9504,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8761,7 +9554,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8802,7 +9597,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8850,7 +9647,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8893,7 +9692,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8941,7 +9742,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8982,7 +9785,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9030,7 +9835,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9084,7 +9891,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9140,7 +9949,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9188,7 +9999,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9238,7 +10051,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9286,7 +10101,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9327,7 +10144,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9381,7 +10200,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9429,7 +10250,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9474,7 +10297,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9519,7 +10344,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9560,7 +10387,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9608,7 +10437,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9651,7 +10482,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9699,7 +10532,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9753,7 +10588,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9801,7 +10638,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9849,7 +10688,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9897,7 +10738,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -9953,7 +10796,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10007,7 +10852,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10051,7 +10898,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10099,7 +10948,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10153,7 +11004,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10201,7 +11054,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10245,7 +11100,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10288,7 +11145,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10344,7 +11203,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10394,7 +11255,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10442,7 +11305,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10496,7 +11361,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10539,7 +11406,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10582,7 +11451,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10636,7 +11507,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10679,7 +11552,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10722,7 +11597,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10765,7 +11642,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10819,7 +11698,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10867,7 +11748,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10917,7 +11800,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -10967,7 +11852,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11015,7 +11902,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11058,7 +11947,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11113,7 +12004,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11161,7 +12054,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11209,7 +12104,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11257,7 +12154,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11307,7 +12206,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11357,7 +12258,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11400,7 +12303,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11445,7 +12350,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11493,7 +12400,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11547,7 +12456,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11595,7 +12506,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11643,7 +12556,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11691,7 +12606,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11736,7 +12653,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11782,7 +12701,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11830,7 +12751,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11878,7 +12801,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11926,7 +12851,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -11974,7 +12901,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12022,7 +12951,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12075,7 +13006,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12128,7 +13061,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12176,7 +13111,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12230,7 +13167,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12278,7 +13217,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12326,7 +13267,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12374,7 +13317,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12424,7 +13369,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12467,7 +13414,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12515,7 +13464,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12563,7 +13514,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12606,7 +13559,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12650,7 +13605,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12693,7 +13650,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12741,7 +13700,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12789,7 +13750,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12837,7 +13800,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12885,7 +13850,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12939,7 +13906,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -12989,7 +13958,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13037,7 +14008,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13085,7 +14058,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13133,7 +14108,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13179,7 +14156,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13222,7 +14201,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13265,7 +14246,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13308,7 +14291,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13351,7 +14336,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13394,7 +14381,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13437,7 +14426,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13480,7 +14471,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13523,7 +14516,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13566,7 +14561,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13609,7 +14606,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13652,7 +14651,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13695,7 +14696,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13729,7 +14732,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13769,7 +14774,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13810,7 +14817,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13851,7 +14860,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13892,7 +14903,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13933,7 +14946,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -13976,7 +14991,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14017,7 +15034,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14058,7 +15077,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14100,7 +15121,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14142,7 +15165,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14183,7 +15208,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14226,7 +15253,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14267,7 +15296,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14308,7 +15339,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14349,7 +15382,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14390,7 +15425,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14432,7 +15469,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14474,7 +15513,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14516,7 +15557,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14558,7 +15601,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14593,7 +15638,9 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14642,7 +15689,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14691,7 +15740,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14740,7 +15791,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14789,7 +15842,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14838,7 +15893,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14887,7 +15944,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14936,7 +15995,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -14985,7 +16046,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15034,7 +16097,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15083,7 +16148,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15132,7 +16199,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15178,7 +16247,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15220,7 +16291,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15262,7 +16335,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15304,7 +16379,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15346,7 +16423,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15388,7 +16467,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15430,7 +16511,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15472,7 +16555,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15514,7 +16599,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15556,7 +16643,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15598,7 +16687,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15640,7 +16731,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15682,7 +16775,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -15727,7 +16822,9 @@
     ],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": null
   },
@@ -15735,9 +16832,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
-    "data_gaps": [
-      "prerequisites"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "giver_character_id": "adeline",
@@ -15749,10 +16844,19 @@
     "numeric_id": null,
     "numeric_id_game_version": null,
     "objectives": [],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "restocking_mistrias_food_reserves",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
       "*": "game_files",
-      "required_items": "game_files"
+      "prerequisites": "game_files",
+      "required_items": "game_files",
+      "unlocks_quest_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -15778,7 +16882,12 @@
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
     "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [
+      "beautification_project",
+      "tea_with_hayden"
+    ],
     "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": null
   }

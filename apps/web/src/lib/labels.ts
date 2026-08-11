@@ -114,6 +114,8 @@ export const METHOD_LABELS: Record<string, string> = {
   chest: 'Treasure chests',
   wishing_well: 'The Wishing Well',
   chicken_statue: 'The Chicken Statue',
+  museum: 'The museum’s replicator',
+  cutscene: 'Given during the story',
 }
 
 export const methodLabel = (id: string): string => METHOD_LABELS[id] ?? id.replace(/_/g, ' ')
@@ -140,7 +142,8 @@ export const GAP_LABELS: Record<string, string> = {
   seed_item_id: 'the seed',
   required_items: 'what it costs',
   hp: 'health',
-  combat_xp: 'combat experience',
+  damage: 'damage',
+  essence: 'essence',
   drops: 'drops',
   anchor: 'map position',
 }
@@ -265,6 +268,10 @@ export function gateDisplay(req: Requirement, name?: string): RequirementDisplay
       suffix: ' to the museum',
       linkTo: { to: '/item/$id', id: req.key },
     }
+  }
+  if (req.type === 'animal') {
+    // The key is the species token; the label reads as the animal's name.
+    return { prefix: 'keep a ', label: label.toLowerCase(), suffix: '', linkTo: null }
   }
   return { prefix: 'have ', label, suffix: '', linkTo: null }
 }

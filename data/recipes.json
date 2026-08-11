@@ -26879,6 +26879,59 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
+    "craft_minutes": 20,
+    "data_gaps": [],
+    "effects": null,
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "icon_key": "recipe/forge_mistril",
+    "id": "forge_mistril",
+    "id_status": "confirmed",
+    "ingredients": [
+      {
+        "item_id": "refined_stone",
+        "quantity": 20,
+        "tag": null
+      },
+      {
+        "item_id": "mistril_ingot",
+        "quantity": 8,
+        "tag": null
+      }
+    ],
+    "kind": "crafting",
+    "name": "Mistril Forge",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "output": {
+      "item_id": "forge_mistril",
+      "quantity": 1
+    },
+    "prov": {
+      "*": "game_files"
+    },
+    "skill": null,
+    "sources": [
+      {
+        "character_id": null,
+        "confidence": "verified",
+        "currency": "tesserae",
+        "method": "quest",
+        "price": null,
+        "requires": [],
+        "source_id": null,
+        "stall_key": null
+      }
+    ],
+    "station": null,
+    "station_level": null,
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
     "craft_minutes": 60,
     "data_gaps": [],
     "effects": null,

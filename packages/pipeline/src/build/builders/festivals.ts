@@ -1,4 +1,5 @@
 import { type Festival, toSnakeId } from '@mistria/schema'
+import { consola } from 'consola'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
 
@@ -10,28 +11,78 @@ import { predates1_0 } from '../freshness.js'
  * whether we checked, and the app can say "the files have a Halloween Festival,
  * the game does not run it" — which is both true and more useful than silence.
  *
- * Two fields stay empty deliberately. `activities` would be a copy of the wiki's
- * own sentences describing what happens at the festival, which this project does
- * not do; and `time` is nowhere on any of the four pages, so it is a gap rather
- * than a guess. A festival with an unknown time still matches every time of day
- * in a query and is badged — the same rule that keeps thin time data from
- * hiding correct answers everywhere else.
+ * The four live ones join to the game's own rows in `festivals.toml`, matched
+ * on the display name the file states. What that fills is structural, never
+ * prose: `activities` is a controlled vocabulary read off stated tables — a
+ * `challenges` array is a judged contest, an `npc_date` table means you can
+ * invite someone, `stocks` means stalls — and the UI owns the words. The
+ * Animal Festival's placement prizes come from misc.toml's templated ids,
+ * expanded only against item ids the game actually declares.
+ *
+ * `time` stays empty deliberately: it is nowhere in the files or on any of the
+ * four pages, so it is a gap rather than a guess. A festival with an unknown
+ * time still matches every time of day in a query and is badged — the same
+ * rule that keeps thin time data from hiding correct answers everywhere else.
  */
-export function buildFestivals(ctx: BuildContext): Festival[] {
+export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Festival[] {
   const { festivals } = ctx
 
-  return festivals.festivals.map((festival) => {
-    const id = toSnakeId(festival.name)
-    const gaps: string[] = ['time', 'activities', 'rewards']
+  // The templated prize ids (`white_{AnimalKind}_wall_ribbon`), expanded
+  // against the ids the game declares — never minted. An expansion that ships
+  // no record is dropped and counted below, not guessed at.
+  const gameItemIds = ctx.game === null ? new Set<string>() : ctx.game.itemIds
+  const expandTemplates = (templates: string[]): { shipped: string[]; dropped: string[] } => {
+    const shipped: string[] = []
+    const dropped: string[] = []
+    for (const template of templates) {
+      const pattern = new RegExp(`^${template.replace('{AnimalKind}', '[a-z_]+')}$`)
+      for (const id of gameItemIds) {
+        if (!pattern.test(id)) continue
+        if (builtItemIds.has(id)) shipped.push(id)
+        else dropped.push(id)
+      }
+    }
+    return { shipped: shipped.sort(), dropped: dropped.sort() }
+  }
 
-    // The location cell is a display name ("Mistria", "The Summit"), resolved
-    // through the same alias table as every other place in the dataset.
-    const resolved =
+  let droppedRewards: string[] = []
+  const built = festivals.festivals.map((festival) => {
+    const id = toSnakeId(festival.name)
+    const gaps: string[] = ['time']
+
+    const game = ctx.game?.gameFestivalByName.get(festival.name) ?? null
+
+    // The wiki's location cell is a display name ("Mistria", "The Summit");
+    // the game's is a room id (`town`). Both resolve through their own alias
+    // tables, and the game's answer wins where both exist — it is the row the
+    // event actually runs from.
+    const wikiResolved =
       festival.location === null
         ? null
         : ctx.resolver.resolveLocations([festival.location], `festival:${id}`)
-    const locationId = resolved?.locations[0] ?? null
+    const gameLocation =
+      game?.location == null ? null : (ctx.game?.locationByRoom.get(game.location) ?? null)
+    const locationId = gameLocation ?? wikiResolved?.locations[0] ?? null
     if (locationId === null) gaps.push('location_id')
+
+    // Structural mechanics -> controlled vocabulary. The UI owns the words;
+    // an unknown token must render as nothing, never raw.
+    const activities: string[] = []
+    if (game?.has_contest === true) activities.push('contest')
+    if (game?.has_npc_date === true) activities.push('invite')
+    if (game !== null && game.stalls.length > 0) activities.push('stalls')
+    if (game === null || activities.length === 0) gaps.push('activities')
+
+    let rewards: string[] = []
+    if (id === 'animal_festival' && ctx.game !== null) {
+      const expanded = expandTemplates([
+        ...ctx.game.animalRewardTemplates.small.placeables,
+        ...ctx.game.animalRewardTemplates.large.placeables,
+      ])
+      rewards = expanded.shipped
+      droppedRewards = [...droppedRewards, ...expanded.dropped]
+    }
+    if (rewards.length === 0) gaps.push('rewards')
 
     const currencyName = festivals.currencies[festival.name]
     const currencyId =
@@ -42,6 +93,11 @@ export function buildFestivals(ctx: BuildContext): Festival[] {
           : null
 
     if (predates1_0(festivals.lastEdited)) gaps.push('predates_1_0')
+
+    const prov: Festival['prov'] = { '*': 'wiki_page' }
+    if (gameLocation !== null) prov.location_id = 'game_files'
+    if (activities.length > 0) prov.activities = 'game_files'
+    if (rewards.length > 0) prov.rewards = 'game_files'
 
     return {
       id,
@@ -54,10 +110,10 @@ export function buildFestivals(ctx: BuildContext): Festival[] {
       id_status: 'provisional' as const,
       former_ids: [],
       also_known_as: [],
-      game_version: festivals.wikiVersionStamp,
+      game_version: game === null ? festivals.wikiVersionStamp : (ctx.game?.version ?? null),
       version_added: null,
-      confidence: 'wiki' as const,
-      prov: { '*': 'wiki_page' as const },
+      confidence: game === null ? ('wiki' as const) : ('verified' as const),
+      prov,
       data_gaps: gaps,
       icon_key: `festival/${id}`,
       wiki_page: festival.page,
@@ -68,9 +124,18 @@ export function buildFestivals(ctx: BuildContext): Festival[] {
       location_id: locationId,
       time: null,
       currency_item_id: currencyId,
-      activities: [],
-      rewards: [],
+      activities,
+      rewards,
       prerequisites: [],
     } as Festival
   })
+
+  if (droppedRewards.length > 0) {
+    consola.info(
+      `festivals: ${droppedRewards.length} stated prize id(s) ship no record and were dropped — ` +
+        [...new Set(droppedRewards)].slice(0, 4).join(', ') +
+        '…',
+    )
+  }
+  return built
 }

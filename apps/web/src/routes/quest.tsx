@@ -39,9 +39,11 @@ interface QuestRecord {
   required_items: { item_id: string; quantity: number }[]
   /** Re-indexed stated gates: what finishing this quest opens or teaches. */
   unlocks_shop_ids: string[]
+  unlocks_stock_shop_ids: string[]
   unlocks_location_ids: string[]
   unlocks_mine_ids: string[]
   teaches_recipe_ids: string[]
+  unlocks_quest_ids: string[]
   data_gaps: string[]
   wiki_page: string | null
 }
@@ -269,7 +271,15 @@ export function QuestRoute() {
 
       <Section title="Rewards">
         {quest.rewards === null ? (
-          <Unknown>No rewards recorded.</Unknown>
+          // A heart event's payoff is the scene and the hearts — that is the
+          // whole answer, not a gap, so it does not wear the unverified dashes.
+          quest.kind === 'heart' ? (
+            <p className="text-ink-mute text-sm">
+              A relationship scene — watching it is the reward.
+            </p>
+          ) : (
+            <Unknown>No rewards recorded.</Unknown>
+          )
         ) : (
           <>
             {(quest.rewards.tesserae !== null || quest.rewards.renown !== null) && (
@@ -312,7 +322,14 @@ export function QuestRoute() {
             )}
             {quest.rewards.item_ids.length === 0 &&
               quest.rewards.tesserae === null &&
-              quest.rewards.renown === null && <Unknown>No rewards recorded.</Unknown>}
+              quest.rewards.renown === null &&
+              (quest.kind === 'heart' ? (
+                <p className="text-ink-mute text-sm">
+                  A relationship scene — watching it is the reward.
+                </p>
+              ) : (
+                <Unknown>No rewards recorded.</Unknown>
+              ))}
           </>
         )}
       </Section>
@@ -325,6 +342,8 @@ export function QuestRoute() {
       {(quest.unlocks_location_ids.length > 0 ||
         quest.unlocks_mine_ids.length > 0 ||
         quest.unlocks_shop_ids.length > 0 ||
+        quest.unlocks_stock_shop_ids.length > 0 ||
+        quest.unlocks_quest_ids.length > 0 ||
         quest.teaches_recipe_ids.length > 0) && (
         <Section title="What it unlocks">
           <ul className="flex flex-col gap-1.5 text-ink-mute text-sm">
@@ -348,11 +367,41 @@ export function QuestRoute() {
             {quest.unlocks_shop_ids.map((shopId) => (
               <li key={`shop:${shopId}`}>Opens {shops.get(shopId) ?? shopId.replace(/_/g, ' ')}</li>
             ))}
+            {/* Stock gates, worded apart from shop gates on purpose: the barn
+                upgrade adds lines to a shop that was open all along. */}
+            {quest.unlocks_stock_shop_ids.map((shopId) => (
+              <li key={`stock:${shopId}`}>
+                New stock at {shops.get(shopId) ?? shopId.replace(/_/g, ' ')}
+              </li>
+            ))}
             {quest.teaches_recipe_ids.map((recipeId) => (
               <li key={`recipe:${recipeId}`}>
                 Teaches the recipe for <UnlockName id={recipeId} index={index} />
               </li>
             ))}
+            {/* The story chain as letters.toml states it: finishing this is
+                what makes the next quest's letter arrive. */}
+            {quest.unlocks_quest_ids.map((questId) => {
+              const veiled = veilReasonOf(index[questId])
+              return (
+                <li key={`quest:${questId}`}>
+                  {veiled !== null && !spoilers.shown(questId) ? (
+                    <SpoilerChip reason={veiled} />
+                  ) : (
+                    <>
+                      Starts the quest{' '}
+                      <Link
+                        to="/quest/$id"
+                        params={{ id: questId }}
+                        className="underline decoration-rule underline-offset-4 hover:text-ink"
+                      >
+                        {index[questId]?.n ?? questId.replace(/_/g, ' ')}
+                      </Link>
+                    </>
+                  )}
+                </li>
+              )
+            })}
           </ul>
         </Section>
       )}

@@ -13,22 +13,148 @@
     "needs them; an unlisted room is not an oversight, it is unmapped.",
     "",
     "A null target is a room we deliberately do not place. Read it as 'no location",
-    "of ours is this room', never as 'not yet looked at'."
+    "of ours is this room', never as 'not yet looked at'.",
+    "",
+    "The interior rooms below were added for the schedule join: an NPC routine",
+    "names a room, and the answer a player can act on is the building. Each entry",
+    "states where the certainty comes from — the room id naming its building, the",
+    "game naming the room after one of our locations, or a judgement the wiki-side",
+    "schedule curation already made (Adeline's bedroom is in the Manor). Rooms",
+    "not listed fall back to their stated map_location, which places them on the",
+    "right outdoor map and says no more than the files do."
   ],
   "rooms": {
-    "beach": { "location": "the_beach", "source": "wiki:The_Beach" },
-    "deep_woods": { "location": "the_deep_woods", "source": "wiki:The_Deep_Woods" },
+    "beach": {
+      "location": "the_beach",
+      "source": "wiki:The_Beach"
+    },
+    "deep_woods": {
+      "location": "the_deep_woods",
+      "source": "wiki:The_Deep_Woods"
+    },
     "dragonsworn_glade": {
       "location": null,
       "reason": "A landmark inside the Deep Woods, not a location of ours. Its bug_tag is deep_woods, which the deep_woods room already contributes, so nothing is lost by leaving it unplaced."
     },
-    "dungeon": { "location": "the_mines", "source": "wiki:The_Mines" },
-    "eastern_road": { "location": "the_eastern_road", "source": "wiki:Eastern_Road" },
-    "farm": { "location": "the_farm", "source": "wiki:Farm" },
-    "haydens_farm": { "location": "sweetwater_farm", "source": "wiki:Sweetwater_Farm" },
-    "narrows": { "location": "the_narrows", "source": "wiki:The_Narrows" },
-    "summit": { "location": "the_summit", "source": "wiki:The_Summit" },
-    "town": { "location": "mistria", "source": "wiki:Mistria" },
-    "western_ruins": { "location": "the_western_ruins", "source": "wiki:Western_Ruins" }
+    "dungeon": {
+      "location": "the_mines",
+      "source": "wiki:The_Mines"
+    },
+    "eastern_road": {
+      "location": "the_eastern_road",
+      "source": "wiki:Eastern_Road"
+    },
+    "farm": {
+      "location": "the_farm",
+      "source": "wiki:Farm"
+    },
+    "haydens_farm": {
+      "location": "sweetwater_farm",
+      "source": "wiki:Sweetwater_Farm"
+    },
+    "narrows": {
+      "location": "the_narrows",
+      "source": "wiki:The_Narrows"
+    },
+    "summit": {
+      "location": "the_summit",
+      "source": "wiki:The_Summit"
+    },
+    "town": {
+      "location": "mistria",
+      "source": "wiki:Mistria"
+    },
+    "western_ruins": {
+      "location": "the_western_ruins",
+      "source": "wiki:Western_Ruins"
+    },
+    "inn": {
+      "location": "the_inn",
+      "source": "game:locations.toml name \"The Inn\""
+    },
+    "jo_and_hemlocks_room": {
+      "location": "the_inn",
+      "source": "wiki:The_Sleeping_Dragon_Inn — the innkeepers' room upstairs"
+    },
+    "blacksmith_store": {
+      "location": "the_blacksmith",
+      "source": "game:locations.toml name \"Blacksmith's Shop\""
+    },
+    "blacksmith_room_left": {
+      "location": "the_blacksmith",
+      "source": "room id names its building"
+    },
+    "blacksmith_room_right": {
+      "location": "the_blacksmith",
+      "source": "room id names its building"
+    },
+    "landens_house_f1": {
+      "location": "the_carpenter",
+      "source": "game:locations.toml name \"Carpenter's Shop\""
+    },
+    "landens_house_f2": {
+      "location": "the_carpenter",
+      "source": "the floor above the same shop"
+    },
+    "bathhouse_change_room": {
+      "location": "the_bathhouse",
+      "source": "room id names its building"
+    },
+    "bathhouse_bedroom": {
+      "location": "the_bathhouse",
+      "source": "room id names its building"
+    },
+    "clinic_f2": {
+      "location": "the_clinic",
+      "source": "room id names its building"
+    },
+    "general_store_home": {
+      "location": "the_general_store",
+      "source": "room id names its building"
+    },
+    "manor_house_entry": {
+      "location": "the_manor_house",
+      "source": "room id names its building"
+    },
+    "manor_house_dining_room": {
+      "location": "the_manor_house",
+      "source": "room id names its building"
+    },
+    "adelines_bedroom": {
+      "location": "the_manor_house",
+      "source": "wiki schedule curation: Manor: Adeline's Bedroom"
+    },
+    "adelines_office": {
+      "location": "the_manor_house",
+      "source": "wiki schedule curation places Adeline's rooms in the Manor"
+    },
+    "eilands_bedroom": {
+      "location": "the_manor_house",
+      "source": "Eiland is the Manor's other resident; his rooms sit beside Adeline's"
+    },
+    "eilands_office": {
+      "location": "the_manor_house",
+      "source": "Eiland is the Manor's other resident; his rooms sit beside Adeline's"
+    },
+    "haydens_house": {
+      "location": "sweetwater_farm",
+      "source": "game:locations.toml map_location haydens_farm"
+    },
+    "haydens_bedroom": {
+      "location": "sweetwater_farm",
+      "source": "game:locations.toml map_location haydens_farm"
+    },
+    "terithias_house": {
+      "location": "the_beach",
+      "source": "game:locations.toml map_location beach"
+    },
+    "mines_entry": {
+      "location": "the_mines",
+      "source": "room id names its place"
+    },
+    "museum_entry": {
+      "location": "the_museum",
+      "source": "game:locations.toml name \"Museum\""
+    }
   }
 }

@@ -84,6 +84,14 @@ export const SPAWN_METHODS = [
   'mail',
   'chest',
   /**
+   * The museum's artifact replicator: donate the artifact, print the replica.
+   * Not `quest_reward` (no quest) and not `shop` (no price) — a trade at a
+   * fixed machine, gated on the donation its `requires` states.
+   */
+  'museum',
+  /** Handed over mid-scene — `given_items` in the cutscene files. */
+  'cutscene',
+  /**
    * The Wishing Well and the Chicken Statue: a paid roll at a fixed place, with
    * a stated pool. Folding either into `chest` would be wrong — a chest is
    * something you break open where you find it, and neither of these is

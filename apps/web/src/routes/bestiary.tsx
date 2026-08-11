@@ -12,22 +12,89 @@ import { iconKeyFor } from '~/lib/search'
 const route = getRouteApi('/monster/$id')
 
 /**
- * One monster: where it lives and what it drops.
+ * One monster: where it lives, what it drops, and what a fight costs.
  *
- * Short on purpose. The wiki records drops and biomes and almost never records
- * hit points, and the honest version of this page is mostly the drop table with
- * the missing fields said out loud rather than left blank.
+ * The numbers come from the game's own variant tables (`fiddle/monsters/`),
+ * joined in the pipeline — hp, contact damage, the essence a kill pays, and a
+ * coin range. A perk-gated drop line says so out loud: a 5% chance that is 0%
+ * without Friend-Shaped is not a 5% chance.
  */
+
+interface MonsterDrop {
+  item_id: string
+  chance: number | null
+  quantity: { min: number; max: number } | null
+  requires_perk: string | null
+}
 
 interface MonsterRecord {
   id: string
   name: string
   icon_key: string | null
   hp: number | null
-  combat_xp: number | null
+  damage: number | null
+  essence: number | null
+  coins: { min: number; max: number } | null
   biome_ids: string[]
-  drops: { item_id: string; chance: number | null; quantity: number | null }[]
+  drops: MonsterDrop[]
+  /** Separately rolled — the Rock Stack's guaranteed diamonds on a full break. */
+  super_drops: MonsterDrop[]
   data_gaps: string[]
+}
+
+function DropList({ drops, index }: { drops: MonsterDrop[]; index: DisplayIndex }) {
+  return (
+    <ul className="flex flex-col divide-y divide-rule border-rule border-y">
+      {[...drops]
+        .sort((a, b) => (b.chance ?? 0) - (a.chance ?? 0))
+        .map((drop) => (
+          <li key={drop.item_id}>
+            <Link
+              to="/item/$id"
+              params={{ id: drop.item_id }}
+              className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
+            >
+              <ItemIcon
+                iconKey={iconKeyFor(drop.item_id, index[drop.item_id])}
+                name={index[drop.item_id]?.n ?? drop.item_id}
+                size="sm"
+              />
+              <span className="min-w-0 flex-1 truncate text-ink text-sm">
+                {index[drop.item_id]?.n ?? drop.item_id.replace(/_/g, ' ')}
+                {drop.quantity !== null && drop.quantity.max > 1 && (
+                  <span data-numeral className="text-ink-faint text-xs">
+                    {' '}
+                    ×
+                    {drop.quantity.min === drop.quantity.max
+                      ? drop.quantity.max
+                      : `${drop.quantity.min}–${drop.quantity.max}`}
+                  </span>
+                )}
+              </span>
+              {drop.requires_perk === 'friend_shaped' && (
+                <span
+                  className="shrink-0 rounded-tile px-1.5 py-0.5 text-[0.625rem]"
+                  style={{ color: 'var(--locked)', border: '1px solid var(--locked)' }}
+                >
+                  needs Friend-Shaped
+                </span>
+              )}
+              {/* A null chance is unknown, and unknown never renders as a
+                  number — 0% would read as "never drops". */}
+              {drop.chance === null ? (
+                <span className="unverified shrink-0 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
+                  chance unknown
+                </span>
+              ) : (
+                <span data-numeral className="shrink-0 text-ink-faint text-xs">
+                  {Math.round(drop.chance * 100)}%
+                </span>
+              )}
+            </Link>
+          </li>
+        ))}
+    </ul>
+  )
 }
 
 export function BestiaryRoute() {
@@ -144,39 +211,17 @@ export function BestiaryRoute() {
         {monster.drops.length === 0 ? (
           <Unknown>No drops recorded.</Unknown>
         ) : (
-          <ul className="flex flex-col divide-y divide-rule border-rule border-y">
-            {[...monster.drops]
-              .sort((a, b) => (b.chance ?? 0) - (a.chance ?? 0))
-              .map((drop) => (
-                <li key={drop.item_id}>
-                  <Link
-                    to="/item/$id"
-                    params={{ id: drop.item_id }}
-                    className="flex items-center gap-3 py-2 transition-colors hover:bg-sunk"
-                  >
-                    <ItemIcon
-                      iconKey={iconKeyFor(drop.item_id, index[drop.item_id])}
-                      name={index[drop.item_id]?.n ?? drop.item_id}
-                      size="sm"
-                    />
-                    <span className="min-w-0 flex-1 truncate text-ink text-sm">
-                      {index[drop.item_id]?.n ?? drop.item_id.replace(/_/g, ' ')}
-                    </span>
-                    {/* A null chance is unknown, and unknown never renders as a
-                        number — 0% would read as "never drops". */}
-                    {drop.chance === null ? (
-                      <span className="unverified shrink-0 rounded-tile px-1.5 py-0.5 text-[0.625rem]">
-                        chance unknown
-                      </span>
-                    ) : (
-                      <span data-numeral className="shrink-0 text-ink-faint text-xs">
-                        {Math.round(drop.chance * 100)}%
-                      </span>
-                    )}
-                  </Link>
-                </li>
-              ))}
-          </ul>
+          <DropList drops={monster.drops} index={index} />
+        )}
+        {monster.super_drops.length > 0 && (
+          <>
+            {/* A second, separately-rolled table — folding it in would state a
+                100% diamond chance on an ordinary kill. */}
+            <h3 className="mt-3 font-display font-semibold text-ink text-sm">
+              For breaking it completely
+            </h3>
+            <DropList drops={monster.super_drops} index={index} />
+          </>
         )}
       </Section>
 
@@ -190,14 +235,32 @@ export function BestiaryRoute() {
               <span data-numeral>{monster.hp}</span>
             )}
           </dd>
-          <dt className="text-ink-mute">Combat XP</dt>
+          <dt className="text-ink-mute">Damage</dt>
           <dd className="text-ink">
-            {monster.combat_xp === null ? (
+            {monster.damage === null ? (
               <Unknown>not recorded</Unknown>
             ) : (
-              <span data-numeral>{monster.combat_xp}</span>
+              <span data-numeral>{monster.damage}</span>
             )}
           </dd>
+          <dt className="text-ink-mute">Essence</dt>
+          <dd className="text-ink">
+            {monster.essence === null ? (
+              <Unknown>not recorded</Unknown>
+            ) : (
+              <span data-numeral>{monster.essence}</span>
+            )}
+          </dd>
+          {monster.coins !== null && (
+            <>
+              <dt className="text-ink-mute">Coins</dt>
+              <dd className="text-ink" data-numeral>
+                {monster.coins.min === monster.coins.max
+                  ? monster.coins.min
+                  : `${monster.coins.min}–${monster.coins.max}`}
+              </dd>
+            </>
+          )}
         </dl>
       </Section>
     </Column>
