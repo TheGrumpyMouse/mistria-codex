@@ -1,8 +1,9 @@
 name: Release
 
 # Cutting a release is `git tag v1.0.0 && git push --tags`. Nothing here
-# deploys — Pages already builds from main on every push, and the two are
-# deliberately independent: a release marks a version, it does not ship one.
+# deploys — Pages deploys when a push to main changes the package.json
+# version, and the two are deliberately independent: a release marks a
+# version, it does not ship one.
 on:
   push:
     tags: ['v*']

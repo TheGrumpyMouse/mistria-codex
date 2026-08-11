@@ -382,7 +382,10 @@ Google would route around its own spoiler system. `pnpm validate` fails on it.
 `__APP_VERSION__`), and it does not update on its own. Bump it in the same
 change set as the features it describes, never as a follow-up someone has to
 remember. The data version needs nothing: it is a content hash stamped at
-`build:ship`.
+`build:ship`. **The bump is also the deploy trigger**: Pages only deploys a
+push to main that changes that version (manual `workflow_dispatch` is the
+override), so a change meant to go live must carry a bump or it silently
+won't ship.
 
 CI never touches the wiki — `sources/` is committed, so builds are hermetic and polite to wiki.gg. A weekly cron opens a refresh PR instead.
 
