@@ -55,6 +55,29 @@ export const Festival = withEnvelope({
    * Breath of Spring".
    */
   contest_item_id: IdRef.nullable().default(null),
+  /**
+   * The contest's placing thresholds, stated by the game twice over: the
+   * scores are the festival quest's `[[rewards.tiers]].required_score`, and
+   * which tier is which place is the challenge's `tier_results` cutscene
+   * names — joined on their shared `artifact_key`, index-aligned. For the
+   * collectible contests the score IS the item count (10/30/50/60 Breath of
+   * Spring). `place` is a game-derived token and never renders raw; the UI
+   * treats the whole list as a result spoiler.
+   */
+  contest_tiers: z
+    .array(
+      z.object({
+        place: z.enum([
+          'no_place',
+          'third_place',
+          'second_place',
+          'first_place',
+          'first_place_plus',
+        ]),
+        score: z.number().int().nonnegative(),
+      }),
+    )
+    .default([]),
   activities: z.array(z.string()).default([]),
   rewards: z.array(IdRef).default([]),
   prerequisites: z.array(Requirement).default([]),

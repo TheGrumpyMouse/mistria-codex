@@ -8,6 +8,28 @@
     "blurb": null,
     "confidence": "verified",
     "contest_item_id": "breath_of_spring",
+    "contest_tiers": [
+      {
+        "place": "no_place",
+        "score": 0
+      },
+      {
+        "place": "third_place",
+        "score": 10
+      },
+      {
+        "place": "second_place",
+        "score": 30
+      },
+      {
+        "place": "first_place",
+        "score": 50
+      },
+      {
+        "place": "first_place_plus",
+        "score": 60
+      }
+    ],
     "data_gaps": [
       "time",
       "rewards"
@@ -117,6 +139,7 @@
     "prov": {
       "*": "wiki_page",
       "activities": "game_files",
+      "contest_tiers": "game_files",
       "goods": "game_files",
       "location_id": "game_files"
     },
@@ -131,6 +154,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",
@@ -168,6 +192,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",
@@ -205,6 +230,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",
@@ -244,6 +270,7 @@
     "blurb": null,
     "confidence": "verified",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "rewards"
@@ -284,6 +311,24 @@
     "blurb": null,
     "confidence": "verified",
     "contest_item_id": "queen_berry",
+    "contest_tiers": [
+      {
+        "place": "no_place",
+        "score": 0
+      },
+      {
+        "place": "third_place",
+        "score": 10
+      },
+      {
+        "place": "second_place",
+        "score": 30
+      },
+      {
+        "place": "first_place",
+        "score": 50
+      }
+    ],
     "data_gaps": [
       "time",
       "rewards"
@@ -363,6 +408,7 @@
     "prov": {
       "*": "wiki_page",
       "activities": "game_files",
+      "contest_tiers": "game_files",
       "goods": "game_files",
       "location_id": "game_files"
     },
@@ -377,6 +423,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",
@@ -416,6 +463,7 @@
     "blurb": null,
     "confidence": "verified",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time"
     ],
@@ -579,6 +627,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",
@@ -616,6 +665,7 @@
     "blurb": null,
     "confidence": "wiki",
     "contest_item_id": null,
+    "contest_tiers": [],
     "data_gaps": [
       "time",
       "location_id",

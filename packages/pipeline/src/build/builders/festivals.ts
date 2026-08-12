@@ -3,6 +3,27 @@ import { consola } from 'consola'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
 
+type ContestPlace = Festival['contest_tiers'][number]['place']
+
+/**
+ * The place a tier is, read out of its result cutscene's name — the only
+ * place the game states it (`spring_festival_third_place`). Longest suffix
+ * first, or `first_place_plus` would read as `first_place`.
+ */
+const PLACE_SUFFIXES: [string, ContestPlace][] = [
+  ['first_place_plus', 'first_place_plus'],
+  ['first_place', 'first_place'],
+  ['second_place', 'second_place'],
+  ['third_place', 'third_place'],
+  ['no_place', 'no_place'],
+]
+
+const placeOf = (cutscene: string | null): ContestPlace | null => {
+  if (cutscene === null) return null
+  for (const [suffix, place] of PLACE_SUFFIXES) if (cutscene.endsWith(suffix)) return place
+  return null
+}
+
 /**
  * Build the annual festivals.
  *
@@ -46,6 +67,7 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
   }
 
   let droppedRewards: string[] = []
+  const droppedContests: string[] = []
   const built = festivals.festivals.map((festival) => {
     const id = toSnakeId(festival.name)
     const gaps: string[] = ['time']
@@ -84,6 +106,36 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
     }
     if (rewards.length === 0) gaps.push('rewards')
 
+    // The contest placings: challenge tier_results (which place each tier
+    // is) joined to the quest's required_score list on their shared
+    // artifact_key, index-aligned. A challenge whose two halves disagree on
+    // length ships nothing — a misaligned place is a wrong fact — and is
+    // counted below rather than guessed at.
+    const contestTiers: Festival['contest_tiers'] = []
+    for (const challenge of game?.challenges ?? []) {
+      const tiers =
+        challenge.artifact_key === null
+          ? undefined
+          : ctx.game?.questRewardTiersByArtifact.get(challenge.artifact_key)
+      if (tiers === undefined) continue
+      if (tiers.scores.length !== challenge.tier_cutscenes.length) {
+        droppedContests.push(
+          `${id}: ${challenge.artifact_key} states ${challenge.tier_cutscenes.length} tier ` +
+            `result(s) but ${tiers.quest} states ${tiers.scores.length} score(s)`,
+        )
+        continue
+      }
+      for (const [index, cutscene] of challenge.tier_cutscenes.entries()) {
+        const place = placeOf(cutscene)
+        const score = tiers.scores[index] ?? null
+        if (place === null || score === null) {
+          droppedContests.push(`${id}: tier ${index} of ${challenge.artifact_key} names no place`)
+          continue
+        }
+        contestTiers.push({ place, score })
+      }
+    }
+
     // The contest collectible (Breath of Spring, Queen Berry) — gathered
     // before the day, ranked on it. Not a stall currency; the stalls charge
     // tesserae. See curated/vocab/calendar.json.
@@ -101,6 +153,7 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
     if (gameLocation !== null) prov.location_id = 'game_files'
     if (activities.length > 0) prov.activities = 'game_files'
     if (rewards.length > 0) prov.rewards = 'game_files'
+    if (contestTiers.length > 0) prov.contest_tiers = 'game_files'
 
     return {
       id,
@@ -127,6 +180,7 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
       location_id: locationId,
       time: null,
       contest_item_id: contestItemId,
+      contest_tiers: contestTiers,
       activities,
       rewards,
       prerequisites: [],
@@ -141,6 +195,11 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
       `festivals: ${droppedRewards.length} stated prize id(s) ship no record and were dropped — ` +
         [...new Set(droppedRewards)].slice(0, 4).join(', ') +
         '…',
+    )
+  }
+  if (droppedContests.length > 0) {
+    consola.warn(
+      `festivals: ${droppedContests.length} contest tier(s) dropped — ${droppedContests.join('; ')}`,
     )
   }
   return built

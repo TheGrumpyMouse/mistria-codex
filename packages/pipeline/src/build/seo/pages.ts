@@ -781,6 +781,9 @@ function festivalPage(festival: FestivalRecord, ctx: UrlContext, lookup: Lookup)
   }
   // The contest collectible, not a stall currency — the stalls charge
   // tesserae. "Contest counts" states the mechanic without implying a shop.
+  // The placing thresholds (`contest_tiers`) deliberately do NOT publish:
+  // the app keeps them behind a result-spoiler reveal, and handing them to a
+  // crawler would route around it — same rule as the spoiler/unreleased gate.
   if (festival.contest_item_id !== null) {
     rows.push({ label: 'Contest counts', value: lookup.itemName(festival.contest_item_id) })
   }

@@ -30,6 +30,7 @@ interface FestivalRecord {
   implemented: boolean
   location_id: string | null
   contest_item_id: string | null
+  contest_tiers: { place: string; score: number }[]
   activities: string[]
   data_gaps: string[]
 }
@@ -245,6 +246,26 @@ describe('festivals', () => {
     for (const festival of festivals.filter((f) => f.implemented)) {
       expect(festival.activities.length).toBeGreaterThan(0)
     }
+  })
+
+  it('states the contest placing thresholds, place and score both from the files', () => {
+    const byId = new Map(festivals.map((f) => [f.id, f]))
+    expect(byId.get('spring_festival')?.contest_tiers).toEqual([
+      { place: 'no_place', score: 0 },
+      { place: 'third_place', score: 10 },
+      { place: 'second_place', score: 30 },
+      { place: 'first_place', score: 50 },
+      { place: 'first_place_plus', score: 60 },
+    ])
+    expect(byId.get('harvest_festival')?.contest_tiers).toEqual([
+      { place: 'no_place', score: 0 },
+      { place: 'third_place', score: 10 },
+      { place: 'second_place', score: 30 },
+      { place: 'first_place', score: 50 },
+    ])
+    // The Animal Festival is judged on the ranch scoring tables, not a
+    // collectible count — festivals.toml states no challenge for it.
+    expect(byId.get('animal_festival')?.contest_tiers).toEqual([])
   })
 
   it('resolves festival contest collectibles to real items', () => {

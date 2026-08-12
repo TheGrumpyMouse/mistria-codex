@@ -93,6 +93,25 @@ if (await reveal.isVisible().catch(() => false)) {
   check('the reveal is remembered', (await body()).includes('Caldarus'))
 }
 
+// ── 5a. Contest thresholds: the heading shows, the numbers wait to be asked ──
+await go('/festival/spring_festival')
+t = await body()
+check('the festival page names the contest placings section', t.includes('Contest placings'))
+check(
+  'but the placings themselves start hidden',
+  !t.includes('3rd place') && !t.includes('or more'),
+)
+const thresholds = page.getByRole('button', { name: 'Show the thresholds' })
+check('and a reveal is offered', await thresholds.isVisible())
+await thresholds.click()
+await page.waitForTimeout(300)
+t = await body()
+check('revealing shows every placing', t.includes('3rd place') && t.includes('1st place +'))
+check('with its collectible count', t.includes('10 or more') && t.includes('60 or more'))
+await page.reload({ waitUntil: 'networkidle' })
+await page.waitForTimeout(700)
+check('the threshold reveal is remembered', (await body()).includes('3rd place'))
+
 // ── 6. Board: filter, open a request, come back to the same filter ──
 await go('/board')
 await page.locator('input[type="search"]').fill('heather')

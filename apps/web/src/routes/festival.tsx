@@ -10,6 +10,7 @@ import { type DisplayIndex, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { useDocumentTitle } from '~/lib/head'
 import {
   FESTIVAL_ACTIVITY_LABELS,
+  FESTIVAL_PLACE_LABELS,
   gapLabels,
   type PlaceLabel,
   placeLabels,
@@ -48,6 +49,7 @@ interface FestivalRecord {
   unreleased?: boolean
   location_id: string | null
   contest_item_id: string | null
+  contest_tiers: { place: string; score: number }[]
   activities: string[]
   rewards: string[]
   prerequisites: Requirement[]
@@ -159,6 +161,17 @@ export function FestivalRoute() {
     .map((token) => FESTIVAL_ACTIVITY_LABELS[token])
     .filter((label): label is string => label !== undefined)
 
+  // The placing thresholds are a *result* spoiler by owner decision: the
+  // section heading shows so the answer is findable, the numbers wait behind
+  // a reveal. Its key rides the spoiler store, so Settings' re-hide covers it.
+  // `no_place` has no label and drops — a threshold of zero narrows nothing.
+  const placings = festival.contest_tiers.flatMap((tier) => {
+    const label = FESTIVAL_PLACE_LABELS[tier.place]
+    return label === undefined ? [] : [{ label, score: tier.score }]
+  })
+  const placingsKey = `${festival.id}:contest_tiers`
+  const placingsShown = spoilers.shown(placingsKey)
+
   // Grouped by stall, in a stable order; goods with no stall come last under
   // no heading rather than under a made-up one.
   const byStall = new Map<string | null, FestivalGood[]>()
@@ -233,6 +246,42 @@ export function FestivalRoute() {
         </Section>
       )}
 
+      {placings.length > 0 && (
+        <Section title="Contest placings">
+          {placingsShown ? (
+            <ul className="space-y-1 text-ink text-sm leading-relaxed">
+              {placings.map((placing) => (
+                <li key={placing.label} className="flex items-baseline gap-2">
+                  <span className="min-w-20 font-display font-semibold">{placing.label}</span>
+                  <span className="text-ink-mute">
+                    <span data-numeral>{placing.score}</span> or more
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="rounded-card border border-rule bg-surface p-3">
+              <p className="max-w-prose text-ink-mute text-sm leading-relaxed">
+                How many it takes to place is hidden — knowing the bar ahead of your first festival
+                is a spoiler some players would rather keep.
+              </p>
+              <button
+                type="button"
+                onClick={() => spoilers.reveal(placingsKey)}
+                className="tap-target mt-2.5 rounded-tile border border-rule px-3 py-1.5 text-sm transition-colors"
+                style={{
+                  background: 'var(--accent-tint)',
+                  color: 'var(--accent)',
+                  fontWeight: 600,
+                }}
+              >
+                Show the thresholds
+              </button>
+            </div>
+          )}
+        </Section>
+      )}
+
       {festival.goods.length > 0 && (
         <Section title="At the stalls">
           {stalls.map((stall) => (
@@ -298,12 +347,15 @@ export function FestivalRoute() {
         </Section>
       )}
 
-      {festival.goods.length === 0 && festival.rewards.length === 0 && activities.length === 0 && (
-        <Unknown>
-          Nothing recorded about the day itself yet — the date{' '}
-          {festival.implemented ? 'is' : 'would be'} the one stated fact.
-        </Unknown>
-      )}
+      {festival.goods.length === 0 &&
+        festival.rewards.length === 0 &&
+        activities.length === 0 &&
+        placings.length === 0 && (
+          <Unknown>
+            Nothing recorded about the day itself yet — the date{' '}
+            {festival.implemented ? 'is' : 'would be'} the one stated fact.
+          </Unknown>
+        )}
     </Column>
   )
 }

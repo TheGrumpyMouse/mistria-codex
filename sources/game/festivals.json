@@ -28,6 +28,7 @@
   "festivals": [
     {
       "associated_quest": "the_animal_festival",
+      "challenges": [],
       "date": {
         "day": 10,
         "season": "winter"
@@ -45,6 +46,17 @@
     },
     {
       "associated_quest": "the_harvest_festival",
+      "challenges": [
+        {
+          "artifact_key": "harvest_festival",
+          "tier_cutscenes": [
+            "harvest_festival_no_place",
+            "harvest_festival_third_place",
+            "harvest_festival_second_place",
+            "harvest_festival_first_place"
+          ]
+        }
+      ],
       "date": {
         "day": 10,
         "season": "fall"
@@ -62,6 +74,7 @@
     },
     {
       "associated_quest": "the_shooting_star_festival",
+      "challenges": [],
       "date": {
         "day": 28,
         "season": "summer"
@@ -77,6 +90,18 @@
     },
     {
       "associated_quest": "the_spring_festival",
+      "challenges": [
+        {
+          "artifact_key": "spring_festival",
+          "tier_cutscenes": [
+            "spring_festival_no_place",
+            "spring_festival_third_place",
+            "spring_festival_second_place",
+            "spring_festival_first_place",
+            "spring_festival_first_place_plus"
+          ]
+        }
+      ],
       "date": {
         "day": 17,
         "season": "spring"
@@ -95,5 +120,52 @@
       ]
     }
   ],
-  "gameVersion": "1.0.0"
+  "gameVersion": "1.0.0",
+  "questRewardTiers": [
+    {
+      "artifact_key": "festival_large_animal_score",
+      "cumulative": false,
+      "quest": "story_quests.the_animal_festival",
+      "scores": [
+        0,
+        35,
+        50,
+        65
+      ]
+    },
+    {
+      "artifact_key": "festival_small_animal_score",
+      "cumulative": false,
+      "quest": "story_quests.the_animal_festival",
+      "scores": [
+        0,
+        35,
+        50,
+        65
+      ]
+    },
+    {
+      "artifact_key": "harvest_festival",
+      "cumulative": true,
+      "quest": "story_quests.the_harvest_festival",
+      "scores": [
+        0,
+        10,
+        30,
+        50
+      ]
+    },
+    {
+      "artifact_key": "spring_festival",
+      "cumulative": true,
+      "quest": "story_quests.the_spring_festival",
+      "scores": [
+        0,
+        10,
+        30,
+        50,
+        60
+      ]
+    }
+  ]
 }

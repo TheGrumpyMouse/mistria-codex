@@ -31,7 +31,11 @@ import {
 } from '@mistria/schema'
 import type { GameArtifactsExtract, GameMineBiome, GameSealOffering } from '../extract/artifacts.js'
 import type { GameCosmetic, GameCosmeticsExtract } from '../extract/cosmetics.js'
-import type { GameFestival, GameFestivalsExtract } from '../extract/festivals.js'
+import type {
+  GameFestival,
+  GameFestivalsExtract,
+  GameQuestRewardTiers,
+} from '../extract/festivals.js'
 import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
 import type { GameMonstersExtract, GameMonsterVariant } from '../extract/monsters.js'
@@ -206,6 +210,12 @@ export interface GameFacts {
    * the extract predates the festival read.
    */
   gameFestivalByName: Map<string, GameFestival>
+  /**
+   * Contest score thresholds from the quest files, keyed by the
+   * `artifact_key` a festival challenge joins on. Empty when the extract
+   * predates the tier read.
+   */
+  questRewardTiersByArtifact: Map<string, GameQuestRewardTiers>
   /** The Animal Festival's placement prizes, verbatim from misc.toml. */
   animalRewardTemplates: {
     small: { placeables: string[]; cosmetics: string[] }
@@ -678,6 +688,9 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     unmappedMonsterVariants: unmappedMonsterVariants.sort(),
     gameFestivalByName: new Map(
       (festivalsExtract?.festivals ?? []).flatMap((f) => (f.name === null ? [] : [[f.name, f]])),
+    ),
+    questRewardTiersByArtifact: new Map(
+      (festivalsExtract?.questRewardTiers ?? []).map((t) => [t.artifact_key, t]),
     ),
     animalRewardTemplates: festivalsExtract?.animalRewards ?? {
       small: { placeables: [], cosmetics: [] },

@@ -166,6 +166,18 @@ export const FESTIVAL_ACTIVITY_LABELS: Record<string, string> = {
   stalls: 'festival stalls',
 }
 
+/**
+ * Contest placing tokens, as read from the game's tier-result names.
+ * `no_place` is deliberately absent: a threshold of zero narrows nothing, so
+ * that tier drops — same contract as the gap labels.
+ */
+export const FESTIVAL_PLACE_LABELS: Record<string, string> = {
+  third_place: '3rd place',
+  second_place: '2nd place',
+  first_place: '1st place',
+  first_place_plus: '1st place +',
+}
+
 /** The pets' three shared jobs, in a player's words. */
 export const PET_JOB_LABELS: Record<string, string> = {
   wood: 'Fetching wood',
