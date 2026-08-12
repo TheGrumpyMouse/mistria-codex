@@ -146,7 +146,12 @@ const links = [...hub.body.matchAll(/href="\.\.\/[^"]+\/"/g)].length
 check('and links to every page', links > 1000, `${links} links`)
 
 // ── A renamed id keeps working ──
-const moved = await fetchText('guide/material/copper-ore/')
+// Fetched raw, not navigated: the stub's whole job is to send the browser on
+// to the new slug, and when it does so quickly Chromium discards the response
+// body before `response.text()` can read it — a race this spec used to lose.
+// The assertions are about the stub's own HTML, which the request API returns
+// without ever running the redirect.
+const moved = await fetchRaw('guide/material/copper-ore/')
 check('an old slug still resolves', moved.status === 200, String(moved.status))
 check(
   'and canonicals to the current one',

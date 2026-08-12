@@ -25,29 +25,32 @@ code you can type into a second device to bring it along.
   reload and tell you where to get what is still missing.
 - **Map** — the valley, filterable by season and weather, with what each region
   yields.
-- **Items, villagers, places, monsters, quests** — a page each, cross-linked:
-  where it comes from, what it is worth, who wants it as a gift, what it goes
-  into, and which shop sells it at what price.
+- **Ranch** — the eight animals and sixteen pets: per-sex produce, heart
+  tiers, colour variants with their sprites, breeding, festival scoring, and
+  what each pet's jobs pay.
+- **Items, villagers, places, monsters, quests, animals, pets, festivals** — a
+  page each, cross-linked: where it comes from, what it is worth, who wants it
+  as a gift, what it goes into, and which shop or stall sells it at what price.
 - **Request board**, **bestiary** and **mines** alongside.
 
 Shipped in `data/` but not yet on a screen of their own: skills and perks,
-crops, animals, buildings. They surface where something else references them —
-a skill level gating a tool, a perk gating a shop line — but there is no page
-for them yet.
+crops, buildings. They surface where something else references them — a skill
+level gating a tool, a perk gating a shop line — but there is no page for them
+yet.
 
 ## Status
 
 Usable, and honest about what it does not know. Every dataset with a known
-target count is fully ingested — 2,475 items, 143 fish, 93 bugs, 110 artifacts,
-353 quests, 82 museum sets — and 3,064 of the 3,096 records that ask for a
+target count is fully ingested — 2,558 items, 143 fish, 93 bugs, 110 artifacts,
+359 quests, 82 museum sets — and 3,169 of the 3,201 records that ask for a
 sprite have one.
 
 The data layer was built first, because the data *is* the product: getting it
 wrong poisons everything downstream. `pnpm validate` writes
 `build/reports/coverage.md`, which is the standing account of what has actually
 been ingested and what is still missing. The largest remaining hole is time of
-day — 106 of 678 availability windows have no time recorded, and the app says so
-rather than guessing.
+day — 106 of 1,302 availability windows have no time recorded, and the app says
+so rather than guessing.
 
 Outstanding: sync needs a Cloudflare deploy (the code is written and tested;
 unset, the app builds with sync off and says so — see

@@ -22,8 +22,8 @@
     "occupation": "Acting Leader of Mistria",
     "relationship": "Single",
     "relatives": [
-      "Baroness Linnet of Mistria &lt;small&gt;(Mother)&lt;/small&gt;",
-      "Baron Wiscar of Mistria &lt;small&gt;(Father)&lt;/small&gt;",
+      "[[Linnet|Baroness Linnet]] of Mistria &lt;small&gt;(Mother)&lt;/small&gt;",
+      "[[Wiscar|Baron Wiscar]] of Mistria &lt;small&gt;(Father)&lt;/small&gt;",
       "[[Eiland]] &lt;small&gt;(Brother)&lt;/small&gt;"
     ],
     "romanceable": 1,
@@ -210,8 +210,8 @@
     "occupation": "Archaeologist, Noble",
     "relationship": "Single",
     "relatives": [
-      "Baroness Linnet of Mistria &lt;small&gt;(Mother)&lt;/small&gt;",
-      "Baron Wiscar of Mistria &lt;small&gt;(Father)&lt;/small&gt;",
+      "[[Linnet|Baroness Linnet]] of Mistria &lt;small&gt;(Mother)&lt;/small&gt;",
+      "[[Wiscar|Baron Wiscar]] of Mistria &lt;small&gt;(Father)&lt;/small&gt;",
       "[[Adeline]] &lt;small&gt;(Sister)&lt;/small&gt;"
     ],
     "romanceable": 1,
@@ -400,9 +400,25 @@
   },
   {
     "affiliation": null,
+    "birth": null,
+    "charName": "Linnet",
+    "eyes": null,
+    "gender": "Female",
+    "occupation": "Baroness of Mistria",
+    "relationship": null,
+    "relatives": [
+      "[[Wiscar|Baron Wiscar]] of Mistria &lt;small&gt;(Husband)&lt;/small&gt;",
+      "[[Adeline]] &lt;small&gt;(Daughter)&lt;/small&gt;",
+      "[[Eiland]] &lt;small&gt;(Son)&lt;/small&gt;"
+    ],
+    "romanceable": 0,
+    "species": "Human"
+  },
+  {
+    "affiliation": null,
     "birth": "Fall 20",
     "charName": "Louis",
-    "eyes": "Black",
+    "eyes": "Blue",
     "gender": "Male",
     "occupation": "Clothing Vendor",
     "relationship": "Unavailable",
@@ -780,6 +796,22 @@
     ],
     "romanceable": 0,
     "species": "¯\\_(ツ)_/¯"
+  },
+  {
+    "affiliation": null,
+    "birth": null,
+    "charName": "Wiscar",
+    "eyes": null,
+    "gender": "Male",
+    "occupation": "Barron of Mistria",
+    "relationship": null,
+    "relatives": [
+      "[[Linnet|Baroness Linnet]] of Mistria &lt;small&gt;(Husband)&lt;/small&gt;",
+      "[[Adeline]] &lt;small&gt;(Daughter)&lt;/small&gt;",
+      "[[Eiland]] &lt;small&gt;(Son)&lt;/small&gt;"
+    ],
+    "romanceable": 0,
+    "species": "Human"
   },
   {
     "affiliation": null,

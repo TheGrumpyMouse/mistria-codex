@@ -1048,6 +1048,8 @@
   "variants": [
     {
       "key": "cat_black",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_black",
       "name": "Black Cat",
       "pet_kind": "cat",
@@ -1055,6 +1057,8 @@
     },
     {
       "key": "cat_calico",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_calico",
       "name": "Calico Cat",
       "pet_kind": "cat",
@@ -1062,6 +1066,8 @@
     },
     {
       "key": "cat_grey",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_grey",
       "name": "Grey Cat",
       "pet_kind": "cat",
@@ -1069,6 +1075,8 @@
     },
     {
       "key": "cat_navy",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 8,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_navy",
       "name": "Navy Cat",
       "pet_kind": "cat",
@@ -1076,6 +1084,8 @@
     },
     {
       "key": "cat_orange",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 6,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_orange",
       "name": "Orange Cat",
       "pet_kind": "cat",
@@ -1083,6 +1093,8 @@
     },
     {
       "key": "cat_pink",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 9,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_pink",
       "name": "Pink Cat",
       "pet_kind": "cat",
@@ -1090,6 +1102,8 @@
     },
     {
       "key": "cat_purple",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 7,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_purple",
       "name": "Purple Cat",
       "pet_kind": "cat",
@@ -1097,6 +1111,8 @@
     },
     {
       "key": "cat_siamese",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_siamese",
       "name": "Siamese Cat",
       "pet_kind": "cat",
@@ -1104,6 +1120,8 @@
     },
     {
       "key": "cat_tabby",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_tabby",
       "name": "Tabby Cat",
       "pet_kind": "cat",
@@ -1111,6 +1129,8 @@
     },
     {
       "key": "cat_tortie",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_tortie",
       "name": "Tortie Cat",
       "pet_kind": "cat",
@@ -1118,6 +1138,8 @@
     },
     {
       "key": "cat_tuxedo",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 5,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_tuxedo",
       "name": "Tuxedo Cat",
       "pet_kind": "cat",
@@ -1125,6 +1147,8 @@
     },
     {
       "key": "cat_white",
+      "lut": "spr_animal_cat_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_cat_small_white",
       "name": "White Cat",
       "pet_kind": "cat",
@@ -1132,6 +1156,8 @@
     },
     {
       "key": "copperclod",
+      "lut": "spr_pet_oreclod_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Copperclod",
       "pet_kind": "oreclod",
@@ -1139,6 +1165,8 @@
     },
     {
       "key": "dog_beige",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_beige",
       "name": "Beige Dog",
       "pet_kind": "dog",
@@ -1146,6 +1174,8 @@
     },
     {
       "key": "dog_black",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_black",
       "name": "Black Dog",
       "pet_kind": "dog",
@@ -1153,6 +1183,8 @@
     },
     {
       "key": "dog_brown",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_brown",
       "name": "Brown Dog",
       "pet_kind": "dog",
@@ -1160,6 +1192,8 @@
     },
     {
       "key": "dog_dalmation",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 9,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_dalmation",
       "name": "Dalmation Dog",
       "pet_kind": "dog",
@@ -1167,6 +1201,8 @@
     },
     {
       "key": "dog_grey",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 5,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_grey",
       "name": "Grey Dog",
       "pet_kind": "dog",
@@ -1174,6 +1210,8 @@
     },
     {
       "key": "dog_navy",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 11,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_navy",
       "name": "Navy Dog",
       "pet_kind": "dog",
@@ -1181,6 +1219,8 @@
     },
     {
       "key": "dog_orange",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 8,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_orange",
       "name": "Orange Dog",
       "pet_kind": "dog",
@@ -1188,6 +1228,8 @@
     },
     {
       "key": "dog_pink",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 12,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_pink",
       "name": "Pink Dog",
       "pet_kind": "dog",
@@ -1195,6 +1237,8 @@
     },
     {
       "key": "dog_purple",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 10,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_purple",
       "name": "Purple Dog",
       "pet_kind": "dog",
@@ -1202,6 +1246,8 @@
     },
     {
       "key": "dog_spots",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 7,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_spots",
       "name": "Spotted Dog",
       "pet_kind": "dog",
@@ -1209,6 +1255,8 @@
     },
     {
       "key": "dog_white",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 6,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_white",
       "name": "White Dog",
       "pet_kind": "dog",
@@ -1216,6 +1264,8 @@
     },
     {
       "key": "dog_yellow",
+      "lut": "spr_animal_dog_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_dog_small_yellow",
       "name": "Yellow Dog",
       "pet_kind": "dog",
@@ -1223,6 +1273,8 @@
     },
     {
       "key": "enchantern_blue",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Blue Enchantern",
       "pet_kind": "enchantern",
@@ -1230,6 +1282,8 @@
     },
     {
       "key": "enchantern_yellow",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Yellow Enchantern",
       "pet_kind": "enchantern",
@@ -1237,6 +1291,8 @@
     },
     {
       "key": "essence_bat_blue",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Blue Essence Bat",
       "pet_kind": "essence_bat",
@@ -1244,6 +1300,8 @@
     },
     {
       "key": "essence_bat_purple",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Essence Bat",
       "pet_kind": "essence_bat",
@@ -1251,6 +1309,8 @@
     },
     {
       "key": "flame_spirit_orange",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Orange Flame Spirit",
       "pet_kind": "flame_spirit",
@@ -1258,6 +1318,8 @@
     },
     {
       "key": "flame_spirit_purple",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Purple Flame Spirit",
       "pet_kind": "flame_spirit",
@@ -1265,6 +1327,8 @@
     },
     {
       "key": "flying_tome",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Flying Tome",
       "pet_kind": "flying_tome",
@@ -1272,6 +1336,8 @@
     },
     {
       "key": "goldclod",
+      "lut": "spr_pet_oreclod_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Goldclod",
       "pet_kind": "oreclod",
@@ -1279,6 +1345,8 @@
     },
     {
       "key": "griffin_statue",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Gryphon Statue",
       "pet_kind": "griffin_statue",
@@ -1286,6 +1354,8 @@
     },
     {
       "key": "ironclod",
+      "lut": "spr_pet_oreclod_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Ironclod",
       "pet_kind": "oreclod",
@@ -1293,6 +1363,8 @@
     },
     {
       "key": "lava_cat",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Lava Cat",
       "pet_kind": "lava_cat",
@@ -1300,6 +1372,8 @@
     },
     {
       "key": "mimic",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Mimic",
       "pet_kind": "mimic",
@@ -1307,6 +1381,8 @@
     },
     {
       "key": "mushroom_blue",
+      "lut": "spr_pet_mushroom_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Blue Mushroom",
       "pet_kind": "mushroom",
@@ -1314,6 +1390,8 @@
     },
     {
       "key": "mushroom_green",
+      "lut": "spr_pet_mushroom_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Green Mushroom",
       "pet_kind": "mushroom",
@@ -1321,6 +1399,8 @@
     },
     {
       "key": "mushroom_purple",
+      "lut": "spr_pet_mushroom_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Purple Mushroom",
       "pet_kind": "mushroom",
@@ -1328,6 +1408,8 @@
     },
     {
       "key": "mushroom_red",
+      "lut": "spr_pet_mushroom_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Mushroom",
       "pet_kind": "mushroom",
@@ -1335,6 +1417,8 @@
     },
     {
       "key": "rock_stack",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Rock Stack",
       "pet_kind": "rock_stack",
@@ -1342,6 +1426,8 @@
     },
     {
       "key": "rockclod",
+      "lut": "spr_pet_rockclod_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Rockclod",
       "pet_kind": "rockclod",
@@ -1349,6 +1435,8 @@
     },
     {
       "key": "rockclod_blue",
+      "lut": "spr_pet_rockclod_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Blue Rockclod",
       "pet_kind": "rockclod",
@@ -1356,6 +1444,8 @@
     },
     {
       "key": "rockclod_green",
+      "lut": "spr_pet_rockclod_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Green Rockclod",
       "pet_kind": "rockclod",
@@ -1363,6 +1453,8 @@
     },
     {
       "key": "rockclod_red",
+      "lut": "spr_pet_rockclod_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Red Rockclod",
       "pet_kind": "rockclod",
@@ -1370,6 +1462,8 @@
     },
     {
       "key": "sapling_blue",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Blue Sapling",
       "pet_kind": "sapling",
@@ -1377,6 +1471,8 @@
     },
     {
       "key": "sapling_cool",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Cool Sapling",
       "pet_kind": "sapling",
@@ -1384,6 +1480,8 @@
     },
     {
       "key": "sapling_green",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 1,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Green Sapling",
       "pet_kind": "sapling",
@@ -1391,6 +1489,8 @@
     },
     {
       "key": "sapling_orange",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 5,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Orange Sapling",
       "pet_kind": "sapling",
@@ -1398,6 +1498,8 @@
     },
     {
       "key": "sapling_pink",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 6,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Pink Sapling",
       "pet_kind": "sapling",
@@ -1405,6 +1507,8 @@
     },
     {
       "key": "sapling_purple",
+      "lut": "spr_pet_sapling_lut",
+      "lut_index": 4,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Purple Sapling",
       "pet_kind": "sapling",
@@ -1412,6 +1516,8 @@
     },
     {
       "key": "silverclod",
+      "lut": "spr_pet_oreclod_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Silverclod",
       "pet_kind": "oreclod",
@@ -1419,6 +1525,8 @@
     },
     {
       "key": "stalagmite_blue",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Stalagmite",
       "pet_kind": "stalagmite",
@@ -1426,6 +1534,8 @@
     },
     {
       "key": "stalagmite_green",
+      "lut": "spr_pet_stalagmite_lut",
+      "lut_index": 2,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Green Stalagmite",
       "pet_kind": "stalagmite",
@@ -1433,6 +1543,8 @@
     },
     {
       "key": "stalagmite_purple",
+      "lut": "spr_pet_stalagmite_lut",
+      "lut_index": 3,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Purple Stalagmite",
       "pet_kind": "stalagmite",
@@ -1440,6 +1552,8 @@
     },
     {
       "key": "void_cat",
+      "lut": null,
+      "lut_index": null,
       "map_icon": "spr_ui_generic_icon_pet_monster_small",
       "name": "Void Cat",
       "pet_kind": "void_cat",

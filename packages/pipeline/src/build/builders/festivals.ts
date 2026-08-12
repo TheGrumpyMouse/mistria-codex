@@ -127,6 +127,9 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
       activities,
       rewards,
       prerequisites: [],
+      // Filled by the stamp-afterwards pass in data.ts, once the grant index
+      // has resolved against the final records.
+      goods: [],
     } as Festival
   })
 

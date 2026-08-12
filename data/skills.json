@@ -782,22 +782,22 @@
       {
         "effect": null,
         "effect_key": null,
-        "essence_cost": 10,
-        "id": "time_to_eat",
-        "level": 1,
-        "name": "Time To Eat",
-        "statue": "caldarus",
-        "tier": 1
-      },
-      {
-        "effect": null,
-        "effect_key": null,
         "essence_cost": 205,
         "id": "espresso_yourself",
         "level": 60,
         "name": "Espresso Yourself",
         "statue": "caldarus",
         "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 10,
+        "id": "time_to_eat",
+        "level": 1,
+        "name": "Time To Eat",
+        "statue": "caldarus",
+        "tier": 1
       }
     ],
     "prov": {
@@ -979,6 +979,46 @@
       {
         "effect": null,
         "effect_key": null,
+        "essence_cost": 150,
+        "id": "playtime",
+        "level": 45,
+        "name": "Playtime",
+        "statue": "caldarus",
+        "tier": 4
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 205,
+        "id": "eggstra",
+        "level": 60,
+        "name": "Eggstra",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 210,
+        "id": "close_bond_ii",
+        "level": 60,
+        "name": "Close Bond II",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 215,
+        "id": "true_trust",
+        "level": 60,
+        "name": "True Trust",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
         "essence_cost": 30,
         "id": "barnyard_bounty",
         "level": 1,
@@ -995,46 +1035,6 @@
         "name": "Welcome Home",
         "statue": "caldarus",
         "tier": 2
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 150,
-        "id": "playtime",
-        "level": 45,
-        "name": "Playtime",
-        "statue": "caldarus",
-        "tier": 4
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 210,
-        "id": "close_bond_two",
-        "level": 60,
-        "name": "Close Bond II",
-        "statue": "caldarus",
-        "tier": 5
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 205,
-        "id": "eggstra",
-        "level": 60,
-        "name": "Eggstra",
-        "statue": "caldarus",
-        "tier": 5
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 215,
-        "id": "true_trust",
-        "level": 60,
-        "name": "True Trust",
-        "statue": "caldarus",
-        "tier": 5
       }
     ],
     "prov": {
@@ -1246,6 +1246,26 @@
       {
         "effect": null,
         "effect_key": null,
+        "essence_cost": 210,
+        "id": "hammer_timing_iv",
+        "level": 60,
+        "name": "Hammer Timing IV",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
+        "essence_cost": 200,
+        "id": "deliberate_debris_ii",
+        "level": 60,
+        "name": "Deliberate Debris II",
+        "statue": "caldarus",
+        "tier": 5
+      },
+      {
+        "effect": null,
+        "effect_key": null,
         "essence_cost": 10,
         "id": "hammer_timing",
         "level": 1,
@@ -1262,26 +1282,6 @@
         "name": "Lumberjack",
         "statue": "caldarus",
         "tier": 1
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 200,
-        "id": "deliberate_debris_two",
-        "level": 60,
-        "name": "Deliberate Debris II",
-        "statue": "caldarus",
-        "tier": 5
-      },
-      {
-        "effect": null,
-        "effect_key": null,
-        "essence_cost": 210,
-        "id": "hammer_timing_four",
-        "level": 60,
-        "name": "Hammer Timing IV",
-        "statue": "caldarus",
-        "tier": 5
       }
     ],
     "prov": {

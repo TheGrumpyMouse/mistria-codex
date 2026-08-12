@@ -112,6 +112,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_brown",
         "key": "brown",
         "name": "Brown",
         "purchasable": true,
@@ -127,6 +128,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_spotted",
         "key": "spotted",
         "name": "Spotted",
         "purchasable": true,
@@ -142,6 +144,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_black",
         "key": "black",
         "name": "Black",
         "purchasable": true,
@@ -157,6 +160,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_chocolate",
         "key": "chocolate",
         "name": "Chocolate",
         "purchasable": false,
@@ -172,6 +176,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_red",
         "key": "red",
         "name": "Red",
         "purchasable": false,
@@ -187,6 +192,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_white",
         "key": "white",
         "name": "White",
         "purchasable": false,
@@ -202,6 +208,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -217,6 +224,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -232,6 +240,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -247,6 +256,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -262,6 +272,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/cow_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -274,6 +285,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "cow_flower_crown",
+        "icon_key": "animal/cow_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -286,6 +298,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "cow_sun_hat",
+        "icon_key": "animal/cow_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -298,6 +311,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "cow_horns",
+        "icon_key": "animal/cow_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -310,6 +324,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "cow_antlers",
+        "icon_key": "animal/cow_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -426,6 +441,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_spotted",
         "key": "spotted",
         "name": "Spotted",
         "purchasable": true,
@@ -441,6 +457,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_sandy_bay",
         "key": "sandy_bay",
         "name": "Sandy Bay",
         "purchasable": true,
@@ -456,6 +473,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_champagne",
         "key": "champagne",
         "name": "Champagne",
         "purchasable": true,
@@ -471,6 +489,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_chestnut",
         "key": "chestnut",
         "name": "Chestnut",
         "purchasable": false,
@@ -486,6 +505,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_black",
         "key": "black",
         "name": "Black",
         "purchasable": false,
@@ -501,6 +521,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_white",
         "key": "white",
         "name": "White",
         "purchasable": false,
@@ -516,6 +537,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -531,6 +553,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -546,6 +569,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -561,6 +585,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -576,6 +601,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -588,6 +614,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "horse_flower_crown",
+        "icon_key": "animal/horse_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -600,6 +627,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "horse_seashell_clips",
+        "icon_key": "animal/horse_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -612,6 +640,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "horse_dark_unicorn_horn",
+        "icon_key": "animal/horse_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -624,6 +653,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "horse_antlers",
+        "icon_key": "animal/horse_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -639,6 +669,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_mistmare",
         "key": "mistmare",
         "name": "Mistmare",
         "purchasable": false,
@@ -654,6 +685,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_giant_chicken_white",
         "key": "giant_chicken_white",
         "name": "Big Chicken",
         "purchasable": false,
@@ -669,6 +701,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/horse_giant_chicken_gold",
         "key": "giant_chicken_gold",
         "name": "Big Chicken Gold",
         "purchasable": false,
@@ -785,6 +818,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_white",
         "key": "white",
         "name": "White",
         "purchasable": true,
@@ -800,6 +834,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_black",
         "key": "black",
         "name": "Black",
         "purchasable": true,
@@ -815,6 +850,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_brown",
         "key": "brown",
         "name": "Brown",
         "purchasable": true,
@@ -830,6 +866,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_black_nosed",
         "key": "black_nosed",
         "name": "Black Nosed",
         "purchasable": false,
@@ -845,6 +882,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_beige",
         "key": "beige",
         "name": "Beige",
         "purchasable": false,
@@ -860,6 +898,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_white_nosed",
         "key": "white_nosed",
         "name": "White Nosed",
         "purchasable": false,
@@ -875,6 +914,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -890,6 +930,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -905,6 +946,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -920,6 +962,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -935,6 +978,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -947,6 +991,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "sheep_flower_crown",
+        "icon_key": "animal/sheep_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -959,6 +1004,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/sheep_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -971,6 +1017,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "sheep_horns",
+        "icon_key": "animal/sheep_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -983,6 +1030,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "sheep_winter_hat",
+        "icon_key": "animal/sheep_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -1103,6 +1151,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_white",
         "key": "white",
         "name": "White",
         "purchasable": true,
@@ -1118,6 +1167,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_black",
         "key": "black",
         "name": "Black",
         "purchasable": true,
@@ -1133,6 +1183,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_brown",
         "key": "brown",
         "name": "Brown",
         "purchasable": true,
@@ -1148,6 +1199,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_snowy",
         "key": "snowy",
         "name": "Snowy",
         "purchasable": false,
@@ -1163,6 +1215,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_desert",
         "key": "desert",
         "name": "Desert",
         "purchasable": false,
@@ -1178,6 +1231,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_indigo",
         "key": "indigo",
         "name": "Indigo",
         "purchasable": false,
@@ -1193,6 +1247,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -1208,6 +1263,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -1223,6 +1279,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -1238,6 +1295,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -1253,6 +1311,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/alpaca_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -1265,6 +1324,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "alpaca_flower_crown",
+        "icon_key": "animal/alpaca_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -1277,6 +1337,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "alpaca_sunglasses",
+        "icon_key": "animal/alpaca_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -1289,6 +1350,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "alpaca_horns",
+        "icon_key": "animal/alpaca_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -1301,6 +1363,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "alpaca_winter_hat",
+        "icon_key": "animal/alpaca_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -1424,6 +1487,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_white",
         "key": "white",
         "name": "White",
         "purchasable": true,
@@ -1439,6 +1503,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_brown",
         "key": "brown",
         "name": "Brown",
         "purchasable": true,
@@ -1454,6 +1519,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_spotted",
         "key": "spotted",
         "name": "Spotted",
         "purchasable": true,
@@ -1469,6 +1535,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_red",
         "key": "red",
         "name": "Red",
         "purchasable": false,
@@ -1484,6 +1551,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_yellow",
         "key": "yellow",
         "name": "Yellow",
         "purchasable": false,
@@ -1499,6 +1567,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_gray",
         "key": "gray",
         "name": "Gray",
         "purchasable": false,
@@ -1514,6 +1583,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -1529,6 +1599,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -1544,6 +1615,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -1559,6 +1631,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -1574,6 +1647,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -1586,6 +1660,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "chicken_flower_crown",
+        "icon_key": "animal/chicken_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -1598,6 +1673,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "chicken_sunglasses",
+        "icon_key": "animal/chicken_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -1610,6 +1686,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/chicken_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -1622,6 +1699,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "chicken_winter_hat",
+        "icon_key": "animal/chicken_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -1752,6 +1830,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_mallard",
         "key": "mallard",
         "name": "Mallard",
         "purchasable": true,
@@ -1767,6 +1846,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_muscovy",
         "key": "muscovy",
         "name": "Muscovy",
         "purchasable": true,
@@ -1782,6 +1862,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_white",
         "key": "white",
         "name": "White",
         "purchasable": true,
@@ -1797,6 +1878,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_mandarin",
         "key": "mandarin",
         "name": "Mandarin",
         "purchasable": false,
@@ -1812,6 +1894,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_ruddy_shelduck",
         "key": "ruddy_shelduck",
         "name": "Ruddy Shelduck",
         "purchasable": false,
@@ -1827,6 +1910,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_cayuga",
         "key": "cayuga",
         "name": "Cayuga",
         "purchasable": false,
@@ -1842,6 +1926,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -1857,6 +1942,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -1872,6 +1958,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -1887,6 +1974,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -1902,6 +1990,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -1914,6 +2003,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "duck_flower_crown",
+        "icon_key": "animal/duck_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -1926,6 +2016,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "duck_sunglasses",
+        "icon_key": "animal/duck_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -1938,6 +2029,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/duck_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -1950,6 +2042,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "duck_winter_hat",
+        "icon_key": "animal/duck_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -2066,6 +2159,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_white",
         "key": "white",
         "name": "White",
         "purchasable": true,
@@ -2081,6 +2175,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_brown",
         "key": "brown",
         "name": "Brown",
         "purchasable": true,
@@ -2096,6 +2191,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_black_and_white",
         "key": "black_and_white",
         "name": "Black and White",
         "purchasable": true,
@@ -2111,6 +2207,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_brown_sable",
         "key": "brown_sable",
         "name": "Brown Sable",
         "purchasable": false,
@@ -2126,6 +2223,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_orange_sable",
         "key": "orange_sable",
         "name": "Orange Sable",
         "purchasable": false,
@@ -2141,6 +2239,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_black",
         "key": "black",
         "name": "Black",
         "purchasable": false,
@@ -2156,6 +2255,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -2171,6 +2271,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -2186,6 +2287,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -2201,6 +2303,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -2216,6 +2319,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/rabbit_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -2228,6 +2332,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "rabbit_flower_crown",
+        "icon_key": "animal/rabbit_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -2240,6 +2345,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "rabbit_sunglasses",
+        "icon_key": "animal/rabbit_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -2252,6 +2358,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "rabbit_horn",
+        "icon_key": "animal/rabbit_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -2264,6 +2371,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "rabbit_winter_hat",
+        "icon_key": "animal/rabbit_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,
@@ -2384,6 +2492,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_light_brown",
         "key": "light_brown",
         "name": "Light Brown",
         "purchasable": true,
@@ -2399,6 +2508,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_dark_brown",
         "key": "dark_brown",
         "name": "Dark Brown",
         "purchasable": true,
@@ -2414,6 +2524,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_pale",
         "key": "pale",
         "name": "Pale",
         "purchasable": true,
@@ -2429,6 +2540,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_gray",
         "key": "gray",
         "name": "Gray",
         "purchasable": false,
@@ -2444,6 +2556,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_white",
         "key": "white",
         "name": "White",
         "purchasable": false,
@@ -2459,6 +2572,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_red",
         "key": "red",
         "name": "Red",
         "purchasable": false,
@@ -2474,6 +2588,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_blue",
         "key": "blue",
         "name": "Blue",
         "purchasable": false,
@@ -2489,6 +2604,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_purple",
         "key": "purple",
         "name": "Purple",
         "purchasable": false,
@@ -2504,6 +2620,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_pink",
         "key": "pink",
         "name": "Pink",
         "purchasable": false,
@@ -2519,6 +2636,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_gold",
         "key": "gold",
         "name": "Gold",
         "purchasable": false,
@@ -2534,6 +2652,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": null,
+        "icon_key": "animal/capybara_silver",
         "key": "silver",
         "name": "Silver",
         "purchasable": false,
@@ -2546,6 +2665,7 @@
           "spring"
         ],
         "default_cosmetic_item_id": "capybara_flower_crown",
+        "icon_key": "animal/capybara_spring",
         "key": "spring",
         "name": "Spring",
         "purchasable": false,
@@ -2558,6 +2678,7 @@
           "summer"
         ],
         "default_cosmetic_item_id": "capybara_umbrella_hat",
+        "icon_key": "animal/capybara_summer",
         "key": "summer",
         "name": "Summer",
         "purchasable": false,
@@ -2570,6 +2691,7 @@
           "fall"
         ],
         "default_cosmetic_item_id": "capybara_horns",
+        "icon_key": "animal/capybara_fall",
         "key": "fall",
         "name": "Fall",
         "purchasable": false,
@@ -2582,6 +2704,7 @@
           "winter"
         ],
         "default_cosmetic_item_id": "capybara_winter_hat",
+        "icon_key": "animal/capybara_winter",
         "key": "winter",
         "name": "Winter",
         "purchasable": false,

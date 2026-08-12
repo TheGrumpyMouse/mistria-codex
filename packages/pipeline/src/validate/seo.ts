@@ -25,6 +25,7 @@ import {
   buildPages,
   type CharacterRecord,
   type Dataset,
+  type FestivalRecord,
   type ItemRecord,
   type MineRecord,
   type MonsterRecord,
@@ -158,7 +159,7 @@ export async function checkSeo(): Promise<Finding[]> {
     quests: await read<QuestRecord>('quests.json'),
     recipes: await read<RecipeRecord>('recipes.json'),
     shops: await read<{ id: string; name: string }>('shops.json'),
-    festivals: await read<{ id: string; name: string }>('festivals.json'),
+    festivals: await read<FestivalRecord>('festivals.json'),
   }
 
   // Nothing built yet — a clone that has not run `build:data` is not a failure.

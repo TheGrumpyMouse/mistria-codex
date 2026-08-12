@@ -40,6 +40,14 @@ export const Location = withEnvelope({
    */
   anchor: Point.nullable().default(null),
   /**
+   * True when the anchor is hand-placed rather than a published coordinate —
+   * Balor's Wagon has a fixed pitch in town (the game's own room file places
+   * the wagon) but the wiki map carries no marker for it, so its map position
+   * is ours. The app renders an inferred anchor hollow, like every other
+   * inference.
+   */
+  anchor_inferred: z.boolean().default(false),
+  /**
    * The region's footprint on its map, for highlighting rather than pinning.
    *
    * `cells` is a mosaic: the region quantised to a square grid, run-length
@@ -110,14 +118,43 @@ export const MapRegion = withEnvelope({
 })
 export type MapRegion = z.infer<typeof MapRegion>
 
-/** Finer than a location: a single dig spot, dive hole, or forage patch. */
+/**
+ * Finer than a location: a single landmark, dig site, or forage patch.
+ *
+ * `kind` is what lets a pin mean something: the wiki's own marker groups are
+ * semantic (Buildings, Statues, Fountains, Quest) and the builder maps them
+ * onto this enum rather than collapsing everything to `entrance`.
+ */
 export const Spot = z.object({
   id: IdRef,
   location_id: IdRef,
   x: z.number(),
   y: z.number(),
-  kind: z.enum(['dig_spot', 'dive_hole', 'forage_patch', 'rock', 'tree', 'water', 'entrance']),
+  kind: z.enum([
+    'dig_spot',
+    'dive_hole',
+    'forage_patch',
+    'rock',
+    'tree',
+    'water',
+    'entrance',
+    'building',
+    'landmark',
+    'quest',
+  ]),
   seasons: z.array(Season).default([]),
+  /**
+   * The quest a `quest`-kind marker stands for (a broken bridge names its
+   * repair quest). Curated name-joins only — a marker nothing names keeps
+   * `null` rather than a guess.
+   */
+  quest_id: IdRef.nullable().default(null),
+  /**
+   * True when the *position* is ours rather than a published coordinate —
+   * a hand-placed pin (Balor's wagon, the per-area dig-site markers). The
+   * app renders these hollow: an inference must never render as a fact.
+   */
+  inferred: z.boolean().default(false),
   map_version: z.number().int().min(1).default(1),
 })
 export type Spot = z.infer<typeof Spot>

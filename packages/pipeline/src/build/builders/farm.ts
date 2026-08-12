@@ -262,6 +262,10 @@ export function buildAnimals(
                   pairName !== undefined && ctx.itemByName.has(pairName)
                     ? ctx.idFor(pairName)
                     : null,
+                // The swatch key ships whether or not the art exists yet, so
+                // asset coverage reports a variant whose sprite never arrived
+                // instead of nothing ever asking for one.
+                icon_key: `animal/${animal.id}_${variant.key}`,
               }
             }),
       is_mount: facts?.is_mount ?? null,
@@ -390,11 +394,17 @@ export function buildPets(ctx: BuildContext): Pet[] {
   if (extract === null) return []
   const names = ctx.game?.petKindNames ?? new Map<string, string>()
 
-  const byKind = new Map<string, { key: string; name: string | null }[]>()
+  const byKind = new Map<string, { key: string; name: string | null; icon_key: string }[]>()
   for (const variant of extract.variants) {
     if (variant.pet_kind === null) continue
     const list = byKind.get(variant.pet_kind) ?? []
-    list.push({ key: variant.key, name: variant.name })
+    // The swatch key ships whether or not the art exists yet — same contract
+    // as the animal variants, so a missing sprite is a reported gap.
+    list.push({
+      key: variant.key,
+      name: variant.name,
+      icon_key: `pet/${variant.pet_kind}_${variant.key}`,
+    })
     byKind.set(variant.pet_kind, list)
   }
 

@@ -1428,7 +1428,8 @@
     "size": "Large",
     "weather": [
       "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rainy.png|20px|link=]]&amp;nbsp;[[Weather|Rainy]]&lt;/span&gt;",
-      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;"
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_rain.png|20px|link=]]&amp;nbsp;[[Weather|Rain]]&lt;/span&gt;",
+      "&lt;span style=&quot;display:inline; margin-right:0; white-space: nowrap;&quot;&gt;[[File:Weather_icon_thunderstorm.png|20px|link=]]&amp;nbsp;[[Weather|Thunderstorm]]&lt;/span&gt;"
     ]
   },
   {

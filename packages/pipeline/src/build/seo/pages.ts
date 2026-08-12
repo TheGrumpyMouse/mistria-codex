@@ -135,6 +135,15 @@ export interface RecipeRecord extends Common {
   }[]
 }
 
+export interface FestivalRecord extends Common {
+  date: { season: string; day: number } | null
+  implemented: boolean
+  location_id: string | null
+  currency_item_id: string | null
+  activities: string[]
+  goods: { stall_key: string | null; item_id: string | null; teaches_recipe_id: string | null }[]
+}
+
 export interface Dataset {
   items: ItemRecord[]
   characters: CharacterRecord[]
@@ -145,9 +154,10 @@ export interface Dataset {
   mines: MineRecord[]
   quests: QuestRecord[]
   recipes: RecipeRecord[]
-  /** Names only — neither gets a page, but a recipe source names both. */
+  /** Names only — no pages, but a recipe source names one. */
   shops: Common[]
-  festivals: Common[]
+  /** Implemented festivals get a page; the wiki-only six never publish. */
+  festivals: FestivalRecord[]
 }
 
 export interface GuidePage {
@@ -753,6 +763,69 @@ function animalPage(animal: AnimalRecord, ctx: UrlContext, lookup: Lookup): Guid
   }
 }
 
+function festivalPage(festival: FestivalRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
+  const segments = ['guide', 'festival', slugFor(festival.id)]
+  const depth = segments.length
+  const sections: Section[] = []
+  const properties: { name: string; value: string }[] = []
+
+  const rows: { label: string; value: string }[] = []
+  if (festival.date !== null) {
+    const when = `${titleCase(festival.date.season)} ${festival.date.day}`
+    rows.push({ label: 'Date', value: when })
+    properties.push({ name: 'Date', value: when })
+  }
+  if (festival.location_id !== null) {
+    rows.push({ label: 'Where', value: lookup.placeName(festival.location_id) })
+    properties.push({ name: 'Where', value: lookup.placeName(festival.location_id) })
+  }
+  if (festival.currency_item_id !== null) {
+    rows.push({ label: 'Stall currency', value: lookup.itemName(festival.currency_item_id) })
+  }
+  sections.push({ heading: 'About', kind: 'facts', rows })
+
+  if (festival.goods.length > 0) {
+    sections.push({
+      heading: 'At the stalls',
+      kind: 'list',
+      items: festival.goods.flatMap((good) => {
+        if (good.item_id !== null) return [lookup.itemName(good.item_id)]
+        if (good.teaches_recipe_id !== null) {
+          const name = lookup.recordName(good.teaches_recipe_id)
+          return name === null ? [] : [`Recipe: ${name}`]
+        }
+        return []
+      }),
+    })
+  }
+
+  const when =
+    festival.date === null
+      ? null
+      : `It falls on ${titleCase(festival.date.season)} ${festival.date.day}.`
+
+  return {
+    segments,
+    source: { dataset: 'festivals', id: festival.id },
+    aliases: (festival.former_ids ?? []).map((old) => ['guide', 'festival', slugFor(old)]),
+    input: {
+      name: festival.name,
+      kind: 'Festival',
+      description: metaDescription([`${festival.name} is a festival in Fields of Mistria.`, when]),
+      canonical: canonicalOf(ctx, segments),
+      siteUrl: ctx.siteUrl,
+      appHref: `${upTo(depth)}#/festival/${festival.id}`,
+      hubHref: `${upTo(depth)}guide/`,
+      rootHref: upTo(depth),
+      sourceUrl: wikiUrl(festival.wiki_page),
+      ogImage: ctx.ogImage,
+      sections,
+      gaps: festival.data_gaps ?? [],
+      properties,
+    },
+  }
+}
+
 function monsterPage(monster: MonsterRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
   const segments = ['guide', 'monster', slugFor(monster.id)]
   const depth = segments.length
@@ -992,6 +1065,9 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     mines.flatMap((m) => (m.location_id === null ? [] : [[m.location_id, m] as const])),
   )
   const places = gate(data.places)
+  // The unreleased six are already gated; `implemented` catches a festival
+  // that is neither spoiler-stamped nor unreleased but still never fires.
+  const festivals = gate(data.festivals).filter((f) => f.implemented)
 
   // Names resolve across *all* records, not just published ones: a monster that
   // drops an unpublished item should still say what it drops. Only the link is
@@ -1006,6 +1082,9 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...data.quests.map((r) => [r.id, r.name] as const),
     ...data.shops.map((r) => [r.id, r.name] as const),
     ...data.festivals.map((r) => [r.id, r.name] as const),
+    // Recipes resolve by their own id too — a festival stall that teaches one
+    // names the recipe, not its dish.
+    ...data.recipes.map((r) => [r.id, r.name] as const),
   ])
   const nameOf = (id: string): string => nameIndex.get(id) ?? titleCase(id)
 
@@ -1018,6 +1097,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
   for (const r of animals) pathIndex.set(r.id, ['guide', 'animal', slugFor(r.id)])
   for (const r of places) pathIndex.set(r.id, ['guide', 'place', slugFor(r.id)])
   for (const r of quests) pathIndex.set(r.id, ['guide', 'quest', slugFor(r.id)])
+  for (const r of festivals) pathIndex.set(r.id, ['guide', 'festival', slugFor(r.id)])
 
   const lookup: Lookup = {
     placeName: nameOf,
@@ -1043,6 +1123,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...animals.map((animal) => animalPage(animal, ctx, lookup)),
     ...places.map((place) => placePage(place, mineByLocation.get(place.id), ctx, lookup)),
     ...quests.map((quest) => questPage(quest, ctx, lookup)),
+    ...festivals.map((festival) => festivalPage(festival, ctx, lookup)),
   ]
 
   return {

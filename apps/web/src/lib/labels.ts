@@ -156,6 +156,16 @@ export const gapLabels = (gaps: string[]): string[] => [
   ...new Set(gaps.flatMap((gap) => (GAP_LABELS[gap] === undefined ? [] : [GAP_LABELS[gap]]))),
 ]
 
+/**
+ * Festival activity tokens, in a player's words. Unknown tokens drop — same
+ * contract as the gap labels.
+ */
+export const FESTIVAL_ACTIVITY_LABELS: Record<string, string> = {
+  contest: 'a judged contest',
+  invite: 'invite someone along',
+  stalls: 'festival stalls',
+}
+
 /** The pets' three shared jobs, in a player's words. */
 export const PET_JOB_LABELS: Record<string, string> = {
   wood: 'Fetching wood',
@@ -175,7 +185,7 @@ export const FEED_KIND_LABELS: Record<string, string> = {
   hay: 'hay',
 }
 
-/** What a spot pin is, for map labels and tooltips. */
+/** What a spot pin is, for map labels, tooltips and the legend. */
 export const SPOT_KIND_LABELS: Record<string, string> = {
   dig_spot: 'Dig site',
   dive_hole: 'Dive spot',
@@ -184,6 +194,9 @@ export const SPOT_KIND_LABELS: Record<string, string> = {
   tree: 'Tree',
   water: 'Water',
   entrance: 'Entrance',
+  building: 'Building',
+  landmark: 'Landmark',
+  quest: 'Quest spot',
 }
 
 /**

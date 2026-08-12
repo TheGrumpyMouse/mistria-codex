@@ -13,13 +13,15 @@ import { type Finding, warn } from './report.js'
  * itself worth seeing in the report.
  */
 export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
-  // Four admission paths: the wiki's Items table (1,154 rows, less the ten
-  // Bugs-table roster rows that are not items of their own), the 1.0
-  // allowlist (curated/vocab/items_1_0.json, 40 ids), furniture from the game
-  // files collapsed to one record per product (925), and the wardrobe (360,
-  // one per game cosmetic — colour variants are palette swaps, not records).
-  // Measured 2026-08-08.
-  items: 2475,
+  // Four admission paths: the wiki's Items table (1,197 rows since the 1.0
+  // catch-up, less the Bugs-table roster rows that are not items of their
+  // own), the 1.0 allowlist (curated/vocab/items_1_0.json, 40 ids), furniture
+  // from the game files collapsed to one record per product (999), and the
+  // wardrobe (360, one per game cosmetic — colour variants are palette swaps,
+  // not records). Measured 2026-08-11 after the post-1.0 wiki refresh; most of
+  // the 43 new wiki rows matched records the game files already shipped, and
+  // nine (new cooked dishes, mostly) are genuinely new.
+  items: 2558,
   fish: 143, // Cargo: Fish
   // 93, not the Cargo table's 103: ten of its rows are not catchable bugs —
   // nine apiary/terrarium products listed for their museum sets, plus the
@@ -35,9 +37,10 @@ export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   // user pages using the same infobox template. 34 is the real villager roster:
   // 12 romanceable + 14 townfolk + 8 vendors, per docs/research/01-game-data.md.
   characters: 34,
-  // 290 non-furniture (game files, wiki fallback) + 576 collapsed furniture
-  // recipes — one per product, not per colourway. Measured 2026-08-08.
-  recipes: 866,
+  // Non-furniture recipes (game files, wiki fallback) + collapsed furniture
+  // recipes — one per product, not per colourway. The wiki's Recipes table
+  // gained a row in the 1.0 catch-up. Measured 2026-08-11.
+  recipes: 867,
   artifacts: 110, // Cargo: Artifacts
   forageables: 86, // research doc, EA-era count — verify against 1.0
   museum_sets: 82, // counted from the four wing pages; the research doc said ~80

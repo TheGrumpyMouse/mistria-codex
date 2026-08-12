@@ -19,7 +19,7 @@ import {
 import { useDocumentTitle } from '~/lib/head'
 import { formatDate, type Instant, titleCase, weekdayOf } from '~/lib/instant'
 import { recordCalendarSelection, saveCalendarSelection } from '~/lib/instant-memory'
-import { type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
+import { FESTIVAL_ACTIVITY_LABELS, type PlaceLabel, placeLabel, placeLabels } from '~/lib/labels'
 import { sortEntities, useListSort } from '~/lib/list-sort'
 import { doneIn } from '~/lib/progress'
 import { useSpoilers } from '~/lib/spoilers'
@@ -45,16 +45,11 @@ interface FestivalRecord {
   date: { season: string; day: number } | null
   location_id: string | null
   implemented: boolean
-  /** Controlled tokens from the game's own tables; ACTIVITY_LABELS owns the words. */
+  /** Controlled tokens from the game's own tables; FESTIVAL_ACTIVITY_LABELS owns the words. */
   activities: string[]
 }
 
 /** The builder's controlled vocabulary. An unknown token renders as nothing, never raw. */
-const ACTIVITY_LABELS: Record<string, string> = {
-  contest: 'a judged contest',
-  invite: 'invite someone along',
-  stalls: 'festival stalls',
-}
 
 interface CalendarData {
   availability: AvailabilityIndex
@@ -383,7 +378,13 @@ export function TodayRoute() {
                     size="sm"
                   />
                   <span className="text-ink text-sm">
-                    {festival.name}
+                    <Link
+                      to="/festival/$id"
+                      params={{ id: festival.id }}
+                      className="underline decoration-rule underline-offset-4 hover:text-ink"
+                    >
+                      {festival.name}
+                    </Link>
                     {festival.location_id !== null && (
                       <>
                         <span className="text-ink-mute"> — at </span>
@@ -403,7 +404,7 @@ export function TodayRoute() {
                     )}
                     {(() => {
                       const known = festival.activities
-                        .map((token) => ACTIVITY_LABELS[token])
+                        .map((token) => FESTIVAL_ACTIVITY_LABELS[token])
                         .filter((label): label is string => label !== undefined)
                       return known.length > 0 ? (
                         <span className="block text-ink-faint text-xs">{known.join(' · ')}</span>

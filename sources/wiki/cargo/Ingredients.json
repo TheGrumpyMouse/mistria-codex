@@ -960,6 +960,26 @@
     "resultItem": "Emerald"
   },
   {
+    "amount": 2,
+    "ingredient": "[[File:diamond.png|30px|link=Diamond]] [[Diamond]]",
+    "resultItem": "Engagement Ring"
+  },
+  {
+    "amount": null,
+    "ingredient": "[[File:dragon-forged core.png|30px|link=Dragon-Forged Core]] [[Dragon-Forged Core]]",
+    "resultItem": "Engagement Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]]",
+    "resultItem": "Engagement Ring"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Engagement Ring"
+  },
+  {
     "amount": 1,
     "ingredient": "[[File:pike.png|30px|link=Pike]] [[Pike]]",
     "resultItem": "Fish Skewers"

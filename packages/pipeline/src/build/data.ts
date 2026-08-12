@@ -43,8 +43,10 @@ import { buildGameOnlyItems, buildItems } from './builders/items.js'
 import { buildMachines } from './builders/machines.js'
 import {
   anchoredMarkerNames,
+  applyHandAnchors,
   buildMapRegion,
   resolveAnchors,
+  resolveHandDigSpots,
   resolveSpots,
   WORLD_MAP_ID,
   withShapes,
@@ -114,29 +116,35 @@ function withAnchors(ctx: BuildContext, locations: Location[]): Location[] {
     )
   }
 
-  return locations.map((location) => {
-    const anchor = anchors.get(location.id)
+  // Hand-placed anchors fill last, after every published coordinate: the
+  // wagon's pitch only lands where the wiki left a gap, and the helper throws
+  // if that ever stops being true.
+  return applyHandAnchors(
+    ctx.handMarkers,
+    locations.map((location) => {
+      const anchor = anchors.get(location.id)
 
-    // A mine biome is a range of floors, not a place on an overworld map, so it
-    // has no anchor and never will. That is *not applicable*, not *unknown*, and
-    // the difference is the whole honesty model: it drops the gap rather than
-    // carrying one nobody can ever close.
-    if (anchor === undefined) {
-      if (location.kind !== 'mine' || location.parent_id === null) return location
-      return { ...location, data_gaps: location.data_gaps.filter((gap) => gap !== 'anchor') }
-    }
+      // A mine biome is a range of floors, not a place on an overworld map, so it
+      // has no anchor and never will. That is *not applicable*, not *unknown*, and
+      // the difference is the whole honesty model: it drops the gap rather than
+      // carrying one nobody can ever close.
+      if (anchor === undefined) {
+        if (location.kind !== 'mine' || location.parent_id === null) return location
+        return { ...location, data_gaps: location.data_gaps.filter((gap) => gap !== 'anchor') }
+      }
 
-    return {
-      ...location,
-      anchor,
-      map_id: WORLD_MAP_ID,
-      data_gaps: location.data_gaps.filter((gap) => gap !== 'anchor'),
-    }
-  })
+      return {
+        ...location,
+        anchor,
+        map_id: WORLD_MAP_ID,
+        data_gaps: location.data_gaps.filter((gap) => gap !== 'anchor'),
+      }
+    }),
+  )
 }
 
-/** Landmarks the wiki places inside a named region. */
-function mapSpots(ctx: BuildContext): Spot[] {
+/** Landmarks the wiki places inside a named region, plus the hand-placed pins. */
+function mapSpots(ctx: BuildContext, derived: Derived): Spot[] {
   if (ctx.maps === null) return []
 
   // Shapes first: the geometric fallback needs the footprints, and they come
@@ -148,25 +156,55 @@ function mapSpots(ctx: BuildContext): Spot[] {
       : [],
   )
 
-  const { spots, unplaced } = resolveSpots(
+  const { spots, unplaced, questUnlinked } = resolveSpots(
     ctx.maps.markers,
     locations,
     (name) => toSnakeId(name.replace(/^The\s+/i, '')),
     anchoredMarkerNames(ctx.mapAliases),
     footprints,
+    ctx.mapQuestAliases,
+    new Set(derived.quests.map((quest) => quest.id)),
   )
 
   if (unplaced.length > 0) {
     // Named, not silently dropped: each of these is a real landmark whose
-    // containing region no source states. The seven quest markers link nowhere
-    // at all, and the statues link to their own pages. Their `|location=`
-    // infobox field would settle it — that is the next pass, not a guess now.
+    // containing region no source states. Their `|location=` infobox field
+    // would settle it — that is the next pass, not a guess now.
     consola.info(
       `maps: ${unplaced.length} landmarks have no stated region — ` +
         unplaced.map((m) => m.name).join(', '),
     )
   }
-  return spots
+  if (questUnlinked.length > 0) {
+    // Expected: five of the wiki's seven Quest markers name no quest record of
+    // ours by name, and a deduced link would be a guess wearing a URL.
+    consola.info(
+      `maps: ${questUnlinked.length} quest markers carry no quest link — ${questUnlinked.join(', ')}`,
+    )
+  }
+
+  // One hollow dig pin per digging area. Which areas dig is derived from the
+  // items actually shipping; the curated file supplies only the positions.
+  const digging = new Set<string>()
+  for (const item of derived.items) {
+    for (const window of item.availability ?? []) {
+      if (window.method !== 'dig_spot') continue
+      for (const locationId of window.locations ?? []) digging.add(locationId)
+    }
+  }
+  const { spots: digSpots, missingDigPins } = resolveHandDigSpots(
+    ctx.handMarkers,
+    locations,
+    digging,
+  )
+  if (missingDigPins.length > 0) {
+    consola.info(
+      `maps: ${missingDigPins.length} digging area(s) have no curated dig pin — ` +
+        missingDigPins.join(', '),
+    )
+  }
+
+  return [...spots, ...digSpots].sort((a, b) => a.id.localeCompare(b.id))
 }
 
 /**
@@ -239,7 +277,7 @@ const BUILDERS: Record<DatasetName, Builder> = {
     withShapes(withAnchors(ctx, buildLocations(ctx)), ctx.mapShapes, ctx.mapAliases),
   maps: (ctx) => (ctx.maps === null ? [] : [buildMapRegion(ctx.maps)]),
   museum_sets: (_ctx, derived) => derived.museum.sets,
-  spots: (ctx) => mapSpots(ctx),
+  spots: (ctx, derived) => mapSpots(ctx, derived),
   festivals: (_ctx, derived) => derived.festivals,
   quests: (_ctx, derived) => derived.quests,
   shops: (_ctx, derived) => derived.shops,
@@ -477,6 +515,22 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     builtItemIds: allItemIds,
   })
 
+  // The festivals' stamp-afterwards pass: what a festival's stalls hand out
+  // is the grant index read from the festival's side, and it only exists once
+  // the grants have resolved against the final records — same reasoning as
+  // the quests' pass above. Goods are sorted so the build stays deterministic
+  // whatever order the grants arrived in.
+  const festivalsWithGoods = festivals.map((festival) => {
+    const goods = [...(grants.goodsByFestival.get(festival.id) ?? [])].sort(
+      (a, b) =>
+        (a.stall_key ?? '').localeCompare(b.stall_key ?? '') ||
+        (a.item_id ?? '').localeCompare(b.item_id ?? '') ||
+        (a.teaches_recipe_id ?? '').localeCompare(b.teaches_recipe_id ?? ''),
+    )
+    if (goods.length === 0) return festival
+    return { ...festival, goods, prov: { ...festival.prov, goods: 'game_files' as const } }
+  })
+
   const derived: Derived = {
     museum,
     shops: shopsWithRecipes,
@@ -485,7 +539,7 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
     recipes,
     quests: questsWithUnlocks,
     mines,
-    festivals,
+    festivals: festivalsWithGoods,
   }
   const counts = {} as Record<DatasetName, number>
 

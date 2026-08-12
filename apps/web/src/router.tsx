@@ -15,6 +15,7 @@ import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
 import { BrowseRoute } from '~/routes/browse'
 import { DesignRoute } from '~/routes/design'
+import { FestivalRoute } from '~/routes/festival'
 import { ItemRoute } from '~/routes/item'
 import { MapRoute } from '~/routes/map'
 import { MinesRoute } from '~/routes/mines'
@@ -153,6 +154,12 @@ const petRoute = createRoute({
   component: PetRoute,
 })
 
+const festivalRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/festival/$id',
+  component: FestivalRoute,
+})
+
 const searchRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/search',
@@ -281,6 +288,7 @@ const routeTree = rootRoute.addChildren([
   ranchRoute,
   animalRoute,
   petRoute,
+  festivalRoute,
   calendarRoute,
   minesRoute,
   questRoute,

@@ -21,6 +21,15 @@ export interface GamePetVariant {
   /** Sprite names — carried in sources/ so the asset pass can want them; never shipped in data/. */
   ui_icon: string | null
   map_icon: string | null
+  /**
+   * The palette-strip sprite this variant recolours its `ui_icon` through —
+   * the Black Cat is the tabby's icon through `spr_animal_cat_lut` row 2.
+   * Same two-path shape as the ranch animals: a variant with a distinct
+   * dedicated icon states no useful lut_index, and reading only one path
+   * loses the other's variants.
+   */
+  lut: string | null
+  lut_index: number | null
 }
 
 export interface GamePetJob {
@@ -73,6 +82,8 @@ export async function extractPets(root: string, gameVersion: string): Promise<Ga
       name: str(entry.name),
       ui_icon: str(entry.ui_icon),
       map_icon: str(entry.map_icon),
+      lut: str(entry.lut),
+      lut_index: num(entry.lut_index),
     })
   }
   if (variants.length === 0) {

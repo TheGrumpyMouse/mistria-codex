@@ -206,6 +206,14 @@ export const Animal = withEnvelope({
         renown_value: z.number().int().nullable().default(null),
         /** The accessory the variant is born wearing, as an item record. */
         default_cosmetic_item_id: IdRef.nullable().default(null),
+        /**
+         * `animal/<id>_<key>` — the variant's own swatch, a dedicated install
+         * sprite or the base icon repainted through the game's own palette
+         * strip (`lut` + `lut_index`). The key ships even before the art
+         * exists, so asset coverage can report the gap; a missing sprite
+         * draws the ordinary glyph.
+         */
+        icon_key: z.string().nullable().default(null),
       }),
     )
     .default([]),
@@ -234,7 +242,14 @@ export const Pet = withEnvelope({
   /** The game's `pet_kind` token — never rendered raw. */
   kind_key: z.string(),
   variants: z
-    .array(z.object({ key: z.string(), name: z.string().nullable().default(null) }))
+    .array(
+      z.object({
+        key: z.string(),
+        name: z.string().nullable().default(null),
+        /** `pet/<kind>_<key>` — same contract as the animal variant swatch. */
+        icon_key: z.string().nullable().default(null),
+      }),
+    )
     .default([]),
 })
 export type Pet = z.infer<typeof Pet>

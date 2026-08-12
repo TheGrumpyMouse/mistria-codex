@@ -36,6 +36,7 @@ import {
   buildPages,
   type CharacterRecord,
   type Dataset,
+  type FestivalRecord,
   type GuidePage,
   type ItemRecord,
   type MineRecord,
@@ -84,7 +85,7 @@ async function loadDataset(): Promise<Dataset> {
     recipes: await readDataset<RecipeRecord>('recipes.json'),
     // Names only, for a recipe source that points at one.
     shops: await readDataset<{ id: string; name: string }>('shops.json'),
-    festivals: await readDataset<{ id: string; name: string }>('festivals.json'),
+    festivals: await readDataset<FestivalRecord>('festivals.json'),
   }
 }
 

@@ -1,0 +1,107 @@
+# The weekly wiki refresh — the one workflow that is allowed to touch wiki.gg.
+#
+# CI (ci.yml) is hermetic on purpose: sources/ is committed, so every push
+# builds without a network and without hammering a volunteer-run wiki. The
+# cost of that is staleness, and this workflow is where staleness is paid
+# down: once a week it re-fetches the Cargo tables, the parsed wiki pages and
+# any missing sprites, rebuilds data/, and opens a pull request with whatever
+# changed. A human merges it — the refresh never lands on main by itself.
+#
+# Two deliberate softenings, both so that the PR *surfaces* problems instead
+# of being blocked by them:
+#
+#  - `pnpm validate` runs with `|| true`. New wiki rows routinely move counts
+#    that validate asserts (EXPECTED_COUNTS, coverage); the right place to
+#    stare at that is the PR diff, and the PR's own CI run will be red until
+#    a human updates the counts or curates the new records. A validate
+#    failure here must not mean "nobody ever finds out the wiki changed".
+#
+#  - The PR body carries the unresolved-token list, because a new wiki item
+#    that nothing can resolve is the most common outcome of a refresh and it
+#    is a curation to-do, not an error.
+#
+# The fetchers themselves stay polite: 1s throttle between requests (see
+# curated/vocab/cargo_tables.json), and a zero-row response throws rather
+# than writing — an empty page must never overwrite good data.
+
+name: Wiki refresh
+
+on:
+  schedule:
+    # Mondays 03:17 UTC. An odd minute, because every cron in the world runs
+    # at :00 and GitHub delays those the most.
+    - cron: '17 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: wiki-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Fetch, rebuild, open a PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # A fresh runner has no HTTP cache, so no --no-cache flag is needed —
+      # every request genuinely goes to the wiki.
+      - name: Fetch Cargo tables
+        run: pnpm enrich:cargo
+      - name: Fetch parsed wiki pages
+        run: pnpm enrich:pages
+      - name: Fetch any missing sprites
+        run: pnpm assets:fetch
+
+      - name: Rebuild data/
+        run: |
+          pnpm schema:emit
+          pnpm build:data
+
+      # Soft-fail: see the header comment. The report and the PR CI carry the
+      # verdict; this step only records it.
+      - name: Validate (result recorded, not enforced)
+        id: validate
+        run: |
+          if pnpm validate; then
+            echo "verdict=passed" >> "$GITHUB_OUTPUT"
+          else
+            echo "verdict=FAILED — see this PR's CI run and build/reports/" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Write the PR body
+        run: |
+          {
+            echo "Weekly wiki refresh — \`enrich:cargo\` + \`enrich:pages\` + \`assets:fetch\` + \`build:data\`."
+            echo
+            echo "Validate: ${{ steps.validate.outputs.verdict }}"
+            echo
+            echo "### Curation to-do (unresolved tokens)"
+            echo '```'
+            pnpm --silent data:unresolved || true
+            echo '```'
+            echo
+            echo "### Coverage"
+            cat build/reports/coverage.md 2>/dev/null || echo "(no coverage report was written)"
+          } > /tmp/refresh-pr-body.md
+
+      # No-ops cleanly when the fetch changed nothing — no empty PRs.
+      - name: Open the pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/wiki-refresh
+          title: 'chore: weekly wiki refresh'
+          commit-message: 'chore: weekly wiki refresh'
+          body-path: /tmp/refresh-pr-body.md
+          labels: data-refresh
+          delete-branch: true

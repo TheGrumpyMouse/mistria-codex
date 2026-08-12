@@ -78,7 +78,7 @@ jobs:
       # it here is what makes the deployed app's data a pure function of
       # sources + curated, exactly like data/ is.
       #
-      # This also writes the static guide (public/guide/, ~1,400 crawlable HTML
+      # This also writes the static guide (public/guide/, ~1,500 crawlable HTML
       # pages) plus sitemap.xml, robots.txt and llms.txt. MISTRIA_SITE_URL is
       # the absolute origin those need for canonicals and og:url — derived from
       # the repository like BASE_PATH is, so a fork does not publish canonicals

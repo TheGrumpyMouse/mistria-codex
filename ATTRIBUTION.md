@@ -23,9 +23,9 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2692 files.**
+**2881 files.**
 
-## Items (2181)
+## Items (2191)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -75,6 +75,7 @@ this repository treats it as though it were.
 | `item/armored-bass.png` | Armored bass.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Armored%20bass.png) |
 | `item/ash-mushroom.png` | Ash mushroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ash%20mushroom.png) |
 | `item/auto-feeder.png` | Auto feeder.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Auto%20feeder.png) |
+| `item/baby-cradle.png` | Baby cradle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baby%20cradle.png) |
 | `item/bag-upgrade.png` | Bag upgrade.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bag%20upgrade.png) |
 | `item/bait-thief.png` | Bait thief.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bait%20thief.png) |
 | `item/baked-potato.png` | Baked potato.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baked%20potato.png) |
@@ -334,6 +335,7 @@ this repository treats it as though it were.
 | `item/daisy-seed.png` | Daisy seed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Daisy%20seed.png) |
 | `item/daisy.png` | Daisy.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Daisy.png) |
 | `item/dandelion.png` | Dandelion.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dandelion.png) |
+| `item/dark-chocolate.png` | Dark chocolate.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dark%20chocolate.png) |
 | `item/dart.png` | Dart.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Dart.png) |
 | `item/deep-earthworm.png` | Deep earthworm.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Deep%20earthworm.png) |
 | `item/deep-sea-soup.png` | Deep sea soup.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Deep%20sea%20soup.png) |
@@ -394,6 +396,7 @@ this repository treats it as though it were.
 | `item/earthshroom.png` | Earthshroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Earthshroom.png) |
 | `item/emerald-horned-charger.png` | Emerald horned charger.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Emerald%20horned%20charger.png) |
 | `item/emerald.png` | Emerald.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Emerald.png) |
+| `item/engagement-ring.png` | Engagement ring.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Engagement%20ring.png) |
 | `item/espresso.png` | Espresso.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Espresso.png) |
 | `item/essence-blossom.png` | Essence blossom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Essence%20blossom.png) |
 | `item/essence-drop.png` | Essence drop.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Essence%20drop.png) |
@@ -534,6 +537,7 @@ this repository treats it as though it were.
 | `item/hidden-beetle.png` | Hidden beetle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Hidden%20beetle.png) |
 | `item/holly.png` | Holly.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Holly.png) |
 | `item/honey-curry.png` | Honey curry.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Honey%20curry.png) |
+| `item/honey-toast.png` | Honey toast.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Honey%20toast.png) |
 | `item/honey.png` | Honey.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Honey.png) |
 | `item/honeycomb.png` | Honeycomb.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Honeycomb.png) |
 | `item/horse-antlers.png` | Horse antlers.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Horse%20antlers.png) |
@@ -646,6 +650,7 @@ this repository treats it as though it were.
 | `item/metal-leaf.png` | Metal leaf.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Metal%20leaf.png) |
 | `item/meteorite.png` | Meteorite.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Meteorite.png) |
 | `item/middlemist.png` | Middlemist.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Middlemist.png) |
+| `item/milk-chocolate.png` | Milk chocolate.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Milk%20chocolate.png) |
 | `item/milk.png` | Milk.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Milk.png) |
 | `item/mine-cricket.png` | Mine cricket.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mine%20cricket.png) |
 | `item/mines-mussels.png` | Mines mussels.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mines%20mussels.png) |
@@ -700,6 +705,8 @@ this repository treats it as though it were.
 | `item/mushroom-steak-dinner.png` | Mushroom steak dinner.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mushroom%20steak%20dinner.png) |
 | `item/muskie.png` | Muskie.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Muskie.png) |
 | `item/muttering-cube.png` | Muttering cube.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Muttering%20cube.png) |
+| `item/mystical-feather.png` | Mystical feather.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Mystical%20feather.png) |
+| `item/nachos.png` | Nachos.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Nachos.png) |
 | `item/narrows-moss.png` | Narrows moss.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Narrows%20moss.png) |
 | `item/nettle.png` | Nettle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Nettle.png) |
 | `item/newt.png` | Newt.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Newt.png) |
@@ -731,6 +738,8 @@ this repository treats it as though it were.
 | `item/paper-pondshell.png` | Paper pondshell.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Paper%20pondshell.png) |
 | `item/paper.png` | Paper.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Paper.png) |
 | `item/parchment-moth.png` | Parchment moth.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Parchment%20moth.png) |
+| `item/pbjt-sandwich.png` | Pbjt sandwich.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pbjt%20sandwich.png) |
+| `item/pbm-sandwich.png` | Pbm sandwich.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pbm%20sandwich.png) |
 | `item/peach-sapling.png` | Peach sapling.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Peach%20sapling.png) |
 | `item/peach.png` | Peach.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Peach.png) |
 | `item/peaches-and-cream.png` | Peaches and cream.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Peaches%20and%20cream.png) |
@@ -761,10 +770,20 @@ this repository treats it as though it were.
 | `item/pet-pink-bow.png` | Pet pink bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20pink%20bow.png) |
 | `item/pet-purple-bow.png` | Pet purple bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20purple%20bow.png) |
 | `item/pet-red-bow.png` | Pet red bow.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20red%20bow.png) |
+| `item/pet-skin-enchantern.png` | Pet skin enchantern.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20enchantern.png) |
+| `item/pet-skin-essence-bat.png` | Pet skin essence bat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20essence%20bat.png) |
+| `item/pet-skin-flame-spirit.png` | Pet skin flame spirit.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20flame%20spirit.png) |
+| `item/pet-skin-flying-tome.png` | Pet skin flying tome.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20flying%20tome.png) |
+| `item/pet-skin-gryphon-statue.png` | Pet skin gryphon statue.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20gryphon%20statue.png) |
+| `item/pet-skin-lava-cat.png` | Pet skin lava cat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20lava%20cat.png) |
+| `item/pet-skin-mimic.png` | Pet skin mimic.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20mimic.png) |
 | `item/pet-skin-mushroom.png` | Pet skin mushroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20mushroom.png) |
 | `item/pet-skin-oreclod.png` | Pet skin oreclod.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20oreclod.png) |
+| `item/pet-skin-rock-stack.png` | Pet skin rock stack.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20rock%20stack.png) |
 | `item/pet-skin-rockclod.png` | Pet skin rockclod.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20rockclod.png) |
 | `item/pet-skin-sapling.png` | Pet skin sapling.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20sapling.png) |
+| `item/pet-skin-stalagmite.png` | Pet skin stalagmite.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20stalagmite.png) |
+| `item/pet-skin-void-cat.png` | Pet skin void cat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20void%20cat.png) |
 | `item/pet-skull-mask.png` | Pet skull mask.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skull%20mask.png) |
 | `item/pet-sun-hat.png` | Pet sun hat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20sun%20hat.png) |
 | `item/pet-unicorn-horn.png` | Pet unicorn horn.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Pet%20unicorn%20horn.png) |
@@ -992,6 +1011,15 @@ this repository treats it as though it were.
 | `item/snowdrop-anemone.png` | Snowdrop anemone.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Snowdrop%20anemone.png) |
 | `item/snug-bug.png` | Snug bug.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Snug%20bug.png) |
 | `item/sod.png` | Sod.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Sod.png) |
+| `item/song-crystal-another-tower.png` | Song crystal another tower.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20another%20tower.png) |
+| `item/song-crystal-crystal-caves.png` | Song crystal crystal caves.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20crystal%20caves.png) |
+| `item/song-crystal-dream-lobby.png` | Song crystal dream lobby.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20dream%20lobby.png) |
+| `item/song-crystal-farm-boy.png` | Song crystal farm boy.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20farm%20boy.png) |
+| `item/song-crystal-five-more-minutes.png` | Song crystal five more minutes.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20five%20more%20minutes.png) |
+| `item/song-crystal-misty-pasture.png` | Song crystal misty pasture.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20misty%20pasture.png) |
+| `item/song-crystal-pink-twintails.png` | Song crystal pink twintails.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20pink%20twintails.png) |
+| `item/song-crystal-purple-potions.png` | Song crystal purple potions.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20purple%20potions.png) |
+| `item/song-crystal-rainy-window.png` | Song crystal rainy window.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20rainy%20window.png) |
 | `item/soy-sauce.png` | Soy sauce.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Soy%20sauce.png) |
 | `item/speedy-snail.png` | Speedy snail.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Speedy%20snail.png) |
 | `item/speedy-syrup.png` | Speedy Syrup.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Speedy%20Syrup.png) |
@@ -1495,7 +1523,6 @@ this repository treats it as though it were.
 | `item/spr_ui_item_dragon_scale.png` | animations/Item Icons/Archaeology/spr_ui_item_dragon_scale.png | game files (NPC Studio) |
 | `item/spr_ui_item_dragon_statue_replica_v1.png` | animations/Item Icons/Placeables/Furniture/Mistrian History/spr_ui_item_dragon_statue_replica_v1.png | game files (NPC Studio) |
 | `item/spr_ui_item_earth_infused_stone.png` | animations/Item Icons/Archaeology/spr_ui_item_earth_infused_stone.png | game files (NPC Studio) |
-| `item/spr_ui_item_engagement_ring.png` | animations/Item Icons/Date/spr_ui_item_engagement_ring.png | game files (NPC Studio) |
 | `item/spr_ui_item_equipment_heros_ring.png` | animations/Item Icons/Player Equipment/spr_ui_item_equipment_heros_ring.png | game files (NPC Studio) |
 | `item/spr_ui_item_espresso_machine_gold.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_espresso_machine_gold.png | game files (NPC Studio) |
 | `item/spr_ui_item_faceted_rock_gem.png` | animations/Item Icons/Archaeology/spr_ui_item_faceted_rock_gem.png | game files (NPC Studio) |
@@ -1927,7 +1954,6 @@ this repository treats it as though it were.
 | `item/spr_ui_item_misty_black_mirror.png` | animations/Item Icons/Archaeology/spr_ui_item_misty_black_mirror.png | game files (NPC Studio) |
 | `item/spr_ui_item_misty_feather_quill.png` | animations/Item Icons/Archaeology/spr_ui_item_misty_feather_quill.png | game files (NPC Studio) |
 | `item/spr_ui_item_muttering_cube.png` | animations/Item Icons/Archaeology/spr_ui_item_muttering_cube.png | game files (NPC Studio) |
-| `item/spr_ui_item_mystical_feather.png` | animations/Item Icons/Misc/spr_ui_item_mystical_feather.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_apiary.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_apiary.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_crystal_resonator_black.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_black.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_crystal_resonator_blue.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_blue.png | game files (NPC Studio) |
@@ -1962,16 +1988,6 @@ this repository treats it as though it were.
 | `item/spr_ui_item_perfect_ruby.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_ruby.png | game files (NPC Studio) |
 | `item/spr_ui_item_perfect_sapphire.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_sapphire.png | game files (NPC Studio) |
 | `item/spr_ui_item_perfect_silver_ore.png` | animations/Item Icons/Archaeology/spr_ui_item_perfect_silver_ore.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_enchantern.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_enchantern.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_essence_bat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_essence_bat.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_flame_spirit.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flame_spirit.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_flying_tome.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flying_tome.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_griffin_statue.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_griffin_statue.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_lava_cat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_lava_cat.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_mimic.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_mimic.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_rock_stack.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_rock_stack.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_stalagmite.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_stalagmite.png | game files (NPC Studio) |
-| `item/spr_ui_item_pet_unlock_void_cat.png` | animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_void_cat.png | game files (NPC Studio) |
 | `item/spr_ui_item_petrified_wood.png` | animations/Item Icons/Archaeology/spr_ui_item_petrified_wood.png | game files (NPC Studio) |
 | `item/spr_ui_item_picnic_basket_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_basket_pink.png | game files (NPC Studio) |
 | `item/spr_ui_item_picnic_pie_plate_pink.png` | animations/Item Icons/Placeables/Furniture/Picnic/spr_ui_item_picnic_pie_plate_pink.png | game files (NPC Studio) |
@@ -2000,22 +2016,14 @@ this repository treats it as though it were.
 | `item/spr_ui_item_seriously_square_rock.png` | animations/Item Icons/Archaeology/spr_ui_item_seriously_square_rock.png | game files (NPC Studio) |
 | `item/spr_ui_item_shortcut_scroll.png` | animations/Item Icons/Archaeology/spr_ui_item_shortcut_scroll.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_adelines_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_adelines_theme.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_another_tower.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_another_tower.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_balors_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_balors_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_caldarus_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_caldarus_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_celines_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_celines_theme.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_crystal_caves.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_crystal_caves.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_dream_lobby.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_dream_lobby.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_eilands_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_eilands_theme.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_farm_boy.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_farm_boy.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_five_more_minutes.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_five_more_minutes.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_haydens_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_haydens_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_heros_journey.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_heros_journey.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_junipers_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_junipers_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_marchs_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_marchs_theme.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_misty_pasture.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_misty_pasture.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_purple_potions.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_purple_potions.png | game files (NPC Studio) |
-| `item/spr_ui_item_song_crystal_rainy_window.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_rainy_window.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_reinas_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_reinas_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_ryis_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_ryis_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_seridias_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_seridias_theme.png | game files (NPC Studio) |
@@ -2096,6 +2104,7 @@ this repository treats it as though it were.
 | `item/tea.png` | Tea.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tea.png) |
 | `item/temple-flower-seed.png` | Temple flower seed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Temple%20flower%20seed.png) |
 | `item/temple-flower.png` | Temple flower.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Temple%20flower.png) |
+| `item/tesserae-cake.png` | Tesserae cake.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tesserae%20cake.png) |
 | `item/tesserae-icon.png` | Tesserae Icon.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tesserae%20Icon.png) |
 | `item/tetra.png` | Tetra.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Tetra.png) |
 | `item/thorn-vine.png` | Thorn vine.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Thorn%20vine.png) |
@@ -2180,6 +2189,7 @@ this repository treats it as though it were.
 | `item/weightless-stone.png` | Weightless stone.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Weightless%20stone.png) |
 | `item/wheat-seed.png` | Wheat seed.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wheat%20seed.png) |
 | `item/wheat.png` | Wheat.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wheat.png) |
+| `item/white-chocolate.png` | White chocolate.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:White%20chocolate.png) |
 | `item/white-perch.png` | White perch.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:White%20perch.png) |
 | `item/white-wine.png` | White wine.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:White%20wine.png) |
 | `item/wild-berries.png` | Wild berries.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Wild%20berries.png) |

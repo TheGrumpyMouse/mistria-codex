@@ -21,50 +21,62 @@
     },
     "variants": [
       {
+        "icon_key": "pet/cat_cat_black",
         "key": "cat_black",
         "name": "Black Cat"
       },
       {
+        "icon_key": "pet/cat_cat_calico",
         "key": "cat_calico",
         "name": "Calico Cat"
       },
       {
+        "icon_key": "pet/cat_cat_grey",
         "key": "cat_grey",
         "name": "Grey Cat"
       },
       {
+        "icon_key": "pet/cat_cat_navy",
         "key": "cat_navy",
         "name": "Navy Cat"
       },
       {
+        "icon_key": "pet/cat_cat_orange",
         "key": "cat_orange",
         "name": "Orange Cat"
       },
       {
+        "icon_key": "pet/cat_cat_pink",
         "key": "cat_pink",
         "name": "Pink Cat"
       },
       {
+        "icon_key": "pet/cat_cat_purple",
         "key": "cat_purple",
         "name": "Purple Cat"
       },
       {
+        "icon_key": "pet/cat_cat_siamese",
         "key": "cat_siamese",
         "name": "Siamese Cat"
       },
       {
+        "icon_key": "pet/cat_cat_tabby",
         "key": "cat_tabby",
         "name": "Tabby Cat"
       },
       {
+        "icon_key": "pet/cat_cat_tortie",
         "key": "cat_tortie",
         "name": "Tortie Cat"
       },
       {
+        "icon_key": "pet/cat_cat_tuxedo",
         "key": "cat_tuxedo",
         "name": "Tuxedo Cat"
       },
       {
+        "icon_key": "pet/cat_cat_white",
         "key": "cat_white",
         "name": "White Cat"
       }
@@ -94,50 +106,62 @@
     },
     "variants": [
       {
+        "icon_key": "pet/dog_dog_beige",
         "key": "dog_beige",
         "name": "Beige Dog"
       },
       {
+        "icon_key": "pet/dog_dog_black",
         "key": "dog_black",
         "name": "Black Dog"
       },
       {
+        "icon_key": "pet/dog_dog_brown",
         "key": "dog_brown",
         "name": "Brown Dog"
       },
       {
+        "icon_key": "pet/dog_dog_dalmation",
         "key": "dog_dalmation",
         "name": "Dalmation Dog"
       },
       {
+        "icon_key": "pet/dog_dog_grey",
         "key": "dog_grey",
         "name": "Grey Dog"
       },
       {
+        "icon_key": "pet/dog_dog_navy",
         "key": "dog_navy",
         "name": "Navy Dog"
       },
       {
+        "icon_key": "pet/dog_dog_orange",
         "key": "dog_orange",
         "name": "Orange Dog"
       },
       {
+        "icon_key": "pet/dog_dog_pink",
         "key": "dog_pink",
         "name": "Pink Dog"
       },
       {
+        "icon_key": "pet/dog_dog_purple",
         "key": "dog_purple",
         "name": "Purple Dog"
       },
       {
+        "icon_key": "pet/dog_dog_spots",
         "key": "dog_spots",
         "name": "Spotted Dog"
       },
       {
+        "icon_key": "pet/dog_dog_white",
         "key": "dog_white",
         "name": "White Dog"
       },
       {
+        "icon_key": "pet/dog_dog_yellow",
         "key": "dog_yellow",
         "name": "Yellow Dog"
       }
@@ -167,10 +191,12 @@
     },
     "variants": [
       {
+        "icon_key": "pet/enchantern_enchantern_blue",
         "key": "enchantern_blue",
         "name": "Blue Enchantern"
       },
       {
+        "icon_key": "pet/enchantern_enchantern_yellow",
         "key": "enchantern_yellow",
         "name": "Yellow Enchantern"
       }
@@ -200,10 +226,12 @@
     },
     "variants": [
       {
+        "icon_key": "pet/essence_bat_essence_bat_blue",
         "key": "essence_bat_blue",
         "name": "Blue Essence Bat"
       },
       {
+        "icon_key": "pet/essence_bat_essence_bat_purple",
         "key": "essence_bat_purple",
         "name": "Essence Bat"
       }
@@ -233,10 +261,12 @@
     },
     "variants": [
       {
+        "icon_key": "pet/flame_spirit_flame_spirit_orange",
         "key": "flame_spirit_orange",
         "name": "Orange Flame Spirit"
       },
       {
+        "icon_key": "pet/flame_spirit_flame_spirit_purple",
         "key": "flame_spirit_purple",
         "name": "Purple Flame Spirit"
       }
@@ -266,6 +296,7 @@
     },
     "variants": [
       {
+        "icon_key": "pet/flying_tome_flying_tome",
         "key": "flying_tome",
         "name": "Flying Tome"
       }
@@ -295,6 +326,7 @@
     },
     "variants": [
       {
+        "icon_key": "pet/griffin_statue_griffin_statue",
         "key": "griffin_statue",
         "name": "Gryphon Statue"
       }
@@ -324,6 +356,7 @@
     },
     "variants": [
       {
+        "icon_key": "pet/lava_cat_lava_cat",
         "key": "lava_cat",
         "name": "Lava Cat"
       }
@@ -353,6 +386,7 @@
     },
     "variants": [
       {
+        "icon_key": "pet/mimic_mimic",
         "key": "mimic",
         "name": "Mimic"
       }
@@ -382,18 +416,22 @@
     },
     "variants": [
       {
+        "icon_key": "pet/mushroom_mushroom_blue",
         "key": "mushroom_blue",
         "name": "Blue Mushroom"
       },
       {
+        "icon_key": "pet/mushroom_mushroom_green",
         "key": "mushroom_green",
         "name": "Green Mushroom"
       },
       {
+        "icon_key": "pet/mushroom_mushroom_purple",
         "key": "mushroom_purple",
         "name": "Purple Mushroom"
       },
       {
+        "icon_key": "pet/mushroom_mushroom_red",
         "key": "mushroom_red",
         "name": "Mushroom"
       }
@@ -423,18 +461,22 @@
     },
     "variants": [
       {
+        "icon_key": "pet/oreclod_copperclod",
         "key": "copperclod",
         "name": "Copperclod"
       },
       {
+        "icon_key": "pet/oreclod_goldclod",
         "key": "goldclod",
         "name": "Goldclod"
       },
       {
+        "icon_key": "pet/oreclod_ironclod",
         "key": "ironclod",
         "name": "Ironclod"
       },
       {
+        "icon_key": "pet/oreclod_silverclod",
         "key": "silverclod",
         "name": "Silverclod"
       }
@@ -464,6 +506,7 @@
     },
     "variants": [
       {
+        "icon_key": "pet/rock_stack_rock_stack",
         "key": "rock_stack",
         "name": "Rock Stack"
       }
@@ -493,18 +536,22 @@
     },
     "variants": [
       {
+        "icon_key": "pet/rockclod_rockclod",
         "key": "rockclod",
         "name": "Rockclod"
       },
       {
+        "icon_key": "pet/rockclod_rockclod_blue",
         "key": "rockclod_blue",
         "name": "Blue Rockclod"
       },
       {
+        "icon_key": "pet/rockclod_rockclod_green",
         "key": "rockclod_green",
         "name": "Green Rockclod"
       },
       {
+        "icon_key": "pet/rockclod_rockclod_red",
         "key": "rockclod_red",
         "name": "Red Rockclod"
       }
@@ -534,26 +581,32 @@
     },
     "variants": [
       {
+        "icon_key": "pet/sapling_sapling_blue",
         "key": "sapling_blue",
         "name": "Blue Sapling"
       },
       {
+        "icon_key": "pet/sapling_sapling_cool",
         "key": "sapling_cool",
         "name": "Cool Sapling"
       },
       {
+        "icon_key": "pet/sapling_sapling_green",
         "key": "sapling_green",
         "name": "Green Sapling"
       },
       {
+        "icon_key": "pet/sapling_sapling_orange",
         "key": "sapling_orange",
         "name": "Orange Sapling"
       },
       {
+        "icon_key": "pet/sapling_sapling_pink",
         "key": "sapling_pink",
         "name": "Pink Sapling"
       },
       {
+        "icon_key": "pet/sapling_sapling_purple",
         "key": "sapling_purple",
         "name": "Purple Sapling"
       }
@@ -583,14 +636,17 @@
     },
     "variants": [
       {
+        "icon_key": "pet/stalagmite_stalagmite_blue",
         "key": "stalagmite_blue",
         "name": "Stalagmite"
       },
       {
+        "icon_key": "pet/stalagmite_stalagmite_green",
         "key": "stalagmite_green",
         "name": "Green Stalagmite"
       },
       {
+        "icon_key": "pet/stalagmite_stalagmite_purple",
         "key": "stalagmite_purple",
         "name": "Purple Stalagmite"
       }
@@ -621,6 +677,7 @@
     "spoiler": true,
     "variants": [
       {
+        "icon_key": "pet/void_cat_void_cat",
         "key": "void_cat",
         "name": "Void Cat"
       }

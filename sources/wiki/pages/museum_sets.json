@@ -9,19 +9,13 @@
     {
       "items": [],
       "rosterSource": "cargo",
-      "set": "Aldarian",
+      "set": "Dig Site",
       "wing": "archaeology"
     },
     {
       "items": [],
       "rosterSource": "cargo",
-      "set": "Caldosian",
-      "wing": "archaeology"
-    },
-    {
-      "items": [],
-      "rosterSource": "cargo",
-      "set": "Alda",
+      "set": "Prehistoric",
       "wing": "archaeology"
     },
     {
@@ -33,7 +27,19 @@
     {
       "items": [],
       "rosterSource": "cargo",
-      "set": "Prehistoric",
+      "set": "Alda",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Caldosian",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Aldarian",
       "wing": "archaeology"
     },
     {
@@ -52,6 +58,18 @@
       "items": [],
       "rosterSource": "cargo",
       "set": "Sunken",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Deep Woods",
+      "wing": "archaeology"
+    },
+    {
+      "items": [],
+      "rosterSource": "cargo",
+      "set": "Fish Trap",
       "wing": "archaeology"
     },
     {
@@ -121,24 +139,6 @@
       "wing": "archaeology"
     },
     {
-      "items": [],
-      "rosterSource": "cargo",
-      "set": "Deep Woods",
-      "wing": "archaeology"
-    },
-    {
-      "items": [],
-      "rosterSource": "cargo",
-      "set": "Fish Trap",
-      "wing": "archaeology"
-    },
-    {
-      "items": [],
-      "rosterSource": "cargo",
-      "set": "Dig Site",
-      "wing": "archaeology"
-    },
-    {
       "items": [
         "Koi",
         "Pike",
@@ -147,7 +147,7 @@
         "Trout"
       ],
       "rosterSource": "page",
-      "set": "Multi-Season",
+      "set": "Multi-Season Fish Set",
       "wing": "fish"
     },
     {
@@ -159,7 +159,7 @@
         "Walleye"
       ],
       "rosterSource": "page",
-      "set": "Spring River",
+      "set": "Spring River Fish Set",
       "wing": "fish"
     },
     {
@@ -171,7 +171,7 @@
         "Goldfish"
       ],
       "rosterSource": "page",
-      "set": "Spring Pond",
+      "set": "Spring Pond Fish Set",
       "wing": "fish"
     },
     {
@@ -183,7 +183,7 @@
         "Shrimp"
       ],
       "rosterSource": "page",
-      "set": "Spring Ocean",
+      "set": "Spring Ocean Fish Set",
       "wing": "fish"
     },
     {
@@ -195,7 +195,7 @@
         "Tarpon"
       ],
       "rosterSource": "page",
-      "set": "Summer River",
+      "set": "Summer River Fish Set",
       "wing": "fish"
     },
     {
@@ -207,7 +207,7 @@
         "Sauger"
       ],
       "rosterSource": "page",
-      "set": "Summer Pond",
+      "set": "Summer Pond Fish Set",
       "wing": "fish"
     },
     {
@@ -219,7 +219,7 @@
         "Stingray"
       ],
       "rosterSource": "page",
-      "set": "Summer Ocean",
+      "set": "Summer Ocean Fish Set",
       "wing": "fish"
     },
     {
@@ -231,7 +231,7 @@
         "Shad"
       ],
       "rosterSource": "page",
-      "set": "Fall River",
+      "set": "Fall River Fish Set",
       "wing": "fish"
     },
     {
@@ -243,7 +243,7 @@
         "White Perch"
       ],
       "rosterSource": "page",
-      "set": "Fall Pond",
+      "set": "Fall Pond Fish Set",
       "wing": "fish"
     },
     {
@@ -255,7 +255,7 @@
         "Shark"
       ],
       "rosterSource": "page",
-      "set": "Fall Ocean",
+      "set": "Fall Ocean Fish Set",
       "wing": "fish"
     },
     {
@@ -267,7 +267,7 @@
         "Shadow Bass"
       ],
       "rosterSource": "page",
-      "set": "Winter River",
+      "set": "Winter River Fish Set",
       "wing": "fish"
     },
     {
@@ -279,7 +279,7 @@
         "Tilapia"
       ],
       "rosterSource": "page",
-      "set": "Winter Pond",
+      "set": "Winter Pond Fish Set",
       "wing": "fish"
     },
     {
@@ -291,7 +291,7 @@
         "Sea Bass"
       ],
       "rosterSource": "page",
-      "set": "Winter Ocean",
+      "set": "Winter Ocean Fish Set",
       "wing": "fish"
     },
     {
@@ -303,7 +303,7 @@
         "Golden Eel"
       ],
       "rosterSource": "page",
-      "set": "Fish Bait",
+      "set": "Fish Bait Set",
       "wing": "fish"
     },
     {
@@ -315,7 +315,7 @@
         "Amberjack"
       ],
       "rosterSource": "page",
-      "set": "Fish Trap",
+      "set": "Fish Trap Set",
       "wing": "fish"
     },
     {
@@ -327,7 +327,7 @@
         "Muskie"
       ],
       "rosterSource": "page",
-      "set": "Deep Woods",
+      "set": "Deep Woods Fish Set",
       "wing": "fish"
     },
     {
@@ -339,7 +339,7 @@
         "Stone Loach"
       ],
       "rosterSource": "page",
-      "set": "Upper Mines",
+      "set": "Upper Mines Fish Set",
       "wing": "fish"
     },
     {
@@ -351,7 +351,7 @@
         "Water Balloon Fish"
       ],
       "rosterSource": "page",
-      "set": "Tide Caverns",
+      "set": "Tide Caverns Fish Set",
       "wing": "fish"
     },
     {
@@ -363,7 +363,7 @@
         "Shardfin"
       ],
       "rosterSource": "page",
-      "set": "Deep Earth",
+      "set": "Deep Earth Fish Set",
       "wing": "fish"
     },
     {
@@ -375,7 +375,7 @@
         "Sulfur Crab"
       ],
       "rosterSource": "page",
-      "set": "Lava Caves",
+      "set": "Lava Caves Fish Set",
       "wing": "fish"
     },
     {
@@ -387,7 +387,7 @@
         "Coelacanth"
       ],
       "rosterSource": "page",
-      "set": "Ruins",
+      "set": "Ruins Fish Set",
       "wing": "fish"
     },
     {
@@ -398,7 +398,7 @@
         "Snow Fish"
       ],
       "rosterSource": "page",
-      "set": "Legendary",
+      "set": "Legendary Fish Set",
       "wing": "fish"
     },
     {

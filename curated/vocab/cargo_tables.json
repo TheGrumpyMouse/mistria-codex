@@ -9,7 +9,7 @@
     "excludedFields records what we deliberately do NOT request, and why. Not asking",
     "for prose is a stronger guarantee than asking and stripping afterwards.",
     "",
-    "Row counts confirmed live against Special:CargoTables on 2026-08-07.",
+    "Row counts confirmed live against Special:CargoTables on 2026-08-11.",
     "Table names live here rather than in code because FurnitureTEMP is explicitly",
     "named TEMP and will be renamed."
   ],
@@ -20,7 +20,7 @@
   "tables": [
     {
       "name": "Items",
-      "expectedRows": 1154,
+      "expectedRows": 1197,
       "fields": [
         "itemName",
         "icon",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Characters",
-      "expectedRows": 56,
+      "expectedRows": 58,
       "fields": [
         "charName",
         "relatives",
@@ -100,7 +100,7 @@
     },
     {
       "name": "Recipes",
-      "expectedRows": 282,
+      "expectedRows": 283,
       "fields": [
         "itemName",
         "colors",
@@ -117,7 +117,7 @@
     },
     {
       "name": "Ingredients",
-      "expectedRows": 663,
+      "expectedRows": 667,
       "fields": ["resultItem", "ingredient", "amount"],
       "listFields": [],
       "excludedFields": []
@@ -132,7 +132,7 @@
     },
     {
       "table": "FurnitureTEMP",
-      "rows": 773,
+      "rows": 775,
       "reason": "explicitly named TEMP and expected to be renamed; furniture is already present in Items and adds nothing the museum or availability model needs. Revisit once the table has a stable name."
     },
     {

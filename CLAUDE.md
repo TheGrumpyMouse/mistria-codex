@@ -125,6 +125,26 @@ Only that one map is usable. The per-region pages (`Map:Town` and friends) have 
 
 Pagination is real: page with `&offset=N&limit=500` until a page returns fewer rows than the limit. A zero-row response must **throw**, never write — "empty response overwrites good data" is the classic failure here.
 
+**The enrich fetchers cache HTTP responses locally, and a refresh that forgets
+`--no-cache` refreshes nothing.** The post-1.0 refresh fetched Items three
+times and got the cached 1,154 rows back while `Special:CargoTables` said
+1,197 — the mismatch error blamed the wiki, and the wiki was fine. `pnpm
+enrich:cargo -- --no-cache` (and the same for `enrich:pages`) is the real
+refresh; CI runners have no cache, which is why `refresh.yml` needs no flag.
+
+**The wiki map's marker groups are semantic — never collapse them.** Regions,
+Buildings, Statues, Fountains and Quest are five different answers to "what is
+this pin", and the builder maps them onto `Spot.kind` (the app draws a glyph
+per kind). The two bridge markers name their repair quests via curated aliases
+in `map_markers.json`; the other five quest markers match no quest record by
+name and ship with `quest_id: null` — a deduced link would be a guess wearing
+a URL. Markers the wiki lacks entirely (Balor's wagon, one dig pin per digging
+area) are hand-placed in `curated/maps/markers.json`: the *position* is ours,
+so everything built from that file ships `inferred` and renders hollow, and
+the dig-area list is derived from the shipped artifact windows — the curated
+file may never be the source of *where digging exists*, only of where the pin
+sits.
+
 ---
 
 ## Verified game-file facts

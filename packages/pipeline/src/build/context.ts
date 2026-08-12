@@ -24,7 +24,7 @@ import { CURATED_DIR, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 import { Resolver } from '../normalise/resolve.js'
 import { decodeEntities, stripWikitext } from '../normalise/wikitext.js'
-import type { MarkerAlias } from './builders/maps.js'
+import type { HandMarkers, MarkerAlias, QuestMarkerAlias } from './builders/maps.js'
 import { type GameFacts, loadGameFacts, loadWeatherClasses } from './game-facts.js'
 import { buildItemIdIndex, type ItemIdIndex } from './item-ids.js'
 import { buildWaterIndex, type WaterIndex } from './waters.js'
@@ -268,6 +268,13 @@ export interface BuildContext {
   maps: MapsExtract | null
   mapShapes: MapShapesExtract | null
   mapAliases: MarkerAlias[]
+  /** Curated marker-name → quest-id joins for the wiki's Quest-group markers. */
+  mapQuestAliases: QuestMarkerAlias[]
+  /**
+   * Hand-placed markers from `curated/maps/markers.json` — positions that are
+   * ours rather than the wiki's. Everything built from these ships inferred.
+   */
+  handMarkers: HandMarkers
   /**
    * The game's real internal item names, where a v0.15.0 snapshot has them.
    * `idFor` consults this first, so every item reference in the dataset moves
@@ -370,9 +377,18 @@ export async function loadContext(): Promise<BuildContext> {
   // builds, and every location simply keeps the anchor gap it had.
   const maps = await readJsonFile<MapsExtract>(pages('maps.json')).catch(() => null)
   const mapShapes = await readJsonFile<MapShapesExtract>(pages('map_shapes.json')).catch(() => null)
-  const { anchors: mapAliases } = await readJsonFile<{ anchors: MarkerAlias[] }>(
-    join(CURATED_DIR, 'aliases', 'map_markers.json'),
-  ).catch(() => ({ anchors: [] as MarkerAlias[] }))
+  const { anchors: mapAliases, quests: mapQuestAliases = [] } = await readJsonFile<{
+    anchors: MarkerAlias[]
+    quests?: QuestMarkerAlias[]
+  }>(join(CURATED_DIR, 'aliases', 'map_markers.json')).catch(() => ({
+    anchors: [] as MarkerAlias[],
+    quests: [] as QuestMarkerAlias[],
+  }))
+  // Hand-placed markers are optional the same way the map extracts are: with
+  // the file absent the wagon keeps its anchor gap and no dig pins render.
+  const handMarkers = await readJsonFile<HandMarkers>(
+    join(CURATED_DIR, 'maps', 'markers.json'),
+  ).catch(() => ({ anchors: [], dig_spots: [] }) as HandMarkers)
 
   const entities = (file: string): string => join(CURATED_DIR, 'entities', file)
   const [mines, animals, buildings] = await Promise.all([
@@ -544,6 +560,8 @@ export async function loadContext(): Promise<BuildContext> {
     maps,
     mapShapes,
     mapAliases,
+    mapQuestAliases,
+    handMarkers,
     itemIds,
     game,
     weatherClasses,

@@ -13,11 +13,11 @@ import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
 import { FoundHereList } from '~/components/FoundHereList'
 import { LoadError } from '~/components/Section'
-import { type MapRegionShape, ValleyMap } from '~/components/ValleyMap'
+import { type MapRegionShape, PinBadge, ValleyMap } from '~/components/ValleyMap'
 import { type DisplayIndex, loadAvailability, loadDataset, loadDisplayIndex } from '~/lib/data'
 import { type AvailabilityIndex, foundAt } from '~/lib/findable'
 import { useDocumentTitle } from '~/lib/head'
-import { titleCase } from '~/lib/labels'
+import { SPOT_KIND_LABELS, titleCase } from '~/lib/labels'
 
 const route = getRouteApi('/map')
 
@@ -42,6 +42,7 @@ interface LocationRecord {
   kind: string
   parent_id: string | null
   anchor: { x: number; y: number } | null
+  anchor_inferred?: boolean
   shape: MapRegionShape['shape']
 }
 
@@ -57,6 +58,8 @@ interface SpotRecord {
   x: number
   y: number
   kind: string
+  quest_id?: string | null
+  inferred?: boolean
 }
 
 export function MapRoute() {
@@ -202,21 +205,52 @@ export function MapRoute() {
   const inside = locations.filter((l) => l.anchor !== null && l.shape === null)
   const selectedRegion = locations.find((l) => l.id === selected) ?? null
 
+  // The glyph a location's pin carries. Shops and interiors read as buildings;
+  // anything else keeps the plain pin — a glyph per kind is a vocabulary, not
+  // a decoration, so kinds without a clear picture stay unadorned.
+  const locationPinKind = (kind: string): string | undefined =>
+    kind === 'shop' || kind === 'indoor' ? 'building' : kind === 'water' ? 'water' : undefined
+
+  const locationPin = (l: LocationRecord) => ({
+    id: l.id,
+    x: l.anchor?.x ?? 0,
+    y: l.anchor?.y ?? 0,
+    label: l.name,
+    kind: locationPinKind(l.kind),
+    // Balor's wagon: the pitch is real, the map position is ours — hollow.
+    inferred: l.anchor_inferred === true,
+  })
+  const spotPin = (s: SpotRecord) => ({
+    id: s.id,
+    x: s.x,
+    y: s.y,
+    // A dig pin is a class of thing, not a named landmark — its id is ours and
+    // would title-case into nonsense.
+    label: s.kind === 'dig_spot' ? 'Dig site — random spots daily' : titleCase(s.id),
+    kind: s.kind,
+    inferred: s.inferred === true,
+    // A quest spot opens its quest; other landmarks have nowhere to go.
+    open: typeof s.quest_id === 'string',
+  })
+
   // What sits in the selected region: its buildings, and the landmarks the wiki
   // places inside it. With nothing selected the buildings are the pins, because
   // "where is the blacksmith" is the question this screen exists to answer.
   const pins =
     selected === null
-      ? inside.map((l) => ({ id: l.id, x: l.anchor?.x ?? 0, y: l.anchor?.y ?? 0, label: l.name }))
+      ? inside.map(locationPin)
       : [
-          ...inside
-            .filter((l) => l.parent_id === selected)
-            .map((l) => ({ id: l.id, x: l.anchor?.x ?? 0, y: l.anchor?.y ?? 0, label: l.name })),
-          // Spot pins are landmarks, not places — nothing to open.
-          ...spots
-            .filter((s) => s.location_id === selected)
-            .map((s) => ({ id: s.id, x: s.x, y: s.y, label: titleCase(s.id), open: false })),
+          ...inside.filter((l) => l.parent_id === selected).map(locationPin),
+          ...spots.filter((s) => s.location_id === selected).map(spotPin),
         ]
+
+  // The legend teaches only the glyphs on screen right now, in a stable order.
+  const legendKinds = ['building', 'landmark', 'water', 'dig_spot', 'quest'].filter((kind) =>
+    pins.some((pin) => pin.kind === kind),
+  )
+  const hasInferredPin = pins.some((pin) => pin.inferred)
+  const hasDigPin =
+    selected !== null && spots.some((s) => s.location_id === selected && s.kind === 'dig_spot')
 
   return (
     <Screen>
@@ -262,9 +296,44 @@ export function MapRoute() {
           pins={pins}
           artUrl={artUrl}
           // A building pin opens its page — "where is the blacksmith" ends at
-          // the blacksmith, not at a rectangle with a tooltip.
-          onPinClick={(id) => void navigate({ to: '/place/$id', params: { id } })}
+          // the blacksmith, not at a rectangle with a tooltip. A quest pin
+          // opens the quest that clears the barrier it marks.
+          onPinClick={(id) => {
+            const spot = spots.find((s) => s.id === id)
+            if (spot !== undefined) {
+              if (typeof spot.quest_id === 'string')
+                void navigate({ to: '/quest/$id', params: { id: spot.quest_id } })
+              return
+            }
+            void navigate({ to: '/place/$id', params: { id } })
+          }}
         />
+
+        {/* The glyphs, explained — only the ones on screen, or the legend
+            becomes homework. The hollow entry rides along whenever any pin is
+            an inference, because that distinction is the one worth teaching. */}
+        {(legendKinds.length > 0 || hasInferredPin) && (
+          <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-ink-faint text-xs">
+            {legendKinds.map((kind) => (
+              <span key={kind} className="inline-flex items-center gap-1">
+                <PinBadge kind={kind} />
+                {SPOT_KIND_LABELS[kind]}
+              </span>
+            ))}
+            {hasInferredPin && (
+              <span className="inline-flex items-center gap-1">
+                <PinBadge inferred />
+                <span className="unverified">position approximate</span>
+              </span>
+            )}
+          </p>
+        )}
+        {hasDigPin && (
+          <p className="mt-1 text-ink-faint text-xs">
+            Dig spots appear at random places in this area each day — the pin marks the area, not an
+            exact spot.
+          </p>
+        )}
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">

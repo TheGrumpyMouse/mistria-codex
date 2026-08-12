@@ -550,6 +550,7 @@ export function buildLocations(ctx: BuildContext): Location[] {
       parent_id: record.parent_id ?? null,
       habitats,
       anchor: null,
+      anchor_inferred: false,
       shape: null,
       connections: [],
       unlock_requires: unlock,

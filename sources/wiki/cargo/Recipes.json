@@ -1363,6 +1363,23 @@
     "colors": [
       ""
     ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:diamond.png|30px|link=Diamond]] [[Diamond]] (2)&lt;br&gt;[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)&lt;br&gt;[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)&lt;br&gt;[[File:dragon-forged core.png|30px|link=Dragon-Forged Core]] [[Dragon-Forged Core]]"
+    ],
+    "itemName": "Engagement Ring",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 30,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
     "craftType": "Food",
     "ingredients": [
       "[[File:smallmouth bass.png|30px|link=Smallmouth Bass]] [[Smallmouth Bass]] (1)&lt;br&gt;[[File:pike.png|30px|link=Pike]] [[Pike]] (1)"

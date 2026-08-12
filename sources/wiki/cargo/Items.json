@@ -997,6 +997,28 @@
   },
   {
     "health": null,
+    "icon": "[[File:baby_cradle.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Baby Cradle",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "A gift from &lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:22px;width:22px&quot;&gt;[[File:Landen icon.png|22px|link=Landen|alt=|class=pixel-image|Landen]]&lt;/span&gt;[[Landen|&lt;span class=&quot;sprite-text&quot;&gt;Landen&lt;/span&gt;]]&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "health": null,
     "icon": "[[File:Bag_upgrade.png]]",
     "isBuyable": 0,
     "isConsumable": 0,
@@ -3694,7 +3716,8 @@
     "sources": [
       "[[File:Almanac_icon_cooked_dishes.png|20px|link=Cooking]] [[Cooking]]",
       "[[File:Fp_wiki_mining.png|20px|link=Mines/Upper Mines]]  &lt;span style=&quot;display:none&quot;&gt;1&lt;/span&gt;[[Mines/Upper Mines|The Upper Mines]] (requires [[File:Dungeon_delicacies.png|15px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Dungeon Delicacies&amp;nbsp;Skill]])",
-      "Feeding [[File:Mimic_main.png|20px|link=Mimic]] [[Mimic|Mimics]] in &lt;span style=&quot;display:none&quot;&gt;1&lt;/span&gt;[[Mines/Upper Mines|The Upper Mines]][[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Cooked Dishes]] [[Balor&#039;s Wagon#Cooked Dishes|Balor&#039;s Wagon]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.pn",
+      "Feeding [[File:Mimic_main.png|20px|link=Mimic]] [[Mimic|Mimics]] in &lt;span style=&quot;display:none&quot;&gt;1&lt;/span&gt;[[Mines/Upper Mines|The Upper Mines]]",
+      "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Cooked Dishes]] [[Balor&#039;s Wagon#Cooked Dishes|Balor&#039;s Wagon]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]200t&lt;/span&gt;",
       "[[File:Quests_heart_icon.png|20px|link=Celine/Quests#Heart_Quests]] Celine&#039;s [[Celine/Quests#Heart_Quests|Heart Quest]] &quot;A Change of Green-ery&quot;"
     ],
     "stamina": 48,
@@ -4337,7 +4360,8 @@
     "stamina": 10,
     "tags": [
       "Food",
-      "Food:Choco"
+      "Food:Choco",
+      "Ingredient"
     ]
   },
   {
@@ -6073,9 +6097,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": 300,
+    "sellValue": 400,
     "sources": [
-      "[[File:Calendar_icon_animal_festival.png|24px|link=Animal Festival#Souvenir_Stall]] [[Animal Festival#Souvenir_Stall|Animal Festival from The Souvenir Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]600t&lt;/span&gt;"
+      "[[File:Calendar_icon_animal_festival.png|24px|link=Animal Festival#Souvenir_Stall]] [[Animal Festival#Souvenir_Stall|Animal Festival from The Souvenir Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]800t&lt;/span&gt;"
     ],
     "stamina": 130,
     "tags": [
@@ -7096,6 +7120,29 @@
     ]
   },
   {
+    "health": 80,
+    "icon": "[[File:Dark chocolate.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "Dark Chocolate",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]] (conditional)&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
     "health": null,
     "icon": "[[File:dart.png]]",
     "isBuyable": 0,
@@ -7127,7 +7174,7 @@
     "isCraftable": 0,
     "itemName": "Deep Earthworm",
     "location": [
-      "[[Mines/Deep Earth|The Deep Earth]]&lt;br&gt;(floors 41-59)"
+      "&lt;span style=&quot;display:none&quot;&gt;3&lt;/span&gt;[[Mines/Deep Earth|The Deep Earth]]&lt;br&gt;(floors 41-59)"
     ],
     "mana": null,
     "museum": 1,
@@ -8354,6 +8401,28 @@
     ]
   },
   {
+    "health": null,
+    "icon": "[[File:engagement_ring.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 1,
+    "itemName": "Engagement Ring",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Blacksmithing"
+    ]
+  },
+  {
     "health": 10,
     "icon": "[[File:espresso.png]]",
     "isBuyable": 0,
@@ -8972,9 +9041,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": 125,
+    "sellValue": 200,
     "sources": [
-      "[[File:Calendar_icon_spring_festival.png|20px|link=Spring Festival#Food Stall]] [[Spring Festival#Food Stall|Spring Festival Food Stall]] &lt;small&gt;(Always available)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]180t&lt;/span&gt;"
+      "[[File:Calendar_icon_spring_festival.png|20px|link=Spring Festival#Food Stall]] [[Spring Festival#Food Stall|Spring Festival Food Stall]] &lt;small&gt;(Always available)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
     ],
     "stamina": 34,
     "tags": [
@@ -11688,6 +11757,29 @@
     ]
   },
   {
+    "health": 80,
+    "icon": "[[File:Honey toast.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "Honey Toast",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]]&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
     "health": null,
     "icon": "[[File:honeycomb.png]]",
     "isBuyable": 0,
@@ -14365,6 +14457,29 @@
     ]
   },
   {
+    "health": 80,
+    "icon": "[[File:Milk chocolate.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "Milk Chocolate",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]] (conditional)&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
     "health": null,
     "icon": "[[File:mine cricket.png]]",
     "isBuyable": 0,
@@ -15753,6 +15868,51 @@
   },
   {
     "health": null,
+    "icon": "[[File:mystical feather.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Mystical Feather",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;The Great Bird&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": null,
+    "tags": [
+      ""
+    ]
+  },
+  {
+    "health": 80,
+    "icon": "[[File:Nachos.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "Nachos",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]]&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
+    "health": null,
     "icon": "[[File:narrows moss.png]]",
     "isBuyable": 0,
     "isConsumable": 0,
@@ -15811,7 +15971,7 @@
     "mana": null,
     "museum": 0,
     "season": "All",
-    "sellValue": 45,
+    "sellValue": 25,
     "sources": [
       "[[File:Fishing_icon.png|20px|link=Fishing#Dive-Based_Fishing]] [[Fishing#Dive-Based_Fishing|Diving]]"
     ],
@@ -16492,6 +16652,52 @@
     "stamina": null,
     "tags": [
       "Bug"
+    ]
+  },
+  {
+    "health": 80,
+    "icon": "[[File:pbjt sandwich.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "PBJT Sandwich",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]] (conditional)&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
+    "health": 80,
+    "icon": "[[File:pbm sandwich.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "PBM Sandwich",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]] (conditional)&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
     ]
   },
   {
@@ -17178,6 +17384,160 @@
   },
   {
     "health": null,
+    "icon": "[[File:Pet skin enchantern.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Enchantern",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Enchantern_yellow.png|20px|link=Enchantern]] [[Enchantern|Any&amp;nbsp;Enchantern]]  in &lt;span style=&quot;display:none&quot;&gt;0&lt;/span&gt;[[Mines#The_Mines&#039;_Entrance|The Mines]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#C"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin essence bat.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Essence Bat",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Essence bat_main.png|20px|link=Essence Bat]] [[Essence Bat|Any&amp;nbsp;Essence Bat]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin flame spirit.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Flame Spirit",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Flame spirit_main.png|20px|link=Flame Spirit]] [[Flame Spirit|&amp;nbsp;Flame Spirit]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin flying tome.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Flying Tome",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Flying tome main.png|20px|link=Flying Tome]] [[Flying Tome|Flying Tome]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin gryphon statue.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Gryphon Statue",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Living griffin statue main.png|20px|link=Living Gryphon Statue]] [[Living Gryphon Statue|Living Gryphon Statue]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin lava cat.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Lava Cat",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Lava cat main.png|20px|link=Lava Cat]] [[Lava Cat|Lava Cat]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin mimic.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Mimic",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Mimic_main.png|20px|link=Mimic]] [[Mimic|Mimic]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
     "icon": "[[File:Pet skin mushroom.png]]",
     "isBuyable": 0,
     "isConsumable": 0,
@@ -17191,7 +17551,7 @@
     "season": null,
     "sellValue": null,
     "sources": [
-      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Mushroom_red.png|20px|link=Mushroom_(Monster)]] [[Mushroom_(Monster)|Any&amp;nbsp;Mushroom]]  in [[Mines#The_Mines&#039;_Entrance|The Mines]]"
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Mushroom_red.png|20px|link=Mushroom_(Monster)]] [[Mushroom_(Monster)|Any&amp;nbsp;Mushroom]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -17213,7 +17573,29 @@
     "season": null,
     "sellValue": null,
     "sources": [
-      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Copperclod.png|20px|link=Clod]] [[Clod|Any&amp;nbsp;Oreclod]]  in [[Mines#The_Mines&#039;_Entrance|The Mines]]"
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Copperclod.png|20px|link=Clod]] [[Clod|Any&amp;nbsp;Oreclod]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin rock stack.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Rock Stack",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Rock stack main.png|20px|link=Rock Stack]] [[Rock Stack|Rock Stack]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -17235,7 +17617,7 @@
     "season": null,
     "sellValue": null,
     "sources": [
-      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Rockclod_main.png|20px|link=Clod]] [[Clod|Any&amp;nbsp;Rockclod]]  in [[Mines#The_Mines&#039;_Entrance|The Mines]]"
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Rockclod_main.png|20px|link=Clod]] [[Clod|Any&amp;nbsp;Rockclod]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -17257,7 +17639,51 @@
     "season": null,
     "sellValue": null,
     "sources": [
-      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Sapling_main.png|20px|link=Sapling]] [[Sapling|Any&amp;nbsp;Sapling]]  in [[Mines#The_Mines&#039;_Entrance|The Mines]]"
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Sapling_main.png|20px|link=Sapling]] [[Sapling|Any&amp;nbsp;Sapling]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin stalagmite.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Stalagmite",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Stalagmite_blue.png|20px|link=Stalagmite]] [[Stalagmite|Any&amp;nbsp;Stalagmite]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Pet Skin"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Pet skin void cat.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Pet Skin: Void Cat",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Void cat main.png|20px|link=Void Cat]] [[Void Cat|Void Cat]] &lt;small&gt;(Requires [[File:Friend-shaped.png|18px|link=]]&amp;nbsp;[[Skills#Combat_Skill_Perks|Friend-Shaped&amp;nbsp;Skill]])&lt;/small&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -20454,7 +20880,8 @@
     "sources": [
       "[[File:Almanac_icon_cooked_dishes.png|20px|link=Cooking]] [[Cooking]]",
       "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Darcy&#039;s_Stall]] [[Saturday Market#Darcy&#039;s_Stall|Darcy&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]240t&lt;/span&gt;",
-      "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Cooked Dishes]] [[Balor&#039;s Wagon#Cooked Dishes|Balor&#039;s Wagon]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]240t&lt;/span&gt;&lt;BR&gt;[[File:Almanac icon crops.png|20px|link=Farming]] [[Farming|Harvesting Ingredients]] &lt;small&gt;(with [[File:Living"
+      "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Cooked Dishes]] [[Balor&#039;s Wagon#Cooked Dishes|Balor&#039;s Wagon]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]240t&lt;/span&gt;",
+      "[[File:Almanac icon crops.png|20px|link=Farming]] [[Farming|Harvesting Ingredients]] &lt;small&gt;(with [[File:Living_off_the_land.png|15px|link=]]&amp;nbsp;[[Skills#Farming_Skill_Perks|Living Off The Land&amp;nbsp;Skill]])&lt;/small&gt;"
     ],
     "stamina": 42,
     "tags": [
@@ -22803,6 +23230,511 @@
   },
   {
     "health": null,
+    "icon": "[[File:Song_crystal_adelines_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Adeline&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_another_tower.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Another Tower",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:gold chest.png|20px|link=Golden Treasure Box]] [[Golden Treasure Box]] within [[Bell Tower|The Bell Tower]]"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_balors_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Balor&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_caldarus_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Caldarus&#039; Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_celines_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Celine&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_crystal_caves.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Crystal Caves",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_dream_lobby.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Dream Lobby",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_eilands_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Eiland&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_farm_boy.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Farm Boy",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_five more minutes.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Five More Minutes",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_haydens_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Hayden&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_heros journey.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Hero&#039;s Journey",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_junipers_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Juniper&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_marchs_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - March&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_misty pasture.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Misty Pasture",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_pink twintails.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Pink Twintails",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_purple potions.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Purple Potions",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_rainy window.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Rainy Window",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_reinas_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Reina&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_ryis_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Ryis&#039; Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_seridias_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Seridia&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
+    "icon": "[[File:Song_crystal_valens_theme.png]]",
+    "isBuyable": 0,
+    "isConsumable": 0,
+    "isCraftable": 0,
+    "itemName": "Song Crystal - Valen&#039;s Theme",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": null,
+    "sources": [
+      "[[File:Fp_wiki_event_saturday_market.png|20px|link=Saturday Market#Zorel&#039;s_Stall]] [[Saturday Market#Zorel&#039;s_Stall|Zorel&#039;s Stall]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
+      "000t&lt;/span&gt;"
+    ],
+    "stamina": null,
+    "tags": [
+      "Song Crystal"
+    ]
+  },
+  {
+    "health": null,
     "icon": "[[File:Soy_sauce.png]]",
     "isBuyable": 0,
     "isConsumable": 0,
@@ -24447,6 +25379,29 @@
     ]
   },
   {
+    "health": 80,
+    "icon": "[[File:Tesserae cake.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "Tesserae Cake",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]]&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ]
+  },
+  {
     "health": null,
     "icon": "[[File:Tetra.png]]",
     "isBuyable": 0,
@@ -24983,7 +25938,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": 125,
+    "sellValue": 200,
     "sources": [
       "[[File:Calendar_icon_spring_festival.png|20px|link=Spring Festival#Food Stall]] [[Spring Festival#Food Stall|Spring Festival Food Stall]] &lt;small&gt;(Requires 1&lt;sup&gt;st&lt;/sup&gt; Place)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
     ],
@@ -26085,7 +27040,7 @@
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;",
     "sellValue": 45,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Fishing_icon.png|20px|link=Fishing]] [[Fishing]]"
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Fishing icon.png|20px|link=Fishing|alt=|class=pixel-image|Fishing]]&lt;/span&gt;[[Fishing|&lt;span class=&quot;sprite-text&quot;&gt;Fishing&lt;/span&gt;]]&lt;/span&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -26477,6 +27432,29 @@
     "stamina": null,
     "tags": [
       "Animal Cosmetics"
+    ]
+  },
+  {
+    "health": 80,
+    "icon": "[[File:White chocolate.png]]",
+    "isBuyable": 0,
+    "isConsumable": 1,
+    "isCraftable": 0,
+    "itemName": "White Chocolate",
+    "location": [
+      ""
+    ],
+    "mana": null,
+    "museum": 0,
+    "season": null,
+    "sellValue": 200,
+    "sources": [
+      "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;[[File:Calendar_icon_friday_night_at_the_inn.png|20px|link=Friday Night at the Inn]] [[Friday Night at the Inn]] (conditional)&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]"
+    ],
+    "stamina": 80,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
     ]
   },
   {

@@ -76,13 +76,15 @@ export function routeFor(
   | '/monster/$id'
   | '/quest/$id'
   | '/animal/$id'
-  | '/pet/$id' {
+  | '/pet/$id'
+  | '/festival/$id' {
   if (category === 'character') return '/villager/$id'
   if (category === 'location') return '/place/$id'
   if (category === 'monster') return '/monster/$id'
   if (category === 'quest') return '/quest/$id'
   if (category === 'animal') return '/animal/$id'
   if (category === 'pet') return '/pet/$id'
+  if (category === 'festival') return '/festival/$id'
   return '/item/$id'
 }
 
@@ -109,7 +111,8 @@ export function iconKeyFor(id: string, entry?: { i?: string | null; c?: string }
     category === 'location' ||
     category === 'monster' ||
     category === 'quest' ||
-    category === 'animal'
+    category === 'animal' ||
+    category === 'festival'
   ) {
     return `${category}/${id}`
   }

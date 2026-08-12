@@ -71,7 +71,7 @@ export default defineConfig({
         // would stop the worker installing at all.
         //
         // `guide/**` is the same hazard wearing a different hat, and it is the
-        // one that would actually have fired: `pnpm build:seo` writes ~1,400
+        // one that would actually have fired: `pnpm build:seo` writes ~1,500
         // static HTML pages under `public/guide/`, every one of them matching
         // `**/*.html`. Left in, each install would precache several megabytes
         // of crawler pages nobody asked for, and one 404 among them would stop

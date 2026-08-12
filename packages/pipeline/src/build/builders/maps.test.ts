@@ -1,7 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import type { ExtractedMarker } from '../../enrich/maps.js'
 import { markerPoint, parseDataMap, splitArticle } from '../../enrich/maps.js'
-import { regionContaining, resolveAnchors, resolveSpots } from './maps.js'
+import {
+  applyHandAnchors,
+  regionContaining,
+  resolveAnchors,
+  resolveHandDigSpots,
+  resolveSpots,
+} from './maps.js'
 
 const marker = (over: Partial<ExtractedMarker>): ExtractedMarker => ({
   group: 'Regions',
@@ -198,27 +204,67 @@ describe('resolveSpots', () => {
         location_id: 'the_beach',
         x: 2338,
         y: 3159,
-        kind: 'entrance',
+        kind: 'landmark',
         seasons: [],
+        quest_id: null,
+        inferred: false,
         map_version: 1,
       },
     ])
   })
 
-  it('calls a fountain water and everything else an entrance', () => {
-    const { spots } = resolveSpots(
-      [
-        marker({
-          group: 'Fountains',
-          name: 'F',
-          article: 'The Narrows',
-          section: 'Rejuvenating Fountain',
-        }),
-      ],
+  it('keeps the wiki groups semantic instead of collapsing them', () => {
+    // A fountain, a shop building, a statue and a broken bridge are four
+    // different answers to "what is this pin". Collapsing them all to
+    // `entrance` was the bug this table replaced.
+    const cases: [string, string][] = [
+      ['Fountains', 'water'],
+      ['Buildings', 'building'],
+      ['Statues', 'landmark'],
+      ['Quest', 'quest'],
+      ['SomethingNew', 'entrance'],
+    ]
+    for (const [group, kind] of cases) {
+      const { spots } = resolveSpots(
+        [marker({ group, name: 'F', article: 'The Narrows', section: 'S' })],
+        LOCATIONS,
+        toId,
+      )
+      expect(spots[0]?.kind).toBe(kind)
+    }
+  })
+
+  it('links a quest marker through its curated alias, and counts the rest', () => {
+    const markers = [
+      marker({ group: 'Quest', name: 'Broken Bridge', article: 'The Narrows', section: 'B' }),
+      marker({ group: 'Quest', name: 'Sealed Cave', article: 'The Beach', section: 'C' }),
+    ]
+    const { spots, questUnlinked } = resolveSpots(
+      markers,
       LOCATIONS,
       toId,
+      new Set(),
+      [],
+      [{ marker: 'Broken Bridge', quest_id: 'repair_the_bridge', reason: 'name match' }],
+      new Set(['repair_the_bridge']),
     )
-    expect(spots[0]?.kind).toBe('water')
+    expect(spots.find((s) => s.id === 'broken_bridge')?.quest_id).toBe('repair_the_bridge')
+    expect(spots.find((s) => s.id === 'sealed_cave')?.quest_id).toBeNull()
+    expect(questUnlinked).toEqual(['Sealed Cave'])
+  })
+
+  it('refuses a quest alias that names no quest record', () => {
+    expect(() =>
+      resolveSpots(
+        [],
+        LOCATIONS,
+        toId,
+        new Set(),
+        [],
+        [{ marker: 'X', quest_id: 'not_a_quest', reason: '' }],
+        new Set(['repair_the_bridge']),
+      ),
+    ).toThrow(/not a quest record/)
   })
 
   it('leaves a landmark unplaced rather than guessing its region', () => {
@@ -253,5 +299,96 @@ describe('resolveSpots', () => {
       new Set(["The Manor's Gazebo"]),
     )
     expect(spots).toHaveLength(0)
+  })
+})
+
+describe('applyHandAnchors', () => {
+  const location = (over: Record<string, unknown>) =>
+    ({
+      id: 'balors_wagon',
+      anchor: null,
+      anchor_inferred: false,
+      data_gaps: ['anchor', 'map_id'],
+      ...over,
+    }) as never
+
+  const hand = (anchors: { location_id: string; x: number; y: number; reason: string }[]) => ({
+    anchors,
+    dig_spots: [],
+  })
+
+  it('fills a missing anchor, flags it inferred, and closes the gaps', () => {
+    const [wagon] = applyHandAnchors(
+      hand([{ location_id: 'balors_wagon', x: 10, y: 20, reason: 'hand-placed' }]),
+      [location({})],
+    ) as { anchor: unknown; anchor_inferred: boolean; data_gaps: string[] }[]
+    expect(wagon?.anchor).toEqual({ x: 10, y: 20 })
+    expect(wagon?.anchor_inferred).toBe(true)
+    expect(wagon?.data_gaps).toEqual([])
+  })
+
+  it('never overrides a published coordinate', () => {
+    // If the wiki ever publishes a wagon marker, the curated entry must be
+    // deleted, not silently outranked — a throw is what forces that.
+    expect(() =>
+      applyHandAnchors(hand([{ location_id: 'balors_wagon', x: 10, y: 20, reason: '' }]), [
+        location({ anchor: { x: 1, y: 2 } }),
+      ]),
+    ).toThrow(/published anchor/)
+  })
+
+  it('refuses an entry that names no location', () => {
+    expect(() =>
+      applyHandAnchors(hand([{ location_id: 'nowhere', x: 0, y: 0, reason: '' }]), [location({})]),
+    ).toThrow(/not a location/)
+  })
+})
+
+describe('resolveHandDigSpots', () => {
+  const shaped = { id: 'the_beach', shape: { type: 'cells' } } as never
+  const shapeless = { id: 'the_upper_mines', shape: null } as never
+
+  it('builds one inferred dig pin per curated coordinate', () => {
+    const { spots } = resolveHandDigSpots(
+      { anchors: [], dig_spots: [{ location_id: 'the_beach', x: 5, y: 6, reason: 'centre' }] },
+      [shaped],
+      new Set(['the_beach']),
+    )
+    expect(spots).toEqual([
+      {
+        id: 'dig_the_beach',
+        location_id: 'the_beach',
+        x: 5,
+        y: 6,
+        kind: 'dig_spot',
+        seasons: [],
+        quest_id: null,
+        inferred: true,
+        map_version: 1,
+      },
+    ])
+  })
+
+  it('throws when a coordinate exists for an area the data says has no digging', () => {
+    // The curated file supplies positions, never digging itself — a stale
+    // entry must not invent a dig site.
+    expect(() =>
+      resolveHandDigSpots(
+        { anchors: [], dig_spots: [{ location_id: 'the_beach', x: 5, y: 6, reason: '' }] },
+        [shaped],
+        new Set(),
+      ),
+    ).toThrow(/no shipped artifact window digs there/)
+  })
+
+  it('reports a shaped digging area with no pin, and excuses the shapeless', () => {
+    // A mine biome digs but has no overworld footprint — not applicable, not
+    // a missing pin.
+    const { missingDigPins } = resolveHandDigSpots(
+      { anchors: [], dig_spots: [] },
+      [shaped, shapeless],
+      new Set(['the_beach', 'the_upper_mines']),
+    )
+    expect(missingDigPins).toEqual(['the_beach'])
   })
 })

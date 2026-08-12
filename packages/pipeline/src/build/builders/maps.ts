@@ -25,6 +25,26 @@ export interface MarkerAlias {
   reason: string
 }
 
+/** A curated marker-name → quest-id join, for the wiki's Quest-group markers. */
+export interface QuestMarkerAlias {
+  marker: string
+  quest_id: string
+  reason: string
+}
+
+/**
+ * Hand-placed markers from `curated/maps/markers.json`.
+ *
+ * The positions are ours, so everything built from this ships inferred and the
+ * app draws it hollow. The dig-spot entries supply *only* coordinates — which
+ * areas dig at all is derived from the shipped artifact windows, and a
+ * coordinate for an area the data says has no digging is an error, not a pin.
+ */
+export interface HandMarkers {
+  anchors: { location_id: string; x: number; y: number; reason: string }[]
+  dig_spots: { location_id: string; x: number; y: number; reason: string }[]
+}
+
 /**
  * What decides a marker's fate is its **article, not its group**.
  *
@@ -39,10 +59,16 @@ export interface MarkerAlias {
  * - links into a location's page (`The_Beach#The_Lighthouse`) -> a spot in it
  * - anything else -> reported, never placed
  *
- * The group survives only to say what *kind* of spot a landmark is.
+ * The group survives only to say what *kind* of spot a landmark is — and the
+ * wiki's groups are semantic, so they must not be collapsed: a fountain, a
+ * shop building, a statue and a broken bridge are four different answers to
+ * "what is this pin", and the app draws a different glyph for each.
  */
 const SPOT_KINDS: Record<string, Spot['kind']> = {
   Fountains: 'water',
+  Buildings: 'building',
+  Statues: 'landmark',
+  Quest: 'quest',
 }
 const DEFAULT_SPOT_KIND: Spot['kind'] = 'entrance'
 
@@ -175,6 +201,12 @@ export interface SpotResult {
   spots: Spot[]
   /** Landmarks whose containing region no source states. */
   unplaced: ExtractedMarker[]
+  /**
+   * Quest-group markers with no curated quest link. Expected and counted —
+   * five of the seven name no quest record of ours, and a marker that gains
+   * one later should come off this list, not be silently absorbed.
+   */
+  questUnlinked: string[]
 }
 
 /**
@@ -225,14 +257,32 @@ export function resolveSpots(
   alreadyAnchored: Set<string> = new Set(),
   /** Region footprints, for markers whose article does not name their region. */
   footprints: { id: string; shape: { cell: number; runs: [number, number, number][] } }[] = [],
+  /** Curated marker-name → quest-id joins, each validated against `questIds`. */
+  questAliases: QuestMarkerAlias[] = [],
+  questIds: Set<string> = new Set(),
 ): SpotResult {
   const normalise = (value: string | null): string =>
     (value ?? '').replace(/_/g, ' ').trim().toLowerCase()
   const byPage = new Map(locations.map((l) => [normalise(l.wiki_page), l.id]))
   const isLocation = new Set(byPage.values())
 
+  // Same contract as the anchor aliases: a curated entry naming a quest that
+  // does not ship is a bug in the curation, and it fails loudly rather than
+  // shipping a dead link.
+  const questByMarker = new Map<string, string>()
+  for (const alias of questAliases) {
+    if (!questIds.has(alias.quest_id)) {
+      throw new Error(
+        `curated/aliases/map_markers.json links marker "${alias.marker}" to quest ` +
+          `"${alias.quest_id}", which is not a quest record.`,
+      )
+    }
+    questByMarker.set(alias.marker, alias.quest_id)
+  }
+
   const spots: Spot[] = []
   const unplaced: ExtractedMarker[] = []
+  const questUnlinked: string[] = []
 
   for (const marker of markers) {
     // A marker that already gave a location its anchor is that location, not a
@@ -260,6 +310,9 @@ export function resolveSpots(
       continue
     }
 
+    const questId = kind === 'quest' ? (questByMarker.get(marker.name) ?? null) : null
+    if (kind === 'quest' && questId === null) questUnlinked.push(marker.name)
+
     spots.push({
       id: toId(marker.name),
       location_id: locationId,
@@ -267,10 +320,111 @@ export function resolveSpots(
       y: marker.y,
       kind,
       seasons: [],
+      quest_id: questId,
+      // The wiki published this coordinate; only hand-placed markers infer.
+      inferred: false,
       map_version: 1,
     })
   }
 
   spots.sort((a, b) => a.id.localeCompare(b.id))
-  return { spots, unplaced }
+  return { spots, unplaced, questUnlinked }
+}
+
+/**
+ * Fill anchors from the hand-placed markers — the wagon's pitch.
+ *
+ * Fill only: a hand placement naming a location that already has a published
+ * anchor throws, because the wiki's word beats ours and a silent overwrite
+ * would be indistinguishable from a survey. The filled anchor is flagged
+ * `anchor_inferred` so the app draws it hollow.
+ */
+export function applyHandAnchors(hand: HandMarkers, locations: Location[]): Location[] {
+  const known = new Set(locations.map((l) => l.id))
+  for (const entry of hand.anchors) {
+    if (!known.has(entry.location_id)) {
+      throw new Error(`curated/maps/markers.json anchors "${entry.location_id}" — not a location.`)
+    }
+  }
+  const byLocation = new Map(hand.anchors.map((entry) => [entry.location_id, entry]))
+
+  return locations.map((location) => {
+    const entry = byLocation.get(location.id)
+    if (entry === undefined) return location
+    if (location.anchor !== null) {
+      throw new Error(
+        `curated/maps/markers.json places "${location.id}", but it already has a published ` +
+          'anchor. Hand placement only fills a gap, never overrides the wiki.',
+      )
+    }
+    return {
+      ...location,
+      anchor: { x: entry.x, y: entry.y },
+      anchor_inferred: true,
+      map_id: WORLD_MAP_ID,
+      data_gaps: location.data_gaps.filter((gap) => gap !== 'anchor' && gap !== 'map_id'),
+    }
+  })
+}
+
+export interface HandDigSpotResult {
+  spots: Spot[]
+  /** Digging areas that render on the map but have no curated pin yet. */
+  missingDigPins: string[]
+}
+
+/**
+ * One hollow dig pin per digging area, position curated, existence derived.
+ *
+ * The curated entries are coordinates only — *which* areas dig comes from the
+ * shipped artifact windows (`diggingLocationIds`), and the dependency is
+ * enforced both ways: a coordinate for an area with no dig windows throws
+ * (stale curation must not invent a dig site), and a digging area with a
+ * footprint but no coordinate is reported so the gap stays visible.
+ *
+ * Mine locations dig too, but have no footprint on the overworld map — that
+ * is not-applicable, not a missing pin, so they are excluded from both sides.
+ */
+export function resolveHandDigSpots(
+  hand: HandMarkers,
+  locations: Pick<Location, 'id' | 'shape'>[],
+  diggingLocationIds: Set<string>,
+): HandDigSpotResult {
+  const byId = new Map(locations.map((l) => [l.id, l]))
+
+  const spots: Spot[] = []
+  for (const entry of hand.dig_spots) {
+    if (!diggingLocationIds.has(entry.location_id)) {
+      throw new Error(
+        `curated/maps/markers.json has a dig pin for "${entry.location_id}", but no shipped ` +
+          'artifact window digs there. This file supplies positions, never digging itself — ' +
+          'remove the entry or fix the data.',
+      )
+    }
+    spots.push({
+      id: `dig_${entry.location_id}`,
+      location_id: entry.location_id,
+      x: entry.x,
+      y: entry.y,
+      kind: 'dig_spot',
+      seasons: [],
+      quest_id: null,
+      inferred: true,
+      map_version: 1,
+    })
+  }
+  spots.sort((a, b) => a.id.localeCompare(b.id))
+
+  const pinned = new Set(hand.dig_spots.map((entry) => entry.location_id))
+  const missingDigPins = [...diggingLocationIds]
+    .filter((id) => {
+      const location = byId.get(id)
+      // No overworld footprint — a mine biome or the mines themselves. Their
+      // digging renders on the mines screen; a map pin is not applicable.
+      if (location === undefined || location.shape === null) return false
+      return !pinned.has(id)
+    })
+    .sort()
+
+  return { spots, missingDigPins }
 }

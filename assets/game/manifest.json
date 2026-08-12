@@ -12,6 +12,1958 @@
   ],
   "assets": [
     {
+      "bytes": 328,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_black.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_black"
+      ],
+      "key": "animal/alpaca_black",
+      "origin": "game_files",
+      "sha256": "86ec29b13f7f2b7c113f620d4b69dab35054357209c67d6e228841ea36cc7172",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 339,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_blue"
+      ],
+      "key": "animal/alpaca_blue",
+      "origin": "game_files",
+      "sha256": "9931b7b05e37435e1cea92991d117b16b467f80ea8b4c1a3d58f2dd50d5f74a7",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 342,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_brown"
+      ],
+      "key": "animal/alpaca_brown",
+      "origin": "game_files",
+      "sha256": "6942df74353421f558f026f2cc8ebe687ab40ff69e1280318d4c08126646ea5d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 328,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_desert.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_desert"
+      ],
+      "key": "animal/alpaca_desert",
+      "origin": "game_files",
+      "sha256": "469a624de8994fd36a3489f5a1a925682f7d2fed2e7e757636c0ef7052894e7c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 235,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_fall"
+      ],
+      "key": "animal/alpaca_fall",
+      "origin": "game_files",
+      "sha256": "810be7365d479e24fe02b0504f144bdf17e62e9013533e0c7d86ef9cb8588faa",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_fall.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_fall.png",
+      "width": 18
+    },
+    {
+      "bytes": 339,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_gold"
+      ],
+      "key": "animal/alpaca_gold",
+      "origin": "game_files",
+      "sha256": "83c7cd4a24c841ee645bc90f6466d40029e14b11dcad7ecc5c56f5639686f306",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 309,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_indigo.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_indigo"
+      ],
+      "key": "animal/alpaca_indigo",
+      "origin": "game_files",
+      "sha256": "5d90855159591b27e8a958114d7adcf17ea73938776cce1ee11ccdca20a288cb",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 336,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_pink"
+      ],
+      "key": "animal/alpaca_pink",
+      "origin": "game_files",
+      "sha256": "06729acb02d56eec3784437a76409bf65e42fa0f673bfb9b9278061685dc17d8",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 336,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_purple"
+      ],
+      "key": "animal/alpaca_purple",
+      "origin": "game_files",
+      "sha256": "b948e76a28bd433846ebaed222124f753b7ef2c0326fad99e3a162e25f6a4759",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 330,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_silver"
+      ],
+      "key": "animal/alpaca_silver",
+      "origin": "game_files",
+      "sha256": "dd5dc1c8b08a7a2fd2a5732edac99b91738d6fd721443046b3df3be651d9497c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 316,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_snowy.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_snowy"
+      ],
+      "key": "animal/alpaca_snowy",
+      "origin": "game_files",
+      "sha256": "25a560378e3b7cac8b74e1ffcef3db5f83c9c0328a281f86c4172d9ee642e511",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 329,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_spring"
+      ],
+      "key": "animal/alpaca_spring",
+      "origin": "game_files",
+      "sha256": "18a56814a6f32eb0234cac451ffe06067e9d93898e3e933fd50501e08d06277f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 334,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_summer"
+      ],
+      "key": "animal/alpaca_summer",
+      "origin": "game_files",
+      "sha256": "1135652cdc221c13da7c5b134e04ba9849ad2eae6d849d8eaed4ec56a03ffc16",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 330,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_white"
+      ],
+      "key": "animal/alpaca_white",
+      "origin": "game_files",
+      "sha256": "5f6784d65b0d2b73e125b8bc23728ba1c089b473eb23f665ea34fe557b9b8286",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 323,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/alpaca_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/alpaca_winter"
+      ],
+      "key": "animal/alpaca_winter",
+      "origin": "game_files",
+      "sha256": "3f06aad4b203fcddac38146cee9f685652cc5b1e01d39df079c697732fbb81ff",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_alpaca_basic.png?lut=spr_animal_alpaca_lut:15",
+      "width": 18
+    },
+    {
+      "bytes": 251,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_blue"
+      ],
+      "key": "animal/capybara_blue",
+      "origin": "game_files",
+      "sha256": "40abe976bf4b399dbfcece97dac2d259cfbcba5f47683fee23b486f75ae1a565",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 247,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_dark_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_dark_brown"
+      ],
+      "key": "animal/capybara_dark_brown",
+      "origin": "game_files",
+      "sha256": "10c9afa4637b3135a5744d4b0d669e91669a104100b7704be9511a23037111cc",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 248,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_fall"
+      ],
+      "key": "animal/capybara_fall",
+      "origin": "game_files",
+      "sha256": "fdc0bc852c47609580ccdd9c1850a1f755dc98b8a8afca8de13e75d2c9a80b04",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:14",
+      "width": 18
+    },
+    {
+      "bytes": 264,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_gold"
+      ],
+      "key": "animal/capybara_gold",
+      "origin": "game_files",
+      "sha256": "afbc49d7d5f1278d8408634803439bbc5b44fed2efe2fba9e0bf9b75e26ad2dd",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 251,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_gray.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_gray"
+      ],
+      "key": "animal/capybara_gray",
+      "origin": "game_files",
+      "sha256": "3a522212425d3048715d7ef1f6895c020b219e9e9958fbff62d7ca0d64e92427",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 247,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_light_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_light_brown"
+      ],
+      "key": "animal/capybara_light_brown",
+      "origin": "game_files",
+      "sha256": "fd53bef9481450191384bbde507d105080fd667a76ebc7d1a280cc6f94661fa8",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 249,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_pale.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_pale"
+      ],
+      "key": "animal/capybara_pale",
+      "origin": "game_files",
+      "sha256": "8bde31828c02dd50078a69bfd58fd56a543736515e5dcd0c1bbd66abf608b4eb",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 256,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_pink"
+      ],
+      "key": "animal/capybara_pink",
+      "origin": "game_files",
+      "sha256": "896933193847953c32fe679a25e1191729cc5e406fbce944058269d99c3c64be",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 254,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_purple"
+      ],
+      "key": "animal/capybara_purple",
+      "origin": "game_files",
+      "sha256": "4a4b93cade2f77a8cab3b771ccb374b7b7a9aac8d05cecdc1689cb0b0725f004",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 251,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_red.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_red"
+      ],
+      "key": "animal/capybara_red",
+      "origin": "game_files",
+      "sha256": "1d780ac59d979aa9ba6de971097f2bb49456a945fcbacc2b4b6b2ca76c10bc5d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 272,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_silver"
+      ],
+      "key": "animal/capybara_silver",
+      "origin": "game_files",
+      "sha256": "a626832797fd49a68faa216ed0fe5e86e9afc5de3eaef303796819b11a6846cc",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 248,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_spring"
+      ],
+      "key": "animal/capybara_spring",
+      "origin": "game_files",
+      "sha256": "a8a029149c990a00f88095016bbd301e3a445f73838b6a79cdd921a79b309974",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 250,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_summer"
+      ],
+      "key": "animal/capybara_summer",
+      "origin": "game_files",
+      "sha256": "8d476e291fe0291895ada3d1c57a9d4a5f3da844dee176e444fb179717740055",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 253,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_white"
+      ],
+      "key": "animal/capybara_white",
+      "origin": "game_files",
+      "sha256": "e351a871b0292231f181418903e67703bb62d702de4599bd0e436064c21053b2",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 234,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/capybara_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/capybara_winter"
+      ],
+      "key": "animal/capybara_winter",
+      "origin": "game_files",
+      "sha256": "bffa8ca88e9bd64f1c702034f7535bbb76ba340a3ce15d912d376f864e40be69",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_capybara_basic_capybara.png?lut=spr_animal_capybara_lut:15",
+      "width": 18
+    },
+    {
+      "bytes": 408,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_blue"
+      ],
+      "key": "animal/chicken_blue",
+      "origin": "game_files",
+      "sha256": "34699f61bb923f4a138c6abe58a874e7132673c4d63e7cad7ba9d654accf288c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 424,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_brown"
+      ],
+      "key": "animal/chicken_brown",
+      "origin": "game_files",
+      "sha256": "f4a83acc04eb0384e97330ac931666aa46211d41005333c5611099adab7097c0",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 335,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_fall"
+      ],
+      "key": "animal/chicken_fall",
+      "origin": "game_files",
+      "sha256": "d43d318a7b772e74ac934f330048682b9468ef2694b7bccc42c998839d5772a4",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_fall_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_fall_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 349,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_gold"
+      ],
+      "key": "animal/chicken_gold",
+      "origin": "game_files",
+      "sha256": "5af19017f23ad07422e2848ff688514a2e11687ae31552a05855700928d60476",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_gold_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_gold_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 426,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_gray.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_gray"
+      ],
+      "key": "animal/chicken_gray",
+      "origin": "game_files",
+      "sha256": "ad06bfe8a5035b9350d34e843fa470e5ee13aecf0a9cc5e8b4415e25e447cc4c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 428,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_pink"
+      ],
+      "key": "animal/chicken_pink",
+      "origin": "game_files",
+      "sha256": "a9ccae614a3451eb11ca4ac872583e96068f6621fdff214765d482f5601ff27c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 412,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_purple"
+      ],
+      "key": "animal/chicken_purple",
+      "origin": "game_files",
+      "sha256": "28a64d90df0d1b861f3e6dd8977d9f4680761ee1c8ac0ee77d70f44a06cd51bd",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 417,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_red.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_red"
+      ],
+      "key": "animal/chicken_red",
+      "origin": "game_files",
+      "sha256": "4ab64d38d220d095be353c90762fe8783e4e19aa884796ca9469b9891bc5bce9",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 355,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_silver"
+      ],
+      "key": "animal/chicken_silver",
+      "origin": "game_files",
+      "sha256": "92e095ad6b328d1e7b1eb6732d49e76e5173a56c08fbf0661af5dedf4e04a25d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_silver_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_silver_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 338,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_spotted.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_spotted"
+      ],
+      "key": "animal/chicken_spotted",
+      "origin": "game_files",
+      "sha256": "1da242031566e6bb35bfa754d671b80c31ba2ac22931085ef9865fb17e9b3b7c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_spotted_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_spotted_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 421,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_spring"
+      ],
+      "key": "animal/chicken_spring",
+      "origin": "game_files",
+      "sha256": "5d3655e5054cb37ba5ba16e812f309e31b31dc101e5ca6fc6694089c99d1e9cc",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 322,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_summer"
+      ],
+      "key": "animal/chicken_summer",
+      "origin": "game_files",
+      "sha256": "2953f2dae941deecbe2220ffe5233233eee743343fce8d100191d2495824fc44",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_summer_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_summer_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 428,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_white"
+      ],
+      "key": "animal/chicken_white",
+      "origin": "game_files",
+      "sha256": "0394109161080b6d49a39274595a87f9e7bfbb8d2277886db21e9121392c01f7",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 352,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_winter"
+      ],
+      "key": "animal/chicken_winter",
+      "origin": "game_files",
+      "sha256": "b4682d75ee45e64537bf248c73a52cc7dfb9eb2bd6ce71de2ba90a820b4bde9f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_winter_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_winter_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 412,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/chicken_yellow.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/chicken_yellow"
+      ],
+      "key": "animal/chicken_yellow",
+      "origin": "game_files",
+      "sha256": "896ae10f590433bea8fb7159381fb9db285da750d6247932800af5e0358f132c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_chicken_basic_female.png?lut=spr_animal_chicken_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 444,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_black.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_black"
+      ],
+      "key": "animal/cow_black",
+      "origin": "game_files",
+      "sha256": "75074f6917df540150cfc58282065686ae5e6859b082ec851a09d7d8c16e39cf",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 458,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_blue"
+      ],
+      "key": "animal/cow_blue",
+      "origin": "game_files",
+      "sha256": "70b677f5229000e3967443222d48e75964f060d3842f34ace5c7ca28175e74ef",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 447,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_brown"
+      ],
+      "key": "animal/cow_brown",
+      "origin": "game_files",
+      "sha256": "b0a82d1489517346c04797efd7beb5488d5e4977f2fd5eddfed3d65ef8afaa7e",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 446,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_chocolate.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_chocolate"
+      ],
+      "key": "animal/cow_chocolate",
+      "origin": "game_files",
+      "sha256": "a472a988d2f2d1f429fe6241ab87646d335bb7db127ca139e01ae39b17f969e4",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 397,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_fall"
+      ],
+      "key": "animal/cow_fall",
+      "origin": "game_files",
+      "sha256": "5cc93d97a934f6bada3c9b3cc979d6467069ad8daa1d8bc08cb00dd4fa4ba24a",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:14",
+      "width": 18
+    },
+    {
+      "bytes": 450,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_gold"
+      ],
+      "key": "animal/cow_gold",
+      "origin": "game_files",
+      "sha256": "244a11728b9dfd0e236704df8afcda802f218e4d1cb54056f3353d9c83ac34b0",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 450,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_pink"
+      ],
+      "key": "animal/cow_pink",
+      "origin": "game_files",
+      "sha256": "eb9778e7dd105926ef1974a46d28f4707ab59540b4566cdadfc9aa867c391f0f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 456,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_purple"
+      ],
+      "key": "animal/cow_purple",
+      "origin": "game_files",
+      "sha256": "71faebd5d8b1d9e34c8c5cebb1fbfb8b9468a3f171fd31a7f5671ae076b0cec2",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 457,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_red.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_red"
+      ],
+      "key": "animal/cow_red",
+      "origin": "game_files",
+      "sha256": "a4658d3c5a0d568fddf565d50e8609041c107761a5ae83588a56bab7f45839af",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 436,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_silver"
+      ],
+      "key": "animal/cow_silver",
+      "origin": "game_files",
+      "sha256": "2e8c6a3122c9ef563e345bffe0ff1847346bf8364c5bdfa358eb0b876f26b52f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 463,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_spotted.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_spotted"
+      ],
+      "key": "animal/cow_spotted",
+      "origin": "game_files",
+      "sha256": "6872e16020204c069c5c4f27681dfc3bb8cccf15f12ac4d5dc48a87970102b14",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 441,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_spring"
+      ],
+      "key": "animal/cow_spring",
+      "origin": "game_files",
+      "sha256": "9816d7cec83ee1e0516a90b340fe4891cf3ee83b668839a08276548b4e9fe48a",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 451,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_summer"
+      ],
+      "key": "animal/cow_summer",
+      "origin": "game_files",
+      "sha256": "0be5770a3df087fb8f38b6c99934131c9f654cdf4d3293d984f0086e2459d427",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 416,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_white"
+      ],
+      "key": "animal/cow_white",
+      "origin": "game_files",
+      "sha256": "db96d24ab56f5c2fd0e0b83f85fade08f657ce6acfc4669d39e3abfbf6b3d159",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 462,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/cow_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/cow_winter"
+      ],
+      "key": "animal/cow_winter",
+      "origin": "game_files",
+      "sha256": "32b990697e35cf320c34316407e995185f4ecbdc1a9e6f4181e0cef1e009d918",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_cow_basic_female.png?lut=spr_animal_cow_lut:15",
+      "width": 18
+    },
+    {
+      "bytes": 374,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_blue"
+      ],
+      "key": "animal/duck_blue",
+      "origin": "game_files",
+      "sha256": "3339788541cf0b821820a42712fcd0a9eb9d80df568edf36fc47c9f234723196",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 387,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_cayuga.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_cayuga"
+      ],
+      "key": "animal/duck_cayuga",
+      "origin": "game_files",
+      "sha256": "5e06cd03fa50072dd0226efd1a2a684eaa33fca689fc281241623ba2412216f4",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 338,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_fall"
+      ],
+      "key": "animal/duck_fall",
+      "origin": "game_files",
+      "sha256": "f9eb1a9bcb40087e638e4c8bcced0d5997ca0bf6638ca4f635f6b98a3a133d5a",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_fall_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_fall_duck.png",
+      "width": 18
+    },
+    {
+      "bytes": 378,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_gold"
+      ],
+      "key": "animal/duck_gold",
+      "origin": "game_files",
+      "sha256": "6c25ee6adaf4e0ec23dca97ffedde78660cef751667b656f81863214b458124d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:15",
+      "width": 18
+    },
+    {
+      "bytes": 376,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_mallard.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_mallard"
+      ],
+      "key": "animal/duck_mallard",
+      "origin": "game_files",
+      "sha256": "99e652679cab45e8520a65d5a98f5e805d03cb6f7601434c662d56c699a53723",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 409,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_mandarin.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_mandarin"
+      ],
+      "key": "animal/duck_mandarin",
+      "origin": "game_files",
+      "sha256": "9e084f739401a377fbb1215f5b621aab466690aa1274346d7ccf8a91bb5e5603",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 386,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_muscovy.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_muscovy"
+      ],
+      "key": "animal/duck_muscovy",
+      "origin": "game_files",
+      "sha256": "cb954766476af74adc95366c04919b00f8801ff8daa9e055c56abacb3ae7546f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 366,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_pink"
+      ],
+      "key": "animal/duck_pink",
+      "origin": "game_files",
+      "sha256": "70a556d55350985f0b143ebdedc473046babb0716df9205b465a2e50ab97278b",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 351,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_purple"
+      ],
+      "key": "animal/duck_purple",
+      "origin": "game_files",
+      "sha256": "c4d8ec3408b8a58283e03f1a5ded59f430ae731fd4e409fd95209f4aebd1130a",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 364,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_ruddy_shelduck.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_ruddy_shelduck"
+      ],
+      "key": "animal/duck_ruddy_shelduck",
+      "origin": "game_files",
+      "sha256": "d8511efc573be725037e1aca9405a7fcf5a5a7919ca09fb2a5797a0d4aed0e6f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 385,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_silver"
+      ],
+      "key": "animal/duck_silver",
+      "origin": "game_files",
+      "sha256": "2ac65b979c393b849fd9862d553f7fed4610fa9a9cc9f63da989981a801105d5",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:17",
+      "width": 18
+    },
+    {
+      "bytes": 371,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_spring"
+      ],
+      "key": "animal/duck_spring",
+      "origin": "game_files",
+      "sha256": "0cb226c085a6d9dbf1763e61f614f1e1223a1751b644bbc9f82e269791b338e4",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:19",
+      "width": 18
+    },
+    {
+      "bytes": 387,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_summer"
+      ],
+      "key": "animal/duck_summer",
+      "origin": "game_files",
+      "sha256": "c73a616a4358c013be977a149098b781cc2ea788f7af7f86142c7c4eb2dc9d4e",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:21",
+      "width": 18
+    },
+    {
+      "bytes": 326,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_white"
+      ],
+      "key": "animal/duck_white",
+      "origin": "game_files",
+      "sha256": "46461fab22d6372b2818e5f546ca92df55d42000354a3b95d141799abc5aef81",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 387,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/duck_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/duck_winter"
+      ],
+      "key": "animal/duck_winter",
+      "origin": "game_files",
+      "sha256": "fd5d255687648693d8e787f94a97f729961829a5983f7be0741db553cff78abc",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_duck_basic_duck.png?lut=spr_animal_duck_lut:24",
+      "width": 18
+    },
+    {
+      "bytes": 500,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_black.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_black"
+      ],
+      "key": "animal/horse_black",
+      "origin": "game_files",
+      "sha256": "b5a815df1ea6dd2db812aaad17e1f30dfa12206871c7a75ae70466e1f5ec9e39",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 490,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_blue"
+      ],
+      "key": "animal/horse_blue",
+      "origin": "game_files",
+      "sha256": "32677ff0f25fb51e55439348ead11558c608227beb1dd525664c1db8ce525540",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 472,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_champagne.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_champagne"
+      ],
+      "key": "animal/horse_champagne",
+      "origin": "game_files",
+      "sha256": "1d57061008ca50cf4aa62ac4b0abf98113c4bdbeb2de94ce205e562d66837578",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 464,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_chestnut.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_chestnut"
+      ],
+      "key": "animal/horse_chestnut",
+      "origin": "game_files",
+      "sha256": "def64e4e14be519551f8ef8334fecc52724858203be5e0051f9469da1983ee67",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 438,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_fall"
+      ],
+      "key": "animal/horse_fall",
+      "origin": "game_files",
+      "sha256": "6b5004080f6c7e0c4607a9de503df01aed41de76aa6bcfbde19f1d48a6f74930",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:14",
+      "width": 18
+    },
+    {
+      "bytes": 231,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_giant_chicken_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_giant_chicken_gold"
+      ],
+      "key": "animal/horse_giant_chicken_gold",
+      "origin": "game_files",
+      "sha256": "093fd89df39b94ad218ebbb9a72f920eb7831189ef0763439bdacd8d3a53e25f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_giant_chicken_gold.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_giant_chicken_gold.png",
+      "width": 18
+    },
+    {
+      "bytes": 486,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_gold"
+      ],
+      "key": "animal/horse_gold",
+      "origin": "game_files",
+      "sha256": "566fa58666c67d04ba456340f1683c919718a58527d8b30d90c9895fda7523d7",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_gold.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_gold.png",
+      "width": 18
+    },
+    {
+      "bytes": 505,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_mistmare.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_mistmare"
+      ],
+      "key": "animal/horse_mistmare",
+      "origin": "game_files",
+      "sha256": "90239a44e22b3ed2e54c2fefe60ea8069d353f95cab53027045e084f1db28b88",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_mistmare.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_mistmare.png",
+      "width": 18
+    },
+    {
+      "bytes": 481,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_pink"
+      ],
+      "key": "animal/horse_pink",
+      "origin": "game_files",
+      "sha256": "c3459c5a6d8648df7f32828199b8b8b3ca0c506b413931249a7307b5ca5ecc5c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 466,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_purple"
+      ],
+      "key": "animal/horse_purple",
+      "origin": "game_files",
+      "sha256": "e2b9f53d587160ad98794d241f409db03fbadbea9a6957db40670bbddbf4f15f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 493,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_sandy_bay.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_sandy_bay"
+      ],
+      "key": "animal/horse_sandy_bay",
+      "origin": "game_files",
+      "sha256": "cb30be80c0214e03e6c47ce6fe31db6c7dc2f424a794a5f925ea9fe8ca490f7d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 518,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_silver"
+      ],
+      "key": "animal/horse_silver",
+      "origin": "game_files",
+      "sha256": "bb4b8e191d9b890eae69b379e56756a7a7208b6864f8b869cca9b0ae055d5103",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_silver.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_silver.png",
+      "width": 18
+    },
+    {
+      "bytes": 502,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_spotted.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_spotted"
+      ],
+      "key": "animal/horse_spotted",
+      "origin": "game_files",
+      "sha256": "e385331e53507d986bf7c1257657b9f19f42dee7c9dc113de26d02d5078a5e0f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 452,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_spring"
+      ],
+      "key": "animal/horse_spring",
+      "origin": "game_files",
+      "sha256": "8eb68a963b7e59e9578aa89602dc9cc8e348e06cf21a039474cfdcd5a7237f89",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 479,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_summer"
+      ],
+      "key": "animal/horse_summer",
+      "origin": "game_files",
+      "sha256": "d4d2129aa2d2779d5c1561bcb1c4ec187fcf44b8e1437653f516ab8bdc04ea9b",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 455,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_white"
+      ],
+      "key": "animal/horse_white",
+      "origin": "game_files",
+      "sha256": "b4a224da2c36bc15a6f4267f7e87c0c8ebb56f71c85b7a7b9aa4534d64ed9aef",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 418,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/horse_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/horse_winter"
+      ],
+      "key": "animal/horse_winter",
+      "origin": "game_files",
+      "sha256": "d8d819d19759a82674417ff6402e4d64c2dabf2a6a604464d027003c5449a6dc",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_horse_basic.png?lut=spr_animal_horse_lut:15",
+      "width": 18
+    },
+    {
+      "bytes": 232,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_black.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_black"
+      ],
+      "key": "animal/rabbit_black",
+      "origin": "game_files",
+      "sha256": "455203616e792b48648ea21478976202ad422aa4d5f708b88db169fdc654bfd1",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 255,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_black_and_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_black_and_white"
+      ],
+      "key": "animal/rabbit_black_and_white",
+      "origin": "game_files",
+      "sha256": "ab5dbc1a5405bce533b2af9ae9c124cd5fc1743ba45f01dcf521578197b52f62",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 242,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_blue"
+      ],
+      "key": "animal/rabbit_blue",
+      "origin": "game_files",
+      "sha256": "b5e86e38f3b9cbb5b0e327b9cf42e96b9179a3314d05da9068693a6f7d4d0018",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 242,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_brown"
+      ],
+      "key": "animal/rabbit_brown",
+      "origin": "game_files",
+      "sha256": "8368159e699906fea98af609f8e4afced1136d0a25ebea6d6d8c2bac345d4663",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 256,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_brown_sable.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_brown_sable"
+      ],
+      "key": "animal/rabbit_brown_sable",
+      "origin": "game_files",
+      "sha256": "23de7f2e70a0cc8f8818672a9e431e94cd250f69b5d785a553c0d9ebc96f202d",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 203,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_fall"
+      ],
+      "key": "animal/rabbit_fall",
+      "origin": "game_files",
+      "sha256": "343d9b351da5402cb2f07e63fdd75ce9701c499181e5fd0aa74ee7d00c55ac05",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_fall_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_fall_rabbit.png",
+      "width": 18
+    },
+    {
+      "bytes": 242,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_gold"
+      ],
+      "key": "animal/rabbit_gold",
+      "origin": "game_files",
+      "sha256": "4188a577f0c420b290f7e759257ea1b731eb3e7cfd1541f0b8a392f6c9bebd86",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 259,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_orange_sable.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_orange_sable"
+      ],
+      "key": "animal/rabbit_orange_sable",
+      "origin": "game_files",
+      "sha256": "30598a00c7ffd62f1f7aca99bcc24f400becca8c82005b71a11ba522ae646d19",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 235,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_pink"
+      ],
+      "key": "animal/rabbit_pink",
+      "origin": "game_files",
+      "sha256": "3bc143e4a29c0930d6ed2d8d08ea36de188e5d5be905b4b765e1748d20fef266",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 235,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_purple"
+      ],
+      "key": "animal/rabbit_purple",
+      "origin": "game_files",
+      "sha256": "5256c5d0ae4b334ff9fa864b61daba50b93175ce8e050158c54c6a257b584421",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 246,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_silver"
+      ],
+      "key": "animal/rabbit_silver",
+      "origin": "game_files",
+      "sha256": "3714318e5246ab53465a67b9afc056875626c236f9b9208db856ae755364658c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 244,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_spring"
+      ],
+      "key": "animal/rabbit_spring",
+      "origin": "game_files",
+      "sha256": "76efbd241531608aefc0d1150b2855e7e7a46490299a516e85c1fe8be2d4674c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 240,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_summer"
+      ],
+      "key": "animal/rabbit_summer",
+      "origin": "game_files",
+      "sha256": "2bf69222ff7f761fde030d0bb2a2a048cbf3e7a38344ea5c37b32a68b71e1a10",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 240,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_white"
+      ],
+      "key": "animal/rabbit_white",
+      "origin": "game_files",
+      "sha256": "39287042a1a96c585fe2c91e992fd77e13c754205f1f983bc889724e7162471f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 257,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/rabbit_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/rabbit_winter"
+      ],
+      "key": "animal/rabbit_winter",
+      "origin": "game_files",
+      "sha256": "9fdd6f5a89f13b92099a3e9235cf2ca236c5c0e9a9303e6cafc138358e7d3c36",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_rabbit_basic_rabbit.png?lut=spr_animal_rabbit_basic_lut:14",
+      "width": 18
+    },
+    {
+      "bytes": 309,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_beige.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_beige"
+      ],
+      "key": "animal/sheep_beige",
+      "origin": "game_files",
+      "sha256": "3cc6a779ab6086c7373229b7a8c05194a87c0722a8820f09a4d3386ee33eab32",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 309,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_black.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_black"
+      ],
+      "key": "animal/sheep_black",
+      "origin": "game_files",
+      "sha256": "4b090a230c8fff0e25f3392d02f88f4e9526b94558c1849bca7a344ccb4520bd",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 281,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_black_nosed.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_black_nosed"
+      ],
+      "key": "animal/sheep_black_nosed",
+      "origin": "game_files",
+      "sha256": "0bd94ca8da86656f80610d08315c32524f896bbd2b866c4f9a391f2cd7f230ca",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 299,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_blue"
+      ],
+      "key": "animal/sheep_blue",
+      "origin": "game_files",
+      "sha256": "151c107550f979169e2d0105b4ec91c5b50171a8cab60c07edc415da13cd4283",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 316,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_brown"
+      ],
+      "key": "animal/sheep_brown",
+      "origin": "game_files",
+      "sha256": "33b72a6d3f02092b176aeeba8fd3ca6513eecb54642b833cbc677867053688ef",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 200,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_fall.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_fall"
+      ],
+      "key": "animal/sheep_fall",
+      "origin": "game_files",
+      "sha256": "4337a740972f4b03f5569602d31e2ca6bf51bd8b4162708267ca00b5f38818cd",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_fall_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_fall_female.png",
+      "width": 18
+    },
+    {
+      "bytes": 306,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_gold.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_gold"
+      ],
+      "key": "animal/sheep_gold",
+      "origin": "game_files",
+      "sha256": "49c38bd764a0d4df38350e2f48de050b087af169873025592336c83503048438",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 287,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_pink"
+      ],
+      "key": "animal/sheep_pink",
+      "origin": "game_files",
+      "sha256": "e7e298879b24703b485fbbee80d931de46c3c65d8f940b952623f33972b0e309",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 287,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_purple"
+      ],
+      "key": "animal/sheep_purple",
+      "origin": "game_files",
+      "sha256": "56e23da9108acd211804962c1500535ecad420daf8ae60831f231d3239201c9a",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 311,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_silver.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_silver"
+      ],
+      "key": "animal/sheep_silver",
+      "origin": "game_files",
+      "sha256": "67c5bd551aad0fde36101d1d8fec2c14f7a65aff0f7b319e0d42854806287d9e",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 303,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_spring.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_spring"
+      ],
+      "key": "animal/sheep_spring",
+      "origin": "game_files",
+      "sha256": "cf880ab64558bbca012e57b5eadceb5c5e907d35155b7c5fd1bca49c86dddd1c",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 312,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_summer.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_summer"
+      ],
+      "key": "animal/sheep_summer",
+      "origin": "game_files",
+      "sha256": "59bd4f979f3b7c4fb8241189b6a6fba70ccccf467293b88df37eba1824f6aa84",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:13",
+      "width": 18
+    },
+    {
+      "bytes": 298,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_white.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_white"
+      ],
+      "key": "animal/sheep_white",
+      "origin": "game_files",
+      "sha256": "2625c5800edbb38227da9c8f2d982dbcbcc390d36ef775eb08a4fb6029e69471",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 298,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_white_nosed.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_white_nosed"
+      ],
+      "key": "animal/sheep_white_nosed",
+      "origin": "game_files",
+      "sha256": "8c04ea4cffd7c233d132b86e42d3e700117ecc5d637229bd0c81edef32d57b64",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 287,
+      "family": "animal",
+      "fetched_at": "2026-08-11",
+      "file": "animal/sheep_winter.png",
+      "height": 18,
+      "icon_keys": [
+        "animal/sheep_winter"
+      ],
+      "key": "animal/sheep_winter",
+      "origin": "game_files",
+      "sha256": "57fc446c4b22c3fdea445e940288e9454b1e239660f7d230a3f13aa1b621e63f",
+      "source_file": "animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png",
+      "source_url": "game://animations/UI NEW/Ranching/spr_ui_icon_animal_sheep_basic_female.png?lut=spr_animal_sheep_lut:14",
+      "width": 18
+    },
+    {
       "bytes": 2815,
       "family": "brand",
       "fetched_at": "2026-08-08",
@@ -5772,6 +7724,21 @@
       "width": 72
     },
     {
+      "bytes": 289,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/baby-cradle.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/baby_cradle"
+      ],
+      "key": "item/baby-cradle",
+      "sha256": "c6689816d8ff700bd026552d1bfd0c4f01ade628ac2934b2a0a5ba643e5fbb84",
+      "source_file": "Baby cradle.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Baby%20cradle.png",
+      "width": 72
+    },
+    {
       "bytes": 264,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -9679,6 +11646,21 @@
       "width": 72
     },
     {
+      "bytes": 231,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/dark-chocolate.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/dark_chocolate"
+      ],
+      "key": "item/dark-chocolate",
+      "sha256": "21d3f290f644bdc9fc0ccce21f1855b3735ed9837dbacb3138d91eedbacaeef7",
+      "source_file": "Dark chocolate.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Dark%20chocolate.png",
+      "width": 72
+    },
+    {
       "bytes": 476,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -10582,6 +12564,21 @@
       "sha256": "b74835c5a4ab1515df1ac480bd7fe63f8bc189f09dce28dcf215add9f955563f",
       "source_file": "Emerald horned charger.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Emerald%20horned%20charger.png",
+      "width": 72
+    },
+    {
+      "bytes": 275,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/engagement-ring.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/engagement_ring"
+      ],
+      "key": "item/engagement-ring",
+      "sha256": "7b3b29d099e13761e001b989ea62b9d1bd9f65da919783c106627882e283c7f1",
+      "source_file": "Engagement ring.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Engagement%20ring.png",
       "width": 72
     },
     {
@@ -12708,6 +14705,21 @@
       "width": 72
     },
     {
+      "bytes": 311,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/honey-toast.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/honey_toast"
+      ],
+      "key": "item/honey-toast",
+      "sha256": "f392a81ffbb278618c4cfba2259165aa9bae425be03be1583e973f47fd14b482",
+      "source_file": "Honey toast.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Honey%20toast.png",
+      "width": 72
+    },
+    {
       "bytes": 263,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -14397,6 +16409,21 @@
       "width": 72
     },
     {
+      "bytes": 221,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/milk-chocolate.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/milk_chocolate"
+      ],
+      "key": "item/milk-chocolate",
+      "sha256": "e54b36c7398428b84596ac48eda98b2555fbfd47dc1156438100563e09bc3f46",
+      "source_file": "Milk chocolate.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Milk%20chocolate.png",
+      "width": 72
+    },
+    {
       "bytes": 255,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -15197,6 +17224,36 @@
       "width": 72
     },
     {
+      "bytes": 224,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/mystical-feather.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/mystical_feather"
+      ],
+      "key": "item/mystical-feather",
+      "sha256": "0e2227f9a79d18ddaa69ff2f64bf7e463c2eceb996e14f6db1b5bd6251078ce7",
+      "source_file": "Mystical feather.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Mystical%20feather.png",
+      "width": 72
+    },
+    {
+      "bytes": 278,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/nachos.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/nachos"
+      ],
+      "key": "item/nachos",
+      "sha256": "2de888cefd9f2772b0404596927e53ada3adbbbe805e199b330c36794224edb2",
+      "source_file": "Nachos.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Nachos.png",
+      "width": 72
+    },
+    {
       "bytes": 275,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -15664,6 +17721,36 @@
       "width": 72
     },
     {
+      "bytes": 291,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pbjt-sandwich.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/pbjt_sandwich"
+      ],
+      "key": "item/pbjt-sandwich",
+      "sha256": "7380b4c1bc2f10f0692ebad9259624f0f7bcb2678647a715c686d71dd1329f4b",
+      "source_file": "Pbjt sandwich.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pbjt%20sandwich.png",
+      "width": 72
+    },
+    {
+      "bytes": 278,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pbm-sandwich.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/pbm_sandwich"
+      ],
+      "key": "item/pbm-sandwich",
+      "sha256": "b72edecdc51d0e60f00c6121cbe62d53cabb8df8f5e08349ab614caa45120b59",
+      "source_file": "Pbm sandwich.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pbm%20sandwich.png",
+      "width": 72
+    },
+    {
       "bytes": 301,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -16116,6 +18203,111 @@
       "width": 72
     },
     {
+      "bytes": 601,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-enchantern.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_enchantern"
+      ],
+      "key": "item/pet-skin-enchantern",
+      "sha256": "4a144bfc94acbca310558f57c7bdf3f8fd68b691d4bfac721c8f6fb328d939ec",
+      "source_file": "Pet skin enchantern.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20enchantern.png",
+      "width": 72
+    },
+    {
+      "bytes": 239,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-essence-bat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_essence_bat"
+      ],
+      "key": "item/pet-skin-essence-bat",
+      "sha256": "5d9ecbaf034aadfc064a57f7fd3617ec78aa20daf8cc148c546ac3dcfbbffe2d",
+      "source_file": "Pet skin essence bat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20essence%20bat.png",
+      "width": 72
+    },
+    {
+      "bytes": 232,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-flame-spirit.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_flame_spirit"
+      ],
+      "key": "item/pet-skin-flame-spirit",
+      "sha256": "053cc4c5bccdcfea8d7543ef17beece6a513d3337e39887768bfefe138501978",
+      "source_file": "Pet skin flame spirit.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20flame%20spirit.png",
+      "width": 72
+    },
+    {
+      "bytes": 234,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-flying-tome.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_flying_tome"
+      ],
+      "key": "item/pet-skin-flying-tome",
+      "sha256": "6b5a00c3cd8764d74387673e3c96c2a241c6d24fbc6e571f5b68e898fbcce2c7",
+      "source_file": "Pet skin flying tome.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20flying%20tome.png",
+      "width": 72
+    },
+    {
+      "bytes": 249,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-gryphon-statue.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_gryphon_statue"
+      ],
+      "key": "item/pet-skin-gryphon-statue",
+      "sha256": "dd8648cc15af5617e3bb250bc8374f1457cc99249a0c208031645b9d3ccd8cad",
+      "source_file": "Pet skin gryphon statue.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20gryphon%20statue.png",
+      "width": 72
+    },
+    {
+      "bytes": 227,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-lava-cat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_lava_cat"
+      ],
+      "key": "item/pet-skin-lava-cat",
+      "sha256": "a432af67264292a0d84858af0ebae289bfbdf5325ea8d2255f19b995792df5b9",
+      "source_file": "Pet skin lava cat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20lava%20cat.png",
+      "width": 72
+    },
+    {
+      "bytes": 242,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-mimic.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_mimic"
+      ],
+      "key": "item/pet-skin-mimic",
+      "sha256": "2cf08bf6f869d86f2df7a3d7ca949784ac74d3e512201cf2af22aa198ef28803",
+      "source_file": "Pet skin mimic.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20mimic.png",
+      "width": 72
+    },
+    {
       "bytes": 250,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -16146,6 +18338,21 @@
       "width": 72
     },
     {
+      "bytes": 219,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-rock-stack.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_rock_stack"
+      ],
+      "key": "item/pet-skin-rock-stack",
+      "sha256": "a6ba0bd3ebeca93c2d21141c2004eed48178d6a672c05ffea70fabd919324bd9",
+      "source_file": "Pet skin rock stack.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20rock%20stack.png",
+      "width": 72
+    },
+    {
       "bytes": 212,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -16173,6 +18380,36 @@
       "sha256": "8b386adbcd5bfbcb0a1b76275e46f2e2539f025130b1857250692e22e975ee0a",
       "source_file": "Pet skin sapling.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20sapling.png",
+      "width": 72
+    },
+    {
+      "bytes": 210,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-stalagmite.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_stalagmite"
+      ],
+      "key": "item/pet-skin-stalagmite",
+      "sha256": "7e7c73db6bf94e4191140dd1ced7cafd59725ee0f75e0553d67c89deed56f80f",
+      "source_file": "Pet skin stalagmite.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20stalagmite.png",
+      "width": 72
+    },
+    {
+      "bytes": 228,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/pet-skin-void-cat.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/pet_skin_void_cat"
+      ],
+      "key": "item/pet-skin-void-cat",
+      "sha256": "c35f8e8f4f2c67f9aeee03de4aea6f5a2e7dc05b774adbf3b66bbc434b52cb96",
+      "source_file": "Pet skin void cat.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Pet%20skin%20void%20cat.png",
       "width": 72
     },
     {
@@ -19592,6 +21829,141 @@
       "sha256": "ca07db69b38131184369595bc6346114ae134f63469999e258d587f129f58616",
       "source_file": "Sod.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Sod.png",
+      "width": 72
+    },
+    {
+      "bytes": 340,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-another-tower.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_another_tower"
+      ],
+      "key": "item/song-crystal-another-tower",
+      "sha256": "f8e5494dea544db61f45c2883bf1ab9bccd376ce8f0a1ffad37795da796194ad",
+      "source_file": "Song crystal another tower.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20another%20tower.png",
+      "width": 72
+    },
+    {
+      "bytes": 281,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-crystal-caves.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_crystal_caves"
+      ],
+      "key": "item/song-crystal-crystal-caves",
+      "sha256": "ea8b0a903fe5d03e798f5f57acd782244978ab6a86ed1779c5b15088ea82c9b5",
+      "source_file": "Song crystal crystal caves.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20crystal%20caves.png",
+      "width": 72
+    },
+    {
+      "bytes": 271,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-dream-lobby.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_dream_lobby"
+      ],
+      "key": "item/song-crystal-dream-lobby",
+      "sha256": "f3cd2891bc14787b76b5527d8919c21291f1d54c00aff7f7e04905ad72139674",
+      "source_file": "Song crystal dream lobby.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20dream%20lobby.png",
+      "width": 72
+    },
+    {
+      "bytes": 295,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-farm-boy.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_farm_boy"
+      ],
+      "key": "item/song-crystal-farm-boy",
+      "sha256": "5babd8fd5bac03f12e9c31f2abece84f8b269b4a21fb6d8a9f902a2c915366c7",
+      "source_file": "Song crystal farm boy.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20farm%20boy.png",
+      "width": 72
+    },
+    {
+      "bytes": 316,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-five-more-minutes.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_five_more_minutes"
+      ],
+      "key": "item/song-crystal-five-more-minutes",
+      "sha256": "2d434c6a41e571f26c8cf8d38ddc1acc4a1d029ac7294ea303ec77878e4a886f",
+      "source_file": "Song crystal five more minutes.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20five%20more%20minutes.png",
+      "width": 72
+    },
+    {
+      "bytes": 288,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-misty-pasture.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_misty_pasture"
+      ],
+      "key": "item/song-crystal-misty-pasture",
+      "sha256": "702da105d8bd32a66115d745ab72ffa195187e2f7731e2bff19004b750e75cbe",
+      "source_file": "Song crystal misty pasture.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20misty%20pasture.png",
+      "width": 72
+    },
+    {
+      "bytes": 340,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-pink-twintails.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_pink_twintails"
+      ],
+      "key": "item/song-crystal-pink-twintails",
+      "sha256": "137e8e5229d6b4886d9e4895daf1c5923a2720bb12e38a5094abc0127c0056b8",
+      "source_file": "Song crystal pink twintails.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20pink%20twintails.png",
+      "width": 72
+    },
+    {
+      "bytes": 286,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-purple-potions.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_purple_potions"
+      ],
+      "key": "item/song-crystal-purple-potions",
+      "sha256": "41e5a5900e9ffe913029991ae0a029961f305cb2489438e38dd082a2f25aa3ac",
+      "source_file": "Song crystal purple potions.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20purple%20potions.png",
+      "width": 72
+    },
+    {
+      "bytes": 297,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/song-crystal-rainy-window.png",
+      "height": 72,
+      "icon_keys": [
+        "misc/song_crystal_rainy_window"
+      ],
+      "key": "item/song-crystal-rainy-window",
+      "sha256": "f130cede2310389c65f948379b897127c4a89238949c9c326d767f02a84a79b2",
+      "source_file": "Song crystal rainy window.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Song%20crystal%20rainy%20window.png",
       "width": 72
     },
     {
@@ -27631,22 +30003,6 @@
       "width": 18
     },
     {
-      "bytes": 370,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_engagement_ring.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/engagement_ring"
-      ],
-      "key": "item/spr_ui_item_engagement_ring",
-      "origin": "game_files",
-      "sha256": "88928490bc52b748044f83240f51671b31772f7cce82f21d59667fc53efcb3dc",
-      "source_file": "animations/Item Icons/Date/spr_ui_item_engagement_ring.png",
-      "source_url": "game://animations/Item Icons/Date/spr_ui_item_engagement_ring.png",
-      "width": 18
-    },
-    {
       "bytes": 630,
       "family": "item",
       "fetched_at": "2026-08-11",
@@ -34548,22 +36904,6 @@
       "width": 18
     },
     {
-      "bytes": 331,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_mystical_feather.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/mystical_feather"
-      ],
-      "key": "item/spr_ui_item_mystical_feather",
-      "origin": "game_files",
-      "sha256": "557bc9cb3e9da97b5b2a17c9a81ac8ce98c25be32210aa4ad6cf7e65f28e360d",
-      "source_file": "animations/Item Icons/Misc/spr_ui_item_mystical_feather.png",
-      "source_url": "game://animations/Item Icons/Misc/spr_ui_item_mystical_feather.png",
-      "width": 18
-    },
-    {
       "bytes": 560,
       "family": "item",
       "fetched_at": "2026-08-11",
@@ -35108,166 +37448,6 @@
       "width": 18
     },
     {
-      "bytes": 292,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_enchantern.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_enchantern"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_enchantern",
-      "origin": "game_files",
-      "sha256": "875faea5a7488e04bdeb00ca966850e4b4be09df5c5a78099c051cfa7e8777ff",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_enchantern.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_enchantern.png",
-      "width": 18
-    },
-    {
-      "bytes": 288,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_essence_bat.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_essence_bat"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_essence_bat",
-      "origin": "game_files",
-      "sha256": "c6767ae4e4f353381ed5d5c5f516de02c3b6b8b7c81ef88485fc6b549b65fc83",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_essence_bat.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_essence_bat.png",
-      "width": 18
-    },
-    {
-      "bytes": 281,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_flame_spirit.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_flame_spirit"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_flame_spirit",
-      "origin": "game_files",
-      "sha256": "b779d59d5e76da96d156a3ea543e21ac8a021759b66990ba2278510946cd78ec",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flame_spirit.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flame_spirit.png",
-      "width": 18
-    },
-    {
-      "bytes": 304,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_flying_tome.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_flying_tome"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_flying_tome",
-      "origin": "game_files",
-      "sha256": "05d9be095a98b7a145df284be3553c0860ddb11c93b9922499badc0e1bc032fc",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flying_tome.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_flying_tome.png",
-      "width": 18
-    },
-    {
-      "bytes": 369,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_griffin_statue.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_gryphon_statue"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_griffin_statue",
-      "origin": "game_files",
-      "sha256": "ff0e7b6d6dcce00bad9ffbab45d62fc20c9c83b03dbc295b5a9612420c697d16",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_griffin_statue.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_griffin_statue.png",
-      "width": 18
-    },
-    {
-      "bytes": 265,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_lava_cat.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_lava_cat"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_lava_cat",
-      "origin": "game_files",
-      "sha256": "aa4a9dc963bacee30ec3100000fbcb70edb2ecff6147c7b9d7253df85e3c60e5",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_lava_cat.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_lava_cat.png",
-      "width": 18
-    },
-    {
-      "bytes": 302,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_mimic.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_mimic"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_mimic",
-      "origin": "game_files",
-      "sha256": "c5876c1e19c7a2bd05846f8209678979915a4f826e129a2a116a8e3420c049f9",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_mimic.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_mimic.png",
-      "width": 18
-    },
-    {
-      "bytes": 247,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_rock_stack.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_rock_stack"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_rock_stack",
-      "origin": "game_files",
-      "sha256": "232b6e09a56d356df2d868de5e38bd224c85e16434c014a704f468a453d8750e",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_rock_stack.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_rock_stack.png",
-      "width": 18
-    },
-    {
-      "bytes": 228,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_stalagmite.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_stalagmite"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_stalagmite",
-      "origin": "game_files",
-      "sha256": "de2938bbcc49441a354ac5724983f46eef851f8409baf77835f7c26319978d9a",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_stalagmite.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_stalagmite.png",
-      "width": 18
-    },
-    {
-      "bytes": 268,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_pet_unlock_void_cat.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/pet_skin_void_cat"
-      ],
-      "key": "item/spr_ui_item_pet_unlock_void_cat",
-      "origin": "game_files",
-      "sha256": "ec78e6cb560de25d7d05ce77b136160e449465375e20de233c11f83e3575d6ef",
-      "source_file": "animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_void_cat.png",
-      "source_url": "game://animations/Item Icons/Pet Unlock/spr_ui_item_pet_unlock_void_cat.png",
-      "width": 18
-    },
-    {
       "bytes": 634,
       "family": "item",
       "fetched_at": "2026-08-11",
@@ -35716,22 +37896,6 @@
       "width": 18
     },
     {
-      "bytes": 383,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_another_tower.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_another_tower"
-      ],
-      "key": "item/spr_ui_item_song_crystal_another_tower",
-      "origin": "game_files",
-      "sha256": "79b75b08c8e14105bc369f9557d35a8720a439c43af8a93b0da8c26b2aaf340f",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_another_tower.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_another_tower.png",
-      "width": 18
-    },
-    {
       "bytes": 354,
       "family": "item",
       "fetched_at": "2026-08-11",
@@ -35780,38 +37944,6 @@
       "width": 18
     },
     {
-      "bytes": 346,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_crystal_caves.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_crystal_caves"
-      ],
-      "key": "item/spr_ui_item_song_crystal_crystal_caves",
-      "origin": "game_files",
-      "sha256": "c314b65f982c011b94f6cd83dffaba768a18517adbd5facfae3a0027809b60ec",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_crystal_caves.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_crystal_caves.png",
-      "width": 18
-    },
-    {
-      "bytes": 379,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_dream_lobby.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_dream_lobby"
-      ],
-      "key": "item/spr_ui_item_song_crystal_dream_lobby",
-      "origin": "game_files",
-      "sha256": "0c05319f49652e1925ad39ae528d5b76cc090c19911bb47776a64cc736c4ba5e",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_dream_lobby.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_dream_lobby.png",
-      "width": 18
-    },
-    {
       "bytes": 384,
       "family": "item",
       "fetched_at": "2026-08-11",
@@ -35825,39 +37957,6 @@
       "sha256": "63451601dffa3449782d9432a6534d2d8062a449e2420ca84367747dbf3ad2f1",
       "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_eilands_theme.png",
       "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_eilands_theme.png",
-      "width": 18
-    },
-    {
-      "bytes": 398,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_farm_boy.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_farm_boy",
-        "misc/song_crystal_pink_twintails"
-      ],
-      "key": "item/spr_ui_item_song_crystal_farm_boy",
-      "origin": "game_files",
-      "sha256": "182516c6f6ea9bfc45e9135faaf9cd1c4d0b705ab45ece3ba83b426774775a8b",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_farm_boy.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_farm_boy.png",
-      "width": 18
-    },
-    {
-      "bytes": 414,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_five_more_minutes.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_five_more_minutes"
-      ],
-      "key": "item/spr_ui_item_song_crystal_five_more_minutes",
-      "origin": "game_files",
-      "sha256": "369d765df3a83e708c3a427352b89f45088e802c104bf499c9ebf83102e99fa6",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_five_more_minutes.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_five_more_minutes.png",
       "width": 18
     },
     {
@@ -35922,54 +38021,6 @@
       "sha256": "14cca0e7d99a9fbfc8e28283224c60b630e5ab2b6e2f243cdde56280e6aea014",
       "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_marchs_theme.png",
       "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_marchs_theme.png",
-      "width": 18
-    },
-    {
-      "bytes": 391,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_misty_pasture.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_misty_pasture"
-      ],
-      "key": "item/spr_ui_item_song_crystal_misty_pasture",
-      "origin": "game_files",
-      "sha256": "296373ea1f3e4164fa6e6ec2e6985152cfd69e7c9171d498fb3520bef83c13eb",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_misty_pasture.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_misty_pasture.png",
-      "width": 18
-    },
-    {
-      "bytes": 370,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_purple_potions.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_purple_potions"
-      ],
-      "key": "item/spr_ui_item_song_crystal_purple_potions",
-      "origin": "game_files",
-      "sha256": "9cf3c2074c31182caad6ee86545c3ae702b6a28184deb80259a4c4a680935a8c",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_purple_potions.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_purple_potions.png",
-      "width": 18
-    },
-    {
-      "bytes": 371,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/spr_ui_item_song_crystal_rainy_window.png",
-      "height": 18,
-      "icon_keys": [
-        "misc/song_crystal_rainy_window"
-      ],
-      "key": "item/spr_ui_item_song_crystal_rainy_window",
-      "origin": "game_files",
-      "sha256": "716bff0b0554d74e1e9d8748032f1da0ba8f76acefaef689f0cd42296a4d889d",
-      "source_file": "animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_rainy_window.png",
-      "source_url": "game://animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_rainy_window.png",
       "width": 18
     },
     {
@@ -37200,6 +39251,21 @@
       "sha256": "70007feea414c3f741150740482480e7c1739b06b8993a4d0ffe375323f2697f",
       "source_file": "Temple flower seed.png",
       "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Temple%20flower%20seed.png",
+      "width": 72
+    },
+    {
+      "bytes": 248,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/tesserae-cake.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/tesserae_cake"
+      ],
+      "key": "item/tesserae-cake",
+      "sha256": "25d889443f893ae7d5dcc16e21fc3eb41b49bbd3d7356a80c447daf934b5d446",
+      "source_file": "Tesserae cake.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Tesserae%20cake.png",
       "width": 72
     },
     {
@@ -38470,6 +40536,21 @@
       "width": 72
     },
     {
+      "bytes": 223,
+      "family": "item",
+      "fetched_at": "2026-08-11",
+      "file": "item/white-chocolate.png",
+      "height": 72,
+      "icon_keys": [
+        "cooked/white_chocolate"
+      ],
+      "key": "item/white-chocolate",
+      "sha256": "0ebacb833dae36bfd24a37f42e11931a5bdedf9a0943060c7683c0bbd102703f",
+      "source_file": "White chocolate.png",
+      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:White%20chocolate.png",
+      "width": 72
+    },
+    {
       "bytes": 586,
       "family": "item",
       "fetched_at": "2026-08-07",
@@ -39476,6 +41557,198 @@
       "width": 18
     },
     {
+      "bytes": 276,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_black.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_black"
+      ],
+      "key": "pet/cat_cat_black",
+      "origin": "game_files",
+      "sha256": "958789a922ba328df3e89e5c0700d7bcdc0e6173c28278bc190d27b3beb8030c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 344,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_calico.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_calico"
+      ],
+      "key": "pet/cat_cat_calico",
+      "origin": "game_files",
+      "sha256": "9d1964ca8a8ffc19844be459caf831424233790d226ab10b979ecf032c5f88ec",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_calico.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_calico.png",
+      "width": 18
+    },
+    {
+      "bytes": 287,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_grey.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_grey"
+      ],
+      "key": "pet/cat_cat_grey",
+      "origin": "game_files",
+      "sha256": "3e3885fd2c5371dfb3315e1b9a13772581093b7f6b7e92d58267eae5a054987b",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 281,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_navy.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_navy"
+      ],
+      "key": "pet/cat_cat_navy",
+      "origin": "game_files",
+      "sha256": "c9d24054297f66fe8237f256ec3a4c341ba2aca877b54650a687688731e5cefc",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 291,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_orange.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_orange"
+      ],
+      "key": "pet/cat_cat_orange",
+      "origin": "game_files",
+      "sha256": "e10c3244937266167a0dfadf97163d8767b63caa018619b38fcbbed9f7cff2af",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 289,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_pink"
+      ],
+      "key": "pet/cat_cat_pink",
+      "origin": "game_files",
+      "sha256": "b631cb2f21376ae77b33b1b2e319246d79b007dcf291f66eb2b6364893c57bca",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 285,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_purple"
+      ],
+      "key": "pet/cat_cat_purple",
+      "origin": "game_files",
+      "sha256": "317749144f331c152ff3986588d8ee4dfca5d4ca6aeaba00de2b7aee17bed65a",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 362,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_siamese.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_siamese"
+      ],
+      "key": "pet/cat_cat_siamese",
+      "origin": "game_files",
+      "sha256": "0dc7db0c570562471a72a97ea4006d863cb0e4ef4dd5d338dc59942730a1f05c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_siamese.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_siamese.png",
+      "width": 18
+    },
+    {
+      "bytes": 298,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_tabby.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_tabby"
+      ],
+      "key": "pet/cat_cat_tabby",
+      "origin": "game_files",
+      "sha256": "7fc853148559a6e0dfad2dd7e3f978af3f9f989a96744337f892f2badfd535a4",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 342,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_tortie.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_tortie"
+      ],
+      "key": "pet/cat_cat_tortie",
+      "origin": "game_files",
+      "sha256": "1ee35b20e9bb837e9283c787c111e151d60941e9445e4777903a191466b8f423",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_tortie.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_tortie.png",
+      "width": 18
+    },
+    {
+      "bytes": 270,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_tuxedo.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_tuxedo"
+      ],
+      "key": "pet/cat_cat_tuxedo",
+      "origin": "game_files",
+      "sha256": "591cd73cce329df33fdf5a126d90927072789a5705fe8a275d10c0b0c4c88be9",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 285,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/cat_cat_white.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/cat_cat_white"
+      ],
+      "key": "pet/cat_cat_white",
+      "origin": "game_files",
+      "sha256": "12d4c3c9fa95a3bd274288bab355e01d06f6706c065c296fc0476bc908c20c91",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_cat_basic.png?lut=spr_animal_cat_lut:4",
+      "width": 18
+    },
+    {
       "bytes": 369,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39489,6 +41762,198 @@
       "sha256": "c43fb6621441f59716e779c16e8b4366b84bb9825b507a176eb7d261ccb2f610",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
       "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "width": 18
+    },
+    {
+      "bytes": 270,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_beige.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_beige"
+      ],
+      "key": "pet/dog_dog_beige",
+      "origin": "game_files",
+      "sha256": "9e911466881c7b803f0d72cebf4a86ca65f3c104c2ff72949aaae415a56f21da",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 268,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_black.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_black"
+      ],
+      "key": "pet/dog_dog_black",
+      "origin": "game_files",
+      "sha256": "b6faf79e4d23efa4ec6118a8e2f5d90e83ccaf7048805ee98d153cbb6c577aa9",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 274,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_brown.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_brown"
+      ],
+      "key": "pet/dog_dog_brown",
+      "origin": "game_files",
+      "sha256": "be18199c373b35c05ca64791bef01234cd0dc44fddd000ffc8d7cb8183ddc34e",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 305,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_dalmation.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_dalmation"
+      ],
+      "key": "pet/dog_dog_dalmation",
+      "origin": "game_files",
+      "sha256": "7ce3f2ee8a3a82b8ce7914da795f95bd4ec98b445e8359acfca960df7403b9f0",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:9",
+      "width": 18
+    },
+    {
+      "bytes": 275,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_grey.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_grey"
+      ],
+      "key": "pet/dog_dog_grey",
+      "origin": "game_files",
+      "sha256": "5ee0137727d9d6404411e39e3dc6580a82267dc99a7a0eb1e8db6f9202c40730",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 271,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_navy.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_navy"
+      ],
+      "key": "pet/dog_dog_navy",
+      "origin": "game_files",
+      "sha256": "86726b0e28a11e9a026bd4e2dd6ae14c8ba79eee116d41760f92615d5720e9e1",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:11",
+      "width": 18
+    },
+    {
+      "bytes": 268,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_orange.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_orange"
+      ],
+      "key": "pet/dog_dog_orange",
+      "origin": "game_files",
+      "sha256": "d1f51b734d93ef5983ad0d0dfbec4742ce6c76c64bcc9ea8713f051e0eb92147",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:8",
+      "width": 18
+    },
+    {
+      "bytes": 275,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_pink"
+      ],
+      "key": "pet/dog_dog_pink",
+      "origin": "game_files",
+      "sha256": "552549e037b6ae57bfc6b62ca4f0198de889d19a0ea47de2fc99cae5f07adaaa",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:12",
+      "width": 18
+    },
+    {
+      "bytes": 276,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_purple"
+      ],
+      "key": "pet/dog_dog_purple",
+      "origin": "game_files",
+      "sha256": "26bcc4926bb7a3d61905f8b68ecabca9ab8d8e5c17089e9ebf00100b8ae4bf22",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:10",
+      "width": 18
+    },
+    {
+      "bytes": 301,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_spots.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_spots"
+      ],
+      "key": "pet/dog_dog_spots",
+      "origin": "game_files",
+      "sha256": "5f6d92f3dab958eb89467bd25e75db93b5a504dac094e7ae42261386b66b04f9",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:7",
+      "width": 18
+    },
+    {
+      "bytes": 273,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_white.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_white"
+      ],
+      "key": "pet/dog_dog_white",
+      "origin": "game_files",
+      "sha256": "fe7291863f513553b70f3247851a4b77c20ed701e9669ab4b35b5d0cfc160ff2",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 272,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/dog_dog_yellow.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/dog_dog_yellow"
+      ],
+      "key": "pet/dog_dog_yellow",
+      "origin": "game_files",
+      "sha256": "5b45bdc65a01e923ce055ae5760f09e779847cd02ed503bd163e771dca4bb5e3",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_animal_dog_basic.png?lut=spr_animal_dog_lut:1",
       "width": 18
     },
     {
@@ -39508,6 +41973,38 @@
       "width": 18
     },
     {
+      "bytes": 296,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/enchantern_enchantern_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/enchantern_enchantern_blue"
+      ],
+      "key": "pet/enchantern_enchantern_blue",
+      "origin": "game_files",
+      "sha256": "a45dc582675aac9d5e282f0d4322df989efceefe8d1ffee9f3c50798e6700d71",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_blue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_blue.png",
+      "width": 18
+    },
+    {
+      "bytes": 290,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/enchantern_enchantern_yellow.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/enchantern_enchantern_yellow"
+      ],
+      "key": "pet/enchantern_enchantern_yellow",
+      "origin": "game_files",
+      "sha256": "391bc828e040ddc2b0bf739bf58cba2fedfc581d3316db94009f366a427e6416",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_yellow.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_enchantern_yellow.png",
+      "width": 18
+    },
+    {
       "bytes": 290,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39521,6 +42018,38 @@
       "sha256": "dec4470440bae37d2356d63796341ebf76593ded058e44712d9e87a7fb0b9bf1",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
       "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
+      "width": 18
+    },
+    {
+      "bytes": 290,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/essence_bat_essence_bat_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/essence_bat_essence_bat_blue"
+      ],
+      "key": "pet/essence_bat_essence_bat_blue",
+      "origin": "game_files",
+      "sha256": "dec4470440bae37d2356d63796341ebf76593ded058e44712d9e87a7fb0b9bf1",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_blue.png",
+      "width": 18
+    },
+    {
+      "bytes": 285,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/essence_bat_essence_bat_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/essence_bat_essence_bat_purple"
+      ],
+      "key": "pet/essence_bat_essence_bat_purple",
+      "origin": "game_files",
+      "sha256": "89347f6d831e4ca66149caed784f5c459059635520a77d157ca27e4c2f0a4c2b",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_purple.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_essence_bat_purple.png",
       "width": 18
     },
     {
@@ -39540,6 +42069,38 @@
       "width": 18
     },
     {
+      "bytes": 281,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/flame_spirit_flame_spirit_orange.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/flame_spirit_flame_spirit_orange"
+      ],
+      "key": "pet/flame_spirit_flame_spirit_orange",
+      "origin": "game_files",
+      "sha256": "b779d59d5e76da96d156a3ea543e21ac8a021759b66990ba2278510946cd78ec",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_orange.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_orange.png",
+      "width": 18
+    },
+    {
+      "bytes": 298,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/flame_spirit_flame_spirit_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/flame_spirit_flame_spirit_purple"
+      ],
+      "key": "pet/flame_spirit_flame_spirit_purple",
+      "origin": "game_files",
+      "sha256": "c6aaacc497265760b3474d291b20d773f54d6eaf35f5961c0fc38a4d1fee4255",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_purple.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_flame_spirit_purple.png",
+      "width": 18
+    },
+    {
       "bytes": 304,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39549,6 +42110,22 @@
         "pet/flying_tome"
       ],
       "key": "pet/flying_tome",
+      "origin": "game_files",
+      "sha256": "05d9be095a98b7a145df284be3553c0860ddb11c93b9922499badc0e1bc032fc",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flying_tome.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_flying_tome.png",
+      "width": 18
+    },
+    {
+      "bytes": 304,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/flying_tome_flying_tome.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/flying_tome_flying_tome"
+      ],
+      "key": "pet/flying_tome_flying_tome",
       "origin": "game_files",
       "sha256": "05d9be095a98b7a145df284be3553c0860ddb11c93b9922499badc0e1bc032fc",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_flying_tome.png",
@@ -39572,6 +42149,22 @@
       "width": 18
     },
     {
+      "bytes": 371,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/griffin_statue_griffin_statue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/griffin_statue_griffin_statue"
+      ],
+      "key": "pet/griffin_statue_griffin_statue",
+      "origin": "game_files",
+      "sha256": "b192b7d8f6c6661747a1f7c3da2d7fc7e94dbdc4fac0b652536b1b7a4ba60484",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_griffin_statue.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_griffin_statue.png",
+      "width": 18
+    },
+    {
       "bytes": 265,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39581,6 +42174,22 @@
         "pet/lava_cat"
       ],
       "key": "pet/lava_cat",
+      "origin": "game_files",
+      "sha256": "aa4a9dc963bacee30ec3100000fbcb70edb2ecff6147c7b9d7253df85e3c60e5",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_lava.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_lava.png",
+      "width": 18
+    },
+    {
+      "bytes": 265,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/lava_cat_lava_cat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/lava_cat_lava_cat"
+      ],
+      "key": "pet/lava_cat_lava_cat",
       "origin": "game_files",
       "sha256": "aa4a9dc963bacee30ec3100000fbcb70edb2ecff6147c7b9d7253df85e3c60e5",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_lava.png",
@@ -39604,6 +42213,22 @@
       "width": 18
     },
     {
+      "bytes": 303,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mimic_mimic.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mimic_mimic"
+      ],
+      "key": "pet/mimic_mimic",
+      "origin": "game_files",
+      "sha256": "3c9e228fbce996ca56bf344c5bdb80c0799ab61a535f0909922ddbf61c685eb8",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mimic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mimic.png",
+      "width": 18
+    },
+    {
       "bytes": 450,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39617,6 +42242,70 @@
       "sha256": "ed08ffb2cfa4ff6873f289a49ea4918b30c3ba029136cc78b4d41c09114d4e1c",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
       "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "width": 18
+    },
+    {
+      "bytes": 372,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mushroom_mushroom_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mushroom_mushroom_blue"
+      ],
+      "key": "pet/mushroom_mushroom_blue",
+      "origin": "game_files",
+      "sha256": "60965c1f54478c9ec418f81d1ff20ce949cd859db097a18bfb6ab5f489200960",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png?lut=spr_pet_mushroom_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 382,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mushroom_mushroom_green.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mushroom_mushroom_green"
+      ],
+      "key": "pet/mushroom_mushroom_green",
+      "origin": "game_files",
+      "sha256": "a1e0df32d061e4fadd89fa7c02658d37f85e223972b6d3a4dc68fdbd90b519cb",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png?lut=spr_pet_mushroom_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 376,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mushroom_mushroom_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mushroom_mushroom_purple"
+      ],
+      "key": "pet/mushroom_mushroom_purple",
+      "origin": "game_files",
+      "sha256": "a61c5acf519997d7f4592cc5b6253e19db4174c0bb49aa6b91b85a72649a3ad3",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png?lut=spr_pet_mushroom_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 368,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/mushroom_mushroom_red.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/mushroom_mushroom_red"
+      ],
+      "key": "pet/mushroom_mushroom_red",
+      "origin": "game_files",
+      "sha256": "4d9b2cab5ba8f450b8b460ba41120c6c580c9e410e596c3bd4d1479dba55e1d4",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_mushroom_basic.png?lut=spr_pet_mushroom_lut:1",
       "width": 18
     },
     {
@@ -39636,6 +42325,70 @@
       "width": 18
     },
     {
+      "bytes": 327,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/oreclod_copperclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/oreclod_copperclod"
+      ],
+      "key": "pet/oreclod_copperclod",
+      "origin": "game_files",
+      "sha256": "6ab24a81a154ddcc0b77697cd5c3e143de8ecd7b0026ceb484de90fffad7855b",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png?lut=spr_pet_oreclod_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 320,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/oreclod_goldclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/oreclod_goldclod"
+      ],
+      "key": "pet/oreclod_goldclod",
+      "origin": "game_files",
+      "sha256": "2308d08565edac69cc5c737628fa088858020b1a66cd23f5833eda4b3de6afc9",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png?lut=spr_pet_oreclod_lut:4",
+      "width": 18
+    },
+    {
+      "bytes": 329,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/oreclod_ironclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/oreclod_ironclod"
+      ],
+      "key": "pet/oreclod_ironclod",
+      "origin": "game_files",
+      "sha256": "5f871fd387adbf652afa2be9fe2d62d0ed76ff2a25f27be02d109a71eff06fcb",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png?lut=spr_pet_oreclod_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 328,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/oreclod_silverclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/oreclod_silverclod"
+      ],
+      "key": "pet/oreclod_silverclod",
+      "origin": "game_files",
+      "sha256": "f753247cce74fd9e563f17be50e48db23549f8e6a14b158b82d0357b889afc47",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_oreclod.png?lut=spr_pet_oreclod_lut:3",
+      "width": 18
+    },
+    {
       "bytes": 247,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39645,6 +42398,22 @@
         "pet/rock_stack"
       ],
       "key": "pet/rock_stack",
+      "origin": "game_files",
+      "sha256": "232b6e09a56d356df2d868de5e38bd224c85e16434c014a704f468a453d8750e",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rock_stack.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rock_stack.png",
+      "width": 18
+    },
+    {
+      "bytes": 247,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rock_stack_rock_stack.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rock_stack_rock_stack"
+      ],
+      "key": "pet/rock_stack_rock_stack",
       "origin": "game_files",
       "sha256": "232b6e09a56d356df2d868de5e38bd224c85e16434c014a704f468a453d8750e",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rock_stack.png",
@@ -39668,6 +42437,70 @@
       "width": 18
     },
     {
+      "bytes": 317,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rockclod_rockclod.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rockclod_rockclod"
+      ],
+      "key": "pet/rockclod_rockclod",
+      "origin": "game_files",
+      "sha256": "9cd28a6e9eca6df44b21289a4a163b8d998397e313e37110d3755c4cc1d559ce",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png?lut=spr_pet_rockclod_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 291,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rockclod_rockclod_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rockclod_rockclod_blue"
+      ],
+      "key": "pet/rockclod_rockclod_blue",
+      "origin": "game_files",
+      "sha256": "931643435b42d52e7d92c2a7d950fb8744f12863e20331fd1c645e498f571e33",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png?lut=spr_pet_rockclod_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 309,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rockclod_rockclod_green.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rockclod_rockclod_green"
+      ],
+      "key": "pet/rockclod_rockclod_green",
+      "origin": "game_files",
+      "sha256": "6419407720cf00e1de37bc7efa099d454d0ffd120ad8b6fe7e22eee84d05fd8d",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png?lut=spr_pet_rockclod_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 307,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/rockclod_rockclod_red.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/rockclod_rockclod_red"
+      ],
+      "key": "pet/rockclod_rockclod_red",
+      "origin": "game_files",
+      "sha256": "5b6251c96b80de2869d1c2664df41ebb112f381d786ce0d3f0ebd40618158ed4",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_rockclod.png?lut=spr_pet_rockclod_lut:4",
+      "width": 18
+    },
+    {
       "bytes": 447,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39681,6 +42514,102 @@
       "sha256": "cc5139a81e9347e157900d257c44ec24b21f98334646d034cef2336e1910cbb3",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
       "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "width": 18
+    },
+    {
+      "bytes": 358,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_blue"
+      ],
+      "key": "pet/sapling_sapling_blue",
+      "origin": "game_files",
+      "sha256": "18397b2cd9643b4e61995580b6ed3129f138092be0e3cf131eb284ab5719ed3c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:3",
+      "width": 18
+    },
+    {
+      "bytes": 367,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_cool.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_cool"
+      ],
+      "key": "pet/sapling_sapling_cool",
+      "origin": "game_files",
+      "sha256": "ecbf3f6b1ecabc049dbfec37f824b6983443769b5ba91ffece9242068e6886b7",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 366,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_green.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_green"
+      ],
+      "key": "pet/sapling_sapling_green",
+      "origin": "game_files",
+      "sha256": "05fe1afe23fc8fe616e625444238b851cfe8d15403768ae538538baed851980c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:1",
+      "width": 18
+    },
+    {
+      "bytes": 356,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_orange.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_orange"
+      ],
+      "key": "pet/sapling_sapling_orange",
+      "origin": "game_files",
+      "sha256": "f7ff3137b3fbfd8cdd7b80fde2d5f65f4515ebf112b90ec8e42e6bb21467e8cd",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:5",
+      "width": 18
+    },
+    {
+      "bytes": 360,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_pink.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_pink"
+      ],
+      "key": "pet/sapling_sapling_pink",
+      "origin": "game_files",
+      "sha256": "c3e6116d0edf52cd56b3d94a9f6172635102896a54b61280b999747fe473114c",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:6",
+      "width": 18
+    },
+    {
+      "bytes": 362,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/sapling_sapling_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/sapling_sapling_purple"
+      ],
+      "key": "pet/sapling_sapling_purple",
+      "origin": "game_files",
+      "sha256": "4672ee88b4c09a9c316c20f9238f9e075aa1ed32f628d5ab18a848cd2f08a929",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_sapling_green.png?lut=spr_pet_sapling_lut:4",
       "width": 18
     },
     {
@@ -39700,6 +42629,54 @@
       "width": 18
     },
     {
+      "bytes": 226,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/stalagmite_stalagmite_blue.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/stalagmite_stalagmite_blue"
+      ],
+      "key": "pet/stalagmite_stalagmite_blue",
+      "origin": "game_files",
+      "sha256": "903f4bafcb5871436c99ac5f5ac07ecb74744727e4c8ccb04b8307515e0a923f",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "width": 18
+    },
+    {
+      "bytes": 292,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/stalagmite_stalagmite_green.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/stalagmite_stalagmite_green"
+      ],
+      "key": "pet/stalagmite_stalagmite_green",
+      "origin": "game_files",
+      "sha256": "5f05a87ee15ed24860df203432e0415cd098259a6b1a0cecdc21fec7adbf2780",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png?lut=spr_pet_stalagmite_lut:2",
+      "width": 18
+    },
+    {
+      "bytes": 290,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/stalagmite_stalagmite_purple.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/stalagmite_stalagmite_purple"
+      ],
+      "key": "pet/stalagmite_stalagmite_purple",
+      "origin": "game_files",
+      "sha256": "470acf2558e173b82c99c151324626ca864138f40570d2b1c081c319133f0b34",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_stalagmite.png?lut=spr_pet_stalagmite_lut:3",
+      "width": 18
+    },
+    {
       "bytes": 268,
       "family": "pet",
       "fetched_at": "2026-08-11",
@@ -39709,6 +42686,22 @@
         "pet/void_cat"
       ],
       "key": "pet/void_cat",
+      "origin": "game_files",
+      "sha256": "ec78e6cb560de25d7d05ce77b136160e449465375e20de233c11f83e3575d6ef",
+      "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_void.png",
+      "source_url": "game://animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_void.png",
+      "width": 18
+    },
+    {
+      "bytes": 268,
+      "family": "pet",
+      "fetched_at": "2026-08-11",
+      "file": "pet/void_cat_void_cat.png",
+      "height": 18,
+      "icon_keys": [
+        "pet/void_cat_void_cat"
+      ],
+      "key": "pet/void_cat_void_cat",
       "origin": "game_files",
       "sha256": "ec78e6cb560de25d7d05ce77b136160e449465375e20de233c11f83e3575d6ef",
       "source_file": "animations/UI NEW/Pets/spr_ui_icon_pet_lava_cat_void.png",

@@ -3166,6 +3166,77 @@
   },
   {
     "also_known_as": [],
+    "availability": [
+      {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [],
+        "method": "mail",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/baby_cradle",
+    "id": "baby_cradle",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Baby Cradle",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Baby_Cradle"
+  },
+  {
+    "also_known_as": [],
     "availability": [],
     "base_item_id": null,
     "blurb": null,
@@ -13315,7 +13386,8 @@
     "subcategory": null,
     "tags": [
       "Food",
-      "Food:Choco"
+      "Food:Choco",
+      "Ingredient"
     ],
     "used_in_recipe_ids": [
       "caldosian_chocolate_cake",
@@ -21657,6 +21729,53 @@
   },
   {
     "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/dark_chocolate",
+    "id": "dark_chocolate",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Dark Chocolate",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Dark_Chocolate"
+  },
+  {
+    "also_known_as": [],
     "availability": [
       {
         "biome_id": null,
@@ -25096,6 +25215,52 @@
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Emerald_Horned_Charger"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "sell_value"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/engagement_ring",
+    "id": "engagement_ring",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": true,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Engagement Ring",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Blacksmithing"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Engagement_Ring"
   },
   {
     "also_known_as": [],
@@ -35071,6 +35236,53 @@
     "base_item_id": null,
     "blurb": null,
     "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/honey_toast",
+    "id": "honey_toast",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Honey Toast",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Honey_Toast"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
     "category": "misc",
     "confidence": "wiki",
     "data_gaps": [
@@ -43078,6 +43290,53 @@
   },
   {
     "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/milk_chocolate",
+    "id": "milk_chocolate",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Milk Chocolate",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Milk_Chocolate"
+  },
+  {
+    "also_known_as": [],
     "availability": [
       {
         "biome_id": "upper_mines",
@@ -46920,6 +47179,124 @@
     "also_known_as": [],
     "availability": [
       {
+        "biome_id": null,
+        "chance": null,
+        "confidence": "verified",
+        "dates": null,
+        "days": null,
+        "depth": null,
+        "habitats": [],
+        "locations": [],
+        "method": "cutscene",
+        "min_year": null,
+        "prov": "game_files",
+        "quantity": null,
+        "rarity": null,
+        "requires": [],
+        "seasons": [
+          "spring",
+          "summer",
+          "fall",
+          "winter"
+        ],
+        "spot_ids": [],
+        "time": null,
+        "time_blocks": null,
+        "time_precision": "not_applicable",
+        "weather": null,
+        "weather_precision": "not_applicable"
+      }
+    ],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/mystical_feather",
+    "id": "mystical_feather",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Mystical Feather",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Mystical_Feather"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/nachos",
+    "id": "nachos",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Nachos",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Nachos"
+  },
+  {
+    "also_known_as": [],
+    "availability": [
+      {
         "biome_id": "upper_mines",
         "chance": null,
         "confidence": "wiki",
@@ -49226,6 +49603,100 @@
   },
   {
     "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/pbjt_sandwich",
+    "id": "pbjt_sandwich",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "PBJT Sandwich",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "PBJT_Sandwich"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/pbm_sandwich",
+    "id": "pbm_sandwich",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "PBM Sandwich",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "PBM_Sandwich"
+  },
+  {
+    "also_known_as": [],
     "availability": [
       {
         "biome_id": null,
@@ -51355,6 +51826,328 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
+    "icon_key": "misc/pet_skin_enchantern",
+    "id": "pet_skin_enchantern",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Enchantern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Enchantern"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_essence_bat",
+    "id": "pet_skin_essence_bat",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Essence Bat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Essence_Bat"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_flame_spirit",
+    "id": "pet_skin_flame_spirit",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Flame Spirit",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Flame_Spirit"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_flying_tome",
+    "id": "pet_skin_flying_tome",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Flying Tome",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Flying_Tome"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_gryphon_statue",
+    "id": "pet_skin_gryphon_statue",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Gryphon Statue",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Gryphon_Statue"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_lava_cat",
+    "id": "pet_skin_lava_cat",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Lava Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Lava_Cat"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_mimic",
+    "id": "pet_skin_mimic",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Mimic",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Mimic"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
     "icon_key": "misc/pet_skin_mushroom",
     "id": "pet_skin_mushroom",
     "id_status": "confirmed",
@@ -51447,6 +52240,52 @@
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
+    "icon_key": "misc/pet_skin_rock_stack",
+    "id": "pet_skin_rock_stack",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Rock Stack",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Rock_Stack"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
     "icon_key": "misc/pet_skin_rockclod",
     "id": "pet_skin_rockclod",
     "id_status": "confirmed",
@@ -51524,6 +52363,98 @@
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Pet_Skin:_Sapling"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_stalagmite",
+    "id": "pet_skin_stalagmite",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Stalagmite",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Stalagmite"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/pet_skin_void_cat",
+    "id": "pet_skin_void_cat",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Pet Skin: Void Cat",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Pet Skin"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Pet_Skin:_Void_Cat"
   },
   {
     "also_known_as": [],
@@ -69260,6 +70191,1018 @@
     "availability": [],
     "base_item_id": null,
     "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_adelines_theme",
+    "id": "song_crystal_adelines_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Adeline's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Adeline's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_another_tower",
+    "id": "song_crystal_another_tower",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Another Tower",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Another_Tower"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_balors_theme",
+    "id": "song_crystal_balors_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Balor's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Balor's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_caldarus_theme",
+    "id": "song_crystal_caldarus_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Caldarus' Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Caldarus'_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_celines_theme",
+    "id": "song_crystal_celines_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Celine's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Celine's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_crystal_caves",
+    "id": "song_crystal_crystal_caves",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Crystal Caves",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Crystal_Caves"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_dream_lobby",
+    "id": "song_crystal_dream_lobby",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Dream Lobby",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Dream_Lobby"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_eilands_theme",
+    "id": "song_crystal_eilands_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Eiland's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Eiland's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_farm_boy",
+    "id": "song_crystal_farm_boy",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Farm Boy",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Farm_Boy"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_five_more_minutes",
+    "id": "song_crystal_five_more_minutes",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Five More Minutes",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Five_More_Minutes"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_haydens_theme",
+    "id": "song_crystal_haydens_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Hayden's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Hayden's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_heros_journey",
+    "id": "song_crystal_heros_journey",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Hero's Journey",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Hero's_Journey"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_junipers_theme",
+    "id": "song_crystal_junipers_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Juniper's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Juniper's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_marchs_theme",
+    "id": "song_crystal_marchs_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - March's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_March's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_misty_pasture",
+    "id": "song_crystal_misty_pasture",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Misty Pasture",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Misty_Pasture"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_pink_twintails",
+    "id": "song_crystal_pink_twintails",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Pink Twintails",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Pink_Twintails"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_purple_potions",
+    "id": "song_crystal_purple_potions",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Purple Potions",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Purple_Potions"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_rainy_window",
+    "id": "song_crystal_rainy_window",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Rainy Window",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Rainy_Window"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_reinas_theme",
+    "id": "song_crystal_reinas_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Reina's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Reina's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_ryis_theme",
+    "id": "song_crystal_ryis_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Ryis' Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Ryis'_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_seridias_theme",
+    "id": "song_crystal_seridias_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Seridia's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Seridia's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": 5000,
+    "category": "misc",
+    "confidence": "wiki",
+    "data_gaps": [],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": null,
+    "icon_key": "misc/song_crystal_valens_theme",
+    "id": "song_crystal_valens_theme",
+    "id_status": "confirmed",
+    "is_buyable": true,
+    "is_consumable": false,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Song Crystal - Valen's Theme",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": null,
+    "sold_by": [
+      "zorels_stall"
+    ],
+    "stamina": null,
+    "subcategory": null,
+    "tags": [
+      "Song Crystal"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Song_Crystal_-_Valen's_Theme"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
     "buy_value": 60,
     "category": "misc",
     "confidence": "wiki",
@@ -74378,6 +76321,53 @@
     "used_in_recipe_ids": [],
     "version_added": null,
     "wiki_page": "Tesserae"
+  },
+  {
+    "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/tesserae_cake",
+    "id": "tesserae_cake",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "Tesserae Cake",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "Tesserae_Cake"
   },
   {
     "also_known_as": [],
@@ -81028,6 +83018,53 @@
   },
   {
     "also_known_as": [],
+    "availability": [],
+    "base_item_id": null,
+    "blurb": null,
+    "buy_value": null,
+    "category": "cooked",
+    "confidence": "wiki",
+    "data_gaps": [
+      "obtain_method"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "health": 80,
+    "icon_key": "cooked/white_chocolate",
+    "id": "white_chocolate",
+    "id_status": "confirmed",
+    "is_buyable": false,
+    "is_consumable": true,
+    "is_craftable": false,
+    "is_giftable": null,
+    "mana": null,
+    "museum": {
+      "donatable": false,
+      "donation_points": null,
+      "set_id": null,
+      "wing": null
+    },
+    "name": "White Chocolate",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_cargo"
+    },
+    "quality": null,
+    "sell_value": 200,
+    "sold_by": [],
+    "stamina": 80,
+    "subcategory": null,
+    "tags": [
+      "Food",
+      "Food:Food Without Recipes"
+    ],
+    "used_in_recipe_ids": [],
+    "version_added": null,
+    "wiki_page": "White_Chocolate"
+  },
+  {
+    "also_known_as": [],
     "availability": [
       {
         "biome_id": null,
@@ -83808,1414 +85845,6 @@
     "quality": null,
     "sell_value": null,
     "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/engagement_ring",
-    "id": "engagement_ring",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": true,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Engagement Ring",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [
-      {
-        "biome_id": null,
-        "chance": null,
-        "confidence": "verified",
-        "dates": null,
-        "days": null,
-        "depth": null,
-        "habitats": [],
-        "locations": [],
-        "method": "cutscene",
-        "min_year": null,
-        "prov": "game_files",
-        "quantity": null,
-        "rarity": null,
-        "requires": [],
-        "seasons": [
-          "spring",
-          "summer",
-          "fall",
-          "winter"
-        ],
-        "spot_ids": [],
-        "time": null,
-        "time_blocks": null,
-        "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "not_applicable"
-      }
-    ],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/mystical_feather",
-    "id": "mystical_feather",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Mystical Feather",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_enchantern",
-    "id": "pet_skin_enchantern",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Enchantern",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_essence_bat",
-    "id": "pet_skin_essence_bat",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Essence Bat",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_flame_spirit",
-    "id": "pet_skin_flame_spirit",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Flame Spirit",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_flying_tome",
-    "id": "pet_skin_flying_tome",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Flying Tome",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_gryphon_statue",
-    "id": "pet_skin_gryphon_statue",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Gryphon Statue",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_lava_cat",
-    "id": "pet_skin_lava_cat",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Lava Cat",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_mimic",
-    "id": "pet_skin_mimic",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Mimic",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_rock_stack",
-    "id": "pet_skin_rock_stack",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Rock Stack",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_stalagmite",
-    "id": "pet_skin_stalagmite",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Stalagmite",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/pet_skin_void_cat",
-    "id": "pet_skin_void_cat",
-    "id_status": "confirmed",
-    "is_buyable": null,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Pet Skin: Void Cat",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_adelines_theme",
-    "id": "song_crystal_adelines_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Adeline's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "obtain_method",
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_another_tower",
-    "id": "song_crystal_another_tower",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Another Tower",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_balors_theme",
-    "id": "song_crystal_balors_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Balor's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_caldarus_theme",
-    "id": "song_crystal_caldarus_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Caldarus' Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_celines_theme",
-    "id": "song_crystal_celines_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Celine's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_crystal_caves",
-    "id": "song_crystal_crystal_caves",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Crystal Caves",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_dream_lobby",
-    "id": "song_crystal_dream_lobby",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Dream Lobby",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_eilands_theme",
-    "id": "song_crystal_eilands_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Eiland's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_farm_boy",
-    "id": "song_crystal_farm_boy",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Farm Boy",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_five_more_minutes",
-    "id": "song_crystal_five_more_minutes",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Five More Minutes",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_haydens_theme",
-    "id": "song_crystal_haydens_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Hayden's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_heros_journey",
-    "id": "song_crystal_heros_journey",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Hero's Journey",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_junipers_theme",
-    "id": "song_crystal_junipers_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Juniper's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_marchs_theme",
-    "id": "song_crystal_marchs_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - March's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_misty_pasture",
-    "id": "song_crystal_misty_pasture",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Misty Pasture",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_pink_twintails",
-    "id": "song_crystal_pink_twintails",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Pink Twintails",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_purple_potions",
-    "id": "song_crystal_purple_potions",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Purple Potions",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_rainy_window",
-    "id": "song_crystal_rainy_window",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Rainy Window",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_reinas_theme",
-    "id": "song_crystal_reinas_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Reina's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_ryis_theme",
-    "id": "song_crystal_ryis_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Ryis' Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_seridias_theme",
-    "id": "song_crystal_seridias_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Seridia's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": null
-  },
-  {
-    "also_known_as": [],
-    "availability": [],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": 5000,
-    "category": "misc",
-    "confidence": "verified",
-    "data_gaps": [
-      "sell_value"
-    ],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/song_crystal_valens_theme",
-    "id": "song_crystal_valens_theme",
-    "id_status": "confirmed",
-    "is_buyable": true,
-    "is_consumable": null,
-    "is_craftable": null,
-    "is_giftable": null,
-    "mana": null,
-    "museum": null,
-    "name": "Song Crystal - Valen's Theme",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "game_files"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [
-      "zorels_stall"
-    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],

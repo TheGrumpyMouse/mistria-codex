@@ -18,6 +18,93 @@
     },
     "former_ids": [],
     "game_version": "1.0.0",
+    "goods": [
+      {
+        "item_id": "dress_spring_festival",
+        "stall_key": "elsie_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "face_gear_flower_earrings",
+        "stall_key": "elsie_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "head_flower_crown",
+        "stall_key": "elsie_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "head_flower_top_hat",
+        "stall_key": "elsie_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "suit_spring_festival",
+        "stall_key": "elsie_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "coffee",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "floral_tea",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "lavender_tea",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "mocha",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "rose_tea",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "tulip_cake",
+        "stall_key": "maple_spring_festival",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "scent_of_spring",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "spring_festival_basket",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "spring_festival_flower_chest",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "spring_festival_large_planter",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "spring_festival_planter",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "spring_festival_wreath",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      }
+    ],
     "icon_key": "festival/spring_festival",
     "id": "spring_festival",
     "id_status": "provisional",
@@ -30,6 +117,7 @@
     "prov": {
       "*": "wiki_page",
       "activities": "game_files",
+      "goods": "game_files",
       "location_id": "game_files"
     },
     "rewards": [],
@@ -55,6 +143,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/cooking_contest",
     "id": "cooking_contest",
     "id_status": "provisional",
@@ -91,6 +180,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/beach_day",
     "id": "beach_day",
     "id_status": "provisional",
@@ -127,6 +217,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/crop_festival",
     "id": "crop_festival",
     "id_status": "provisional",
@@ -163,6 +254,7 @@
     },
     "former_ids": [],
     "game_version": "1.0.0",
+    "goods": [],
     "icon_key": "festival/shooting_star_festival",
     "id": "shooting_star_festival",
     "id_status": "provisional",
@@ -202,6 +294,63 @@
     },
     "former_ids": [],
     "game_version": "1.0.0",
+    "goods": [
+      {
+        "item_id": null,
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": "apple_honey_curry"
+      },
+      {
+        "item_id": null,
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": "harvest_plate"
+      },
+      {
+        "item_id": null,
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": "pumpkin_pie"
+      },
+      {
+        "item_id": "autumn_scarecrow",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "candied_queen_berries",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "cornucopia",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "dress_berry",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "head_berry_crown",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "head_berry_hat",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "queen_berry_pie",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "suit_berry",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      }
+    ],
     "icon_key": "festival/harvest_festival",
     "id": "harvest_festival",
     "id_status": "provisional",
@@ -214,6 +363,7 @@
     "prov": {
       "*": "wiki_page",
       "activities": "game_files",
+      "goods": "game_files",
       "location_id": "game_files"
     },
     "rewards": [],
@@ -239,6 +389,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/halloween_festival",
     "id": "halloween_festival",
     "id_status": "provisional",
@@ -274,6 +425,108 @@
     },
     "former_ids": [],
     "game_version": "1.0.0",
+    "goods": [
+      {
+        "item_id": null,
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": "golden_cheesecake"
+      },
+      {
+        "item_id": null,
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": "golden_cookies"
+      },
+      {
+        "item_id": "alpaca_beret",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "alpaca_lacy_collar",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "capybara_angel_wings",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "capybara_bat_wings",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "chicken_apple_hat",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "chicken_baseball_cap",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "chicky_hot_chocolate",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "cow_bell_collar",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "cow_donut",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "cow_laurels",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "duck_backwards_cap",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "duck_strawberry_hat",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "horse_bandana",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "horse_monocle",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "rabbit_chef_hat",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "rabbit_cowboy_hat",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "sheep_green_visor",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      },
+      {
+        "item_id": "sheep_hot_water_bottle",
+        "stall_key": "nora_souvenir_stall",
+        "teaches_recipe_id": null
+      }
+    ],
     "icon_key": "festival/animal_festival",
     "id": "animal_festival",
     "id_status": "provisional",
@@ -286,6 +539,7 @@
     "prov": {
       "*": "wiki_page",
       "activities": "game_files",
+      "goods": "game_files",
       "location_id": "game_files",
       "rewards": "game_files"
     },
@@ -337,6 +591,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/gift_festival",
     "id": "gift_festival",
     "id_status": "provisional",
@@ -373,6 +628,7 @@
     },
     "former_ids": [],
     "game_version": "v0-14-0",
+    "goods": [],
     "icon_key": "festival/new_years_eve",
     "id": "new_years_eve",
     "id_status": "provisional",

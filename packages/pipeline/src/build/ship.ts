@@ -328,6 +328,9 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     ['quests.json', 'quest'],
     ['animals.json', 'animal'],
     ['pets.json', 'pet'],
+    // Festivals are searchable and have a page: date, place, activities and
+    // what the stalls sell.
+    ['festivals.json', 'festival'],
   ] as const) {
     for (const record of await read<{
       id: string

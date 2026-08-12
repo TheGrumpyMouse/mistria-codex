@@ -14,9 +14,31 @@
     "",
     "WHAT IS DELIBERATELY ABSENT. The five mine biomes have no anchor and never",
     "will: a biome is a range of floors, not a place on the overworld, so its",
-    "position is *not applicable* rather than unknown. The Bell Tower and Balor's",
-    "Wagon have no marker at all — the wagon is a travelling merchant and may",
-    "genuinely have no fixed spot. Those three stay as honest gaps."
+    "position is *not applicable* rather than unknown. The Bell Tower has no",
+    "marker and stays an honest gap. Balor's Wagon DOES have a fixed pitch —",
+    "the game's own rm_town.tmx places the wagon object in town, contrary to",
+    "this file's earlier guess that a travelling merchant might have none —",
+    "but the wiki map still carries no marker for it, so its hand-placed",
+    "anchor lives in curated/maps/markers.json and ships inferred.",
+    "",
+    "QUESTS. The wiki's seven Quest-group markers are barriers: broken bridges",
+    "and stairs, sealed caves. Two name a quest we hold nearly word for word",
+    "and are linked below. The other five are NOT linked, on purpose: no quest",
+    "record of ours matches 'Sealed Beach Cave', the stairs or the vine by",
+    "name, and deducing that a marker is the door a given seal opens would be",
+    "a guess wearing a link. They ship as quest-kind spots with quest_id null."
+  ],
+  "quests": [
+    {
+      "marker": "Broken Beach Bridge",
+      "quest_id": "repair_the_beach_bridge",
+      "reason": "Exact name match: the quest is 'Repair the Beach Bridge' and the marker sits on the beach."
+    },
+    {
+      "marker": "Broken Bridge",
+      "quest_id": "repair_the_bridge",
+      "reason": "The quest is 'Repair the Bridge'. We hold exactly two bridge-repair quests; the other names the beach, and this marker is on the Eastern Road, not the beach."
+    }
   ],
   "anchors": [
     {

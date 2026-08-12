@@ -45,6 +45,7 @@ const ROUTE_FOR = {
   quest: 'quest',
   animal: 'animal',
   pet: 'pet',
+  festival: 'festival',
 }
 
 /** Text that means something rendered wrong, whatever screen it is on. */

@@ -26,7 +26,7 @@ interface PetRecord {
   id: string
   name: string
   icon_key: string | null
-  variants: { key: string; name: string | null }[]
+  variants: { key: string; name: string | null; icon_key: string | null }[]
   data_gaps: string[]
 }
 
@@ -143,8 +143,17 @@ export function PetRoute() {
             {pet.variants.map((variant) => (
               <li
                 key={variant.key}
-                className="rounded-tile border border-rule bg-surface px-2 py-0.5 text-ink text-sm"
+                className="inline-flex items-center gap-1.5 rounded-tile border border-rule bg-surface py-0.5 pr-2 pl-1 text-ink text-sm"
               >
+                {/* The colourway's own swatch — the base icon repainted
+                    through the game's palette strip. Glyph when absent. */}
+                {variant.icon_key !== null && (
+                  <ItemIcon
+                    iconKey={variant.icon_key}
+                    name={variant.name ?? variant.key.replace(/_/g, ' ')}
+                    size="sm"
+                  />
+                )}
                 {variant.name ?? variant.key.replace(/_/g, ' ')}
               </li>
             ))}

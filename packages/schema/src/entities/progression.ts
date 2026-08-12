@@ -50,6 +50,23 @@ export const Festival = withEnvelope({
   activities: z.array(z.string()).default([]),
   rewards: z.array(IdRef).default([]),
   prerequisites: z.array(Requirement).default([]),
+  /**
+   * What the festival's stalls hand out, stated by `festivals.toml`'s stock
+   * tables and resolved against the records that actually ship. The same
+   * facts as the items' `festival` windows and the recipes' festival sources,
+   * indexed from this side — a window does not carry the festival's id, so
+   * without this list the join only ran one way. `stall_key` is a game token
+   * and never renders raw.
+   */
+  goods: z
+    .array(
+      z.object({
+        stall_key: z.string().nullable().default(null),
+        item_id: IdRef.nullable().default(null),
+        teaches_recipe_id: IdRef.nullable().default(null),
+      }),
+    )
+    .default([]),
 })
 export type Festival = z.infer<typeof Festival>
 

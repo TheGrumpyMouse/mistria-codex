@@ -479,6 +479,13 @@
       "tier": 5
     },
     {
+      "cost": 205,
+      "level": 60,
+      "name": "Espresso Yourself",
+      "skill": "cooking",
+      "tier": 5
+    },
+    {
       "cost": 15,
       "level": 1,
       "name": "Feeding Frenzy",
@@ -582,6 +589,34 @@
       "name": "Barnyard Bounty III",
       "skill": "ranching",
       "tier": 4
+    },
+    {
+      "cost": 150,
+      "level": 45,
+      "name": "Playtime",
+      "skill": "ranching",
+      "tier": 4
+    },
+    {
+      "cost": 205,
+      "level": 60,
+      "name": "Eggstra",
+      "skill": "ranching",
+      "tier": 5
+    },
+    {
+      "cost": 210,
+      "level": 60,
+      "name": "Close Bond II",
+      "skill": "ranching",
+      "tier": 5
+    },
+    {
+      "cost": 215,
+      "level": 60,
+      "name": "True Trust",
+      "skill": "ranching",
+      "tier": 5
     },
     {
       "cost": 10,
@@ -706,6 +741,20 @@
       "cost": 205,
       "level": 60,
       "name": "Big Water Sprites",
+      "skill": "woodcrafting",
+      "tier": 5
+    },
+    {
+      "cost": 210,
+      "level": 60,
+      "name": "Hammer Timing IV",
+      "skill": "woodcrafting",
+      "tier": 5
+    },
+    {
+      "cost": 200,
+      "level": 60,
+      "name": "Deliberate Debris II",
       "skill": "woodcrafting",
       "tier": 5
     },
@@ -1131,7 +1180,7 @@
       "id": "ranching",
       "name": "Ranching",
       "statue": "caldarus",
-      "tiers": 4
+      "tiers": 5
     },
     {
       "id": "woodcrafting",

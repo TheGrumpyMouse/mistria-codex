@@ -40,8 +40,21 @@ export interface ValleyMapProps {
    * Extra pins — landmarks, or whatever the current query turned up.
    * `open: false` keeps one pin inert when the rest are tappable — a dig-spot
    * pin has nowhere to go while the building beside it does.
+   *
+   * `kind` picks the small glyph drawn inside the pin (building, landmark,
+   * water, dig_spot, quest — anything else is a plain pin), and `inferred`
+   * draws the pin hollow: a hand-placed position must never render like a
+   * published coordinate.
    */
-  pins?: { id: string; x: number; y: number; label: string; open?: boolean }[]
+  pins?: {
+    id: string
+    x: number
+    y: number
+    label: string
+    open?: boolean | undefined
+    kind?: string | undefined
+    inferred?: boolean | undefined
+  }[]
   /**
    * Makes pins tappable. The id handed back is the pin's own — callers decide
    * what opening it means (usually navigating to the place page).
@@ -225,6 +238,8 @@ export function ValleyMap({
           y={pin.y}
           label={pin.label}
           zoom={zoom}
+          kind={pin.kind}
+          inferred={pin.inferred === true}
           onOpen={
             onPinClick === undefined || pin.open === false ? undefined : () => onPinClick(pin.id)
           }
@@ -368,20 +383,104 @@ function RegionLabel({
  * spatial vocabulary. Rotating it 45 degrees is what separates "a place" from
  * "the ground".
  */
+/**
+ * The small glyph inside a pin, keyed by the spot's kind.
+ *
+ * Monoline paths in a ±16 box around the origin, drawn in whatever colour
+ * contrasts with the pin's fill. Kinds without an entry get a plain pin — a
+ * glyph per kind is a vocabulary, and a made-up icon for a kind nobody asked
+ * about would just be noise.
+ */
+function pinGlyph(kind: string | undefined, color: string): React.ReactNode {
+  const stroke = { fill: 'none', stroke: color, strokeWidth: 5, strokeLinecap: 'round' } as const
+  switch (kind) {
+    case 'building':
+      // A house: roof over a body.
+      return (
+        <g style={stroke}>
+          <path d="M -14 0 L 0 -13 L 14 0" strokeLinejoin="round" />
+          <path d="M -9 1 v 12 h 18 v -12" strokeLinejoin="round" />
+        </g>
+      )
+    case 'landmark': {
+      // A four-point star — statues, shrines, the lighthouse: "a thing worth
+      // walking to". Filled, because a monoline star vanishes at pin size.
+      return <path d="M 0 -15 L 4 -4 L 15 0 L 4 4 L 0 15 L -4 4 L -15 0 L -4 -4 Z" fill={color} />
+    }
+    case 'water':
+      // A droplet, for fountains and fishing water.
+      return (
+        <path d="M 0 -14 C 6 -5 10 0 10 5 A 10 10 0 1 1 -10 5 C -10 0 -6 -5 0 -14 Z" fill={color} />
+      )
+    case 'dig_spot':
+      // A shovel: handle and blade.
+      return (
+        <g style={stroke}>
+          <path d="M 0 -14 v 15" />
+          <path d="M -7 3 h 14 v 4 a 7 6 0 0 1 -14 0 Z" fill={color} strokeLinejoin="round" />
+        </g>
+      )
+    case 'quest':
+      // An exclamation mark — the universal "something to do here".
+      return (
+        <g>
+          <path d="M 0 -13 v 14" style={{ ...stroke, strokeWidth: 6 }} />
+          <circle cx={0} cy={11} r={3.5} fill={color} />
+        </g>
+      )
+    default:
+      return null
+  }
+}
+
+/**
+ * A pin at text size, for the map legend — the same tessera and glyph the map
+ * draws, so the legend teaches exactly what the reader is looking at.
+ */
+export function PinBadge({ kind, inferred = false }: { kind?: string; inferred?: boolean }) {
+  return (
+    <svg viewBox="-46 -46 92 92" className="inline-block h-4 w-4" aria-hidden="true">
+      <g transform="rotate(45)">
+        <rect
+          x={-30}
+          y={-30}
+          width={60}
+          height={60}
+          rx={5}
+          style={
+            inferred
+              ? { fill: 'var(--surface)', stroke: 'var(--ink)', strokeWidth: 8 }
+              : { fill: 'var(--ink)' }
+          }
+        />
+        <g transform="rotate(-45)">{pinGlyph(kind, inferred ? 'var(--ink)' : 'var(--surface)')}</g>
+      </g>
+    </svg>
+  )
+}
+
 function Pin({
   x,
   y,
   label,
   zoom = 1,
+  kind,
+  inferred = false,
   onOpen,
 }: {
   x: number
   y: number
   label: string
   zoom?: number
+  kind?: string | undefined
+  inferred?: boolean
   onOpen?: (() => void) | undefined
 }) {
   const interactive = onOpen !== undefined
+  // Hollow for an inferred position: surface fill, ink outline — the same
+  // "a deduction never renders like a fact" rule as the dashed underlines,
+  // in the map's own vocabulary. The glyph flips to ink so it stays legible.
+  const glyphColor = inferred ? 'var(--ink)' : 'var(--surface)'
   return (
     // `scale(1/zoom)` is the counter-scale from the apps/web rules: in a
     // focused view the map is drawn several times closer, and a pin left in
@@ -419,8 +518,14 @@ function Pin({
         width={60}
         height={60}
         rx={5}
-        style={{ fill: 'var(--ink)', stroke: 'var(--surface)', strokeWidth: 14 }}
+        style={
+          inferred
+            ? { fill: 'var(--surface)', stroke: 'var(--ink)', strokeWidth: 8 }
+            : { fill: 'var(--ink)', stroke: 'var(--surface)', strokeWidth: 14 }
+        }
       />
+      {/* Counter-rotated so the glyph sits upright inside the tessera. */}
+      <g transform="rotate(-45)">{pinGlyph(kind, glyphColor)}</g>
     </g>
   )
 }

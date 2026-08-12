@@ -30,6 +30,7 @@ import { ASSETS_DIR, ASSETS_MANIFEST, DATA_DIR, REPO_ROOT, SOURCES_DIR } from '.
 import { readJsonFile } from '../lib/read-json.js'
 import { writeJson } from '../lib/write-json.js'
 import { type CropRect, cropPng } from './crop.js'
+import { recolorPng, verifyLutIdentity } from './lut.js'
 import {
   type AssetEntry,
   ATTRIBUTION_TEXT,
@@ -74,6 +75,13 @@ interface GameWant {
   derived?: true
   /** Take a rectangle out of the source rather than the whole file. */
   crop?: CropRect
+  /**
+   * Repaint the source through a palette strip before writing — the game's
+   * own variant mechanism (`lut` + `lut_index` in the animal and pet TOMLs).
+   * The strip layout is proven at run time by `verifyLutIdentity`; see
+   * `lut.ts` for the whole argument.
+   */
+  recolor?: { lut: string; index: number }
 }
 
 /**
@@ -294,6 +302,145 @@ async function animalWants(
   return wants
 }
 
+/**
+ * Dedicated per-variant icons, where the install draws them: the same suffix
+ * dance as `animalSprites`, with the variant key in the middle — chicken gold
+ * is `..._chicken_gold_female`, the fall duck `..._duck_fall_duck`, the
+ * mistmare bare `..._horse_mistmare`.
+ */
+const animalVariantSprites = (id: string, variant: string): string[] => [
+  `spr_ui_icon_animal_${id}_${variant}_female`,
+  `spr_ui_icon_animal_${id}_${variant}_male`,
+  `spr_ui_icon_animal_${id}_${variant}_${id}`,
+  `spr_ui_icon_animal_${id}_${variant}`,
+]
+
+/**
+ * One icon per colour variant, for both families — a dedicated sprite where
+ * the install draws one, a palette recolour of the base icon everywhere else.
+ *
+ * The two paths are the extract's two stated paths: a variant with
+ * `lut = "<n/a>"` has its own sprite (chicken gold, the mistmare) and a
+ * variant with `lut` + `lut_index` is a repaint. Reading only one of them
+ * loses the other's variants — 15 dedicated against 108 repaints on the
+ * animals alone.
+ */
+async function variantWants(
+  covered: Set<string>,
+  sprites: Map<string, string>,
+): Promise<GameWant[]> {
+  interface VariantRecord {
+    key: string
+    icon_key: string | null
+  }
+  interface AnimalRecord {
+    id: string
+    variants: VariantRecord[]
+  }
+  interface PetRecord {
+    kind_key: string
+    variants: VariantRecord[]
+  }
+  interface RanchingExtract {
+    animals: {
+      id: string
+      variants: { key: string; lut: string | null; lut_index: number | null }[]
+    }[]
+  }
+  interface PetsExtract {
+    variants: {
+      key: string
+      ui_icon: string | null
+      lut: string | null
+      lut_index: number | null
+    }[]
+  }
+
+  const wants: GameWant[] = []
+
+  try {
+    const animals = await readJsonFile<AnimalRecord[]>(join(DATA_DIR, 'animals.json'))
+    const extract = await readJsonFile<RanchingExtract>(join(SOURCES_DIR, 'game', 'ranching.json'))
+    const extractByAnimal = new Map(extract.animals.map((a) => [a.id, a.variants]))
+
+    for (const animal of animals) {
+      const stated = new Map((extractByAnimal.get(animal.id) ?? []).map((v) => [v.key, v]))
+      for (const variant of animal.variants) {
+        if (variant.icon_key === null || covered.has(variant.icon_key)) continue
+        const name = `${animal.id}_${variant.key}`
+
+        const dedicated = animalVariantSprites(animal.id, variant.key).find((s) => sprites.has(s))
+        if (dedicated !== undefined) {
+          wants.push({
+            family: 'animal',
+            sprite: dedicated,
+            name,
+            iconKeys: [variant.icon_key],
+            derived: true,
+          })
+          continue
+        }
+
+        const source = stated.get(variant.key)
+        const base = animalSprites(animal.id).find((s) => sprites.has(s))
+        if (
+          source?.lut == null ||
+          source.lut_index === null ||
+          base === undefined ||
+          !sprites.has(source.lut)
+        ) {
+          // Neither path can produce it — the record keeps its icon_key, the
+          // coverage report shows the gap, the app draws a glyph.
+          continue
+        }
+        wants.push({
+          family: 'animal',
+          sprite: base,
+          name,
+          iconKeys: [variant.icon_key],
+          derived: true,
+          recolor: { lut: source.lut, index: source.lut_index },
+        })
+      }
+    }
+  } catch {
+    /* no animals dataset or no ranching extract — nothing to want */
+  }
+
+  try {
+    const pets = await readJsonFile<PetRecord[]>(join(DATA_DIR, 'pets.json'))
+    const extract = await readJsonFile<PetsExtract>(join(SOURCES_DIR, 'game', 'pets.json'))
+    const statedByKey = new Map(extract.variants.map((v) => [v.key, v]))
+
+    for (const pet of pets) {
+      for (const variant of pet.variants) {
+        if (variant.icon_key === null || covered.has(variant.icon_key)) continue
+        const stated = statedByKey.get(variant.key)
+        if (stated?.ui_icon == null) continue
+        const name = `${pet.kind_key}_${variant.key}`
+
+        if (stated.lut === null || stated.lut_index === null) {
+          // A distinct dedicated icon, named by the files — a miss is a
+          // misread, so no `derived` flag: the run must stop on it.
+          wants.push({ family: 'pet', sprite: stated.ui_icon, name, iconKeys: [variant.icon_key] })
+          continue
+        }
+        wants.push({
+          family: 'pet',
+          sprite: stated.ui_icon,
+          name,
+          iconKeys: [variant.icon_key],
+          recolor: { lut: stated.lut, index: stated.lut_index },
+        })
+      }
+    }
+  } catch {
+    /* no pets dataset — nothing to want */
+  }
+
+  return wants
+}
+
 async function collectWants(
   covered: Set<string>,
   sprites: Map<string, string>,
@@ -348,6 +495,7 @@ async function collectWants(
     ...bySprite.values(),
     ...(await animalWants(covered, sprites)),
     ...(await petWants(covered, sprites)),
+    ...(await variantWants(covered, sprites)),
     ...(await fishSilhouetteWants(sprites)),
     ...UI_ICONS.filter((want) => !want.iconKeys.every((key) => covered.has(key))),
   ].sort((a, b) => nameOf(a).localeCompare(nameOf(b)))
@@ -355,6 +503,52 @@ async function collectWants(
 
 /** The manifest key stem: the override when a sprite yields several assets. */
 const nameOf = (want: GameWant): string => want.name ?? want.sprite
+
+/**
+ * The run-time proof that the palette strips read the way lut.ts says they do.
+ *
+ * The chicken's `white` variant is the anchor: the files state it recolours
+ * through `lut_index` of the chicken strip, and the drawn base icon *is* the
+ * white chicken, so that repaint must be a near-identity. If the anchor pair
+ * itself is missing — a patch renamed the sprite or dropped the variant — the
+ * proof cannot run, and no recolour ships on the strength of an assumption.
+ */
+async function proveLutLayout(sprites: Map<string, string>): Promise<void> {
+  interface RanchingExtract {
+    animals: {
+      id: string
+      variants: { key: string; lut: string | null; lut_index: number | null }[]
+    }[]
+  }
+  const extract = await readJsonFile<RanchingExtract>(
+    join(SOURCES_DIR, 'game', 'ranching.json'),
+  ).catch(() => null)
+  const white = extract?.animals
+    .find((a) => a.id === 'chicken')
+    ?.variants.find((v) => v.key === 'white')
+  const base = animalSprites('chicken').find((s) => sprites.has(s))
+  const lutPath = white?.lut == null ? undefined : sprites.get(white.lut)
+
+  if (
+    white?.lut == null ||
+    white.lut_index === null ||
+    base === undefined ||
+    lutPath === undefined
+  ) {
+    throw new Error(
+      'assets:game — the white-chicken identity anchor is gone, so the palette-strip layout ' +
+        'cannot be proven and no recoloured variant art was written. See lut.ts.',
+    )
+  }
+  const basePath = sprites.get(base)
+  if (basePath === undefined) throw new Error('assets:game — chicken base sprite vanished mid-run')
+  verifyLutIdentity(
+    await readFile(basePath),
+    await readFile(lutPath),
+    white.lut_index,
+    'chicken_white (identity anchor)',
+  )
+}
 
 export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
   const root = await gameRoot()
@@ -386,6 +580,12 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
     )
   }
 
+  // Before any repaint is trusted, prove the strip layout on the pair the
+  // game itself states is an identity — see lut.ts for why the white chicken.
+  if (wants.some((want) => want.recolor !== undefined)) {
+    await proveLutLayout(sprites)
+  }
+
   const entries: AssetEntry[] = []
   for (const want of wants) {
     const sourcePath = sprites.get(want.sprite)
@@ -393,7 +593,12 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
     // Cropped before anything measures it, so the manifest's dimensions, hash
     // and byte count all describe what is actually on disk.
     const raw = await readFile(sourcePath)
-    const body = want.crop === undefined ? raw : cropPng(raw, want.crop)
+    let body = want.crop === undefined ? raw : cropPng(raw, want.crop)
+    if (want.recolor !== undefined) {
+      const lutPath = sprites.get(want.recolor.lut)
+      if (lutPath === undefined) continue
+      body = recolorPng(body, await readFile(lutPath), want.recolor.index, nameOf(want)).png
+    }
     const size = pngSize(body)
     if (size === null) throw new Error(`assets:game — ${want.sprite}.png is not a PNG`)
 
@@ -409,8 +614,13 @@ export async function copyGameArt({ dryRun = false } = {}): Promise<number> {
       file,
       source_file: gameRelative,
       // Not a fetchable URL, deliberately: these bytes come from an owned
-      // install, and the scheme says so anywhere the value surfaces.
-      source_url: `game://${gameRelative}`,
+      // install, and the scheme says so anywhere the value surfaces. A
+      // recoloured sprite names the palette strip and index it was repainted
+      // through, so the manifest states the whole derivation.
+      source_url:
+        want.recolor === undefined
+          ? `game://${gameRelative}`
+          : `game://${gameRelative}?lut=${want.recolor.lut}:${want.recolor.index}`,
       fetched_at: today(),
       sha256: sha256(body),
       bytes: body.length,

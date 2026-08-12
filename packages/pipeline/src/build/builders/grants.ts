@@ -46,6 +46,20 @@ export interface GrantIndex {
    * the one place the game-key → quest join exists.
    */
   itemsByQuest: Map<string, string[]>
+  /**
+   * Festival id -> what its stalls hand out, indexed from the festival's side
+   * so its page can answer "what can I get there". The same stated grants as
+   * the `festival` windows and recipe sources above — an item window does not
+   * carry the festival's id, so without this index the join only ever ran one
+   * way.
+   */
+  goodsByFestival: Map<string, FestivalGood[]>
+}
+
+export interface FestivalGood {
+  stall_key: string | null
+  item_id: string | null
+  teaches_recipe_id: string | null
 }
 
 /** Names differ in case, punctuation and curly apostrophes. Fold before joining. */
@@ -158,6 +172,7 @@ export function buildGrantIndex(
   const recipeSources = new Map<string, RecipeSource[]>()
   const itemWindows = new Map<string, AvailabilityWindow[]>()
   const itemsByQuest = new Map<string, string[]>()
+  const goodsByFestival = new Map<string, FestivalGood[]>()
   const game = ctx.game
   const unlocks = game?.unlocks ?? null
 
@@ -227,7 +242,7 @@ export function buildGrantIndex(
     return name === null ? null : resolveByName(name)
   }
 
-  if (unlocks === null) return { recipeSources, itemWindows, itemsByQuest }
+  if (unlocks === null) return { recipeSources, itemWindows, itemsByQuest, goodsByFestival }
 
   // ── The post ──────────────────────────────────────────────────────────────
   let unreadLetterGates = 0
@@ -314,6 +329,7 @@ export function buildGrantIndex(
     return festivalIds.has(`${key}_festival`) ? `${key}_festival` : null
   }
 
+  let festivalGoodsUnresolved = 0
   for (const grant of unlocks.festivals) {
     addRecipe(grant.recipe, {
       method: 'festival',
@@ -328,6 +344,39 @@ export function buildGrantIndex(
       confidence: 'verified',
     })
     addItem(grantKey(grant), grantWindow('festival'))
+
+    // The same grant, indexed from the festival's side. Only halves that
+    // resolved: an unresolved half is counted, not guessed at.
+    const fid = festivalId(grant.festival)
+    if (fid !== null) {
+      const key = grantKey(grant)
+      const itemId = key === null ? null : shipsAs(key)
+      const recipeId = grant.recipe === null ? null : shipsAs(grant.recipe)
+      if (itemId === null && recipeId === null) {
+        festivalGoodsUnresolved += 1
+      } else {
+        const goods = goodsByFestival.get(fid) ?? []
+        if (
+          !goods.some(
+            (g) =>
+              g.item_id === itemId &&
+              g.teaches_recipe_id === recipeId &&
+              g.stall_key === grant.stall,
+          )
+        ) {
+          goods.push({ stall_key: grant.stall, item_id: itemId, teaches_recipe_id: recipeId })
+        }
+        goodsByFestival.set(fid, goods)
+      }
+    } else {
+      festivalGoodsUnresolved += 1
+    }
+  }
+  if (festivalGoodsUnresolved > 0) {
+    consola.info(
+      `grants: ${festivalGoodsUnresolved} festival grant(s) resolve to no shipped record — ` +
+        'the window still ships, the festival page line does not.',
+    )
   }
 
   // ── Museum reward tiers ───────────────────────────────────────────────────
@@ -516,5 +565,5 @@ export function buildGrantIndex(
   // order a quest lists its rewards in.
   for (const [questId, items] of itemsByQuest) itemsByQuest.set(questId, [...items].sort())
 
-  return { recipeSources, itemWindows, itemsByQuest }
+  return { recipeSources, itemWindows, itemsByQuest, goodsByFestival }
 }

@@ -2893,21 +2893,6 @@
       },
       {
         "item": {
-          "display": "Crafting Station",
-          "target": "Woodcrafting"
-        },
-        "prices": [
-          {
-            "amount": 1000,
-            "token": ""
-          }
-        ],
-        "requires": [],
-        "seasons": null,
-        "section": "Stock > Objects"
-      },
-      {
-        "item": {
           "display": "",
           "target": "Cozy Kitchen"
         },
@@ -2937,6 +2922,36 @@
           },
           {
             "amount": 3000,
+            "token": ""
+          }
+        ],
+        "requires": [],
+        "seasons": null,
+        "section": "Stock > Objects"
+      },
+      {
+        "item": {
+          "display": "Crafting Station",
+          "target": "Woodcrafting"
+        },
+        "prices": [
+          {
+            "amount": 1000,
+            "token": ""
+          }
+        ],
+        "requires": [],
+        "seasons": null,
+        "section": "Stock > Objects"
+      },
+      {
+        "item": {
+          "display": "",
+          "target": "Forge"
+        },
+        "prices": [
+          {
+            "amount": 2000,
             "token": ""
           }
         ],
@@ -4011,6 +4026,23 @@
       {
         "item": {
           "display": "",
+          "target": "Small Animal Hot Spring"
+        },
+        "prices": [
+          {
+            "amount": 1000,
+            "token": ""
+          }
+        ],
+        "requires": [
+          "{{SkillPerk|Playtime}}"
+        ],
+        "seasons": null,
+        "section": "Farm Supplies > Animal Toys"
+      },
+      {
+        "item": {
+          "display": "",
           "target": "Large Animal Ball Court"
         },
         "prices": [
@@ -4020,6 +4052,23 @@
           }
         ],
         "requires": [],
+        "seasons": null,
+        "section": "Farm Supplies > Animal Toys"
+      },
+      {
+        "item": {
+          "display": "",
+          "target": "Large Animal Gramophone"
+        },
+        "prices": [
+          {
+            "amount": 1500,
+            "token": ""
+          }
+        ],
+        "requires": [
+          "{{SkillPerk|Playtime}}"
+        ],
         "seasons": null,
         "section": "Farm Supplies > Animal Toys"
       },

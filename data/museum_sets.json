@@ -10,16 +10,16 @@
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
-    "id": "archaeology_aldarian",
+    "id": "archaeology_dig_site",
     "id_status": "confirmed",
     "item_ids": [
-      "aldarian_gauntlet",
-      "aldarian_sword",
-      "aldarian_war_banner",
-      "family_crest_pendant",
-      "lost_crown_of_aldaria"
+      "clay",
+      "peat",
+      "shard_mass",
+      "shards",
+      "sod"
     ],
-    "name": "Aldarian",
+    "name": "Dig Site",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -40,105 +40,6 @@
       "predates_1_0"
     ],
     "display_order": 1,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_caldosian",
-    "id_status": "confirmed",
-    "item_ids": [
-      "caldosian_breastplate",
-      "caldosian_drinking_horn",
-      "caldosian_emperor_bust",
-      "caldosian_sword",
-      "statuette_of_caldarus"
-    ],
-    "name": "Caldosian",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 2,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_alda",
-    "id_status": "confirmed",
-    "item_ids": [
-      "alda_bronze_sword",
-      "alda_clay_pot",
-      "alda_feather_pendant",
-      "alda_gem_bracelet",
-      "alda_mural_tablet"
-    ],
-    "name": "Alda",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 3,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_ancient",
-    "id_status": "confirmed",
-    "item_ids": [
-      "ancient_crystal_goblet",
-      "ancient_gold_coin",
-      "ancient_horn_circlet",
-      "ancient_royal_scepter",
-      "ancient_stone_lantern"
-    ],
-    "name": "Ancient",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 4,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -171,7 +72,139 @@
     "data_gaps": [
       "predates_1_0"
     ],
+    "display_order": 2,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_ancient",
+    "id_status": "confirmed",
+    "item_ids": [
+      "ancient_crystal_goblet",
+      "ancient_gold_coin",
+      "ancient_horn_circlet",
+      "ancient_royal_scepter",
+      "ancient_stone_lantern"
+    ],
+    "name": "Ancient",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 3,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_alda",
+    "id_status": "confirmed",
+    "item_ids": [
+      "alda_bronze_sword",
+      "alda_clay_pot",
+      "alda_feather_pendant",
+      "alda_gem_bracelet",
+      "alda_mural_tablet"
+    ],
+    "name": "Alda",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 4,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_caldosian",
+    "id_status": "confirmed",
+    "item_ids": [
+      "caldosian_breastplate",
+      "caldosian_drinking_horn",
+      "caldosian_emperor_bust",
+      "caldosian_sword",
+      "statuette_of_caldarus"
+    ],
+    "name": "Caldosian",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
     "display_order": 5,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_aldarian",
+    "id_status": "confirmed",
+    "item_ids": [
+      "aldarian_gauntlet",
+      "aldarian_sword",
+      "aldarian_war_banner",
+      "family_crest_pendant",
+      "lost_crown_of_aldaria"
+    ],
+    "name": "Aldarian",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 6,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -204,7 +237,7 @@
     "data_gaps": [
       "predates_1_0"
     ],
-    "display_order": 6,
+    "display_order": 7,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -237,7 +270,7 @@
     "data_gaps": [
       "predates_1_0"
     ],
-    "display_order": 7,
+    "display_order": 8,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -270,370 +303,7 @@
     "data_gaps": [
       "predates_1_0"
     ],
-    "display_order": 8,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_buried",
-    "id_status": "confirmed",
-    "item_ids": [
-      "diamond_backed_mirror",
-      "flint_arrowhead",
-      "obsidian_blade",
-      "shortcut_scroll",
-      "stone_horse"
-    ],
-    "name": "Buried",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
     "display_order": 9,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_upper_mines",
-    "id_status": "confirmed",
-    "item_ids": [
-      "miners_helmet",
-      "miners_pickaxe",
-      "miners_rucksack",
-      "miners_slab",
-      "tin_lunchbox"
-    ],
-    "name": "Upper Mines",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 10,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_tide_cavern",
-    "id_status": "confirmed",
-    "item_ids": [
-      "crab_statue",
-      "dense_water",
-      "starlight_coral",
-      "stone_shell",
-      "tidestone"
-    ],
-    "name": "Tide Cavern",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 11,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_deep_earth",
-    "id_status": "confirmed",
-    "item_ids": [
-      "earth_infused_stone",
-      "faceted_rock_gem",
-      "really_round_rock",
-      "rock_statue",
-      "seriously_square_stone"
-    ],
-    "name": "Deep Earth",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 12,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_lava_caves",
-    "id_status": "confirmed",
-    "item_ids": [
-      "fire_crystal",
-      "rainbow_geode",
-      "red_obsidian",
-      "tiny_volcano",
-      "warm_rock"
-    ],
-    "name": "Lava Caves",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 13,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_dragon",
-    "id_status": "confirmed",
-    "item_ids": [
-      "dragon_claw",
-      "dragon_pact_tablet",
-      "dragon_scale",
-      "dragon_forged_bracelet",
-      "hardened_essence"
-    ],
-    "name": "Dragon",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 14,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_ritual",
-    "id_status": "confirmed",
-    "item_ids": [
-      "ritual_beads",
-      "ritual_chalice",
-      "ritual_incense_burner",
-      "ritual_scepter",
-      "ritual_tablet"
-    ],
-    "name": "Ritual",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 15,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_mist",
-    "id_status": "confirmed",
-    "item_ids": [
-      "mist_crystal",
-      "mist_flute",
-      "mist_scroll",
-      "misty_black_mirror",
-      "misty_feather_quill"
-    ],
-    "name": "Mist",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 16,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_vintage_farm_tools",
-    "id_status": "confirmed",
-    "item_ids": [
-      "vintage_brush",
-      "vintage_cow_bell",
-      "vintage_hammer",
-      "vintage_sickle",
-      "vintage_watering_can"
-    ],
-    "name": "Vintage Farm Tools",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 17,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_metals_of_mistria",
-    "id_status": "confirmed",
-    "item_ids": [
-      "perfect_copper_ore",
-      "perfect_gold_ore",
-      "perfect_iron_ore",
-      "perfect_mistril_ore",
-      "perfect_silver_ore"
-    ],
-    "name": "Metals Of Mistria",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 18,
-    "former_ids": [],
-    "game_version": "v0-15",
-    "icon_key": "museum/archaeology",
-    "id": "archaeology_gems_of_mistria",
-    "id_status": "confirmed",
-    "item_ids": [
-      "perfect_diamond",
-      "perfect_emerald",
-      "perfect_pink_diamond",
-      "perfect_ruby",
-      "perfect_sapphire"
-    ],
-    "name": "Gems Of Mistria",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_page"
-    },
-    "required_count": 5,
-    "reward": null,
-    "unlock_requires": [],
-    "version_added": null,
-    "wiki_page": "archaeology_Wing",
-    "wing": "archaeology"
-  },
-  {
-    "also_known_as": [],
-    "blurb": null,
-    "confidence": "wiki",
-    "data_gaps": [
-      "predates_1_0"
-    ],
-    "display_order": 19,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -666,7 +336,7 @@
     "data_gaps": [
       "predates_1_0"
     ],
-    "display_order": 20,
+    "display_order": 10,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
@@ -699,20 +369,350 @@
     "data_gaps": [
       "predates_1_0"
     ],
+    "display_order": 11,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_buried",
+    "id_status": "confirmed",
+    "item_ids": [
+      "diamond_backed_mirror",
+      "flint_arrowhead",
+      "obsidian_blade",
+      "shortcut_scroll",
+      "stone_horse"
+    ],
+    "name": "Buried",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 12,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_upper_mines",
+    "id_status": "confirmed",
+    "item_ids": [
+      "miners_helmet",
+      "miners_pickaxe",
+      "miners_rucksack",
+      "miners_slab",
+      "tin_lunchbox"
+    ],
+    "name": "Upper Mines",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 13,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_tide_cavern",
+    "id_status": "confirmed",
+    "item_ids": [
+      "crab_statue",
+      "dense_water",
+      "starlight_coral",
+      "stone_shell",
+      "tidestone"
+    ],
+    "name": "Tide Cavern",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 14,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_deep_earth",
+    "id_status": "confirmed",
+    "item_ids": [
+      "earth_infused_stone",
+      "faceted_rock_gem",
+      "really_round_rock",
+      "rock_statue",
+      "seriously_square_stone"
+    ],
+    "name": "Deep Earth",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 15,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_lava_caves",
+    "id_status": "confirmed",
+    "item_ids": [
+      "fire_crystal",
+      "rainbow_geode",
+      "red_obsidian",
+      "tiny_volcano",
+      "warm_rock"
+    ],
+    "name": "Lava Caves",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 16,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_dragon",
+    "id_status": "confirmed",
+    "item_ids": [
+      "dragon_claw",
+      "dragon_pact_tablet",
+      "dragon_scale",
+      "dragon_forged_bracelet",
+      "hardened_essence"
+    ],
+    "name": "Dragon",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 17,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_ritual",
+    "id_status": "confirmed",
+    "item_ids": [
+      "ritual_beads",
+      "ritual_chalice",
+      "ritual_incense_burner",
+      "ritual_scepter",
+      "ritual_tablet"
+    ],
+    "name": "Ritual",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 18,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_mist",
+    "id_status": "confirmed",
+    "item_ids": [
+      "mist_crystal",
+      "mist_flute",
+      "mist_scroll",
+      "misty_black_mirror",
+      "misty_feather_quill"
+    ],
+    "name": "Mist",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 19,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_vintage_farm_tools",
+    "id_status": "confirmed",
+    "item_ids": [
+      "vintage_brush",
+      "vintage_cow_bell",
+      "vintage_hammer",
+      "vintage_sickle",
+      "vintage_watering_can"
+    ],
+    "name": "Vintage Farm Tools",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
+    "display_order": 20,
+    "former_ids": [],
+    "game_version": "v0-15",
+    "icon_key": "museum/archaeology",
+    "id": "archaeology_metals_of_mistria",
+    "id_status": "confirmed",
+    "item_ids": [
+      "perfect_copper_ore",
+      "perfect_gold_ore",
+      "perfect_iron_ore",
+      "perfect_mistril_ore",
+      "perfect_silver_ore"
+    ],
+    "name": "Metals Of Mistria",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "prov": {
+      "*": "wiki_page"
+    },
+    "required_count": 5,
+    "reward": null,
+    "unlock_requires": [],
+    "version_added": null,
+    "wiki_page": "archaeology_Wing",
+    "wing": "archaeology"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "wiki",
+    "data_gaps": [
+      "predates_1_0"
+    ],
     "display_order": 21,
     "former_ids": [],
     "game_version": "v0-15",
     "icon_key": "museum/archaeology",
-    "id": "archaeology_dig_site",
+    "id": "archaeology_gems_of_mistria",
     "id_status": "confirmed",
     "item_ids": [
-      "clay",
-      "peat",
-      "shard_mass",
-      "shards",
-      "sod"
+      "perfect_diamond",
+      "perfect_emerald",
+      "perfect_pink_diamond",
+      "perfect_ruby",
+      "perfect_sapphire"
     ],
-    "name": "Dig Site",
+    "name": "Gems Of Mistria",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -745,7 +745,7 @@
       "smallmouth_bass",
       "trout"
     ],
-    "name": "Multi-Season",
+    "name": "Multi-Season Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -778,7 +778,7 @@
       "paddlefish",
       "walleye"
     ],
-    "name": "Spring River",
+    "name": "Spring River Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -811,7 +811,7 @@
       "crucian_carp",
       "goldfish"
     ],
-    "name": "Spring Pond",
+    "name": "Spring Pond Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -844,7 +844,7 @@
       "ocean_sunfish",
       "shrimp"
     ],
-    "name": "Spring Ocean",
+    "name": "Spring Ocean Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -877,7 +877,7 @@
       "sweetfish",
       "tarpon"
     ],
-    "name": "Summer River",
+    "name": "Summer River Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -910,7 +910,7 @@
       "lake_chub",
       "sauger"
     ],
-    "name": "Summer Pond",
+    "name": "Summer Pond Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -943,7 +943,7 @@
       "grouper",
       "stingray"
     ],
-    "name": "Summer Ocean",
+    "name": "Summer Ocean Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -976,7 +976,7 @@
       "razorback",
       "shad"
     ],
-    "name": "Fall River",
+    "name": "Fall River Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1009,7 +1009,7 @@
       "striped_bass",
       "white_perch"
     ],
-    "name": "Fall Pond",
+    "name": "Fall Pond Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1042,7 +1042,7 @@
       "saury",
       "shark"
     ],
-    "name": "Fall Ocean",
+    "name": "Fall Ocean Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1075,7 +1075,7 @@
       "herring",
       "shadow_bass"
     ],
-    "name": "Winter River",
+    "name": "Winter River Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1108,7 +1108,7 @@
       "giant_tilapia",
       "tilapia"
     ],
-    "name": "Winter Pond",
+    "name": "Winter Pond Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1141,7 +1141,7 @@
       "sand_lance",
       "sea_bass"
     ],
-    "name": "Winter Ocean",
+    "name": "Winter Ocean Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1174,7 +1174,7 @@
       "silver_squid",
       "golden_eel"
     ],
-    "name": "Fish Bait",
+    "name": "Fish Bait Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1207,7 +1207,7 @@
       "hake",
       "amberjack"
     ],
-    "name": "Fish Trap",
+    "name": "Fish Trap Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1240,7 +1240,7 @@
       "lake_trout",
       "muskie"
     ],
-    "name": "Deep Woods",
+    "name": "Deep Woods Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1273,7 +1273,7 @@
       "rock_guppy",
       "stone_loach"
     ],
-    "name": "Upper Mines",
+    "name": "Upper Mines Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1306,7 +1306,7 @@
       "transparent_jellyfish",
       "water_balloon_fish"
     ],
-    "name": "Tide Caverns",
+    "name": "Tide Caverns Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1339,7 +1339,7 @@
       "rockbiter",
       "shardfin"
     ],
-    "name": "Deep Earth",
+    "name": "Deep Earth Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1372,7 +1372,7 @@
       "lava_piranha",
       "sulfur_crab"
     ],
-    "name": "Lava Caves",
+    "name": "Lava Caves Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1405,7 +1405,7 @@
       "giant_jellyfish",
       "coelacanth"
     ],
-    "name": "Ruins",
+    "name": "Ruins Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {
@@ -1437,7 +1437,7 @@
       "lightning_fish",
       "snow_fish"
     ],
-    "name": "Legendary",
+    "name": "Legendary Fish Set",
     "numeric_id": null,
     "numeric_id_game_version": null,
     "prov": {

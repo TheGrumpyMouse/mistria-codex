@@ -58,6 +58,16 @@ export interface GameAnimalVariant {
   renown_value: number | null
   /** An animal-cosmetic key from the same file's `[cosmetics.*]`, worn from birth. */
   default_cosmetic: string | null
+  /**
+   * The palette-strip sprite this variant recolours the base art through
+   * (`spr_animal_cow_lut`), usually stated on the `[variants.default]`
+   * template. Null when the variant writes `"<n/a>"` — those have a dedicated
+   * sprite of their own instead (chicken gold, the horse's mistmare). A
+   * variant is one or the other, and reading only one path loses the rest.
+   */
+  lut: string | null
+  /** Which entry of the LUT strip is this variant's palette. */
+  lut_index: number | null
 }
 
 export interface GameAnimal {
@@ -201,6 +211,10 @@ function readVariants(doc: Table, base: Table): GameAnimalVariant[] {
       acquirable: bool(get('acquirable')) ?? true,
       renown_value: num(get('renown_value')),
       default_cosmetic: str(get('default_cosmetic')),
+      // `"<n/a>"` reads as null via str() — the variant has a dedicated
+      // sprite, not a recolour.
+      lut: str(get('lut')),
+      lut_index: num(get('lut_index')),
     })
   }
   return out

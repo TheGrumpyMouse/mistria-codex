@@ -44,6 +44,7 @@ interface AnimalVariant {
   purchasable: boolean
   acquirable: boolean
   default_cosmetic_item_id: string | null
+  icon_key: string | null
 }
 
 interface AnimalRecord {
@@ -361,7 +362,15 @@ export function AnimalRoute() {
                 </h3>
                 <ul className="mt-1 flex flex-col gap-0.5 text-sm">
                   {(byTier.get(tier) ?? []).map((variant) => (
-                    <li key={variant.key} className="flex flex-wrap items-baseline gap-x-2">
+                    <li key={variant.key} className="flex flex-wrap items-center gap-x-2">
+                      {/* The variant's own swatch — a dedicated install sprite
+                          or the base icon through the game's palette strip. A
+                          missing sprite draws the ordinary glyph. */}
+                      <ItemIcon
+                        iconKey={variant.icon_key ?? `animal/${animal.id}_${variant.key}`}
+                        name={variant.name ?? titleCase(variant.key)}
+                        size="sm"
+                      />
                       <span className="text-ink">{variant.name ?? titleCase(variant.key)}</span>
                       <span className="text-ink-faint text-xs">
                         {variant.purchasable ? "at Hayden's" : 'bred only'}

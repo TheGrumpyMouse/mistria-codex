@@ -153,6 +153,64 @@ check(
   petRowStates.join(','),
 )
 
+// ── Variant swatches, one case per production path ──
+// The cow's non-basic coats have no dedicated sprite anywhere — every one is
+// the base icon repainted through the game's own palette strip at asset time,
+// so a sprite here proves the whole LUT pipeline. The horse's gold coat is the
+// opposite: a dedicated install sprite, proving the plain-copy path.
+//
+// Anchored to the section's own heading, not `:has-text("Colours")` — the
+// selling prose also says "colours", and a substring match handed the first
+// check the Buying & selling section instead.
+const COLOURS = 'section:has(h2:has-text("Colours"))'
+await go('/animal/cow')
+const cowSwatches = await spritesIn(COLOURS)
+check('cow colour rows draw recoloured swatches', cowSwatches >= 10, `${cowSwatches} sprites`)
+await go('/animal/horse')
+const horseText = await page.locator(COLOURS).first().innerText()
+check('the horse page lists its gold coat', horseText.includes('Gold'))
+const horseSwatches = await spritesIn(COLOURS)
+check('horse colour rows draw their swatches', horseSwatches >= 10, `${horseSwatches} sprites`)
+// A pet's colour chips ride the same LUT path over its stated ui_icon.
+await go('/pet/pet_cat')
+const catSwatches = await spritesIn(COLOURS)
+check('cat colour chips draw their swatches', catSwatches >= 5, `${catSwatches} sprites`)
+
+// ── A festival page's own header icon ──
+// The banner art has been in the manifest since the calendar shipped; the page
+// is new, and a wrong icon_key here would degrade to a glyph silently.
+await go('/festival/spring_festival')
+check('a festival header draws its banner sprite', await headerIsSprite())
+
+// ── Map pins mean something now ──
+// One region exercises every root cause: the Beach holds a water pin (its
+// fountain), landmark pins (lighthouse, fish trap), a hollow dig pin (a
+// hand-placed position must not render like a published one), and the one
+// quest pin with a curated quest link. The selector pins itself to the map's
+// own svg because the legend re-draws the same tesserae at text size.
+await go('/map?region=the_beach')
+const MAP_SVG = 'svg[aria-label="Map of Mistria and the valley"]'
+const mapPins = page.locator(`${MAP_SVG} g[transform*="rotate(45)"] > rect`)
+const mapPinCount = await mapPins.count()
+check('the beach draws pins at all', mapPinCount > 0, `${mapPinCount} pins`)
+const glyphed = await page
+  .locator(`${MAP_SVG} g[transform*="rotate(45)"]`)
+  .evaluateAll((nodes) => nodes.filter((g) => g.querySelector('path, circle') !== null).length)
+check('typed pins carry their glyph', glyphed >= 3, `${glyphed} of ${mapPinCount}`)
+const pinFills = await mapPins.evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).fill))
+check(
+  'the hollow dig pin renders unlike the solid pins',
+  new Set(pinFills).size >= 2,
+  [...new Set(pinFills)].join(' | '),
+)
+await page.locator(`${MAP_SVG} g[aria-label="Open Broken Beach Bridge"]`).first().click()
+await page.waitForTimeout(500)
+check(
+  'a quest pin opens its repair quest',
+  page.url().includes('/quest/repair_the_beach_bridge'),
+  page.url(),
+)
+
 // ── The glyph is still the answer where there is no art ──
 // Not a nice-to-have: a stall drawing a *wrong* sprite would be worse than a
 // stall drawing a store, and this is what tells the two apart.

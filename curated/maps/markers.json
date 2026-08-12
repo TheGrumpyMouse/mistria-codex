@@ -1,0 +1,107 @@
+{
+  "_comment": [
+    "Hand-placed map markers — the positions are OURS, not the wiki's, and",
+    "every record built from this file ships inferred and renders hollow.",
+    "",
+    "WHY THIS FILE EXISTS. The wiki map publishes 46 markers and none of them",
+    "is a dig site or Balor's wagon, which are exactly the pins players ask",
+    "for. No source anywhere states a coordinate for either — dig spots are",
+    "rolled onto random tiles each day, and the wagon has no wiki marker — so",
+    "the only honest way onto the map is a human placing a pin and saying so.",
+    "That is what `inferred` means on a spot and `anchor_inferred` on a",
+    "location: the THING is real and stated, the POSITION is our judgement.",
+    "",
+    "DIG SPOTS. Which areas have dig sites is derived, not curated: the",
+    "builder takes every location where a shipped artifact window uses method",
+    "dig_spot, and this file supplies only the x/y for the overworld ones. A",
+    "coordinate here for an area the data says has no digging fails the",
+    "build — this file must never be the source of WHERE digging exists, only",
+    "of where the pin sits. Each area gets ONE marker: the game spawns",
+    "several spots per area at random positions daily, and no source states",
+    "how many, so several pins would be an invented count in invented places.",
+    "The app says 'random spots daily' on the pin instead.",
+    "",
+    "The five mine biomes and the_mines also carry dig windows and get no",
+    "marker: a biome is a range of floors with no overworld position (that is",
+    "not-applicable, not unknown), and the mines' digging renders on the",
+    "mines screen.",
+    "",
+    "PLACEMENT. Coordinates are SVG user units in the world map's viewBox,",
+    "like every other coordinate. Each was picked as the centre-most cell of",
+    "the region's measured footprint that is not on top of the region's own",
+    "anchor — so a pin is guaranteed inside its region and clear of the",
+    "label, and claims nothing finer than 'somewhere in this area', which is",
+    "the truth.",
+    "",
+    "BALOR'S WAGON. The game's own room file (tiled/rooms/Town/rm_town.tmx)",
+    "places a wagon object in town — the wagon has a fixed pitch, contrary to",
+    "what curated/aliases/map_markers.json used to guess. Its map position",
+    "here is hand-placed near the town square and is approximate."
+  ],
+
+  "anchors": [
+    {
+      "location_id": "balors_wagon",
+      "x": 3339,
+      "y": 1869,
+      "reason": "Balor's travelling shop has a fixed pitch in town — rm_town.tmx places the wagon object — but no wiki marker. Placed by hand beside the town square, inside Mistria's measured footprint."
+    }
+  ],
+
+  "dig_spots": [
+    {
+      "location_id": "mistria",
+      "x": 3339,
+      "y": 1743,
+      "reason": "Shipped artifact windows dig in town. Pin sits centre-of-footprint, clear of the town anchor."
+    },
+    {
+      "location_id": "sweetwater_farm",
+      "x": 2037,
+      "y": 2541,
+      "reason": "Sweetwater Farm carries shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_beach",
+      "x": 2037,
+      "y": 3255,
+      "reason": "The Beach carries shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_deep_woods",
+      "x": 4725,
+      "y": 1113,
+      "reason": "The Deep Woods carry shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_eastern_road",
+      "x": 4767,
+      "y": 1827,
+      "reason": "The Eastern Road carries shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_farm",
+      "x": 3381,
+      "y": 2541,
+      "reason": "The player's farm carries shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_narrows",
+      "x": 2037,
+      "y": 1785,
+      "reason": "The Narrows carry shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_summit",
+      "x": 2037,
+      "y": 1029,
+      "reason": "The Summit carries shipped dig windows. Centre of the measured footprint."
+    },
+    {
+      "location_id": "the_western_ruins",
+      "x": 693,
+      "y": 1785,
+      "reason": "The Western Ruins carry shipped dig windows. Centre of the measured footprint."
+    }
+  ]
+}

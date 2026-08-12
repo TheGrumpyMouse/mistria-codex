@@ -2,8 +2,18 @@ import { type MuseumSet, type MuseumWing, toSnakeId } from '@mistria/schema'
 import { type BuildContext, name as itemName, text } from '../context.js'
 import { predates1_0 } from '../freshness.js'
 
-/** Maps a wiki set name to the id used everywhere else. */
-export const setIdFor = (wing: string, setName: string): string => `${wing}_${toSnakeId(setName)}`
+/**
+ * Maps a wiki set name to the id used everywhere else.
+ *
+ * A trailing "Set" / "Fish Set" is stripped before slugifying: the fish wing's
+ * headings were restyled from "Legendary" to "Legendary Fish Set" in the
+ * post-1.0 wiki pass, and an id is a stable key, not a heading — without the
+ * fold that one styling edit renamed all 22 fish set ids at once. The display
+ * *name* still follows the wiki; only the id holds still. (The game's own set
+ * names get the same treatment at the `/ Set$/` filter below.)
+ */
+export const setIdFor = (wing: string, setName: string): string =>
+  `${wing}_${toSnakeId(setName.replace(/\s+(fish\s+)?set$/i, ''))}`
 
 export interface MuseumIndex {
   sets: MuseumSet[]
