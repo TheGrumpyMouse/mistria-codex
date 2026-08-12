@@ -84,12 +84,15 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
     }
     if (rewards.length === 0) gaps.push('rewards')
 
-    const currencyName = festivals.currencies[festival.name]
-    const currencyId =
-      currencyName === undefined
+    // The contest collectible (Breath of Spring, Queen Berry) — gathered
+    // before the day, ranked on it. Not a stall currency; the stalls charge
+    // tesserae. See curated/vocab/calendar.json.
+    const contestItemName = festivals.contestItems[festival.name]
+    const contestItemId =
+      contestItemName === undefined
         ? null
-        : ctx.itemByName.has(currencyName)
-          ? ctx.idFor(currencyName)
+        : ctx.itemByName.has(contestItemName)
+          ? ctx.idFor(contestItemName)
           : null
 
     if (predates1_0(festivals.lastEdited)) gaps.push('predates_1_0')
@@ -123,7 +126,7 @@ export function buildFestivals(ctx: BuildContext, builtItemIds: Set<string>): Fe
       implemented: festival.implemented,
       location_id: locationId,
       time: null,
-      currency_item_id: currencyId,
+      contest_item_id: contestItemId,
       activities,
       rewards,
       prerequisites: [],

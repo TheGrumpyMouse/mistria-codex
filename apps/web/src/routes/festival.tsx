@@ -47,7 +47,7 @@ interface FestivalRecord {
   implemented: boolean
   unreleased?: boolean
   location_id: string | null
-  currency_item_id: string | null
+  contest_item_id: string | null
   activities: string[]
   rewards: string[]
   prerequisites: Requirement[]
@@ -210,15 +210,18 @@ export function FestivalRoute() {
       )}
 
       {(activities.length > 0 ||
-        festival.currency_item_id !== null ||
+        festival.contest_item_id !== null ||
         festival.prerequisites.length > 0) && (
         <Section title="On the day">
           {activities.length > 0 && (
             <p className="text-ink text-sm leading-relaxed">{activities.join(' · ')}</p>
           )}
-          {festival.currency_item_id !== null && (
-            <p className="mt-1.5 flex items-center gap-1.5 text-ink-mute text-sm">
-              The stalls trade in <ItemChip id={festival.currency_item_id} index={index} />
+          {festival.contest_item_id !== null && (
+            // The collectible is the contest score, not a stall currency —
+            // the stalls charge plain tesserae.
+            <p className="mt-1.5 flex flex-wrap items-center gap-1.5 text-ink-mute text-sm">
+              The contest counts <ItemChip id={festival.contest_item_id} index={index} />
+              <span>gathered in the days beforehand.</span>
             </p>
           )}
           {festival.prerequisites.length > 0 && (

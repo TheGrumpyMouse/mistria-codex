@@ -20,16 +20,20 @@
   "section": "Annual Events",
   "seasonOrder": ["spring", "summer", "fall", "winter"],
 
-  "_currencies": [
-    "Two festivals have their own currency: a collectible that only counts on",
-    "the day and decides your placing. Both are stated on the festival's own page",
-    "(Spring Festival: 'collect between 10 - 29 Breath of Springs'; Harvest",
-    "Festival: Queen Berries throughout). The other two implemented festivals",
-    "have no currency, which is why they are absent rather than null.",
+  "_contest_items": [
+    "Two festivals have a contest collectible: an item gathered in the days",
+    "before the festival, ranked on the day, deciding your placing. Both are",
+    "stated on the festival's own page (Spring Festival: Celine opens gathering",
+    "on Spring 14 and the day ranks the haul; Harvest Festival: Reina opens it",
+    "on Fall 7 and collects the berries on the morning of the 10th). It is not",
+    "a stall currency — both pages price every stall line in tesserae, and the",
+    "game's stock tables state no price at all. The other two implemented",
+    "festivals have no collectible, which is why they are absent rather than",
+    "null.",
     "",
     "Item DISPLAY names, resolved to ids by the build like every other reference."
   ],
-  "currencies": {
+  "contest_items": {
     "Spring Festival": "Breath of Spring",
     "Harvest Festival": "Queen Berry"
   }

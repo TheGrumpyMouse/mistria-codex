@@ -29,7 +29,7 @@ interface FestivalRecord {
   date: { season: string; day: number }
   implemented: boolean
   location_id: string | null
-  currency_item_id: string | null
+  contest_item_id: string | null
   activities: string[]
   data_gaps: string[]
 }
@@ -247,12 +247,12 @@ describe('festivals', () => {
     }
   })
 
-  it('resolves festival currencies to real items', () => {
+  it('resolves festival contest collectibles to real items', () => {
     const byId = new Map(festivals.map((f) => [f.id, f]))
-    expect(byId.get('spring_festival')?.currency_item_id).toBe('breath_of_spring')
-    expect(byId.get('harvest_festival')?.currency_item_id).toBe('queen_berry')
-    // The other two have no currency, which is different from an unknown one.
-    expect(byId.get('animal_festival')?.currency_item_id).toBeNull()
+    expect(byId.get('spring_festival')?.contest_item_id).toBe('breath_of_spring')
+    expect(byId.get('harvest_festival')?.contest_item_id).toBe('queen_berry')
+    // The other two have no collectible, which is different from an unknown one.
+    expect(byId.get('animal_festival')?.contest_item_id).toBeNull()
   })
 
   it('has no festival with an invented time', () => {

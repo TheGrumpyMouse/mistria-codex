@@ -72,8 +72,8 @@ export interface MethodRules {
 export interface FestivalInputs {
   wikiVersionStamp: string | null
   lastEdited: string | null
-  /** Festival display name -> the item display name it collects. */
-  currencies: Record<string, string>
+  /** Festival display name -> the contest collectible's item display name. */
+  contestItems: Record<string, string>
   festivals: {
     season: Season
     day: number
@@ -364,9 +364,9 @@ export async function loadContext(): Promise<BuildContext> {
   // than not at all.
   const cosmetics = await readJsonFile<CosmeticsExtract>(pages('cosmetics.json')).catch(() => null)
 
-  const { currencies } = await readJsonFile<{ currencies: Record<string, string> }>(
-    join(CURATED_DIR, 'vocab', 'calendar.json'),
-  )
+  const { contest_items: contestItems } = await readJsonFile<{
+    contest_items: Record<string, string>
+  }>(join(CURATED_DIR, 'vocab', 'calendar.json'))
   const itemNames = await readJsonFile<ItemNamesExtract>(
     join(SOURCES_DIR, 'community', 'item_names.json'),
   )
@@ -436,7 +436,7 @@ export async function loadContext(): Promise<BuildContext> {
   const festivals: FestivalInputs = {
     wikiVersionStamp: calendar.wikiVersionStamp,
     lastEdited: calendar.lastEdited,
-    currencies,
+    contestItems,
     festivals: calendar.festivals.map((f) => {
       if (!isSeason(f.season)) {
         throw new Error(

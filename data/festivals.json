@@ -7,7 +7,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
-    "currency_item_id": "breath_of_spring",
+    "contest_item_id": "breath_of_spring",
     "data_gaps": [
       "time",
       "rewards"
@@ -130,7 +130,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",
@@ -167,7 +167,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",
@@ -204,7 +204,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",
@@ -243,7 +243,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "rewards"
@@ -283,7 +283,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
-    "currency_item_id": "queen_berry",
+    "contest_item_id": "queen_berry",
     "data_gaps": [
       "time",
       "rewards"
@@ -376,7 +376,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",
@@ -415,7 +415,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "verified",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time"
     ],
@@ -578,7 +578,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",
@@ -615,7 +615,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "currency_item_id": null,
+    "contest_item_id": null,
     "data_gaps": [
       "time",
       "location_id",

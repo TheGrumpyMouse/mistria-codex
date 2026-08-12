@@ -139,7 +139,7 @@ export interface FestivalRecord extends Common {
   date: { season: string; day: number } | null
   implemented: boolean
   location_id: string | null
-  currency_item_id: string | null
+  contest_item_id: string | null
   activities: string[]
   goods: { stall_key: string | null; item_id: string | null; teaches_recipe_id: string | null }[]
 }
@@ -779,8 +779,10 @@ function festivalPage(festival: FestivalRecord, ctx: UrlContext, lookup: Lookup)
     rows.push({ label: 'Where', value: lookup.placeName(festival.location_id) })
     properties.push({ name: 'Where', value: lookup.placeName(festival.location_id) })
   }
-  if (festival.currency_item_id !== null) {
-    rows.push({ label: 'Stall currency', value: lookup.itemName(festival.currency_item_id) })
+  // The contest collectible, not a stall currency — the stalls charge
+  // tesserae. "Contest counts" states the mechanic without implying a shop.
+  if (festival.contest_item_id !== null) {
+    rows.push({ label: 'Contest counts', value: lookup.itemName(festival.contest_item_id) })
   }
   sections.push({ heading: 'About', kind: 'facts', rows })
 

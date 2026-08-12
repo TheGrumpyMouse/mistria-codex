@@ -16,7 +16,7 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   produce_item_id: 'items',
   seed_item_id: 'items',
   yields_seed_item_id: 'items',
-  currency_item_id: 'items',
+  contest_item_id: 'items',
   accepts_item_ids: 'items',
   treat_item_id: 'items',
   reward_item_id: 'items',

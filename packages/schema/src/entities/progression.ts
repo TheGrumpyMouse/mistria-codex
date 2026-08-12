@@ -45,8 +45,16 @@ export const Festival = withEnvelope({
   implemented: z.boolean().default(true),
   location_id: IdRef.nullable().default(null),
   time: z.object({ from: TimeOfDay, to: TimeOfDay }).nullable().default(null),
-  /** Breath of Spring, Queen Berries — festival-scoped currencies. */
-  currency_item_id: IdRef.nullable().default(null),
+  /**
+   * The contest collectible — Breath of Spring, Queen Berries. Gathered in the
+   * days before the festival; the haul is ranked on the day and decides the
+   * placing. It is NOT a stall currency: the stalls charge plain tesserae
+   * (the wiki prices every stall line in `t`, and the game's stock tables
+   * state no price at all). This field used to be called `currency_item_id`,
+   * and that name is exactly how the UI came to claim "the stalls trade in
+   * Breath of Spring".
+   */
+  contest_item_id: IdRef.nullable().default(null),
   activities: z.array(z.string()).default([]),
   rewards: z.array(IdRef).default([]),
   prerequisites: z.array(Requirement).default([]),
