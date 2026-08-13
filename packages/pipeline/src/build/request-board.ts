@@ -23,6 +23,12 @@ export interface BoardItem {
   id: string
   name: string
   icon_key: string | null
+  /**
+   * The item's category, so the board can group by it without loading
+   * `items.json` — joined here, from the record itself, never re-derived from
+   * an icon prefix. Bundles shipped before it existed lack the field.
+   */
+  category: string | null
   quantity: number
 }
 
@@ -115,6 +121,7 @@ export function buildRequestBoard(
             id: item.id,
             name: item.name,
             icon_key: item.icon_key,
+            category: item.category ?? null,
             // The wiki omits the count when it is one, which is a shorthand
             // rather than an unknown.
             quantity: objective.quantity ?? 1,

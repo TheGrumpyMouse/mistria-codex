@@ -7,7 +7,15 @@ const request = (over: Partial<BoardRequest> = {}): BoardRequest => ({
   name: 'Request',
   giver_id: 'adeline',
   giver_name: 'Adeline',
-  items: [{ id: 'heather', name: 'Heather', icon_key: 'forageable/heather', quantity: 3 }],
+  items: [
+    {
+      id: 'heather',
+      name: 'Heather',
+      icon_key: 'forageable/heather',
+      category: 'forageable',
+      quantity: 3,
+    },
+  ],
   seasons: null,
   gates: [],
   rewards: null,
@@ -78,6 +86,21 @@ describe('itemsWanted', () => {
       request({ id: 'b', seasons: ['spring'] }),
     ])
     expect(wanted[0]?.seasons).toEqual(['spring', 'fall'])
+  })
+
+  it('carries the category through the inversion', () => {
+    const wanted = itemsWanted([request()])
+    expect(wanted[0]?.category).toBe('forageable')
+  })
+
+  it('shelves an item with no category under misc, never drops it', () => {
+    // A bundle from before the field shipped has no `category` at all. The
+    // item still belongs to a group — "Other" — because a fold that loses
+    // rows would read as missing data.
+    const wanted = itemsWanted([
+      request({ items: [{ id: 'x', name: 'X', icon_key: null, quantity: 1 }] }),
+    ])
+    expect(wanted[0]?.category).toBe('misc')
   })
 
   it('sorts the most-asked-for first', () => {

@@ -112,6 +112,40 @@ await page.reload({ waitUntil: 'networkidle' })
 await page.waitForTimeout(700)
 check('the threshold reveal is remembered', (await body()).includes('3rd place'))
 
+// ── 5b. Board folds: categories collapse, remember it, search overrides ──
+await go('/board')
+t = await body()
+check('the board shelves wanted items under category headings', t.includes('Forage'))
+check('a forage row is visible while its group is open', t.includes('Heather'))
+await page.getByRole('button', { name: /^Forage/ }).click()
+await page.waitForTimeout(200)
+check('folding a category hides its rows', !(await body()).includes('Heather'))
+await page.reload({ waitUntil: 'networkidle' })
+await page.waitForTimeout(800)
+check('the fold survives a reload', !(await body()).includes('Heather'))
+await page.locator('input[type="search"]').fill('heather')
+await page.waitForTimeout(400)
+check('a search overrides the fold', (await body()).includes('Heather'))
+await page.locator('input[type="search"]').fill('')
+await page.waitForTimeout(400)
+check('clearing the search folds it back shut', !(await body()).includes('Heather'))
+await page.getByRole('button', { name: /^Forage/ }).click()
+await page.waitForTimeout(200)
+check('expanding restores the rows', (await body()).includes('Heather'))
+
+// and the villager view folds the same way, without breaking the name link
+await go('/board?view=villagers')
+const adelineSection = page.locator('section', {
+  has: page.getByRole('link', { name: 'Adeline' }),
+})
+check('a villager section starts open', (await adelineSection.locator('li').count()) > 0)
+await adelineSection.getByRole('button', { name: "Adeline's requests" }).click()
+await page.waitForTimeout(200)
+check('folding a villager hides their requests', (await adelineSection.locator('li').count()) === 0)
+await adelineSection.getByRole('button', { name: "Adeline's requests" }).click()
+await page.waitForTimeout(200)
+check('and unfolding brings them back', (await adelineSection.locator('li').count()) > 0)
+
 // ── 6. Board: filter, open a request, come back to the same filter ──
 await go('/board')
 await page.locator('input[type="search"]').fill('heather')

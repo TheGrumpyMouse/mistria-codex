@@ -1,15 +1,42 @@
 import { getRouteApi, Link } from '@tanstack/react-router'
-import { useMemo } from 'react'
+import { ChevronDown } from 'lucide-react'
+import { useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
 import { loadRequestBoard } from '~/lib/data'
 import { useDocumentTitle } from '~/lib/head'
+import { CATEGORY_LABELS } from '~/lib/labels'
 import type { BoardRequest } from '~/lib/request-board'
 import { itemsWanted } from '~/lib/request-board'
 import { useData } from '~/lib/use-data'
 
 const route = getRouteApi('/board')
+
+/**
+ * Which groups are folded shut, remembered across visits — the museum's
+ * pattern (see museum.tsx). One key holds both views' folds, namespaced
+ * `items:<category>` / `villager:<giver>` so the two lists cannot collide.
+ * A corrupt value reads as "nothing collapsed".
+ */
+const COLLAPSED_KEY = 'mistria-codex:board-collapsed'
+
+function readCollapsed(): Set<string> {
+  try {
+    const raw = JSON.parse(localStorage.getItem(COLLAPSED_KEY) ?? '[]') as unknown
+    return new Set(Array.isArray(raw) ? raw.filter((v): v is string => typeof v === 'string') : [])
+  } catch {
+    return new Set()
+  }
+}
+
+function writeCollapsed(keys: Set<string>): void {
+  try {
+    localStorage.setItem(COLLAPSED_KEY, JSON.stringify([...keys].sort()))
+  } catch {
+    // Private mode: the fold still works for this session via state.
+  }
+}
 
 /**
  * The request board.
@@ -57,6 +84,33 @@ export function BoardRoute() {
 
   const { data, error } = useData('request-board', loadRequestBoard)
   const requests = data?.requests ?? null
+
+  // The fold is a preference, not part of the answer, so it lives in
+  // localStorage rather than the URL — two identical answers should not be
+  // two different links (the same call the museum and list-sort made).
+  const [collapsed, setCollapsed] = useState<Set<string>>(() => readCollapsed())
+  const toggleCollapsed = (key: string): void => {
+    setCollapsed((current) => {
+      const next = new Set(current)
+      if (next.has(key)) next.delete(key)
+      else next.add(key)
+      writeCollapsed(next)
+      return next
+    })
+  }
+  // Folds or opens only the given keys, so "Collapse all" on one view leaves
+  // the other view's folds alone.
+  const setManyCollapsed = (keys: string[], fold: boolean): void => {
+    setCollapsed((current) => {
+      const next = new Set(current)
+      for (const key of keys) {
+        if (fold) next.add(key)
+        else next.delete(key)
+      }
+      writeCollapsed(next)
+      return next
+    })
+  }
 
   // A request with no season restriction is available all year, so it belongs in
   // every season's list — `null` here means "no restriction", never "unknown".
@@ -146,7 +200,23 @@ export function BoardRoute() {
         className="mt-3 w-full rounded-tile border border-rule bg-surface px-3 py-2 text-ink text-sm placeholder:text-ink-faint"
       />
 
-      {view === 'items' ? <ItemList wanted={wanted} /> : <VillagerList requests={searched} />}
+      {view === 'items' ? (
+        <ItemList
+          wanted={wanted}
+          collapsed={collapsed}
+          searchActive={needle !== ''}
+          onToggle={toggleCollapsed}
+          onFoldAll={setManyCollapsed}
+        />
+      ) : (
+        <VillagerList
+          requests={searched}
+          collapsed={collapsed}
+          searchActive={needle !== ''}
+          onToggle={toggleCollapsed}
+          onFoldAll={setManyCollapsed}
+        />
+      )}
 
       <p className="mt-6 text-ink-faint text-xs leading-relaxed">
         “Keep” is the largest quantity anyone asks for in one request, so holding that many covers
@@ -156,12 +226,103 @@ export function BoardRoute() {
   )
 }
 
-function ItemList({ wanted }: { wanted: ReturnType<typeof itemsWanted> }) {
+/** The fold plumbing both views share; state lives on the route. */
+interface FoldProps {
+  collapsed: Set<string>
+  /**
+   * A live search overrides the fold — hiding a hit inside a collapsed group
+   * would read as "nobody asks for this", which is a lie (the museum's rule).
+   */
+  searchActive: boolean
+  onToggle: (key: string) => void
+  onFoldAll: (keys: string[], fold: boolean) => void
+}
+
+function FoldControls({ keys, onFoldAll }: { keys: string[]; onFoldAll: FoldProps['onFoldAll'] }) {
+  return (
+    <div className="flex items-center justify-end gap-2 text-xs">
+      <button
+        type="button"
+        onClick={() => onFoldAll(keys, true)}
+        className="tap-target text-ink-faint underline decoration-rule underline-offset-4 hover:text-ink"
+      >
+        Collapse all
+      </button>
+      <button
+        type="button"
+        onClick={() => onFoldAll(keys, false)}
+        className="tap-target text-ink-faint underline decoration-rule underline-offset-4 hover:text-ink"
+      >
+        Expand all
+      </button>
+    </div>
+  )
+}
+
+/** Group order = the one canonical category order, shared with Browse. */
+const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS)
+
+function ItemList({
+  wanted,
+  collapsed,
+  searchActive,
+  onToggle,
+  onFoldAll,
+}: { wanted: ReturnType<typeof itemsWanted> } & FoldProps) {
+  const groups = useMemo(() => {
+    const byCategory = new Map<string, ReturnType<typeof itemsWanted>>()
+    for (const entry of wanted) {
+      // A category the label map does not know shelves under "Other" rather
+      // than leaking a raw token or dropping the row (rule 8).
+      const key = CATEGORY_LABELS[entry.category] === undefined ? 'misc' : entry.category
+      byCategory.set(key, [...(byCategory.get(key) ?? []), entry])
+    }
+    return [...byCategory.entries()].sort(
+      (a, b) => CATEGORY_ORDER.indexOf(a[0]) - CATEGORY_ORDER.indexOf(b[0]),
+    )
+  }, [wanted])
+
   if (wanted.length === 0) return <Empty>Nothing is asked for in this season.</Empty>
 
   return (
-    <ul className="mt-4 flex flex-col divide-y divide-rule border-rule border-y">
-      {wanted.map((entry) => (
+    <div className="mt-4 flex flex-col gap-4">
+      <FoldControls keys={groups.map(([category]) => `items:${category}`)} onFoldAll={onFoldAll} />
+      {groups.map(([category, entries]) => {
+        const foldKey = `items:${category}`
+        const folded = collapsed.has(foldKey) && !searchActive
+        return (
+          <section key={category}>
+            <h2>
+              <button
+                type="button"
+                onClick={() => onToggle(foldKey)}
+                aria-expanded={!folded}
+                className="tap-target flex w-full items-center gap-2 text-left font-display font-semibold text-ink text-sm"
+              >
+                <ChevronDown
+                  aria-hidden
+                  size={14}
+                  strokeWidth={2}
+                  className={`shrink-0 text-ink-faint transition-transform ${folded ? '-rotate-90' : ''}`}
+                />
+                {CATEGORY_LABELS[category]}
+                <span data-numeral className="font-normal text-ink-faint text-xs">
+                  {entries.length}
+                </span>
+              </button>
+            </h2>
+            {folded ? null : <ItemRows entries={entries} />}
+          </section>
+        )
+      })}
+    </div>
+  )
+}
+
+function ItemRows({ entries }: { entries: ReturnType<typeof itemsWanted> }) {
+  return (
+    <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
+      {entries.map((entry) => (
         <li key={entry.id} className="flex items-center gap-3 py-2.5">
           <ItemIcon iconKey={entry.icon_key ?? `item/${entry.id}`} name={entry.name} size="sm" />
 
@@ -238,7 +399,13 @@ function ItemList({ wanted }: { wanted: ReturnType<typeof itemsWanted> }) {
   )
 }
 
-function VillagerList({ requests }: { requests: BoardRequest[] }) {
+function VillagerList({
+  requests,
+  collapsed,
+  searchActive,
+  onToggle,
+  onFoldAll,
+}: { requests: BoardRequest[] } & FoldProps) {
   const byVillager = useMemo(() => {
     const groups = new Map<string, { name: string; requests: BoardRequest[] }>()
     for (const request of requests) {
@@ -256,101 +423,125 @@ function VillagerList({ requests }: { requests: BoardRequest[] }) {
   if (byVillager.length === 0) return <Empty>Nobody asks for anything in this season.</Empty>
 
   return (
-    <div className="mt-4 flex flex-col gap-5">
-      {byVillager.map(([id, group]) => (
-        <section key={id}>
-          <h2 className="flex items-center gap-2 font-display font-semibold text-ink text-sm">
-            {/* `character/<id>` is the icon key by convention, so the face
+    <div className="mt-4 flex flex-col gap-4">
+      <FoldControls keys={byVillager.map(([id]) => `villager:${id}`)} onFoldAll={onFoldAll} />
+      {byVillager.map(([id, group]) => {
+        const foldKey = `villager:${id}`
+        const folded = collapsed.has(foldKey) && !searchActive
+        return (
+          <section key={id}>
+            <h2 className="flex items-center gap-2 font-display font-semibold text-ink text-sm">
+              {/* The chevron is its own button beside the name — a link inside
+                a fold button would be one click with two meanings. */}
+              <button
+                type="button"
+                onClick={() => onToggle(foldKey)}
+                aria-expanded={!folded}
+                aria-label={`${group.name}'s requests`}
+                className="tap-target flex items-center"
+              >
+                <ChevronDown
+                  aria-hidden
+                  size={14}
+                  strokeWidth={2}
+                  className={`shrink-0 text-ink-faint transition-transform ${folded ? '-rotate-90' : ''}`}
+                />
+              </button>
+              {/* `character/<id>` is the icon key by convention, so the face
                 needs no display index — this screen ships its own joined
                 form and deliberately never loads one. */}
-            {id !== 'unknown' && (
-              <ItemIcon iconKey={`character/${id}`} name={group.name} size="sm" />
-            )}
-            {id === 'unknown' ? (
-              group.name
-            ) : (
-              <Link
-                to="/villager/$id"
-                params={{ id }}
-                className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-              >
-                {group.name}
-              </Link>
-            )}
-            <span className="font-normal text-ink-faint">· {group.requests.length}</span>
-          </h2>
-          <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
-            {group.requests.map((request) => (
-              <li key={request.id} className="flex items-center gap-3 py-2">
-                <div className="flex shrink-0 gap-1">
-                  {request.items.map((item) => (
-                    <ItemIcon
-                      key={item.id}
-                      iconKey={item.icon_key ?? `item/${item.id}`}
-                      name={item.name}
-                      size="sm"
-                    />
-                  ))}
-                </div>
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-ink text-sm">
-                    {request.items.length === 0 ? (
-                      // A request whose items the wiki never listed still has a
-                      // quest page — the name is the way in, not a dead label.
-                      <Link
-                        to="/quest/$id"
-                        params={{ id: request.id }}
-                        className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                      >
-                        {request.name}
-                      </Link>
-                    ) : (
-                      request.items.map((i, idx) => (
-                        <span key={i.id}>
-                          {idx > 0 && ', '}
+              {id !== 'unknown' && (
+                <ItemIcon iconKey={`character/${id}`} name={group.name} size="sm" />
+              )}
+              {id === 'unknown' ? (
+                group.name
+              ) : (
+                <Link
+                  to="/villager/$id"
+                  params={{ id }}
+                  className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                >
+                  {group.name}
+                </Link>
+              )}
+              <span className="font-normal text-ink-faint">· {group.requests.length}</span>
+            </h2>
+            {folded ? null : (
+              <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
+                {group.requests.map((request) => (
+                  <li key={request.id} className="flex items-center gap-3 py-2">
+                    <div className="flex shrink-0 gap-1">
+                      {request.items.map((item) => (
+                        <ItemIcon
+                          key={item.id}
+                          iconKey={item.icon_key ?? `item/${item.id}`}
+                          name={item.name}
+                          size="sm"
+                        />
+                      ))}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-ink text-sm">
+                        {request.items.length === 0 ? (
+                          // A request whose items the wiki never listed still has a
+                          // quest page — the name is the way in, not a dead label.
                           <Link
-                            to="/item/$id"
-                            params={{ id: i.id }}
+                            to="/quest/$id"
+                            params={{ id: request.id }}
                             className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
                           >
-                            {i.name}
+                            {request.name}
                           </Link>
-                          {i.quantity > 1 && ` ×${i.quantity}`}
-                        </span>
-                      ))
+                        ) : (
+                          request.items.map((i, idx) => (
+                            <span key={i.id}>
+                              {idx > 0 && ', '}
+                              <Link
+                                to="/item/$id"
+                                params={{ id: i.id }}
+                                className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                              >
+                                {i.name}
+                              </Link>
+                              {i.quantity > 1 && ` ×${i.quantity}`}
+                            </span>
+                          ))
+                        )}
+                      </p>
+                      {request.gates.length > 0 && (
+                        <p className="truncate text-ink-faint text-xs">
+                          {request.gates.map((g, idx) => (
+                            <span key={`${g.type}:${g.key ?? g.label}`}>
+                              {idx > 0 && ' · '}
+                              {g.key !== undefined &&
+                              (g.type === 'quest' || g.type === 'location') ? (
+                                <Link
+                                  to={g.type === 'quest' ? '/quest/$id' : '/place/$id'}
+                                  params={{ id: g.key }}
+                                  className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
+                                >
+                                  {g.label}
+                                </Link>
+                              ) : (
+                                g.label
+                              )}
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                    </div>
+                    {request.rewards?.tesserae != null && (
+                      <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
+                        {request.rewards.tesserae}t
+                      </span>
                     )}
-                  </p>
-                  {request.gates.length > 0 && (
-                    <p className="truncate text-ink-faint text-xs">
-                      {request.gates.map((g, idx) => (
-                        <span key={`${g.type}:${g.key ?? g.label}`}>
-                          {idx > 0 && ' · '}
-                          {g.key !== undefined && (g.type === 'quest' || g.type === 'location') ? (
-                            <Link
-                              to={g.type === 'quest' ? '/quest/$id' : '/place/$id'}
-                              params={{ id: g.key }}
-                              className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
-                            >
-                              {g.label}
-                            </Link>
-                          ) : (
-                            g.label
-                          )}
-                        </span>
-                      ))}
-                    </p>
-                  )}
-                </div>
-                {request.rewards?.tesserae != null && (
-                  <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
-                    {request.rewards.tesserae}t
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        )
+      })}
     </div>
   )
 }

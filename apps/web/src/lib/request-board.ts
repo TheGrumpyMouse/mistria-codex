@@ -11,6 +11,8 @@ export interface BoardItem {
   id: string
   name: string
   icon_key: string | null
+  /** Joined at ship time from the item record; bundles older than the field lack it. */
+  category?: string | null
   quantity: number
 }
 
@@ -35,6 +37,12 @@ export interface WantedItem {
   id: string
   name: string
   icon_key: string | null
+  /**
+   * The item's category, for the board's collapsible groups. A bundle from
+   * before the field shipped reads as `misc`, which renders as "Other" — the
+   * item stays visible, just less specifically shelved.
+   */
+  category: string
   /** The largest single request, so holding this many covers the worst case. */
   keep: number
   /** How many separate requests want it. */
@@ -89,6 +97,7 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
         id: item.id,
         name: item.name,
         icon_key: item.icon_key,
+        category: item.category ?? 'misc',
         keep: 0,
         requests: 0,
         askers: [],
@@ -126,6 +135,7 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
       id: entry.id,
       name: entry.name,
       icon_key: entry.icon_key,
+      category: entry.category,
       keep: entry.keep,
       requests: entry.requests,
       askers: [...entry.askerSet]
