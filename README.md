@@ -104,16 +104,22 @@ On Windows, Git Bash rewrites that leading slash into a Windows path — set
 
 The version lives in exactly one place — `version` in the root `package.json` —
 and the build compiles it into the app, where Settings and About both show it.
-Cutting a release is a tag:
+Cutting a release takes nothing: every push to `main` checks whether the
+current version has a GitHub Release yet, and `.github/workflows/release.yml`
+creates one (tag included) if not. The bump rides the change set it describes,
+so landing it on `main` is the release signal — the same signal Pages deploys
+on, though the two stay independent: a release marks a version, a deploy ships
+one.
+
+Tagging by hand still works and is validated the same way:
 
 ```sh
 git tag v1.0.0 && git push --tags
 ```
 
-`.github/workflows/release.yml` refuses a tag that disagrees with
-`package.json`, then publishes the GitHub Release. Deployment is separate: Pages
-builds from `main` on every push, so a release marks a version rather than
-shipping one.
+The workflow refuses a tag that disagrees with the tagged commit's
+`package.json`, and skips any version already released, so the manual and
+automatic paths cannot double-publish or drift.
 
 These talk to the wiki or to a local game install and **never run in CI**, which
 is what keeps builds hermetic and polite to wiki.gg. `sources/` and

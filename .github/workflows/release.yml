@@ -1,19 +1,61 @@
 name: Release
 
-# Cutting a release is `git tag v1.0.0 && git push --tags`. Nothing here
-# deploys — Pages deploys when a push to main changes the package.json
-# version, and the two are deliberately independent: a release marks a
-# version, it does not ship one.
+# A release marks a version; it does not ship one — Pages deploys when a push
+# to main changes the package.json version, and the two are deliberately
+# independent.
+#
+# Two ways in, same result:
+#   - The normal path is no path at all: every push to main checks whether the
+#     current package.json version has a release yet, and cuts one if not
+#     (the `auto` job). The version bump already rides the change set it
+#     describes, so "bump landed on main" is the release signal — the same
+#     signal pages.yml deploys on.
+#   - `git tag v1.0.0 && git push --tags` still works (the `tagged` job), and
+#     is how historical versions were backfilled: a pushed tag checks out that
+#     tag's commit, so the version assertion validates old tags as well as new.
 on:
   push:
     tags: ['v*']
+    branches: [main]
 
 permissions:
   contents: write
 
+# Two quick pushes must not race to create the same release — queue them.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
 jobs:
-  release:
+  # Existence, not diffing, is the gate: pages.yml compares before/after
+  # because a redundant deploy costs a full build, but a redundant release
+  # check is one API call — and gating on "no release for this version yet"
+  # self-heals, picking up a bump whose release run was missed, instead of
+  # losing it forever the way a tip comparison would.
+  auto:
+    name: Release the version bump
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create the release if this version has none
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="v$(jq -r .version package.json)"
+          if gh release view "$VERSION" --json tagName >/dev/null 2>&1; then
+            echo "$VERSION is already released — nothing to do"
+            exit 0
+          fi
+          # Pin the tag to the pushed commit, not to wherever main has moved
+          # by the time this runs. If the tag already exists (hand-tagged but
+          # never released), gh uses it and --target is ignored.
+          echo "no release for $VERSION — creating it"
+          gh release create "$VERSION" --target "$GITHUB_SHA" --generate-notes
+
+  tagged:
     name: Publish the release
+    if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,7 +83,17 @@ jobs:
 
       # `gh` is preinstalled on the runner, so this needs no third-party action
       # and adds no supply-chain surface for a step that only writes a release.
+      #
+      # Skip-if-released matters here, not just in `auto`: a release created
+      # WITH its tag (gh release create, or the Releases UI) fires this tag
+      # trigger too, and without the check that run would fail trying to
+      # create the release that just created it.
       - name: Create the release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "${GITHUB_REF_NAME}" --generate-notes --verify-tag
+        run: |
+          if gh release view "${GITHUB_REF_NAME}" --json tagName >/dev/null 2>&1; then
+            echo "${GITHUB_REF_NAME} is already released — nothing to do"
+            exit 0
+          fi
+          gh release create "${GITHUB_REF_NAME}" --generate-notes --verify-tag
