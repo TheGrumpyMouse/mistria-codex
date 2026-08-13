@@ -488,18 +488,26 @@ export function ItemRoute() {
     for (const request of board) {
       const wanted = request.items.find((i) => i.id === id)
       if (wanted === undefined) continue
+      // A spoiler giver's name stays off the label until revealed — the row's
+      // usual veil keys off the *quest* record, and these requests are not
+      // themselves spoilers; only who posted them is.
+      const veiledGiver =
+        request.giver_spoiler === true &&
+        (request.giver_id === null || !spoilers.shown(request.giver_id))
       out.push({
         domain: 'request',
         progressId: `${request.id}/${id}`,
         label:
-          request.giver_name === null ? request.name : `${request.giver_name} — ${request.name}`,
+          request.giver_name === null || veiledGiver
+            ? request.name
+            : `${request.giver_name} — ${request.name}`,
         linkTo: { to: '/quest/$id', id: request.id },
         quantity: wanted.quantity,
         aboutId: request.id,
       })
     }
     return out
-  }, [seals, quests, board, id])
+  }, [seals, quests, board, id, spoilers])
 
   const isTicked = (need: Need): boolean => ticked[need.domain]?.has(need.progressId) ?? false
   const toggleNeed = (need: Need): void => {

@@ -60,7 +60,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -112,7 +113,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -156,9 +158,10 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
-    "romanceable": false,
+    "romanceable": true,
     "schedule_id": null,
     "shop_id": null,
     "species": "Dragon",
@@ -222,7 +225,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -257,7 +261,8 @@
     "occupation": "Cafe Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -305,7 +310,8 @@
     "occupation": "Leader of the Dragonguard",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -345,7 +351,8 @@
     "occupation": "Bathhouse Co-owner",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -415,7 +422,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -459,7 +467,8 @@
     "occupation": "Retired Socialite",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -494,7 +503,8 @@
     "occupation": "Museum Curator",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -560,7 +570,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -612,7 +623,8 @@
     "occupation": "Inn Co-owner, Bartender",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -652,7 +664,8 @@
     "occupation": "Prize-winning Chicken",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -700,7 +713,8 @@
     "occupation": "General Store Co-owner",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -752,7 +766,8 @@
     "occupation": "Inn Co-Owner",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -809,7 +824,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -861,7 +877,8 @@
     "occupation": "Semi-retired carpenter",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -896,7 +913,8 @@
     "occupation": "Clothing Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -948,7 +966,8 @@
     "occupation": "Future Entomologist",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1000,7 +1019,8 @@
     "occupation": "Royalty Expert",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1065,7 +1085,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1100,7 +1121,8 @@
     "occupation": "Furniture Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1148,7 +1170,8 @@
     "occupation": "General Store Co-owner Head of Mistria's Chamber of Commerce Head of the Saturday Market",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1196,7 +1219,8 @@
     "occupation": "Part-Timer",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1216,6 +1240,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "schedule",
+      "heart_events",
       "id_pending_rename"
     ],
     "family": [],
@@ -1234,9 +1259,10 @@
     "occupation": "Dragon Priestess",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
-    "romanceable": false,
+    "romanceable": true,
     "schedule_id": null,
     "shop_id": null,
     "species": "Human",
@@ -1311,7 +1337,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1389,7 +1416,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1426,7 +1454,8 @@
     "occupation": "Fortune Telling Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1461,7 +1490,8 @@
     "occupation": "Chef",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1496,7 +1526,8 @@
     "occupation": "Fisherwoman",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1548,7 +1579,8 @@
     "prov": {
       "*": "wiki_cargo",
       "birthday": "game_files",
-      "heart_events": "game_files"
+      "heart_events": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": true,
     "schedule_id": null,
@@ -1583,7 +1615,8 @@
     "occupation": "Hairstyle & Accessory Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1618,7 +1651,8 @@
     "occupation": "Salesman",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,
@@ -1655,7 +1689,8 @@
     "occupation": "Music Vendor",
     "prov": {
       "*": "wiki_cargo",
-      "birthday": "game_files"
+      "birthday": "game_files",
+      "romanceable": "game_files"
     },
     "romanceable": false,
     "schedule_id": null,

@@ -21,6 +21,8 @@ export interface BoardRequest {
   name: string
   giver_id: string | null
   giver_name: string | null
+  /** The giver is a spoiler-veiled record; withhold the name and face until revealed. */
+  giver_spoiler?: boolean
   items: BoardItem[]
   /** Null means all year — never "unknown". */
   seasons: string[] | null
@@ -48,8 +50,15 @@ export interface WantedItem {
   /** How many separate requests want it. */
   requests: number
   /** The villagers who might ask, sorted by name, deduplicated. A null id is
-   *  a giver the board names but the roster does not — text, not a link. */
-  askers: { id: string | null; name: string }[]
+   *  a giver the board names but the roster does not — text, not a link. A
+   *  spoiler asker keeps the entry and loses the name at render. */
+  askers: { id: string | null; name: string; spoiler?: boolean }[]
+  /**
+   * The requests this row was inverted from, so a tick on the row can write
+   * the same `request:<request_id>/<item_id>` progress keys the item page
+   * writes — the inversion must not lose the identity the tracking needs.
+   */
+  request_ids: string[]
   /** Seasons it can be asked in. Empty means any. */
   seasons: string[]
   /** True when *every* request for it is gated — you cannot be asked yet. */
@@ -84,7 +93,7 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
   const byItem = new Map<
     string,
     WantedItem & {
-      askerSet: Map<string, string | null>
+      askerSet: Map<string, { id: string | null; spoiler: boolean }>
       seasonSet: Set<string>
       ungated: boolean
       labelSet: Set<string>
@@ -104,7 +113,8 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
         seasons: [],
         gated: true,
         gateLabels: [],
-        askerSet: new Map<string, string | null>(),
+        request_ids: [],
+        askerSet: new Map<string, { id: string | null; spoiler: boolean }>(),
         seasonSet: new Set<string>(),
         ungated: false,
         labelSet: new Set<string>(),
@@ -112,7 +122,13 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
 
       existing.keep = Math.max(existing.keep, item.quantity)
       existing.requests += 1
-      if (request.giver_name !== null) existing.askerSet.set(request.giver_name, request.giver_id)
+      existing.request_ids.push(request.id)
+      if (request.giver_name !== null) {
+        existing.askerSet.set(request.giver_name, {
+          id: request.giver_id,
+          spoiler: request.giver_spoiler === true,
+        })
+      }
 
       // A request with no season restriction can come at any time, so it adds
       // nothing to the set — an empty set means "any season" and the row shows
@@ -138,8 +154,9 @@ export function itemsWanted(requests: BoardRequest[]): WantedItem[] {
       category: entry.category,
       keep: entry.keep,
       requests: entry.requests,
+      request_ids: entry.request_ids,
       askers: [...entry.askerSet]
-        .map(([name, id]) => ({ id, name }))
+        .map(([name, { id, spoiler }]) => ({ id, name, ...(spoiler ? { spoiler } : {}) }))
         .sort((a, b) => a.name.localeCompare(b.name)),
       seasons: [...entry.seasonSet].sort(
         (a, b) => SEASON_ORDER.indexOf(a) - SEASON_ORDER.indexOf(b),

@@ -163,18 +163,34 @@ export function QuestRoute() {
           <h1 className="text-2xl">{quest.name}</h1>
           <p className="mt-0.5 text-ink-mute text-sm">
             {KIND_LABELS[quest.kind] ?? 'Quest'}
-            {giver !== null && (
-              <>
-                {' · from '}
-                <Link
-                  to="/villager/$id"
-                  params={{ id: giver }}
-                  className="underline decoration-rule underline-offset-4 hover:text-ink"
-                >
-                  {index[giver]?.n ?? giver.replace(/_/g, ' ')}
-                </Link>
-              </>
-            )}
+            {giver !== null &&
+              (() => {
+                // A spoiler giver keeps the link and loses the name — the 13
+                // human-form board requests are given by a veiled character,
+                // and "from Caldarus" in the header is the reveal.
+                const reason = veilReasonOf(index[giver])
+                const veiled = reason !== null && !spoilers.shown(giver)
+                return (
+                  <>
+                    {' · from '}
+                    <Link
+                      to="/villager/$id"
+                      params={{ id: giver }}
+                      className={
+                        veiled
+                          ? 'inline-flex items-center gap-1.5'
+                          : 'underline decoration-rule underline-offset-4 hover:text-ink'
+                      }
+                    >
+                      {veiled && reason !== null ? (
+                        <SpoilerChip size={14} reason={reason} />
+                      ) : (
+                        (index[giver]?.n ?? giver.replace(/_/g, ' '))
+                      )}
+                    </Link>
+                  </>
+                )
+              })()}
             {quest.repeatable && ' · repeatable'}
           </p>
         </div>

@@ -431,7 +431,7 @@ async function buildBoardFile(): Promise<ShippedFile | null> {
   const board = buildRequestBoard(
     quests,
     items,
-    await read<{ id: string; name: string }>('characters.json'),
+    await read<{ id: string; name: string; spoiler?: boolean }>('characters.json'),
     await read<Location>('locations.json'),
     await read<Skill>('skills.json'),
   )

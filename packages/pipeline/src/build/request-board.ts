@@ -37,6 +37,13 @@ export interface BoardRequest {
   name: string
   giver_id: string | null
   giver_name: string | null
+  /**
+   * The giver is a spoiler-veiled record (Caldarus). The name still ships —
+   * the veil withholds it at render, exactly like every other screen — but the
+   * board needs the flag because this file deliberately never loads the
+   * display index that carries it everywhere else.
+   */
+  giver_spoiler?: true
   items: BoardItem[]
   /** Null means all year, which is different from an unknown season. */
   seasons: string[] | null
@@ -97,12 +104,12 @@ export function gateLabel(
 export function buildRequestBoard(
   quests: Quest[],
   items: Item[],
-  characters: { id: string; name: string }[],
+  characters: { id: string; name: string; spoiler?: boolean }[],
   locations: Pick<Location, 'id' | 'name'>[],
   skills: Pick<Skill, 'id' | 'name'>[],
 ): RequestBoard {
   const itemById = new Map(items.map((i) => [i.id, i]))
-  const characterById = new Map(characters.map((c) => [c.id, c.name]))
+  const characterById = new Map(characters.map((c) => [c.id, c]))
   const names = {
     quests: new Map(quests.map((q) => [q.id, q.name])),
     locations: new Map(locations.map((l) => [l.id, l.name])),
@@ -129,14 +136,15 @@ export function buildRequestBoard(
         ]
       })
 
+      const giver =
+        quest.giver_character_id === null ? undefined : characterById.get(quest.giver_character_id)
+
       return {
         id: quest.id,
         name: quest.name,
         giver_id: quest.giver_character_id,
-        giver_name:
-          quest.giver_character_id === null
-            ? null
-            : (characterById.get(quest.giver_character_id) ?? null),
+        giver_name: giver?.name ?? null,
+        ...(giver?.spoiler === true ? { giver_spoiler: true as const } : {}),
         items: boardItems,
         seasons: quest.season_restriction,
         gates: quest.prerequisites.map((requirement) => ({

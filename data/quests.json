@@ -14383,12 +14383,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_a_dog_treat",
     "id_status": "provisional",
@@ -14428,12 +14426,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_fried_rice",
     "id_status": "provisional",
@@ -14473,12 +14469,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_a_lobster",
     "id_status": "provisional",
@@ -14518,12 +14512,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_monster_mash",
     "id_status": "provisional",
@@ -14563,12 +14555,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_a_pumpkin_pie",
     "id_status": "provisional",
@@ -14608,12 +14598,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "caldarus",
     "icon_key": "quest/request",
     "id": "request_for_a_sushi_platter",
     "id_status": "provisional",
@@ -14653,12 +14641,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_a_bomb",
     "id_status": "provisional",
@@ -14698,12 +14684,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_a_dragon_forged_core",
     "id_status": "provisional",
@@ -14743,12 +14727,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_a_fire_wasp",
     "id_status": "provisional",
@@ -14788,12 +14770,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_an_iron_shovel",
     "id_status": "provisional",
@@ -14833,12 +14813,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_a_latte",
     "id_status": "provisional",
@@ -14878,12 +14856,10 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "giver_character_id"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_mont_blanc",
     "id_status": "provisional",
@@ -14924,12 +14900,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "priestess",
     "icon_key": "quest/request",
     "id": "request_for_void_stone",
     "id_status": "provisional",

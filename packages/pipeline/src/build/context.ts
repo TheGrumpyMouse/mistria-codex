@@ -308,6 +308,12 @@ export interface BuildContext {
   resolver: Resolver
   methodRules: MethodRules
   characterRules: CharacterRules
+  /**
+   * Wiki quest-giver name -> character id, where slugifying cannot get there.
+   * The 13 board requests posted by "Caldarus Human" and "Seridia Human".
+   * See curated/aliases/quest_givers.json.
+   */
+  questGiverAliases: Record<string, string>
   /** Perk id -> what it does, in our own words. See curated/vocab/perk_effects.json. */
   perkEffects: Record<string, string>
   /**
@@ -513,6 +519,15 @@ export async function loadContext(): Promise<BuildContext> {
   const characterRules = await readJsonFile<CharacterRules>(
     join(CURATED_DIR, 'vocab', 'characters.json'),
   )
+  // Optional like the marker aliases: absent, the 13 human-form requests keep
+  // their giver gap, which was the only state before the mapping existed.
+  const questGiverAliases = await readJsonFile<{
+    givers: Record<string, { character: string }>
+  }>(join(CURATED_DIR, 'aliases', 'quest_givers.json'))
+    .then(({ givers }) =>
+      Object.fromEntries(Object.entries(givers).map(([name, g]) => [name, g.character])),
+    )
+    .catch(() => ({}) as Record<string, string>)
   // Optional like perk_effects: absent means no game-only items are surfaced,
   // which was the only state before 1.0 outran the wiki.
   const { items: gameOnlyItems } = await readJsonFile<{ items: string[] }>(
@@ -575,6 +590,7 @@ export async function loadContext(): Promise<BuildContext> {
     resolver,
     methodRules,
     characterRules,
+    questGiverAliases,
     perkEffects,
     gameOnlyItems,
   }

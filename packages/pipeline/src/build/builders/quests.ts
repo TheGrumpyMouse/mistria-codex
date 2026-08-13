@@ -195,7 +195,13 @@ export function buildQuests(ctx: BuildContext, builtItemIds: Set<string>): Quest
     // case. Only a quest kind the page does not gate at all keeps the gap.
     if (prerequisites.length === 0 && quest.kind !== 'request') gaps.push('prerequisites')
 
-    const giverId = quest.giver === null ? null : toSnakeId(quest.giver)
+    // The alias first: "Caldarus Human" and "Seridia Human" are the human
+    // forms the two late-game characters take, and only a curated judgement
+    // can say so (see curated/aliases/quest_givers.json). Everything else
+    // slugifies, and either way the id must name a real villager — an alias
+    // pointing at nobody is a typo, not an attribution.
+    const giverId =
+      quest.giver === null ? null : (ctx.questGiverAliases[quest.giver] ?? toSnakeId(quest.giver))
     const giver = giverId !== null && characterIds.has(giverId) ? giverId : null
     if (giver === null) gaps.push('giver_character_id')
 

@@ -129,6 +129,13 @@ export function buildCharacters(ctx: BuildContext): Character[] {
       const id = ctx.idFor(name)
       const npc = gameNpcFor(ctx, name)
 
+      // `dateable` is stated per NPC file, and the wiki lags it: the 1.0
+      // update made Caldarus and Seridia romanceable and the Cargo table
+      // still said no for both. Game first, wiki fallback — the same shape
+      // as birthdays below, and the disagreement is counted in
+      // build/reports/source-agreement.md rather than absorbed here.
+      const romanceable = npc?.dateable ?? toBoolean(row.romanceable)
+
       const match = BIRTHDAY.exec(text(row.birth))
       const seasonWord = (match?.[1] ?? '').toLowerCase()
       const fromWiki =
@@ -178,15 +185,18 @@ export function buildCharacters(ctx: BuildContext): Character[] {
         game_version: confirmed ? (ctx.game?.version ?? null) : null,
         version_added: null,
         confidence: 'wiki',
-        prov:
-          fromGame === null ? { '*': 'wiki_cargo' } : { '*': 'wiki_cargo', birthday: 'game_files' },
+        prov: {
+          '*': 'wiki_cargo',
+          ...(fromGame === null ? {} : { birthday: 'game_files' }),
+          ...(npc?.dateable == null ? {} : { romanceable: 'game_files' }),
+        },
         data_gaps: gaps,
         icon_key: `character/${id}`,
         wiki_page: name.replace(/ /g, '_'),
         blurb: null,
 
         birthday,
-        romanceable: toBoolean(row.romanceable),
+        romanceable,
         species: text(row.species) || null,
         gender: text(row.gender) || null,
         occupation: text(row.occupation) || null,

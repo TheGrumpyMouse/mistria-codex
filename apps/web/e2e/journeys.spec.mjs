@@ -76,6 +76,16 @@ check(
 await page.getByRole('button', { name: 'Small' }).click()
 await page.waitForTimeout(200)
 
+// ── 4b. The board attributes the human-form requests, veiled where due ──
+// Must run BEFORE section 5 reveals Caldarus: the reveal is remembered, and a
+// veil check after it would be checking nothing.
+await go('/board?view=villagers')
+t = await body()
+check('the Priestess posts her board requests', t.includes('Priestess'))
+check('no request is left unattributed', !t.includes('Not attributed'))
+check('the dragon posts behind the curtain', t.includes('Hidden — story spoiler'))
+check('and his name is nowhere on the board', !t.includes('Caldarus'))
+
 // ── 5. A spoiler stays hidden until asked for, then stays revealed ──
 await go('/browse?c=character')
 t = await body()
@@ -91,6 +101,10 @@ if (await reveal.isVisible().catch(() => false)) {
   await page.reload({ waitUntil: 'networkidle' })
   await page.waitForTimeout(700)
   check('the reveal is remembered', (await body()).includes('Caldarus'))
+  // The reveal is one preference, everywhere: the board group he posts under
+  // (section 4b saw it veiled) now carries his name and face.
+  await go('/board?view=villagers')
+  check('the reveal reaches the board', (await body()).includes('Caldarus'))
 }
 
 // ── 5a. Contest thresholds: the heading shows, the numbers wait to be asked ──
@@ -145,6 +159,35 @@ check('folding a villager hides their requests', (await adelineSection.locator('
 await adelineSection.getByRole('button', { name: "Adeline's requests" }).click()
 await page.waitForTimeout(200)
 check('and unfolding brings them back', (await adelineSection.locator('li').count()) > 0)
+
+// ── 5c. Board ticks: "given" here is "handed in" on the item page ──
+// Same progress domain, same keys — the tick is one fact seen from two
+// screens, exactly like the museum tick in section 1.
+await go('/board')
+const heatherGiven = () => page.getByRole('checkbox', { name: 'Heather — given' })
+check('a wanted item carries a given tick', await heatherGiven().isVisible())
+await heatherGiven().check()
+await page.waitForTimeout(300)
+await page.reload({ waitUntil: 'networkidle' })
+await page.waitForTimeout(800)
+check('the given tick survives a reload', await heatherGiven().isChecked())
+check('a given row strikes its name through, never hides it', (await body()).includes('Heather'))
+await go('/item/heather')
+const handedIn = page.getByRole('checkbox', { name: 'Adeline — Request for Heather — handed in' })
+check('the item page shows the board tick', await handedIn.isChecked())
+await handedIn.uncheck()
+await page.waitForTimeout(300)
+await go('/board')
+check('unticking on the item page clears the board', !(await heatherGiven().isChecked()))
+
+// and the villager view ticks whole requests against the same keys
+await go('/board?view=villagers')
+await page.getByRole('checkbox', { name: 'Request for Heather — given' }).check()
+await page.waitForTimeout(300)
+await go('/board')
+check('a request tick and an item tick are the same fact', await heatherGiven().isChecked())
+await heatherGiven().uncheck()
+await page.waitForTimeout(300)
 
 // ── 6. Board: filter, open a request, come back to the same filter ──
 await go('/board')

@@ -1,14 +1,17 @@
 import { getRouteApi, Link } from '@tanstack/react-router'
 import { ChevronDown } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Column } from '~/app/AppShell'
 import { ItemIcon } from '~/components/ItemIcon'
 import { LoadError } from '~/components/Section'
+import { SpoilerChip } from '~/components/Spoiler'
 import { loadRequestBoard } from '~/lib/data'
 import { useDocumentTitle } from '~/lib/head'
 import { CATEGORY_LABELS } from '~/lib/labels'
+import { doneIn, setDone } from '~/lib/progress'
 import type { BoardRequest } from '~/lib/request-board'
 import { itemsWanted } from '~/lib/request-board'
+import { useSpoilers } from '~/lib/spoilers'
 import { useData } from '~/lib/use-data'
 
 const route = getRouteApi('/board')
@@ -84,6 +87,32 @@ export function BoardRoute() {
 
   const { data, error } = useData('request-board', loadRequestBoard)
   const requests = data?.requests ?? null
+  const spoilers = useSpoilers()
+
+  // What has been handed in, from the same progress domain the item page's
+  // "needed for" ticks write — `request:<request_id>/<item_id>` — so a tick
+  // made on either screen is simply the other screen's state.
+  const [given, setGiven] = useState<Set<string>>(new Set())
+  useEffect(() => {
+    let live = true
+    doneIn('request').then((done) => live && setGiven(done))
+    return () => {
+      live = false
+    }
+  }, [])
+  // One row can stand for several (request, item) pairs, so a toggle writes
+  // them all. Optimistic, like the museum: the write is local.
+  const setManyGiven = (keys: string[], done: boolean): void => {
+    setGiven((current) => {
+      const next = new Set(current)
+      for (const key of keys) {
+        if (done) next.add(key)
+        else next.delete(key)
+      }
+      return next
+    })
+    for (const key of keys) void setDone('request', key, done)
+  }
 
   // The fold is a preference, not part of the answer, so it lives in
   // localStorage rather than the URL — two identical answers should not be
@@ -207,6 +236,9 @@ export function BoardRoute() {
           searchActive={needle !== ''}
           onToggle={toggleCollapsed}
           onFoldAll={setManyCollapsed}
+          given={given}
+          onGive={setManyGiven}
+          shown={spoilers.shown}
         />
       ) : (
         <VillagerList
@@ -215,6 +247,9 @@ export function BoardRoute() {
           searchActive={needle !== ''}
           onToggle={toggleCollapsed}
           onFoldAll={setManyCollapsed}
+          given={given}
+          onGive={setManyGiven}
+          shown={spoilers.shown}
         />
       )}
 
@@ -237,6 +272,47 @@ interface FoldProps {
   onToggle: (key: string) => void
   onFoldAll: (keys: string[], fold: boolean) => void
 }
+
+/** The give-tracking plumbing both views share; state lives on the route. */
+interface TrackProps {
+  /** Done `<request_id>/<item_id>` keys, domain `request` in the progress store. */
+  given: Set<string>
+  onGive: (keys: string[], done: boolean) => void
+  /** Whether a spoiler record may be named — `useSpoilers().shown`. */
+  shown: (id: string) => boolean
+}
+
+/**
+ * One tick over several `(request, item)` pairs: checked when all are handed
+ * in, indeterminate when the item page ticked some of them.
+ */
+function GivenBox({
+  keys,
+  given,
+  onGive,
+  label,
+}: {
+  keys: string[]
+  label: string
+} & Pick<TrackProps, 'given' | 'onGive'>) {
+  const done = keys.filter((key) => given.has(key)).length
+  const all = done === keys.length
+  return (
+    <input
+      type="checkbox"
+      checked={all}
+      ref={(el) => {
+        if (el !== null) el.indeterminate = !all && done > 0
+      }}
+      onChange={() => onGive(keys, !all)}
+      aria-label={label}
+    />
+  )
+}
+
+/** The item page's done treatment, so "given" reads the same on both screens. */
+const doneStyle = (done: boolean): React.CSSProperties | undefined =>
+  done ? { color: 'var(--ink-faint)', textDecoration: 'line-through' } : undefined
 
 function FoldControls({ keys, onFoldAll }: { keys: string[]; onFoldAll: FoldProps['onFoldAll'] }) {
   return (
@@ -268,7 +344,10 @@ function ItemList({
   searchActive,
   onToggle,
   onFoldAll,
-}: { wanted: ReturnType<typeof itemsWanted> } & FoldProps) {
+  given,
+  onGive,
+  shown,
+}: { wanted: ReturnType<typeof itemsWanted> } & FoldProps & TrackProps) {
   const groups = useMemo(() => {
     const byCategory = new Map<string, ReturnType<typeof itemsWanted>>()
     for (const entry of wanted) {
@@ -311,7 +390,9 @@ function ItemList({
                 </span>
               </button>
             </h2>
-            {folded ? null : <ItemRows entries={entries} />}
+            {folded ? null : (
+              <ItemRows entries={entries} given={given} onGive={onGive} shown={shown} />
+            )}
           </section>
         )
       })}
@@ -319,82 +400,106 @@ function ItemList({
   )
 }
 
-function ItemRows({ entries }: { entries: ReturnType<typeof itemsWanted> }) {
+function ItemRows({
+  entries,
+  given,
+  onGive,
+  shown,
+}: { entries: ReturnType<typeof itemsWanted> } & TrackProps) {
   return (
     <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
-      {entries.map((entry) => (
-        <li key={entry.id} className="flex items-center gap-3 py-2.5">
-          <ItemIcon iconKey={entry.icon_key ?? `item/${entry.id}`} name={entry.name} size="sm" />
+      {entries.map((entry) => {
+        // The row aggregates every request wanting this item, so its tick
+        // covers all of them; a tick made on one request's item page renders
+        // as the in-between (indeterminate) state.
+        const keys = entry.request_ids.map((requestId) => `${requestId}/${entry.id}`)
+        const allGiven = keys.every((key) => given.has(key))
+        return (
+          <li key={entry.id} className="flex items-center gap-3 py-2.5">
+            <GivenBox keys={keys} given={given} onGive={onGive} label={`${entry.name} — given`} />
+            <ItemIcon iconKey={entry.icon_key ?? `item/${entry.id}`} name={entry.name} size="sm" />
 
-          <div className="min-w-0 flex-1">
-            <p className="truncate text-sm">
-              <Link
-                to="/item/$id"
-                params={{ id: entry.id }}
-                className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-              >
-                {entry.name}
-              </Link>
-            </p>
-            <p className="truncate text-ink-faint text-xs">
-              {entry.askers.length > 1 && `${entry.askers.length} villagers · `}
-              {entry.askers.slice(0, 3).map((asker, i) => (
-                <span key={asker.name}>
-                  {i > 0 && ', '}
-                  {asker.id === null ? (
-                    asker.name
-                  ) : (
-                    <Link
-                      to="/villager/$id"
-                      params={{ id: asker.id }}
-                      className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
-                    >
-                      {asker.name}
-                    </Link>
-                  )}
-                </span>
-              ))}
-              {/* Name the gate rather than hedging. 106 of the 193 items are
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-sm">
+                <Link
+                  to="/item/$id"
+                  params={{ id: entry.id }}
+                  className="text-ink underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                  style={doneStyle(allGiven)}
+                >
+                  {entry.name}
+                </Link>
+              </p>
+              <p className="truncate text-ink-faint text-xs">
+                {entry.askers.length > 1 && `${entry.askers.length} villagers · `}
+                {entry.askers.slice(0, 3).map((asker, i) => {
+                  // A spoiler asker keeps their place in the run and loses the
+                  // name — the chip is the redaction, and the link still goes
+                  // where it went (the villager page is the one that asks).
+                  const veiled = asker.spoiler === true && (asker.id === null || !shown(asker.id))
+                  return (
+                    <span key={asker.name}>
+                      {i > 0 && ', '}
+                      {asker.id === null ? (
+                        veiled ? (
+                          <SpoilerChip size={14} />
+                        ) : (
+                          asker.name
+                        )
+                      ) : (
+                        <Link
+                          to="/villager/$id"
+                          params={{ id: asker.id }}
+                          className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
+                        >
+                          {veiled ? <SpoilerChip size={14} /> : asker.name}
+                        </Link>
+                      )}
+                    </span>
+                  )
+                })}
+                {/* Name the gate rather than hedging. 106 of the 193 items are
                   gated, and they all used to read "not from the start" — which
                   is true of every one and tells you nothing about any. "The
                   Mines unlocked" or "Year 2" is the same sentence's worth of
                   space and is the answer. Several labels are alternative
                   routes, so they join with "or". */}
-              {entry.gated && entry.gateLabels.length > 0 && (
-                <> · {entry.gateLabels.slice(0, 2).join(' or ')}</>
-              )}
-              {entry.gated && entry.gateLabels.length > 2 && (
-                <> or {entry.gateLabels.length - 2} other ways</>
-              )}
-              {entry.gated && entry.gateLabels.length === 0 && ' · not from the start'}
-            </p>
-          </div>
+                {entry.gated && entry.gateLabels.length > 0 && (
+                  <> · {entry.gateLabels.slice(0, 2).join(' or ')}</>
+                )}
+                {entry.gated && entry.gateLabels.length > 2 && (
+                  <> or {entry.gateLabels.length - 2} other ways</>
+                )}
+                {entry.gated && entry.gateLabels.length === 0 && ' · not from the start'}
+              </p>
+            </div>
 
-          {entry.seasons.length > 0 && entry.seasons.length < 4 && (
-            // One label for the group rather than one per swatch: a screen
-            // reader should hear "spring, fall", not two anonymous images.
-            <span
-              className="flex shrink-0 gap-1"
-              role="img"
-              aria-label={`Asked in ${entry.seasons.join(', ')}`}
-              title={entry.seasons.join(', ')}
-            >
-              {entry.seasons.map((s) => (
-                <span
-                  key={s}
-                  aria-hidden
-                  className="size-2 rounded-[1px]"
-                  style={{ background: `var(--${s})` }}
-                />
-              ))}
+            {entry.seasons.length > 0 && entry.seasons.length < 4 && (
+              // One label for the group rather than one per swatch: a screen
+              // reader should hear "spring, fall", not two anonymous images.
+              <span
+                className="flex shrink-0 gap-1"
+                role="img"
+                aria-label={`Asked in ${entry.seasons.join(', ')}`}
+                title={entry.seasons.join(', ')}
+              >
+                {entry.seasons.map((s) => (
+                  <span
+                    key={s}
+                    aria-hidden
+                    className="size-2 rounded-[1px]"
+                    style={{ background: `var(--${s})` }}
+                  />
+                ))}
+              </span>
+            )}
+
+            <span data-numeral className="shrink-0 text-ink-mute text-sm tabular-nums">
+              keep {entry.keep}
             </span>
-          )}
-
-          <span data-numeral className="shrink-0 text-ink-mute text-sm tabular-nums">
-            keep {entry.keep}
-          </span>
-        </li>
-      ))}
+          </li>
+        )
+      })}
     </ul>
   )
 }
@@ -405,20 +510,29 @@ function VillagerList({
   searchActive,
   onToggle,
   onFoldAll,
-}: { requests: BoardRequest[] } & FoldProps) {
+  given,
+  onGive,
+  shown,
+}: { requests: BoardRequest[] } & FoldProps & TrackProps) {
   const byVillager = useMemo(() => {
-    const groups = new Map<string, { name: string; requests: BoardRequest[] }>()
+    const groups = new Map<string, { name: string; spoiler: boolean; requests: BoardRequest[] }>()
     for (const request of requests) {
       const key = request.giver_id ?? 'unknown'
       const group = groups.get(key) ?? {
         name: request.giver_name ?? 'Not attributed',
+        spoiler: request.giver_spoiler === true,
         requests: [],
       }
       group.requests.push(request)
       groups.set(key, group)
     }
-    return [...groups.entries()].sort((a, b) => a[1].name.localeCompare(b[1].name))
-  }, [requests])
+    // Sorted by what actually renders: a veiled group files under its
+    // placeholder, because alphabetising by the real name would leak its
+    // initial through its position.
+    const label = (id: string, group: { name: string; spoiler: boolean }): string =>
+      group.spoiler && id !== 'unknown' && !shown(id) ? 'Hidden villager' : group.name
+    return [...groups.entries()].sort((a, b) => label(a[0], a[1]).localeCompare(label(b[0], b[1])))
+  }, [requests, shown])
 
   if (byVillager.length === 0) return <Empty>Nobody asks for anything in this season.</Empty>
 
@@ -428,6 +542,10 @@ function VillagerList({
       {byVillager.map(([id, group]) => {
         const foldKey = `villager:${id}`
         const folded = collapsed.has(foldKey) && !searchActive
+        // A veiled giver keeps the group and the link and loses the name and
+        // the face — a sprite is as much a spoiler as the text beside it. The
+        // villager page is the one that asks.
+        const veiled = group.spoiler && id !== 'unknown' && !shown(id)
         return (
           <section key={id}>
             <h2 className="flex items-center gap-2 font-display font-semibold text-ink text-sm">
@@ -437,7 +555,7 @@ function VillagerList({
                 type="button"
                 onClick={() => onToggle(foldKey)}
                 aria-expanded={!folded}
-                aria-label={`${group.name}'s requests`}
+                aria-label={veiled ? "Hidden villager's requests" : `${group.name}'s requests`}
                 className="tap-target flex items-center"
               >
                 <ChevronDown
@@ -450,7 +568,7 @@ function VillagerList({
               {/* `character/<id>` is the icon key by convention, so the face
                 needs no display index — this screen ships its own joined
                 form and deliberately never loads one. */}
-              {id !== 'unknown' && (
+              {id !== 'unknown' && !veiled && (
                 <ItemIcon iconKey={`character/${id}`} name={group.name} size="sm" />
               )}
               {id === 'unknown' ? (
@@ -459,84 +577,105 @@ function VillagerList({
                 <Link
                   to="/villager/$id"
                   params={{ id }}
-                  className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                  className={
+                    veiled
+                      ? 'inline-flex items-center gap-1.5'
+                      : 'underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule'
+                  }
                 >
-                  {group.name}
+                  {veiled ? <SpoilerChip /> : group.name}
                 </Link>
               )}
               <span className="font-normal text-ink-faint">· {group.requests.length}</span>
             </h2>
             {folded ? null : (
               <ul className="mt-1.5 flex flex-col divide-y divide-rule border-rule border-y">
-                {group.requests.map((request) => (
-                  <li key={request.id} className="flex items-center gap-3 py-2">
-                    <div className="flex shrink-0 gap-1">
-                      {request.items.map((item) => (
-                        <ItemIcon
-                          key={item.id}
-                          iconKey={item.icon_key ?? `item/${item.id}`}
-                          name={item.name}
-                          size="sm"
+                {group.requests.map((request) => {
+                  // One tick per request, over every item it wants — the same
+                  // keys the item page's "needed for" section writes. A
+                  // request the wiki lists no items for has nothing to hand
+                  // in, so it gets no box rather than a box that tracks
+                  // nothing.
+                  const keys = request.items.map((item) => `${request.id}/${item.id}`)
+                  const allGiven = keys.length > 0 && keys.every((key) => given.has(key))
+                  return (
+                    <li key={request.id} className="flex items-center gap-3 py-2">
+                      {keys.length > 0 && (
+                        <GivenBox
+                          keys={keys}
+                          given={given}
+                          onGive={onGive}
+                          label={`${request.name} — given`}
                         />
-                      ))}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <p className="truncate text-ink text-sm">
-                        {request.items.length === 0 ? (
-                          // A request whose items the wiki never listed still has a
-                          // quest page — the name is the way in, not a dead label.
-                          <Link
-                            to="/quest/$id"
-                            params={{ id: request.id }}
-                            className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                          >
-                            {request.name}
-                          </Link>
-                        ) : (
-                          request.items.map((i, idx) => (
-                            <span key={i.id}>
-                              {idx > 0 && ', '}
-                              <Link
-                                to="/item/$id"
-                                params={{ id: i.id }}
-                                className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
-                              >
-                                {i.name}
-                              </Link>
-                              {i.quantity > 1 && ` ×${i.quantity}`}
-                            </span>
-                          ))
-                        )}
-                      </p>
-                      {request.gates.length > 0 && (
-                        <p className="truncate text-ink-faint text-xs">
-                          {request.gates.map((g, idx) => (
-                            <span key={`${g.type}:${g.key ?? g.label}`}>
-                              {idx > 0 && ' · '}
-                              {g.key !== undefined &&
-                              (g.type === 'quest' || g.type === 'location') ? (
-                                <Link
-                                  to={g.type === 'quest' ? '/quest/$id' : '/place/$id'}
-                                  params={{ id: g.key }}
-                                  className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
-                                >
-                                  {g.label}
-                                </Link>
-                              ) : (
-                                g.label
-                              )}
-                            </span>
-                          ))}
-                        </p>
                       )}
-                    </div>
-                    {request.rewards?.tesserae != null && (
-                      <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
-                        {request.rewards.tesserae}t
-                      </span>
-                    )}
-                  </li>
-                ))}
+                      <div className="flex shrink-0 gap-1">
+                        {request.items.map((item) => (
+                          <ItemIcon
+                            key={item.id}
+                            iconKey={item.icon_key ?? `item/${item.id}`}
+                            name={item.name}
+                            size="sm"
+                          />
+                        ))}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-ink text-sm" style={doneStyle(allGiven)}>
+                          {request.items.length === 0 ? (
+                            // A request whose items the wiki never listed still has a
+                            // quest page — the name is the way in, not a dead label.
+                            <Link
+                              to="/quest/$id"
+                              params={{ id: request.id }}
+                              className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                            >
+                              {request.name}
+                            </Link>
+                          ) : (
+                            request.items.map((i, idx) => (
+                              <span key={i.id}>
+                                {idx > 0 && ', '}
+                                <Link
+                                  to="/item/$id"
+                                  params={{ id: i.id }}
+                                  className="underline decoration-transparent underline-offset-4 transition-colors hover:decoration-rule"
+                                >
+                                  {i.name}
+                                </Link>
+                                {i.quantity > 1 && ` ×${i.quantity}`}
+                              </span>
+                            ))
+                          )}
+                        </p>
+                        {request.gates.length > 0 && (
+                          <p className="truncate text-ink-faint text-xs">
+                            {request.gates.map((g, idx) => (
+                              <span key={`${g.type}:${g.key ?? g.label}`}>
+                                {idx > 0 && ' · '}
+                                {g.key !== undefined &&
+                                (g.type === 'quest' || g.type === 'location') ? (
+                                  <Link
+                                    to={g.type === 'quest' ? '/quest/$id' : '/place/$id'}
+                                    params={{ id: g.key }}
+                                    className="underline decoration-transparent underline-offset-4 transition-colors hover:text-ink hover:decoration-rule"
+                                  >
+                                    {g.label}
+                                  </Link>
+                                ) : (
+                                  g.label
+                                )}
+                              </span>
+                            ))}
+                          </p>
+                        )}
+                      </div>
+                      {request.rewards?.tesserae != null && (
+                        <span data-numeral className="shrink-0 text-ink-mute text-xs tabular-nums">
+                          {request.rewards.tesserae}t
+                        </span>
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             )}
           </section>

@@ -103,6 +103,29 @@ describe('itemsWanted', () => {
     expect(wanted[0]?.category).toBe('misc')
   })
 
+  it('remembers which requests each row was inverted from', () => {
+    // The row's checkbox writes `request:<request_id>/<item_id>` — the same
+    // keys the item page writes — so the inversion must not lose the request
+    // identity behind the aggregate.
+    const wanted = itemsWanted([
+      request({ id: 'a', items: [{ id: 'x', name: 'X', icon_key: null, quantity: 3 }] }),
+      request({ id: 'b', items: [{ id: 'x', name: 'X', icon_key: null, quantity: 6 }] }),
+    ])
+    expect(wanted[0]?.request_ids).toEqual(['a', 'b'])
+  })
+
+  it('carries a spoiler giver as a flag, never as a dropped asker', () => {
+    // The veil withholds the name at render; the row and its link stay.
+    const wanted = itemsWanted([
+      request({ id: 'a', giver_id: 'caldarus', giver_name: 'Caldarus', giver_spoiler: true }),
+      request({ id: 'b', giver_id: 'balor', giver_name: 'Balor' }),
+    ])
+    expect(wanted[0]?.askers).toEqual([
+      { id: 'balor', name: 'Balor' },
+      { id: 'caldarus', name: 'Caldarus', spoiler: true },
+    ])
+  })
+
   it('sorts the most-asked-for first', () => {
     const wanted = itemsWanted([
       request({ id: 'a', items: [{ id: 'rare', name: 'Rare', icon_key: null, quantity: 1 }] }),

@@ -127,7 +127,14 @@ interface CropRecord {
 }
 interface CharacterRecord {
   id: string
+  name: string
+  also_known_as?: string[]
+  spoiler_aliases?: string[]
   birthday: { season: string; day: number } | null
+}
+interface GiftPrefsRecord {
+  character_id: string
+  prefs: { loved: string[]; liked: string[] }
 }
 interface SetRecord {
   id: string
@@ -232,9 +239,19 @@ async function comparisons(loaded: Loaded, game: GameFacts): Promise<Comparison[
   // — Birthdays. The one field where the game covers a villager the wiki
   //   never printed (Caldarus), so the overlap is 33 of 34.
   const characters = loaded.characters.records as unknown as CharacterRecord[]
+  // Looking an NPC up by our id alone silently skips the Priestess — her file
+  // is `seridia.toml`, and "Seridia" lives on the record as an alias (a spoiler
+  // one, since the name is itself the reveal). Fall through to the alias so
+  // every comparison here covers all 34, not 33.
+  const npcFor = (person: CharacterRecord) => {
+    const byId = game.npcById.get(person.id)
+    if (byId !== undefined) return byId
+    const names = new Set([...(person.also_known_as ?? []), ...(person.spoiler_aliases ?? [])])
+    return [...game.npcById.values()].find((npc) => npc.name !== null && names.has(npc.name))
+  }
   out.push(
     compare('Villager birthday', 'wiki Characters.birth vs npc birthday', characters, (person) => {
-      const npc = game.npcById.get(person.id)
+      const npc = npcFor(person)
       if (npc?.birthday == null || person.birthday === null) return null
       return {
         id: person.id,
@@ -243,6 +260,68 @@ async function comparisons(loaded: Loaded, game: GameFacts): Promise<Comparison[
       }
     }),
   )
+
+  // — Romanceable, read from the wiki's raw cargo cell because the record now
+  //   ships the game's `dateable`. The 1.0 update made Caldarus and Seridia
+  //   romance candidates and the pre-1.0 wiki still says no for both — the
+  //   two expected rows below are that lag, kept visible until the wiki
+  //   catches up.
+  const wikiRomanceable = new Map<string, boolean>()
+  for (const row of await cargo('Characters.json')) {
+    if (typeof row.charName === 'string') {
+      wikiRomanceable.set(row.charName, Boolean(Number(row.romanceable)))
+    }
+  }
+  out.push(
+    compare(
+      'Villager romanceable',
+      'wiki Characters.romanceable vs npc dateable',
+      characters,
+      (person) => {
+        const npc = npcFor(person)
+        if (npc?.dateable == null) return null
+        return {
+          id: person.id,
+          ours: wikiRomanceable.get(person.name) ?? null,
+          game: npc.dateable,
+        }
+      },
+      {
+        ships: 'game',
+        tolerance: 2,
+        note: 'the 1.0 update made Caldarus and Seridia dateable; the wiki has not caught up',
+      },
+    ),
+  )
+
+  // — Gift preferences. The game states `loved_gifts`/`liked_gifts` as exact
+  //   item ids; the wiki's GiftPrefs matrix is the per-item expansion of those
+  //   lists plus the tag rules, and it is what ships. Compared as lists so a
+  //   1.0 rebalance the wiki missed shows up as a row, not a silence.
+  const giftPrefs = loaded.gift_prefs.records as unknown as GiftPrefsRecord[]
+  const characterById = new Map(characters.map((person) => [person.id, person]))
+  const giftNote =
+    'the wiki matrix is the per-item expansion (tag rules included); the game states the explicit lists — a differ row is for a person to judge, never auto-correct'
+  const compareGifts = (interest: 'loved' | 'liked'): Comparison =>
+    compare(
+      `Gift preferences (${interest})`,
+      `wiki GiftPrefs vs npc ${interest}_gifts`,
+      giftPrefs,
+      (prefs) => {
+        const person = characterById.get(prefs.character_id)
+        if (person === undefined) return null
+        const npc = npcFor(person)
+        const stated = interest === 'loved' ? npc?.loved_gifts : npc?.liked_gifts
+        if (stated === undefined || stated.length === 0) return null
+        return {
+          id: prefs.character_id,
+          ours: [...prefs.prefs[interest]].sort(),
+          game: [...stated].sort(),
+        }
+      },
+      { ships: 'wiki', note: giftNote },
+    )
+  out.push(compareGifts('loved'), compareGifts('liked'))
 
   // — Museum rosters. Ours come from the wing pages (fish, flora, insects) or
   //   from Cargo (archaeology); the files declare each set outright.
