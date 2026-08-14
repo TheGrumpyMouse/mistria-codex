@@ -1,0 +1,53 @@
+{
+  "_comment": [
+    "Per-record field overrides for items — the escape hatch curated/CLAUDE.md",
+    "describes, created for the automation pieces nobody could find by search.",
+    "",
+    "Only two fields may be set here, and the build enforces that:",
+    "",
+    "  also_known_as — other names the thing goes by. Search matches on a",
+    "  contiguous substring of the folded name, so 'Water Sprite Statue' never",
+    "  answers a search for 'water statue', and nothing in the game contains",
+    "  the words 'auto petter' at all — that is the community's name for the",
+    "  Animal Sprite Statue, and the app should answer to it.",
+    "",
+    "  blurb — our own factual sentence about what the thing does, per",
+    "  docs/DATA-POLICY.md: facts in our own words, never the in-game",
+    "  description and never a paraphrase of it. Every blurb here states only",
+    "  what the named source states as data.",
+    "",
+    "Every entry carries `reason` and `source`. An id that does not exist in",
+    "the built items dataset fails the build — a typo must not silently",
+    "override nothing."
+  ],
+  "overrides": {
+    "water_sprite": {
+      "also_known_as": ["Water Statue"],
+      "blurb": "With an essence stone set, waters every crop within 2 tiles each morning. Works on the farm and in greenhouses.",
+      "reason": "unfindable by the name people search for; the function is the fact a reader wants",
+      "source": "object_prototypes/furniture.toml [water_sprite_statue_v1]: sprinkler = 2, essence_machine, placeable_locations = farm/greenhouses"
+    },
+    "water_sprite_large": {
+      "also_known_as": ["Large Water Statue"],
+      "blurb": "With an essence stone set, waters every crop within 3 tiles each morning. Works on the farm and in greenhouses.",
+      "reason": "unfindable by the name people search for; the function is the fact a reader wants",
+      "source": "object_prototypes/furniture.toml [water_sprite_statue_large_v1]: sprinkler = 3, essence_machine, placeable_locations = farm/greenhouses"
+    },
+    "ocarina_sprite_statue": {
+      "also_known_as": ["Auto Petter"],
+      "blurb": "Placed in a large barn or coop with an essence stone set, it pets every animal housed there each day.",
+      "reason": "the community calls it an auto petter and nothing in its real name matches that search",
+      "source": "object_prototypes/furniture.toml [ocarina_sprite_statue]: essence_machine, placeable_locations = large_coop/large_barn; wiki Animal Sprite Statue page states the petting effect"
+    },
+    "auto_feeder": {
+      "blurb": "Holds a stock of feed and refills the troughs of the coop or barn it stands in each morning, matching the feed's quality.",
+      "reason": "shipped with the wiki's 'Missing Data' tag and no statement of what it does",
+      "source": "items/other/misc.toml [auto_feeder] stated behaviour; object_prototypes/furniture.toml places it in large_coop/large_barn"
+    },
+    "seed_maker": {
+      "blurb": "Converts a harvested crop or forageable into one to three of its own seeds.",
+      "reason": "new in the 1.5.1 sweep with no wiki row to describe it",
+      "source": "items/other/misc.toml [seed_maker] stated behaviour; sold by the general store (stores.toml)"
+    }
+  }
+}

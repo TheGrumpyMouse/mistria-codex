@@ -28,6 +28,7 @@ import {
   toSnakeId,
 } from '@mistria/schema'
 import { consola } from 'consola'
+import { applyItemOverrides, readItemOverrides } from '../lib/item-overrides.js'
 import { BUILD_DIR, DATA_DIR } from '../lib/paths.js'
 import { readSpoilerRules, stampSpoilers } from '../lib/spoilers.js'
 import { writeJson } from '../lib/write-json.js'
@@ -543,14 +544,23 @@ export async function buildData(): Promise<Record<DatasetName, number>> {
   }
   const counts = {} as Record<DatasetName, number>
 
-  // The spoiler stamp is the one thing applied after a builder runs: "is this
-  // a story spoiler" is a curated judgement about presentation, not a fact any
+  // The spoiler stamp is applied after a builder runs: "is this a story
+  // spoiler" is a curated judgement about presentation, not a fact any
   // builder derives, so it lives in one pass here rather than in 23 builders.
+  // Item overrides (search aliases, factual blurbs) are the same kind of
+  // judgement and follow the same shape.
   const spoilers = await readSpoilerRules()
+  const itemOverrides = await readItemOverrides()
 
   for (const name of Object.keys(BUILDERS) as DatasetName[]) {
     const records = BUILDERS[name](ctx, derived)
     stampSpoilers(name, records, spoilers)
+    if (name === 'items') {
+      applyItemOverrides(
+        records as unknown as { id: string; also_known_as: string[]; blurb: string | null }[],
+        itemOverrides,
+      )
+    }
     await writeJson(join(DATA_DIR, DATASETS[name].file), records, { pretty: true })
     counts[name] = records.length
   }

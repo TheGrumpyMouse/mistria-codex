@@ -23,9 +23,9 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2881 files.**
+**2922 files.**
 
-## Items (2191)
+## Items (2232)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -1032,6 +1032,17 @@ this repository treats it as though it were.
 | `item/spirit-mushroom-tea.png` | Spirit mushroom tea.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirit%20mushroom%20tea.png) |
 | `item/spirit-mushroom.png` | Spirit mushroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirit%20mushroom.png) |
 | `item/spirula-shell.png` | Spirula shell.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Spirula%20shell.png) |
+| `item/spr_ui_item_10h_adeline_lifetime_planner.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_adeline_lifetime_planner.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_balor_polished_gem.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_balor_polished_gem.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_caldarus_dragonsworn_statue.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_caldarus_dragonsworn_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_celine_flower_pot.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_celine_flower_pot.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_eiland_legendary_stele.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_eiland_legendary_stele.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_hayden_carved_nest.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_hayden_carved_nest.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_juniper_protection_scroll.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_juniper_protection_scroll.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_reina_cookbook_manuscript.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_reina_cookbook_manuscript.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_ryis_hawthorn_tree.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_ryis_hawthorn_tree.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_seridia_armor_stand.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_seridia_armor_stand.png | game files (NPC Studio) |
+| `item/spr_ui_item_10h_valen_panacea.png` | animations/Item Icons/Placeables/10H Relationship Rewards/spr_ui_item_10h_valen_panacea.png | game files (NPC Studio) |
 | `item/spr_ui_item_alda_bronze_sword.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_bronze_sword.png | game files (NPC Studio) |
 | `item/spr_ui_item_alda_clay_pot.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_clay_pot.png | game files (NPC Studio) |
 | `item/spr_ui_item_alda_feather_pendant.png` | animations/Item Icons/Archaeology/spr_ui_item_alda_feather_pendant.png | game files (NPC Studio) |
@@ -1047,6 +1058,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_ancient_horn_circlet.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_horn_circlet.png | game files (NPC Studio) |
 | `item/spr_ui_item_ancient_royal_scepter.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_royal_scepter.png | game files (NPC Studio) |
 | `item/spr_ui_item_ancient_stone_lantern.png` | animations/Item Icons/Archaeology/spr_ui_item_ancient_stone_lantern.png | game files (NPC Studio) |
+| `item/spr_ui_item_bagseed_snow_peas_icon.png` | animations/Item Icons/Seeds/spr_ui_item_bagseed_snow_peas_icon.png | game files (NPC Studio) |
 | `item/spr_ui_item_basic_misc_shipping_bin.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_basic_misc_shipping_bin.png | game files (NPC Studio) |
 | `item/spr_ui_item_big_bell.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_big_bell.png | game files (NPC Studio) |
 | `item/spr_ui_item_black_tablet.png` | animations/Item Icons/Archaeology/spr_ui_item_black_tablet.png | game files (NPC Studio) |
@@ -1058,6 +1070,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_coin_lump.png` | animations/Item Icons/Archaeology/spr_ui_item_coin_lump.png | game files (NPC Studio) |
 | `item/spr_ui_item_completely_wrong_map.png` | animations/Item Icons/Archaeology/spr_ui_item_completely_wrong_map.png | game files (NPC Studio) |
 | `item/spr_ui_item_crab_statue.png` | animations/Item Icons/Archaeology/spr_ui_item_crab_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_crafting_table.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_crafting_table.png | game files (NPC Studio) |
 | `item/spr_ui_item_criminal_confession.png` | animations/Item Icons/Archaeology/spr_ui_item_criminal_confession.png | game files (NPC Studio) |
 | `item/spr_ui_item_crop_sign_apple.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_apple.png | game files (NPC Studio) |
 | `item/spr_ui_item_crop_sign_basil.png` | animations/Item Icons/Placeables/Furniture/Crop Signs/spr_ui_item_crop_sign_basil.png | game files (NPC Studio) |
@@ -1937,8 +1950,21 @@ this repository treats it as though it were.
 | `item/spr_ui_item_giant_fish_scale.png` | animations/Item Icons/Archaeology/spr_ui_item_giant_fish_scale.png | game files (NPC Studio) |
 | `item/spr_ui_item_hardened_essence.png` | animations/Item Icons/Archaeology/spr_ui_item_hardened_essence.png | game files (NPC Studio) |
 | `item/spr_ui_item_insect_queens_birdwing.png` | animations/Item Icons/Bugs/spr_ui_item_insect_queens_birdwing.png | game files (NPC Studio) |
+| `item/spr_ui_item_kitchen_tier_1.png` | animations/Item Icons/Placeables/Kitchens/spr_ui_item_kitchen_tier_1.png | game files (NPC Studio) |
 | `item/spr_ui_item_kitchen_tier_3_champion_blue.png` | animations/Item Icons/Placeables/Kitchens/spr_ui_item_kitchen_tier_3_champion_blue.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_animal_toy_ball_court.png` | animations/Item Icons/Placeables/Animal Toys/spr_ui_item_large_animal_toy_ball_court.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_animal_toy_gramophone.png` | animations/Item Icons/Placeables/Animal Toys/spr_ui_item_large_animal_toy_gramophone.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_barn_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_barn_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_barn_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_barn_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_coop_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_coop_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_coop_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_coop_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_greenhouse_white.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_greenhouse_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_large_greenhouse_wood.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_large_greenhouse_wood.png | game files (NPC Studio) |
 | `item/spr_ui_item_lost_crown_of_aldaria.png` | animations/Item Icons/Archaeology/spr_ui_item_lost_crown_of_aldaria.png | game files (NPC Studio) |
+| `item/spr_ui_item_medium_barn_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_medium_barn_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_medium_barn_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_medium_barn_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_medium_coop_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_medium_coop_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_medium_coop_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_medium_coop_red.png | game files (NPC Studio) |
 | `item/spr_ui_item_mermaids_comb.png` | animations/Item Icons/Archaeology/spr_ui_item_mermaids_comb.png | game files (NPC Studio) |
 | `item/spr_ui_item_message_in_a_bottle.png` | animations/Item Icons/Archaeology/spr_ui_item_message_in_a_bottle.png | game files (NPC Studio) |
 | `item/spr_ui_item_metal_leaf.png` | animations/Item Icons/Archaeology/spr_ui_item_metal_leaf.png | game files (NPC Studio) |
@@ -1948,6 +1974,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_miners_pickaxe.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_pickaxe.png | game files (NPC Studio) |
 | `item/spr_ui_item_miners_rucksack.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_rucksack.png | game files (NPC Studio) |
 | `item/spr_ui_item_miners_slab.png` | animations/Item Icons/Archaeology/spr_ui_item_miners_slab.png | game files (NPC Studio) |
+| `item/spr_ui_item_mini_museum.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_mini_museum.png | game files (NPC Studio) |
 | `item/spr_ui_item_mist_crystal.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_crystal.png | game files (NPC Studio) |
 | `item/spr_ui_item_mist_flute.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_flute.png | game files (NPC Studio) |
 | `item/spr_ui_item_mist_scroll.png` | animations/Item Icons/Archaeology/spr_ui_item_mist_scroll.png | game files (NPC Studio) |
@@ -1966,9 +1993,13 @@ this repository treats it as though it were.
 | `item/spr_ui_item_object_crystal_resonator_silver.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_silver.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_crystal_resonator_void.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_object_crystal_resonator_void.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_forge_mistril.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_forge_mistril.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_forge.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_forge.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_journal.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_journal.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_ladder.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ladder.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_mini_mill.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_mini_mill.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_ocarina_statue.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_ocarina_statue.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_perpetual_soup_pot.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_perpetual_soup_pot.png | game files (NPC Studio) |
+| `item/spr_ui_item_object_seed_maker.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_seed_maker.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_stairs.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_stairs.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_teleportation_pad.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_teleportation_pad.png | game files (NPC Studio) |
 | `item/spr_ui_item_object_terrarium.png` | animations/Item Icons/Placeables/Objects/spr_ui_item_object_terrarium.png | game files (NPC Studio) |
@@ -2015,6 +2046,14 @@ this repository treats it as though it were.
 | `item/spr_ui_item_sea_glass.png` | animations/Item Icons/Archaeology/spr_ui_item_sea_glass.png | game files (NPC Studio) |
 | `item/spr_ui_item_seriously_square_rock.png` | animations/Item Icons/Archaeology/spr_ui_item_seriously_square_rock.png | game files (NPC Studio) |
 | `item/spr_ui_item_shortcut_scroll.png` | animations/Item Icons/Archaeology/spr_ui_item_shortcut_scroll.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_animal_toy_hot_spring.png` | animations/Item Icons/Placeables/Animal Toys/spr_ui_item_small_animal_toy_hot_spring.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_animal_toy_seesaw.png` | animations/Item Icons/Placeables/Animal Toys/spr_ui_item_small_animal_toy_seesaw.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_barn_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_barn_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_barn_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_barn_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_coop_black.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_coop_black.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_coop_red.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_coop_red.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_greenhouse_white.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_greenhouse_white.png | game files (NPC Studio) |
+| `item/spr_ui_item_small_greenhouse_wood.png` | animations/Item Icons/Placeables/Buildings/spr_ui_item_small_greenhouse_wood.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_adelines_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_adelines_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_balors_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_balors_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_caldarus_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_caldarus_theme.png | game files (NPC Studio) |
@@ -2028,6 +2067,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_song_crystal_ryis_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_ryis_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_seridias_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_seridias_theme.png | game files (NPC Studio) |
 | `item/spr_ui_item_song_crystal_valens_theme.png` | animations/Item Icons/Placeables/Objects/Crystal Resonators and Song Unlocks/spr_ui_item_song_crystal_valens_theme.png | game files (NPC Studio) |
+| `item/spr_ui_item_star_brooch.png` | animations/Item Icons/Misc/spr_ui_item_star_brooch.png | game files (NPC Studio) |
 | `item/spr_ui_item_starlight_coral.png` | animations/Item Icons/Archaeology/spr_ui_item_starlight_coral.png | game files (NPC Studio) |
 | `item/spr_ui_item_statuette_of_caldarus.png` | animations/Item Icons/Archaeology/spr_ui_item_statuette_of_caldarus.png | game files (NPC Studio) |
 | `item/spr_ui_item_stone_horse.png` | animations/Item Icons/Archaeology/spr_ui_item_stone_horse.png | game files (NPC Studio) |
@@ -2038,6 +2078,7 @@ this repository treats it as though it were.
 | `item/spr_ui_item_tiny_dinosaur_skeleton.png` | animations/Item Icons/Archaeology/spr_ui_item_tiny_dinosaur_skeleton.png | game files (NPC Studio) |
 | `item/spr_ui_item_tiny_volcano.png` | animations/Item Icons/Archaeology/spr_ui_item_tiny_volcano.png | game files (NPC Studio) |
 | `item/spr_ui_item_trilobite_fossil.png` | animations/Item Icons/Archaeology/spr_ui_item_trilobite_fossil.png | game files (NPC Studio) |
+| `item/spr_ui_item_unidentified_artifact.png` | animations/Item Icons/Misc/spr_ui_item_unidentified_artifact.png | game files (NPC Studio) |
 | `item/spr_ui_item_unknown_dragon_statuette.png` | animations/Item Icons/Archaeology/spr_ui_item_unknown_dragon_statuette.png | game files (NPC Studio) |
 | `item/spr_ui_item_vintage_bell.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_bell.png | game files (NPC Studio) |
 | `item/spr_ui_item_vintage_brush.png` | animations/Item Icons/Archaeology/spr_ui_item_vintage_brush.png | game files (NPC Studio) |

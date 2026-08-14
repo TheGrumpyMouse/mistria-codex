@@ -31,8 +31,10 @@
  */
 import { mkdir, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { toSnakeId } from '@mistria/schema'
+import { pairBoardRequests } from '../build/builders/quests.js'
 import { type GameFacts, loadGameFacts, rarityFor } from '../build/game-facts.js'
-import { REPORTS_DIR, SOURCES_DIR } from '../lib/paths.js'
+import { CURATED_DIR, REPORTS_DIR, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
 import type { Loaded } from './load.js'
 import { type Finding, warn } from './report.js'
@@ -135,6 +137,18 @@ interface CharacterRecord {
 interface GiftPrefsRecord {
   character_id: string
   prefs: { loved: string[]; liked: string[] }
+}
+interface QuestRecord {
+  id: string
+  name: string
+  kind: string
+  giver_character_id: string | null
+}
+interface WikiQuestRow {
+  kind: string
+  name: string
+  giver: string | null
+  objectives: { itemName: string; quantity: number | null }[]
 }
 interface SetRecord {
   id: string
@@ -322,6 +336,124 @@ async function comparisons(loaded: Loaded, game: GameFacts): Promise<Comparison[
       { ships: 'wiki', note: giftNote },
     )
   out.push(compareGifts('loved'), compareGifts('liked'))
+
+  // — Board requests. The records ship the game's statement of giver and
+  //   wanted items now, so both comparisons read the wiki's raw page extract —
+  //   the same reason sell value reads the raw cargo cell. The join to the
+  //   game runs through the identical pairing the builder uses; the wiki row
+  //   is found by folded name, skipping the seven duplicated titles a name
+  //   cannot place.
+  const questRecords = loaded.quests.records as unknown as QuestRecord[]
+  const requestRecords = questRecords.filter((quest) => quest.kind === 'request')
+  const wikiQuestPage = await readJsonFile<{ quests: WikiQuestRow[] }>(
+    join(SOURCES_DIR, 'wiki', 'pages', 'quests.json'),
+  ).catch(() => ({ quests: [] as WikiQuestRow[] }))
+  const wikiRequestsByName = new Map<string, WikiQuestRow[]>()
+  for (const row of wikiQuestPage.quests) {
+    if (row.kind !== 'request') continue
+    const key = fold(row.name)
+    wikiRequestsByName.set(key, [...(wikiRequestsByName.get(key) ?? []), row])
+  }
+  // A name only one wiki row AND one shipped record carry — two records with
+  // one wiki row is the "Request for Wood" case, where the wiki listed one of
+  // the game's two same-named asks and handing its row to both would report
+  // the appended record as drift.
+  const recordCountByName = new Map<string, number>()
+  for (const record of requestRecords) {
+    const key = fold(record.name)
+    recordCountByName.set(key, (recordCountByName.get(key) ?? 0) + 1)
+  }
+  const wikiRowFor = (record: QuestRecord): WikiQuestRow | null => {
+    const key = fold(record.name)
+    if ((recordCountByName.get(key) ?? 0) !== 1) return null
+    const rows = wikiRequestsByName.get(key) ?? []
+    return rows.length === 1 ? (rows[0] ?? null) : null
+  }
+
+  // The same two curated aliases the builder resolves through: the game's npc
+  // id where it differs from ours, and the wiki's human-form giver names.
+  const { gameNpcIds } = await readJsonFile<{ gameNpcIds?: Record<string, string> }>(
+    join(CURATED_DIR, 'vocab', 'characters.json'),
+  ).catch(() => ({ gameNpcIds: {} as Record<string, string> }))
+  const characterIdByNpc = new Map(
+    Object.entries(gameNpcIds ?? {}).map(
+      ([display, npcId]) => [npcId, toSnakeId(display)] as const,
+    ),
+  )
+  const { givers: giverAliases } = await readJsonFile<{
+    givers?: Record<string, { character: string }>
+  }>(join(CURATED_DIR, 'aliases', 'quest_givers.json')).catch(() => ({
+    givers: {} as Record<string, { character: string }>,
+  }))
+  const giverIdForNpc = (npc: string | null): string | null =>
+    npc === null ? null : (characterIdByNpc.get(npc) ?? npc)
+  const giverIdForWikiName = (name: string | null): string | null =>
+    name === null ? null : (giverAliases?.[name]?.character ?? toSnakeId(name))
+
+  const { gameByQuest } = pairBoardRequests(
+    requestRecords.map((quest) => ({
+      id: quest.id,
+      name: quest.name,
+      giver_character_id: quest.giver_character_id,
+    })),
+    game.boardRequests,
+    giverIdForNpc,
+  )
+
+  out.push(
+    compare(
+      'Request giver',
+      'wiki quest page vs fetch_quests npc_for_icon',
+      requestRecords,
+      (record) => {
+        const wikiRow = wikiRowFor(record)
+        const gameRow = gameByQuest.get(record.id)
+        if (wikiRow === null || gameRow === undefined) return null
+        return {
+          id: record.id,
+          ours: giverIdForWikiName(wikiRow.giver),
+          game: giverIdForNpc(gameRow.npc),
+        }
+      },
+      {
+        ships: 'game',
+        note: 'the wiki names "Caldarus Human" and "Seridia Human" resolve through curated/aliases/quest_givers.json — the game stating the same villagers is what confirmed that judgement',
+      },
+    ),
+  )
+
+  // Item lists as `id×count`, the wiki's display names resolved against the
+  // shipped records. A name two records share resolves to nothing and the row
+  // is skipped — a mis-join would report drift that is really ambiguity.
+  const itemIdByName = new Map<string, string | null>()
+  for (const item of items) {
+    itemIdByName.set(item.name, itemIdByName.has(item.name) ? null : item.id)
+  }
+  out.push(
+    compare(
+      'Request items',
+      'wiki quest page vs fetch_quests has_item',
+      requestRecords,
+      (record) => {
+        const wikiRow = wikiRowFor(record)
+        const gameRow = gameByQuest.get(record.id)
+        if (wikiRow === null || gameRow === undefined) return null
+        const ours: string[] = []
+        for (const objective of wikiRow.objectives) {
+          const id = itemIdByName.get(objective.itemName) ?? null
+          if (id === null) return null
+          ours.push(`${id}x${objective.quantity ?? 1}`)
+        }
+        if (ours.length === 0) return null
+        return {
+          id: record.id,
+          ours: ours.sort(),
+          game: gameRow.items.map((item) => `${item.id}x${item.quantity}`).sort(),
+        }
+      },
+      { ships: 'game' },
+    ),
+  )
 
   // — Museum rosters. Ours come from the wing pages (fish, flora, insects) or
   //   from Cargo (archaeology); the files declare each set outright.

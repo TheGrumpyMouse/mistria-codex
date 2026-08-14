@@ -1664,7 +1664,13 @@
         "quantity": 100
       }
     ],
-    "rewards": null,
+    "rewards": {
+      "item_ids": [
+        "small_greenhouse_white_blueprint"
+      ],
+      "renown": null,
+      "tesserae": null
+    },
     "season_restriction": null,
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
@@ -4531,7 +4537,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4584,6 +4593,9 @@
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -4634,6 +4646,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -4687,10 +4702,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4733,7 +4757,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4782,10 +4809,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4832,10 +4868,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4878,7 +4923,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4930,7 +4978,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -4977,10 +5028,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5036,7 +5096,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5086,7 +5149,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5133,10 +5199,19 @@
         "op": "done",
         "type": "quest",
         "value": null
+      },
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5183,10 +5258,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5227,9 +5311,19 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "request_for_common_pheromone",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5279,7 +5373,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5335,7 +5432,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5386,6 +5486,9 @@
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -5447,7 +5550,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5502,7 +5608,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5538,7 +5647,7 @@
     "numeric_id_game_version": null,
     "objectives": [
       {
-        "quantity": 3,
+        "quantity": 1,
         "target_id": "spirit_mushroom_tea",
         "type": "deliver"
       }
@@ -5552,7 +5661,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5602,7 +5714,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5645,7 +5760,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5697,7 +5815,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5749,7 +5870,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5801,7 +5925,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5848,10 +5975,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5894,7 +6030,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5939,7 +6078,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -5986,7 +6128,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6044,7 +6189,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6080,7 +6228,7 @@
     "numeric_id_game_version": null,
     "objectives": [
       {
-        "quantity": 3,
+        "quantity": 1,
         "target_id": "obsidian",
         "type": "deliver"
       }
@@ -6100,7 +6248,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6143,7 +6294,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6186,7 +6340,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6214,7 +6371,7 @@
     "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": "dozy",
+    "giver_character_id": "juniper",
     "icon_key": "quest/request",
     "id": "request_for_a_tidestone",
     "id_status": "provisional",
@@ -6235,10 +6392,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6282,6 +6448,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6311,9 +6480,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "eiland",
@@ -6324,7 +6491,13 @@
     "name": "Request for Eggs",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 3,
+        "target_id": "egg",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "coop",
@@ -6335,6 +6508,9 @@
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6381,6 +6557,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6437,7 +6616,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6581,7 +6763,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6633,7 +6818,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6676,7 +6864,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6722,6 +6913,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6772,6 +6966,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6825,10 +7022,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6871,7 +7077,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -6919,6 +7128,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -6968,7 +7180,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7013,7 +7228,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7059,6 +7277,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -7088,9 +7309,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "errol",
@@ -7101,7 +7320,13 @@
     "name": "Request for Iron Armor",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "iron_armor",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "the_tide_caverns",
@@ -7117,7 +7342,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7161,6 +7389,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -7210,7 +7441,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7235,9 +7469,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "errol",
@@ -7248,7 +7480,13 @@
     "name": "Request for a Scarecrow",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "starter_scarecrow",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "woodcrafting",
@@ -7258,7 +7496,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7301,7 +7542,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7350,10 +7594,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7403,7 +7656,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7454,6 +7710,9 @@
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -7508,7 +7767,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7558,7 +7820,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7583,9 +7848,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "hayden",
@@ -7596,10 +7859,19 @@
     "name": "Request for Wood Fencing",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 5,
+        "target_id": "starter_wood_fence",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7648,10 +7920,19 @@
         "op": "done",
         "type": "quest",
         "value": null
+      },
+      {
+        "key": "repair_the_mill",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7701,7 +7982,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7746,7 +8030,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7791,7 +8078,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -7837,6 +8127,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -7887,6 +8180,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -7943,7 +8239,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8001,7 +8300,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8051,7 +8353,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8074,9 +8379,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "hemlock",
@@ -8087,7 +8390,13 @@
     "name": "Request for a Potted Plant",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "starter_potted_plant",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "woodcrafting",
@@ -8097,7 +8406,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8140,7 +8452,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8192,7 +8507,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8235,7 +8553,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8287,7 +8608,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8330,7 +8654,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8384,7 +8711,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8434,7 +8764,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8484,7 +8817,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8527,7 +8863,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8572,7 +8911,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8624,7 +8966,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8670,6 +9015,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -8726,7 +9074,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8769,7 +9120,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8814,7 +9168,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -8852,7 +9209,7 @@
     "numeric_id_game_version": null,
     "objectives": [
       {
-        "quantity": 3,
+        "quantity": 1,
         "target_id": "crystal_berries",
         "type": "deliver"
       }
@@ -8872,14 +9229,17 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
-      "tesserae": 300
+      "tesserae": 250
     },
     "season_restriction": null,
     "teaches_recipe_ids": [],
@@ -8915,14 +9275,17 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
-      "tesserae": 250
+      "tesserae": 300
     },
     "season_restriction": null,
     "teaches_recipe_ids": [],
@@ -8958,7 +9321,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9003,7 +9369,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9055,7 +9424,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9102,10 +9474,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9155,7 +9536,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9198,7 +9582,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9256,7 +9643,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9302,6 +9692,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -9358,7 +9751,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9402,6 +9798,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -9458,7 +9857,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9508,7 +9910,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9553,7 +9958,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9605,7 +10013,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9661,7 +10072,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9704,7 +10118,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9758,7 +10175,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9801,7 +10221,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9851,7 +10274,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9894,7 +10320,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9946,7 +10375,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -9989,7 +10421,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10039,7 +10474,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10095,7 +10533,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10151,7 +10592,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10203,7 +10647,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10253,7 +10700,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10305,7 +10755,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10328,9 +10781,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "luc",
@@ -10341,10 +10792,19 @@
     "name": "Request for a Pond Skater",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "pond_skater",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10404,7 +10864,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10454,7 +10917,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10497,7 +10963,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10544,7 +11013,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10591,7 +11063,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10641,7 +11116,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10684,7 +11162,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10736,14 +11217,17 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
-      "tesserae": 10
+      "tesserae": 100
     },
     "season_restriction": null,
     "teaches_recipe_ids": [],
@@ -10772,7 +11256,7 @@
     "numeric_id_game_version": null,
     "objectives": [
       {
-        "quantity": 5,
+        "quantity": 1,
         "target_id": "armored_bass",
         "type": "deliver"
       }
@@ -10792,7 +11276,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10842,7 +11329,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10886,6 +11376,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -10939,10 +11432,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_water_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -10998,7 +11500,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11056,7 +11561,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11079,9 +11587,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "march",
@@ -11092,7 +11598,13 @@
     "name": "Request for a Shipping Bin",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "starter_shipping_box",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "woodcrafting",
@@ -11102,7 +11614,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11149,10 +11664,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11208,7 +11732,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11258,7 +11785,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11281,9 +11811,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "merri",
@@ -11294,7 +11822,13 @@
     "name": "Request for a Hay Bale",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "spooky_haybale",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "greet_the_vendors",
@@ -11304,7 +11838,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11347,7 +11884,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11405,7 +11945,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11457,7 +12000,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11509,7 +12055,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11565,7 +12114,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11608,7 +12160,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11653,7 +12208,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11711,7 +12269,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11754,7 +12315,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11799,7 +12363,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11844,7 +12411,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11902,7 +12472,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11952,7 +12525,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -11999,10 +12575,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12054,7 +12639,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12106,7 +12694,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12149,7 +12740,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12202,6 +12796,9 @@
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12252,6 +12849,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12302,6 +12902,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12352,6 +12955,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12405,10 +13011,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12460,7 +13075,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12505,7 +13123,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12550,7 +13171,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12598,6 +13222,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12660,7 +13287,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12710,7 +13340,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12760,7 +13393,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12804,6 +13440,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -12853,7 +13492,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12905,7 +13547,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -12955,7 +13600,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13005,7 +13653,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13055,7 +13706,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13105,7 +13759,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13155,7 +13812,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13202,10 +13862,19 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "the_earth_tablet",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13259,6 +13928,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13309,6 +13981,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13371,7 +14046,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13421,7 +14099,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13468,17 +14149,26 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
-      "tesserae": 70
+      "tesserae": 750
     },
     "season_restriction": null,
     "teaches_recipe_ids": [],
@@ -13521,7 +14211,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13569,7 +14262,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13616,7 +14312,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13662,6 +14361,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13712,6 +14414,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13761,7 +14466,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13786,9 +14494,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "valen",
@@ -13799,7 +14505,13 @@
     "name": "Request for a Bird House",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "starter_bird_house_red",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "woodcrafting",
@@ -13809,7 +14521,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13852,7 +14567,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13904,7 +14622,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -13948,6 +14669,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -13998,6 +14722,9 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": true,
@@ -14054,7 +14781,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14110,7 +14840,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14160,7 +14893,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14212,7 +14948,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14262,7 +15001,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14312,7 +15054,10 @@
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -14335,9 +15080,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "wheedle",
@@ -14348,7 +15091,13 @@
     "name": "Request for a Written Root",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "written_root",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [
       {
         "key": "upgrade_the_saturday_market",
@@ -14361,14 +15110,27 @@
         "op": "has",
         "type": "location",
         "value": null
+      },
+      {
+        "key": "breaking_the_ruins_seal",
+        "op": "done",
+        "type": "quest",
+        "value": null
       }
     ],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": true,
     "required_items": [],
-    "rewards": null,
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 800
+    },
     "season_restriction": null,
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
@@ -14403,7 +15165,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14446,7 +15211,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14489,7 +15257,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14532,7 +15303,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14575,14 +15349,17 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
     "rewards": {
       "item_ids": [],
       "renown": 20,
-      "tesserae": 670
+      "tesserae": 675
     },
     "season_restriction": null,
     "teaches_recipe_ids": [],
@@ -14618,7 +15395,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14661,7 +15441,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14704,7 +15487,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14747,7 +15533,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14790,7 +15579,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14833,7 +15625,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14876,7 +15671,10 @@
     ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
@@ -14899,9 +15697,7 @@
     "also_known_as": [],
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "objectives"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "v0-14-1",
     "giver_character_id": "priestess",
@@ -14912,14 +15708,27 @@
     "name": "Request for Void Stone",
     "numeric_id": null,
     "numeric_id_game_version": null,
-    "objectives": [],
+    "objectives": [
+      {
+        "quantity": 3,
+        "target_id": "void_stone",
+        "type": "deliver"
+      }
+    ],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files",
+      "objectives": "game_files",
+      "rewards": "game_files"
     },
     "repeatable": false,
     "required_items": [],
-    "rewards": null,
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 1000
+    },
     "season_restriction": null,
     "teaches_recipe_ids": [],
     "unlocks_location_ids": [],
@@ -16972,6 +17781,706 @@
     "unlocks_stock_shop_ids": [],
     "version_added": null,
     "wiki_page": "Quests"
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "louis",
+    "icon_key": "quest/request",
+    "id": "request_for_apple_pie",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Apple Pie",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "apple_pie",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "greet_the_vendors",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 750
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "zorel",
+    "icon_key": "quest/request",
+    "id": "request_for_bell_berries",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Bell Berries",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 3,
+        "target_id": "bell_berry",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 400
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "elsie",
+    "icon_key": "quest/request",
+    "id": "request_for_blueberry_jam",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Blueberry Jam",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 3,
+        "target_id": "blueberry_jam",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 1000
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "priestess",
+    "icon_key": "quest/request",
+    "id": "request_for_butterfly",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for a Butterfly",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "butterfly",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 550
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "dell",
+    "icon_key": "quest/request",
+    "id": "request_for_cherry_tart",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for a Cherry Tart",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "cherry_tart",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 75
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "stillwell",
+    "icon_key": "quest/request",
+    "id": "request_for_coffee",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Coffee",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "coffee",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 200
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "luc",
+    "icon_key": "quest/request",
+    "id": "request_for_crab",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for a Crab",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "crab",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 20
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "taliferro",
+    "icon_key": "quest/request",
+    "id": "request_for_duck_mayonnaise",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Duck Mayo",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "duck_mayonnaise",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 500
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "stillwell",
+    "icon_key": "quest/request",
+    "id": "request_for_fire_crystal",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Fire Crystal",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "fire_crystal",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 600
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "zorel",
+    "icon_key": "quest/request",
+    "id": "request_for_glowing_mushroom",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for a Glowing Mushroom",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "glowing_mushroom",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 500
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "taliferro",
+    "icon_key": "quest/request",
+    "id": "request_for_golden_duck_mayonnaise",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Golden Duck Mayonnaise",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "golden_duck_mayonnaise",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "request_for_duck_mayonnaise",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 1000
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "zorel",
+    "icon_key": "quest/request",
+    "id": "request_for_mushroom_rice",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Mushroom Rice",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "mushroom_rice",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 450
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "stillwell",
+    "icon_key": "quest/request",
+    "id": "request_for_poached_pear",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for a Poached Pear",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 1,
+        "target_id": "poached_pear",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "upgrade_the_saturday_market",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 600
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
+  },
+  {
+    "also_known_as": [],
+    "blurb": null,
+    "confidence": "verified",
+    "data_gaps": [
+      "repeatable"
+    ],
+    "former_ids": [],
+    "game_version": "1.0.0",
+    "giver_character_id": "merri",
+    "icon_key": "quest/request",
+    "id": "request_for_wood_2",
+    "id_status": "confirmed",
+    "kind": "request",
+    "name": "Request for Wood",
+    "numeric_id": null,
+    "numeric_id_game_version": null,
+    "objectives": [
+      {
+        "quantity": 10,
+        "target_id": "basic_wood",
+        "type": "deliver"
+      }
+    ],
+    "prerequisites": [
+      {
+        "key": "greet_the_vendors",
+        "op": "done",
+        "type": "quest",
+        "value": null
+      }
+    ],
+    "prov": {
+      "*": "game_files"
+    },
+    "repeatable": false,
+    "required_items": [],
+    "rewards": {
+      "item_ids": [],
+      "renown": 20,
+      "tesserae": 175
+    },
+    "season_restriction": null,
+    "teaches_recipe_ids": [],
+    "unlocks_location_ids": [],
+    "unlocks_mine_ids": [],
+    "unlocks_quest_ids": [],
+    "unlocks_shop_ids": [],
+    "unlocks_stock_shop_ids": [],
+    "version_added": null,
+    "wiki_page": null
   },
   {
     "also_known_as": [],

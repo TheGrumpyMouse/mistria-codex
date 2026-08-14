@@ -150,7 +150,8 @@ async function main(): Promise<void> {
   )
   consola.info(
     `quests: ${extract.quests.storyQuests.length} story · ` +
-      `${extract.quests.requestGates.length} gated requests`,
+      `${extract.quests.requestGates.length} gated requests · ` +
+      `${extract.quests.boardRequests.length} board requests`,
   )
   const stockLines = extract.stores.stores.reduce(
     (n, s) => n + s.categories.reduce((m, c) => m + c.entries.length, 0),

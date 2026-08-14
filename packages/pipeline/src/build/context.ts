@@ -311,6 +311,8 @@ export interface BuildContext {
   /**
    * Wiki quest-giver name -> character id, where slugifying cannot get there.
    * The 13 board requests posted by "Caldarus Human" and "Seridia Human".
+   * Since the fetch_quests extract, the game states every request's giver and
+   * this alias is the wiki-path fallback — the game confirmed the judgement.
    * See curated/aliases/quest_givers.json.
    */
   questGiverAliases: Record<string, string>

@@ -24,6 +24,7 @@
   ],
   "records": {
     "characters": ["caldarus"],
+    "items": ["caldarus_dragonsworn_statue", "seridias_dragonsworn_armor"],
     "quests": [
       "creating_the_void_mass",
       "breaking_the_ruins_seal",

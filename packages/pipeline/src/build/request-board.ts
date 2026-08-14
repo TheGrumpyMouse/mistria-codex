@@ -4,18 +4,17 @@
  * `data/` keeps quests normalised and reviewable: a request references an item
  * by id and a gate by key, and resolving either means loading another dataset.
  * That is right for a file people read in pull requests and wrong for a screen —
- * `items.json` is a megabyte, and downloading all of it to print 193 names is
+ * `items.json` is a megabyte, and downloading all of it to print ~200 names is
  * exactly the multi-megabyte parse the plan says freezes a mid-range phone.
  *
  * So this is a shipped form, like `availability.json`: one row per request with
  * the names already in it. About 60KB for the whole board.
  *
- * **The pool is fixed; the draw is random.** The wiki says the posted requests
- * "are generally randomized, however some will not appear until certain
- * conditions are met" — so this file is the complete set of things that can ever
- * be asked of you, and `gates` is what decides whether a given one is in the hat
- * yet. A board that listed all 212 regardless would be true of the pool and
- * false of the game.
+ * **The pool is fixed; the draw is random.** The game's `fetch_quests.toml`
+ * states all 226 pool members outright (since 1.5.1 the records are game-first
+ * — the wiki's list was 212 and missing eleven item lists), and `gates` is
+ * what decides whether a given one is in the hat yet. A board that listed
+ * everything regardless would be true of the pool and false of the game.
  */
 import type { Item, Location, Quest, Requirement, Skill } from '@mistria/schema'
 

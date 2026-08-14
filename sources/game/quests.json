@@ -1,4 +1,3747 @@
 {
+  "boardRequests": [
+    {
+      "id": "request_for_a_miners_pickaxe",
+      "items": [
+        {
+          "id": "miners_pickaxe",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Miner's Pickaxe",
+      "npc": "olric",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_a_red_toadstool",
+      "items": [
+        {
+          "id": "red_toadstool",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Red Toadstool",
+      "npc": "juniper",
+      "reward_gold": 50,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_a_rock",
+      "items": [
+        {
+          "id": "ore_stone",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Rock",
+      "npc": "olric",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "miners_crate_chair_v1"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_acorn",
+      "items": [
+        {
+          "id": "acorn",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Acorns",
+      "npc": "dell",
+      "reward_gold": 70,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_apple",
+      "items": [
+        {
+          "id": "apple",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Apple",
+      "npc": "balor",
+      "reward_gold": 180,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_apple_pie",
+      "items": [
+        {
+          "id": "apple_pie",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Apple Pie",
+      "npc": "louis",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_armored_bass",
+      "items": [
+        {
+          "id": "armored_bass",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Armored Bass",
+      "npc": "march",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bait",
+      "items": [
+        {
+          "id": "worm",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Bait",
+      "npc": "terithia",
+      "reward_gold": 40,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_baked_potato",
+      "items": [
+        {
+          "id": "baked_potato",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Baked Potato",
+      "npc": "hayden",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "loaded_baked_potato"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_basil_thyme",
+      "items": [
+        {
+          "id": "basil",
+          "quantity": 1
+        },
+        {
+          "id": "thyme",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Herbs",
+      "npc": "valen",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "herb_salad"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_beet",
+      "items": [
+        {
+          "id": "beet",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Beet",
+      "npc": "holt",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_beet_soup",
+      "items": [
+        {
+          "id": "beet_soup",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Beet Soup",
+      "npc": "taliferro",
+      "reward_gold": 650,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bell_berries",
+      "items": [
+        {
+          "id": "bell_berry",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Bell Berries",
+      "npc": "zorel",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bell_berry_bakewell",
+      "items": [
+        {
+          "id": "bell_berry_bakewell_tart",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Bell Berry Bakewell Tart",
+      "npc": "holt",
+      "reward_gold": 350,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_berries",
+      "items": [
+        {
+          "id": "wild_berries",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Berries",
+      "npc": "eiland",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "berries_and_cream"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_berries_gold",
+      "items": [
+        {
+          "id": "wild_berries",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Berries",
+      "npc": "errol",
+      "reward_gold": 40,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bird_house",
+      "items": [
+        {
+          "id": "starter_bird_house_red",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Bird House",
+      "npc": "valen",
+      "reward_gold": 430,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_blackberries",
+      "items": [
+        {
+          "id": "blackberry",
+          "quantity": 6
+        }
+      ],
+      "name": "Request for Blackberries",
+      "npc": "elsie",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "blackberry_jam"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_blackberries_2",
+      "items": [
+        {
+          "id": "blackberry",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Blackberries",
+      "npc": "hayden",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_blueberries",
+      "items": [
+        {
+          "id": "blueberry",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Blueberries",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "blueberry_jam"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_blueberry_jam",
+      "items": [
+        {
+          "id": "blueberry_jam",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Blueberry Jam",
+      "npc": "elsie",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bomb",
+      "items": [
+        {
+          "id": "bomb",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Bomb",
+      "npc": "seridia",
+      "reward_gold": 700,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_breath_of_flame",
+      "items": [
+        {
+          "id": "breath_of_fire",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Breath of Flame",
+      "npc": "nora",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bristles",
+      "items": [
+        {
+          "id": "bristle",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Capybara Bristles",
+      "npc": "juniper",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_broccoli",
+      "items": [
+        {
+          "id": "broccoli",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Broccoli",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "broccoli_salad"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_bull_horn",
+      "items": [
+        {
+          "id": "bull_horn",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Bull Horns",
+      "npc": "ryis",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_burdock_root",
+      "items": [
+        {
+          "id": "burdock_root",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Burdock Root",
+      "npc": "nora",
+      "reward_gold": 240,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_butter",
+      "items": [
+        {
+          "id": "butter",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Butter",
+      "npc": "reina",
+      "reward_gold": 270,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_butterfly",
+      "items": [
+        {
+          "id": "butterfly",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Butterfly",
+      "npc": "seridia",
+      "reward_gold": 550,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cabbage",
+      "items": [
+        {
+          "id": "cabbage",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Cabbage",
+      "npc": "holt",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_carrot",
+      "items": [
+        {
+          "id": "carrot",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for a Carrot",
+      "npc": "juniper",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_caterpillar",
+      "items": [
+        {
+          "id": "caterpillar",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Caterpillar",
+      "npc": "hemlock",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "riceball"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_catfish",
+      "items": [
+        {
+          "id": "catfish",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Catfish",
+      "npc": "hemlock",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "breaded_catfish"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cauliflower",
+      "items": [
+        {
+          "id": "cauliflower",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Cauliflower",
+      "npc": "holt",
+      "reward_gold": 225,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cheese",
+      "items": [
+        {
+          "id": "cheese",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Cheese",
+      "npc": "luc",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cherry_tart",
+      "items": [
+        {
+          "id": "cherry_tart",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Cherry Tart",
+      "npc": "dell",
+      "reward_gold": 75,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_chestnuts",
+      "items": [
+        {
+          "id": "chestnut",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Chestnuts",
+      "npc": "dell",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "apple"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_chili_pepper",
+      "items": [
+        {
+          "id": "chili_pepper",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Chili Peppers",
+      "npc": "josephine",
+      "reward_gold": 310,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_clam",
+      "items": [
+        {
+          "id": "clam",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Clam",
+      "npc": "errol",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "clam_chowder"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_clay",
+      "items": [
+        {
+          "id": "clay",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Art Supplies",
+      "npc": "nora",
+      "reward_gold": 50,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_coconuts",
+      "items": [
+        {
+          "id": "coconut",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Coconuts",
+      "npc": "landen",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "coconut_milk"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_coconuts_2",
+      "items": [
+        {
+          "id": "coconut",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Coconuts",
+      "npc": "darcy",
+      "reward_gold": 155,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cod",
+      "items": [
+        {
+          "id": "cod",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Cod",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "cod_with_thyme"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_coelacanth",
+      "items": [
+        {
+          "id": "coelacanth",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Coelacanth",
+      "npc": "terithia",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_coffee",
+      "items": [
+        {
+          "id": "coffee",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Coffee",
+      "npc": "stillwell",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_common_bait",
+      "items": [
+        {
+          "id": "fish_bait_common",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Common Bait",
+      "npc": "terithia",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_common_pheromone",
+      "items": [
+        {
+          "id": "bug_pheromone_common",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Common Pheromone",
+      "npc": "maple",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_copper",
+      "items": [
+        {
+          "id": "ore_copper",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Copper",
+      "npc": "march",
+      "reward_gold": 75,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_copper_beetle",
+      "items": [
+        {
+          "id": "copper_beetle",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Copper Beetle",
+      "npc": "luc",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "trail_mix"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_copper_ingot",
+      "items": [
+        {
+          "id": "copper_ingot",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Copper Ingot",
+      "npc": "balor",
+      "reward_gold": 220,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_copper_net",
+      "items": [
+        {
+          "id": "net_copper",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Copper Net",
+      "npc": "hemlock",
+      "reward_gold": 520,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_copper_shovel",
+      "items": [
+        {
+          "id": "shovel_copper",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Copper Shovel",
+      "npc": "celine",
+      "reward_gold": 960,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_coral",
+      "items": [
+        {
+          "id": "coral",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Coral",
+      "npc": "celine",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_corn",
+      "items": [
+        {
+          "id": "corn",
+          "quantity": 4
+        }
+      ],
+      "name": "Request for Corn",
+      "npc": "nora",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_corrupted_mistril_sword",
+      "items": [
+        {
+          "id": "sword_corrupted_mistril",
+          "quantity": 1
+        }
+      ],
+      "name": "Corrupted Mistril Sword Request",
+      "npc": "errol",
+      "reward_gold": 1500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_crab",
+      "items": [
+        {
+          "id": "crab",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Crab",
+      "npc": "luc",
+      "reward_gold": 20,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cranberry_orange",
+      "items": [
+        {
+          "id": "cranberry",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Cranberries",
+      "npc": "ryis",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "cranberry_orange_scone"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_crocus",
+      "items": [
+        {
+          "id": "crocus",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Crocus",
+      "npc": "dell",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_crystal",
+      "items": [
+        {
+          "id": "crystal",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Crystals",
+      "npc": "juniper",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_crystal_berries",
+      "items": [
+        {
+          "id": "crystal_berries",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Crystal Berries",
+      "npc": "josephine",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_cucumbers",
+      "items": [
+        {
+          "id": "cucumber",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Cucumbers",
+      "npc": "valen",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_daikon",
+      "items": [
+        {
+          "id": "daikon_radish",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Daikon Radish",
+      "npc": "vera",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "winter_stew"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_deep_earthworm",
+      "items": [
+        {
+          "id": "deep_earthworm",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Deep Earthworm",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "coconut_cream_pie"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_deluxe_honey",
+      "items": [
+        {
+          "id": "honey_deluxe",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Deluxe Honey",
+      "npc": "reina",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_diamond",
+      "items": [
+        {
+          "id": "ore_diamond",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Diamond",
+      "npc": "olric",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_dill",
+      "items": [
+        {
+          "id": "dill",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Dill",
+      "npc": "josephine",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_dog_treat",
+      "items": [
+        {
+          "id": "dog_treat",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Dog Treat",
+      "npc": "caldarus",
+      "reward_gold": 510,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_dragon_forged_bracelet",
+      "items": [
+        {
+          "id": "dragon_forged_bracelet",
+          "quantity": 1
+        }
+      ],
+      "name": "Dragon-Forged Bracelet Request",
+      "npc": "march",
+      "reward_gold": 999,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_dragon_forged_core",
+      "items": [
+        {
+          "id": "dragon_forged_core",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Dragon Forged Core",
+      "npc": "seridia",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_dragon_horn_beetle",
+      "items": [
+        {
+          "id": "dragon_horn_beetle",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Dragon Horn Beetle",
+      "npc": "luc",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_duck_egg",
+      "items": [
+        {
+          "id": "duck_egg",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Duck Egg",
+      "npc": "juniper",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_duck_mayonnaise",
+      "items": [
+        {
+          "id": "duck_mayonnaise",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Duck Mayo",
+      "npc": "taliferro",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_earthshroom",
+      "items": [
+        {
+          "id": "earthshroom",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Earthshroom",
+      "npc": "terithia",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "sea_bream_rice"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_eel",
+      "items": [
+        {
+          "id": "freshwater_eel",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Freshwater Eel",
+      "npc": "march",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "grilled_eel_rice_bowl"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_egg",
+      "items": [
+        {
+          "id": "egg",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Eggs",
+      "npc": "eiland",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "hard_boiled_egg"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_emerald",
+      "items": [
+        {
+          "id": "ore_emerald",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Emerald",
+      "npc": "balor",
+      "reward_gold": 180,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_emeralds",
+      "items": [
+        {
+          "id": "ore_emerald",
+          "quantity": 7
+        }
+      ],
+      "name": "Request for Emeralds",
+      "npc": "wheedle",
+      "reward_gold": 415,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 40,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fennel",
+      "items": [
+        {
+          "id": "fennel",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Fennel",
+      "npc": "celine",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "spring_salad"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fiddlehead",
+      "items": [
+        {
+          "id": "fiddlehead",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Fiddlehead",
+      "npc": "merri",
+      "reward_gold": 310,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fire_crystal",
+      "items": [
+        {
+          "id": "fire_crystal",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Fire Crystal",
+      "npc": "stillwell",
+      "reward_gold": 600,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fire_wasp",
+      "items": [
+        {
+          "id": "fire_wasp",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Fire Wasp",
+      "npc": "seridia",
+      "reward_gold": 666,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fog_orchid",
+      "items": [
+        {
+          "id": "fog_orchid",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Fog Orchid",
+      "npc": "juniper",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_freshwater_oyster",
+      "items": [
+        {
+          "id": "freshwater_oyster",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Freshwater Oyster",
+      "npc": "maple",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_fried_rice",
+      "items": [
+        {
+          "id": "fried_rice",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Fried Rice",
+      "npc": "caldarus",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_frog",
+      "items": [
+        {
+          "id": "frog",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Frog",
+      "npc": "dell",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_gardening_supplies",
+      "items": [
+        {
+          "id": "sod",
+          "quantity": 1
+        },
+        {
+          "id": "peat",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Gardening Materials",
+      "npc": "celine",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "daffodil",
+        "tulip"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_garlic",
+      "items": [
+        {
+          "id": "garlic",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Garlic",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "garlic_bread"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_glass",
+      "items": [
+        {
+          "id": "glass",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Glass",
+      "npc": "landen",
+      "reward_gold": 240,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_glowberry",
+      "items": [
+        {
+          "id": "glowberry",
+          "quantity": 12
+        }
+      ],
+      "name": "Request for Glowberries",
+      "npc": "ryis",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "glowberry_cookies"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_glowing_mushroom",
+      "items": [
+        {
+          "id": "glowing_mushroom",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Glowing Mushroom",
+      "npc": "zorel",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_goby",
+      "items": [
+        {
+          "id": "goby",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Goby",
+      "npc": "holt",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_gold_ingots",
+      "items": [
+        {
+          "id": "gold_ingot",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Gold Ingots",
+      "npc": "wheedle",
+      "reward_gold": 810,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 40,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_gold_ore",
+      "items": [
+        {
+          "id": "ore_gold",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Gold Ore",
+      "npc": "balor",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_golden_butter",
+      "items": [
+        {
+          "id": "golden_butter",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Golden Butter",
+      "npc": "nora",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_golden_cookies",
+      "items": [
+        {
+          "id": "golden_cookies",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Golden Cookies",
+      "npc": "wheedle",
+      "reward_gold": 2100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_golden_duck_mayonnaise",
+      "items": [
+        {
+          "id": "golden_duck_mayonnaise",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Golden Duck Mayonnaise",
+      "npc": "taliferro",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_grilled_corn",
+      "items": [
+        {
+          "id": "grilled_corn",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Grilled Corn",
+      "npc": "nora",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_hard_wood",
+      "items": [
+        {
+          "id": "hard_wood",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Hardwood",
+      "npc": "merri",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_hay",
+      "items": [
+        {
+          "id": "hay",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Hay",
+      "npc": "hayden",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "cow_milk"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_haybale",
+      "items": [
+        {
+          "id": "spooky_haybale",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Hay Bale",
+      "npc": "merri",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_heather",
+      "items": [
+        {
+          "id": "heather",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Heather",
+      "npc": "adeline",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_holly",
+      "items": [
+        {
+          "id": "holly",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Holly",
+      "npc": "louis",
+      "reward_gold": 310,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_horse_hair",
+      "items": [
+        {
+          "id": "horse_hair",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Horse Hair",
+      "npc": "merri",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_horseradish_salmon",
+      "items": [
+        {
+          "id": "salmon",
+          "quantity": 1
+        },
+        {
+          "id": "horseradish",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Ingredients",
+      "npc": "terithia",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "horseradish_salmon"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_ice",
+      "items": [
+        {
+          "id": "ice_block",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Ice",
+      "npc": "josephine",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "wintergreen_ice_cream"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_iron",
+      "items": [
+        {
+          "id": "ore_iron",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Iron",
+      "npc": "dell",
+      "reward_gold": 30,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_iron_armor",
+      "items": [
+        {
+          "id": "iron_armor",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Iron Armor",
+      "npc": "errol",
+      "reward_gold": 1450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_iron_ingot",
+      "items": [
+        {
+          "id": "iron_ingot",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Iron Ingot",
+      "npc": "march",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_iron_shovel",
+      "items": [
+        {
+          "id": "shovel_iron",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Iron Shovel",
+      "npc": "seridia",
+      "reward_gold": 777,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_iron_watering_can",
+      "items": [
+        {
+          "id": "watering_can_iron",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Iron Watering Can",
+      "npc": "adeline",
+      "reward_gold": 2200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_lake_trout",
+      "items": [
+        {
+          "id": "lake_trout",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Lake Trout",
+      "npc": "holt",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_latte",
+      "items": [
+        {
+          "id": "latte",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Latte",
+      "npc": "seridia",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_legendary_honey",
+      "items": [
+        {
+          "id": "honey_legendary",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Legendary Honey",
+      "npc": "darcy",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_lemon",
+      "items": [
+        {
+          "id": "lemon",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Lemon",
+      "npc": "adeline",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "cup_of_tea"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_lobster",
+      "items": [
+        {
+          "id": "lobster",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Lobster",
+      "npc": "caldarus",
+      "reward_gold": 445,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_materials",
+      "items": [
+        {
+          "id": "basic_wood",
+          "quantity": 10
+        },
+        {
+          "id": "ore_stone",
+          "quantity": 10
+        }
+      ],
+      "name": "Request for Materials",
+      "npc": "ryis",
+      "reward_gold": 80,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_middlemist",
+      "items": [
+        {
+          "id": "middlemist",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Middlemist",
+      "npc": "louis",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_milk",
+      "items": [
+        {
+          "id": "cow_milk",
+          "quantity": 4
+        }
+      ],
+      "name": "Request for Milk",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "ice_cream_sundae"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_mistril_ingot",
+      "items": [
+        {
+          "id": "mistril_ingot",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Mistril Ingot",
+      "npc": "adeline",
+      "reward_gold": 1250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_mistril_ore",
+      "items": [
+        {
+          "id": "ore_mistril",
+          "quantity": 4
+        }
+      ],
+      "name": "Request for Mistril Ore",
+      "npc": "march",
+      "reward_gold": 780,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_core",
+      "items": [
+        {
+          "id": "monster_core",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Monster Core",
+      "npc": "juniper",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_fang",
+      "items": [
+        {
+          "id": "monster_fang",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Monster Fang",
+      "npc": "louis",
+      "reward_gold": 220,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_horn",
+      "items": [
+        {
+          "id": "monster_horn",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Monster Horn",
+      "npc": "holt",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_mash",
+      "items": [
+        {
+          "id": "monster_mash",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Monster Mash",
+      "npc": "caldarus",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_powder",
+      "items": [
+        {
+          "id": "monster_powder",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Monster Powder",
+      "npc": "juniper",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "monster_mash"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_monster_shell",
+      "items": [
+        {
+          "id": "monster_shell",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for a Monster Shell",
+      "npc": "march",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "iron_ingot"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_mont_blanc",
+      "items": [
+        {
+          "id": "mont_blanc",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Mont Blanc",
+      "npc": "seridia",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_moon",
+      "items": [
+        {
+          "id": "moon_fruit",
+          "quantity": 1
+        }
+      ],
+      "name": "Important Request for a Moon Fruit",
+      "npc": "juniper",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "moon_fruit_cake"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_moon_fruit",
+      "items": [
+        {
+          "id": "moon_fruit",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Moon Fruit",
+      "npc": "eiland",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "caramelized_moon_fruit"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_more_wildberries",
+      "items": [
+        {
+          "id": "wild_berries",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Berries",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "wildberry_pie"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_morel_mushroom",
+      "items": [
+        {
+          "id": "morel_mushroom",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Morel Mushroom",
+      "npc": "valen",
+      "reward_gold": 75,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_mullet",
+      "items": [
+        {
+          "id": "mullet",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Mullet",
+      "npc": "maple",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "chocolate"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_mushroom_rice",
+      "items": [
+        {
+          "id": "mushroom_rice",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Mushroom Rice",
+      "npc": "zorel",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_night_queen",
+      "items": [
+        {
+          "id": "night_queen",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Night Queen",
+      "npc": "juniper",
+      "reward_gold": 600,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_noodles",
+      "items": [
+        {
+          "id": "noodles",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Noodles",
+      "npc": "josephine",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_obsidian",
+      "items": [
+        {
+          "id": "obsidian",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Obsidian",
+      "npc": "dell",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_onion",
+      "items": [
+        {
+          "id": "onion",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Onion",
+      "npc": "nora",
+      "reward_gold": 270,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_orange",
+      "items": [
+        {
+          "id": "orange",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for an Orange",
+      "npc": "elsie",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "marmalade"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_oyster_mushrooms",
+      "items": [
+        {
+          "id": "oyster_mushroom",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Oyster Mushrooms",
+      "npc": "olric",
+      "reward_gold": 310,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_peaches",
+      "items": [
+        {
+          "id": "peach",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Peaches",
+      "npc": "darcy",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pear",
+      "items": [
+        {
+          "id": "pear",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Pears",
+      "npc": "errol",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_peas",
+      "items": [
+        {
+          "id": "peas",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Peas",
+      "npc": "hayden",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_perch",
+      "items": [
+        {
+          "id": "perch",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Perch",
+      "npc": "errol",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "perch_risotto"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pike",
+      "items": [
+        {
+          "id": "pike",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pike",
+      "npc": "olric",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pineshrooms",
+      "items": [
+        {
+          "id": "pineshroom",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Pineshrooms",
+      "npc": "adeline",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "pineshroom_toast"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pink_diamond",
+      "items": [
+        {
+          "id": "ore_pink_diamond",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pink Diamond",
+      "npc": "balor",
+      "reward_gold": 650,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pink_scallop_shell",
+      "items": [
+        {
+          "id": "pink_scallop_shell",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Seashell",
+      "npc": "maple",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "tulip"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_poached_pear",
+      "items": [
+        {
+          "id": "poached_pear",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Poached Pear",
+      "npc": "stillwell",
+      "reward_gold": 600,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pomegranate",
+      "items": [
+        {
+          "id": "pomegranate",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pomegranate",
+      "npc": "darcy",
+      "reward_gold": 175,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pomegranate_juice",
+      "items": [
+        {
+          "id": "pomegranate_juice",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Pomegranate Juice",
+      "npc": "vera",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pond_skater",
+      "items": [
+        {
+          "id": "pond_skater",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pond Skater",
+      "npc": "luc",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "grilled_cheese"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_potted_plant",
+      "items": [
+        {
+          "id": "starter_potted_plant",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Potted Plant",
+      "npc": "hemlock",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_premium_honey",
+      "items": [
+        {
+          "id": "honey_premium",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Premium Honey",
+      "npc": "valen",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pudding",
+      "items": [
+        {
+          "id": "pudding",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Pudding",
+      "npc": "eiland",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pumpkin",
+      "items": [
+        {
+          "id": "pumpkin",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pumpkin",
+      "npc": "eiland",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_pumpkin_pie",
+      "items": [
+        {
+          "id": "pumpkin_pie",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Pumpkin Pie",
+      "npc": "caldarus",
+      "reward_gold": 675,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rabbit_wool",
+      "items": [
+        {
+          "id": "rabbit_wool",
+          "quantity": 4
+        }
+      ],
+      "name": "Request for Rabbit Wool",
+      "npc": "louis",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rare_bait",
+      "items": [
+        {
+          "id": "fish_bait_rare",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Rare Bait",
+      "npc": "landen",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rare_pheromone",
+      "items": [
+        {
+          "id": "bug_pheromone_rare",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Rare Pheromone",
+      "npc": "juniper",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_red_wine",
+      "items": [
+        {
+          "id": "red_wine",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Red Wine",
+      "npc": "taliferro",
+      "reward_gold": 310,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rice",
+      "items": [
+        {
+          "id": "rice",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Rice",
+      "npc": "hemlock",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_riceball",
+      "items": [
+        {
+          "id": "riceball",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Riceball",
+      "npc": "vera",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_roasted_chestnuts",
+      "items": [
+        {
+          "id": "chestnut",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Chestnuts",
+      "npc": "hemlock",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "roasted_chestnuts"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rooster_feather",
+      "items": [
+        {
+          "id": "feather",
+          "quantity": 4
+        }
+      ],
+      "name": "Request for Rooster Feathers",
+      "npc": "josephine",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rose_hip",
+      "items": [
+        {
+          "id": "rose_hip",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Rose Hips",
+      "npc": "valen",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "rosehip_jam"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_rosemary",
+      "items": [
+        {
+          "id": "rosemary",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Rosemary",
+      "npc": "reina",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_roses",
+      "items": [
+        {
+          "id": "rose",
+          "quantity": 12
+        }
+      ],
+      "name": "Request for Roses",
+      "npc": "elsie",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_round_rock",
+      "items": [
+        {
+          "id": "really_round_rock",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Really Round Rock",
+      "npc": "olric",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "cavern_rock_flooring"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_ruby",
+      "items": [
+        {
+          "id": "ore_ruby",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Ruby",
+      "npc": "balor",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_salmon",
+      "items": [
+        {
+          "id": "salmon",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Salmon",
+      "npc": "josephine",
+      "reward_gold": 50,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_salted_watermelon",
+      "items": [
+        {
+          "id": "salted_watermelon",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Salted Watermelon",
+      "npc": "vera",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sap",
+      "items": [
+        {
+          "id": "sap",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Sap",
+      "npc": "landen",
+      "reward_gold": 125,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sapphire",
+      "items": [
+        {
+          "id": "ore_sapphire",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Sapphire",
+      "npc": "hemlock",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_scarecrow",
+      "items": [
+        {
+          "id": "starter_scarecrow",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Scarecrow",
+      "npc": "errol",
+      "reward_gold": 425,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_seaweed",
+      "items": [
+        {
+          "id": "seaweed",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Seaweed",
+      "npc": "valen",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "seaweed_salad"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sesame",
+      "items": [
+        {
+          "id": "sesame",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Sesame",
+      "npc": "vera",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "sesame_broccoli"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_shadow_flower",
+      "items": [
+        {
+          "id": "shadow_flower",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Shadow Flower",
+      "npc": "celine",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_shards",
+      "items": [
+        {
+          "id": "shards",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Shards",
+      "npc": "eiland",
+      "reward_gold": 50,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sheep_wool",
+      "items": [
+        {
+          "id": "sheep_wool",
+          "quantity": 6
+        }
+      ],
+      "name": "Request for Sheep Wool",
+      "npc": "hemlock",
+      "reward_gold": 800,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_shipping_bin",
+      "items": [
+        {
+          "id": "starter_shipping_box",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Shipping Bin",
+      "npc": "march",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_silver_axe",
+      "items": [
+        {
+          "id": "axe_silver",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Silver Axe",
+      "npc": "landen",
+      "reward_gold": 3300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_silver_ingot",
+      "items": [
+        {
+          "id": "silver_ingot",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Silver Ingot",
+      "npc": "elsie",
+      "reward_gold": 500,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_silver_ore",
+      "items": [
+        {
+          "id": "ore_silver",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Silver Ore",
+      "npc": "march",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_silver_sword",
+      "items": [
+        {
+          "id": "sword_silver",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Silver Sword",
+      "npc": "adeline",
+      "reward_gold": 2000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_singing_katydid",
+      "items": [
+        {
+          "id": "singing_katydid",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Singing Katydid",
+      "npc": "luc",
+      "reward_gold": 225,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_smallmouth_bass",
+      "items": [
+        {
+          "id": "smallmouth_bass",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Smallmouth Bass",
+      "npc": "ryis",
+      "reward_gold": 275,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_snail",
+      "items": [
+        {
+          "id": "snail",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Snail",
+      "npc": "dell",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_snowdrop_anemone",
+      "items": [
+        {
+          "id": "snowdrop_anemone",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Snowdrop Anemone",
+      "npc": "elsie",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "seed_snowdrop_anemone"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_spell_fruit",
+      "items": [
+        {
+          "id": "spell_fruit",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Spell Fruit",
+      "npc": "darcy",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_spirit_mushroom_tea",
+      "items": [
+        {
+          "id": "spirit_mushroom_tea",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Spirit Mushroom Tea",
+      "npc": "darcy",
+      "reward_gold": 300,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_spring_galette",
+      "items": [
+        {
+          "id": "spring_galette",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Spring Galette",
+      "npc": "taliferro",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_strawberries",
+      "items": [
+        {
+          "id": "strawberry",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Strawberry",
+      "npc": "eiland",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "strawberry_shortcake"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_strawberries_cream",
+      "items": [
+        {
+          "id": "strawberry",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Strawberry",
+      "npc": "eiland",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "strawberries_and_cream"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_striped_bass",
+      "items": [
+        {
+          "id": "striped_bass",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Striped Bass",
+      "npc": "eiland",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sugar_cane",
+      "items": [
+        {
+          "id": "sugar_cane",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Sugar Cane",
+      "npc": "holt",
+      "reward_gold": 225,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sunflower",
+      "items": [
+        {
+          "id": "sunflower",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Sunflower",
+      "npc": "maple",
+      "reward_gold": 60,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sushi_platter",
+      "items": [
+        {
+          "id": "sushi_platter",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Sushi Platter",
+      "npc": "caldarus",
+      "reward_gold": 800,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_sweet_potato",
+      "items": [
+        {
+          "id": "sweet_potato",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Sweet Potato",
+      "npc": "nora",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tea",
+      "items": [
+        {
+          "id": "tea",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Tea",
+      "npc": "valen",
+      "reward_gold": 270,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_temple_flower",
+      "items": [
+        {
+          "id": "temple_flower",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Temple Flower",
+      "npc": "maple",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_thorn_vine",
+      "items": [
+        {
+          "id": "thorn_vine",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Thorn Vine",
+      "npc": "hayden",
+      "reward_gold": 240,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tidestone",
+      "items": [
+        {
+          "id": "tidestone",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Tidestone",
+      "npc": "juniper",
+      "reward_gold": 450,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tilapia",
+      "items": [
+        {
+          "id": "tilapia",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Tilapia",
+      "npc": "errol",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tomato",
+      "items": [
+        {
+          "id": "tomato",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Tomatoes",
+      "npc": "holt",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "gazpacho"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tomato_soup",
+      "items": [
+        {
+          "id": "tomato_soup",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Tomato Soup",
+      "npc": "landen",
+      "reward_gold": 200,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_trail_mix",
+      "items": [
+        {
+          "id": "trail_mix",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Trail Mix",
+      "npc": "josephine",
+      "reward_gold": 100,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_trout",
+      "items": [
+        {
+          "id": "trout",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Trout",
+      "npc": "terithia",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "smoked_trout_soup"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_tuna_sashimi",
+      "items": [
+        {
+          "id": "tuna_sashimi",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Tuna Sashimi",
+      "npc": "terithia",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_turnip",
+      "items": [
+        {
+          "id": "turnip",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Turnip",
+      "npc": "adeline",
+      "reward_gold": 50,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_ultimate_hay",
+      "items": [
+        {
+          "id": "ultimate_hay",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Ultimate Feed",
+      "npc": "balor",
+      "reward_gold": 750,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_ultimate_small_animal_feed",
+      "items": [
+        {
+          "id": "ultimate_small_animal_feed",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Ultimate Feed",
+      "npc": "hayden",
+      "reward_gold": 400,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_uncommon_bait",
+      "items": [
+        {
+          "id": "fish_bait_uncommon",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Uncommon Bait",
+      "npc": "errol",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_uncommon_pheromone",
+      "items": [
+        {
+          "id": "bug_pheromone_uncommon",
+          "quantity": 1
+        }
+      ],
+      "name": "Uncommon Pheromone Request",
+      "npc": "balor",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_underseaweed",
+      "items": [
+        {
+          "id": "underseaweed",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Underseaweed",
+      "npc": "terithia",
+      "reward_gold": 150,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_void_stone",
+      "items": [
+        {
+          "id": "void_stone",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Void Stone",
+      "npc": "seridia",
+      "reward_gold": 1000,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_voidite",
+      "items": [
+        {
+          "id": "voidite",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Voidite",
+      "npc": "juniper",
+      "reward_gold": 650,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_walnut",
+      "items": [
+        {
+          "id": "walnut",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Walnuts",
+      "npc": "darcy",
+      "reward_gold": 175,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_water_chestnuts",
+      "items": [
+        {
+          "id": "water_chestnut",
+          "quantity": 2
+        }
+      ],
+      "name": "Request for Water Chestnuts",
+      "npc": "juniper",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "water_chestnut_fritters"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_watermelon",
+      "items": [
+        {
+          "id": "watermelon",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Watermelon",
+      "npc": "merri",
+      "reward_gold": 250,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wild_berry",
+      "items": [
+        {
+          "id": "wild_berries",
+          "quantity": 6
+        }
+      ],
+      "name": "Request for Wild Berries",
+      "npc": "elsie",
+      "reward_gold": null,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [
+        "wildberry_scone"
+      ],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wild_grapes",
+      "items": [
+        {
+          "id": "wild_grapes",
+          "quantity": 3
+        }
+      ],
+      "name": "Request for Wild Grapes",
+      "npc": "hemlock",
+      "reward_gold": 125,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wild_leek",
+      "items": [
+        {
+          "id": "wild_leek",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for Wild Leek",
+      "npc": "reina",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "potato_soup"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wood",
+      "items": [
+        {
+          "id": "basic_wood",
+          "quantity": 10
+        }
+      ],
+      "name": "Request for Wood",
+      "npc": "landen",
+      "reward_gold": 40,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wood_2",
+      "items": [
+        {
+          "id": "basic_wood",
+          "quantity": 10
+        }
+      ],
+      "name": "Request for Wood",
+      "npc": "merri",
+      "reward_gold": 175,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_wood_fence",
+      "items": [
+        {
+          "id": "starter_wood_fence",
+          "quantity": 5
+        }
+      ],
+      "name": "Request for Wood Fencing",
+      "npc": "hayden",
+      "reward_gold": null,
+      "reward_item_ids": [
+        "egg"
+      ],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    },
+    {
+      "id": "request_for_written_root",
+      "items": [
+        {
+          "id": "written_root",
+          "quantity": 1
+        }
+      ],
+      "name": "Request for a Written Root",
+      "npc": "wheedle",
+      "reward_gold": 800,
+      "reward_item_ids": [],
+      "reward_recipe_ids": [],
+      "reward_renown": 20,
+      "unread_stage_keys": []
+    }
+  ],
   "gameVersion": "1.0.0",
   "requestGates": [
     {

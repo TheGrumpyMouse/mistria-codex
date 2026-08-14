@@ -189,6 +189,52 @@ check('a request tick and an item tick are the same fact', await heatherGiven().
 await heatherGiven().uncheck()
 await page.waitForTimeout(300)
 
+// ── 5d. Every request has a tick, and the tick stays on screen ──
+// The rows that shipped without a checkbox in 1.5.0 were the eleven requests
+// whose items the wiki never listed — the game files state them now, so a
+// boxless row is a data regression, not a style choice. Iron Armor was one
+// of the eleven.
+await go('/board?view=villagers')
+check(
+  'a request the wiki listed no items for now carries a tick',
+  await page.getByRole('checkbox', { name: 'Request for Iron Armor — given' }).isVisible(),
+)
+const requestRows = await page.locator('section li').count()
+const requestTicks = await page.locator('section li input[type="checkbox"]').count()
+check(
+  'every request row carries a given tick',
+  requestRows === requestTicks,
+  `${requestTicks}/${requestRows}`,
+)
+
+// The narrow-screen half of the same complaint: a checkbox that layout pushes
+// off the left edge is invisible without being absent. Boxes must sit inside
+// a 320px viewport on both views — and there must BE boxes, or a view that
+// stopped rendering them would pass silently.
+const ticksInside = async (label) => {
+  const boxes = (
+    await Promise.all(
+      (
+        await page.locator('section li input[type="checkbox"]').all()
+      )
+        .slice(0, 25)
+        .map((el) => el.boundingBox()),
+    )
+  ).filter((b) => b !== null)
+  const offender = boxes.find((b) => b.x < 0 || b.x + b.width > 320)
+  check(
+    label,
+    boxes.length > 0 && offender === undefined,
+    offender === undefined ? `${boxes.length} boxes` : JSON.stringify(offender),
+  )
+}
+await page.setViewportSize({ width: 320, height: 700 })
+await go('/board')
+await ticksInside('item-view ticks stay inside a 320px viewport')
+await go('/board?view=villagers')
+await ticksInside('villager-view ticks stay inside a 320px viewport')
+await page.setViewportSize({ width: 1280, height: 900 })
+
 // ── 6. Board: filter, open a request, come back to the same filter ──
 await go('/board')
 await page.locator('input[type="search"]').fill('heather')

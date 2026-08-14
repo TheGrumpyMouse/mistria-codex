@@ -2,6 +2,7 @@ import type { Quest, Recipe, Requirement, Season, Shop } from '@mistria/schema'
 import { toSnakeId } from '@mistria/schema'
 import { consola } from 'consola'
 import type { ExtractedCondition } from '../../enrich/quests.js'
+import type { GameBoardRequest } from '../../extract/quests.js'
 import type { BuildContext } from '../context.js'
 import { predates1_0 } from '../freshness.js'
 import { buildLocations } from './fish-crops.js'
@@ -14,10 +15,12 @@ import { foldName, type GrantIndex } from './grants.js'
  * stock already carry `{type: "quest", key: "breaking_the_fire_seal"}`, and
  * until the quest exists the app can only say "locked" without saying by what.
  *
- * `objectives` is populated only where the wiki writes a deliverable as
- * `{{ItemIcon|Heather}} (3)` — 220 of the requests do. The rest have a sentence
- * describing what to do, which is prose we do not copy and could not turn into
- * a structured objective without inventing one. Those carry an `objectives` gap.
+ * `objectives` is game-first for requests: `fetch_quests.toml` states every
+ * request's wanted items as exact ids with counts (see `withGameRequests`).
+ * The wiki path survives as the no-extract fallback, populated only where the
+ * wiki writes a deliverable as `{{ItemIcon|Heather}} (3)` — a sentence
+ * describing what to do is prose we do not copy and could not turn into a
+ * structured objective without inventing one. Those carry an `objectives` gap.
  */
 
 /** Reward currency tokens, as the wiki writes them in `{{Price|N|token}}`. */
@@ -270,7 +273,274 @@ export function buildQuests(ctx: BuildContext, builtItemIds: Set<string>): Quest
     }
   })
 
-  return withGameGates(ctx, built, characterIds, builtItemIds)
+  const { quests: withRequests, gameIdByQuest } = withGameRequests(
+    ctx,
+    built,
+    characterIds,
+    builtItemIds,
+  )
+  return withGameGates(ctx, withRequests, characterIds, builtItemIds, gameIdByQuest)
+}
+
+/**
+ * Pair game board requests with our request records, inside folded-name
+ * groups so a duplicate title cannot claim someone else's record.
+ *
+ * The game numbers its duplicates (`request_for_wood`, `request_for_wood_2`)
+ * while ours carry the giver, so a straight id-first join pairs the wiki's
+ * record with whichever game row happens to share its slug — Landen's row
+ * claimed the record whose stated giver was Landen only by luck of the fold.
+ * Within a group: giver agreement first, id equality second, lone leftovers
+ * third. Game rows left over when every record is spoken for are pool entries
+ * the wiki never listed — returned as `unmatched` for appending. Rows left
+ * facing an unclaimed record are genuinely ambiguous (the two Eiland
+ * strawberry requests share a name *and* a giver) and everything keeps its
+ * wiki facts; the count is the only thing that makes that visible.
+ */
+export function pairBoardRequests<
+  T extends { id: string; name: string; giver_character_id: string | null },
+>(
+  records: T[],
+  rows: GameBoardRequest[],
+  giverFor: (npc: string | null) => string | null,
+): {
+  gameByQuest: Map<string, GameBoardRequest>
+  unmatched: GameBoardRequest[]
+  ambiguous: number
+} {
+  const recordsByName = new Map<string, T[]>()
+  for (const record of records) {
+    const key = foldName(record.name)
+    recordsByName.set(key, [...(recordsByName.get(key) ?? []), record])
+  }
+  const rowsByName = new Map<string, GameBoardRequest[]>()
+  for (const row of rows) {
+    const key = foldName(row.name ?? row.id)
+    rowsByName.set(key, [...(rowsByName.get(key) ?? []), row])
+  }
+
+  const gameByQuest = new Map<string, GameBoardRequest>()
+  const unmatched: GameBoardRequest[] = []
+  let ambiguous = 0
+  for (const [key, group] of rowsByName) {
+    const unclaimed = [...(recordsByName.get(key) ?? [])]
+    let remaining = [...group]
+    const claim = (record: T, row: GameBoardRequest): void => {
+      gameByQuest.set(record.id, row)
+      unclaimed.splice(unclaimed.indexOf(record), 1)
+      remaining = remaining.filter((r) => r !== row)
+    }
+
+    for (const row of [...remaining]) {
+      const giver = giverFor(row.npc)
+      if (giver === null) continue
+      const byGiver = unclaimed.filter((q) => q.giver_character_id === giver)
+      const rowsWithGiver = remaining.filter((r) => giverFor(r.npc) === giver)
+      if (byGiver.length === 1 && rowsWithGiver.length === 1 && byGiver[0] !== undefined) {
+        claim(byGiver[0], row)
+      }
+    }
+    for (const row of [...remaining]) {
+      const byId = unclaimed.find((q) => q.id === row.id)
+      if (byId !== undefined) claim(byId, row)
+    }
+    if (remaining.length === 1 && unclaimed.length === 1) {
+      const record = unclaimed[0]
+      const row = remaining[0]
+      if (record !== undefined && row !== undefined) claim(record, row)
+    }
+
+    if (unclaimed.length === 0) unmatched.push(...remaining)
+    else ambiguous += remaining.length
+  }
+
+  return { gameByQuest, unmatched, ambiguous }
+}
+
+/**
+ * The game-first pass over board requests.
+ *
+ * `fetch_quests.toml` states, per request, everything the wiki lists and more,
+ * as data rather than display names: the title, the giver (`npc_for_icon` —
+ * request_board.toml itself names nobody, which is why thirteen requests spent
+ * a release attributed through a curated judgement), the wanted items as exact
+ * internal ids with counts, and the gold/renown reward. Where both sources
+ * state a field the game wins — same precedence as sell value — and the wiki
+ * remains the fallback for the no-extract build.
+ *
+ * The join runs through `pairBoardRequests`, by folded title because our ids
+ * are wiki-derived: the game's `request_for_egg` is our `request_for_eggs`.
+ * Ambiguity resolves to nothing, never to a guess.
+ *
+ * Game requests that match no record become records: the shipped board claims
+ * to be the complete pool, and until now it was the *wiki's* pool. New records
+ * take the game id — they have no wiki id to preserve — so the gate and grant
+ * joins hit them directly.
+ */
+function withGameRequests(
+  ctx: BuildContext,
+  built: Quest[],
+  characterIds: Set<string>,
+  builtItemIds: Set<string>,
+): { quests: Quest[]; gameIdByQuest: Map<string, string> } {
+  const game = ctx.game
+  if (game === null || game.boardRequests.length === 0) {
+    return { quests: built, gameIdByQuest: new Map() }
+  }
+
+  // `gameNpcIds` maps our display name to the game's npc id ("Priestess" ->
+  // "seridia"); the giver join needs it the other way round.
+  const characterIdByNpc = new Map(
+    Object.entries(ctx.characterRules.gameNpcIds ?? {}).map(
+      ([display, npcId]) => [npcId, toSnakeId(display)] as const,
+    ),
+  )
+  const giverFor = (npc: string | null): string | null => {
+    if (npc === null) return null
+    const id = characterIdByNpc.get(npc) ?? npc
+    return characterIds.has(id) ? id : null
+  }
+
+  const { gameByQuest, unmatched, ambiguous } = pairBoardRequests(
+    built.filter((quest) => quest.kind === 'request'),
+    game.boardRequests,
+    giverFor,
+  )
+
+  let objectivesFilled = 0
+  let giversFilled = 0
+  const merged = built.map((quest): Quest => {
+    const request = gameByQuest.get(quest.id)
+    if (request === undefined) return quest
+
+    const gaps = new Set(quest.data_gaps)
+    const prov = { ...quest.prov }
+
+    // Objectives: exact ids, no name matching. An id that shipped no record
+    // would silently narrow the ask, so the whole list only replaces the
+    // wiki's when every entry resolved.
+    const wanted = request.items.filter((item) => builtItemIds.has(item.id))
+    let objectives = quest.objectives
+    if (wanted.length > 0 && wanted.length === request.items.length) {
+      objectives = wanted.map((item) => ({
+        type: 'deliver',
+        target_id: item.id,
+        quantity: item.quantity,
+      }))
+      prov.objectives = 'game_files'
+      if (quest.objectives.length === 0) objectivesFilled += 1
+      gaps.delete('objectives')
+    }
+
+    // The giver. The game states one for every request; the wiki's column had
+    // thirteen human-form names only a curated alias could place and eleven
+    // blanks. Game first, and the stamp says so.
+    const giver = giverFor(request.npc)
+    let giverId = quest.giver_character_id
+    if (giver !== null) {
+      if (quest.giver_character_id === null) giversFilled += 1
+      giverId = giver
+      prov.giver_character_id = 'game_files'
+      gaps.delete('giver_character_id')
+    }
+
+    // Gold is tesserae in the game's spelling. Item rewards stay with the
+    // grants index, which already reads the same file's reward tables.
+    const tesserae = request.reward_gold ?? quest.rewards?.tesserae ?? null
+    const renown = request.reward_renown ?? quest.rewards?.renown ?? null
+    const itemIds = quest.rewards?.item_ids ?? []
+    const hasReward = tesserae !== null || renown !== null || itemIds.length > 0
+    if (request.reward_gold !== null || request.reward_renown !== null) {
+      prov.rewards = 'game_files'
+    }
+
+    return {
+      ...quest,
+      giver_character_id: giverId,
+      objectives,
+      rewards: hasReward ? { renown, tesserae, item_ids: itemIds } : null,
+      prov,
+      data_gaps: [...gaps],
+    }
+  })
+
+  // The pool members the wiki never listed. They are requests like any other:
+  // real records, game-first, gated by the same request_board.toml pass that
+  // runs after this one (through `gameIdByQuest`, because a game id may be
+  // taken — the wiki's lone "Request for Wood" claimed `request_for_wood`
+  // while the game's row of that id is Landen's separate ask, which lands
+  // here and takes a giver-suffixed id instead).
+  const appended: Quest[] = []
+  const appendedGameIds = new Map<string, string>()
+  const takenIds = new Set(built.map((quest) => quest.id))
+  for (const request of unmatched) {
+    const giver = giverFor(request.npc)
+    const wanted = request.items.filter((item) => builtItemIds.has(item.id))
+    const gaps: string[] = []
+    if (giver === null) gaps.push('giver_character_id')
+    if (wanted.length === 0) gaps.push('objectives')
+    // The game does not state whether a request can be drawn again; the
+    // schema's default is a claim, so the gap says the truth.
+    gaps.push('repeatable')
+
+    let id = request.id
+    if (takenIds.has(id)) id = giver === null ? `${id}_game` : `${id}_${giver}`
+    takenIds.add(id)
+    appendedGameIds.set(id, request.id)
+
+    const tesserae = request.reward_gold
+    const renown = request.reward_renown
+    appended.push({
+      id,
+      name: request.name ?? request.id,
+      numeric_id: null,
+      numeric_id_game_version: null,
+      id_status: 'confirmed',
+      former_ids: [],
+      also_known_as: [],
+      game_version: game.version,
+      version_added: null,
+      confidence: 'verified',
+      prov: { '*': 'game_files' },
+      data_gaps: gaps,
+      icon_key: 'quest/request',
+      wiki_page: null,
+      blurb: null,
+
+      kind: 'request',
+      giver_character_id: giver,
+      prerequisites: [],
+      objectives: wanted.map((item) => ({
+        type: 'deliver',
+        target_id: item.id,
+        quantity: item.quantity,
+      })),
+      rewards: tesserae !== null || renown !== null ? { renown, tesserae, item_ids: [] } : null,
+      repeatable: false,
+      season_restriction: null,
+
+      required_items: [],
+      unlocks_shop_ids: [],
+      unlocks_stock_shop_ids: [],
+      unlocks_location_ids: [],
+      unlocks_mine_ids: [],
+      teaches_recipe_ids: [],
+      unlocks_quest_ids: [],
+    })
+  }
+
+  consola.info(
+    `quests: ${gameByQuest.size} of ${game.boardRequests.length} game requests joined — ` +
+      `${objectivesFilled} objective list(s) and ${giversFilled} giver(s) filled, ` +
+      `${appended.length} game-only request(s) appended` +
+      (ambiguous > 0 ? `, ${ambiguous} ambiguous name(s) kept their wiki facts` : ''),
+  )
+
+  const gameIdByQuest = new Map([
+    ...[...gameByQuest].map(([questId, request]) => [questId, request.id] as const),
+    ...appendedGameIds,
+  ])
+  return { quests: [...merged, ...appended], gameIdByQuest }
 }
 
 /**
@@ -296,6 +566,7 @@ function withGameGates(
   built: Quest[],
   characterIds: Set<string>,
   builtItemIds: Set<string>,
+  gameIdByQuest: Map<string, string>,
 ): Quest[] {
   const game = ctx.game
   if (game === null || game.requestGateByQuest.size === 0) return built
@@ -308,7 +579,10 @@ function withGameGates(
   // First pass: which quests do the gates reference that we do not hold?
   const referenced = new Set<string>()
   const gateFor = (quest: Quest): Requirement[] => {
-    const gate = game.requestGateByQuest.get(quest.id)
+    // The board's gates are keyed by the game's id, which for a wiki-derived
+    // record differs — `request_for_egg` vs `request_for_eggs`. Looking up by
+    // our id alone silently left those requests ungated.
+    const gate = game.requestGateByQuest.get(gameIdByQuest.get(quest.id) ?? quest.id)
     if (gate === undefined) return []
 
     const out: Requirement[] = []

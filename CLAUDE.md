@@ -173,6 +173,21 @@ From `sources/game/`, which is committed. Don't re-derive these either.
 
 **A seal is a quest, and the quest states its price.** `seals.toml` maps seal→quest; the quest stage's `requirements.supplied_items.items` is exact item ids and counts. The same structure prices the bridge and mill repairs. Extracted structurally (any stage with `supplied_items`), never by name list. Quest `description`s are prose — never read.
 
+**`fetch_quests.toml` states everything about a board request; `request_board.toml`
+only gates it.** Per request: the title, the giver (`npc_for_icon` — the pool
+file names nobody, which is why thirteen requests spent a release attributed
+through a curated judgement the game then confirmed), the rewards, and the
+wanted items as exact ids — in **three spellings**: a bare string is one of
+quantity 1, a table is ids with counts, and one request (`gardening_supplies`)
+writes an *array* of tables. Reading two of the three shipped that request
+with no items, and the wiki path had been silently missing 11 item lists and
+14 whole pool entries. Also: the game numbers its duplicate quest ids
+(`request_for_wood`, `request_for_wood_2`) while our wiki-derived ids carry
+the giver — pair name-groups by giver agreement before id equality, or a slug
+coincidence hands one villager's row to another's record. `pairBoardRequests`
+in the quests builder is that join, and its counts are what make a drop
+visible.
+
 **Every game item carries its own `recipe` as internal ids** — 1,388 of them
 (cooking, blacksmithing, milling, refinery, and 1,085 furniture waiting on
 furniture ingestion), resolving 265/265 with no name matching. The wiki's

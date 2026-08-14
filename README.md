@@ -31,7 +31,9 @@ code you can type into a second device to bring it along.
 - **Items, villagers, places, monsters, quests, animals, pets, festivals** — a
   page each, cross-linked: where it comes from, what it is worth, who wants it
   as a gift, what it goes into, and which shop or stall sells it at what price.
-- **Request board**, **bestiary** and **mines** alongside.
+- **Request board** — the full 226-request pool from the game's own files,
+  grouped by item or by villager, with hand-in ticks that stay in step with
+  the item pages — plus **bestiary** and **mines** alongside.
 
 Shipped in `data/` but not yet on a screen of their own: skills and perks,
 crops, buildings. They surface where something else references them — a skill
@@ -41,20 +43,21 @@ yet.
 ## Status
 
 Usable, and honest about what it does not know. Every dataset with a known
-target count is fully ingested — 2,558 items, 143 fish, 93 bugs, 110 artifacts,
-359 quests, 82 museum sets — and 3,169 of the 3,201 records that ask for a
+target count is fully ingested — 2,599 items, 143 fish, 93 bugs, 110 artifacts,
+373 quests, 82 museum sets — and 3,224 of the 3,256 records that ask for a
 sprite have one.
 
 The data layer was built first, because the data *is* the product: getting it
 wrong poisons everything downstream. `pnpm validate` writes
 `build/reports/coverage.md`, which is the standing account of what has actually
 been ingested and what is still missing. The largest remaining hole is time of
-day — 106 of 1,302 availability windows have no time recorded, and the app says
+day — 106 of 1,317 availability windows have no time recorded, and the app says
 so rather than guessing.
 
-Outstanding: sync needs a Cloudflare deploy (the code is written and tested;
-unset, the app builds with sync off and says so — see
-[workers/sync/README.md](workers/sync/README.md)), and a Lighthouse pass.
+Sync is live: the Cloudflare Worker is deployed and the app builds against it
+(a clone without `VITE_SYNC_URL` builds with sync off and says so — see
+[workers/sync/README.md](workers/sync/README.md)). Outstanding: a Lighthouse
+pass.
 
 ## Repository layout
 

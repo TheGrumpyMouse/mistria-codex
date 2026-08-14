@@ -40,7 +40,12 @@ import type { GameItem, GameItemsExtract } from '../extract/items.js'
 import type { GameFactory, GameMachinesExtract } from '../extract/machines.js'
 import type { GameMonstersExtract, GameMonsterVariant } from '../extract/monsters.js'
 import type { GamePetsExtract } from '../extract/pets.js'
-import type { GameQuestsExtract, GameRequestGate, GameStoryQuest } from '../extract/quests.js'
+import type {
+  GameBoardRequest,
+  GameQuestsExtract,
+  GameRequestGate,
+  GameStoryQuest,
+} from '../extract/quests.js'
 import type { GameRanchingExtract } from '../extract/ranching.js'
 import type { GameScheduleFile, GameSchedulesExtract } from '../extract/schedules.js'
 import type {
@@ -174,6 +179,11 @@ export interface GameFacts {
   factoryByProduct: Map<string, GameFactory>
   /** Request quest id -> its stated appearance gates. Empty pre-quest-extract. */
   requestGateByQuest: Map<string, GameRequestGate>
+  /**
+   * The board's request definitions from `fetch_quests.toml`: title, giver,
+   * wanted items as exact ids, rewards. Empty pre-1.5.1-extract.
+   */
+  boardRequests: GameBoardRequest[]
   /** Story quest id -> title, icon NPC and stated rewards. */
   storyQuestById: Map<string, GameStoryQuest>
   /** Store section key -> its stock, verbatim from `stores.toml`. */
@@ -675,6 +685,7 @@ export async function loadGameFacts(): Promise<GameFacts | null> {
     requestGateByQuest: new Map(
       (questsExtract?.requestGates ?? []).map((gate) => [gate.quest_id, gate] as const),
     ),
+    boardRequests: questsExtract?.boardRequests ?? [],
     storyQuestById: new Map(
       (questsExtract?.storyQuests ?? []).map((quest) => [quest.id, quest] as const),
     ),

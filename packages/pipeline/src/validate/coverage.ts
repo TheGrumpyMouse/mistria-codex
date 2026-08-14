@@ -15,13 +15,13 @@ import { type Finding, warn } from './report.js'
 export const EXPECTED_COUNTS: Readonly<Record<DatasetName, number | null>> = {
   // Four admission paths: the wiki's Items table (1,197 rows since the 1.0
   // catch-up, less the Bugs-table roster rows that are not items of their
-  // own), the 1.0 allowlist (curated/vocab/items_1_0.json, 40 ids), furniture
-  // from the game files collapsed to one record per product (999), and the
-  // wardrobe (360, one per game cosmetic — colour variants are palette swaps,
-  // not records). Measured 2026-08-11 after the post-1.0 wiki refresh; most of
-  // the 43 new wiki rows matched records the game files already shipped, and
-  // nine (new cooked dishes, mostly) are genuinely new.
-  items: 2558,
+  // own), the 1.0 allowlist (curated/vocab/items_1_0.json, 81 ids after the
+  // v1.5.1 sweep added the 41 stated-source utility items, blueprints and
+  // ten-heart keepsakes), furniture from the game files collapsed to one
+  // record per product (999), and the wardrobe (360, one per game cosmetic —
+  // colour variants are palette swaps, not records). 2,558 measured
+  // 2026-08-11 after the post-1.0 wiki refresh; +41 on 2026-08-14.
+  items: 2599,
   fish: 143, // Cargo: Fish
   // 93, not the Cargo table's 103: ten of its rows are not catchable bugs —
   // nine apiary/terrarium products listed for their museum sets, plus the
