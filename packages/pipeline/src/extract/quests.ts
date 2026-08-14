@@ -72,7 +72,13 @@ export interface GameQuestsExtract {
   boardRequests: GameBoardRequest[]
 }
 
-/** Scalar requirement entries from a `requirements` table; table-valued keys are reported, not read. */
+/**
+ * Scalar requirement entries from a `requirements` table; table-valued keys
+ * are reported, not read — except `reached_skill_level`, whose table is a
+ * skill -> level map (`{ ranching = 45 }`) and expands to one
+ * `skill_level:<skill>` entry per skill. It gates the Auto Feeder's stock
+ * line and a third of the request board, which is what earned it the read.
+ */
 export function readRequirements(value: unknown): {
   requirements: GameQuestRequirement[]
   unread: string[]
@@ -82,6 +88,12 @@ export function readRequirements(value: unknown): {
   for (const [key, raw] of Object.entries(table(value) ?? {})) {
     if (typeof raw === 'string' || typeof raw === 'number' || typeof raw === 'boolean') {
       requirements.push({ key, value: raw })
+    } else if (key === 'reached_skill_level' && table(raw) !== null) {
+      for (const [skill, level] of Object.entries(table(raw) ?? {})) {
+        const wanted = num(level)
+        if (wanted !== null) requirements.push({ key: `skill_level:${skill}`, value: wanted })
+        else unread.push(`${key}.${skill}`)
+      }
     } else {
       unread.push(key)
     }

@@ -212,6 +212,25 @@ check(
   brazierWhere,
 )
 
+// A wiki-stated source replaces the inferred row — the statue scrolls have no
+// grant anywhere in the game files, and the wiki states the golden boxes and
+// the perk. The brazier check above is this check's negative pair: a recipe
+// with no curated source still says inferred.
+const waterSprite = await madeText('water_sprite')
+check(
+  'a curated treasure-box source names the place and is not hedged',
+  /golden treasure box/i.test(waterSprite) &&
+    /The Beach/.test(waterSprite) &&
+    !/inferred/.test(waterSprite),
+  waterSprite,
+)
+const largeSprite = await madeText('water_sprite_large')
+check(
+  'a perk-unlocked recipe names the perk',
+  /Big Water Sprites perk/.test(largeSprite) && !/inferred/.test(largeSprite),
+  largeSprite,
+)
+
 await page.close()
 await browser.close()
 finish()

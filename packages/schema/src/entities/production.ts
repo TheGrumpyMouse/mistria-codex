@@ -62,6 +62,18 @@ export const RecipeSource = z.object({
     'chicken_statue',
     /** Treasure chests in a named mine, behind the Taste Maker perk. */
     'mines_chest',
+    /**
+     * A treasure box at a named overworld location — the sealed-cave golden
+     * boxes. Wiki-stated (the game files place no scroll anywhere), carried
+     * via curated/overrides/recipe_sources.json; `source_id` is a location.
+     */
+    'treasure_chest',
+    /**
+     * A skill perk unlocks the recipe outright ("Big Water Sprites"). The
+     * game states the link only as the perk's prose, so the fact is
+     * wiki-stated and curated; `source_id` is the perk id.
+     */
+    'perk',
     'cutscene',
     /** Inferred: no grant exists anywhere, and the level is the only gate. */
     'skill_level',

@@ -1199,7 +1199,8 @@
     ],
     "unlocks_shop_ids": [],
     "unlocks_stock_shop_ids": [
-      "balors_wagon"
+      "balors_wagon",
+      "general_store"
     ],
     "version_added": null,
     "wiki_page": "Quests"
@@ -1643,7 +1644,8 @@
       "*": "wiki_page",
       "prerequisites": "game_files",
       "required_items": "game_files",
-      "unlocks_quest_ids": "game_files"
+      "unlocks_quest_ids": "game_files",
+      "unlocks_stock_shop_ids": "game_files"
     },
     "repeatable": false,
     "required_items": [
@@ -1679,7 +1681,10 @@
       "expanding_the_saturday_market"
     ],
     "unlocks_shop_ids": [],
-    "unlocks_stock_shop_ids": [],
+    "unlocks_stock_shop_ids": [
+      "balors_wagon",
+      "carpenter"
+    ],
     "version_added": null,
     "wiki_page": "Quests"
   },
@@ -8124,7 +8129,14 @@
         "type": "deliver"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      {
+        "key": "fishing",
+        "op": ">=",
+        "type": "skill",
+        "value": 2
+      }
+    ],
     "prov": {
       "*": "wiki_page",
       "giver_character_id": "game_files",

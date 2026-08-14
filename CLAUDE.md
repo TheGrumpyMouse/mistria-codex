@@ -226,6 +226,23 @@ items say so. It is the counterpart to a scroll grant, and its absence is not a
 statement: a recipe with no grant *anywhere* and a stated `crafting_level` is
 gated by that level and nothing else. That is a **deduction, not a reading**, so
 it ships `confidence: 'inferred'` and must never render like a stated source.
+Three recipes escape the deduction the other way: the sprite-statue scrolls sit
+in the sealed caves' golden boxes and the large statue comes from the Big Water
+Sprites perk — facts only the wiki states (the game carries them as perk prose,
+never read), curated in `curated/overrides/recipe_sources.json` with
+`confidence: 'wiki'`, which suppresses the inferred row.
+
+**A `repaired_*` requirement flag is a quest, through a stated chain.**
+`fiddle/requirements.toml` defines each flag as `seen_cutscene = "..."`, the
+cutscene belongs to a quest stage, and only the last hop (game quest id → our
+record) needs a human — `curated/aliases/game_flags.json` holds it. The Seed
+Maker spent a release with no obtain method because its general-store line is
+gated on `repaired_general_store` and nothing could express it; the shops and
+quests builders now resolve any true-valued flag through that file, and an
+unmapped flag is held back and counted, never guessed. `reached_skill_level`
+tables expand in the extract to `skill_level:<skill>` entries for the same
+reason — the Auto Feeder's Ranching 45 and a third of the board's gates lived
+in the one table shape `readRequirements` reported as unread.
 
 **`value.store` is the item's shop price and the wiki has no column for it.**
 773 items state one; wiring it in took priced items from 454 to 969 and every

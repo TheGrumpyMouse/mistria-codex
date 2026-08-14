@@ -36915,19 +36915,12 @@
     "sources": [
       {
         "character_id": null,
-        "confidence": "inferred",
+        "confidence": "wiki",
         "currency": "tesserae",
-        "method": "skill_level",
+        "method": "treasure_chest",
         "price": null,
-        "requires": [
-          {
-            "key": "woodcrafting",
-            "op": ">=",
-            "type": "skill",
-            "value": 20
-          }
-        ],
-        "source_id": null,
+        "requires": [],
+        "source_id": "the_narrows",
         "stall_key": null
       }
     ],
@@ -49733,19 +49726,12 @@
     "sources": [
       {
         "character_id": null,
-        "confidence": "inferred",
+        "confidence": "wiki",
         "currency": "tesserae",
-        "method": "skill_level",
+        "method": "treasure_chest",
         "price": null,
-        "requires": [
-          {
-            "key": "woodcrafting",
-            "op": ">=",
-            "type": "skill",
-            "value": 20
-          }
-        ],
-        "source_id": null,
+        "requires": [],
+        "source_id": "the_beach",
         "stall_key": null
       }
     ],
@@ -49796,19 +49782,12 @@
     "sources": [
       {
         "character_id": null,
-        "confidence": "inferred",
+        "confidence": "wiki",
         "currency": "tesserae",
-        "method": "skill_level",
+        "method": "perk",
         "price": null,
-        "requires": [
-          {
-            "key": "woodcrafting",
-            "op": ">=",
-            "type": "skill",
-            "value": 30
-          }
-        ],
-        "source_id": null,
+        "requires": [],
+        "source_id": "big_water_sprites",
         "stall_key": null
       }
     ],

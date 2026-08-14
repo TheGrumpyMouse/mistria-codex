@@ -19,6 +19,21 @@
       "quest": "upgrade_haydens_barn",
       "reason": "requirements.toml [repaired_haydens_farm] states seen_cutscene = 'repair_haydens_barn_pt_2', a stage of the game quest repair_haydens_barn — which ships as upgrade_haydens_barn after its own stated title, 'Upgrade Hayden's Barn'.",
       "source": "fiddle/requirements.toml + fiddle/quests/story_quests.toml"
+    },
+    "repaired_general_store": {
+      "quest": "repair_the_general_store",
+      "reason": "requirements.toml [repaired_general_store] states seen_cutscene = 'repair_the_general_store_pt_2', a stage of the game quest repair_the_general_store, whose stated title 'Repair the General Store' is our record. Gates the Seed Maker's stock line.",
+      "source": "fiddle/requirements.toml + fiddle/quests/story_quests.toml"
+    },
+    "repaired_carpenters_shop": {
+      "quest": "upgrade_the_carpenters_shop",
+      "reason": "requirements.toml [repaired_carpenters_shop] states seen_cutscene = 'upgrade_the_carpenters_shop_pt_2', a stage of the game quest upgrade_the_carpenters_shop, whose stated title is our record. Gates the Mini Mill's stock line.",
+      "source": "fiddle/requirements.toml + fiddle/quests/story_quests.toml"
+    },
+    "repaired_inn": {
+      "quest": "upgrade_the_inn",
+      "reason": "requirements.toml [repaired_inn] states seen_cutscene = 'repair_the_inn_pt_2', a stage of the game quest repair_the_inn — which ships as upgrade_the_inn after its own stated title, 'Upgrade the Inn'. Gates the Perpetual Soup Pot's stock line.",
+      "source": "fiddle/requirements.toml + fiddle/quests/story_quests.toml"
     }
   }
 }

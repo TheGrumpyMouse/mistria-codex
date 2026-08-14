@@ -81,6 +81,10 @@ const SOURCE_ID_TARGET: Readonly<Record<string, DatasetName>> = {
   quest: 'quests',
   festival: 'festivals',
   mines_chest: 'mines',
+  treasure_chest: 'locations',
+  // `perk` has no entry: perks are rows inside skill records, not a dataset,
+  // so the curated injector validates the id against the game's perk table
+  // instead.
 }
 
 /**

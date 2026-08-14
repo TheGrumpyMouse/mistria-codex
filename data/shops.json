@@ -713,6 +713,22 @@
           "winter"
         ],
         "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "seed_maker",
+        "price": 2000,
+        "requires": [
+          {
+            "key": "repair_the_general_store",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
       }
     ],
     "unlock_requires": [],
@@ -1795,6 +1811,22 @@
       },
       {
         "currency": "tesserae",
+        "item_id": "mini_mill",
+        "price": 5000,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
         "item_id": "small_coop_red_blueprint",
         "price": 1500,
         "requires": [],
@@ -1825,6 +1857,198 @@
         "item_id": "small_barn_black_blueprint",
         "price": 2000,
         "requires": [],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "medium_coop_red_blueprint",
+        "price": 3000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "medium_barn_red_blueprint",
+        "price": 4000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "medium_coop_black_blueprint",
+        "price": 3000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "medium_barn_black_blueprint",
+        "price": 4000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 20
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_coop_red_blueprint",
+        "price": 6000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_barn_red_blueprint",
+        "price": 8000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_coop_black_blueprint",
+        "price": 6000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_barn_black_blueprint",
+        "price": 8000,
+        "requires": [
+          {
+            "key": "ranching",
+            "op": ">=",
+            "type": "skill",
+            "value": 40
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "small_greenhouse_white_blueprint",
+        "price": 50000,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "small_greenhouse_wood_blueprint",
+        "price": 50000,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_greenhouse_white_blueprint",
+        "price": 100000,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "large_greenhouse_wood_blueprint",
+        "price": 100000,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
         "rotation": false,
         "seasons": null,
         "teaches_recipe_id": null
@@ -3602,6 +3826,22 @@
         "price": 650,
         "requires": [],
         "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "perpetual_soup_pot",
+        "price": 5000,
+        "requires": [
+          {
+            "key": "upgrade_the_inn",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
+        "rotation": false,
         "seasons": null,
         "teaches_recipe_id": null
       }
@@ -6347,6 +6587,22 @@
         "item_id": "wildberry_pie",
         "price": 330,
         "requires": [],
+        "rotation": true,
+        "seasons": null,
+        "teaches_recipe_id": null
+      },
+      {
+        "currency": "tesserae",
+        "item_id": "seed_snow_peas",
+        "price": 300,
+        "requires": [
+          {
+            "key": "upgrade_the_carpenters_shop",
+            "op": "done",
+            "type": "quest",
+            "value": null
+          }
+        ],
         "rotation": true,
         "seasons": null,
         "teaches_recipe_id": null

@@ -599,6 +599,28 @@ function withGameGates(
           referenced.add(questId)
           out.push({ type: 'quest', key: questId, op: 'done', value: null })
         }
+        continue
+      }
+      // `reached_skill_level` arrives expanded to `skill_level:<skill>` per
+      // skill — a third of the board is gated this way (the fishing requests
+      // behind Fishing 2, the shipping bin behind Woodcrafting 4).
+      if (requirement.key.startsWith('skill_level:') && typeof requirement.value === 'number') {
+        out.push({
+          type: 'skill',
+          key: requirement.key.slice('skill_level:'.length),
+          op: '>=',
+          value: requirement.value,
+        })
+        continue
+      }
+      // A `repaired_*`-style flag is a quest through the curated flag alias,
+      // the same chain the shops builder resolves.
+      if (requirement.value === true) {
+        const flagQuest = game.questByFlag.get(requirement.key)
+        if (flagQuest !== undefined) {
+          referenced.add(flagQuest)
+          out.push({ type: 'quest', key: flagQuest, op: 'done', value: null })
+        }
       }
       // Other keys (is_season, reached_date, heart levels…) are real gates the
       // wiki often also states; mapping them is a later pass and they are
@@ -671,14 +693,16 @@ function withGameGates(
     )
   }
 
-  // Second pass: merge the mapped gates in, dropping any whose target quest
-  // still does not exist (a dangling gate helps nobody and fails refint).
+  // Second pass: merge the mapped gates in, dropping any quest gate whose
+  // target record still does not exist (a dangling gate helps nobody and
+  // fails refint). A skill gate names a skill, not a quest, so it skips that
+  // check and dedupes against whatever the wiki already stated.
   let gated = 0
   const merged = built.map((quest) => {
     const extra = (gates.get(quest.id) ?? []).filter(
       (requirement) =>
-        knownIds.has(requirement.key) &&
-        !quest.prerequisites.some((p) => p.type === 'quest' && p.key === requirement.key),
+        (requirement.type !== 'quest' || knownIds.has(requirement.key)) &&
+        !quest.prerequisites.some((p) => p.type === requirement.type && p.key === requirement.key),
     )
     if (extra.length === 0) return quest
     gated += 1

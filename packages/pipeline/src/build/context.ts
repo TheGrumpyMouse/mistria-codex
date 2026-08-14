@@ -22,6 +22,10 @@ import type { SkillsExtract } from '../enrich/skills.js'
 import type { WatersExtract } from '../enrich/waters.js'
 import { CURATED_DIR, SOURCES_DIR } from '../lib/paths.js'
 import { readJsonFile } from '../lib/read-json.js'
+import {
+  type CuratedRecipeSource,
+  readRecipeSourceOverrides,
+} from '../lib/recipe-source-overrides.js'
 import { Resolver } from '../normalise/resolve.js'
 import { decodeEntities, stripWikitext } from '../normalise/wikitext.js'
 import type { HandMarkers, MarkerAlias, QuestMarkerAlias } from './builders/maps.js'
@@ -316,6 +320,11 @@ export interface BuildContext {
    * See curated/aliases/quest_givers.json.
    */
   questGiverAliases: Record<string, string>
+  /**
+   * Recipe id -> wiki-stated sources for recipes the game files grant
+   * nowhere. See curated/overrides/recipe_sources.json.
+   */
+  recipeSourceOverrides: Record<string, CuratedRecipeSource[]>
   /** Perk id -> what it does, in our own words. See curated/vocab/perk_effects.json. */
   perkEffects: Record<string, string>
   /**
@@ -535,6 +544,7 @@ export async function loadContext(): Promise<BuildContext> {
   const { items: gameOnlyItems } = await readJsonFile<{ items: string[] }>(
     join(CURATED_DIR, 'vocab', 'items_1_0.json'),
   ).catch(() => ({ items: [] as string[] }))
+  const recipeSourceOverrides = await readRecipeSourceOverrides()
 
   const itemByName = new Map<string, CargoRow>()
   for (const row of items) {
@@ -593,6 +603,7 @@ export async function loadContext(): Promise<BuildContext> {
     methodRules,
     characterRules,
     questGiverAliases,
+    recipeSourceOverrides,
     perkEffects,
     gameOnlyItems,
   }

@@ -354,6 +354,11 @@ export const RECIPE_SOURCE_LABELS: Record<string, { lead: string; standalone: st
   wishing_well: { lead: '', standalone: 'From the Wishing Well' },
   chicken_statue: { lead: '', standalone: 'From the Chicken Statue' },
   mines_chest: { lead: 'Treasure chests in ', standalone: 'Treasure chests in the mines' },
+  treasure_chest: {
+    lead: 'A golden treasure box in the cave at ',
+    standalone: 'A golden treasure box',
+  },
+  perk: { lead: 'Unlocked by the ', standalone: 'Unlocked by a skill perk' },
   cutscene: { lead: '', standalone: 'Given during the story' },
   skill_level: { lead: '', standalone: 'Appears when you reach the level' },
 }

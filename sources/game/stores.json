@@ -5454,10 +5454,13 @@
               "item": "medium_coop_red_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 20
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5467,10 +5470,13 @@
               "item": "medium_barn_red_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 20
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5480,10 +5486,13 @@
               "item": "medium_coop_black_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 20
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5493,10 +5502,13 @@
               "item": "medium_barn_black_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 20
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5506,10 +5518,13 @@
               "item": "large_coop_red_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 40
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5519,10 +5534,13 @@
               "item": "large_barn_red_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 40
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5532,10 +5550,13 @@
               "item": "large_coop_black_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 40
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -5545,10 +5566,13 @@
               "item": "large_barn_black_blueprint",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 40
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -7132,10 +7156,13 @@
               "item": "auto_feeder",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:ranching",
+                  "value": 45
+                }
+              ],
+              "unread_requirement_keys": []
             }
           ],
           "target_selections": null
@@ -11853,10 +11880,13 @@
               "item": "fishing_rod_copper",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:fishing",
+                  "value": 8
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -11866,10 +11896,13 @@
               "item": "fishing_rod_iron",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:fishing",
+                  "value": 15
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -11879,10 +11912,13 @@
               "item": "fishing_rod_silver",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:fishing",
+                  "value": 20
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -11892,10 +11928,13 @@
               "item": "fishing_rod_gold",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:fishing",
+                  "value": 30
+                }
+              ],
+              "unread_requirement_keys": []
             },
             {
               "animal": null,
@@ -11905,10 +11944,13 @@
               "item": "fishing_rod_mistril",
               "pool": "constant",
               "recipe_scroll": null,
-              "requirements": [],
-              "unread_requirement_keys": [
-                "reached_skill_level"
-              ]
+              "requirements": [
+                {
+                  "key": "skill_level:fishing",
+                  "value": 45
+                }
+              ],
+              "unread_requirement_keys": []
             }
           ],
           "target_selections": null

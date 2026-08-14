@@ -86498,7 +86498,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86521,7 +86520,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86538,7 +86539,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86561,7 +86561,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86578,7 +86580,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86601,7 +86602,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86618,7 +86621,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86641,7 +86643,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86658,7 +86662,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86681,7 +86684,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86698,7 +86703,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86721,7 +86725,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86738,7 +86744,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86761,7 +86766,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86778,7 +86785,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86801,7 +86807,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86818,7 +86826,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86841,7 +86848,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86858,7 +86867,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -86881,7 +86889,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -86897,9 +86907,7 @@
     "buy_value": 5000,
     "category": "misc",
     "confidence": "verified",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -86920,7 +86928,9 @@
     },
     "quality": null,
     "sell_value": 2500,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -87032,9 +87042,7 @@
     "buy_value": 5000,
     "category": "misc",
     "confidence": "verified",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -87055,7 +87063,9 @@
     },
     "quality": null,
     "sell_value": 2500,
-    "sold_by": [],
+    "sold_by": [
+      "inn"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -87207,9 +87217,7 @@
     "buy_value": 2000,
     "category": "misc",
     "confidence": "verified",
-    "data_gaps": [
-      "obtain_method"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -87230,7 +87238,9 @@
     },
     "quality": null,
     "sell_value": 1000,
-    "sold_by": [],
+    "sold_by": [
+      "general_store"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -87270,7 +87280,8 @@
     "quality": null,
     "sell_value": null,
     "sold_by": [
-      "general_store"
+      "general_store",
+      "balors_wagon"
     ],
     "stamina": null,
     "subcategory": null,
@@ -87661,7 +87672,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],
@@ -87678,7 +87691,6 @@
     "category": "misc",
     "confidence": "verified",
     "data_gaps": [
-      "obtain_method",
       "sell_value"
     ],
     "former_ids": [],
@@ -87701,7 +87713,9 @@
     },
     "quality": null,
     "sell_value": null,
-    "sold_by": [],
+    "sold_by": [
+      "carpenter"
+    ],
     "stamina": null,
     "subcategory": null,
     "tags": [],

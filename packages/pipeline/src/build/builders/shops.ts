@@ -383,6 +383,29 @@ function withGameStoreStock(
             requires.push({ type: 'animal', key: requirement.value, op: 'has', value: null })
             continue
           }
+          // A `repaired_*`-style flag is a quest, through the chain
+          // requirements.toml states and curated/aliases/game_flags.json
+          // resolves — the Seed Maker's general-store line is gated exactly
+          // this way. A flag with no entry falls through to held-back, never
+          // to a guess; a wrong mapping fails refint on the quest id.
+          if (requirement.value === true) {
+            const flagQuest = game.questByFlag.get(requirement.key)
+            if (flagQuest !== undefined) {
+              requires.push({ type: 'quest', key: flagQuest, op: 'done', value: null })
+              continue
+            }
+          }
+          // `reached_skill_level = { ranching = 45 }` arrives from the extract
+          // expanded to one `skill_level:<skill>` entry per skill.
+          if (requirement.key.startsWith('skill_level:') && typeof requirement.value === 'number') {
+            requires.push({
+              type: 'skill',
+              key: requirement.key.slice('skill_level:'.length),
+              op: '>=',
+              value: requirement.value,
+            })
+            continue
+          }
           // `completed_quest` values are the game's own quest keys, which do
           // not all match our records (`repair_haydens_barn` vs
           // `upgrade_haydens_barn`) — and a gate naming a quest we cannot link

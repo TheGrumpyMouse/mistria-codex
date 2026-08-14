@@ -1,0 +1,48 @@
+{
+  "_comment": [
+    "Recipe sources the wiki states and the game files do not.",
+    "",
+    "Every recipe_scroll and crafting_scroll in the game files is collected, so",
+    "a recipe listed here has genuinely NO stated grant anywhere in the files —",
+    "it would otherwise ship the skill_level-inferred fallback. The wiki states",
+    "the real mechanism for these, and per the precedence rule the more",
+    "specific source wins: a wiki-stated source replaces the inferred row.",
+    "",
+    "Shape: recipe id -> a list of { method, source_id }. The loader fills the",
+    "rest (confidence 'wiki', no price) — only these two fields may be stated,",
+    "so this file cannot quietly become a hand-edit of the generated tier. An",
+    "id that matches no built recipe fails the build; a `perk` source_id is",
+    "validated against the game's perk table.",
+    "",
+    "The three statues' scrolls: the sealed caves the boxes sit in are the ones",
+    "opened with Dragon's Breath — our spots data carries sealed_beach_cave and",
+    "sealed_narrows_cave — but the ability has no model, so the source states",
+    "the box and the place, not the door."
+  ],
+  "sources": {
+    "water_sprite": [
+      {
+        "method": "treasure_chest",
+        "source_id": "the_beach",
+        "reason": "no scroll grant exists in the game files; the wiki states the recipe is in a Golden Treasure Box within The Beach Cave",
+        "source": "https://fieldsofmistria.wiki.gg/wiki/Water_Sprite_Statue — checked 2026-08-14"
+      }
+    ],
+    "ocarina_sprite_statue": [
+      {
+        "method": "treasure_chest",
+        "source_id": "the_narrows",
+        "reason": "no scroll grant exists in the game files; the wiki states the recipe is in a Golden Treasure Box within The Narrows Cave",
+        "source": "https://fieldsofmistria.wiki.gg/wiki/Animal_Sprite_Statue — checked 2026-08-14"
+      }
+    ],
+    "water_sprite_large": [
+      {
+        "method": "perk",
+        "source_id": "big_water_sprites",
+        "reason": "the wiki states the recipe comes from the Big Water Sprites woodcrafting perk; the game states the link only in the perk's prose, which is never read",
+        "source": "https://fieldsofmistria.wiki.gg/wiki/Large_Water_Sprite_Statue — checked 2026-08-14; fiddle/perks.toml [big_water_sprites] corroborates in prose"
+      }
+    ]
+  }
+}

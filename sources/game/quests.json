@@ -3874,13 +3874,15 @@
       "quest_id": "request_for_baked_potato",
       "requirements": [
         {
+          "key": "skill_level:cooking",
+          "value": 18
+        },
+        {
           "key": "is_season",
           "value": "spring"
         }
       ],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_basil_thyme",
@@ -3966,10 +3968,13 @@
     },
     {
       "quest_id": "request_for_bird_house",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:woodcrafting",
+          "value": 4
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_blackberries",
@@ -4132,13 +4137,15 @@
       "quest_id": "request_for_catfish",
       "requirements": [
         {
+          "key": "skill_level:fishing",
+          "value": 2
+        },
+        {
           "key": "is_season",
           "value": "spring"
         }
       ],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_cauliflower",
@@ -4737,10 +4744,13 @@
     },
     {
       "quest_id": "request_for_goby",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:fishing",
+          "value": 2
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_gold_ingots",
@@ -5166,13 +5176,15 @@
       "quest_id": "request_for_more_wildberries",
       "requirements": [
         {
+          "key": "skill_level:cooking",
+          "value": 12
+        },
+        {
           "key": "is_season",
           "value": "spring"
         }
       ],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_morel_mushroom",
@@ -5310,10 +5322,13 @@
     },
     {
       "quest_id": "request_for_pike",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:fishing",
+          "value": 2
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_pineshrooms",
@@ -5409,10 +5424,13 @@
     },
     {
       "quest_id": "request_for_pudding",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:cooking",
+          "value": 10
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_pumpkin",
@@ -5496,11 +5514,13 @@
         {
           "key": "completed_quest",
           "value": "greet_the_vendors"
+        },
+        {
+          "key": "skill_level:cooking",
+          "value": 14
         }
       ],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_roasted_chestnuts",
@@ -5626,10 +5646,13 @@
     },
     {
       "quest_id": "request_for_scarecrow",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:woodcrafting",
+          "value": 4
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_seaweed",
@@ -5683,10 +5706,13 @@
     },
     {
       "quest_id": "request_for_shipping_bin",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:woodcrafting",
+          "value": 4
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_silver_ingot",
@@ -5730,10 +5756,13 @@
     },
     {
       "quest_id": "request_for_smallmouth_bass",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:fishing",
+          "value": 2
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_snail",
@@ -5795,13 +5824,15 @@
       "quest_id": "request_for_strawberries",
       "requirements": [
         {
+          "key": "skill_level:cooking",
+          "value": 20
+        },
+        {
           "key": "is_season",
           "value": "spring"
         }
       ],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_strawberries_cream",
@@ -5961,10 +5992,13 @@
     },
     {
       "quest_id": "request_for_tuna_sashimi",
-      "requirements": [],
-      "unread_requirement_keys": [
-        "reached_skill_level"
-      ]
+      "requirements": [
+        {
+          "key": "skill_level:fishing",
+          "value": 2
+        }
+      ],
+      "unread_requirement_keys": []
     },
     {
       "quest_id": "request_for_turnip",

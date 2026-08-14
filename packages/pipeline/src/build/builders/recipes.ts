@@ -1,5 +1,6 @@
 import type { ArtifactFacet, BugFacet, ForageableFacet, Rarity, Recipe } from '@mistria/schema'
 import { consola } from 'consola'
+import { applyRecipeSourceOverrides } from '../../lib/recipe-source-overrides.js'
 import { toInteger, toTokens } from '../../normalise/wikitext.js'
 import { type BuildContext, name as itemName, text } from '../context.js'
 import { rarityFor } from '../game-facts.js'
@@ -169,7 +170,15 @@ export function buildRecipes(
     if (!gameIds.has(row.id) && itemIds.has(row.output.item_id)) out.push(row)
   }
 
-  return withLevelFallback(out.sort((a, b) => a.id.localeCompare(b.id)))
+  // Curated wiki-stated sources, before the fallback: a recipe that gains one
+  // here is no longer scroll-less, so the inferred skill row never appears.
+  const all = out.sort((a, b) => a.id.localeCompare(b.id))
+  applyRecipeSourceOverrides(
+    all,
+    ctx.recipeSourceOverrides,
+    ctx.game?.artifactFacts?.perkNameById ?? null,
+  )
+  return withLevelFallback(all)
 }
 
 /**

@@ -1548,20 +1548,32 @@ function RecipeSourceRow({
         // an internal token never renders raw.
         { lead: stall === null ? 'A stall at the ' : `${stall} at the `, standalone: '' }
 
-  // The named thing, and where it links. Only the quest has a page of its
-  // own; a shop, a mine and a festival are named in place, and the remaining
-  // methods read as the standalone phrase.
+  // The named thing, and where it links. The quest and the place have pages
+  // of their own; a shop, a mine and a festival are named in place, and the
+  // remaining methods read as the standalone phrase.
   const quest = quests.find((q) => q.id === source.source_id)
-  const named: { text: string; to?: '/quest/$id'; id?: string } | null =
+  const named: { text: string; to?: '/quest/$id' | '/place/$id'; id?: string } | null =
     source.method === 'shop' && source.source_id !== null
       ? { text: shops.get(source.source_id)?.name ?? titleCase(source.source_id) }
       : source.method === 'quest' && quest !== undefined
         ? { text: `“${quest.name}”`, to: '/quest/$id', id: quest.id }
         : source.method === 'mines_chest' && source.source_id !== null
           ? { text: mines.get(source.source_id)?.name ?? titleCase(source.source_id) }
-          : festival !== undefined
-            ? { text: festival.name }
-            : null
+          : source.method === 'treasure_chest' && source.source_id !== null
+            ? // "A golden treasure box in the cave at The Beach" — the place
+              // is the record; the cave is the sealed one its map pin marks.
+              {
+                text: index[source.source_id]?.n ?? titleCase(source.source_id),
+                to: '/place/$id',
+                id: source.source_id,
+              }
+            : source.method === 'perk' && source.source_id !== null
+              ? // Perks are rows inside a skill record, not pages — named in
+                // place; a title-cased id matches the perk's own title.
+                { text: `${titleCase(source.source_id)} perk` }
+              : festival !== undefined
+                ? { text: festival.name }
+                : null
 
   return (
     <li className="flex flex-wrap items-baseline gap-x-1.5 py-2 text-sm">
