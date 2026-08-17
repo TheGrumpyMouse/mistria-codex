@@ -132,6 +132,12 @@ times and got the cached 1,154 rows back while `Special:CargoTables` said
 enrich:cargo -- --no-cache` (and the same for `enrich:pages`) is the real
 refresh; CI runners have no cache, which is why `refresh.yml` needs no flag.
 
+**`sources/wiki/cargo/` files are named after their tables — `Items.json`,
+capitalized.** Dev is Windows and the refresh runner is Linux, so a
+lowercase-cased path works locally for months and ENOENTs in the one workflow
+that runs the fetchers; two such reads shipped in the init commit. Spell the
+table's name.
+
 **The wiki map's marker groups are semantic — never collapse them.** Regions,
 Buildings, Statues, Fountains and Quest are five different answers to "what is
 this pin", and the builder maps them onto `Spot.kind` (the app draws a glyph

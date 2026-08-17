@@ -54,7 +54,7 @@ export async function collectItemWants(): Promise<Want[]> {
     icon_key: string | null
   }
 
-  const cargo = await readJson<CargoItem[]>(join(SOURCES_DIR, 'wiki', 'cargo', 'items.json'))
+  const cargo = await readJson<CargoItem[]>(join(SOURCES_DIR, 'wiki', 'cargo', 'Items.json'))
 
   const byName = new Map<string, string>()
   for (const row of cargo) {

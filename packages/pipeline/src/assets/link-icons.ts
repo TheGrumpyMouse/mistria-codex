@@ -89,7 +89,7 @@ async function iconBearingStrings(): Promise<string[]> {
     location: string[] | null
   }
   const rows = JSON.parse(
-    await readFile(join(SOURCES_DIR, 'wiki', 'cargo', 'items.json'), 'utf8'),
+    await readFile(join(SOURCES_DIR, 'wiki', 'cargo', 'Items.json'), 'utf8'),
   ) as CargoItem[]
 
   return rows.flatMap((row) => [...(row.sources ?? []), ...(row.location ?? []), row.season ?? ''])
