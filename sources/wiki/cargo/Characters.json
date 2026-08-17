@@ -173,6 +173,25 @@
   },
   {
     "affiliation": null,
+    "birth": null,
+    "charName": "Darren",
+    "eyes": null,
+    "gender": "Male",
+    "occupation": "Bakery Co-owner",
+    "relationship": null,
+    "relatives": [
+      "Unnamed Wife",
+      "[[Wynne]] &lt;small&gt;(Daughter)&lt;/small&gt;",
+      "[[Ryis]] &lt;small&gt;(Son)&lt;/small&gt;",
+      "[[Other_Characters#Ryis&#039;s_Family|Vivi]] &lt;small&gt;(Daughter)&lt;/small&gt;",
+      "[[Landen]] &lt;small&gt;(Brother-in-law)&lt;/small&gt;",
+      "Other Unnamed Daughters (x3)"
+    ],
+    "romanceable": 0,
+    "species": "Human"
+  },
+  {
+    "affiliation": null,
     "birth": "Winter 3",
     "charName": "Dell",
     "eyes": "Blue",
@@ -392,8 +411,10 @@
     "relatives": [
       "Nephew: [[Ryis]]",
       "Unnamed Sister",
-      "Unnamed Brother-in-law",
-      "Unnamed Nieces (x?)"
+      "Brother-in-law: Darren",
+      "Niece: Wynne",
+      "Niece: Vivi",
+      "Unnamed Nieces (x3)"
     ],
     "romanceable": 0,
     "species": "Human"
@@ -582,12 +603,12 @@
   },
   {
     "affiliation": null,
-    "birth": "&lt;span class=&quot;spoiler-content &quot; id=&quot;&quot; style=&quot;&quot;&gt;&lt;span&gt;Winter 2&lt;/span&gt;&lt;/span&gt;",
+    "birth": "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;Winter 2&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]",
     "charName": "Priestess",
     "eyes": null,
     "gender": "Female",
     "occupation": "Dragon Priestess",
-    "relationship": "&lt;span class=&quot;spoiler-content &quot; id=&quot;&quot; style=&quot;&quot;&gt;&lt;span&gt;Single&lt;/span&gt;&lt;/span&gt;",
+    "relationship": "&lt;span class=&quot;spoiler-content&quot; style=&quot;&quot;&gt;&lt;span&gt;Single&lt;/span&gt;&lt;/span&gt;[[Category:Pages with spoilers]]",
     "relatives": [
       ""
     ],
@@ -620,11 +641,13 @@
     "occupation": "Carpenter",
     "relationship": "Single",
     "relatives": [
+      "Unnamed Mother",
+      "Father: Darren",
       "Maternal Uncle: [[Landen]]",
       "Unnamed Aunt",
-      "Unnamed Mother",
-      "Unnamed Father",
-      "Unnamed Sisters (x?)"
+      "Older Sister: [[Wynne]]",
+      "Baby Sister: ViviUnnamed Older Sister",
+      "Unnamed Younger Sisters (x2)"
     ],
     "romanceable": 1,
     "species": "Human"
@@ -720,11 +743,12 @@
     "eyes": "[[#appearance|Customizable]]",
     "gender": "[[#pronouns|Customizable]]",
     "occupation": "Adventurer&lt;br&gt;Farmer",
-    "relationship": "Single",
+    "relationship": "Single / Dating (Conditional) / Married (Conditional)",
     "relatives": [
-      ""
+      "[[Marriage|The Player&#039;s Spouse]] (Conditional)",
+      "[[Player Children|The Player&#039;s Child]] (Conditional)"
     ],
-    "romanceable": 1,
+    "romanceable": 0,
     "species": "Human"
   },
   {
@@ -815,6 +839,26 @@
   },
   {
     "affiliation": null,
+    "birth": null,
+    "charName": "Wynne",
+    "eyes": null,
+    "gender": "Female",
+    "occupation": null,
+    "relationship": null,
+    "relatives": [
+      "Unnamed Mother",
+      "[[Darren]] &lt;small&gt;(Father)&lt;/small&gt;",
+      "[[Ryis]] &lt;small&gt;(Brother)&lt;/small&gt;",
+      "[[Other_Characters#Ryis&#039;s_Family|Vivi]] &lt;small&gt;(Sister)&lt;/small&gt;",
+      "[[Landen]] &lt;small&gt;(Uncle)&lt;/small&gt;",
+      "Other Unnamed Sisters (x3)",
+      "Unnamed Aunt"
+    ],
+    "romanceable": 0,
+    "species": "Human"
+  },
+  {
+    "affiliation": null,
     "birth": "Fall 16",
     "charName": "Yufiel",
     "eyes": null,
@@ -843,7 +887,7 @@
   },
   {
     "affiliation": null,
-    "birth": "Summer 23",
+    "birth": "Spring 6",
     "charName": "Zorel",
     "eyes": "Green",
     "gender": "Female",

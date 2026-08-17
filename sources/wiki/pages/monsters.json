@@ -41,6 +41,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Enchantern",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Mini Lantern Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -58,6 +64,12 @@
         "item": "Monster Wing",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Essence Bat",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -130,6 +142,12 @@
         "item": "Monster Horn",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Stalagmite",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -223,6 +241,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Flame Spirit",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Flame Spirit Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -240,6 +264,12 @@
         "item": "Monster Fang",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Flying Tome",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -373,6 +403,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Stalagmite",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Stalagmite Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -390,6 +426,12 @@
         "item": "Monster Fang",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Gryphon Statue",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -457,12 +499,24 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Lava Cat",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Lava Cat Hat",
         "kind": "accessory",
         "requiresPerk": null
       }
     ],
     "Mimic": [
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Mimic",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
       {
         "chance": 0.05,
         "item": "Mimic Hat",
@@ -595,6 +649,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Essence Bat",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Essence Bat Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -618,6 +678,12 @@
         "item": "Monster Core",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Flame Spirit",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -690,6 +756,12 @@
         "item": "Monster Horn",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Stalagmite",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,
@@ -791,6 +863,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Rock stack",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Rock Stack Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -837,6 +915,12 @@
       },
       {
         "chance": 0.05,
+        "item": "Pet Skin: Void Cat",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
+      },
+      {
+        "chance": 0.05,
         "item": "Void Cat Hat",
         "kind": "accessory",
         "requiresPerk": null
@@ -854,6 +938,12 @@
         "item": "Monster Core",
         "kind": "item",
         "requiresPerk": null
+      },
+      {
+        "chance": 0.05,
+        "item": "Pet Skin: Enchantern",
+        "kind": "item",
+        "requiresPerk": "Friend-Shaped"
       },
       {
         "chance": 0.05,

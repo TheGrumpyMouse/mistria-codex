@@ -5,8 +5,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -202,8 +201,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -399,8 +397,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -596,8 +593,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -813,8 +809,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1050,8 +1045,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1297,8 +1291,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1514,8 +1507,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",
@@ -1741,8 +1733,7 @@
     "confidence": "wiki",
     "data_gaps": [
       "xp_curve",
-      "effect_key",
-      "predates_1_0"
+      "effect_key"
     ],
     "former_ids": [],
     "game_version": "v0-15-0",

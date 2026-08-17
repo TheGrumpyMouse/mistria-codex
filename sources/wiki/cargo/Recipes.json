@@ -1365,11 +1365,11 @@
     ],
     "craftType": "Blacksmith",
     "ingredients": [
-      "[[File:diamond.png|30px|link=Diamond]] [[Diamond]] (2)&lt;br&gt;[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)&lt;br&gt;[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)&lt;br&gt;[[File:dragon-forged core.png|30px|link=Dragon-Forged Core]] [[Dragon-Forged Core]]"
+      "[[File:diamond.png|30px|link=Diamond]] [[Diamond]] (2)&lt;br&gt;[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)&lt;br&gt;[[File:gold ingot.png|30px|link=Gold Ingot]] [[Gold Ingot]] (4)&lt;br&gt;[[File:dragon-forged core.png|30px|link=Dragon-Forged Core]] [[Dragon-Forged Core]] (1)"
     ],
     "itemName": "Engagement Ring",
     "recipeSource": [
-      ""
+      "[[File:engagement ring recipe scroll.png|30px|link=Engagement Ring Recipe Scroll]] [[Engagement Ring Recipe Scroll]] from &lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:22px;width:22px&quot;&gt;[[File:Elsie icon.png|22px|link=Elsie|alt=|class=pixel-image|Elsie]]&lt;/span&gt;[[Elsie|&lt;span class=&quot;sprite-text&quot;&gt;Elsie&lt;/span&gt;]]&lt;/span&gt;"
     ],
     "skillLevel": 30,
     "stars": null,

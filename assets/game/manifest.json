@@ -7724,21 +7724,6 @@
       "width": 72
     },
     {
-      "bytes": 289,
-      "family": "item",
-      "fetched_at": "2026-08-11",
-      "file": "item/baby-cradle.png",
-      "height": 72,
-      "icon_keys": [
-        "misc/baby_cradle"
-      ],
-      "key": "item/baby-cradle",
-      "sha256": "c6689816d8ff700bd026552d1bfd0c4f01ade628ac2934b2a0a5ba643e5fbb84",
-      "source_file": "Baby cradle.png",
-      "source_url": "https://fieldsofmistria.wiki.gg/wiki/File:Baby%20cradle.png",
-      "width": 72
-    },
-    {
       "bytes": 264,
       "family": "item",
       "fetched_at": "2026-08-07",

@@ -1504,8 +1504,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "stock_items",
-      "predates_1_0"
+      "stock_items"
     ],
     "former_ids": [],
     "game_version": "v0-14-0",
@@ -2139,8 +2138,7 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "stock_items",
-      "predates_1_0"
+      "stock_items"
     ],
     "former_ids": [],
     "game_version": "v0-13-2",
