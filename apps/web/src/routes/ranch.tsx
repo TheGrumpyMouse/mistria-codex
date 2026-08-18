@@ -121,7 +121,14 @@ export function RanchRoute() {
         <h1 className="text-2xl">Ranch</h1>
         <p className="mt-1 text-ink-mute text-sm">
           The animals you can keep, the pets that follow you home, and the numbers behind hearts and
-          golden produce.
+          golden produce. Coops, barns and what they cost live under{' '}
+          <Link
+            to="/buildings"
+            className="underline decoration-rule underline-offset-4 hover:text-ink"
+          >
+            Buildings
+          </Link>
+          .
         </p>
       </header>
 

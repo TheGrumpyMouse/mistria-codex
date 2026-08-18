@@ -45,6 +45,8 @@ const REF_TARGETS: Readonly<Record<string, DatasetName>> = {
   artifact_set_ids: 'museum_sets',
 
   quest_id: 'quests',
+  repair_quest_id: 'quests',
+  blueprint_item_ids: 'items',
   unlocks_mine_id: 'mines',
   unlocks_location_id: 'locations',
   // A quest's reverse indexes over gates stated elsewhere — flat per-type

@@ -408,12 +408,26 @@ export const Building = withEnvelope({
         /** Egg slots, for coops. Barns state 0 — a fact, not a gap. */
         incubators: z.number().int().nullable().default(null),
         requires: z.array(Requirement).default([]),
+        /**
+         * The purchasable items for this tier — blueprint colour variants for
+         * coops and barns (a set of equivalent choices, not a progression), or
+         * the station itself where it is bought directly (the kitchen). Empty
+         * means no such item exists (home upgrades are a service), never
+         * "unknown".
+         */
+        blueprint_item_ids: z.array(IdRef).default([]),
       }),
     )
     .default([]),
   /** Which animal size the building houses — coops small, barns large. */
   animal_size: z.enum(['small', 'large']).nullable().default(null),
   vendor_shop_id: IdRef.nullable().default(null),
+  /**
+   * The quest that restores this building, where restoration is how it is
+   * obtained — the mill. Its cost is that quest's supplied items, not a
+   * purchase, which is why the tiers stay empty of tesserae.
+   */
+  repair_quest_id: IdRef.nullable().default(null),
   placeable_on_farm: z.boolean().nullable().default(null),
 })
 export type Building = z.infer<typeof Building>

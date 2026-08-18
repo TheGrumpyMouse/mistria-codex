@@ -5,6 +5,7 @@ import { Column } from '~/app/AppShell'
 import { useAtlas } from '~/app/AtlasProvider'
 import { BackLink } from '~/components/BackLink'
 import { FishShadow } from '~/components/FishShadow'
+import { GateRun } from '~/components/GateRun'
 import { ItemIcon } from '~/components/ItemIcon'
 import { OpportunityCard } from '~/components/OpportunityCard'
 import { PlaceLink } from '~/components/PlaceLink'
@@ -21,8 +22,8 @@ import {
 } from '~/lib/data'
 import { useDocumentTitle } from '~/lib/head'
 import {
+  buildingTierLabel,
   categoryLabelOne,
-  gateDisplay,
   type PlaceLabel,
   placeLabels,
   recipeSourceLabel,
@@ -275,15 +276,27 @@ interface MonsterLite {
 /** One thing that wants this item handed over, and its tick. */
 interface Need {
   /** Progress domain — decides the stored key and never collides. */
-  domain: 'museum' | 'seal' | 'quest' | 'request'
+  domain: 'museum' | 'seal' | 'quest' | 'request' | 'building'
   /** The id half of the progress key. */
   progressId: string
   label: string
   /** Where tapping the name goes; null for the museum (its link is the banner). */
-  linkTo: { to: '/quest/$id' | '/museum'; id?: string } | null
+  linkTo: { to: '/quest/$id' | '/museum' | '/building/$id'; id?: string } | null
   quantity: number
   /** The needing record's index id, for veil checks. Null for the museum. */
   aboutId: string | null
+}
+
+/** Enough of a building to say "the Coop wants 75 of these" — and the reverse. */
+interface BuildingLite {
+  id: string
+  name: string
+  kind: string
+  tiers: {
+    level: number
+    cost: { materials: { item_id: string; quantity: number }[] }
+    blueprint_item_ids: string[]
+  }[]
 }
 
 /** The four levels the wiki records, best first. */
@@ -309,6 +322,7 @@ export function ItemRoute() {
     fishFacets: FishFacetLite[]
     monsters: MonsterLite[]
     animals: AnimalLite[]
+    buildings: BuildingLite[]
     meta: Meta | null
     loading: boolean
   }>({
@@ -328,6 +342,7 @@ export function ItemRoute() {
     fishFacets: [],
     monsters: [],
     animals: [],
+    buildings: [],
     meta: null,
     loading: true,
   })
@@ -360,10 +375,13 @@ export function ItemRoute() {
       // A few KB, for the reverse of the ranch's produce tables — an egg's
       // page should name the hen.
       loadDataset<AnimalLite>('animals'),
+      // ~8KB, both directions at once: a material's page lists the buildings
+      // that want it, and a blueprint's page names what it builds.
+      loadDataset<BuildingLite>('buildings'),
       loadRequestBoard(),
       loadMeta(),
       Promise.all(
-        (['museum', 'seal', 'quest', 'request'] as const).map(
+        (['museum', 'seal', 'quest', 'request', 'building'] as const).map(
           async (domain) => [domain, await doneIn(domain)] as const,
         ),
       ),
@@ -384,6 +402,7 @@ export function ItemRoute() {
           fishFacets,
           monsters,
           animals,
+          buildings,
           board,
           meta,
           done,
@@ -406,6 +425,7 @@ export function ItemRoute() {
             fishFacets,
             monsters,
             animals,
+            buildings,
             meta,
             loading: false,
           })
@@ -438,6 +458,7 @@ export function ItemRoute() {
     fishFacets,
     monsters,
     animals,
+    buildings,
     meta,
     loading,
   } = state
@@ -506,8 +527,37 @@ export function ItemRoute() {
         aboutId: request.id,
       })
     }
+    // Construction: a building stage that asks for this as a material. The
+    // progress key carries the tier, because the Coop wants Wood three times
+    // over and handing in Stage 1's is not handing in Stage 3's.
+    for (const building of buildings) {
+      for (const tier of building.tiers) {
+        const wanted = tier.cost.materials.find((m) => m.item_id === id)
+        if (wanted === undefined) continue
+        out.push({
+          domain: 'building',
+          progressId: `${building.id}/${tier.level}/${id}`,
+          label: `${building.name} — ${buildingTierLabel(building.kind, tier.level, building.tiers.length)}`,
+          linkTo: { to: '/building/$id', id: building.id },
+          quantity: wanted.quantity,
+          aboutId: null,
+        })
+      }
+    }
     return out
-  }, [seals, quests, board, id, spoilers])
+  }, [seals, quests, board, buildings, id, spoilers])
+
+  // The other direction of the construction join: this item IS a blueprint
+  // (or a bought station), and its page should name what it puts up.
+  const builds = useMemo(
+    () =>
+      buildings.flatMap((building) =>
+        building.tiers
+          .filter((tier) => tier.blueprint_item_ids.includes(id))
+          .map((tier) => ({ building, level: tier.level, count: building.tiers.length })),
+      ),
+    [buildings, id],
+  )
 
   const isTicked = (need: Need): boolean => ticked[need.domain]?.has(need.progressId) ?? false
   const toggleNeed = (need: Need): void => {
@@ -1097,9 +1147,33 @@ export function ItemRoute() {
         </Section>
       )}
 
-      {/* There is no shop route, but a shop is a building at a place with an
-          owner — and both of those have pages, which is what someone reading
-          "the General Store sells this" wants to tap next. */}
+      {/* A blueprint's page names what it puts up — the building page carries
+          the materials, the capacity and the other stages. */}
+      {builds.length > 0 && (
+        <Section title="Builds">
+          <ul className="flex flex-col gap-1 text-ink-mute text-sm">
+            {builds.map((entry) => (
+              <li key={`${entry.building.id}/${entry.level}`}>
+                The blueprint for the{' '}
+                <Link
+                  to="/building/$id"
+                  params={{ id: entry.building.id }}
+                  className="text-ink underline decoration-rule underline-offset-4 hover:text-ink"
+                >
+                  {entry.building.name}
+                </Link>
+                {entry.count > 1 && (
+                  <>
+                    {' — '}
+                    {buildingTierLabel(entry.building.kind, entry.level, entry.count).toLowerCase()}
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
       {item.sold_by.length > 0 && (
         <Section title="Sold by">
           <ul className="flex flex-col gap-1 text-ink-mute text-sm">
@@ -1130,7 +1204,13 @@ export function ItemRoute() {
                     size="sm"
                   />
                   <span className="min-w-0">
-                    <span className="text-ink">{shop.name}</span>
+                    <Link
+                      to="/shop/$id"
+                      params={{ id: shop.id }}
+                      className="text-ink underline decoration-rule underline-offset-4 hover:text-ink"
+                    >
+                      {shop.name}
+                    </Link>
                     {shop.location_id !== null && (
                       <>
                         {' — in '}
@@ -1441,41 +1521,6 @@ function ItemLinkList({ ids, index }: { ids: string[]; index: DisplayIndex }) {
         </button>
       )}
     </div>
-  )
-}
-
-/**
- * A run of gates, worded as things you do and linked where they have a page.
- *
- * Joined with "and" rather than a separator, because these are conjunctive:
- * every one has to be true before the line is stocked, and a "·" between them
- * reads as a choice.
- */
-function GateRun({ gates, index }: { gates: Gate[]; index: DisplayIndex }) {
-  return (
-    <>
-      {gates.map((gate, i) => {
-        const parts = gateDisplay(gate, index[gate.key]?.n)
-        return (
-          <span key={`${gate.type}:${gate.key}`}>
-            {i > 0 && ' and '}
-            {parts.prefix}
-            {parts.linkTo === null ? (
-              parts.label
-            ) : (
-              <Link
-                to={parts.linkTo.to}
-                params={{ id: parts.linkTo.id }}
-                className="underline decoration-current underline-offset-2"
-              >
-                {parts.label}
-              </Link>
-            )}
-            {parts.suffix}
-          </span>
-        )
-      })}
-    </>
   )
 }
 

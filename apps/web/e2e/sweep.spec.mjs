@@ -46,6 +46,8 @@ const ROUTE_FOR = {
   animal: 'animal',
   pet: 'pet',
   festival: 'festival',
+  shop: 'shop',
+  building: 'building',
 }
 
 /** Text that means something rendered wrong, whatever screen it is on. */
@@ -100,6 +102,8 @@ async function sweep(label, viewport) {
     ['/museum', 'Museum'],
     ['/mines', 'Mines'],
     ['/ranch', 'Ranch'],
+    ['/shops', 'Shops'],
+    ['/buildings', 'Buildings'],
     ['/browse', 'Browse'],
     ['/map', 'Map'],
     ['/settings', 'Settings'],

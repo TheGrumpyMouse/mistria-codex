@@ -318,6 +318,40 @@ if ((await needBoxes.count()) > 0) {
   )
 }
 
+// ── 10. Search lands on a building's own page ──
+await go('/search')
+await page.locator('input[type="search"]').fill('greenhouse')
+await page.waitForTimeout(400)
+await page
+  .getByRole('link', { name: /^Greenhouse/ })
+  .first()
+  .click()
+await page.waitForTimeout(700)
+check(
+  'searching “greenhouse” lands on the building page',
+  page.url().includes('/building/greenhouse'),
+  page.url(),
+)
+check('and the page states the construction cost', (await body()).includes('50000t'))
+
+// ── 11. The museum's gaps-only filter is remembered, like the fold ──
+await go('/museum')
+const gapsBox = page.getByRole('checkbox', { name: /Only what is missing/i })
+check('the museum offers the gaps-only filter', await gapsBox.isVisible())
+await gapsBox.check()
+await page.waitForTimeout(200)
+await go('/settings')
+await go('/museum')
+check('leaving and returning keeps gaps-only on', await gapsBox.isChecked())
+await page.reload({ waitUntil: 'networkidle' })
+await page.waitForTimeout(700)
+check('and it survives a reload', await gapsBox.isChecked())
+await gapsBox.uncheck()
+await page.waitForTimeout(200)
+await go('/settings')
+await go('/museum')
+check('turning it off is remembered too', !(await gapsBox.isChecked()))
+
 await page.close()
 await browser.close()
 finish()

@@ -15800,12 +15800,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_tables_and_chairs",
     "id_status": "provisional",
@@ -15816,7 +15815,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -15843,12 +15843,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_mine_forageables",
     "id_status": "provisional",
@@ -15859,7 +15858,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -15886,12 +15886,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_fish",
     "id_status": "provisional",
@@ -15902,7 +15901,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -15929,12 +15929,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_berries",
     "id_status": "provisional",
@@ -15945,7 +15944,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -15972,12 +15972,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_ingots",
     "id_status": "provisional",
@@ -15988,7 +15987,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16017,12 +16017,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_animal_materials",
     "id_status": "provisional",
@@ -16033,7 +16032,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16060,12 +16060,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_soup",
     "id_status": "provisional",
@@ -16076,7 +16075,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16103,12 +16103,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_stone",
     "id_status": "provisional",
@@ -16119,7 +16118,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16191,12 +16191,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_copper_tools",
     "id_status": "provisional",
@@ -16207,7 +16206,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16234,12 +16234,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_golden_ingredients",
     "id_status": "provisional",
@@ -16250,7 +16249,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16279,12 +16279,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_baked_dishes",
     "id_status": "provisional",
@@ -16295,7 +16294,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16322,12 +16322,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_stone_paths",
     "id_status": "provisional",
@@ -16338,7 +16337,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16365,12 +16365,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_flowers",
     "id_status": "provisional",
@@ -16381,7 +16380,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16408,12 +16408,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_monster_materials",
     "id_status": "provisional",
@@ -16424,7 +16423,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16451,12 +16451,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_grass_starters",
     "id_status": "provisional",
@@ -16467,7 +16466,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16495,12 +16495,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_refined_stone",
     "id_status": "provisional",
@@ -16511,7 +16510,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16539,12 +16539,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_bell_berries",
     "id_status": "provisional",
@@ -16555,7 +16554,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16583,12 +16583,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "adeline",
     "icon_key": "quest/crown",
     "id": "crown_request_gold_ingots",
     "id_status": "provisional",
@@ -16599,7 +16598,8 @@
     "objectives": [],
     "prerequisites": [],
     "prov": {
-      "*": "wiki_page"
+      "*": "wiki_page",
+      "giver_character_id": "game_files"
     },
     "repeatable": true,
     "required_items": [],
@@ -16663,12 +16663,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "rice_ball_challenge",
     "id_status": "provisional",
@@ -16686,6 +16685,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16714,12 +16714,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "crystal_berry_pie_challenge",
     "id_status": "provisional",
@@ -16737,6 +16736,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16765,12 +16765,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "fried_earthshroom_challenge",
     "id_status": "provisional",
@@ -16788,6 +16787,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16816,12 +16816,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "chocolate_cake_challenge",
     "id_status": "provisional",
@@ -16839,6 +16838,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16867,12 +16867,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "tide_salad_challenge",
     "id_status": "provisional",
@@ -16890,6 +16889,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16918,12 +16918,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "omelet_challenge",
     "id_status": "provisional",
@@ -16941,6 +16940,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -16969,12 +16969,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "bell_berry_bakewell_tart_challenge",
     "id_status": "provisional",
@@ -16992,6 +16991,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17020,12 +17020,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "herb_salad_challenge",
     "id_status": "provisional",
@@ -17043,6 +17042,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17071,12 +17071,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "incredibly_hot_pot_challenge",
     "id_status": "provisional",
@@ -17094,6 +17093,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17122,12 +17122,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "golden_cookies_challenge",
     "id_status": "provisional",
@@ -17145,6 +17144,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17173,12 +17173,11 @@
     "blurb": null,
     "confidence": "wiki",
     "data_gaps": [
-      "prerequisites",
-      "giver_character_id"
+      "prerequisites"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "veggie_sub_sandwich_challenge",
     "id_status": "provisional",
@@ -17196,6 +17195,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17225,12 +17225,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "taliferro",
     "icon_key": "quest/cooking_challenge",
     "id": "beet_soup_challenge",
     "id_status": "provisional",
@@ -17242,6 +17241,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17273,12 +17273,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "green_sapling_surprise",
     "id_status": "provisional",
@@ -17290,6 +17289,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17317,12 +17317,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "rock_clod_catastrophe",
     "id_status": "provisional",
@@ -17334,6 +17333,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17361,12 +17361,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "mushroom_madness",
     "id_status": "provisional",
@@ -17378,6 +17377,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17405,12 +17405,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "enchantern_explosion",
     "id_status": "provisional",
@@ -17422,6 +17421,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17449,12 +17449,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "staggering_stalagmites",
     "id_status": "provisional",
@@ -17466,6 +17465,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17493,12 +17493,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "essence_gone_batty",
     "id_status": "provisional",
@@ -17510,6 +17509,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17537,12 +17537,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "malicious_mimics",
     "id_status": "provisional",
@@ -17554,6 +17553,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17581,12 +17581,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "flame_spirit_shocker",
     "id_status": "provisional",
@@ -17598,6 +17597,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17625,12 +17625,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "lava_cat_conundrum",
     "id_status": "provisional",
@@ -17642,6 +17641,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17669,12 +17669,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "flying_tome_trouble",
     "id_status": "provisional",
@@ -17686,6 +17685,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17713,12 +17713,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "rock_stack_smackdown",
     "id_status": "provisional",
@@ -17730,6 +17729,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,
@@ -17757,12 +17757,11 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
-      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": null,
+    "giver_character_id": "stillwell",
     "icon_key": "quest/mission",
     "id": "gryphon_grapple",
     "id_status": "provisional",
@@ -17774,6 +17773,7 @@
     "prerequisites": [],
     "prov": {
       "*": "wiki_page",
+      "giver_character_id": "game_files",
       "teaches_recipe_ids": "game_files"
     },
     "repeatable": false,

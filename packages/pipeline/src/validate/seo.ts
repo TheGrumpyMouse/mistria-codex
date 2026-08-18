@@ -22,6 +22,7 @@ import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import {
   type AnimalRecord,
+  type BuildingRecord,
   buildPages,
   type CharacterRecord,
   type Dataset,
@@ -32,6 +33,7 @@ import {
   type PlaceRecord,
   type QuestRecord,
   type RecipeRecord,
+  type ShopRecord,
 } from '../build/seo/pages.js'
 import { renderPage } from '../build/seo/render.js'
 import { DATA_DIR } from '../lib/paths.js'
@@ -158,7 +160,8 @@ export async function checkSeo(): Promise<Finding[]> {
     mines: await read<MineRecord>('mines.json'),
     quests: await read<QuestRecord>('quests.json'),
     recipes: await read<RecipeRecord>('recipes.json'),
-    shops: await read<{ id: string; name: string }>('shops.json'),
+    shops: await read<ShopRecord>('shops.json'),
+    buildings: await read<BuildingRecord>('buildings.json'),
     festivals: await read<FestivalRecord>('festivals.json'),
   }
 

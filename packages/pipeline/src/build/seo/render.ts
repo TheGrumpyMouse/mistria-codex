@@ -51,10 +51,23 @@ export interface FactRow {
   href?: string
 }
 
+/**
+ * A named thing plus an optional trailing detail — a stock line, a material
+ * with its quantity, a tier's blueprint. `href` links the name when the
+ * target has a page; `detail` (price, quantity, a requirement) never does,
+ * matching the rest of this file's rule that only one thing per row links.
+ */
+export interface Entry {
+  label: string
+  href?: string
+  detail?: string
+}
+
 export type Section =
   | { heading: string; kind: 'facts'; rows: FactRow[] }
   | { heading: string; kind: 'list'; items: string[] }
   | { heading: string; kind: 'links'; links: { href: string; text: string }[] }
+  | { heading: string; kind: 'entries'; entries: Entry[] }
 
 export interface PageInput {
   /** The `<h1>` and the base of the `<title>`. */
@@ -146,10 +159,24 @@ function renderSection(section: Section): string {
     return `${heading}<ul>${items}</ul>`
   }
 
-  const links = section.links
-    .map((l) => `<li><a href="${escapeHtml(l.href)}">${escapeHtml(l.text)}</a></li>`)
+  if (section.kind === 'links') {
+    const links = section.links
+      .map((l) => `<li><a href="${escapeHtml(l.href)}">${escapeHtml(l.text)}</a></li>`)
+      .join('')
+    return `${heading}<ul>${links}</ul>`
+  }
+
+  const entries = section.entries
+    .map((e) => {
+      const label =
+        e.href === undefined
+          ? escapeHtml(e.label)
+          : `<a href="${escapeHtml(e.href)}">${escapeHtml(e.label)}</a>`
+      const detail = e.detail === undefined || e.detail === '' ? '' : ` — ${escapeHtml(e.detail)}`
+      return `<li>${label}${detail}</li>`
+    })
     .join('')
-  return `${heading}<ul>${links}</ul>`
+  return `${heading}<ul>${entries}</ul>`
 }
 
 /**

@@ -23,11 +23,23 @@
     "everywhere else and a number that means something different in one record is",
     "worse than an absent one.",
     "",
-    "KITCHEN, CRAFTING STATION, MILL and FARM EXPANSION are real buildings whose",
-    "cost tables are on pages not yet read. They are recorded with no tiers and a",
-    "`tiers` data gap, because a player looking for the Mill should find out that",
-    "we know it exists and not what it costs — rather than find nothing and",
-    "conclude it doesn't."
+    "BLUEPRINTS are the tier's purchasable items, named by display name and",
+    "resolved through the build's id index like materials. The two names per",
+    "tier are the colour variants the comment above describes — a set of",
+    "equivalent choices, not two buildings. Verified against the carpenter's",
+    "shipped stock 2026-08-18; note the White coop/barn blueprints' internal",
+    "ids say 'black', which is why this file speaks display names.",
+    "",
+    "KITCHEN tiers are the three kitchen types on the Carpenter page (checked",
+    "2026-08-18): Beginner 1000t ungated, Cozy 1500t at Cooking 15, Adept 3000t",
+    "at Cooking 30. No materials stated. Only the Beginner exists as an item",
+    "(beginner_kitchen), so only tier 1 carries a blueprint-style item link.",
+    "CRAFTING STATION is a single 1000t tier, ungated — stated identically on",
+    "the Crafting and Carpenter pages. FARM EXPANSION is one 40000t expansion",
+    "with 50 Refined Stone + 50 Hard Wood, no stated prerequisite (Farm page,",
+    "same date). THE MILL is not bought at all: repair_quest names the",
+    "game-derived quest whose supplied items are the whole cost, so its tiers",
+    "stay empty deliberately — a tesserae figure there would be invented."
   ],
 
   "buildings": [
@@ -44,21 +56,24 @@
           "tesserae": 1500,
           "capacity": 4,
           "materials": [{ "item": "Wood", "quantity": 75 }, { "item": "Stone", "quantity": 50 }],
-          "requires": []
+          "requires": [],
+          "blueprints": ["Small White Coop Blueprint", "Small Red Coop Blueprint"]
         },
         {
           "level": 2,
           "tesserae": 3000,
           "capacity": 8,
           "materials": [{ "item": "Wood", "quantity": 100 }, { "item": "Stone", "quantity": 75 }],
-          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }]
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }],
+          "blueprints": ["Medium White Coop Blueprint", "Medium Red Coop Blueprint"]
         },
         {
           "level": 3,
           "tesserae": 6000,
           "capacity": 12,
           "materials": [{ "item": "Wood", "quantity": 125 }, { "item": "Stone", "quantity": 100 }],
-          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }]
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }],
+          "blueprints": ["Large White Coop Blueprint", "Large Red Coop Blueprint"]
         }
       ]
     },
@@ -75,21 +90,24 @@
           "tesserae": 2000,
           "capacity": 4,
           "materials": [{ "item": "Wood", "quantity": 100 }, { "item": "Stone", "quantity": 75 }],
-          "requires": []
+          "requires": [],
+          "blueprints": ["Small White Barn Blueprint", "Small Red Barn Blueprint"]
         },
         {
           "level": 2,
           "tesserae": 4000,
           "capacity": 8,
           "materials": [{ "item": "Wood", "quantity": 125 }, { "item": "Stone", "quantity": 100 }],
-          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }]
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 20 }],
+          "blueprints": ["Medium White Barn Blueprint", "Medium Red Barn Blueprint"]
         },
         {
           "level": 3,
           "tesserae": 8000,
           "capacity": 12,
           "materials": [{ "item": "Wood", "quantity": 150 }, { "item": "Stone", "quantity": 125 }],
-          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }]
+          "requires": [{ "type": "skill", "key": "ranching", "op": ">=", "value": 40 }],
+          "blueprints": ["Large White Barn Blueprint", "Large Red Barn Blueprint"]
         }
       ]
     },
@@ -108,7 +126,8 @@
           "materials": [],
           "requires": [
             { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
-          ]
+          ],
+          "blueprints": ["Small White Greenhouse Blueprint", "Small Wood Greenhouse Blueprint"]
         },
         {
           "level": 2,
@@ -117,7 +136,8 @@
           "materials": [],
           "requires": [
             { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
-          ]
+          ],
+          "blueprints": ["Large White Greenhouse Blueprint", "Large Wood Greenhouse Blueprint"]
         }
       ]
     },
@@ -180,7 +200,30 @@
       "vendor": "carpenter",
       "placeable_on_farm": true,
       "wiki_page": "Cooking",
-      "tiers": []
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 1000,
+          "capacity": null,
+          "materials": [],
+          "requires": [],
+          "blueprints": ["Level 1 Kitchen"]
+        },
+        {
+          "level": 2,
+          "tesserae": 1500,
+          "capacity": null,
+          "materials": [],
+          "requires": [{ "type": "skill", "key": "cooking", "op": ">=", "value": 15 }]
+        },
+        {
+          "level": 3,
+          "tesserae": 3000,
+          "capacity": null,
+          "materials": [],
+          "requires": [{ "type": "skill", "key": "cooking", "op": ">=", "value": 30 }]
+        }
+      ]
     },
     {
       "id": "crafting_station",
@@ -189,7 +232,16 @@
       "vendor": "carpenter",
       "placeable_on_farm": true,
       "wiki_page": "Crafting",
-      "tiers": []
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 1000,
+          "capacity": null,
+          "materials": [],
+          "requires": [],
+          "blueprints": ["Crafting Station"]
+        }
+      ]
     },
     {
       "id": "mill",
@@ -198,6 +250,7 @@
       "vendor": null,
       "placeable_on_farm": false,
       "wiki_page": "The Mill",
+      "repair_quest": "repair_the_mill",
       "tiers": []
     },
     {
@@ -207,7 +260,18 @@
       "vendor": "carpenter",
       "placeable_on_farm": false,
       "wiki_page": "Farm",
-      "tiers": []
+      "tiers": [
+        {
+          "level": 1,
+          "tesserae": 40000,
+          "capacity": null,
+          "materials": [
+            { "item": "Refined Stone", "quantity": 50 },
+            { "item": "Hard Wood", "quantity": 50 }
+          ],
+          "requires": []
+        }
+      ]
     }
   ]
 }

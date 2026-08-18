@@ -303,7 +303,7 @@ export function buildAnimals(
   return built
 }
 
-export function buildBuildings(ctx: BuildContext): Building[] {
+export function buildBuildings(ctx: BuildContext, builtItemIds?: Set<string>): Building[] {
   const input: BuildingInputs = ctx.buildings
   const stables = ctx.game?.ranching?.stables ?? []
   // small_barn / medium_barn / large_barn are the coop-or-barn record's tiers
@@ -330,6 +330,21 @@ export function buildBuildings(ctx: BuildContext): Building[] {
         materials.push({ item_id: ctx.idFor(material.item), quantity: material.quantity })
       }
 
+      // Blueprints are game-derived items the wiki's Items table never lists,
+      // so the wiki name index alone cannot vouch for them — the game's own
+      // display-name index can, and the shipped-item set is the final word.
+      const blueprintIds: string[] = []
+      for (const blueprint of tier.blueprints ?? []) {
+        const known = ctx.itemByName.has(blueprint) || ctx.itemIds.internalByDisplay.has(blueprint)
+        const id = known ? ctx.idFor(blueprint) : null
+        if (id === null || (builtItemIds !== undefined && !builtItemIds.has(id))) {
+          ctx.resolver.recordUnresolved(blueprint, 'curated_item', owner)
+          gaps.push('blueprints')
+          continue
+        }
+        blueprintIds.push(id)
+      }
+
       const stable =
         building.kind === 'coop' || building.kind === 'barn'
           ? stableByKindTier.get(`${building.kind}:${tier.level}`)
@@ -340,12 +355,13 @@ export function buildBuildings(ctx: BuildContext): Building[] {
         capacity: stable?.max_occupants ?? tier.capacity,
         incubators: stable?.incubators ?? null,
         requires: tier.requires as Requirement[],
+        blueprint_item_ids: blueprintIds.sort(),
       }
     })
 
-    // A building with no tiers is one whose cost table we have not read yet.
-    // Recording it empty is what lets a player learn the Mill exists.
-    if (tiers.length === 0) gaps.push('tiers')
+    // A building with no tiers is one whose cost table we have not read yet —
+    // unless its repair quest is the whole cost, which is a stated answer.
+    if (tiers.length === 0 && building.repair_quest === undefined) gaps.push('tiers')
 
     const animalSize =
       building.kind === 'coop'
@@ -379,6 +395,7 @@ export function buildBuildings(ctx: BuildContext): Building[] {
       tiers,
       animal_size: stableJoined ? animalSize : null,
       vendor_shop_id: building.vendor,
+      repair_quest_id: building.repair_quest ?? null,
       placeable_on_farm: building.placeable_on_farm,
     }
   })

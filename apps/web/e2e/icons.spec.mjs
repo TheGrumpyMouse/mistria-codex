@@ -335,6 +335,13 @@ check(
   `${inBlizzard} of ${allFound}`,
 )
 
+// ── The shop page's own header ──
+// General Store is one of the eight shops with real art in the manifest, so
+// its detail header must draw the sprite, not the glyph. The six stalls and
+// the buildings glyph by design and are deliberately not asserted here.
+await go('/shop/general_store')
+check('shop/general_store header draws its sprite', await headerIsSprite())
+
 await page.close()
 await browser.close()
 finish()

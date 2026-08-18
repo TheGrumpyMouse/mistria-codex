@@ -14,6 +14,8 @@ import { AnimalRoute } from '~/routes/animal'
 import { BestiaryRoute } from '~/routes/bestiary'
 import { BoardRoute } from '~/routes/board'
 import { BrowseRoute } from '~/routes/browse'
+import { BuildingRoute } from '~/routes/building'
+import { BuildingsRoute } from '~/routes/buildings'
 import { DesignRoute } from '~/routes/design'
 import { FestivalRoute } from '~/routes/festival'
 import { ItemRoute } from '~/routes/item'
@@ -26,6 +28,8 @@ import { QuestRoute } from '~/routes/quest'
 import { RanchRoute } from '~/routes/ranch'
 import { SearchRoute } from '~/routes/search'
 import { SettingsRoute } from '~/routes/settings'
+import { ShopRoute } from '~/routes/shop'
+import { ShopsRoute } from '~/routes/shops'
 import { TodayRoute } from '~/routes/today'
 import { VillagerRoute } from '~/routes/villager'
 
@@ -258,6 +262,30 @@ const boardRoute = createRoute({
   },
 })
 
+const shopsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/shops',
+  component: ShopsRoute,
+})
+
+const shopRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/shop/$id',
+  component: ShopRoute,
+})
+
+const buildingsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/buildings',
+  component: BuildingsRoute,
+})
+
+const buildingRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/building/$id',
+  component: BuildingRoute,
+})
+
 const aboutRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/about',
@@ -292,6 +320,10 @@ const routeTree = rootRoute.addChildren([
   calendarRoute,
   minesRoute,
   questRoute,
+  shopsRoute,
+  shopRoute,
+  buildingsRoute,
+  buildingRoute,
   settingsRoute,
   aboutRoute,
   designRoute,

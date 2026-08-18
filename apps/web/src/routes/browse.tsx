@@ -60,6 +60,8 @@ const CATEGORIES: { id: string; label: string }[] = [
   // 352 records — a fifth of the index. Absent from this list, they were
   // findable only through search, which read as missing data.
   { id: 'quest', label: 'Quests' },
+  { id: 'shop', label: 'Shops' },
+  { id: 'building', label: 'Buildings' },
 ]
 
 export function BrowseRoute() {

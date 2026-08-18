@@ -878,7 +878,13 @@ export function withQuestUnlocks(
   }
 
   let stamped = 0
+  let giversFilled = 0
   const result = quests.map((quest) => {
+    // The game's grant rows name a giver for quests the wiki never attributed
+    // — the challenge boards. A stated fact fills the hole; a stated giver the
+    // record already has is never overwritten (the wiki path was curated).
+    const grantGiver =
+      quest.giver_character_id === null ? (grants.giverByQuest.get(quest.id) ?? null) : null
     const requiredItems = costByQuest.get(quest.id) ?? []
     const shopIds = [...(shopsByQuest.get(quest.id) ?? [])].sort()
     const stockShopIds = [...(stockShopsByQuest.get(quest.id) ?? [])].sort()
@@ -901,9 +907,11 @@ export function withQuestUnlocks(
       recipeIds.length === 0 &&
       nextQuestIds.length === 0 &&
       !gainsChainGate &&
-      grantItems.length === 0
+      grantItems.length === 0 &&
+      grantGiver === null
     if (untouched) return quest
     stamped += 1
+    if (grantGiver !== null) giversFilled += 1
 
     // Game grant items union into the reward the record already states — the
     // same field the wiki fills, deduplicated, so the UI keeps one list.
@@ -920,6 +928,7 @@ export function withQuestUnlocks(
     // deliveries and taught recipes are read from the game files, the unlock
     // gates from curated statements.
     const prov = { ...quest.prov }
+    if (grantGiver !== null) prov.giver_character_id = 'game_files'
     if (requiredItems.length > 0) prov.required_items = 'game_files'
     if (recipeIds.length > 0) prov.teaches_recipe_ids = 'game_files'
     if (shopIds.length > 0) prov.unlocks_shop_ids = 'manual'
@@ -933,9 +942,11 @@ export function withQuestUnlocks(
     // A stated delivery answers "what does it ask for" — the gap closes.
     if (requiredItems.length > 0) dropGaps.add('objectives')
     if (gainsChainGate) dropGaps.add('prerequisites')
+    if (grantGiver !== null) dropGaps.add('giver_character_id')
 
     return {
       ...quest,
+      giver_character_id: grantGiver ?? quest.giver_character_id,
       required_items: requiredItems,
       unlocks_shop_ids: shopIds,
       unlocks_stock_shop_ids: stockShopIds,
@@ -956,6 +967,9 @@ export function withQuestUnlocks(
   })
   if (stamped > 0) {
     consola.info(`quests: ${stamped} quest(s) gained costs, unlocks or grant rewards`)
+  }
+  if (giversFilled > 0) {
+    consola.info(`quests: ${giversFilled} giver(s) filled from game grant rows`)
   }
 
   return result

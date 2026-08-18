@@ -289,7 +289,7 @@ const BUILDERS: Record<DatasetName, Builder> = {
       new Set(derived.items.map((i) => i.id)),
       new Set(derived.quests.map((q) => q.id)),
     ),
-  buildings: buildBuildings,
+  buildings: (ctx, derived) => buildBuildings(ctx, new Set(derived.items.map((i) => i.id))),
   pets: buildPets,
   ranching: (ctx, derived) => buildRanching(ctx, new Set(derived.items.map((i) => i.id))),
   machines: (ctx, derived) => buildMachines(ctx, new Set(derived.items.map((i) => i.id))),

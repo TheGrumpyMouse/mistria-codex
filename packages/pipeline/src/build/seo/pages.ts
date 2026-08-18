@@ -25,7 +25,7 @@ import type {
   TimeBlock,
   Weather,
 } from '@mistria/schema'
-import type { PageInput, Section } from './render.js'
+import type { Entry, FactRow, PageInput, Section } from './render.js'
 
 // ---------------------------------------------------------------------------
 // The records, as this module needs to see them
@@ -144,6 +144,62 @@ export interface FestivalRecord extends Common {
   goods: { stall_key: string | null; item_id: string | null; teaches_recipe_id: string | null }[]
 }
 
+/**
+ * A gate on content, as this module needs to see it — the shared shape behind
+ * a shop's `unlock_requires`/stock-line `requires` and a building tier's
+ * `requires`. See `packages/schema/src/availability.ts` for the full enum;
+ * this module only ever reads `type`/`key`/`value` to build a sentence.
+ */
+export interface RequirementRecord {
+  type: string
+  key: string
+  op: string
+  value: number | string | null
+}
+
+export interface ShopStockLine {
+  item_id: string
+  price: number | null
+  currency: string
+  requires: RequirementRecord[]
+  seasons: Season[] | null
+  rotation: boolean
+  /**
+   * Set when this line sells the *recipe*, not the dish. Same `item_id` as the
+   * product line (both resolve to the dish), so it renders under its own
+   * heading rather than merged with the product — the Inn sells the Lemon Pie
+   * at 650 and its recipe at 400, and one row cannot carry both.
+   */
+  teaches_recipe_id: string | null
+}
+
+export interface ShopRecord extends Common {
+  location_id: string | null
+  owner_character_id: string | null
+  staff_character_ids: string[]
+  /** Empty means no restriction — none of the always-open shops mention hours. */
+  hours: { days: string[]; from: string; to: string }[]
+  unlock_requires: RequirementRecord[]
+  stock: ShopStockLine[]
+}
+
+export interface BuildingTier {
+  level: number
+  cost: { tesserae: number | null; materials: { item_id: string; quantity: number }[] }
+  capacity: number | null
+  incubators: number | null
+  requires: RequirementRecord[]
+  blueprint_item_ids: string[]
+}
+
+export interface BuildingRecord extends Common {
+  kind: string
+  tiers: BuildingTier[]
+  vendor_shop_id: string | null
+  /** The quest that restores this building, where restoration replaces a purchase — the mill. */
+  repair_quest_id: string | null
+}
+
 export interface Dataset {
   items: ItemRecord[]
   characters: CharacterRecord[]
@@ -154,8 +210,8 @@ export interface Dataset {
   mines: MineRecord[]
   quests: QuestRecord[]
   recipes: RecipeRecord[]
-  /** Names only — no pages, but a recipe source names one. */
-  shops: Common[]
+  shops: ShopRecord[]
+  buildings: BuildingRecord[]
   /** Implemented festivals get a page; the wiki-only six never publish. */
   festivals: FestivalRecord[]
 }
@@ -257,6 +313,16 @@ const CATEGORY_KIND: Record<string, string> = {
 
 /** Categories that never get a page. See the thin-content note at the top. */
 const EXCLUDED_CATEGORIES = new Set(['furniture', 'cosmetic'])
+
+const DAY_LABEL: Record<string, string> = {
+  mon: 'Mondays',
+  tue: 'Tuesdays',
+  wed: 'Wednesdays',
+  thu: 'Thursdays',
+  fri: 'Fridays',
+  sat: 'Saturdays',
+  sun: 'Sundays',
+}
 
 const list = (values: string[]): string =>
   values.length <= 1
@@ -545,6 +611,65 @@ function recipeSections(recipe: RecipeRecord, lookup: Lookup): Section[] {
   }
 
   return sections
+}
+
+/**
+ * A `Requirement` worded as something you *do* — `"reach Ranching level 20"`,
+ * `"finish "Upgrade the Inn""`. The same verbs `apps/web/src/lib/labels.ts`
+ * uses for `gateDisplay` (its `GateRun` renders `"once you " + this + "."`),
+ * kept here as plain text rather than imported — the pipeline does not depend
+ * on the web app, same reason the item-page vocabulary above is a local copy.
+ */
+function requirementText(req: RequirementRecord, lookup: Lookup): string {
+  const label = lookup.recordName(req.key) ?? titleCase(req.key)
+  if (req.type === 'quest') return `finish “${label}”`
+  if (req.type === 'perk') return `take the ${label} perk`
+  if (req.type === 'location') return `unlock ${label}`
+  if (req.type === 'skill' && typeof req.value === 'number') {
+    return `reach ${titleCase(req.key)} level ${req.value}`
+  }
+  if (req.type === 'shipped_item') return `ship a ${label}`
+  if (req.type === 'donated_item') return `donate a ${label} to the museum`
+  if (req.type === 'animal') return `keep a ${label.toLowerCase()}`
+  return `have ${label}`
+}
+
+/** `"once you reach Ranching level 20 and finish "Upgrade the Inn"."` */
+const onceYou = (reqs: RequirementRecord[], lookup: Lookup): string =>
+  `once you ${list(reqs.map((r) => requirementText(r, lookup)))}.`
+
+/**
+ * `"Saturdays"`, or `"Saturdays 8am–6pm"` once a shop states real hours.
+ *
+ * Every `hours` row shipped today is `00:00`–`00:00` — the day is the whole
+ * restriction, and the game states no window inside it. Printing that pair as
+ * a time range would manufacture precision no source stated, so a from/to
+ * that are equal prints nothing.
+ */
+function hoursText(hours: ShopRecord['hours'][number]): string {
+  const days =
+    hours.days.length === 0 ? 'Any day' : list(hours.days.map((d) => DAY_LABEL[d] ?? titleCase(d)))
+  return hours.from === hours.to ? days : `${days} ${hours.from}–${hours.to}`
+}
+
+const BUILDING_KIND_LABEL: Record<string, string> = {
+  coop: 'Coop',
+  barn: 'Barn',
+  greenhouse: 'Greenhouse',
+  kitchen: 'Kitchen',
+  crafting_station: 'Crafting station',
+  mill: 'Mill',
+  home_upgrade: 'Home upgrade',
+  farm_expansion: 'Farm expansion',
+  other: 'Building',
+}
+
+/** `"Stage 2"` for most buildings, `"Upgrade 2"` for the home — the game's own framing. */
+function buildingTierLabel(kind: string, level: number, count: number): string {
+  if (kind === 'home_upgrade') return `Upgrade ${level}`
+  if (kind === 'farm_expansion') return `Expansion ${level}`
+  if (count === 1) return 'Built once'
+  return `Stage ${level}`
 }
 
 function itemPage(
@@ -1014,6 +1139,211 @@ function questPage(quest: QuestRecord, ctx: UrlContext, lookup: Lookup): GuidePa
   }
 }
 
+function shopPage(shop: ShopRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
+  const segments = ['guide', 'shop', slugFor(shop.id)]
+  const depth = segments.length
+  const sections: Section[] = []
+  const properties: { name: string; value: string }[] = []
+
+  const rows: FactRow[] = []
+  if (shop.location_id !== null) {
+    const path = lookup.pathOf(shop.location_id)
+    rows.push({
+      label: 'Location',
+      value: lookup.placeName(shop.location_id),
+      ...(path === null ? {} : { href: `${upTo(depth)}${path.join('/')}/` }),
+    })
+    properties.push({ name: 'Location', value: lookup.placeName(shop.location_id) })
+  }
+  if (shop.owner_character_id !== null) {
+    rows.push({ label: 'Owner', value: lookup.characterName(shop.owner_character_id) })
+  }
+  const staff = shop.staff_character_ids.filter((id) => id !== shop.owner_character_id)
+  if (staff.length > 0) rows.push({ label: 'Staff', value: list(staff.map(lookup.characterName)) })
+  if (shop.unlock_requires.length > 0) {
+    rows.push({ label: 'Opens', value: onceYou(shop.unlock_requires, lookup) })
+  }
+  if (rows.length > 0) sections.push({ heading: 'About', kind: 'facts', rows })
+
+  if (shop.hours.length > 0) {
+    sections.push({ heading: 'Hours', kind: 'list', items: shop.hours.map(hoursText) })
+  }
+
+  const entryFor = (line: ShopStockLine): Entry => {
+    const path = lookup.pathOf(line.item_id)
+    const parts: string[] = []
+    if (line.price !== null) parts.push(`${line.price} ${line.currency.replace(/_/g, ' ')}`)
+    if (line.seasons !== null) parts.push(seasonText(line.seasons))
+    if (line.rotation) parts.push('rotating stock')
+    if (line.requires.length > 0) parts.push(onceYou(line.requires, lookup).replace(/\.$/, ''))
+    return {
+      label: lookup.itemName(line.item_id),
+      ...(path === null ? {} : { href: `${upTo(depth)}${path.join('/')}/` }),
+      ...(parts.length === 0 ? {} : { detail: parts.join(' · ') }),
+    }
+  }
+
+  const products = shop.stock.filter((s) => s.teaches_recipe_id === null)
+  if (products.length > 0) {
+    sections.push({ heading: 'For sale', kind: 'entries', entries: products.map(entryFor) })
+  }
+
+  // Recipe-scroll lines never merge with product lines — a dish and its
+  // recipe are two different purchases at two different prices.
+  const recipes = shop.stock.filter((s) => s.teaches_recipe_id !== null)
+  if (recipes.length > 0) {
+    sections.push({ heading: 'Recipes taught', kind: 'entries', entries: recipes.map(entryFor) })
+  }
+
+  const staffAll = [
+    ...(shop.owner_character_id === null ? [] : [shop.owner_character_id]),
+    ...staff,
+  ].map(lookup.characterName)
+
+  const description = metaDescription([
+    `${shop.name} is a shop in Fields of Mistria.`,
+    shop.location_id === null ? null : `Located in ${lookup.placeName(shop.location_id)}.`,
+    staffAll.length === 0 ? null : `Run by ${list(staffAll)}.`,
+  ])
+
+  return {
+    segments,
+    source: { dataset: 'shops', id: shop.id },
+    aliases: (shop.former_ids ?? []).map((old) => ['guide', 'shop', slugFor(old)]),
+    input: {
+      name: shop.name,
+      kind: 'Shop',
+      description,
+      canonical: canonicalOf(ctx, segments),
+      siteUrl: ctx.siteUrl,
+      appHref: `${upTo(depth)}#/shop/${shop.id}`,
+      hubHref: `${upTo(depth)}guide/`,
+      rootHref: upTo(depth),
+      sourceUrl: wikiUrl(shop.wiki_page),
+      ogImage: ctx.ogImage,
+      sections,
+      gaps: shop.data_gaps ?? [],
+      properties,
+    },
+  }
+}
+
+function buildingPage(building: BuildingRecord, ctx: UrlContext, lookup: Lookup): GuidePage {
+  const segments = ['guide', 'building', slugFor(building.id)]
+  const depth = segments.length
+  const sections: Section[] = []
+  const kindLabel = BUILDING_KIND_LABEL[building.kind] ?? 'Building'
+  const properties: { name: string; value: string }[] = [{ name: 'Kind', value: kindLabel }]
+
+  const aboutRows: FactRow[] = [{ label: 'Kind', value: kindLabel }]
+  if (building.vendor_shop_id !== null && building.repair_quest_id === null) {
+    const path = lookup.pathOf(building.vendor_shop_id)
+    aboutRows.push({
+      label: 'Sold at',
+      value: lookup.recordName(building.vendor_shop_id) ?? titleCase(building.vendor_shop_id),
+      ...(path === null ? {} : { href: `${upTo(depth)}${path.join('/')}/` }),
+    })
+  }
+  sections.push({ heading: 'About', kind: 'facts', rows: aboutRows })
+
+  if (building.repair_quest_id !== null) {
+    // Restored, not bought — the mill. No tesserae anywhere on this page.
+    const questName =
+      lookup.recordName(building.repair_quest_id) ?? titleCase(building.repair_quest_id)
+    const path = lookup.pathOf(building.repair_quest_id)
+    sections.push({
+      heading: 'How it’s restored',
+      kind: 'entries',
+      entries: [
+        {
+          label: `Not bought — restored through “${questName}”`,
+          ...(path === null ? {} : { href: `${upTo(depth)}${path.join('/')}/` }),
+        },
+      ],
+    })
+  } else if (building.tiers.length === 0) {
+    // Never an empty table — a stated sentence instead, and only when the gap
+    // is actually declared (an empty array can also just mean nothing to cost,
+    // as it would for a building type with no purchase at all).
+    if ((building.data_gaps ?? []).includes('tiers')) {
+      sections.push({ heading: 'Cost', kind: 'list', items: ['Cost not recorded yet.'] })
+    }
+  } else {
+    for (const tier of building.tiers) {
+      const tierLabel = buildingTierLabel(building.kind, tier.level, building.tiers.length)
+      const rows: FactRow[] = []
+      if (tier.cost.tesserae !== null) {
+        rows.push({ label: 'Tesserae', value: String(tier.cost.tesserae) })
+      }
+      if (tier.capacity !== null) {
+        const incubators =
+          tier.incubators !== null && tier.incubators > 0
+            ? ` · ${tier.incubators} ${tier.incubators === 1 ? 'incubator' : 'incubators'}`
+            : ''
+        rows.push({ label: 'Houses', value: `${tier.capacity} animals${incubators}` })
+      }
+      if (tier.requires.length > 0) {
+        rows.push({ label: 'Available', value: onceYou(tier.requires, lookup) })
+      }
+      if (rows.length > 0) sections.push({ heading: tierLabel, kind: 'facts', rows })
+
+      if (tier.cost.materials.length > 0) {
+        sections.push({
+          heading: `${tierLabel} — materials`,
+          kind: 'entries',
+          entries: tier.cost.materials.map((m) => {
+            const path = lookup.pathOf(m.item_id)
+            return {
+              label: lookup.itemName(m.item_id),
+              ...(path === null ? {} : { href: `${upTo(depth)}${path.join('/')}/` }),
+              detail: `×${m.quantity}`,
+            }
+          }),
+        })
+      }
+
+      const blueprints = crossLinks(
+        `${tierLabel} — buy`,
+        tier.blueprint_item_ids,
+        depth,
+        lookup,
+        lookup.itemName,
+      )
+      if (blueprints !== null) sections.push(blueprints)
+    }
+  }
+
+  const description = metaDescription([
+    `${building.name} is a ${kindLabel.toLowerCase()} in Fields of Mistria.`,
+    building.repair_quest_id !== null
+      ? `Restored by finishing the quest that repairs it.`
+      : building.tiers.length > 0 && building.tiers[0]?.cost.tesserae !== null
+        ? `Starts at ${building.tiers[0]?.cost.tesserae} tesserae.`
+        : null,
+  ])
+
+  return {
+    segments,
+    source: { dataset: 'buildings', id: building.id },
+    aliases: (building.former_ids ?? []).map((old) => ['guide', 'building', slugFor(old)]),
+    input: {
+      name: building.name,
+      kind: 'Building',
+      description,
+      canonical: canonicalOf(ctx, segments),
+      siteUrl: ctx.siteUrl,
+      appHref: `${upTo(depth)}#/building/${building.id}`,
+      hubHref: `${upTo(depth)}guide/`,
+      rootHref: upTo(depth),
+      sourceUrl: wikiUrl(building.wiki_page),
+      ogImage: ctx.ogImage,
+      sections,
+      gaps: building.data_gaps ?? [],
+      properties,
+    },
+  }
+}
+
 const wikiUrl = (page: string | null | undefined): string | null =>
   page === null || page === undefined || page === ''
     ? null
@@ -1070,6 +1400,8 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     mines.flatMap((m) => (m.location_id === null ? [] : [[m.location_id, m] as const])),
   )
   const places = gate(data.places)
+  const shops = gate(data.shops)
+  const buildings = gate(data.buildings)
   // The unreleased six are already gated; `implemented` catches a festival
   // that is neither spoiler-stamped nor unreleased but still never fires.
   const festivals = gate(data.festivals).filter((f) => f.implemented)
@@ -1086,6 +1418,7 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...data.mines.map((r) => [r.id, r.name] as const),
     ...data.quests.map((r) => [r.id, r.name] as const),
     ...data.shops.map((r) => [r.id, r.name] as const),
+    ...data.buildings.map((r) => [r.id, r.name] as const),
     ...data.festivals.map((r) => [r.id, r.name] as const),
     // Recipes resolve by their own id too — a festival stall that teaches one
     // names the recipe, not its dish.
@@ -1102,6 +1435,8 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
   for (const r of animals) pathIndex.set(r.id, ['guide', 'animal', slugFor(r.id)])
   for (const r of places) pathIndex.set(r.id, ['guide', 'place', slugFor(r.id)])
   for (const r of quests) pathIndex.set(r.id, ['guide', 'quest', slugFor(r.id)])
+  for (const r of shops) pathIndex.set(r.id, ['guide', 'shop', slugFor(r.id)])
+  for (const r of buildings) pathIndex.set(r.id, ['guide', 'building', slugFor(r.id)])
   for (const r of festivals) pathIndex.set(r.id, ['guide', 'festival', slugFor(r.id)])
 
   const lookup: Lookup = {
@@ -1128,6 +1463,8 @@ export function buildPages(data: Dataset, ctx: UrlContext): BuildResult {
     ...animals.map((animal) => animalPage(animal, ctx, lookup)),
     ...places.map((place) => placePage(place, mineByLocation.get(place.id), ctx, lookup)),
     ...quests.map((quest) => questPage(quest, ctx, lookup)),
+    ...shops.map((shop) => shopPage(shop, ctx, lookup)),
+    ...buildings.map((building) => buildingPage(building, ctx, lookup)),
     ...festivals.map((festival) => festivalPage(festival, ctx, lookup)),
   ]
 

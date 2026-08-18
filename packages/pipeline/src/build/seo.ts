@@ -33,6 +33,7 @@ import { consola } from 'consola'
 import { DATA_DIR, GUIDE_DIR, WEB_PUBLIC_DIR } from '../lib/paths.js'
 import {
   type AnimalRecord,
+  type BuildingRecord,
   buildPages,
   type CharacterRecord,
   type Dataset,
@@ -44,6 +45,7 @@ import {
   type PlaceRecord,
   type QuestRecord,
   type RecipeRecord,
+  type ShopRecord,
   type UrlContext,
 } from './seo/pages.js'
 import { escapeHtml, renderPage, renderRedirect } from './seo/render.js'
@@ -83,8 +85,8 @@ async function loadDataset(): Promise<Dataset> {
     // two blocks on the item's page, which is also where a crawler looking for
     // "how do I get the Lemon Pie recipe" should land.
     recipes: await readDataset<RecipeRecord>('recipes.json'),
-    // Names only, for a recipe source that points at one.
-    shops: await readDataset<{ id: string; name: string }>('shops.json'),
+    shops: await readDataset<ShopRecord>('shops.json'),
+    buildings: await readDataset<BuildingRecord>('buildings.json'),
     festivals: await readDataset<FestivalRecord>('festivals.json'),
   }
 }

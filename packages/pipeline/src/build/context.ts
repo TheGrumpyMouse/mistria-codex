@@ -199,12 +199,16 @@ export interface BuildingInputs {
     vendor: string | null
     placeable_on_farm: boolean
     wiki_page: string
+    /** The quest that restores the building, where restoring is the obtain. */
+    repair_quest?: string
     tiers: {
       level: number
       tesserae: number
       capacity: number | null
       materials: { item: string; quantity: number }[]
       requires: unknown[]
+      /** Display names of the tier's purchasable blueprint/station items. */
+      blueprints?: string[]
     }[]
   }[]
 }

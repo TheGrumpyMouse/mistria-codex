@@ -31,6 +31,8 @@ export const CATEGORY_LABELS: Record<string, string> = {
   monster: 'Monsters',
   location: 'Places',
   quest: 'Quests',
+  shop: 'Shops',
+  building: 'Buildings',
 }
 
 /**
@@ -83,6 +85,29 @@ export const CATEGORY_LABELS_ONE: Record<string, string> = {
   monster: 'Monster',
   location: 'Place',
   quest: 'Quest',
+  shop: 'Shop',
+  building: 'Building',
+}
+
+/** Building kind token -> what a player calls it. Rule 8: a map, never a de-underscore. */
+export const BUILDING_KIND_LABELS: Record<string, string> = {
+  coop: 'Coop',
+  barn: 'Barn',
+  greenhouse: 'Greenhouse',
+  kitchen: 'Kitchen',
+  crafting_station: 'Crafting station',
+  mill: 'Mill',
+  home_upgrade: 'Home upgrade',
+  farm_expansion: 'Farm expansion',
+  other: 'Building',
+}
+
+/** "Stage 2" for buildings, "Upgrade 2" for the home — the game's own framing. */
+export function buildingTierLabel(kind: string, level: number, count: number): string {
+  if (kind === 'home_upgrade') return `Upgrade ${level}`
+  if (kind === 'farm_expansion') return `Expansion ${level}`
+  if (count === 1) return 'Built once'
+  return `Stage ${level}`
 }
 
 export const categoryLabel = (id: string): string => CATEGORY_LABELS[id] ?? id.replace(/_/g, ' ')
@@ -149,6 +174,12 @@ export const GAP_LABELS: Record<string, string> = {
   acquisition: 'how to get one',
   purchase_requirements: 'what unlocks it',
   feed: 'what it eats',
+  tiers: 'what it costs to build',
+  materials: 'some materials',
+  blueprints: 'the blueprint items',
+  stock_items: 'part of the stock list',
+  stock_price: 'some prices',
+  stock_requires: 'what unlocks some lines',
 }
 
 /** The gaps worth telling a player about, in their words. Internal ones vanish. */

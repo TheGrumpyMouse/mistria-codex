@@ -54,6 +54,13 @@ export interface GrantIndex {
    * way.
    */
   goodsByFestival: Map<string, FestivalGood[]>
+  /**
+   * Resolved quest id -> the character the game's grant names as its giver.
+   * The challenge-board quests ship with no giver (the wiki path never knew
+   * one) while the grant rows state the npc — this is that fact, indexed so
+   * the quests builder can fill the hole from a stated source.
+   */
+  giverByQuest: Map<string, string>
 }
 
 export interface FestivalGood {
@@ -173,6 +180,7 @@ export function buildGrantIndex(
   const itemWindows = new Map<string, AvailabilityWindow[]>()
   const itemsByQuest = new Map<string, string[]>()
   const goodsByFestival = new Map<string, FestivalGood[]>()
+  const giverByQuest = new Map<string, string>()
   const game = ctx.game
   const unlocks = game?.unlocks ?? null
 
@@ -242,7 +250,9 @@ export function buildGrantIndex(
     return name === null ? null : resolveByName(name)
   }
 
-  if (unlocks === null) return { recipeSources, itemWindows, itemsByQuest, goodsByFestival }
+  if (unlocks === null) {
+    return { recipeSources, itemWindows, itemsByQuest, goodsByFestival, giverByQuest }
+  }
 
   // ── The post ──────────────────────────────────────────────────────────────
   let unreadLetterGates = 0
@@ -288,6 +298,7 @@ export function buildGrantIndex(
   for (const grant of unlocks.quests) {
     const questId = resolveQuest(grant.quest, grant.quest_name, grant.npc)
     if (questId === null && (grant.recipe !== null || grant.item !== null)) unresolvedQuests += 1
+    if (questId !== null && grant.npc !== null) giverByQuest.set(questId, grant.npc)
     addRecipe(grant.recipe, {
       method: 'quest',
       source_id: questId,
@@ -565,5 +576,5 @@ export function buildGrantIndex(
   // order a quest lists its rewards in.
   for (const [questId, items] of itemsByQuest) itemsByQuest.set(questId, [...items].sort())
 
-  return { recipeSources, itemWindows, itemsByQuest, goodsByFestival }
+  return { recipeSources, itemWindows, itemsByQuest, goodsByFestival, giverByQuest }
 }

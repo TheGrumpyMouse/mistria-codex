@@ -380,8 +380,11 @@ derive them from that table, never hardcode an 8.
 names are curated in `curated/aliases/pet_kinds.json`, each traced to the
 variant names it is read from. Pet records are `pet_<kind>` because `mimic`
 the pet collides with `mimic` the monster, and the ship display index keeps
-the first arrival: it now *counts* what it skips (the standing count is 1 —
-`purple_mushroom` is both an item and a monster, and predates pets).
+the first arrival: it now *counts* what it skips (the standing count is 2 —
+`purple_mushroom` is both an item and a monster and predates pets, and
+`balors_wagon` is both a location and, since 1.6.0, a shop: the location wins,
+so search lands on the place page and the /shops index carries the wagon's
+link to its stock).
 
 ## Modelling rules
 

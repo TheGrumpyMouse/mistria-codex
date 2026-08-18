@@ -15,6 +15,29 @@ import { useData } from '~/lib/use-data'
  * Stored as a plain id list; a corrupt value reads as "nothing collapsed".
  */
 const COLLAPSED_KEY = 'mistria-codex:museum-collapsed'
+/**
+ * The gaps-only filter is a preference, like the fold: it changes which rows
+ * you're shown, not which museum this is, so it lives beside the fold in
+ * localStorage rather than in the URL — and survives leaving and coming back.
+ */
+const GAPS_ONLY_KEY = 'mistria-codex:museum-gaps-only'
+
+function readGapsOnly(): boolean {
+  try {
+    return localStorage.getItem(GAPS_ONLY_KEY) === 'true'
+  } catch {
+    return false
+  }
+}
+
+function writeGapsOnly(value: boolean): void {
+  try {
+    if (value) localStorage.setItem(GAPS_ONLY_KEY, 'true')
+    else localStorage.removeItem(GAPS_ONLY_KEY)
+  } catch {
+    // Private mode: the filter still works for this session via state.
+  }
+}
 
 function readCollapsed(): Set<string> {
   try {
@@ -97,7 +120,11 @@ export function MuseumRoute() {
   const sets = data?.sets ?? null
   const index = data?.index ?? {}
   const [donated, setDonated] = useState<Set<string>>(new Set())
-  const [gapsOnly, setGapsOnly] = useState(false)
+  const [gapsOnly, setGapsOnlyState] = useState(() => readGapsOnly())
+  const setGapsOnly = (value: boolean): void => {
+    writeGapsOnly(value)
+    setGapsOnlyState(value)
+  }
   const [collapsed, setCollapsed] = useState<Set<string>>(() => readCollapsed())
 
   const toggleCollapsed = (setId: string): void => {

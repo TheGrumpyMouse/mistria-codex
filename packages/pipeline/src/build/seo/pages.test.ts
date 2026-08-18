@@ -57,6 +57,7 @@ const dataset = (over: Partial<Dataset> = {}): Dataset => ({
   quests: [],
   recipes: [],
   shops: [],
+  buildings: [],
   festivals: [],
   ...over,
 })
@@ -184,7 +185,18 @@ describe('a recipe is two blocks on the item’s page, not a page of its own', (
   const built = buildPages(
     dataset({
       items: [item({ id: 'lemon_pie', name: 'Lemon Pie', category: 'cooked', sell_value: 650 })],
-      shops: [{ id: 'inn', name: 'Sleeping Dragon Inn' }],
+      shops: [
+        {
+          id: 'inn',
+          name: 'Sleeping Dragon Inn',
+          location_id: null,
+          owner_character_id: null,
+          staff_character_ids: [],
+          hours: [],
+          unlock_requires: [],
+          stock: [],
+        },
+      ],
       recipes: [
         {
           id: 'lemon_pie',
@@ -216,9 +228,12 @@ describe('a recipe is two blocks on the item’s page, not a page of its own', (
   it('publishes exactly one page for the dish and its recipe', () => {
     // The recipe's id *is* the item's id, so a page of its own would be a
     // second URL about one subject — the duplicate-content pattern the whole
-    // inclusion gate exists to avoid.
-    expect(built.pages).toHaveLength(1)
-    expect(only(built.pages).segments).toEqual(['guide', 'cooked', 'lemon-pie'])
+    // inclusion gate exists to avoid. The shop that sells it gets its own
+    // page too — that is a different record with a different URL.
+    expect(built.pages.map((p) => p.segments)).toEqual([
+      ['guide', 'cooked', 'lemon-pie'],
+      ['guide', 'shop', 'inn'],
+    ])
   })
 
   it('separates how it is made from where the recipe is learned', () => {

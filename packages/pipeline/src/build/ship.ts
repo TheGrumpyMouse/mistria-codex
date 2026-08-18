@@ -331,6 +331,11 @@ async function buildIndexFile(): Promise<ShippedFile | null> {
     // Festivals are searchable and have a page: date, place, activities and
     // what the stalls sell.
     ['festivals.json', 'festival'],
+    // Shops and buildings each have a page from 1.6.0. `balors_wagon` is both
+    // a shop and a location — the location arrives first and wins, which is
+    // the second standing collision (after purple_mushroom).
+    ['shops.json', 'shop'],
+    ['buildings.json', 'building'],
   ] as const) {
     for (const record of await read<{
       id: string

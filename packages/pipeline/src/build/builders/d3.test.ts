@@ -79,11 +79,13 @@ interface BuildingRecord {
   id: string
   kind: string
   data_gaps: string[]
+  repair_quest_id: string | null
   tiers: {
     level: number
     capacity: number | null
     cost: { tesserae: number | null; materials: { item_id: string; quantity: number }[] }
     requires: { type: string; key: string; op: string; value: number | string | null }[]
+    blueprint_item_ids: string[]
   }[]
 }
 interface ShopRecord {
@@ -675,17 +677,30 @@ describe('animals and buildings', () => {
     }
   })
 
-  it('keeps buildings whose cost table we have not read, flagged', () => {
-    // A player looking for the Mill should learn that it exists and that we do
-    // not know what it costs — not find nothing and conclude it isn't real.
+  it('lets a repair quest stand in for a cost table, without a gap', () => {
+    // The mill is the one building with no tiers, and that is a stated answer
+    // rather than a hole: it is restored through a quest whose supplied items
+    // are the whole cost. A building with empty tiers and NO quest would still
+    // gain the `tiers` gap — a player looking for it should learn that it
+    // exists and that we do not know what it costs.
     const empty = buildings.filter((b) => b.tiers.length === 0)
-    expect(empty.map((b) => b.id).sort()).toEqual([
-      'crafting_station',
-      'farm_expansion',
-      'kitchen',
-      'mill',
-    ])
-    for (const building of empty) expect(building.data_gaps).toContain('tiers')
+    expect(empty.map((b) => b.id)).toEqual(['mill'])
+    expect(empty[0]?.repair_quest_id).toBe('repair_the_mill')
+    expect(empty[0]?.data_gaps).not.toContain('tiers')
+  })
+
+  it('resolves every blueprint to a shipped item, tier by tier', () => {
+    // The coop's colour variants are one building (the curated file's own
+    // rule), so each tier lists both blueprints; the kitchen is bought as the
+    // item itself, so only its first tier carries one.
+    const coop = buildings.find((b) => b.id === 'coop')
+    expect(coop?.tiers.map((t) => t.blueprint_item_ids.length)).toEqual([2, 2, 2])
+    expect(coop?.tiers[0]?.blueprint_item_ids).toContain('small_coop_black_blueprint')
+    for (const building of buildings) {
+      for (const tier of building.tiers) {
+        for (const blueprint of tier.blueprint_item_ids) expect(itemIds).toContain(blueprint)
+      }
+    }
   })
 
   it('resolves every construction material to a real item', () => {

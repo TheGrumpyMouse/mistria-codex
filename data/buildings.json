@@ -19,8 +19,13 @@
       "*": "manual",
       "tiers": "game_files"
     },
+    "repair_quest_id": null,
     "tiers": [
       {
+        "blueprint_item_ids": [
+          "small_coop_black_blueprint",
+          "small_coop_red_blueprint"
+        ],
         "capacity": 4,
         "cost": {
           "materials": [
@@ -40,6 +45,10 @@
         "requires": []
       },
       {
+        "blueprint_item_ids": [
+          "medium_coop_black_blueprint",
+          "medium_coop_red_blueprint"
+        ],
         "capacity": 8,
         "cost": {
           "materials": [
@@ -66,6 +75,10 @@
         ]
       },
       {
+        "blueprint_item_ids": [
+          "large_coop_black_blueprint",
+          "large_coop_red_blueprint"
+        ],
         "capacity": 12,
         "cost": {
           "materials": [
@@ -116,8 +129,13 @@
       "*": "manual",
       "tiers": "game_files"
     },
+    "repair_quest_id": null,
     "tiers": [
       {
+        "blueprint_item_ids": [
+          "small_barn_black_blueprint",
+          "small_barn_red_blueprint"
+        ],
         "capacity": 4,
         "cost": {
           "materials": [
@@ -137,6 +155,10 @@
         "requires": []
       },
       {
+        "blueprint_item_ids": [
+          "medium_barn_black_blueprint",
+          "medium_barn_red_blueprint"
+        ],
         "capacity": 8,
         "cost": {
           "materials": [
@@ -163,6 +185,10 @@
         ]
       },
       {
+        "blueprint_item_ids": [
+          "large_barn_black_blueprint",
+          "large_barn_red_blueprint"
+        ],
         "capacity": 12,
         "cost": {
           "materials": [
@@ -212,8 +238,13 @@
     "prov": {
       "*": "manual"
     },
+    "repair_quest_id": null,
     "tiers": [
       {
+        "blueprint_item_ids": [
+          "small_greenhouse_white_blueprint",
+          "small_greenhouse_wood_blueprint"
+        ],
         "capacity": null,
         "cost": {
           "materials": [],
@@ -231,6 +262,10 @@
         ]
       },
       {
+        "blueprint_item_ids": [
+          "large_greenhouse_white_blueprint",
+          "large_greenhouse_wood_blueprint"
+        ],
         "capacity": null,
         "cost": {
           "materials": [],
@@ -271,8 +306,10 @@
     "prov": {
       "*": "manual"
     },
+    "repair_quest_id": null,
     "tiers": [
       {
+        "blueprint_item_ids": [],
         "capacity": null,
         "cost": {
           "materials": [
@@ -292,6 +329,7 @@
         "requires": []
       },
       {
+        "blueprint_item_ids": [],
         "capacity": null,
         "cost": {
           "materials": [
@@ -315,6 +353,7 @@
         "requires": []
       },
       {
+        "blueprint_item_ids": [],
         "capacity": null,
         "cost": {
           "materials": [
@@ -338,6 +377,7 @@
         "requires": []
       },
       {
+        "blueprint_item_ids": [],
         "capacity": null,
         "cost": {
           "materials": [
@@ -377,9 +417,7 @@
     "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "tiers"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": null,
     "icon_key": "building/kitchen",
@@ -393,7 +431,58 @@
     "prov": {
       "*": "manual"
     },
-    "tiers": [],
+    "repair_quest_id": null,
+    "tiers": [
+      {
+        "blueprint_item_ids": [
+          "beginner_kitchen"
+        ],
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 1000
+        },
+        "incubators": null,
+        "level": 1,
+        "requires": []
+      },
+      {
+        "blueprint_item_ids": [],
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 1500
+        },
+        "incubators": null,
+        "level": 2,
+        "requires": [
+          {
+            "key": "cooking",
+            "op": ">=",
+            "type": "skill",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "blueprint_item_ids": [],
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 3000
+        },
+        "incubators": null,
+        "level": 3,
+        "requires": [
+          {
+            "key": "cooking",
+            "op": ">=",
+            "type": "skill",
+            "value": 30
+          }
+        ]
+      }
+    ],
     "vendor_shop_id": "carpenter",
     "version_added": null,
     "wiki_page": "Cooking"
@@ -403,9 +492,7 @@
     "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "tiers"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": null,
     "icon_key": "building/crafting_station",
@@ -419,7 +506,22 @@
     "prov": {
       "*": "manual"
     },
-    "tiers": [],
+    "repair_quest_id": null,
+    "tiers": [
+      {
+        "blueprint_item_ids": [
+          "woodcrafting_station"
+        ],
+        "capacity": null,
+        "cost": {
+          "materials": [],
+          "tesserae": 1000
+        },
+        "incubators": null,
+        "level": 1,
+        "requires": []
+      }
+    ],
     "vendor_shop_id": "carpenter",
     "version_added": null,
     "wiki_page": "Crafting"
@@ -429,9 +531,7 @@
     "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "tiers"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": null,
     "icon_key": "building/mill",
@@ -445,6 +545,7 @@
     "prov": {
       "*": "manual"
     },
+    "repair_quest_id": "repair_the_mill",
     "tiers": [],
     "vendor_shop_id": null,
     "version_added": null,
@@ -455,9 +556,7 @@
     "animal_size": null,
     "blurb": null,
     "confidence": "wiki",
-    "data_gaps": [
-      "tiers"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": null,
     "icon_key": "building/farm_expansion",
@@ -471,7 +570,29 @@
     "prov": {
       "*": "manual"
     },
-    "tiers": [],
+    "repair_quest_id": null,
+    "tiers": [
+      {
+        "blueprint_item_ids": [],
+        "capacity": null,
+        "cost": {
+          "materials": [
+            {
+              "item_id": "refined_stone",
+              "quantity": 50
+            },
+            {
+              "item_id": "hard_wood",
+              "quantity": 50
+            }
+          ],
+          "tesserae": 40000
+        },
+        "incubators": null,
+        "level": 1,
+        "requires": []
+      }
+    ],
     "vendor_shop_id": "carpenter",
     "version_added": null,
     "wiki_page": "Farm"
