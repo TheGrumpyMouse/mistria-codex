@@ -895,7 +895,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Fall Stock]] [[General_Store#Fall Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -3740,7 +3740,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Spring Stock]] [[General_Store#Spring Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -11250,7 +11250,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 195,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]390t&lt;/span&gt;"
     ],
@@ -11273,7 +11273,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 150,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
     ],
@@ -11296,7 +11296,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 75,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]150t&lt;/span&gt;"
     ],
@@ -11319,7 +11319,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 150,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
     ],
@@ -11342,7 +11342,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 110,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]225t&lt;/span&gt;"
     ],
@@ -11365,7 +11365,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 195,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]390t&lt;/span&gt;"
     ],
@@ -11388,7 +11388,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 150,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
     ],
@@ -11411,7 +11411,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 150,
     "sources": [
       "[[File:Hayden&#039;s shop icon.png|20px|link=Hayden&#039;s_Shop#Animal_Supplies]] [[Hayden&#039;s_Shop#Animal_Supplies|Hayden&#039;s Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]300t&lt;/span&gt;"
     ],
@@ -12256,6 +12256,7 @@
     "sellValue": 5,
     "sources": [
       "[[File:Almanac icon forageables.png|20px|link=Forageables]] [[Forageables|Foraging]]",
+      "[[File:Fp wiki pet.png|22px|link=Pets#Jobs]] [[Pets#Jobs|Pet Job &quot;Collect Forageables&quot;]] &lt;small&gt;(&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|15px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt; only)&lt;/small&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Crops/Forageables_Cooking_Ingredients]] [[Balor&#039;s Wagon#Crops/Forageables_Cooking_Ingredients|Balor&#039;s Wagon]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]25t&lt;/span&gt;"
     ],
     "stamina": 6,
@@ -13250,7 +13251,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1000,
     "sources": [
       "[[File:Fp_wiki_ryis.png|20px|link=Carpenter#Materials]] [[Carpenter#Materials|Carpenter]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]2",
       "000t&lt;/span&gt;"
@@ -13274,7 +13275,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1000,
     "sources": [
       "[[File:Fp_wiki_ryis.png|20px|link=Carpenter#Materials]] [[Carpenter#Materials|Carpenter]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]2",
       "000t&lt;/span&gt;"
@@ -13616,7 +13617,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon spring.png|24px|link=]]&amp;nbsp;[[Spring]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Spring Stock]] [[General_Store#Spring Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -14810,9 +14811,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -14827,7 +14828,7 @@
     "icon": "[[File:Mistril Fishing Rod.png]]",
     "isBuyable": 0,
     "isConsumable": 0,
-    "isCraftable": 0,
+    "isCraftable": 1,
     "itemName": "Mistril Fishing Rod",
     "location": [
       ""
@@ -14835,9 +14836,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Tackleshop icon.png|20px|link=Tackle_Shop#Tools]] [[Tackle_Shop#Tools|Tackle Shop]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -14910,9 +14911,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -14982,9 +14983,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -15030,9 +15031,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -15080,9 +15081,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -15105,9 +15106,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]"
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -15129,9 +15130,9 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 1450,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Blacksmithing_icon.png|20px|link=Blacksmithing]] [[Blacksmithing]]",
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Blacksmithing icon.png|20px|link=Blacksmithing|alt=|class=pixel-image|Blacksmithing]]&lt;/span&gt;[[Blacksmithing|&lt;span class=&quot;sprite-text&quot;&gt;Blacksmithing&lt;/span&gt;]]&lt;/span&gt;",
       "[[File:Blacksmith icon.png|20px|link=Blacksmith#Tools]] [[Blacksmith#Tools|Blacksmith]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]5",
       "000t&lt;/span&gt;"
     ],
@@ -15265,14 +15266,14 @@
     "isCraftable": 0,
     "itemName": "Monster Block",
     "location": [
-      "[[Mines/Ancient Ruins|The Ancient Ruins]]&lt;br&gt;(floors 81-89, 91-99)"
+      "&lt;span style=&quot;display:none&quot;&gt;5&lt;/span&gt;[[Mines/Ancient Ruins|The Ancient Ruins]]&lt;br&gt;(floors 81-89, 91-99)"
     ],
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 40,
     "sources": [
-      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Rock stack main.png|20px|link=Rock Stack]] [[Rock Stack|Rock Stacks]]  in [[Mines/Ancient Ruins|The Ancient Ruins]]"
+      "[[File:Fp wiki combat.png|22px|link=Combat]] [[Combat|Slaying]] [[File:Rock stack main.png|20px|link=Rock Stack]] [[Rock Stack|Rock Stacks]]  in &lt;span style=&quot;display:none&quot;&gt;5&lt;/span&gt;[[Mines/Ancient Ruins|The Ancient Ruins]]"
     ],
     "stamina": null,
     "tags": [
@@ -16358,7 +16359,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Fall Stock]] [[General_Store#Fall Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -16740,7 +16741,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Summer Stock]] [[General_Store#Summer Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -16812,7 +16813,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon summer.png|24px|link=]]&amp;nbsp;[[Summer]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Summer Stock]] [[General_Store#Summer Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -17888,6 +17889,7 @@
     "sellValue": 25,
     "sources": [
       "[[File:Almanac icon forageables.png|20px|link=Forageables]] [[Forageables|Foraging]]",
+      "[[File:Fp wiki pet.png|22px|link=Pets#Jobs]] [[Pets#Jobs|Pet Job &quot;Collect Forageables&quot;]] &lt;small&gt;(&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|15px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt; only)&lt;/small&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Crops/Forageables Cooking Ingredients]] [[Balor&#039;s Wagon#Crops/Forageables Cooking Ingredients|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]100t&lt;/span&gt;"
     ],
     "stamina": 5,
@@ -18364,7 +18366,7 @@
     "mana": null,
     "museum": 0,
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon winter.png|24px|link=]]&amp;nbsp;[[Winter]]&lt;/span&gt;",
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:General store icon.png|20px|link=General_Store#Winter Stock]] [[General_Store#Winter Stock|General Store]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;",
       "[[File:Fp_wiki_balor.png|20px|link=Balor&#039;s Wagon#Seeds]] [[Balor&#039;s Wagon#Seeds|Balor&#039;s Wagon]] &lt;small&gt;(conditional)&lt;/small&gt; for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
@@ -19341,7 +19343,7 @@
     "season": "&lt;span style=&quot;display:inline; margin-right:0;&quot;&gt;[[File:Season icon autumn.png|24px|link=]]&amp;nbsp;[[Fall]]&lt;/span&gt;",
     "sellValue": 160,
     "sources": [
-      "&lt;span style=&quot;display:none; margin-right:0; white-space: wrap;&quot;&gt;&lt;/span&gt;[[File:Fishing_icon.png|20px|link=Fishing]] [[Fishing]]"
+      "&lt;span class=&quot;nowrap&quot;&gt;&lt;span class=&quot;sprite-file&quot; style=&quot;height:20px;width:20px&quot;&gt;[[File:Fishing icon.png|20px|link=Fishing|alt=|class=pixel-image|Fishing]]&lt;/span&gt;[[Fishing|&lt;span class=&quot;sprite-text&quot;&gt;Fishing&lt;/span&gt;]]&lt;/span&gt;"
     ],
     "stamina": null,
     "tags": [
@@ -22758,7 +22760,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:Fp_wiki_ryis.png|20px|link=Carpenter#Materials]] [[Carpenter#Materials|Carpenter]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
     ],
@@ -22781,7 +22783,7 @@
     "mana": null,
     "museum": 0,
     "season": null,
-    "sellValue": null,
+    "sellValue": 200,
     "sources": [
       "[[File:Fp_wiki_ryis.png|20px|link=Carpenter#Materials]] [[Carpenter#Materials|Carpenter]] for &lt;span class=&quot;no-wrap&quot;&gt;[[File:Tesserae Icon.png|18px|link=]]400t&lt;/span&gt;"
     ],

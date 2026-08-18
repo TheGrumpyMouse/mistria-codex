@@ -1,5 +1,5 @@
 {
-  "lastEdited": "2026-08-14T00:20:46Z",
+  "lastEdited": "2026-08-18T06:34:52Z",
   "places": [
     {
       "id": "the_manor_house",
@@ -53,7 +53,7 @@
     },
     {
       "id": "the_carpenter",
-      "lastEdited": "2026-08-10T04:30:12Z",
+      "lastEdited": "2026-08-18T06:34:52Z",
       "page": "Carpenter",
       "region": "The Eastern Road",
       "residents": [
@@ -85,7 +85,7 @@
     },
     {
       "id": "the_museum",
-      "lastEdited": "2026-08-11T05:47:23Z",
+      "lastEdited": "2026-08-18T05:24:39Z",
       "page": "Museum",
       "region": "The Narrows",
       "residents": [],
@@ -101,7 +101,7 @@
     },
     {
       "id": "the_bell_tower",
-      "lastEdited": "2026-08-14T00:20:46Z",
+      "lastEdited": "2026-08-18T01:10:14Z",
       "page": "Bell Tower",
       "region": "Mistria",
       "residents": [],

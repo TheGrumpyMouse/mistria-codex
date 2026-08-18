@@ -1,5 +1,5 @@
 {
-  "lastEdited": "2026-08-15T01:51:58Z",
+  "lastEdited": "2026-08-18T04:58:06Z",
   "quests": [
     {
       "conditions": [],
@@ -754,7 +754,7 @@
     },
     {
       "conditions": [],
-      "giver": "Caldarus",
+      "giver": "Caldarus human",
       "kind": "heart",
       "name": "Life in This Form",
       "objectives": [],

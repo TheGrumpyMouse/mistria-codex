@@ -2554,11 +2554,12 @@
     "confidence": "wiki",
     "data_gaps": [
       "prerequisites",
+      "giver_character_id",
       "objectives"
     ],
     "former_ids": [],
     "game_version": "v0-14-1",
-    "giver_character_id": "caldarus",
+    "giver_character_id": null,
     "icon_key": "quest/heart",
     "id": "life_in_this_form",
     "id_status": "provisional",
