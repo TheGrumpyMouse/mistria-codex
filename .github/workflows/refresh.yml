@@ -68,6 +68,14 @@ jobs:
           pnpm schema:emit
           pnpm build:data
 
+      # `assets:fetch` can change the manifest, and ATTRIBUTION.md is generated
+      # from the manifest by build:ship — which CI asserts. A refresh that
+      # retires or adds a sprite without this step opens a PR that fails its
+      # own CI on the credit file. Everything else build:ship writes is
+      # gitignored, so only ATTRIBUTION.md joins the refresh commit.
+      - name: Regenerate ATTRIBUTION.md
+        run: pnpm build:ship
+
       # Soft-fail: see the header comment. The report and the PR CI carry the
       # verdict; this step only records it.
       - name: Validate (result recorded, not enforced)
