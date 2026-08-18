@@ -855,11 +855,19 @@
       },
       {
         "character_id": null,
-        "relation": "Unnamed Brother-in-law"
+        "relation": "Brother-in-law: Darren"
       },
       {
         "character_id": null,
-        "relation": "Unnamed Nieces (x?)"
+        "relation": "Niece: Wynne"
+      },
+      {
+        "character_id": null,
+        "relation": "Niece: Vivi"
+      },
+      {
+        "character_id": null,
+        "relation": "Unnamed Nieces (x3)"
       }
     ],
     "former_ids": [],
@@ -1359,6 +1367,14 @@
     "data_gaps": [],
     "family": [
       {
+        "character_id": null,
+        "relation": "Unnamed Mother"
+      },
+      {
+        "character_id": null,
+        "relation": "Father: Darren"
+      },
+      {
         "character_id": "landen",
         "relation": "Maternal Uncle: Landen"
       },
@@ -1368,15 +1384,15 @@
       },
       {
         "character_id": null,
-        "relation": "Unnamed Mother"
+        "relation": "Older Sister: Wynne"
       },
       {
         "character_id": null,
-        "relation": "Unnamed Father"
+        "relation": "Baby Sister: ViviUnnamed Older Sister"
       },
       {
         "character_id": null,
-        "relation": "Unnamed Sisters (x?)"
+        "relation": "Unnamed Younger Sisters (x2)"
       }
     ],
     "former_ids": [],
