@@ -2710,6 +2710,23 @@
     "ingredients": [
       "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
     ],
+    "itemName": "Mistril Fishing Rod",
+    "recipeSource": [
+      ""
+    ],
+    "skillLevel": 28,
+    "stars": null,
+    "time": 40,
+    "workbenchLevel": null
+  },
+  {
+    "colors": [
+      ""
+    ],
+    "craftType": "Blacksmith",
+    "ingredients": [
+      "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]] (4)"
+    ],
     "itemName": "Mistril Greaves",
     "recipeSource": [
       ""

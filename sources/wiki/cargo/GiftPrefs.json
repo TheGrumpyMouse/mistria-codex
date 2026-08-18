@@ -19916,11 +19916,6 @@
   },
   {
     "charName": "Priestess",
-    "interest": "like",
-    "itemName": "Dragon Forged Bracelet"
-  },
-  {
-    "charName": "Priestess",
     "interest": "dislike",
     "itemName": "Dragon Horn Beetle"
   },
@@ -19933,6 +19928,11 @@
     "charName": "Priestess",
     "interest": "dislike",
     "itemName": "Dragon Scale"
+  },
+  {
+    "charName": "Priestess",
+    "interest": "like",
+    "itemName": "Dragon-Forged Bracelet"
   },
   {
     "charName": "Priestess",

@@ -2819,8 +2819,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "apple_sapling"
@@ -2848,7 +2847,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -11506,8 +11505,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "cherry_sapling"
@@ -11535,7 +11533,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -33740,9 +33738,7 @@
     "buy_value": 390,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -33767,7 +33763,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 195,
     "sold_by": [
       "haydens_shop"
     ],
@@ -33789,9 +33785,7 @@
     "buy_value": 300,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -33816,7 +33810,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 150,
     "sold_by": [
       "haydens_shop"
     ],
@@ -33838,9 +33832,7 @@
     "buy_value": 150,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -33865,7 +33857,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 75,
     "sold_by": [
       "haydens_shop"
     ],
@@ -33887,9 +33879,7 @@
     "buy_value": 300,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -33914,7 +33904,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 150,
     "sold_by": [
       "haydens_shop"
     ],
@@ -33936,9 +33926,7 @@
     "buy_value": 225,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -33963,7 +33951,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 110,
     "sold_by": [
       "haydens_shop"
     ],
@@ -33985,9 +33973,7 @@
     "buy_value": 390,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -34012,7 +33998,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 195,
     "sold_by": [
       "haydens_shop"
     ],
@@ -34034,9 +34020,7 @@
     "buy_value": 300,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -34061,7 +34045,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 150,
     "sold_by": [
       "haydens_shop"
     ],
@@ -34083,9 +34067,7 @@
     "buy_value": 300,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -34110,7 +34092,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 150,
     "sold_by": [
       "haydens_shop"
     ],
@@ -39399,9 +39381,7 @@
     "buy_value": null,
     "category": "material",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [
       "large_bundle_of_stone"
     ],
@@ -39428,7 +39408,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 1000,
     "sold_by": [
       "carpenter"
     ],
@@ -39450,9 +39430,7 @@
     "buy_value": null,
     "category": "material",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [
       "large_bundle_of_wood"
     ],
@@ -39479,7 +39457,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 1000,
     "sold_by": [
       "carpenter"
     ],
@@ -40557,8 +40535,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "lemon_sapling"
@@ -40586,7 +40563,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -44451,7 +44428,7 @@
     "id_status": "confirmed",
     "is_buyable": true,
     "is_consumable": false,
-    "is_craftable": false,
+    "is_craftable": true,
     "is_giftable": null,
     "mana": null,
     "museum": {
@@ -45489,6 +45466,7 @@
     "category": "material",
     "confidence": "wiki",
     "data_gaps": [
+      "locations",
       "obtain_method"
     ],
     "former_ids": [],
@@ -48639,8 +48617,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "orange_sapling"
@@ -48668,7 +48645,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -49813,8 +49790,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "peach_sapling"
@@ -49842,7 +49818,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -50015,8 +49991,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "pear_sapling"
@@ -50044,7 +50019,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -54454,8 +54429,7 @@
     "category": "seed",
     "confidence": "wiki",
     "data_gaps": [
-      "weather",
-      "sell_value"
+      "weather"
     ],
     "former_ids": [
       "pomegranate_sapling"
@@ -54483,7 +54457,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "general_store",
       "balors_wagon"
@@ -68484,9 +68458,7 @@
     "buy_value": null,
     "category": "material",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [
       "small_bundle_of_stone"
     ],
@@ -68513,7 +68485,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "carpenter"
     ],
@@ -68535,9 +68507,7 @@
     "buy_value": null,
     "category": "material",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [
       "small_bundle_of_wood"
     ],
@@ -68564,7 +68534,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 200,
     "sold_by": [
       "carpenter"
     ],

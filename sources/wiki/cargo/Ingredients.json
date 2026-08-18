@@ -1812,6 +1812,11 @@
   {
     "amount": 4,
     "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
+    "resultItem": "Mistril Fishing Rod"
+  },
+  {
+    "amount": 4,
+    "ingredient": "[[File:mistril ingot.png|30px|link=Mistril Ingot]] [[Mistril Ingot]]",
     "resultItem": "Mistril Greaves"
   },
   {

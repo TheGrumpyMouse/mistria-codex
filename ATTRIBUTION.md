@@ -23,9 +23,9 @@ hosts no file for, read from an owned copy of the game. The wiki’s **text** is
 CC BY-SA; the game’s **art** is not, wherever it was obtained, and nothing in
 this repository treats it as though it were.
 
-**2922 files.**
+**2921 files.**
 
-## Items (2232)
+## Items (2231)
 
 | In this repo | Original filename | Source |
 | --- | --- | --- |
@@ -75,7 +75,6 @@ this repository treats it as though it were.
 | `item/armored-bass.png` | Armored bass.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Armored%20bass.png) |
 | `item/ash-mushroom.png` | Ash mushroom.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Ash%20mushroom.png) |
 | `item/auto-feeder.png` | Auto feeder.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Auto%20feeder.png) |
-| `item/baby-cradle.png` | Baby cradle.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baby%20cradle.png) |
 | `item/bag-upgrade.png` | Bag upgrade.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bag%20upgrade.png) |
 | `item/bait-thief.png` | Bait thief.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Bait%20thief.png) |
 | `item/baked-potato.png` | Baked potato.png | [file page](https://fieldsofmistria.wiki.gg/wiki/File:Baked%20potato.png) |
