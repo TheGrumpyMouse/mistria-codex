@@ -1829,7 +1829,8 @@
     "damage": 20,
     "data_gaps": [
       "cosmetic_drops",
-      "drops"
+      "drops",
+      "perk_gated_drops"
     ],
     "drops": [],
     "essence": 0,

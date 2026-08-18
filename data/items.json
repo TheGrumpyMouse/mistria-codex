@@ -3166,77 +3166,6 @@
   },
   {
     "also_known_as": [],
-    "availability": [
-      {
-        "biome_id": null,
-        "chance": null,
-        "confidence": "verified",
-        "dates": null,
-        "days": null,
-        "depth": null,
-        "habitats": [],
-        "locations": [],
-        "method": "mail",
-        "min_year": null,
-        "prov": "game_files",
-        "quantity": null,
-        "rarity": null,
-        "requires": [],
-        "seasons": [
-          "spring",
-          "summer",
-          "fall",
-          "winter"
-        ],
-        "spot_ids": [],
-        "time": null,
-        "time_blocks": null,
-        "time_precision": "not_applicable",
-        "weather": null,
-        "weather_precision": "not_applicable"
-      }
-    ],
-    "base_item_id": null,
-    "blurb": null,
-    "buy_value": null,
-    "category": "misc",
-    "confidence": "wiki",
-    "data_gaps": [],
-    "former_ids": [],
-    "game_version": "1.0.0",
-    "health": null,
-    "icon_key": "misc/baby_cradle",
-    "id": "baby_cradle",
-    "id_status": "confirmed",
-    "is_buyable": false,
-    "is_consumable": false,
-    "is_craftable": false,
-    "is_giftable": null,
-    "mana": null,
-    "museum": {
-      "donatable": false,
-      "donation_points": null,
-      "set_id": null,
-      "wing": null
-    },
-    "name": "Baby Cradle",
-    "numeric_id": null,
-    "numeric_id_game_version": null,
-    "prov": {
-      "*": "wiki_cargo"
-    },
-    "quality": null,
-    "sell_value": null,
-    "sold_by": [],
-    "stamina": null,
-    "subcategory": null,
-    "tags": [],
-    "used_in_recipe_ids": [],
-    "version_added": null,
-    "wiki_page": "Baby_Cradle"
-  },
-  {
-    "also_known_as": [],
     "availability": [],
     "base_item_id": null,
     "blurb": null,
@@ -25224,9 +25153,7 @@
     "buy_value": null,
     "category": "misc",
     "confidence": "wiki",
-    "data_gaps": [
-      "sell_value"
-    ],
+    "data_gaps": [],
     "former_ids": [],
     "game_version": "1.0.0",
     "health": null,
@@ -25251,7 +25178,7 @@
       "*": "wiki_cargo"
     },
     "quality": null,
-    "sell_value": null,
+    "sell_value": 3930,
     "sold_by": [],
     "stamina": null,
     "subcategory": null,
@@ -153148,7 +153075,7 @@
     "subcategory": "hat",
     "tags": [],
     "used_in_recipe_ids": [],
-    "variant_count": 12,
+    "variant_count": 16,
     "version_added": null,
     "wiki_page": "Accessories",
     "worn_on": "head_gear"

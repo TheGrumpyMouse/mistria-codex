@@ -4596,6 +4596,11 @@
   },
   {
     "charName": "Dozy",
+    "interest": "dislike",
+    "itemName": "Candied Lemon Peel"
+  },
+  {
+    "charName": "Dozy",
     "interest": "like",
     "itemName": "Carrot"
   },
@@ -4862,7 +4867,7 @@
   {
     "charName": "Dozy",
     "interest": "dislike",
-    "itemName": "Heart Shaped Alpaca TreatCandied Lemon Peel"
+    "itemName": "Heart Shaped Alpaca Treat"
   },
   {
     "charName": "Dozy",

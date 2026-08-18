@@ -1,6 +1,14 @@
 {
   "cosmetics": [
     {
+      "icon": "Back gear march mistrian shield.png",
+      "name": "?",
+      "page": "Accessories",
+      "price": null,
+      "source": "March",
+      "variants": null
+    },
+    {
       "icon": "Boots_adventurer.png",
       "name": "Adventurer's Boots",
       "page": "Cosmetics (Clothes)",
@@ -2686,7 +2694,7 @@
       "page": "Accessories",
       "price": 500,
       "source": "Louis",
-      "variants": 12
+      "variants": 16
     },
     {
       "icon": "witch_hat.png",
@@ -2722,7 +2730,7 @@
     }
   ],
   "lastEdited": {
-    "Accessories": "2026-08-08T01:42:52Z",
+    "Accessories": "2026-08-17T01:04:55Z",
     "Cosmetics (Body)": "2026-08-08T01:38:08Z",
     "Cosmetics (Clothes)": "2026-07-15T21:52:41Z"
   },
