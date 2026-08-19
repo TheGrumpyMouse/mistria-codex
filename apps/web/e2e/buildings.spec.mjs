@@ -63,9 +63,7 @@ check('Hard Wood’s page lists the greenhouse', /Greenhouse — Stage/.test(har
 // precondition is asserted too: an empty list would pass a broken loop.
 const dist = fileURLToPath(new URL('../dist/data/', import.meta.url))
 const meta = JSON.parse(readFileSync(`${dist}meta.json`, 'utf8'))
-const shipped = JSON.parse(
-  readFileSync(`${dist}v/${meta.dataVersion}/buildings.json`, 'utf8'),
-)
+const shipped = JSON.parse(readFileSync(`${dist}v/${meta.dataVersion}/buildings.json`, 'utf8'))
 const blueprintIds = shipped.flatMap((b) => b.tiers.flatMap((t) => t.blueprint_item_ids))
 check('the dataset states blueprints to test', blueprintIds.length >= 18, `${blueprintIds.length}`)
 for (const blueprintId of blueprintIds) {
