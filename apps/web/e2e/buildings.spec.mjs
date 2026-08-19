@@ -4,6 +4,8 @@
  * an unread cost must be a sentence rather than an empty table, and a
  * material's item page must offer the construction tick.
  */
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { BASE, dismissTour, launch, makeChecker } from './helpers.mjs'
 
 const { check, watch, finish } = makeChecker()
@@ -31,9 +33,13 @@ check('a later stage states its Ranching gate', /Ranching/.test(coop))
 check('and each stage names its blueprints', /Blueprint/.test(coop))
 check('the coop states its capacity', /Houses up to 4 animals/.test(coop))
 
-// ── The greenhouse: the user's example, quest-gated, no materials ──
+// ── The greenhouse: quest-gated, with its own page's material table ──
+// The Carpenter's table states no materials for it; the Greenhouse page does,
+// which is where these numbers were read from.
 const greenhouse = await go('/building/greenhouse')
 check('the greenhouse states its price', /50000t/.test(greenhouse))
+check('and its materials', /Glass\s*×20/.test(greenhouse), greenhouse.slice(0, 400))
+check('the large tier scales them', /Glass\s*×40/.test(greenhouse))
 check('and its carpenter-upgrade gate', /finish/.test(greenhouse))
 
 // ── The mill: a quest is the cost, and no tesserae figure exists ──
@@ -43,15 +49,29 @@ check('and lists what the quest asks for', (mill.match(/×\d+/g) ?? []).length >
 check('and prints no tesserae figure — none is stated', !/\d+t\b/.test(mill), mill)
 
 // ── An item page offers the construction tick, keyed per stage ──
+// The pair proves it is a join, not a constant: the greenhouse takes HARD
+// wood, so it must appear on Hard Wood's page and not on plain Wood's.
 const wood = await go('/item/basic_wood')
 check('Wood’s page lists the coop under Needed for', /Coop — Stage/.test(wood))
-// The negative that proves it is a join, not a constant: the greenhouse
-// states no materials, so nothing should claim it needs any.
-check('and nothing claims the greenhouse needs materials', !/Greenhouse — Stage/.test(wood))
+check('but not the greenhouse — it takes Hard Wood', !/Greenhouse — Stage/.test(wood))
+const hardWood = await go('/item/hard_wood')
+check('Hard Wood’s page lists the greenhouse', /Greenhouse — Stage/.test(hardWood))
 
-// ── A blueprint links back to what it builds ──
-const blueprint = await go('/item/small_coop_black_blueprint')
-check('a blueprint names its building', /blueprint for the Coop/i.test(blueprint))
+// ── Every blueprint links back to what it builds ──
+// Drawn from the shipped data rather than one fixture, so a building that
+// gains a blueprint is covered without anyone editing this file. The
+// precondition is asserted too: an empty list would pass a broken loop.
+const dist = fileURLToPath(new URL('../dist/data/', import.meta.url))
+const meta = JSON.parse(readFileSync(`${dist}meta.json`, 'utf8'))
+const shipped = JSON.parse(
+  readFileSync(`${dist}v/${meta.dataVersion}/buildings.json`, 'utf8'),
+)
+const blueprintIds = shipped.flatMap((b) => b.tiers.flatMap((t) => t.blueprint_item_ids))
+check('the dataset states blueprints to test', blueprintIds.length >= 18, `${blueprintIds.length}`)
+for (const blueprintId of blueprintIds) {
+  const text = await go(`/item/${blueprintId}`)
+  check(`item/${blueprintId} names what it builds`, /blueprint for the /i.test(text))
+}
 
 await page.close()
 await browser.close()

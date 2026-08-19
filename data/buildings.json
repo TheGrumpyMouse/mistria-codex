@@ -247,7 +247,20 @@
         ],
         "capacity": null,
         "cost": {
-          "materials": [],
+          "materials": [
+            {
+              "item_id": "hard_wood",
+              "quantity": 20
+            },
+            {
+              "item_id": "glass",
+              "quantity": 20
+            },
+            {
+              "item_id": "refined_stone",
+              "quantity": 20
+            }
+          ],
           "tesserae": 50000
         },
         "incubators": null,
@@ -268,7 +281,20 @@
         ],
         "capacity": null,
         "cost": {
-          "materials": [],
+          "materials": [
+            {
+              "item_id": "hard_wood",
+              "quantity": 40
+            },
+            {
+              "item_id": "glass",
+              "quantity": 40
+            },
+            {
+              "item_id": "refined_stone",
+              "quantity": 40
+            }
+          ],
           "tesserae": 100000
         },
         "incubators": null,

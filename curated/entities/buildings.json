@@ -14,9 +14,12 @@
     "stock list, where both blueprints already appear.",
     "",
     "SOURCES. Coop and Barn tiers from their own pages' Blueprints tables;",
-    "greenhouse and the stairs/ladder from the Carpenter's Buildings table; home",
-    "upgrades from Farmhouse (transcluded onto the Carpenter page as 'Home",
-    "Upgrade'). Checked 2026-08-07.",
+    "greenhouse prices from the Carpenter's Buildings table and its MATERIALS",
+    "from the Greenhouse page's own table — the Carpenter's states none, which",
+    "is why both tiers shipped material-less for a release; home upgrades from",
+    "Farmhouse (transcluded onto the Carpenter page as 'Home Upgrade'). Checked",
+    "2026-08-07; every building re-verified against its own page 2026-08-19",
+    "(coop, barn and farmhouse matched exactly — only the greenhouse gained).",
     "",
     "GREENHOUSE CAPACITY is growing space (5x5 and 10x10 tiles), not animals, so",
     "`capacity` is null rather than 25 and 100 — the field means occupants",
@@ -123,7 +126,11 @@
           "level": 1,
           "tesserae": 50000,
           "capacity": null,
-          "materials": [],
+          "materials": [
+            { "item": "Hard Wood", "quantity": 20 },
+            { "item": "Glass", "quantity": 20 },
+            { "item": "Refined Stone", "quantity": 20 }
+          ],
           "requires": [
             { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
           ],
@@ -133,7 +140,11 @@
           "level": 2,
           "tesserae": 100000,
           "capacity": null,
-          "materials": [],
+          "materials": [
+            { "item": "Hard Wood", "quantity": 40 },
+            { "item": "Glass", "quantity": 40 },
+            { "item": "Refined Stone", "quantity": 40 }
+          ],
           "requires": [
             { "type": "quest", "key": "upgrade_the_carpenters_shop", "op": "done", "value": null }
           ],
